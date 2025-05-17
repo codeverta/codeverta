@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Million Candles",
+    "subtitle": "您值得信赖的特殊时刻蜡烛制造商"
+  },
+  "howToOrder": {
+    "title": "如何订购蜡烛",
+    "step1": {
+      "title": "1. 联系我们",
+      "description": "请通过 WhatsApp 联系我们：",
+      "phone": "081578956156",
+      "contactNote": "开始您的订单。我们将协助您了解产品信息和库存情况。"
+    },
+    "step2": {
+      "title": "2. 选择取货或送货",
+      "description": "我们提供两种收货方式：",
+      "pickupTitle": "到店自取",
+      "pickupDescription": "欢迎到我们的店铺：Yogyakarta，Sleman，Kaliurang KM 9",
+      "deliveryTitle": "送货服务",
+      "deliveryDescription": "我们可以通过 Gojek、Grab 或其他快递服务配送",
+      "note": "*大量订单需提前预订"
+    },
+    "step3": {
+      "title": "3. 支付定金",
+      "description": "大宗订单需支付至少 30% 的定金（DP）以确认订单。可通过银行转账支付。"
+    },
+    "step4": {
+      "title": "4. 发货与尾款支付",
+      "description": "发货前需支付全款。我们将在订单准备就绪时通知您，并提供快递单号（如有）。"
+    },
+    "step5": {
+      "title": "5. 生产时间",
+      "description": "生产时间取决于订购数量。小量订单通常在 1-3 天内完成。大量订单将在咨询后提供估算时间。"
+    }
+  },
+  "cta": {
+    "title": "准备好下单了吗？",
+    "subtitle": "立即联系我们，获取高品质香薰蜡烛！",
+    "button": "通过 WhatsApp 联系"
+  }
+}

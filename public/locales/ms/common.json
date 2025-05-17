@@ -1,0 +1,183 @@
+{
+  "brand": "Million Candles",
+  "flag": "🇲🇾",
+  "menu": {
+    "login": "Log masuk",
+    "home": "Laman Utama",
+    "products": "Produk",
+    "how_to_order": "Cara Pesan",
+    "address": "Alamat",
+    "blog": "Blog",
+    "gallery": "Galeri",
+    "about": "Tentang Kami"
+  },
+  "address": {
+    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesia"
+  },
+  "tagline": {
+    "local_producer": "Pengeluar Lilin Tempatan",
+    "national_scale": "Skala Nasional"
+  },
+  "description": "Kami adalah pembekal yang menyediakan pelbagai jenis lilin berkualiti tinggi seperti lilin aromaterapi, lilin cenderamata, lilin berwarna, lilin hiasan, lilin ibadah, lilin rohani, kilang lilin dan banyak lagi. Kami menawarkan lilin hiasan yang indah sebagai cenderamata yang sesuai untuk sebarang majlis. Dari perkahwinan hingga acara korporat atau perjalanan, lilin hiasan cenderamata kami adalah pilihan yang tepat untuk mencipta kenangan yang tidak dapat dilupakan.",
+  "how_to_order_candles": "Cara Memesan Lilin",
+  "whatsapp": "WhatsApp",
+  "our_products": "Produk Kami",
+  "other_products": "Produk Lain",
+  "disclaimer_price": "* Harga yang dipaparkan adalah harga pengedar/borong",
+  "features": {
+    "eco_friendly": "Mesra Alam",
+    "made_from": "Diperbuat daripada 100% lilin sawit semula jadi dan minyak pati",
+    "handmade": "Buatan Tangan",
+    "crafted_with_love": "Setiap lilin dituang dengan teliti oleh tukang kami",
+    "long_lasting": "Tahan Lama",
+    "burn_time": "Sehingga 12 jam waktu pembakaran untuk setiap lilin",
+    "handcrafted_with_love": "Dibuat dengan Penuh Kasih Sayang",
+    "make_beautiful_memories": "Cipta Kenangan Indah dengan",
+    "our_candle": "Lilin Kami",
+    "souvenir_description": "Dengan Lilin Hiasan Cenderamata kami, anda boleh membawa pulang kenangan indah dari acara atau perjalanan anda. Setiap lilin kami dibuat dengan bahan berkualiti tinggi dan dihiasi dengan indah oleh seniman kami."
+  },
+  "shipping": {
+    "package": "Pakej Penghantaran Lilin",
+    "fast_shipping": "Penghantaran Cepat",
+    "nationwide": "Seluruh Indonesia"
+  },
+  "premium_collection": {
+    "title": "Koleksi Premium",
+    "subtitle": "Produk Lilin Aromaterapi Kami",
+    "description": "Nikmati keindahan dan manfaat lilin aromaterapi buatan tangan kami yang dibuat dengan bahan semula jadi terbaik."
+  },
+  "quality_section": {
+    "product_quality": "Kualiti Produk",
+    "product_quality_description": "Kami hanya menggunakan bahan berkualiti tinggi untuk membuat lilin hiasan kami, dan setiap produk kami diuji untuk memastikan keselamatan dan ketahanannya. Kami juga mempunyai pasukan seniman berbakat yang menghiasi setiap lilin dengan reka bentuk yang indah dan unik, menjadikannya cenderamata yang istimewa.",
+    "size_and_color": "Saiz dan Warna",
+    "size_and_color_description": "Lilin hiasan kami hadir dalam pelbagai saiz, dari yang kecil dan mudah alih hingga yang besar dan indah. Kami juga mempunyai pelbagai warna yang berbeza, termasuk putih, biru, hijau, merah, dan banyak lagi, supaya anda boleh memilih yang sesuai dengan tema acara anda.",
+    "calming_aroma": "Aroma yang Menenangkan",
+    "calming_aroma_description": "Lilin hiasan kami juga memberikan aroma yang menenangkan, membawa kedamaian dan ketenangan ke dalam bilik. Kami menggunakan minyak wangi berkualiti tinggi untuk memberikan aroma yang tahan lama dan menyenangkan."
+  },
+  "lifespan": {
+    "title": "Jangka Hayat",
+    "description": "Sehingga 12 Jam"
+  },
+  "natural": {
+    "title": "100% Semula Jadi",
+    "description": "Mesra Alam"
+  },
+  "business_opportunity": {
+    "title": "Peluang Perniagaan Borong",
+    "description": "Tingkatkan perniagaan anda dengan koleksi lilin premium kami. Sesuai untuk hotel, spa, butik dan kedai hadiah.",
+    "custom_branding": "Pilihan penjenamaan tersuai tersedia",
+    "no_moq_white_label": "Tiada MOQ dan perkhidmatan label putih"
+  },
+  "wholesale_benefits": {
+    "title": "Faedah Pembelian Borong",
+    "competitive_price": "Harga Kompetitif",
+    "competitive_price_description": "Dapatkan diskaun sehingga 5% daripada harga runcit untuk pesanan pukal",
+    "exclusive_aromas": "Aroma Eksklusif",
+    "exclusive_aromas_description": "Akses kepada pilihan wangian eksklusif hanya untuk pelanggan borong",
+    "dedicated_support": "Sokongan Khusus",
+    "dedicated_support_description": "Pengurus akaun peribadi untuk pelanggan borong"
+  },
+  "blog_section": {
+    "title": "Kisah Kami",
+    "description": "Koleksi catatan blog yang membincangkan pelbagai aspek lilin, dari sejarah dan pelbagai jenis lilin, hingga cara membuat lilin sendiri dan cara memilih lilin yang tepat untuk pelbagai keperluan. Anda juga akan menemui kisah inspirasi tentang bagaimana lilin dapat menjadi simbol harapan dan kehangatan dalam kehidupan seharian. Mari kita terokai keajaiban lilin bersama-sama dan pelajari cara menggunakannya untuk menerangi kehidupan kita."
+  },
+  "testimonials": {
+    "title": "Apa Kata Pelanggan Kami",
+    "sarah_johnson": {
+      "quote": "Para tetamu hotel kami sentiasa memuji aroma harum di lobi kami. Lilin Aroma Vanila kami mencipta suasana yang sangat menyambut.",
+      "name": "Sarah Johnson",
+      "position": "Pengurus Hotel, The Grand Plaza"
+    },
+    "emily_chen": {
+      "quote": "Sebagai pemilik butik, saya sangat menghargai kualiti dan persembahan lilin-lilin ini. Lilin ini telah menjadi produk hadiah terlaris kami!",
+      "name": "Emily Chen",
+      "position": "Pemilik, The Curated Corner"
+    },
+    "michael_rodriguez": {
+      "quote": "Waktu pembakaran lilin ini luar biasa dan aromanya sempurna - tidak terlalu kuat. Saya sudah membeli setiap varian dalam koleksi ini!",
+      "name": "Michael Rodriguez",
+      "position": "Pelanggan Setia"
+    },
+    "wedding_customer": {
+      "quote": "Terima kasih @souvenirlilin untuk produk yang indah! Lilin yang saya beli untuk perkahwinan saya benar-benar menambahkan sentuhan yang sempurna pada acara tersebut, dan para tetamu saya sangat menyukainya",
+      "name": "Pelanggan"
+    }
+  },
+  "about_us": {
+    "content": "# Tentang Million Candles\n\nMillion Candles adalah syarikat lilin yang berpusat di Yogyakarta yang menyediakan pelbagai jenis lilin dengan reka bentuk yang unik dan berkualiti tinggi. Kami menggunakan bahan-bahan berkualiti tinggi dan teknik pembuatan yang baik untuk menghasilkan lilin yang indah dan harum.\n\nKami menawarkan pelbagai pilihan lilin, dari lilin kecil hingga lilin besar yang boleh digunakan untuk acara khas seperti perkahwinan, pesta ulang tahun, acara ibadah gereja, atau mati lampu. Selain itu, kami juga menyediakan lilin wangi yang boleh digunakan untuk mencipta suasana yang menenangkan di rumah anda.\n\nKami mempunyai pelbagai pilihan warna dan reka bentuk yang boleh disesuaikan dengan selera anda. Kami juga boleh membuat lilin dengan reka bentuk yang sesuai dengan keinginan anda.\n\nKami sangat menghargai kualiti dan keselamatan pelanggan, jadi kami sentiasa berusaha untuk menggunakan bahan-bahan yang selamat dan tidak merosakkan alam sekitar.\n\nJika anda ingin menambah suasana romantis di rumah anda atau mencari hadiah yang unik untuk acara khas, jangan ragu untuk mengunjungi laman web kami dan melihat pilihan lilin yang kami tawarkan. Kami akan senang untuk membantu anda mencari lilin yang tepat untuk keperluan anda."
+  },
+  "gallery": {
+    "title": "Galeri",
+    "description": "Koleksi Foto dan Video Produk Kami"
+  },
+  "blog": {
+    "title": "Koleksi Cerita dan Tips Mengenai Lilin",
+    "description": "Koleksi catatan blog yang membincangkan pelbagai aspek lilin, dari sejarah dan pelbagai jenis lilin, hingga cara membuat lilin sendiri dan cara memilih lilin yang tepat untuk pelbagai keperluan.",
+    "not_found": {
+      "title": "Tiada artikel ditemui",
+      "description": "Cuba ubah kata kunci carian atau kategori yang dipilih"
+    }
+  },
+  "footer": {
+    "title": "Million Candles",
+    "desc": "Million Candles menyediakan pelbagai pilihan lilin aromaterapi berkualiti tinggi untuk mencipta suasana yang selesa dan menenangkan di rumah anda.",
+    "about": "Tentang Kami",
+    "profile": "Profil Syarikat",
+    "careers": "Kerjaya",
+    "blog": "Blog",
+    "contact": "Hubungi Kami",
+    "help": "Bantuan",
+    "howToBuy": "Cara Pembelian",
+    "payment": "Pembayaran",
+    "shipping": "Penghantaran",
+    "returns": "Pengembalian",
+    "faq": "Soalan Lazim",
+    "info": "Maklumat",
+    "terms": "Terma & Syarat",
+    "privacy": "Dasar Privasi",
+    "shippingPolicy": "Dasar Penghantaran",
+    "returnPolicy": "Dasar Pengembalian"
+  },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "whatsapp": "WhatsApp"
+  },
+  "payment": {
+    "bca": "BCA",
+    "mandiri": "Mandiri",
+    "bni": "BNI",
+    "bri": "BRI"
+  },
+  "stats": {
+    "title": "Impak Kami dalam Angka",
+    "subtitle": "Sejak 2007, kami telah menerangi rumah-rumah di seluruh Indonesia dengan lilin buatan tangan kami",
+    "candlesProduced": {
+      "label": "Lilin Dihasilkan per Hari",
+      "description": "Kemudahan pengeluaran berkecekapan tinggi kami"
+    },
+    "candleVariants": {
+      "label": "Varian Lilin",
+      "description": "Aroma, reka bentuk dan gaya yang unik"
+    },
+    "yearsOfExcellence": {
+      "label": "Tahun Kecemerlangan",
+      "value": "Sejak 2007",
+      "description": "17+ tahun membuat lilin premium"
+    },
+    "cities": {
+      "label": "Melayani seluruh Indonesia",
+      "value": "Bandar-bandar Besar",
+      "description": "Seperti Jakarta, Bali dan lain-lain"
+    },
+    "candlesSold": {
+      "label": "Lilin Terjual per Tahun",
+      "description": "Dipercayai oleh rumah dan perniagaan"
+    },
+    "quality": {
+      "label": "Jaminan Kualiti",
+      "description": "Komitmen terhadap kecemerlangan"
+    }
+  }
+}

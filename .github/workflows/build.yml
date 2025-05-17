@@ -1,0 +1,27 @@
+name: Build
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_BASE_API: ${{ secrets.NEXT_PUBLIC_BASE_API }}
+      NEXT_PUBLIC_BASE: ${{ secrets.NEXT_PUBLIC_BASE }}
+      NEXT_PUBLIC_MIDTRANS_CLIENT_KEY: ${{ secrets.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Check for errors
+        run: |
+          if [ $? -ne 0 ]; then
+            echo "Build failed"
+            exit 1
+          fi

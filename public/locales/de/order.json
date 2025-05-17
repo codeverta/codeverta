@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Million Candles",
+    "subtitle": "Der Kerzenhersteller Ihrer Wahl für besondere Momente"
+  },
+  "howToOrder": {
+    "title": "So bestellen Sie Kerzenprodukte",
+    "step1": {
+      "title": "1. Kontaktieren Sie uns",
+      "description": "Bitte kontaktieren Sie uns per WhatsApp unter der Nummer",
+      "phone": "081578956156",
+      "contactNote": "um Ihre Bestellung aufzugeben. Wir helfen Ihnen gerne mit Produktinformationen und Lagerbeständen."
+    },
+    "step2": {
+      "title": "2. Wählen Sie die Abholart",
+      "description": "Es stehen zwei Optionen zur Verfügung, um unsere Produkte zu erhalten:",
+      "pickupTitle": "Abholung vor Ort",
+      "pickupDescription": "Besuchen Sie unser Geschäft in Jalan Kaliurang KM 9, Sleman, Yogyakarta",
+      "deliveryTitle": "Lieferung",
+      "deliveryDescription": "Wir können per Gojek, Grab oder anderen Versanddiensten versenden",
+      "note": "*Großbestellungen erfordern eine Vorbestellung"
+    },
+    "step3": {
+      "title": "3. Anzahlung",
+      "description": "Für größere Bestellmengen ist eine Anzahlung von mindestens 30% des Gesamtpreises zur Auftragsbestätigung erforderlich. Die Zahlung kann per Banküberweisung erfolgen."
+    },
+    "step4": {
+      "title": "4. Versand & Restzahlung",
+      "description": "Für den Versand muss die Zahlung vollständig erfolgt sein, bevor die Produkte versendet werden. Wir informieren Sie, sobald Ihre Bestellung versandbereit ist, sowie die Sendungsverfolgungsnummer, falls vorhanden."
+    },
+    "step5": {
+      "title": "5. Produktionszeit",
+      "description": "Die Bearbeitungszeit Ihrer Bestellung hängt von der Anzahl der bestellten Kerzen ab. Kleinere Bestellungen sind in der Regel innerhalb von 1-3 Tagen versandbereit. Bei größeren Bestellungen geben wir Ihnen nach Rücksprache mit Ihnen eine geschätzte Zeit an."
+    }
+  },
+  "cta": {
+    "title": "Bereit zu bestellen?",
+    "subtitle": "Kontaktieren Sie uns jetzt, um hochwertige Aromakerzen zu erhalten!",
+    "button": "Kontakt via WhatsApp"
+  }
+}

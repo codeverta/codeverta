@@ -1,0 +1,181 @@
+{
+  "brand": "Triệu Ngọn Nến",
+  "flag": "🇻🇳",
+  "menu": {
+    "login": "Đăng nhập",
+    "home": "Trang chủ",
+    "products": "Sản phẩm",
+    "how_to_order": "Cách đặt hàng",
+    "address": "Địa chỉ",
+    "blog": "Bài viết",
+    "gallery": "Bộ sưu tập",
+    "about": "Về chúng tôi"
+  },
+  "address": {
+    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesia"
+  },
+  "tagline": {
+    "local_producer": "Nhà sản xuất nến địa phương",
+    "national_scale": "Quy mô toàn quốc"
+  },
+  "description": "Chúng tôi là nhà cung cấp các loại nến chất lượng cao như nến thơm, nến quà tặng, nến màu, nến trang trí, nến thờ cúng, nến tâm linh, xưởng sản xuất nến và nhiều loại khác. Chúng tôi cung cấp các loại nến trang trí đẹp mắt làm quà tặng, phù hợp cho mọi dịp. Từ đám cưới đến sự kiện công ty hoặc du lịch, nến quà tặng trang trí của chúng tôi là lựa chọn hoàn hảo để tạo nên những kỷ niệm khó quên.",
+  "how_to_order_candles": "Cách đặt mua nến",
+  "whatsapp": "WhatsApp",
+  "our_products": "Sản phẩm của chúng tôi",
+  "other_products": "Sản phẩm khác",
+  "disclaimer_price": "* Giá hiển thị là giá dành cho nhà phân phối/bán buôn",
+  "features": {
+    "eco_friendly": "Thân thiện với môi trường",
+    "made_from": "Được làm từ 100% sáp cọ tự nhiên và tinh dầu",
+    "handmade": "Thủ công",
+    "crafted_with_love": "Mỗi ngọn nến được đổ cẩn thận bởi những người thợ thủ công của chúng tôi",
+    "long_lasting": "Bền lâu",
+    "burn_time": "Thời gian đốt lên đến 12 giờ cho mỗi ngọn nến",
+    "handcrafted_with_love": "Làm thủ công bằng tình yêu",
+    "make_beautiful_memories": "Tạo nên những kỷ niệm đẹp với",
+    "our_candle": "Nến của chúng tôi",
+    "souvenir_description": "Với nến quà tặng trang trí của chúng tôi, bạn có thể mang về những kỷ niệm đẹp từ sự kiện hoặc chuyến đi của mình. Mỗi ngọn nến của chúng tôi được làm từ nguyên liệu chất lượng cao và trang trí đẹp mắt bởi các nghệ nhân của chúng tôi."
+  },
+  "shipping": {
+    "package": "Gói vận chuyển nến",
+    "fast_shipping": "Giao hàng nhanh chóng",
+    "nationwide": "Toàn quốc"
+  },
+  "premium_collection": {
+    "title": "Bộ sưu tập cao cấp",
+    "subtitle": "Sản phẩm nến thơm của chúng tôi",
+    "description": "Tận hưởng vẻ đẹp và lợi ích của nến thơm thủ công của chúng tôi, được làm từ những nguyên liệu tự nhiên tốt nhất."
+  },
+  "quality_section": {
+    "product_quality": "Chất lượng sản phẩm",
+    "product_quality_description": "Chúng tôi chỉ sử dụng nguyên liệu chất lượng cao để làm nến trang trí của mình, và mỗi sản phẩm của chúng tôi đều được kiểm tra để đảm bảo an toàn và độ bền. Chúng tôi cũng có một đội ngũ nghệ nhân tài năng, những người trang trí mỗi ngọn nến bằng những thiết kế đẹp và độc đáo, biến chúng thành những món quà lưu niệm đặc biệt.",
+    "size_and_color": "Kích thước và màu sắc",
+    "size_and_color_description": "Nến trang trí của chúng tôi có nhiều kích cỡ khác nhau, từ nhỏ gọn và tiện lợi đến lớn và đẹp mắt. Chúng tôi cũng có nhiều màu sắc khác nhau, bao gồm trắng, xanh dương, xanh lá cây, đỏ và nhiều màu khác, vì vậy bạn có thể chọn màu phù hợp với chủ đề sự kiện của mình.",
+    "calming_aroma": "Hương thơm dịu nhẹ",
+    "calming_aroma_description": "Nến trang trí của chúng tôi còn mang đến hương thơm dịu nhẹ, mang lại sự bình yên và tĩnh lặng cho căn phòng. Chúng tôi sử dụng tinh dầu thơm chất lượng cao để mang đến hương thơm lâu dài và dễ chịu."
+  },
+  "lifespan": {
+    "title": "Tuổi thọ",
+    "description": "Lên đến 12 giờ"
+  },
+  "natural": {
+    "title": "100% tự nhiên",
+    "description": "Thân thiện với môi trường"
+  },
+  "business_opportunity": {
+    "title": "Cơ hội kinh doanh bán buôn",
+    "description": "Nâng tầm doanh nghiệp của bạn với bộ sưu tập nến cao cấp của chúng tôi. Hoàn hảo cho khách sạn, spa, cửa hàng boutique và cửa hàng quà tặng.",
+    "custom_branding": "Có sẵn tùy chọn xây dựng thương hiệu riêng",
+    "no_moq_white_label": "Không yêu cầu số lượng đặt hàng tối thiểu và dịch vụ nhãn trắng"
+  },
+  "wholesale_benefits": {
+    "title": "Lợi ích khi mua sỉ",
+    "competitive_price": "Giá cả cạnh tranh",
+    "competitive_price_description": "Nhận chiết khấu lên đến 5% so với giá bán lẻ cho đơn hàng số lượng lớn",
+    "exclusive_aromas": "Hương thơm độc quyền",
+    "exclusive_aromas_description": "Truy cập vào tuyển chọn hương thơm độc quyền chỉ dành cho khách hàng mua sỉ",
+    "dedicated_support": "Hỗ trợ tận tâm",
+    "dedicated_support_description": "Quản lý tài khoản cá nhân cho khách hàng mua sỉ"
+  },
+  "blog_section": {
+    "title": "Câu chuyện của chúng tôi",
+    "description": "Tuyển tập các bài viết blog thảo luận về nhiều khía cạnh khác nhau của nến, từ lịch sử và các loại nến khác nhau, đến cách tự làm nến và cách chọn nến phù hợp cho các mục đích khác nhau. Bạn cũng sẽ tìm thấy những câu chuyện truyền cảm hứng về cách nến có thể là biểu tượng của hy vọng và sự ấm áp trong cuộc sống hàng ngày. Hãy cùng nhau khám phá sự kỳ diệu của nến và học cách sử dụng chúng để thắp sáng cuộc sống của chúng ta."
+  },
+  "testimonials": {
+    "title": "Khách hàng của chúng tôi nói gì",
+    "sarah_johnson": {
+      "quote": "Khách sạn của chúng tôi luôn khen ngợi hương thơm dễ chịu trong sảnh. Nến thơm Vanilla của chúng tôi tạo ra một bầu không khí rất chào đón.",
+      "name": "Sarah Johnson",
+      "position": "Quản lý khách sạn, The Grand Plaza"
+    },
+    "emily_chen": {
+      "quote": "Là chủ một cửa hàng boutique, tôi đánh giá cao chất lượng và cách trình bày của những ngọn nến này. Chúng đã trở thành sản phẩm quà tặng bán chạy nhất của chúng tôi!",
+      "name": "Emily Chen",
+      "position": "Chủ cửa hàng, The Curated Corner"
+    },
+    "michael_rodriguez": {
+      "quote": "Thời gian đốt của những ngọn nến này thật tuyệt vời và hương thơm thì hoàn hảo - không quá nồng. Tôi đã mua mọi loại trong bộ sưu tập này!",
+      "name": "Michael Rodriguez",
+      "position": "Khách hàng thân thiết"
+    },
+    "wedding_customer": {
+      "quote": "Cảm ơn @souvenirlilin vì những sản phẩm tuyệt đẹp! Những ngọn nến tôi mua cho đám cưới của mình thực sự đã thêm một nét hoàn hảo cho sự kiện, và các vị khách của tôi rất thích chúng",
+      "name": "Khách hàng"
+    }
+  },
+  "about_us": {
+    "content": "# Về Triệu Ngọn Nến\n\nTriệu Ngọn Nến là một công ty sản xuất nến có trụ sở tại Yogyakarta, chuyên cung cấp các loại nến với thiết kế độc đáo và chất lượng cao. Chúng tôi sử dụng nguyên liệu chất lượng cao và kỹ thuật sản xuất tốt để tạo ra những ngọn nến đẹp và thơm.\n\nChúng tôi cung cấp nhiều lựa chọn nến, từ nến nhỏ đến nến lớn, có thể được sử dụng cho các sự kiện đặc biệt như đám cưới, tiệc sinh nhật, lễ nhà thờ hoặc khi mất điện. Ngoài ra, chúng tôi còn cung cấp nến thơm có thể được sử dụng để tạo không gian thư giãn trong ngôi nhà của bạn.\n\nChúng tôi có nhiều lựa chọn màu sắc và kiểu dáng có thể được điều chỉnh theo sở thích của bạn. Chúng tôi cũng có thể tạo ra nến với thiết kế theo yêu cầu của bạn.\n\nChúng tôi rất coi trọng chất lượng và sự an toàn của khách hàng, vì vậy chúng tôi luôn cố gắng sử dụng các nguyên liệu an toàn và không gây hại cho môi trường.\n\nNếu bạn muốn thêm không khí lãng mạn cho ngôi nhà của mình hoặc đang tìm kiếm một món quà độc đáo cho một sự kiện đặc biệt, đừng ngần ngại truy cập trang web của chúng tôi và xem các lựa chọn nến mà chúng tôi cung cấp. Chúng tôi rất vui được giúp bạn tìm thấy ngọn nến phù hợp với nhu cầu của bạn."
+  },
+  "gallery": {
+    "title": "Bộ sưu tập",
+    "description": "Tuyển tập ảnh và video sản phẩm của chúng tôi"
+  },
+  "blog": {
+    "title": "Tuyển tập câu chuyện và mẹo về nến",
+    "description": "Tuyển tập các bài viết blog thảo luận về nhiều khía cạnh khác nhau của nến, từ lịch sử và các loại nến khác nhau, đến cách tự làm nến và cách chọn nến phù hợp cho các mục đích khác nhau.",
+    "not_found": {
+      "title": "Không tìm thấy bài viết nào",
+      "description": "Hãy thử thay đổi từ khóa tìm kiếm hoặc danh mục đã chọn"
+    }
+  },
+  "footer": {
+    "about": "Về chúng tôi",
+    "profile": "Hồ sơ công ty",
+    "careers": "Tuyển dụng",
+    "blog": "Blog",
+    "contact": "Liên hệ",
+    "help": "Trợ giúp",
+    "howToBuy": "Hướng dẫn mua hàng",
+    "payment": "Thanh toán",
+    "shipping": "Vận chuyển",
+    "returns": "Đổi trả",
+    "faq": "Câu hỏi thường gặp",
+    "info": "Thông tin",
+    "terms": "Điều khoản & Điều kiện",
+    "privacy": "Chính sách bảo mật",
+    "shippingPolicy": "Chính sách vận chuyển",
+    "returnPolicy": "Chính sách đổi trả"
+  },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "whatsapp": "WhatsApp"
+  },
+  "payment": {
+    "bca": "BCA",
+    "mandiri": "Mandiri",
+    "bni": "BNI",
+    "bri": "BRI"
+  },
+  "stats": {
+    "title": "Tác động của chúng tôi qua những con số",
+    "subtitle": "Kể từ năm 2007, chúng tôi đã thắp sáng những ngôi nhà trên khắp Việt Nam bằng những ngọn nến thủ công của mình",
+    "candlesProduced": {
+      "label": "Nến sản xuất mỗi ngày",
+      "description": "Cơ sở sản xuất hiệu quả cao của chúng tôi"
+    },
+    "candleVariants": {
+      "label": "Các loại nến",
+      "description": "Hương thơm, thiết kế và phong cách độc đáo"
+    },
+    "yearsOfExcellence": {
+      "label": "Năm kinh nghiệm",
+      "value": "Kể từ năm 2007",
+      "description": "Hơn 17 năm sản xuất nến cao cấp"
+    },
+    "cities": {
+      "label": "Phục vụ trên toàn Việt Nam",
+      "value": "Các thành phố lớn",
+      "description": "Như Hà Nội, TP. Hồ Chí Minh và các tỉnh thành khác"
+    },
+    "candlesSold": {
+      "label": "Nến bán ra mỗi năm",
+      "description": "Được tin dùng bởi các hộ gia đình và doanh nghiệp"
+    },
+    "quality": {
+      "label": "Đảm bảo chất lượng",
+      "description": "Cam kết về sự xuất sắc"
+    }
+  }
+}

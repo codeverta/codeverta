@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Million Candles",
+    "subtitle": "Pengeluar lilin pilihan untuk saat-saat istimewa anda"
+  },
+  "howToOrder": {
+    "title": "Cara Memesan Produk Lilin",
+    "step1": {
+      "title": "1. Hubungi Kami",
+      "description": "Sila hubungi kami melalui WhatsApp di nombor",
+      "phone": "081578956156",
+      "contactNote": "untuk memulakan pesanan anda. Kami akan membantu dengan maklumat produk dan ketersediaan stok."
+    },
+    "step2": {
+      "title": "2. Pilih Cara Pengambilan",
+      "description": "Terdapat dua pilihan yang tersedia untuk mendapatkan produk kami:",
+      "pickupTitle": "Ambil di lokasi",
+      "pickupDescription": "Kunjungi kedai kami di Jalan Kaliurang KM 9, Sleman, Yogyakarta",
+      "deliveryTitle": "Penghantaran",
+      "deliveryDescription": "Kami boleh menghantar melalui Gojek, Grab, atau perkhidmatan penghantaran lain",
+      "note": "*Pesanan dalam kuantiti yang banyak memerlukan tempahan terlebih dahulu"
+    },
+    "step3": {
+      "title": "3. Pembayaran DP",
+      "description": "Untuk pesanan dalam kuantiti yang banyak, anda perlu membayar Deposit (DP) sekurang-kurangnya 30% daripada jumlah harga untuk pengesahan pesanan. Pembayaran boleh dilakukan melalui pindahan bank."
+    },
+    "step4": {
+      "title": "4. Penghantaran & Pelunasan",
+      "description": "Untuk penghantaran, pembayaran mesti dilunaskan sebelum produk dihantar. Kami akan memberikan maklumat apabila pesanan anda sedia untuk dihantar serta nombor resi penghantaran jika ada."
+    },
+    "step5": {
+      "title": "5. Waktu Pengeluaran",
+      "description": "Tempoh masa pesanan bergantung pada jumlah lilin yang anda pesan. Untuk pesanan kecil, biasanya siap dalam 1-3 hari. Untuk pesanan besar, kami akan memberikan anggaran waktu setelah berunding dengan anda."
+    }
+  },
+  "cta": {
+    "title": "Bersedia untuk Memesan?",
+    "subtitle": "Hubungi kami sekarang untuk mendapatkan lilin aromaterapi berkualiti tinggi!",
+    "button": "Hubungi melalui WhatsApp"
+  }
+}

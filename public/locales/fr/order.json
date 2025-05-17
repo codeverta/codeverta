@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Million Candles",
+    "subtitle": "Le fabricant de bougies de choix pour vos moments spéciaux"
+  },
+  "howToOrder": {
+    "title": "Comment commander des produits de bougies",
+    "step1": {
+      "title": "1. Contactez-nous",
+      "description": "Veuillez nous contacter via WhatsApp au numéro",
+      "phone": "081578956156",
+      "contactNote": "pour commencer votre commande. Nous vous aiderons avec les informations sur les produits et la disponibilité des stocks."
+    },
+    "step2": {
+      "title": "2. Choisissez le mode de retrait",
+      "description": "Deux options sont disponibles pour obtenir nos produits :",
+      "pickupTitle": "Retrait sur place",
+      "pickupDescription": "Visitez notre magasin à Jalan Kaliurang KM 9, Sleman, Yogyakarta",
+      "deliveryTitle": "Livraison",
+      "deliveryDescription": "Nous pouvons livrer via Gojek, Grab ou d'autres services de livraison",
+      "note": "*Les commandes importantes nécessitent une réservation préalable"
+    },
+    "step3": {
+      "title": "3. Acompte",
+      "description": "Pour les commandes importantes, vous devrez verser un acompte (DP) d'au moins 30% du prix total pour confirmer la commande. Le paiement peut être effectué par virement bancaire."
+    },
+    "step4": {
+      "title": "4. Expédition et paiement final",
+      "description": "Pour l'expédition, le paiement doit être effectué intégralement avant l'envoi des produits. Nous vous informerons lorsque votre commande sera prête à être expédiée, ainsi que du numéro de suivi de l'expédition si disponible."
+    },
+    "step5": {
+      "title": "5. Délai de production",
+      "description": "Le délai de commande dépend de la quantité de bougies que vous commandez. Pour les petites commandes, elles sont généralement prêtes sous 1 à 3 jours. Pour les commandes importantes, nous vous fournirons une estimation du délai après consultation."
+    }
+  },
+  "cta": {
+    "title": "Prêt à commander ?",
+    "subtitle": "Contactez-nous dès maintenant pour obtenir des bougies d'aromathérapie de haute qualité !",
+    "button": "Contacter via WhatsApp"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Million Candles",
+    "subtitle": "El fabricante de velas preferido para tus momentos especiales"
+  },
+  "howToOrder": {
+    "title": "Cómo pedir productos de velas",
+    "step1": {
+      "title": "1. Contáctanos",
+      "description": "Por favor, contáctanos a través de WhatsApp al número",
+      "phone": "081578956156",
+      "contactNote": "para comenzar tu pedido. Te ayudaremos con la información del producto y la disponibilidad de stock."
+    },
+    "step2": {
+      "title": "2. Elige el método de recogida",
+      "description": "Hay dos opciones disponibles para obtener nuestros productos:",
+      "pickupTitle": "Recoger en el lugar",
+      "pickupDescription": "Visita nuestra tienda en Jalan Kaliurang KM 9, Sleman, Yogyakarta",
+      "deliveryTitle": "Entrega a domicilio",
+      "deliveryDescription": "Podemos enviar a través de Gojek, Grab u otros servicios de envío",
+      "note": "*Los pedidos grandes requieren reserva previa"
+    },
+    "step3": {
+      "title": "3. Pago inicial",
+      "description": "Para pedidos grandes, deberás pagar un depósito (DP) de al menos el 30% del precio total para confirmar el pedido. El pago se puede realizar mediante transferencia bancaria."
+    },
+    "step4": {
+      "title": "4. Envío y pago final",
+      "description": "Para el envío, el pago debe estar completo antes de que se envíen los productos. Te proporcionaremos información cuando tu pedido esté listo para ser enviado, así como el número de seguimiento del envío si está disponible."
+    },
+    "step5": {
+      "title": "5. Tiempo de producción",
+      "description": "El tiempo de producción depende de la cantidad de velas que pidas. Para pedidos pequeños, generalmente está listo en 1-3 días. Para pedidos grandes, te daremos una estimación de tiempo después de consultarte."
+    }
+  },
+  "cta": {
+    "title": "¿Listo para pedir?",
+    "subtitle": "¡Contáctanos ahora para obtener velas aromáticas de alta calidad!",
+    "button": "Contactar por WhatsApp"
+  }
+}

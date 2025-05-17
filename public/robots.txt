@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://souvenirlilin.id
+
+# Sitemaps
+Sitemap: https://souvenirlilin.id/sitemap.xml

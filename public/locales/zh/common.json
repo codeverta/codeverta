@@ -1,0 +1,181 @@
+{
+  "brand": "百万蜡烛",
+  "flag": "🇨🇳",
+  "menu": {
+    "login": "登录",
+    "home": "主页",
+    "products": "产品",
+    "how_to_order": "如何订购",
+    "address": "地址",
+    "blog": "博客",
+    "gallery": "画廊",
+    "about": "关于我们"
+  },
+  "address": {
+    "full": "印度尼西亚，日惹省，斯雷曼，卡里乌兰大街KM 9"
+  },
+  "tagline": {
+    "local_producer": "本地蜡烛制造商",
+    "national_scale": "全国规模"
+  },
+  "description": "我们提供高品质的蜡烛产品，包括芳香疗法蜡烛、礼品蜡烛、多彩蜡烛、装饰蜡烛、祈祷蜡烛和精神蜡烛。无论是婚礼、企业活动还是旅行纪念品，我们都有完美的蜡烛解决方案。",
+  "how_to_order_candles": "如何订购蜡烛",
+  "whatsapp": "WhatsApp",
+  "our_products": "我们的产品",
+  "other_products": "其他产品",
+  "disclaimer_price": "* 显示的价格为批发价格",
+  "features": {
+    "eco_friendly": "环保",
+    "made_from": "100% 天然棕榈蜡和精油制成",
+    "handmade": "手工制作",
+    "crafted_with_love": "用爱精心制作",
+    "long_lasting": "持久",
+    "burn_time": "最多 12 小时燃烧时间",
+    "handcrafted_with_love": "用爱手工制作",
+    "make_beautiful_memories": "创造美好的回忆",
+    "our_candle": "通过我们的蜡烛",
+    "souvenir_description": "带着我们的装饰蜡烛，带走活动和旅行的美好回忆。高质量的材料和艺术家精心装饰，每一盏蜡烛都独一无二。"
+  },
+  "shipping": {
+    "package": "蜡烛运输包裹",
+    "fast_shipping": "快速配送",
+    "nationwide": "全印度尼西亚"
+  },
+  "premium_collection": {
+    "title": "高级系列",
+    "subtitle": "芳香疗法蜡烛产品",
+    "description": "体验由最高级天然材料制作的手工芳香疗法蜡烛的美丽和益处。"
+  },
+  "quality_section": {
+    "product_quality": "产品质量",
+    "product_quality_description": "我们只使用最高质量的材料来制作装饰蜡烛，并且所有产品都经过安全性和耐用性测试。每盏蜡烛都是由才华横溢的艺术家精心设计的，具有独特的风格。",
+    "size_and_color": "尺寸与颜色",
+    "size_and_color_description": "我们的装饰蜡烛有从小型到大型的多种尺寸，并且有多种颜色可供选择，包括白色、蓝色、绿色、红色等，可以根据您的活动主题进行选择。",
+    "calming_aroma": "舒缓的香气",
+    "calming_aroma_description": "我们的装饰蜡烛带来舒缓的香气，营造出平和与安稳的氛围。选用高级香氛油，确保长时间释放香气。"
+  },
+  "lifespan": {
+    "title": "寿命",
+    "description": "最长 12 小时"
+  },
+  "natural": {
+    "title": "100% 天然",
+    "description": "环保"
+  },
+  "business_opportunity": {
+    "title": "批发商机",
+    "description": "扩大您的业务，加入我们的高级蜡烛系列。非常适合酒店、水疗中心、精品店和礼品店等。",
+    "custom_branding": "提供定制品牌",
+    "no_moq_white_label": "无需最低订购量，提供白标服务"
+  },
+  "wholesale_benefits": {
+    "title": "批发优势",
+    "competitive_price": "有竞争力的价格",
+    "competitive_price_description": "大宗订单享受最高5%的折扣，助您降低成本",
+    "exclusive_aromas": "独家香氛",
+    "exclusive_aromas_description": "我们为批发客户提供独家的香氛系列",
+    "dedicated_support": "专属支持",
+    "dedicated_support_description": "为批发客户提供专属经理，全程提供帮助"
+  },
+  "blog_section": {
+    "title": "我们的故事",
+    "description": "我们集合了关于蜡烛历史、种类、手工制作方法、用途选择等各种主题的博客文章。我们也分享了蜡烛如何成为日常生活中的希望与温暖的象征，一起探索蜡烛带来的魔力吧！"
+  },
+  "testimonials": {
+    "title": "客户反馈",
+    "sarah_johnson": {
+      "quote": "我们的酒店大堂总是因香气受到客人的称赞。香草香型的蜡烛营造出温暖而受欢迎的氛围。",
+      "name": "萨拉·约翰逊",
+      "position": "酒店经理，格兰德广场酒店"
+    },
+    "emily_chen": {
+      "quote": "作为一名精品店老板，我非常满意这些蜡烛的质量和展示效果，已经成为热销礼品了！",
+      "name": "艾米丽·陈",
+      "position": "店主，精选角落"
+    },
+    "michael_rodriguez": {
+      "quote": "这些蜡烛燃烧时间长，香气恰到好处 —— 一点也不刺鼻。我买了所有款式！",
+      "name": "迈克尔·罗德里格兹",
+      "position": "忠实客户"
+    },
+    "wedding_customer": {
+      "quote": "@souvenirlilin 让我们选购到了完美的产品！婚礼用蜡烛为我们的活动增添了完美的装饰，宾客们都非常喜欢。",
+      "name": "客户"
+    }
+  },
+  "about_us": {
+    "content": "# 关于Million Candles\n\nMillion Candles是一家来自日惹的蜡烛公司，提供各种独特且高品质设计的蜡烛。我们使用优质材料和良好的制作工艺，打造美丽且芬芳的蜡烛。\n\n我们提供多种蜡烛选择，从小蜡烛到可用于婚礼、生日派对、教堂仪式或停电等特殊场合的大蜡烛。此外，我们还提供可以营造舒缓氛围的香氛蜡烛。\n\n我们拥有多种颜色和设计，可根据您的喜好定制。我们也可以根据您的需求制作专属设计的蜡烛。\n\n我们非常重视品质与客户安全，因此始终致力于使用安全且环保的材料。\n\n如果您想为家中增添浪漫氛围，或为特别场合寻找独特的礼物，欢迎访问我们的网站，查看我们提供的各种蜡烛。我们很乐意帮助您找到适合您需求的完美蜡烛。"
+  },
+  "blog": {
+    "title": "关于蜡烛的故事与技巧集锦",
+    "description": "本博客集合探讨了蜡烛的各个方面，从蜡烛的历史、种类，到自己动手制作蜡烛，以及如何根据不同需求选择合适的蜡烛。",
+    "not_found": {
+      "title": "未找到文章",
+      "description": "请尝试更改搜索关键词或选择的分类"
+    }
+  },
+  "gallery": {
+    "title": "画廊",
+    "description": "我们产品的照片和视频合集"
+  },
+  "stats": {
+    "title": "我们的影响力数字体现",
+    "subtitle": "自2007年以来，我们用手工蜡烛照亮了整个印度尼西亚的家庭",
+    "candlesProduced": {
+      "label": "每日生产蜡烛数",
+      "description": "高效能的生产设施"
+    },
+    "candleVariants": {
+      "label": "蜡烛种类",
+      "description": "独特的香味、设计和风格"
+    },
+    "yearsOfExcellence": {
+      "label": "卓越年数",
+      "value": "自2007年起",
+      "description": "17+年精心制作优质蜡烛"
+    },
+    "cities": {
+      "label": "服务遍及印尼各地",
+      "value": "主要城市",
+      "description": "如雅加达、巴厘岛等"
+    },
+    "candlesSold": {
+      "label": "年销售蜡烛数量",
+      "description": "深受家庭和企业信赖"
+    },
+    "quality": {
+      "label": "质量保证",
+      "description": "追求卓越"
+    }
+  },
+  "footer": {
+    "about": "关于我们",
+    "profile": "公司简介",
+    "careers": "招聘信息",
+    "blog": "博客",
+    "contact": "联系我们",
+    "help": "帮助",
+    "howToBuy": "如何购买",
+    "payment": "支付",
+    "shipping": "配送",
+    "returns": "退货",
+    "faq": "常见问题",
+    "info": "信息",
+    "terms": "条款与条件",
+    "privacy": "隐私政策",
+    "shippingPolicy": "配送政策",
+    "returnPolicy": "退货政策"
+  },
+  "social": {
+    "instagram": "Instagram",
+    "facebook": "Facebook",
+    "twitter": "Twitter",
+    "whatsapp": "WhatsApp"
+  },
+  "payment": {
+    "bca": "BCA",
+    "mandiri": "Mandiri",
+    "bni": "BNI",
+    "bri": "BRI"
+  }
+}

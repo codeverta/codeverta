@@ -1,0 +1,181 @@
+{
+  "brand": "밀리언 캔들스",
+  "flag": "🇰🇷",
+  "menu": {
+    "login": "로그인",
+    "home": "홈",
+    "products": "제품",
+    "how_to_order": "주문 방법",
+    "address": "주소",
+    "blog": "블로그",
+    "gallery": "갤러리",
+    "about": "회사 소개"
+  },
+  "address": {
+    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesia"
+  },
+  "tagline": {
+    "local_producer": "로컬 캔들 제조업체",
+    "national_scale": "국가 규모"
+  },
+  "description": "저희는 아로마 테라피 캔들, 기념품 캔들, 컬러 캔들, 장식용 캔들, 예배용 캔들, 영적 캔들, 캔들 제작 등 다양한 고급 캔들을 제공하는 공급업체입니다. 결혼식, 기업 행사, 여행 기념품 등 모든 이벤트에 적합한 아름다운 장식용 캔들을 제공합니다.",
+  "how_to_order_candles": "캔들 주문 방법",
+  "whatsapp": "왓츠앱",
+  "our_products": "우리 제품",
+  "other_products": "기타 제품",
+  "disclaimer_price": "* 표시된 가격은 도매가입니다",
+  "features": {
+    "eco_friendly": "친환경",
+    "made_from": "100% 천연 팜 왁스와 에센셜 오일로 제작",
+    "handmade": "수제 제작",
+    "crafted_with_love": "장인정신으로 세심하게 제작",
+    "long_lasting": "지속성",
+    "burn_time": "캔들당 최대 12시간 연소",
+    "handcrafted_with_love": "사랑을 담아 제작",
+    "make_beautiful_memories": "아름다운 추억 만들기",
+    "our_candle": "우리 캔들과 함께",
+    "souvenir_description": "우리의 장식용 기념품 캔들로 당신의 이벤트나 여행에서 아름다운 추억을 가져가세요. 고급 재료로 제작하고 아티스트들이 아름답게 장식했습니다."
+  },
+  "shipping": {
+    "package": "캔들 배송 패키지",
+    "fast_shipping": "빠른 배송",
+    "nationwide": "인도네시아 전역"
+  },
+  "premium_collection": {
+    "title": "프리미엄 컬렉션",
+    "subtitle": "아로마 테라피 캔들 제품",
+    "description": "최고급 천연 재료로 만든 수제 아로마 테라피 캔들의 아름다움과 혜택을 누리세요."
+  },
+  "quality_section": {
+    "product_quality": "제품 품질",
+    "product_quality_description": "고품질 재료만을 사용하여 장식용 캔들을 제작하며, 모든 제품은 안전성과 내구성을 보장하기 위해 테스트됩니다. 각 캔들은 재능 있는 아티스트가 아름답고 독특하게 장식합니다.",
+    "size_and_color": "크기와 색상",
+    "size_and_color_description": "장식용 캔들은 소형부터 대형까지 다양한 크기로 제공되며, 흰색, 파란색, 녹색, 빨간색 등 다양한 색상으로 이벤트 테마에 맞게 선택할 수 있습니다.",
+    "calming_aroma": "진정 효과 아로마",
+    "calming_aroma_description": "장식용 캔들은 또한 편안한 향을 제공하여 평화와 안정을 선사합니다. 고급 향수 오일을 사용하여 오래 지속되는 향을 전달합니다."
+  },
+  "lifespan": {
+    "title": "수명",
+    "description": "최대 12시간"
+  },
+  "natural": {
+    "title": "100% 천연",
+    "description": "친환경"
+  },
+  "business_opportunity": {
+    "title": "도매 비즈니스 기회",
+    "description": "프리미엄 캔들 컬렉션으로 비즈니스를 성장시키세요. 호텔, 스파, 부티크, 기프트샵에 적합합니다.",
+    "custom_branding": "맞춤형 브랜딩 옵션 제공",
+    "no_moq_white_label": "최소 주문 수량 없이 화이트 라벨 서비스 제공"
+  },
+  "wholesale_benefits": {
+    "title": "도매 혜택",
+    "competitive_price": "경쟁력 있는 가격",
+    "competitive_price_description": "대량 주문 시 소매가 대비 최대 5% 할인 제공",
+    "exclusive_aromas": "독점 향기",
+    "exclusive_aromas_description": "도매 고객 전용 향기 라인업 제공",
+    "dedicated_support": "전담 지원",
+    "dedicated_support_description": "도매 고객 전용 담당 매니저 제공"
+  },
+  "blog_section": {
+    "title": "우리의 이야기",
+    "description": "캔들의 역사, 종류, 직접 만들기, 목적별 캔들 선택법 등 다양한 주제를 다루는 블로그 모음입니다. 일상에서 희망과 따뜻함의 상징이 되는 캔들의 감동적인 이야기들도 만나보세요. 함께 캔들의 마법을 탐험해봅시다."
+  },
+  "testimonials": {
+    "title": "고객 후기",
+    "sarah_johnson": {
+      "quote": "호텔 로비의 향기에 대해 손님들이 항상 칭찬합니다. 바닐라 아로마 캔들은 매우 환영하는 분위기를 만들어줍니다.",
+      "name": "사라 존슨",
+      "position": "호텔 매니저, 더 그랜드 플라자"
+    },
+    "emily_chen": {
+      "quote": "부티크 오너로서 이 캔들의 품질과 프레젠테이션에 매우 만족합니다. 베스트셀러 선물 상품이 되었습니다!",
+      "name": "에밀리 첸",
+      "position": "오너, 더 큐레이티드 코너"
+    },
+    "michael_rodriguez": {
+      "quote": "이 캔들은 연소 시간이 길고 향이 완벽합니다 — 너무 강하지도 않습니다. 컬렉션의 모든 종류를 구매했습니다!",
+      "name": "마이클 로드리게스",
+      "position": "충성 고객"
+    },
+    "wedding_customer": {
+      "quote": "@souvenirlilin 덕분에 아름다운 제품을 구매할 수 있었습니다! 결혼식을 위한 캔들은 이벤트에 완벽한 포인트가 되었고, 하객들도 매우 좋아했습니다.",
+      "name": "고객"
+    }
+  },
+  "about_us": {
+    "content": "# Million Candles 소개\n\nMillion Candles는 욕야카르타 출신의 캔들 회사로, 독특하고 고품질 디자인의 다양한 캔들을 제공합니다. 우리는 고급 재료와 우수한 제작 기술을 사용하여 아름답고 향기로운 캔들을 만듭니다.\n\n소형 캔들부터 결혼식, 생일 파티, 교회 예배, 정전 등 특별한 행사에 사용할 수 있는 대형 캔들까지 다양한 제품을 제공하고 있습니다. 또한 집안의 분위기를 차분하게 만들어줄 수 있는 향초도 준비되어 있습니다.\n\n다양한 색상과 디자인을 제공하며, 고객님의 취향에 맞게 맞춤 제작도 가능합니다.\n\n우리는 품질과 고객의 안전을 최우선으로 생각하며, 항상 안전하고 환경 친화적인 재료를 사용하기 위해 노력하고 있습니다.\n\n집에 로맨틱한 분위기를 더하거나 특별한 날을 위한 독특한 선물을 찾고 계신다면, 저희 웹사이트를 방문하여 다양한 캔들을 확인해보세요. 고객님의 필요에 맞는 완벽한 캔들을 찾을 수 있도록 도와드리겠습니다."
+  },
+  "blog": {
+    "title": "양초에 대한 이야기와 팁 모음",
+    "description": "양초의 역사와 다양한 종류부터 직접 양초를 만드는 방법과 다양한 용도에 맞는 양초를 선택하는 방법까지 다양한 측면을 다루는 블로그 모음입니다.",
+    "not_found": {
+      "title": "게시물을 찾을 수 없습니다",
+      "description": "검색어 또는 선택한 카테고리를 변경해보세요"
+    }
+  },
+  "gallery": {
+    "title": "갤러리",
+    "description": "우리 제품 사진 및 비디오 모음"
+  },
+  "stats": {
+    "title": "숫자로 보는 우리의 영향력",
+    "subtitle": "2007년부터 인도네시아 전역에 수제 양초를 밝혀왔습니다",
+    "candlesProduced": {
+      "label": "일일 생산 양초 수",
+      "description": "고효율 생산 시설"
+    },
+    "candleVariants": {
+      "label": "양초 종류",
+      "description": "독특한 향, 디자인, 스타일"
+    },
+    "yearsOfExcellence": {
+      "label": "우수한 경력",
+      "value": "2007년부터",
+      "description": "17년 이상의 프리미엄 양초 제작 경험"
+    },
+    "cities": {
+      "label": "인도네시아 전역 서비스",
+      "value": "주요 도시",
+      "description": "자카르타, 발리 등"
+    },
+    "candlesSold": {
+      "label": "연간 판매 양초",
+      "description": "가정과 기업의 신뢰"
+    },
+    "quality": {
+      "label": "품질 보증",
+      "description": "탁월함에 대한 약속"
+    }
+  },
+  "footer": {
+    "about": "회사 소개",
+    "profile": "회사 프로필",
+    "careers": "채용 정보",
+    "blog": "블로그",
+    "contact": "문의하기",
+    "help": "도움말",
+    "howToBuy": "구매 방법",
+    "payment": "결제",
+    "shipping": "배송",
+    "returns": "반품",
+    "faq": "자주 묻는 질문",
+    "info": "정보",
+    "terms": "이용 약관",
+    "privacy": "개인정보처리방침",
+    "shippingPolicy": "배송 정책",
+    "returnPolicy": "반품 정책"
+  },
+  "social": {
+    "instagram": "인스타그램",
+    "facebook": "페이스북",
+    "twitter": "트위터",
+    "whatsapp": "왓츠앱"
+  },
+  "payment": {
+    "bca": "BCA",
+    "mandiri": "Mandiri",
+    "bni": "BNI",
+    "bri": "BRI"
+  }
+}

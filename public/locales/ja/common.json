@@ -1,0 +1,185 @@
+{
+  "brand": "ミリオンキャンドルズ",
+  "flag": "🇯🇵",
+  "menu": {
+    "login": "ログイン",
+    "home": "ホーム",
+    "products": "製品",
+    "how_to_order": "注文方法",
+    "address": "住所",
+    "blog": "ブログ",
+    "gallery": "ギャラリー",
+    "about": "会社情報"
+  },
+  "address": {
+    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesia"
+  },
+  "tagline": {
+    "local_producer": "ローカルキャンドルメーカー",
+    "national_scale": "ナショナルスケール"
+  },
+  "description": "アロマキャンドル、ギフトキャンドル、カラフルキャンドル、装飾用キャンドル、礼拝用キャンドル、スピリチュアルキャンドル、キャンドルメイキングなど、様々な高品質キャンドルを提供しています。結婚式、企業イベント、旅行のお土産など、あらゆるイベントに最適な美しい装飾キャンドルをご用意しています。",
+  "how_to_order_candles": "キャンドルの注文方法",
+  "whatsapp": "WhatsApp",
+  "our_products": "私たちの製品",
+  "other_products": "その他の製品",
+  "disclaimer_price": "* 表示価格は卸売価格です",
+  "features": {
+    "eco_friendly": "エコフレンドリー",
+    "made_from": "100% 天然パームワックスとエッセンシャルオイル製",
+    "handmade": "手作り",
+    "crafted_with_love": "職人の心で丁寧に製作",
+    "long_lasting": "長持ち",
+    "burn_time": "最大12時間の燃焼時間",
+    "handcrafted_with_love": "愛情込めて手作り",
+    "make_beautiful_memories": "美しい思い出を作る",
+    "our_candle": "私たちのキャンドルと共に",
+    "souvenir_description": "私たちの装飾用ギフトキャンドルで、あなたのイベントや旅の思い出をさらに特別にしましょう。高級素材とアーティストによる美しい装飾で仕上げています。"
+  },
+  "shipping": {
+    "package": "キャンドル配送パッケージ",
+    "fast_shipping": "迅速な配送",
+    "nationwide": "インドネシア全土対応"
+  },
+  "premium_collection": {
+    "title": "プレミアムコレクション",
+    "subtitle": "アロマキャンドル製品",
+    "description": "最高級の天然素材を使った手作りアロマキャンドルの美しさと恩恵をお楽しみください。"
+  },
+  "quality_section": {
+    "product_quality": "製品の品質",
+    "product_quality_description": "高品質素材のみを使用し、安全性と耐久性を確保するために厳しくテストされた装飾キャンドルを製造しています。各キャンドルは才能あるアーティストによって美しく、独創的に仕上げられています。",
+    "size_and_color": "サイズとカラー",
+    "size_and_color_description": "装飾キャンドルは、小型から大型まで様々なサイズがあり、ホワイト、ブルー、グリーン、レッドなど多彩なカラーでイベントテーマに合わせて選べます。",
+    "calming_aroma": "リラックス効果のある香り",
+    "calming_aroma_description": "装飾キャンドルはリラックスできる香りも提供し、心の平穏をもたらします。高級フレグランスオイルを使用し、長持ちする香りを実現しています。"
+  },
+  "lifespan": {
+    "title": "寿命",
+    "description": "最大12時間"
+  },
+  "natural": {
+    "title": "100% 天然",
+    "description": "環境に優しい"
+  },
+  "business_opportunity": {
+    "title": "卸売ビジネスチャンス",
+    "description": "プレミアムキャンドルコレクションでビジネスを拡大しましょう。ホテル、スパ、ブティック、ギフトショップに最適です。",
+    "custom_branding": "カスタムブランディングオプションあり",
+    "no_moq_white_label": "最小注文数なしでホワイトラベル対応"
+  },
+  "wholesale_benefits": {
+    "title": "卸売のメリット",
+    "competitive_price": "競争力のある価格",
+    "competitive_price_description": "大量注文で小売価格より最大5%割引",
+    "exclusive_aromas": "限定フレグランス",
+    "exclusive_aromas_description": "卸売顧客専用の香りラインアップを提供",
+    "dedicated_support": "専任サポート",
+    "dedicated_support_description": "卸売顧客向けの専任マネージャーがサポート"
+  },
+  "blog_section": {
+    "title": "私たちのストーリー",
+    "description": "キャンドルの歴史、種類、手作り方法、目的別の選び方など、様々なテーマを取り上げたブログコレクションです。日常に希望と温もりをもたらすキャンドルの感動的な物語も紹介しています。キャンドルの魔法を一緒に探検しましょう。"
+  },
+  "testimonials": {
+    "title": "お客様の声",
+    "sarah_johnson": {
+      "quote": "ホテルのロビーの香りについて、ゲストからいつもお褒めの言葉をいただきます。バニラアロマキャンドルがとても温かい雰囲気を作り出してくれます。",
+      "name": "サラ・ジョンソン",
+      "position": "ホテルマネージャー、ザ・グランドプラザ"
+    },
+    "emily_chen": {
+      "quote": "ブティックオーナーとして、これらのキャンドルの品質とプレゼンテーションに非常に満足しています。ベストセラーギフト商品となりました！",
+      "name": "エミリー・チェン",
+      "position": "オーナー、ザ・キュレイテッドコーナー"
+    },
+    "michael_rodriguez": {
+      "quote": "このキャンドルは燃焼時間が長く、香りも完璧です — 強すぎずちょうどいいです。コレクションの全種類を購入しました！",
+      "name": "マイケル・ロドリゲス",
+      "position": "ロイヤルカスタマー"
+    },
+    "wedding_customer": {
+      "quote": "@souvenirlilin さんのおかげで素晴らしい製品を購入できました！結婚式のためのキャンドルがイベントに完璧なアクセントとなり、ゲストにも大好評でした。",
+      "name": "お客様"
+    }
+  },
+  "about_us": {
+    "content": "# Million Candlesについて\n\nMillion Candlesは、ジョグジャカルタ発のキャンドル会社で、ユニークで高品質なデザインのさまざまなキャンドルを提供しています。私たちは高品質な素材と優れた製造技術を使用して、美しく香り高いキャンドルを作り上げています。\n\n小さなキャンドルから結婚式、誕生日パーティー、教会の式典、停電時など特別なイベントで使用できる大きなキャンドルまで、幅広いラインナップをご用意しています。さらに、自宅でリラックスした雰囲気を演出できる香り付きキャンドルも取り揃えています。\n\nお客様の好みに合わせてカスタマイズできるさまざまなカラーやデザインを取り揃えており、オリジナルデザインのキャンドル制作も承ります。\n\n私たちは品質とお客様の安全を非常に重視しており、常に安全で環境に優しい素材を使用するよう努めています。\n\nご自宅にロマンチックな雰囲気を加えたい方や、特別なイベントにぴったりのユニークなギフトをお探しの方は、ぜひ私たちのウェブサイトをご覧ください。あなたにぴったりのキャンドル探しをお手伝いさせていただきます。"
+  },
+  "blog": {
+    "title": "キャンドルに関する物語とヒントのコレクション",
+    "description": "キャンドルの歴史や種類から、自分でキャンドルを作る方法、さまざまな用途に適したキャンドルの選び方まで、さまざまな側面を紹介するブログのコレクションです。",
+    "not_found": {
+      "title": "記事が見つかりませんでした",
+      "description": "検索キーワードまたは選択したカテゴリを変更してみてください"
+    }
+  },
+  "gallery": {
+    "title": "ギャラリー",
+    "description": "私たちの製品の写真とビデオのコレクション"
+  },
+  "stats": {
+    "title": "数字で見る私たちの影響力",
+    "subtitle": "2007年からインドネシア全土の家庭を手作りキャンドルで照らしています",
+    "candlesProduced": {
+      "label": "1日あたりのキャンドル生産数",
+      "description": "高効率な生産施設"
+    },
+    "candleVariants": {
+      "label": "キャンドルの種類",
+      "description": "ユニークな香り、デザイン、スタイル"
+    },
+    "yearsOfExcellence": {
+      "label": "卓越の年数",
+      "value": "2007年から",
+      "description": "17年以上のプレミアムキャンドル制作"
+    },
+    "cities": {
+      "label": "インドネシア全域対応",
+      "value": "主要都市",
+      "description": "ジャカルタ、バリなど"
+    },
+    "candlesSold": {
+      "label": "年間販売キャンドル数",
+      "description": "家庭と企業からの信頼"
+    },
+    "quality": {
+      "label": "品質保証",
+      "description": "卓越性への取り組み"
+    }
+  },
+  "footer": {
+    "about": "私たちについて",
+    "profile": "会社概要",
+    "careers": "採用情報",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "help": "ヘルプ",
+    "howToBuy": "購入方法",
+    "payment": "お支払い",
+    "shipping": "配送",
+    "returns": "返品",
+    "faq": "よくある質問",
+    "info": "情報",
+    "terms": "利用規約",
+    "privacy": "プライバシーポリシー",
+    "shippingPolicy": "配送ポリシー",
+    "returnPolicy": "返品ポリシー"
+  },
+  "social": {
+    "instagram": "インスタグラム",
+    "facebook": "フェイスブック",
+    "twitter": "ツイッター",
+    "whatsapp": "ワッツアップ"
+  },
+  "payment": {
+    "bca": "BCA",
+    "mandiri": "Mandiri",
+    "bni": "BNI",
+    "bri": "BRI"
+  },
+  "about": {
+    "map_title": "当社のキャンドルはインドネシア全土で信頼されています",
+    "map_description": "スマトラからパプアまで、当社のキャンドルはインドネシア各地の家庭や企業に暖かさ、光、そして安らぎを届けてきました。地図上の各地点は、物語、瞬間、そして私たちの職人技の輝きを信頼してくださる忠実なお客様を表しています。"
+  }
+}

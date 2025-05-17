@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Million Candles",
+    "subtitle": "Produsen lilin pilihan untuk momen spesial Anda"
+  },
+  "howToOrder": {
+    "title": "Cara Order Produk Lilin",
+    "step1": {
+      "title": "1. Hubungi Kami",
+      "description": "Silahkan hubungi kami melalui WhatsApp di nomor",
+      "phone": "081578956156",
+      "contactNote": "untuk memulai pesanan Anda. Kami akan membantu dengan informasi produk dan ketersediaan stok."
+    },
+    "step2": {
+      "title": "2. Pilih Cara Pengambilan",
+      "description": "Ada dua opsi yang tersedia untuk mendapatkan produk kami:",
+      "pickupTitle": "Ambil di lokasi",
+      "pickupDescription": "Kunjungi toko kami di Jalan Kaliurang KM 9, Sleman, Yogyakarta",
+      "deliveryTitle": "Pesan antar",
+      "deliveryDescription": "Kami dapat mengirim melalui Gojek, Grab, atau jasa pengiriman lainnya",
+      "note": "*Pesanan dalam jumlah besar memerlukan pemesanan terlebih dahulu"
+    },
+    "step3": {
+      "title": "3. Pembayaran DP",
+      "description": "Untuk pesanan dalam jumlah banyak, Anda perlu membayar Down Payment (DP) minimal 30% dari total harga untuk konfirmasi pesanan. Pembayaran dapat dilakukan melalui transfer bank."
+    },
+    "step4": {
+      "title": "4. Pengiriman & Pelunasan",
+      "description": "Untuk pengiriman, pembayaran harus lunas sebelum produk dikirim. Kami akan memberikan informasi ketika pesanan Anda siap dikirim serta nomor resi pengiriman jika tersedia."
+    },
+    "step5": {
+      "title": "5. Waktu Produksi",
+      "description": "Lama waktu pemesanan bergantung pada jumlah dan jenis lilin yang Anda pesan. Untuk pesanan kecil, biasanya siap dalam 1-3 hari. Untuk pesanan besar, kami akan memberikan estimasi waktu setelah konsultasi dengan Anda."
+    }
+  },
+  "cta": {
+    "title": "Siap Memesan?",
+    "subtitle": "Hubungi kami sekarang untuk mendapatkan lilin aromaterapi berkualitas tinggi!",
+    "button": "Hubungi via WhatsApp"
+  }
+}

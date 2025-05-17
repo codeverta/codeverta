@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Triệu Cây Nến",
+    "subtitle": "Nhà sản xuất nến hàng đầu cho những khoảnh khắc đặc biệt của bạn"
+  },
+  "howToOrder": {
+    "title": "Cách Đặt Hàng Sản Phẩm Nến",
+    "step1": {
+      "title": "1. Liên Hệ Với Chúng Tôi",
+      "description": "Vui lòng liên hệ với chúng tôi qua WhatsApp theo số",
+      "phone": "081578956156",
+      "contactNote": "để bắt đầu đơn đặt hàng của bạn. Chúng tôi sẽ hỗ trợ thông tin sản phẩm và tình trạng còn hàng."
+    },
+    "step2": {
+      "title": "2. Chọn Phương Thức Nhận Hàng",
+      "description": "Có hai tùy chọn để nhận sản phẩm của chúng tôi:",
+      "pickupTitle": "Nhận tại địa điểm",
+      "pickupDescription": "Ghé thăm cửa hàng của chúng tôi tại Jalan Kaliurang KM 9, Sleman, Yogyakarta",
+      "deliveryTitle": "Giao hàng",
+      "deliveryDescription": "Chúng tôi có thể giao hàng qua Gojek, Grab hoặc các dịch vụ giao hàng khác",
+      "note": "*Đơn hàng số lượng lớn cần được đặt trước"
+    },
+    "step3": {
+      "title": "3. Thanh Toán Đặt Cọc",
+      "description": "Đối với đơn hàng số lượng lớn, bạn cần thanh toán trước (DP) tối thiểu 30% tổng giá trị đơn hàng để xác nhận đơn hàng. Thanh toán có thể được thực hiện qua chuyển khoản ngân hàng."
+    },
+    "step4": {
+      "title": "4. Giao Hàng & Thanh Toán Phần Còn Lại",
+      "description": "Đối với giao hàng, cần thanh toán đầy đủ trước khi sản phẩm được gửi đi. Chúng tôi sẽ cung cấp thông tin khi đơn hàng của bạn sẵn sàng giao và số vận đơn (nếu có)."
+    },
+    "step5": {
+      "title": "5. Thời Gian Sản Xuất",
+      "description": "Thời gian đặt hàng tùy thuộc vào số lượng nến bạn đặt. Đối với đơn hàng nhỏ, thường sẵn sàng trong 1-3 ngày. Đối với đơn hàng lớn, chúng tôi sẽ cung cấp ước tính thời gian sau khi trao đổi với bạn."
+    }
+  },
+  "cta": {
+    "title": "Sẵn Sàng Đặt Hàng?",
+    "subtitle": "Liên hệ với chúng tôi ngay để sở hữu những cây nến thơm chất lượng cao!",
+    "button": "Liên hệ qua WhatsApp"
+  }
+}
