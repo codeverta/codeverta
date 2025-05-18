@@ -175,11 +175,11 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   // Get meta description
   const metaDescription = useMemo(() => {
     if (searchTerm) {
-      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting news about coding, programming, and technology.`;
+      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting others about coding, programming, and technology.`;
     }
     return allPostsData.length > 0
       ? allPostsData[0].desc
-      : "Discover coding news, tech guides, and programming tips for developers of all levels.";
+      : "Discover coding others, tech guides, and programming tips for developers of all levels.";
   }, [searchTerm, allPostsData]);
 
   // Format date function
@@ -254,7 +254,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   const handleShare = (platform: string, postId: string) => {
     const postUrl = `${
       typeof window !== "undefined" ? window.location.origin : ""
-    }/news/${postId}`;
+    }/others/${postId}`;
     const post = allPostsData.find((p) => p.id === postId);
     const title = post?.title || "Tech Tutorial";
     const encodedTitle = encodeURIComponent(title);
@@ -315,7 +315,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
               {t(
                 "blog.description",
-                "Learn to code with our comprehensive news. From beginner to advanced, discover the latest in programming, web development, and tech."
+                "Learn to code with our comprehensive others. From beginner to advanced, discover the latest in programming, web development, and tech."
               )}
             </p>
 
@@ -327,7 +327,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-4 w-4" />
                 <Input
-                  placeholder="Search news..."
+                  placeholder="Search others..."
                   value={searchTerm}
                   onChange={handleSearchChange}
                   className="pl-10 pr-24 h-12 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-full"
@@ -439,7 +439,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
                       Featured Tutorial
                     </h2>
-                    <Link href="/blog/news">
+                    <Link href="/blog/others">
                       <Button
                         variant="link"
                         className="text-blue-600 dark:text-blue-400 p-0"
@@ -493,7 +493,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </div>
                         </div>
 
-                        <Link href={`/news/${currentPosts[0].id}`}>
+                        <Link href={`/others/${currentPosts[0].id}`}>
                           <h3 className="text-2xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-4">
                             {currentPosts[0].title}
                           </h3>
@@ -504,7 +504,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                         </p>
 
                         <div className="flex justify-between items-center mt-auto">
-                          <Link href={`/news/${currentPosts[0].id}`}>
+                          <Link href={`/others/${currentPosts[0].id}`}>
                             <Button variant="default" size="sm">
                               Read Tutorial
                             </Button>
@@ -645,7 +645,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </p>
                         </div>
 
-                        <Link href={`/news/${post.id}`}>
+                        <Link href={`/others/${post.id}`}>
                           <h3 className="font-bold text-lg text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-2 line-clamp-2">
                             {post.title}
                           </h3>
@@ -672,7 +672,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                       </CardContent>
 
                       <CardFooter className="px-5 py-3 bg-slate-50 dark:bg-slate-800/50 flex justify-between">
-                        <Link href={`/news/${post.id}`}>
+                        <Link href={`/others/${post.id}`}>
                           <Button
                             variant="link"
                             className="p-0 h-auto text-blue-600 dark:text-blue-400 text-sm"
@@ -759,12 +759,12 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                 <Search className="h-10 w-10" />
               </div>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
-                {t("blog.not_found.title", "No news found")}
+                {t("blog.not_found.title", "No others found")}
               </h2>
               <p className="text-slate-600 dark:text-slate-300 mb-6 max-w-md mx-auto">
                 {t(
                   "blog.not_found.description",
-                  "We couldn't find any news matching your search criteria. Try adjusting your search terms or browse our categories."
+                  "We couldn't find any others matching your search criteria. Try adjusting your search terms or browse our categories."
                 )}
               </p>
               <Button
@@ -826,7 +826,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 
 export async function getStaticProps({ locale }) {
   // Get posts and add sample categories and read times
-  const allPostsData = getSortedPostsData("news").map((post, index) => {
+  const allPostsData = getSortedPostsData("others").map((post, index) => {
     // Add sample categories and read times (in a real app, these would come from the actual data)
     const categories = [
       "Sejarah Lilin",

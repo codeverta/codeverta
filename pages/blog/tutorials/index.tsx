@@ -307,7 +307,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <Code className="w-4 h-4 mr-1" /> Coding & Tech Tutorials
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl dark:text-white mb-4">
-              Codeverta
+              Codeverta {" "}
               <span className="text-blue-600 dark:text-blue-400">
                 Tutorials
               </span>

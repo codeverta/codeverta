@@ -83,8 +83,8 @@ export function getAllPostsData() {
   return allPosts;
 }
 
-export function getAllPostIds() {
-  const languages = getSupportedLanguages();
+export function getAllPostIds(folder='tutorials') {
+  const languages = [folder];
   let allPostIds = [];
 
   languages.forEach((lang) => {

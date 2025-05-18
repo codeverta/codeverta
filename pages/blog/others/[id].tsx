@@ -272,7 +272,7 @@ export default Post;
 // In Pages Router, we use getStaticProps instead of directly fetching data in component
 export async function getStaticProps({ params, locale }) {
   const slug = params.id;
-  const postData = await getPostData(slug, "tutorials");
+  const postData = await getPostData(slug, "others");
   return {
     props: {
       postData,
@@ -285,7 +285,7 @@ export async function getStaticProps({ params, locale }) {
 
 // getStaticPaths replaces generateStaticParams - they're functionally similar
 export async function getStaticPaths({ locales }) {
-  const postIds = getAllPostIds('news');
+  const postIds = getAllPostIds('others');
   const paths: {
     params: {
       id: string;

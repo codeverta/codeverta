@@ -34,19 +34,25 @@ export default function Navbar() {
             {
               title: "Frontend Development",
               description: "HTML, CSS, JavaScript, and modern frameworks",
-              href: "/tutorials/frontend",
+              href: "/frontend",
               icon: "heroicons:code-bracket",
             },
             {
               title: "Backend Development",
               description: "Node.js, Python, PHP, and database technologies",
-              href: "/tutorials/backend",
+              href: "/backend",
               icon: "heroicons:server",
             },
             {
               title: "Mobile Development",
               description: "React Native, Flutter, and native app development",
-              href: "/tutorials/mobile",
+              href: "/mobile",
+              icon: "heroicons:device-phone-mobile",
+            },
+            {
+              title: "Cyber Security",
+              description: "Belajar mengenai keamanan cyber",
+              href: "/cyber-security",
               icon: "heroicons:device-phone-mobile",
             },
           ],
@@ -194,18 +200,23 @@ export default function Navbar() {
           links: [
             {
               title: "Web Development",
-              href: "/blog/topics/web-dev",
+              href: "/blog/web-dev",
               icon: "heroicons:globe-alt",
             },
             {
               title: "DevOps & Cloud",
-              href: "/blog/topics/devops",
+              href: "/blog/devops",
               icon: "heroicons:cloud",
             },
             {
               title: "Artificial Intelligence",
-              href: "/blog/topics/ai",
+              href: "/blog/ai",
               icon: "heroicons:brain",
+            },
+            {
+              title: "Others",
+              href: "/blog/others",
+              icon: "heroicons:sparkles",
             },
           ],
         },
