@@ -128,7 +128,7 @@ function Post({ postData, slug }) {
         openGraph={{
           title: postData.title,
           description: postData.desc,
-          url: `https://www.souvenirlilin.id/posts/${slug}`,
+          url: `https://www.codeverta.com/posts/${slug}`,
           siteName: "Million Candles",
           images: [
             {
@@ -152,10 +152,10 @@ function Post({ postData, slug }) {
       {/* Add the BlogSchemaJsonLd component */}
       <BlogSchemaJsonLd
         post={postData}
-        baseUrl="https://souvenirlilin.id"
+        baseUrl="https://codeverta.com"
         author={{
           name: postData.author || "Rabih Utomo",
-          url: "https://souvenirlilin.id/about",
+          url: "https://codeverta.com/about",
         }}
       />
 
@@ -245,7 +245,7 @@ function Post({ postData, slug }) {
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
             <DisqusThread
-              url={"https://www.souvenirlilin.id/posts/" + slug}
+              url={"https://www.codeverta.com/posts/" + slug}
               identifier={slug}
               title={postData.title}
             />

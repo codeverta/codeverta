@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://souvenirlilin.id
+Host: https://codeverta.com
 
 # Sitemaps
-Sitemap: https://souvenirlilin.id/sitemap.xml
+Sitemap: https://codeverta.com/sitemap.xml

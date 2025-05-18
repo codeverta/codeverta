@@ -65,7 +65,7 @@ const generateLanguageSitemaps = () => {
   i18n.locales.forEach((locale) => {
     sitemapIndex += "  <sitemap>\n";
     sitemapIndex += `    <loc>${
-      process.env.SITE_URL || "https://souvenirlilin.id"
+      process.env.SITE_URL || "https://codeverta.com"
     }/sitemaps/sitemap-${locale}.xml</loc>\n`;
     sitemapIndex += `    <lastmod>${new Date().toISOString()}</lastmod>\n`;
     sitemapIndex += "  </sitemap>\n";

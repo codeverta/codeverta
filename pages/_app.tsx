@@ -47,9 +47,9 @@ function App({ Component, pageProps }: AppLayoutProps) {
   const pageTitle =
     "Produsen Lilin Terdekat di Jogja, Jakarta & Seluruh Indonesia";
   const pageDescription = `Million Candles adalah produsen lilin aromaterapi handmade dengan wangi menenangkan, cocok untuk dekorasi, kado, dan relaksasi. Tersedia pengiriman ke Jogja, Jakarta, Bandung, Bali, dan seluruh Indonesia.`;
-  const ogImageUrl = "https://souvenirlilin.id/og-image.png";
+  const ogImageUrl = "https://codeverta.com/og-image.png";
   const siteName = "UD Million Candles";
-  const siteUrl = "https://souvenirlilin.id";
+  const siteUrl = "https://codeverta.com";
   const twitterHandle = "@souvenirlilin";
   const keywords =
     "jual lilin, jual lilin jogja, lilin aromaterapi jogja, lilin batang, souvenir cantik, souvenir jogja, ud million candles, souvenir lilin, lilin warna, lilin hias, lilin berkualitas";

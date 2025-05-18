@@ -32,8 +32,8 @@ export default function Document() {
             __html: `{
             "@context": "https://schema.org",
             "@type": "Organization",
-            "url": "https://www.souvenirlilin.id",
-            "logo": "https://www.souvenirlilin.id/logolilin.png"
+            "url": "https://www.codeverta.com",
+            "logo": "https://www.codeverta.com/logolilin.png"
           }`,
           }}
           type="application/ld+json"

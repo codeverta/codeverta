@@ -3,12 +3,12 @@ const { i18n } = require("./next-i18next.config");
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://souvenirlilin.id",
+  siteUrl: process.env.SITE_URL || "https://codeverta.com",
   generateRobotsTxt: true,
   // Generate a sitemap for each language
   generateIndexSitemap: false,
   alternateRefs: i18n.locales.map((locale) => ({
-    href: `${process.env.SITE_URL || "https://souvenirlilin.id"}/${locale}`,
+    href: `${process.env.SITE_URL || "https://codeverta.com"}/${locale}`,
     hreflang: locale,
   })),
   transform: async (config, path) => {

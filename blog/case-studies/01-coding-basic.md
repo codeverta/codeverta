@@ -175,4 +175,4 @@ Meski banyak dijadikan ajang promosi produk, festival lampion tetap menjaga nila
 Festival lampion adalah lebih dari sekadar pertunjukan cahaya. Ia adalah lambang budaya, harapan, dan keindahan hidup bersama. Melalui cahaya, kita merayakan masa lalu, menikmati saat ini, dan menyongsong masa depan dengan harapan baru.
 
 ✨ Ingin menghadirkan kehangatan festival lampion ke rumah Anda?
-Kunjungi [souvenirlilin.id](https://souvenirlilin.id) sekarang juga dan temukan koleksi lilin aromaterapi dan lampion mini yang indah—souvenir sempurna untuk setiap momen spesial!
+Kunjungi [codeverta.com](https://codeverta.com) sekarang juga dan temukan koleksi lilin aromaterapi dan lampion mini yang indah—souvenir sempurna untuk setiap momen spesial!

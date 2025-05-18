@@ -43,12 +43,12 @@ export default function Home() {
                   <Zap className="h-5 w-5 text-white relative z-10" />
                   <div className="flex flex-col items-start relative z-10">
                     <span className="text-[15px] font-medium">
-                      🚀 Mulai Sekarang
+                      Mulai Sekarang
                     </span>
                   </div>
                 </Button>
                 <Button className="px-5 py-6 h-[60px] rounded-xl border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-[15px] font-medium text-foreground">
-                  🔍 Jelajahi Konten
+                  Jelajahi Konten
                 </Button>
               </div>
             </div>

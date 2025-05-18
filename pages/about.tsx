@@ -21,10 +21,10 @@ function About() {
       </Head>
       <LocalBusinessJsonLd
         type="Store"
-        id="https://souvenirlilin.id"
+        id="https://codeverta.com"
         name="Supplier Lilin Jogja"
         description="Toko lilin hias dan souvenir terbaik di Jogja."
-        url="https://souvenirlilin.id"
+        url="https://codeverta.com"
         telephone="+6281578956156"
         address={{
           streetAddress: "Jl. Kaliurang Km. 9,5",
@@ -38,10 +38,10 @@ function About() {
           longitude: "110.3979528",
         }}
         images={[
-          "https://souvenirlilin.id/Million-Candles/Lilin-Gelas-Biru/1.png",
-          "https://souvenirlilin.id/Million-Candles/Lilin-Gelas-Biru/2.png",
-          "https://souvenirlilin.id/Million-Candles/Lilin-Gelas-Biru/3.png",
-          "https://souvenirlilin.id/Million-Candles/Lilin-Gelas-Biru/4.png",
+          "https://codeverta.com/Million-Candles/Lilin-Gelas-Biru/1.png",
+          "https://codeverta.com/Million-Candles/Lilin-Gelas-Biru/2.png",
+          "https://codeverta.com/Million-Candles/Lilin-Gelas-Biru/3.png",
+          "https://codeverta.com/Million-Candles/Lilin-Gelas-Biru/4.png",
         ]}
         openingHours={[
           {
@@ -128,7 +128,7 @@ function About() {
         action={{
           actionName: "potentialAction",
           actionType: "ReviewAction",
-          target: "https://souvenirlilin.id",
+          target: "https://codeverta.com",
         }}
       />
       <motion.div

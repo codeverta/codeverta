@@ -4,7 +4,7 @@ import Footer from "components/Footer";
 import { useRouter } from "next/router";
 import Navbar from "@/components/navbar";
 
-const DOMAIN = "https://www.souvenirlilin.id";
+const DOMAIN = "https://www.codeverta.com";
 interface Props {
   children: React.ReactNode;
 }

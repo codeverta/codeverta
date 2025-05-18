@@ -11,19 +11,19 @@ const BreadcrumbSchemaJsonLd = ({ slug, postTitle }) => {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://souvenirlilin.id/",
+        item: "https://codeverta.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Blog",
-        item: "https://souvenirlilin.id/posts",
+        item: "https://codeverta.com/posts",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: postTitle,
-        item: `https://souvenirlilin.id/posts/${slug}`,
+        item: `https://codeverta.com/posts/${slug}`,
       },
     ],
   };

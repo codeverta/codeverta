@@ -16,17 +16,17 @@ const SEOComponents = ({ product, baseUrl }) => {
           {
             position: 1,
             name: "Home",
-            item: "https://souvenirlilin.id/",
+            item: "https://codeverta.com/",
           },
           {
             position: 2,
             name: "Products",
-            item: "https://souvenirlilin.id/products",
+            item: "https://codeverta.com/products",
           },
           {
             position: 3,
             name: product.data[0].attributes.name,
-            item: `https://souvenirlilin.id/products/${product.data[0].attributes.slug}`,
+            item: `https://codeverta.com/products/${product.data[0].attributes.slug}`,
           },
         ]}
       />

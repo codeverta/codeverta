@@ -5,10 +5,10 @@ import Head from "next/head";
 const PostSchemaJsonLd = ({
   post,
   slug,
-  baseUrl = "https://souvenirlilin.id",
+  baseUrl = "https://codeverta.com",
   author = {
     name: "Rabih Utomo",
-    url: "https://souvenirlilin.id/about",
+    url: "https://codeverta.com/about",
   },
 }) => {
   // Blog article schema
