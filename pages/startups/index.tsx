@@ -175,11 +175,11 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   // Get meta description
   const metaDescription = useMemo(() => {
     if (searchTerm) {
-      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting tutorials about coding, programming, and technology.`;
+      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting startups about coding, programming, and technology.`;
     }
     return allPostsData.length > 0
       ? allPostsData[0].desc
-      : "Discover coding tutorials, tech guides, and programming tips for developers of all levels.";
+      : "Discover coding startups, tech guides, and programming tips for developers of all levels.";
   }, [searchTerm, allPostsData]);
 
   // Format date function
@@ -254,7 +254,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   const handleShare = (platform: string, postId: string) => {
     const postUrl = `${
       typeof window !== "undefined" ? window.location.origin : ""
-    }/tutorials/${postId}`;
+    }/startups/${postId}`;
     const post = allPostsData.find((p) => p.id === postId);
     const title = post?.title || "Tech Tutorial";
     const encodedTitle = encodeURIComponent(title);
@@ -292,10 +292,10 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
       <Head>
         <title>
           {searchTerm
-            ? `Search Results for "${searchTerm}" - Codeverta Tutorials`
+            ? `Search Results for "${searchTerm}" - Codeverta Startups`
             : selectedCategory
-            ? `${selectedCategory} - Codeverta Tutorials`
-            : "Codeverta - Programming & Technology Tutorials"}
+            ? `${selectedCategory} - Codeverta Startups`
+            : "Codeverta - Programming & Technology Startups"}
         </title>
         <meta name="description" content={metaDescription} />
       </Head>
@@ -304,12 +304,12 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
           {/* Hero Section */}
           <section className="container mx-auto px-4 py-12 text-center space-y-6">
             <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 mb-2">
-              <Code className="w-4 h-4 mr-1" /> Coding & Tech Tutorials
+              <Code className="w-4 h-4 mr-1" /> Coding & Tech Startups
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl dark:text-white mb-4">
               Codeverta{" "}
               <span className="text-blue-600 dark:text-blue-400">
-                Tutorials
+                Startups
               </span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
@@ -327,7 +327,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-4 w-4" />
                 <Input
-                  placeholder="Search tutorials..."
+                  placeholder="Search startups..."
                   value={searchTerm}
                   onChange={handleSearchChange}
                   className="pl-10 pr-24 h-12 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-full"
@@ -439,7 +439,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
                       Featured Tutorial
                     </h2>
-                    <Link href="/blog/tutorials">
+                    <Link href="/blog/startups">
                       <Button
                         variant="link"
                         className="text-blue-600 dark:text-blue-400 p-0"
@@ -493,7 +493,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </div>
                         </div>
 
-                        <Link href={`/tutorials/${currentPosts[0].id}`}>
+                        <Link href={`/startups/${currentPosts[0].id}`}>
                           <h3 className="text-2xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-4">
                             {currentPosts[0].title}
                           </h3>
@@ -504,7 +504,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                         </p>
 
                         <div className="flex justify-between items-center mt-auto">
-                          <Link href={`/tutorials/${currentPosts[0].id}`}>
+                          <Link href={`/startups/${currentPosts[0].id}`}>
                             <Button variant="default" size="sm">
                               Read Tutorial
                             </Button>
@@ -591,13 +591,13 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                 </div>
               )}
 
-              {/* Regular Tutorials Grid */}
+              {/* Regular Startups Grid */}
               <div className="space-y-10">
                 <div className="flex items-center justify-between mb-4">
                   <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
                     {selectedCategory
-                      ? `${selectedCategory} Tutorials`
-                      : "Latest Tutorials"}
+                      ? `${selectedCategory} Startups`
+                      : "Latest Startups"}
                   </h2>
                 </div>
 
@@ -645,7 +645,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </p>
                         </div>
 
-                        <Link href={`/tutorials/${post.id}`}>
+                        <Link href={`/startups/${post.id}`}>
                           <h3 className="font-bold text-lg text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-2 line-clamp-2">
                             {post.title}
                           </h3>
@@ -672,7 +672,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                       </CardContent>
 
                       <CardFooter className="px-5 py-3 bg-slate-50 dark:bg-slate-800/50 flex justify-between">
-                        <Link href={`/tutorials/${post.id}`}>
+                        <Link href={`/startups/${post.id}`}>
                           <Button
                             variant="link"
                             className="p-0 h-auto text-blue-600 dark:text-blue-400 text-sm"
@@ -759,12 +759,12 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                 <Search className="h-10 w-10" />
               </div>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
-                {t("blog.not_found.title", "No tutorials found")}
+                {t("blog.not_found.title", "No startups found")}
               </h2>
               <p className="text-slate-600 dark:text-slate-300 mb-6 max-w-md mx-auto">
                 {t(
                   "blog.not_found.description",
-                  "We couldn't find any tutorials matching your search criteria. Try adjusting your search terms or browse our categories."
+                  "We couldn't find any startups matching your search criteria. Try adjusting your search terms or browse our categories."
                 )}
               </p>
               <Button
@@ -774,7 +774,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                   router.push("/");
                 }}
               >
-                View All Tutorials
+                View All Startups
               </Button>
             </div>
           )}
