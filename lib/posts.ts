@@ -147,7 +147,8 @@ export async function getPostData(id, lang = "en") {
   const { data: frontMatter, content: markdownContent } = matterResult;
 
   // Check if user wants to generate table of contents from frontmatter
-  const shouldGenerateTOC = frontMatter.toc !== false; // Generate TOC by default unless explicitly disabled
+  const shouldGenerateTOC = true;
+  // frontMatter.toc !== false; // Generate TOC by default unless explicitly disabled
 
   // Get all posts in the same language to find related content
   const allPosts = getSortedPostsData(usedLanguage);
