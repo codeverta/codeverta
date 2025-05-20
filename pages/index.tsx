@@ -28,11 +28,11 @@ export default function Home() {
                 Enterprise AI Solution
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter mb-6">
-                AI-Powered Learning Platform untuk Developer Masa Kini
+                Tech Talks. Trends. Tomorrow.
               </h1>
               <p className="text-xl text-muted-foreground md:text-2xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-2xl mb-12">
-                Tutorial, blog, dan insight yang dibantu AI untuk mempercepat
-                proses belajarmu – dari nol hingga mahir.
+                Codeverta menyajikan berita terbaru, analisis mendalam, dan
+                tren teknologi terkini dari seluruh dunia.
               </p>
 
               <TypingPromptInput />

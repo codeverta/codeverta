@@ -827,19 +827,6 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 export async function getStaticProps({ locale }) {
   // Get posts and add sample categories and read times
   const allPostsData = getSortedPostsData("news").map((post, index) => {
-    // Add sample categories and read times (in a real app, these would come from the actual data)
-    const categories = [
-      "Sejarah Lilin",
-      "Tutorial",
-      "Tips & Trik",
-      "Ulasan Produk",
-      "Inspirasi",
-      "Edukasi",
-      "Lilin Ibadah",
-      "Aromaterapi",
-      "Lilin Taper",
-      "Lilin Kristal",
-    ];
     const readTimes = [
       "3 min read",
       "5 min read",
@@ -850,7 +837,7 @@ export async function getStaticProps({ locale }) {
 
     return {
       ...post,
-      category: categories[index % categories.length],
+      category: "news",
       readTime: readTimes[index % readTimes.length],
     };
   });

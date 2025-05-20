@@ -2,7 +2,7 @@
 
 title: "AlphaEvolve: Terobosan AI Google yang Mengubah Dunia Algoritma"
 date: "2025-05-15"
-image: "[https://deepmind.google/static/images/alphaevolve/alphaevolve-hero.jpg](https://deepmind.google/static/images/alphaevolve/alphaevolve-hero.jpg)"
+image: "/assets/google-deepmind.png"
 desc: "Mengenal AlphaEvolve, sistem AI revolusioner dari Google DeepMind yang mampu merancang algoritma baru melampaui kemampuan manusia."
 tags: "AI, DeepMind, AlphaEvolve, Algoritma, Google"
 toc: true

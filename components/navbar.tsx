@@ -24,208 +24,223 @@ export default function Navbar() {
 
   // Integrated mega menu data
   const mainNavItems = [
-    {
-      label: "Learning",
-      mobileClosed: true,
-      megaMenu: [
-        {
-          title: "Tutorials",
-          links: [
-            {
-              title: "Frontend Development",
-              description: "HTML, CSS, JavaScript, and modern frameworks",
-              href: "/frontend",
-              icon: "heroicons:code-bracket",
-            },
-            {
-              title: "Backend Development",
-              description: "Node.js, Python, PHP, and database technologies",
-              href: "/backend",
-              icon: "heroicons:server",
-            },
-            {
-              title: "Mobile Development",
-              description: "React Native, Flutter, and native app development",
-              href: "/mobile",
-              icon: "heroicons:device-phone-mobile",
-            },
-            {
-              title: "Cyber Security",
-              description: "Belajar mengenai keamanan cyber",
-              href: "/cyber-security",
-              icon: "heroicons:device-phone-mobile",
-            },
-          ],
-        },
-        {
-          title: "Courses",
-          links: [
-            {
-              title: "Web Development Bootcamp",
-              description: "Complete guide to modern web development",
-              href: "/courses/web-bootcamp",
-              icon: "heroicons:academic-cap",
-            },
-            {
-              title: "Data Structures & Algorithms",
-              description: "Master coding interviews and problem solving",
-              href: "/courses/dsa",
-              icon: "heroicons:chart-bar",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      label: "Tools & Resources",
-      mobileClosed: true,
-      megaMenu: [
-        {
-          title: "Developer Tools",
-          links: [
-            {
-              title: "Code Playground",
-              description: "Interactive environment to test your code",
-              href: "/tools/playground",
-              icon: "heroicons:beaker",
-            },
-            {
-              title: "AI Code Assistant",
-              description: "Get suggestions and help with your code",
-              href: "/tools/ai-assistant",
-              icon: "heroicons:cpu-chip",
-            },
-            {
-              title: "Code Formatter",
-              description: "Format your code with best practices",
-              href: "/tools/formatter",
-              icon: "heroicons:wrench-screwdriver",
-            },
-          ],
-        },
-        {
-          title: "Resources",
-          links: [
-            {
-              title: "Cheat Sheets",
-              description: "Quick reference guides for developers",
-              href: "/resources/cheat-sheets",
-              icon: "heroicons:document-text",
-            },
-            {
-              title: "Roadmaps",
-              description: "Learning paths for different tech stacks",
-              href: "/resources/roadmaps",
-              icon: "heroicons:map",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      label: "Community",
-      mobileClosed: true,
-      megaMenu: [
-        {
-          title: "Connect",
-          links: [
-            {
-              title: "Forums",
-              description: "Discuss with fellow developers",
-              href: "/community/forums",
-              icon: "heroicons:chat-bubble-left-right",
-            },
-            {
-              title: "Events",
-              description: "Webinars, workshops, and meetups",
-              href: "/community/events",
-              icon: "heroicons:calendar",
-            },
-            {
-              title: "Discord Server",
-              description: "Join our active developer community",
-              href: "/community/discord",
-              icon: "heroicons:users",
-            },
-          ],
-        },
-        {
-          title: "Contribute",
-          links: [
-            {
-              title: "Become an Author",
-              description: "Share your knowledge with tutorials",
-              href: "/contribute/author",
-              icon: "heroicons:pencil-square",
-            },
-            {
-              title: "Open Source",
-              description: "Contribute to our projects on GitHub",
-              href: "/contribute/opensource",
-              icon: "heroicons:code-bracket-square",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      label: "Blog",
-      mobileClosed: true,
-      megaMenu: [
-        {
-          title: "Latest",
-          links: [
-            {
-              title: "Tech News",
-              description: "Updates from the tech world",
-              href: "/blog/tech-news",
-              icon: "heroicons:newspaper",
-            },
-            {
-              title: "Tutorials",
-              description: "Step-by-step guides for developers",
-              href: "/blog/tutorials",
-              icon: "heroicons:book-open",
-            },
-            {
-              title: "Case Studies",
-              description: "Real-world projects and solutions",
-              href: "/blog/case-studies",
-              icon: "heroicons:clipboard-document-list",
-            },
-          ],
-        },
-        {
-          title: "Topics",
-          links: [
-            {
-              title: "Web Development",
-              href: "/blog/web-dev",
-              icon: "heroicons:globe-alt",
-            },
-            {
-              title: "DevOps & Cloud",
-              href: "/blog/devops",
-              icon: "heroicons:cloud",
-            },
-            {
-              title: "Artificial Intelligence",
-              href: "/blog/ai",
-              icon: "heroicons:brain",
-            },
-            {
-              title: "Others",
-              href: "/blog/others",
-              icon: "heroicons:sparkles",
-            },
-          ],
-        },
-      ],
-    },
+    // {
+    //   label: "Learning",
+    //   mobileClosed: true,
+    //   megaMenu: [
+    //     {
+    //       title: "Tutorials",
+    //       links: [
+    //         {
+    //           title: "Frontend Development",
+    //           description: "HTML, CSS, JavaScript, and modern frameworks",
+    //           href: "/frontend",
+    //           icon: "heroicons:code-bracket",
+    //         },
+    //         {
+    //           title: "Backend Development",
+    //           description: "Node.js, Python, PHP, and database technologies",
+    //           href: "/backend",
+    //           icon: "heroicons:server",
+    //         },
+    //         {
+    //           title: "Mobile Development",
+    //           description: "React Native, Flutter, and native app development",
+    //           href: "/mobile",
+    //           icon: "heroicons:device-phone-mobile",
+    //         },
+    //         {
+    //           title: "Cyber Security",
+    //           description: "Belajar mengenai keamanan cyber",
+    //           href: "/cyber-security",
+    //           icon: "heroicons:device-phone-mobile",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "Courses",
+    //       links: [
+    //         {
+    //           title: "Web Development Bootcamp",
+    //           description: "Complete guide to modern web development",
+    //           href: "/courses/web-bootcamp",
+    //           icon: "heroicons:academic-cap",
+    //         },
+    //         {
+    //           title: "Data Structures & Algorithms",
+    //           description: "Master coding interviews and problem solving",
+    //           href: "/courses/dsa",
+    //           icon: "heroicons:chart-bar",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   label: "Tools & Resources",
+    //   mobileClosed: true,
+    //   megaMenu: [
+    //     {
+    //       title: "Developer Tools",
+    //       links: [
+    //         {
+    //           title: "Code Playground",
+    //           description: "Interactive environment to test your code",
+    //           href: "/tools/playground",
+    //           icon: "heroicons:beaker",
+    //         },
+    //         {
+    //           title: "AI Code Assistant",
+    //           description: "Get suggestions and help with your code",
+    //           href: "/tools/ai-assistant",
+    //           icon: "heroicons:cpu-chip",
+    //         },
+    //         {
+    //           title: "Code Formatter",
+    //           description: "Format your code with best practices",
+    //           href: "/tools/formatter",
+    //           icon: "heroicons:wrench-screwdriver",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "Resources",
+    //       links: [
+    //         {
+    //           title: "Cheat Sheets",
+    //           description: "Quick reference guides for developers",
+    //           href: "/resources/cheat-sheets",
+    //           icon: "heroicons:document-text",
+    //         },
+    //         {
+    //           title: "Roadmaps",
+    //           description: "Learning paths for different tech stacks",
+    //           href: "/resources/roadmaps",
+    //           icon: "heroicons:map",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   label: "Community",
+    //   mobileClosed: true,
+    //   megaMenu: [
+    //     {
+    //       title: "Connect",
+    //       links: [
+    //         {
+    //           title: "Forums",
+    //           description: "Discuss with fellow developers",
+    //           href: "/community/forums",
+    //           icon: "heroicons:chat-bubble-left-right",
+    //         },
+    //         {
+    //           title: "Events",
+    //           description: "Webinars, workshops, and meetups",
+    //           href: "/community/events",
+    //           icon: "heroicons:calendar",
+    //         },
+    //         {
+    //           title: "Discord Server",
+    //           description: "Join our active developer community",
+    //           href: "/community/discord",
+    //           icon: "heroicons:users",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "Contribute",
+    //       links: [
+    //         {
+    //           title: "Become an Author",
+    //           description: "Share your knowledge with tutorials",
+    //           href: "/contribute/author",
+    //           icon: "heroicons:pencil-square",
+    //         },
+    //         {
+    //           title: "Open Source",
+    //           description: "Contribute to our projects on GitHub",
+    //           href: "/contribute/opensource",
+    //           icon: "heroicons:code-bracket-square",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    // {
+    //   label: "Blog",
+    //   mobileClosed: true,
+    //   megaMenu: [
+    //     {
+    //       title: "Latest",
+    //       links: [
+    //         {
+    //           title: "Tech News",
+    //           description: "Updates from the tech world",
+    //           href: "/blog/tech-news",
+    //           icon: "heroicons:newspaper",
+    //         },
+    //         {
+    //           title: "Tutorials",
+    //           description: "Step-by-step guides for developers",
+    //           href: "/blog/tutorials",
+    //           icon: "heroicons:book-open",
+    //         },
+    //         {
+    //           title: "Case Studies",
+    //           description: "Real-world projects and solutions",
+    //           href: "/blog/case-studies",
+    //           icon: "heroicons:clipboard-document-list",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "Topics",
+    //       links: [
+    //         {
+    //           title: "Web Development",
+    //           href: "/blog/web-dev",
+    //           icon: "heroicons:globe-alt",
+    //         },
+    //         {
+    //           title: "DevOps & Cloud",
+    //           href: "/blog/devops",
+    //           icon: "heroicons:cloud",
+    //         },
+    //         {
+    //           title: "Artificial Intelligence",
+    //           href: "/blog/ai",
+    //           icon: "heroicons:brain",
+    //         },
+    //         {
+    //           title: "Others",
+    //           href: "/blog/others",
+    //           icon: "heroicons:sparkles",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
     // Added News link without megaMenu
+    {
+      label: "AI",
+      href: "/ai",
+      mobileClosed: true,
+    },
+    {
+      label: "Startup",
+      href: "/startups",
+      mobileClosed: true,
+    },
     {
       label: "News",
       href: "/news",
+      mobileClosed: true,
+    },
+    {
+      label: "About Us",
+      href: "/about",
       mobileClosed: true,
     },
   ];

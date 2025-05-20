@@ -2,7 +2,7 @@
 
 title: "HashiCorp Luncurkan Terraform MCP Server: Inovasi AI untuk Infrastruktur sebagai Kode"
 date: "2025-05-20"
-image: "[https://github.com/hashicorp/terraform-mcp-server/raw/main/.github/assets/terraform-mcp-server.png](https://github.com/hashicorp/terraform-mcp-server/raw/main/.github/assets/terraform-mcp-server.png)"
+image: "/assets/terraform.png"
 desc: "HashiCorp memperkenalkan Terraform MCP Server, solusi terbaru yang mengintegrasikan AI dengan Terraform untuk meningkatkan otomatisasi dan efisiensi dalam pengelolaan infrastruktur sebagai kode."
 tags: "Terraform, AI, Infrastruktur sebagai Kode"
 

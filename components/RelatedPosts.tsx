@@ -2,6 +2,15 @@
 import React from "react";
 import Link from "next/link";
 import { Calendar, ArrowRight } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 // Utility function to convert date
 const convertDate = (date) => {
@@ -13,63 +22,110 @@ const convertDate = (date) => {
   return new Date(date).toLocaleDateString(undefined, options);
 };
 
+// Category badges with corresponding colors
+const categoryColors = {
+  technology: "bg-blue-100 text-blue-800 hover:bg-blue-200",
+  lifestyle: "bg-green-100 text-green-800 hover:bg-green-200",
+  travel: "bg-yellow-100 text-yellow-800 hover:bg-yellow-200",
+  health: "bg-purple-100 text-purple-800 hover:bg-purple-200",
+  finance: "bg-pink-100 text-pink-800 hover:bg-pink-200",
+  education: "bg-red-100 text-red-800 hover:bg-red-200",
+  entertainment: "bg-indigo-100 text-indigo-800 hover:bg-indigo-200",
+};
+
 const RelatedPosts = ({ posts }) => {
-  const colors = [
-    "bg-blue-500",
-    "bg-green-500",
-    "bg-yellow-500",
-    "bg-purple-500",
-    "bg-pink-500",
-    "bg-red-500",
-    "bg-indigo-500",
-  ];
   if (!posts || posts.length === 0) return null;
 
   return (
-    <section className="my-12 mx-4 md:mx-0 border-t pt-8 dark:border-gray-700">
-      <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100 flex items-center">
-        <span>Artikel Terkait</span>
-        <span className="ml-2 text-yellow-500">✨</span>
-      </h3>
+    <section className="my-12 mx-4 md:mx-0 pt-8">
+      <div className="flex items-center justify-between mb-6">
+        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 flex items-center">
+          <span>Artikel Terkait</span>
+          <Badge
+            variant="outline"
+            className="ml-2 bg-yellow-100 text-yellow-800 border-yellow-200"
+          >
+            ✨ Rekomendasi
+          </Badge>
+        </h3>
+        <Button
+          variant="ghost"
+          size="sm"
+          className="text-sm text-blue-600 dark:text-blue-400"
+        >
+          Lihat Semua
+          <ArrowRight className="w-4 h-4 ml-1" />
+        </Button>
+      </div>
+
+      <Separator className="mb-6" />
 
       <div className="grid md:grid-cols-3 gap-6">
-        {posts.map((post, index) => (
-          <div
-            key={post.id}
-            className="bg-gray-50 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md 
-                     transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-          >
-            {/* Random background color for visual interest */}
-            <div className={`h-2 ${colors[index]}`}></div>
+        {posts.map((post, index) => {
+          // Assuming each post has a category, or assign a default one
+          const category =
+            post.category ||
+            Object.keys(categoryColors)[
+              index % Object.keys(categoryColors).length
+            ];
+          const colorClass =
+            categoryColors[category] || categoryColors.technology;
 
-            <div className="p-6">
-              <Link className="block" href={`/posts/${post.id}`}>
-                <h4
-                  className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100 
-                            hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-                >
-                  {post.title}
-                </h4>
-
-                <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-4">
-                  {post.desc}
-                </p>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    {post.date}
+          return (
+            <Card
+              key={post.id}
+              className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+            >
+              <CardHeader className="p-0">
+                <div className="relative h-40 bg-gray-200 dark:bg-gray-700">
+                  {post.image ? (
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="flex items-center justify-center h-full">
+                      <span className="text-4xl">📄</span>
+                    </div>
+                  )}
+                  <div className="absolute top-3 left-3">
+                    <Badge className={colorClass}>{category}</Badge>
                   </div>
+                </div>
+              </CardHeader>
 
-                  <span className="text-blue-600 dark:text-blue-400 text-sm flex items-center">
+              <CardContent className="pt-4">
+                <Link href={`/posts/${post.id}`} className="block group">
+                  <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
+                    {post.title}
+                  </h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-4">
+                    {post.desc}
+                  </p>
+                </Link>
+              </CardContent>
+
+              <CardFooter className="flex items-center justify-between pt-0">
+                <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  {convertDate(post.date)}
+                </div>
+                <Button
+                  variant="link"
+                  size="sm"
+                  className="text-blue-600 dark:text-blue-400 p-0"
+                  asChild
+                >
+                  <Link href={`/posts/${post.id}`}>
                     Baca
                     <ArrowRight className="w-4 h-4 ml-1" />
-                  </span>
-                </div>
-              </Link>
-            </div>
-          </div>
-        ))}
+                  </Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          );
+        })}
       </div>
     </section>
   );

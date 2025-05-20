@@ -46,7 +46,7 @@ function App({ Component, pageProps }: AppLayoutProps) {
   // seo
   const pageTitle =
     "Produsen Lilin Terdekat di Jogja, Jakarta & Seluruh Indonesia";
-  const pageDescription = `Million Candles adalah produsen lilin aromaterapi handmade dengan wangi menenangkan, cocok untuk dekorasi, kado, dan relaksasi. Tersedia pengiriman ke Jogja, Jakarta, Bandung, Bali, dan seluruh Indonesia.`;
+  const pageDescription = `Codeverta adalah platform media digital yang didedikasikan untuk memberikan informasi terkini tentang perkembangan teknologi, inovasi digital, kecerdasan buatan, dan masa depan industri. Kami mengkurasi konten yang relevan, faktual, dan menginspirasi untuk para pembaca yang ingin selalu selangkah lebih maju dalam memahami dunia teknologi.`;
   const ogImageUrl = "https://codeverta.com/og-image.png";
   const siteName = "UD Million Candles";
   const siteUrl = "https://codeverta.com";

@@ -4,7 +4,7 @@ title: "OpenAI Codex: Revolusi AI Coding Agent yang Mengubah Dunia Pemrograman"
 
 date: "2025-05-17"
 
-image: "[https://openai.com/images/codex-dashboard.jpg](https://openai.com/images/codex-dashboard.jpg)"
+image: "/assets/openai-codex.png"
 
 desc: "OpenAI resmi meluncurkan Codex, agen AI terbaru yang terintegrasi dalam ChatGPT untuk membantu pengembang menulis kode, memperbaiki bug, dan mengotomatisasi pengujian dalam lingkungan cloud yang aman."
 
