@@ -175,11 +175,11 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   // Get meta description
   const metaDescription = useMemo(() => {
     if (searchTerm) {
-      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting news about coding, programming, and technology.`;
+      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting tutorials about coding, programming, and technology.`;
     }
     return allPostsData.length > 0
       ? allPostsData[0].desc
-      : "Discover coding news, tech guides, and programming tips for developers of all levels.";
+      : "Discover coding tutorials, tech guides, and programming tips for developers of all levels.";
   }, [searchTerm, allPostsData]);
 
   // Format date function
@@ -254,7 +254,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   const handleShare = (platform: string, postId: string) => {
     const postUrl = `${
       typeof window !== "undefined" ? window.location.origin : ""
-    }/news/${postId}`;
+    }/tutorials/${postId}`;
     const post = allPostsData.find((p) => p.id === postId);
     const title = post?.title || "Tech Tutorial";
     const encodedTitle = encodeURIComponent(title);
@@ -307,16 +307,13 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <Code className="w-4 h-4 mr-1" /> Coding & Tech Tutorials
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl dark:text-white mb-4">
-              Codeverta
+              Codeverta {" "}
               <span className="text-blue-600 dark:text-blue-400">
                 Tutorials
               </span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
-              Ikuti perkembangan startup
-              teknologi di Indonesia dan dunia. Codeverta menghadirkan berita,
-              kisah sukses, pendanaan, inovasi, dan wawasan bisnis dari
-              ekosistem startup yang terus berkembang.
+              Dapatkan berita terkini seputar kecerdasan buatan (AI), machine learning, dan perkembangan terbaru dalam dunia artificial intelligence. Codeverta menyajikan analisis mendalam, riset terbaru, serta implikasi AI dalam industri dan kehidupan sehari-hari.
             </p>
 
             {/* Search form */}
@@ -327,7 +324,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-4 w-4" />
                 <Input
-                  placeholder="Search news..."
+                  placeholder="Search tutorials..."
                   value={searchTerm}
                   onChange={handleSearchChange}
                   className="pl-10 pr-24 h-12 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-full"
@@ -439,7 +436,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
                       Featured Tutorial
                     </h2>
-                    <Link href="/blog/news">
+                    <Link href="/blog/tutorials">
                       <Button
                         variant="link"
                         className="text-blue-600 dark:text-blue-400 p-0"
@@ -493,7 +490,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </div>
                         </div>
 
-                        <Link href={`/news/${currentPosts[0].id}`}>
+                        <Link href={`/${currentPosts[0].category}/${currentPosts[0].id}`}>
                           <h3 className="text-2xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-4">
                             {currentPosts[0].title}
                           </h3>
@@ -504,7 +501,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                         </p>
 
                         <div className="flex justify-between items-center mt-auto">
-                          <Link href={`/news/${currentPosts[0].id}`}>
+                          <Link href={`/${currentPosts[0].category}/${currentPosts[0].id}`}>
                             <Button variant="default" size="sm">
                               Read Tutorial
                             </Button>
@@ -645,7 +642,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </p>
                         </div>
 
-                        <Link href={`/news/${post.id}`}>
+                        <Link href={`/tutorials/${post.id}`}>
                           <h3 className="font-bold text-lg text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-2 line-clamp-2">
                             {post.title}
                           </h3>
@@ -672,7 +669,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                       </CardContent>
 
                       <CardFooter className="px-5 py-3 bg-slate-50 dark:bg-slate-800/50 flex justify-between">
-                        <Link href={`/news/${post.id}`}>
+                        <Link href={`/tutorials/${post.id}`}>
                           <Button
                             variant="link"
                             className="p-0 h-auto text-blue-600 dark:text-blue-400 text-sm"
@@ -759,12 +756,12 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                 <Search className="h-10 w-10" />
               </div>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
-                {t("blog.not_found.title", "No news found")}
+                {t("blog.not_found.title", "No tutorials found")}
               </h2>
               <p className="text-slate-600 dark:text-slate-300 mb-6 max-w-md mx-auto">
                 {t(
                   "blog.not_found.description",
-                  "We couldn't find any news matching your search criteria. Try adjusting your search terms or browse our categories."
+                  "We couldn't find any tutorials matching your search criteria. Try adjusting your search terms or browse our categories."
                 )}
               </p>
               <Button
@@ -826,7 +823,11 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 
 export async function getStaticProps({ locale }) {
   // Get posts and add sample categories and read times
-  const allPostsData = getSortedPostsData("news").map((post, index) => {
+  const allPostsData = getSortedPostsData("ai").map((post, index) => {
+    // Add sample categories and read times (in a real app, these would come from the actual data)
+    const categories = [
+      "ai",
+    ];
     const readTimes = [
       "3 min read",
       "5 min read",
@@ -837,7 +838,7 @@ export async function getStaticProps({ locale }) {
 
     return {
       ...post,
-      category: "news",
+      category: categories[index % categories.length],
       readTime: readTimes[index % readTimes.length],
     };
   });

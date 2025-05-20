@@ -239,6 +239,11 @@ export default function Navbar() {
       mobileClosed: true,
     },
     {
+      label: "Tutorials",
+      href: "/tutorials",
+      mobileClosed: true,
+    },
+    {
       label: "About Us",
       href: "/about",
       mobileClosed: true,

@@ -109,7 +109,7 @@ const RelatedPosts = ({ posts }) => {
               <CardFooter className="flex items-center justify-between pt-0">
                 <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
                   <Calendar className="w-4 h-4 mr-2" />
-                  {convertDate(post.date)}
+                  {post.date}
                 </div>
                 <Button
                   variant="link"

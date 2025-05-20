@@ -1,7 +1,6 @@
 ---
 title: "Apa Itu Developer Relations? Peran Penting di Dunia Teknologi Modern"
 date: "2025-05-15"
-image: "https://avatars.githubusercontent.com/u/126567?v=4"
 desc: "Pelajari definisi, peran, skill, dan jalur karier dalam Developer Relations (DevRel), posisi strategis antara developer dan perusahaan."
 tags: "developer, devrel, komunitas, teknologi"
 toc: true

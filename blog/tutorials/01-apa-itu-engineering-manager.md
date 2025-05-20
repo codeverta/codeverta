@@ -1,7 +1,6 @@
 ---
 title: "Apa Itu Engineering Manager? Panduan Lengkap untuk Memahami Peran dan Tanggung Jawabnya"
 date: "2025-05-15"
-image: "https://raw.githubusercontent.com/engineering-management/awesome-engineering-management/master/logo.png"
 desc: "Pelajari definisi, tanggung jawab, skill, dan karier sebagai Engineering Manager berdasarkan sumber terpercaya."
 tags: "engineering, manajemen, teknologi"
 toc: true

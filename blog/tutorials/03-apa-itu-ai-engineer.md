@@ -1,10 +1,8 @@
 ---
 title: "Apa Itu AI Engineer? Panduan Lengkap, Skill & Karier (2025)"
 date: "2025-05-15"
-image: "https://example.com/images/ai-engineer.jpg"
 desc: "Pelajari apa itu AI Engineer, tanggung jawabnya, skill yang dibutuhkan, dan peluang karier di era kecerdasan buatan."
 tags: "AI, engineer, teknologi, karier, pemrograman"
-toc: true
 ---
 
 ## **Apa Itu AI Engineer?**

@@ -45,14 +45,14 @@ function App({ Component, pageProps }: AppLayoutProps) {
   const getLayout = Component.getLayout || ((page: ReactNode) => page);
   // seo
   const pageTitle =
-    "Produsen Lilin Terdekat di Jogja, Jakarta & Seluruh Indonesia";
-  const pageDescription = `Codeverta adalah platform media digital yang didedikasikan untuk memberikan informasi terkini tentang perkembangan teknologi, inovasi digital, kecerdasan buatan, dan masa depan industri. Kami mengkurasi konten yang relevan, faktual, dan menginspirasi untuk para pembaca yang ingin selalu selangkah lebih maju dalam memahami dunia teknologi.`;
+    "Codeverta - Media Teknologi, Inovasi Digital & Kecerdasan Buatan, AI";
+  const pageDescription = `Codeverta adalah platform media digital yang berfokus pada dunia teknologi, inovasi digital, kecerdasan buatan, pengembangan perangkat lunak, dan masa depan industri digital. Kami menyajikan berita, opini, dan analisis yang relevan dan akurat untuk para profesional, pelajar, dan penggiat teknologi di Indonesia.`;
   const ogImageUrl = "https://codeverta.com/og-image.png";
-  const siteName = "UD Million Candles";
+  const siteName = "Codeverta";
   const siteUrl = "https://codeverta.com";
-  const twitterHandle = "@souvenirlilin";
+  const twitterHandle = "@codeverta";
   const keywords =
-    "jual lilin, jual lilin jogja, lilin aromaterapi jogja, lilin batang, souvenir cantik, souvenir jogja, ud million candles, souvenir lilin, lilin warna, lilin hias, lilin berkualitas";
+    "media teknologi, berita teknologi, inovasi digital, kecerdasan buatan, AI, software development, teknologi Indonesia, startup, tren teknologi, digitalisasi";
 
   return (
     <>
@@ -75,7 +75,7 @@ function App({ Component, pageProps }: AppLayoutProps) {
         twitter={{
           handle: twitterHandle,
           site: siteUrl,
-          cardType: "Jual Souvenir Lilin",
+          cardType: "Media Teknologi, Inovasi Digital & AI",
         }}
         additionalMetaTags={[
           {

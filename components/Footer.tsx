@@ -208,10 +208,11 @@ export default function Footer() {
               />
             </a>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-              {t(
-                "footer.description",
-                "Million Candles provides a wide selection of high-quality aromatherapy candles to create a comfortable and relaxing atmosphere in your home."
-              )}
+              Platform media digital yang berfokus pada dunia teknologi,
+              inovasi digital, kecerdasan buatan, pengembangan perangkat lunak,
+              dan masa depan industri digital. Kami menyajikan berita, opini,
+              dan analisis yang relevan dan akurat untuk para profesional,
+              pelajar, dan penggiat teknologi di Indonesia.
             </p>
 
             {/* Social media icons */}
@@ -318,15 +319,6 @@ export default function Footer() {
           <p className="text-center text-sm text-gray-500 dark:text-gray-400">
             &copy; {new Date().getFullYear()} Million Candles. All rights
             reserved. v.{version}
-            <br />
-            Mau bikin website kyk gini? silahkan chat{" "}
-            <a
-              href="https://wa.me/+6285726394401"
-              className="text-blue-500 hover:underline"
-            >
-              0857-2639-4401
-            </a>{" "}
-            melalui WhatsApp.
           </p>
         </div>
       </div>

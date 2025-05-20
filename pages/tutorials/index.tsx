@@ -307,16 +307,16 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <Code className="w-4 h-4 mr-1" /> Coding & Tech Tutorials
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl dark:text-white mb-4">
-              Codeverta {" "}
+              Codeverta{" "}
               <span className="text-blue-600 dark:text-blue-400">
                 Tutorials
               </span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
-              {t(
-                "blog.description",
-                "Learn to code with our comprehensive tutorials. From beginner to advanced, discover the latest in programming, web development, and tech."
-              )}
+              Temukan berbagai tutorial teknologi
+              yang mudah diikuti untuk pemula maupun profesional. Dari
+              pemrograman, pengembangan web, AI, hingga tools terbaru—Codeverta
+              membantu Anda terus belajar dan berkembang di era digital.
             </p>
 
             {/* Search form */}
@@ -829,16 +829,7 @@ export async function getStaticProps({ locale }) {
   const allPostsData = getSortedPostsData("tutorials").map((post, index) => {
     // Add sample categories and read times (in a real app, these would come from the actual data)
     const categories = [
-      "Sejarah Lilin",
       "Tutorial",
-      "Tips & Trik",
-      "Ulasan Produk",
-      "Inspirasi",
-      "Edukasi",
-      "Lilin Ibadah",
-      "Aromaterapi",
-      "Lilin Taper",
-      "Lilin Kristal",
     ];
     const readTimes = [
       "3 min read",

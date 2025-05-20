@@ -12,9 +12,9 @@ import {
   ChevronRight,
   BookOpen,
 } from "lucide-react";
-import CopyLinkButton from "../../../components/CopyLinkButton";
+import CopyLinkButton from "components/CopyLinkButton";
 import Layout from "components/layout/Landing";
-import RelatedPosts from "../../../components/RelatedPosts";
+import RelatedPosts from "components/RelatedPosts";
 import BlogSchemaJsonLd from "components/BlogSchemaJsonLd";
 import BreadcrumbSchemaJsonLd from "components/BreadcrumbSchemaJsonLd"; // Import the new component
 import { convertDate, estimateReadingTime } from "lib/functions";
@@ -272,7 +272,7 @@ export default Post;
 // In Pages Router, we use getStaticProps instead of directly fetching data in component
 export async function getStaticProps({ params, locale }) {
   const slug = params.id;
-  const postData = await getPostData(slug, locale);
+  const postData = await getPostData(slug, "ai");
   return {
     props: {
       postData,
@@ -285,7 +285,7 @@ export async function getStaticProps({ params, locale }) {
 
 // getStaticPaths replaces generateStaticParams - they're functionally similar
 export async function getStaticPaths({ locales }) {
-  const postIds = getAllPostIds('case-studies');
+  const postIds = getAllPostIds('ai');
   const paths: {
     params: {
       id: string;
@@ -306,6 +306,6 @@ export async function getStaticPaths({ locales }) {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: false,
   };
 }
