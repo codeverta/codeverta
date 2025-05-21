@@ -1,5 +1,5 @@
 {
-  "brand": "Million Candles",
+  "brand": "Codeverta",
   "flag": "🇫🇷",
   "menu": {
     "login": "Se connecter",
@@ -104,7 +104,7 @@
     }
   },
   "about_us": {
-    "content": "# À propos de Million Candles\n\nMillion Candles est une entreprise de bougies basée à Yogyakarta qui propose une large gamme de bougies aux designs uniques et de haute qualité. Nous utilisons des matériaux de haute qualité et de bonnes techniques de fabrication pour créer des bougies belles et parfumées.\n\nNous offrons une large sélection de bougies, des petites bougies aux grandes bougies qui peuvent être utilisées pour des occasions spéciales telles que les mariages, les fêtes d'anniversaire, les services religieux ou les pannes de courant. De plus, nous proposons également des bougies parfumées qui peuvent être utilisées pour créer une atmosphère apaisante dans votre maison.\n\nNous avons une variété de couleurs et de designs parmi lesquels choisir qui peuvent être personnalisés selon vos goûts. Nous pouvons également fabriquer des bougies avec des designs qui correspondent à vos souhaits.\n\nNous accordons une grande importance à la qualité et à la sécurité de nos clients, c'est pourquoi nous nous efforçons toujours d'utiliser des matériaux sûrs et respectueux de l'environnement.\n\nSi vous souhaitez ajouter une atmosphère romantique à votre maison ou si vous recherchez un cadeau unique pour une occasion spéciale, n'hésitez pas à visiter notre site web et à consulter notre sélection de bougies. Nous serons heureux de vous aider à trouver les bougies adaptées à vos besoins."
+    "content": "# À propos de Codeverta\n\nCodeverta est une entreprise de bougies basée à Yogyakarta qui propose une large gamme de bougies aux designs uniques et de haute qualité. Nous utilisons des matériaux de haute qualité et de bonnes techniques de fabrication pour créer des bougies belles et parfumées.\n\nNous offrons une large sélection de bougies, des petites bougies aux grandes bougies qui peuvent être utilisées pour des occasions spéciales telles que les mariages, les fêtes d'anniversaire, les services religieux ou les pannes de courant. De plus, nous proposons également des bougies parfumées qui peuvent être utilisées pour créer une atmosphère apaisante dans votre maison.\n\nNous avons une variété de couleurs et de designs parmi lesquels choisir qui peuvent être personnalisés selon vos goûts. Nous pouvons également fabriquer des bougies avec des designs qui correspondent à vos souhaits.\n\nNous accordons une grande importance à la qualité et à la sécurité de nos clients, c'est pourquoi nous nous efforçons toujours d'utiliser des matériaux sûrs et respectueux de l'environnement.\n\nSi vous souhaitez ajouter une atmosphère romantique à votre maison ou si vous recherchez un cadeau unique pour une occasion spéciale, n'hésitez pas à visiter notre site web et à consulter notre sélection de bougies. Nous serons heureux de vous aider à trouver les bougies adaptées à vos besoins."
   },
   "gallery": {
     "title": "Galerie",
@@ -119,8 +119,8 @@
     }
   },
   "footer": {
-    "title": "Million Candles",
-    "desc": "Million Candles propose une large sélection de bougies d'aromathérapie de haute qualité pour créer une atmosphère confortable et relaxante dans votre maison.",
+    "title": "Codeverta",
+    "desc": "Codeverta propose une large sélection de bougies d'aromathérapie de haute qualité pour créer une atmosphère confortable et relaxante dans votre maison.",
     "about": "À propos de nous",
     "profile": "Profil de l'entreprise",
     "careers": "Carrières",

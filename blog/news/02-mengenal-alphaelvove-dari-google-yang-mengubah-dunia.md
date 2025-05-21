@@ -11,7 +11,7 @@ toc: true
 
 ## Mengenal AlphaEvolve: Inovasi AI dari Google DeepMind
 
-Google DeepMind kembali membuat gebrakan dengan memperkenalkan **AlphaEvolve**, sebuah sistem AI canggih yang mampu merancang algoritma baru yang melampaui kemampuan manusia. Menggabungkan kekuatan model bahasa besar Gemini dengan teknik evolusioner, AlphaEvolve tidak hanya mereplikasi pengetahuan yang ada, tetapi juga menciptakan solusi baru untuk berbagai tantangan komputasi dan matematika.([WIRED][1])
+Google DeepMind kembali membuat gebrakan dengan memperkenalkan AlphaEvolve, sebuah sistem AI canggih yang mampu merancang algoritma baru yang melampaui kemampuan manusia. Menggabungkan kekuatan model bahasa besar Gemini dengan teknik evolusioner, AlphaEvolve tidak hanya mereplikasi pengetahuan yang ada, tetapi juga menciptakan solusi baru untuk berbagai tantangan komputasi dan matematika.([WIRED][1])
 
 ### Apa Itu AlphaEvolve?
 
@@ -35,22 +35,22 @@ Meskipun saat ini AlphaEvolve belum tersedia untuk umum, Google berencana untuk 
 
 ## FAQ tentang AlphaEvolve
 
-**1. Apa itu AlphaEvolve?**
+1. Apa itu AlphaEvolve?
 AlphaEvolve adalah sistem AI yang dikembangkan oleh Google DeepMind untuk merancang algoritma baru secara otomatis, melampaui kemampuan manusia dalam beberapa kasus.([WIRED][1])
 
-**2. Bagaimana AlphaEvolve bekerja?**
+2. Bagaimana AlphaEvolve bekerja?
 Sistem ini menggabungkan model bahasa besar Gemini dengan teknik evolusioner untuk menghasilkan dan menguji berbagai solusi algoritmik, memilih yang paling efisien dan efektif.([Wikipedia][2])
 
-**3. Apa saja pencapaian AlphaEvolve?**
+3. Apa saja pencapaian AlphaEvolve?
 AlphaEvolve telah mengembangkan algoritma perkalian matriks yang lebih cepat dari algoritma Strassen, meningkatkan efisiensi pusat data Google, dan menemukan solusi baru untuk masalah matematika kompleks.
 
-**4. Apakah AlphaEvolve tersedia untuk umum?**
+4. Apakah AlphaEvolve tersedia untuk umum?
 Saat ini, AlphaEvolve belum tersedia untuk umum, tetapi Google berencana untuk membuka program akses awal bagi mitra akademik dan menjajaki ketersediaan yang lebih luas di masa depan.
 
-**5. Bagaimana AlphaEvolve berbeda dari sistem AI sebelumnya?**
+5. Bagaimana AlphaEvolve berbeda dari sistem AI sebelumnya?
 Berbeda dari sistem sebelumnya yang fokus pada tugas spesifik, AlphaEvolve adalah agen generalis yang dapat bekerja pada berbagai masalah yang dapat dievaluasi oleh mesin, seperti batas matematis, struktur kombinatorik, dan kode tingkat rendah.([Wikipedia][2])
 
-**6. Apa dampak AlphaEvolve terhadap masa depan teknologi?**
+6. Apa dampak AlphaEvolve terhadap masa depan teknologi?
 Dengan kemampuannya untuk menghasilkan solusi baru dan efisien, AlphaEvolve berpotensi mendorong inovasi dan kemajuan teknologi di berbagai sektor, termasuk komputasi, matematika, dan desain perangkat keras.
 
 ---
@@ -61,7 +61,7 @@ AlphaEvolve merupakan langkah maju yang signifikan dalam pengembangan AI, menunj
 
 ---
 
-**Referensi:**
+Referensi:
 
 [1]: https://www.wired.com/story/google-deepminds-ai-agent-dreams-up-algorithms-beyond-human-expertise?utm_source=chatgpt.com "Google DeepMind's AI Agent Dreams Up Algorithms Beyond Human Expertise"
 [2]: https://es.wikipedia.org/wiki/AlphaEvolve?utm_source=chatgpt.com "AlphaEvolve"

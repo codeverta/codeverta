@@ -30,7 +30,7 @@ const BlogSchemaJsonLd = ({
     },
     publisher: {
       "@type": "Organization",
-      name: "UD Million Candles",
+      name: "UD Codeverta",
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl}/Million-Candles/Lilin-Gelas-Biru/1.png`,

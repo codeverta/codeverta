@@ -16,7 +16,7 @@ function About() {
     <>
       <Head>
         <title>
-          Tentang Kami | UD Million Candles - Produsen Lilin Aromaterapi
+          Tentang Kami | UD Codeverta - Produsen Lilin Aromaterapi
         </title>
       </Head>
       <LocalBusinessJsonLd

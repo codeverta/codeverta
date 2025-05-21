@@ -6,7 +6,7 @@ lastUpdated: May 1, 2025
 author: Legal Team
 ---
 
-# **Terms and Conditions for Million Candles**
+# **Terms and Conditions for Codeverta**
 
 ## I. Introduction
 

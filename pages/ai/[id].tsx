@@ -123,13 +123,13 @@ function Post({ postData, slug }) {
   return (
     <>
       <NextSeo
-        title={`${postData.title} | Million Candles`}
+        title={`${postData.title} | Codeverta`}
         description={postData.desc}
         openGraph={{
           title: postData.title,
           description: postData.desc,
           url: `https://www.codeverta.com/posts/${slug}`,
-          siteName: "Million Candles",
+          siteName: "Codeverta",
           images: [
             {
               url: postData.image || backgroundImageUrl,
@@ -203,7 +203,7 @@ function Post({ postData, slug }) {
                 </div>
                 <div className="flex items-center gap-2">
                   <User className="w-5 h-5" />
-                  <span>Million Candles 👨‍💻</span>
+                  <span>Codeverta 👨‍💻</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <BookOpen className="w-5 h-5" />

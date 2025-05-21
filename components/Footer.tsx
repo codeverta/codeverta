@@ -202,7 +202,7 @@ export default function Footer() {
               <img
                 width={60}
                 height={60}
-                alt="Gambar logo million candles"
+                alt="Gambar logo Codeverta"
                 className="mr-2 rounded-full"
                 src="/logolilin.png"
               />
@@ -317,7 +317,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-12 border-t border-gray-200 pt-8 dark:border-gray-800">
           <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Million Candles. All rights
+            &copy; {new Date().getFullYear()} Codeverta. All rights
             reserved. v.{version}
           </p>
         </div>

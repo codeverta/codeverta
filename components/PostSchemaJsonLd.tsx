@@ -29,7 +29,7 @@ const PostSchemaJsonLd = ({
     },
     publisher: {
       "@type": "Organization",
-      name: "Million Candles",
+      name: "Codeverta",
       logo: {
         "@type": "ImageObject",
         url: `${baseUrl}/logo.png`,

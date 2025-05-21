@@ -1,5 +1,5 @@
 {
-  "brand": "Million Candles",
+  "brand": "Codeverta",
   "flag": "🇪🇸",
   "menu": {
     "login": "Iniciar sesión",
@@ -104,7 +104,7 @@
     }
   },
   "about_us": {
-    "content": "# Acerca de Million Candles\n\nMillion Candles es una empresa de velas con sede en Yogyakarta que ofrece una amplia variedad de velas con diseños únicos y de alta calidad. Utilizamos materiales de alta calidad y buenas técnicas de fabricación para crear velas hermosas y fragantes.\n\nOfrecemos una amplia selección de velas, desde velas pequeñas hasta velas grandes que se pueden utilizar para eventos especiales como bodas, fiestas de cumpleaños, servicios religiosos o cortes de energía. Además, también ofrecemos velas perfumadas que se pueden utilizar para crear un ambiente relajante en tu hogar.\n\nTenemos una variedad de colores y diseños para elegir que se pueden personalizar según tu gusto. También podemos hacer velas con diseños que se ajusten a tus deseos.\n\nValoramos mucho la calidad y la seguridad de nuestros clientes, por lo que siempre nos esforzamos por utilizar materiales seguros y respetuosos con el medio ambiente.\n\nSi deseas agregar un ambiente romántico a tu hogar o estás buscando un regalo único para un evento especial, no dudes en visitar nuestro sitio web y ver la selección de velas que ofrecemos. Estaremos encantados de ayudarte a encontrar las velas adecuadas para tus necesidades."
+    "content": "# Acerca de Codeverta\n\nCodeverta es una empresa de velas con sede en Yogyakarta que ofrece una amplia variedad de velas con diseños únicos y de alta calidad. Utilizamos materiales de alta calidad y buenas técnicas de fabricación para crear velas hermosas y fragantes.\n\nOfrecemos una amplia selección de velas, desde velas pequeñas hasta velas grandes que se pueden utilizar para eventos especiales como bodas, fiestas de cumpleaños, servicios religiosos o cortes de energía. Además, también ofrecemos velas perfumadas que se pueden utilizar para crear un ambiente relajante en tu hogar.\n\nTenemos una variedad de colores y diseños para elegir que se pueden personalizar según tu gusto. También podemos hacer velas con diseños que se ajusten a tus deseos.\n\nValoramos mucho la calidad y la seguridad de nuestros clientes, por lo que siempre nos esforzamos por utilizar materiales seguros y respetuosos con el medio ambiente.\n\nSi deseas agregar un ambiente romántico a tu hogar o estás buscando un regalo único para un evento especial, no dudes en visitar nuestro sitio web y ver la selección de velas que ofrecemos. Estaremos encantados de ayudarte a encontrar las velas adecuadas para tus necesidades."
   },
   "gallery": {
     "title": "Galería",
@@ -119,8 +119,8 @@
     }
   },
   "footer": {
-    "title": "Million Candles",
-    "desc": "Million Candles ofrece una amplia selección de velas aromáticas de alta calidad para crear un ambiente cómodo y relajante en tu hogar.",
+    "title": "Codeverta",
+    "desc": "Codeverta ofrece una amplia selección de velas aromáticas de alta calidad para crear un ambiente cómodo y relajante en tu hogar.",
     "about": "Acerca de nosotros",
     "profile": "Perfil de la empresa",
     "careers": "Carreras",

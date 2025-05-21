@@ -51,7 +51,7 @@ const ProductJsonLd = ({
     image: images,
     brand: {
       "@type": "Brand",
-      name: "UD Million Candles",
+      name: "UD Codeverta",
     },
     offers: {
       "@type": "Offer",

@@ -13,7 +13,7 @@ function Address(props: any) {
     <main>
       <Head>
         <title>
-          Alamat Kami | UD Million Candles - Produsen Lilin Aromaterapi Souvenir
+          Alamat Kami | UD Codeverta - Produsen Lilin Aromaterapi Souvenir
           Lilin Jogja, Lilin Warna, Lilin Hias dan Lain-lain
         </title>
       </Head>
