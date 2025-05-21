@@ -18,6 +18,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   i18n,
+  images: {
+    domains: ['picsum.photos'],
+  },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 };
 
