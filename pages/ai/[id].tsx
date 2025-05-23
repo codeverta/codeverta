@@ -44,7 +44,7 @@ import {
 import CopyLinkButton from "components/CopyLinkButton";
 import Layout from "components/layout/Landing";
 import RelatedPosts from "components/RelatedPosts";
-import BlogSchemaJsonLd from "components/BlogSchemaJsonLd";
+import NewsSchemaJsonLd from "components/NewsSchemaJsonLd";
 import BreadcrumbSchemaJsonLd from "components/BreadcrumbSchemaJsonLd";
 import { convertDate, estimateReadingTime } from "lib/functions";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -58,10 +58,10 @@ function Post({ postData, slug }) {
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [likeCount, setLikeCount] = useState(
-    50
+      50
   );
   const [viewCount, setViewCount] = useState(
-    100
+    1000
   );
   const [showShareModal, setShowShareModal] = useState(false);
   const [showTableOfContents, setShowTableOfContents] = useState(false);
@@ -312,13 +312,20 @@ function Post({ postData, slug }) {
         </div>
       )}
 
-      <BlogSchemaJsonLd
+      <NewsSchemaJsonLd
         post={postData}
         baseUrl="https://codeverta.com"
         author={{
           name: postData.author || "Rabih Utomo",
           url: "https://codeverta.com/about",
         }}
+        publisher={{
+          name: "Codeverta",
+          url: "https://codeverta.com",
+          logo: "https://codeverta.com/logo.png",
+        }}
+        category={articleStats.category}
+        keywords={postData.tags}
       />
 
       <BreadcrumbSchemaJsonLd slug={slug} postTitle={postData.title} />
