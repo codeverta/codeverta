@@ -1005,7 +1005,7 @@ function EnhancedNewsLandingPage() {
       </main>
 
       {/* Cookie Consent Banner */}
-      <AlertDialog defaultOpen>
+      <AlertDialog>
         <AlertDialogContent className="max-w-screen-sm bottom-0 top-auto translate-y-0 rounded-b-none fixed mb-0">
           <AlertDialogHeader>
             <AlertDialogTitle>Cookie Consent</AlertDialogTitle>

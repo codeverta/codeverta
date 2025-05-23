@@ -19,7 +19,7 @@ const nextConfig = {
   },
   i18n,
   images: {
-    domains: ['picsum.photos'],
+    domains: ['picsum.photos', 'firebasestorage.googleapis.com'],
   },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 };
