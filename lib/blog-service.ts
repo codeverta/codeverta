@@ -26,6 +26,18 @@ function generateSlug(title: string): string {
     .trim();
 }
 
+// Helper function to extract storage path from Firebase URL
+function getStoragePathFromUrl(url: string): string | null {
+  try {
+    const urlObj = new URL(url);
+    const pathMatch = urlObj.pathname.match(/\/o\/(.+?)\?/);
+    return pathMatch ? decodeURIComponent(pathMatch[1]) : null;
+  } catch (error) {
+    console.error('Error parsing storage URL:', error);
+    return null;
+  }
+}
+
 export async function getAllPosts(): Promise<BlogPost[]> {
   const q = query(
     collection(db, COLLECTION_NAME),
@@ -89,6 +101,17 @@ export async function updatePost(id: string, post: Partial<CreateBlogPost>): Pro
 }
 
 export async function deletePost(id: string): Promise<void> {
+  // Get the post first to delete associated image
+  const post = await getPostById(id);
+  if (post && post.imageUrl) {
+    try {
+      await deleteImageFromStorage(post.imageUrl);
+    } catch (error) {
+      console.error('Error deleting associated image:', error);
+      // Continue with post deletion even if image deletion fails
+    }
+  }
+  
   await deleteDoc(doc(db, COLLECTION_NAME, id));
 }
 
@@ -96,6 +119,21 @@ export async function uploadImage(file: File): Promise<string> {
   const storageRef = ref(storage, `blog-images/${Date.now()}-${file.name}`);
   await uploadBytes(storageRef, file);
   return getDownloadURL(storageRef);
+}
+
+export async function deleteImageFromStorage(imageUrl: string): Promise<void> {
+  try {
+    const storagePath = getStoragePathFromUrl(imageUrl);
+    if (!storagePath) {
+      throw new Error('Invalid storage URL' + JSON.stringify(imageUrl));
+    }
+    
+    const storageRef = ref(storage, storagePath);
+    await deleteObject(storageRef);
+  } catch (error) {
+    console.error('Error deleting image from storage:', error);
+    throw error;
+  }
 }
 
 export async function getPostsByTag(tag: string): Promise<BlogPost[]> {
