@@ -1,7 +1,7 @@
 ---
 title: "Samsung Galaxy A16 5G: Smartphone 5G Terjangkau dengan Dukungan Update 6 Tahun"
 date: "2025-05-15"
-image: "[https://picsum.photos/seed/technology/1200/600](https://picsum.photos/seed/technology/1200/600)"
+image: "https://picsum.photos/seed/technology/1200/600"
 desc: "Samsung Galaxy A16 5G hadir sebagai pilihan smartphone 5G terjangkau dengan spesifikasi mumpuni dan dukungan pembaruan perangkat lunak hingga 6 tahun."
 tags: "Samsung Galaxy A16 5G, smartphone 5G, Android 14, Samsung Indonesia"
 ---
