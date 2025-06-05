@@ -247,5 +247,13 @@
       <image:loc>https://firebasestorage.googleapis.com/v0/b/firstproject-ad87e.appspot.com/o/images%2FMg4hQEy27uOmvqx8yMAu.png?alt=media</image:loc>
       <image:title>Gallery image</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://firebasestorage.googleapis.com/v0/b/firstproject-ad87e.appspot.com/o/images%2FHHyT7zEmlNayYS7di2fh.jpg?alt=media</image:loc>
+      <image:title>Gallery image</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://firebasestorage.googleapis.com/v0/b/firstproject-ad87e.appspot.com/o/images%2FMA00KjS0kkeqvz76Qblp.jpg?alt=media</image:loc>
+      <image:title>Gallery image</image:title>
+    </image:image>
   </url>
 </urlset>
