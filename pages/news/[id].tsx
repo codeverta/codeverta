@@ -22,6 +22,7 @@ import { convertDate, estimateReadingTime } from "lib/functions";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import DisqusThread from "components/DisqusThread";
 import TOC from "components/TOC";
+import NewsSchemaJsonLd from "@/components/NewsSchemaJsonLd";
 function Post({ postData, slug }) {
   // Generate a random background image URL from Lorem Picsum
   const backgroundImageUrl = `https://picsum.photos/seed/${slug}/800/450`;
@@ -30,7 +31,14 @@ function Post({ postData, slug }) {
   const readingTime = estimateReadingTime(
     postData.contentHtml.replace(/<[^>]*>/g, "")
   );
-
+  const articleStats = {
+    difficulty: "Intermediate",
+    category: "News",
+    lastUpdated: postData.date,
+    contributors: Math.floor(Math.random() * 5) + 1,
+    codeExamples: Math.floor(Math.random() * 10) + 3,
+    references: Math.floor(Math.random() * 15) + 5,
+  };
   return (
     <>
       <NextSeo
@@ -61,13 +69,20 @@ function Post({ postData, slug }) {
         }}
       />
       {/* Add the BlogSchemaJsonLd component */}
-      <BlogSchemaJsonLd
+      <NewsSchemaJsonLd
         post={postData}
         baseUrl="https://codeverta.com"
         author={{
           name: postData.author || "Rabih Utomo",
           url: "https://codeverta.com/about",
         }}
+        publisher={{
+          name: "Codeverta",
+          url: "https://codeverta.com",
+          logo: "https://codeverta.com/logo.png",
+        }}
+        category={articleStats.category}
+        keywords={postData.tags}
       />
 
       {/* Add the BreadcrumbSchemaJsonLd component */}

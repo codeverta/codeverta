@@ -4,7 +4,6 @@ import { marked } from "marked";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { LocalBusinessJsonLd } from "next-seo";
-import IndonesiaHeatmap from "components/IndonesiaHeatmap";
 import { motion } from "framer-motion";
 import { fadeIn } from "lib/animations";
 
@@ -16,7 +15,8 @@ function About() {
     <>
       <Head>
         <title>
-          Tentang Kami | UD Codeverta - Produsen Lilin Aromaterapi
+          Tentang Kami | Codeverta - Media Teknologi, Inovasi Digital & AI,
+          Startup
         </title>
       </Head>
       <LocalBusinessJsonLd

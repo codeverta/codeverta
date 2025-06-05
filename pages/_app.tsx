@@ -45,7 +45,7 @@ function App({ Component, pageProps }: AppLayoutProps) {
   const getLayout = Component.getLayout || ((page: ReactNode) => page);
   // seo
   const pageTitle =
-    "Codeverta - Media Teknologi, Inovasi Digital & Kecerdasan Buatan, AI";
+    "Codeverta - Media Teknologi, Inovasi Digital & AI, Startup";
   const pageDescription = `Codeverta adalah platform media digital yang berfokus pada dunia teknologi, inovasi digital, kecerdasan buatan, pengembangan perangkat lunak, dan masa depan industri digital. Kami menyajikan berita, opini, dan analisis yang relevan dan akurat untuk para profesional, pelajar, dan penggiat teknologi di Indonesia.`;
   const ogImageUrl = "https://codeverta.com/og-image.png";
   const siteName = "Codeverta";
