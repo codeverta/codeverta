@@ -285,7 +285,7 @@ export async function getStaticProps({ params, locale }) {
 
 // getStaticPaths replaces generateStaticParams - they're functionally similar
 export async function getStaticPaths({ locales }) {
-  const postIds = getAllPostIds('tutorials');
+  const postIds = getAllPostIds('startups');
   const paths: {
     params: {
       id: string;

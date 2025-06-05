@@ -2,7 +2,7 @@
 
 title: "Apa Itu Privy: Solusi Identitas dan Tanda Tangan Digital Legal di Indonesia"
 date: "2025-05-15"
-image: "/privy.png"
+image: "/assets/privy.png"
 desc: "Mengenal Privy sebagai penyedia layanan identitas digital dan tanda tangan elektronik yang sah secara hukum di Indonesia, serta manfaatnya dalam transformasi digital."
 tags: "Privy, identitas digital, tanda tangan elektronik, keamanan data, transformasi digital"
 
