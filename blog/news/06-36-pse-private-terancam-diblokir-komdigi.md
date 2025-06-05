@@ -2,7 +2,7 @@
 
 title: "36 PSE Privat Terancam Diblokir oleh Komdigi karena Belum Daftar dan Perbarui Data"
 date: "2025-06-02"
-image: "[https://picsum.photos/seed/technology/1200/600](https://picsum.photos/seed/technology/1200/600)"
+image: "/assets/komdigi.png"
 desc: "Kementerian Komunikasi dan Digital (Komdigi) mengancam akan memblokir 36 Penyelenggara Sistem Elektronik (PSE) Privat yang belum mendaftar atau memperbarui data mereka sesuai regulasi."
 tags: "PSE Privat, Komdigi, pendaftaran PSE, pemblokiran layanan, regulasi digital"
 

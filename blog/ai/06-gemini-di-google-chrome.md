@@ -2,7 +2,6 @@
 
 title: "Gemini di Chrome: Era Baru AI Interaktif di Browser Anda"
 date: "2025-05-15"
-image: "[https://example.com/gemini-chrome-agent-mode.jpg](https://example.com/gemini-chrome-agent-mode.jpg)"
 desc: "Google memperkenalkan Gemini dengan Agent Mode di Chrome, memungkinkan interaksi AI langsung dengan situs web. Pelajari fitur dan dampaknya di artikel ini."
 tags: "Gemini, Chrome, Agent Mode, Google I/O 2025, AI Browser"
 
