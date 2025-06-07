@@ -145,7 +145,7 @@ function Post({ postData, slug }) {
   // Simulate article stats
   const articleStats = {
     difficulty: "Intermediate",
-    category: "AI & Machine Learning",
+    category: "Gadget",
     lastUpdated: postData.date,
     contributors: 1,
     codeExamples: Math.floor(Math.random() * 10) + 3,
