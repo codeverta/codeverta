@@ -40,6 +40,7 @@ export default function Navbar() {
     { id: "/news", name: "All News" },
     { id: "/ai", name: "AI" },
     { id: "/startups", name: "Startups" },
+    { id: "/gadget", name: "Gadget" },
     { id: "/tutorials", name: "Tutorials" },
     { id: "/about", name: "About" },
   ];
@@ -272,6 +273,11 @@ export default function Navbar() {
     {
       label: "News",
       href: "/news",
+      mobileClosed: true,
+    },
+    {
+      label: "Gadget",
+      href: "/gadget",
       mobileClosed: true,
     },
     {
