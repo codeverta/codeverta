@@ -216,11 +216,11 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-lg mb-4">Events</h4>
+              <h4 className="font-bold text-lg mb-4">Tools</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
-                    Codeverta Disrupt 2025
+                  <Link href="/editor" className="hover:text-white transition-colors">
+                    Codeverta Editor
                   </Link>
                 </li>
                 <li>
