@@ -433,24 +433,6 @@ function Post({ postData, slug }) {
                         </div>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400">
-                      <Code className="w-5 h-5" />
-                      <div>
-                        <div className="text-sm">Code Examples</div>
-                        <div className="font-medium">
-                          {articleStats.codeExamples}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400">
-                      <Users className="w-5 h-5" />
-                      <div>
-                        <div className="text-sm">Contributors</div>
-                        <div className="font-medium">
-                          {articleStats.contributors}
-                        </div>
-                      </div>
-                    </div>
                   </div>
 
                   {/* Author and Actions */}
