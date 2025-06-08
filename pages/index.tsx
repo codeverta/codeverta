@@ -56,8 +56,16 @@ import {
   User,
   X,
 } from "lucide-react";
+import { getSortedPostsData } from "@/lib/posts";
+import { PostMeta } from "next";
 
-function EnhancedNewsLandingPage() {
+function EnhancedNewsLandingPage({
+  allPostsData,
+  featuredPosts,
+}: {
+  allPostsData: PostMeta[];
+  featuredPosts: PostMeta[]
+}) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -87,14 +95,13 @@ function EnhancedNewsLandingPage() {
     "Global tech leaders announce climate initiative at summit",
     "SpaceX successfully launches next-generation satellite network",
   ];
-
+  console.log(allPostsData);
   return (
     <div
       className={`min-h-screen flex flex-col ${
         isDarkMode ? "dark bg-gray-900 text-white" : "bg-gray-50"
       }`}
     >
-
       {/* Breaking News Ticker */}
       <div className="bg-red-600 text-white py-2 overflow-hidden">
         <div className="container mx-auto px-4">
@@ -115,30 +122,6 @@ function EnhancedNewsLandingPage() {
         </div>
       </div>
 
-      {/* Trending Topics */}
-      <div className="bg-gray-100 dark:bg-gray-800 py-2">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center space-x-3 overflow-x-auto scrollbar-hide py-1">
-            <div className="flex items-center text-sm font-medium text-gray-600 dark:text-gray-300">
-              <FlameIcon className="h-4 w-4 mr-1" /> Trending:
-            </div>
-            {trendingTopics.map((topic, idx) => (
-              <Link
-                href={`#${topic.toLowerCase().replace(" ", "-")}`}
-                key={idx}
-              >
-                <Badge
-                  variant="secondary"
-                  className="cursor-pointer whitespace-nowrap"
-                >
-                  {topic}
-                </Badge>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Main Content */}
       <main className="flex-1 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4 py-8">
@@ -148,31 +131,7 @@ function EnhancedNewsLandingPage() {
               {/* Featured Article Carousel */}
               <Carousel className="w-full">
                 <CarouselContent>
-                  {[
-                    {
-                      title:
-                        "Google's AI Revolution: 'The Next Generation of Search is Here'",
-                      category: "AI",
-                      author: "Alex Johnson",
-                      time: "3 hours ago",
-                      image: "https://picsum.photos/seed/technology/1200/600",
-                    },
-                    {
-                      title: "SpaceX Announces Mars Mission Launch Date",
-                      category: "Space",
-                      author: "Maria Rodriguez",
-                      time: "5 hours ago",
-                      image: "https://picsum.photos/seed/space/1200/600",
-                    },
-                    {
-                      title:
-                        "Breakthrough in Quantum Computing Changes Everything",
-                      category: "Computing",
-                      author: "David Chen",
-                      time: "7 hours ago",
-                      image: "https://picsum.photos/seed/quantum/1200/600",
-                    },
-                  ].map((item, index) => (
+                  {featuredPosts.map((item, index) => (
                     <CarouselItem key={index}>
                       <div className="relative">
                         <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-lg">
@@ -184,9 +143,7 @@ function EnhancedNewsLandingPage() {
                             className="object-cover w-full h-full"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                          <div className="absolute top-4 left-4 bg-[#0a9e01] text-white text-xs px-2 py-1 rounded">
-                            {item.category}
-                          </div>
+                          <div className="absolute top-4 left-4 bg-[#0a9e01] text-white text-xs px-2 py-1 rounded"></div>
                         </div>
                         <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                           <h1 className="text-2xl md:text-4xl font-bold mb-2">
@@ -195,7 +152,6 @@ function EnhancedNewsLandingPage() {
                           <div className="flex items-center text-sm mt-4">
                             <span>{item.author}</span>
                             <span className="mx-2">•</span>
-                            <span>{item.time}</span>
                           </div>
                         </div>
                       </div>
@@ -1032,3 +988,30 @@ EnhancedNewsLandingPage.getLayout = function getLayout(page) {
 };
 
 export default EnhancedNewsLandingPage;
+
+
+export async function getStaticProps({ locale }) {
+  // Get posts and add sample categories and read times
+  const allPostsData = getSortedPostsData("news").map((post, index) => {
+    const readTimes = [
+      "3 min read",
+      "5 min read",
+      "7 min read",
+      "4 min read",
+      "6 min read",
+    ];
+
+    return {
+      ...post,
+      category: "news",
+      readTime: readTimes[index % readTimes.length],
+    };
+  });
+
+  return {
+    props: {
+      allPostsData,
+      featuredPosts: allPostsData.splice(0, 3)
+    },
+  };
+}

@@ -20,3 +20,15 @@ declare module "next/app" {
     Component: NextLayoutComponentType;
   };
 }
+
+export interface PostMeta {
+  id: string;
+  date: string;
+  title: string;
+  desc: string;
+  image: string;
+  category?: string;
+  readTime?: string;
+  author?: string;
+  authorImage?: string;
+}

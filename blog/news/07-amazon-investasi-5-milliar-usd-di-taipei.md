@@ -1,6 +1,6 @@
 ---
 
-title: "insight cloud investasi amazon aws asia pacific taipei region 5 miliar dolar"
+title: "Insight mendalam: Amazon luncurkan AWS Asia Pacific (Taipei) region dengan investasi USD 5 miliar"
 date: "2025-06-06"
 image: "https://picsum.photos/seed/technology/1200/600"
 desc: "Analisis mendalam tentang peluncuran region AWS Asia Pacific (Taipei) dan investasi lebih dari USD 5 miliar oleh Amazon"
