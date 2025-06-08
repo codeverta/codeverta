@@ -5,6 +5,7 @@ date: "2025-06-09"
 image: "https://picsum.photos/seed/cybersecurity/1200/600"
 desc: "Temukan daftar situs CTF (Capture The Flag) terbaik untuk latihan dan pengembangan keterampilan cybersecurity Anda. Cocok untuk pemula hingga profesional!"
 tags: "cybersecurity, ctf, latihan ctf, belajar hacking, ethical hacking"
+
 ---
 
 ## Daftar Situs CTF Terbaik untuk Latihan Cybersecurity Pemula dan Profesional
