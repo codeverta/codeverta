@@ -38,7 +38,7 @@ export default function Navbar() {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const categories = [
-    { id: "/news", name: "All News" },
+    { id: "/news", name: "News" },
     { id: "/ai", name: "AI" },
     { id: "/startups", name: "Startups" },
     { id: "/gadget", name: "Gadget" },

@@ -62,16 +62,18 @@ import { PostMeta } from "next";
 function EnhancedNewsLandingPage({
   allPostsData,
   featuredPosts,
+  headlines,
 }: {
   allPostsData: PostMeta[];
-  featuredPosts: PostMeta[]
+  featuredPosts: PostMeta[];
+  headlines: PostMeta[];
 }) {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const categories = [
-    { id: "/news", name: "All News" },
+    { id: "/news", name: "News" },
     { id: "/ai", name: "AI" },
     { id: "/startups", name: "Startups" },
     { id: "/tutorials", name: "Tutorials" },
@@ -133,7 +135,7 @@ function EnhancedNewsLandingPage({
                 <CarouselContent>
                   {featuredPosts.map((item, index) => (
                     <CarouselItem key={index}>
-                      <div className="relative">
+                      <Link href={`/news/${item.id}`} className="relative">
                         <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-lg">
                           <Image
                             src={item.image}
@@ -154,7 +156,7 @@ function EnhancedNewsLandingPage({
                             <span className="mx-2">•</span>
                           </div>
                         </div>
-                      </div>
+                      </Link>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -478,23 +480,17 @@ function EnhancedNewsLandingPage({
                 </CardHeader>
                 <CardContent className="pt-0">
                   <ul className="space-y-4">
-                    {[
-                      "Microsoft unveils new AI tools for Office suite",
-                      "Crypto market rebounds as Bitcoin surges past $60K",
-                      "Amazon's drone delivery service expands to 5 new cities",
-                      "Meta's AR glasses prototype leaked ahead of announcement",
-                      "Twitter alternative gains 10M users in just one week",
-                    ].map((headline, index) => (
+                    {headlines.map((headline, index) => (
                       <li
                         key={index}
                         className="pb-3 border-b border-gray-200 dark:border-gray-700 last:border-0"
                       >
-                        <Link href="#" className="flex group">
+                        <Link href={`/news/${headline.id}`} className="flex group">
                           <span className="text-[#0a9e01] font-bold mr-2">
                             ■
                           </span>
                           <span className="font-medium group-hover:text-[#0a9e01] transition-colors">
-                            {headline}
+                            {headline.title}
                           </span>
                         </Link>
                       </li>
@@ -1011,7 +1007,8 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       allPostsData,
-      featuredPosts: allPostsData.splice(0, 3)
+      featuredPosts: allPostsData.splice(0, 3),
+      headlines: allPostsData.splice(0, 5),
     },
   };
 }
