@@ -105,7 +105,7 @@ function EnhancedNewsLandingPage({
       }`}
     >
       {/* Breaking News Ticker */}
-      <div className="bg-red-600 text-white py-2 overflow-hidden">
+      {/* <div className="bg-red-600 text-white py-2 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex items-center">
             <Badge variant="outline" className="text-white border-white mr-3">
@@ -122,7 +122,7 @@ function EnhancedNewsLandingPage({
             </ScrollArea>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Content */}
       <main className="flex-1 bg-white dark:bg-gray-900">
@@ -208,9 +208,7 @@ function EnhancedNewsLandingPage({
                           <div className="flex items-center justify-between text-sm">
                             <div className="flex items-center space-x-2">
                               <Avatar className="h-6 w-6">
-                                <AvatarFallback>
-                                  {item.image}
-                                </AvatarFallback>
+                                <AvatarFallback>{item.image}</AvatarFallback>
                               </Avatar>
                               <span>{item.author}</span>
                               <span className="text-gray-400">•</span>
@@ -343,7 +341,6 @@ function EnhancedNewsLandingPage({
                   </div>
                 </TabsContent>
               </Tabs>
-
             </div>
 
             {/* Sidebar - 4/12 width on desktop */}
@@ -362,7 +359,10 @@ function EnhancedNewsLandingPage({
                         key={index}
                         className="pb-3 border-b border-gray-200 dark:border-gray-700 last:border-0"
                       >
-                        <Link href={`/news/${headline.id}`} className="flex group">
+                        <Link
+                          href={`/news/${headline.id}`}
+                          className="flex group"
+                        >
                           <span className="text-[#0a9e01] font-bold mr-2">
                             ■
                           </span>
@@ -375,9 +375,11 @@ function EnhancedNewsLandingPage({
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="link" className="text-[#0a9e01] w-full">
-                    View All Headlines
-                  </Button>
+                  <Link href={"/news"}>
+                    <Button variant="link" className="text-[#0a9e01] w-full">
+                      View All Headlines
+                    </Button>
+                  </Link>
                 </CardFooter>
               </Card>
             </div>
@@ -416,7 +418,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       allPostsData,
-      featuredPosts: allPostsData.splice(0, 3),
+      featuredPosts: allPostsData.splice(0, 4),
       headlines: allPostsData.splice(0, 5),
     },
   };
