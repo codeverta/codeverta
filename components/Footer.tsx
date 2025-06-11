@@ -186,31 +186,16 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-4">Categories</h4>
+            <h4 className="font-bold text-lg mb-4">Course</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Startups
+                <Link href="/course/ai-engineer" className="hover:text-white transition-colors">
+                  AI Engineer
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Venture
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Security
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  AI
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Apps
+                <Link href="/course/cybersecurity" className="hover:text-white transition-colors">
+                  Cyber Security
                 </Link>
               </li>
             </ul>
