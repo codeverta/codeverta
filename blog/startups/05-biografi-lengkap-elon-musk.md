@@ -2,7 +2,7 @@
 
 title: "Biografi Elon Musk Lengkap: Perjalanan Hidup, Kesuksesan, dan Inovasi"
 date: "2025-06-11"
-image: "[https://picsum.photos/seed/technology/1200/600](https://picsum.photos/seed/technology/1200/600)"
+image: "/assets/elon.png"
 desc: "Biografi Elon Musk: Kisah hidup Elon Musk dari masa kecil hingga menjadi salah satu inovator terbesar di dunia. Artikel ini lengkap dengan insight, fakta menarik, dan FAQ."
 tags: "Elon Musk, biografi, inovasi"
 

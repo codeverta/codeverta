@@ -2,7 +2,7 @@
 
 title: "Sejarah Berdirinya Facebook: Dari Kamar Asrama Hingga Raksasa Media Sosial"
 date: "2025-05-15"
-image: "[https://picsum.photos/seed/technology/1200/600](https://picsum.photos/seed/technology/1200/600)"
+image: "/assets/mark.png"
 desc: "Sejarah berdirinya Facebook dimulai dari kamar asrama Harvard, berkembang menjadi raksasa media sosial dengan miliaran pengguna. Artikel ini mengulas lengkap perjalanan Facebook dari awal hingga sekarang."
 tags: "sejarah facebook, facebook, mark zuckerberg"
 
