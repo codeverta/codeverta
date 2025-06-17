@@ -2,7 +2,6 @@
 
 title: "Panduan Lengkap Topologi Jaringan Komputer: Pengertian, Jenis, dan Contoh Penerapannya"
 date: "2025-05-15"
-image: "[https://picsum.photos/seed/technology/1200/600](https://picsum.photos/seed/technology/1200/600)"
 desc: "Pelajari secara lengkap tentang topologi jaringan komputer, mulai dari pengertian, jenis-jenisnya, kelebihan, kekurangan, hingga contoh penerapannya."
 tags: "jaringan komputer, topologi jaringan, tutorial jaringan"
 
