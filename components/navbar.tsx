@@ -43,6 +43,7 @@ export default function Navbar() {
     { id: "/startups", name: "Startups" },
     { id: "/gadget", name: "Gadget" },
     { id: "/tutorials", name: "Tutorials" },
+    { id: "/course", name: "Kelas" },
     { id: "/about", name: "About" },
   ];
   const [isOpen, setIsOpen] = useState(false);
@@ -287,6 +288,11 @@ export default function Navbar() {
       mobileClosed: true,
     },
     {
+      label: "Kelas",
+      href: "/course",
+      mobileClosed: true,
+    },
+    {
       label: "About Us",
       href: "/about",
       mobileClosed: true,
@@ -296,7 +302,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b bg-white dark:bg-gray-950 dark:border-gray-800">
-      <div className="container mx-auto">
+      <div>
         {/* Top bar with logo, search and user actions */}
         <div className="flex items-center justify-between py-4 px-4">
           <div className="flex items-center space-x-4">
@@ -315,22 +321,6 @@ export default function Navbar() {
                       </div>
                     </Link>
                   ))}
-                  <Separator />
-                  <Link href="#">
-                    <div className="px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">
-                      Video Hub
-                    </div>
-                  </Link>
-                  <Link href="#">
-                    <div className="px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">
-                      Podcasts
-                    </div>
-                  </Link>
-                  <Link href="#">
-                    <div className="px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">
-                      Newsletters
-                    </div>
-                  </Link>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -361,7 +351,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="flex items-center space-x-2">
+          <div className="hidden sm:flex items-center space-x-2">
             {isSearchOpen ? (
               <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-md overflow-hidden">
                 <Input
@@ -410,77 +400,6 @@ export default function Navbar() {
                     ))}
                   </div>
                 </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsDarkMode(!isDarkMode)}
-            >
-              {isDarkMode ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx="12" cy="12" r="5"></circle>
-                  <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path>
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                </svg>
-              )}
-            </Button>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <User className="h-5 w-5" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem>
-                  <User className="h-4 w-4 mr-2" /> My Profile
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <BookmarkPlus className="h-4 w-4 mr-2" /> Saved Articles
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="mr-2"
-                  >
-                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                  Account Settings
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
