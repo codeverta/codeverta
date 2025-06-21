@@ -361,5 +361,9 @@ export default function ColorPicker() {
 
 
 ColorPicker.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <Layout seo={{
+    title: "Codeverta ColorGen - Bikin Palet Warna Cantik",
+    description: "Buat palet warna yang indah dengan ColorGen. Klik untuk menyalin warna, kunci warna, dan simpan palet Anda.",
+    keywords: "color generator, color palette, color picker, web design, UI design",
+  }}>{page}</Layout>;
 };

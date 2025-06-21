@@ -593,5 +593,9 @@ END:VCARD`;
 
 
 QRGenerator.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <Layout seo={{
+    description: "Membuat QR Code dengan mudah dan cepat. Pilih jenis QR Code, sesuaikan opsi, dan hasilkan QR Code yang siap digunakan.",
+    title: "QR Code Generator - Buat QR Code Gratis",
+    keywords: "QR Code, generator QR Code, buat QR Code, QR Code gratis, QR Code online",
+  }}>{page}</Layout>;
 };

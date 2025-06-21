@@ -342,5 +342,11 @@ export default function URLShortener() {
 
 
 URLShortener.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <Layout seo={{
+    title: "URL Shortener - Codeverta",
+    description: "Shorten your URLs easily with Codeverta's URL Shortener. Create custom short links and track clicks.",
+    ogType: "website",
+    ogTitle: "URL Shortener - Codeverta",
+    ogDescription: "Shorten your URLs easily with Codeverta's URL Shortener. Create custom short links and track clicks.",
+  }}>{page}</Layout>;
 };

@@ -353,5 +353,16 @@ helloWorld();`);
 }
 
 Home.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  return <Layout seo={{
+    title: "Codeverta - Code Editor",
+    description: "Bikin code editor online yang mudah digunakan dengan berbagai tema dan opsi kustomisasi.",
+    ogTitle: "Codeverta - Code Editor",
+    ogDescription: "Bikin code editor online yang mudah digunakan dengan berbagai tema dan opsi kustomisasi.",
+    ogImage: "/images/og-code-editor.jpg",
+    ogType: "website",
+    twitterCard: "summary_large_image",
+    twitterTitle: "Codeverta - Code Editor",
+    twitterDescription: "Bikin code editor online yang mudah digunakan dengan berbagai tema dan opsi kustomisasi.",
+    twitterImage: "/images/og-code-editor.jpg",
+  }}>{page}</Layout>;
 };
