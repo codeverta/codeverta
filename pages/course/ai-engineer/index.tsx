@@ -28,6 +28,7 @@ import {
   Globe,
 } from "lucide-react";
 import Layout from "components/layout/Landing";
+import Link from "next/link";
 
 const AIEngineeringCourse = () => {
   const [enrolledModules, setEnrolledModules] = useState(new Set());
@@ -42,12 +43,18 @@ const AIEngineeringCourse = () => {
       description:
         "Memahami konsep dasar AI, ML, dan perbedaan dengan traditional programming",
       topics: [
-        "Introduction to Artificial Intelligence",
+        {
+          title: "Introduction to Artificial Intelligence",
+          url: "/course/ai-engineer/01-pengantar-kecerdasan-buatan",
+        },
         "History and Evolution of AI",
         "Types of AI: Narrow AI vs General AI",
         "Machine Learning vs Deep Learning vs AI",
         "Supervised vs Unsupervised vs Reinforcement Learning",
-        "AI Ethics and Bias",
+        {
+          title: "AI Ethics and Bias",
+          url: "/course/ai-engineer/02-etika-dan-bias-kecerdasan-buatan",
+        },
         "Setting up Development Environment",
         "Python for AI: NumPy, Pandas, Matplotlib",
         "Mathematics for AI: Linear Algebra Basics",
@@ -94,7 +101,10 @@ const AIEngineeringCourse = () => {
       description:
         "Implementasi algoritma ML dan optimasi model untuk production",
       topics: [
-        "Scikit-learn Deep Dive",
+        {
+          title: "Scikit-learn Deep Dive",
+          url: "/course/ai-engineer/01-pengantar-kecerdasan-buatan",
+        },
         "Classification Algorithms: SVM, Random Forest, XGBoost",
         "Regression Techniques: Ridge, Lasso, Elastic Net",
         "Clustering: K-Means, DBSCAN, Hierarchical",
@@ -130,7 +140,10 @@ const AIEngineeringCourse = () => {
       description:
         "Membangun dan melatih neural networks dengan TensorFlow dan PyTorch",
       topics: [
-        "Neural Network Fundamentals",
+        {
+          title: "Fundamental Neural Networks",
+          url: "/course/ai-engineer/04-fundamental-neural-network",
+        },
         "Perceptron and Multi-layer Perceptrons",
         "Backpropagation Algorithm",
         "Activation Functions and Optimizers",
@@ -294,7 +307,6 @@ const AIEngineeringCourse = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Course Overview */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
@@ -520,8 +532,17 @@ const AIEngineeringCourse = () => {
                               key={topicIndex}
                               className="flex items-center space-x-2 text-sm"
                             >
-                              <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                              <span>{topic}</span>
+                              {typeof topic === "string" ? (
+                                <>
+                                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                                  <span>{topic}</span>
+                                </>
+                              ) : (
+                                <>
+                                  <div className="w-2 h-2 bg-green-600 rounded-full"></div>
+                                  <Link href={topic?.url}>{topic?.title}</Link>
+                                </>
+                              )}
                             </li>
                           ))}
                         </ul>
