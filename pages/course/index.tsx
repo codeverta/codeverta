@@ -22,9 +22,9 @@ const KelasPage = () => {
     {
       id: 1,
       nama: "Web Development Fundamentals",
-      url: '/course/fundamental-web',
+      url: "/course/fundamental-web",
       kategori: "Programming",
-      instruktur: "Ahmad Rizki",
+      instruktur: "Rabih Utomo",
       durasi: "12 minggu",
       peserta: 85,
       harga: "Free",
@@ -113,6 +113,40 @@ const KelasPage = () => {
     //   image:
     //     "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&crop=center",
     // },
+    {
+      id: 6,
+      nama: "AI Engineer",
+      kategori: "Programming",
+      url: "/course/ai-engineer",
+      instruktur: "Rabih Utomo",
+      durasi: "12 minggu",
+      peserta: 67,
+      harga: "Free",
+      level: "Advanced",
+      rating: 4.5,
+      deskripsi:
+        "Pelajari cara membangun sistem AI yang canggih menggunakan Python dan TensorFlow",
+      jadwal: "Selasa & Sabtu, 10:00-13:00",
+      image:
+        "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&crop=center",
+    },
+    {
+      id: 6,
+      nama: "Cybersecurity Essentials",
+      url: "/course/cybersecurity",
+      kategori: "Programming",
+      instruktur: "Rabih Utomo",
+      durasi: "12 minggu",
+      peserta: 67,
+      harga: "Free",
+      level: "Advanced",
+      rating: 4.5,
+      deskripsi:
+        "Pelajari dasar-dasar keamanan siber dan cara melindungi sistem Anda dari ancaman",
+      jadwal: "Selasa & Sabtu, 10:00-13:00",
+      image:
+        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center",
+    },
   ];
 
   const categories = [
