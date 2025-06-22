@@ -1,42 +1,41 @@
-import { useState } from "react";
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Zap, ChevronDown, ChevronRight } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
+import Image from "next/image";
+import { motion } from "framer-motion";
 import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-import { Badge } from "@/components/ui/badge";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Search } from "lucide-react";
-import {
-  Bell,
-  BookmarkPlus,
-  Clock,
-  FlameIcon,
-  Heart,
-  MessageSquare,
-  Share2,
-  ThumbsUp,
-  User,
+  Check,
+  ChevronRight,
+  Menu,
   X,
+  Moon,
+  Sun,
+  ArrowRight,
+  Star,
+  Zap,
+  Shield,
+  Users,
+  BarChart,
+  Layers,
 } from "lucide-react";
-import { Separator } from "./ui/separator";
-import { Input } from "./ui/input";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useTheme } from "next-themes";
 
-export default function Navbar() {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("all");
-
+export default function LandingPage() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const categories = [
     { id: "/news", name: "News" },
     { id: "/ai", name: "AI" },
@@ -46,553 +45,80 @@ export default function Navbar() {
     { id: "/course", name: "Kelas" },
     { id: "/about", name: "About" },
   ];
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeMegaMenu, setActiveMegaMenu] = useState(null);
-  const [mobileOpenSections, setMobileOpenSections] = useState({});
+  useEffect(() => {
+    setMounted(true);
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-  const toggleMobileSection = (label) => {
-    setMobileOpenSections((prev) => ({
-      ...prev,
-      [label]: !prev[label],
-    }));
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
   };
-  const breakingNews = [
-    "New AI breakthrough could revolutionize healthcare industry",
-    "Global tech leaders announce climate initiative at summit",
-    "SpaceX successfully launches next-generation satellite network",
-  ];
-  // Integrated mega menu data
-  const mainNavItems = [
-    // {
-    //   label: "Learning",
-    //   mobileClosed: true,
-    //   megaMenu: [
-    //     {
-    //       title: "Tutorials",
-    //       links: [
-    //         {
-    //           title: "Frontend Development",
-    //           description: "HTML, CSS, JavaScript, and modern frameworks",
-    //           href: "/frontend",
-    //           icon: "heroicons:code-bracket",
-    //         },
-    //         {
-    //           title: "Backend Development",
-    //           description: "Node.js, Python, PHP, and database technologies",
-    //           href: "/backend",
-    //           icon: "heroicons:server",
-    //         },
-    //         {
-    //           title: "Mobile Development",
-    //           description: "React Native, Flutter, and native app development",
-    //           href: "/mobile",
-    //           icon: "heroicons:device-phone-mobile",
-    //         },
-    //         {
-    //           title: "Cyber Security",
-    //           description: "Belajar mengenai keamanan cyber",
-    //           href: "/cyber-security",
-    //           icon: "heroicons:device-phone-mobile",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "Courses",
-    //       links: [
-    //         {
-    //           title: "Web Development Bootcamp",
-    //           description: "Complete guide to modern web development",
-    //           href: "/courses/web-bootcamp",
-    //           icon: "heroicons:academic-cap",
-    //         },
-    //         {
-    //           title: "Data Structures & Algorithms",
-    //           description: "Master coding interviews and problem solving",
-    //           href: "/courses/dsa",
-    //           icon: "heroicons:chart-bar",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   label: "Tools & Resources",
-    //   mobileClosed: true,
-    //   megaMenu: [
-    //     {
-    //       title: "Developer Tools",
-    //       links: [
-    //         {
-    //           title: "Code Playground",
-    //           description: "Interactive environment to test your code",
-    //           href: "/tools/playground",
-    //           icon: "heroicons:beaker",
-    //         },
-    //         {
-    //           title: "AI Code Assistant",
-    //           description: "Get suggestions and help with your code",
-    //           href: "/tools/ai-assistant",
-    //           icon: "heroicons:cpu-chip",
-    //         },
-    //         {
-    //           title: "Code Formatter",
-    //           description: "Format your code with best practices",
-    //           href: "/tools/formatter",
-    //           icon: "heroicons:wrench-screwdriver",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "Resources",
-    //       links: [
-    //         {
-    //           title: "Cheat Sheets",
-    //           description: "Quick reference guides for developers",
-    //           href: "/resources/cheat-sheets",
-    //           icon: "heroicons:document-text",
-    //         },
-    //         {
-    //           title: "Roadmaps",
-    //           description: "Learning paths for different tech stacks",
-    //           href: "/resources/roadmaps",
-    //           icon: "heroicons:map",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   label: "Community",
-    //   mobileClosed: true,
-    //   megaMenu: [
-    //     {
-    //       title: "Connect",
-    //       links: [
-    //         {
-    //           title: "Forums",
-    //           description: "Discuss with fellow developers",
-    //           href: "/community/forums",
-    //           icon: "heroicons:chat-bubble-left-right",
-    //         },
-    //         {
-    //           title: "Events",
-    //           description: "Webinars, workshops, and meetups",
-    //           href: "/community/events",
-    //           icon: "heroicons:calendar",
-    //         },
-    //         {
-    //           title: "Discord Server",
-    //           description: "Join our active developer community",
-    //           href: "/community/discord",
-    //           icon: "heroicons:users",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "Contribute",
-    //       links: [
-    //         {
-    //           title: "Become an Author",
-    //           description: "Share your knowledge with tutorials",
-    //           href: "/contribute/author",
-    //           icon: "heroicons:pencil-square",
-    //         },
-    //         {
-    //           title: "Open Source",
-    //           description: "Contribute to our projects on GitHub",
-    //           href: "/contribute/opensource",
-    //           icon: "heroicons:code-bracket-square",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // {
-    //   label: "Blog",
-    //   mobileClosed: true,
-    //   megaMenu: [
-    //     {
-    //       title: "Latest",
-    //       links: [
-    //         {
-    //           title: "Tech News",
-    //           description: "Updates from the tech world",
-    //           href: "/blog/tech-news",
-    //           icon: "heroicons:newspaper",
-    //         },
-    //         {
-    //           title: "Tutorials",
-    //           description: "Step-by-step guides for developers",
-    //           href: "/blog/tutorials",
-    //           icon: "heroicons:book-open",
-    //         },
-    //         {
-    //           title: "Case Studies",
-    //           description: "Real-world projects and solutions",
-    //           href: "/blog/case-studies",
-    //           icon: "heroicons:clipboard-document-list",
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: "Topics",
-    //       links: [
-    //         {
-    //           title: "Web Development",
-    //           href: "/blog/web-dev",
-    //           icon: "heroicons:globe-alt",
-    //         },
-    //         {
-    //           title: "DevOps & Cloud",
-    //           href: "/blog/devops",
-    //           icon: "heroicons:cloud",
-    //         },
-    //         {
-    //           title: "Artificial Intelligence",
-    //           href: "/blog/ai",
-    //           icon: "heroicons:brain",
-    //         },
-    //         {
-    //           title: "Others",
-    //           href: "/blog/others",
-    //           icon: "heroicons:sparkles",
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // },
-    // Added News link without megaMenu
-    {
-      label: "AI",
-      href: "/ai",
-      mobileClosed: true,
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
     },
-    {
-      label: "Startup",
-      href: "/startups",
-      mobileClosed: true,
-    },
-    {
-      label: "News",
-      href: "/news",
-      mobileClosed: true,
-    },
-    {
-      label: "Gadget",
-      href: "/gadget",
-      mobileClosed: true,
-    },
-    {
-      label: "Tutorials",
-      href: "/tutorials",
-      mobileClosed: true,
-    },
-    {
-      label: "Kelas",
-      href: "/course",
-      mobileClosed: true,
-    },
-    {
-      label: "About Us",
-      href: "/about",
-      mobileClosed: true,
-    },
-  ];
+  };
 
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-white dark:bg-gray-950 dark:border-gray-800">
-      <div>
-        {/* Top bar with logo, search and user actions */}
-        <div className="flex items-center justify-between py-4 px-4">
-          <div className="flex items-center space-x-4">
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="h-5 w-5" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-                <nav className="flex flex-col gap-4 mt-8">
-                  {categories.map((category) => (
-                    <Link key={category.id} href={category.id}>
-                      <div className="px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md transition-colors">
-                        {category.name}
-                      </div>
-                    </Link>
-                  ))}
-                </nav>
-              </SheetContent>
-            </Sheet>
-
-            <Link
-              href="/"
-              className="flex items-center text-xl md:text-2xl font-bold text-[#0a9e01] hover:opacity-80 transition-opacity duration-200"
-            >
-              <span className="bg-[#0a9e01] text-white px-3 py-1 rounded-md mr-2 text-xl md:text-2xl font-extrabold">
-                CV
-              </span>
-              <span className="tracking-tight">Codeverta</span>
-            </Link>
+    <header
+      className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${
+        isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"
+      }`}
+    >
+      <div className="container flex h-16 items-center justify-between">
+        <Link href={'/'} className="cursor-pointer flex items-center gap-2 font-bold">
+          <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
+            CV
           </div>
-
-          <div className="hidden md:flex items-center space-x-1">
+          <span>Codeverta</span>
+        </Link>
+        <nav className="hidden md:flex gap-8">
+          {categories.map((category) => (
+            <Link
+              href={category.id}
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+            >
+              {category.name}
+            </Link>
+          ))}
+        </nav>
+      </div>
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="md:hidden absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b"
+        >
+          <div className="container py-4 flex flex-col gap-4">
             {categories.map((category) => (
-              <Link href={category.id} key={category.id}>
-                <Button
-                  variant={
-                    selectedCategory === category.id ? "default" : "ghost"
-                  }
-                  className="rounded-md text-sm"
-                >
-                  {category.name}
-                </Button>
+              <Link
+                href={category.id}
+                className="py-2 text-sm font-medium"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {category.name}
               </Link>
             ))}
           </div>
-
-          <div className="hidden sm:flex items-center space-x-2">
-            {isSearchOpen ? (
-              <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-md overflow-hidden">
-                <Input
-                  type="search"
-                  placeholder="Search news..."
-                  className="border-0 focus-visible:ring-0"
-                />
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => setIsSearchOpen(false)}
-                >
-                  <X className="h-4 w-4" />
-                </Button>
-              </div>
-            ) : (
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setIsSearchOpen(true)}
-              >
-                <Search className="h-5 w-5" />
-              </Button>
-            )}
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Bell className="h-5 w-5" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-[300px]">
-                <div className="p-2">
-                  <h4 className="font-semibold mb-2">Notifications</h4>
-                  <div className="space-y-2">
-                    {breakingNews.map((news, index) => (
-                      <div
-                        key={index}
-                        className="flex items-start space-x-2 p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"
-                      >
-                        <Badge variant="destructive" className="mt-1">
-                          Breaking
-                        </Badge>
-                        <p className="text-sm">{news}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-        </div>
-      </div>
+        </motion.div>
+      )}
     </header>
   );
-
-  // return (
-  //   <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-  //     <div className="container flex h-16 items-center">
-  //       <div className="flex items-center gap-2 mr-4">
-  //         <Link
-  //           href="/"
-  //           className="flex items-center space-x-2"
-  //           aria-label="Enterprise AI Homepage"
-  //         >
-  //           <span className="text-2xl font-bold">Codeverta</span>
-  //         </Link>
-  //       </div>
-
-  //       {/* Desktop Navigation with Mega Menu */}
-  //       <nav
-  //         className="hidden md:flex gap-6 items-center justify-center flex-1"
-  //         aria-label="Main Navigation"
-  //       >
-  //         {mainNavItems.map((item, index) => (
-  //           <div
-  //             key={index}
-  //             className="relative group"
-  //             onMouseEnter={() =>
-  //               item.megaMenu && setActiveMegaMenu(item.label)
-  //             }
-  //           >
-  //             {item.megaMenu ? (
-  //               <button
-  //                 className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary"
-  //                 aria-expanded={activeMegaMenu === item.label}
-  //                 aria-controls={`megamenu-${index}`}
-  //               >
-  //                 {item.label}
-  //                 <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
-  //               </button>
-  //             ) : (
-  //               <Link
-  //                 href={item.href}
-  //                 className="flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary"
-  //               >
-  //                 {item.label}
-  //               </Link>
-  //             )}
-  //           </div>
-  //         ))}
-  //       </nav>
-
-  //       <div className="flex items-center gap-4 ml-auto">
-  //         <ThemeToggle />
-
-  //         {/* Mobile Navigation */}
-  //         <Sheet open={isOpen} onOpenChange={setIsOpen}>
-  //           <SheetTrigger asChild className="md:hidden">
-  //             <Button variant="outline" size="icon" aria-label="Open Menu">
-  //               <Menu className="h-5 w-5" />
-  //               <span className="sr-only">Toggle menu</span>
-  //             </Button>
-  //           </SheetTrigger>
-  //           <SheetContent
-  //             side="right"
-  //             className="w-full max-w-sm overflow-y-auto"
-  //           >
-  //             <nav
-  //               className="flex flex-col gap-2 mt-8"
-  //               aria-label="Mobile Navigation"
-  //             >
-  //               {mainNavItems.map((item, index) =>
-  //                 item.megaMenu ? (
-  //                   <Collapsible
-  //                     key={index}
-  //                     open={mobileOpenSections[item.label]}
-  //                     onOpenChange={() => toggleMobileSection(item.label)}
-  //                     className="w-full"
-  //                   >
-  //                     <CollapsibleTrigger className="w-full flex justify-between items-center py-2 text-lg font-medium">
-  //                       <span>{item.label}</span>
-  //                       <ChevronRight
-  //                         className={`h-5 w-5 transition-transform ${
-  //                           mobileOpenSections[item.label] ? "rotate-90" : ""
-  //                         }`}
-  //                       />
-  //                     </CollapsibleTrigger>
-  //                     <CollapsibleContent className="pl-4 space-y-4 mt-2">
-  //                       {item.megaMenu.map((section, sectionIndex) => (
-  //                         <div key={sectionIndex} className="space-y-2">
-  //                           <h3 className="font-medium text-base">
-  //                             {section.title}
-  //                           </h3>
-  //                           <ul className="space-y-2">
-  //                             {section.links.map((link, linkIndex) => (
-  //                               <li key={linkIndex}>
-  //                                 <Link
-  //                                   href={link.href}
-  //                                   className="flex items-center gap-2 py-2 hover:text-primary transition-colors"
-  //                                   onClick={() => setIsOpen(false)}
-  //                                 >
-  //                                   <span className="text-sm">
-  //                                     {link.title}
-  //                                   </span>
-  //                                 </Link>
-  //                               </li>
-  //                             ))}
-  //                           </ul>
-  //                         </div>
-  //                       ))}
-  //                     </CollapsibleContent>
-  //                   </Collapsible>
-  //                 ) : (
-  //                   <Link
-  //                     key={index}
-  //                     href={item.href}
-  //                     className="py-2 text-lg font-medium hover:text-primary transition-colors"
-  //                     onClick={() => setIsOpen(false)}
-  //                   >
-  //                     {item.label}
-  //                   </Link>
-  //                 )
-  //               )}
-  //               <div className="flex items-center gap-4 mt-6"></div>
-  //             </nav>
-  //           </SheetContent>
-  //         </Sheet>
-  //       </div>
-  //     </div>
-
-  //     {/* Mega menu container that stays open when hovered */}
-  //     <div
-  //       className={`absolute left-0 right-0 w-full border-b bg-background shadow-lg transition-all duration-200 z-10 ${
-  //         activeMegaMenu ? "opacity-100 visible" : "opacity-0 invisible"
-  //       }`}
-  //       onMouseEnter={() => activeMegaMenu && setActiveMegaMenu(activeMegaMenu)}
-  //       onMouseLeave={() => setActiveMegaMenu(null)}
-  //     >
-  //       {mainNavItems.map(
-  //         (item, index) =>
-  //           item.megaMenu &&
-  //           activeMegaMenu === item.label && (
-  //             <div key={index} className="container mx-auto p-6">
-  //               <div
-  //                 className="grid gap-6"
-  //                 style={{
-  //                   gridTemplateColumns: `repeat(${item.megaMenu.length}, minmax(0, 1fr))`,
-  //                 }}
-  //               >
-  //                 {item.megaMenu.map((section, sectionIndex) => (
-  //                   <div key={sectionIndex} className="space-y-4">
-  //                     <h3 className="font-medium text-lg">{section.title}</h3>
-  //                     <ul className="space-y-4">
-  //                       {section.links.map((link, linkIndex) => (
-  //                         <li key={linkIndex}>
-  //                           <Link
-  //                             href={link.href}
-  //                             className="group/link flex items-start gap-3 rounded-lg hover:bg-muted p-3 transition-colors"
-  //                           >
-  //                             {renderIcon(link.icon)}
-  //                             <div className="space-y-1">
-  //                               <div className="font-medium group-hover/link:text-primary transition-colors">
-  //                                 {link.title}
-  //                               </div>
-  //                               {link.description && (
-  //                                 <p className="text-sm text-muted-foreground line-clamp-2">
-  //                                   {link.description}
-  //                                 </p>
-  //                               )}
-  //                             </div>
-  //                           </Link>
-  //                         </li>
-  //                       ))}
-  //                     </ul>
-  //                   </div>
-  //                 ))}
-  //               </div>
-  //             </div>
-  //           )
-  //       )}
-  //     </div>
-
-  //     {/* Overlay when mega menu is open */}
-  //     {activeMegaMenu && (
-  //       <div
-  //         className="fixed inset-0 bg-black/40 transition-opacity duration-200 z-0"
-  //         style={{ top: "64px" }}
-  //         onClick={() => setActiveMegaMenu(null)}
-  //       />
-  //     )}
-  //   </header>
-  // );
 }

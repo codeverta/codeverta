@@ -1,425 +1,843 @@
-import React, { useState } from "react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-  AlertDialogTrigger,
-} from "@/components/ui/alert-dialog";
-import Layout from "@/components/layout/Landing";
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import Layout from "@/components/layout/Landing";
 import {
-  Bell,
-  BookmarkPlus,
+  Check,
   ChevronRight,
-  Clock,
-  FlameIcon,
-  Heart,
   Menu,
-  MessageSquare,
-  Search,
-  Share2,
-  ThumbsUp,
-  User,
   X,
+  Moon,
+  Sun,
+  ArrowRight,
+  Star,
+  Zap,
+  Shield,
+  Users,
+  BarChart,
+  Layers,
 } from "lucide-react";
-import { getSortedPostsData } from "@/lib/posts";
-import { PostMeta } from "next";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useTheme } from "next-themes";
 
-function EnhancedNewsLandingPage({
-  allPostsData,
-  featuredPosts,
-  headlines,
-}: {
-  allPostsData: PostMeta[];
-  featuredPosts: PostMeta[];
-  headlines: PostMeta[];
-}) {
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("all");
+export default function LandingPage() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
 
-  const categories = [
-    { id: "/news", name: "News" },
-    { id: "/ai", name: "AI" },
-    { id: "/startups", name: "Startups" },
-    { id: "/tutorials", name: "Tutorials" },
-    { id: "/about", name: "About" },
+  useEffect(() => {
+    setMounted(true);
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 },
+  };
+
+  const features = [
+    {
+      title: "Smart Automation",
+      description:
+        "Automate repetitive tasks and workflows to save time and reduce errors.",
+      icon: <Zap className="size-5" />,
+    },
+    {
+      title: "Advanced Analytics",
+      description:
+        "Gain valuable insights with real-time data visualization and reporting.",
+      icon: <BarChart className="size-5" />,
+    },
+    {
+      title: "Team Collaboration",
+      description:
+        "Work together seamlessly with integrated communication tools.",
+      icon: <Users className="size-5" />,
+    },
+    {
+      title: "Enterprise Security",
+      description:
+        "Keep your data safe with end-to-end encryption and compliance features.",
+      icon: <Shield className="size-5" />,
+    },
+    {
+      title: "Seamless Integration",
+      description:
+        "Connect with your favorite tools through our extensive API ecosystem.",
+      icon: <Layers className="size-5" />,
+    },
+    {
+      title: "24/7 Support",
+      description:
+        "Get help whenever you need it with our dedicated support team.",
+      icon: <Star className="size-5" />,
+    },
   ];
 
-  const trendingTopics = [
-    "AI",
-    "Climate Change",
-    "Space Exploration",
-    "Quantum Computing",
-    "Remote Work",
-    "Metaverse",
-    "Cybersecurity",
-    "Cryptocurrencies",
-    "Clean Energy",
-  ];
-
-  const breakingNews = [
-    "New AI breakthrough could revolutionize healthcare industry",
-    "Global tech leaders announce climate initiative at summit",
-    "SpaceX successfully launches next-generation satellite network",
-  ];
-  console.log(allPostsData);
   return (
-    <div
-      className={`min-h-screen flex flex-col ${
-        isDarkMode ? "dark bg-gray-900 text-white" : "bg-gray-50"
-      }`}
-    >
-      {/* Breaking News Ticker */}
-      {/* <div className="bg-red-600 text-white py-2 overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center">
-            <Badge variant="outline" className="text-white border-white mr-3">
-              BREAKING
-            </Badge>
-            <ScrollArea className="whitespace-nowrap">
-              <div className="animate-marquee inline-block">
-                {breakingNews.map((item, idx) => (
-                  <span key={idx} className="mx-6">
-                    {item}
-                  </span>
+    <div className="flex min-h-[100dvh] flex-col">
+      <main className="flex-1">
+        {/* Hero Section */}
+        <section className="w-full py-20 md:py-32 lg:py-40 overflow-hidden">
+          <div className="container px-4 md:px-6 relative">
+            <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center max-w-3xl mx-auto mb-12"
+            >
+              <Badge
+                className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
+                variant="secondary"
+              >
+                Launching Soon
+              </Badge>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                Built Your First Website with Codeverta
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                The all-in-one platform that helps teams collaborate, automate,
+                and deliver exceptional results. Streamline your processes and
+                focus on what matters most.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://wa.me/+6281578956156?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda"
+                  target="_blank"
+                >
+                  <Button
+                    size="lg"
+                    className="rounded-full h-12 px-8 text-base"
+                  >
+                    Whatsapp Sekarang
+                    <ArrowRight className="ml-2 size-4" />
+                  </Button>
+                </a>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full h-12 px-8 text-base"
+                >
+                  Book a Demo
+                </Button>
+              </div>
+              <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
+                <div className="flex items-center gap-1">
+                  <Check className="size-4 text-primary" />
+                  <span>No credit card</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <Check className="size-4 text-primary" />
+                  <span>14-day trial</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <Check className="size-4 text-primary" />
+                  <span>Cancel anytime</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="relative mx-auto max-w-5xl"
+            >
+              <div className="rounded-xl overflow-hidden shadow-2xl border border-border/40 bg-gradient-to-b from-background to-muted/20">
+                <Image
+                  src="https://cdn.dribbble.com/userupload/12302729/file/original-fa372845e394ee85bebe0389b9d86871.png?resize=1504x1128&vertical=center"
+                  width={1280}
+                  height={720}
+                  alt="SaaSify dashboard"
+                  className="w-full h-auto"
+                  priority
+                />
+                <div className="absolute inset-0 rounded-xl ring-1 ring-inset ring-black/10 dark:ring-white/10"></div>
+              </div>
+              <div className="absolute -bottom-6 -right-6 -z-10 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-primary/30 to-secondary/30 blur-3xl opacity-70"></div>
+              <div className="absolute -top-6 -left-6 -z-10 h-[300px] w-[300px] rounded-full bg-gradient-to-br from-secondary/30 to-primary/30 blur-3xl opacity-70"></div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Logos Section */}
+        <section className="w-full py-12 border-y bg-muted/30">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <p className="text-sm font-medium text-muted-foreground">
+                Trusted by innovative companies worldwide
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <Image
+                    key={i}
+                    src={`/placeholder-logo.svg`}
+                    alt={`Company logo ${i}`}
+                    width={120}
+                    height={60}
+                    className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                  />
                 ))}
               </div>
-            </ScrollArea>
+            </div>
           </div>
-        </div>
-      </div> */}
+        </section>
 
-      {/* Main Content */}
-      <main className="flex-1 bg-white dark:bg-gray-900">
-        <div className="container mx-auto px-4 py-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            {/* Main Articles - 8/12 width on desktop */}
-            <div className="lg:col-span-8 space-y-8">
-              {/* Featured Article Carousel */}
-              <Carousel className="w-full">
-                <CarouselContent>
-                  {featuredPosts.map((item, index) => (
-                    <CarouselItem key={index}>
-                      <Link href={`/news/${item.id}`} className="relative">
-                        <div className="relative h-[400px] md:h-[500px] overflow-hidden rounded-lg">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            width={1200}
-                            height={600}
-                            className="object-cover w-full h-full"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                          <div className="absolute top-4 left-4 bg-[#0a9e01] text-white text-xs px-2 py-1 rounded"></div>
-                        </div>
-                        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                          <h1 className="text-2xl md:text-4xl font-bold mb-2">
-                            {item.title}
-                          </h1>
-                          <div className="flex items-center text-sm mt-4">
-                            <span>{item.author}</span>
-                            <span className="mx-2">•</span>
-                          </div>
-                        </div>
-                      </Link>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <div className="hidden md:block">
-                  <CarouselPrevious className="left-4" />
-                  <CarouselNext className="right-4" />
-                </div>
-              </Carousel>
+        {/* Features Section */}
+        <section id="features" className="w-full py-20 md:py-32">
+          <div className="container px-4 md:px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
+            >
+              <Badge
+                className="rounded-full px-4 py-1.5 text-sm font-medium"
+                variant="secondary"
+              >
+                Features
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Everything You Need to Succeed
+              </h2>
+              <p className="max-w-[800px] text-muted-foreground md:text-lg">
+                Our comprehensive platform provides all the tools you need to
+                streamline your workflow, boost productivity, and achieve your
+                goals.
+              </p>
+            </motion.div>
 
-              {/* Tabs for News Categories */}
-              <Tabs defaultValue="featured" className="w-full">
-                <TabsList className="w-full justify-start mb-6 bg-gray-100 dark:bg-gray-800 p-1 rounded-md overflow-x-auto">
-                  <TabsTrigger value="featured">Featured</TabsTrigger>
-                  <TabsTrigger value="latest">Latest</TabsTrigger>
-                  <TabsTrigger value="popular">Most Read</TabsTrigger>
-                  <TabsTrigger value="tech">Technology</TabsTrigger>
-                  <TabsTrigger value="business">Business</TabsTrigger>
-                </TabsList>
+            <motion.div
+              variants={container}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              {features.map((feature, i) => (
+                <motion.div key={i} variants={item}>
+                  <Card className="h-full overflow-hidden border-border/40 bg-gradient-to-b from-background to-muted/10 backdrop-blur transition-all hover:shadow-md">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <div className="size-10 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary mb-4">
+                        {feature.icon}
+                      </div>
+                      <h3 className="text-xl font-bold mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {feature.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
 
-                <TabsContent value="featured" className="space-y-6">
-                  {/* Featured Articles Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {featuredPosts.map((item, index) => (
-                      <Card
-                        key={index}
-                        className="overflow-hidden transition-all hover:shadow-lg"
-                      >
-                        <div className="relative h-48">
-                          <Image
-                            src={item.image}
-                            alt={item.title}
-                            width={400}
-                            height={200}
-                            className="object-cover w-full h-full"
-                          />
-                          <div className="absolute top-2 left-2">
-                            <Badge className="bg-[#0a9e01]">
-                              {item.category}
-                            </Badge>
-                          </div>
+        {/* How It Works Section */}
+        <section className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+          <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
+
+          <div className="container px-4 md:px-6 relative">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center justify-center space-y-4 text-center mb-16"
+            >
+              <Badge
+                className="rounded-full px-4 py-1.5 text-sm font-medium"
+                variant="secondary"
+              >
+                How It Works
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Simple Process, Powerful Results
+              </h2>
+              <p className="max-w-[800px] text-muted-foreground md:text-lg">
+                Get started in minutes and see the difference our platform can
+                make for your business.
+              </p>
+            </motion.div>
+
+            <div className="grid md:grid-cols-3 gap-8 md:gap-12 relative">
+              <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent -translate-y-1/2 z-0"></div>
+
+              {[
+                {
+                  step: "01",
+                  title: "Create Account",
+                  description:
+                    "Sign up in seconds with just your email. No credit card required to get started.",
+                },
+                {
+                  step: "02",
+                  title: "Configure Workspace",
+                  description:
+                    "Customize your workspace to match your team's unique workflow and requirements.",
+                },
+                {
+                  step: "03",
+                  title: "Boost Productivity",
+                  description:
+                    "Start using our powerful features to streamline processes and achieve your goals.",
+                },
+              ].map((step, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className="relative z-10 flex flex-col items-center text-center space-y-4"
+                >
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary/70 text-primary-foreground text-xl font-bold shadow-lg">
+                    {step.step}
+                  </div>
+                  <h3 className="text-xl font-bold">{step.title}</h3>
+                  <p className="text-muted-foreground">{step.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section id="testimonials" className="w-full py-20 md:py-32">
+          <div className="container px-4 md:px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
+            >
+              <Badge
+                className="rounded-full px-4 py-1.5 text-sm font-medium"
+                variant="secondary"
+              >
+                Testimonials
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Loved by Teams Worldwide
+              </h2>
+              <p className="max-w-[800px] text-muted-foreground md:text-lg">
+                Don't just take our word for it. See what our customers have to
+                say about their experience.
+              </p>
+            </motion.div>
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  quote:
+                    "SaaSify has transformed how we manage our projects. The automation features have saved us countless hours of manual work.",
+                  author: "Sarah Johnson",
+                  role: "Project Manager, TechCorp",
+                  rating: 5,
+                },
+                {
+                  quote:
+                    "The analytics dashboard provides insights we never had access to before. It's helped us make data-driven decisions that have improved our ROI.",
+                  author: "Michael Chen",
+                  role: "Marketing Director, GrowthLabs",
+                  rating: 5,
+                },
+                {
+                  quote:
+                    "Customer support is exceptional. Any time we've had an issue, the team has been quick to respond and resolve it. Couldn't ask for better service.",
+                  author: "Emily Rodriguez",
+                  role: "Operations Lead, StartupX",
+                  rating: 5,
+                },
+                {
+                  quote:
+                    "We've tried several similar solutions, but none compare to the ease of use and comprehensive features of SaaSify. It's been a game-changer.",
+                  author: "David Kim",
+                  role: "CEO, InnovateNow",
+                  rating: 5,
+                },
+                {
+                  quote:
+                    "The collaboration tools have made remote work so much easier for our team. We're more productive than ever despite being spread across different time zones.",
+                  author: "Lisa Patel",
+                  role: "HR Director, RemoteFirst",
+                  rating: 5,
+                },
+                {
+                  quote:
+                    "Implementation was seamless, and the ROI was almost immediate. We've reduced our operational costs by 30% since switching to SaaSify.",
+                  author: "James Wilson",
+                  role: "COO, ScaleUp Inc",
+                  rating: 5,
+                },
+              ].map((testimonial, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.05 }}
+                >
+                  <Card className="h-full overflow-hidden border-border/40 bg-gradient-to-b from-background to-muted/10 backdrop-blur transition-all hover:shadow-md">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <div className="flex mb-4">
+                        {Array(testimonial.rating)
+                          .fill(0)
+                          .map((_, j) => (
+                            <Star
+                              key={j}
+                              className="size-4 text-yellow-500 fill-yellow-500"
+                            />
+                          ))}
+                      </div>
+                      <p className="text-lg mb-6 flex-grow">
+                        {testimonial.quote}
+                      </p>
+                      <div className="flex items-center gap-4 mt-auto pt-4 border-t border-border/40">
+                        <div className="size-10 rounded-full bg-muted flex items-center justify-center text-foreground font-medium">
+                          {testimonial.author.charAt(0)}
                         </div>
-                        <CardContent className="p-4">
-                          <h2 className="text-lg font-bold mb-2 line-clamp-2">
-                            {item.title}
-                          </h2>
-                          <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-2 mb-3">
-                            {item.desc}
+                        <div>
+                          <p className="font-medium">{testimonial.author}</p>
+                          <p className="text-sm text-muted-foreground">
+                            {testimonial.role}
                           </p>
-                          <div className="flex items-center justify-between text-sm">
-                            <div className="flex items-center space-x-2">
-                              <Avatar className="h-6 w-6">
-                                <AvatarFallback>{item.image}</AvatarFallback>
-                              </Avatar>
-                              <span>{item.author}</span>
-                              <span className="text-gray-400">•</span>
-                              <span className="flex items-center text-gray-400">
-                                <Clock className="h-3 w-3 mr-1" /> 5 min read
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Section */}
+        <section
+          id="pricing"
+          className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden"
+        >
+          <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
+
+          <div className="container px-4 md:px-6 relative">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
+            >
+              <Badge
+                className="rounded-full px-4 py-1.5 text-sm font-medium"
+                variant="secondary"
+              >
+                Pricing
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Simple, Transparent Pricing
+              </h2>
+              <p className="max-w-[800px] text-muted-foreground md:text-lg">
+                Choose the plan that's right for your business. All plans
+                include a 14-day free trial.
+              </p>
+            </motion.div>
+
+            <div className="mx-auto max-w-5xl">
+              <Tabs defaultValue="monthly" className="w-full">
+                <div className="flex justify-center mb-8">
+                  <TabsList className="rounded-full p-1">
+                    <TabsTrigger value="monthly" className="rounded-full px-6">
+                      Monthly
+                    </TabsTrigger>
+                    <TabsTrigger value="annually" className="rounded-full px-6">
+                      Annually (Save 20%)
+                    </TabsTrigger>
+                  </TabsList>
+                </div>
+                <TabsContent value="monthly">
+                  <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
+                    {[
+                      {
+                        name: "Starter",
+                        price: "$29",
+                        description: "Perfect for small teams and startups.",
+                        features: [
+                          "Up to 5 team members",
+                          "Basic analytics",
+                          "5GB storage",
+                          "Email support",
+                        ],
+                        cta: "Start Free Trial",
+                      },
+                      {
+                        name: "Professional",
+                        price: "$79",
+                        description: "Ideal for growing businesses.",
+                        features: [
+                          "Up to 20 team members",
+                          "Advanced analytics",
+                          "25GB storage",
+                          "Priority email support",
+                          "API access",
+                        ],
+                        cta: "Start Free Trial",
+                        popular: true,
+                      },
+                      {
+                        name: "Enterprise",
+                        price: "$199",
+                        description:
+                          "For large organizations with complex needs.",
+                        features: [
+                          "Unlimited team members",
+                          "Custom analytics",
+                          "Unlimited storage",
+                          "24/7 phone & email support",
+                          "Advanced API access",
+                          "Custom integrations",
+                        ],
+                        cta: "Contact Sales",
+                      },
+                    ].map((plan, i) => (
+                      <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: i * 0.1 }}
+                      >
+                        <Card
+                          className={`relative overflow-hidden h-full ${
+                            plan.popular
+                              ? "border-primary shadow-lg"
+                              : "border-border/40 shadow-md"
+                          } bg-gradient-to-b from-background to-muted/10 backdrop-blur`}
+                        >
+                          {plan.popular && (
+                            <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
+                              Most Popular
+                            </div>
+                          )}
+                          <CardContent className="p-6 flex flex-col h-full">
+                            <h3 className="text-2xl font-bold">{plan.name}</h3>
+                            <div className="flex items-baseline mt-4">
+                              <span className="text-4xl font-bold">
+                                {plan.price}
+                              </span>
+                              <span className="text-muted-foreground ml-1">
+                                /month
                               </span>
                             </div>
-                            <div className="flex items-center space-x-2">
-                              <Button
-                                variant="ghost"
-                                size="icon"
-                                className="h-8 w-8"
-                              >
-                                <Share2 className="h-4 w-4" />
-                              </Button>
-                              <Button
-                                variant="ghost"
-                                size="icon"
-                                className="h-8 w-8"
-                              >
-                                <BookmarkPlus className="h-4 w-4" />
-                              </Button>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </Card>
+                            <p className="text-muted-foreground mt-2">
+                              {plan.description}
+                            </p>
+                            <ul className="space-y-3 my-6 flex-grow">
+                              {plan.features.map((feature, j) => (
+                                <li key={j} className="flex items-center">
+                                  <Check className="mr-2 size-4 text-primary" />
+                                  <span>{feature}</span>
+                                </li>
+                              ))}
+                            </ul>
+                            <Button
+                              className={`w-full mt-auto rounded-full ${
+                                plan.popular
+                                  ? "bg-primary hover:bg-primary/90"
+                                  : "bg-muted hover:bg-muted/80"
+                              }`}
+                              variant={plan.popular ? "default" : "outline"}
+                            >
+                              {plan.cta}
+                            </Button>
+                          </CardContent>
+                        </Card>
+                      </motion.div>
                     ))}
                   </div>
                 </TabsContent>
-
-                <TabsContent value="latest" className="space-y-4">
-                  {/* Latest News List Format */}
-                  {[1, 2, 3, 4, 5].map((item) => (
-                    <Card key={item} className="overflow-hidden">
-                      <div className="flex flex-col md:flex-row">
-                        <div className="relative md:w-1/3 h-48 md:h-auto">
-                          <Image
-                            src={`https://picsum.photos/seed/latest${item}/800/450`}
-                            alt={`Latest article ${item}`}
-                            width={400}
-                            height={200}
-                            className="object-cover w-full h-full"
-                          />
-                          <div className="absolute top-2 left-2">
-                            <Badge className="bg-blue-600">Just In</Badge>
-                          </div>
-                        </div>
-                        <CardContent className="p-4 md:w-2/3 flex flex-col justify-between">
-                          <div>
-                            <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-2">
-                              <Clock className="h-3 w-3 mr-1" />
-                              <span>{item * 10} minutes ago</span>
+                <TabsContent value="annually">
+                  <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
+                    {[
+                      {
+                        name: "Starter",
+                        price: "$23",
+                        description: "Perfect for small teams and startups.",
+                        features: [
+                          "Up to 5 team members",
+                          "Basic analytics",
+                          "5GB storage",
+                          "Email support",
+                        ],
+                        cta: "Start Free Trial",
+                      },
+                      {
+                        name: "Professional",
+                        price: "$63",
+                        description: "Ideal for growing businesses.",
+                        features: [
+                          "Up to 20 team members",
+                          "Advanced analytics",
+                          "25GB storage",
+                          "Priority email support",
+                          "API access",
+                        ],
+                        cta: "Start Free Trial",
+                        popular: true,
+                      },
+                      {
+                        name: "Enterprise",
+                        price: "$159",
+                        description:
+                          "For large organizations with complex needs.",
+                        features: [
+                          "Unlimited team members",
+                          "Custom analytics",
+                          "Unlimited storage",
+                          "24/7 phone & email support",
+                          "Advanced API access",
+                          "Custom integrations",
+                        ],
+                        cta: "Contact Sales",
+                      },
+                    ].map((plan, i) => (
+                      <motion.div
+                        key={i}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: i * 0.1 }}
+                      >
+                        <Card
+                          className={`relative overflow-hidden h-full ${
+                            plan.popular
+                              ? "border-primary shadow-lg"
+                              : "border-border/40 shadow-md"
+                          } bg-gradient-to-b from-background to-muted/10 backdrop-blur`}
+                        >
+                          {plan.popular && (
+                            <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
+                              Most Popular
                             </div>
-                            <h2 className="text-xl font-bold mb-2">
-                              {
-                                [
-                                  "Breaking: Tech Giant Announces Major Layoffs",
-                                  "Global Markets React to Central Bank Decision",
-                                  "Scientists Discover New Potential Treatment for Cancer",
-                                  "Historic Climate Agreement Reached at Summit",
-                                  "Sports Legend Announces Retirement After 20-Year Career",
-                                ][item - 1]
-                              }
-                            </h2>
-                            <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
-                              {
-                                [
-                                  "One of the world's largest tech companies has announced it will cut 10% of its workforce...",
-                                  "Financial markets worldwide showed significant volatility following the unexpected decision...",
-                                  "A breakthrough study published today reveals promising results for a novel approach to treating...",
-                                  "After weeks of tense negotiations, world leaders have finally reached a consensus on...",
-                                  "In an emotional press conference earlier today, the sports icon confirmed rumors about...",
-                                ][item - 1]
-                              }
-                            </p>
-                          </div>
-                          <div className="flex items-center justify-between mt-2">
-                            <div className="flex items-center space-x-2">
-                              <Avatar className="h-6 w-6">
-                                <AvatarFallback>
-                                  {["RJ", "LM", "AK", "CT", "BP"][item - 1]}
-                                </AvatarFallback>
-                              </Avatar>
-                              <span className="text-sm">
-                                {
-                                  [
-                                    "Rebecca Johnson",
-                                    "Luke Miller",
-                                    "Anita Karim",
-                                    "Carlos Torres",
-                                    "Ben Phillips",
-                                  ][item - 1]
-                                }
+                          )}
+                          <CardContent className="p-6 flex flex-col h-full">
+                            <h3 className="text-2xl font-bold">{plan.name}</h3>
+                            <div className="flex items-baseline mt-4">
+                              <span className="text-4xl font-bold">
+                                {plan.price}
+                              </span>
+                              <span className="text-muted-foreground ml-1">
+                                /month
                               </span>
                             </div>
-                            <div className="flex items-center space-x-1">
-                              <Button
-                                variant="ghost"
-                                size="sm"
-                                className="flex items-center space-x-1"
-                              >
-                                <MessageSquare className="h-4 w-4" />
-                                <span>{item * 8}</span>
-                              </Button>
-                              <Button
-                                variant="ghost"
-                                size="sm"
-                                className="flex items-center space-x-1"
-                              >
-                                <Share2 className="h-4 w-4" />
-                              </Button>
-                            </div>
-                          </div>
-                        </CardContent>
-                      </div>
-                    </Card>
-                  ))}
-                  <Button variant="outline" className="w-full">
-                    Load More
-                  </Button>
-                </TabsContent>
-
-                {/* Other tab contents would be similar structures */}
-                <TabsContent value="popular">
-                  <div className="space-y-6">
-                    <h2 className="text-2xl font-bold">
-                      Most Read Articles This Week
-                    </h2>
-                    {/* Popular content would go here */}
+                            <p className="text-muted-foreground mt-2">
+                              {plan.description}
+                            </p>
+                            <ul className="space-y-3 my-6 flex-grow">
+                              {plan.features.map((feature, j) => (
+                                <li key={j} className="flex items-center">
+                                  <Check className="mr-2 size-4 text-primary" />
+                                  <span>{feature}</span>
+                                </li>
+                              ))}
+                            </ul>
+                            <Button
+                              className={`w-full mt-auto rounded-full ${
+                                plan.popular
+                                  ? "bg-primary hover:bg-primary/90"
+                                  : "bg-muted hover:bg-muted/80"
+                              }`}
+                              variant={plan.popular ? "default" : "outline"}
+                            >
+                              {plan.cta}
+                            </Button>
+                          </CardContent>
+                        </Card>
+                      </motion.div>
+                    ))}
                   </div>
                 </TabsContent>
               </Tabs>
             </div>
+          </div>
+        </section>
 
-            {/* Sidebar - 4/12 width on desktop */}
-            <div className="lg:col-span-4 space-y-8">
-              {/* Top Headlines */}
-              <Card>
-                <CardHeader className="pb-2">
-                  <CardTitle className="text-xl font-bold text-[#0a9e01]">
-                    Top Headlines
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <ul className="space-y-4">
-                    {headlines.map((headline, index) => (
-                      <li
-                        key={index}
-                        className="pb-3 border-b border-gray-200 dark:border-gray-700 last:border-0"
-                      >
-                        <Link
-                          href={`/news/${headline.id}`}
-                          className="flex group"
-                        >
-                          <span className="text-[#0a9e01] font-bold mr-2">
-                            ■
-                          </span>
-                          <span className="font-medium group-hover:text-[#0a9e01] transition-colors">
-                            {headline.title}
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Link href={"/news"}>
-                    <Button variant="link" className="text-[#0a9e01] w-full">
-                      View All Headlines
-                    </Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+        {/* FAQ Section */}
+        <section id="faq" className="w-full py-20 md:py-32">
+          <div className="container px-4 md:px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
+            >
+              <Badge
+                className="rounded-full px-4 py-1.5 text-sm font-medium"
+                variant="secondary"
+              >
+                FAQ
+              </Badge>
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+                Frequently Asked Questions
+              </h2>
+              <p className="max-w-[800px] text-muted-foreground md:text-lg">
+                Find answers to common questions about our platform.
+              </p>
+            </motion.div>
+
+            <div className="mx-auto max-w-3xl">
+              <Accordion type="single" collapsible className="w-full">
+                {[
+                  {
+                    question: "How does the 14-day free trial work?",
+                    answer:
+                      "Our 14-day free trial gives you full access to all features of your selected plan. No credit card is required to sign up, and you can cancel at any time during the trial period with no obligation.",
+                  },
+                  {
+                    question: "Can I change plans later?",
+                    answer:
+                      "Yes, you can upgrade or downgrade your plan at any time. If you upgrade, the new pricing will be prorated for the remainder of your billing cycle. If you downgrade, the new pricing will take effect at the start of your next billing cycle.",
+                  },
+                  {
+                    question: "Is there a limit to how many users I can add?",
+                    answer:
+                      "The number of users depends on your plan. The Starter plan allows up to 5 team members, the Professional plan allows up to 20, and the Enterprise plan has no limit on team members.",
+                  },
+                  {
+                    question:
+                      "Do you offer discounts for nonprofits or educational institutions?",
+                    answer:
+                      "Yes, we offer special pricing for nonprofits, educational institutions, and open-source projects. Please contact our sales team for more information.",
+                  },
+                  {
+                    question: "How secure is my data?",
+                    answer:
+                      "We take security very seriously. All data is encrypted both in transit and at rest. We use industry-standard security practices and regularly undergo security audits. Our platform is compliant with GDPR, CCPA, and other relevant regulations.",
+                  },
+                  {
+                    question: "What kind of support do you offer?",
+                    answer:
+                      "Support varies by plan. All plans include email support, with the Professional plan offering priority email support. The Enterprise plan includes 24/7 phone and email support. We also have an extensive knowledge base and community forum available to all users.",
+                  },
+                ].map((faq, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: i * 0.05 }}
+                  >
+                    <AccordionItem
+                      value={`item-${i}`}
+                      className="border-b border-border/40 py-2"
+                    >
+                      <AccordionTrigger className="text-left font-medium hover:no-underline">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                ))}
+              </Accordion>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="w-full py-20 md:py-32 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground relative overflow-hidden">
+          <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+          <div className="absolute -top-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+
+          <div className="container px-4 md:px-6 relative">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="flex flex-col items-center justify-center space-y-6 text-center"
+            >
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+                Ready to Transform Your Workflow?
+              </h2>
+              <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
+                Join thousands of satisfied customers who have streamlined their
+                processes and boosted productivity with our platform.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="rounded-full h-12 px-8 text-base"
+                >
+                  Start Free Trial
+                  <ArrowRight className="ml-2 size-4" />
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:bg-white/10"
+                >
+                  Schedule a Demo
+                </Button>
+              </div>
+              <p className="text-sm text-primary-foreground/80 mt-4">
+                No credit card required. 14-day free trial. Cancel anytime.
+              </p>
+            </motion.div>
+          </div>
+        </section>
       </main>
     </div>
   );
 }
 
-EnhancedNewsLandingPage.getLayout = function getLayout(page) {
+
+LandingPage.getLayout = function getLayout(page) {
   return <Layout>{page}</Layout>;
 };
-
-export default EnhancedNewsLandingPage;
-
-
-export async function getStaticProps({ locale }) {
-  // Get posts and add sample categories and read times
-  const allPostsData = getSortedPostsData("news").map((post, index) => {
-    const readTimes = [
-      "3 min read",
-      "5 min read",
-      "7 min read",
-      "4 min read",
-      "6 min read",
-    ];
-
-    return {
-      ...post,
-      category: "news",
-      readTime: readTimes[index % readTimes.length],
-    };
-  });
-
-  return {
-    props: {
-      allPostsData,
-      featuredPosts: allPostsData.splice(0, 4),
-      headlines: allPostsData.splice(0, 5),
-    },
-  };
-}
