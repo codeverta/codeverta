@@ -73,39 +73,39 @@ export default function LandingPage() {
 
   const features = [
     {
-      title: "Smart Automation",
+      title: "Desain Website Profesional",
       description:
-        "Automate repetitive tasks and workflows to save time and reduce errors.",
+        "Kami merancang website modern dan responsif yang optimal di semua perangkat, dari desktop hingga mobile.",
       icon: <Zap className="size-5" />,
     },
     {
-      title: "Advanced Analytics",
+      title: "Optimasi SEO & Performa",
       description:
-        "Gain valuable insights with real-time data visualization and reporting.",
+        "Tingkatkan peringkat di Google dan berikan pengalaman pengguna terbaik dengan website yang cepat dan teroptimasi.",
       icon: <BarChart className="size-5" />,
     },
     {
-      title: "Team Collaboration",
+      title: "Perbaikan & Maintenance",
       description:
-        "Work together seamlessly with integrated communication tools.",
+        "Mengalami masalah dengan website Anda? Tim kami siap memperbaiki bug, error, dan melakukan pembaruan rutin.",
       icon: <Users className="size-5" />,
     },
     {
-      title: "Enterprise Security",
+      title: "Keamanan Website Terjamin",
       description:
-        "Keep your data safe with end-to-end encryption and compliance features.",
+        "Lindungi data dan pengunjung website Anda dari ancaman siber dengan sistem keamanan berlapis.",
       icon: <Shield className="size-5" />,
     },
     {
-      title: "Seamless Integration",
+      title: "Layanan IT Support",
       description:
-        "Connect with your favorite tools through our extensive API ecosystem.",
+        "Solusi untuk semua masalah teknis IT Anda, mulai dari troubleshooting hardware hingga manajemen jaringan.",
       icon: <Layers className="size-5" />,
     },
     {
-      title: "24/7 Support",
+      title: "Dukungan Aftersales",
       description:
-        "Get help whenever you need it with our dedicated support team.",
+        "Kami tidak hanya membuat, tapi juga memastikan website dan sistem IT Anda berjalan lancar setelah serah terima.",
       icon: <Star className="size-5" />,
     },
   ];
@@ -128,19 +128,19 @@ export default function LandingPage() {
                 className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Launching Soon
+                Jasa Website & Layanan IT Profesional
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-                Built Your First Website with Codeverta
+                Wujudkan Website Impian Anda Bersama Codeverta
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                The all-in-one platform that helps teams collaborate, automate,
-                and deliver exceptional results. Streamline your processes and
-                focus on what matters most.
+                Kami menyediakan jasa pembuatan website profesional, perbaikan,
+                dan layanan IT terkelola untuk mendorong pertumbuhan bisnis Anda
+                di era digital.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://wa.me/+6281578956156?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda"
+                  href="https://wa.me/+6285726394401?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda"
                   target="_blank"
                 >
                   <Button
@@ -151,26 +151,26 @@ export default function LandingPage() {
                     <ArrowRight className="ml-2 size-4" />
                   </Button>
                 </a>
-                <Button
+                {/* <Button
                   size="lg"
                   variant="outline"
                   className="rounded-full h-12 px-8 text-base"
                 >
                   Book a Demo
-                </Button>
+                </Button> */}
               </div>
               <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>No credit card</span>
+                  <span>Konsultasi Gratis</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>14-day trial</span>
+                  <span>Proses Cepat</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>Cancel anytime</span>
+                  <span>Garansi Kepuasan</span>
                 </div>
               </div>
             </motion.div>
@@ -199,7 +199,7 @@ export default function LandingPage() {
         </section>
 
         {/* Logos Section */}
-        <section className="w-full py-12 border-y bg-muted/30">
+        {/* <section className="w-full py-12 border-y bg-muted/30">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <p className="text-sm font-medium text-muted-foreground">
@@ -219,7 +219,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Features Section */}
         <section id="features" className="w-full py-20 md:py-32">
@@ -235,15 +235,14 @@ export default function LandingPage() {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Features
+                Layanan Kami
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Everything You Need to Succeed
+                Solusi Lengkap untuk Kebutuhan Digital Anda
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Our comprehensive platform provides all the tools you need to
-                streamline your workflow, boost productivity, and achieve your
-                goals.
+                Dari website yang memukau hingga dukungan IT yang andal, kami
+                menyediakan semua yang Anda butuhkan untuk sukses secara online.
               </p>
             </motion.div>
 
@@ -291,10 +290,11 @@ export default function LandingPage() {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                How It Works
+                Proses Mudah, Hasil Maksimal
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Simple Process, Powerful Results
+                Mulai proyek Anda hanya dalam 3 langkah sederhana bersama tim
+                ahli kami.
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
                 Get started in minutes and see the difference our platform can
@@ -308,21 +308,21 @@ export default function LandingPage() {
               {[
                 {
                   step: "01",
-                  title: "Create Account",
+                  title: "Konsultasi Kebutuhan",
                   description:
-                    "Sign up in seconds with just your email. No credit card required to get started.",
+                    "Diskusikan ide, tujuan, dan kebutuhan spesifik proyek Anda bersama tim konsultan kami secara gratis.",
                 },
                 {
                   step: "02",
-                  title: "Configure Workspace",
+                  title: "Proses Desain & Pengembangan",
                   description:
-                    "Customize your workspace to match your team's unique workflow and requirements.",
+                    "Tim kami akan merancang dan membangun website atau solusi IT Anda sesuai dengan hasil diskusi.",
                 },
                 {
                   step: "03",
-                  title: "Boost Productivity",
+                  title: "Peluncuran & Dukungan",
                   description:
-                    "Start using our powerful features to streamline processes and achieve your goals.",
+                    "Kami luncurkan proyek Anda ke publik dan memberikan dukungan berkelanjutan untuk memastikan semua berjalan lancar.",
                 },
               ].map((step, i) => (
                 <motion.div
@@ -358,14 +358,14 @@ export default function LandingPage() {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Testimonials
+                Testimoni
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Loved by Teams Worldwide
+                Apa Kata Klien Kami
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Don't just take our word for it. See what our customers have to
-                say about their experience.
+                Jangan hanya percaya kata kami. Lihat apa yang dikatakan para
+                klien yang puas dengan layanan kami.
               </p>
             </motion.div>
 
@@ -373,42 +373,42 @@ export default function LandingPage() {
               {[
                 {
                   quote:
-                    "SaaSify has transformed how we manage our projects. The automation features have saved us countless hours of manual work.",
-                  author: "Sarah Johnson",
-                  role: "Project Manager, TechCorp",
+                    "Codeverta mengubah total tampilan website kami menjadi lebih profesional. Pengunjung meningkat drastis!",
+                  author: "Sarah Widjaja",
+                  role: "Owner, Butik Elegan",
                   rating: 5,
                 },
                 {
                   quote:
-                    "The analytics dashboard provides insights we never had access to before. It's helped us make data-driven decisions that have improved our ROI.",
-                  author: "Michael Chen",
-                  role: "Marketing Director, GrowthLabs",
+                    "Website lama kami sangat lambat. Setelah diperbaiki oleh Codeverta, kecepatannya luar biasa. Terima kasih!",
+                  author: "Budi Santoso",
+                  role: "Manajer Marketing, Maju Jaya Motor",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Customer support is exceptional. Any time we've had an issue, the team has been quick to respond and resolve it. Couldn't ask for better service.",
-                  author: "Emily Rodriguez",
-                  role: "Operations Lead, StartupX",
+                    "Dukungan IT mereka sangat responsif. Setiap masalah teknis di kantor kami selesai dalam sekejap. Sangat direkomendasikan.",
+                  author: "Emily Hartono",
+                  role: "Kepala Operasional, Startup Cepat",
                   rating: 5,
                 },
                 {
                   quote:
-                    "We've tried several similar solutions, but none compare to the ease of use and comprehensive features of SaaSify. It's been a game-changer.",
+                    "Proses pembuatannya transparan dan hasilnya melebihi ekspektasi. Website kami sekarang menjadi mesin penjualan utama.",
                   author: "David Kim",
                   role: "CEO, InnovateNow",
                   rating: 5,
                 },
                 {
                   quote:
-                    "The collaboration tools have made remote work so much easier for our team. We're more productive than ever despite being spread across different time zones.",
-                  author: "Lisa Patel",
-                  role: "HR Director, RemoteFirst",
+                    "Sangat mudah berkomunikasi dengan tim Codeverta. Mereka benar-benar memahami visi yang kami inginkan untuk website kami.",
+                  author: "Lisa Puspita",
+                  role: "Direktur Kreatif, Galeri Seni",
                   rating: 5,
                 },
                 {
                   quote:
-                    "Implementation was seamless, and the ROI was almost immediate. We've reduced our operational costs by 30% since switching to SaaSify.",
+                    "Investasi terbaik yang pernah kami lakukan. Sejak website baru diluncurkan, omzet kami naik hingga 40%. Luar biasa!",
                   author: "James Wilson",
                   role: "COO, ScaleUp Inc",
                   rating: 5,
@@ -474,14 +474,14 @@ export default function LandingPage() {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Pricing
+                Harga
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Simple, Transparent Pricing
+                Paket Harga yang Fleksibel & Transparan
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Choose the plan that's right for your business. All plans
-                include a 14-day free trial.
+                Pilih paket yang paling sesuai untuk bisnis Anda. Tidak ada
+                biaya tambahan.
               </p>
             </motion.div>
 
@@ -501,45 +501,44 @@ export default function LandingPage() {
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
                     {[
                       {
-                        name: "Starter",
-                        price: "$29",
-                        description: "Perfect for small teams and startups.",
+                        name: "Paket Basic",
+                        price: "Rp 1,5 Jt",
+                        description:
+                          "Cocok untuk profil perusahaan atau portofolio.",
                         features: [
-                          "Up to 5 team members",
-                          "Basic analytics",
-                          "5GB storage",
-                          "Email support",
+                          "Desain dari Template",
+                          "Hingga 5 Halaman",
+                          "Domain & Hosting 1 Tahun",
                         ],
-                        cta: "Start Free Trial",
+                        cta: "Pilih Paket",
                       },
                       {
-                        name: "Professional",
-                        price: "$79",
-                        description: "Ideal for growing businesses.",
+                        name: "Paket Bisnis",
+                        price: "Rp 4 Jt",
+                        description:
+                          "Ideal untuk UKM dan bisnis yang sedang berkembang.",
                         features: [
-                          "Up to 20 team members",
-                          "Advanced analytics",
-                          "25GB storage",
-                          "Priority email support",
-                          "API access",
+                          "Desain Custom Profesional",
+                          "Hingga 10 Halaman",
+                          "Optimasi SEO Dasar",
+                          "Dukungan Prioritas",
+                          "Integrasi Media Sosial",
                         ],
-                        cta: "Start Free Trial",
+                        cta: "Pilih Paket",
                         popular: true,
                       },
                       {
-                        name: "Enterprise",
-                        price: "$199",
+                        name: "Solusi Custom",
+                        price: "Nego",
                         description:
-                          "For large organizations with complex needs.",
+                          "Untuk perusahaan dengan kebutuhan kompleks.",
                         features: [
-                          "Unlimited team members",
-                          "Custom analytics",
-                          "Unlimited storage",
-                          "24/7 phone & email support",
-                          "Advanced API access",
-                          "Custom integrations",
+                          "Fitur Lanjutan (E-commerce, dll)",
+                          "Desain & Sistem Sesuai Kebutuhan",
+                          "Maintenance & Dukungan IT",
+                          "Laporan Performa Bulanan",
                         ],
-                        cta: "Contact Sales",
+                        cta: "Hubungi Sales",
                       },
                     ].map((plan, i) => (
                       <motion.div
@@ -568,7 +567,7 @@ export default function LandingPage() {
                                 {plan.price}
                               </span>
                               <span className="text-muted-foreground ml-1">
-                                /month
+                                /sekali bayar
                               </span>
                             </div>
                             <p className="text-muted-foreground mt-2">
@@ -721,10 +720,11 @@ export default function LandingPage() {
                 FAQ
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Frequently Asked Questions
+                Pertanyaan Umum
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Find answers to common questions about our platform.
+                Temukan jawaban untuk pertanyaan yang paling sering diajukan
+                mengenai layanan kami.
               </p>
             </motion.div>
 
@@ -732,35 +732,32 @@ export default function LandingPage() {
               <Accordion type="single" collapsible className="w-full">
                 {[
                   {
-                    question: "How does the 14-day free trial work?",
+                    question: "Berapa lama proses pembuatan sebuah website?",
                     answer:
-                      "Our 14-day free trial gives you full access to all features of your selected plan. No credit card is required to sign up, and you can cancel at any time during the trial period with no obligation.",
+                      "Waktu pengerjaan bervariasi tergantung kompleksitas. Untuk Paket Basic biasanya memakan waktu 1-2 minggu, sedangkan Paket Bisnis sekitar 3-4 minggu. Solusi Custom akan disesuaikan dengan skala proyek.",
                   },
                   {
-                    question: "Can I change plans later?",
+                    question: "Apa saja yang perlu saya siapkan?",
                     answer:
-                      "Yes, you can upgrade or downgrade your plan at any time. If you upgrade, the new pricing will be prorated for the remainder of your billing cycle. If you downgrade, the new pricing will take effect at the start of your next billing cycle.",
-                  },
-                  {
-                    question: "Is there a limit to how many users I can add?",
-                    answer:
-                      "The number of users depends on your plan. The Starter plan allows up to 5 team members, the Professional plan allows up to 20, and the Enterprise plan has no limit on team members.",
+                      "Anda cukup menyiapkan materi konten seperti teks profil perusahaan, daftar layanan/produk, dan gambar/foto yang ingin ditampilkan. Jika belum ada, tim kami bisa membantu mengarahkannya.",
                   },
                   {
                     question:
-                      "Do you offer discounts for nonprofits or educational institutions?",
+                      "Apakah ada layanan maintenance setelah website jadi?",
                     answer:
-                      "Yes, we offer special pricing for nonprofits, educational institutions, and open-source projects. Please contact our sales team for more information.",
+                      "Tentu. Kami menyediakan paket maintenance bulanan atau tahunan yang mencakup update, backup, dan monitoring keamanan. Anda juga bisa menghubungi kami jika butuh perbaikan sewaktu-waktu.",
                   },
                   {
-                    question: "How secure is my data?",
+                    question:
+                      "Bisakah Anda memperbaiki website saya yang sudah ada?",
                     answer:
-                      "We take security very seriously. All data is encrypted both in transit and at rest. We use industry-standard security practices and regularly undergo security audits. Our platform is compliant with GDPR, CCPA, and other relevant regulations.",
+                      "Ya, kami bisa. Tim kami akan melakukan audit terlebih dahulu untuk mengidentifikasi masalah pada website Anda, mulai dari error, kecepatan, hingga tampilan, lalu memberikan solusi perbaikan terbaik.",
                   },
                   {
-                    question: "What kind of support do you offer?",
+                    question:
+                      "Apa saja yang termasuk dalam layanan IT Service?",
                     answer:
-                      "Support varies by plan. All plans include email support, with the Professional plan offering priority email support. The Enterprise plan includes 24/7 phone and email support. We also have an extensive knowledge base and community forum available to all users.",
+                      "Layanan IT kami mencakup spektrum yang luas, mulai dari perbaikan dan instalasi hardware/software, manajemen jaringan kantor, keamanan siber, hingga konsultasi infrastruktur teknologi untuk bisnis Anda.",
                   },
                 ].map((faq, i) => (
                   <motion.div
@@ -803,11 +800,11 @@ export default function LandingPage() {
               className="flex flex-col items-center justify-center space-y-6 text-center"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                Ready to Transform Your Workflow?
+                Siap Memiliki Website Profesional?
               </h2>
               <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-                Join thousands of satisfied customers who have streamlined their
-                processes and boosted productivity with our platform.
+                Hubungi kami hari ini untuk konsultasi gratis. Mari kita bangun
+                kehadiran digital yang kuat untuk bisnis Anda bersama-sama.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
                 <Button
@@ -815,7 +812,7 @@ export default function LandingPage() {
                   variant="secondary"
                   className="rounded-full h-12 px-8 text-base"
                 >
-                  Start Free Trial
+                  Gratis Konsultasi
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
                 <Button
@@ -823,12 +820,9 @@ export default function LandingPage() {
                   variant="outline"
                   className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:bg-white/10"
                 >
-                  Schedule a Demo
+                  Hubungi sekarang
                 </Button>
               </div>
-              <p className="text-sm text-primary-foreground/80 mt-4">
-                No credit card required. 14-day free trial. Cancel anytime.
-              </p>
             </motion.div>
           </div>
         </section>
