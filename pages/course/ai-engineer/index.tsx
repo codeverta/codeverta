@@ -29,6 +29,7 @@ import {
 } from "lucide-react";
 import Layout from "components/layout/Landing";
 import Link from "next/link";
+import { url } from "inspector";
 
 const AIEngineeringCourse = () => {
   const [enrolledModules, setEnrolledModules] = useState(new Set());
@@ -175,7 +176,10 @@ const AIEngineeringCourse = () => {
       description:
         "Memahami dan mengimplementasikan LLM modern seperti GPT, BERT",
       topics: [
-        "Transformer Architecture Deep Dive",
+        {
+          title: "Transformer Architecture Deep Dive",
+          url: "/course/ai-engineer/05-fundamental-arsitektur-transformer",
+        },
         "Attention Mechanism Explained",
         "Self-Attention and Multi-Head Attention",
         "BERT: Bidirectional Encoder Representations",
