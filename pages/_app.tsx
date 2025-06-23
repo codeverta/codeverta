@@ -11,6 +11,7 @@ import dayjs from "dayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { appWithTranslation } from "next-i18next";
+import Landing from "@/components/layout/Landing";
 
 dayjs.locale(indoFormat);
 dayjs.extend(localizedFormat);
@@ -42,7 +43,13 @@ const steps = [
 
 function App({ Component, pageProps }: AppLayoutProps) {
   const appProps = { getRelationship, getRelationships };
-  const getLayout = Component.getLayout || ((page: ReactNode) => page);
+  const getLayout =
+    Component.getLayout ||
+    ((page: ReactNode) => (
+      <Landing>
+        {page}
+      </Landing>
+    ));
   // seo
   const pageTitle =
     "Codeverta - Media Teknologi, Inovasi Digital & AI, Startup";
