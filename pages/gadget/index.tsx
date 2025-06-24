@@ -288,7 +288,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   };
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>
           {searchTerm
@@ -817,7 +817,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
           )}
         </div>
       </main>
-    </Layout>
+    </>
   );
 }
 

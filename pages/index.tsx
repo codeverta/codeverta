@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Layout from "@/components/layout/Landing";
 import {
   Check,
   ChevronRight,
@@ -506,7 +505,7 @@ export default function LandingPage() {
                         description:
                           "Cocok untuk profil perusahaan atau portofolio.",
                         features: [
-                          "Desain dari Template",
+                          "Desain Custom Sesuai Permintaan",
                           "Hingga 5 Halaman",
                           "Domain & Hosting 1 Tahun",
                         ],
@@ -518,7 +517,7 @@ export default function LandingPage() {
                         description:
                           "Ideal untuk UKM dan bisnis yang sedang berkembang.",
                         features: [
-                          "Desain Custom Profesional",
+                          "Desain Custom Sesuai Permintaan",
                           "Hingga 10 Halaman",
                           "Optimasi SEO Dasar",
                           "Dukungan Prioritas",
@@ -830,8 +829,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
-
-LandingPage.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
-};

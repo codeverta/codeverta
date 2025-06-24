@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Layout from "components/layout/Landing";
 import { getSortedPostsData } from "lib/posts";
 import Link from "next/link";
 import { useState, useEffect, useMemo } from "react";
@@ -288,7 +287,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   };
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>
           {searchTerm
@@ -820,7 +819,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
           )}
         </div>
       </main>
-    </Layout>
+    </>
   );
 }
 

@@ -288,7 +288,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   };
 
   return (
-    <Layout>
+    <>
       <Head>
         <title>
           {searchTerm
@@ -307,13 +307,17 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <Code className="w-4 h-4 mr-1" /> Coding & Tech Tutorials
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl dark:text-white mb-4">
-              Codeverta {" "}
+              Codeverta{" "}
               <span className="text-blue-600 dark:text-blue-400">
                 Tutorials
               </span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
-              Dapatkan berita terkini seputar kecerdasan buatan (AI), machine learning, dan perkembangan terbaru dalam dunia artificial intelligence. Codeverta menyajikan analisis mendalam, riset terbaru, serta implikasi AI dalam industri dan kehidupan sehari-hari.
+              Dapatkan berita terkini seputar kecerdasan buatan (AI), machine
+              learning, dan perkembangan terbaru dalam dunia artificial
+              intelligence. Codeverta menyajikan analisis mendalam, riset
+              terbaru, serta implikasi AI dalam industri dan kehidupan
+              sehari-hari.
             </p>
 
             {/* Search form */}
@@ -490,7 +494,9 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </div>
                         </div>
 
-                        <Link href={`/${currentPosts[0].category}/${currentPosts[0].id}`}>
+                        <Link
+                          href={`/${currentPosts[0].category}/${currentPosts[0].id}`}
+                        >
                           <h3 className="text-2xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-4">
                             {currentPosts[0].title}
                           </h3>
@@ -501,7 +507,9 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                         </p>
 
                         <div className="flex justify-between items-center mt-auto">
-                          <Link href={`/${currentPosts[0].category}/${currentPosts[0].id}`}>
+                          <Link
+                            href={`/${currentPosts[0].category}/${currentPosts[0].id}`}
+                          >
                             <Button variant="default" size="sm">
                               Read Tutorial
                             </Button>
@@ -817,7 +825,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
           )}
         </div>
       </main>
-    </Layout>
+    </>
   );
 }
 
