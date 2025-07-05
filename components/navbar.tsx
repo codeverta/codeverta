@@ -37,12 +37,7 @@ export default function LandingPage() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const categories = [
-    { id: "/news", name: "News" },
-    { id: "/ai", name: "AI" },
-    { id: "/startups", name: "Startups" },
-    { id: "/gadget", name: "Gadget" },
-    { id: "/tutorials", name: "Tutorials" },
-    { id: "/course", name: "Kelas" },
+    { id: "/course", name: "Kelas Gratis" },
     { id: "/about", name: "About" },
   ];
   useEffect(() => {

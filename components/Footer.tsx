@@ -176,7 +176,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#1a1a1a] text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
             <h4 className="font-bold text-lg mb-4">About Codeverta</h4>
             <p className="text-gray-400 text-sm">
@@ -227,6 +227,37 @@ export default function Footer() {
               <li>
                 <Link href="/short" className="hover:text-white transition-colors">
                   URL Shortener
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-bold text-lg mb-4">Tools</h4>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li>
+                <Link
+                  href="/news"
+                  className="hover:text-white transition-colors"
+                  >
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ai"
+                  className="hover:text-white transition-colors"
+                >
+                  AI
+                </Link>
+              </li>
+              <li>
+                <Link href="/startups" className="hover:text-white transition-colors">
+                  Startups
+                </Link>
+              </li>
+              <li>
+                <Link href="/tutorials" className="hover:text-white transition-colors">
+                  Tutorials
                 </Link>
               </li>
             </ul>
