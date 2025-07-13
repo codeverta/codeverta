@@ -37,7 +37,13 @@ export default function LandingPage() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const categories = [
-    { id: "/course", name: "Kelas Gratis" },
+    { id: "/news", name: "News" },
+    { id: "/ai", name: "AI" },
+    { id: "/startups", name: "Startups" },
+    { id: "/gadget", name: "Gadget" },
+    { id: "/tutorials", name: "Tutorials" },
+    { id: "/course", name: "Kelas" },
+    { id: "/portfolio", name: "Portfolio" },
     { id: "/about", name: "About" },
   ];
   useEffect(() => {
@@ -76,7 +82,10 @@ export default function LandingPage() {
       }`}
     >
       <div className="container flex h-16 items-center justify-between">
-        <Link href={'/'} className="cursor-pointer flex items-center gap-2 font-bold">
+        <Link
+          href={"/"}
+          className="cursor-pointer flex items-center gap-2 font-bold"
+        >
           <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
             CV
           </div>
@@ -86,7 +95,11 @@ export default function LandingPage() {
           {categories.map((category) => (
             <Link
               href={category.id}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className={`text-sm font-medium text-muted-foreground transition-colors hover:text-foreground ${
+                ["about", "portfolio"].includes(category.name.toLowerCase())
+                  ? ""
+                  : "invisible"
+              }`}
             >
               {category.name}
             </Link>
@@ -105,7 +118,11 @@ export default function LandingPage() {
             {categories.map((category) => (
               <Link
                 href={category.id}
-                className="py-2 text-sm font-medium"
+                className={`text-sm font-medium text-muted-foreground transition-colors hover:text-foreground ${
+                  ["about", "portfolio"].includes(category.name.toLowerCase())
+                    ? ""
+                    : "invisible"
+                }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {category.name}
