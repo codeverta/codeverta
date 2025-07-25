@@ -43,7 +43,7 @@ export default function LandingPage() {
     { id: "/gadget", name: "Gadget" },
     { id: "/tutorials", name: "Tutorials" },
     { id: "/course", name: "Kelas" },
-    { id: "/portfolio", name: "Portfolio" },
+    { id: "/produk", name: "Produk Kami" },
     { id: "/about", name: "About" },
   ];
   useEffect(() => {
@@ -96,7 +96,7 @@ export default function LandingPage() {
             <Link
               href={category.id}
               className={`text-sm font-medium text-muted-foreground transition-colors hover:text-foreground ${
-                ["about", "portfolio"].includes(category.name.toLowerCase())
+                ["about", "portfolio", "produk kami"].includes(category.name.toLowerCase())
                   ? ""
                   : "invisible"
               }`}
@@ -119,7 +119,7 @@ export default function LandingPage() {
               <Link
                 href={category.id}
                 className={`text-sm font-medium text-muted-foreground transition-colors hover:text-foreground ${
-                  ["about", "portfolio"].includes(category.name.toLowerCase())
+                  ["about", "portfolio", "produk kami"].includes(category.name.toLowerCase())
                     ? ""
                     : "invisible"
                 }`}

@@ -127,15 +127,15 @@ export default function LandingPage() {
                 className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Jasa Website & Layanan IT Profesional
+                Jl Kaliurang KM 9.3, Sleman, Yogyakarta
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-                Wujudkan Website Impian Anda Bersama Codeverta
+                Jasa Pembuatan Website, Aplikasi & Layanan IT Lainnya
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Kami menyediakan jasa pembuatan website profesional, perbaikan,
-                dan layanan IT terkelola untuk mendorong pertumbuhan bisnis Anda
-                di era digital.
+                Kami menyediakan jasa pembuatan, perbaikan, pengembangan website
+                profesional dan layanan IT untuk mendorong pertumbuhan bisnis
+                Anda di era digital untuk bisnis skala kecil sampai menengah.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
@@ -169,7 +169,7 @@ export default function LandingPage() {
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>Garansi Kepuasan</span>
+                  <span>Garansi Sampai Puas</span>
                 </div>
               </div>
             </motion.div>
@@ -489,10 +489,10 @@ export default function LandingPage() {
                 <div className="flex justify-center mb-8">
                   <TabsList className="rounded-full p-1">
                     <TabsTrigger value="monthly" className="rounded-full px-6">
-                      Monthly
+                      Skala UMKM/UKM
                     </TabsTrigger>
                     <TabsTrigger value="annually" className="rounded-full px-6">
-                      Annually (Save 20%)
+                      Skala Menengah Keatas
                     </TabsTrigger>
                   </TabsList>
                 </div>
@@ -506,7 +506,8 @@ export default function LandingPage() {
                           "Cocok untuk profil perusahaan atau portofolio.",
                         features: [
                           "Desain Custom Sesuai Permintaan",
-                          "Hingga 5 Halaman",
+                          "Cocok Untuk UMKM",
+                          "Fitur Dasar (Kontak, Layanan, Produk dll)",
                           "Domain & Hosting 1 Tahun",
                         ],
                         cta: "Pilih Paket",
@@ -518,10 +519,9 @@ export default function LandingPage() {
                           "Ideal untuk UKM dan bisnis yang sedang berkembang.",
                         features: [
                           "Desain Custom Sesuai Permintaan",
-                          "Hingga 10 Halaman",
-                          "Optimasi SEO Dasar",
-                          "Dukungan Prioritas",
-                          "Integrasi Media Sosial",
+                          "Lebih dari 10 Halaman",
+                          "Optimasi SEO",
+                          "Pengerjaan Prioritas",
                         ],
                         cta: "Pilih Paket",
                         popular: true,
@@ -598,45 +598,19 @@ export default function LandingPage() {
                 </TabsContent>
                 <TabsContent value="annually">
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
+                    <div></div>
                     {[
                       {
-                        name: "Starter",
-                        price: "$23",
-                        description: "Perfect for small teams and startups.",
-                        features: [
-                          "Up to 5 team members",
-                          "Basic analytics",
-                          "5GB storage",
-                          "Email support",
-                        ],
-                        cta: "Start Free Trial",
-                      },
-                      {
-                        name: "Professional",
-                        price: "$63",
-                        description: "Ideal for growing businesses.",
-                        features: [
-                          "Up to 20 team members",
-                          "Advanced analytics",
-                          "25GB storage",
-                          "Priority email support",
-                          "API access",
-                        ],
-                        cta: "Start Free Trial",
-                        popular: true,
-                      },
-                      {
                         name: "Enterprise",
-                        price: "$159",
+                        price: ">15JT",
                         description:
                           "For large organizations with complex needs.",
                         features: [
-                          "Unlimited team members",
-                          "Custom analytics",
-                          "Unlimited storage",
-                          "24/7 phone & email support",
-                          "Advanced API access",
-                          "Custom integrations",
+                          "Fitur Custom Sesuai Permintaan",
+                          "Integrasi dengan Sistem/Apilikasi Lain",
+                          "Backup Data Berkala di Cloud",
+                          "Monitoring Keamanan, Performa 24/7",
+                          "Pengerjaan Prioritas",
                         ],
                         cta: "Contact Sales",
                       },
@@ -665,9 +639,6 @@ export default function LandingPage() {
                             <div className="flex items-baseline mt-4">
                               <span className="text-4xl font-bold">
                                 {plan.price}
-                              </span>
-                              <span className="text-muted-foreground ml-1">
-                                /month
                               </span>
                             </div>
                             <p className="text-muted-foreground mt-2">
@@ -738,7 +709,7 @@ export default function LandingPage() {
                   {
                     question: "Apa saja yang perlu saya siapkan?",
                     answer:
-                      "Anda cukup menyiapkan materi konten seperti teks profil perusahaan, daftar layanan/produk, dan gambar/foto yang ingin ditampilkan. Jika belum ada, tim kami bisa membantu mengarahkannya.",
+                      "Anda cukup menyiapkan konten seperti teks profil perusahaan, daftar layanan/produk, dan gambar/foto yang ingin ditampilkan. Jika belum ada, tim kami bisa membantu mengarahkannya.",
                   },
                   {
                     question:
@@ -756,7 +727,7 @@ export default function LandingPage() {
                     question:
                       "Apa saja yang termasuk dalam layanan IT Service?",
                     answer:
-                      "Layanan IT kami mencakup spektrum yang luas, mulai dari perbaikan dan instalasi hardware/software, manajemen jaringan kantor, keamanan siber, hingga konsultasi infrastruktur teknologi untuk bisnis Anda.",
+                      "Layanan IT kami mencakup spektrum yang luas, mulai dari perbaikan dan instalasi software, pembuatan website, aplikasi mobile untuk bisnis Anda.",
                   },
                 ].map((faq, i) => (
                   <motion.div
