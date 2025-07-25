@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -9,15 +10,15 @@ const Banner = () => {
   }
 
   return (
-    <div className="relative bg-gray-800 text-gray-100 p-4 flex items-center justify-between text-sm">
+    <div className="relative bg-blue-700/90 text-gray-100 p-4 flex items-center justify-between text-sm">
       <div className="flex m-auto items-center space-x-3">
         <span className="bg-blue-200 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
           New
         </span>
-        <span>Lihat Seluruh Produk yang Kami Sediakan</span>
+        <span>Lihat Seluruh Produk yang Kami Tawarkan</span>
         <Link
           href="/produk"
-          className="text-blue-400 hover:text-blue-300 flex items-center space-x-1"
+          className="text-yellow-400 hover:text-yellow-300 flex items-center space-x-1"
         >
           <span>Disini</span>
           <svg
