@@ -3,6 +3,8 @@ import { NextSeo } from "next-seo";
 import Footer from "components/Footer";
 import { useRouter } from "next/router";
 import Navbar from "@/components/navbar";
+import WhatsAppButton from "../WhatsappButton";
+import Banner from "../Banner";
 
 const DOMAIN = "https://www.codeverta.com";
 
@@ -138,8 +140,10 @@ export default function Landing({ children, seo }: Props) {
           ...(seo?.additionalLinkTags || []),
         ]}
       />
+      <Banner/>
       <Navbar />
       {children}
+      <WhatsAppButton/>
       <Footer />
     </>
   );

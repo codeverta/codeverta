@@ -189,12 +189,18 @@ export default function Footer() {
             <h4 className="font-bold text-lg mb-4">Course</h4>
             <ul className="space-y-2 text-sm text-gray-400">
               <li>
-                <Link href="/course/ai-engineer" className="hover:text-white transition-colors">
+                <Link
+                  href="/course/ai-engineer"
+                  className="hover:text-white transition-colors"
+                >
                   AI Engineer
                 </Link>
               </li>
               <li>
-                <Link href="/course/cybersecurity" className="hover:text-white transition-colors">
+                <Link
+                  href="/course/cybersecurity"
+                  className="hover:text-white transition-colors"
+                >
                   Cyber Security
                 </Link>
               </li>
@@ -225,7 +231,15 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/short" className="hover:text-white transition-colors">
+                <Link href="/favicon-generator" className="hover:text-white transition-colors">
+                  Favicon Generator
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/short"
+                  className="hover:text-white transition-colors"
+                >
                   URL Shortener
                 </Link>
               </li>
@@ -238,25 +252,28 @@ export default function Footer() {
                 <Link
                   href="/news"
                   className="hover:text-white transition-colors"
-                  >
+                >
                   News
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/ai"
-                  className="hover:text-white transition-colors"
-                >
+                <Link href="/ai" className="hover:text-white transition-colors">
                   AI
                 </Link>
               </li>
               <li>
-                <Link href="/startups" className="hover:text-white transition-colors">
+                <Link
+                  href="/startups"
+                  className="hover:text-white transition-colors"
+                >
                   Startups
                 </Link>
               </li>
               <li>
-                <Link href="/tutorials" className="hover:text-white transition-colors">
+                <Link
+                  href="/tutorials"
+                  className="hover:text-white transition-colors"
+                >
                   Tutorials
                 </Link>
               </li>
@@ -319,6 +336,9 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} Codeverta. All rights reserved.</p>
         </div>
       </div>
+      <p className="hidden">
+        {keywords.map((keyword, index) => (`${keyword}, `))}
+      </p>
     </footer>
   );
   // return (

@@ -20,7 +20,7 @@ export default function TentangPage() {
           Tentang Codeverta
         </h1>
         <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
-          Kami bukan sekadar developer. Kami adalah partner strategis yang
+          Kami adalah penyedia jasa IT yang
           berdedikasi untuk membangun solusi digital berkualitas tinggi dengan
           proses yang jujur dan transparan.
         </p>
@@ -44,8 +44,8 @@ export default function TentangPage() {
               <br />
               Oleh karena itu, kami hadir untuk mengubahnya. Kami adalah tim
               developer, desainer, dan konsultan IT profesional yang berkomitmen
-              pada tiga hal: **kualitas kode, komunikasi yang transparan, dan
-              kesuksesan klien.** Misi kami adalah mewujudkan visi digital Anda
+              pada tiga hal: kualitas kode, komunikasi yang transparan, dan
+              kesuksesan klien. Misi kami adalah mewujudkan visi digital Anda
               menjadi solusi nyata yang berfungsi dengan baik dan memberikan
               nilai tambah bagi bisnis Anda.
             </p>
