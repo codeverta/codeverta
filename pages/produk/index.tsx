@@ -13,17 +13,17 @@ import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 
 const products = [
   {
-    id: 1,
+    id: 'e-commerce-platform',
     name: "E-commerce Platform",
     description:
       "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online",
     image: "/assets/products/1.png",
-    technologies: ["React", "Laravel", "MySQL", "Stripe", "Midtrans"],
+    technologies: ["React", "Laravel", "MySQL", "Midtrans"],
     category: "E-commerce",
     status: "Completed",
   },
   {
-    id: 1,
+    id: 'webgis-platform',
     name: "WebGIS Platform",
     description:
       "Sistem Informasi Geografis berbasis web untuk pemetaan dan analisis spasial",
@@ -33,7 +33,7 @@ const products = [
     status: "Completed",
   },
   {
-    id: 2,
+    id: 'enterprise-erp-system',
     name: "Enterprise ERP System",
     description:
       "Sistem ERP terintegrasi untuk mengelola seluruh proses bisnis perusahaan",
@@ -43,7 +43,7 @@ const products = [
     status: "In Development",
   },
   {
-    id: 3,
+    id: 'hrms-portal',
     name: "HRMS Portal",
     description:
       "Human Resource Management System untuk pengelolaan karyawan dan payroll",
@@ -53,7 +53,7 @@ const products = [
     status: "Completed",
   },
   {
-    id: 4,
+    id: 'smart-pos-system',
     name: "Smart POS System",
     description:
       "Point of Sale system modern dengan fitur inventory dan reporting real-time",
@@ -63,7 +63,7 @@ const products = [
     status: "Completed",
   },
   {
-    id: 5,
+    id: 'finance-management',
     name: "Finance Management",
     description:
       "Sistem manajemen keuangan dengan fitur budgeting dan financial reporting",
@@ -73,7 +73,7 @@ const products = [
     status: "Completed",
   },
   {
-    id: 6,
+    id: 'warehouse-inventory-control',
     name: "Inventory Control System",
     description:
       "Sistem kontrol inventori dengan tracking real-time dan automated alerts",
@@ -83,7 +83,7 @@ const products = [
     status: "In Development",
   },
   {
-    id: 7,
+    id: 'crm-platform',
     name: "CRM Platform",
     description:
       "Customer Relationship Management untuk mengelola hubungan dengan pelanggan",
@@ -93,7 +93,7 @@ const products = [
     status: "Completed",
   },
   {
-    id: 8,
+    id: 'e-learning-platform',
     name: "E-Learning Platform",
     description:
       "Platform pembelajaran online dengan fitur video streaming dan quiz interaktif",
@@ -102,18 +102,8 @@ const products = [
     category: "Education Technology",
     status: "Completed",
   },
-  // {
-  //   id: 9,
-  //   name: "Hospital Management System",
-  //   description:
-  //     "Sistem manajemen rumah sakit terintegrasi untuk pasien, dokter, dan administrasi",
-  //   image: "/assets/products/10.png",
-  //   technologies: ["React", "FastAPI", "PostgreSQL", "Redis"],
-  //   category: "Healthcare Management",
-  //   status: "In Development",
-  // },
   {
-    id: 10,
+    id: 'warehouse-management-system',
     name: "Warehouse Management",
     description:
       "Sistem manajemen gudang dengan tracking lokasi dan automated picking",
@@ -123,7 +113,7 @@ const products = [
     status: "Completed",
   },
   {
-    id: 11,
+    id: 'accounting-system',
     name: "Accounting System",
     description:
       "Sistem akuntansi lengkap dengan general ledger dan financial statements",
@@ -133,7 +123,7 @@ const products = [
     status: "Completed",
   },
   {
-    id: 12,
+    id: 'project-management-tool',
     name: "Project Management Tool",
     description:
       "Tool manajemen proyek dengan Gantt chart, task tracking, dan team collaboration",

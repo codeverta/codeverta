@@ -128,7 +128,7 @@ export default function LandingPage() {
                 className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Jl Kaliurang KM 9.3, Sleman, Yogyakarta
+                Jl Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
                 Jasa Pembuatan Website, Aplikasi & Layanan IT Lainnya
@@ -607,7 +607,7 @@ export default function LandingPage() {
                         name: "Enterprise",
                         price: "Rp >20 Jt",
                         description:
-                          "For large organizations with complex needs.",
+                          "Untuk Perusahaan dengan Sistem yang Kompleks",
                         features: [
                           "Fitur Custom Sesuai Permintaan",
                           "Integrasi dengan Sistem/Apilikasi Lain",
