@@ -14,7 +14,7 @@ import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 const products = [
   {
     id: 'e-commerce-platform',
-    name: "E-commerce Platform",
+    name: "E-commerce Platform for Business",
     description:
       "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online",
     image: "/assets/products/1.png",
@@ -167,7 +167,7 @@ export default function ITProductsShowcase() {
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </Link>
-                  <div className="absolute top-3 right-3">
+                  {/* <div className="absolute top-3 right-3">
                     <Badge
                       variant={
                         product.status === "Completed" ? "default" : "secondary"
@@ -180,7 +180,7 @@ export default function ITProductsShowcase() {
                     >
                       {product.status}
                     </Badge>
-                  </div>
+                  </div> */}
                 </div>
               </CardHeader>
 
@@ -249,13 +249,12 @@ export default function ITProductsShowcase() {
               bisnis Anda
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                <ExternalLink className="w-5 h-5 mr-2" />
-                Konsultasi Gratis
-              </Button>
-              <Button size="lg" variant="outline">
-                Lihat Semua Portfolio
-              </Button>
+              <WhatsappWrapper>
+                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  Konsultasi Gratis
+                </Button>
+              </WhatsappWrapper>
             </div>
           </div>
         </div>
