@@ -1,0 +1,82 @@
+{
+  "projects": [
+    {
+      "product": {
+        "id": 1,
+        "name": "Smart POS System",
+        "description": "Point of Sale system modern dengan fitur inventory dan reporting real-time.",
+        "fullDescription": "Smart POS System adalah solusi point of sale yang komprehensif dan modern, dirancang khusus untuk memenuhi kebutuhan bisnis retail, restoran, dan toko...",
+        "image": "/placeholder.svg?height=400&width=600&text=Smart+POS+Dashboard",
+        "technologies": ["Vue.js", "Laravel", "MySQL", "Socket.io", "Redis", "Docker"],
+        "category": "Point of Sale",
+        "status": "Completed",
+        "version": "2.1.0",
+        "lastUpdated": "December 2024",
+        "client": "Retail Chain Indonesia",
+        "duration": "6 months",
+        "teamSize": "5 developers"
+      },
+      "hero": {
+        "buttons": { "liveDemo": "Live Demo", "sourceCode": "Source Code", "documentation": "Documentation" }
+      },
+      "tabs": {
+        "triggers": { "overview": "Overview", "features": "Features", "workflow": "Workflow", "techStack": "Tech Stack", "screenshots": "Screenshots", "specs": "Specifications" }
+      },
+      "overview": {
+        "projectInfo": { "title": "Project Info", "clientLabel": "Client", "durationLabel": "Duration", "teamSizeLabel": "Team Size", "lastUpdatedLabel": "Last Updated" },
+        "platformSupport": { "title": "Platform Support", "items": ["Web Application", "Mobile Responsive", "Tablet Optimized", "PWA Support"] },
+        "architecture": { "title": "Architecture", "items": ["SPA (Single Page App)", "RESTful API", "Real-time Updates", "Microservices Ready"] },
+        "projectDescription": {
+          "title": "Project Description",
+          "paragraphs": [
+            "Smart POS System dikembangkan untuk memenuhi kebutuhan bisnis retail modern...",
+            "Sistem ini dirancang dengan arsitektur yang scalable dan modular...",
+            "Implementasi real-time technology memastikan bahwa semua data inventory..."
+          ]
+        }
+      },
+      "features": [
+        { "icon": "ShoppingCart", "title": "Multi-Channel Sales", "description": "Mendukung penjualan online dan offline dalam satu sistem terintegrasi" },
+        { "icon": "BarChart3", "title": "Real-time Analytics", "description": "Dashboard analytics dengan laporan penjualan, profit, dan trend real-time" }
+      ],
+      "workflow": {
+        "title": "Sales Transaction Workflow",
+        "steps": [
+          { "step": 1, "icon": "Package", "title": "Product Scanning", "description": "Scan barcode produk atau pilih dari katalog" },
+          { "step": 2, "icon": "ShoppingCart", "title": "Cart Management", "description": "Tambah/kurangi quantity, apply discount atau promo" }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [{ "name": "Vue.js 3", "description": "Progressive JavaScript framework untuk UI yang reaktif" }]
+        }
+      ],
+      "screenshots": [
+        { "title": "Dashboard Overview", "image": "/placeholder.svg?height=300&width=500&text=Dashboard+Overview", "description": "Dashboard utama dengan sales summary dan quick actions" }
+      ],
+      "specifications": {
+        "systemRequirements": { "title": "System Requirements", "server": { "title": "Server Requirements", "items": ["PHP 8.1 or higher", "MySQL 8.0 or higher"] }, "client": { "title": "Client Requirements", "items": ["Modern web browser", "JavaScript enabled"] } },
+        "performanceMetrics": { "title": "Performance Metrics", "metrics": [{ "label": "Page Load Time", "value": "< 2 seconds" }] },
+        "securityFeatures": { "title": "Security Features", "items": ["SSL/TLS Encryption", "Role-based Access Control"] }
+      }
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Project Management App",
+        "description": "Aplikasi manajemen proyek untuk tim kolaboratif.",
+        "fullDescription": "Aplikasi ini membantu tim untuk mengatur tugas, melacak progress, dan berkolaborasi secara efisien dalam satu platform terpusat.",
+        "image": "/placeholder.svg?height=400&width=600&text=Project+Mgmt+App",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+        "category": "Productivity",
+        "status": "In Progress",
+        "version": "1.0.0",
+        "lastUpdated": "July 2025",
+        "client": "Internal Project",
+        "duration": "3 months",
+        "teamSize": "3 developers"
+      }
+    }
+  ]
+}

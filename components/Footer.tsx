@@ -180,9 +180,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">About Codeverta</h4>
             <p className="text-gray-400 text-sm">
-              Codeverta is the premier source for technology news and analysis,
-              covering startups, venture capital, apps, and the people making
-              waves in tech.
+              Codeverta adalah penyedia jasa IT yang berdedikasi untuk
+              membangun solusi digital berkualitas tinggi dengan proses yang
+              jujur dan transparan.
             </p>
           </div>
           <div>
@@ -231,7 +231,10 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/favicon-generator" className="hover:text-white transition-colors">
+                <Link
+                  href="/favicon-generator"
+                  className="hover:text-white transition-colors"
+                >
                   Favicon Generator
                 </Link>
               </li>
@@ -337,7 +340,7 @@ export default function Footer() {
         </div>
       </div>
       <p className="hidden">
-        {keywords.map((keyword, index) => (`${keyword}, `))}
+        {keywords.map((keyword, index) => `${keyword}, `)}
       </p>
     </footer>
   );

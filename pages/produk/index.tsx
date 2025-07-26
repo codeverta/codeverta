@@ -91,16 +91,16 @@ const products = [
     category: "Education Technology",
     status: "Completed",
   },
-  {
-    id: 9,
-    name: "Hospital Management System",
-    description:
-      "Sistem manajemen rumah sakit terintegrasi untuk pasien, dokter, dan administrasi",
-    image: "/assets/products/10.png",
-    technologies: ["React", "FastAPI", "PostgreSQL", "Redis"],
-    category: "Healthcare Management",
-    status: "In Development",
-  },
+  // {
+  //   id: 9,
+  //   name: "Hospital Management System",
+  //   description:
+  //     "Sistem manajemen rumah sakit terintegrasi untuk pasien, dokter, dan administrasi",
+  //   image: "/assets/products/10.png",
+  //   technologies: ["React", "FastAPI", "PostgreSQL", "Redis"],
+  //   category: "Healthcare Management",
+  //   status: "In Development",
+  // },
   {
     id: 10,
     name: "Warehouse Management",

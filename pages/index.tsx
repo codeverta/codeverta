@@ -30,6 +30,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTheme } from "next-themes";
+import { WhatsappWrapper } from "@/components/WhatsappButton";
 
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -532,10 +533,10 @@ export default function LandingPage() {
                         description:
                           "Untuk perusahaan dengan kebutuhan kompleks.",
                         features: [
-                          "Fitur Lanjutan (E-commerce, dll)",
+                          "Fitur Kompleks (E-commerce, dll)",
                           "Desain & Sistem Sesuai Kebutuhan",
-                          "Maintenance & Dukungan IT",
                           "Laporan Performa Bulanan",
+                          "Maintenance Lebih dari 1 Tahun",
                         ],
                         cta: "Hubungi Sales",
                       },
@@ -580,16 +581,18 @@ export default function LandingPage() {
                                 </li>
                               ))}
                             </ul>
-                            <Button
-                              className={`w-full mt-auto rounded-full ${
-                                plan.popular
-                                  ? "bg-primary hover:bg-primary/90"
-                                  : "bg-muted hover:bg-muted/80"
-                              }`}
-                              variant={plan.popular ? "default" : "outline"}
-                            >
-                              {plan.cta}
-                            </Button>
+                            <WhatsappWrapper>
+                              <Button
+                                className={`w-full mt-auto rounded-full ${
+                                  plan.popular
+                                    ? "bg-primary hover:bg-primary/90"
+                                    : "bg-muted hover:bg-muted/80"
+                                }`}
+                                variant={plan.popular ? "default" : "outline"}
+                              >
+                                {plan.cta}
+                              </Button>
+                            </WhatsappWrapper>
                           </CardContent>
                         </Card>
                       </motion.div>
@@ -602,7 +605,7 @@ export default function LandingPage() {
                     {[
                       {
                         name: "Enterprise",
-                        price: ">15JT",
+                        price: "Rp >20 Jt",
                         description:
                           "For large organizations with complex needs.",
                         features: [
@@ -611,6 +614,7 @@ export default function LandingPage() {
                           "Backup Data Berkala di Cloud",
                           "Monitoring Keamanan, Performa 24/7",
                           "Pengerjaan Prioritas",
+                          "Maintenance Lebih dari 1 Tahun",
                         ],
                         cta: "Contact Sales",
                       },
@@ -652,6 +656,7 @@ export default function LandingPage() {
                                 </li>
                               ))}
                             </ul>
+                            <WhatsappWrapper>
                             <Button
                               className={`w-full mt-auto rounded-full ${
                                 plan.popular
@@ -662,6 +667,7 @@ export default function LandingPage() {
                             >
                               {plan.cta}
                             </Button>
+                            </WhatsappWrapper>
                           </CardContent>
                         </Card>
                       </motion.div>
