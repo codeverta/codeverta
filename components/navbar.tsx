@@ -38,14 +38,18 @@ export default function LandingPage() {
   const [mounted, setMounted] = useState(false);
   const categories = [
     { id: "/news", name: "News" },
-    { id: "/ai", name: "AI" },
     { id: "/startups", name: "Startups" },
     { id: "/gadget", name: "Gadget" },
     { id: "/tutorials", name: "Tutorials" },
     { id: "/course", name: "Kelas" },
     { id: "/produk", name: "Produk Kami" },
+    { id: "/ai", name: "AI" },
+    { id: "#faq", name: "FAQ" },
     { id: "/about", name: "About" },
   ];
+
+  const hiddenMenu = ["news", "startups", "gadget", "tutorials", "kelas"];
+
   useEffect(() => {
     setMounted(true);
     const handleScroll = () => {
@@ -96,7 +100,7 @@ export default function LandingPage() {
             <Link
               href={category.id}
               className={`text-sm font-medium text-muted-foreground transition-colors hover:text-foreground ${
-                ["about", "portfolio", "produk kami"].includes(category.name.toLowerCase())
+                !hiddenMenu.includes(category.name.toLowerCase())
                   ? ""
                   : "invisible"
               }`}
@@ -119,7 +123,7 @@ export default function LandingPage() {
               <Link
                 href={category.id}
                 className={`text-sm font-medium text-muted-foreground transition-colors hover:text-foreground ${
-                  ["about", "portfolio", "produk kami"].includes(category.name.toLowerCase())
+                  !hiddenMenu.includes(category.name.toLowerCase())
                     ? ""
                     : "invisible"
                 }`}

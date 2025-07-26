@@ -10,21 +10,23 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Target, Code, ShieldCheck } from "lucide-react"; // Contoh ikon dari lucide-react
+import { WhatsappWrapper } from "@/components/WhatsappButton";
 
 export default function TentangPage() {
   return (
     <div className="container max-w-6xl mx-auto py-12 px-4 space-y-16">
       {/* Section 1: Hero */}
-      <section className="text-center space-y-4">
+      <section className="text-center space-y-4 flex flex-col gap-4">
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
           Tentang Codeverta
         </h1>
         <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
-          Kami adalah penyedia jasa IT yang
-          berdedikasi untuk membangun solusi digital berkualitas tinggi dengan
-          proses yang jujur dan transparan.
+          Kami adalah penyedia jasa IT yang berdedikasi untuk membangun solusi
+          digital berkualitas tinggi dengan proses yang jujur dan transparan.
         </p>
-        <Button size="lg">Konsultasi Gratis</Button>
+        <WhatsappWrapper>
+          <Button size="lg">Konsultasi Gratis</Button>
+        </WhatsappWrapper>
       </section>
 
       {/* Section 2: Tentang Codeverta - Lebih Fokus pada "Kenapa Kami Ada" */}
@@ -63,7 +65,7 @@ export default function TentangPage() {
             Keunggulan yang kami tawarkan untuk menjamin kesuksesan proyek Anda.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 text-base">
           {/* Card 1: Jujur & Transparan */}
           <Card>
             <CardHeader className="flex flex-row items-center gap-4">
@@ -75,17 +77,6 @@ export default function TentangPage() {
               jelas dan komunikasi terbuka di setiap tahap proyek.
             </CardContent>
           </Card>
-          {/* Card 2: Partner Strategis */}
-          <Card>
-            <CardHeader className="flex flex-row items-center gap-4">
-              <Users className="w-8 h-8 text-primary" />
-              <CardTitle>Partner Strategis</CardTitle>
-            </CardHeader>
-            <CardContent>
-              Kami tidak hanya membuatkan Anda website, tapi kami membantu Anda
-              merancang solusi yang tepat untuk mencapai tujuan bisnis Anda.
-            </CardContent>
-          </Card>
           {/* Card 3: Kualitas & Teknologi Modern */}
           <Card>
             <CardHeader className="flex flex-row items-center gap-4">
@@ -94,7 +85,7 @@ export default function TentangPage() {
             </CardHeader>
             <CardContent>
               Solusi yang kami bangun menggunakan teknologi terkini yang
-              scalable, aman, dan mudah dikelola untuk masa depan.
+              scalable, aman, dan mudah dikelola di masa depan.
             </CardContent>
           </Card>
           {/* Card 4: Fokus pada Hasil */}
@@ -112,7 +103,7 @@ export default function TentangPage() {
       </section>
 
       {/* Section 4: Layanan Kami (Our Services) - Bisa menggunakan Accordion atau Cards */}
-      <section className="space-y-6">
+      <section className="space-y-6 ">
         <div className="text-center">
           <h2 className="text-3xl font-bold">Layanan Profesional Kami</h2>
           <p className="text-muted-foreground mt-2">
@@ -120,7 +111,7 @@ export default function TentangPage() {
             Anda.
           </p>
         </div>
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 ">
           {/* Anda bisa menggunakan <Accordion> di sini atau tetap dengan <Card> */}
           <Card>
             <CardHeader>
@@ -164,18 +155,20 @@ export default function TentangPage() {
 
       {/* Section 5: Call to Action (CTA) */}
       <section className="bg-primary text-primary-foreground rounded-lg p-8 md:p-12">
-        <div className="text-center space-y-4">
-          <h2 className="text-3xl font-bold">
+        <div className="text-center space-y-4 flex flex-col gap-2">
+          <h2 className="text-3xl  font-bold">
             Siap Mengubah Ide Anda Menjadi Solusi Digital?
           </h2>
           <p className="max-w-2xl mx-auto">
             Mari diskusikan kebutuhan Anda. Kami siap memberikan konsultasi awal
             secara gratis untuk membantu Anda menemukan solusi teknologi yang
-            paling tepat. Tanpa komitmen, tanpa paksaan.
+            paling tepat, tanpa paksaan.
           </p>
-          <Button variant="secondary" size="lg">
-            Hubungi Kami Sekarang
-          </Button>
+          <WhatsappWrapper>
+            <Button variant="secondary" size="lg">
+              Hubungi Kami Sekarang
+            </Button>
+          </WhatsappWrapper>
         </div>
       </section>
     </div>
