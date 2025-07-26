@@ -57,7 +57,7 @@ export async function getStaticPaths() {
 
   // Buat path untuk setiap proyek berdasarkan ID-nya
   const paths = data.projects.map((project) => ({
-    params: { id: project.product.id.toString() },
+    params: { id: project.product.id },
   }));
 
   return { paths, fallback: false }; // fallback: false akan menampilkan halaman 404 jika ID tidak ditemukan
@@ -71,7 +71,7 @@ export async function getStaticProps({ params }) {
 
   // Cari proyek yang cocok dengan 'id' dari URL
   const project = data.projects.find(
-    (p) => p.product.id.toString() === params.id
+    (p) => p.product.id === params.id
   );
 
   // Jika proyek tidak ditemukan, kembalikan 'notFound: true' untuk menampilkan halaman 404
