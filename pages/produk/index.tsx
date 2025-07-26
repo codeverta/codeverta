@@ -9,8 +9,19 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Eye } from "lucide-react";
 import Link from "next/link";
+import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 
 const products = [
+  {
+    id: 1,
+    name: "E-commerce Platform",
+    description:
+      "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online",
+    image: "/assets/products/1.png",
+    technologies: ["React", "Laravel", "MySQL", "Stripe", "Midtrans"],
+    category: "E-commerce",
+    status: "Completed",
+  },
   {
     id: 1,
     name: "WebGIS Platform",
@@ -222,14 +233,16 @@ export default function ITProductsShowcase() {
                     Lihat Detail
                   </Button>
                 </Link>
-                {/* <Button
-                  size="sm"
-                  variant="outline"
-                  className="flex-1 bg-transparent"
-                >
-                  <Github className="w-4 h-4 mr-2" />
-                  Source Code
-                </Button> */}
+                <WhatsappWrapper title={product.name}>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="flex-1 bg-transparent"
+                  >
+                    <WhatsAppIcon />
+                    Hubungi Kami
+                  </Button>
+                </WhatsappWrapper>
               </CardFooter>
             </Card>
           ))}
