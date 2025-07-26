@@ -20,7 +20,7 @@ const handleClick = () => {
   );
 };
 
-export const WhatsappWrapper = ({ children, title }) => {
+export const WhatsappWrapper = ({ children, title="" }) => {
   return (
     <a href={"https://wa.me/+6285601347820?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda%20" + encodeURI(title)}>
       {children}

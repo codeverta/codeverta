@@ -32,6 +32,29 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTheme } from "next-themes";
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 
+const logos = [
+  {
+    src: "/assets/jogja.png",
+    alt: "Pemprov Yogyakarta",
+  },
+  {
+    src: "/assets/uny.png",
+    alt: "Universitas Negeri Yogyakarta",
+  },
+  {
+    src: "/assets/bapperida.png",
+    alt: "Bapperida Yogyakarta",
+  },
+  {
+    src: "/assets/souvenirlilin.png",
+    alt: "Million Candles",
+  },
+  {
+    src: "/assets/cynus.png",
+    alt: "Cynus Camp",
+  },
+];
+
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -197,30 +220,35 @@ export default function LandingPage() {
             </motion.div>
           </div>
         </section>
-
-        {/* Logos Section */}
-        {/* <section className="w-full py-12 border-y bg-muted/30">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <p className="text-sm font-medium text-muted-foreground">
-                Trusted by reputable party
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
-                {[1, 2, 3, 4, 5].map((i) => (
+        {/* Trusted By Section */}
+        <section className="w-full bg-background py-16 sm:py-24">
+          <div className="container mx-auto px-4 md:px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mx-auto max-w-4xl text-center"
+            >
+              <h2 className="text-center text-lg font-semibold leading-8 text-muted-foreground">
+                Dipercaya oleh UMKM, Startup, Bisnis, dan Pemerintahan
+              </h2>
+              <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
+                {logos.map((logo, index) => (
                   <Image
-                    key={i}
-                    src={`/assets/lilin.`}
-                    alt={`Company logo ${i}`}
-                    width={120}
-                    height={60}
-                    className="h-8 w-auto opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                    key={index}
+                    className="col-span-1 max-h-16 w-full object-contain opacity-60 transition-opacity hover:opacity-100 dark:invert"
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={316}
+                    height={86}
+                    unoptimized // Opsional: gunakan jika logo Anda dari host eksternal
                   />
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
-        </section> */}
-
+        </section>
         {/* Features Section */}
         <section id="features" className="w-full py-20 md:py-32">
           <div className="container px-4 md:px-6">
@@ -490,10 +518,10 @@ export default function LandingPage() {
                 <div className="flex justify-center mb-8">
                   <TabsList className="rounded-full p-1">
                     <TabsTrigger value="monthly" className="rounded-full px-6">
-                      Skala UMKM/UKM
+                      Skala UMKM & UKM
                     </TabsTrigger>
                     <TabsTrigger value="annually" className="rounded-full px-6">
-                      Skala Menengah Keatas
+                      Enterprise
                     </TabsTrigger>
                   </TabsList>
                 </div>
@@ -657,16 +685,16 @@ export default function LandingPage() {
                               ))}
                             </ul>
                             <WhatsappWrapper>
-                            <Button
-                              className={`w-full mt-auto rounded-full ${
-                                plan.popular
-                                  ? "bg-primary hover:bg-primary/90"
-                                  : "bg-muted hover:bg-muted/80"
-                              }`}
-                              variant={plan.popular ? "default" : "outline"}
-                            >
-                              {plan.cta}
-                            </Button>
+                              <Button
+                                className={`w-full mt-auto rounded-full ${
+                                  plan.popular
+                                    ? "bg-primary hover:bg-primary/90"
+                                    : "bg-muted hover:bg-muted/80"
+                                }`}
+                                variant={plan.popular ? "default" : "outline"}
+                              >
+                                {plan.cta}
+                              </Button>
                             </WhatsappWrapper>
                           </CardContent>
                         </Card>
@@ -710,7 +738,7 @@ export default function LandingPage() {
                   {
                     question: "Berapa lama proses pembuatan sebuah website?",
                     answer:
-                      "Waktu pengerjaan bervariasi tergantung kompleksitas. Untuk Paket Basic biasanya memakan waktu 1-2 minggu, sedangkan Paket Bisnis sekitar 3-4 minggu. Solusi Custom akan disesuaikan dengan skala proyek.",
+                      "Waktu pengerjaan bervariasi tergantung kompleksitas. Untuk Paket Basic biasanya memakan waktu 1-2 minggu, sedangkan untuk sistem skala menengah dapat lebih lama(lebih dari 1 bulan). Waktu pengerjaan akan disesuaikan dengan permintaan fitur oleh client.",
                   },
                   {
                     question: "Apa saja yang perlu saya siapkan?",
@@ -728,12 +756,6 @@ export default function LandingPage() {
                       "Bisakah Anda memperbaiki website saya yang sudah ada?",
                     answer:
                       "Ya, kami bisa. Tim kami akan melakukan audit terlebih dahulu untuk mengidentifikasi masalah pada website Anda, mulai dari error, kecepatan, hingga tampilan, lalu memberikan solusi perbaikan terbaik.",
-                  },
-                  {
-                    question:
-                      "Apa saja yang termasuk dalam layanan IT Service?",
-                    answer:
-                      "Layanan IT kami mencakup spektrum yang luas, mulai dari perbaikan dan instalasi software, pembuatan website, aplikasi mobile untuk bisnis Anda.",
                   },
                 ].map((faq, i) => (
                   <motion.div

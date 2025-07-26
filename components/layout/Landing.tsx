@@ -48,11 +48,11 @@ export default function Landing({ children, seo }: Props) {
 
   // Default SEO values
   const defaultSEO = {
-    title: "Codeverta - Your Digital Solution Partner",
+    title: "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
     description:
       "Codeverta provides innovative digital solutions for your business needs. Expert web development, mobile apps, and digital transformation services.",
     ogTitle:
-      seo?.ogTitle || seo?.title || "Codeverta - Your Digital Solution Partner",
+      seo?.ogTitle || seo?.title || "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
     ogDescription:
       seo?.ogDescription ||
       seo?.description ||
@@ -63,7 +63,7 @@ export default function Landing({ children, seo }: Props) {
     twitterTitle:
       seo?.twitterTitle ||
       seo?.title ||
-      "Codeverta - Your Digital Solution Partner",
+      "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
     twitterDescription:
       seo?.twitterDescription ||
       seo?.description ||
