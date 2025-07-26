@@ -3,6 +3,7 @@ import manifest from "../public/manifest.json";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useTranslation } from "next-i18next";
 import { motion } from "framer-motion";
+import { WhatsappWrapper } from "./WhatsappButton";
 
 // Animation variants
 const containerVariants = {
@@ -162,14 +163,12 @@ export default function Hero() {
             whileHover="hover"
             whileTap="tap"
           >
-            <a
-              href="https://wa.me/+6281578956156?text=Halo%20saya%20tertarik%20dengan%20produk%20lilin%20Anda"
-              target="_blank"
-              className="w-full md:w-auto inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-            >
-              <WhatsAppIcon className="mr-2 -ml-1 w-5 h-5" />
-              Whatsapp
-            </a>
+            <WhatsappWrapper>
+              <div className="w-full md:w-auto inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                <WhatsAppIcon className="mr-2 -ml-1 w-5 h-5" />
+                Whatsapp
+              </div>
+            </WhatsappWrapper>
           </motion.div>
         </motion.div>
       </motion.div>

@@ -3,8 +3,8 @@ import React from "react";
 // WhatsApp Icon Component (since we can't import from MUI)
 const WhatsAppIcon = () => (
   <svg
-    width="24"
-    height="24"
+    width="48"
+    height="48"
     viewBox="0 0 24 24"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
@@ -13,18 +13,26 @@ const WhatsAppIcon = () => (
   </svg>
 );
 
-const WhatsAppButton = () => {
-  const handleClick = () => {
-    window.open(
-      "https://wa.me/+6281578956156?text=Halo%20saya%20tertarik%20dengan%20produk%20lilin%20Anda",
-      "_blank"
-    );
-  };
+const handleClick = () => {
+  window.open(
+    "https://wa.me/+6285601347820?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda",
+    "_blank"
+  );
+};
 
+export const WhatsappWrapper = ({ children }) => {
+  return (
+    <a href="https://wa.me/+6285601347820?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda">
+      {children}
+    </a>
+  );
+}
+
+const WhatsAppButton = () => {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110 z-50"
+      className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110 z-50"
       style={{
         background: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
         boxShadow: "0 8px 25px rgba(37, 211, 102, 0.3)",
