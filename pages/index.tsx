@@ -303,7 +303,7 @@ export default function LandingPage() {
         </section>
 
         {/* How It Works Section */}
-        <section className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+        <section id="development" className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden">
           <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
 
           <div className="container px-4 md:px-6 relative">
@@ -321,24 +321,23 @@ export default function LandingPage() {
                 Proses Mudah, Hasil Maksimal
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Mulai proyek Anda hanya dalam 3 langkah sederhana bersama tim
-                ahli kami.
+                Proses Pengembangan
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Get started in minutes and see the difference our platform can
-                make for your business.
+                Mulai proyek Anda hanya dalam 3 langkah sederhana bersama tim
+                ahli kami.
               </p>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-8 md:gap-12 relative">
-              <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent -translate-y-1/2 z-0"></div>
+
 
               {[
                 {
                   step: "01",
                   title: "Konsultasi Kebutuhan",
                   description:
-                    "Diskusikan ide, tujuan, dan kebutuhan spesifik proyek Anda bersama tim konsultan kami secara gratis.",
+                    "Diskusikan ide, tujuan, dan kebutuhan spesifik proyek Anda bersama kami secara gratis.",
                 },
                 {
                   step: "02",
@@ -348,9 +347,9 @@ export default function LandingPage() {
                 },
                 {
                   step: "03",
-                  title: "Peluncuran & Dukungan",
+                  title: "Peluncuran & Maintenance",
                   description:
-                    "Kami luncurkan proyek Anda ke publik dan memberikan dukungan berkelanjutan untuk memastikan semua berjalan lancar.",
+                    "Kami luncurkan proyek Anda ke publik dan memberikan maintenance untuk memastikan semua berjalan lancar.",
                 },
               ].map((step, i) => (
                 <motion.div
@@ -536,8 +535,9 @@ export default function LandingPage() {
                         features: [
                           "Desain Custom Sesuai Permintaan",
                           "Cocok Untuk UMKM",
-                          "Fitur Dasar (Kontak, Layanan, Produk dll)",
-                          "Domain & Hosting 1 Tahun",
+                          "Fitur Dasar (Kontak, Layanan, Katalog Produk dll)",
+                          "Gratis Domain & Hosting 1 Tahun",
+                          "Hand Coded, Bukan Template Wordpress",
                         ],
                         cta: "Pilih Paket",
                       },
