@@ -30,6 +30,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTheme } from "next-themes";
+import { cn } from "@/lib/utils";
 
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,13 +43,15 @@ export default function LandingPage() {
     { id: "/gadget", name: "Gadget" },
     { id: "/tutorials", name: "Tutorials" },
     { id: "/course", name: "Kelas" },
-    { id: "/produk", name: "Produk Kami" },
     { id: "/ai", name: "AI" },
-    { id: "#faq", name: "FAQ" },
-    { id: "/about", name: "About" },
+    { id: "/produk", name: "Produk Kami" },
+    { id: "/#development", name: "Alur Kerja" },
+    { id: "/#pricing", name: "Harga" },
+    { id: "/#faq", name: "FAQ" },
+    { id: "/about", name: "Tentang Kami" },
   ];
 
-  const hiddenMenu = ["news", "startups", "gadget", "tutorials", "kelas"];
+  const hiddenMenu = ["news", "ai", "startups", "gadget", "tutorials", "kelas"];
 
   useEffect(() => {
     setMounted(true);
@@ -88,7 +91,7 @@ export default function LandingPage() {
       <div className="container flex h-16 items-center justify-between">
         <Link
           href={"/"}
-          className="cursor-pointer flex items-center gap-2 font-bold"
+          className="hover:bg-gray-50 p-2 rounded-lg cursor-pointer flex items-center gap-2 font-bold"
         >
           <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
             CV
@@ -99,11 +102,13 @@ export default function LandingPage() {
           {categories.map((category) => (
             <Link
               href={category.id}
-              className={`text-sm font-medium text-muted-foreground transition-colors hover:text-foreground ${
+              className={cn(`text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer ${
                 !hiddenMenu.includes(category.name.toLowerCase())
                   ? ""
                   : "invisible"
-              }`}
+              }`,
+                category.name.includes("Produk Kami") ? "text-primary" : ""
+            )}
             >
               {category.name}
             </Link>
