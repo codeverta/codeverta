@@ -7,17 +7,17 @@ import {
   CardHeader,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Eye } from "lucide-react";
+import { ExternalLink, Eye } from "lucide-react";
 import Link from "next/link";
 import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 
 const products = [
   {
     id: 'e-commerce-platform',
-    name: "E-commerce Platform for Business",
+    name: "E-commerce Platform untuk UKM/UMKM",
     description:
       "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online",
-    image: "/assets/products/1.png",
+    image: "/assets/products/27.png",
     technologies: ["React", "Laravel", "MySQL", "Midtrans"],
     category: "E-commerce",
     status: "Completed",
@@ -27,17 +27,17 @@ const products = [
     name: "WebGIS Platform",
     description:
       "Sistem Informasi Geografis berbasis web untuk pemetaan dan analisis spasial",
-    image: "/assets/products/1.png",
+    image: "/assets/products/28.png",
     technologies: ["React", "Leaflet", "PostgreSQL", "PostGIS"],
     category: "Geographic Information System",
     status: "Completed",
   },
   {
     id: 'enterprise-erp-system',
-    name: "Enterprise ERP System",
+    name: "Enterprise Resource Planning(ERP) System",
     description:
       "Sistem ERP terintegrasi untuk mengelola seluruh proses bisnis perusahaan",
-    image: "/assets/products/2.png",
+    image: "/assets/products/29.png",
     technologies: ["Next.js", "Node.js", "MySQL", "Redis"],
     category: "Enterprise Resource Planning",
     status: "In Development",
@@ -47,7 +47,7 @@ const products = [
     name: "HRMS Portal",
     description:
       "Human Resource Management System untuk pengelolaan karyawan dan payroll",
-    image: "/assets/products/3.png",
+    image: "/assets/products/32.png",
     technologies: ["React", "Express.js", "MongoDB", "JWT"],
     category: "Human Resource Management",
     status: "Completed",
@@ -163,7 +163,7 @@ export default function ITProductsShowcase() {
                       src={product.image || "/placeholder.svg"}
                       alt={product.name}
                       width={400}
-                      height={300}
+                      height={400}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </Link>

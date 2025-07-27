@@ -30,7 +30,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTheme } from "next-themes";
-import { WhatsappWrapper } from "@/components/WhatsappButton";
+import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 
 const logos = [
   {
@@ -170,6 +170,7 @@ export default function LandingPage() {
                     size="lg"
                     className="rounded-full h-12 px-8 text-base"
                   >
+                    <WhatsAppIcon />
                     Whatsapp Sekarang
                     <ArrowRight className="ml-2 size-4" />
                   </Button>
@@ -194,6 +195,10 @@ export default function LandingPage() {
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
                   <span>Garansi Sampai Puas</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <Check className="size-4 text-primary" />
+                  <span>Jujur & Dapat Dipercaya</span>
                 </div>
               </div>
             </motion.div>
@@ -303,7 +308,10 @@ export default function LandingPage() {
         </section>
 
         {/* How It Works Section */}
-        <section id="development" className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+        <section
+          id="development"
+          className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden"
+        >
           <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
 
           <div className="container px-4 md:px-6 relative">
@@ -330,8 +338,6 @@ export default function LandingPage() {
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-8 md:gap-12 relative">
-
-
               {[
                 {
                   step: "01",
@@ -756,6 +762,12 @@ export default function LandingPage() {
                       "Bisakah Anda memperbaiki website saya yang sudah ada?",
                     answer:
                       "Ya, kami bisa. Tim kami akan melakukan audit terlebih dahulu untuk mengidentifikasi masalah pada website Anda, mulai dari error, kecepatan, hingga tampilan, lalu memberikan solusi perbaikan terbaik.",
+                  },
+                  {
+                    question:
+                      "Pembayarannya bagaimana? Apakah ada uang muka?",
+                    answer:
+                      "Pembayaran dilakukan dengan sistem DP 30% di awal, sisanya dibayar setelah website selesai dan disetujui. Kami juga menyediakan opsi pembayaran bertahap untuk proyek besar.",
                   },
                 ].map((faq, i) => (
                   <motion.div

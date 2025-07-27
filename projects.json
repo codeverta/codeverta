@@ -1,5 +1,243 @@
 {
   "projects": [
+{
+  "product": {
+    "id": "e-commerce-platform",
+    "name": "E-commerce Platform untuk UKM/UMKM",
+    "description": "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online.",
+    "fullDescription": "Platform E-commerce ini dirancang untuk mendukung bisnis dalam menjual produk secara online dengan efisien dan aman. Sistem ini mencakup fitur-fitur inti seperti manajemen produk, pencarian dan filter katalog, keranjang belanja, checkout, pembayaran digital melalui Midtrans, serta manajemen pesanan dan pengguna. Platform ini dibangun dengan arsitektur modern dan responsif agar dapat diakses dari perangkat desktop maupun mobile.",
+    "image": "/assets/products/27.png",
+    "technologies": ["React", "Laravel", "MySQL", "Midtrans"],
+    "category": "E-commerce",
+    "status": "Completed",
+    "version": "1.0.0",
+    "lastUpdated": "Mei 2025",
+    "client": "PT Million Candles",
+    "duration": "6 bulan",
+    "teamSize": "6 orang (Frontend, Backend, UI/UX, QA, DevOps, PM)"
+  },
+  "hero": {
+    "buttons": {
+      "liveDemo": "Lihat Toko",
+      "sourceCode": "Kode Sumber",
+      "documentation": "Dokumentasi API"
+    }
+  },
+  "tabs": {
+    "triggers": {
+      "overview": "Ringkasan",
+      "features": "Fitur Utama",
+      "workflow": "Alur Pengguna",
+      "techStack": "Teknologi",
+      "screenshots": "Galeri",
+      "specs": "Spesifikasi"
+    }
+  },
+  "overview": {
+    "projectInfo": {
+      "title": "Info Proyek",
+      "clientLabel": "Klien",
+      "durationLabel": "Durasi",
+      "teamSizeLabel": "Ukuran Tim",
+      "lastUpdatedLabel": "Pembaruan Terakhir"
+    },
+    "platformSupport": {
+      "title": "Dukungan Platform",
+      "items": [
+        "Akses via Web Browser (Desktop & Mobile)",
+        "Optimasi SEO untuk visibilitas pencarian",
+        "Integrasi dengan Email & WhatsApp",
+        "Checkout dengan Midtrans & Transfer Manual"
+      ]
+    },
+    "architecture": {
+      "title": "Arsitektur Sistem",
+      "items": [
+        "Monolithic Backend dengan Laravel",
+        "Frontend terpisah berbasis React",
+        "RESTful API untuk komunikasi antara frontend & backend",
+        "Middleware keamanan CSRF & Rate Limiting"
+      ]
+    },
+    "projectDescription": {
+      "title": "Deskripsi Proyek",
+      "paragraphs": [
+        "Proyek ini bertujuan memberikan solusi digital bagi klien dalam memperluas kanal penjualan mereka secara online. Banyak UMKM dan bisnis menengah kesulitan membangun e-commerce sendiri karena kompleksitas sistem.",
+        "Platform ini dirancang dengan fokus pada kemudahan pengguna, baik dari sisi pembeli maupun admin. Admin dapat mengelola produk, kategori, promo, dan pesanan tanpa kesulitan, sementara pembeli dapat mencari, menambahkan produk ke keranjang, dan melakukan checkout dengan mudah.",
+        "Fitur integrasi pembayaran dengan Midtrans memungkinkan transaksi yang aman dan cepat, termasuk metode seperti e-wallet, transfer bank, dan QRIS. Platform ini siap digunakan untuk berbagai model bisnis ritel skala kecil hingga menengah."
+      ]
+    }
+  },
+  "features": [
+    {
+      "icon": "ShoppingBag",
+      "title": "Manajemen Katalog Produk",
+      "description": "Menambahkan, mengedit, dan menghapus produk dengan gambar, deskripsi, harga, dan stok."
+    },
+    {
+      "icon": "Filter",
+      "title": "Pencarian & Filter Kategori",
+      "description": "Navigasi mudah dengan filter berdasarkan kategori, harga, dan popularitas."
+    },
+    {
+      "icon": "ShoppingCart",
+      "title": "Keranjang Belanja",
+      "description": "Pengguna dapat menambahkan produk ke keranjang dan mengatur jumlah sebelum checkout."
+    },
+    {
+      "icon": "CreditCard",
+      "title": "Checkout & Pembayaran",
+      "description": "Proses pembayaran cepat melalui Midtrans dengan berbagai metode pembayaran."
+    },
+    {
+      "icon": "Truck",
+      "title": "Manajemen Pengiriman",
+      "description": "Notifikasi otomatis dan pelacakan status pesanan mulai dari konfirmasi hingga pengiriman."
+    },
+    {
+      "icon": "UserCheck",
+      "title": "Manajemen Pengguna",
+      "description": "Pengelolaan akun pengguna, riwayat pembelian, dan keamanan login."
+    }
+  ],
+  "workflow": {
+    "title": "Alur Pengguna Umum",
+    "steps": [
+      {
+        "step": 1,
+        "icon": "Search",
+        "title": "Menelusuri Katalog",
+        "description": "Pengguna mencari produk melalui pencarian atau navigasi kategori."
+      },
+      {
+        "step": 2,
+        "icon": "ShoppingCart",
+        "title": "Menambahkan ke Keranjang",
+        "description": "Produk pilihan dimasukkan ke keranjang untuk pembelian."
+      },
+      {
+        "step": 3,
+        "icon": "CreditCard",
+        "title": "Checkout",
+        "description": "Pengguna mengisi detail pengiriman dan memilih metode pembayaran."
+      },
+      {
+        "step": 4,
+        "icon": "CheckCircle",
+        "title": "Pembayaran & Konfirmasi",
+        "description": "Sistem memproses pembayaran dan mengirim notifikasi kepada admin & pengguna."
+      },
+      {
+        "step": 5,
+        "icon": "Truck",
+        "title": "Pengiriman Produk",
+        "description": "Admin memproses dan mengirimkan produk, lalu sistem memperbarui status pesanan."
+      }
+    ]
+  },
+  "techStack": [
+    {
+      "category": "Frontend",
+      "technologies": [
+        {
+          "name": "React",
+          "description": "Library JavaScript untuk membangun antarmuka pengguna interaktif dan responsif."
+        },
+        {
+          "name": "Tailwind CSS",
+          "description": "Framework CSS utility-first untuk styling cepat dan konsisten."
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "technologies": [
+        {
+          "name": "Laravel 10",
+          "description": "Framework PHP modern yang menyediakan sistem routing, autentikasi, dan ORM (Eloquent)."
+        },
+        {
+          "name": "Midtrans API",
+          "description": "Gateway pembayaran terkemuka di Indonesia untuk kartu kredit, e-wallet, dan transfer bank."
+        }
+      ]
+    },
+    {
+      "category": "Database",
+      "technologies": [
+        {
+          "name": "MySQL",
+          "description": "Sistem basis data relasional untuk menyimpan data produk, pengguna, dan transaksi."
+        }
+      ]
+    },
+    {
+      "category": "Infrastructure & DevOps",
+      "technologies": [
+        {
+          "name": "Docker",
+          "description": "Menjalankan frontend dan backend dalam container terisolasi untuk kemudahan deployment."
+        },
+        {
+          "name": "GitHub Actions",
+          "description": "CI/CD pipeline untuk otomatisasi build dan deployment saat kode diperbarui."
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "title": "Halaman Beranda Toko",
+      "image": "/assets/products/26.png",
+      "description": "Menampilkan banner promo, kategori utama, dan produk unggulan."
+    },
+    {
+      "title": "Katalog Produk",
+      "image": "/assets/products/26-2.png",
+      "description": "Grid produk dengan gambar, nama, harga, dan tombol tambah ke keranjang."
+    },
+    {
+      "title": "Halaman Checkout",
+      "image": "/assets/products/26-3.png",
+      "description": "Formulir checkout dengan pilihan metode pembayaran dan alamat pengiriman."
+    },
+    {
+      "title": "Dashboard Admin",
+      "image": "/assets/products/26-4.png",
+      "description": "Statistik penjualan, manajemen produk, dan daftar pesanan dalam satu panel."
+    }
+  ],
+  "specifications": {
+    "systemRequirements": {
+      "title": "Kebutuhan Sistem",
+      "server": {
+        "title": "Kebutuhan Server",
+        "items": ["PHP 8.2+", "MySQL 8+", "Node.js untuk build React", "2 vCPU, 4GB RAM minimum"]
+      },
+      "client": {
+        "title": "Kebutuhan Klien",
+        "items": ["Browser modern (Chrome, Firefox, Safari)", "Koneksi internet stabil"]
+      }
+    },
+    "performanceMetrics": {
+      "title": "Metrik Performa",
+      "metrics": [
+        { "label": "Load Time Halaman Utama", "value": "< 1.5 detik" },
+        { "label": "Rata-rata Response API", "value": "< 200 ms" },
+        { "label": "Checkout Completion Rate", "value": "> 95%" }
+      ]
+    },
+    "securityFeatures": {
+      "title": "Fitur Keamanan",
+      "items": [
+        "Autentikasi & Otorisasi berbasis Laravel Sanctum",
+        "Validasi & Sanitasi Input",
+        "Integrasi HTTPS dengan Sertifikat SSL",
+        "Webhook Signature Verification (Midtrans)"
+      ]
+    }
+  }
+},
     {
       "product": {
         "id": "smart-pos-system",
@@ -68,7 +306,7 @@
         "name": "WebGIS Platform",
         "description": "Sistem Informasi Geografis berbasis web untuk pemetaan dan analisis spasial.",
         "fullDescription": "WebGIS Platform adalah sebuah solusi Sistem Informasi Geografis (SIG) interaktif berbasis web yang dirancang untuk visualisasi, analisis, dan manajemen data geospasial. Platform ini memungkinkan pengguna untuk mengunggah data, membuat peta tematik, melakukan analisis spasial seperti buffering dan overlay, serta membagikan hasilnya dengan mudah melalui browser.",
-        "image": "/assets/products/webgis-1.png",
+        "image": "/assets/products/28.png",
         "technologies": ["React", "Leaflet.js", "Node.js", "PostgreSQL", "PostGIS", "GeoServer"],
         "category": "Geographic Information System",
         "status": "Completed",
@@ -253,15 +491,15 @@
           },
           "client": {
             "title": "Kebutuhan Klien",
-            "items": ["Browser modern dengan dukungan JavaScript (ES6+)", "Koneksi internet stabil", "Rekomendasi RAM 8GB untuk analisis berat"]
+            "items": ["Browser modern dengan dukungan JavaScript (ES6+)", "Koneksi internet stabil"]
           }
         },
         "performanceMetrics": {
           "title": "Metrik Performa",
           "metrics": [
-            { "label": "Waktu Muat Peta Awal", "value": "< 3 detik" },
-            { "label": "Render Tile (rata-rata)", "value": "< 400ms" },
-            { "label": "Proses Kueri Spasial (sederhana)", "value": "< 1.5 detik" }
+            { "label": "Waktu Muat Peta Awal", "value": "< 600ms" },
+            { "label": "Render Layer (rata-rata)", "value": "< 400ms" },
+            { "label": "Respons API Analisis Spasial", "value": "< 300ms" }
           ]
         },
         "securityFeatures": {
@@ -278,7 +516,7 @@
     {
       "product": {
         "id": "enterprise-erp-system",
-        "name": "Enterprise ERP System",
+        "name": "Enterprise Resource Planning(ERP) System",
         "description": "Sistem ERP terintegrasi untuk mengelola seluruh proses bisnis perusahaan.",
         "fullDescription": "Sistem Enterprise Resource Planning (ERP) ini dirancang sebagai solusi terpusat untuk mengintegrasikan dan mengotomatiskan seluruh fungsi bisnis inti perusahaan, mulai dari keuangan, sumber daya manusia, manajemen inventaris, penjualan, hingga manufaktur dalam satu platform yang kohesif dan real-time.",
         "image": "/assets/products/erp-1.png",
@@ -328,7 +566,6 @@
         "architecture": {
           "title": "Arsitektur Sistem",
           "items": [
-            "Microservices Architecture",
             "Secure Multi-tenancy Support",
             "Message Queue untuk Proses Asinkron",
             "Centralized Authentication Gateway (SSO)"
@@ -338,7 +575,7 @@
           "title": "Deskripsi Proyek",
           "paragraphs": [
             "Proyek ini mengatasi tantangan umum di perusahaan besar: data yang terisolasi antar departemen, proses manual yang tidak efisien, dan kurangnya visibilitas data real-time untuk pengambilan keputusan. Sistem lama yang terfragmentasi menghambat pertumbuhan dan kelincahan bisnis.",
-            "Solusinya adalah membangun sistem ERP berbasis web yang modular dari awal. Dengan arsitektur microservices, setiap modul inti (Keuangan, SDM, Inventaris, dll.) dikembangkan sebagai layanan independen yang saling berkomunikasi. Hal ini memastikan skalabilitas, kemudahan pemeliharaan, dan memungkinkan pengembangan paralel.",
+            "Solusinya adalah membangun sistem ERP berbasis web yang modular dari awal. Dengan arsitektur monolith, setiap modul inti (Keuangan, SDM, Inventaris, dll.) dikembangkan sebagai layanan independen yang saling berkomunikasi. Hal ini memastikan skalabilitas, kemudahan pemeliharaan, dan memungkinkan pengembangan paralel.",
             "Dengan platform ini, klien akan mendapatkan satu sumber kebenaran (single source of truth) untuk seluruh data operasional, meningkatkan efisiensi secara drastis, mempercepat proses bisnis, dan menyediakan laporan analitik terintegrasi yang mendukung pengambilan keputusan strategis berbasis data."
           ]
         }
@@ -420,7 +657,7 @@
           ]
         },
         {
-          "category": "Backend (Microservices)",
+          "category": "Backend",
           "technologies": [
             { "name": "Node.js (NestJS)", "description": "Framework Node.js yang progresif untuk membangun aplikasi sisi server yang efisien dan scalable." },
             { "name": "TypeORM", "description": "Object-Relational Mapper (ORM) untuk TypeScript dan JavaScript, mendukung MySQL." },
@@ -502,13 +739,13 @@
         "name": "HRMS Portal",
         "description": "Human Resource Management System untuk pengelolaan karyawan dan payroll.",
         "fullDescription": "HRMS Portal adalah platform manajemen sumber daya manusia yang dirancang untuk menyederhanakan dan mengotomatiskan tugas-tugas administratif HR. Sistem ini menyediakan portal self-service bagi karyawan dan manajer, serta alat yang komprehensif bagi tim HR untuk mengelola data karyawan, absensi, cuti, klaim, hingga proses penggajian (payroll).",
-        "image": "/assets/products/hrms-1.png",
+        "image": "/assets/products/32.png",
         "technologies": ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Material-UI"],
         "category": "Human Resource Management",
         "status": "Completed",
         "version": "2.0.1",
         "lastUpdated": "Mei 2025",
-        "client": "PT Cipta Solusi Digital",
+        "client": "-",
         "duration": "5 bulan",
         "teamSize": "4 specialists (Frontend, Backend, UI/UX, QA)"
       },
@@ -984,7 +1221,6 @@
           "title": "Arsitektur Sistem",
           "items": [
             "Event-Driven Architecture",
-            "Microservices dengan Spring Boot",
             "Real-time Data Streaming via Apache Kafka",
             "Antarmuka Frontend Reaktif dengan Angular"
           ]
@@ -1075,10 +1311,9 @@
           ]
         },
         {
-          "category": "Backend (Microservices)",
+          "category": "Backend",
           "technologies": [
             { "name": "Java 21", "description": "Bahasa pemrograman yang matang, andal, dan berkinerja tinggi untuk aplikasi enterprise." },
-            { "name": "Spring Boot 3", "description": "Framework untuk membuat aplikasi microservices berbasis Spring dengan cepat dan mudah." },
             { "name": "Spring Data JPA", "description": "Menyederhanakan lapisan persistensi data dengan repositori untuk database SQL." }
           ]
         },

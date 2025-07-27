@@ -28,6 +28,7 @@ import {
 // Import modul Node.js untuk membaca file di sisi server
 import fs from "fs";
 import path from "path";
+import { WhatsappWrapper } from "@/components/WhatsappButton";
 
 // Helper untuk memetakan nama ikon dari JSON ke komponen React
 const iconMap = {
@@ -140,18 +141,20 @@ export default function ProjectDetailPage({ project }) {
               </div>
 
               <div className="flex gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <ExternalLink className="w-5 h-5 mr-2" />
-                  {hero.buttons.liveDemo}
-                </Button>
-                <Button size="lg" variant="outline">
+                <WhatsappWrapper>
+                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                    <ExternalLink className="w-5 h-5 mr-2" />
+                    {hero?.buttons.liveDemo || "Live Demo"}
+                  </Button>
+                </WhatsappWrapper>
+                {/* <Button size="lg" variant="outline">
                   <Github className="w-5 h-5 mr-2" />
                   {hero.buttons.sourceCode}
                 </Button>
                 <Button size="lg" variant="outline">
                   <Download className="w-5 h-5 mr-2" />
                   {hero.buttons.documentation}
-                </Button>
+                </Button> */}
               </div>
             </div>
 
@@ -207,12 +210,12 @@ export default function ProjectDetailPage({ project }) {
                     </p>
                     <p className="font-semibold">{product.duration}</p>
                   </div>
-                  <div>
+                  {/* <div>
                     <p className="text-sm text-slate-600">
                       {overview.projectInfo.teamSizeLabel}
                     </p>
                     <p className="font-semibold">{product.teamSize}</p>
-                  </div>
+                  </div> */}
                   <div>
                     <p className="text-sm text-slate-600">
                       {overview.projectInfo.lastUpdatedLabel}
