@@ -115,9 +115,9 @@ export default function ProjectDetailPage({ project }) {
                 <Badge variant="outline" className="text-sm">
                   {product.category}
                 </Badge>
-                <Badge className="bg-green-500 hover:bg-green-600">
+                {/* <Badge className="bg-green-500 hover:bg-green-600">
                   {product.status}
-                </Badge>
+                </Badge> */}
                 <Badge variant="secondary">v{product.version}</Badge>
               </div>
 

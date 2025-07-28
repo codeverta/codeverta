@@ -193,17 +193,17 @@
     },
     {
       "title": "Katalog Produk",
-      "image": "/assets/products/26-2.png",
+      "image": "/placeholder.svg",
       "description": "Grid produk dengan gambar, nama, harga, dan tombol tambah ke keranjang."
     },
     {
       "title": "Halaman Checkout",
-      "image": "/assets/products/26-3.png",
+      "image": "/placeholder.svg",
       "description": "Formulir checkout dengan pilihan metode pembayaran dan alamat pengiriman."
     },
     {
       "title": "Dashboard Admin",
-      "image": "/assets/products/26-4.png",
+      "image": "/placeholder.svg",
       "description": "Statistik penjualan, manajemen produk, dan daftar pesanan dalam satu panel."
     }
   ],
@@ -244,7 +244,7 @@
         "name": "Smart POS System",
         "description": "Point of Sale system modern dengan fitur inventory dan reporting real-time.",
         "fullDescription": "Smart POS System adalah solusi point of sale yang komprehensif dan modern, dirancang khusus untuk memenuhi kebutuhan bisnis retail, restoran, dan toko...",
-        "image": "/assets/products/1.png",
+        "image": "/assets/products/33.png",
         "technologies": ["Vue.js", "Laravel", "MySQL", "Socket.io", "Redis", "Docker"],
         "category": "Point of Sale",
         "status": "Completed",
@@ -291,8 +291,8 @@
         }
       ],
       "screenshots": [
-        { "title": "Dashboard Overview", "image": "/assets/products/1.png", "description": "Dashboard utama dengan sales summary dan quick actions" },
-        { "title": "Dashboard Overview", "image": "/assets/products/2.png", "description": "Dashboard utama dengan sales summary dan quick actions" }
+        { "title": "Dashboard Overview", "image": "/assets/products/12.png", "description": "Dashboard utama dengan sales summary dan quick actions" },
+        { "title": "Dashboard Overview", "image": "/assets/products/13.png", "description": "Dashboard utama dengan sales summary dan quick actions" }
       ],
       "specifications": {
         "systemRequirements": { "title": "System Requirements", "server": { "title": "Server Requirements", "items": ["PHP 8.1 or higher", "MySQL 8.0 or higher"] }, "client": { "title": "Client Requirements", "items": ["Modern web browser", "JavaScript enabled"] } },
@@ -519,7 +519,7 @@
         "name": "Enterprise Resource Planning(ERP) System",
         "description": "Sistem ERP terintegrasi untuk mengelola seluruh proses bisnis perusahaan.",
         "fullDescription": "Sistem Enterprise Resource Planning (ERP) ini dirancang sebagai solusi terpusat untuk mengintegrasikan dan mengotomatiskan seluruh fungsi bisnis inti perusahaan, mulai dari keuangan, sumber daya manusia, manajemen inventaris, penjualan, hingga manufaktur dalam satu platform yang kohesif dan real-time.",
-        "image": "/assets/products/erp-1.png",
+        "image": "/assets/products/29.png",
         "technologies": ["Next.js", "Node.js", "TypeScript", "MySQL", "Redis", "Docker"],
         "category": "Enterprise Resource Planning",
         "status": "In Development",
@@ -531,7 +531,7 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Buka Aplikasi",
+          "liveDemo": "Hubungi Kami",
           "sourceCode": "Kode Sumber",
           "documentation": "Dokumentasi API"
         }
@@ -683,22 +683,22 @@
       "screenshots": [
         {
           "title": "Dashboard Utama Finansial",
-          "image": "/assets/products/erp-1.png",
+          "image": "/placeholder.svg",
           "description": "Menampilkan ringkasan cash flow, laba rugi, dan metrik keuangan penting lainnya dalam bentuk grafik."
         },
         {
           "title": "Modul Manajemen Inventaris Gudang",
-          "image": "/assets/products/erp-2.png",
+          "image": "/placeholder.svg",
           "description": "Tabel data produk dengan informasi stok, lokasi rak, dan tombol untuk aksi cepat seperti transfer stok."
         },
         {
           "title": "Formulir Pembuatan Sales Order",
-          "image": "/assets/products/erp-3.png",
+          "image": "/placeholder.svg",
           "description": "Antarmuka untuk membuat pesanan penjualan baru dengan pemilihan pelanggan dan item produk yang interaktif."
         },
         {
           "title": "Laporan Analitik Penjualan Bulanan",
-          "image": "/assets/products/erp-4.png",
+          "image": "/placeholder.svg",
           "description": "Contoh laporan analitik yang membandingkan performa penjualan produk dari waktu ke waktu."
         }
       ],
@@ -897,22 +897,22 @@
       "screenshots": [
         {
           "title": "Dashboard Utama HR Admin",
-          "image": "/assets/products/hrms-1.png",
+          "image": "/placeholder.svg",
           "description": "Menampilkan ringkasan statistik karyawan, pengajuan yang menunggu persetujuan, dan pengumuman internal."
         },
         {
           "title": "Halaman Profil Karyawan (Self-Service)",
-          "image": "/assets/products/hrms-2.png",
+          "image": "/placeholder.svg",
           "description": "Karyawan dapat melihat dan memperbarui data pribadi mereka, serta melihat informasi kontrak kerja."
         },
         {
           "title": "Formulir Pengajuan Cuti Online",
-          "image": "/assets/products/hrms-3.png",
+          "image": "/placeholder.svg",
           "description": "Antarmuka yang sederhana untuk memilih jenis cuti, rentang tanggal, dan melihat sisa kuota cuti."
         },
         {
           "title": "Tampilan Slip Gaji Digital",
-          "image": "/assets/products/hrms-4.png",
+          "image": "/placeholder.svg",
           "description": "Rincian komponen pendapatan dan potongan gaji dalam format yang jelas dan mudah diunduh (PDF)."
         }
       ],
@@ -953,19 +953,19 @@
         "name": "Finance Management",
         "description": "Sistem manajemen keuangan dengan fitur budgeting dan financial reporting.",
         "fullDescription": "Aplikasi Manajemen Keuangan ini adalah alat yang intuitif untuk individu dan usaha kecil guna melacak pendapatan dan pengeluaran, membuat anggaran yang realistis, dan menghasilkan laporan keuangan yang mendalam. Tujuannya adalah untuk memberikan visibilitas penuh dan kontrol atas kesehatan finansial pengguna.",
-        "image": "/assets/products/finance-1.png",
+        "image": "/assets/products/34.png",
         "technologies": ["React", "Django", "PostgreSQL", "Chart.js", "Django REST Framework"],
         "category": "Financial Management",
         "status": "Completed",
         "version": "1.0.0",
         "lastUpdated": "April 2025",
-        "client": "Fintech Startup Indonesia",
+        "client": "-",
         "duration": "6 bulan",
         "teamSize": "5 specialists (Frontend, Backend, DBA, UI/UX, QA)"
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Buka Aplikasi",
+          "liveDemo": "Hubungi Kami",
           "sourceCode": "Kode Sumber",
           "documentation": "Dokumentasi"
         }
@@ -1117,23 +1117,33 @@
       "screenshots": [
         {
           "title": "Dashboard Utama dengan Ringkasan Keuangan",
-          "image": "/assets/products/finance-1.png",
+          "image": "/assets/products/5.png",
           "description": "Menampilkan saldo terkini, grafik arus kas, dan pengeluaran teratas dalam satu tampilan."
         },
         {
           "title": "Halaman Pencatatan Transaksi Baru",
-          "image": "/assets/products/finance-2.png",
+          "image": "/assets/products/6.png",
           "description": "Formulir yang sederhana untuk memasukkan jumlah, tanggal, kategori, dan deskripsi transaksi."
         },
         {
           "title": "Tampilan Monitoring Anggaran (Budget)",
-          "image": "/assets/products/finance-3.png",
+          "image": "/assets/products/7.png",
           "description": "Bilah progres visual yang membandingkan pengeluaran aktual dengan anggaran yang ditetapkan per kategori."
         },
         {
           "title": "Laporan Laba Rugi Bulanan (P&L)",
-          "image": "/assets/products/finance-4.png",
+          "image": "/assets/products/8.png",
           "description": "Tabel laporan yang merinci semua sumber pendapatan dan pengeluaran untuk menghasilkan laba bersih."
+        },
+        {
+          "title": "Grafik Analisis Pengeluaran",
+          "image": "/assets/products/9.png",
+          "description": "Bagan lingkaran yang menunjukkan persentase pengeluaran berdasarkan kategori, seperti makanan, transportasi, dan hiburan."
+        },
+        {
+          "title": "Pengaturan Tujuan Keuangan",
+          "image": "/assets/products/10.png",
+          "description": "Antarmuka untuk menetapkan dan melacak kemajuan terhadap tujuan tabungan, seperti dana darurat atau liburan."
         }
       ],
       "specifications": {
@@ -1152,8 +1162,8 @@
           "title": "Metrik Performa",
           "metrics": [
             { "label": "Waktu Simpan Transaksi", "value": "< 300 ms" },
-            { "label": "Generasi Laporan (Bulanan)", "value": "< 5 detik" },
-            { "label": "Waktu Muat Dasbor", "value": "< 1.5 detik" }
+            { "label": "Generate Laporan (Bulanan)", "value": "< 5 detik" },
+            { "label": "Waktu Muat Dasbor", "value": "< 500 ms" }
           ]
         },
         "securityFeatures": {
@@ -1173,7 +1183,7 @@
         "name": "Inventory Control System",
         "description": "Sistem kontrol inventori dengan tracking real-time dan automated alerts.",
         "fullDescription": "Sistem Kontrol Inventaris ini dirancang untuk gudang dan pusat distribusi modern, menyediakan pelacakan stok secara real-time, integrasi pemindai barcode/QR, dan peringatan otomatis untuk level stok rendah atau barang yang mendekati kedaluwarsa. Tujuannya adalah untuk mengoptimalkan level stok, mencegah kehabisan barang, dan mengurangi pemborosan.",
-        "image": "/assets/products/inventory-1.png",
+          "image": "/assets/products/39.png",
         "technologies": ["Angular", "Java", "Spring Boot", "MySQL", "Apache Kafka", "Docker"],
         "category": "Inventory Management",
         "status": "In Development",
@@ -1336,22 +1346,22 @@
       "screenshots": [
         {
           "title": "Dasbor Stok Real-time",
-          "image": "/assets/products/inventory-1.png",
+          "image": "/placeholder.svg",
           "description": "Menampilkan metrik kunci seperti nilai total inventaris, item yang bergerak cepat, dan peringatan stok rendah."
         },
         {
           "title": "Antarmuka Penerimaan Barang (Goods Receipt)",
-          "image": "/assets/products/inventory-2.png",
+          "image": "/placeholder.svg",
           "description": "Formulir berbasis pemindai untuk mencatat barang yang masuk berdasarkan purchase order."
         },
         {
           "title": "Daftar Produk dengan Level Stok Rendah",
-          "image": "/assets/products/inventory-3.png",
+          "image": "/placeholder.svg",
           "description": "Tabel yang secara otomatis memfilter produk yang telah mencapai atau di bawah titik pemesanan ulang."
         },
         {
           "title": "Laporan Analisis Perputaran Inventaris",
-          "image": "/assets/products/inventory-4.png",
+          "image": "/placeholder.svg",
           "description": "Grafik yang menunjukkan seberapa cepat item inventaris terjual dalam periode waktu tertentu."
         }
       ],
@@ -1392,7 +1402,7 @@
         "name": "CRM Platform",
         "description": "Customer Relationship Management untuk mengelola hubungan dengan pelanggan.",
         "fullDescription": "Platform CRM (Customer Relationship Management) ini adalah solusi komprehensif untuk tim penjualan dan pemasaran, dirancang untuk mengelola seluruh siklus hidup pelanggan. Sistem ini membantu melacak interaksi, mengelola prospek (leads), mengotomatiskan alur kerja penjualan, dan menganalisis data untuk membangun hubungan pelanggan yang lebih kuat dan menguntungkan.",
-        "image": "/assets/products/crm-1.png",
+          "image": "/assets/products/41.png",
         "technologies": ["React", "Node.js", "MongoDB", "GraphQL", "Apollo"],
         "category": "Customer Relationship Management",
         "status": "Completed",
@@ -1549,22 +1559,22 @@
       "screenshots": [
         {
           "title": "Dasbor Utama Penjualan",
-          "image": "/assets/products/crm-1.png",
+          "image": "/placeholder.svg",
           "description": "Menampilkan ringkasan pipeline, aktivitas yang akan datang, dan performa penjualan secara keseluruhan."
         },
         {
           "title": "Tampilan Kanban Sales Pipeline",
-          "image": "/assets/products/crm-2.png",
+          "image": "/placeholder.svg",
           "description": "Visualisasi kesepakatan dalam berbagai tahap penjualan dengan fungsionalitas drag-and-drop."
         },
         {
           "title": "Halaman Detail Kontak 360°",
-          "image": "/assets/products/crm-3.png",
+          "image": "/placeholder.svg",
           "description": "Semua informasi tentang pelanggan, termasuk riwayat komunikasi dan kesepakatan, dalam satu halaman."
         },
         {
           "title": "Formulir Penjadwalan Aktivitas",
-          "image": "/assets/products/crm-4.png",
+          "image": "/placeholder.svg",
           "description": "Dialog untuk membuat tugas atau menjadwalkan pertemuan yang terhubung langsung dengan kontak atau kesepakatan."
         }
       ],
@@ -1605,7 +1615,7 @@
     "name": "E-Learning Platform",
     "description": "Platform pembelajaran online dengan fitur video streaming dan quiz interaktif.",
     "fullDescription": "E-Learning Platform ini adalah sebuah ekosistem pembelajaran digital yang dirancang untuk instruktur dan pelajar. Platform ini menyediakan alat yang lengkap untuk membuat, mengelola, dan menjual kursus online, dilengkapi dengan video streaming yang aman, pelacakan progres, serta penilaian interaktif untuk pengalaman belajar yang menarik dan efektif.",
-    "image": "/assets/products/elearning-1.png",
+          "image": "/assets/products/37.png",
     "technologies": ["Next.js", "React", "Strapi", "PostgreSQL", "AWS S3", "Tailwind CSS"],
     "category": "Education Technology",
     "status": "Completed",
@@ -1762,22 +1772,22 @@
   "screenshots": [
     {
       "title": "Halaman Katalog Kursus",
-      "image": "/assets/products/elearning-1.png",
+          "image": "/placeholder.svg",
       "description": "Tampilan galeri kursus yang tersedia dengan fitur pencarian dan filter berdasarkan kategori."
     },
     {
       "title": "Tampilan Belajar dengan Video Player",
-      "image": "/assets/products/elearning-2.png",
+          "image": "/placeholder.svg",
       "description": "Antarmuka utama saat belajar, menampilkan video di sebelah kiri dan daftar putar kurikulum di sebelah kanan."
     },
     {
       "title": "Antarmuka Kuis Interaktif",
-      "image": "/assets/products/elearning-3.png",
+          "image": "/placeholder.svg",
       "description": "Contoh halaman kuis pilihan ganda dengan timer dan navigasi soal."
     },
     {
       "title": "Dasbor Progres Belajar Siswa",
-      "image": "/assets/products/elearning-4.png",
+          "image": "/placeholder.svg",
       "description": "Halaman profil siswa yang menunjukkan kursus yang diikuti, progres penyelesaian, dan sertifikat yang diraih."
     }
   ],
@@ -1818,7 +1828,7 @@
     "name": "Warehouse Management System",
     "description": "Sistem manajemen gudang dengan tracking lokasi dan automated picking.",
     "fullDescription": "Warehouse Management System (WMS) ini adalah solusi canggih untuk mengoptimalkan seluruh operasi di dalam gudang. Sistem ini tidak hanya melacak jumlah stok, tetapi juga mengelola lokasi spesifik setiap item (bin-level tracking), mengoptimalkan rute pengambilan barang, dan berintegrasi dengan perangkat keras seperti RFID untuk akurasi dan efisiensi maksimal.",
-    "image": "/assets/products/wms-1.png",
+          "image": "/assets/products/40.png",
     "technologies": ["Vue.js", "Node.js", "Express.js", "MySQL", "RFID Integration", "WebSockets"],
     "category": "Warehouse Management",
     "status": "Completed",
@@ -1981,22 +1991,22 @@
   "screenshots": [
     {
       "title": "Dasbor Operasional Gudang Real-time",
-      "image": "/assets/products/wms-1.png",
+          "image": "/placeholder.svg",
       "description": "Menampilkan KPI seperti pesanan yang harus diambil, utilisasi ruang, dan throughput operator."
     },
     {
       "title": "Visualisasi Tata Letak Gudang dan Lokasi Stok",
-      "image": "/assets/products/wms-2.png",
+          "image": "/placeholder.svg",
       "description": "Peta interaktif gudang yang menunjukkan lokasi spesifik setiap item atau palet."
     },
     {
       "title": "Tampilan Pick List di Perangkat Genggam Operator",
-      "image": "/assets/products/wms-3.png",
+          "image": "/placeholder.svg",
       "description": "Antarmuka sederhana yang memandu operator ke lokasi berikutnya dengan instruksi yang jelas."
     },
     {
       "title": "Antarmuka Penerimaan Barang dengan Validasi RFID",
-      "image": "/assets/products/wms-4.png",
+          "image": "/placeholder.svg",
       "description": "Sistem secara otomatis mendeteksi item yang masuk saat melewati gerbang RFID dan mencocokkannya dengan PO."
     }
   ],
@@ -2037,7 +2047,7 @@
     "name": "Accounting System",
     "description": "Sistem akuntansi lengkap dengan general ledger dan financial statements.",
     "fullDescription": "Sistem Akuntansi ini adalah platform berbasis web yang dirancang untuk Usaha Kecil dan Menengah (UKM) guna mengelola seluruh proses pembukuan. Sistem ini mengotomatiskan entri jurnal, mengelola bagan akun (Chart of Accounts), dan menghasilkan laporan keuangan standar untuk memastikan kepatuhan dan memberikan visibilitas finansial yang jelas.",
-    "image": "/assets/products/accounting-1.png",
+          "image": "/assets/products/36.png",
     "technologies": ["React", "Laravel", "MySQL", "PDF Generator", "Eloquent ORM"],
     "category": "Accounting & Finance",
     "status": "Completed",
@@ -2195,22 +2205,22 @@
   "screenshots": [
     {
       "title": "Dasbor Utama Akuntansi",
-      "image": "/assets/products/accounting-1.png",
+          "image": "/placeholder.svg",
       "description": "Menampilkan ringkasan posisi kas, grafik laba rugi, dan saldo utang-piutang secara sekilas."
     },
     {
       "title": "Tampilan General Ledger (Buku Besar)",
-      "image": "/assets/products/accounting-2.png",
+          "image": "/placeholder.svg",
       "description": "Detail semua transaksi untuk akun tertentu (misal: Kas) dalam periode waktu yang dipilih."
     },
     {
       "title": "Formulir Entri Jurnal Umum",
-      "image": "/assets/products/accounting-3.png",
+          "image": "/placeholder.svg",
       "description": "Antarmuka untuk mencatat transaksi debet dan kredit secara manual dengan validasi keseimbangan."
     },
     {
       "title": "Contoh Laporan Laba Rugi (PDF)",
-      "image": "/assets/products/accounting-4.png",
+          "image": "/placeholder.svg",
       "description": "Laporan laba rugi yang dihasilkan oleh sistem dalam format PDF profesional yang siap cetak."
     }
   ],
@@ -2251,7 +2261,7 @@
     "name": "Project Management Tool",
     "description": "Tool manajemen proyek dengan Gantt chart, task tracking, dan team collaboration.",
     "fullDescription": "Project Management Tool ini adalah platform all-in-one yang dirancang untuk membantu tim merencanakan, melacak, dan berkolaborasi dalam proyek. Sistem ini mengkombinasikan alat perencanaan visual seperti Gantt chart dengan fitur kolaborasi real-time untuk memastikan seluruh tim tetap selaras dan proyek berjalan sesuai jadwal.",
-    "image": "/assets/products/pm-1.png",
+    "image": "/assets/products/35.png",
     "technologies": ["React", "Node.js", "PostgreSQL", "Socket.io", "TypeScript"],
     "category": "Project Management",
     "status": "In Development",
@@ -2408,22 +2418,22 @@
   "screenshots": [
     {
       "title": "Tampilan Papan Proyek (Kanban Board)",
-      "image": "/assets/products/pm-1.png",
+          "image": "/placeholder.svg",
       "description": "Visualisasi alur kerja tim dengan kartu tugas yang dapat dipindahkan antar kolom status."
     },
     {
       "title": "Timeline Proyek dengan Gantt Chart Interaktif",
-      "image": "/assets/products/pm-2.png",
+          "image": "/placeholder.svg",
       "description": "Menampilkan jadwal proyek, durasi tugas, dan hubungan dependensi antar tugas."
     },
     {
       "title": "Detail Tugas dengan Kolom Komentar dan Aktivitas",
-      "image": "/assets/products/pm-3.png",
+          "image": "/placeholder.svg",
       "description": "Setiap tugas memiliki ruangnya sendiri untuk deskripsi, checklist, lampiran, dan diskusi tim."
     },
     {
       "title": "Dasbor Analitik Progres Proyek",
-      "image": "/assets/products/pm-4.png",
+          "image": "/placeholder.svg",
       "description": "Grafik dan metrik yang menunjukkan kesehatan proyek, seperti persentase penyelesaian dan distribusi tugas."
     }
   ],
@@ -2443,8 +2453,8 @@
       "title": "Metrik Performa",
       "metrics": [
         { "label": "Latensi Pembaruan Real-time", "value": "< 300 ms" },
-        { "label": "Render Gantt Chart (100+ tugas)", "value": "< 2 detik" },
-        { "label": "Waktu Muat Awal Aplikasi", "value": "< 2.5 detik" }
+        { "label": "Render Gantt Chart (100+ tugas)", "value": "< 300 ms" },
+        { "label": "Waktu Muat Awal Aplikasi", "value": "< 300 ms" }
       ]
     },
     "securityFeatures": {
