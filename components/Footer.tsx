@@ -180,9 +180,9 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">About Codeverta</h4>
             <p className="text-gray-400 text-sm">
-              Codeverta adalah penyedia jasa IT yang berdedikasi untuk
-              membangun solusi digital berkualitas tinggi dengan proses yang
-              jujur dan transparan.
+              Codeverta adalah penyedia jasa IT yang berdedikasi untuk membangun
+              solusi digital berkualitas tinggi dengan proses yang jujur dan
+              transparan.
             </p>
           </div>
           <div>
@@ -284,7 +284,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Codeverta. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Codeverta. All rights reserved. Codeverta.com Jl
+            Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta 55581
+          </p>
         </div>
       </div>
       <p className="hidden">

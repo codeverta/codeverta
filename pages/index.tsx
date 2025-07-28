@@ -160,6 +160,8 @@ export default function LandingPage() {
                 Kami menyediakan jasa pembuatan, perbaikan, pengembangan website
                 profesional dan layanan IT untuk mendorong pertumbuhan bisnis
                 Anda di era digital untuk bisnis skala kecil sampai menengah.
+                <br />
+                <span className="text-red-600 text-sm">* Bukan website template wordpress</span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
