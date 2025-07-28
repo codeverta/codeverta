@@ -2,44 +2,16 @@ import "../styles/globals.css";
 import type { AppProps, AppLayoutProps } from "next/app";
 import { getRelationship, getRelationships } from "utils";
 import { ReactNode } from "react";
-import localizedFormat from "dayjs/plugin/localizedFormat";
-import relativeTimeFormat from "dayjs/plugin/relativeTime";
-import indoFormat from "dayjs/locale/id";
 import { NextSeo } from "next-seo";
 import packageInfo from "../package.json";
-import dayjs from "dayjs";
-import { LocalizationProvider } from "@mui/x-date-pickers";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { appWithTranslation } from "next-i18next";
 import Landing from "@/components/layout/Landing";
 
-dayjs.locale(indoFormat);
-dayjs.extend(localizedFormat);
-dayjs.extend(relativeTimeFormat);
 
 if (typeof window !== "undefined") {
   // @ts-ignore
   window.version = packageInfo.version;
 }
-
-const steps = [
-  {
-    selector: ".first-step",
-    content: "Klik untuk memunculkan menu",
-  },
-  {
-    selector: ".second-step",
-    content: "Kode Order",
-  },
-  {
-    selector: ".third-step",
-    content: "Status Order",
-  },
-  {
-    selector: ".fourth-step",
-    content: "Daftar Menu",
-  },
-];
 
 function App({ Component, pageProps }: AppLayoutProps) {
   const appProps = { getRelationship, getRelationships };
@@ -53,13 +25,13 @@ function App({ Component, pageProps }: AppLayoutProps) {
   // seo
   const pageTitle =
     "Codeverta - Media Teknologi, Inovasi Digital & AI, Startup";
-  const pageDescription = `Codeverta adalah platform media digital yang berfokus pada dunia teknologi, inovasi digital, kecerdasan buatan, pengembangan perangkat lunak, dan masa depan industri digital. Kami menyajikan berita, opini, dan analisis yang relevan dan akurat untuk para profesional, pelajar, dan penggiat teknologi di Indonesia.`;
-  const ogImageUrl = "https://codeverta.com/og-image.png";
+  const pageDescription = `Codeverta menyediakan jasa pembuatan, perbaikan, pengembangan website profesional dan layanan IT untuk mendorong pertumbuhan bisnis Anda di era digital untuk bisnis skala kecil sampai menengah.`;
+  const ogImageUrl = "https://bikinwebsitejogja.com/og-image.png";
   const siteName = "Codeverta";
-  const siteUrl = "https://codeverta.com";
+  const siteUrl = "https://bikinwebsitejogja.com";
   const twitterHandle = "@codeverta";
   const keywords =
-    "media teknologi, berita teknologi, inovasi digital, kecerdasan buatan, AI, software development, teknologi Indonesia, startup, tren teknologi, digitalisasi";
+    "jasa software, teknologi, inovasi digital, kecerdasan buatan, AI, software development, teknologi Indonesia, digitalisasi";
 
   return (
     <>
