@@ -285,7 +285,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
           <p>
-            © {new Date().getFullYear()} Codeverta. All rights reserved. Codeverta.com Jl
+            © {new Date().getFullYear()} Codeverta. All rights reserved. Gg Melati 08E, Jl
             Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta 55581
           </p>
         </div>

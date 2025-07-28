@@ -144,17 +144,9 @@ export default function ProjectDetailPage({ project }) {
                 <WhatsappWrapper>
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                     <ExternalLink className="w-5 h-5 mr-2" />
-                    {hero?.buttons.liveDemo || "Live Demo"}
+                    {hero?.buttons.liveDemo || "Hubungi Kami"}
                   </Button>
                 </WhatsappWrapper>
-                {/* <Button size="lg" variant="outline">
-                  <Github className="w-5 h-5 mr-2" />
-                  {hero.buttons.sourceCode}
-                </Button>
-                <Button size="lg" variant="outline">
-                  <Download className="w-5 h-5 mr-2" />
-                  {hero.buttons.documentation}
-                </Button> */}
               </div>
             </div>
 
