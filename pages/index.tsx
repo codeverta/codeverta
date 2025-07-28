@@ -161,13 +161,12 @@ export default function LandingPage() {
                 profesional dan layanan IT untuk mendorong pertumbuhan bisnis
                 Anda di era digital untuk bisnis skala kecil sampai menengah.
                 <br />
-                <span className="text-red-600 text-sm">* Bukan website template wordpress yang biasanya</span>
+                <span className="text-red-600 text-sm">
+                  * Bukan website template wordpress yang biasanya
+                </span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="https://wa.me/+6285726394401?text=Halo%20saya%20tertarik%20dengan%20produk%20Anda"
-                  target="_blank"
-                >
+                <WhatsappWrapper>
                   <Button
                     size="lg"
                     className="rounded-full h-12 px-8 text-base"
@@ -176,7 +175,7 @@ export default function LandingPage() {
                     Whatsapp Sekarang
                     <ArrowRight className="ml-2 size-4" />
                   </Button>
-                </a>
+                </WhatsappWrapper>
                 {/* <Button
                   size="lg"
                   variant="outline"
@@ -766,8 +765,7 @@ export default function LandingPage() {
                       "Ya, kami bisa. Tim kami akan melakukan audit terlebih dahulu untuk mengidentifikasi masalah pada website Anda, mulai dari error, kecepatan, hingga tampilan, lalu memberikan solusi perbaikan terbaik.",
                   },
                   {
-                    question:
-                      "Pembayarannya bagaimana? Apakah ada uang muka?",
+                    question: "Pembayarannya bagaimana? Apakah ada uang muka?",
                     answer:
                       "Pembayaran dilakukan dengan sistem DP 30% di awal, sisanya dibayar setelah website selesai dan disetujui. Kami juga menyediakan opsi pembayaran bertahap untuk proyek besar.",
                   },

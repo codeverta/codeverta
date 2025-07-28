@@ -482,11 +482,6 @@
           "description": "Antarmuka utama menampilkan peta dasar dengan beberapa layer data vektor dan panel alat di sisi kiri."
         },
         {
-          "title": "Panel Analisis Spasial untuk Membuat Buffer Zone",
-          "image": "/assets/products/2.png",
-          "description": "Dialog modal yang memungkinkan pengguna untuk mengatur parameter analisis buffer pada layer yang dipilih."
-        },
-        {
           "title": "Hasil Visualisasi Peta Tematik (Choropleth)",
           "image": "/assets/products/3.png",
           "description": "Contoh peta kepadatan penduduk per kecamatan, diwarnai berdasarkan klasifikasi data."
