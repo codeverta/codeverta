@@ -32,8 +32,8 @@ export default function Document() {
             __html: `{
             "@context": "https://schema.org",
             "@type": "Organization",
-            "url": "https://www.codeverta.com",
-            "logo": "https://www.codeverta.com/logolilin.png"
+            "url": "https://www.bikinwebsitejogja.com",
+            "logo": "https://www.bikinwebsitejogja.com/logolilin.png"
           }`,
           }}
           type="application/ld+json"
