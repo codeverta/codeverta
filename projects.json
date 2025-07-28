@@ -288,6 +288,21 @@
         {
           "category": "Frontend",
           "technologies": [{ "name": "Vue.js 3", "description": "Progressive JavaScript framework untuk UI yang reaktif" }]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            { "name": "Laravel 10", "description": "Framework PHP untuk membangun API yang aman dan scalable" },
+            { "name": "Socket.io", "description": "Library untuk komunikasi real-time antara server dan klien" }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [{ "name": "MySQL 8", "description": "Sistem manajemen basis data relasional yang handal" }]
+        },
+        {
+          "category": "DevOps",
+          "technologies": [{ "name": "Docker", "description": "Kontainerisasi aplikasi untuk konsistensi lingkungan" }]
         }
       ],
       "screenshots": [
