@@ -13,16 +13,15 @@ export const WhatsAppIcon = () => (
   </svg>
 );
 
-const handleClick = () => {
-  window.open(
-    "https://wa.me/+6285601347820?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda",
-    "_blank"
+export const handleRedirectToWhatsapp = () => {
+  window.location.replace(
+    "https://wa.me/+6285601347820?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda"
   );
 };
 
 export const WhatsappWrapper = ({ children, title="" }) => {
   return (
-    <a href={"https://wa.me/+6285601347820?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda%20" + encodeURI(title)}>
+    <a href={"/whatsappRedirect"}>
       {children}
     </a>
   );
@@ -31,7 +30,7 @@ export const WhatsappWrapper = ({ children, title="" }) => {
 const WhatsAppButton = () => {
   return (
     <button
-      onClick={handleClick}
+      onClick={handleRedirectToWhatsapp}
       className="fixed cursor-pointer bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110 z-50"
       style={{
         background: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",

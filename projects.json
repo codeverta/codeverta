@@ -222,9 +222,9 @@
     "performanceMetrics": {
       "title": "Metrik Performa",
       "metrics": [
-        { "label": "Load Time Halaman Utama", "value": "< 1.5 detik" },
+        { "label": "Load Time Halaman Utama", "value": "< 300 ms" },
         { "label": "Rata-rata Response API", "value": "< 200 ms" },
-        { "label": "Checkout Completion Rate", "value": "> 95%" }
+        { "label": "Checkout Completion Rate", "value": "> 100%" }
       ]
     },
     "securityFeatures": {
