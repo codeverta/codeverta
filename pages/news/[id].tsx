@@ -23,6 +23,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import DisqusThread from "components/DisqusThread";
 import TOC from "components/TOC";
 import NewsSchemaJsonLd from "@/components/NewsSchemaJsonLd";
+import FooterSection from "@/components/FooterSection";
+
 function Post({ postData, slug }) {
   // Generate a random background image URL from Lorem Picsum
   const backgroundImageUrl = `https://picsum.photos/seed/${slug}/800/450`;
@@ -182,6 +184,8 @@ function Post({ postData, slug }) {
             <RelatedPosts posts={postData.relatedPosts} />
           )}
         </div>
+
+        <FooterSection/>
 
         {/* <AdSense adType={1} /> */}
       </main>
