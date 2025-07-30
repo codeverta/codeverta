@@ -524,7 +524,7 @@ export default function LandingPage() {
                 <div className="flex justify-center mb-8">
                   <TabsList className="rounded-full p-1">
                     <TabsTrigger value="monthly" className="rounded-full px-6">
-                      Skala UMKM & UKM
+                      Skala UMKM
                     </TabsTrigger>
                     <TabsTrigger value="annually" className="rounded-full px-6">
                       Enterprise
