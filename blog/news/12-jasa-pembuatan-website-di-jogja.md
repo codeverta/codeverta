@@ -1,6 +1,6 @@
 ---
 title: "Jasa Pembuatan Website dan Aplikasi oleh Perusahaan IT Terpercaya di Jogja – Codeverta Sleman Yogyakarta"
-date: "2025-05-15"
+date: "2025-07-30"
 image: "https://picsum.photos/seed/technology/1200/600"
 desc: "Perusahaan IT terpercaya di Jogja yang menawarkan jasa pembuatan website, aplikasi, dan layanan teknologi lainnya untuk UMKM dan bisnis lokal. Codeverta hadir di Jl Kaliurang KM 9.3, Sleman Yogyakarta."
 tags: "jasa pembuatan website jogja, perusahaan IT jogja, pembuatan aplikasi yogyakarta"

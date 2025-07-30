@@ -83,24 +83,51 @@ export function getAllPostsData() {
   return allPosts;
 }
 
-export function getAllPostIds(folder='tutorials') {
-  const languages = [folder];
+export function getAllPostIds(folder = 'tutorials') {
+  const languages = [folder]; // Assuming 'folder' directly corresponds to a language directory
   let allPostIds = [];
 
   languages.forEach((lang) => {
     const langDirectory = path.join(blogBaseDirectory, lang);
+
+    // Check if the language directory exists
+    if (!fs.existsSync(langDirectory)) {
+      console.warn(`Language directory not found: ${langDirectory}`);
+      return; // Skip this language if directory doesn't exist
+    }
+
     const fileNames = fs.readdirSync(langDirectory);
 
-    const langPostIds = fileNames.map((fileName) => {
+    const langPostData = fileNames.map((fileName) => {
+      // Remove ".md" from file name to get id
+      const id = fileName.replace(/\.md$/, "");
+
+      // Read markdown file as string to get date from front matter
+      const fullPath = path.join(langDirectory, fileName);
+      const fileContents = fs.readFileSync(fullPath, "utf8");
+      const matterResult = matter(fileContents);
+
       return {
         params: {
           lang,
-          id: fileName.replace(/\.md$/, ""),
+          id,
         },
+        date: matterResult.data.date, // Extract the date
       };
     });
 
-    allPostIds = [...allPostIds, ...langPostIds];
+    allPostIds = [...allPostIds, ...langPostData];
+  });
+
+  // Sort posts by date in descending order (newest first)
+  allPostIds.sort((a, b) => {
+    if (a.date < b.date) {
+      return 1;
+    } else if (a.date > b.date) {
+      return -1;
+    } else {
+      return 0;
+    }
   });
 
   return allPostIds;
