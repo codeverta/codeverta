@@ -535,7 +535,7 @@ export default function LandingPage() {
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
                     {[
                       {
-                        name: "Paket Basic",
+                        name: "Paket Website UMKM",
                         price: "Rp 1,5 Jt",
                         description:
                           "Cocok untuk profil perusahaan atau portofolio.",
@@ -544,18 +544,17 @@ export default function LandingPage() {
                           "Cocok Untuk UMKM",
                           "Fitur Dasar (Kontak, Layanan, Katalog Produk dll)",
                           "Gratis Domain & Hosting 1 Tahun",
-                          "Hand Coded, Bukan Template Wordpress",
+                          "Mengutamakan Performa, Bukan Template Wordpress",
                         ],
                         cta: "Pilih Paket",
                       },
                       {
-                        name: "Paket Bisnis",
-                        price: "Rp 4 Jt",
+                        name: "Paket Toko Online (E-commerce)",
+                        price: "Rp 5 Jt",
                         description:
                           "Ideal untuk UKM dan bisnis yang sedang berkembang.",
                         features: [
                           "Desain Custom Sesuai Permintaan",
-                          "Lebih dari 10 Halaman",
                           "Optimasi SEO",
                           "Pengerjaan Prioritas",
                         ],
@@ -563,8 +562,8 @@ export default function LandingPage() {
                         popular: true,
                       },
                       {
-                        name: "Solusi Custom",
-                        price: "Nego",
+                        name: "Paket Sistem Custom",
+                        price: "Rp >10 Jt",
                         description:
                           "Untuk perusahaan dengan kebutuhan kompleks.",
                         features: [
