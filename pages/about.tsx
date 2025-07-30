@@ -23,6 +23,8 @@ export default function TentangPage() {
         <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
           Kami adalah penyedia jasa IT yang berdedikasi untuk membangun solusi
           digital berkualitas tinggi dengan proses yang jujur dan transparan.
+          Misi kami adalah membantu digitalisasi UMKM di Yogyakarta agar dapat
+          bersaing di era modern.
         </p>
         <WhatsappWrapper>
           <Button size="lg">Konsultasi Gratis</Button>

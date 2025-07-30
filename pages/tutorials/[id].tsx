@@ -21,6 +21,7 @@ import { convertDate, estimateReadingTime } from "lib/functions";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import DisqusThread from "components/DisqusThread";
 // import AdSense from "components/AdSense";
+import Breadcrumb from "@/components/Breadcrumb";
 import FooterSection from "@/components/FooterSection";
 import TOC from "@/components/TOC";
 // Improved TOC Component with smooth scrolling
