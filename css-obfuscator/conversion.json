@@ -1256,7 +1256,13 @@
     "\\.\\[\\&_p\\]\\:leading-relaxed": "\\.a149779b",
     "\\.\\[\\&_svg\\]\\:pointer-events-none": "\\.ee544cdb",
     "\\.\\[\\&_svg\\]\\:size-4": "\\.wc4641cf",
-    "\\.\\[\\&_svg\\]\\:shrink-0": "\\.b83ebdfd"
+    "\\.\\[\\&_svg\\]\\:shrink-0": "\\.b83ebdfd",
+    "\\.gap-1\\.5": "\\.aee9ba18",
+    "\\.break-words": "\\.e071e344",
+    "\\.py-10": "\\.bbea45b3",
+    "\\.sm\\:gap-2\\.5": "\\.ed7ab952",
+    "\\.\\[\\&\\>svg\\]\\:h-3\\.5": "\\.b3d07465",
+    "\\.\\[\\&\\>svg\\]\\:w-3\\.5": "\\.ee0dbded"
   },
   "idents": {
     "tw-border-spacing-x": "b1b4f8c6",

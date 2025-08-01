@@ -536,7 +536,7 @@ export default function LandingPage() {
                     {[
                       {
                         name: "Paket Website UMKM",
-                        price: "Rp 1,5 Jt",
+                        price: "Rp 300K - 1,5Jt",
                         description:
                           "Cocok untuk profil perusahaan atau portofolio.",
                         features: [
@@ -550,7 +550,7 @@ export default function LandingPage() {
                       },
                       {
                         name: "Paket Toko Online (E-commerce)",
-                        price: "Rp 5 Jt",
+                        price: "Rp 5Jt",
                         description:
                           "Ideal untuk UKM dan bisnis yang sedang berkembang.",
                         features: [
@@ -563,7 +563,7 @@ export default function LandingPage() {
                       },
                       {
                         name: "Paket Sistem Custom",
-                        price: "Rp >10 Jt",
+                        price: "Rp >10Jt",
                         description:
                           "Untuk perusahaan dengan kebutuhan kompleks.",
                         features: [
@@ -597,7 +597,7 @@ export default function LandingPage() {
                           <CardContent className="p-6 flex flex-col h-full">
                             <h3 className="text-2xl font-bold">{plan.name}</h3>
                             <div className="flex items-baseline mt-4">
-                              <span className="text-4xl font-bold">
+                              <span className="text-2xl font-bold">
                                 {plan.price}
                               </span>
                               <span className="text-muted-foreground ml-1">
@@ -639,7 +639,7 @@ export default function LandingPage() {
                     {[
                       {
                         name: "Enterprise",
-                        price: "Rp >20 Jt",
+                        price: "Rp >20Jt",
                         description:
                           "Untuk Perusahaan dengan Sistem yang Kompleks",
                         features: [
