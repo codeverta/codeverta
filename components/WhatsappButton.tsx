@@ -3,8 +3,8 @@ import React from "react";
 // WhatsApp Icon Component (since we can't import from MUI)
 export const WhatsAppIcon = () => (
   <svg
-    width="36"
-    height="36"
+    width="20"
+    height="20"
     viewBox="0 0 24 24"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ const WhatsAppButton = () => {
         {/* Tombol WhatsApp */}
         <button
           onClick={() => handleRedirect("whatsapp")}
-          className="cursor-pointer text-white p-4 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110"
+          className="cursor-pointer text-white p-2 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110"
           style={{
             background: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
             boxShadow: "0 8px 25px rgba(37, 211, 102, 0.3)",
