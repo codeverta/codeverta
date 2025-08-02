@@ -311,7 +311,7 @@
       ],
       "specifications": {
         "systemRequirements": { "title": "System Requirements", "server": { "title": "Server Requirements", "items": ["PHP 8.1 or higher", "MySQL 8.0 or higher"] }, "client": { "title": "Client Requirements", "items": ["Modern web browser", "JavaScript enabled"] } },
-        "performanceMetrics": { "title": "Performance Metrics", "metrics": [{ "label": "Page Load Time", "value": "< 2 seconds" }] },
+        "performanceMetrics": { "title": "Performance Metrics", "metrics": [{ "label": "Page Load Time", "value": "< 300 ms" }] },
         "securityFeatures": { "title": "Security Features", "items": ["SSL/TLS Encryption", "Role-based Access Control"] }
       }
     },
