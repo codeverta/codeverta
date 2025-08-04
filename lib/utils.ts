@@ -32,3 +32,32 @@ export function generateExcerpt(content: string, maxLength: number = 150): strin
 
   return truncateText(plainText, maxLength)
 }
+
+
+export function parsePageRanges(rangeStr: string, maxPage: number): number[] {
+  const pageNumbers = new Set<number>();
+  if (!rangeStr) return [];
+
+  const parts = rangeStr.split(',');
+
+  for (const part of parts) {
+    const trimmedPart = part.trim();
+    if (trimmedPart.includes('-')) {
+      const [start, end] = trimmedPart.split('-').map(Number);
+      if (!isNaN(start) && !isNaN(end) && start <= end) {
+        for (let i = start; i <= end; i++) {
+          if (i > 0 && i <= maxPage) {
+            pageNumbers.add(i);
+          }
+        }
+      }
+    } else {
+      const num = Number(trimmedPart);
+      if (!isNaN(num) && num > 0 && num <= maxPage) {
+        pageNumbers.add(num);
+      }
+    }
+  }
+
+  return Array.from(pageNumbers).sort((a, b) => a - b);
+}
