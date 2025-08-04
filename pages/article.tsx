@@ -13,7 +13,10 @@ import {
   Code,
   ShieldCheck,
   BotMessageSquare,
+  BookOpen,
+  MessageSquare,
 } from "lucide-react";
+import Link from "next/link";
 
 // Menambahkan properti 'icon' dan 'iconBgColor' pada data kategori
 const categories = [
@@ -44,6 +47,22 @@ const categories = [
     href: "/tutorials",
     icon: <Code className="h-8 w-8 text-green-500" />,
     iconBgColor: "bg-green-100 dark:bg-green-900/50",
+  },
+  {
+    title: "Course Gratis",
+    description:
+      "Kursus gratis berkualitas tinggi untuk mengembangkan skill Anda.",
+    href: "/course/free",
+    icon: <BookOpen className="h-8 w-8 text-emerald-500" />,
+    iconBgColor: "bg-emerald-100 dark:bg-emerald-900/50",
+  },
+  {
+    title: "AI LLM Prompting",
+    description:
+      "Pelajari teknik prompting untuk Large Language Models dan AI.",
+    href: "/course/prompting",
+    icon: <MessageSquare className="h-8 w-8 text-indigo-500" />,
+    iconBgColor: "bg-indigo-100 dark:bg-indigo-900/50",
   },
   {
     title: "Cyber Security",
@@ -81,7 +100,7 @@ export default function ArticleCategoriesPage() {
 
         <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
-            <a
+            <Link
               href={category.href}
               key={category.title}
               className="group block"
@@ -110,7 +129,7 @@ export default function ArticleCategoriesPage() {
                   <ArrowRight className="h-6 w-6 text-primary" />
                 </div>
               </Card>
-            </a>
+            </Link>
           ))}
         </main>
       </div>
