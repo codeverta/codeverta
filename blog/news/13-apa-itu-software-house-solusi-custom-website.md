@@ -1,7 +1,6 @@
 ---
 title: "Software House Jogja: Solusi Digital Kustom untuk Tingkatkan Efisiensi Bisnis Anda"
 date: "2025-07-30"
-image: "https://picsum.photos/seed/softwarehouse/1200/600"
 desc: "Cari software house terpercaya di Jogja? Codeverta hadir dengan solusi digital kustom untuk UMKM, startup, dan perusahaan dalam mengembangkan aplikasi, sistem informasi, dan website profesional."
 tags: "software house jogja, jasa pembuatan aplikasi yogyakarta, pengembangan sistem informasi sleman"
 ---

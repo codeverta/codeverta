@@ -293,13 +293,21 @@ export default function Footer() {
                   Image Editor
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/pdf"
+                  className="hover:text-white transition-colors"
+                >
+                  PDF Editor
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
           <p>
-            © {new Date().getFullYear()} Codeverta. All rights reserved. Gg Melati 08E, Jl
-            Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta 55581
+            © {new Date().getFullYear()} Codeverta. All rights reserved. Gg
+            Melati 08E, Jl Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta 55581
           </p>
         </div>
       </div>
