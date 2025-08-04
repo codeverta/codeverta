@@ -456,13 +456,13 @@ const CybersecurityCourse = () => {
                               </div>
                             ))}
                           </div>
-                          <div className="mt-4 pt-4 border-t border-slate-700">
-                            <Link href={module.url}> 
+                          <div className="mt-4 pt-4 border-t border-slate-700 flex gap-1">
+                            <div> 
                             <Button className="bg-blue-600 hover:bg-blue-700 mr-3">
                               <Play className="h-4 w-4 mr-2" />
                               Start Module
                             </Button>
-                            </Link>
+                            </div>
                             <Button
                               variant="outline"
                               className="border-slate-600 text-slate-300 hover:bg-slate-700"

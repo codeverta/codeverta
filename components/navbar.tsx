@@ -25,6 +25,7 @@ const Navbar = () => {
     { id: "/#development", name: "Alur Kerja" },
     { id: "/#pricing", name: "Harga" },
     { id: "/#faq", name: "FAQ" },
+    { id: "/article", name: "Artikel" },
     { id: "/about", name: "Tentang Kami" },
   ];
 
