@@ -54,7 +54,7 @@ function createPrompt(longTailKeyword) {
 buatkan sebuah artikel format penulisannya seperti ini, jangan beri jawaban lain selain artikel yg saya perintahkan
 
 ---
-title: "Gunakan long-tail keyword ini sebagai judul utama: ${longTailKeyword}"
+title: "modifikasi long-tail keyword ini sebagai judul utama harus SEO friendly & clickbait: ${longTailKeyword}"
 date: "${currentDate}"
 desc: "Buatkan deskripsi singkat (sekitar 150-160 karakter) yang menarik dan SEO friendly dari artikel yang akan kamu tulis berdasarkan keyword: ${longTailKeyword}"
 tags: "berikan 3-5 tag relevan dalam format a, b, c dipisahkan koma, berdasarkan keyword: ${longTailKeyword}"
@@ -71,7 +71,7 @@ Struktur artikel harus sebagai berikut:
 4.  **Kesimpulan:** Rangkum poin-poin utama dan berikan pandangan ke depan.
 5.  **FAQ (Frequently Asked Questions):** Buat 3-5 pertanyaan umum terkait topik beserta jawabannya yang singkat dan padat.
 
-Pastikan seluruh artikel ditulis dalam Bahasa Indonesia yang profesional dan mudah dibaca.
+Pastikan seluruh artikel ditulis dalam Bahasa Indonesia yang profesional dan mudah dibaca, sisipkan promosi ke website codeverta.com.
   `;
 }
 
