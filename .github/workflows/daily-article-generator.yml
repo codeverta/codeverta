@@ -1,5 +1,8 @@
 name: Generate Daily Article
 
+permissions:
+  contents: write
+
 on:
   # Menjalankan setiap hari jam 00:00 UTC (jam 7 pagi WIB)
   schedule:
