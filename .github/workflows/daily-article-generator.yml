@@ -1,0 +1,46 @@
+name: Generate Daily Article
+
+on:
+  # Menjalankan setiap hari jam 00:00 UTC (jam 7 pagi WIB)
+  schedule:
+    - cron: '0 */12 * * *'
+  
+  # Tombol manual untuk menjalankan workflow dari tab Actions di GitHub
+  workflow_dispatch:
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout kode dari repositori
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Gunakan versi LTS Node.js
+          cache: 'npm'
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Jalankan skrip pembuat artikel
+      - name: Generate New Article
+        run: npm run new-article
+        env:
+          # Ambil API Key dari Secrets GitHub
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+
+      # 5. Commit file baru ke repo
+      - name: Commit new article
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "feat(blog): ✨ Add new tutorial article"
+          commit_user_name: "GitHub Actions Bot"
+          commit_user_email: "actions@github.com"
+          commit_author: "GitHub Actions Bot <actions@github.com>"
+          file_pattern: "blog/tutorials/*.md" 
