@@ -57,7 +57,6 @@ buatkan sebuah artikel format penulisannya seperti ini, jangan beri jawaban lain
 ---
 title: "Gunakan long-tail keyword ini sebagai judul utama: ${longTailKeyword}"
 date: "${currentDate}"
-image: "https://picsum.photos/seed/${randomSeed}/1200/600"
 desc: "Buatkan deskripsi singkat (sekitar 150-160 karakter) yang menarik dan SEO friendly dari artikel yang akan kamu tulis berdasarkan keyword: ${longTailKeyword}"
 tags: "berikan 3-5 tag relevan dalam format a, b, c dipisahkan koma, berdasarkan keyword: ${longTailKeyword}"
 ---
