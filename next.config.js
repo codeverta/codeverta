@@ -36,7 +36,11 @@ const nextConfig = {
   },
   i18n,
   images: {
-    domains: ['picsum.photos', 'firebasestorage.googleapis.com', 'cdn.dribbble.com'],
+    domains: [
+      'picsum.photos', 
+      'firebasestorage.googleapis.com', 
+      'cdn.dribbble.com'
+    ],
   },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
 };
