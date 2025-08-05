@@ -82,40 +82,41 @@ Pastikan seluruh artikel ditulis dalam Bahasa Indonesia yang profesional dan mud
 async function main() {
     console.log('Memulai proses pembuatan artikel...');
 
-    let config;
+    let keywords;
     try {
-        const configData = await fs.readFile(KEYWORDS_PATH, 'utf8');
-        config = JSON.parse(configData);
+        const keywordsData = await fs.readFile(KEYWORDS_PATH, 'utf8');
+        keywords = JSON.parse(keywordsData);
     } catch (error) {
-        console.error('Gagal membaca atau parse file keywords.json:', error);
-        console.log('Pastikan file keywords.json ada dan formatnya benar: { "currentIndex": 0, "keywords": ["a", "b"] }');
+        console.error('Gagal membaca file keywords.json:', error);
         process.exit(1);
     }
 
-    const { keywords, currentIndex } = config;
-
-    if (!keywords || keywords.length === 0) {
-        console.log('Array "keywords" di dalam keywords.json kosong. Proses dihentikan.');
+    if (keywords.length === 0) {
+        console.log('Tidak ada keyword tersisa. Proses dihentikan.');
         return;
     }
 
-    // [LOGIKA BARU] Memastikan currentIndex valid, jika tidak, reset ke 0
-    const validCurrentIndex = (currentIndex >= 0 && currentIndex < keywords.length) ? currentIndex : 0;
+    // [DIUBAH] Logika untuk mengambil dan merotasi keyword
+    // Ambil keyword pertama, sekaligus menghapusnya dari awal array
+    const keywordToUse = keywords.shift();
 
-    // [LOGIKA BARU] Mengambil keyword berdasarkan currentIndex
-    const keywordToUse = keywords[validCurrentIndex];
-    console.log(`Menggunakan keyword (index ${validCurrentIndex}): "${keywordToUse}"`);
+    // Pindahkan keyword yang baru dipakai ke akhir array
+    keywords.push(keywordToUse);
+    // Sekarang `keywords` memiliki urutan yang baru (dirotasi)
+
+    console.log(`Menggunakan keyword: "${keywordToUse}"`);
 
     const prompt = createPrompt(keywordToUse);
     console.log('Menghasilkan konten dari Gemini...');
 
     let articleContent;
     try {
-        // [DIUBAH] Menggunakan model gemini-1.5-flash yang lebih baru dan efisien
-        const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-        const result = await model.generateContent(prompt);
-        const response = result.response;
-        articleContent = response.text();
+        const result = await genAI.models.generateContent({
+            model: "gemini-2.0-flash",
+            contents: prompt,
+        });
+
+        articleContent = result.text;
 
     } catch (error) {
         console.error('Error saat memanggil Gemini API:', error);
@@ -148,19 +149,9 @@ async function main() {
     await fs.writeFile(filePath, cleanedContent);
     console.log(`Artikel berhasil disimpan di: ${filePath}`);
 
-    // [LOGIKA BARU] Memutar (rotate) indeks untuk penggunaan selanjutnya
-    // Menggunakan operator modulo (%) untuk kembali ke 0 setelah mencapai akhir array
-    const nextIndex = (validCurrentIndex + 1) % keywords.length;
-
-    // Buat objek config baru dengan currentIndex yang diperbarui
-    const updatedConfig = {
-        ...config,
-        currentIndex: nextIndex
-    };
-
-    // Simpan konfigurasi yang sudah diperbarui kembali ke file
-    await fs.writeFile(KEYWORDS_PATH, JSON.stringify(updatedConfig, null, 2), 'utf8');
-    console.log(`Indeks keyword telah diperbarui ke: ${nextIndex}.`);
+    // [DIUBAH] Tulis kembali seluruh array yang sudah dirotasi ke file
+    await fs.writeFile(KEYWORDS_PATH, JSON.stringify(keywords, null, 2), 'utf8');
+    console.log('Keyword telah dirotasi dan urutan baru telah disimpan.');
 
     console.log('Proses selesai.');
 }
