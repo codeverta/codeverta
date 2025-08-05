@@ -17,20 +17,25 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9 # Anda bisa sesuaikan dengan versi pnpm yang Anda gunakan
+
       # 2. Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20' # Gunakan versi LTS Node.js
-          cache: 'npm'
+          cache: 'pnpm'
 
       # 3. Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       # 4. Jalankan skrip pembuat artikel
       - name: Generate New Article
-        run: npm run new-article
+        run: pnpm run new-article
         env:
           # Ambil API Key dari Secrets GitHub
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
