@@ -42,6 +42,9 @@ jobs:
         env:
           # Ambil API Key dari Secrets GitHub
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          
+      - name: Check file status before commit
+        run: git status
 
       # 5. Commit file baru ke repo
       - name: Commit new article
