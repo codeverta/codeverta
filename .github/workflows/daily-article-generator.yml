@@ -43,6 +43,9 @@ jobs:
           # Ambil API Key dari Secrets GitHub
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           
+      - name: Build the Site
+        run: pnpm run build
+          
       - name: Check file status before commit
         run: git status
 
