@@ -8,7 +8,6 @@ const KEYWORDS_PATH = path.join(process.cwd(), 'scripts', 'keywords.json');
 const POSTS_DIRECTORY = path.join(process.cwd(), 'blog', 'tutorials');
 // --- SELESAI KONFIGURASI ---
 
-// [DIUBAH] Inisialisasi SDK baru. Perhatikan cara memberikan API key.
 const genAI = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 // Fungsi-fungsi pembantu (Tidak ada perubahan)
@@ -76,51 +75,58 @@ Pastikan seluruh artikel ditulis dalam Bahasa Indonesia yang profesional dan mud
   `;
 }
 
+// ====================================================================
+// =================== [ FUNGSI MAIN DIMODIFIKASI ] ===================
+// ====================================================================
 
 async function main() {
     console.log('Memulai proses pembuatan artikel...');
 
-    let keywords;
+    let config;
     try {
-        const keywordsData = await fs.readFile(KEYWORDS_PATH, 'utf8');
-        keywords = JSON.parse(keywordsData);
+        const configData = await fs.readFile(KEYWORDS_PATH, 'utf8');
+        config = JSON.parse(configData);
     } catch (error) {
-        console.error('Gagal membaca file keywords.json:', error);
+        console.error('Gagal membaca atau parse file keywords.json:', error);
+        console.log('Pastikan file keywords.json ada dan formatnya benar: { "currentIndex": 0, "keywords": ["a", "b"] }');
         process.exit(1);
     }
 
-    if (keywords.length === 0) {
-        console.log('Tidak ada keyword tersisa. Proses dihentikan.');
+    const { keywords, currentIndex } = config;
+
+    if (!keywords || keywords.length === 0) {
+        console.log('Array "keywords" di dalam keywords.json kosong. Proses dihentikan.');
         return;
     }
 
-    const keywordToUse = keywords[0];
-    console.log(`Menggunakan keyword: "${keywordToUse}"`);
+    // [LOGIKA BARU] Memastikan currentIndex valid, jika tidak, reset ke 0
+    const validCurrentIndex = (currentIndex >= 0 && currentIndex < keywords.length) ? currentIndex : 0;
+
+    // [LOGIKA BARU] Mengambil keyword berdasarkan currentIndex
+    const keywordToUse = keywords[validCurrentIndex];
+    console.log(`Menggunakan keyword (index ${validCurrentIndex}): "${keywordToUse}"`);
 
     const prompt = createPrompt(keywordToUse);
     console.log('Menghasilkan konten dari Gemini...');
 
     let articleContent;
     try {
-        const result = await genAI.models.generateContent({
-            model: "gemini-2.0-flash",
-            contents: prompt,
-        });
-
-        articleContent = result.text;
+        // [DIUBAH] Menggunakan model gemini-1.5-flash yang lebih baru dan efisien
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        const result = await model.generateContent(prompt);
+        const response = result.response;
+        articleContent = response.text();
 
     } catch (error) {
         console.error('Error saat memanggil Gemini API:', error);
         process.exit(1);
     }
 
-    // [BARU] Langkah untuk membersihkan output dari ```
     console.log('Membersihkan konten...');
-    // Menghapus ```markdown atau ``` di awal dan ``` di akhir
     let cleanedContent = articleContent
         .replace(/^```(markdown)?\s*\n/, '')
         .replace(/\n```$/, '')
-        .trim(); // Menghapus spasi kosong di awal/akhir
+        .trim();
 
     console.log('Artikel berhasil dibuat dan dibersihkan.');
 
@@ -139,13 +145,22 @@ async function main() {
     const fileName = `${formattedNumber}-${slug}.md`;
     const filePath = path.join(POSTS_DIRECTORY, fileName);
 
-    // Menggunakan konten yang sudah bersih untuk disimpan
     await fs.writeFile(filePath, cleanedContent);
     console.log(`Artikel berhasil disimpan di: ${filePath}`);
 
-    const remainingKeywords = keywords.slice(1);
-    await fs.writeFile(KEYWORDS_PATH, JSON.stringify(remainingKeywords, null, 2), 'utf8');
-    console.log('Keyword yang sudah dipakai telah dihapus dari daftar.');
+    // [LOGIKA BARU] Memutar (rotate) indeks untuk penggunaan selanjutnya
+    // Menggunakan operator modulo (%) untuk kembali ke 0 setelah mencapai akhir array
+    const nextIndex = (validCurrentIndex + 1) % keywords.length;
+
+    // Buat objek config baru dengan currentIndex yang diperbarui
+    const updatedConfig = {
+        ...config,
+        currentIndex: nextIndex
+    };
+
+    // Simpan konfigurasi yang sudah diperbarui kembali ke file
+    await fs.writeFile(KEYWORDS_PATH, JSON.stringify(updatedConfig, null, 2), 'utf8');
+    console.log(`Indeks keyword telah diperbarui ke: ${nextIndex}.`);
 
     console.log('Proses selesai.');
 }
