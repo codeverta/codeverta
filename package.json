@@ -12,7 +12,8 @@
     "build:vue": "cd erp && npm run build && cp -r dist/* ../public/dashboard/",
     "enhance-markdown": "node scripts/enhance-markdown.js",
     "process-internal-links": "node scripts/process-internal-links.js",
-    "new-article": "node scripts/new-article.js"
+    "new-article": "node scripts/new-article.js",
+    "generate-content": "cd scripts && ../venv/bin/python autocontent.py"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
