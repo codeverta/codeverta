@@ -15,6 +15,8 @@ import {
   BotMessageSquare,
   BookOpen,
   MessageSquare,
+  Eraser,
+  Smile,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -49,15 +51,7 @@ const categories = [
     iconBgColor: "bg-green-100 dark:bg-green-900/50",
   },
   {
-    title: "Course Gratis",
-    description:
-      "Kursus gratis berkualitas tinggi untuk mengembangkan skill Anda.",
-    href: "/course/free",
-    icon: <BookOpen className="h-8 w-8 text-emerald-500" />,
-    iconBgColor: "bg-emerald-100 dark:bg-emerald-900/50",
-  },
-  {
-    title: "AI LLM Prompting",
+    title: "AI LLM(Large Language Models)",
     description:
       "Pelajari teknik prompting untuk Large Language Models dan AI.",
     href: "/course/prompting",
@@ -77,6 +71,21 @@ const categories = [
     href: "/course/ai-engineer",
     icon: <BotMessageSquare className="h-8 w-8 text-sky-500" />,
     iconBgColor: "bg-sky-100 dark:bg-sky-900/50",
+  },
+  // tambahkan image editor dan pdf editor
+  {
+    title: "Image Editor",
+    description: "Edit gambar dengan berbagai tools seperti crop, resize, dll.",
+    href: "/image",
+    icon: <Eraser className="h-8 w-8 text-yellow-500" />,
+    iconBgColor: "bg-yellow-100 dark:bg-yellow-900/50",
+  },
+  {
+    title: "PDF Editor",
+    description: "Edit dan konversi file PDF dengan mudah.",
+    href: "/pdf",
+    icon: <Smile className="h-8 w-8 text-teal-500" />,
+    iconBgColor: "bg-teal-100 dark:bg-teal-900/50",
   },
 ];
 
