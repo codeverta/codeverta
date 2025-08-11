@@ -24,7 +24,7 @@ function App({ Component, pageProps }: AppLayoutProps) {
     ));
   // seo
   const pageTitle =
-    "Codeverta - Media Teknologi, Inovasi Digital & AI, Startup";
+    "Codeverta - Jasa Pengembangan Web & Aplikasi, Software House, Inovasi Digital & AI, Startup";
   const pageDescription = `Codeverta menyediakan jasa pembuatan, perbaikan, pengembangan website profesional dan layanan IT untuk mendorong pertumbuhan bisnis Anda di era digital untuk bisnis skala kecil sampai menengah.`;
   const ogImageUrl = "https://bikinwebsitejogja.com/og-image.png";
   const siteName = "Codeverta";
@@ -54,7 +54,8 @@ function App({ Component, pageProps }: AppLayoutProps) {
         twitter={{
           handle: twitterHandle,
           site: siteUrl,
-          cardType: "Media Teknologi, Inovasi Digital & AI",
+          cardType:
+            "Jasa Pengembangan Web & Aplikasi, Software House, Inovasi Digital & AI, Startup",
         }}
         additionalMetaTags={[
           {
