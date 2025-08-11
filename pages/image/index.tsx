@@ -25,6 +25,7 @@ import {
   Smile,
   Code,
 } from "lucide-react";
+import Link from "next/link";
 
 // Definisikan tipe data untuk setiap tool
 export type Tool = {
@@ -197,22 +198,24 @@ export default function HomePage() {
       {/* Bagian Grid Tools */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {filteredTools.map((tool) => (
-          <Card key={tool.title} className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col">
-            <CardHeader>
-              <div className="flex justify-between items-start">
+          <Link href={tool.url} key={tool.title} legacyBehavior={false}>
+            <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col cursor-pointer">
+              <CardHeader>
+                <div className="flex justify-between items-start">
                   <div className="flex items-center gap-3">
                     <tool.icon className="h-7 w-7 text-primary" />
                     <CardTitle className="text-lg">{tool.title}</CardTitle>
                   </div>
-                {tool.isNew && <Badge variant="destructive">New!</Badge>}
-              </div>
-            </CardHeader>
-            <CardContent className="flex-grow">
-              <p className="text-sm text-muted-foreground">
-                {tool.description}
-              </p>
-            </CardContent>
-          </Card>
+                  {tool.isNew && <Badge variant="destructive">New!</Badge>}
+                </div>
+              </CardHeader>
+              <CardContent className="flex-grow">
+                <p className="text-sm text-muted-foreground">
+                  {tool.description}
+                </p>
+              </CardContent>
+            </Card>
+          </Link>
         ))}
       </div>
     </main>
