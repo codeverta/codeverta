@@ -7,6 +7,7 @@ import requests
 import json
 import textwrap
 from dotenv import load_dotenv
+import time
 
 # --- KONFIGURASI ---
 load_dotenv()
@@ -16,7 +17,7 @@ FB_PAGE_ID = os.getenv('FB_PAGE_ID')
 IG_USER_ID = os.getenv('IG_USER_ID')
 ACCESS_TOKEN = os.getenv('ACCESS_TOKEN')
 WEBSITE_BASE_URL = os.getenv('WEBSITE_BASE_URL') # BARU
-API_VERSION = "v23.0" 
+API_VERSION = "v21.0" 
 
 if not all([GOOGLE_API_KEY, FB_PAGE_ID, IG_USER_ID, ACCESS_TOKEN, WEBSITE_BASE_URL]):
     print("Error: Pastikan semua environment variables (termasuk WEBSITE_BASE_URL) sudah diatur.")
@@ -132,6 +133,7 @@ def post_to_instagram(image_url, caption):
     r = requests.post(create_container_url, headers=headers, json=container_payload)
     
     if r.status_code != 200:
+        print(create_container_url)
         print(f"Error saat membuat container Instagram: {r.json()}")
         return False
     
@@ -174,37 +176,35 @@ def post_to_facebook(image_url, caption):
 # --- FUNGSI UTAMA (DIUBAH SECARA SIGNIFIKAN) ---
 def main():
     # 1. Dapatkan Ide Konten
-    # content_data = get_content_idea()
-    # if not content_data:
-    #     return
+    content_data = get_content_idea()
+    if not content_data:
+        return
 
-    # # 2. Buat Gambar dengan Nama Unik
-    # # Menggunakan nama unik agar tidak menimpa file lama
-    # image_filename = f"content-{uuid.uuid4()}.png"
-    # local_image_path = os.path.join(SCRIPT_DIR, image_filename)
+    # 2. Buat Gambar dengan Nama Unik
+    # Menggunakan nama unik agar tidak menimpa file lama
+    image_filename = f"content-{uuid.uuid4()}.png"
+    local_image_path = os.path.join(SCRIPT_DIR, image_filename)
     
-    # success_generating = generate_image(
-    #     text_to_draw=content_data['judul_gambar'],
-    #     template_path=TEMPLATE_IMAGE_PATH,
-    #     output_path=local_image_path
-    # )
-    # if not success_generating:
-    #     return
+    success_generating = generate_image(
+        text_to_draw=content_data['judul_gambar'],
+        template_path=TEMPLATE_IMAGE_PATH,
+        output_path=local_image_path
+    )
+    if not success_generating:
+        return
 
-    # # 3. Pindahkan Gambar ke Folder Public
-    # public_image_path = os.path.join(PUBLIC_DIR, image_filename)
-    # shutil.move(local_image_path, public_image_path)
-    # print(f"Gambar dipindahkan ke: {public_image_path}")
+    # 3. Pindahkan Gambar ke Folder Public
+    public_image_path = os.path.join(PUBLIC_DIR, image_filename)
+    shutil.move(local_image_path, public_image_path)
+    print(f"Gambar dipindahkan ke: {public_image_path}")
 
-    # # 4. Buat URL Publik
-    # public_image_url = f"{WEBSITE_BASE_URL.rstrip('/')}/generated-content/{image_filename}"
+    # 4. Buat URL Publik
+    public_image_url = f"{WEBSITE_BASE_URL.rstrip('/')}/generated-content/{image_filename}"
 
-    # # 5. Publikasikan ke Media Sosial
-    # print("\n--- Memulai Proses Publikasi ---")
-    # caption = content_data['caption_sosmed']
+    # 5. Publikasikan ke Media Sosial
+    print("\n--- Memulai Proses Publikasi ---")
+    caption = content_data['caption_sosmed']
     
-    public_image_url = "https://fastly.picsum.photos/id/885/400/600.jpg?hmac=sq_DeGCvUMiyWEoPniCfXrsDPzdUZ0xbRMXBvJ2IxUw"
-    caption = "Postingan ini diupload secara otomatis oleh skrip Python. #automated #python"
     
     post_to_instagram(public_image_url, caption)
     # post_to_facebook(public_image_url, caption)
