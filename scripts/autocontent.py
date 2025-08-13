@@ -166,8 +166,6 @@ def get_content_from_gemini(keyword):
         """        
         response = client.models.generate_content(model='gemini-2.0-flash', contents=prompt)
         
-        # ... (Logika pembersihan dan parsing JSON tetap sama) ...
-        # (Sertakan kembali kode lengkap dari fungsi get_content_idea Anda di sini)
         raw_response = response.text
         cleaned_response = raw_response.replace("```json", "").replace("```", "").strip()
         import re
@@ -504,16 +502,31 @@ def main():
         return
     
     print(f"Berhasil membuat {len(image_urls)} gambar untuk carousel")
-
+    # Ambil caption asli yang dihasilkan oleh AI
+    original_caption = content_data['caption_sosmed']
+    
+    # Siapkan blok teks untuk CTA dan Info Kontak
+    # Anda bisa mengubah atau menyesuaikan teks ini sesuai kebutuhan
+    cta_dan_kontak = (
+        "\n\n"  # Membuat baris baru untuk memisahkan dari konten asli
+        "Tertarik untuk membawa bisnis Anda ke level digital selanjutnya? Mari berdiskusi!\n\n"
+        "Hubungi kami untuk konsultasi GRATIS:\n"
+        "📞 WA: +62 856-0134-7820\n"
+        "📧 Email: contact@codeverta.com\n"
+        "🌐 Website: www.codeverta.com\n"
+        "📱 Kunjungi Instagram kami: @codeverta"
+    )
+    
     # 3. Publikasikan ke Media Sosial
     print("\n--- Memulai Proses Publikasi ---")
     caption = content_data['caption_sosmed']
+    final_caption = original_caption + cta_dan_kontak
     
     # Publikasi ke Instagram sebagai carousel
-    post_carousel_to_instagram(image_urls, caption)
+    post_carousel_to_instagram(image_urls, final_caption)
     
     # Publikasi ke Facebook (gambar pertama saja)
-    # post_to_facebook(image_urls, caption)
+    # post_to_facebook(image_urls, final_caption)
 
     print("\n--- Skrip Selesai Dijalankan ---")
 
