@@ -513,8 +513,8 @@ def main():
         "Hubungi kami untuk konsultasi GRATIS:\n"
         "📞 WA: +62 856-0134-7820\n"
         "📧 Email: contact@codeverta.com\n"
-        "🌐 Website: www.codeverta.com\n"
-        "📱 Kunjungi Instagram kami: @codeverta"
+        "🌐 Website: www.bikinwebsitejogja.com\n"
+        "📱 Kunjungi Instagram kami: @bikinwebsite_jogja"
     )
     
     # 3. Publikasikan ke Media Sosial
