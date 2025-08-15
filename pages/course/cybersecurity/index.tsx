@@ -42,10 +42,13 @@ const CybersecurityCourse = () => {
       icon: Shield,
       duration: "2 hours",
       lessons: 8,
-      url: '/course/cybersecurity/01-apa-itu-cybersecurity',
+      url: "/course/cybersecurity/01-apa-itu-cybersecurity",
       description: "Fundamentals of cybersecurity and threat landscape",
       topics: [
-        "Apa itu Cybersecurity?",
+        {
+          title: "Apa itu Cybersecurity?",
+          url: "/course/cybersecurity/01-apa-itu-cybersecurity",
+        },
         "CIA Triad (Confidentiality, Integrity, Availability)",
         "Types of Cyber Threats",
         "Cybersecurity Framework Overview",
@@ -74,7 +77,10 @@ const CybersecurityCourse = () => {
         "Network Access Control (NAC)",
         "VLAN Security",
         "Network Troubleshooting",
-        "Zero Trust Network Architecture",
+        {
+          title: "Zero Trust Network Architecture",
+          url: "/course/cybersecurity/02-zero-trust-network-architecture",
+        },
       ],
     },
     {
@@ -85,7 +91,14 @@ const CybersecurityCourse = () => {
       lessons: 15,
       description: "Securing web applications and APIs",
       topics: [
-        "OWASP Top 10 Vulnerabilities",
+        {
+          title: "OWASP Top 10 Vulnerabilities",
+          url: "/course/cybersecurity/03-membedah-10-owasp-dan-studi-kasusnya",
+        },
+        {
+          title: "Dasar Dasar DDoS",
+          url: "/course/cybersecurity/07-dasar-dasar-ddos",
+        },
         "SQL Injection Prevention",
         "Cross-Site Scripting (XSS)",
         "Cross-Site Request Forgery (CSRF)",
@@ -195,7 +208,10 @@ const CybersecurityCourse = () => {
       topics: [
         "Security Governance Framework",
         "Risk Management Process",
-        "Compliance Requirements (GDPR, HIPAA, SOX)",
+        {
+          title: "Compliance Requirements (GDPR, HIPAA, SOX)",
+          url: "/course/cybersecurity/08-compliance-requirements",
+        },
         "Security Auditing",
         "Business Continuity Planning",
         "Disaster Recovery",
@@ -226,7 +242,10 @@ const CybersecurityCourse = () => {
         "Covering Tracks",
         "Reporting and Documentation",
         "Popular Testing Tools (Nmap, Metasploit, Burp Suite)",
-        "Setting Up Testing Lab",
+        {
+          title: "Setting Up Testing Lab",
+          url: "/course/cybersecurity/09-membangun-lab-untuk-menguji-penetration-testing",
+        },
         "Legal and Ethical Considerations",
         "Certification Paths (CEH, OSCP, CISSP)",
       ],
@@ -444,17 +463,34 @@ const CybersecurityCourse = () => {
                             Learning Topics:
                           </h4>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                            {module.topics.map((topic, topicIndex) => (
-                              <div
-                                key={topicIndex}
-                                className="flex items-center space-x-2 p-2 rounded bg-slate-700/30"
-                              >
-                                <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                                <span className="text-slate-300 text-sm">
-                                  {topic}
-                                </span>
-                              </div>
-                            ))}
+                            {module.topics.map((topic, topicIndex) => {
+                              if (typeof topic === "string") {
+                                return (
+                                  <div
+                                    key={topicIndex}
+                                    className="flex items-center space-x-2 p-2 rounded bg-slate-700/30"
+                                  >
+                                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                    <span className=" text-gray-300 text-sm">
+                                      {topic}
+                                    </span>
+                                  </div>
+                                );
+                              }
+
+                              return (
+                                <Link
+                                  href={topic.url}
+                                  key={topicIndex}
+                                  className="hover:text-blue-300 hover:underline cursor-pointer flex items-center space-x-2 p-2 rounded bg-slate-700/30"
+                                >
+                                  <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                                  <span className="text-blue-400 text-sm">
+                                    {topic.title}
+                                  </span>
+                                </Link>
+                              );
+                            })}
                           </div>
                         </div>
                       </CardContent>
