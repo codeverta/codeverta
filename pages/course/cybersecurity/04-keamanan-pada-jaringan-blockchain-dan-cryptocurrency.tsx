@@ -13,7 +13,12 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CodeBlock } from "@/components/CodeBlock";
-
+import {
+  ShieldCheck,
+  ShieldAlert,
+  BookOpen,
+  AlertTriangle,
+} from "lucide-react";
 // Tipe data untuk konsep keamanan
 export interface SecurityConcept {
   id: string;
@@ -45,7 +50,8 @@ export const securityConcepts: SecurityConcept[] = [
   {
     id: "private-key",
     title: "Keamanan Private Key",
-    description: "Private key adalah kredensial rahasia yang memberikan pemiliknya hak untuk mengakses dan mengelola dana cryptocurrency mereka. Kehilangan atau kebocoran private key berarti kehilangan akses permanen terhadap aset.",
+    description:
+      "Private key adalah kredensial rahasia yang memberikan pemiliknya hak untuk mengakses dan mengelola dana cryptocurrency mereka. Kehilangan atau kebocoran private key berarti kehilangan akses permanen terhadap aset.",
     risk: "Pencurian seluruh aset digital dalam wallet yang terkait. Transaksi tidak dapat dibatalkan atau dikembalikan.",
     prevention: [
       "Gunakan Hardware Wallet (seperti Ledger atau Trezor) untuk menyimpan private key secara offline.",
@@ -57,7 +63,8 @@ export const securityConcepts: SecurityConcept[] = [
   {
     id: "smart-contract",
     title: "Kerentanan Smart Contract",
-    description: "Smart contract adalah program yang berjalan di atas blockchain. Seperti perangkat lunak lainnya, smart contract bisa memiliki bug atau celah logika yang dapat dieksploitasi, misalnya Reentrancy.",
+    description:
+      "Smart contract adalah program yang berjalan di atas blockchain. Seperti perangkat lunak lainnya, smart contract bisa memiliki bug atau celah logika yang dapat dieksploitasi, misalnya Reentrancy.",
     risk: "Penyerang dapat mencuri dana yang dikelola oleh smart contract, membekukan kontrak, atau mengubah logikanya secara tidak sah.",
     prevention: [
       "Gunakan pola desain yang aman seperti 'Checks-Effects-Interactions Pattern' untuk mencegah Reentrancy.",
@@ -86,7 +93,7 @@ contract EtherStore {
         balances[msg.sender] = 0;
     }
     // ... fungsi lain
-}`
+}`,
     },
     secureCode: {
       language: "solidity",
@@ -110,13 +117,14 @@ contract EtherStore is ReentrancyGuard {
         require(sent, "Failed to send Ether");
     }
     // ... fungsi lain
-}`
+}`,
     },
   },
   {
     id: "51-attack",
     title: "Serangan 51% (51% Attack)",
-    description: "Serangan ini terjadi pada blockchain Proof-of-Work (PoW) ketika satu entitas atau kelompok berhasil menguasai lebih dari 50% total hashing power jaringan. Ini memungkinkan mereka untuk memanipulasi blockchain.",
+    description:
+      "Serangan ini terjadi pada blockchain Proof-of-Work (PoW) ketika satu entitas atau kelompok berhasil menguasai lebih dari 50% total hashing power jaringan. Ini memungkinkan mereka untuk memanipulasi blockchain.",
     risk: "Penyerang dapat mencegah konfirmasi transaksi baru, menghentikan pembayaran antar pengguna, dan yang paling berbahaya, melakukan 'double-spending' (menggunakan koin yang sama lebih dari satu kali).",
     prevention: [
       "Bagi penambang: bergabunglah dengan pool yang tidak mendominasi jaringan.",
@@ -133,31 +141,30 @@ export const caseStudies: CaseStudy[] = [
     id: "dao-hack",
     title: "The DAO Hack",
     year: 2016,
-    summary: "Sebuah smart contract di Ethereum bernama 'The DAO' diretas karena kerentanan 'Reentrancy'. Peretas berhasil mencuri 3.6 juta ETH (sekitar $50 juta saat itu) dengan cara memanggil fungsi penarikan dana secara berulang sebelum saldo pengguna diperbarui.",
-    lesson: "Insiden ini menunjukkan betapa berbahayanya bug dalam smart contract dan memicu hard fork kontroversial yang melahirkan Ethereum (ETH) dan Ethereum Classic (ETC). Pentingnya audit kode dan pola desain yang aman menjadi pelajaran utama."
+    summary:
+      "Sebuah smart contract di Ethereum bernama 'The DAO' diretas karena kerentanan 'Reentrancy'. Peretas berhasil mencuri 3.6 juta ETH (sekitar $50 juta saat itu) dengan cara memanggil fungsi penarikan dana secara berulang sebelum saldo pengguna diperbarui.",
+    lesson:
+      "Insiden ini menunjukkan betapa berbahayanya bug dalam smart contract dan memicu hard fork kontroversial yang melahirkan Ethereum (ETH) dan Ethereum Classic (ETC). Pentingnya audit kode dan pola desain yang aman menjadi pelajaran utama.",
   },
   {
     id: "parity-wallet",
     title: "Parity Wallet Freeze",
     year: 2017,
-    summary: "Seorang pengguna secara tidak sengaja memanggil fungsi untuk mengubah kepemilikan library contract yang digunakan oleh banyak wallet Parity. Dengan menjadi pemilik, ia kemudian menghancurkan library tersebut, yang mengakibatkan dana senilai lebih dari $150 juta di ratusan wallet menjadi beku dan tidak dapat diakses selamanya.",
-    lesson: "Menyoroti bahaya dari logika smart contract yang terlalu kompleks dan bug yang tidak terduga terkait kontrol akses. Kejelasan dan kesederhanaan dalam desain contract sangatlah krusial."
+    summary:
+      "Seorang pengguna secara tidak sengaja memanggil fungsi untuk mengubah kepemilikan library contract yang digunakan oleh banyak wallet Parity. Dengan menjadi pemilik, ia kemudian menghancurkan library tersebut, yang mengakibatkan dana senilai lebih dari $150 juta di ratusan wallet menjadi beku dan tidak dapat diakses selamanya.",
+    lesson:
+      "Menyoroti bahaya dari logika smart contract yang terlalu kompleks dan bug yang tidak terduga terkait kontrol akses. Kejelasan dan kesederhanaan dalam desain contract sangatlah krusial.",
   },
-    {
+  {
     id: "mt-gox",
     title: "Mt. Gox Collapse",
     year: 2014,
-    summary: "Bursa cryptocurrency terbesar pada masanya, Mt. Gox, bangkrut setelah kehilangan sekitar 850.000 Bitcoin (senilai $450 juta saat itu). Penyebabnya adalah kombinasi dari keamanan yang buruk, pencurian private key dari hot wallet bursa, dan manipulasi bug 'transaction malleability'.",
-    lesson: "Ini adalah pelajaran keras tentang pentingnya keamanan di tingkat bursa (exchange) dan risiko menyimpan aset di 'hot wallet' yang terhubung ke internet. Penggunaan 'cold storage' menjadi standar industri setelah insiden ini."
-  }
+    summary:
+      "Bursa cryptocurrency terbesar pada masanya, Mt. Gox, bangkrut setelah kehilangan sekitar 850.000 Bitcoin (senilai $450 juta saat itu). Penyebabnya adalah kombinasi dari keamanan yang buruk, pencurian private key dari hot wallet bursa, dan manipulasi bug 'transaction malleability'.",
+    lesson:
+      "Ini adalah pelajaran keras tentang pentingnya keamanan di tingkat bursa (exchange) dan risiko menyimpan aset di 'hot wallet' yang terhubung ke internet. Penggunaan 'cold storage' menjadi standar industri setelah insiden ini.",
+  },
 ];
-
-import {
-  ShieldCheck,
-  ShieldAlert,
-  BookOpen,
-  AlertTriangle,
-} from "lucide-react";
 
 export default function BlockchainSecurityPage() {
   return (
