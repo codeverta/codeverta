@@ -50,7 +50,7 @@ export async function getStaticProps() {
   // Kirim data proyek sebagai props ke komponen
   return {
     props: {
-      projects: projects.slice(0, 3), 
+      projects: projects.slice(0, 3),
     },
   };
 }
@@ -170,12 +170,17 @@ export default function LandingPage({ projects }: any) {
               transition={{ duration: 0.5 }}
               className="text-center max-w-3xl mx-auto mb-12"
             >
-              <Badge
-                className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
-                variant="secondary"
+              <Link
+                target="_blank"
+                href={"https://maps.app.goo.gl/DxsGvAFy7CSj94Lw9"}
               >
-                Jl Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta
-              </Badge>
+                <Badge
+                  className="mb-4 hover:bg-gray-50 rounded-full px-4 py-1.5 text-sm font-medium"
+                  variant="secondary"
+                >
+                  Jl Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta
+                </Badge>
+              </Link>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
                 Jasa Pembuatan Website, Aplikasi & Layanan IT Lainnya
               </h1>
@@ -185,7 +190,7 @@ export default function LandingPage({ projects }: any) {
                 Anda di era digital untuk bisnis skala kecil sampai menengah.
                 <br />
                 <span className="text-red-600 text-sm">
-                  * Bukan website template wordpress yang biasanya
+                  * Kualitas startup, bukan template wordpress murahan
                 </span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -349,7 +354,7 @@ export default function LandingPage({ projects }: any) {
                   step: "01",
                   title: "Konsultasi Kebutuhan",
                   description:
-                    "Diskusikan ide, tujuan, dan kebutuhan spesifik proyek Anda bersama kami secara gratis.",
+                    "Diskusikan ide, tujuan, dan kebutuhan spesifik proyek Anda bersama kami secara gratis(meetup offline/online).",
                 },
                 {
                   step: "02",
