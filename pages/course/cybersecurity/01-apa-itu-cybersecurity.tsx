@@ -444,6 +444,11 @@ const Module1CybersecurityIntro = () => {
               <h3 className="text-xl font-semibold text-white mb-3 flex items-center">
                 <AlertTriangle className="h-5 w-5 mr-2 text-red-400" />
                 Biaya dari Serangan Siber
+                {/* sumber */}
+                <span className="text-xs">
+                  {" "}
+                  According to IBM’s Cost of Data Breach Report 2023
+                </span>
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="text-center">
