@@ -1,9 +1,9 @@
-// pages/posts/[id].jsx
+// pages/news/[id].jsx
 import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { getPostData, getAllPostIds } from "lib/posts";
+import { getPostData, getAllPostIds } from "lib/news";
 import {
   Calendar,
   User,
@@ -26,7 +26,6 @@ import FooterSection from "@/components/FooterSection";
 import TOC from "@/components/TOC";
 // Improved TOC Component with smooth scrolling
 
-
 function Post({ postData, slug }) {
   // Generate a random background image URL from Lorem Picsum
   const backgroundImageUrl = `https://picsum.photos/seed/${slug}/800/450`;
@@ -44,7 +43,7 @@ function Post({ postData, slug }) {
         openGraph={{
           title: postData.title,
           description: postData.desc,
-          url: `https://www.bikinwebsitejogja.com/posts/${slug}`,
+          url: `https://www.bikinwebsitejogja.com/news/${slug}`,
           siteName: "Codeverta",
           images: [
             {
@@ -161,7 +160,7 @@ function Post({ postData, slug }) {
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
             <DisqusThread
-              url={"https://www.bikinwebsitejogja.com/posts/" + slug}
+              url={"https://www.bikinwebsitejogja.com/news/" + slug}
               identifier={slug}
               title={postData.title}
             />
@@ -203,7 +202,7 @@ export async function getStaticProps({ params, locale }) {
 
 // getStaticPaths replaces generateStaticParams - they're functionally similar
 export async function getStaticPaths({ locales }) {
-  const postIds = getAllPostIds('tutorials');
+  const postIds = getAllPostIds("tutorials");
   const paths: {
     params: {
       id: string;
