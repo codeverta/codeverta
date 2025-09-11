@@ -38,7 +38,7 @@ const BlogSchemaJsonLd = ({
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${baseUrl}/posts/${post.id}`,
+      "@id": `${baseUrl}/news/${post.id}`,
     },
   };
 
@@ -88,7 +88,7 @@ const BlogSchemaJsonLd = ({
         })),
         step: post.howTo.steps.map((step, index) => ({
           "@type": "HowToStep",
-          url: `${baseUrl}/posts/${post.id}#step-${index + 1}`,
+          url: `${baseUrl}/news/${post.id}#step-${index + 1}`,
           name: step.name || `Step ${index + 1}`,
           itemListElement: {
             "@type": "HowToDirection",
