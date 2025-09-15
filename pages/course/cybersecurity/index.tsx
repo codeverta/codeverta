@@ -233,7 +233,10 @@ const CybersecurityCourse = () => {
         "Network Penetration Testing",
         "Web Application Penetration Testing",
         "Wireless Network Testing",
-        "Social Engineering",
+        {
+          title: "Social Engineering",
+          url: "/course/cybersecurity/12-mengenal-apa-itu-social-engineering",
+        },
         "Physical Security Testing",
         {
           title: "Post-Exploitation Techniques",
@@ -242,7 +245,10 @@ const CybersecurityCourse = () => {
         "Privilege Escalation",
         "Lateral Movement",
         "Persistence Mechanisms",
-        "Covering Tracks",
+        {
+          title: "Covering Tracks",
+          url: "/course/cybersecurity/13-menutup-jejak-eksploitasi",
+        },
         "Reporting and Documentation",
         "Popular Testing Tools (Nmap, Metasploit, Burp Suite)",
         {
