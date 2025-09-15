@@ -235,7 +235,10 @@ const CybersecurityCourse = () => {
         "Wireless Network Testing",
         "Social Engineering",
         "Physical Security Testing",
-        "Post-Exploitation Techniques",
+        {
+          title: "Post-Exploitation Techniques",
+          url: "/course/cybersecurity/11-langkah-yang-dilakukan-pasca-exploitasi",
+        },
         "Privilege Escalation",
         "Lateral Movement",
         "Persistence Mechanisms",
