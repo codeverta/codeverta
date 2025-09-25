@@ -1,10 +1,8 @@
 ---
-
 title: "Panduan Lengkap DNS Security untuk Melindungi Jaringan dari Serangan DNS dan Manipulasi Data"
 date: "2025-05-15"
 desc: "Pelajari cara kerja DNS, risiko keamanannya, jenis serangan umum seperti DNS spoofing dan DNS tunneling, serta langkah-langkah praktis dalam meningkatkan keamanan DNS di jaringan Anda."
 tags: "dns security, keamanan jaringan, serangan dns, cybersecurity, dns spoofing, dnssec"
-
 ---
 
 ## Panduan Lengkap DNS Security untuk Melindungi Jaringan dari Serangan DNS dan Manipulasi Data
@@ -29,9 +27,9 @@ DNS pada dasarnya tidak didesain dengan sistem keamanan modern. Protokol aslinya
 
 Akibatnya:
 
-* Siapa pun dapat menyisipkan data palsu (spoofing).
-* Serangan bisa dilakukan tanpa terdeteksi (stealthy).
-* DNS adalah titik awal dari semua koneksi internet—menjadikannya target utama.
+- Siapa pun dapat menyisipkan data palsu (spoofing).
+- Serangan bisa dilakukan tanpa terdeteksi (stealthy).
+- DNS adalah titik awal dari semua koneksi internet—menjadikannya target utama.
 
 ---
 
@@ -61,11 +59,11 @@ Menyadap permintaan DNS pengguna dan menggantinya dengan IP palsu.
 
 ## Dampak Serangan DNS
 
-* **Phishing dan pencurian data login**
-* **Distribusi malware secara otomatis**
-* **Kehilangan kepercayaan pengguna**
-* **Downtime layanan yang merugikan bisnis**
-* **Pencurian data internal perusahaan**
+- **Phishing dan pencurian data login**
+- **Distribusi malware secara otomatis**
+- **Kehilangan kepercayaan pengguna**
+- **Downtime layanan yang merugikan bisnis**
+- **Pencurian data internal perusahaan**
 
 ---
 
@@ -90,13 +88,13 @@ Menambahkan tanda tangan kriptografi ke data DNS agar resolver dapat memverifika
 
 **Kelebihan:**
 
-* Mencegah DNS spoofing/cache poisoning.
-* Autentikasi validitas jawaban DNS.
+- Mencegah DNS spoofing/cache poisoning.
+- Autentikasi validitas jawaban DNS.
 
 **Kekurangan:**
 
-* Tidak mengenkripsi data.
-* Butuh dukungan dari domain, registrar, dan resolver.
+- Tidak mengenkripsi data.
+- Butuh dukungan dari domain, registrar, dan resolver.
 
 ### 2. **DNS over HTTPS (DoH)**
 
@@ -104,12 +102,12 @@ Mengirimkan permintaan DNS melalui protokol HTTPS agar tidak bisa disadap oleh p
 
 **Kelebihan:**
 
-* Privasi meningkat.
-* Mencegah manipulasi di jaringan lokal (ISP, hotspot publik).
+- Privasi meningkat.
+- Mencegah manipulasi di jaringan lokal (ISP, hotspot publik).
 
 **Kekurangan:**
 
-* Menyulitkan kontrol dan filtering perusahaan.
+- Menyulitkan kontrol dan filtering perusahaan.
 
 ### 3. **DNS over TLS (DoT)**
 
@@ -117,8 +115,8 @@ Mirip dengan DoH, tapi menggunakan TLS pada port 853.
 
 **Kelebihan:**
 
-* Lebih transparan untuk filtering.
-* Mendukung manajemen jaringan yang aman.
+- Lebih transparan untuk filtering.
+- Mendukung manajemen jaringan yang aman.
 
 ---
 
@@ -126,33 +124,33 @@ Mirip dengan DoH, tapi menggunakan TLS pada port 853.
 
 ### 1. **Gunakan DNS Resolver Aman**
 
-* Gunakan resolver yang mendukung DNSSEC, DoH, atau DoT seperti:
+- Gunakan resolver yang mendukung DNSSEC, DoH, atau DoT seperti:
 
-  * Cloudflare (1.1.1.1)
-  * Google DNS (8.8.8.8)
-  * Quad9 (9.9.9.9)
+  - Cloudflare (1.1.1.1)
+  - Google DNS (8.8.8.8)
+  - Quad9 (9.9.9.9)
 
 ### 2. **Aktifkan DNSSEC di Domain Anda**
 
-* Jika Anda memiliki domain, aktifkan DNSSEC melalui registrar.
-* Pastikan validasi dilakukan oleh resolver Anda.
+- Jika Anda memiliki domain, aktifkan DNSSEC melalui registrar.
+- Pastikan validasi dilakukan oleh resolver Anda.
 
 ### 3. **Gunakan DNS Firewall / Content Filtering**
 
-* Untuk organisasi, gunakan solusi seperti Cisco Umbrella atau NextDNS.
+- Untuk organisasi, gunakan solusi seperti Cisco Umbrella atau NextDNS.
 
 ### 4. **Pantau Trafik DNS**
 
-* Deteksi DNS tunneling atau aktivitas tidak biasa dengan SIEM atau DNS log analyzer.
+- Deteksi DNS tunneling atau aktivitas tidak biasa dengan SIEM atau DNS log analyzer.
 
 ### 5. **Blok DNS Rekursif Terbuka**
 
-* Konfigurasikan DNS server agar hanya merespons dari IP internal.
+- Konfigurasikan DNS server agar hanya merespons dari IP internal.
 
 ### 6. **Edukasi Pengguna**
 
-* Ajarkan untuk tidak asal klik domain mencurigakan.
-* Gunakan ekstensi browser DNSSEC/HTTPS checker.
+- Ajarkan untuk tidak asal klik domain mencurigakan.
+- Gunakan ekstensi browser DNSSEC/HTTPS checker.
 
 ---
 
@@ -173,13 +171,14 @@ Mirip dengan DoH, tapi menggunakan TLS pada port 853.
 
 **Perusahaan X:**
 
-* Masalah: Pengguna sering diarahkan ke situs phishing.
-* Solusi:
+- Masalah: Pengguna sering diarahkan ke situs phishing.
+- Solusi:
 
-  * Mengganti resolver dengan DNS aman (Quad9).
-  * Mengaktifkan DNSSEC di domain internal.
-  * Memasang DNS Firewall.
-* Hasil: Penurunan serangan phishing 85% dalam 3 bulan.
+  - Mengganti resolver dengan DNS aman (Quad9).
+  - Mengaktifkan DNSSEC di domain internal.
+  - Memasang DNS Firewall.
+
+- Hasil: Penurunan serangan phishing 85% dalam 3 bulan.
 
 ---
 
@@ -187,8 +186,8 @@ Mirip dengan DoH, tapi menggunakan TLS pada port 853.
 
 ### 1. Apa perbedaan DNSSEC dengan DoH?
 
-* **DNSSEC**: Mengautentikasi data DNS tapi tidak mengenkripsi.
-* **DoH**: Mengenkripsi permintaan DNS tapi tidak memverifikasi data.
+- **DNSSEC**: Mengautentikasi data DNS tapi tidak mengenkripsi.
+- **DoH**: Mengenkripsi permintaan DNS tapi tidak memverifikasi data.
 
 ### 2. Apakah perlu menggunakan DNS aman di rumah?
 

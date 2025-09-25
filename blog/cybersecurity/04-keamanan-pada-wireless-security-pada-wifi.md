@@ -1,10 +1,8 @@
 ---
-
 title: "Panduan Lengkap Wireless Security untuk Melindungi Koneksi WiFi dan Bluetooth dari Ancaman Siber"
 date: "2025-05-15"
 desc: "Pelajari cara mengamankan koneksi WiFi dan Bluetooth dari serangan siber seperti sniffing, spoofing, dan man-in-the-middle. Cocok untuk individu, bisnis, dan profesional IT."
 tags: "wireless security, keamanan wifi, keamanan bluetooth, cybersecurity, enkripsi jaringan, serangan jaringan"
-
 ---
 
 ## Panduan Lengkap Wireless Security untuk Melindungi Koneksi WiFi dan Bluetooth dari Ancaman Siber
@@ -23,19 +21,19 @@ Dalam dunia yang semakin terkoneksi, jaringan nirkabel seperti **WiFi** dan **Bl
 
 1. **Akses Mudah bagi Penyerang**
 
-   * Tidak seperti jaringan kabel yang membutuhkan koneksi fisik, sinyal WiFi dan Bluetooth bisa ditangkap oleh siapa saja dalam jangkauan.
+   - Tidak seperti jaringan kabel yang membutuhkan koneksi fisik, sinyal WiFi dan Bluetooth bisa ditangkap oleh siapa saja dalam jangkauan.
 
 2. **Data Sensitif Dapat Disadap**
 
-   * Serangan seperti **packet sniffing** bisa menangkap data login, email, bahkan informasi keuangan.
+   - Serangan seperti **packet sniffing** bisa menangkap data login, email, bahkan informasi keuangan.
 
 3. **Pintu Masuk Menuju Jaringan Internal**
 
-   * Jika WiFi tidak aman, penyerang bisa masuk ke seluruh jaringan perusahaan.
+   - Jika WiFi tidak aman, penyerang bisa masuk ke seluruh jaringan perusahaan.
 
 4. **Bluetooth Dapat Digunakan untuk Serangan Dekat**
 
-   * Misalnya melalui serangan **Bluejacking, Bluesnarfing**, atau **Bluebugging**.
+   - Misalnya melalui serangan **Bluejacking, Bluesnarfing**, atau **Bluebugging**.
 
 ---
 
@@ -43,18 +41,18 @@ Dalam dunia yang semakin terkoneksi, jaringan nirkabel seperti **WiFi** dan **Bl
 
 ### Ancaman terhadap WiFi:
 
-* **Evil Twin Attack**: Penyerang membuat WiFi palsu untuk mencuri data pengguna.
-* **Man-in-the-Middle (MITM)**: Menyadap komunikasi antara dua pihak.
-* **WiFi Sniffing**: Menggunakan tools seperti Wireshark untuk menangkap paket data.
-* **Brute Force terhadap WPA/WPA2 Password**.
-* **Rogue Access Point**: AP palsu yang terlihat sah.
+- **Evil Twin Attack**: Penyerang membuat WiFi palsu untuk mencuri data pengguna.
+- **Man-in-the-Middle (MITM)**: Menyadap komunikasi antara dua pihak.
+- **WiFi Sniffing**: Menggunakan tools seperti Wireshark untuk menangkap paket data.
+- **Brute Force terhadap WPA/WPA2 Password**.
+- **Rogue Access Point**: AP palsu yang terlihat sah.
 
 ### Ancaman terhadap Bluetooth:
 
-* **Bluejacking**: Mengirim pesan tanpa izin ke perangkat lain.
-* **Bluesnarfing**: Mengambil data dari perangkat tanpa izin.
-* **Bluebugging**: Mengambil kendali perangkat Bluetooth tanpa diketahui.
-* **Bluetooth Impersonation AttackS (BIAS)**.
+- **Bluejacking**: Mengirim pesan tanpa izin ke perangkat lain.
+- **Bluesnarfing**: Mengambil data dari perangkat tanpa izin.
+- **Bluebugging**: Mengambil kendali perangkat Bluetooth tanpa diketahui.
+- **Bluetooth Impersonation AttackS (BIAS)**.
 
 ---
 
@@ -62,19 +60,19 @@ Dalam dunia yang semakin terkoneksi, jaringan nirkabel seperti **WiFi** dan **Bl
 
 ### 1. **WEP (Wired Equivalent Privacy)** – **Usang dan Tidak Aman**
 
-* Dulu digunakan, tetapi sangat mudah diretas.
+- Dulu digunakan, tetapi sangat mudah diretas.
 
 ### 2. **WPA (Wi-Fi Protected Access)** – **Lebih Baik**
 
-* Menggunakan TKIP (Temporal Key Integrity Protocol), tapi masih bisa ditembus.
+- Menggunakan TKIP (Temporal Key Integrity Protocol), tapi masih bisa ditembus.
 
 ### 3. **WPA2 & WPA2-Enterprise** – **Rekomendasi Minimum**
 
-* Menggunakan AES encryption. Lebih aman untuk penggunaan pribadi dan bisnis.
+- Menggunakan AES encryption. Lebih aman untuk penggunaan pribadi dan bisnis.
 
 ### 4. **WPA3** – **Standar Terbaru**
 
-* Menawarkan enkripsi individual, perlindungan brute-force, dan forward secrecy.
+- Menawarkan enkripsi individual, perlindungan brute-force, dan forward secrecy.
 
 ---
 
@@ -82,31 +80,31 @@ Dalam dunia yang semakin terkoneksi, jaringan nirkabel seperti **WiFi** dan **Bl
 
 ### 1. **Gunakan WPA2 atau WPA3**
 
-* Hindari WEP dan WPA.
+- Hindari WEP dan WPA.
 
 ### 2. **Ubah SSID dan Password Default**
 
-* Jangan gunakan nama jaringan dan kata sandi bawaan dari pabrikan.
+- Jangan gunakan nama jaringan dan kata sandi bawaan dari pabrikan.
 
 ### 3. **Nonaktifkan WPS (Wi-Fi Protected Setup)**
 
-* WPS mudah diretas dengan brute-force.
+- WPS mudah diretas dengan brute-force.
 
 ### 4. **Gunakan Password yang Kuat**
 
-* Kombinasi huruf, angka, dan simbol sepanjang minimal 12 karakter.
+- Kombinasi huruf, angka, dan simbol sepanjang minimal 12 karakter.
 
 ### 5. **Aktifkan MAC Address Filtering**
 
-* Hanya perangkat tertentu yang boleh terhubung.
+- Hanya perangkat tertentu yang boleh terhubung.
 
 ### 6. **Sembunyikan SSID**
 
-* Tidak tampil di daftar jaringan publik.
+- Tidak tampil di daftar jaringan publik.
 
 ### 7. **Gunakan VPN**
 
-* Mengenkripsi data saat transit agar tidak bisa disadap.
+- Mengenkripsi data saat transit agar tidak bisa disadap.
 
 ---
 
@@ -114,37 +112,38 @@ Dalam dunia yang semakin terkoneksi, jaringan nirkabel seperti **WiFi** dan **Bl
 
 ### 1. **Matikan Bluetooth Saat Tidak Digunakan**
 
-* Mengurangi risiko serangan otomatis.
+- Mengurangi risiko serangan otomatis.
 
 ### 2. **Gunakan Mode Tersembunyi (Non-Discoverable Mode)**
 
-* Hindari terlihat oleh perangkat lain.
+- Hindari terlihat oleh perangkat lain.
 
 ### 3. **Hindari Pairing di Tempat Umum**
 
-* Serangan bisa dilakukan saat proses pairing.
+- Serangan bisa dilakukan saat proses pairing.
 
 ### 4. **Update Firmware Perangkat Secara Rutin**
 
-* Mengatasi celah keamanan lama.
+- Mengatasi celah keamanan lama.
 
 ### 5. **Gunakan PIN atau Autentikasi**
 
-* Pastikan pairing membutuhkan konfirmasi.
+- Pastikan pairing membutuhkan konfirmasi.
 
 ---
 
 ## Strategi Wireless Security untuk Bisnis
 
-* **Gunakan WiFi Tamu Terpisah dari Jaringan Internal**
-* **Implementasikan RADIUS Server untuk Otentikasi WPA2-Enterprise**
-* **Monitor Jaringan Secara Aktif**
+- **Gunakan WiFi Tamu Terpisah dari Jaringan Internal**
+- **Implementasikan RADIUS Server untuk Otentikasi WPA2-Enterprise**
+- **Monitor Jaringan Secara Aktif**
 
-  * Gunakan NMS dan IDS/IPS.
-* **Lakukan Penetration Testing Berkala**
-* **Audit Keamanan Perangkat IoT**
+  - Gunakan NMS dan IDS/IPS.
 
-  * Banyak IoT menggunakan Bluetooth dan WiFi tanpa enkripsi.
+- **Lakukan Penetration Testing Berkala**
+- **Audit Keamanan Perangkat IoT**
+
+  - Banyak IoT menggunakan Bluetooth dan WiFi tanpa enkripsi.
 
 ---
 
@@ -162,9 +161,9 @@ Dalam dunia yang semakin terkoneksi, jaringan nirkabel seperti **WiFi** dan **Bl
 
 ## Regulasi dan Standar Terkait Wireless Security
 
-* **ISO/IEC 27001**: Sistem manajemen keamanan informasi.
-* **NIST SP 800-153**: Panduan keamanan jaringan nirkabel.
-* **PCI DSS**: Standar untuk sistem pembayaran nirkabel.
+- **ISO/IEC 27001**: Sistem manajemen keamanan informasi.
+- **NIST SP 800-153**: Panduan keamanan jaringan nirkabel.
+- **PCI DSS**: Standar untuk sistem pembayaran nirkabel.
 
 ---
 

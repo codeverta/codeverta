@@ -1,10 +1,8 @@
 ---
-
 title: "Panduan Lengkap Network Architecture Security untuk Melindungi Infrastruktur Jaringan Perusahaan"
 date: "2025-05-15"
 desc: "Pelajari pengertian, komponen, prinsip desain, serta strategi terbaik dalam membangun network architecture security yang aman dan tahan terhadap ancaman siber."
 tags: "keamanan jaringan, arsitektur jaringan, cybersecurity, network architecture security"
-
 ---
 
 ## Panduan Lengkap Network Architecture Security untuk Melindungi Infrastruktur Jaringan Perusahaan
@@ -25,36 +23,36 @@ Dalam era digital saat ini, ancaman siber semakin canggih dan kompleks. Oleh kar
 
 Ini adalah lapisan pertama dalam pertahanan jaringan:
 
-* **Firewall**: Mengatur lalu lintas jaringan masuk dan keluar.
-* **Intrusion Detection/Prevention Systems (IDS/IPS)**: Mendeteksi dan mencegah aktivitas mencurigakan.
-* **Demilitarized Zone (DMZ)**: Area netral untuk mengakses layanan publik seperti email atau web server.
+- **Firewall**: Mengatur lalu lintas jaringan masuk dan keluar.
+- **Intrusion Detection/Prevention Systems (IDS/IPS)**: Mendeteksi dan mencegah aktivitas mencurigakan.
+- **Demilitarized Zone (DMZ)**: Area netral untuk mengakses layanan publik seperti email atau web server.
 
 ### 2. **Internal Network Segmentation**
 
-* Menggunakan **Virtual LAN (VLAN)** atau **subnetting** untuk membatasi akses antar bagian jaringan.
-* Mencegah penyebaran lateral ketika terjadi pelanggaran.
+- Menggunakan **Virtual LAN (VLAN)** atau **subnetting** untuk membatasi akses antar bagian jaringan.
+- Mencegah penyebaran lateral ketika terjadi pelanggaran.
 
 ### 3. **Endpoint Security**
 
-* Antivirus dan anti-malware.
-* Kebijakan patching dan update.
-* Endpoint Detection and Response (EDR).
+- Antivirus dan anti-malware.
+- Kebijakan patching dan update.
+- Endpoint Detection and Response (EDR).
 
 ### 4. **Access Control dan Authentication**
 
-* **Role-Based Access Control (RBAC)**.
-* **Multi-Factor Authentication (MFA)**.
-* **Zero Trust Model**.
+- **Role-Based Access Control (RBAC)**.
+- **Multi-Factor Authentication (MFA)**.
+- **Zero Trust Model**.
 
 ### 5. **Encryption dan VPN**
 
-* Mengenkripsi data saat transit dan saat diam.
-* Menggunakan **VPN (Virtual Private Network)** untuk akses jarak jauh yang aman.
+- Mengenkripsi data saat transit dan saat diam.
+- Menggunakan **VPN (Virtual Private Network)** untuk akses jarak jauh yang aman.
 
 ### 6. **Monitoring dan Logging**
 
-* Menggunakan tools seperti **SIEM (Security Information and Event Management)**.
-* Log audit untuk melacak setiap aktivitas jaringan.
+- Menggunakan tools seperti **SIEM (Security Information and Event Management)**.
+- Log audit untuk melacak setiap aktivitas jaringan.
 
 ---
 
@@ -119,11 +117,11 @@ Karyawan adalah garis pertahanan pertama. Adakan pelatihan keamanan siber secara
 
 ## Tools dan Teknologi yang Umum Digunakan
 
-* **Firewall: pfSense, Cisco ASA, Fortinet**
-* **IDS/IPS: Snort, Suricata, OSSEC**
-* **SIEM: Splunk, IBM QRadar, ELK Stack**
-* **Endpoint Protection: CrowdStrike, Bitdefender**
-* **VPN: OpenVPN, WireGuard**
+- **Firewall: pfSense, Cisco ASA, Fortinet**
+- **IDS/IPS: Snort, Suricata, OSSEC**
+- **SIEM: Splunk, IBM QRadar, ELK Stack**
+- **Endpoint Protection: CrowdStrike, Bitdefender**
+- **VPN: OpenVPN, WireGuard**
 
 ---
 
@@ -144,9 +142,9 @@ Karyawan adalah garis pertahanan pertama. Adakan pelatihan keamanan siber secara
 **Masalah:** Sering terjadi serangan internal dan pencurian data.
 **Solusi:**
 
-* Implementasi firewall + IDS.
-* Segmentasi jaringan dengan VLAN.
-* RBAC dan audit log terpusat.
+- Implementasi firewall + IDS.
+- Segmentasi jaringan dengan VLAN.
+- RBAC dan audit log terpusat.
   **Hasil:** Serangan berkurang hingga 90% dalam 6 bulan.
 
 ---
