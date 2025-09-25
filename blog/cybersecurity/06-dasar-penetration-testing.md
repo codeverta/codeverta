@@ -1,10 +1,8 @@
 ---
-
 title: "Penetration Testing Basics: Panduan Lengkap Dasar-Dasar Uji Penetrasi untuk Keamanan Siber"
 date: "2025-05-15"
 desc: "Pelajari apa itu penetration testing, tahap-tahap pelaksanaannya, teknik umum, alat yang digunakan, hingga manfaatnya dalam meningkatkan keamanan sistem informasi Anda."
 tags: "penetration testing, ethical hacking, keamanan siber, cybersecurity, pentest, uji penetrasi"
-
 ---
 
 ## Penetration Testing Basics: Panduan Lengkap Dasar-Dasar Uji Penetrasi untuk Keamanan Siber
@@ -25,11 +23,11 @@ Uji ini dilakukan oleh **ethical hacker** atau **pentester** yang bertugas menir
 
 ## Tujuan dari Penetration Testing
 
-* **Mengidentifikasi celah keamanan**
-* **Menguji efektivitas kontrol keamanan**
-* **Menilai dampak nyata dari kerentanan**
-* **Memberikan rekomendasi perbaikan**
-* **Memastikan kepatuhan terhadap standar keamanan (misalnya ISO 27001, PCI-DSS)**
+- **Mengidentifikasi celah keamanan**
+- **Menguji efektivitas kontrol keamanan**
+- **Menilai dampak nyata dari kerentanan**
+- **Memberikan rekomendasi perbaikan**
+- **Memastikan kepatuhan terhadap standar keamanan (misalnya ISO 27001, PCI-DSS)**
 
 ---
 
@@ -47,48 +45,48 @@ Uji ini dilakukan oleh **ethical hacker** atau **pentester** yang bertugas menir
 
 ### 1. **Perencanaan dan Persetujuan**
 
-* Menentukan ruang lingkup, tujuan, dan batasan.
-* Menandatangani dokumen legal seperti **Rules of Engagement (RoE)** dan **NDA**.
+- Menentukan ruang lingkup, tujuan, dan batasan.
+- Menandatangani dokumen legal seperti **Rules of Engagement (RoE)** dan **NDA**.
 
 ### 2. **Reconnaissance (Pengintaian)**
 
-* Mengumpulkan informasi tentang target.
-* Teknik:
+- Mengumpulkan informasi tentang target.
+- Teknik:
 
-  * Passive: WHOIS, Google Dorking, Shodan.
-  * Active: Port scanning, DNS enumeration.
+  - Passive: WHOIS, Google Dorking, Shodan.
+  - Active: Port scanning, DNS enumeration.
 
 ### 3. **Scanning dan Enumerasi**
 
-* Mengidentifikasi titik lemah.
-* Tools: Nmap, Nessus, Nikto.
+- Mengidentifikasi titik lemah.
+- Tools: Nmap, Nessus, Nikto.
 
 ### 4. **Exploitation**
 
-* Mengeksekusi serangan berdasarkan celah yang ditemukan.
-* Tools: Metasploit, SQLMap, Burp Suite.
+- Mengeksekusi serangan berdasarkan celah yang ditemukan.
+- Tools: Metasploit, SQLMap, Burp Suite.
 
 ### 5. **Post-Exploitation**
 
-* Menilai seberapa jauh penyerang bisa melangkah setelah masuk.
-* Contoh: privilege escalation, data exfiltration, pivoting.
+- Menilai seberapa jauh penyerang bisa melangkah setelah masuk.
+- Contoh: privilege escalation, data exfiltration, pivoting.
 
 ### 6. **Reporting**
 
-* Menyusun laporan temuan, dampak, dan rekomendasi mitigasi.
-* Harus jelas, ringkas, dan disesuaikan dengan audiens (teknikal dan non-teknikal).
+- Menyusun laporan temuan, dampak, dan rekomendasi mitigasi.
+- Harus jelas, ringkas, dan disesuaikan dengan audiens (teknikal dan non-teknikal).
 
 ---
 
 ## Teknik Umum dalam Penetration Testing
 
-* **Injection Attack (SQL, Command, LDAP)**
-* **Cross-Site Scripting (XSS)**
-* **Privilege Escalation**
-* **Brute Force dan Credential Stuffing**
-* **Session Hijacking**
-* **Phishing Simulation**
-* **File Upload Vulnerability**
+- **Injection Attack (SQL, Command, LDAP)**
+- **Cross-Site Scripting (XSS)**
+- **Privilege Escalation**
+- **Brute Force dan Credential Stuffing**
+- **Session Hijacking**
+- **Phishing Simulation**
+- **File Upload Vulnerability**
 
 ---
 
@@ -113,10 +111,10 @@ Uji ini dilakukan oleh **ethical hacker** atau **pentester** yang bertugas menir
 
 Hal yang perlu diperhatikan:
 
-* Harus mendapatkan izin tertulis.
-* Jangan lakukan uji pada sistem pihak ketiga tanpa izin.
-* Hindari kerusakan sistem atau kehilangan data.
-* Jaga kerahasiaan data klien.
+- Harus mendapatkan izin tertulis.
+- Jangan lakukan uji pada sistem pihak ketiga tanpa izin.
+- Hindari kerusakan sistem atau kehilangan data.
+- Jaga kerahasiaan data klien.
 
 ---
 
@@ -133,12 +131,12 @@ Hal yang perlu diperhatikan:
 
 ## Siapa yang Membutuhkan Penetration Testing?
 
-* **Perusahaan teknologi dan startup**
-* **Bank dan institusi keuangan**
-* **E-commerce dan SaaS**
-* **Pemerintah dan militer**
-* **Sektor kesehatan dan pendidikan**
-* **Setiap organisasi yang menyimpan data sensitif**
+- **Perusahaan teknologi dan startup**
+- **Bank dan institusi keuangan**
+- **E-commerce dan SaaS**
+- **Pemerintah dan militer**
+- **Sektor kesehatan dan pendidikan**
+- **Setiap organisasi yang menyimpan data sensitif**
 
 ---
 
@@ -154,11 +152,11 @@ Hal yang perlu diperhatikan:
 
 ## Tantangan dalam Penetration Testing
 
-* Kompleksitas sistem dan infrastruktur
-* Batasan waktu dan ruang lingkup
-* Akses terbatas saat black-box testing
-* False positive/negative
-* Menghindari downtime atau kerusakan
+- Kompleksitas sistem dan infrastruktur
+- Batasan waktu dan ruang lingkup
+- Akses terbatas saat black-box testing
+- False positive/negative
+- Menghindari downtime atau kerusakan
 
 ---
 

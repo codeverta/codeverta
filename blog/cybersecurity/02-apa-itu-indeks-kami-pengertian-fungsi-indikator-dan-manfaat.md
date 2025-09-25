@@ -150,4 +150,3 @@ Mulailah dari pembuatan kebijakan, peningkatan pelatihan staf, dan penerapan kon
 **Indeks KAMI** bukan sekadar alat ukur, tapi juga **sinyal kesiapan organisasi menghadapi era digital yang kompleks dan penuh risiko.** Dengan menerapkan dan mengevaluasi indeks ini secara berkala, instansi dan organisasi bisa lebih siap menjaga data, menjaga kepercayaan publik, dan menghadapi ancaman siber yang makin canggih.
 
 Jadikan Indeks KAMI sebagai bagian dari strategi utama transformasi digital dan tata kelola teknologi informasi di lingkungan Anda.
-

@@ -34,10 +34,10 @@ Standar ini dirancang untuk membantu organisasi dalam mengelola keamanan informa
 
 ISO/IEC 27001 memberikan kerangka kerja yang kuat untuk mencegah dan merespons serangan siber. Berikut adalah beberapa alasan mengapa ISO 27001 sangat penting:
 
-* **Melindungi informasi sensitif** dari akses tidak sah, kehilangan, atau modifikasi.
-* **Meningkatkan kepercayaan pelanggan dan mitra bisnis** terhadap keamanan sistem Anda.
-* **Memastikan kepatuhan terhadap regulasi** seperti GDPR, HIPAA, dan undang-undang perlindungan data lokal.
-* **Meningkatkan efisiensi operasional** dengan pendekatan manajemen risiko yang terstruktur.
+- **Melindungi informasi sensitif** dari akses tidak sah, kehilangan, atau modifikasi.
+- **Meningkatkan kepercayaan pelanggan dan mitra bisnis** terhadap keamanan sistem Anda.
+- **Memastikan kepatuhan terhadap regulasi** seperti GDPR, HIPAA, dan undang-undang perlindungan data lokal.
+- **Meningkatkan efisiensi operasional** dengan pendekatan manajemen risiko yang terstruktur.
 
 ---
 
@@ -110,10 +110,10 @@ Tindakan perbaikan berkelanjutan terhadap kelemahan sistem.
 
 ## Tantangan dalam Penerapan ISO/IEC 27001
 
-* Kurangnya pemahaman di tingkat manajemen.
-* Biaya implementasi awal yang cukup tinggi.
-* Resistensi terhadap perubahan dari karyawan.
-* Kompleksitas integrasi dengan sistem yang sudah ada.
+- Kurangnya pemahaman di tingkat manajemen.
+- Biaya implementasi awal yang cukup tinggi.
+- Resistensi terhadap perubahan dari karyawan.
+- Kompleksitas integrasi dengan sistem yang sudah ada.
 
 Namun, semua tantangan ini dapat diatasi dengan pendekatan manajemen proyek yang baik dan pelibatan semua pihak sejak awal.
 
@@ -149,27 +149,26 @@ Kontrol utama termasuk kebijakan keamanan, manajemen aset, kontrol akses, keaman
 
 Jika Anda serius ingin meningkatkan postur keamanan informasi organisasi, memulai perjalanan menuju sertifikasi ISO/IEC 27001 adalah langkah yang tepat.
 
-
 ## ✅ Checklist Implementasi ISO/IEC 27001
 
 Gunakan daftar periksa ini untuk memastikan seluruh langkah penting implementasi ISO 27001 telah dilakukan:
 
-| No | Langkah                                                   | Status |
-| -- | --------------------------------------------------------- | ------ |
-| 1  | Lakukan *Gap Analysis* terhadap kondisi keamanan saat ini | ⬜      |
-| 2  | Tentukan ruang lingkup ISMS                               | ⬜      |
-| 3  | Komitmen manajemen puncak                                 | ⬜      |
-| 4  | Tetapkan Tim ISMS (Steering Committee)                    | ⬜      |
-| 5  | Identifikasi pemangku kepentingan dan kebutuhan mereka    | ⬜      |
-| 6  | Susun dan tetapkan Kebijakan Keamanan Informasi           | ⬜      |
-| 7  | Lakukan penilaian risiko (risk assessment)                | ⬜      |
-| 8  | Lakukan pengendalian risiko (risk treatment)              | ⬜      |
-| 9  | Susun Pernyataan Penerapan (Statement of Applicability)   | ⬜      |
-| 10 | Terapkan kontrol dari Annex A ISO 27001                   | ⬜      |
-| 11 | Edukasi dan pelatihan keamanan kepada karyawan            | ⬜      |
-| 12 | Monitoring, audit internal, dan tindakan korektif         | ⬜      |
-| 13 | Tinjauan manajemen secara berkala                         | ⬜      |
-| 14 | Persiapan audit eksternal dan sertifikasi                 | ⬜      |
+| No  | Langkah                                                   | Status |
+| --- | --------------------------------------------------------- | ------ |
+| 1   | Lakukan _Gap Analysis_ terhadap kondisi keamanan saat ini | ⬜     |
+| 2   | Tentukan ruang lingkup ISMS                               | ⬜     |
+| 3   | Komitmen manajemen puncak                                 | ⬜     |
+| 4   | Tetapkan Tim ISMS (Steering Committee)                    | ⬜     |
+| 5   | Identifikasi pemangku kepentingan dan kebutuhan mereka    | ⬜     |
+| 6   | Susun dan tetapkan Kebijakan Keamanan Informasi           | ⬜     |
+| 7   | Lakukan penilaian risiko (risk assessment)                | ⬜     |
+| 8   | Lakukan pengendalian risiko (risk treatment)              | ⬜     |
+| 9   | Susun Pernyataan Penerapan (Statement of Applicability)   | ⬜     |
+| 10  | Terapkan kontrol dari Annex A ISO 27001                   | ⬜     |
+| 11  | Edukasi dan pelatihan keamanan kepada karyawan            | ⬜     |
+| 12  | Monitoring, audit internal, dan tindakan korektif         | ⬜     |
+| 13  | Tinjauan manajemen secara berkala                         | ⬜     |
+| 14  | Persiapan audit eksternal dan sertifikasi                 | ⬜     |
 
 ---
 
@@ -214,42 +213,51 @@ Disetujui oleh:
 
 ```markdown
 # Rencana Keamanan Informasi
+
 ## Nama Perusahaan: [Nama Perusahaan]
+
 ## Tahun: 2025
 
 ### 1. Tujuan
+
 Menetapkan langkah-langkah strategis untuk menjaga keamanan data dan informasi perusahaan berdasarkan ISO/IEC 27001.
 
 ### 2. Risiko yang Dihadapi
-| Risiko | Dampak | Probabilitas | Mitigasi |
-|--------|--------|--------------|----------|
-| Serangan Malware | Tinggi | Tinggi | Instalasi antivirus dan pemindaian rutin |
-| Akses tidak sah | Tinggi | Sedang | Implementasi kontrol akses dan otentikasi ganda |
-| Kehilangan data | Tinggi | Rendah | Backup harian dan enkripsi data |
+
+| Risiko           | Dampak | Probabilitas | Mitigasi                                        |
+| ---------------- | ------ | ------------ | ----------------------------------------------- |
+| Serangan Malware | Tinggi | Tinggi       | Instalasi antivirus dan pemindaian rutin        |
+| Akses tidak sah  | Tinggi | Sedang       | Implementasi kontrol akses dan otentikasi ganda |
+| Kehilangan data  | Tinggi | Rendah       | Backup harian dan enkripsi data                 |
 
 ### 3. Sasaran Keamanan
+
 - Mengurangi insiden keamanan siber hingga 90% dalam 12 bulan.
 - 100% karyawan mengikuti pelatihan keamanan informasi.
 - Menyelesaikan audit internal ISMS setiap 6 bulan.
 
 ### 4. Strategi Implementasi
+
 - Membentuk tim tanggap insiden keamanan.
 - Menerapkan kebijakan penggunaan kata sandi yang kuat.
 - Audit sistem IT setiap kuartal.
 
 ### 5. Jadwal Tindakan
-| Tanggal | Aktivitas | Penanggung Jawab |
-|---------|-----------|------------------|
-| 2025-06 | Sosialisasi kebijakan keamanan | Tim HR |
-| 2025-07 | Penilaian risiko awal | Tim ISMS |
-| 2025-08 | Implementasi kontrol teknis | Tim IT |
+
+| Tanggal | Aktivitas                      | Penanggung Jawab |
+| ------- | ------------------------------ | ---------------- |
+| 2025-06 | Sosialisasi kebijakan keamanan | Tim HR           |
+| 2025-07 | Penilaian risiko awal          | Tim ISMS         |
+| 2025-08 | Implementasi kontrol teknis    | Tim IT           |
 
 ### 6. Indikator Kinerja
+
 - Jumlah insiden keamanan per bulan
 - Tingkat kepatuhan terhadap SOP
 - Skor audit internal terakhir
 
 ### 7. Peninjauan dan Revisi
+
 Rencana ini akan ditinjau dan diperbarui setiap 6 bulan oleh Tim ISMS.
 
 Disetujui oleh:  
