@@ -1,17 +1,11 @@
-Berikut artikel yang diminta, menggunakan format dan struktur SEO-friendly, lengkap dengan FAQ dan penulisan Bahasa Indonesia yang formal namun mudah dipahami:
-
 ---
-
 title: "Panduan Lengkap ISO/IEC 27001 dalam Cyber Security untuk Keamanan Informasi Perusahaan"
 
 date: "2025-05-15"
 
-image: "[https://picsum.photos/seed/technology/1200/600](https://picsum.photos/seed/technology/1200/600)"
-
 desc: "Pelajari secara mendalam apa itu ISO/IEC 27001 dalam dunia cyber security, manfaatnya bagi perusahaan, cara implementasi, dan jawaban atas pertanyaan umum seputar standar keamanan informasi ini."
 
 tags: "cyber security, iso 27001, keamanan informasi"
-
 ---
 
 ## Panduan Lengkap ISO/IEC 27001 dalam Cyber Security untuk Keamanan Informasi Perusahaan
