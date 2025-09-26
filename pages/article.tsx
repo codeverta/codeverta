@@ -59,8 +59,15 @@ const categories = [
     iconBgColor: "bg-indigo-100 dark:bg-indigo-900/50",
   },
   {
-    title: "Cyber Security",
+    title: "Cybersecurity Articles",
     description: "Jaga keamanan digital Anda dengan tips dan trik terbaru.",
+    href: "/course/cybersecurity",
+    icon: <ShieldCheck className="h-8 w-8 text-red-500" />,
+    iconBgColor: "bg-red-100 dark:bg-red-900/50",
+  },
+  {
+    title: "Cybersecurity Course",
+    description: "Kelas cybersecurity terbaru.",
     href: "/course/cybersecurity",
     icon: <ShieldCheck className="h-8 w-8 text-red-500" />,
     iconBgColor: "bg-red-100 dark:bg-red-900/50",
