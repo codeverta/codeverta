@@ -438,7 +438,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                     <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
                       Featured Tutorial
                     </h2>
-                    <Link href="/blog/ai">
+                    <Link href="/cybersecurity">
                       <Button
                         variant="link"
                         className="text-blue-600 dark:text-blue-400 p-0"
@@ -648,7 +648,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </p>
                         </div>
 
-                        <Link href={`/ai/${post.id}`}>
+                        <Link href={`/cybersecurity/${post.id}`}>
                           <h3 className="font-bold text-lg text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-2 line-clamp-2">
                             {post.title}
                           </h3>
@@ -675,7 +675,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                       </CardContent>
 
                       <CardFooter className="px-5 py-3 bg-slate-50 dark:bg-slate-800/50 flex justify-between">
-                        <Link href={`/ai/${post.id}`}>
+                        <Link href={`/cybersecurity/${post.id}`}>
                           <Button
                             variant="link"
                             className="p-0 h-auto text-blue-600 dark:text-blue-400 text-sm"
