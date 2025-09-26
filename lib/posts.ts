@@ -83,7 +83,7 @@ export function getAllPostsData() {
   return allPosts;
 }
 
-export function getAllPostIds(folder = 'tutorials') {
+export function getAllPostIds(folder = "tutorials") {
   const languages = [folder]; // Assuming 'folder' directly corresponds to a language directory
   let allPostIds = [];
 
@@ -196,15 +196,15 @@ export async function getPostData(id, lang = "en") {
     enhancedContent = insertTableOfContents(enhancedContent, usedLanguage);
   }
 
-  // Insert contextual links within the content
-  enhancedContent = insertContextualLinks(enhancedContent, allPosts, id);
+  // // Insert contextual links within the content
+  // enhancedContent = insertContextualLinks(enhancedContent, allPosts, id);
 
-  // Insert related posts section
-  enhancedContent = insertRelatedPostLinks(
-    enhancedContent,
-    relatedPosts,
-    usedLanguage
-  );
+  // // Insert related posts section
+  // enhancedContent = insertRelatedPostLinks(
+  //   enhancedContent,
+  //   relatedPosts,
+  //   usedLanguage
+  // );
 
   // Use remark to convert markdown into HTML string
   const processedContent = await remark()
