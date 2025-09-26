@@ -175,11 +175,11 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   // Get meta description
   const metaDescription = useMemo(() => {
     if (searchTerm) {
-      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting ai about coding, programming, and technology.`;
+      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting cybersecurity about coding, programming, and technology.`;
     }
     return allPostsData.length > 0
       ? allPostsData[0].desc
-      : "Discover coding ai, tech guides, and programming tips for developers of all levels.";
+      : "Discover coding cybersecurity, tech guides, and programming tips for developers of all levels.";
   }, [searchTerm, allPostsData]);
 
   // Format date function
@@ -254,7 +254,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
   const handleShare = (platform: string, postId: string) => {
     const postUrl = `${
       typeof window !== "undefined" ? window.location.origin : ""
-    }/ai/${postId}`;
+    }/cybersecurity/${postId}`;
     const post = allPostsData.find((p) => p.id === postId);
     const title = post?.title || "Tech Tutorial";
     const encodedTitle = encodeURIComponent(title);
@@ -292,10 +292,10 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
       <Head>
         <title>
           {searchTerm
-            ? `Search Results for "${searchTerm}" - Codeverta AI Article`
+            ? `Search Results for "${searchTerm}" - Codeverta cybersecurity Article`
             : selectedCategory
-            ? `${selectedCategory} - Codeverta AI Article`
-            : "Codeverta - Programming & Technology AI Article"}
+            ? `${selectedCategory} - Codeverta cybersecurity Article`
+            : "Codeverta - Programming & Technology cybersecurity Article"}
         </title>
         <meta name="description" content={metaDescription} />
       </Head>
@@ -311,11 +311,11 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <span className="text-blue-600 dark:text-blue-400">Article</span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
-              Dapatkan berita terkini seputar kecerdasan buatan (AI), machine
-              learning, dan perkembangan terbaru dalam dunia artificial
+              Dapatkan berita terkini seputar kecerdasan buatan (Cybersecurity),
+              machine learning, dan perkembangan terbaru dalam dunia artificial
               intelligence. Codeverta menyajikan analisis mendalam, riset
-              terbaru, serta implikasi AI dalam industri dan kehidupan
-              sehari-hari.
+              terbaru, serta implikasi Cybersecurity dalam industri dan
+              kehidupan sehari-hari.
             </p>
 
             {/* Search form */}
@@ -326,7 +326,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-4 w-4" />
                 <Input
-                  placeholder="Search ai..."
+                  placeholder="Search article..."
                   value={searchTerm}
                   onChange={handleSearchChange}
                   className="pl-10 pr-24 h-12 bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-full"
@@ -762,12 +762,12 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                 <Search className="h-10 w-10" />
               </div>
               <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
-                {t("blog.not_found.title", "No ai found")}
+                {t("blog.not_found.title", "No cybersecurity found")}
               </h2>
               <p className="text-slate-600 dark:text-slate-300 mb-6 max-w-md mx-auto">
                 {t(
                   "blog.not_found.description",
-                  "We couldn't find any ai matching your search criteria. Try adjusting your search terms or browse our categories."
+                  "We couldn't find any article matching your search criteria. Try adjusting your search terms or browse our categories."
                 )}
               </p>
               <Button
