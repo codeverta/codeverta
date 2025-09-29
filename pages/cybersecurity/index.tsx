@@ -492,9 +492,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                           </div>
                         </div>
 
-                        <Link
-                          href={`/${currentPosts[0].category}/${currentPosts[0].id}`}
-                        >
+                        <Link href={`/cybersecurity/${currentPosts[0].id}`}>
                           <h3 className="text-2xl font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 mb-4">
                             {currentPosts[0].title}
                           </h3>
@@ -505,9 +503,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
                         </p>
 
                         <div className="flex justify-between items-center mt-auto">
-                          <Link
-                            href={`/${currentPosts[0].category}/${currentPosts[0].id}`}
-                          >
+                          <Link href={`/cybersecurity/${currentPosts[0].id}`}>
                             <Button variant="default" size="sm">
                               Read Article
                             </Button>
