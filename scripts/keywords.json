@@ -1,5 +1,4 @@
 [
-  "Cybersecurity untuk Developer",
   "SQL Injection: Pengertian dan Cara Pencegahannya",
   "Cross-Site Scripting (XSS): Cara Kerja dan Mitigasi",
   "Man in the Middle Attack: Apa Itu dan Bagaimana Mencegahnya?",
@@ -294,5 +293,6 @@
   "Manajemen Risiko dalam Cybersecurity",
   "Incident Response Plan: Pentingkah?",
   "Red Team vs Blue Team dalam Uji Keamanan",
-  "Bug Bounty Program: Manfaat dan Risiko"
+  "Bug Bounty Program: Manfaat dan Risiko",
+  "Cybersecurity untuk Developer"
 ]
