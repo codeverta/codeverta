@@ -1,5 +1,4 @@
 [
-  "Cross-Site Scripting (XSS): Cara Kerja dan Mitigasi",
   "Man in the Middle Attack: Apa Itu dan Bagaimana Mencegahnya?",
   "Keylogger: Ancaman Tersembunyi di Komputer Anda",
   "Spyware: Cara Kerja dan Pencegahan",
@@ -294,5 +293,6 @@
   "Red Team vs Blue Team dalam Uji Keamanan",
   "Bug Bounty Program: Manfaat dan Risiko",
   "Cybersecurity untuk Developer",
-  "SQL Injection: Pengertian dan Cara Pencegahannya"
+  "SQL Injection: Pengertian dan Cara Pencegahannya",
+  "Cross-Site Scripting (XSS): Cara Kerja dan Mitigasi"
 ]
