@@ -543,7 +543,7 @@ export default function LandingPage({ projects }: any) {
                     {[
                       {
                         name: "Paket Website UMKM",
-                        price: "Rp 1 - 1,5Jt",
+                        price: "Rp 2Jt",
                         description:
                           "Cocok untuk profil perusahaan atau portofolio.",
                         features: [
