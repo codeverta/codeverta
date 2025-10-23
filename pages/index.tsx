@@ -57,16 +57,12 @@ export async function getStaticProps() {
 
 const logos = [
   {
-    src: "/assets/jogja.png",
-    alt: "Pemprov Yogyakarta",
-  },
-  {
-    src: "/assets/uny.png",
-    alt: "Universitas Negeri Yogyakarta",
-  },
-  {
     src: "/assets/bapperida.png",
-    alt: "Bapperida Yogyakarta",
+    alt: "Bapperida Papua",
+  },
+  {
+    src: "/assets/nsc.png",
+    alt: "NSC Bantu Perizinan",
   },
   {
     src: "/assets/souvenirlilin.png",
@@ -249,10 +245,11 @@ export default function LandingPage({ projects }: any) {
               <h2 className="text-center text-lg font-semibold leading-8 text-muted-foreground">
                 Dipercaya oleh UMKM, Startup, Bisnis, dan Pemerintahan
               </h2>
-              <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
+              <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
                 {logos.map((logo, index) => (
                   <Image
                     key={index}
+                    title={logo.alt}
                     className="col-span-1 max-h-16 w-full object-contain opacity-60 transition-opacity hover:opacity-100 dark:invert"
                     src={logo.src}
                     alt={logo.alt}

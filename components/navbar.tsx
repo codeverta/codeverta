@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
+import projects from "../projects.json";
 
 // Import ikon yang Anda gunakan (asumsi dari 'lucide-react')
 // PERHATIAN: Pastikan semua ikon ini sudah diimpor dari library ikon yang benar (misalnya lucide-react)
@@ -96,7 +97,7 @@ const newCategories = [
     href: "/image",
     icon: <Eraser className="h-8 w-8 text-yellow-500" />,
     iconBgColor: "bg-yellow-100 dark:bg-yellow-900/50",
-    group: "Produk Kami", // Grup baru
+    group: "Produk Kami",
   },
   {
     title: "PDF Editor",
@@ -109,18 +110,33 @@ const newCategories = [
   },
 ];
 
-// Mengelompokkan kategori baru berdasarkan properti 'group'
-const groupedNewCategories = newCategories.reduce((acc, item) => {
-  const groupName = item.group;
-  if (!acc[groupName]) {
-    acc[groupName] = [];
-  }
-  acc[groupName].push(item);
-  return acc;
-}, {});
-
 // --- Struktur Mega Menu yang Diperbarui ---
 const megaMenuData = {
+  "/produk": {
+    title: "Produk Kami",
+    columns: [
+      {
+        title: "Semua Produk",
+        items: [
+          {
+            name: "Lihat Semua Produk",
+            href: "/produk",
+            description: "Jelajahi semua produk yang kami tawarkan.",
+          },
+        ],
+      },
+      ...projects.projects.map((project) => ({
+        title: project.name,
+        items: [
+          {
+            name: project.product.name,
+            href: `/produk/${project.product.id}`,
+            description: project.product.description,
+          },
+        ],
+      })),
+    ],
+  },
   "/news": {
     title: "News",
     columns: [
@@ -384,6 +400,33 @@ const megaMenuData = {
           },
         ],
       },
+      {
+        title: "Produktivitas",
+        items: [
+          {
+            name: "Image Editor",
+            href: "/image",
+            description:
+              "Edit gambar dengan berbagai tools seperti crop, resize, dll.",
+          },
+          {
+            name: "PDF Editor",
+            href: "/pdf",
+            description: "Edit dan konversi file PDF dengan mudah.",
+          },
+        ],
+      },
+      {
+        title: "AI & Tools Lain",
+        items: [
+          {
+            name: "AI (Artificial Intelligence)",
+            href: "/ai",
+            description:
+              "Jelajahi perkembangan terbaru dalam Kecerdasan Buatan.",
+          },
+        ],
+      },
     ],
   },
   // Menambahkan entri untuk menu baru yang memiliki sub-menu
@@ -464,38 +507,6 @@ const megaMenuData = {
       },
     ],
   },
-  "/kategori/tools": {
-    title: "Produk Kami",
-    columns: [
-      {
-        title: "Produktivitas",
-        items: [
-          {
-            name: "Image Editor",
-            href: "/image",
-            description:
-              "Edit gambar dengan berbagai tools seperti crop, resize, dll.",
-          },
-          {
-            name: "PDF Editor",
-            href: "/pdf",
-            description: "Edit dan konversi file PDF dengan mudah.",
-          },
-        ],
-      },
-      {
-        title: "AI & Tools Lain",
-        items: [
-          {
-            name: "AI (Artificial Intelligence)",
-            href: "/ai",
-            description:
-              "Jelajahi perkembangan terbaru dalam Kecerdasan Buatan.",
-          },
-        ],
-      },
-    ],
-  },
 };
 
 // Responsive Navbar Component
@@ -508,7 +519,7 @@ const Navbar = () => {
 
   // --- Kategori Navigasi Utama yang Diperbarui ---
   const categories = [
-    { id: "/kategori/tools", name: "Produk Kami", isDropdown: true },
+    { id: "/produk", name: "Produk Kami", isDropdown: true },
     { id: "/kategori/artikel", name: "Artikel & Berita", isDropdown: true },
     { id: "/kategori/belajar", name: "Kelas & Tutorial", isDropdown: true },
     { id: "/about", name: "Tentang Kami" },
@@ -661,7 +672,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex gap-6 xl:gap-8 relative">
+          <nav className="hidden lg:flex gap-6 xl:gap-8 relative py-2">
             {categories.map((category) => {
               const hasMegaMenu = megaMenuData[category.id];
 
@@ -676,7 +687,7 @@ const Navbar = () => {
                     href={hasMegaMenu ? "#" : category.id} // Tautan non-klik untuk dropdown
                     onClick={(e) => hasMegaMenu && e.preventDefault()}
                     className={cn(
-                      `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative flex items-center gap-1 py-2 ${
+                      `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative flex items-center gap-1 py-8 ${
                         !hiddenMenu.includes(category.name.toLowerCase())
                           ? ""
                           : "hidden"
