@@ -200,13 +200,14 @@ export default function LandingPage({ projects }: any) {
                     <ArrowRight className="ml-2 size-4" />
                   </Button>
                 </WhatsappWrapper>
-                {/* <Button
+                <Button
                   size="lg"
+                  asChild
                   variant="outline"
                   className="rounded-full h-12 px-8 text-base"
                 >
-                  Book a Demo
-                </Button> */}
+                  <Link href="/produk">Lihat Produk</Link>
+                </Button>
               </div>
               <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">
@@ -230,7 +231,7 @@ export default function LandingPage({ projects }: any) {
           </div>
         </section>
         {/* Trusted By Section */}
-        <section className="w-full bg-background py-16 sm:py-24">
+        <section className="w-full bg-background py-8 sm:py-16">
           <div className="container mx-auto px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
