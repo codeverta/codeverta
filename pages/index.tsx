@@ -227,9 +227,6 @@ export default function LandingPage({ projects }: any) {
                 </div>
               </div>
             </motion.div>
-
-            {/* Tambahkan konten tersebut disini */}
-            <ProjectsSection projects={projects} />
           </div>
         </section>
         {/* Trusted By Section */}
@@ -243,7 +240,7 @@ export default function LandingPage({ projects }: any) {
               className="mx-auto max-w-4xl text-center"
             >
               <h2 className="text-center text-lg font-semibold leading-8 text-muted-foreground">
-                Dipercaya oleh UMKM, Startup, Bisnis, dan Pemerintahan
+                Dipercaya oleh UKM, Startup, Bisnis Swasta, dan Pemerintahan
               </h2>
               <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
                 {logos.map((logo, index) => (
@@ -262,6 +259,8 @@ export default function LandingPage({ projects }: any) {
             </motion.div>
           </div>
         </section>
+        {/* Tambahkan konten tersebut disini */}
+        <ProjectsSection projects={projects} />
         {/* Features Section */}
         <section id="features" className="w-full py-20 md:py-32">
           <div className="container px-4 md:px-6">
