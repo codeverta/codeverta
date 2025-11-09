@@ -192,7 +192,10 @@ const CybersecurityCourse = () => {
         "Serverless Security",
         "Cloud Access Security Broker (CASB)",
         "Cloud Workload Protection",
-        "Data Loss Prevention (DLP)",
+        {
+          title: "Data Loss Prevention (DLP)",
+          url: "/course/cybersecurity/14-data-loss-prevention-dlp",
+        },
         "Cloud Compliance",
         "DevSecOps in Cloud",
         "Multi-Cloud Security Strategy",

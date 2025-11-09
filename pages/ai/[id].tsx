@@ -57,12 +57,8 @@ function Post({ postData, slug }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
-  const [likeCount, setLikeCount] = useState(
-      50
-  );
-  const [viewCount, setViewCount] = useState(
-    1000
-  );
+  const [likeCount, setLikeCount] = useState(50);
+  const [viewCount, setViewCount] = useState(1000);
   const [showShareModal, setShowShareModal] = useState(false);
   const [showTableOfContents, setShowTableOfContents] = useState(false);
   const [activeSection, setActiveSection] = useState("");
@@ -509,42 +505,6 @@ function Post({ postData, slug }) {
                     </div>
                   )}
                 </header>
-              </div>
-            </div>
-
-            {/* Article Highlights Section */}
-            <div className="px-6 sm:px-8 md:px-12 pb-8">
-              <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg p-6 mb-8">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
-                  <Lightbulb className="w-5 h-5 mr-2 text-yellow-500" />
-                  What You'll Learn
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Core concepts and implementations
-                    </span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Best practices and optimization techniques
-                    </span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Real-world examples and use cases
-                    </span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Advanced tips and tricks
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
 

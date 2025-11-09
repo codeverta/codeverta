@@ -508,42 +508,6 @@ function Post({ postData, slug }) {
               </div>
             </div>
 
-            {/* Article Highlights Section */}
-            <div className="px-6 sm:px-8 md:px-12 pb-8">
-              <div className="bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-lg p-6 mb-8">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
-                  <Lightbulb className="w-5 h-5 mr-2 text-yellow-500" />
-                  What You'll Learn
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Core concepts and implementations
-                    </span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Best practices and optimization techniques
-                    </span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Real-world examples and use cases
-                    </span>
-                  </div>
-                  <div className="flex items-start space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">
-                      Advanced tips and tricks
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Content Section */}
             <div className="px-6 sm:px-8 md:px-12 pb-8">
               <div
@@ -615,29 +579,6 @@ function Post({ postData, slug }) {
               <RelatedPosts posts={postData.relatedPosts} />
             </div>
           )}
-
-          {/* Newsletter Signup */}
-          <div className="mt-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 text-white">
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-2">
-                Stay Updated with Latest Tech Trends
-              </h3>
-              <p className="text-blue-100 mb-6">
-                Get weekly insights, tutorials, and industry news delivered to
-                your inbox.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg text-gray-900 border-0 focus:ring-2 focus:ring-white"
-                />
-                <button className="px-6 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </main>
     </>
