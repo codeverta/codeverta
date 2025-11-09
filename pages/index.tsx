@@ -193,7 +193,7 @@ export default function LandingPage({ projects }: any) {
                 <WhatsappWrapper>
                   <Button
                     size="lg"
-                    className="rounded-full h-12 px-8 text-base"
+                    className="rounded-full w-full h-12 px-8 text-base"
                   >
                     <WhatsAppIcon />
                     Whatsapp Sekarang
