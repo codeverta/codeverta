@@ -439,7 +439,7 @@ function Post({ postData, slug }) {
                       </div>
                       <div>
                         <div className="font-semibold text-gray-900 dark:text-gray-100">
-                          Codeverta Team 👨‍💻
+                          Rabih Utomo 👨‍💻
                         </div>
                         <div className="text-sm text-gray-600 dark:text-gray-400">
                           Tech Content Creator

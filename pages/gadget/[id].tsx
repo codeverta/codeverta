@@ -57,12 +57,8 @@ function Post({ postData, slug }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
-  const [likeCount, setLikeCount] = useState(
-      50
-  );
-  const [viewCount, setViewCount] = useState(
-    1000
-  );
+  const [likeCount, setLikeCount] = useState(50);
+  const [viewCount, setViewCount] = useState(1000);
   const [showShareModal, setShowShareModal] = useState(false);
   const [showTableOfContents, setShowTableOfContents] = useState(false);
   const [activeSection, setActiveSection] = useState("");
@@ -452,7 +448,7 @@ function Post({ postData, slug }) {
                       </div>
                       <div>
                         <div className="font-semibold text-gray-900 dark:text-gray-100">
-                          Codeverta Team 👨‍💻
+                          Rabih Utomo 👨‍💻
                         </div>
                         <div className="text-sm text-gray-600 dark:text-gray-400">
                           Tech Content Creator
