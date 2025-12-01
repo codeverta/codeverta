@@ -699,12 +699,12 @@ const CourseDetail = () => {
                   </div>
                 </div>
                 <p className="text-sm leading-relaxed text-slate-700">
-                  Rizky adalah seorang engineer berpengalaman dengan
+                  Rabih Utomo adalah seorang engineer berpengalaman dengan
                   spesialisasi di bidang NLP dan Generative AI. Ia telah bekerja
                   di berbagai startup teknologi unicorn di Indonesia dan
-                  berkontribusi pada implementasi LLM skala besar. Misi Rizky
-                  adalah mendemokratisasi pengetahuan AI agar dapat diakses oleh
-                  semua orang dengan bahasa yang mudah dimengerti.
+                  berkontribusi pada implementasi LLM skala besar. Misi Rabih
+                  Utomo adalah mendemokratisasi pengetahuan AI agar dapat
+                  diakses oleh semua orang dengan bahasa yang mudah dimengerti.
                 </p>
               </div>
             </div>
