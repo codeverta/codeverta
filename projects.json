@@ -1,251 +1,266 @@
 {
   "projects": [
-{
-  "product": {
-    "id": "e-commerce-platform",
-    "name": "E-commerce Platform untuk UKM/UMKM",
-    "description": "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online.",
-    "fullDescription": "Platform E-commerce ini dirancang untuk mendukung bisnis dalam menjual produk secara online dengan efisien dan aman. Sistem ini mencakup fitur-fitur inti seperti manajemen produk, pencarian dan filter katalog, keranjang belanja, checkout, pembayaran digital melalui Midtrans, serta manajemen pesanan dan pengguna. Platform ini dibangun dengan arsitektur modern dan responsif agar dapat diakses dari perangkat desktop maupun mobile.",
-    "image": "/assets/products/27.png",
-    "technologies": ["React", "Laravel", "MySQL", "Midtrans"],
-    "category": "E-commerce",
-    "status": "Completed",
-    "version": "1.0.0",
-    "lastUpdated": "Mei 2025",
-    "client": "PT Million Candles",
-    "duration": "6 bulan",
-    "teamSize": "6 orang (Frontend, Backend, UI/UX, QA, DevOps, PM)"
-  },
-  "hero": {
-    "buttons": {
-      "liveDemo": "Lihat Toko",
-      "sourceCode": "Kode Sumber",
-      "documentation": "Dokumentasi API"
-    }
-  },
-  "tabs": {
-    "triggers": {
-      "overview": "Ringkasan",
-      "features": "Fitur Utama",
-      "workflow": "Alur Pengguna",
-      "techStack": "Teknologi",
-      "screenshots": "Galeri",
-      "specs": "Spesifikasi"
-    }
-  },
-  "overview": {
-    "projectInfo": {
-      "title": "Info Proyek",
-      "clientLabel": "Klien",
-      "durationLabel": "Durasi",
-      "teamSizeLabel": "Ukuran Tim",
-      "lastUpdatedLabel": "Pembaruan Terakhir"
-    },
-    "platformSupport": {
-      "title": "Dukungan Platform",
-      "items": [
-        "Akses via Web Browser (Desktop & Mobile)",
-        "Optimasi SEO untuk visibilitas pencarian",
-        "Integrasi dengan Email & WhatsApp",
-        "Checkout dengan Midtrans & Transfer Manual"
-      ]
-    },
-    "architecture": {
-      "title": "Arsitektur Sistem",
-      "items": [
-        "Monolithic Backend dengan Laravel",
-        "Frontend terpisah berbasis React",
-        "RESTful API untuk komunikasi antara frontend & backend",
-        "Middleware keamanan CSRF & Rate Limiting"
-      ]
-    },
-    "projectDescription": {
-      "title": "Deskripsi Proyek",
-      "paragraphs": [
-        "Proyek ini bertujuan memberikan solusi digital bagi klien dalam memperluas kanal penjualan mereka secara online. Banyak UMKM dan bisnis menengah kesulitan membangun e-commerce sendiri karena kompleksitas sistem.",
-        "Platform ini dirancang dengan fokus pada kemudahan pengguna, baik dari sisi pembeli maupun admin. Admin dapat mengelola produk, kategori, promo, dan pesanan tanpa kesulitan, sementara pembeli dapat mencari, menambahkan produk ke keranjang, dan melakukan checkout dengan mudah.",
-        "Fitur integrasi pembayaran dengan Midtrans memungkinkan transaksi yang aman dan cepat, termasuk metode seperti e-wallet, transfer bank, dan QRIS. Platform ini siap digunakan untuk berbagai model bisnis ritel skala kecil hingga menengah."
-      ]
-    }
-  },
-  "features": [
     {
-      "icon": "ShoppingBag",
-      "title": "Manajemen Katalog Produk",
-      "description": "Menambahkan, mengedit, dan menghapus produk dengan gambar, deskripsi, harga, dan stok."
-    },
-    {
-      "icon": "Filter",
-      "title": "Pencarian & Filter Kategori",
-      "description": "Navigasi mudah dengan filter berdasarkan kategori, harga, dan popularitas."
-    },
-    {
-      "icon": "ShoppingCart",
-      "title": "Keranjang Belanja",
-      "description": "Pengguna dapat menambahkan produk ke keranjang dan mengatur jumlah sebelum checkout."
-    },
-    {
-      "icon": "CreditCard",
-      "title": "Checkout & Pembayaran",
-      "description": "Proses pembayaran cepat melalui Midtrans dengan berbagai metode pembayaran."
-    },
-    {
-      "icon": "Truck",
-      "title": "Manajemen Pengiriman",
-      "description": "Notifikasi otomatis dan pelacakan status pesanan mulai dari konfirmasi hingga pengiriman."
-    },
-    {
-      "icon": "UserCheck",
-      "title": "Manajemen Pengguna",
-      "description": "Pengelolaan akun pengguna, riwayat pembelian, dan keamanan login."
-    }
-  ],
-  "workflow": {
-    "title": "Alur Pengguna Umum",
-    "steps": [
-      {
-        "step": 1,
-        "icon": "Search",
-        "title": "Menelusuri Katalog",
-        "description": "Pengguna mencari produk melalui pencarian atau navigasi kategori."
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-commerce Platform untuk UKM/UMKM",
+        "description": "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online.",
+        "fullDescription": "Platform E-commerce ini dirancang untuk mendukung bisnis dalam menjual produk secara online dengan efisien dan aman. Sistem ini mencakup fitur-fitur inti seperti manajemen produk, pencarian dan filter katalog, keranjang belanja, checkout, pembayaran digital melalui Midtrans, serta manajemen pesanan dan pengguna. Platform ini dibangun dengan arsitektur modern dan responsif agar dapat diakses dari perangkat desktop maupun mobile.",
+        "image": "/assets/products/27.png",
+        "technologies": ["React", "Laravel", "MySQL", "Midtrans"],
+        "category": "E-commerce",
+        "status": "Completed",
+        "version": "1.0.0",
+        "lastUpdated": "Mei 2025",
+        "client": "PT Million Candles",
+        "duration": "6 bulan",
+        "teamSize": "6 orang (Frontend, Backend, UI/UX, QA, DevOps, PM)"
       },
-      {
-        "step": 2,
-        "icon": "ShoppingCart",
-        "title": "Menambahkan ke Keranjang",
-        "description": "Produk pilihan dimasukkan ke keranjang untuk pembelian."
+      "hero": {
+        "buttons": {
+          "liveDemo": "Lihat Toko",
+          "sourceCode": "Kode Sumber",
+          "documentation": "Dokumentasi API"
+        }
       },
-      {
-        "step": 3,
-        "icon": "CreditCard",
-        "title": "Checkout",
-        "description": "Pengguna mengisi detail pengiriman dan memilih metode pembayaran."
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Pengguna",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
       },
-      {
-        "step": 4,
-        "icon": "CheckCircle",
-        "title": "Pembayaran & Konfirmasi",
-        "description": "Sistem memproses pembayaran dan mengirim notifikasi kepada admin & pengguna."
+      "overview": {
+        "projectInfo": {
+          "title": "Info Proyek",
+          "clientLabel": "Klien",
+          "durationLabel": "Durasi",
+          "teamSizeLabel": "Ukuran Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Platform",
+          "items": [
+            "Akses via Web Browser (Desktop & Mobile)",
+            "Optimasi SEO untuk visibilitas pencarian",
+            "Integrasi dengan Email & WhatsApp",
+            "Checkout dengan Midtrans & Transfer Manual"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Monolithic Backend dengan Laravel",
+            "Frontend terpisah berbasis React",
+            "RESTful API untuk komunikasi antara frontend & backend",
+            "Middleware keamanan CSRF & Rate Limiting"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Proyek ini bertujuan memberikan solusi digital bagi klien dalam memperluas kanal penjualan mereka secara online. Banyak UMKM dan bisnis menengah kesulitan membangun e-commerce sendiri karena kompleksitas sistem.",
+            "Platform ini dirancang dengan fokus pada kemudahan pengguna, baik dari sisi pembeli maupun admin. Admin dapat mengelola produk, kategori, promo, dan pesanan tanpa kesulitan, sementara pembeli dapat mencari, menambahkan produk ke keranjang, dan melakukan checkout dengan mudah.",
+            "Fitur integrasi pembayaran dengan Midtrans memungkinkan transaksi yang aman dan cepat, termasuk metode seperti e-wallet, transfer bank, dan QRIS. Platform ini siap digunakan untuk berbagai model bisnis ritel skala kecil hingga menengah."
+          ]
+        }
       },
-      {
-        "step": 5,
-        "icon": "Truck",
-        "title": "Pengiriman Produk",
-        "description": "Admin memproses dan mengirimkan produk, lalu sistem memperbarui status pesanan."
+      "features": [
+        {
+          "icon": "ShoppingBag",
+          "title": "Manajemen Katalog Produk",
+          "description": "Menambahkan, mengedit, dan menghapus produk dengan gambar, deskripsi, harga, dan stok."
+        },
+        {
+          "icon": "Filter",
+          "title": "Pencarian & Filter Kategori",
+          "description": "Navigasi mudah dengan filter berdasarkan kategori, harga, dan popularitas."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Keranjang Belanja",
+          "description": "Pengguna dapat menambahkan produk ke keranjang dan mengatur jumlah sebelum checkout."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Checkout & Pembayaran",
+          "description": "Proses pembayaran cepat melalui Midtrans dengan berbagai metode pembayaran."
+        },
+        {
+          "icon": "Truck",
+          "title": "Manajemen Pengiriman",
+          "description": "Notifikasi otomatis dan pelacakan status pesanan mulai dari konfirmasi hingga pengiriman."
+        },
+        {
+          "icon": "UserCheck",
+          "title": "Manajemen Pengguna",
+          "description": "Pengelolaan akun pengguna, riwayat pembelian, dan keamanan login."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Pengguna Umum",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Search",
+            "title": "Menelusuri Katalog",
+            "description": "Pengguna mencari produk melalui pencarian atau navigasi kategori."
+          },
+          {
+            "step": 2,
+            "icon": "ShoppingCart",
+            "title": "Menambahkan ke Keranjang",
+            "description": "Produk pilihan dimasukkan ke keranjang untuk pembelian."
+          },
+          {
+            "step": 3,
+            "icon": "CreditCard",
+            "title": "Checkout",
+            "description": "Pengguna mengisi detail pengiriman dan memilih metode pembayaran."
+          },
+          {
+            "step": 4,
+            "icon": "CheckCircle",
+            "title": "Pembayaran & Konfirmasi",
+            "description": "Sistem memproses pembayaran dan mengirim notifikasi kepada admin & pengguna."
+          },
+          {
+            "step": 5,
+            "icon": "Truck",
+            "title": "Pengiriman Produk",
+            "description": "Admin memproses dan mengirimkan produk, lalu sistem memperbarui status pesanan."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React",
+              "description": "Library JavaScript untuk membangun antarmuka pengguna interaktif dan responsif."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Framework CSS utility-first untuk styling cepat dan konsisten."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Laravel 10",
+              "description": "Framework PHP modern yang menyediakan sistem routing, autentikasi, dan ORM (Eloquent)."
+            },
+            {
+              "name": "Midtrans API",
+              "description": "Gateway pembayaran terkemuka di Indonesia untuk kartu kredit, e-wallet, dan transfer bank."
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "MySQL",
+              "description": "Sistem basis data relasional untuk menyimpan data produk, pengguna, dan transaksi."
+            }
+          ]
+        },
+        {
+          "category": "Infrastructure & DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "Menjalankan frontend dan backend dalam container terisolasi untuk kemudahan deployment."
+            },
+            {
+              "name": "GitHub Actions",
+              "description": "CI/CD pipeline untuk otomatisasi build dan deployment saat kode diperbarui."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Halaman Beranda Toko",
+          "image": "/assets/products/26.png",
+          "description": "Menampilkan banner promo, kategori utama, dan produk unggulan."
+        },
+        {
+          "title": "Katalog Produk",
+          "image": "/placeholder.svg",
+          "description": "Grid produk dengan gambar, nama, harga, dan tombol tambah ke keranjang."
+        },
+        {
+          "title": "Halaman Checkout",
+          "image": "/placeholder.svg",
+          "description": "Formulir checkout dengan pilihan metode pembayaran dan alamat pengiriman."
+        },
+        {
+          "title": "Dashboard Admin",
+          "image": "/placeholder.svg",
+          "description": "Statistik penjualan, manajemen produk, dan daftar pesanan dalam satu panel."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Kebutuhan Sistem",
+          "server": {
+            "title": "Kebutuhan Server",
+            "items": [
+              "PHP 8.2+",
+              "MySQL 8+",
+              "Node.js untuk build React",
+              "2 vCPU, 4GB RAM minimum"
+            ]
+          },
+          "client": {
+            "title": "Kebutuhan Klien",
+            "items": [
+              "Browser modern (Chrome, Firefox, Safari)",
+              "Koneksi internet stabil"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Performa",
+          "metrics": [
+            { "label": "Load Time Halaman Utama", "value": "< 300 ms" },
+            { "label": "Rata-rata Response API", "value": "< 200 ms" },
+            { "label": "Checkout Completion Rate", "value": "> 100%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Fitur Keamanan",
+          "items": [
+            "Autentikasi & Otorisasi berbasis Laravel Sanctum",
+            "Validasi & Sanitasi Input",
+            "Integrasi HTTPS dengan Sertifikat SSL",
+            "Webhook Signature Verification (Midtrans)"
+          ]
+        }
       }
-    ]
-  },
-  "techStack": [
-    {
-      "category": "Frontend",
-      "technologies": [
-        {
-          "name": "React",
-          "description": "Library JavaScript untuk membangun antarmuka pengguna interaktif dan responsif."
-        },
-        {
-          "name": "Tailwind CSS",
-          "description": "Framework CSS utility-first untuk styling cepat dan konsisten."
-        }
-      ]
     },
-    {
-      "category": "Backend",
-      "technologies": [
-        {
-          "name": "Laravel 10",
-          "description": "Framework PHP modern yang menyediakan sistem routing, autentikasi, dan ORM (Eloquent)."
-        },
-        {
-          "name": "Midtrans API",
-          "description": "Gateway pembayaran terkemuka di Indonesia untuk kartu kredit, e-wallet, dan transfer bank."
-        }
-      ]
-    },
-    {
-      "category": "Database",
-      "technologies": [
-        {
-          "name": "MySQL",
-          "description": "Sistem basis data relasional untuk menyimpan data produk, pengguna, dan transaksi."
-        }
-      ]
-    },
-    {
-      "category": "Infrastructure & DevOps",
-      "technologies": [
-        {
-          "name": "Docker",
-          "description": "Menjalankan frontend dan backend dalam container terisolasi untuk kemudahan deployment."
-        },
-        {
-          "name": "GitHub Actions",
-          "description": "CI/CD pipeline untuk otomatisasi build dan deployment saat kode diperbarui."
-        }
-      ]
-    }
-  ],
-  "screenshots": [
-    {
-      "title": "Halaman Beranda Toko",
-      "image": "/assets/products/26.png",
-      "description": "Menampilkan banner promo, kategori utama, dan produk unggulan."
-    },
-    {
-      "title": "Katalog Produk",
-      "image": "/placeholder.svg",
-      "description": "Grid produk dengan gambar, nama, harga, dan tombol tambah ke keranjang."
-    },
-    {
-      "title": "Halaman Checkout",
-      "image": "/placeholder.svg",
-      "description": "Formulir checkout dengan pilihan metode pembayaran dan alamat pengiriman."
-    },
-    {
-      "title": "Dashboard Admin",
-      "image": "/placeholder.svg",
-      "description": "Statistik penjualan, manajemen produk, dan daftar pesanan dalam satu panel."
-    }
-  ],
-  "specifications": {
-    "systemRequirements": {
-      "title": "Kebutuhan Sistem",
-      "server": {
-        "title": "Kebutuhan Server",
-        "items": ["PHP 8.2+", "MySQL 8+", "Node.js untuk build React", "2 vCPU, 4GB RAM minimum"]
-      },
-      "client": {
-        "title": "Kebutuhan Klien",
-        "items": ["Browser modern (Chrome, Firefox, Safari)", "Koneksi internet stabil"]
-      }
-    },
-    "performanceMetrics": {
-      "title": "Metrik Performa",
-      "metrics": [
-        { "label": "Load Time Halaman Utama", "value": "< 300 ms" },
-        { "label": "Rata-rata Response API", "value": "< 200 ms" },
-        { "label": "Checkout Completion Rate", "value": "> 100%" }
-      ]
-    },
-    "securityFeatures": {
-      "title": "Fitur Keamanan",
-      "items": [
-        "Autentikasi & Otorisasi berbasis Laravel Sanctum",
-        "Validasi & Sanitasi Input",
-        "Integrasi HTTPS dengan Sertifikat SSL",
-        "Webhook Signature Verification (Midtrans)"
-      ]
-    }
-  }
-},
     {
       "product": {
         "id": "smart-pos-system",
         "name": "Smart POS System",
         "description": "Point of Sale system modern dengan fitur inventory dan reporting real-time.",
-        "fullDescription": "Smart POS System adalah solusi point of sale yang komprehensif dan modern, dirancang khusus untuk memenuhi kebutuhan bisnis retail, restoran, dan toko...",
+        "fullDescription": "Smart POS System adalah solusi point of sale yang komprehensif dan modern, dirancang khusus untuk memenuhi kebutuhan bisnis retail, restoran, dan toko. Sistem ini menawarkan fitur manajemen inventaris, laporan penjualan real-time, serta dukungan multi-channel untuk penjualan online dan offline. Dengan antarmuka yang intuitif, sistem ini memudahkan staf dalam melakukan transaksi, memantau stok, dan menghasilkan laporan bisnis secara efisien. Smart POS System juga dibangun dengan arsitektur modular dan scalable, memungkinkan integrasi dengan berbagai layanan pihak ketiga serta pengembangan fitur baru di masa depan.",
         "image": "/assets/products/33.png",
-        "technologies": ["Vue.js", "Laravel", "MySQL", "Socket.io", "Redis", "Docker"],
+        "technologies": [
+          "Vue.js",
+          "Laravel",
+          "MySQL",
+          "Socket.io",
+          "Redis",
+          "Docker"
+        ],
         "category": "Point of Sale",
         "status": "Completed",
         "version": "2.1.0",
@@ -255,64 +270,162 @@
         "teamSize": "5 developers"
       },
       "hero": {
-        "buttons": { "liveDemo": "Live Demo", "sourceCode": "Source Code", "documentation": "Documentation" }
+        "buttons": {
+          "liveDemo": "Live Demo",
+          "sourceCode": "Source Code",
+          "documentation": "Documentation"
+        }
       },
       "tabs": {
-        "triggers": { "overview": "Overview", "features": "Features", "workflow": "Workflow", "techStack": "Tech Stack", "screenshots": "Screenshots", "specs": "Specifications" }
+        "triggers": {
+          "overview": "Overview",
+          "features": "Features",
+          "workflow": "Workflow",
+          "techStack": "Tech Stack",
+          "screenshots": "Screenshots",
+          "specs": "Specifications"
+        }
       },
       "overview": {
-        "projectInfo": { "title": "Project Info", "clientLabel": "Client", "durationLabel": "Duration", "teamSizeLabel": "Team Size", "lastUpdatedLabel": "Last Updated" },
-        "platformSupport": { "title": "Platform Support", "items": ["Web Application", "Mobile Responsive", "Tablet Optimized", "PWA Support"] },
-        "architecture": { "title": "Architecture", "items": ["SPA (Single Page App)", "RESTful API", "Real-time Updates", "Microservices Ready"] },
+        "projectInfo": {
+          "title": "Project Info",
+          "clientLabel": "Client",
+          "durationLabel": "Duration",
+          "teamSizeLabel": "Team Size",
+          "lastUpdatedLabel": "Last Updated"
+        },
+        "platformSupport": {
+          "title": "Platform Support",
+          "items": [
+            "Web Application",
+            "Mobile Responsive",
+            "Tablet Optimized",
+            "PWA Support"
+          ]
+        },
+        "architecture": {
+          "title": "Architecture",
+          "items": [
+            "SPA (Single Page App)",
+            "RESTful API",
+            "Real-time Updates",
+            "Microservices Ready"
+          ]
+        },
         "projectDescription": {
           "title": "Project Description",
           "paragraphs": [
-            "Smart POS System dikembangkan untuk memenuhi kebutuhan bisnis retail modern...",
-            "Sistem ini dirancang dengan arsitektur yang scalable dan modular...",
-            "Implementasi real-time technology memastikan bahwa semua data inventory..."
+            "Smart POS System dikembangkan untuk memenuhi kebutuhan bisnis retail modern, restoran, dan toko yang menginginkan sistem point of sale terintegrasi dengan inventory dan reporting real-time.",
+            "Sistem ini dirancang dengan arsitektur yang scalable dan modular, memudahkan penambahan fitur baru dan integrasi dengan sistem eksternal seperti e-commerce, payment gateway, dan perangkat keras POS.",
+            "Implementasi real-time technology memastikan bahwa semua data inventory, transaksi, dan laporan selalu terupdate, sehingga manajemen bisnis dapat mengambil keputusan secara cepat dan akurat.",
+            "Fitur multi-channel sales memungkinkan bisnis untuk menjual produk secara offline maupun online dalam satu platform, sehingga memudahkan pemantauan performa penjualan di berbagai kanal.",
+            "Dashboard analytics yang interaktif menampilkan data penjualan, profit, dan tren secara real-time, membantu manajer dalam merencanakan strategi bisnis yang lebih efektif."
           ]
         }
       },
       "features": [
-        { "icon": "ShoppingCart", "title": "Multi-Channel Sales", "description": "Mendukung penjualan online dan offline dalam satu sistem terintegrasi" },
-        { "icon": "BarChart3", "title": "Real-time Analytics", "description": "Dashboard analytics dengan laporan penjualan, profit, dan trend real-time" }
+        {
+          "icon": "ShoppingCart",
+          "title": "Multi-Channel Sales",
+          "description": "Mendukung penjualan online dan offline dalam satu sistem terintegrasi"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Real-time Analytics",
+          "description": "Dashboard analytics dengan laporan penjualan, profit, dan trend real-time"
+        }
       ],
       "workflow": {
         "title": "Sales Transaction Workflow",
         "steps": [
-          { "step": 1, "icon": "Package", "title": "Product Scanning", "description": "Scan barcode produk atau pilih dari katalog" },
-          { "step": 2, "icon": "ShoppingCart", "title": "Cart Management", "description": "Tambah/kurangi quantity, apply discount atau promo" }
+          {
+            "step": 1,
+            "icon": "Package",
+            "title": "Product Scanning",
+            "description": "Scan barcode produk atau pilih dari katalog"
+          },
+          {
+            "step": 2,
+            "icon": "ShoppingCart",
+            "title": "Cart Management",
+            "description": "Tambah/kurangi quantity, apply discount atau promo"
+          }
         ]
       },
       "techStack": [
         {
           "category": "Frontend",
-          "technologies": [{ "name": "Vue.js 3", "description": "Progressive JavaScript framework untuk UI yang reaktif" }]
+          "technologies": [
+            {
+              "name": "Vue.js 3",
+              "description": "Progressive JavaScript framework untuk UI yang reaktif"
+            }
+          ]
         },
         {
           "category": "Backend",
           "technologies": [
-            { "name": "Laravel 10", "description": "Framework PHP untuk membangun API yang aman dan scalable" },
-            { "name": "Socket.io", "description": "Library untuk komunikasi real-time antara server dan klien" }
+            {
+              "name": "Laravel 10",
+              "description": "Framework PHP untuk membangun API yang aman dan scalable"
+            },
+            {
+              "name": "Socket.io",
+              "description": "Library untuk komunikasi real-time antara server dan klien"
+            }
           ]
         },
         {
           "category": "Database",
-          "technologies": [{ "name": "MySQL 8", "description": "Sistem manajemen basis data relasional yang handal" }]
+          "technologies": [
+            {
+              "name": "MySQL 8",
+              "description": "Sistem manajemen basis data relasional yang handal"
+            }
+          ]
         },
         {
           "category": "DevOps",
-          "technologies": [{ "name": "Docker", "description": "Kontainerisasi aplikasi untuk konsistensi lingkungan" }]
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "Kontainerisasi aplikasi untuk konsistensi lingkungan"
+            }
+          ]
         }
       ],
       "screenshots": [
-        { "title": "Dashboard Overview", "image": "/assets/products/12.png", "description": "Dashboard utama dengan sales summary dan quick actions" },
-        { "title": "Dashboard Overview", "image": "/assets/products/13.png", "description": "Dashboard utama dengan sales summary dan quick actions" }
+        {
+          "title": "Dashboard Overview",
+          "image": "/assets/products/12.png",
+          "description": "Dashboard utama dengan sales summary dan quick actions"
+        },
+        {
+          "title": "Dashboard Overview",
+          "image": "/assets/products/13.png",
+          "description": "Dashboard utama dengan sales summary dan quick actions"
+        }
       ],
       "specifications": {
-        "systemRequirements": { "title": "System Requirements", "server": { "title": "Server Requirements", "items": ["PHP 8.1 or higher", "MySQL 8.0 or higher"] }, "client": { "title": "Client Requirements", "items": ["Modern web browser", "JavaScript enabled"] } },
-        "performanceMetrics": { "title": "Performance Metrics", "metrics": [{ "label": "Page Load Time", "value": "< 300 ms" }] },
-        "securityFeatures": { "title": "Security Features", "items": ["SSL/TLS Encryption", "Role-based Access Control"] }
+        "systemRequirements": {
+          "title": "System Requirements",
+          "server": {
+            "title": "Server Requirements",
+            "items": ["PHP 8.1 or higher", "MySQL 8.0 or higher"]
+          },
+          "client": {
+            "title": "Client Requirements",
+            "items": ["Modern web browser", "JavaScript enabled"]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Performance Metrics",
+          "metrics": [{ "label": "Page Load Time", "value": "< 300 ms" }]
+        },
+        "securityFeatures": {
+          "title": "Security Features",
+          "items": ["SSL/TLS Encryption", "Role-based Access Control"]
+        }
       }
     },
     {
@@ -322,7 +435,14 @@
         "description": "Sistem Informasi Geografis berbasis web untuk pemetaan dan analisis spasial.",
         "fullDescription": "WebGIS Platform adalah sebuah solusi Sistem Informasi Geografis (SIG) interaktif berbasis web yang dirancang untuk visualisasi, analisis, dan manajemen data geospasial. Platform ini memungkinkan pengguna untuk mengunggah data, membuat peta tematik, melakukan analisis spasial seperti buffering dan overlay, serta membagikan hasilnya dengan mudah melalui browser.",
         "image": "/assets/products/28.png",
-        "technologies": ["React", "Leaflet.js", "Node.js", "PostgreSQL", "PostGIS", "GeoServer"],
+        "technologies": [
+          "React",
+          "Leaflet.js",
+          "Node.js",
+          "PostgreSQL",
+          "PostGIS",
+          "GeoServer"
+        ],
         "category": "Geographic Information System",
         "status": "Completed",
         "version": "1.5.0",
@@ -454,24 +574,48 @@
         {
           "category": "Frontend",
           "technologies": [
-            { "name": "React 18", "description": "Library JavaScript untuk membangun antarmuka pengguna yang reaktif dan berbasis komponen." },
-            { "name": "Leaflet.js", "description": "Library peta interaktif open-source yang ringan dan fleksibel." },
-            { "name": "Turf.js", "description": "Library untuk analisis geospasial tingkat lanjut di sisi klien." }
+            {
+              "name": "React 18",
+              "description": "Library JavaScript untuk membangun antarmuka pengguna yang reaktif dan berbasis komponen."
+            },
+            {
+              "name": "Leaflet.js",
+              "description": "Library peta interaktif open-source yang ringan dan fleksibel."
+            },
+            {
+              "name": "Turf.js",
+              "description": "Library untuk analisis geospasial tingkat lanjut di sisi klien."
+            }
           ]
         },
         {
           "category": "Backend",
           "technologies": [
-            { "name": "Node.js (Express)", "description": "Runtime JavaScript untuk membangun API yang cepat dan scalable." },
-            { "name": "GeoServer", "description": "Server open-source untuk mempublikasikan data geospasial menggunakan standar OGC." },
-            { "name": "GDAL/OGR", "description": "Library untuk membaca, menulis, dan mengonversi berbagai format data spasial." }
+            {
+              "name": "Node.js (Express)",
+              "description": "Runtime JavaScript untuk membangun API yang cepat dan scalable."
+            },
+            {
+              "name": "GeoServer",
+              "description": "Server open-source untuk mempublikasikan data geospasial menggunakan standar OGC."
+            },
+            {
+              "name": "GDAL/OGR",
+              "description": "Library untuk membaca, menulis, dan mengonversi berbagai format data spasial."
+            }
           ]
         },
         {
           "category": "Database",
           "technologies": [
-            { "name": "PostgreSQL 16", "description": "Sistem basis data relasional objek yang kuat dan open-source." },
-            { "name": "PostGIS 3.4", "description": "Ekstensi spasial untuk PostgreSQL yang menambahkan dukungan untuk objek geografis." }
+            {
+              "name": "PostgreSQL 16",
+              "description": "Sistem basis data relasional objek yang kuat dan open-source."
+            },
+            {
+              "name": "PostGIS 3.4",
+              "description": "Ekstensi spasial untuk PostgreSQL yang menambahkan dukungan untuk objek geografis."
+            }
           ]
         }
       ],
@@ -497,11 +641,18 @@
           "title": "Kebutuhan Sistem",
           "server": {
             "title": "Kebutuhan Server",
-            "items": ["Node.js 18.x atau lebih tinggi", "PostgreSQL 14+ dengan PostGIS", "Java 11+ (untuk GeoServer)"]
+            "items": [
+              "Node.js 18.x atau lebih tinggi",
+              "PostgreSQL 14+ dengan PostGIS",
+              "Java 11+ (untuk GeoServer)"
+            ]
           },
           "client": {
             "title": "Kebutuhan Klien",
-            "items": ["Browser modern dengan dukungan JavaScript (ES6+)", "Koneksi internet stabil"]
+            "items": [
+              "Browser modern dengan dukungan JavaScript (ES6+)",
+              "Koneksi internet stabil"
+            ]
           }
         },
         "performanceMetrics": {
@@ -530,7 +681,14 @@
         "description": "Sistem ERP terintegrasi untuk mengelola seluruh proses bisnis perusahaan.",
         "fullDescription": "Sistem Enterprise Resource Planning (ERP) ini dirancang sebagai solusi terpusat untuk mengintegrasikan dan mengotomatiskan seluruh fungsi bisnis inti perusahaan, mulai dari keuangan, sumber daya manusia, manajemen inventaris, penjualan, hingga manufaktur dalam satu platform yang kohesif dan real-time.",
         "image": "/assets/products/29.png",
-        "technologies": ["Next.js", "Node.js", "TypeScript", "MySQL", "Redis", "Docker"],
+        "technologies": [
+          "Next.js",
+          "Node.js",
+          "TypeScript",
+          "MySQL",
+          "Redis",
+          "Docker"
+        ],
         "category": "Enterprise Resource Planning",
         "status": "In Development",
         "version": "0.8.0",
@@ -661,32 +819,65 @@
         {
           "category": "Frontend",
           "technologies": [
-            { "name": "Next.js 14 (React)", "description": "Framework React untuk aplikasi web modern dengan Server-Side Rendering (SSR) dan performa tinggi." },
-            { "name": "TypeScript", "description": "Superset JavaScript yang menambahkan pengetikan statis untuk skalabilitas dan keandalan kode." },
-            { "name": "Zustand", "description": "Manajemen state yang ringan dan sederhana untuk React." }
+            {
+              "name": "Next.js 14 (React)",
+              "description": "Framework React untuk aplikasi web modern dengan Server-Side Rendering (SSR) dan performa tinggi."
+            },
+            {
+              "name": "TypeScript",
+              "description": "Superset JavaScript yang menambahkan pengetikan statis untuk skalabilitas dan keandalan kode."
+            },
+            {
+              "name": "Zustand",
+              "description": "Manajemen state yang ringan dan sederhana untuk React."
+            }
           ]
         },
         {
           "category": "Backend",
           "technologies": [
-            { "name": "Node.js (NestJS)", "description": "Framework Node.js yang progresif untuk membangun aplikasi sisi server yang efisien dan scalable." },
-            { "name": "TypeORM", "description": "Object-Relational Mapper (ORM) untuk TypeScript dan JavaScript, mendukung MySQL." },
-            { "name": "RabbitMQ", "description": "Message broker untuk komunikasi asinkron yang andal antar layanan mikro." }
+            {
+              "name": "Node.js (NestJS)",
+              "description": "Framework Node.js yang progresif untuk membangun aplikasi sisi server yang efisien dan scalable."
+            },
+            {
+              "name": "TypeORM",
+              "description": "Object-Relational Mapper (ORM) untuk TypeScript dan JavaScript, mendukung MySQL."
+            },
+            {
+              "name": "RabbitMQ",
+              "description": "Message broker untuk komunikasi asinkron yang andal antar layanan mikro."
+            }
           ]
         },
         {
           "category": "Database & In-Memory",
           "technologies": [
-            { "name": "MySQL 8.0", "description": "Sistem manajemen basis data relasional yang teruji dan banyak digunakan untuk data transaksional." },
-            { "name": "Redis", "description": "Digunakan untuk caching, manajemen sesi, dan message broker sederhana." }
+            {
+              "name": "MySQL 8.0",
+              "description": "Sistem manajemen basis data relasional yang teruji dan banyak digunakan untuk data transaksional."
+            },
+            {
+              "name": "Redis",
+              "description": "Digunakan untuk caching, manajemen sesi, dan message broker sederhana."
+            }
           ]
         },
         {
           "category": "DevOps & Infrastructure",
           "technologies": [
-            { "name": "Docker", "description": "Platform kontainerisasi untuk mengemas dan menjalankan aplikasi secara konsisten." },
-            { "name": "Kubernetes", "description": "Sistem orkestrasi kontainer untuk mengotomatiskan deployment dan penskalaan aplikasi." },
-            { "name": "Jenkins", "description": "Server otomasi untuk membangun, menguji, dan mendeploy aplikasi (CI/CD)." }
+            {
+              "name": "Docker",
+              "description": "Platform kontainerisasi untuk mengemas dan menjalankan aplikasi secara konsisten."
+            },
+            {
+              "name": "Kubernetes",
+              "description": "Sistem orkestrasi kontainer untuk mengotomatiskan deployment dan penskalaan aplikasi."
+            },
+            {
+              "name": "Jenkins",
+              "description": "Server otomasi untuk membangun, menguji, dan mendeploy aplikasi (CI/CD)."
+            }
           ]
         }
       ],
@@ -717,11 +908,18 @@
           "title": "Kebutuhan Sistem",
           "server": {
             "title": "Kebutuhan Server (per microservice)",
-            "items": ["Node.js 20.x atau lebih tinggi", "Konektivitas ke MySQL & Redis", "Minimal 2 vCPU, 4GB RAM"]
+            "items": [
+              "Node.js 20.x atau lebih tinggi",
+              "Konektivitas ke MySQL & Redis",
+              "Minimal 2 vCPU, 4GB RAM"
+            ]
           },
           "client": {
             "title": "Kebutuhan Klien",
-            "items": ["Browser modern (Chrome, Firefox, Edge)", "Resolusi layar minimal 1366x768"]
+            "items": [
+              "Browser modern (Chrome, Firefox, Edge)",
+              "Resolusi layar minimal 1366x768"
+            ]
           }
         },
         "performanceMetrics": {
@@ -750,7 +948,14 @@
         "description": "Human Resource Management System untuk pengelolaan karyawan dan payroll.",
         "fullDescription": "HRMS Portal adalah platform manajemen sumber daya manusia yang dirancang untuk menyederhanakan dan mengotomatiskan tugas-tugas administratif HR. Sistem ini menyediakan portal self-service bagi karyawan dan manajer, serta alat yang komprehensif bagi tim HR untuk mengelola data karyawan, absensi, cuti, klaim, hingga proses penggajian (payroll).",
         "image": "/assets/products/32.png",
-        "technologies": ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Material-UI"],
+        "technologies": [
+          "React",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "JWT",
+          "Material-UI"
+        ],
         "category": "Human Resource Management",
         "status": "Completed",
         "version": "2.0.1",
@@ -882,25 +1087,52 @@
         {
           "category": "Frontend",
           "technologies": [
-            { "name": "React 18", "description": "Library JavaScript untuk membangun antarmuka pengguna yang interaktif dan dinamis." },
-            { "name": "Redux Toolkit", "description": "Standard library untuk manajemen state yang predictable pada aplikasi JavaScript." },
-            { "name": "Material-UI (MUI)", "description": "Framework komponen UI React yang populer untuk desain yang cepat dan konsisten." }
+            {
+              "name": "React 18",
+              "description": "Library JavaScript untuk membangun antarmuka pengguna yang interaktif dan dinamis."
+            },
+            {
+              "name": "Redux Toolkit",
+              "description": "Standard library untuk manajemen state yang predictable pada aplikasi JavaScript."
+            },
+            {
+              "name": "Material-UI (MUI)",
+              "description": "Framework komponen UI React yang populer untuk desain yang cepat dan konsisten."
+            }
           ]
         },
         {
           "category": "Backend",
           "technologies": [
-            { "name": "Node.js", "description": "Lingkungan eksekusi JavaScript sisi server yang efisien untuk membangun API." },
-            { "name": "Express.js", "description": "Framework web yang minimalis dan fleksibel untuk Node.js." },
-            { "name": "Mongoose", "description": "Object Data Modeling (ODM) library untuk MongoDB dan Node.js." }
+            {
+              "name": "Node.js",
+              "description": "Lingkungan eksekusi JavaScript sisi server yang efisien untuk membangun API."
+            },
+            {
+              "name": "Express.js",
+              "description": "Framework web yang minimalis dan fleksibel untuk Node.js."
+            },
+            {
+              "name": "Mongoose",
+              "description": "Object Data Modeling (ODM) library untuk MongoDB dan Node.js."
+            }
           ]
         },
         {
           "category": "Database & Security",
           "technologies": [
-            { "name": "MongoDB Atlas", "description": "Layanan database dokumen NoSQL berbasis cloud yang terkelola sepenuhnya." },
-            { "name": "JSON Web Token (JWT)", "description": "Standar terbuka untuk membuat token akses yang aman antar pihak." },
-            { "name": "Bcrypt.js", "description": "Library untuk melakukan hashing kata sandi dengan aman." }
+            {
+              "name": "MongoDB Atlas",
+              "description": "Layanan database dokumen NoSQL berbasis cloud yang terkelola sepenuhnya."
+            },
+            {
+              "name": "JSON Web Token (JWT)",
+              "description": "Standar terbuka untuk membuat token akses yang aman antar pihak."
+            },
+            {
+              "name": "Bcrypt.js",
+              "description": "Library untuk melakukan hashing kata sandi dengan aman."
+            }
           ]
         }
       ],
@@ -931,11 +1163,18 @@
           "title": "Kebutuhan Sistem",
           "server": {
             "title": "Kebutuhan Server",
-            "items": ["Node.js 18.x atau lebih tinggi", "Koneksi ke MongoDB Atlas", "RAM minimal 2GB"]
+            "items": [
+              "Node.js 18.x atau lebih tinggi",
+              "Koneksi ke MongoDB Atlas",
+              "RAM minimal 2GB"
+            ]
           },
           "client": {
             "title": "Kebutuhan Klien",
-            "items": ["Browser modern dengan dukungan JavaScript", "Koneksi Internet"]
+            "items": [
+              "Browser modern dengan dukungan JavaScript",
+              "Koneksi Internet"
+            ]
           }
         },
         "performanceMetrics": {
@@ -964,7 +1203,13 @@
         "description": "Sistem manajemen keuangan dengan fitur budgeting dan financial reporting.",
         "fullDescription": "Aplikasi Manajemen Keuangan ini adalah alat yang intuitif untuk individu dan usaha kecil guna melacak pendapatan dan pengeluaran, membuat anggaran yang realistis, dan menghasilkan laporan keuangan yang mendalam. Tujuannya adalah untuk memberikan visibilitas penuh dan kontrol atas kesehatan finansial pengguna.",
         "image": "/assets/products/34.png",
-        "technologies": ["React", "Django", "PostgreSQL", "Chart.js", "Django REST Framework"],
+        "technologies": [
+          "React",
+          "Django",
+          "PostgreSQL",
+          "Chart.js",
+          "Django REST Framework"
+        ],
         "category": "Financial Management",
         "status": "Completed",
         "version": "1.0.0",
@@ -1096,31 +1341,61 @@
         {
           "category": "Frontend",
           "technologies": [
-            { "name": "React 18", "description": "Library JavaScript untuk membangun antarmuka pengguna yang kaya dan interaktif." },
-            { "name": "Chart.js", "description": "Library untuk membuat grafik dan bagan yang responsif dan menarik." },
-            { "name": "Axios", "description": "HTTP client berbasis Promise untuk melakukan permintaan ke backend API." }
+            {
+              "name": "React 18",
+              "description": "Library JavaScript untuk membangun antarmuka pengguna yang kaya dan interaktif."
+            },
+            {
+              "name": "Chart.js",
+              "description": "Library untuk membuat grafik dan bagan yang responsif dan menarik."
+            },
+            {
+              "name": "Axios",
+              "description": "HTTP client berbasis Promise untuk melakukan permintaan ke backend API."
+            }
           ]
         },
         {
           "category": "Backend",
           "technologies": [
-            { "name": "Python 3.11", "description": "Bahasa pemrograman serbaguna yang populer untuk pengembangan web sisi server." },
-            { "name": "Django 5.0", "description": "Framework web Python tingkat tinggi yang mendorong pengembangan cepat dan desain yang bersih." },
-            { "name": "Django REST Framework", "description": "Toolkit yang kuat dan fleksibel untuk membangun Web API." }
+            {
+              "name": "Python 3.11",
+              "description": "Bahasa pemrograman serbaguna yang populer untuk pengembangan web sisi server."
+            },
+            {
+              "name": "Django 5.0",
+              "description": "Framework web Python tingkat tinggi yang mendorong pengembangan cepat dan desain yang bersih."
+            },
+            {
+              "name": "Django REST Framework",
+              "description": "Toolkit yang kuat dan fleksibel untuk membangun Web API."
+            }
           ]
         },
         {
           "category": "Database",
           "technologies": [
-            { "name": "PostgreSQL 16", "description": "Sistem basis data relasional objek yang canggih dan andal untuk integritas data." }
+            {
+              "name": "PostgreSQL 16",
+              "description": "Sistem basis data relasional objek yang canggih dan andal untuk integritas data."
+            }
           ]
         },
         {
           "category": "DevOps",
           "technologies": [
-            { "name": "Docker", "description": "Platform untuk mengembangkan, mengirim, dan menjalankan aplikasi dalam kontainer." },
-            { "name": "Gunicorn", "description": "WSGI HTTP Server untuk production deployment aplikasi Python." },
-            { "name": "Nginx", "description": "Web server yang digunakan sebagai reverse proxy dan untuk melayani file statis." }
+            {
+              "name": "Docker",
+              "description": "Platform untuk mengembangkan, mengirim, dan menjalankan aplikasi dalam kontainer."
+            },
+            {
+              "name": "Gunicorn",
+              "description": "WSGI HTTP Server untuk production deployment aplikasi Python."
+            },
+            {
+              "name": "Nginx",
+              "description": "Web server yang digunakan sebagai reverse proxy dan untuk melayani file statis."
+            }
           ]
         }
       ],
@@ -1193,8 +1468,15 @@
         "name": "Inventory Control System",
         "description": "Sistem kontrol inventori dengan tracking real-time dan automated alerts.",
         "fullDescription": "Sistem Kontrol Inventaris ini dirancang untuk gudang dan pusat distribusi modern, menyediakan pelacakan stok secara real-time, integrasi pemindai barcode/QR, dan peringatan otomatis untuk level stok rendah atau barang yang mendekati kedaluwarsa. Tujuannya adalah untuk mengoptimalkan level stok, mencegah kehabisan barang, dan mengurangi pemborosan.",
-          "image": "/assets/products/39.png",
-        "technologies": ["Angular", "Java", "Spring Boot", "MySQL", "Apache Kafka", "Docker"],
+        "image": "/assets/products/39.png",
+        "technologies": [
+          "Angular",
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "Apache Kafka",
+          "Docker"
+        ],
         "category": "Inventory Management",
         "status": "In Development",
         "version": "0.9.0",
@@ -1325,31 +1607,61 @@
         {
           "category": "Frontend",
           "technologies": [
-            { "name": "Angular 17", "description": "Framework frontend berbasis komponen yang kuat untuk membangun aplikasi berskala besar." },
-            { "name": "TypeScript", "description": "Superset JavaScript yang menyediakan pengetikan statis untuk keandalan kode." },
-            { "name": "RxJS", "description": "Library untuk pemrograman reaktif menggunakan Observables, ideal untuk menangani event stream." }
+            {
+              "name": "Angular 17",
+              "description": "Framework frontend berbasis komponen yang kuat untuk membangun aplikasi berskala besar."
+            },
+            {
+              "name": "TypeScript",
+              "description": "Superset JavaScript yang menyediakan pengetikan statis untuk keandalan kode."
+            },
+            {
+              "name": "RxJS",
+              "description": "Library untuk pemrograman reaktif menggunakan Observables, ideal untuk menangani event stream."
+            }
           ]
         },
         {
           "category": "Backend",
           "technologies": [
-            { "name": "Java 21", "description": "Bahasa pemrograman yang matang, andal, dan berkinerja tinggi untuk aplikasi enterprise." },
-            { "name": "Spring Data JPA", "description": "Menyederhanakan lapisan persistensi data dengan repositori untuk database SQL." }
+            {
+              "name": "Java 21",
+              "description": "Bahasa pemrograman yang matang, andal, dan berkinerja tinggi untuk aplikasi enterprise."
+            },
+            {
+              "name": "Spring Data JPA",
+              "description": "Menyederhanakan lapisan persistensi data dengan repositori untuk database SQL."
+            }
           ]
         },
         {
           "category": "Database & Messaging",
           "technologies": [
-            { "name": "MySQL 8.0", "description": "Sistem manajemen basis data relasional yang populer dan teruji untuk data transaksional." },
-            { "name": "Apache Kafka", "description": "Platform streaming terdistribusi untuk membangun pipeline data real-time." }
+            {
+              "name": "MySQL 8.0",
+              "description": "Sistem manajemen basis data relasional yang populer dan teruji untuk data transaksional."
+            },
+            {
+              "name": "Apache Kafka",
+              "description": "Platform streaming terdistribusi untuk membangun pipeline data real-time."
+            }
           ]
         },
         {
           "category": "DevOps",
           "technologies": [
-            { "name": "Docker", "description": "Platform kontainerisasi untuk konsistensi lingkungan dari pengembangan hingga produksi." },
-            { "name": "Kubernetes", "description": "Sistem orkestrasi untuk mengotomatiskan deployment, penskalaan, dan manajemen kontainer." },
-            { "name": "Jenkins", "description": "Server otomasi untuk pipeline CI/CD, dari build, test, hingga deploy." }
+            {
+              "name": "Docker",
+              "description": "Platform kontainerisasi untuk konsistensi lingkungan dari pengembangan hingga produksi."
+            },
+            {
+              "name": "Kubernetes",
+              "description": "Sistem orkestrasi untuk mengotomatiskan deployment, penskalaan, dan manajemen kontainer."
+            },
+            {
+              "name": "Jenkins",
+              "description": "Server otomasi untuk pipeline CI/CD, dari build, test, hingga deploy."
+            }
           ]
         }
       ],
@@ -1380,11 +1692,18 @@
           "title": "Kebutuhan Sistem",
           "server": {
             "title": "Kebutuhan Server",
-            "items": ["Java (JVM) 17+", "MySQL Server 8.0+", "Klaster Apache Kafka"]
+            "items": [
+              "Java (JVM) 17+",
+              "MySQL Server 8.0+",
+              "Klaster Apache Kafka"
+            ]
           },
           "client": {
             "title": "Kebutuhan Klien",
-            "items": ["Browser modern (Chrome, Firefox)", "Koneksi jaringan ke server aplikasi"]
+            "items": [
+              "Browser modern (Chrome, Firefox)",
+              "Koneksi jaringan ke server aplikasi"
+            ]
           }
         },
         "performanceMetrics": {
@@ -1412,7 +1731,7 @@
         "name": "CRM Platform",
         "description": "Customer Relationship Management untuk mengelola hubungan dengan pelanggan.",
         "fullDescription": "Platform CRM (Customer Relationship Management) ini adalah solusi komprehensif untuk tim penjualan dan pemasaran, dirancang untuk mengelola seluruh siklus hidup pelanggan. Sistem ini membantu melacak interaksi, mengelola prospek (leads), mengotomatiskan alur kerja penjualan, dan menganalisis data untuk membangun hubungan pelanggan yang lebih kuat dan menguntungkan.",
-          "image": "/assets/products/41.png",
+        "image": "/assets/products/41.png",
         "technologies": ["React", "Node.js", "MongoDB", "GraphQL", "Apollo"],
         "category": "Customer Relationship Management",
         "status": "Completed",
@@ -1545,24 +1864,48 @@
         {
           "category": "Frontend",
           "technologies": [
-            { "name": "React 18", "description": "Library JavaScript untuk membangun antarmuka pengguna yang dinamis dan efisien." },
-            { "name": "Apollo Client", "description": "Klien GraphQL komprehensif untuk manajemen state dan caching data dari server." },
-            { "name": "Ant Design", "description": "Library komponen UI React kelas enterprise untuk membangun antarmuka yang elegan." }
+            {
+              "name": "React 18",
+              "description": "Library JavaScript untuk membangun antarmuka pengguna yang dinamis dan efisien."
+            },
+            {
+              "name": "Apollo Client",
+              "description": "Klien GraphQL komprehensif untuk manajemen state dan caching data dari server."
+            },
+            {
+              "name": "Ant Design",
+              "description": "Library komponen UI React kelas enterprise untuk membangun antarmuka yang elegan."
+            }
           ]
         },
         {
           "category": "Backend",
           "technologies": [
-            { "name": "Node.js", "description": "Lingkungan eksekusi JavaScript sisi server untuk membangun aplikasi jaringan yang scalable." },
-            { "name": "Apollo Server", "description": "Server GraphQL untuk Express.js yang memudahkan pembuatan API GraphQL." },
-            { "name": "Mongoose", "description": "Library Object Data Modeling (ODM) untuk MongoDB yang menyediakan validasi dan logika bisnis." }
+            {
+              "name": "Node.js",
+              "description": "Lingkungan eksekusi JavaScript sisi server untuk membangun aplikasi jaringan yang scalable."
+            },
+            {
+              "name": "Apollo Server",
+              "description": "Server GraphQL untuk Express.js yang memudahkan pembuatan API GraphQL."
+            },
+            {
+              "name": "Mongoose",
+              "description": "Library Object Data Modeling (ODM) untuk MongoDB yang menyediakan validasi dan logika bisnis."
+            }
           ]
         },
         {
           "category": "Database & API",
           "technologies": [
-            { "name": "MongoDB Atlas", "description": "Layanan cloud database NoSQL yang fleksibel dan mudah diskalakan." },
-            { "name": "GraphQL", "description": "Bahasa kueri untuk API yang memberikan klien kekuatan untuk meminta data yang mereka butuhkan." }
+            {
+              "name": "MongoDB Atlas",
+              "description": "Layanan cloud database NoSQL yang fleksibel dan mudah diskalakan."
+            },
+            {
+              "name": "GraphQL",
+              "description": "Bahasa kueri untuk API yang memberikan klien kekuatan untuk meminta data yang mereka butuhkan."
+            }
           ]
         }
       ],
@@ -1593,7 +1936,10 @@
           "title": "Kebutuhan Sistem",
           "server": {
             "title": "Kebutuhan Server",
-            "items": ["Node.js 18.x atau lebih tinggi", "Koneksi ke MongoDB Cluster"]
+            "items": [
+              "Node.js 18.x atau lebih tinggi",
+              "Koneksi ke MongoDB Cluster"
+            ]
           },
           "client": {
             "title": "Kebutuhan Klien",
@@ -1603,7 +1949,10 @@
         "performanceMetrics": {
           "title": "Metrik Performa",
           "metrics": [
-            { "label": "Waktu Respons Kueri GraphQL (P95)", "value": "< 300 ms" },
+            {
+              "label": "Waktu Respons Kueri GraphQL (P95)",
+              "value": "< 300 ms"
+            },
             { "label": "Waktu Muat Dasbor", "value": "< 2 detik" },
             { "label": "Latensi Update Real-time", "value": "< 500 ms" }
           ]
@@ -1619,864 +1968,1009 @@
         }
       }
     },
-{
-  "product": {
-    "id": "e-learning-platform",
-    "name": "E-Learning Platform",
-    "description": "Platform pembelajaran online dengan fitur video streaming dan quiz interaktif.",
-    "fullDescription": "E-Learning Platform ini adalah sebuah ekosistem pembelajaran digital yang dirancang untuk instruktur dan pelajar. Platform ini menyediakan alat yang lengkap untuk membuat, mengelola, dan menjual kursus online, dilengkapi dengan video streaming yang aman, pelacakan progres, serta penilaian interaktif untuk pengalaman belajar yang menarik dan efektif.",
-          "image": "/assets/products/37.png",
-    "technologies": ["Next.js", "React", "Strapi", "PostgreSQL", "AWS S3", "Tailwind CSS"],
-    "category": "Education Technology",
-    "status": "Completed",
-    "version": "1.2.0",
-    "lastUpdated": "Maret 2025",
-    "client": "Akademi Digital Indonesia",
-    "duration": "8 bulan",
-    "teamSize": "6 specialists (Frontend, Backend CMS, DevOps, UI/UX, QA)"
-  },
-  "hero": {
-    "buttons": {
-      "liveDemo": "Jelajahi Kursus",
-      "sourceCode": "Kode Sumber",
-      "documentation": "Dokumentasi"
-    }
-  },
-  "tabs": {
-    "triggers": {
-      "overview": "Ringkasan",
-      "features": "Fitur Utama",
-      "workflow": "Alur Belajar",
-      "techStack": "Teknologi",
-      "screenshots": "Galeri",
-      "specs": "Spesifikasi"
-    }
-  },
-  "overview": {
-    "projectInfo": {
-      "title": "Info Proyek",
-      "clientLabel": "Klien",
-      "durationLabel": "Durasi",
-      "teamSizeLabel": "Ukuran Tim",
-      "lastUpdatedLabel": "Pembaruan Terakhir"
-    },
-    "platformSupport": {
-      "title": "Dukungan Fitur",
-      "items": [
-        "Akses Belajar di Semua Perangkat",
-        "Adaptive Video Streaming",
-        "Sertifikat Penyelesaian Otomatis",
-        "Forum Diskusi per Materi Pelajaran"
-      ]
-    },
-    "architecture": {
-      "title": "Arsitektur Sistem",
-      "items": [
-        "Headless CMS Architecture",
-        "Static Site Generation (SSG) & SSR dengan Next.js",
-        "Penyimpanan Media Aman (AWS S3 Presigned URLs)",
-        "RESTful API dari Strapi untuk Konten"
-      ]
-    },
-    "projectDescription": {
-      "title": "Deskripsi Proyek",
-      "paragraphs": [
-        "Seiring meningkatnya permintaan akan pendidikan yang fleksibel dan dapat diakses dari mana saja, dibutuhkan sebuah platform yang dapat memberikan pengalaman belajar online yang engaging. Tantangannya adalah menciptakan sistem yang mudah dikelola oleh pembuat kursus sekaligus intuitif bagi para pelajar.",
-        "Solusi kami adalah membangun platform modern dengan arsitektur headless. Strapi digunakan sebagai Headless CMS yang fleksibel, memungkinkan tim konten untuk mengelola materi kursus dengan mudah. Di sisi depan, Next.js memberikan performa web yang sangat cepat melalui Static Site Generation (SSG) dan Server-Side Rendering (SSR). Untuk menangani aset media seperti video, kami memanfaatkan AWS S3 yang skalabel dan aman.",
-        "Hasilnya adalah platform e-learning yang mulus, di mana pelajar dapat menikmati waktu muat yang cepat dan video tanpa buffering. Di sisi lain, para instruktur diberdayakan dengan alat yang intuitif untuk membangun dan mengelola kursus mereka tanpa memerlukan pengetahuan teknis yang mendalam."
-      ]
-    }
-  },
-  "features": [
     {
-      "icon": "Package",
-      "title": "Manajemen Kursus & Materi",
-      "description": "Instruktur dapat membuat kursus, menyusun kurikulum, dan mengunggah berbagai jenis materi (video, PDF, teks)."
-    },
-    {
-      "icon": "Monitor",
-      "title": "Pemutar Video Interaktif",
-      "description": "Pemutar video yang aman dengan fitur kontrol kecepatan, pilihan kualitas, dan pelacakan progres tontonan otomatis."
-    },
-    {
-      "icon": "CheckCircle",
-      "title": "Kuis & Ujian Online",
-      "description": "Buat berbagai jenis soal (pilihan ganda, esai) dengan penilaian otomatis, umpan balik, dan batasan waktu."
-    },
-    {
-      "icon": "BarChart3",
-      "title": "Pelacakan Progres Belajar",
-      "description": "Siswa dan instruktur dapat memantau kemajuan belajar, materi yang telah selesai, dan rekapitulasi skor kuis."
-    },
-    {
-      "icon": "Users",
-      "title": "Forum Diskusi & T&J",
-      "description": "Fasilitas diskusi di setiap materi pelajaran untuk memungkinkan interaksi dan tanya jawab antara siswa dan instruktur."
-    },
-    {
-      "icon": "Printer",
-      "title": "Sertifikat Digital",
-      "description": "Sistem secara otomatis menghasilkan sertifikat penyelesaian yang dapat diunduh setelah siswa menuntaskan kursus."
-    }
-  ],
-  "workflow": {
-    "title": "Alur Perjalanan Belajar Siswa",
-    "steps": [
-      {
-        "step": 1,
-        "icon": "ShoppingCart",
-        "title": "Pendaftaran & Pembelian Kursus",
-        "description": "Siswa membuat akun, menelusuri katalog, dan melakukan pembelian kursus yang diminati melalui gateway pembayaran."
+      "product": {
+        "id": "e-learning-platform",
+        "name": "E-Learning Platform",
+        "description": "Platform pembelajaran online dengan fitur video streaming dan quiz interaktif.",
+        "fullDescription": "E-Learning Platform ini adalah sebuah ekosistem pembelajaran digital yang dirancang untuk instruktur dan pelajar. Platform ini menyediakan alat yang lengkap untuk membuat, mengelola, dan menjual kursus online, dilengkapi dengan video streaming yang aman, pelacakan progres, serta penilaian interaktif untuk pengalaman belajar yang menarik dan efektif.",
+        "image": "/assets/products/37.png",
+        "technologies": [
+          "Next.js",
+          "React",
+          "Strapi",
+          "PostgreSQL",
+          "AWS S3",
+          "Tailwind CSS"
+        ],
+        "category": "Education Technology",
+        "status": "Completed",
+        "version": "1.2.0",
+        "lastUpdated": "Maret 2025",
+        "client": "Akademi Digital Indonesia",
+        "duration": "8 bulan",
+        "teamSize": "6 specialists (Frontend, Backend CMS, DevOps, UI/UX, QA)"
       },
-      {
-        "step": 2,
-        "icon": "Monitor",
-        "title": "Mempelajari Materi Video",
-        "description": "Siswa menonton video pelajaran secara berurutan. Sistem secara otomatis menandai materi yang sudah selesai."
+      "hero": {
+        "buttons": {
+          "liveDemo": "Jelajahi Kursus",
+          "sourceCode": "Kode Sumber",
+          "documentation": "Dokumentasi"
+        }
       },
-      {
-        "step": 3,
-        "icon": "CheckCircle",
-        "title": "Mengerjakan Kuis Bab",
-        "description": "Setelah menyelesaikan satu bab, siswa mengerjakan kuis untuk menguji dan memperkuat pemahaman mereka."
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Belajar",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
       },
-      {
-        "step": 4,
-        "icon": "Users",
-        "title": "Berpartisipasi di Forum",
-        "description": "Jika mengalami kesulitan, siswa dapat mengajukan pertanyaan di forum diskusi yang dimoderasi oleh instruktur."
+      "overview": {
+        "projectInfo": {
+          "title": "Info Proyek",
+          "clientLabel": "Klien",
+          "durationLabel": "Durasi",
+          "teamSizeLabel": "Ukuran Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Fitur",
+          "items": [
+            "Akses Belajar di Semua Perangkat",
+            "Adaptive Video Streaming",
+            "Sertifikat Penyelesaian Otomatis",
+            "Forum Diskusi per Materi Pelajaran"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Headless CMS Architecture",
+            "Static Site Generation (SSG) & SSR dengan Next.js",
+            "Penyimpanan Media Aman (AWS S3 Presigned URLs)",
+            "RESTful API dari Strapi untuk Konten"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Seiring meningkatnya permintaan akan pendidikan yang fleksibel dan dapat diakses dari mana saja, dibutuhkan sebuah platform yang dapat memberikan pengalaman belajar online yang engaging. Tantangannya adalah menciptakan sistem yang mudah dikelola oleh pembuat kursus sekaligus intuitif bagi para pelajar.",
+            "Solusi kami adalah membangun platform modern dengan arsitektur headless. Strapi digunakan sebagai Headless CMS yang fleksibel, memungkinkan tim konten untuk mengelola materi kursus dengan mudah. Di sisi depan, Next.js memberikan performa web yang sangat cepat melalui Static Site Generation (SSG) dan Server-Side Rendering (SSR). Untuk menangani aset media seperti video, kami memanfaatkan AWS S3 yang skalabel dan aman.",
+            "Hasilnya adalah platform e-learning yang mulus, di mana pelajar dapat menikmati waktu muat yang cepat dan video tanpa buffering. Di sisi lain, para instruktur diberdayakan dengan alat yang intuitif untuk membangun dan mengelola kursus mereka tanpa memerlukan pengetahuan teknis yang mendalam."
+          ]
+        }
       },
-      {
-        "step": 5,
-        "icon": "Download",
-        "title": "Penyelesaian & Unduh Sertifikat",
-        "description": "Setelah semua materi dan ujian akhir selesai, tombol untuk mengunduh sertifikat digital akan aktif di dasbor siswa."
-      }
-    ]
-  },
-  "techStack": [
-    {
-      "category": "Frontend",
-      "technologies": [
-        { "name": "Next.js 14", "description": "Framework React untuk production dengan rendering hybrid (SSG & SSR) untuk kecepatan optimal." },
-        { "name": "React 18", "description": "Library JavaScript untuk membangun antarmuka pengguna yang kaya dan berbasis komponen." },
-        { "name": "Tailwind CSS", "description": "Framework CSS utility-first untuk desain kustom yang cepat tanpa meninggalkan HTML." }
-      ]
-    },
-    {
-      "category": "Backend (Headless CMS)",
-      "technologies": [
-        { "name": "Strapi 4", "description": "Headless CMS open-source berbasis Node.js yang fleksibel untuk mengelola dan menyajikan konten via API." },
-        { "name": "Node.js", "description": "Lingkungan eksekusi JavaScript yang menjadi dasar dari Strapi." }
-      ]
-    },
-    {
-      "category": "Database & Storage",
-      "technologies": [
-        { "name": "PostgreSQL", "description": "Sistem basis data relasional yang kuat dan andal, digunakan oleh Strapi untuk menyimpan data konten." },
-        { "name": "AWS S3", "description": "Layanan penyimpanan objek yang skalabel dan aman untuk menyimpan semua aset media seperti video dan PDF." },
-        { "name": "AWS CloudFront", "description": "Content Delivery Network (CDN) untuk mendistribusikan konten video ke seluruh dunia dengan latensi rendah." }
-      ]
-    }
-  ],
-  "screenshots": [
-    {
-      "title": "Halaman Katalog Kursus",
+      "features": [
+        {
+          "icon": "Package",
+          "title": "Manajemen Kursus & Materi",
+          "description": "Instruktur dapat membuat kursus, menyusun kurikulum, dan mengunggah berbagai jenis materi (video, PDF, teks)."
+        },
+        {
+          "icon": "Monitor",
+          "title": "Pemutar Video Interaktif",
+          "description": "Pemutar video yang aman dengan fitur kontrol kecepatan, pilihan kualitas, dan pelacakan progres tontonan otomatis."
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "Kuis & Ujian Online",
+          "description": "Buat berbagai jenis soal (pilihan ganda, esai) dengan penilaian otomatis, umpan balik, dan batasan waktu."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Pelacakan Progres Belajar",
+          "description": "Siswa dan instruktur dapat memantau kemajuan belajar, materi yang telah selesai, dan rekapitulasi skor kuis."
+        },
+        {
+          "icon": "Users",
+          "title": "Forum Diskusi & T&J",
+          "description": "Fasilitas diskusi di setiap materi pelajaran untuk memungkinkan interaksi dan tanya jawab antara siswa dan instruktur."
+        },
+        {
+          "icon": "Printer",
+          "title": "Sertifikat Digital",
+          "description": "Sistem secara otomatis menghasilkan sertifikat penyelesaian yang dapat diunduh setelah siswa menuntaskan kursus."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Perjalanan Belajar Siswa",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "ShoppingCart",
+            "title": "Pendaftaran & Pembelian Kursus",
+            "description": "Siswa membuat akun, menelusuri katalog, dan melakukan pembelian kursus yang diminati melalui gateway pembayaran."
+          },
+          {
+            "step": 2,
+            "icon": "Monitor",
+            "title": "Mempelajari Materi Video",
+            "description": "Siswa menonton video pelajaran secara berurutan. Sistem secara otomatis menandai materi yang sudah selesai."
+          },
+          {
+            "step": 3,
+            "icon": "CheckCircle",
+            "title": "Mengerjakan Kuis Bab",
+            "description": "Setelah menyelesaikan satu bab, siswa mengerjakan kuis untuk menguji dan memperkuat pemahaman mereka."
+          },
+          {
+            "step": 4,
+            "icon": "Users",
+            "title": "Berpartisipasi di Forum",
+            "description": "Jika mengalami kesulitan, siswa dapat mengajukan pertanyaan di forum diskusi yang dimoderasi oleh instruktur."
+          },
+          {
+            "step": 5,
+            "icon": "Download",
+            "title": "Penyelesaian & Unduh Sertifikat",
+            "description": "Setelah semua materi dan ujian akhir selesai, tombol untuk mengunduh sertifikat digital akan aktif di dasbor siswa."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Next.js 14",
+              "description": "Framework React untuk production dengan rendering hybrid (SSG & SSR) untuk kecepatan optimal."
+            },
+            {
+              "name": "React 18",
+              "description": "Library JavaScript untuk membangun antarmuka pengguna yang kaya dan berbasis komponen."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Framework CSS utility-first untuk desain kustom yang cepat tanpa meninggalkan HTML."
+            }
+          ]
+        },
+        {
+          "category": "Backend (Headless CMS)",
+          "technologies": [
+            {
+              "name": "Strapi 4",
+              "description": "Headless CMS open-source berbasis Node.js yang fleksibel untuk mengelola dan menyajikan konten via API."
+            },
+            {
+              "name": "Node.js",
+              "description": "Lingkungan eksekusi JavaScript yang menjadi dasar dari Strapi."
+            }
+          ]
+        },
+        {
+          "category": "Database & Storage",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "Sistem basis data relasional yang kuat dan andal, digunakan oleh Strapi untuk menyimpan data konten."
+            },
+            {
+              "name": "AWS S3",
+              "description": "Layanan penyimpanan objek yang skalabel dan aman untuk menyimpan semua aset media seperti video dan PDF."
+            },
+            {
+              "name": "AWS CloudFront",
+              "description": "Content Delivery Network (CDN) untuk mendistribusikan konten video ke seluruh dunia dengan latensi rendah."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Halaman Katalog Kursus",
           "image": "/placeholder.svg",
-      "description": "Tampilan galeri kursus yang tersedia dengan fitur pencarian dan filter berdasarkan kategori."
-    },
-    {
-      "title": "Tampilan Belajar dengan Video Player",
+          "description": "Tampilan galeri kursus yang tersedia dengan fitur pencarian dan filter berdasarkan kategori."
+        },
+        {
+          "title": "Tampilan Belajar dengan Video Player",
           "image": "/placeholder.svg",
-      "description": "Antarmuka utama saat belajar, menampilkan video di sebelah kiri dan daftar putar kurikulum di sebelah kanan."
-    },
-    {
-      "title": "Antarmuka Kuis Interaktif",
+          "description": "Antarmuka utama saat belajar, menampilkan video di sebelah kiri dan daftar putar kurikulum di sebelah kanan."
+        },
+        {
+          "title": "Antarmuka Kuis Interaktif",
           "image": "/placeholder.svg",
-      "description": "Contoh halaman kuis pilihan ganda dengan timer dan navigasi soal."
-    },
-    {
-      "title": "Dasbor Progres Belajar Siswa",
+          "description": "Contoh halaman kuis pilihan ganda dengan timer dan navigasi soal."
+        },
+        {
+          "title": "Dasbor Progres Belajar Siswa",
           "image": "/placeholder.svg",
-      "description": "Halaman profil siswa yang menunjukkan kursus yang diikuti, progres penyelesaian, dan sertifikat yang diraih."
-    }
-  ],
-  "specifications": {
-    "systemRequirements": {
-      "title": "Kebutuhan Sistem",
-      "server": {
-        "title": "Kebutuhan Server (Strapi)",
-        "items": ["Node.js 18.x+", "PostgreSQL 12+", "Koneksi ke AWS S3 bucket"]
-      },
-      "client": {
-        "title": "Kebutuhan Klien",
-        "items": ["Browser modern dengan koneksi internet broadband"]
-      }
-    },
-    "performanceMetrics": {
-      "title": "Metrik Performa",
-      "metrics": [
-        { "label": "Waktu Muat Halaman (FCP)", "value": "< 1.2 detik" },
-        { "label": "Waktu Mulai Video", "value": "< 2 detik" },
-        { "label": "Respons API CMS (P95)", "value": "< 200 ms" }
-      ]
-    },
-    "securityFeatures": {
-      "title": "Fitur Keamanan",
-      "items": [
-        "Otentikasi pengguna yang aman",
-        "Konten video yang dilindungi (Presigned URLs)",
-        "Kontrol Akses Berbasis Peran (Siswa, Instruktur, Admin)",
-        "Integrasi gerbang pembayaran (payment gateway) yang aman"
-      ]
-    }
-  }
-},
-{
-  "product": {
-    "id": "warehouse-management-system",
-    "name": "Warehouse Management System",
-    "description": "Sistem manajemen gudang dengan tracking lokasi dan automated picking.",
-    "fullDescription": "Warehouse Management System (WMS) ini adalah solusi canggih untuk mengoptimalkan seluruh operasi di dalam gudang. Sistem ini tidak hanya melacak jumlah stok, tetapi juga mengelola lokasi spesifik setiap item (bin-level tracking), mengoptimalkan rute pengambilan barang, dan berintegrasi dengan perangkat keras seperti RFID untuk akurasi dan efisiensi maksimal.",
-          "image": "/assets/products/40.png",
-    "technologies": ["Vue.js", "Node.js", "Express.js", "MySQL", "RFID Integration", "WebSockets"],
-    "category": "Warehouse Management",
-    "status": "Completed",
-    "version": "3.0.0",
-    "lastUpdated": "Juni 2025",
-    "client": "Distribusi Logistik Prima",
-    "duration": "12 bulan",
-    "teamSize": "8 specialists (Frontend, Backend, DBA, RFID Engineer, QA, PM)"
-  },
-  "hero": {
-    "buttons": {
-      "liveDemo": "Buka Dasbor",
-      "sourceCode": "Kode Sumber",
-      "documentation": "Dokumentasi"
-    }
-  },
-  "tabs": {
-    "triggers": {
-      "overview": "Ringkasan",
-      "features": "Fitur Utama",
-      "workflow": "Alur Kerja",
-      "techStack": "Teknologi",
-      "screenshots": "Galeri",
-      "specs": "Spesifikasi"
-    }
-  },
-  "overview": {
-    "projectInfo": {
-      "title": "Info Proyek",
-      "clientLabel": "Klien",
-      "durationLabel": "Durasi",
-      "teamSizeLabel": "Ukuran Tim",
-      "lastUpdatedLabel": "Pembaruan Terakhir"
-    },
-    "platformSupport": {
-      "title": "Dukungan Operasional",
-      "items": [
-        "Aplikasi untuk Perangkat Genggam Operator",
-        "Visualisasi Tata Letak Gudang Real-time",
-        "Integrasi dengan Sistem Konveyor",
-        "API untuk koneksi ke ERP & TMS"
-      ]
-    },
-    "architecture": {
-      "title": "Arsitektur Sistem",
-      "items": [
-        "Client-Server Architecture",
-        "RESTful API untuk Operasi Standar",
-        "WebSockets untuk Pembaruan Dasbor Real-time",
-        "Middleware Khusus untuk Integrasi RFID"
-      ]
-    },
-    "projectDescription": {
-      "title": "Deskripsi Proyek",
-      "paragraphs": [
-        "Operasi gudang modern menghadapi tantangan kompleks seperti pemanfaatan ruang yang tidak efisien, proses pengambilan barang manual yang lambat dan rawan kesalahan, serta kesulitan menemukan item spesifik dengan cepat. Masalah ini menyebabkan keterlambatan pemenuhan pesanan dan biaya operasional yang tinggi.",
-        "Proyek ini menghadirkan WMS komprehensif yang memetakan seluruh tata letak gudang secara digital. Sistem menggunakan algoritma cerdas untuk merekomendasikan lokasi penyimpanan optimal (put-away) dan membuat jalur pengambilan (picking path) yang paling efisien. Integrasi dengan teknologi RFID menjadi fitur unggulan, memungkinkan identifikasi barang secara otomatis dan nirkontak.",
-        "Implementasi sistem ini secara drastis mengurangi waktu pengambilan pesanan, meningkatkan akurasi inventaris hingga mendekati 100%, memaksimalkan penggunaan ruang gudang, dan mempercepat pemenuhan pesanan secara keseluruhan. Hasilnya adalah penurunan biaya operasional dan peningkatan kepuasan pelanggan yang signifikan."
-      ]
-    }
-  },
-  "features": [
-    {
-      "icon": "Package",
-      "title": "Manajemen Lokasi & Tata Letak",
-      "description": "Visualisasi digital dari rak, baris, dan bin di dalam gudang untuk optimalisasi penempatan dan pencarian stok."
-    },
-    {
-      "icon": "Database",
-      "title": "Penyimpanan Terarah (Put-Away)",
-      "description": "Sistem merekomendasikan lokasi penyimpanan terbaik untuk barang masuk berdasarkan aturan seperti ABC analysis atau FIFO."
-    },
-    {
-      "icon": "ShoppingCart",
-      "title": "Optimisasi Pengambilan (Picking)",
-      "description": "Menghasilkan daftar pengambilan (pick-list) yang diurutkan berdasarkan rute terpendek untuk meminimalkan waktu tempuh operator."
-    },
-    {
-      "icon": "Server",
-      "title": "Integrasi RFID & Barcode",
-      "description": "Pelacakan palet dan item secara otomatis saat melewati gerbang RFID atau saat dipindai, menghilangkan entri data manual."
-    },
-    {
-      "icon": "Printer",
-      "title": "Manajemen Pengiriman (Shipping)",
-      "description": "Mengelola proses dari pengepakan (packing), pembuatan label pengiriman, hingga pemuatan barang ke kendaraan."
-    },
-    {
-      "icon": "CheckCircle",
-      "title": "Siklus Hitung (Cycle Counting)",
-      "description": "Mendukung audit stok parsial secara rutin untuk menjaga akurasi data inventaris tanpa menghentikan operasi gudang."
-    }
-  ],
-  "workflow": {
-    "title": "Alur Kerja Pengambilan Pesanan (Picking)",
-    "steps": [
-      {
-        "step": 1,
-        "icon": "Database",
-        "title": "Batching Pesanan",
-        "description": "Sistem mengelompokkan beberapa pesanan pelanggan menjadi satu batch pengambilan untuk memaksimalkan efisiensi."
-      },
-      {
-        "step": 2,
-        "icon": "Monitor",
-        "title": "Pembuatan Pick List",
-        "description": "Sebuah pick-list dibuat, mengurutkan item berdasarkan rute terpendek dan dikirim ke perangkat genggam operator."
-      },
-      {
-        "step": 3,
-        "icon": "Package",
-        "title": "Navigasi & Pengambilan",
-        "description": "Operator mengikuti instruksi di perangkatnya untuk menuju ke lokasi rak/bin yang ditentukan."
-      },
-      {
-        "step": 4,
-        "icon": "Server",
-        "title": "Konfirmasi Pemindaian",
-        "description": "Operator memindai barcode/RFID pada bin dan produk untuk memvalidasi pengambilan yang benar. Stok diperbarui real-time."
-      },
-      {
-        "step": 5,
-        "icon": "Printer",
-        "title": "Stasiun Pengepakan",
-        "description": "Setelah semua item terkumpul, barang dibawa ke stasiun pengepakan untuk proses pengiriman lebih lanjut."
-      }
-    ]
-  },
-  "techStack": [
-    {
-      "category": "Frontend",
-      "technologies": [
-        { "name": "Vue.js 3", "description": "Framework JavaScript progresif dengan Composition API untuk membangun antarmuka yang kompleks." },
-        { "name": "Pinia", "description": "Library manajemen state yang intuitif dan direkomendasikan untuk Vue.js 3." },
-        { "name": "Vuetify", "description": "Framework komponen UI Material Design yang kaya fitur untuk Vue." }
-      ]
-    },
-    {
-      "category": "Backend",
-      "technologies": [
-        { "name": "Node.js", "description": "Lingkungan eksekusi JavaScript sisi server yang cepat dan efisien." },
-        { "name": "Express.js", "description": "Framework web minimalis untuk Node.js, digunakan untuk membangun RESTful API." },
-        { "name": "Sequelize", "description": "ORM (Object-Relational Mapper) berbasis Promise untuk Node.js dan MySQL." }
-      ]
-    },
-    {
-      "category": "Database & Real-time",
-      "technologies": [
-        { "name": "MySQL 8.0", "description": "Sistem basis data relasional yang andal untuk data transaksional gudang." },
-        { "name": "Socket.IO", "description": "Library untuk komunikasi dua arah berbasis event secara real-time antar klien dan server." }
-      ]
-    },
-    {
-      "category": "Integrasi Perangkat Keras",
-      "technologies": [
-        { "name": "RFID Middleware", "description": "Layanan kustom (misal: di Node.js) yang berkomunikasi dengan pembaca RFID dan menerjemahkan data tag." }
-      ]
-    }
-  ],
-  "screenshots": [
-    {
-      "title": "Dasbor Operasional Gudang Real-time",
-          "image": "/placeholder.svg",
-      "description": "Menampilkan KPI seperti pesanan yang harus diambil, utilisasi ruang, dan throughput operator."
-    },
-    {
-      "title": "Visualisasi Tata Letak Gudang dan Lokasi Stok",
-          "image": "/placeholder.svg",
-      "description": "Peta interaktif gudang yang menunjukkan lokasi spesifik setiap item atau palet."
-    },
-    {
-      "title": "Tampilan Pick List di Perangkat Genggam Operator",
-          "image": "/placeholder.svg",
-      "description": "Antarmuka sederhana yang memandu operator ke lokasi berikutnya dengan instruksi yang jelas."
-    },
-    {
-      "title": "Antarmuka Penerimaan Barang dengan Validasi RFID",
-          "image": "/placeholder.svg",
-      "description": "Sistem secara otomatis mendeteksi item yang masuk saat melewati gerbang RFID dan mencocokkannya dengan PO."
-    }
-  ],
-  "specifications": {
-    "systemRequirements": {
-      "title": "Kebutuhan Sistem",
-      "server": {
-        "title": "Kebutuhan Server",
-        "items": ["Node.js 18.x+", "MySQL 8.0+", "Server khusus untuk Middleware RFID"]
-      },
-      "client": {
-        "title": "Kebutuhan Klien",
-        "items": ["Perangkat genggam berbasis Android/iOS dengan browser modern", "Koneksi Wi-Fi stabil di seluruh area gudang"]
+          "description": "Halaman profil siswa yang menunjukkan kursus yang diikuti, progres penyelesaian, dan sertifikat yang diraih."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Kebutuhan Sistem",
+          "server": {
+            "title": "Kebutuhan Server (Strapi)",
+            "items": [
+              "Node.js 18.x+",
+              "PostgreSQL 12+",
+              "Koneksi ke AWS S3 bucket"
+            ]
+          },
+          "client": {
+            "title": "Kebutuhan Klien",
+            "items": ["Browser modern dengan koneksi internet broadband"]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Performa",
+          "metrics": [
+            { "label": "Waktu Muat Halaman (FCP)", "value": "< 1.2 detik" },
+            { "label": "Waktu Mulai Video", "value": "< 2 detik" },
+            { "label": "Respons API CMS (P95)", "value": "< 200 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Fitur Keamanan",
+          "items": [
+            "Otentikasi pengguna yang aman",
+            "Konten video yang dilindungi (Presigned URLs)",
+            "Kontrol Akses Berbasis Peran (Siswa, Instruktur, Admin)",
+            "Integrasi gerbang pembayaran (payment gateway) yang aman"
+          ]
+        }
       }
     },
-    "performanceMetrics": {
-      "title": "Metrik Performa",
-      "metrics": [
-        { "label": "Latensi Pembaruan Stok", "value": "< 1 detik" },
-        { "label": "Generasi Rute Pengambilan", "value": "< 2 detik" },
-        { "label": "Dukungan Operator Bersamaan", "value": "100+"}
-      ]
-    },
-    "securityFeatures": {
-      "title": "Fitur Keamanan",
-      "items": [
-        "Login aman untuk setiap operator",
-        "Izin akses berbasis peran (Operator, Supervisor, Admin)",
-        "Jejak audit (audit trail) untuk setiap pergerakan inventaris",
-        "Enkripsi komunikasi antara perangkat dan server"
-      ]
-    }
-  }
-},
-{
-  "product": {
-    "id": "accounting-system",
-    "name": "Accounting System",
-    "description": "Sistem akuntansi lengkap dengan general ledger dan financial statements.",
-    "fullDescription": "Sistem Akuntansi ini adalah platform berbasis web yang dirancang untuk Usaha Kecil dan Menengah (UKM) guna mengelola seluruh proses pembukuan. Sistem ini mengotomatiskan entri jurnal, mengelola bagan akun (Chart of Accounts), dan menghasilkan laporan keuangan standar untuk memastikan kepatuhan dan memberikan visibilitas finansial yang jelas.",
-          "image": "/assets/products/36.png",
-    "technologies": ["React", "Laravel", "MySQL", "PDF Generator", "Eloquent ORM"],
-    "category": "Accounting & Finance",
-    "status": "Completed",
-    "version": "2.2.0",
-    "lastUpdated": "Mei 2025",
-    "client": "Konsultan Keuangan Sejahtera",
-    "duration": "7 bulan",
-    "teamSize": "5 specialists (Frontend, Laravel Backend, DBA, QA)"
-  },
-  "hero": {
-    "buttons": {
-      "liveDemo": "Buka Sistem",
-      "sourceCode": "Kode Sumber",
-      "documentation": "Dokumentasi"
-    }
-  },
-  "tabs": {
-    "triggers": {
-      "overview": "Ringkasan",
-      "features": "Fitur Utama",
-      "workflow": "Alur Kerja",
-      "techStack": "Teknologi",
-      "screenshots": "Galeri",
-      "specs": "Spesifikasi"
-    }
-  },
-  "overview": {
-    "projectInfo": {
-      "title": "Info Proyek",
-      "clientLabel": "Klien",
-      "durationLabel": "Durasi",
-      "teamSizeLabel": "Ukuran Tim",
-      "lastUpdatedLabel": "Pembaruan Terakhir"
-    },
-    "platformSupport": {
-      "title": "Dukungan Fitur",
-      "items": [
-        "Akses Multi-User Berbasis Web",
-        "Izin Akses Berbasis Peran (Akuntan, Manajer)",
-        "Ekspor Laporan ke PDF & Excel",
-        "Kustomisasi Bagan Akun (Chart of Accounts)"
-      ]
-    },
-    "architecture": {
-      "title": "Arsitektur Sistem",
-      "items": [
-        "Monolithic Architecture (Laravel)",
-        "API Aman dengan Laravel Sanctum",
-        "Antarmuka Dinamis dengan React",
-        "Prinsip Double-Entry Bookkeeping"
-      ]
-    },
-    "projectDescription": {
-      "title": "Deskripsi Proyek",
-      "paragraphs": [
-        "Banyak UKM mengandalkan spreadsheet atau pencatatan manual untuk akuntansi, sebuah metode yang rentan terhadap kesalahan, memakan waktu, dan menyulitkan pembuatan laporan keuangan yang akurat untuk keperluan pajak atau pengambilan keputusan. Hal ini menjadi penghambat dalam mengelola kesehatan finansial bisnis secara efektif.",
-        "Proyek ini membangun sebuah sistem akuntansi berbasis web yang andal dan aman. Dengan menggunakan framework Laravel yang kokoh di backend dan React untuk antarmuka yang dinamis, sistem ini dirancang berdasarkan prinsip akuntansi double-entry yang standar. Fitur utamanya adalah kemampuan untuk menghasilkan laporan keuangan profesional dalam format PDF dengan sekali klik.",
-        "Dengan sistem ini, bisnis dapat memiliki data keuangan yang akurat dan real-time, menyederhanakan pelaporan pajak, meningkatkan kualitas pengambilan keputusan strategis melalui laporan yang jelas, dan menghemat waktu administrasi yang signifikan."
-      ]
-    }
-  },
-  "features": [
     {
-      "icon": "Database",
-      "title": "General Ledger (Buku Besar)",
-      "description": "Pusat catatan dari semua transaksi keuangan yang terorganisir berdasarkan bagan akun (Chart of Accounts)."
-    },
-    {
-      "icon": "Package",
-      "title": "Chart of Accounts (CoA)",
-      "description": "Daftar akun yang dapat disesuaikan (Aset, Liabilitas, Ekuitas, Pendapatan, Biaya) untuk klasifikasi transaksi."
-    },
-    {
-      "icon": "Printer",
-      "title": "Entri Jurnal",
-      "description": "Fasilitas untuk mencatat transaksi debet dan kredit secara manual, dengan validasi untuk memastikan keseimbangan."
-    },
-    {
-      "icon": "CreditCard",
-      "title": "Utang & Piutang (AP/AR)",
-      "description": "Melacak faktur dari pemasok (Accounts Payable) dan faktur ke pelanggan (Accounts Receivable) beserta status pembayarannya."
-    },
-    {
-      "icon": "BarChart3",
-      "title": "Laporan Keuangan",
-      "description": "Generasi otomatis laporan keuangan standar: Laporan Laba Rugi, Neraca, dan Laporan Arus Kas."
-    },
-    {
-      "icon": "Shield",
-      "title": "Manajemen Pajak",
-      "description": "Membantu dalam rekapitulasi dan perhitungan pajak (seperti PPN) berdasarkan transaksi yang tercatat di sistem."
-    }
-  ],
-  "workflow": {
-    "title": "Alur Proses Tutup Buku Bulanan",
-    "steps": [
-      {
-        "step": 1,
-        "icon": "CheckCircle",
-        "title": "Rekonsiliasi Bank",
-        "description": "Akuntan mencocokkan semua transaksi yang tercatat di sistem dengan laporan mutasi rekening bank."
+      "product": {
+        "id": "warehouse-management-system",
+        "name": "Warehouse Management System",
+        "description": "Sistem manajemen gudang dengan tracking lokasi dan automated picking.",
+        "fullDescription": "Warehouse Management System (WMS) ini adalah solusi canggih untuk mengoptimalkan seluruh operasi di dalam gudang. Sistem ini tidak hanya melacak jumlah stok, tetapi juga mengelola lokasi spesifik setiap item (bin-level tracking), mengoptimalkan rute pengambilan barang, dan berintegrasi dengan perangkat keras seperti RFID untuk akurasi dan efisiensi maksimal.",
+        "image": "/assets/products/40.png",
+        "technologies": [
+          "Vue.js",
+          "Node.js",
+          "Express.js",
+          "MySQL",
+          "RFID Integration",
+          "WebSockets"
+        ],
+        "category": "Warehouse Management",
+        "status": "Completed",
+        "version": "3.0.0",
+        "lastUpdated": "Juni 2025",
+        "client": "Distribusi Logistik Prima",
+        "duration": "12 bulan",
+        "teamSize": "8 specialists (Frontend, Backend, DBA, RFID Engineer, QA, PM)"
       },
-      {
-        "step": 2,
-        "icon": "Printer",
-        "title": "Membuat Jurnal Penyesuaian",
-        "description": "Mencatat transaksi non-kas seperti depresiasi aset, biaya akrual, dan pendapatan diterima di muka."
+      "hero": {
+        "buttons": {
+          "liveDemo": "Buka Dasbor",
+          "sourceCode": "Kode Sumber",
+          "documentation": "Dokumentasi"
+        }
       },
-      {
-        "step": 3,
-        "icon": "Server",
-        "title": "Meninjau Neraca Saldo",
-        "description": "Sistem menghasilkan neraca saldo (trial balance) untuk memastikan total debet dan kredit seimbang sebelum penutupan."
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Kerja",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
       },
-      {
-        "step": 4,
-        "icon": "Database",
-        "title": "Membuat Jurnal Penutup",
-        "description": "Sistem secara otomatis membuat jurnal penutup untuk me-nol-kan saldo akun pendapatan dan biaya ke laba ditahan."
+      "overview": {
+        "projectInfo": {
+          "title": "Info Proyek",
+          "clientLabel": "Klien",
+          "durationLabel": "Durasi",
+          "teamSizeLabel": "Ukuran Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Operasional",
+          "items": [
+            "Aplikasi untuk Perangkat Genggam Operator",
+            "Visualisasi Tata Letak Gudang Real-time",
+            "Integrasi dengan Sistem Konveyor",
+            "API untuk koneksi ke ERP & TMS"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Client-Server Architecture",
+            "RESTful API untuk Operasi Standar",
+            "WebSockets untuk Pembaruan Dasbor Real-time",
+            "Middleware Khusus untuk Integrasi RFID"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Operasi gudang modern menghadapi tantangan kompleks seperti pemanfaatan ruang yang tidak efisien, proses pengambilan barang manual yang lambat dan rawan kesalahan, serta kesulitan menemukan item spesifik dengan cepat. Masalah ini menyebabkan keterlambatan pemenuhan pesanan dan biaya operasional yang tinggi.",
+            "Proyek ini menghadirkan WMS komprehensif yang memetakan seluruh tata letak gudang secara digital. Sistem menggunakan algoritma cerdas untuk merekomendasikan lokasi penyimpanan optimal (put-away) dan membuat jalur pengambilan (picking path) yang paling efisien. Integrasi dengan teknologi RFID menjadi fitur unggulan, memungkinkan identifikasi barang secara otomatis dan nirkontak.",
+            "Implementasi sistem ini secara drastis mengurangi waktu pengambilan pesanan, meningkatkan akurasi inventaris hingga mendekati 100%, memaksimalkan penggunaan ruang gudang, dan mempercepat pemenuhan pesanan secara keseluruhan. Hasilnya adalah penurunan biaya operasional dan peningkatan kepuasan pelanggan yang signifikan."
+          ]
+        }
       },
-      {
-        "step": 5,
-        "icon": "Download",
-        "title": "Menghasilkan Laporan Final",
-        "description": "Setelah buku ditutup, Laporan Laba Rugi dan Neraca final untuk periode tersebut siap untuk diunduh dan dianalisis."
-      }
-    ]
-  },
-  "techStack": [
-    {
-      "category": "Frontend",
-      "technologies": [
-        { "name": "React 18", "description": "Library JavaScript untuk membangun antarmuka pengguna yang cepat dan dinamis." },
-        { "name": "Zustand", "description": "Manajemen state yang ringan untuk React, mempermudah pengelolaan data aplikasi." },
-        { "name": "Ant Design", "description": "Library komponen UI yang cocok untuk aplikasi enterprise dengan banyak tabel dan form." }
-      ]
-    },
-    {
-      "category": "Backend",
-      "technologies": [
-        { "name": "PHP 8.2", "description": "Bahasa pemrograman sisi server yang populer dan matang untuk pengembangan web." },
-        { "name": "Laravel 10", "description": "Framework PHP yang elegan dengan ekosistem yang kaya untuk membangun aplikasi web yang kuat." },
-        { "name": "Laravel Sanctum", "description": "Paket otentikasi yang ringan untuk SPA (Single Page Application) dan API." }
-      ]
-    },
-    {
-      "category": "Database & Reporting",
-      "technologies": [
-        { "name": "MySQL 8.0", "description": "Sistem basis data relasional yang andal untuk menyimpan data keuangan terstruktur." },
-        { "name": "Eloquent ORM", "description": "ORM bawaan Laravel yang menyediakan cara indah untuk berinteraksi dengan database." },
-        { "name": "PDF Generator Library", "description": "Library seperti 'dompdf' atau 'snappy' yang terintegrasi dengan Laravel untuk membuat laporan PDF." }
-      ]
-    }
-  ],
-  "screenshots": [
-    {
-      "title": "Dasbor Utama Akuntansi",
+      "features": [
+        {
+          "icon": "Package",
+          "title": "Manajemen Lokasi & Tata Letak",
+          "description": "Visualisasi digital dari rak, baris, dan bin di dalam gudang untuk optimalisasi penempatan dan pencarian stok."
+        },
+        {
+          "icon": "Database",
+          "title": "Penyimpanan Terarah (Put-Away)",
+          "description": "Sistem merekomendasikan lokasi penyimpanan terbaik untuk barang masuk berdasarkan aturan seperti ABC analysis atau FIFO."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Optimisasi Pengambilan (Picking)",
+          "description": "Menghasilkan daftar pengambilan (pick-list) yang diurutkan berdasarkan rute terpendek untuk meminimalkan waktu tempuh operator."
+        },
+        {
+          "icon": "Server",
+          "title": "Integrasi RFID & Barcode",
+          "description": "Pelacakan palet dan item secara otomatis saat melewati gerbang RFID atau saat dipindai, menghilangkan entri data manual."
+        },
+        {
+          "icon": "Printer",
+          "title": "Manajemen Pengiriman (Shipping)",
+          "description": "Mengelola proses dari pengepakan (packing), pembuatan label pengiriman, hingga pemuatan barang ke kendaraan."
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "Siklus Hitung (Cycle Counting)",
+          "description": "Mendukung audit stok parsial secara rutin untuk menjaga akurasi data inventaris tanpa menghentikan operasi gudang."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Kerja Pengambilan Pesanan (Picking)",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Database",
+            "title": "Batching Pesanan",
+            "description": "Sistem mengelompokkan beberapa pesanan pelanggan menjadi satu batch pengambilan untuk memaksimalkan efisiensi."
+          },
+          {
+            "step": 2,
+            "icon": "Monitor",
+            "title": "Pembuatan Pick List",
+            "description": "Sebuah pick-list dibuat, mengurutkan item berdasarkan rute terpendek dan dikirim ke perangkat genggam operator."
+          },
+          {
+            "step": 3,
+            "icon": "Package",
+            "title": "Navigasi & Pengambilan",
+            "description": "Operator mengikuti instruksi di perangkatnya untuk menuju ke lokasi rak/bin yang ditentukan."
+          },
+          {
+            "step": 4,
+            "icon": "Server",
+            "title": "Konfirmasi Pemindaian",
+            "description": "Operator memindai barcode/RFID pada bin dan produk untuk memvalidasi pengambilan yang benar. Stok diperbarui real-time."
+          },
+          {
+            "step": 5,
+            "icon": "Printer",
+            "title": "Stasiun Pengepakan",
+            "description": "Setelah semua item terkumpul, barang dibawa ke stasiun pengepakan untuk proses pengiriman lebih lanjut."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Vue.js 3",
+              "description": "Framework JavaScript progresif dengan Composition API untuk membangun antarmuka yang kompleks."
+            },
+            {
+              "name": "Pinia",
+              "description": "Library manajemen state yang intuitif dan direkomendasikan untuk Vue.js 3."
+            },
+            {
+              "name": "Vuetify",
+              "description": "Framework komponen UI Material Design yang kaya fitur untuk Vue."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js",
+              "description": "Lingkungan eksekusi JavaScript sisi server yang cepat dan efisien."
+            },
+            {
+              "name": "Express.js",
+              "description": "Framework web minimalis untuk Node.js, digunakan untuk membangun RESTful API."
+            },
+            {
+              "name": "Sequelize",
+              "description": "ORM (Object-Relational Mapper) berbasis Promise untuk Node.js dan MySQL."
+            }
+          ]
+        },
+        {
+          "category": "Database & Real-time",
+          "technologies": [
+            {
+              "name": "MySQL 8.0",
+              "description": "Sistem basis data relasional yang andal untuk data transaksional gudang."
+            },
+            {
+              "name": "Socket.IO",
+              "description": "Library untuk komunikasi dua arah berbasis event secara real-time antar klien dan server."
+            }
+          ]
+        },
+        {
+          "category": "Integrasi Perangkat Keras",
+          "technologies": [
+            {
+              "name": "RFID Middleware",
+              "description": "Layanan kustom (misal: di Node.js) yang berkomunikasi dengan pembaca RFID dan menerjemahkan data tag."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dasbor Operasional Gudang Real-time",
           "image": "/placeholder.svg",
-      "description": "Menampilkan ringkasan posisi kas, grafik laba rugi, dan saldo utang-piutang secara sekilas."
-    },
-    {
-      "title": "Tampilan General Ledger (Buku Besar)",
+          "description": "Menampilkan KPI seperti pesanan yang harus diambil, utilisasi ruang, dan throughput operator."
+        },
+        {
+          "title": "Visualisasi Tata Letak Gudang dan Lokasi Stok",
           "image": "/placeholder.svg",
-      "description": "Detail semua transaksi untuk akun tertentu (misal: Kas) dalam periode waktu yang dipilih."
-    },
-    {
-      "title": "Formulir Entri Jurnal Umum",
+          "description": "Peta interaktif gudang yang menunjukkan lokasi spesifik setiap item atau palet."
+        },
+        {
+          "title": "Tampilan Pick List di Perangkat Genggam Operator",
           "image": "/placeholder.svg",
-      "description": "Antarmuka untuk mencatat transaksi debet dan kredit secara manual dengan validasi keseimbangan."
-    },
-    {
-      "title": "Contoh Laporan Laba Rugi (PDF)",
+          "description": "Antarmuka sederhana yang memandu operator ke lokasi berikutnya dengan instruksi yang jelas."
+        },
+        {
+          "title": "Antarmuka Penerimaan Barang dengan Validasi RFID",
           "image": "/placeholder.svg",
-      "description": "Laporan laba rugi yang dihasilkan oleh sistem dalam format PDF profesional yang siap cetak."
-    }
-  ],
-  "specifications": {
-    "systemRequirements": {
-      "title": "Kebutuhan Sistem",
-      "server": {
-        "title": "Kebutuhan Server",
-        "items": ["Lingkungan PHP 8.1+ dengan ekstensi yang dibutuhkan Laravel", "MySQL 5.7+ atau MariaDB 10.3+"]
-      },
-      "client": {
-        "title": "Kebutuhan Klien",
-        "items": ["Browser web modern seperti Chrome, Firefox, atau Edge"]
-      }
-    },
-    "performanceMetrics": {
-      "title": "Metrik Performa",
-      "metrics": [
-        { "label": "Generasi Laporan Keuangan", "value": "< 10 detik" },
-        { "label": "Waktu Posting Jurnal", "value": "< 500 ms" },
-        { "label": "Kapasitas Transaksi", "value": "Ribuan baris jurnal per bulan" }
-      ]
-    },
-    "securityFeatures": {
-      "title": "Fitur Keamanan",
-      "items": [
-        "Otentikasi Aman dengan Laravel Fortify/Sanctum",
-        "Perlindungan Cross-Site Request Forgery (CSRF)",
-        "Jejak Audit (Audit Trail) untuk setiap entri keuangan",
-        "Izin Akses Berbasis Peran (Role-Based Access Control)"
-      ]
-    }
-  }
-},
-{
-  "product": {
-    "id": "project-management-tool",
-    "name": "Project Management Tool",
-    "description": "Tool manajemen proyek dengan Gantt chart, task tracking, dan team collaboration.",
-    "fullDescription": "Project Management Tool ini adalah platform all-in-one yang dirancang untuk membantu tim merencanakan, melacak, dan berkolaborasi dalam proyek. Sistem ini mengkombinasikan alat perencanaan visual seperti Gantt chart dengan fitur kolaborasi real-time untuk memastikan seluruh tim tetap selaras dan proyek berjalan sesuai jadwal.",
-    "image": "/assets/products/35.png",
-    "technologies": ["React", "Node.js", "PostgreSQL", "Socket.io", "TypeScript"],
-    "category": "Project Management",
-    "status": "In Development",
-    "version": "0.7.0",
-    "lastUpdated": "Juli 2025",
-    "client": "Internal SaaS Product",
-    "duration": "9 bulan (berjalan)",
-    "teamSize": "6 specialists (Frontend, Backend, DevOps, UI/UX, PM)"
-  },
-  "hero": {
-    "buttons": {
-      "liveDemo": "Coba Demo",
-      "sourceCode": "Kode Sumber",
-      "documentation": "Dokumentasi API"
-    }
-  },
-  "tabs": {
-    "triggers": {
-      "overview": "Ringkasan",
-      "features": "Fitur Utama",
-      "workflow": "Alur Kerja",
-      "techStack": "Teknologi",
-      "screenshots": "Galeri",
-      "specs": "Spesifikasi"
-    }
-  },
-  "overview": {
-    "projectInfo": {
-      "title": "Info Proyek",
-      "clientLabel": "Klien",
-      "durationLabel": "Durasi",
-      "teamSizeLabel": "Ukuran Tim",
-      "lastUpdatedLabel": "Pembaruan Terakhir"
-    },
-    "platformSupport": {
-      "title": "Dukungan Fitur",
-      "items": [
-        "Akses Web (Desktop First)",
-        "Notifikasi Real-time",
-        "Lampiran & Berbagi File",
-        "Integrasi dengan Git (GitHub/GitLab)"
-      ]
-    },
-    "architecture": {
-      "title": "Arsitektur Sistem",
-      "items": [
-        "Single Page Application (SPA)",
-        "RESTful API dengan Lapisan Real-time",
-        "Komunikasi WebSocket via Socket.IO",
-        "Database Relasional untuk Data Terstruktur"
-      ]
-    },
-    "projectDescription": {
-      "title": "Deskripsi Proyek",
-      "paragraphs": [
-        "Proyek modern sering kali terkendala oleh kurangnya visibilitas, tenggat waktu yang terlewat, dan komunikasi yang terputus-putus. Tim kesulitan melihat gambaran besar proyek sambil melacak tanggung jawab individu, yang mengakibatkan inefisiensi dan penundaan.",
-        "Solusi kami adalah membangun sebuah tool manajemen proyek terintegrasi. Dengan antarmuka yang reaktif dibangun menggunakan React dan backend real-time yang didukung oleh Node.js serta Socket.IO, setiap pembaruan—baik pergeseran tugas di papan Kanban maupun komentar baru—dapat langsung dilihat oleh seluruh anggota tim tanpa perlu me-refresh halaman.",
-        "Platform ini menyediakan satu sumber kebenaran (single source of truth) untuk status proyek, meningkatkan akuntabilitas tim, memfasilitasi kolaborasi yang mulus, dan pada akhirnya membantu tim menyelesaikan proyek tepat waktu dan sesuai anggaran."
-      ]
-    }
-  },
-  "features": [
-    {
-      "icon": "Package",
-      "title": "Papan Kanban & Manajemen Tugas",
-      "description": "Buat, berikan, dan lacak progres tugas secara visual menggunakan papan Kanban yang intuitif (To Do, In Progress, Done)."
-    },
-    {
-      "icon": "BarChart3",
-      "title": "Gantt Chart Interaktif",
-      "description": "Visualisasikan linimasa proyek, kelola dependensi antar tugas, dan identifikasi jalur kritis untuk perencanaan strategis."
-    },
-    {
-      "icon": "Users",
-      "title": "Kolaborasi Tim",
-      "description": "Fasilitas komentar di setiap tugas, @mentions, dan ruang diskusi proyek untuk menjaga komunikasi tetap terpusat."
-    },
-    {
-      "icon": "CheckCircle",
-      "title": "Notifikasi Real-time",
-      "description": "Dapatkan pemberitahuan instan untuk pembaruan tugas, komentar baru, dan saat nama Anda disebut (@mention)."
-    },
-    {
-      "icon": "Database",
-      "title": "Berbagi File & Dokumen",
-      "description": "Unggah dan lampirkan file-file relevan seperti dokumen desain atau mockup langsung di dalam tugas terkait."
-    },
-    {
-      "icon": "Monitor",
-      "title": "Dasbor & Pelaporan",
-      "description": "Pantau progres proyek secara keseluruhan, beban kerja tim (workload), dan lihat tugas-tugas yang terlambat."
-    }
-  ],
-  "workflow": {
-    "title": "Alur Kerja Sprint Development",
-    "steps": [
-      {
-        "step": 1,
-        "icon": "Package",
-        "title": "Perencanaan Backlog",
-        "description": "Product Manager membuat dan memprioritaskan user stories atau tugas di dalam backlog proyek."
-      },
-      {
-        "step": 2,
-        "icon": "Users",
-        "title": "Perencanaan Sprint",
-        "description": "Tim memilih tugas dari backlog untuk dikerjakan dalam sprint berikutnya dan menugaskannya ke anggota tim."
-      },
-      {
-        "step": 3,
-        "icon": "Server",
-        "title": "Eksekusi Tugas",
-        "description": "Developer memindahkan kartu tugas dari 'To Do' ke 'In Progress' di papan Kanban saat mulai mengerjakan."
-      },
-      {
-        "step": 4,
-        "icon": "Monitor",
-        "title": "Kolaborasi Real-time",
-        "description": "Developer memberikan update, bertanya, dan melampirkan tautan pull request di kolom komentar tugas."
-      },
-      {
-        "step": 5,
-        "icon": "CheckCircle",
-        "title": "Penyelesaian Tugas",
-        "description": "Setelah selesai dan di-review, tugas dipindahkan ke 'Done', dan progres di Gantt chart diperbarui secara otomatis."
-      }
-    ]
-  },
-  "techStack": [
-    {
-      "category": "Frontend",
-      "technologies": [
-        { "name": "React 18", "description": "Library JavaScript untuk membangun antarmuka pengguna yang interaktif dan berbasis komponen." },
-        { "name": "Redux Toolkit", "description": "Alat standar untuk manajemen state yang kompleks dan dapat diprediksi." },
-        { "name": "dhtmlx-gantt", "description": "Library JavaScript yang kuat untuk membuat Gantt chart yang kaya fitur." },
-        { "name": "react-beautiful-dnd", "description": "Library untuk membuat fungsionalitas drag-and-drop yang indah dan aksesibel." }
-      ]
-    },
-    {
-      "category": "Backend",
-      "technologies": [
-        { "name": "Node.js (Express.js)", "description": "Framework web minimalis untuk membangun RESTful API yang cepat." },
-        { "name": "Socket.IO", "description": "Memungkinkan komunikasi dua arah berbasis event secara real-time untuk notifikasi dan pembaruan live." },
-        { "name": "Prisma", "description": "Next-generation ORM untuk Node.js dan TypeScript yang menyederhanakan interaksi database." }
-      ]
-    },
-    {
-      "category": "Database",
-      "technologies": [
-        { "name": "PostgreSQL", "description": "Sistem basis data relasional objek yang andal dan cocok untuk data terstruktur yang kompleks." }
-      ]
-    }
-  ],
-  "screenshots": [
-    {
-      "title": "Tampilan Papan Proyek (Kanban Board)",
-          "image": "/placeholder.svg",
-      "description": "Visualisasi alur kerja tim dengan kartu tugas yang dapat dipindahkan antar kolom status."
-    },
-    {
-      "title": "Timeline Proyek dengan Gantt Chart Interaktif",
-          "image": "/placeholder.svg",
-      "description": "Menampilkan jadwal proyek, durasi tugas, dan hubungan dependensi antar tugas."
-    },
-    {
-      "title": "Detail Tugas dengan Kolom Komentar dan Aktivitas",
-          "image": "/placeholder.svg",
-      "description": "Setiap tugas memiliki ruangnya sendiri untuk deskripsi, checklist, lampiran, dan diskusi tim."
-    },
-    {
-      "title": "Dasbor Analitik Progres Proyek",
-          "image": "/placeholder.svg",
-      "description": "Grafik dan metrik yang menunjukkan kesehatan proyek, seperti persentase penyelesaian dan distribusi tugas."
-    }
-  ],
-  "specifications": {
-    "systemRequirements": {
-      "title": "Kebutuhan Sistem",
-      "server": {
-        "title": "Kebutuhan Server",
-        "items": ["Node.js 18.x+", "PostgreSQL 12+"]
-      },
-      "client": {
-        "title": "Kebutuhan Klien",
-        "items": ["Browser web modern (Chrome, Firefox, Safari, Edge)"]
+          "description": "Sistem secara otomatis mendeteksi item yang masuk saat melewati gerbang RFID dan mencocokkannya dengan PO."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Kebutuhan Sistem",
+          "server": {
+            "title": "Kebutuhan Server",
+            "items": [
+              "Node.js 18.x+",
+              "MySQL 8.0+",
+              "Server khusus untuk Middleware RFID"
+            ]
+          },
+          "client": {
+            "title": "Kebutuhan Klien",
+            "items": [
+              "Perangkat genggam berbasis Android/iOS dengan browser modern",
+              "Koneksi Wi-Fi stabil di seluruh area gudang"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Performa",
+          "metrics": [
+            { "label": "Latensi Pembaruan Stok", "value": "< 1 detik" },
+            { "label": "Generasi Rute Pengambilan", "value": "< 2 detik" },
+            { "label": "Dukungan Operator Bersamaan", "value": "100+" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Fitur Keamanan",
+          "items": [
+            "Login aman untuk setiap operator",
+            "Izin akses berbasis peran (Operator, Supervisor, Admin)",
+            "Jejak audit (audit trail) untuk setiap pergerakan inventaris",
+            "Enkripsi komunikasi antara perangkat dan server"
+          ]
+        }
       }
     },
-    "performanceMetrics": {
-      "title": "Metrik Performa",
-      "metrics": [
-        { "label": "Latensi Pembaruan Real-time", "value": "< 300 ms" },
-        { "label": "Render Gantt Chart (100+ tugas)", "value": "< 300 ms" },
-        { "label": "Waktu Muat Awal Aplikasi", "value": "< 300 ms" }
-      ]
+    {
+      "product": {
+        "id": "accounting-system",
+        "name": "Accounting System",
+        "description": "Sistem akuntansi lengkap dengan general ledger dan financial statements.",
+        "fullDescription": "Sistem Akuntansi ini adalah platform berbasis web yang dirancang untuk Usaha Kecil dan Menengah (UKM) guna mengelola seluruh proses pembukuan. Sistem ini mengotomatiskan entri jurnal, mengelola bagan akun (Chart of Accounts), dan menghasilkan laporan keuangan standar untuk memastikan kepatuhan dan memberikan visibilitas finansial yang jelas.",
+        "image": "/assets/products/36.png",
+        "technologies": [
+          "React",
+          "Laravel",
+          "MySQL",
+          "PDF Generator",
+          "Eloquent ORM"
+        ],
+        "category": "Accounting & Finance",
+        "status": "Completed",
+        "version": "2.2.0",
+        "lastUpdated": "Mei 2025",
+        "client": "Konsultan Keuangan Sejahtera",
+        "duration": "7 bulan",
+        "teamSize": "5 specialists (Frontend, Laravel Backend, DBA, QA)"
+      },
+      "hero": {
+        "buttons": {
+          "liveDemo": "Buka Sistem",
+          "sourceCode": "Kode Sumber",
+          "documentation": "Dokumentasi"
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Kerja",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Info Proyek",
+          "clientLabel": "Klien",
+          "durationLabel": "Durasi",
+          "teamSizeLabel": "Ukuran Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Fitur",
+          "items": [
+            "Akses Multi-User Berbasis Web",
+            "Izin Akses Berbasis Peran (Akuntan, Manajer)",
+            "Ekspor Laporan ke PDF & Excel",
+            "Kustomisasi Bagan Akun (Chart of Accounts)"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Monolithic Architecture (Laravel)",
+            "API Aman dengan Laravel Sanctum",
+            "Antarmuka Dinamis dengan React",
+            "Prinsip Double-Entry Bookkeeping"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Banyak UKM mengandalkan spreadsheet atau pencatatan manual untuk akuntansi, sebuah metode yang rentan terhadap kesalahan, memakan waktu, dan menyulitkan pembuatan laporan keuangan yang akurat untuk keperluan pajak atau pengambilan keputusan. Hal ini menjadi penghambat dalam mengelola kesehatan finansial bisnis secara efektif.",
+            "Proyek ini membangun sebuah sistem akuntansi berbasis web yang andal dan aman. Dengan menggunakan framework Laravel yang kokoh di backend dan React untuk antarmuka yang dinamis, sistem ini dirancang berdasarkan prinsip akuntansi double-entry yang standar. Fitur utamanya adalah kemampuan untuk menghasilkan laporan keuangan profesional dalam format PDF dengan sekali klik.",
+            "Dengan sistem ini, bisnis dapat memiliki data keuangan yang akurat dan real-time, menyederhanakan pelaporan pajak, meningkatkan kualitas pengambilan keputusan strategis melalui laporan yang jelas, dan menghemat waktu administrasi yang signifikan."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Database",
+          "title": "General Ledger (Buku Besar)",
+          "description": "Pusat catatan dari semua transaksi keuangan yang terorganisir berdasarkan bagan akun (Chart of Accounts)."
+        },
+        {
+          "icon": "Package",
+          "title": "Chart of Accounts (CoA)",
+          "description": "Daftar akun yang dapat disesuaikan (Aset, Liabilitas, Ekuitas, Pendapatan, Biaya) untuk klasifikasi transaksi."
+        },
+        {
+          "icon": "Printer",
+          "title": "Entri Jurnal",
+          "description": "Fasilitas untuk mencatat transaksi debet dan kredit secara manual, dengan validasi untuk memastikan keseimbangan."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Utang & Piutang (AP/AR)",
+          "description": "Melacak faktur dari pemasok (Accounts Payable) dan faktur ke pelanggan (Accounts Receivable) beserta status pembayarannya."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Laporan Keuangan",
+          "description": "Generasi otomatis laporan keuangan standar: Laporan Laba Rugi, Neraca, dan Laporan Arus Kas."
+        },
+        {
+          "icon": "Shield",
+          "title": "Manajemen Pajak",
+          "description": "Membantu dalam rekapitulasi dan perhitungan pajak (seperti PPN) berdasarkan transaksi yang tercatat di sistem."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Proses Tutup Buku Bulanan",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "CheckCircle",
+            "title": "Rekonsiliasi Bank",
+            "description": "Akuntan mencocokkan semua transaksi yang tercatat di sistem dengan laporan mutasi rekening bank."
+          },
+          {
+            "step": 2,
+            "icon": "Printer",
+            "title": "Membuat Jurnal Penyesuaian",
+            "description": "Mencatat transaksi non-kas seperti depresiasi aset, biaya akrual, dan pendapatan diterima di muka."
+          },
+          {
+            "step": 3,
+            "icon": "Server",
+            "title": "Meninjau Neraca Saldo",
+            "description": "Sistem menghasilkan neraca saldo (trial balance) untuk memastikan total debet dan kredit seimbang sebelum penutupan."
+          },
+          {
+            "step": 4,
+            "icon": "Database",
+            "title": "Membuat Jurnal Penutup",
+            "description": "Sistem secara otomatis membuat jurnal penutup untuk me-nol-kan saldo akun pendapatan dan biaya ke laba ditahan."
+          },
+          {
+            "step": 5,
+            "icon": "Download",
+            "title": "Menghasilkan Laporan Final",
+            "description": "Setelah buku ditutup, Laporan Laba Rugi dan Neraca final untuk periode tersebut siap untuk diunduh dan dianalisis."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "Library JavaScript untuk membangun antarmuka pengguna yang cepat dan dinamis."
+            },
+            {
+              "name": "Zustand",
+              "description": "Manajemen state yang ringan untuk React, mempermudah pengelolaan data aplikasi."
+            },
+            {
+              "name": "Ant Design",
+              "description": "Library komponen UI yang cocok untuk aplikasi enterprise dengan banyak tabel dan form."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "PHP 8.2",
+              "description": "Bahasa pemrograman sisi server yang populer dan matang untuk pengembangan web."
+            },
+            {
+              "name": "Laravel 10",
+              "description": "Framework PHP yang elegan dengan ekosistem yang kaya untuk membangun aplikasi web yang kuat."
+            },
+            {
+              "name": "Laravel Sanctum",
+              "description": "Paket otentikasi yang ringan untuk SPA (Single Page Application) dan API."
+            }
+          ]
+        },
+        {
+          "category": "Database & Reporting",
+          "technologies": [
+            {
+              "name": "MySQL 8.0",
+              "description": "Sistem basis data relasional yang andal untuk menyimpan data keuangan terstruktur."
+            },
+            {
+              "name": "Eloquent ORM",
+              "description": "ORM bawaan Laravel yang menyediakan cara indah untuk berinteraksi dengan database."
+            },
+            {
+              "name": "PDF Generator Library",
+              "description": "Library seperti 'dompdf' atau 'snappy' yang terintegrasi dengan Laravel untuk membuat laporan PDF."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dasbor Utama Akuntansi",
+          "image": "/placeholder.svg",
+          "description": "Menampilkan ringkasan posisi kas, grafik laba rugi, dan saldo utang-piutang secara sekilas."
+        },
+        {
+          "title": "Tampilan General Ledger (Buku Besar)",
+          "image": "/placeholder.svg",
+          "description": "Detail semua transaksi untuk akun tertentu (misal: Kas) dalam periode waktu yang dipilih."
+        },
+        {
+          "title": "Formulir Entri Jurnal Umum",
+          "image": "/placeholder.svg",
+          "description": "Antarmuka untuk mencatat transaksi debet dan kredit secara manual dengan validasi keseimbangan."
+        },
+        {
+          "title": "Contoh Laporan Laba Rugi (PDF)",
+          "image": "/placeholder.svg",
+          "description": "Laporan laba rugi yang dihasilkan oleh sistem dalam format PDF profesional yang siap cetak."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Kebutuhan Sistem",
+          "server": {
+            "title": "Kebutuhan Server",
+            "items": [
+              "Lingkungan PHP 8.1+ dengan ekstensi yang dibutuhkan Laravel",
+              "MySQL 5.7+ atau MariaDB 10.3+"
+            ]
+          },
+          "client": {
+            "title": "Kebutuhan Klien",
+            "items": ["Browser web modern seperti Chrome, Firefox, atau Edge"]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Performa",
+          "metrics": [
+            { "label": "Generasi Laporan Keuangan", "value": "< 10 detik" },
+            { "label": "Waktu Posting Jurnal", "value": "< 500 ms" },
+            {
+              "label": "Kapasitas Transaksi",
+              "value": "Ribuan baris jurnal per bulan"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Fitur Keamanan",
+          "items": [
+            "Otentikasi Aman dengan Laravel Fortify/Sanctum",
+            "Perlindungan Cross-Site Request Forgery (CSRF)",
+            "Jejak Audit (Audit Trail) untuk setiap entri keuangan",
+            "Izin Akses Berbasis Peran (Role-Based Access Control)"
+          ]
+        }
+      }
     },
-    "securityFeatures": {
-      "title": "Fitur Keamanan",
-      "items": [
-        "Otentikasi dan otorisasi pengguna",
-        "Kontrol akses berbasis proyek (publik/pribadi)",
-        "Enkripsi data saat transit (HTTPS & WSS)",
-        "Validasi input untuk mencegah serangan umum"
-      ]
+    {
+      "product": {
+        "id": "project-management-tool",
+        "name": "Project Management Tool",
+        "description": "Tool manajemen proyek dengan Gantt chart, task tracking, dan team collaboration.",
+        "fullDescription": "Project Management Tool ini adalah platform all-in-one yang dirancang untuk membantu tim merencanakan, melacak, dan berkolaborasi dalam proyek. Sistem ini mengkombinasikan alat perencanaan visual seperti Gantt chart dengan fitur kolaborasi real-time untuk memastikan seluruh tim tetap selaras dan proyek berjalan sesuai jadwal.",
+        "image": "/assets/products/35.png",
+        "technologies": [
+          "React",
+          "Node.js",
+          "PostgreSQL",
+          "Socket.io",
+          "TypeScript"
+        ],
+        "category": "Project Management",
+        "status": "In Development",
+        "version": "0.7.0",
+        "lastUpdated": "Juli 2025",
+        "client": "Internal SaaS Product",
+        "duration": "9 bulan (berjalan)",
+        "teamSize": "6 specialists (Frontend, Backend, DevOps, UI/UX, PM)"
+      },
+      "hero": {
+        "buttons": {
+          "liveDemo": "Coba Demo",
+          "sourceCode": "Kode Sumber",
+          "documentation": "Dokumentasi API"
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Kerja",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Info Proyek",
+          "clientLabel": "Klien",
+          "durationLabel": "Durasi",
+          "teamSizeLabel": "Ukuran Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Fitur",
+          "items": [
+            "Akses Web (Desktop First)",
+            "Notifikasi Real-time",
+            "Lampiran & Berbagi File",
+            "Integrasi dengan Git (GitHub/GitLab)"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Single Page Application (SPA)",
+            "RESTful API dengan Lapisan Real-time",
+            "Komunikasi WebSocket via Socket.IO",
+            "Database Relasional untuk Data Terstruktur"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Proyek modern sering kali terkendala oleh kurangnya visibilitas, tenggat waktu yang terlewat, dan komunikasi yang terputus-putus. Tim kesulitan melihat gambaran besar proyek sambil melacak tanggung jawab individu, yang mengakibatkan inefisiensi dan penundaan.",
+            "Solusi kami adalah membangun sebuah tool manajemen proyek terintegrasi. Dengan antarmuka yang reaktif dibangun menggunakan React dan backend real-time yang didukung oleh Node.js serta Socket.IO, setiap pembaruan—baik pergeseran tugas di papan Kanban maupun komentar baru—dapat langsung dilihat oleh seluruh anggota tim tanpa perlu me-refresh halaman.",
+            "Platform ini menyediakan satu sumber kebenaran (single source of truth) untuk status proyek, meningkatkan akuntabilitas tim, memfasilitasi kolaborasi yang mulus, dan pada akhirnya membantu tim menyelesaikan proyek tepat waktu dan sesuai anggaran."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "Papan Kanban & Manajemen Tugas",
+          "description": "Buat, berikan, dan lacak progres tugas secara visual menggunakan papan Kanban yang intuitif (To Do, In Progress, Done)."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Gantt Chart Interaktif",
+          "description": "Visualisasikan linimasa proyek, kelola dependensi antar tugas, dan identifikasi jalur kritis untuk perencanaan strategis."
+        },
+        {
+          "icon": "Users",
+          "title": "Kolaborasi Tim",
+          "description": "Fasilitas komentar di setiap tugas, @mentions, dan ruang diskusi proyek untuk menjaga komunikasi tetap terpusat."
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "Notifikasi Real-time",
+          "description": "Dapatkan pemberitahuan instan untuk pembaruan tugas, komentar baru, dan saat nama Anda disebut (@mention)."
+        },
+        {
+          "icon": "Database",
+          "title": "Berbagi File & Dokumen",
+          "description": "Unggah dan lampirkan file-file relevan seperti dokumen desain atau mockup langsung di dalam tugas terkait."
+        },
+        {
+          "icon": "Monitor",
+          "title": "Dasbor & Pelaporan",
+          "description": "Pantau progres proyek secara keseluruhan, beban kerja tim (workload), dan lihat tugas-tugas yang terlambat."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Kerja Sprint Development",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Package",
+            "title": "Perencanaan Backlog",
+            "description": "Product Manager membuat dan memprioritaskan user stories atau tugas di dalam backlog proyek."
+          },
+          {
+            "step": 2,
+            "icon": "Users",
+            "title": "Perencanaan Sprint",
+            "description": "Tim memilih tugas dari backlog untuk dikerjakan dalam sprint berikutnya dan menugaskannya ke anggota tim."
+          },
+          {
+            "step": 3,
+            "icon": "Server",
+            "title": "Eksekusi Tugas",
+            "description": "Developer memindahkan kartu tugas dari 'To Do' ke 'In Progress' di papan Kanban saat mulai mengerjakan."
+          },
+          {
+            "step": 4,
+            "icon": "Monitor",
+            "title": "Kolaborasi Real-time",
+            "description": "Developer memberikan update, bertanya, dan melampirkan tautan pull request di kolom komentar tugas."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Penyelesaian Tugas",
+            "description": "Setelah selesai dan di-review, tugas dipindahkan ke 'Done', dan progres di Gantt chart diperbarui secara otomatis."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "Library JavaScript untuk membangun antarmuka pengguna yang interaktif dan berbasis komponen."
+            },
+            {
+              "name": "Redux Toolkit",
+              "description": "Alat standar untuk manajemen state yang kompleks dan dapat diprediksi."
+            },
+            {
+              "name": "dhtmlx-gantt",
+              "description": "Library JavaScript yang kuat untuk membuat Gantt chart yang kaya fitur."
+            },
+            {
+              "name": "react-beautiful-dnd",
+              "description": "Library untuk membuat fungsionalitas drag-and-drop yang indah dan aksesibel."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js (Express.js)",
+              "description": "Framework web minimalis untuk membangun RESTful API yang cepat."
+            },
+            {
+              "name": "Socket.IO",
+              "description": "Memungkinkan komunikasi dua arah berbasis event secara real-time untuk notifikasi dan pembaruan live."
+            },
+            {
+              "name": "Prisma",
+              "description": "Next-generation ORM untuk Node.js dan TypeScript yang menyederhanakan interaksi database."
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "Sistem basis data relasional objek yang andal dan cocok untuk data terstruktur yang kompleks."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Tampilan Papan Proyek (Kanban Board)",
+          "image": "/placeholder.svg",
+          "description": "Visualisasi alur kerja tim dengan kartu tugas yang dapat dipindahkan antar kolom status."
+        },
+        {
+          "title": "Timeline Proyek dengan Gantt Chart Interaktif",
+          "image": "/placeholder.svg",
+          "description": "Menampilkan jadwal proyek, durasi tugas, dan hubungan dependensi antar tugas."
+        },
+        {
+          "title": "Detail Tugas dengan Kolom Komentar dan Aktivitas",
+          "image": "/placeholder.svg",
+          "description": "Setiap tugas memiliki ruangnya sendiri untuk deskripsi, checklist, lampiran, dan diskusi tim."
+        },
+        {
+          "title": "Dasbor Analitik Progres Proyek",
+          "image": "/placeholder.svg",
+          "description": "Grafik dan metrik yang menunjukkan kesehatan proyek, seperti persentase penyelesaian dan distribusi tugas."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Kebutuhan Sistem",
+          "server": {
+            "title": "Kebutuhan Server",
+            "items": ["Node.js 18.x+", "PostgreSQL 12+"]
+          },
+          "client": {
+            "title": "Kebutuhan Klien",
+            "items": ["Browser web modern (Chrome, Firefox, Safari, Edge)"]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Performa",
+          "metrics": [
+            { "label": "Latensi Pembaruan Real-time", "value": "< 300 ms" },
+            { "label": "Render Gantt Chart (100+ tugas)", "value": "< 300 ms" },
+            { "label": "Waktu Muat Awal Aplikasi", "value": "< 300 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Fitur Keamanan",
+          "items": [
+            "Otentikasi dan otorisasi pengguna",
+            "Kontrol akses berbasis proyek (publik/pribadi)",
+            "Enkripsi data saat transit (HTTPS & WSS)",
+            "Validasi input untuk mencegah serangan umum"
+          ]
+        }
+      }
     }
-  }
-}
   ]
 }

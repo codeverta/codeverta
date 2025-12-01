@@ -522,6 +522,7 @@ const Navbar = () => {
     { id: "/produk", name: "Produk Kami", isDropdown: true },
     { id: "/kategori/artikel", name: "Artikel & Berita", isDropdown: true },
     { id: "/kategori/belajar", name: "Kelas & Tutorial", isDropdown: true },
+    { id: "/faq", name: "FAQ", isDropdown: false },
     { id: "/about", name: "Tentang Kami" },
   ];
 
