@@ -244,7 +244,45 @@
             "Webhook Signature Verification (Midtrans)"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Starter",
+          "price": "Rp 8.000.000",
+          "features": [
+            "Katalog Produk",
+            "Keranjang Belanja",
+            "Checkout Manual",
+            "Admin Panel Basic",
+            "Dapat diakses up to 10k pengunjung/hari"
+          ],
+          "description": "Solusi e-commerce awal yang fokus pada online presence & marketing."
+        },
+        {
+          "tier": "Standard",
+          "price": "Rp 15.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Starter +",
+            "Integrasi Pembayaran Midtrans",
+            "Manajemen Stok",
+            "Notifikasi WA/Email"
+          ],
+          "description": "Pilihan paling populer dengan fitur pembayaran otomatis yang lengkap."
+        },
+        {
+          "tier": "Premium",
+          "price": "Rp 30.000.000",
+          "features": [
+            "Semua Fitur di Paket Standard +",
+            "API Cek Ongkir Otomatis",
+            "Fitur Promo & Kupon",
+            "Laporan Penjualan Detail",
+            "Dapat diakses up to 50k pengunjung/hari"
+          ],
+          "description": "Platform lengkap untuk skalabilitas dan analisis bisnis."
+        }
+      ]
     },
     {
       "product": {
@@ -426,7 +464,52 @@
           "title": "Security Features",
           "items": ["SSL/TLS Encryption", "Role-based Access Control"]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Starter",
+          "price": "Rp 12.000.000",
+          "features": [
+            "Point of Sale Dasar",
+            "Manajemen Produk & Kategori",
+            "Inventory Tracking Basic",
+            "Laporan Penjualan Harian",
+            "Multi-Device Support",
+            "Dapat digunakan hingga 10 outlet"
+          ],
+          "description": "Paket dasar untuk bisnis kecil yang membutuhkan POS modern dengan fitur utama penjualan dan inventaris."
+        },
+        {
+          "tier": "Standard",
+          "price": "Rp 22.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Starter +",
+            "Real-time Inventory Sync",
+            "Dashboard Analytics",
+            "Manajemen Karyawan & Role-based Access",
+            "Integrasi Barcode Scanner",
+            "Export Laporan ke Excel/PDF",
+            "Dukungan hingga 3 outlet"
+          ],
+          "description": "Paket paling populer untuk bisnis yang membutuhkan automasi, laporan lebih lengkap, dan kontrol multi-outlet."
+        },
+        {
+          "tier": "Premium",
+          "price": "Rp 40.000.000",
+          "features": [
+            "Semua Fitur di Paket Standard +",
+            "Real-time Socket.io Sync",
+            "Advanced Reporting (Profit, Trend, Heatmap)",
+            "Integrasi E-commerce",
+            "Integrasi Hardware POS (Printer, Cash Drawer, Display)",
+            "Promo & Loyalty Program",
+            "Custom Workflow & Microservices Ready",
+            "Dukungan hingga 10 outlet"
+          ],
+          "description": "Solusi POS lengkap dengan integrasi lanjutan, laporan mendalam, dan arsitektur scalable untuk bisnis berkembang."
+        }
+      ]
     },
     {
       "product": {
@@ -672,7 +755,74 @@
             "Koneksi aman melalui HTTPS/SSL"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Starter",
+          "price": "Rp 25.000.000",
+          "features": [
+            "Peta Interaktif Basic (Leaflet)",
+            "Manajemen Layer Dasar (GeoJSON, WMS)",
+            "Upload Data GeoJSON",
+            "Kueri Atribut Sederhana",
+            "Peta Responsif & Mobile View",
+            "1 Hak Akses Admin",
+            "Hosting & Deployment Basic"
+          ],
+          "description": "Paket dasar untuk instansi atau bisnis yang membutuhkan platform pemetaan online sederhana dengan fungsi visualisasi dan manajemen data dasar."
+        },
+        {
+          "tier": "Standard",
+          "price": "Rp 55.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua fitur Starter +",
+            "Analisis Spasial (Buffer, Intersect, Union)",
+            "Visualisasi Tematik (Choropleth, Heatmap)",
+            "Manajemen Layer Lanjutan (Drag & Drop, Opacity)",
+            "Import Data (Shapefile, KML, CSV)",
+            "Export Data (GeoJSON, KML, CSV)",
+            "Role-Based Access Control",
+            "Integrasi GeoServer",
+            "Dashboard Analytics",
+            "Audit Log Aktivitas Pengguna",
+            "3 Hak Akses Admin"
+          ],
+          "description": "Paket paling populer, cocok untuk pemerintah daerah atau perusahaan yang membutuhkan analisis spasial, visualisasi data tematik, dan manajemen pengguna."
+        },
+        {
+          "tier": "Premium",
+          "price": "Rp 95.000.000",
+          "features": [
+            "Semua fitur Standard +",
+            "Advanced Spatial Analysis (Multi-layer Overlay, Dissolve, Clip)",
+            "Tile Server Optimization",
+            "Custom Thematic Styling",
+            "Integrasi Sistem Eksternal via API",
+            "Automated Scheduled Backup",
+            "Multi-level User Access (Admin, Editor, Viewer)",
+            "Performance Optimization (Caching, Tile Compression)",
+            "Server Setup Lengkap (Node.js, PostgreSQL, PostGIS, GeoServer)",
+            "Training & Dokumentasi Teknis Lengkap",
+            "5 Hak Akses Admin"
+          ],
+          "description": "Solusi lengkap WebGIS tingkat lanjut dengan analisis mendalam, performa optimal, integrasi ke sistem eksternal, dan setup server yang siap produksi."
+        },
+        {
+          "tier": "Enterprise",
+          "price": "Custom",
+          "features": [
+            "Semua fitur Premium +",
+            "Deployment On-Premise atau Private Cloud",
+            "Support SLA 99.9%",
+            "Load Balancing & HA Architecture",
+            "Integrasi dengan SIM / SIKD / ERP",
+            "Penyesuaian Fitur Khusus sesuai kebutuhan",
+            "Unlimited Admin"
+          ],
+          "description": "Paket untuk lembaga besar yang membutuhkan skala tinggi, keamanan tingkat enterprise, dan kustomisasi penuh sesuai workflow operasional."
+        }
+      ]
     },
     {
       "product": {
@@ -939,7 +1089,72 @@
             "Dukungan Two-Factor Authentication (2FA)"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Starter",
+          "price": "Rp 150.000.000",
+          "features": [
+            "Modul Inti: Keuangan, Inventaris, Penjualan",
+            "Dashboard Laporan Dasar",
+            "1 Gudang & 1 Cabang",
+            "15 Pengguna",
+            "Integrasi Printer & Barcode Scanner",
+            "Import Data CSV/Excel",
+            "Akses Web Multi-Platform",
+            "Garansi Maintenance 3 Bulan"
+          ],
+          "description": "Paket dasar untuk perusahaan kecil-menengah yang ingin mulai melakukan digitalisasi proses bisnis dengan modul inti ERP."
+        },
+        {
+          "tier": "Professional",
+          "price": "Rp 320.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur Starter +",
+            "Modul HRM & Payroll",
+            "Manajemen Multi-Gudang",
+            "Role-Based Access Control",
+            "Audit Trail Lengkap",
+            "Analitik & Laporan Interaktif",
+            "Integrasi Sistem Eksternal (API Basic)",
+            "30 Pengguna",
+            "Garansi Maintenance 6 Bulan"
+          ],
+          "description": "Paket paling banyak dipilih untuk perusahaan menengah yang membutuhkan alur kerja lintas departemen dengan kontrol akses yang lengkap."
+        },
+        {
+          "tier": "Premium",
+          "price": "Rp 650.000.000",
+          "features": [
+            "Semua Fitur Professional +",
+            "Modul Manufaktur (BOM, Work Order, MRP)",
+            "Antrian Asinkron (RabbitMQ)",
+            "Optimasi Performa (Caching Redis)",
+            "Custom Workflow per Departemen",
+            "SSO & Centralized Authentication",
+            "Integrasi Mesin Produksi (opsional)",
+            "60 Pengguna",
+            "Garansi Maintenance 12 Bulan"
+          ],
+          "description": "Solusi ERP lengkap dengan modul manufaktur, integrasi lanjutan, serta performa tinggi untuk perusahaan berskala besar."
+        },
+        {
+          "tier": "Enterprise",
+          "price": "Custom",
+          "features": [
+            "Semua Fitur Premium +",
+            "Deployment On-Premise atau Private Cloud",
+            "High Availability & Load Balancing",
+            "Unlimited Users",
+            "Full Custom Feature (sesuai kebutuhan bisnis)",
+            "Integrasi ERP ke sistem besar (SAP/Oracle opsional)",
+            "Support SLA 99.9%",
+            "Dedicated Technical Team"
+          ],
+          "description": "Paket skala besar khusus untuk perusahaan nasional yang membutuhkan fleksibilitas penuh dan standar enterprise."
+        }
+      ]
     },
     {
       "product": {
@@ -1194,7 +1409,47 @@
             "Validasi Input untuk Mencegah Serangan XSS"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Basic HR",
+          "price": "Rp 25.000.000",
+          "features": [
+            "Database Karyawan (PIM)",
+            "Manajemen Absensi (Tanpa GPS)",
+            "Pengajuan & Persetujuan Cuti Online",
+            "Portal Self-Service Karyawan",
+            "Dukungan hingga 50 Karyawan"
+          ],
+          "description": "Solusi HRIS (Human Resource Information System) awal untuk perusahaan kecil dan menengah (UKM) yang fokus pada administrasi dasar."
+        },
+        {
+          "tier": "HR Pro",
+          "price": "Rp 50.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Basic HR +",
+            "Proses Penggajian (Payroll) Otomatis",
+            "Kalkulasi PPh 21 & BPJS",
+            "Manajemen Klaim & Reimbursement",
+            "Manajer Self-Service (MSS)",
+            "Dukungan hingga 250 Karyawan"
+          ],
+          "description": "Paket paling populer untuk perusahaan yang membutuhkan otomatisasi penuh siklus hidup karyawan termasuk proses penggajian yang kompleks."
+        },
+        {
+          "tier": "Enterprise HR",
+          "price": "Rp 95.000.000",
+          "features": [
+            "Semua Fitur di Paket HR Pro +",
+            "Integrasi API Absensi Biometrik/Pihak Ketiga",
+            "Modul Pelatihan & Pengembangan Karyawan",
+            "Laporan Analitik HR Detail (Turnover, Cost-per-Hire)",
+            "Dukungan hingga Tidak Terbatas (Unlimited) Karyawan"
+          ],
+          "description": "Platform HRMS lengkap untuk korporasi besar yang fokus pada skalabilitas, integrasi, dan analisis mendalam."
+        }
+      ]
     },
     {
       "product": {
@@ -1460,7 +1715,48 @@
             "Komunikasi aman melalui HTTPS/SSL"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Personal",
+          "price": "Rp 7.000.000",
+          "features": [
+            "Pelacakan Transaksi (Pemasukan/Pengeluaran)",
+            "Manajemen Anggaran (Budgeting) Dasar",
+            "Dasbor Interaktif & Laporan Ringkas",
+            "Dukungan 1 Pengguna (User)",
+            "Dukungan 1 Akun Bank/Dompet"
+          ],
+          "description": "Solusi manajemen keuangan pribadi yang ideal untuk individu atau rumah tangga untuk mengontrol pengeluaran harian."
+        },
+        {
+          "tier": "Pro",
+          "price": "Rp 15.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Personal +",
+            "Laporan Keuangan Esensial (Laba Rugi, Arus Kas)",
+            "Penetapan Tujuan Keuangan (Goals Tracking)",
+            "Transaksi Berulang (Otomatisasi)",
+            "Dukungan hingga 3 Akun Bank/Dompet",
+            "Dukungan Multi-Mata Uang"
+          ],
+          "description": "Pilihan terbaik untuk profesional, *freelancer*, atau usaha super kecil yang memerlukan analisis dan otomatisasi yang lebih mendalam."
+        },
+        {
+          "tier": "Business",
+          "price": "Rp 35.000.000",
+          "features": [
+            "Semua Fitur di Paket Pro +",
+            "Manajemen Faktur/Tagihan (Invoicing)",
+            "Laporan Neraca Keuangan (Balance Sheet)",
+            "Akses Multi-Pengguna (Hingga 5 User)",
+            "Integrasi API (Misalnya untuk data e-commerce)",
+            "Dukungan Unlimited Akun Bank/Dompet"
+          ],
+          "description": "Platform lengkap untuk Usaha Kecil dan Menengah (UKM) yang membutuhkan akuntansi dasar, kolaborasi tim, dan laporan komprehensif."
+        }
+      ]
     },
     {
       "product": {
@@ -1723,7 +2019,48 @@
             "Komunikasi terenkripsi (HTTPS)"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Basic Track",
+          "price": "Rp 40.000.000",
+          "features": [
+            "Pelacakan Stok Real-time Dasar",
+            "Manajemen 1 Lokasi Gudang",
+            "Pemindaian Barcode (In/Out)",
+            "Peringatan Stok Rendah Otomatis",
+            "Laporan Inventaris Ringkas"
+          ],
+          "description": "Solusi awal yang berfokus pada akurasi stok dan efisiensi operasional harian untuk satu lokasi gudang sederhana."
+        },
+        {
+          "tier": "Advanced Flow",
+          "price": "Rp 75.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Basic Track +",
+            "Dukungan Multi-Gudang (Hingga 5 Lokasi)",
+            "Manajemen Pesanan Pembelian (Purchase Order)",
+            "Audit Inventaris (Stock Opname & Cycle Counting)",
+            "Analitik Perputaran Inventaris (Turnover)",
+            "Integrasi API (Non-Realtime)"
+          ],
+          "description": "Pilihan paling populer untuk perusahaan yang mengoperasikan beberapa gudang dan membutuhkan kontrol PO serta analisis stok yang lebih mendalam."
+        },
+        {
+          "tier": "Enterprise Sync",
+          "price": "Rp 120.000.000",
+          "features": [
+            "Semua Fitur di Paket Advanced Flow +",
+            "Arsitektur Event-Driven (Apache Kafka)",
+            "Integrasi API Real-time (ERP/E-commerce)",
+            "Pelacakan Stok berdasarkan Batch/Serial Number (FIFO/LIFO)",
+            "Manajemen Lokasi Rak (Bin Location)",
+            "Dukungan Unlimited Lokasi Gudang"
+          ],
+          "description": "Sistem kontrol inventaris berkapasitas tinggi dengan arsitektur yang canggih untuk logistik, distribusi, atau rantai pasokan berskala besar."
+        }
+      ]
     },
     {
       "product": {
@@ -1966,7 +2303,48 @@
             "Validasi input untuk mencegah injeksi"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Basic Track",
+          "price": "Rp 40.000.000",
+          "features": [
+            "Pelacakan Stok Real-time Dasar",
+            "Manajemen 1 Lokasi Gudang",
+            "Pemindaian Barcode (In/Out)",
+            "Peringatan Stok Rendah Otomatis",
+            "Laporan Inventaris Ringkas"
+          ],
+          "description": "Solusi awal yang berfokus pada akurasi stok dan efisiensi operasional harian untuk satu lokasi gudang sederhana."
+        },
+        {
+          "tier": "Advanced Flow",
+          "price": "Rp 75.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Basic Track +",
+            "Dukungan Multi-Gudang (Hingga 5 Lokasi)",
+            "Manajemen Pesanan Pembelian (Purchase Order)",
+            "Audit Inventaris (Stock Opname & Cycle Counting)",
+            "Analitik Perputaran Inventaris (Turnover)",
+            "Integrasi API (Non-Realtime)"
+          ],
+          "description": "Pilihan paling populer untuk perusahaan yang mengoperasikan beberapa gudang dan membutuhkan kontrol PO serta analisis stok yang lebih mendalam."
+        },
+        {
+          "tier": "Enterprise Sync",
+          "price": "Rp 120.000.000",
+          "features": [
+            "Semua Fitur di Paket Advanced Flow +",
+            "Arsitektur Event-Driven (Apache Kafka)",
+            "Integrasi API Real-time (ERP/E-commerce)",
+            "Pelacakan Stok berdasarkan Batch/Serial Number (FIFO/LIFO)",
+            "Manajemen Lokasi Rak (Bin Location)",
+            "Dukungan Unlimited Lokasi Gudang"
+          ],
+          "description": "Sistem kontrol inventaris berkapasitas tinggi dengan arsitektur yang canggih untuk logistik, distribusi, atau rantai pasokan berskala besar."
+        }
+      ]
     },
     {
       "product": {
@@ -2214,7 +2592,48 @@
             "Integrasi gerbang pembayaran (payment gateway) yang aman"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Basic Track",
+          "price": "Rp 40.000.000",
+          "features": [
+            "Pelacakan Stok Real-time Dasar",
+            "Manajemen 1 Lokasi Gudang",
+            "Pemindaian Barcode (In/Out)",
+            "Peringatan Stok Rendah Otomatis",
+            "Laporan Inventaris Ringkas"
+          ],
+          "description": "Solusi awal yang berfokus pada akurasi stok dan efisiensi operasional harian untuk satu lokasi gudang sederhana."
+        },
+        {
+          "tier": "Advanced Flow",
+          "price": "Rp 75.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Basic Track +",
+            "Dukungan Multi-Gudang (Hingga 5 Lokasi)",
+            "Manajemen Pesanan Pembelian (Purchase Order)",
+            "Audit Inventaris (Stock Opname & Cycle Counting)",
+            "Analitik Perputaran Inventaris (Turnover)",
+            "Integrasi API (Non-Realtime)"
+          ],
+          "description": "Pilihan paling populer untuk perusahaan yang mengoperasikan beberapa gudang dan membutuhkan kontrol PO serta analisis stok yang lebih mendalam."
+        },
+        {
+          "tier": "Enterprise Sync",
+          "price": "Rp 120.000.000",
+          "features": [
+            "Semua Fitur di Paket Advanced Flow +",
+            "Arsitektur Event-Driven (Apache Kafka)",
+            "Integrasi API Real-time (ERP/E-commerce)",
+            "Pelacakan Stok berdasarkan Batch/Serial Number (FIFO/LIFO)",
+            "Manajemen Lokasi Rak (Bin Location)",
+            "Dukungan Unlimited Lokasi Gudang"
+          ],
+          "description": "Sistem kontrol inventaris berkapasitas tinggi dengan arsitektur yang canggih untuk logistik, distribusi, atau rantai pasokan berskala besar."
+        }
+      ]
     },
     {
       "product": {
@@ -2474,7 +2893,48 @@
             "Enkripsi komunikasi antara perangkat dan server"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "WMS Essentials",
+          "price": "Rp 90.000.000",
+          "features": [
+            "Manajemen Lokasi Rak (Bin-level Tracking) Dasar",
+            "Optimisasi Pengambilan (Picking) Rute Terpendek",
+            "Penyimpanan Terarah (Put-Away) Dasar",
+            "Dukungan 1 Lokasi Gudang",
+            "Akses hingga 15 Operator/User Gudang"
+          ],
+          "description": "Sistem WMS fungsional untuk gudang tunggal yang ingin pindah dari sistem inventaris ke sistem manajemen lokasi yang terarah."
+        },
+        {
+          "tier": "WMS Pro-Optimized",
+          "price": "Rp 160.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket WMS Essentials +",
+            "Dukungan Multi-Gudang (Hingga 3 Lokasi)",
+            "Manajemen Pengiriman (Packing & Shipping)",
+            "Fitur Siklus Hitung (Cycle Counting) Lanjutan",
+            "Integrasi API ke ERP/Sistem Penjualan (Standard)",
+            "Dukungan hingga 50 Operator/User Gudang"
+          ],
+          "description": "Pilihan populer untuk operasi logistik yang sedang berkembang, fokus pada peningkatan throughput dan akurasi di beberapa lokasi."
+        },
+        {
+          "tier": "WMS Enterprise Max",
+          "price": "Rp 250.000.000",
+          "features": [
+            "Semua Fitur di Paket WMS Pro-Optimized +",
+            "Integrasi RFID (Pelacakan Otomatis)",
+            "Alokasi Tugas Otomatis (Task Management)",
+            "Integrasi Perangkat Keras Khusus (Misal: Konveyor)",
+            "Visualisasi Tata Letak Gudang Real-time (WebSockets)",
+            "Dukungan Unlimited Lokasi Gudang & User"
+          ],
+          "description": "Platform WMS premium yang dirancang untuk pusat distribusi berkapasitas tinggi dengan kebutuhan integrasi teknologi otomatisasi yang kompleks."
+        }
+      ]
     },
     {
       "product": {
@@ -2727,7 +3187,48 @@
             "Izin Akses Berbasis Peran (Role-Based Access Control)"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "WMS Essentials",
+          "price": "Rp 90.000.000",
+          "features": [
+            "Manajemen Lokasi Rak (Bin-level Tracking) Dasar",
+            "Optimisasi Pengambilan (Picking) Rute Terpendek",
+            "Penyimpanan Terarah (Put-Away) Dasar",
+            "Dukungan 1 Lokasi Gudang",
+            "Akses hingga 15 Operator/User Gudang"
+          ],
+          "description": "Sistem WMS fungsional untuk gudang tunggal yang ingin pindah dari sistem inventaris ke sistem manajemen lokasi yang terarah."
+        },
+        {
+          "tier": "WMS Pro-Optimized",
+          "price": "Rp 160.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket WMS Essentials +",
+            "Dukungan Multi-Gudang (Hingga 3 Lokasi)",
+            "Manajemen Pengiriman (Packing & Shipping)",
+            "Fitur Siklus Hitung (Cycle Counting) Lanjutan",
+            "Integrasi API ke ERP/Sistem Penjualan (Standard)",
+            "Dukungan hingga 50 Operator/User Gudang"
+          ],
+          "description": "Pilihan populer untuk operasi logistik yang sedang berkembang, fokus pada peningkatan throughput dan akurasi di beberapa lokasi."
+        },
+        {
+          "tier": "WMS Enterprise Max",
+          "price": "Rp 250.000.000",
+          "features": [
+            "Semua Fitur di Paket WMS Pro-Optimized +",
+            "Integrasi RFID (Pelacakan Otomatis)",
+            "Alokasi Tugas Otomatis (Task Management)",
+            "Integrasi Perangkat Keras Khusus (Misal: Konveyor)",
+            "Visualisasi Tata Letak Gudang Real-time (WebSockets)",
+            "Dukungan Unlimited Lokasi Gudang & User"
+          ],
+          "description": "Platform WMS premium yang dirancang untuk pusat distribusi berkapasitas tinggi dengan kebutuhan integrasi teknologi otomatisasi yang kompleks."
+        }
+      ]
     },
     {
       "product": {
@@ -2970,7 +3471,48 @@
             "Validasi input untuk mencegah serangan umum"
           ]
         }
-      }
+      },
+      "priceList": [
+        {
+          "tier": "Basic Team",
+          "price": "Rp 12.000.000",
+          "features": [
+            "Papan Kanban & Task Management",
+            "Kolaborasi Tim & Komentar",
+            "Notifikasi Real-time",
+            "Dukungan hingga 5 Pengguna/Seats",
+            "Project Dashboard Dasar"
+          ],
+          "description": "Solusi manajemen proyek yang fokus pada kolaborasi harian dan pelacakan tugas untuk tim kecil atau startup."
+        },
+        {
+          "tier": "Pro Planning",
+          "price": "Rp 25.000.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Basic Team +",
+            "Gantt Chart Interaktif & Dependensi Tugas",
+            "Dasbor Pelaporan & Workload Tim",
+            "Integrasi dengan Git (GitHub/GitLab)",
+            "Dukungan hingga 25 Pengguna/Seats",
+            "Export Data (CSV/Excel)"
+          ],
+          "description": "Pilihan paling populer untuk tim yang lebih besar atau proyek kompleks yang membutuhkan perencanaan linimasa (timeline) yang kuat."
+        },
+        {
+          "tier": "Enterprise Custom",
+          "price": "Rp 45.000.000",
+          "features": [
+            "Semua Fitur di Paket Pro Planning +",
+            "Pengaturan Keamanan Tingkat Lanjut (SSO/LDAP)",
+            "API Akses Penuh (Integrasi Kustom)",
+            "Manajemen Izin (Permission) Per-Level Tugas",
+            "Dukungan Unlimited Pengguna/Seats",
+            "Konsultasi Implementasi Proyek"
+          ],
+          "description": "Platform skalabel untuk korporasi dan organisasi besar yang memerlukan integrasi mendalam, keamanan, dan dukungan kustom."
+        }
+      ]
     }
   ]
 }

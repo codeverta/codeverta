@@ -23,6 +23,7 @@ import {
   ExternalLink,
   Github,
   Download,
+  Sparkles,
 } from "lucide-react";
 
 // Import modul Node.js untuk membaca file di sisi server
@@ -44,7 +45,9 @@ import {
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
-    <Breadcrumb className="mb-8"> {/* Added margin-bottom for spacing */}
+    <Breadcrumb className="mb-8">
+      {" "}
+      {/* Added margin-bottom for spacing */}
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
@@ -109,9 +112,7 @@ export async function getStaticProps({ params }) {
   const data = JSON.parse(jsonData);
 
   // Cari proyek yang cocok dengan 'id' dari URL
-  const project = data.projects.find(
-    (p) => p.product.id === params.id
-  );
+  const project = data.projects.find((p) => p.product.id === params.id);
 
   // Jika proyek tidak ditemukan, kembalikan 'notFound: true' untuk menampilkan halaman 404
   if (!project) {
@@ -140,24 +141,25 @@ export default function ProjectDetailPage({ project }) {
     techStack,
     screenshots,
     specifications,
+    priceList,
   } = project;
   const siteUrl = "https://www.bikinwebsitejogja.com";
   const pageUrl = `${siteUrl}/produk/${project.slug}`; // Assuming you have a slug
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Service", // Or "Service" if that fits better
-  name: product.name,
-  image: `${siteUrl}${product.image}`,
-  description: product.fullDescription,
-  brand: {
-    "@type": "Brand",
-    name: "Codeverta", // Add your brand name here
-  },
-  category: product.category,
-  // If you have reviews or pricing, you can add them here
-  // "review": { ... },
-  // "offers": { ... }
-};
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Service", // Or "Service" if that fits better
+    name: product.name,
+    image: `${siteUrl}${product.image}`,
+    description: product.fullDescription,
+    brand: {
+      "@type": "Brand",
+      name: "Codeverta", // Add your brand name here
+    },
+    category: product.category,
+    // If you have reviews or pricing, you can add them here
+    // "review": { ... },
+    // "offers": { ... }
+  };
   return (
     <>
       <Head>
@@ -575,8 +577,116 @@ const schema = {
               </Card>
             </TabsContent>
           </Tabs>
+          {priceList && (
+            <div className="container mt-10 mx-auto max-w-7xl">
+              <div className="text-center mb-16">
+                <p className="text-slate-600 text-sm"> Pilihan Paket untuk </p>
+                <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
+                  Jasa Pembuatan {product.name}
+                </h2>
+                <p className="text-md text-slate-600 max-w-2xl mx-auto">
+                  Harga dihitung berdasarkan kompleksitas sistem, ruang lingkup
+                  fitur, serta waktu pengembangan yang dibutuhkan.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                {priceList.map((item, index) => (
+                  <PricingCard key={index} {...item} index={index} />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>
   );
 }
+
+const PricingCard = ({
+  tier,
+  price,
+  description,
+  features,
+  isRecommended,
+  index,
+}) => {
+  return (
+    <div
+      className={`relative rounded-2xl transition-all duration-300 hover:scale-105 ${
+        isRecommended
+          ? "bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-2xl"
+          : "bg-white text-slate-900 shadow-lg hover:shadow-xl border border-slate-200"
+      }`}
+      style={{
+        animationDelay: `${index * 100}ms`,
+      }}
+    >
+      {isRecommended && (
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+          <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-1.5 rounded-full text-sm font-semibold flex items-center gap-1.5 shadow-lg">
+            <Sparkles className="w-4 h-4" />
+            <span>Paling Populer</span>
+          </div>
+        </div>
+      )}
+
+      <div className="p-8">
+        <div className="text-center mb-6">
+          <h3
+            className={`text-2xl font-bold mb-3 ${
+              isRecommended ? "text-white" : "text-slate-900"
+            }`}
+          >
+            {tier}
+          </h3>
+          <div className="flex items-baseline justify-center gap-1">
+            <span
+              className={`text-3xl font-extrabold ${
+                isRecommended ? "text-white" : "text-blue-600"
+              }`}
+            >
+              {price}
+            </span>
+          </div>
+          <p
+            className={`mt-3 text-sm ${
+              isRecommended ? "text-blue-100" : "text-slate-600"
+            }`}
+          >
+            {description}
+          </p>
+        </div>
+
+        <div className="space-y-4 mb-8">
+          {features.map((feature, fIndex) => (
+            <div key={fIndex} className="flex items-start gap-3">
+              <CheckCircle
+                className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
+                  isRecommended ? "text-blue-200" : "text-green-500"
+                }`}
+              />
+              <span
+                className={`text-sm leading-relaxed ${
+                  isRecommended ? "text-blue-50" : "text-slate-700"
+                }`}
+              >
+                {feature}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <button
+          className={`w-full py-3.5 rounded-xl font-semibold transition-all duration-200 ${
+            isRecommended
+              ? "bg-white text-blue-600 hover:bg-blue-50 shadow-lg"
+              : "bg-blue-600 text-white hover:bg-blue-700"
+          }`}
+        >
+          Pilih Paket Ini
+        </button>
+      </div>
+    </div>
+  );
+};
