@@ -65,6 +65,7 @@ import {
   ShieldCheck,
   MonitorSmartphone,
 } from "lucide-react";
+import SeoHead from "@/components/SeoHead";
 
 interface PostMeta {
   id: string;
@@ -289,16 +290,18 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 
   return (
     <>
-      <Head>
-        <title>
-          {searchTerm
+      <SeoHead
+        title={
+          searchTerm
             ? `Search Results for "${searchTerm}" - Codeverta Tutorials`
             : selectedCategory
             ? `${selectedCategory} - Codeverta Tutorials`
-            : "Codeverta - Programming & Technology Tutorials"}
-        </title>
-        <meta name="description" content={metaDescription} />
-      </Head>
+            : "Codeverta - Programming & Technology Tutorials"
+        }
+        description={metaDescription}
+        url="https://codeverta.com/tutorials"
+        image="https://codeverta.com/og-image.png"
+      />
       <main className="bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 min-h-screen pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Hero Section */}
@@ -313,10 +316,10 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               </span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
-              Temukan berbagai tutorial teknologi
-              yang mudah diikuti untuk pemula maupun profesional. Dari
-              pemrograman, pengembangan web, AI, hingga tools terbaru—Codeverta
-              membantu Anda terus belajar dan berkembang di era digital.
+              Temukan berbagai tutorial teknologi yang mudah diikuti untuk
+              pemula maupun profesional. Dari pemrograman, pengembangan web, AI,
+              hingga tools terbaru—Codeverta membantu Anda terus belajar dan
+              berkembang di era digital.
             </p>
 
             {/* Search form */}
@@ -828,9 +831,7 @@ export async function getStaticProps({ locale }) {
   // Get posts and add sample categories and read times
   const allPostsData = getSortedPostsData("tutorials").map((post, index) => {
     // Add sample categories and read times (in a real app, these would come from the actual data)
-    const categories = [
-      "Tutorial",
-    ];
+    const categories = ["Tutorial"];
     const readTimes = [
       "3 min read",
       "5 min read",
