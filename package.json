@@ -70,7 +70,7 @@
     "pdfjs-dist": "^5.4.54",
     "photoswipe": "^5.4.4",
     "qrcode": "^1.5.4",
-    "react": "19.1.0",
+    "react": "19.2.1",
     "react-beautiful-dnd": "^13.1.1",
     "react-dom": "19.1.0",
     "react-dropzone": "^14.2.3",

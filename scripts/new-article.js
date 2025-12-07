@@ -50,8 +50,6 @@ async function getNextArticleNumber(directory) {
 
 function createPrompt(longTailKeyword) {
   const currentDate = new Date().toISOString().slice(0, 10);
-  const randomSeed = longTailKeyword.split(" ").join("-").slice(0, 10);
-
   return `
 buatkan sebuah artikel format penulisannya seperti ini, jangan beri jawaban lain selain artikel yg saya perintahkan
 
