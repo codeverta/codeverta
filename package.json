@@ -72,7 +72,7 @@
     "qrcode": "^1.5.4",
     "react": "19.2.1",
     "react-beautiful-dnd": "^13.1.1",
-    "react-dom": "19.1.0",
+    "react-dom": "19.2.1",
     "react-dropzone": "^14.2.3",
     "react-filepond": "^7.1.2",
     "react-hook-form": "^7.43.8",
