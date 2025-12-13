@@ -53,7 +53,9 @@ export default function Landing({ children, seo }: Props) {
     description:
       "Codeverta provides innovative digital solutions for your business needs. Expert web development, mobile apps, and digital transformation services.",
     ogTitle:
-      seo?.ogTitle || seo?.title || "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
+      seo?.ogTitle ||
+      seo?.title ||
+      "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
     ogDescription:
       seo?.ogDescription ||
       seo?.description ||
@@ -256,51 +258,6 @@ export default function Landing({ children, seo }: Props) {
             position: 1,
             name: "Beranda",
             item: "https://www.bikinwebsitejogja.com/",
-          },
-        ],
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "Berapa lama proses pembuatan sebuah website?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Waktu pengerjaan bervariasi tergantung kompleksitas. Untuk Paket Basic biasanya memakan waktu 1-2 minggu, sedangkan untuk sistem skala menengah dapat lebih lama (lebih dari 1 bulan). Waktu pengerjaan akan disesuaikan dengan permintaan fitur oleh client.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Apa saja yang perlu saya siapkan?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Anda cukup menyiapkan konten seperti teks profil perusahaan, daftar layanan/produk, dan gambar/foto yang ingin ditampilkan. Jika belum ada, tim kami bisa membantu mengarahkannya.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Apakah ada layanan maintenance setelah website jadi?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Tentu. Kami menyediakan paket maintenance bulanan atau tahunan yang mencakup update, backup, dan monitoring keamanan. Anda juga bisa menghubungi kami jika butuh perbaikan sewaktu-waktu.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Bisakah Anda memperbaiki website saya yang sudah ada?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Ya, kami bisa. Tim kami akan melakukan audit terlebih dahulu untuk mengidentifikasi masalah pada website Anda, mulai dari error, kecepatan, hingga tampilan, lalu memberikan solusi perbaikan terbaik.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Pembayarannya bagaimana? Apakah ada uang muka?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Pembayaran dilakukan dengan sistem DP 30% di awal, sisanya dibayar setelah website selesai dan disetujui. Kami juga menyediakan opsi pembayaran bertahap untuk proyek besar.",
-            },
           },
         ],
       },
