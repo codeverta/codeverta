@@ -40,6 +40,7 @@ import {
 import { ProjectsSection } from "@/components/landing/ProjectsSection";
 import fs from "fs";
 import path from "path";
+import RotatingText from "@/components/RotatingText";
 
 export async function getStaticProps() {
   const filePath = path.join(process.cwd(), "projects.json");
@@ -65,12 +66,16 @@ const logos = [
     alt: "NSC Bantu Perizinan",
   },
   {
-    src: "/assets/souvenirlilin.png",
-    alt: "Million Candles",
+    src: "/assets/tribunnews.svg",
+    alt: "Tribun News",
   },
   {
-    src: "/assets/cynus.png",
-    alt: "Cynus Camp",
+    src: "/assets/Logo-TribunBooking.svg",
+    alt: "Tribun Booking",
+  },
+  {
+    src: "/assets/souvenirlilin.png",
+    alt: "Million Candles",
   },
 ];
 
@@ -164,7 +169,7 @@ export default function LandingPage({ projects }: any) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-center max-w-3xl mx-auto mb-12"
+              className="text-center max-w-7xl mx-auto mb-12"
             >
               <Link
                 target="_blank"
@@ -177,8 +182,27 @@ export default function LandingPage({ projects }: any) {
                   Jl Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta
                 </Badge>
               </Link>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-                Jasa Pembuatan Website, Aplikasi & Layanan IT Lainnya
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                Jasa{" "}
+                <RotatingText
+                  texts={[
+                    "Pembuatan",
+                    "Pengembangan",
+                    "Perbaikan",
+                    "Maintenance",
+                  ]}
+                  mainClassName="inline px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  staggerFrom={"last"}
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2000}
+                />{" "}
+                Website, <br />
+                Aplikasi & Layanan IT Lainnya
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Kami menyediakan jasa pembuatan, perbaikan, pengembangan website
@@ -186,7 +210,7 @@ export default function LandingPage({ projects }: any) {
                 Anda di era digital untuk bisnis skala kecil sampai menengah.
                 <br />
                 <span className="text-red-600 text-sm">
-                  * Kualitas startup, bukan template wordpress murahan
+                  *Kualitas startup, bukan template wordpress biasa
                 </span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -243,7 +267,7 @@ export default function LandingPage({ projects }: any) {
               <h2 className="text-center text-lg font-semibold leading-8 text-muted-foreground">
                 Dipercaya oleh UKM, Startup, Bisnis Swasta, dan Pemerintahan
               </h2>
-              <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
                 {logos.map((logo, index) => (
                   <Image
                     key={index}
