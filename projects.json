@@ -286,6 +286,285 @@
     },
     {
       "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Website Undangan Pernikahan Digital Interaktif",
+        "description": "Platform pembuatan undangan pernikahan digital lengkap dengan RSVP, peta, galeri, dan fitur Hadiah.",
+        "fullDescription": "Platform ini dirancang khusus untuk pasangan yang ingin memberikan pengalaman undangan pernikahan yang modern, ramah lingkungan, dan interaktif kepada tamu. Setiap undangan dilengkapi dengan URL unik, fitur konfirmasi kehadiran (RSVP), panduan lokasi terintegrasi (Google Maps), galeri foto/video, dan fitur buku tamu atau hadiah digital. Platform ini menawarkan berbagai pilihan desain premium yang responsif di berbagai perangkat.",
+        "image": "/assets/products/42.png",
+        "technologies": [
+          "Next.js",
+          "Firebase/Supabase",
+          "Vercel/Netlify",
+          "Tailwind CSS"
+        ],
+        "category": "Digital Invitation",
+        "status": "Completed",
+        "version": "1.0.0",
+        "lastUpdated": "Desember 2025",
+        "client": "Pasangan Klien",
+        "duration": "2 minggu (Implementasi & Kustomisasi)",
+        "teamSize": "3 orang (Frontend, UI/UX, Support)"
+      },
+      "hero": {
+        "buttons": {
+          "liveDemo": "Lihat Contoh Undangan",
+          "sourceCode": "Kode Sumber (Jika Open Source)",
+          "documentation": "Panduan Penggunaan"
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Penggunaan",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri Desain",
+          "specs": "Spesifikasi"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Info Proyek",
+          "clientLabel": "Klien",
+          "durationLabel": "Durasi",
+          "teamSizeLabel": "Ukuran Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Platform",
+          "items": [
+            "Akses via Web Browser (Desktop & Mobile)",
+            "Desain Responsif (Mobile-First)",
+            "Integrasi dengan Google Maps & Tanggal (Calendar)",
+            "Custom Domain (Opsional)"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Serverless Frontend (Next.js/React)",
+            "Backend as a Service (BaaS) untuk data RSVP & Buku Tamu",
+            "Statik Hosting untuk performa load time yang cepat",
+            "Optimasi SEO untuk undangan yang bersifat publik"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Proyek ini menawarkan solusi undangan pernikahan yang modern, praktis, dan hemat biaya. Menggantikan undangan cetak, platform ini fokus pada interaksi tamu dan kemudahan dalam berbagi informasi acara.",
+            "Setiap undangan dilengkapi dengan fitur RSVP untuk melacak jumlah kehadiran tamu secara real-time. Fitur-fitur seperti navigasi peta dan fitur Hadiah Digital (Amplop Digital) memberikan nilai tambah yang signifikan bagi pasangan pengantin.",
+            "Kustomisasi desain, musik latar, dan konten sepenuhnya dikelola melalui dashboard yang intuitif. Tujuan utamanya adalah memberikan kesan yang tak terlupakan bagi tamu sekaligus mempermudah proses perencanaan pernikahan."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Users",
+          "title": "Konfirmasi Kehadiran (RSVP)",
+          "description": "Tamu dapat mengonfirmasi kehadiran mereka secara langsung. Data kehadiran tersimpan real-time."
+        },
+        {
+          "icon": "MapPin",
+          "title": "Panduan Lokasi Interaktif",
+          "description": "Integrasi Google Maps untuk navigasi menuju lokasi resepsi dan acara."
+        },
+        {
+          "icon": "Image",
+          "title": "Galeri Foto & Video",
+          "description": "Menampilkan momen terbaik pasangan dalam format galeri yang indah dan video pre-wedding."
+        },
+        {
+          "icon": "Calendar",
+          "title": "Simpan Tanggal",
+          "description": "Fitur untuk tamu menyimpan tanggal acara langsung ke kalender digital mereka (Google/iCal)."
+        },
+        {
+          "icon": "Gift",
+          "title": "Amplop Digital/Hadiah",
+          "description": "Informasi rekening bank atau e-wallet untuk tamu yang ingin mengirim hadiah digital."
+        },
+        {
+          "icon": "Speech",
+          "title": "Buku Tamu Online",
+          "description": "Tamu dapat meninggalkan ucapan selamat dan doa secara online yang langsung terlihat oleh pasangan."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Penggunaan Undangan Digital",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Link",
+            "title": "Menerima Tautan Undangan",
+            "description": "Tamu menerima tautan unik undangan melalui WhatsApp atau media sosial."
+          },
+          {
+            "step": 2,
+            "icon": "ScrollText",
+            "title": "Melihat Detail Acara",
+            "description": "Tamu menelusuri informasi lengkap acara, lokasi, dan galeri."
+          },
+          {
+            "step": 3,
+            "icon": "Users",
+            "title": "Konfirmasi Kehadiran (RSVP)",
+            "description": "Tamu mengisi formulir konfirmasi kehadiran atau meninggalkan ucapan selamat."
+          },
+          {
+            "step": 4,
+            "icon": "MapPin",
+            "title": "Akses Lokasi",
+            "description": "Tamu menggunakan fitur Google Maps terintegrasi untuk navigasi di hari-H."
+          },
+          {
+            "step": 5,
+            "icon": "MonitorCheck",
+            "title": "Pasangan Memantau Data",
+            "description": "Pasangan memantau jumlah kehadiran dan ucapan secara real-time dari dashboard admin."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Next.js/React",
+              "description": "Framework React untuk membangun aplikasi web yang cepat, performatif, dan di-render server side."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Framework CSS utility-first untuk desain yang cepat dan kustomisasi yang mudah."
+            }
+          ]
+        },
+        {
+          "category": "Backend & Database",
+          "technologies": [
+            {
+              "name": "Firebase/Supabase",
+              "description": "Backend as a Service (BaaS) untuk menyimpan data RSVP, ucapan, dan mengelola pengguna (pasangan)."
+            },
+            {
+              "name": "Nodemailer (opsional)",
+              "description": "Digunakan untuk mengirimkan notifikasi penting via email (misalnya, notifikasi RSVP masuk)."
+            }
+          ]
+        },
+        {
+          "category": "Hosting & Deployment",
+          "technologies": [
+            {
+              "name": "Vercel/Netlify",
+              "description": "Platform hosting serverless yang optimal untuk aplikasi Next.js/React untuk kecepatan dan skalabilitas."
+            },
+            {
+              "name": "GitHub",
+              "description": "Digunakan untuk manajemen kode sumber dan otomatisasi CI/CD."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Tampilan Beranda Undangan",
+          "image": "/assets/products/42.png",
+          "description": "Halaman awal dengan cover foto, nama pasangan, dan tombol 'Buka Undangan'."
+        },
+        {
+          "title": "Fitur RSVP & Buku Tamu",
+          "image": "/assets/products/43.jpeg",
+          "description": "Formulir konfirmasi kehadiran dan kolom ucapan selamat dari tamu."
+        },
+        {
+          "title": "Halaman Detail Lokasi",
+          "image": "/assets/products/44.png",
+          "description": "Blok informasi acara dengan integrasi Google Maps dan tombol 'Simpan Tanggal'."
+        },
+        {
+          "title": "Dashboard Admin (Pasangan)",
+          "image": "/assets/products/45.png",
+          "description": "Panel untuk melihat data RSVP, daftar ucapan, dan mengedit konten undangan."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Kebutuhan Sistem",
+          "server": {
+            "title": "Kebutuhan Server/Layanan",
+            "items": [
+              "Layanan BaaS Aktif (Firebase/Supabase)",
+              "Domain Kustom (Opsional, perlu konfigurasi DNS)",
+              "Integrasi Google Maps API Key"
+            ]
+          },
+          "client": {
+            "title": "Kebutuhan Klien (Pasangan)",
+            "items": [
+              "Foto & Video Pre-wedding resolusi tinggi",
+              "Detail lokasi & waktu acara yang akurat",
+              "Akses ke email/nomor telepon untuk notifikasi"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Performa",
+          "metrics": [
+            { "label": "Load Time Halaman Utama", "value": "< 1 detik" },
+            { "label": "Waktu Update RSVP", "value": "Real-time" },
+            { "label": "Skor Lighthouse Mobile", "value": "> 90" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Fitur Keamanan",
+          "items": [
+            "Autentikasi Pengguna (Pasangan) yang Aman",
+            "Tautan Undangan Unik (Perlindungan Terhadap Akses Acak)",
+            "Validasi Input pada form RSVP & Buku Tamu",
+            "Sertifikat SSL/HTTPS Otomatis"
+          ]
+        }
+      },
+      "priceList": [
+        {
+          "tier": "Basic",
+          "price": "Rp 350.000",
+          "features": [
+            "1 Desain Template Premium",
+            "Fitur RSVP & Buku Tamu Online",
+            "Integrasi Google Maps",
+            "Galeri Foto (Max 10)"
+          ],
+          "description": "Cocok untuk budget terbatas, solusi cepat dengan fitur inti."
+        },
+        {
+          "tier": "Standard",
+          "price": "Rp 500.000",
+          "isRecommended": true,
+          "features": [
+            "Semua Fitur di Paket Basic +",
+            "Fitur Amplop Digital (QRIS/Bank)",
+            "Galeri Video (Max 1)",
+            "Masa Aktif 1 Tahun"
+          ],
+          "description": "Pilihan terpopuler dengan fitur lengkap untuk donasi digital."
+        },
+        {
+          "tier": "Premium",
+          "price": "Rp 900.000",
+          "features": [
+            "Semua Fitur di Paket Standard +",
+            "Custom Domain Gratis (.id/.com)",
+            "Masa Aktif Selamanya",
+            "Custom Music Background",
+            "Prioritas Support"
+          ],
+          "description": "Pengalaman eksklusif dengan personalisasi domain dan dukungan penuh."
+        }
+      ]
+    },
+    {
+      "product": {
         "id": "smart-pos-system",
         "name": "Smart POS System",
         "description": "Point of Sale system modern dengan fitur inventory dan reporting real-time.",

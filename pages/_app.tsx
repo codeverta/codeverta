@@ -6,7 +6,7 @@ import { NextSeo } from "next-seo";
 import packageInfo from "../package.json";
 import { appWithTranslation } from "next-i18next";
 import Landing from "@/components/layout/Landing";
-
+import ClickSpark from "@/components/ClickSpark";
 
 if (typeof window !== "undefined") {
   // @ts-ignore
@@ -16,12 +16,7 @@ if (typeof window !== "undefined") {
 function App({ Component, pageProps }: AppLayoutProps) {
   const appProps = { getRelationship, getRelationships };
   const getLayout =
-    Component.getLayout ||
-    ((page: ReactNode) => (
-      <Landing>
-        {page}
-      </Landing>
-    ));
+    Component.getLayout || ((page: ReactNode) => <Landing>{page}</Landing>);
   // seo
   const pageTitle =
     "Codeverta - Jasa Pengembangan Web & Aplikasi, Software House, Inovasi Digital & AI, Startup";
@@ -66,6 +61,15 @@ function App({ Component, pageProps }: AppLayoutProps) {
       />
 
       {getLayout(<Component {...pageProps} {...appProps} />)}
+      <ClickSpark
+        sparkColor="#fff"
+        sparkSize={10}
+        sparkRadius={15}
+        sparkCount={8}
+        duration={400}
+      >
+        {/* Your content here */}
+      </ClickSpark>
     </>
   );
 }
