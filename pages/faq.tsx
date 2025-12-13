@@ -152,7 +152,7 @@ export default function FAQPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-10 space-y-4">
             <div className="inline-flex items-center justify-center p-2 bg-blue-100 rounded-full mb-2">
