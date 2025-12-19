@@ -15,11 +15,11 @@ const nextConfig = {
     return [
       {
         // Applies to all routes
-        source: '/:path*',
+        source: "/:path*",
         headers: [
           {
-            key: 'Cross-Origin-Resource-Policy',
-            value: 'cross-origin', // or 'same-site'
+            key: "Cross-Origin-Resource-Policy",
+            value: "cross-origin", // or 'same-site'
           },
         ],
       },
@@ -34,9 +34,10 @@ const nextConfig = {
   i18n,
   images: {
     domains: [
-      'picsum.photos', 
-      'firebasestorage.googleapis.com', 
-      'cdn.dribbble.com'
+      "images.unsplash.com",
+      "picsum.photos",
+      "firebasestorage.googleapis.com",
+      "cdn.dribbble.com",
     ],
   },
   pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
