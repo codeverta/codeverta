@@ -58,10 +58,6 @@ export const logos = [
     alt: "Tribun News",
   },
   {
-    src: "/assets/Logo-TribunBooking.svg",
-    alt: "Tribun Booking",
-  },
-  {
     src: "/assets/souvenirlilin.png",
     alt: "Million Candles",
   },
