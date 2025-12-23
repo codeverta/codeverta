@@ -54,12 +54,16 @@ export const logos = [
     alt: "NSC Bantu Perizinan",
   },
   {
-    src: "/assets/tribunnews.svg",
-    alt: "Tribun News",
+    src: "/assets/tickethub.jpeg",
+    alt: "Ticket Hub",
   },
   {
     src: "/assets/souvenirlilin.png",
     alt: "Million Candles",
+  },
+  {
+    src: "/assets/nova-tech.jpeg",
+    alt: "Ticket Hub",
   },
 ];
 

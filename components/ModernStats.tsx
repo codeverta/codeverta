@@ -29,8 +29,8 @@ const item = {
 
 export default function ModernStatsSection() {
   return (
-    <div className="bg-gradient-to-br from-slate-50 via-white to-slate-100 flex items-center justify-center p-4">
-      <section className="w-full max-w-7xl py-20 md:py-32">
+    <div className="bg-gradient-to-br from-slate-50 via-white to-slate-100 flex items-center justify-center">
+      <section className="w-full max-w-7xl py-4 md:py-8">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             Statistik Perusahaan Kami

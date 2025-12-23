@@ -1,0 +1,65 @@
+{
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional website creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Service for",
+      "rotating": ["Creation", "Development", "Fixing", "Maintenance"],
+      "suffix": "Websites, Applications & Other IT Services"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
+  },
+  "trustedBy": "Trusted by SMEs, Startups, Private Businesses, and Government",
+  "features": {
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
+  },
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
+    },
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
+  },
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
+    }
+  }
+}

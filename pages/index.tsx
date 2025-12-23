@@ -33,8 +33,10 @@ import { companyStats } from "@/lib/data"; // Ubah ini sesuai lokasi data stats 
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { getSortedPostsData } from "@/lib/posts";
 import ModernStatsSection from "@/components/ModernStats";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const filePath = path.join(process.cwd(), "projects.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const data = JSON.parse(jsonData);
@@ -63,11 +65,14 @@ export async function getStaticProps() {
     props: {
       projects: projects.slice(0, 3),
       allPostsData,
+      ...(await serverSideTranslations(locale, ["common"])),
     },
   };
 }
 
 export default function LandingPage({ projects }: any) {
+  const { t } = useTranslation("common");
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -132,14 +137,9 @@ export default function LandingPage({ projects }: any) {
                 </Badge>
               </Link>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-                Jasa{" "}
+                {t("home.hero.prefix")}{" "}
                 <RotatingText
-                  texts={[
-                    "Pembuatan",
-                    "Pengembangan",
-                    "Perbaikan",
-                    "Maintenance",
-                  ]}
+                  texts={t("home.hero.rotating", { returnObjects: true })}
                   mainClassName="inline px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
@@ -150,16 +150,13 @@ export default function LandingPage({ projects }: any) {
                   transition={{ type: "spring", damping: 30, stiffness: 400 }}
                   rotationInterval={2000}
                 />{" "}
-                Website, <br />
-                Aplikasi & Layanan IT Lainnya
+                {t("home.hero.suffix")}
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Kami menyediakan jasa pembuatan, perbaikan, pengembangan website
-                profesional dan layanan IT untuk mendorong pertumbuhan bisnis
-                Anda di era digital untuk bisnis skala kecil sampai menengah.
+                {t("home.subtitle")}
                 <br />
                 <span className="text-red-600 text-sm">
-                  *Kualitas startup, bukan template wordpress biasa
+                  {t("home.tagline")}
                 </span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

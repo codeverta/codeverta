@@ -1,191 +1,65 @@
 {
-  "brand": "Codeverta",
-  "flag": "🇮🇩",
-  "menu": {
-    "login": "Log in",
-    "home": "Home",
-    "products": "Produk",
-    "how_to_order": "Cara Pesan",
-    "address": "Alamat",
-    "blog": "Blog",
-    "gallery": "Galeri",
-    "about": "Tentang"
+  "home": {
+    "title": "Jasa Pengembangan Website, Aplikasi & Layanan IT Lainnya",
+    "subtitle": "Kami menyediakan jasa pembuatan, perbaikan, pengembangan website profesional dan layanan IT untuk mendorong pertumbuhan bisnis Anda di era digital untuk bisnis skala kecil sampai menengah.",
+    "hero": {
+      "prefix": "Jasa",
+      "rotating": ["Pembuatan", "Pengembangan", "Perbaikan", "Maintenance"],
+      "suffix": "Website, Aplikasi & Layanan IT Lainnya"
+    },
+    "tagline": "*Kualitas startup, bukan template wordpress biasa",
+    "cta": {
+      "whatsapp": "Whatsapp Sekarang",
+      "products": "Lihat Produk"
+    },
+    "badges": {
+      "consultation": "Konsultasi Gratis",
+      "fast": "Proses Cepat",
+      "guarantee": "Garansi Sampai Puas",
+      "trusted": "Jujur & Dapat Dipercaya"
+    }
   },
-  "address": {
-    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesia"
-  },
-  "tagline": {
-    "local_producer": "Produsen Lilin Lokal",
-    "national_scale": "Berskala Nasional"
-  },
-  "description": "Kami adalah supplier yang menyediakan berbagai macam jenis lilin berkualitas tinggi seperti lilin aromaterapi, lilin souvenir, lilin warna, lilin hias, lilin ibadah, lilin rohani, pabrik lilin dan masih banyak lagi. Kami menawarkan lilin hias yang indah untuk souvenir yang cocok untuk acara apa pun. Dari pernikahan hingga acara perusahaan atau perjalanan, lilin hias souvenir kami adalah pilihan yang tepat untuk membuat kenangan yang tak terlupakan.",
-  "how_to_order_candles": "Cara Pesan Lilin",
-  "whatsapp": "Whatsapp",
-  "our_products": "Produk Kami",
-  "other_products": "Produk Lainnya",
-  "disclaimer_price": "* Harga yang ditampilkan merupakan harga distributor/grosir",
+  "trustedBy": "Dipercaya oleh UKM, Startup, Bisnis Swasta, dan Pemerintahan",
   "features": {
-    "eco_friendly": "Ramah Lingkungan",
-    "made_from": "Terbuat dari 100% palm wax alami dan minyak atsiri",
-    "handmade": "Buatan Tangan",
-    "crafted_with_love": "Setiap lilin dituang dengan hati-hati oleh para pengrajin kami",
-    "long_lasting": "Tahan Lama",
-    "burn_time": "Hingga 12 jam waktu nyala untuk setiap lilin",
-    "handcrafted_with_love": "Handcrafted With Love",
-    "make_beautiful_memories": "Buat Kenangan Indah dengan",
-    "our_candle": "Lilin Kami",
-    "souvenir_description": "Dengan Lilin Hias Souvenir kami, Anda dapat membawa pulang kenangan indah dari acara atau perjalanan Anda. Setiap lilin kami dibuat dengan bahan berkualitas tinggi dan dihiasi dengan indah oleh para seniman kami."
+    "badge": "Layanan Kami",
+    "title": "Solusi Lengkap untuk Kebutuhan Digital Anda",
+    "subtitle": "Dari website yang memukau hingga dukungan IT yang andal, kami menyediakan semua yang Anda butuhkan untuk sukses secara online."
   },
-  "shipping": {
-    "package": "Paket Pengiriman Lilin",
-    "fast_shipping": "Pengiriman Cepat",
-    "nationwide": "Seluruh Indonesia"
-  },
-  "premium_collection": {
-    "title": "Koleksi Premium",
-    "subtitle": "Produk Lilin Aromaterapi Kami",
-    "description": "Nikmati keindahan dan manfaat lilin aromaterapi handmade kami yang dibuat dengan bahan-bahan alami terbaik."
-  },
-  "quality_section": {
-    "product_quality": "Kualitas Produk",
-    "product_quality_description": "Kami hanya menggunakan bahan-bahan berkualitas tinggi untuk membuat lilin hias kami, dan setiap produk kami diuji untuk memastikan keamanan dan ketahanannya. Kami juga memiliki tim seniman yang berbakat yang menghiasi setiap lilin dengan desain yang indah dan unik, membuatnya menjadi souvenir yang spesial.",
-    "size_and_color": "Ukuran dan warna",
-    "size_and_color_description": "Lilin hias kami hadir dalam berbagai ukuran, mulai dari yang kecil dan portabel hingga yang besar dan indah. Kami juga memiliki berbagai warna yang berbeda, termasuk putih, biru, hijau, merah, dan banyak lagi, sehingga Anda dapat memilih yang sesuai dengan tema acara Anda.",
-    "calming_aroma": "Aroma yang Menenangkan",
-    "calming_aroma_description": "Lilin hias kami juga memberikan aroma yang menenangkan, membawa kedamaian dan ketenangan ke dalam ruangan. Kami menggunakan minyak wangi berkualitas tinggi untuk memberikan aroma yang tahan lama dan menyenangkan."
-  },
-  "lifespan": {
-    "title": "Masa Pakai",
-    "description": "Hingga 12 Jam"
-  },
-  "natural": {
-    "title": "100% Natural",
-    "description": "Ramah Lingkungan"
-  },
-  "business_opportunity": {
-    "title": "Peluang Bisnis Grosir",
-    "description": "Tingkatkan bisnis Anda dengan koleksi lilin premium kami. Sempurna untuk hotel, spa, butik, dan toko hadiah.",
-    "custom_branding": "Tersedia opsi branding khusus",
-    "no_moq_white_label": "Tidak ada MOQ dan layanan white-label"
-  },
-  "wholesale_benefits": {
-    "title": "Keuntungan Pembelian Grosir",
-    "competitive_price": "Harga Kompetitif",
-    "competitive_price_description": "Dapatkan diskon hingga 5% dari harga eceran untuk pemesanan dalam jumlah besar",
-    "exclusive_aromas": "Aroma Eksklusif",
-    "exclusive_aromas_description": "Akses ke pilihan wangi eksklusif hanya untuk pelanggan grosir",
-    "dedicated_support": "Dukungan Khusus",
-    "dedicated_support_description": "Manajer akun pribadi untuk klien grosir"
-  },
-  "blog_section": {
-    "title": "Cerita Kami",
-    "description": "Kumpulan blog yang membahas tentang berbagai aspek lilin, mulai dari sejarah dan berbagai jenis lilin, hingga cara membuat lilin sendiri dan bagaimana memilih lilin yang tepat untuk berbagai keperluan. Anda juga akan menemukan cerita inspiratif tentang bagaimana lilin dapat menjadi simbol harapan dan kehangatan dalam kehidupan sehari-hari. Mari kita eksplorasi keajaiban lilin bersama-sama dan pelajari cara menggunakannya untuk menerangi kehidupan kita."
+  "process": {
+    "badge": "Proses Mudah, Hasil Maksimal",
+    "title": "Proses Pengembangan",
+    "subtitle": "Mulai proyek Anda hanya dalam 3 langkah sederhana bersama tim ahli kami."
   },
   "testimonials": {
-    "title": "Apa Kata Pelanggan Kami",
-    "sarah_johnson": {
-      "quote": "Tamu hotel kami selalu memuji aroma yang harum di lobi kami. Lilin Aroma Vanilla kami menciptakan suasana yang sangat menyambut.",
-      "name": "Sarah Johnson",
-      "position": "Manajer Hotel, The Grand Plaza"
+    "badge": "Testimoni",
+    "title": "Apa Kata Klien Kami",
+    "subtitle": "Jangan hanya percaya kata kami. Lihat apa yang dikatakan para klien yang puas dengan layanan kami."
+  },
+  "pricing": {
+    "badge": "Harga",
+    "title": "Paket Harga yang Fleksibel & Transparan",
+    "subtitle": "Pilih paket yang paling sesuai untuk bisnis Anda. Tidak ada biaya tambahan.",
+    "tabs": {
+      "smme": "Skala UMKM",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "Sebagai pemilik butik, saya sangat menghargai kualitas dan presentasi lilin-lilin ini. Lilin ini telah menjadi produk hadiah terlaris kami!",
-      "name": "Emily Chen",
-      "position": "Pemilik, The Curated Corner"
-    },
-    "michael_rodriguez": {
-      "quote": "Waktu nyala lilin ini luar biasa dan aromanya sempurna - tidak terlalu menyengat. Saya sudah membeli setiap varian dalam koleksi ini!",
-      "name": "Michael Rodriguez",
-      "position": "Pelanggan Setia"
-    },
-    "wedding_customer": {
-      "quote": "Terima kasih @souvenirlilin untuk produk yang indah! Lilin yang saya beli untuk pernikahan saya benar-benar menambahkan sentuhan yang sempurna ke acara tersebut, dan tamu-tamu saya sangat menyukainya",
-      "name": "Pelanggan"
+    "card": {
+      "popular": "Paling Populer",
+      "perProject": "/sekali bayar",
+      "contactSales": "Hubungi Sales"
     }
   },
-  "about_us": {
-    "content": "# Codeverta\n\nDi Codeverta, kami percaya bahwa informasi yang tepat adalah kunci untuk menghadapi masa depan. Tim kami terdiri dari penulis, analis teknologi, dan praktisi industri yang berdedikasi untuk menyajikan konten berkualitas tinggi yang mudah dipahami namun tetap komprehensif.",
-    "map_title": "Lilin Kami Dipercaya di Seluruh Indonesia",
-    "map_description": "Dari Sumatra hingga Papua, lilin kami telah membawa kehangatan, cahaya, dan kenyamanan ke rumah-rumah dan bisnis di seluruh nusantara. Setiap lokasi di peta mewakili sebuah cerita, sebuah momen, dan pelanggan setia yang mempercayai cahaya dari keahlian kami."
+  "faq": {
+    "badge": "FAQ",
+    "title": "Pertanyaan Umum",
+    "subtitle": "Temukan jawaban untuk pertanyaan yang paling sering diajukan mengenai layanan kami."
   },
-  "gallery": {
-    "title": "Galeri",
-    "description": "Kumpulan Foto dan Video Produk Kami"
-  },
-  "blog": {
-    "title": "Kumpulan Cerita dan Tips Mengenai Lilin",
-    "description": "Kumpulan blog yang membahas tentang berbagai aspek lilin, mulai dari sejarah dan berbagai jenis lilin, hingga cara membuat lilin sendiri dan bagaimana memilih lilin yang tepat untuk berbagai keperluan.",
-    "not_found": {
-      "title": "Tidak ada artikel yang ditemukan",
-      "description": "Coba ubah kata kunci pencarian atau kategori yang dipilih"
+  "cta": {
+    "title": "Siap Memiliki Website Profesional?",
+    "description": "Hubungi kami hari ini untuk konsultasi gratis. Mari kita bangun kehadiran digital yang kuat untuk bisnis Anda bersama-sama.",
+    "buttons": {
+      "free": "Gratis Konsultasi",
+      "contact": "Hubungi sekarang"
     }
-  },
-  "footer": {
-    "title": "Codeverta",
-    "desc": "Codeverta menyediakan berbagai pilihan lilin aromaterapi berkualitas tinggi untuk menciptakan suasana yang nyaman dan menenangkan di rumah Anda.",
-    "about": "Tentang Kami",
-    "profile": "Profil Perusahaan",
-    "careers": "Karir",
-    "blog": "Blog",
-    "contact": "Kontak Kami",
-    "help": "Bantuan",
-    "howToBuy": "Cara Pembelian",
-    "payment": "Pembayaran",
-    "shipping": "Pengiriman",
-    "returns": "Pengembalian",
-    "faq": "FAQ",
-    "info": "Informasi",
-    "terms": "Syarat & Ketentuan",
-    "privacy": "Kebijakan Privasi",
-    "shippingPolicy": "Kebijakan Pengiriman",
-    "returnPolicy": "Kebijakan Pengembalian",
-    "paymentMethod": "Metode Pembayaran",
-    "shippingMethod": "Metode Pengiriman"
-  },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "whatsapp": "WhatsApp"
-  },
-  "payment": {
-    "bca": "BCA",
-    "mandiri": "Mandiri",
-    "bni": "BNI",
-    "bri": "BRI"
-  },
-  "stats": {
-    "title": "Dampak Kami dalam Angka",
-    "subtitle": "Sejak 2007, kami telah menerangi rumah-rumah di seluruh Indonesia dengan lilin buatan tangan kami",
-    "candlesProduced": {
-      "label": "Lilin Diproduksi per Hari",
-      "description": "Fasilitas produksi efisiensi tinggi kami"
-    },
-    "candleVariants": {
-      "label": "Varian Lilin",
-      "description": "Aroma, desain, dan gaya unik"
-    },
-    "yearsOfExcellence": {
-      "label": "Tahun Keunggulan",
-      "value": "Sejak 2007",
-      "description": "17+ tahun membuat lilin premium"
-    },
-    "cities": {
-      "label": "Melayani seluruh Indonesia",
-      "value": "Kota-kota Besar",
-      "description": "Seperti Jakarta, Bali dan lainnya"
-    },
-    "candlesSold": {
-      "label": "Lilin Terjual per Tahun",
-      "description": "Dipercaya oleh rumah dan bisnis"
-    },
-    "quality": {
-      "label": "Jaminan Kualitas",
-      "description": "Komitmen terhadap keunggulan"
-    }
-  },
-  "products": {
-    "title": "Koleksi Produk Lilin Kami",
-    "description": "Nikmati koleksi lilin handmade kami yang dibuat dengan bahan alami berkualitas tinggi. Tersedia dalam berbagai macam wangi, bentuk, dan ukuran untuk memenuhi kebutuhan Anda - dari souvenir pernikahan, ibadah, kebutuhan darurat mati lampu hingga dekorasi rumah atau hadiah spesial."
   }
 }

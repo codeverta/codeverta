@@ -131,6 +131,9 @@ importers:
       html-to-image:
         specifier: ^1.11.13
         version: 1.11.13
+      i18next:
+        specifier: ^25.7.3
+        version: 25.7.3(typescript@5.9.2)
       jszip:
         specifier: ^3.10.1
         version: 3.10.1
@@ -151,7 +154,7 @@ importers:
         version: 15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       next-i18next:
         specifier: ^15.4.2
-        version: 15.4.2(@types/react@19.1.4)(i18next@25.3.6(typescript@5.9.2))(next@15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-i18next@15.6.1(i18next@25.3.6(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2))(react@19.2.1)
+        version: 15.4.2(@types/react@19.1.4)(i18next@25.7.3(typescript@5.9.2))(next@15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-i18next@16.5.0(i18next@25.7.3(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2))(react@19.2.1)
       next-mdx-remote:
         specifier: ^5.0.0
         version: 5.0.0(@types/react@19.1.4)(acorn@8.15.0)(react@19.2.1)
@@ -194,6 +197,9 @@ importers:
       react-hook-form:
         specifier: ^7.43.8
         version: 7.62.0(react@19.2.1)
+      react-i18next:
+        specifier: ^16.5.0
+        version: 16.5.0(i18next@25.7.3(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
       react-image-crop:
         specifier: ^11.0.10
         version: 11.0.10(react@19.2.1)
@@ -359,6 +365,13 @@ packages:
     resolution:
       {
         integrity: sha512-9uIQ10o0WGdpP6GDhXcdOJPJuDgFtIDtN/9+ArJQ2NAfAmiuhTQdzkaTGR33v43GYS2UrSA0eX2pPPHoFVvpxA==,
+      }
+    engines: { node: ">=6.9.0" }
+
+  "@babel/runtime@7.28.4":
+    resolution:
+      {
+        integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==,
       }
     engines: { node: ">=6.9.0" }
 
@@ -3603,10 +3616,10 @@ packages:
         integrity: sha512-3ZlhNoF9yxnM8pa8bWp5120/Ob6t4lVl1l/tbLmkml/ei3ud8IWySCHt2lrY5xWRlSU5D9IV2sm5bEbGuTqwTw==,
       }
 
-  i18next@25.3.6:
+  i18next@25.7.3:
     resolution:
       {
-        integrity: sha512-dThZ0CTCM3sUG/qS0ZtQYZQcUI6DtBN8yBHK+SKEqihPcEYmjVWh/YJ4luic73Iq6Uxhp6q7LJJntRK5+1t7jQ==,
+        integrity: sha512-2XaT+HpYGuc2uTExq9TVRhLsso+Dxym6PWaKpn36wfBmTI779OQ7iP/XaZHzrnGyzU4SHpFrTYLKfVyBfAhVNA==,
       }
     peerDependencies:
       typescript: ^5
@@ -5258,13 +5271,13 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
 
-  react-i18next@15.6.1:
+  react-i18next@16.5.0:
     resolution:
       {
-        integrity: sha512-uGrzSsOUUe2sDBG/+FJq2J1MM+Y4368/QW8OLEKSFvnDflHBbZhSd1u3UkW0Z06rMhZmnB/AQrhCpYfE5/5XNg==,
+        integrity: sha512-IMpPTyCTKxEj8klCrLKUTIUa8uYTd851+jcu2fJuUB9Agkk9Qq8asw4omyeHVnOXHrLgQJGTm5zTvn8HpaPiqw==,
       }
     peerDependencies:
-      i18next: ">= 23.2.3"
+      i18next: ">= 25.6.2"
       react: ">= 16.8.0"
       react-dom: "*"
       react-native: "*"
@@ -6038,6 +6051,14 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
+  use-sync-external-store@1.6.0:
+    resolution:
+      {
+        integrity: sha512-Pp6GSwGP/NrPIrxVFAIkOQeyw8lFenOHijQWkUTrDvrF4ALqylP2C/KCkeS9dpUM3KvYRQhna5vt7IL95+ZQ9w==,
+      }
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   util-deprecate@1.0.2:
     resolution:
       {
@@ -6312,6 +6333,8 @@ snapshots:
       "@babel/types": 7.28.2
 
   "@babel/runtime@7.28.3": {}
+
+  "@babel/runtime@7.28.4": {}
 
   "@babel/template@7.27.2":
     dependencies:
@@ -8508,9 +8531,9 @@ snapshots:
 
   i18next-fs-backend@2.6.0: {}
 
-  i18next@25.3.6(typescript@5.9.2):
+  i18next@25.7.3(typescript@5.9.2):
     dependencies:
-      "@babel/runtime": 7.28.3
+      "@babel/runtime": 7.28.4
     optionalDependencies:
       typescript: 5.9.2
 
@@ -9390,17 +9413,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  next-i18next@15.4.2(@types/react@19.1.4)(i18next@25.3.6(typescript@5.9.2))(next@15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-i18next@15.6.1(i18next@25.3.6(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2))(react@19.2.1):
+  next-i18next@15.4.2(@types/react@19.1.4)(i18next@25.7.3(typescript@5.9.2))(next@15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-i18next@16.5.0(i18next@25.7.3(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2))(react@19.2.1):
     dependencies:
       "@babel/runtime": 7.28.3
       "@types/hoist-non-react-statics": 3.3.7(@types/react@19.1.4)
       core-js: 3.45.0
       hoist-non-react-statics: 3.3.2
-      i18next: 25.3.6(typescript@5.9.2)
+      i18next: 25.7.3(typescript@5.9.2)
       i18next-fs-backend: 2.6.0
       next: 15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       react: 19.2.1
-      react-i18next: 15.6.1(i18next@25.3.6(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
+      react-i18next: 16.5.0(i18next@25.7.3(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2)
     transitivePeerDependencies:
       - "@types/react"
 
@@ -9757,12 +9780,13 @@ snapshots:
     dependencies:
       react: 19.2.1
 
-  react-i18next@15.6.1(i18next@25.3.6(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2):
+  react-i18next@16.5.0(i18next@25.7.3(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2):
     dependencies:
       "@babel/runtime": 7.28.3
       html-parse-stringify: 3.0.1
-      i18next: 25.3.6(typescript@5.9.2)
+      i18next: 25.7.3(typescript@5.9.2)
       react: 19.2.1
+      use-sync-external-store: 1.6.0(react@19.2.1)
     optionalDependencies:
       react-dom: 19.2.1(react@19.2.1)
       typescript: 5.9.2
@@ -10322,6 +10346,10 @@ snapshots:
       "@types/react": 19.1.4
 
   use-sync-external-store@1.5.0(react@19.2.1):
+    dependencies:
+      react: 19.2.1
+
+  use-sync-external-store@1.6.0(react@19.2.1):
     dependencies:
       react: 19.2.1
 
