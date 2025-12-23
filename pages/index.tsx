@@ -150,7 +150,13 @@ export default function LandingPage({ projects }: any) {
                   transition={{ type: "spring", damping: 30, stiffness: 400 }}
                   rotationInterval={2000}
                 />{" "}
-                {t("home.hero.suffix")}
+                {t("home.hero.suffix")
+                  .split("\n")
+                  .map((line, index) => (
+                    <span key={index} className="block">
+                      {line}
+                    </span>
+                  ))}
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 {t("home.subtitle")}

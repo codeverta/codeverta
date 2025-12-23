@@ -61,5 +61,28 @@
       "free": "Gratis Konsultasi",
       "contact": "Hubungi sekarang"
     }
+  },
+  "terms": {
+    "title": "Syarat & Ketentuan",
+    "last_updated": "Terakhir diperbarui: 23 Desember 2025",
+    "intro": "Selamat datang di Codeverta & BikinWebsiteJogja. Dengan mengakses situs kami, Anda menyetujui ketentuan berikut.",
+    "sections": {
+      "services": {
+        "title": "1. Ruang Lingkup Layanan",
+        "content": "Codeverta menyediakan layanan pengembangan perangkat lunak, pembuatan website, dan konsultasi IT sesuai kesepakatan tertulis (SOW)."
+      },
+      "payment": {
+        "title": "2. Ketentuan Pembayaran",
+        "content": "Pembayaran dilakukan bertahap (milestone). DP sebesar 50% wajib dibayarkan sebelum proyek dimulai. Pelunasan dilakukan sebelum serah terima aset final."
+      },
+      "ip": {
+        "title": "3. Hak Kekayaan Intelektual",
+        "content": "Setelah pelunasan, hak milik kode sumber (source code) diberikan kepada klien, kecuali komponen library pihak ketiga atau core framework milik Codeverta."
+      },
+      "liability": {
+        "title": "4. Batasan Tanggung Jawab",
+        "content": "Kami tidak bertanggung jawab atas kerugian bisnis akibat penyalahgunaan sistem atau gangguan pihak ketiga (hosting/domain) setelah masa garansi berakhir."
+      }
+    }
   }
 }
