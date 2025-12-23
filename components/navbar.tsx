@@ -10,105 +10,10 @@ import projects from "../projects.json";
 // Import ikon yang Anda gunakan (asumsi dari 'lucide-react')
 // PERHATIAN: Pastikan semua ikon ini sudah diimpor dari library ikon yang benar (misalnya lucide-react)
 import {
-  Newspaper,
-  BrainCircuit,
-  Rocket,
-  Code,
-  MessageSquare,
-  ShieldCheck,
-  BotMessageSquare,
-  Eraser,
-  FileText, // Mengganti 'Smile' dengan 'FileText' untuk PDF agar lebih relevan
+  // Mengganti 'Smile' dengan 'FileText' untuk PDF agar lebih relevan
   ChevronDown, // Tambahan untuk dropdown menu
   // Jika Anda menggunakan ikon lain, pastikan untuk mengimpornya di sini
 } from "lucide-react";
-
-// --- Data Kategori Tambahan ---
-const newCategories = [
-  {
-    title: "News",
-    description: "Berita terbaru seputar teknologi dan inovasi.",
-    href: "/news",
-    icon: <Newspaper className="h-8 w-8 text-blue-500" />,
-    iconBgColor: "bg-blue-100 dark:bg-blue-900/50",
-    group: "Artikel & Berita", // Grup baru
-  },
-  {
-    title: "AI",
-    description: "Jelajahi perkembangan terbaru dalam Kecerdasan Buatan.",
-    href: "/ai",
-    icon: <BrainCircuit className="h-8 w-8 text-purple-500" />,
-    iconBgColor: "bg-purple-100 dark:bg-purple-900/50",
-    group: "AI & Data", // Grup baru
-  },
-  {
-    title: "Startups",
-    description: "Kisah inspiratif dan strategi dari dunia startup.",
-    href: "/startups",
-    icon: <Rocket className="h-8 w-8 text-orange-500" />,
-    iconBgColor: "bg-orange-100 dark:bg-orange-900/50",
-    group: "Artikel & Berita",
-  },
-  {
-    title: "Tutorials",
-    description: "Panduan langkah demi langkah untuk membantu Anda belajar.",
-    href: "/tutorials",
-    icon: <Code className="h-8 w-8 text-green-500" />,
-    iconBgColor: "bg-green-100 dark:bg-green-900/50",
-    group: "Belajar & Panduan", // Grup baru
-  },
-  {
-    title: "AI LLM (Large Language Models)",
-    description:
-      "Pelajari teknik prompting untuk Large Language Models dan AI.",
-    href: "/course/prompting",
-    icon: <MessageSquare className="h-8 w-8 text-indigo-500" />,
-    iconBgColor: "bg-indigo-100 dark:bg-indigo-900/50",
-    group: "Kelas & Pelatihan", // Grup baru
-  },
-  {
-    title: "Artikel Cybersecurity Terupdate",
-    description: "Jaga keamanan digital Anda dengan tips dan trik terbaru.",
-    href: "/cybersecurity",
-    icon: <ShieldCheck className="h-8 w-8 text-red-500" />,
-    iconBgColor: "bg-red-100 dark:bg-red-900/50",
-    group: "Artikel & Berita",
-  },
-  {
-    title: "Cybersecurity Course",
-    description: "Kelas cybersecurity terbaru.",
-    href: "/course/cybersecurity",
-    icon: <ShieldCheck className="h-8 w-8 text-red-500" />,
-    iconBgColor: "bg-red-100 dark:bg-red-900/50",
-    group: "Kelas & Pelatihan",
-  },
-  {
-    title: "AI Engineer Course",
-    description: "Artikel mendalam tentang AI dan model bahasa besar.",
-    href: "/course/ai-engineer",
-    icon: <BotMessageSquare className="h-8 w-8 text-sky-500" />,
-    iconBgColor: "bg-sky-100 dark:bg-sky-900/50",
-    group: "Kelas & Pelatihan",
-  },
-  // tambahkan image editor dan pdf editor
-  {
-    title: "Image Editor",
-    description: "Edit gambar dengan berbagai tools seperti crop, resize, dll.",
-    href: "/image",
-    icon: <Eraser className="h-8 w-8 text-yellow-500" />,
-    iconBgColor: "bg-yellow-100 dark:bg-yellow-900/50",
-    group: "Produk Kami",
-  },
-  {
-    title: "PDF Editor",
-    description: "Edit dan konversi file PDF dengan mudah.",
-    // Mengganti ikon Smile dengan FileText untuk relevansi yang lebih baik
-    icon: <FileText className="h-8 w-8 text-teal-500" />,
-    href: "/pdf",
-    iconBgColor: "bg-teal-100 dark:bg-teal-900/50",
-    group: "Produk Kami",
-  },
-];
 
 // --- Struktur Mega Menu yang Diperbarui ---
 const megaMenuData = {
