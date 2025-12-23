@@ -1,0 +1,25 @@
+{
+  "title": "Hubungi Kami",
+  "subtitle": "Siap membangun solusi digital Anda? Konsultasikan proyek Anda secara gratis dengan tim ahli kami.",
+  "form": {
+    "name": "Nama Lengkap",
+    "email": "Alamat Email",
+    "service": "Layanan yang Dibutuhkan",
+    "service_options": {
+      "web": "Pengembangan Website",
+      "mobile": "Aplikasi Mobile (Android/iOS)",
+      "system": "Sistem Informasi / ERP",
+      "uiux": "UI/UX Design"
+    },
+    "message": "Detail Proyek",
+    "placeholder_message": "Ceritakan sedikit tentang kebutuhan bisnis Anda...",
+    "submit": "Kirim Penawaran"
+  },
+  "info": {
+    "office_title": "Kantor Kami",
+    "address": "Yogyakarta, Indonesia (Melayani Client Seluruh Indonesia)",
+    "whatsapp_title": "WhatsApp / Telp",
+    "email_title": "Email Bisnis"
+  },
+  "success": "Pesan terkirim! Tim kami akan menghubungi Anda dalam 1x24 jam."
+}
