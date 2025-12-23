@@ -1,0 +1,58 @@
+{
+  "title": "Kebijakan Privasi",
+  "last_updated": "Terakhir Diperbarui: 23 Desember 2025",
+  "intro": "Di Codeverta & BikinWebsiteJogja, kami menghargai privasi Anda dan berkomitmen untuk melindungi data pribadi Anda. Kebijakan ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan menjaga informasi Anda saat Anda menggunakan layanan pengembangan perangkat lunak kami.",
+  "sections": {
+    "collection": {
+      "title": "1. Informasi yang Kami Kumpulkan",
+      "content": "Kami mengumpulkan berbagai jenis informasi untuk memberikan dan meningkatkan layanan kami kepada Anda:",
+      "items": [
+        "Data Identitas: Nama, alamat perusahaan, dan identitas resmi untuk keperluan kontrak.",
+        "Data Kontak: Alamat email, nomor WhatsApp/telepon, dan alamat pengiriman.",
+        "Data Teknis: Alamat IP, jenis browser, lokasi, dan data log saat mengakses situs codeverta.com atau bikinwebsitejogja.com.",
+        "Data Proyek: Dokumentasi bisnis, alur kerja perusahaan, dan aset digital yang Anda serahkan kepada kami untuk pengembangan sistem."
+      ]
+    },
+    "usage": {
+      "title": "2. Penggunaan Informasi",
+      "content": "Informasi yang kami kumpulkan digunakan untuk:",
+      "items": [
+        "Menyediakan layanan pengembangan website, aplikasi mobile, dan sistem kustom.",
+        "Memproses transaksi pembayaran dan administrasi invoice.",
+        "Memberikan dukungan teknis (maintenance) dan update sistem.",
+        "Mengirimkan informasi penting terkait perubahan layanan atau kebijakan.",
+        "Menganalisis penggunaan situs kami untuk meningkatkan pengalaman pengguna."
+      ]
+    },
+    "protection": {
+      "title": "3. Keamanan dan Perlindungan Data",
+      "content": "Kami menerapkan standar keamanan industri untuk melindungi data Anda. Sebagai software house, kami memahami pentingnya source code dan database:",
+      "items": [
+        "Enkripsi Data: Semua data sensitif ditransmisikan melalui teknologi SSL/TLS.",
+        "Akses Terbatas: Hanya pengembang yang ditugaskan pada proyek Anda yang memiliki akses ke repositori kode dan database.",
+        "NDA (Non-Disclosure Agreement): Tim kami terikat oleh kontrak kerahasiaan untuk tidak membocorkan logika bisnis atau data proyek Anda kepada pihak manapun."
+      ]
+    },
+    "third_party": {
+      "title": "4. Berbagi Data dengan Pihak Ketiga",
+      "content": "Kami tidak menjual data Anda. Namun, kami bekerja sama dengan penyedia layanan pihak ketiga untuk menjalankan fungsi tertentu:",
+      "items": [
+        "Penyedia Cloud Hosting (misal: AWS, Google Cloud, atau Cloudflare) untuk deployment sistem.",
+        "Payment Gateway untuk memproses pembayaran invoice secara aman.",
+        "Layanan Analitik (seperti Google Analytics) untuk memantau performa situs."
+      ]
+    },
+    "cookies": {
+      "title": "5. Kebijakan Cookies",
+      "content": "Situs kami menggunakan cookies untuk mengingat preferensi Anda (seperti bahasa) dan mengenali Anda saat kembali ke situs kami. Anda dapat menonaktifkan cookies melalui pengaturan browser Anda, namun beberapa fungsi situs mungkin tidak berjalan optimal."
+    },
+    "rights": {
+      "title": "6. Hak-Hak Anda",
+      "content": "Anda berhak untuk meminta akses ke data pribadi Anda, meminta koreksi atas data yang tidak akurat, atau meminta penghapusan data Anda dari sistem marketing kami setelah proyek selesai, selama tidak bertentangan dengan kewajiban hukum/pajak."
+    },
+    "contact": {
+      "title": "7. Kontak Kami",
+      "content": "Jika ada pertanyaan mengenai kebijakan privasi ini, Anda dapat menghubungi kami melalui email di support@codeverta.com atau melalui kontak yang tertera di bikinwebsitejogja.com."
+    }
+  }
+}
