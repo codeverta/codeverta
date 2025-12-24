@@ -6,6 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import projects from "../projects.json";
+import { Languages, Check } from "lucide-react";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 // Import ikon yang Anda gunakan (asumsi dari 'lucide-react')
 // PERHATIAN: Pastikan semua ikon ini sudah diimpor dari library ikon yang benar (misalnya lucide-react)
@@ -414,6 +417,11 @@ const megaMenuData = {
   },
 };
 
+const languages = [
+  { code: "id", name: "Indonesia", flag: "🇮🇩" },
+  { code: "en-US", name: "English", flag: "🇺🇸" },
+];
+
 // Responsive Navbar Component
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -421,6 +429,10 @@ const Navbar = () => {
   const [activeMegaMenu, setActiveMegaMenu] = useState(null);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
+  const { locale, locales, push, pathname, asPath, query } = router;
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+  const lang = locale;
 
   // --- Kategori Navigasi Utama yang Diperbarui ---
   const categories = [
@@ -464,6 +476,58 @@ const Navbar = () => {
   const handleMegaMenuLeave = () => {
     setActiveMegaMenu(null);
   };
+  const changeLanguage = (newLocale) => {
+    push({ pathname, query }, asPath, { locale: newLocale });
+  };
+  const LanguageSwitcher = ({ isMobile = false }) => (
+    <div className="relative">
+      <button
+        onClick={() => setLangDropdownOpen(!langDropdownOpen)}
+        className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+      >
+        <Languages className="w-5 h-5 text-muted-foreground" />
+        <span className="text-xs font-bold uppercase">{locale}</span>
+        <ChevronDown
+          className={`w-3 h-3 transition-transform ${
+            langDropdownOpen ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      <AnimatePresence>
+        {langDropdownOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            className={`absolute ${
+              isMobile ? "bottom-full mb-2" : "top-full mt-2"
+            } right-0 w-40 bg-background border rounded-xl shadow-xl z-[60] overflow-hidden`}
+          >
+            {languages.map((l) => (
+              <Link
+                href="/"
+                locale={l.code}
+                key={l.code}
+                className="w-full flex items-center justify-between px-4 py-3 hover:bg-accent transition-colors text-sm"
+                onClick={() => {
+                  setLangDropdownOpen(false);
+                }}
+              >
+                <div className="flex items-center gap-3">
+                  <span>{l.flag}</span>
+                  <span className={lang === l.code ? "font-bold" : ""}>
+                    {l.name}
+                  </span>
+                </div>
+                {lang === l.code && <Check className="w-4 h-4 text-primary" />}
+              </Link>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
 
   // MegaMenu Component
   const MegaMenu = ({ categoryId, data }) => (
@@ -623,7 +687,9 @@ const Navbar = () => {
           {/* Mobile Menu Button and Theme Toggle */}
           <div className="flex items-center gap-2">
             {/* Theme Toggle (Dapat ditambahkan di sini jika Anda ingin) */}
-
+            <div className="hidden lg:block">
+              <LanguageSwitcher />
+            </div>
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMobileMenu}
@@ -741,25 +807,33 @@ const Navbar = () => {
                             transition={{ duration: 0.2 }}
                             className="ml-4 mt-2 space-y-2 overflow-hidden"
                           >
-                            {megaMenuData[category.id].columns.map(
-                              (column, columnIndex) => (
-                                <div key={columnIndex} className="space-y-1">
-                                  <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide px-3">
-                                    {column.title}
+                            <div className="container mx-auto px-4 py-6 space-y-4">
+                              {megaMenuData[category.id].columns.map(
+                                (column, columnIndex) => (
+                                  <div key={columnIndex} className="space-y-1">
+                                    <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide px-3">
+                                      {column.title}
+                                    </div>
+                                    {column.items.map((item, itemIndex) => (
+                                      <Link
+                                        key={itemIndex}
+                                        href={item.href}
+                                        className="block text-sm text-muted-foreground hover:text-foreground py-1 px-3 rounded transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                      >
+                                        {item.name}
+                                      </Link>
+                                    ))}
                                   </div>
-                                  {column.items.map((item, itemIndex) => (
-                                    <Link
-                                      key={itemIndex}
-                                      href={item.href}
-                                      className="block text-sm text-muted-foreground hover:text-foreground py-1 px-3 rounded transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-                                      onClick={() => setMobileMenuOpen(false)}
-                                    >
-                                      {item.name}
-                                    </Link>
-                                  ))}
-                                </div>
-                              )
-                            )}
+                                )
+                              )}
+                              <div className="pt-4 border-t flex items-center justify-between">
+                                <span className="text-sm text-muted-foreground font-medium">
+                                  Pilih Bahasa / Language
+                                </span>
+                                <LanguageSwitcher isMobile={true} />
+                              </div>
+                            </div>
                           </motion.div>
                         )}
                       </AnimatePresence>

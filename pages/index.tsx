@@ -72,9 +72,7 @@ export async function getStaticProps({ locale }) {
 
 export default function LandingPage({ projects }: any) {
   const { t } = useTranslation("common");
-
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
