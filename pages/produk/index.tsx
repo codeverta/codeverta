@@ -22,6 +22,8 @@ import fs from "fs";
 import path from "path";
 import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
+import { t } from "i18next";
+import { useTranslation } from "next-i18next";
 
 export const getStaticProps = withI18n(["common"], function () {
   const filePath = path.join(process.cwd(), "projects.json");
@@ -38,6 +40,7 @@ export const getStaticProps = withI18n(["common"], function () {
 });
 
 export default function ITProductsShowcase({ projects }) {
+  const { t } = useTranslation("common");
   const statusConfig = {
     Completed: {
       color: "bg-green-500 hover:bg-green-600",
@@ -187,7 +190,7 @@ export default function ITProductsShowcase({ projects }) {
                 <WhatsappWrapper>
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                     <ExternalLink className="w-5 h-5 mr-2" />
-                    Konsultasi Gratis
+                    {t("home.badges.consultation")}
                   </Button>
                 </WhatsappWrapper>
               </div>

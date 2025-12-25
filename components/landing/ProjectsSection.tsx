@@ -11,8 +11,10 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
+import { useTranslation } from "next-i18next";
 
 export function ProjectsSection({ projects }: any) {
+  const { t } = useTranslation("common");
   // Ambil 3 proyek pertama dari data JSON
 
   return (
@@ -26,11 +28,10 @@ export function ProjectsSection({ projects }: any) {
             Portofolio Kami
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Proyek yang Telah Kami Kerjakan
+            {t("portfolio.title")}
           </h2>
           <p className="max-w-[800px] text-muted-foreground md:text-lg">
-            Berikut adalah beberapa contoh proyek yang berhasil kami selesaikan,
-            menunjukkan keahlian dan komitmen kami.
+            {t("portfolio.subtitle")}
           </p>
         </div>
 

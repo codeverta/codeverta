@@ -30,6 +30,9 @@ import {
 } from "lucide-react";
 import Layout from "components/layout/Landing";
 import Link from "next/link";
+import { withI18n } from "@/lib/withi18n";
+
+export const getStaticProps = withI18n(["common"]);
 
 const CybersecurityCourse = () => {
   const [completedModules, setCompletedModules] = useState([]);
