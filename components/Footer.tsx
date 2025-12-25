@@ -174,7 +174,7 @@ export default function Footer() {
   }, [locale]); // Re-run when the t function changes (typically when language changes)
 
   return (
-    <footer className="bg-[#1a1a1a] text-white py-8">
+    <footer className="print:hidden bg-[#1a1a1a] text-white py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
@@ -315,6 +315,14 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">Apps</h4>
             <ul className="space-y-2 text-sm text-gray-400">
+              <li>
+                <Link
+                  href="/invoice-generator"
+                  className="hover:text-white transition-colors"
+                >
+                  Invoice Generator
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/image"
