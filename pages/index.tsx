@@ -170,7 +170,7 @@ export default function LandingPage({ projects }: any) {
                     className="rounded-full w-full h-12 px-8 text-base"
                   >
                     <WhatsAppIcon />
-                    Whatsapp Sekarang
+                    {t("home.cta.whatsapp")}
                     <ArrowRight className="ml-2 size-4" />
                   </Button>
                 </WhatsappWrapper>
@@ -180,25 +180,25 @@ export default function LandingPage({ projects }: any) {
                   variant="outline"
                   className="rounded-full h-12 px-8 text-base"
                 >
-                  <Link href="/produk">Lihat Produk</Link>
+                  <Link href="/produk">{t("home.cta.products")}</Link>
                 </Button>
               </div>
               <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>Konsultasi Gratis</span>
+                  <span>{t("home.badges.consultation")}</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>Proses Cepat</span>
+                  <span>{t("home.badges.fast")}</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>Garansi Sampai Puas</span>
+                  <span>{t("home.badges.guarantee")}</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
-                  <span>Jujur & Dapat Dipercaya</span>
+                  <span>{t("home.badges.trusted")}</span>
                 </div>
               </div>
             </motion.div>
@@ -215,7 +215,7 @@ export default function LandingPage({ projects }: any) {
               className="mx-auto max-w-4xl text-center"
             >
               <h2 className="text-center text-lg font-semibold leading-8 text-muted-foreground">
-                Dipercaya oleh UKM, Startup, Bisnis Swasta, dan Pemerintahan
+                {t("trustedBy")}
               </h2>
               <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
                 {logos.map((logo, index) => (
@@ -234,7 +234,7 @@ export default function LandingPage({ projects }: any) {
             </motion.div>
           </div>
         </section>
-        <ModernStatsSection />
+        {/* <ModernStatsSection /> */}
         {/* Tambahkan konten tersebut disini */}
         <ProjectsSection projects={projects} />
         {/* Features Section */}
@@ -254,11 +254,10 @@ export default function LandingPage({ projects }: any) {
                 Layanan Kami
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Solusi Lengkap untuk Kebutuhan Digital Anda
+                {t("features.title")}
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Dari website yang memukau hingga dukungan IT yang andal, kami
-                menyediakan semua yang Anda butuhkan untuk sukses secara online.
+                {t("features.subtitle")}
               </p>
             </motion.div>
 
