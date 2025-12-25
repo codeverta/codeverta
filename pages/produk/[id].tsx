@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
+import PricingCard from "@/components/products/PricingCard";
 
 // Import semua ikon yang mungkin digunakan
 import {
@@ -116,7 +117,6 @@ export const getStaticProps = withI18n(["common"], function ({ params }) {
 
   // Cari proyek yang cocok dengan 'id' dari URL
   const project = data.projects.find((p) => p.product.id === params.id);
-
   // Jika proyek tidak ditemukan, kembalikan 'notFound: true' untuk menampilkan halaman 404
   if (!project) {
     return {
@@ -124,16 +124,27 @@ export const getStaticProps = withI18n(["common"], function ({ params }) {
     };
   }
 
+  const otherProducts = data.projects
+    .filter((p) => p.product.id !== params.id)
+    .slice(0, 3) // Ambil 3 saja
+    .map((p) => ({
+      id: p.product.id,
+      name: p.product.name,
+      category: p.product.category,
+      image: p.product.image,
+      description: p.product.fullDescription,
+    }));
   // Kirim data proyek sebagai props ke komponen
   return {
     props: {
       project,
+      otherProducts,
     },
   };
 });
 
 // --- KOMPONEN UTAMA HALAMAN ---
-export default function ProjectDetailPage({ project }) {
+export default function ProjectDetailPage({ project, otherProducts }) {
   const {
     product,
     hero,
@@ -165,7 +176,7 @@ export default function ProjectDetailPage({ project }) {
       <Head>
         {/* Primary Meta Tags */}
         <title>
-          Jasa Pembuatan {product.name} - {product.category} di Jogja
+          Jasa Pembuatan {product.name} - {product.category}
         </title>
         <meta
           name="description"
@@ -597,96 +608,74 @@ export default function ProjectDetailPage({ project }) {
               </div>
             </div>
           )}
+          {/* Section Produk Lainnya */}
+          <div className="bg-slate-50 border-t border-slate-200 py-20 mt-20">
+            <div className="container mx-auto px-4">
+              <div className="flex justify-between items-end mb-10">
+                <div>
+                  <h2 className="text-3xl font-bold text-slate-900">
+                    Produk Lainnya
+                  </h2>
+                  <p className="text-slate-600 mt-2">
+                    Mungkin Anda juga tertarik dengan produk kami yang lainnya
+                  </p>
+                </div>
+                <Button variant="outline" asChild className="hidden md:flex">
+                  <Link href="/produk">Lihat Semua Produk</Link>
+                </Button>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {otherProducts.map((item) => (
+                  <Card
+                    key={item.id}
+                    className="group hover:shadow-xl transition-all duration-300 border-none shadow-sm overflow-hidden flex flex-col"
+                  >
+                    <div className="relative aspect-video overflow-hidden">
+                      <Image
+                        src={item.image || "/placeholder.svg"}
+                        alt={item.name}
+                        width={500}
+                        height={300}
+                        className="w-full h-64 object-cover"
+                      />
+                    </div>
+                    <CardHeader className="p-6 pb-2">
+                      <Badge variant="secondary" className="w-fit mb-3">
+                        {item.category}
+                      </Badge>
+                      <CardTitle className="text-xl group-hover:text-blue-600 transition-colors">
+                        {item.name}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="p-6 pt-0 flex-grow">
+                      <p className="text-slate-600 text-sm line-clamp-2 mb-6">
+                        {item.description}
+                      </p>
+                      <Button
+                        variant="ghost"
+                        className="w-full justify-between p-0 hover:bg-transparent hover:text-blue-700"
+                        asChild
+                      >
+                        <Link href={`/produk/${item.id}`}>
+                          Pelajari Selengkapnya
+                          <ExternalLink className="w-4 h-4 ml-2" />
+                        </Link>
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <div className="mt-10 md:hidden">
+                <Button variant="outline" className="w-full" asChild>
+                  <Link href="/produk">Lihat Semua Produk</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
   );
 }
-
-const PricingCard = ({
-  tier,
-  price,
-  description,
-  features,
-  isRecommended,
-  index,
-}) => {
-  return (
-    <div
-      className={`relative rounded-2xl transition-all duration-300 hover:scale-105 ${
-        isRecommended
-          ? "bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-2xl"
-          : "bg-white text-slate-900 shadow-lg hover:shadow-xl border border-slate-200"
-      }`}
-      style={{
-        animationDelay: `${index * 100}ms`,
-      }}
-    >
-      {isRecommended && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-1.5 rounded-full text-sm font-semibold flex items-center gap-1.5 shadow-lg">
-            <Sparkles className="w-4 h-4" />
-            <span>Paling Populer</span>
-          </div>
-        </div>
-      )}
-
-      <div className="p-8">
-        <div className="text-center mb-6">
-          <h3
-            className={`text-2xl font-bold mb-3 ${
-              isRecommended ? "text-white" : "text-slate-900"
-            }`}
-          >
-            {tier}
-          </h3>
-          <div className="flex items-baseline justify-center gap-1">
-            <span
-              className={`text-3xl font-extrabold ${
-                isRecommended ? "text-white" : "text-blue-600"
-              }`}
-            >
-              {price}
-            </span>
-          </div>
-          <p
-            className={`mt-3 text-sm ${
-              isRecommended ? "text-blue-100" : "text-slate-600"
-            }`}
-          >
-            {description}
-          </p>
-        </div>
-
-        <div className="space-y-4 mb-8">
-          {features.map((feature, fIndex) => (
-            <div key={fIndex} className="flex items-start gap-3">
-              <CheckCircle
-                className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
-                  isRecommended ? "text-blue-200" : "text-green-500"
-                }`}
-              />
-              <span
-                className={`text-sm leading-relaxed ${
-                  isRecommended ? "text-blue-50" : "text-slate-700"
-                }`}
-              >
-                {feature}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        <button
-          className={`w-full py-3.5 rounded-xl font-semibold transition-all duration-200 ${
-            isRecommended
-              ? "bg-white text-blue-600 hover:bg-blue-50 shadow-lg"
-              : "bg-blue-600 text-white hover:bg-blue-700"
-          }`}
-        >
-          Pilih Paket Ini
-        </button>
-      </div>
-    </div>
-  );
-};

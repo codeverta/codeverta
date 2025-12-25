@@ -220,7 +220,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${
+      className={`print:hidden sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${
         isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"
       }`}
     >

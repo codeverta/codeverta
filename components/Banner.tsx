@@ -12,7 +12,7 @@ const Banner = () => {
   }
 
   return (
-    <div className="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 text-white shadow-lg">
+    <div className="print:hidden relative bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 text-white shadow-lg">
       <div className="absolute inset-0 bg-black/10"></div>
 
       <div className="relative px-4 sm:px-6 py-3 flex items-center justify-between">
