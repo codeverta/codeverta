@@ -21,8 +21,9 @@ import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 import fs from "fs";
 import path from "path";
 import SeoHead from "@/components/SeoHead";
+import { withI18n } from "@/lib/withi18n";
 
-export async function getStaticProps() {
+export const getStaticProps = withI18n(["common"], function () {
   const filePath = path.join(process.cwd(), "projects.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const data = JSON.parse(jsonData);
@@ -34,7 +35,7 @@ export async function getStaticProps() {
       projects,
     },
   };
-}
+});
 
 export default function ITProductsShowcase({ projects }) {
   const statusConfig = {

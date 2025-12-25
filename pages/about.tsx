@@ -12,6 +12,9 @@ import { Button } from "@/components/ui/button";
 import { Users, Target, Code, ShieldCheck } from "lucide-react"; // Contoh ikon dari lucide-react
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import SeoHead from "@/components/SeoHead";
+import { withI18n } from "@/lib/withi18n";
+
+export const getStaticProps = withI18n(["common"]);
 
 export default function TentangPage() {
   return (

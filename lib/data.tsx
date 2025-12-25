@@ -239,3 +239,404 @@ export const steps = [
       "Kami luncurkan proyek Anda ke publik dan memberikan maintenance untuk memastikan semua berjalan lancar.",
   },
 ];
+
+export const getCategories = (t) => [
+  { id: "/produk", name: t("navbar.products"), isDropdown: true },
+  { id: "/kategori/artikel", name: t("navbar.articles"), isDropdown: true },
+  { id: "/kategori/belajar", name: t("navbar.learning"), isDropdown: true },
+  { id: "/faq", name: t("navbar.faq"), isDropdown: false },
+  { id: "/about", name: t("navbar.about") },
+];
+
+export const getMegaMenuData = (t, projects = { projects: [] }) => ({
+  "/produk": {
+    title: t("mega_menu.products.title"),
+    columns: [
+      {
+        title: t("mega_menu.products.all"),
+        items: [
+          {
+            name: t("mega_menu.products.view_all"),
+            href: "/produk",
+            description: t("mega_menu.products.view_all_desc"),
+          },
+        ],
+      },
+      ...projects.projects.map((project) => ({
+        title: project.name,
+        items: [
+          {
+            name: project.product.name,
+            href: `/produk/${project.product.id}`,
+            description: project.product.description,
+          },
+        ],
+      })),
+    ],
+  },
+  "/news": {
+    title: t("mega_menu.news.title"),
+    columns: [
+      {
+        title: t("mega_menu.news.tech"),
+        items: [
+          {
+            name: t("mega_menu.news.breaking"),
+            href: "/news/breaking",
+            description: t("mega_menu.news.breaking_desc"),
+          },
+          {
+            name: t("mega_menu.news.industry"),
+            href: "/news/industry",
+            description: t("mega_menu.news.industry_desc"),
+          },
+          {
+            name: t("mega_menu.news.company"),
+            href: "/news/companies",
+            description: t("mega_menu.news.company_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.news.categories"),
+        items: [
+          {
+            name: t("mega_menu.news.software"),
+            href: "/news/software",
+            description: t("mega_menu.news.software_desc"),
+          },
+          {
+            name: t("mega_menu.news.hardware"),
+            href: "/news/hardware",
+            description: t("mega_menu.news.hardware_desc"),
+          },
+          {
+            name: t("mega_menu.news.mobile"),
+            href: "/news/mobile",
+            description: t("mega_menu.news.mobile_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.news.trending"),
+        items: [
+          {
+            name: t("mega_menu.news.ai_rev"),
+            href: "/news/ai-revolution",
+            description: t("mega_menu.news.ai_rev_desc"),
+          },
+          {
+            name: t("mega_menu.news.web3"),
+            href: "/news/web3",
+            description: t("mega_menu.news.web3_desc"),
+          },
+          {
+            name: t("mega_menu.news.devops"),
+            href: "/news/devops",
+            description: t("mega_menu.news.devops_desc"),
+          },
+        ],
+      },
+    ],
+  },
+  "/startups": {
+    title: t("mega_menu.startups.title"),
+    columns: [
+      {
+        title: t("mega_menu.startups.news"),
+        items: [
+          {
+            name: t("mega_menu.startups.funding"),
+            href: "/startups/funding",
+            description: t("mega_menu.startups.funding_desc"),
+          },
+          {
+            name: t("mega_menu.startups.launches"),
+            href: "/startups/launches",
+            description: t("mega_menu.startups.launches_desc"),
+          },
+          {
+            name: t("mega_menu.startups.success"),
+            href: "/startups/success",
+            description: t("mega_menu.startups.success_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.startups.resources"),
+        items: [
+          {
+            name: t("mega_menu.startups.guide"),
+            href: "/startups/guide",
+            description: t("mega_menu.startups.guide_desc"),
+          },
+          {
+            name: t("mega_menu.startups.investors"),
+            href: "/startups/investors",
+            description: t("mega_menu.startups.investors_desc"),
+          },
+          {
+            name: t("mega_menu.startups.mentorship"),
+            href: "/startups/mentors",
+            description: t("mega_menu.startups.mentorship_desc"),
+          },
+        ],
+      },
+    ],
+  },
+  "/gadget": {
+    title: t("mega_menu.gadget.title"),
+    columns: [
+      {
+        title: t("mega_menu.gadget.reviews"),
+        items: [
+          {
+            name: t("mega_menu.gadget.smartphones"),
+            href: "/gadget/smartphones",
+            description: t("mega_menu.gadget.smartphones_desc"),
+          },
+          {
+            name: t("mega_menu.gadget.laptops"),
+            href: "/gadget/laptops",
+            description: t("mega_menu.gadget.laptops_desc"),
+          },
+          {
+            name: t("mega_menu.gadget.wearables"),
+            href: "/gadget/wearables",
+            description: t("mega_menu.gadget.wearables_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.gadget.buying_guides"),
+        items: [
+          {
+            name: t("mega_menu.gadget.deals"),
+            href: "/gadget/deals",
+            description: t("mega_menu.gadget.deals_desc"),
+          },
+          {
+            name: t("mega_menu.gadget.compare"),
+            href: "/gadget/compare",
+            description: t("mega_menu.gadget.compare_desc"),
+          },
+          {
+            name: t("mega_menu.gadget.recommended"),
+            href: "/gadget/recommended",
+            description: t("mega_menu.gadget.recommended_desc"),
+          },
+        ],
+      },
+    ],
+  },
+  "/tutorials": {
+    title: t("mega_menu.tutorials.title"),
+    columns: [
+      {
+        title: t("mega_menu.tutorials.web_dev"),
+        items: [
+          {
+            name: "React Tutorials",
+            href: "/tutorials/react",
+            description: t("mega_menu.tutorials.react_desc"),
+          },
+          {
+            name: "Next.js Guide",
+            href: "/tutorials/nextjs",
+            description: t("mega_menu.tutorials.nextjs_desc"),
+          },
+          {
+            name: "JavaScript Tips",
+            href: "/tutorials/javascript",
+            description: t("mega_menu.tutorials.js_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.tutorials.mobile_dev"),
+        items: [
+          {
+            name: "React Native",
+            href: "/tutorials/react-native",
+            description: t("mega_menu.tutorials.rn_desc"),
+          },
+          {
+            name: "Flutter",
+            href: "/tutorials/flutter",
+            description: t("mega_menu.tutorials.flutter_desc"),
+          },
+          {
+            name: "iOS Development",
+            href: "/tutorials/ios",
+            description: t("mega_menu.tutorials.ios_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.tutorials.backend"),
+        items: [
+          {
+            name: "Node.js",
+            href: "/tutorials/nodejs",
+            description: t("mega_menu.tutorials.node_desc"),
+          },
+          {
+            name: "Python",
+            href: "/tutorials/python",
+            description: t("mega_menu.tutorials.python_desc"),
+          },
+          {
+            name: "Database",
+            href: "/tutorials/database",
+            description: t("mega_menu.tutorials.db_desc"),
+          },
+        ],
+      },
+    ],
+  },
+  "/ai": {
+    title: t("mega_menu.ai.title"),
+    columns: [
+      {
+        title: t("mega_menu.ai.news"),
+        items: [
+          {
+            name: "Machine Learning",
+            href: "/ai/ml",
+            description: t("mega_menu.ai.ml_desc"),
+          },
+          {
+            name: t("mega_menu.ai.tools"),
+            href: "/ai/tools",
+            description: t("mega_menu.ai.tools_desc"),
+          },
+          {
+            name: t("mega_menu.ai.research"),
+            href: "/ai/research",
+            description: t("mega_menu.ai.research_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.ai.tutorials"),
+        items: [
+          {
+            name: t("mega_menu.ai.getting_started"),
+            href: "/ai/getting-started",
+            description: t("mega_menu.ai.getting_started_desc"),
+          },
+          {
+            name: t("mega_menu.ai.deep_learning"),
+            href: "/ai/deep-learning",
+            description: t("mega_menu.ai.deep_learning_desc"),
+          },
+          {
+            name: t("mega_menu.ai.ethics"),
+            href: "/ai/ethics",
+            description: t("mega_menu.ai.ethics_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.ai.productivity"),
+        items: [
+          {
+            name: t("mega_menu.ai.image_editor"),
+            href: "/image",
+            description: t("mega_menu.ai.image_desc"),
+          },
+          {
+            name: t("mega_menu.ai.pdf_editor"),
+            href: "/pdf",
+            description: t("mega_menu.ai.pdf_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.ai.other_tools"),
+        items: [
+          {
+            name: t("mega_menu.ai.ai_long"),
+            href: "/ai",
+            description: t("mega_menu.ai.ai_desc"),
+          },
+        ],
+      },
+    ],
+  },
+  "/kategori/artikel": {
+    title: t("mega_menu.categories.articles"),
+    columns: [
+      {
+        title: t("mega_menu.categories.main_news"),
+        items: [
+          {
+            name: t("mega_menu.categories.tech_innovation"),
+            href: "/news",
+            description: t("mega_menu.categories.tech_innovation_desc"),
+          },
+          {
+            name: t("mega_menu.categories.startup_stories"),
+            href: "/startups",
+            description: t("mega_menu.categories.startup_stories_desc"),
+          },
+          {
+            name: t("mega_menu.categories.gadget_reviews"),
+            href: "/gadget",
+            description: t("mega_menu.categories.gadget_reviews_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.categories.special_issues"),
+        items: [
+          {
+            name: t("mega_menu.categories.cyber_art"),
+            href: "/cybersecurity",
+            description: t("mega_menu.categories.cyber_art_desc"),
+          },
+          {
+            name: t("mega_menu.categories.all_art"),
+            href: "/article",
+            description: t("mega_menu.categories.all_art_desc"),
+          },
+        ],
+      },
+    ],
+  },
+  "/kategori/belajar": {
+    title: t("mega_menu.categories.learning"),
+    columns: [
+      {
+        title: t("mega_menu.categories.guides"),
+        items: [
+          {
+            name: "Tutorials",
+            href: "/tutorials",
+            description: t("mega_menu.categories.tutorial_desc"),
+          },
+        ],
+      },
+      {
+        title: t("mega_menu.categories.classes"),
+        items: [
+          {
+            name: t("mega_menu.categories.cyber_course"),
+            href: "/course/cybersecurity",
+            description: t("mega_menu.categories.cyber_course_desc"),
+          },
+          {
+            name: t("mega_menu.categories.llm_course"),
+            href: "/course/prompting",
+            description: t("mega_menu.categories.llm_desc"),
+          },
+          {
+            name: t("mega_menu.categories.ai_eng"),
+            href: "/course/ai-engineer",
+            description: t("mega_menu.categories.ai_eng_desc"),
+          },
+        ],
+      },
+    ],
+  },
+});

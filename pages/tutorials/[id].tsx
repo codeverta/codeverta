@@ -24,6 +24,7 @@ import DisqusThread from "components/DisqusThread";
 import Breadcrumb from "@/components/Breadcrumb";
 import FooterSection from "@/components/FooterSection";
 import TOC from "@/components/TOC";
+import { withI18n } from "@/lib/withi18n";
 // Improved TOC Component with smooth scrolling
 
 function Post({ postData, slug }) {
@@ -187,18 +188,20 @@ Post.getLayout = function (page: React.ReactNode) {
 export default Post;
 
 // In Pages Router, we use getStaticProps instead of directly fetching data in component
-export async function getStaticProps({ params, locale }) {
-  const slug = params.id;
-  const postData = await getPostData(slug, "tutorials");
-  return {
-    props: {
-      postData,
-      slug,
-      locale,
-      ...(await serverSideTranslations(locale, ["common", "order"])),
-    },
-  };
-}
+export const getStaticProps = withI18n(
+  ["common"],
+  function ({ params, locale }) {
+    const slug = params.id;
+    const postData = await getPostData(slug, "tutorials");
+    return {
+      props: {
+        postData,
+        slug,
+        locale,
+      },
+    };
+  }
+);
 
 // getStaticPaths replaces generateStaticParams - they're functionally similar
 export async function getStaticPaths({ locales }) {

@@ -13,6 +13,9 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Copy, X, Info } from "lucide-react";
+import { withI18n } from "@/lib/withi18n";
+
+export const getStaticProps = withI18n(["common"]);
 
 // --- Tipe Data ---
 type Category = "All" | "Cosplay" | "Surrealism" | "Cyberpunk" | "Portrait";
