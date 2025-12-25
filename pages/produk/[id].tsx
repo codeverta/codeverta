@@ -42,6 +42,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"; // Adjust path if needed
+import { withI18n } from "@/lib/withi18n";
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
@@ -92,21 +93,23 @@ const iconMap = {
 };
 
 // Fungsi ini memberi tahu Next.js halaman mana yang harus dibuat saat build
-export async function getStaticPaths() {
+export async function getStaticPaths({ locales }) {
   const filePath = path.join(process.cwd(), "projects.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const data = JSON.parse(jsonData);
 
-  // Buat path untuk setiap proyek berdasarkan ID-nya
-  const paths = data.projects.map((project) => ({
-    params: { id: project.product.id },
-  }));
+  const paths = locales.flatMap((locale) => {
+    return data.projects.map((project) => ({
+      params: { id: project.product.id },
+      locale,
+    }));
+  });
 
   return { paths, fallback: false }; // fallback: false akan menampilkan halaman 404 jika ID tidak ditemukan
 }
 
 // Fungsi ini mengambil data untuk satu halaman proyek spesifik saat build
-export async function getStaticProps({ params }) {
+export const getStaticProps = withI18n(["common"], function ({ params }) {
   const filePath = path.join(process.cwd(), "projects.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const data = JSON.parse(jsonData);
@@ -127,7 +130,7 @@ export async function getStaticProps({ params }) {
       project,
     },
   };
-}
+});
 
 // --- KOMPONEN UTAMA HALAMAN ---
 export default function ProjectDetailPage({ project }) {
@@ -156,9 +159,6 @@ export default function ProjectDetailPage({ project }) {
       name: "Codeverta", // Add your brand name here
     },
     category: product.category,
-    // If you have reviews or pricing, you can add them here
-    // "review": { ... },
-    // "offers": { ... }
   };
   return (
     <>

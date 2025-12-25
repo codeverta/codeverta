@@ -24,6 +24,7 @@ import TOC from "@/components/TOC";
 // Dynamic Breadcrumb Component
 import Breadcrumb from "@/components/Breadcrumb";
 import FooterSection from "@/components/FooterSection";
+import { withI18n } from "@/lib/withi18n";
 function Post({ postData, slug }) {
   // Generate a random background image URL from Lorem Picsum
   const backgroundImageUrl = `https://picsum.photos/seed/${slug}/800/450`;
@@ -82,7 +83,11 @@ function Post({ postData, slug }) {
             overflow-hidden p-6 sm:p-8 md:p-12 border border-gray-200 dark:border-gray-700"
           >
             {/* Breadcrumb */}
-            <Breadcrumb postTitle={postData.title} slug={slug} type="startups"/>
+            <Breadcrumb
+              postTitle={postData.title}
+              slug={slug}
+              type="startups"
+            />
             {/* Header Image */}
             <div className="w-full h-64 md:h-96 overflow-hidden rounded-lg mb-8">
               {postData.image ? (
@@ -170,7 +175,7 @@ function Post({ postData, slug }) {
           )}
         </div>
 
-          <FooterSection/>
+        <FooterSection />
         {/* <AdSense adType={1} /> */}
       </main>
     </>
@@ -184,22 +189,25 @@ Post.getLayout = function (page: React.ReactNode) {
 export default Post;
 
 // In Pages Router, we use getStaticProps instead of directly fetching data in component
-export async function getStaticProps({ params, locale }) {
-  const slug = params.id;
-  const postData = await getPostData(slug, "tutorials");
-  return {
-    props: {
-      postData,
-      slug,
-      locale,
-      ...(await serverSideTranslations(locale, ["common", "order"])),
-    },
-  };
-}
+export const getStaticProps = withI18n(
+  ["common"],
+  function ({ params, locale }) {
+    const slug = params.id;
+    const postData = await getPostData(slug, "tutorials");
+    return {
+      props: {
+        postData,
+        slug,
+        locale,
+        ...(await serverSideTranslations(locale, ["common", "order"])),
+      },
+    };
+  }
+);
 
 // getStaticPaths replaces generateStaticParams - they're functionally similar
 export async function getStaticPaths({ locales }) {
-  const postIds = getAllPostIds('startups');
+  const postIds = getAllPostIds("startups");
   const paths: {
     params: {
       id: string;

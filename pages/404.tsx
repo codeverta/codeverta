@@ -1,4 +1,7 @@
+import { withI18n } from "@/lib/withi18n";
 import Link from "next/link";
+
+export const getStaticProps = withI18n(["common"]);
 
 export default function NotFound() {
   return (

@@ -3,7 +3,9 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
+import { withI18n } from "@/lib/withi18n";
 
+export const getStaticProps = withI18n(["common"]);
 export default function TermsPage() {
   const { t } = useTranslation("common");
 
@@ -48,12 +50,4 @@ export default function TermsPage() {
       </footer>
     </div>
   );
-}
-
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common"])),
-    },
-  };
 }
