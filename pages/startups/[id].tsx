@@ -191,7 +191,7 @@ export default Post;
 // In Pages Router, we use getStaticProps instead of directly fetching data in component
 export const getStaticProps = withI18n(
   ["common"],
-  function ({ params, locale }) {
+  async function ({ params, locale }) {
     const slug = params.id;
     const postData = await getPostData(slug, "tutorials");
     return {
