@@ -2,7 +2,7 @@
 // scripts/generate-static-sitemaps.js
 const fs = require("fs");
 const path = require("path");
-const axios = require("axios");
+const axios = require("@codeverta/axios");
 const dotenv = require("dotenv");
 
 // Load environment variables
@@ -12,7 +12,8 @@ const API_URL =
   process.env.NEXT_PUBLIC_API_URL ||
   "https://souvenirlilin.rabihutomo.com/api/v1";
 const API_KEY = process.env.API_KEY;
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://bikinwebsitejogja.com";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://bikinwebsitejogja.com";
 
 // Check if a path is an image file
 const isImageFile = (filePath) => {

@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig } from "axios";
+import axios, { AxiosRequestConfig } from "@codeverta/axios";
 import { toast } from "sonner";
 
 const api = {
