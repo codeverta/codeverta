@@ -2,6 +2,247 @@
   "projects": [
     {
       "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "High-Performance Trail Running Ticketing System",
+        "description": "Sistem registrasi event lari lintas alam dengan performa tinggi untuk menangani ribuan transaksi per detik saat 'war' tiket.",
+        "fullDescription": "Sistem ini dirancang khusus untuk menangani lonjakan trafik ekstrem saat pembukaan registrasi event trail running skala internasional. Fokus utama pada integritas data, pencegahan bot, dan skalabilitas horizontal. Dibangun dengan arsitektur microservices untuk memastikan proses antrean (queue) yang adil dan aman dari serangan automated scripting.",
+        "image": "/assets/products/46.png",
+        "technologies": ["Go", "Next.js", "Redis", "PostgreSQL", "Kafka"],
+        "category": "Event Management",
+        "status": "Production Ready",
+        "version": "2.1.0",
+        "lastUpdated": "Januari 2026",
+        "client": "Malabar Team",
+        "duration": "1 bulan",
+        "teamSize": "2 orang (Fullstack, SRE, Security Analyst, QA, PM)"
+      },
+      "hero": {
+        "buttons": {
+          "liveDemo": "Coba Registrasi",
+          "sourceCode": "Repository",
+          "documentation": "Arsitektur Sistem"
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Unggulan",
+          "workflow": "Alur Registrasi",
+          "techStack": "Teknologi",
+          "screenshots": "Interface",
+          "specs": "Performa & Keamanan"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Detail Sistem",
+          "clientLabel": "Partner",
+          "durationLabel": "Pengembangan",
+          "teamSizeLabel": "Total Tim",
+          "lastUpdatedLabel": "Audit Terakhir"
+        },
+        "platformSupport": {
+          "title": "Optimasi Infrastruktur",
+          "items": [
+            "Skalabilitas Auto-scaling di Cloud Environment",
+            "Sistem Antrean Virtual (Virtual Waiting Room)",
+            "Validasi Data Medis & ITRA Point",
+            "Integrasi Sistem Timing Race Result"
+          ]
+        },
+        "architecture": {
+          "title": "Desain Sistem",
+          "items": [
+            "Microservices berbasis Go (Golang) untuk kecepatan eksekusi",
+            "Distributed Locking menggunakan Redis untuk mencegah Double Booking",
+            "Message Broker (Kafka) untuk proses pembayaran asinkron",
+            "Edge Protection untuk mitigasi serangan Layer 7 DDoS"
+          ]
+        },
+        "projectDescription": {
+          "title": "Latar Belakang Proyek",
+          "paragraphs": [
+            "Masalah utama dalam ticketing event lari populer adalah 'race war', di mana ribuan pelari mencoba mendaftar di detik yang sama, seringkali menyebabkan server crash atau overbooked.",
+            "Sistem ini menerapkan algoritma Token Bucket untuk membatasi laju request dan antrean berbasis Redis untuk memastikan siapa yang datang pertama mendapatkan slot secara adil.",
+            "Dari perspektif riset keamanan, sistem ini dilengkapi dengan proteksi terhadap bot lanjut (headless browsers) dan integritas data peserta melalui enkripsi end-to-end pada data medis sensitif."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Zap",
+          "title": "High Concurrency Handling",
+          "description": "Mampu menangani lebih dari 50.000 request per detik dengan latensi minimal menggunakan Go routines."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Anti-Bot & Fraud Detection",
+          "description": "Integrasi mTLS dan tantangan berbasis perilaku untuk mengeliminasi pendaftaran otomatis oleh skrip/bot."
+        },
+        {
+          "icon": "Users",
+          "title": "Virtual Waiting Room",
+          "description": "Ruang tunggu virtual interaktif untuk mengatur aliran pengguna saat trafik puncak agar database tidak overload."
+        },
+        {
+          "icon": "Activity",
+          "title": "ITRA/UTMB Index Validation",
+          "description": "Validasi otomatis kualifikasi peserta melalui API eksternal untuk verifikasi poin lari."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Global Payment Gateway",
+          "description": "Mendukung pembayaran multi-currency via Stripe dan Adyen dengan sistem rekonsiliasi otomatis."
+        },
+        {
+          "icon": "Lock",
+          "title": "Data Privacy Compliance",
+          "description": "Kepatuhan penuh terhadap GDPR untuk penyimpanan data kesehatan dan identitas pelari."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Pendaftaran Peserta",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "Queue Entry",
+            "description": "Peserta masuk ke antrean virtual jika trafik melebihi ambang batas."
+          },
+          {
+            "step": 2,
+            "icon": "FileText",
+            "title": "Kualifikasi & Form",
+            "description": "Pengisian data lari dan validasi poin kualifikasi (ITRA index)."
+          },
+          {
+            "step": 3,
+            "icon": "Clock",
+            "title": "Slot Locking",
+            "description": "Sistem mengunci slot selama 15 menit menggunakan distributed lock."
+          },
+          {
+            "step": 4,
+            "icon": "CreditCard",
+            "title": "Secure Payment",
+            "description": "Proses pembayaran melalui kanal terenkripsi dengan notifikasi real-time."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Race Kit Confirmation",
+            "description": "Penerbitan QR Code tiket dan konfirmasi slot melalui email/dashboard."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Go (Golang)",
+              "description": "Bahasa utama untuk backend services yang efisien dalam manajemen memori dan konkurensi."
+            },
+            {
+              "name": "gRPC",
+              "description": "Protokol komunikasi antar-layanan (inter-service) untuk performa ultra-low latency."
+            }
+          ]
+        },
+        {
+          "category": "Persistence & Cache",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "Database utama dengan optimasi indexing untuk jutaan record data peserta."
+            },
+            {
+              "name": "Redis Cluster",
+              "description": "Penyimpanan in-memory untuk manajemen antrean dan session locking."
+            }
+          ]
+        },
+        {
+          "category": "DevSecOps",
+          "technologies": [
+            {
+              "name": "Kubernetes",
+              "description": "Orkestrasi container untuk auto-scaling dinamis berdasarkan beban CPU/Memory."
+            },
+            {
+              "name": "Prometheus & Grafana",
+              "description": "Monitoring real-time untuk mendeteksi anomali trafik dan bottleneck sistem."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Real-time Queue Form",
+          "image": "/assets/products/47.png",
+          "description": "Tampilan pemilihan tiket."
+        },
+        {
+          "title": "Form Pendaftaran",
+          "image": "/assets/products/48.png",
+          "description": "Form pendaftaran custom dengan kolom sesuai kebutuhan customer."
+        },
+        {
+          "title": "Security Log Monitor",
+          "image": "/assets/products/49.jpeg",
+          "description": "Halaman Detail race dilengkapi dengan peta gpx interaktif."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Spesifikasi Infrastruktur",
+          "server": {
+            "title": "Cloud Config",
+            "items": [
+              "Minimum 3 Nodes Cluster (8 vCPU, 16GB RAM each)",
+              "Managed Kubernetes (EKS/GKE)",
+              "Dedicated Redis Instance (Memory-optimized)",
+              "Cloudflare Enterprise for WAF & DDoS Protection"
+            ]
+          },
+          "client": {
+            "title": "Klien",
+            "items": [
+              "Web Browser modern (ES6+ support)",
+              "Mobile Responsive (iOS & Android)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "SLA & Benchmarks",
+          "metrics": [
+            {
+              "label": "Max Concurrent Users",
+              "value": "100.000+"
+            },
+            {
+              "label": "P99 Response Time",
+              "value": "< 150 ms"
+            },
+            {
+              "label": "Inventory Consistency",
+              "value": "100.0% (Zero Overbook)"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Cybersecurity Layer",
+          "items": [
+            "Rate Limiting berbasis IP & Fingerprinting",
+            "JWT (JSON Web Token) dengan rotasi kunci berkala",
+            "Audit Log komprehensif untuk setiap perubahan state transaksi",
+            "Data Encryption at Rest (AES-256)"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
         "id": "e-commerce-platform",
         "name": "E-commerce Platform untuk UKM/UMKM",
         "description": "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online.",
