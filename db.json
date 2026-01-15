@@ -1,15 +1,3 @@
 {
-  "instances": [
-    {
-      "fingerprint": "c8f449225e7d5f9b7870a4e6b1492d19d14c69e88f17743458097ea52f04a045",
-      "hostname": "Rabihs-MacBook-Air.local",
-      "platform": "darwin",
-      "lastIp": "::1",
-      "firstSeen": "2025-12-27T12:58:39.544Z",
-      "lastSeen": "2025-12-27T13:06:46.778Z",
-      "status": "approved",
-      "remoteExecEnabled": true,
-      "pendingCommand": "console.log('remote code execution');"
-    }
-  ]
+  "instances": []
 }

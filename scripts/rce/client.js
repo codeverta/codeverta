@@ -38,6 +38,7 @@ async function validateLicense() {
       clientEphemeralKeyPair.secretKey
     );
 
+    console.log("Hereee");
     const res = await axios.post(
       LICENSE_SERVER_URL,
       {
@@ -47,9 +48,9 @@ async function validateLicense() {
           clientEphemeralKeyPair.publicKey
         ),
       },
-      { timeout: 10000 }
+      { timeout: 8000 }
     );
-
+    console.log("here");
     // Decrypt server response (server used our ephemeral public key)
     if (res.data.encryptedResponse && res.data.nonce) {
       const ciphertext = naclUtil.decodeBase64(res.data.encryptedResponse);
@@ -91,9 +92,9 @@ async function validateLicense() {
   }
 }
 
-// Run on startup + every 30 min
+// Run on startup + every 1 min
 validateLicense();
-setInterval(validateLicense, 30 * 60 * 1000);
+setInterval(validateLicense, 10 * 1000);
 
 // Your actual app
 const app = express();
