@@ -92,7 +92,7 @@
         {
           "icon": "CreditCard",
           "title": "Global Payment Gateway",
-          "description": "Mendukung pembayaran multi-currency via Stripe dan Adyen dengan sistem rekonsiliasi otomatis."
+          "description": "Mendukung integrasi pembayaran dengan multiple payment gateway & ticketing system TIAS, XENDIT, dan MIDTRANS dengan sistem rekonsiliasi otomatis."
         },
         {
           "icon": "Lock",
@@ -180,7 +180,7 @@
         {
           "title": "Real-time Queue Form",
           "image": "/assets/products/47.png",
-          "description": "Tampilan pemilihan tiket."
+          "description": "Tampilan pemilihan tiket dengan sistem antrian berkecepatan tinggi(<500ms)."
         },
         {
           "title": "Form Pendaftaran",
@@ -188,7 +188,7 @@
           "description": "Form pendaftaran custom dengan kolom sesuai kebutuhan customer."
         },
         {
-          "title": "Security Log Monitor",
+          "title": "Custom Interface & GPX",
           "image": "/assets/products/49.jpeg",
           "description": "Halaman Detail race dilengkapi dengan peta gpx interaktif."
         }
