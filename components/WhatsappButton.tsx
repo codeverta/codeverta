@@ -53,17 +53,13 @@ export const handleRedirectToWhatsapp = () => {
   );
 };
 
-export const WhatsappWrapper = ({ children, title="" }) => {
-  return (
-    <a href={"/whatsappRedirect"}>
-      {children}
-    </a>
-  );
-}
+export const WhatsappWrapper = ({ children, title = "" }) => {
+  return <a href={"/whatsappRedirect"}>{children}</a>;
+};
 
 const WhatsAppButton = () => {
   const whatsappNumber = "6281234567890"; // Gunakan format internasional tanpa '+' atau '0'
-  const instagramUsername = "bikinwebsite_jogja";
+  const instagramUsername = "bikinwebsitejogja";
   const facebookUsername = "bikinwebsiteejogja";
   // --- ---
 
@@ -129,6 +125,5 @@ const WhatsAppButton = () => {
     </>
   );
 };
-
 
 export default WhatsAppButton;

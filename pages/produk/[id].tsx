@@ -255,6 +255,21 @@ export default function ProjectDetailPage({ project, otherProducts }) {
                       {hero?.buttons.liveDemo || "Hubungi Kami"}
                     </Button>
                   </WhatsappWrapper>
+                  {hero.buttons?.sourceCode && (
+                    <Button size="lg" variant="outline" asChild>
+                      <a
+                        href={
+                          hero.buttons.sourceCode ||
+                          "https://github.com/codeverta"
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="w-5 h-5 mr-2" />
+                        {hero?.buttons.sourceCodeLabel || "Source Code"}
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
 
