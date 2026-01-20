@@ -54,17 +54,17 @@ export const logos = [
     alt: "NSC Bantu Perizinan",
   },
   {
-    src: "/assets/tickethub.jpeg",
-    alt: "Ticket Hub",
+    src: "https://malabartrailrun.id/logo.png",
+    alt: "Malabar Trail Run",
   },
   {
     src: "/assets/souvenirlilin.png",
     alt: "Million Candles",
   },
-  {
-    src: "/assets/nova-tech.jpeg",
-    alt: "Ticket Hub",
-  },
+  // {
+  //   src: "/assets/nova-tech.jpeg",
+  //   alt: "Ticket Hub",
+  // },
 ];
 
 export const features = [

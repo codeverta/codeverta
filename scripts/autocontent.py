@@ -514,7 +514,7 @@ def main():
         "📞 WA: +62 856-0134-7820\n"
         "📧 Email: contact@codeverta.com\n"
         "🌐 Website: www.bikinwebsitejogja.com\n"
-        "📱 Kunjungi Instagram kami: @bikinwebsite_jogja"
+        "📱 Kunjungi Instagram kami: @bikinwebsitejogja"
     )
     
     # 3. Publikasikan ke Media Sosial

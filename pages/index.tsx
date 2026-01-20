@@ -217,7 +217,7 @@ export default function LandingPage({ projects }: any) {
               <h2 className="text-center text-lg font-semibold leading-8 text-muted-foreground">
                 {t("trustedBy")}
               </h2>
-              <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
+              <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
                 {logos.map((logo, index) => (
                   <Image
                     key={index}

@@ -19,7 +19,7 @@
       "hero": {
         "buttons": {
           "liveDemo": "Coba Registrasi",
-          "sourceCode": "Repository",
+          "sourceCode": "https://github.com/codeverta",
           "documentation": "Arsitektur Sistem"
         }
       },
