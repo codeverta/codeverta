@@ -58,7 +58,6 @@ export const WhatsappWrapper = ({ children, title = "" }) => {
 };
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "6281234567890"; // Gunakan format internasional tanpa '+' atau '0'
   const instagramUsername = "bikinwebsitejogja";
   const facebookUsername = "bikinwebsiteejogja";
   // --- ---
@@ -97,7 +96,7 @@ const WhatsAppButton = () => {
         </button>
 
         {/* Tombol Instagram */}
-        <button
+        {/* <button
           onClick={() => handleRedirect("instagram")}
           className="cursor-pointer text-white p-2 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110"
           style={{
@@ -108,7 +107,7 @@ const WhatsAppButton = () => {
           aria-label="Kunjungi Instagram kami"
         >
           <InstagramIcon size={18} />
-        </button>
+        </button> */}
         {/* Tombol WhatsApp */}
         <button
           onClick={() => handleRedirect("whatsapp")}
