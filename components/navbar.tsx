@@ -225,21 +225,26 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 items-center justify-between relative">
           {/* Logo */}
           <Link
             href={"/"}
-            className="hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg cursor-pointer flex items-center gap-2 font-bold flex-shrink-0"
+            className="flex-shrink-0 z-10 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg cursor-pointer flex items-center gap-2 font-bold flex-shrink-0"
             onClick={() => setMobileMenuOpen(false)}
           >
-            <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground">
+            <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground flex-shrink-0">
               CV
             </div>
-            <span className="hidden sm:block">Codeverta</span>
+            <div className="flex flex-col leading-tight hidden sm:flex">
+              <span className="text-base">Codeverta</span>
+              <span className="text-[10px] font-medium text-gray-500 tracking-tighter uppercase">
+                PT Zenit Technology Solution
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex gap-6 xl:gap-8 relative py-2">
+          <nav className="hidden lg:flex gap-6 xl:gap-8 absolute left-1/2 -translate-x-1/2 items-center">
             {categories.map((category) => {
               const hasMegaMenu = megaMenuData[category.id];
 
@@ -282,7 +287,7 @@ const Navbar = () => {
           </nav>
 
           {/* Mobile Menu Button and Theme Toggle */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 z-10">
             {/* Theme Toggle (Dapat ditambahkan di sini jika Anda ingin) */}
             <div className="hidden lg:block">
               <LanguageSwitcher />
