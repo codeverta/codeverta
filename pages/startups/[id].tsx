@@ -23,7 +23,6 @@ import DisqusThread from "components/DisqusThread";
 import TOC from "@/components/TOC";
 // Dynamic Breadcrumb Component
 import Breadcrumb from "@/components/Breadcrumb";
-import FooterSection from "@/components/FooterSection";
 import { withI18n } from "@/lib/withi18n";
 function Post({ postData, slug }) {
   // Generate a random background image URL from Lorem Picsum
@@ -175,7 +174,6 @@ function Post({ postData, slug }) {
           )}
         </div>
 
-        <FooterSection />
         {/* <AdSense adType={1} /> */}
       </main>
     </>

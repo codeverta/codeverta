@@ -338,7 +338,7 @@ export default function Landing({ children, seo }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(ldJson) }}
         />
       </Head>
-      <Banner />
+      {/* <Banner /> */}
       <Navbar />
       {children}
       <WhatsAppButton />

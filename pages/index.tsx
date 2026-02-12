@@ -134,7 +134,7 @@ export default function LandingPage({ projects }: any) {
                   Jl Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta
                 </Badge>
               </Link>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 pb-3">
                 {t("home.hero.prefix")}{" "}
                 <RotatingText
                   texts={t("home.hero.rotating", { returnObjects: true })}
@@ -159,9 +159,6 @@ export default function LandingPage({ projects }: any) {
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 {t("home.subtitle")}
                 <br />
-                <span className="text-red-600 text-sm">
-                  {t("home.tagline")}
-                </span>
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <WhatsappWrapper>
@@ -183,7 +180,8 @@ export default function LandingPage({ projects }: any) {
                   <Link href="/produk">{t("home.cta.products")}</Link>
                 </Button>
               </div>
-              <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
+              <div className="max-w-3xl mx-auto flex flex-wrap items-center justify-between gap-4 mt-6 text-sm text-muted-foreground">
+                {" "}
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
                   <span>{t("home.badges.consultation")}</span>
