@@ -167,9 +167,6 @@ importers:
       next-i18next:
         specifier: ^15.4.2
         version: 15.4.2(@types/react@19.1.4)(i18next@25.7.3(typescript@5.9.2))(next@15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-i18next@16.5.0(i18next@25.7.3(typescript@5.9.2))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(typescript@5.9.2))(react@19.2.1)
-      next-mdx-remote:
-        specifier: ^5.0.0
-        version: 5.0.0(@types/react@19.1.4)(acorn@8.15.0)(react@19.2.1)
       next-seo:
         specifier: ^5.15.0
         version: 5.15.0(next@15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
@@ -4936,15 +4933,6 @@ packages:
       react: ">= 17.0.2"
       react-i18next: ">= 13.5.0"
 
-  next-mdx-remote@5.0.0:
-    resolution:
-      {
-        integrity: sha512-RNNbqRpK9/dcIFZs/esQhuLA8jANqlH694yqoDBK8hkVdJUndzzGmnPHa2nyi90N4Z9VmzuSWNRpr5ItT3M7xQ==,
-      }
-    engines: { node: ">=14", npm: ">=7" }
-    peerDependencies:
-      react: ">=16"
-
   next-seo@5.15.0:
     resolution:
       {
@@ -6356,12 +6344,6 @@ packages:
         integrity: sha512-fucsC7HjXvkB5R3kTCO7kUjRdrS0BJt3M/FPxmHMBOm8JQi2BsHAHFsy27E0EolP8rp0NzXsJ+jNPyDWvOJZPA==,
       }
 
-  unist-util-remove@3.1.1:
-    resolution:
-      {
-        integrity: sha512-kfCqZK5YVY5yEa89tvpl7KnBBHu2c6CzMkqHUrlOqaRgGOMp0sMvwWOVrbAtj03KhovQB7i96Gda72v/EFE0vw==,
-      }
-
   unist-util-stringify-position@3.0.3:
     resolution:
       {
@@ -6502,12 +6484,6 @@ packages:
     resolution:
       {
         integrity: sha512-YF23YMyASIIJXpktBa4vIGLJ5Gs88UB/XePgqPmTa7cDA+JeO3yclbpheQYCHjVHBn/yePzrXuygIL+xbvRYHw==,
-      }
-
-  vfile-matter@5.0.1:
-    resolution:
-      {
-        integrity: sha512-o6roP82AiX0XfkyTHyRCMXgHfltUNlXSEqCIS80f+mbAyiQBE2fxtDVMtseyytGx75sihiJFo/zR6r/4LTs2Cw==,
       }
 
   vfile-message@3.1.4:
@@ -9982,20 +9958,6 @@ snapshots:
     transitivePeerDependencies:
       - "@types/react"
 
-  next-mdx-remote@5.0.0(@types/react@19.1.4)(acorn@8.15.0)(react@19.2.1):
-    dependencies:
-      "@babel/code-frame": 7.27.1
-      "@mdx-js/mdx": 3.1.0(acorn@8.15.0)
-      "@mdx-js/react": 3.1.0(@types/react@19.1.4)(react@19.2.1)
-      react: 19.2.1
-      unist-util-remove: 3.1.1
-      vfile: 6.0.3
-      vfile-matter: 5.0.1
-    transitivePeerDependencies:
-      - "@types/react"
-      - acorn
-      - supports-color
-
   next-seo@5.15.0(next@15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1))(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
     dependencies:
       next: 15.6.0-canary.58(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
@@ -10954,12 +10916,6 @@ snapshots:
     dependencies:
       "@types/unist": 3.0.3
 
-  unist-util-remove@3.1.1:
-    dependencies:
-      "@types/unist": 2.0.11
-      unist-util-is: 5.2.1
-      unist-util-visit-parents: 5.1.3
-
   unist-util-stringify-position@3.0.3:
     dependencies:
       "@types/unist": 2.0.11
@@ -11044,11 +11000,6 @@ snapshots:
     dependencies:
       "@types/unist": 2.0.11
       vfile: 5.3.7
-
-  vfile-matter@5.0.1:
-    dependencies:
-      vfile: 6.0.3
-      yaml: 2.8.1
 
   vfile-message@3.1.4:
     dependencies:
