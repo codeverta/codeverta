@@ -22,7 +22,6 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import DisqusThread from "components/DisqusThread";
 // import AdSense from "components/AdSense";
 import Breadcrumb from "@/components/Breadcrumb";
-import FooterSection from "@/components/FooterSection";
 import TOC from "@/components/TOC";
 import { withI18n } from "@/lib/withi18n";
 // Improved TOC Component with smooth scrolling
@@ -172,8 +171,6 @@ function Post({ postData, slug }) {
             <RelatedPosts posts={postData.relatedPosts} />
           )}
         </div>
-
-        <FooterSection />
 
         {/* <AdSense adType={1} /> */}
       </main>

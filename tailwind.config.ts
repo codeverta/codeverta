@@ -105,6 +105,7 @@ const config = {
     require("@tailwindcss/typography"),
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
+    require("tailwindcss-animate"),
   ],
 } satisfies Config;
 

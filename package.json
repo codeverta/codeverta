@@ -23,6 +23,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@google/genai": "^1.12.0",
+    "@hookform/resolvers": "^5.2.2",
     "@imgly/background-removal": "^1.7.0",
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
@@ -99,7 +100,8 @@
     "tailwind-merge": "^3.3.0",
     "tailwindcss-animate": "^1.0.7",
     "tweetnacl": "^1.0.3",
-    "tweetnacl-util": "^0.15.1"
+    "tweetnacl-util": "^0.15.1",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

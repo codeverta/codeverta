@@ -67,15 +67,15 @@
     }
   },
   "navbar": {
-    "products": "Our Products",
+    "products": "Products",
     "articles": "Articles & News",
-    "learning": "Classes & Tutorials",
+    "learning": "Training & Learning",
     "faq": "FAQ",
     "about": "About Us"
   },
   "mega_menu": {
     "products": {
-      "title": "Our Products",
+      "title": "Products",
       "all": "All Products",
       "view_all": "View All Products",
       "view_all_desc": "Explore all the products we offer."
