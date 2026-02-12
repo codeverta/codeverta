@@ -92,7 +92,7 @@ export default function Landing({ children, seo }: Props) {
         ],
         contactPoint: {
           "@type": "ContactPoint",
-          telephone: "+6281234567890",
+          telephone: "+6285601347820",
           contactType: "Customer Service",
           areaServed: "ID",
           availableLanguage: "id",

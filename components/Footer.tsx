@@ -15,189 +15,168 @@ const keywords = [
   "pt zenit technology solution",
 ];
 
+// Data Menu (Bisa dipindahkan ke file config terpisah)
+const COMPANY_LINKS = [
+  { href: "/about", label: "About Us" },
+  { href: "/contact", label: "Contact Page" },
+  { href: "/terms", label: "Terms of Service" },
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/blog", label: "Blog & News" },
+];
+
+const PROGRAM_LINKS = [
+  { href: "/course/cybersecurity", label: "Cyber Security Course" },
+  { href: "/course/ai-engineer", label: "AI Engineer" },
+  { href: "/services/consulting", label: "IT Consulting" },
+  { href: "/services/development", label: "Software Development" },
+];
+
+const CERTIFICATIONS = ["Indeks KAMI BSSN v5.0", "NIST CSF", "CAIQ v4"];
+
+// Placeholder variable (sesuaikan dengan sumber data Anda)
 export default function Footer() {
   const { t } = useTranslation("common");
   const { locale } = useRouter();
 
-  useEffect(() => {}, [locale]);
-
   return (
-    <footer className="print:hidden bg-[#1a1a1a] text-white py-10 border-t border-gray-800">
+    <footer className="print:hidden bg-[#1a1a1a] text-white py-12 border-t border-gray-800">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Kolom 1: Brand, Induk Perusahaan & Kontak */}
-          <div>
-            <h4 className="font-bold text-xl mb-4 text-white">Codeverta</h4>
-            <p className="text-gray-400 text-sm mb-4 leading-relaxed">
-              Penyedia jasa IT yang berdedikasi untuk membangun solusi digital
-              berkualitas tinggi dengan proses yang jujur dan transparan dengan
-              standar keamanan terbaik.
-            </p>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
+          {/* === Kolom 1: Brand & Kontak === */}
+          <div className="space-y-6">
+            <div>
+              <h4 className="font-bold text-2xl text-white mb-2">Codeverta</h4>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Penyedia jasa IT yang berdedikasi membangun solusi digital
+                berkualitas tinggi, jujur, dan transparan dengan standar
+                keamanan terbaik.
+              </p>
+            </div>
 
-            {/* Bagian PT ZENIT */}
-            <div className="mt-4 pt-4 border-t border-gray-700">
-              <p className="text-gray-500 text-xs font-semibold tracking-wider uppercase">
+            {/* Induk Perusahaan */}
+            <div className="pt-4 border-t border-gray-700">
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
                 Bagian dari
               </p>
-              <p className="font-bold text-sm text-gray-300 mt-1">
+              <p className="mt-1 text-sm font-bold text-gray-300">
                 PT ZENIT TECHNOLOGY SOLUTION
               </p>
             </div>
 
-            {/* Bagian Kontak (Statis/Tanpa Redirect) */}
-            <div className="mt-4">
-              <p className="text-gray-500 text-xs font-semibold tracking-wider uppercase mb-1">
-                Kontak
-              </p>
-              <p className="font-medium text-sm text-gray-300 select-all">
-                +62 857-2639-4401
-              </p>
+            {/* Kontak */}
+            <div className="space-y-4">
+              <div>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
+                  Email
+                </p>
+                <p className="text-sm font-medium text-gray-300 select-all hover:text-white transition-colors">
+                  contact@codeverta.com
+                </p>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
+                  WhatsApp
+                </p>
+                <div className="space-y-1">
+                  <p className="text-sm font-medium text-gray-300 select-all">
+                    +62 856-0134-7820 (Admin 1)
+                  </p>
+                  <p className="text-sm font-medium text-gray-300 select-all">
+                    +62 857-2639-4401 (Admin 2)
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Kolom 2: Menu Navigasi Utama */}
+          {/* === Kolom 2: Company === */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link
-                  href="/about"
-                  className="hover:text-white transition-colors"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-white transition-colors"
-                >
-                  Contact Page
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="hover:text-white transition-colors"
-                >
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy-policy"
-                  className="hover:text-white transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blog"
-                  className="hover:text-white transition-colors"
-                >
-                  Blog & News
-                </Link>
-              </li>
+            <h4 className="font-bold text-lg mb-6 text-white">Company</h4>
+            <ul className="space-y-3 text-sm text-gray-400">
+              {COMPANY_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Kolom 3: Layanan & Kursus */}
+          {/* === Kolom 3: Programs === */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Programs</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link
-                  href="/course/cybersecurity"
-                  className="hover:text-white transition-colors"
-                >
-                  Cyber Security Course
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/course/ai-engineer"
-                  className="hover:text-white transition-colors"
-                >
-                  AI Engineer
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/consulting"
-                  className="hover:text-white transition-colors"
-                >
-                  IT Consulting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services/development"
-                  className="hover:text-white transition-colors"
-                >
-                  Software Development
-                </Link>
-              </li>
+            <h4 className="font-bold text-lg mb-6 text-white">Programs</h4>
+            <ul className="space-y-3 text-sm text-gray-400">
+              {PROGRAM_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-white transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Kolom 4: Legalitas & Sertifikasi */}
+          {/* === Kolom 4: Legal & Trust === */}
           <div>
-            <h4 className="font-bold text-lg mb-4">Legal & Trust</h4>
+            <h4 className="font-bold text-lg mb-6 text-white">Legal & Trust</h4>
 
-            {/* Terdaftar PSE */}
+            {/* PSE Badge */}
             <div className="mb-6">
               <p className="text-xs text-gray-500 mb-2">Terdaftar Resmi</p>
-              <div className="flex items-center gap-2 bg-white/5 p-2 rounded border border-gray-700 w-fit">
-                {/* Pastikan file gambar ada di folder public/images/ */}
+              <div className="inline-flex bg-white/5 p-2 rounded border border-gray-700 hover:bg-white/10 transition-colors">
                 <img
                   src="/assets/logo-pse-small.png"
                   alt="PSE Kominfo"
-                  className="h-8 w-auto transition-all"
-                  onError={(e) => (e.target.style.display = "none")}
+                  className="h-8 w-auto object-contain"
+                  onError={(e) => (e.currentTarget.style.display = "none")}
                 />
-                {/* <span className="text-xs font-bold text-gray-300">PSE KOMINFO</span> */}
               </div>
             </div>
 
-            {/* Sertifikasi Logos */}
+            {/* Certifications */}
             <div>
               <p className="text-xs text-gray-500 mb-2">
                 Sertifikasi & Keamanan
               </p>
-              <div className="flex flex-wrap gap-3">
-                <div className="bg-white p-1 rounded h-10 w-auto flex items-center justify-center">
-                  <span className="text-black text-[10px] font-bold px-1">
-                    Indeks KAMI BSSN v5.0
-                  </span>
-                </div>
-                <div className="bg-white p-1 rounded h-10 w-auto flex items-center justify-center">
-                  <span className="text-black text-[10px] font-bold px-1">
-                    NIST CSF
-                  </span>
-                </div>
-                <div className="bg-white p-1 rounded h-10 w-auto flex items-center justify-center">
-                  <span className="text-black text-[10px] font-bold px-1">
-                    CAIQ v4
-                  </span>
-                </div>
+              <div className="flex flex-wrap gap-2">
+                {CERTIFICATIONS.map((cert) => (
+                  <div
+                    key={cert}
+                    className="bg-gray-100 text-gray-900 px-2 py-1.5 rounded text-[10px] font-bold shadow-sm"
+                  >
+                    {cert}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
 
-        {/* Footer Bottom */}
-        <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p>
-            © {new Date().getFullYear()} PT Zenit Technology Solution. All
+        {/* === Footer Bottom === */}
+        <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+          <p className="text-center md:text-left">
+            &copy; {new Date().getFullYear()} PT Zenit Technology Solution. All
             rights reserved.
           </p>
-          <p className="mt-2 md:mt-0">v{version} • Yogyakarta, Indonesia</p>
+          <div className="mt-4 md:mt-0 flex items-center gap-4 text-xs">
+            <span>v{version}</span>
+            <span className="hidden md:inline">•</span>
+            <span>Yogyakarta, Indonesia</span>
+          </div>
         </div>
       </div>
 
-      {/* Hidden SEO Keywords */}
-      <p className="hidden">{keywords.join(", ")}</p>
+      {/* Hidden SEO */}
+      <div className="hidden" aria-hidden="true">
+        {keywords.join(", ")}
+      </div>
     </footer>
   );
 }
