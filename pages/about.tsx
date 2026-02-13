@@ -42,9 +42,9 @@ export default function AboutPage() {
             bersaing di era modern.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+            {/* <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition flex items-center justify-center gap-2">
               Konsultasi Gratis <ArrowRight className="w-4 h-4" />
-            </button>
+            </button> */}
             <Link href={"/produk"}>
               <button className="px-8 py-3 bg-transparent border border-slate-600 hover:bg-slate-800 rounded-lg font-semibold transition">
                 Lihat Portofolio

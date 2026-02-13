@@ -245,6 +245,7 @@ export const getCategories = (t) => [
   // { id: "/kategori", name: t("navbar.articles") },
   { id: "/pelatihan", name: t("navbar.learning") },
   { id: "/faq", name: t("navbar.faq"), isDropdown: false },
+  { id: "/careers", name: t("navbar.careers") },
   { id: "/about", name: t("navbar.about") },
 ];
 
@@ -265,16 +266,16 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => ({
         ],
       })),
       // Opsi statis untuk melihat semua produk
-      {
-        title: t("mega_menu.products.all"),
-        items: [
-          {
-            name: t("mega_menu.products.view_all"),
-            href: "/produk",
-            description: t("mega_menu.products.view_all_desc"),
-          },
-        ],
-      },
+      // {
+      //   title: t("mega_menu.products.all"),
+      //   items: [
+      //     {
+      //       name: t("mega_menu.products.view_all"),
+      //       href: "/produk",
+      //       description: t("mega_menu.products.view_all_desc"),
+      //     },
+      //   ],
+      // },
     ],
   },
 

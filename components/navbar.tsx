@@ -409,7 +409,7 @@ const Navbar = () => {
                             transition={{ duration: 0.2 }}
                             className="ml-4 mt-2 space-y-2 overflow-hidden"
                           >
-                            <div className="container mx-auto px-4 py-6 space-y-4">
+                            <div className="container mx-auto sm:px-4 sm:py-6 space-y-4">
                               {megaMenuData[category.id].columns.map(
                                 (column, columnIndex) => (
                                   <div key={columnIndex} className="space-y-1">
@@ -420,7 +420,7 @@ const Navbar = () => {
                                       <Link
                                         key={itemIndex}
                                         href={item.href}
-                                        className="block text-sm text-muted-foreground hover:text-foreground py-1 px-3 rounded transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                        className="block text-sm text-muted-foreground hover:text-foreground sm:py-1 sm:px-3 rounded transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
                                         onClick={() => setMobileMenuOpen(false)}
                                       >
                                         {item.name}
@@ -429,7 +429,7 @@ const Navbar = () => {
                                   </div>
                                 )
                               )}
-                              <div className="pt-4 border-t flex items-center justify-between">
+                              <div className="hidden pt-4 border-t md:flex items-center justify-between">
                                 <span className="text-sm text-muted-foreground font-medium">
                                   Pilih Bahasa / Language
                                 </span>
