@@ -16,177 +16,227 @@ import { withI18n } from "@/lib/withi18n";
 
 export const getStaticProps = withI18n(["common"]);
 
-export default function TentangPage() {
+import React from "react";
+import Image from "next/image";
+import { CheckCircle2, Code2, Rocket, ArrowRight } from "lucide-react";
+import Link from "next/link";
+
+export default function AboutPage() {
   return (
-    <>
-      <SeoHead
-        title="Tentang Codeverta – Solusi Digital untuk UMKM, Bisnis, Pemerintahan di Yogyakarta"
-        description="Pelajari lebih lanjut tentang Codeverta, penyedia jasa IT yang berdedikasi membantu digitalisasi UMKM di Yogyakarta dengan solusi berkualitas tinggi dan transparan."
-        url="https://bikinwebsitejogja.com/about"
-        image="https://bikinwebsitejogja.com/og-image.png"
-      />
-      <div className="container max-w-6xl mx-auto py-12 px-4 space-y-16">
-        {/* Section 1: Hero */}
-        <section className="text-center space-y-4 flex flex-col gap-4">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+    <div className="bg-white text-slate-900 font-sans">
+      {/* --- HERO SECTION --- */}
+      <section className="relative py-20 lg:py-28 overflow-hidden bg-slate-900 text-white">
+        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center" />
+        <div className="container mx-auto px-6 relative z-10 text-center">
+          <span className="inline-block py-1 px-3 rounded-full bg-blue-600/30 border border-blue-500 text-blue-300 text-sm font-semibold mb-6">
             Tentang Codeverta
+          </span>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Membangun Solusi Digital <br className="hidden md:block" />
+            <span className="text-blue-500">Jujur & Berkualitas</span>
           </h1>
-          <p className="max-w-3xl mx-auto text-lg text-muted-foreground">
+          <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10">
             Kami adalah penyedia jasa IT yang berdedikasi untuk membangun solusi
             digital berkualitas tinggi dengan proses yang jujur dan transparan.
             Misi kami adalah membantu digitalisasi UMKM di Yogyakarta agar dapat
             bersaing di era modern.
           </p>
-          <WhatsappWrapper>
-            <Button size="lg">Konsultasi Gratis</Button>
-          </WhatsappWrapper>
-        </section>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition flex items-center justify-center gap-2">
+              Konsultasi Gratis <ArrowRight className="w-4 h-4" />
+            </button>
+            <Link href={"/produk"}>
+              <button className="px-8 py-3 bg-transparent border border-slate-600 hover:bg-slate-800 rounded-lg font-semibold transition">
+                Lihat Portofolio
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
 
-        {/* Section 2: Tentang Codeverta - Lebih Fokus pada "Kenapa Kami Ada" */}
-        <section>
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl">Tentang Codeverta</CardTitle>
-            </CardHeader>
-            <CardContent className="text-md text-muted-foreground">
-              <p>
-                Codeverta lahir dari sebuah keyakinan: setiap bisnis, besar
-                maupun kecil, berhak mendapatkan partner pengembangan teknologi
-                yang bisa dipercaya. Terlalu sering kami melihat proyek digital
-                yang gagal karena komunikasi yang buruk, biaya tersembunyi, atau
-                hasil yang tidak sesuai harapan.
-                <br />
-                <br />
-                Oleh karena itu, kami hadir untuk mengubahnya. Kami adalah tim
-                developer, desainer, dan konsultan IT profesional yang
-                berkomitmen pada tiga hal: kualitas kode, komunikasi yang
-                transparan, dan kesuksesan klien. Misi kami adalah mewujudkan
-                visi digital Anda menjadi solusi nyata yang berfungsi dengan
-                baik dan memberikan nilai tambah bagi bisnis Anda.
+      {/* --- OUR STORY / MISSION --- */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div className="w-full lg:w-1/2 relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                {/* Placeholder Image: Office / Team working */}
+                <img
+                  src="/images/meeting.jpeg"
+                  alt="Tim Codeverta Diskusi"
+                  className="object-cover w-full h-[25rem]"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-blue-600 rounded-lg -z-10 hidden lg:block"></div>
+              <div className="absolute -top-6 -left-6 w-32 h-32 bg-slate-200 rounded-full -z-10 hidden lg:block"></div>
+            </div>
+
+            <div className="lg:w-1/2">
+              <h2 className="text-3xl font-bold mb-6 text-slate-900">
+                Lahir dari Keyakinan akan{" "}
+                <span className="text-blue-600">Standar Baru</span>
+              </h2>
+              <div className="space-y-4 text-slate-600 leading-relaxed">
+                <p>
+                  <strong>Codeverta</strong> lahir dari sebuah keyakinan: <br />{" "}
+                  setiap bisnis, besar maupun kecil, berhak mendapatkan partner
+                  pengembangan teknologi yang bisa dipercaya. Terlalu sering
+                  kami melihat proyek digital yang gagal karena komunikasi yang
+                  buruk, biaya tersembunyi, atau hasil yang tidak sesuai
+                  harapan.
+                </p>
+                <p>
+                  Oleh karena itu, kami hadir untuk mengubahnya. Kami adalah tim
+                  developer, desainer, dan konsultan IT profesional yang
+                  berkomitmen pada tiga hal: kualitas kode, komunikasi yang
+                  transparan, dan kesuksesan klien. Misi kami adalah mewujudkan
+                  visi digital Anda menjadi solusi nyata yang berfungsi dengan
+                  baik dan memberikan nilai tambah bagi bisnis Anda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- WHY CHOOSE US --- */}
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-3xl font-bold mb-4">
+              Kenapa Memilih Codeverta?
+            </h2>
+            <p className="text-slate-600">
+              Kami tidak hanya membangun aplikasi, kami membangun ketenangan
+              pikiran Anda.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-lg transition bg-white group">
+              <div className="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <ShieldCheck className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-slate-900">
+                Transparansi Radikal
+              </h3>
+              <p className="text-slate-600">
+                Tidak ada biaya siluman atau jargon teknis yang membingungkan.
+                Kami memberikan rincian biaya yang jelas (SLA) dan komunikasi
+                terbuka di setiap fase pengembangan.
               </p>
-            </CardContent>
-          </Card>
-        </section>
+            </div>
 
-        {/* Section 3: Mengapa Memilih Kami? (Why Choose Us?) - Menggunakan Grid Cards */}
-        <section className="space-y-6">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold">
-              Mengapa Bermitra dengan Codeverta?
-            </h2>
-            <p className="text-muted-foreground mt-2">
-              Keunggulan yang kami tawarkan untuk menjamin kesuksesan proyek
-              Anda.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 text-base">
-            {/* Card 1: Jujur & Transparan */}
-            <Card>
-              <CardHeader className="flex flex-row items-center gap-4">
-                <ShieldCheck className="w-8 h-8 text-primary" />
-                <CardTitle>Jujur & Transparan</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Tidak ada biaya tersembunyi. Kami menyediakan rincian biaya yang
-                jelas dan komunikasi terbuka di setiap tahap proyek.
-              </CardContent>
-            </Card>
-            {/* Card 3: Kualitas & Teknologi Modern */}
-            <Card>
-              <CardHeader className="flex flex-row items-center gap-4">
-                <Code className="w-8 h-8 text-primary" />
-                <CardTitle>Teknologi Modern</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Solusi yang kami bangun menggunakan teknologi terkini yang
-                scalable, aman, dan mudah dikelola di masa depan.
-              </CardContent>
-            </Card>
-            {/* Card 4: Fokus pada Hasil */}
-            <Card>
-              <CardHeader className="flex flex-row items-center gap-4">
-                <Target className="w-8 h-8 text-primary" />
-                <CardTitle>Fokus Pada Hasil</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Kesuksesan kami diukur dari kesuksesan Anda. Kami berkomitmen
-                untuk memberikan produk yang berfungsi optimal dan tepat
-                sasaran.
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+            {/* Feature 2 */}
+            <div className="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-lg transition bg-white group">
+              <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <Code2 className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-slate-900">
+                Stack Teknologi Modern
+              </h3>
+              <p className="text-slate-600">
+                Kami membangun solusi yang <em>scalable</em>, aman, dan{" "}
+                <em>maintainable</em> menggunakan teknologi terkini (Next.js,
+                Go, Cloud Native) agar aset digital Anda berumur panjang.
+              </p>
+            </div>
 
-        {/* Section 4: Layanan Kami (Our Services) - Bisa menggunakan Accordion atau Cards */}
-        <section className="space-y-6 ">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold">Layanan Profesional Kami</h2>
-            <p className="text-muted-foreground mt-2">
-              Solusi digital yang kami sediakan untuk mendorong pertumbuhan
-              bisnis Anda.
-            </p>
+            {/* Feature 3 */}
+            <div className="p-8 border border-slate-100 rounded-2xl shadow-sm hover:shadow-lg transition bg-white group">
+              <div className="w-14 h-14 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                <Rocket className="w-7 h-7" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-slate-900">
+                Berorientasi Hasil
+              </h3>
+              <p className="text-slate-600">
+                Kode yang bagus itu standar, tapi produk yang sukses itu tujuan.
+                Kami fokus menciptakan solusi yang benar-benar memecahkan
+                masalah bisnis dan memberikan ROI nyata.
+              </p>
+            </div>
           </div>
-          <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6 ">
-            {/* Anda bisa menggunakan <Accordion> di sini atau tetap dengan <Card> */}
-            <Card>
-              <CardHeader>
-                <CardTitle>Pembuatan Website & Landing Page</CardTitle>
-                <CardDescription>
-                  Website modern, responsif, dan SEO-friendly untuk Company
-                  Profile, Portofolio, atau kampanye marketing.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Pengembangan Sistem Informasi Custom</CardTitle>
-                <CardDescription>
-                  Sistem manajemen (CRM, ERP), sistem kasir (POS), atau aplikasi
-                  internal lainnya yang dirancang khusus sesuai alur kerja
-                  bisnis Anda.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Solusi E-commerce & Toko Online</CardTitle>
-                <CardDescription>
-                  Platform jual beli online yang aman, terintegrasi dengan
-                  payment gateway, dan mudah dikelola.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>UI/UX Design & Prototyping</CardTitle>
-                <CardDescription>
-                  Merancang antarmuka yang intuitif dan pengalaman pengguna yang
-                  menyenangkan sebelum masuk tahap pengembangan.
-                </CardDescription>
-              </CardHeader>
-            </Card>
-          </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Section 5: Call to Action (CTA) */}
-        <section className="bg-primary text-primary-foreground rounded-lg p-8 md:p-12">
-          <div className="text-center space-y-4 flex flex-col gap-2">
-            <h2 className="text-3xl  font-bold">
-              Siap Mengubah Ide Anda Menjadi Solusi Digital?
-            </h2>
-            <p className="max-w-2xl mx-auto">
-              Mari diskusikan kebutuhan Anda. Kami siap memberikan konsultasi
-              awal secara gratis untuk membantu Anda menemukan solusi teknologi
-              yang paling tepat, tanpa paksaan.
-            </p>
-            <WhatsappWrapper>
-              <Button variant="secondary" size="lg">
-                Hubungi Kami Sekarang
-              </Button>
-            </WhatsappWrapper>
+      {/* --- SERVICES --- */}
+      <section className="py-20 bg-slate-900 text-white">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl font-bold mb-4">
+                Layanan Profesional Kami
+              </h2>
+              <p className="text-slate-400">
+                Ekosistem solusi digital lengkap untuk mengakselerasi
+                pertumbuhan bisnis Anda.
+              </p>
+            </div>
+            <a
+              href="#"
+              className="hidden md:flex items-center gap-2 text-blue-400 hover:text-blue-300 transition mt-4 md:mt-0"
+            >
+              Lihat Selengkapnya <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
-        </section>
-      </div>
-    </>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                title: "Website & Landing Page",
+                desc: "Desain modern, responsif, dan SEO-friendly untuk meningkatkan kredibilitas brand Anda.",
+                icon: <Users className="w-6 h-6" />,
+              },
+              {
+                title: "Sistem Informasi Custom",
+                desc: "ERP, CRM, atau sistem internal yang dirancang khusus menyesuaikan alur kerja unik bisnis Anda.",
+                icon: <Code2 className="w-6 h-6" />,
+              },
+              {
+                title: "E-commerce Solution",
+                desc: "Platform toko online aman dengan integrasi payment gateway untuk jualan tanpa batas.",
+                icon: <ShieldCheck className="w-6 h-6" />,
+              },
+              {
+                title: "UI/UX & Prototyping",
+                desc: "Perancangan antarmuka intuitif yang memprioritaskan kenyamanan pengguna (User Experience).",
+                icon: <Rocket className="w-6 h-6" />,
+              },
+            ].map((service, idx) => (
+              <div
+                key={idx}
+                className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-blue-500 transition duration-300"
+              >
+                <div className="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center mb-4 text-blue-400">
+                  {service.icon}
+                </div>
+                <h4 className="text-lg font-bold mb-2">{service.title}</h4>
+                <p className="text-sm text-slate-400 leading-relaxed">
+                  {service.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* --- CTA SECTION --- */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="container mx-auto px-6 text-center relative z-10">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
+            Siap Transformasi Digital?
+          </h2>
+          <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+            Jangan biarkan ide besar Anda terhambat oleh eksekusi teknis yang
+            buruk. Diskusikan kebutuhan Anda bersama tim Codeverta.
+          </p>
+          <button className="px-10 py-4 bg-blue-600 text-white rounded-full font-bold shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:-translate-y-1 transition duration-300">
+            Hubungi Kami Sekarang
+          </button>
+        </div>
+      </section>
+    </div>
   );
 }
