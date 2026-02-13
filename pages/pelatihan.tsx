@@ -81,7 +81,7 @@ const courses: Course[] = [
   {
     id: "roblox-2d",
     title: "2D Games Development with Roblox",
-    ageGroup: "8-12",
+    ageGroup: "8-10",
     duration: "90 menit",
     sessions: "20 sesi",
     description:
@@ -98,7 +98,7 @@ const courses: Course[] = [
   {
     id: "mobile-apps",
     title: "Mobile Apps Development",
-    ageGroup: "8-12",
+    ageGroup: "8-10",
     duration: "90 menit",
     sessions: "20 sesi",
     description:
@@ -115,7 +115,7 @@ const courses: Course[] = [
   {
     id: "roblox-1",
     title: "Roblox I",
-    ageGroup: "8-12",
+    ageGroup: "8-10",
     duration: "90 menit",
     sessions: "20 sesi",
     description:
@@ -130,7 +130,7 @@ const courses: Course[] = [
   {
     id: "roblox-2",
     title: "Roblox II",
-    ageGroup: "13-16",
+    ageGroup: "11-16",
     duration: "90 menit",
     sessions: "20 sesi",
     description:
@@ -147,7 +147,7 @@ const courses: Course[] = [
   {
     id: "website-dev",
     title: "Website Development",
-    ageGroup: "13-16",
+    ageGroup: "11-16",
     duration: "90 menit",
     sessions: "20 sesi",
     description:
@@ -164,7 +164,7 @@ const courses: Course[] = [
   {
     id: "2d-3d-design",
     title: "2D & 3D Design",
-    ageGroup: "13-16",
+    ageGroup: "11-16",
     duration: "90 menit",
     sessions: "20 sesi",
     description:
@@ -204,7 +204,7 @@ const formSchema = z.object({
 const CoursePage = () => {
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
   const [activeAgeGroup, setActiveAgeGroup] = useState<
-    "all" | "8-12" | "13-16"
+    "all" | "8-10" | "11-16"
   >("all");
   const [loading, setLoading] = useState(false);
   const {
@@ -354,11 +354,11 @@ const CoursePage = () => {
                           <SelectValue placeholder="Pilih tingkat kursus" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="Little Koders (4-7 Tahun)">
-                            Little Koders (4-7 Thn)
+                          <SelectItem value="Kelas Anak-anak (4-10 Tahun)">
+                            Kelas Anak-anak (4-10 Thn)
                           </SelectItem>
-                          <SelectItem value="Junior Koders (8-16 Tahun)">
-                            Junior Koders (8-16 Thn)
+                          <SelectItem value="Kelas Remaja (11-16 Tahun)">
+                            Kelas Remaja (11-16 Thn)
                           </SelectItem>
                         </SelectContent>
                       </Select>
@@ -400,12 +400,12 @@ const CoursePage = () => {
                   className="w-full h-30 object-cover transform group-hover:scale-110 transition-duration-500"
                 />
                 <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-pink-600 font-bold text-xs px-3 py-1.5 rounded-full shadow-sm">
-                  4-7 TAHUN
+                  8-10 TAHUN
                 </div>
               </div>
               <div className="px-2 pb-2">
                 <h3 className="font-bold text-xl text-slate-900">
-                  Little Koders
+                  Kelas Anak-anak
                 </h3>
                 <p className="text-slate-500 text-sm mb-4">
                   Dasar logika & kreativitas digital.
@@ -430,7 +430,7 @@ const CoursePage = () => {
               </div>
               <div className="px-2 pb-2">
                 <h3 className="font-bold text-xl text-slate-900">
-                  Junior Koders
+                  Kelas Remaja
                 </h3>
                 <p className="text-slate-500 text-sm mb-4">
                   Pemrograman tingkat lanjut & AI.
@@ -457,7 +457,7 @@ const CoursePage = () => {
             </div>
             <div className="order-1 lg:order-2 space-y-6">
               <Badge className="bg-pink-500 text-white px-4 py-1 text-sm">
-                4-7 Tahun
+                8-10 Tahun
               </Badge>
               <h2 className="text-4xl font-bold text-gray-900">
                 Kelas Anak-anak
@@ -546,18 +546,18 @@ const CoursePage = () => {
                 Semua
               </Button>
               <Button
-                variant={activeAgeGroup === "8-12" ? "default" : "outline"}
-                onClick={() => setActiveAgeGroup("8-12")}
-                className={activeAgeGroup === "8-12" ? "bg-blue-500" : ""}
+                variant={activeAgeGroup === "8-10" ? "default" : "outline"}
+                onClick={() => setActiveAgeGroup("8-10")}
+                className={activeAgeGroup === "8-10" ? "bg-blue-500" : ""}
               >
-                8 - 12 Tahun
+                8 - 10 Tahun
               </Button>
               <Button
-                variant={activeAgeGroup === "13-16" ? "default" : "outline"}
-                onClick={() => setActiveAgeGroup("13-16")}
-                className={activeAgeGroup === "13-16" ? "bg-purple-500" : ""}
+                variant={activeAgeGroup === "11-16" ? "default" : "outline"}
+                onClick={() => setActiveAgeGroup("11-16")}
+                className={activeAgeGroup === "11-16" ? "bg-purple-500" : ""}
               >
-                13 - 16 Tahun
+                11 - 16 Tahun
               </Button>
             </div>
 
@@ -588,7 +588,7 @@ const CoursePage = () => {
                   <div className="absolute top-3 right-3">
                     <Badge
                       className={`${
-                        course.ageGroup === "8-12"
+                        course.ageGroup === "8-10"
                           ? "bg-blue-500"
                           : "bg-purple-500"
                       } text-white`}
@@ -601,7 +601,7 @@ const CoursePage = () => {
                   <div className="flex items-center gap-2 mb-3">
                     <div
                       className={`p-2 rounded-lg ${
-                        course.ageGroup === "8-12"
+                        course.ageGroup === "8-10"
                           ? "bg-blue-100 text-blue-600"
                           : "bg-purple-100 text-purple-600"
                       }`}
@@ -628,7 +628,7 @@ const CoursePage = () => {
                       variant="ghost"
                       size="sm"
                       className={`${
-                        course.ageGroup === "8-12"
+                        course.ageGroup === "8-10"
                           ? "text-blue-500 hover:text-blue-600"
                           : "text-purple-500 hover:text-purple-600"
                       } flex items-center gap-1`}
@@ -661,7 +661,7 @@ const CoursePage = () => {
                   <div className="absolute top-3 right-3">
                     <Badge
                       className={`${
-                        selectedCourse.ageGroup === "8-12"
+                        selectedCourse.ageGroup === "8-10"
                           ? "bg-blue-500"
                           : "bg-purple-500"
                       } text-white`}

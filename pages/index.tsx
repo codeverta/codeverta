@@ -175,7 +175,7 @@ export default function LandingPage({ projects }: any) {
                   <Link href="/produk">{t("home.cta.products")}</Link>
                 </Button>
               </div>
-              <div className="max-w-3xl mx-auto flex flex-wrap items-center justify-between gap-4 mt-6 text-sm text-muted-foreground">
+              <div className="max-w-3xl mx-auto flex flex-wrap items-center justify-between gap-4 mt-12 text-sm text-muted-foreground">
                 {" "}
                 <div className="flex items-center gap-1">
                   <Check className="size-4 text-primary" />
