@@ -229,11 +229,15 @@ const Navbar = () => {
           {/* Logo */}
           <Link
             href={"/"}
-            className="flex-shrink-0 z-10 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg cursor-pointer flex items-center gap-2 font-bold flex-shrink-0"
+            className="flex-shrink-0 z-10 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg cursor-pointer flex items-center gap-2 font-bold"
             onClick={() => setMobileMenuOpen(false)}
           >
-            <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center text-primary-foreground flex-shrink-0">
-              CV
+            <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center overflow-hidden flex-shrink-0">
+              <img
+                src="/assets/icon.png"
+                alt="Logo"
+                className="size-full object-cover"
+              />
             </div>
             <div className="flex flex-col leading-tight hidden sm:flex">
               <span className="text-base">Codeverta</span>
