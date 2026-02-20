@@ -49,6 +49,7 @@ import {
   HeartHandshake,
 } from "lucide-react";
 import { ShoppingBag, Globe, Wallet, Stethoscope } from "lucide-react";
+import clsx from "clsx";
 
 export async function getStaticProps({ locale }) {
   const filePath = path.join(process.cwd(), "projects.json");
@@ -227,7 +228,10 @@ export default function LandingPage({ projects }: any) {
                     alt={logo.alt}
                     title={logo.alt}
                     /* h-12 untuk mobile, md:h-24 untuk desktop */
-                    className="h-12 md:h-20 w-auto flex-none opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 dark:invert"
+                    className={clsx(
+                      "h-12 md:h-20 w-auto flex-none opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 dark:invert ",
+                      logo.classes
+                    )}
                   />
                 ))}
               </div>
