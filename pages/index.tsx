@@ -219,23 +219,21 @@ export default function LandingPage({ projects }: any) {
             </p>
 
             <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-              {/* Animasi Wrapper */}
-              <div className="flex animate-scroll gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
-                {/* Render logo dua kali untuk infinite loop */}
+              <div className="flex animate-scroll gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
                 {[...logos, ...logos].map((logo, index) => (
                   <img
                     key={index}
                     src={logo.src}
                     alt={logo.alt}
                     title={logo.alt}
-                    className="h-24 w-auto flex-none opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 dark:invert"
+                    /* h-12 untuk mobile, md:h-24 untuk desktop */
+                    className="h-12 md:h-20 w-auto flex-none opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 dark:invert"
                   />
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Tambahkan CSS Animation di Global CSS atau Style tag */}
           <style jsx>{`
             @keyframes scroll {
               from {
@@ -245,10 +243,19 @@ export default function LandingPage({ projects }: any) {
                 transform: translateX(-50%);
               }
             }
+
             .animate-scroll {
               display: flex;
               width: max-content;
-              animation: scroll 30s linear infinite;
+              /* Default mobile: Lebih cepat (15s) */
+              animation: scroll 10s linear infinite;
+            }
+
+            /* Desktop: Speed normal (30s) */
+            @media (min-width: 768px) {
+              .animate-scroll {
+                animation: scroll 30s linear infinite;
+              }
             }
           `}</style>
         </section>
