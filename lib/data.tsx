@@ -61,6 +61,10 @@ export const logos = [
     src: "/assets/souvenirlilin.png",
     alt: "Million Candles",
   },
+  {
+    src: "/assets/gis.png",
+    alt: "Global Inti Sekawan",
+  },
   // {
   //   src: "/assets/nova-tech.jpeg",
   //   alt: "Ticket Hub",

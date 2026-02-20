@@ -18,7 +18,7 @@ export function ProjectsSection({ projects }: any) {
   // Ambil 3 proyek pertama dari data JSON
 
   return (
-    <section id="projects" className="w-full pt-20 md:pt-32 bg-muted/30">
+    <section id="projects" className="w-full py-4 md:py-10 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <Badge

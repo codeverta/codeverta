@@ -36,6 +36,20 @@ import ModernStatsSection from "@/components/ModernStats";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
+import {
+  Factory,
+  Truck,
+  Store,
+  HardHat,
+  ShoppingCart,
+  GraduationCap,
+  Briefcase,
+  Landmark,
+  HeartPulse,
+  HeartHandshake,
+} from "lucide-react";
+import { ShoppingBag, Globe, Wallet, Stethoscope } from "lucide-react";
+
 export async function getStaticProps({ locale }) {
   const filePath = path.join(process.cwd(), "projects.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
@@ -198,35 +212,49 @@ export default function LandingPage({ projects }: any) {
           </div>
         </section>
         {/* Trusted By Section */}
-        <section className="w-full bg-background py-8 sm:py-16">
-          <div className="container mx-auto px-4 md:px-6">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="mx-auto max-w-4xl text-center"
-            >
-              <h2 className="text-center text-lg font-semibold leading-8 text-muted-foreground">
-                {t("trustedBy")}
-              </h2>
-              <div className="mt-10 grid grid-cols-2 items-center justify-items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
-                {logos.map((logo, index) => (
-                  <Image
+        <section className="w-full bg-background py-12 border-y border-border/50">
+          <div className="container mx-auto">
+            <p className="text-center text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground/70 mb-10">
+              {t("trustedBy")}
+            </p>
+
+            <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+              {/* Animasi Wrapper */}
+              <div className="flex animate-scroll gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
+                {/* Render logo dua kali untuk infinite loop */}
+                {[...logos, ...logos].map((logo, index) => (
+                  <img
                     key={index}
-                    title={logo.alt}
-                    className="col-span-1 max-h-16 w-full object-contain opacity-60 transition-opacity hover:opacity-100 dark:invert"
                     src={logo.src}
                     alt={logo.alt}
-                    width={316}
-                    height={86}
-                    unoptimized // Opsional: gunakan jika logo Anda dari host eksternal
+                    title={logo.alt}
+                    className="h-24 w-auto flex-none opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 dark:invert"
                   />
                 ))}
               </div>
-            </motion.div>
+            </div>
           </div>
+
+          {/* Tambahkan CSS Animation di Global CSS atau Style tag */}
+          <style jsx>{`
+            @keyframes scroll {
+              from {
+                transform: translateX(0);
+              }
+              to {
+                transform: translateX(-50%);
+              }
+            }
+            .animate-scroll {
+              display: flex;
+              width: max-content;
+              animation: scroll 30s linear infinite;
+            }
+          `}</style>
         </section>
+
+        <IndustrySection />
+
         {/* <ModernStatsSection /> */}
         {/* Tambahkan konten tersebut disini */}
         <ProjectsSection projects={projects} />
@@ -680,5 +708,97 @@ export default function LandingPage({ projects }: any) {
         </section>
       </main>
     </div>
+  );
+}
+
+const industries = [
+  {
+    title: "Manufacturing",
+    desc: "Streamline production, manage inventory, and ensure on-time delivery.",
+    icon: Factory,
+  },
+  {
+    title: "Trading & Distribution",
+    desc: "Manage procurement, orders, and supply chains efficiently.",
+    icon: Truck,
+  },
+  {
+    title: "Retail",
+    desc: "Boost sales, manage inventory, and enhance customer experience.",
+    icon: ShoppingBag,
+  },
+  {
+    title: "Engineering & Construction",
+    desc: "Manage large-scale projects, resources, and budgets with ease.",
+    icon: HardHat,
+  },
+  {
+    title: "E-commerce",
+    desc: "Manage orders, track customers, and grow online sales.",
+    icon: Globe,
+  },
+  {
+    title: "Education",
+    desc: "Simplify student admissions, courses, and fees with one platform.",
+    icon: GraduationCap,
+  },
+  {
+    title: "Professional Services",
+    desc: "Streamline project management, billing, and client collaboration.",
+    icon: Briefcase,
+  },
+  {
+    title: "Financial Services",
+    desc: "Track finances, manage portfolios, and ensure compliance effortlessly.",
+    icon: Wallet,
+  },
+  {
+    title: "Healthcare",
+    desc: "Manage patient records, appointments, and hospital operations seamlessly.",
+    icon: Stethoscope,
+  },
+  {
+    title: "Non-profit",
+    desc: "Streamline fundraising, donor management, and project execution.",
+    icon: HeartHandshake,
+  },
+];
+
+function IndustrySection() {
+  return (
+    <section className="py-12 px-6 bg-background">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-sm font-semibold tracking-widest uppercase text-primary mb-3">
+            Industry
+          </h2>
+          <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            Solutions for Every Industry
+          </h3>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            From manufacturing plants to healthcare systems, Codeverta adapts to
+            meet the unique demands of your industry. Simplify operations,
+            optimize resources, and grow faster.
+          </p>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          {industries.map((item, index) => (
+            <div
+              key={index}
+              className="group p-6 rounded-xl border bg-card transition-all hover:shadow-md hover:border-primary/50"
+            >
+              <item.icon className="w-8 h-8 mb-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              <h4 className="font-semibold text-base mb-2">{item.title}</h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {item.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
