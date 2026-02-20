@@ -65,6 +65,11 @@ export const logos = [
     src: "/assets/gis.png",
     alt: "Global Inti Sekawan",
   },
+  {
+    src: "/assets/manglayang.png",
+    alt: "Manglayang Academia",
+    classes: "p-4", // sesuaikan nilai sesuai kebutuhan
+  },
   // {
   //   src: "/assets/nova-tech.jpeg",
   //   alt: "Ticket Hub",
