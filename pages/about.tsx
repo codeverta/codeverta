@@ -110,7 +110,7 @@ const SocialImpact = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
               <div className="flex items-start gap-3 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
-                {/* <Activity className="h-6 w-6 text-rose-500 shrink-0" /> */}
+                <Activity className="h-6 w-6 text-rose-500 shrink-0" />
                 <div>
                   <h4 className="font-semibold">Direct Support</h4>
                   <p className="text-sm text-slate-500">
@@ -119,7 +119,7 @@ const SocialImpact = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
-                {/* <ShieldCheck className="h-6 w-6 text-blue-500 shrink-0" /> */}
+                <ShieldCheck className="h-6 w-6 text-blue-500 shrink-0" />
                 <div>
                   <h4 className="font-semibold">Ethical Tech</h4>
                   <p className="text-sm text-slate-500">
@@ -131,51 +131,14 @@ const SocialImpact = () => {
           </div>
 
           {/* Right Side: Visual Card */}
-          <div className="relative group">
-            {/* Modern Glow Effect */}
+          <div className="relative group bg-slate-100 dark:bg-slate-900 rounded-2xl overflow-hidden">
             <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-tr from-rose-500/20 via-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-1000 blur-2xl" />
 
-            <Card className="relative overflow-hidden border-slate-200/60 dark:border-slate-800/60 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm shadow border rounded-3xl">
-              <CardHeader className="flex flex-col items-center pb-2">
-                {/* Percentage Badge */}
-                <div className="relative mb-4">
-                  <div className="absolute inset-0 bg-rose-500/20 blur-xl rounded-full" />
-                  <Badge
-                    variant="outline"
-                    className="relative h-20 w-20 rounded-full border-rose-100 bg-rose-50/50 dark:bg-rose-950/30 dark:border-rose-900/50 flex items-center justify-center p-0"
-                  >
-                    {/* Tambahkan flex dan items-center di sini */}
-                    <span className="flex items-center text-3xl font-extrabold tracking-tight text-rose-600 dark:text-rose-400">
-                      <span className="text-xl mr-0.5 leading-none">+</span>
-                      <span>3%</span>
-                    </span>
-                  </Badge>
-                </div>
-
-                <h3 className="text-xl font-semibold tracking-tight text-slate-900 dark:text-slate-100">
-                  "Coding for a Cause"
-                </h3>
-              </CardHeader>
-
-              <CardContent className="text-center px-8">
-                <div className="relative">
-                  <Quote className="absolute -left-4 -top-2 h-8 w-8 text-slate-100 dark:text-slate-800 -z-10 rotate-180" />
-                  <p className="text-muted-foreground leading-relaxed italic italic-serif">
-                    Every custom software solution we build for our clients
-                    contributes to the fight against cancer. When you partner
-                    with Zenit, you're not just getting a developer—you're
-                    joining a mission to save lives.
-                  </p>
-                </div>
-              </CardContent>
-
-              <CardFooter className="flex flex-col items-center pt-6 pb-8">
-                <div className="h-px w-16 bg-gradient-to-r from-transparent via-slate-200 dark:via-slate-700 to-transparent mb-4" />
-                <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 dark:text-slate-500">
-                  Annual Contribution Pledge
-                </p>
-              </CardFooter>
-            </Card>
+            <img
+              src="/assets/kitabisa.jpg"
+              alt="Dukungan Kanker"
+              className="relative rounded-2xl object-contain w-full h-[25rem] shadow-2xl"
+            />
           </div>
         </div>
       </div>
