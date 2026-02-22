@@ -2,6 +2,207 @@
   "projects": [
     {
       "product": {
+        "id": "gym-management-system",
+        "name": "Gym Management System",
+        "description": "Sistem terintegrasi untuk pengelolaan operasional gym, mulai dari manajemen member, absensi, hingga sistem kasir (POS).",
+        "fullDescription": "Solusi digital untuk otomatisasi bisnis fitness center. Sistem ini mencakup pengelolaan membership (Gym Plan), pemantauan sesi latihan member (Gym Workout Log), hingga pencatatan penjualan inventaris gym melalui Gym POS Invoice. Memudahkan pemilik gym dalam memantau performa trainer dan retensi member secara real-time.",
+        "image": "/assets/products/gym-management.png",
+        "technologies": ["Go", "Next.js", "PostgreSQL", "Redis"],
+        "category": "Gym & Health",
+        "status": "Production Ready",
+        "version": "1.0.0",
+        "lastUpdated": "Februari 2026",
+        "client": "-",
+        "duration": "3 bulan",
+        "teamSize": "2 orang (Backend, Frontend)"
+      },
+      "hero": {
+        "buttons": {
+          "liveDemo": "Coba Demo"
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Unggulan",
+          "workflow": "Alur Sistem",
+          "techStack": "Teknologi",
+          "screenshots": "Interface",
+          "specs": "Performa & Keamanan"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Detail Bisnis",
+          "clientLabel": "Developer",
+          "durationLabel": "Pengembangan",
+          "teamSizeLabel": "Total Tim",
+          "lastUpdatedLabel": "Audit Terakhir"
+        },
+        "platformSupport": {
+          "title": "Cakupan Layanan",
+          "items": [
+            "Manajemen Member & Membership Plan",
+            "Sistem Absensi Kehadiran Real-time",
+            "Point of Sales (POS) untuk Inventaris Gym",
+            "Tracking Workout & Program Latihan"
+          ]
+        },
+        "architecture": {
+          "title": "Manajemen Data",
+          "items": [
+            "Struktur data Gym Exercise berdasarkan Body Part",
+            "Automated Gym POS Invoice untuk setiap transaksi",
+            "Sistem Gym Trainer Subscription yang terintegrasi",
+            "Logging aktivitas harian melalui Gym Workout Log"
+          ]
+        },
+        "projectDescription": {
+          "title": "Tujuan Bisnis",
+          "paragraphs": [
+            "Bisnis ini berfokus pada efisiensi operasional gym dengan memastikan data 'Gym Member' sinkron dengan 'Gym Membership' dan 'Gym Plan' yang dipilih untuk mencegah kebocoran pendapatan.",
+            "Setiap transaksi retail seperti penjualan suplemen atau air mineral dikelola melalui 'Gym POS Invoice' menggunakan data 'Gym Item' dan 'Gym POS Item' yang terdata rapi.",
+            "Peningkatan kualitas layanan dilakukan melalui modul 'Gym Trainer' yang dapat menjadwalkan sesi di 'Gym Schedule' dan mendokumentasikan progres latihan member pada 'Gym Workout Log' secara sistematis."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Users",
+          "title": "Membership System",
+          "description": "Pengelolaan data 'Gym Member' lengkap dengan status 'Gym Membership' dan pemilihan 'Gym Plan'."
+        },
+        {
+          "icon": "Calendar",
+          "title": "Scheduling & Trainer",
+          "description": "Pengaturan 'Gym Schedule' untuk kelas atau sesi personal dengan 'Gym Trainer' dan 'Gym Trainer Subscription'."
+        },
+        {
+          "icon": "Activity",
+          "title": "Workout Tracking",
+          "description": "Pencatatan 'Gym Workout Log' dan 'Gym Workout Item' berdasarkan daftar 'Gym Exercise' yang tersedia."
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "Attendance System",
+          "description": "Modul 'Gym Attendance' untuk mencatat kehadiran member dan validasi akses masuk."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Point of Sales",
+          "description": "Sistem kasir untuk menjual 'Gym Item' dan 'Gym POS Item' yang menghasilkan 'Gym POS Invoice'."
+        },
+        {
+          "icon": "Settings",
+          "title": "App Configuration",
+          "description": "Pengaturan fleksibel untuk sistem melalui 'App Subscription Settings' sesuai kebutuhan operasional."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Operasional Produk",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "Member Onboarding",
+            "description": "Registrasi 'Gym Member' dan pemilihan 'Gym Plan' untuk mengaktifkan 'Gym Membership'."
+          },
+          {
+            "step": 2,
+            "icon": "Clock",
+            "title": "Daily Attendance",
+            "description": "Member melakukan 'Gym Attendance' sesuai dengan 'Gym Schedule' yang telah ditetapkan."
+          },
+          {
+            "step": 3,
+            "icon": "Dumbbell",
+            "title": "Workout Execution",
+            "description": "Trainer mengarahkan 'Gym Exercise' dan mencatatnya ke 'Gym Workout Log' serta 'Gym Workout Item'."
+          },
+          {
+            "step": 4,
+            "icon": "CreditCard",
+            "title": "Point of Sale",
+            "description": "Transaksi item pendukung melalui 'Gym POS Item' yang terekam dalam 'Gym POS Invoice'."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Go (Golang)",
+              "description": "Digunakan untuk menangani logika bisnis modul Attendance dan POS yang membutuhkan kecepatan tinggi."
+            }
+          ]
+        },
+        {
+          "category": "Persistence",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "Database utama untuk menyimpan data relasional antara Gym Exercise, Body Part, dan Member."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dashboard Admin",
+          "image": "/assets/products/gym-1.png",
+          "description": "Tampilan ringkasan Member aktif dan statistik Gym Attendance."
+        },
+        {
+          "title": "Point of Sales Interface",
+          "image": "/assets/products/gym-2.png",
+          "description": "Interface kasir untuk input Gym POS Item dan cetak Gym POS Invoice."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Spesifikasi Infrastruktur",
+          "server": {
+            "title": "Backend Config",
+            "items": [
+              "Docker Containerization",
+              "PostgreSQL Database",
+              "Redis for Session & Attendance Caching"
+            ]
+          },
+          "client": {
+            "title": "Akses Pengguna",
+            "items": [
+              "Web Browser (Dashboard Admin)",
+              "Mobile App (Member Workout Log)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Target Sistem",
+          "metrics": [
+            {
+              "label": "Attendance Processing",
+              "value": "< 100ms"
+            },
+            {
+              "label": "Invoice Generation",
+              "value": "Instant"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Proteksi Bisnis",
+          "items": [
+            "Validasi keanggotaan otomatis pada Gym Attendance",
+            "Audit log untuk setiap Gym POS Invoice yang dibuat",
+            "Enkripsi data pribadi Gym Member"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
         "id": "ultra-trail-ticketing-system",
         "name": "High-Performance Trail Running Ticketing System",
         "description": "Sistem registrasi event lari lintas alam dengan performa tinggi untuk menangani ribuan transaksi per detik saat 'war' tiket.",
