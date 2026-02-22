@@ -40,12 +40,12 @@ export function ProjectsSection({ projects }: any) {
           {projects.map((projectItem) => (
             <Card key={projectItem.product.id} className="flex flex-col">
               <CardHeader>
-                <div className="relative h-48 w-full overflow-hidden rounded-t-lg">
+                <div className="relative h-48 bg-gray-100 w-full overflow-hidden rounded-t-lg">
                   <Image
                     src={projectItem.product.image}
                     alt={projectItem.product.name}
                     layout="fill"
-                    objectFit="cover"
+                    objectFit="contain"
                     className="transition-transform duration-300 hover:scale-105"
                   />
                 </div>
