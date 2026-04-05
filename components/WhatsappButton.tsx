@@ -50,7 +50,7 @@ const FacebookIcon = ({ size = 28 }) => (
 
 export const handleRedirectToWhatsapp = () => {
   window.location.replace(
-    "https://wa.me/+6285601347820?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda"
+    "https://wa.me/+62881011692615?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda"
   );
 };
 
@@ -59,7 +59,7 @@ export const WhatsappWrapper = ({ children, title = "" }) => {
 };
 
 const WhatsappButton = ({
-  phoneNumber = "6285601347820",
+  phoneNumber = "+62881011692615",
   message = "Halo, saya ingin bertanya...",
 }) => {
   const [isVisible, setIsVisible] = useState(true);
