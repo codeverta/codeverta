@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import Link from "next/link";
 import packageInfo from "../package.json";
+import { WhatsappWrapper } from "./WhatsappButton";
 
 const version = packageInfo.version;
 // Keywords disembunyikan untuk SEO
@@ -78,12 +79,11 @@ export default function Footer() {
                   WhatsApp
                 </p>
                 <div className="space-y-1">
-                  <p className="text-sm font-medium text-gray-300 select-all">
-                    +62 856-0134-7820 (Admin 1)
-                  </p>
-                  <p className="text-sm font-medium text-gray-300 select-all">
-                    +62 857-2639-4401 (Admin 2)
-                  </p>
+                  <WhatsappWrapper>
+                    <p className="text-sm font-medium text-gray-300 select-all">
+                      +62881011692615 (Sales & Support)
+                    </p>
+                  </WhatsappWrapper>
                 </div>
               </div>
             </div>
