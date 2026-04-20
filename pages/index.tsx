@@ -138,12 +138,12 @@ export default function LandingPage({ projects }: any) {
               transition={{ duration: 0.5 }}
               className="text-center max-w-7xl mx-auto mb-12"
             >
-              <Badge
+              {/* <Badge
                 className="mb-4 hover:bg-gray-50 rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
                 Jl Kaliurang KM 9.3, Ngaglik, Sleman, Yogyakarta
-              </Badge>
+              </Badge> */}
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 pb-3">
                 {t("home.hero.prefix")}{" "}
                 <RotatingText
