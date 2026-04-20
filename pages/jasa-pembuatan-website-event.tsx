@@ -137,15 +137,17 @@ export default function TrailLanding() {
             </strong>
           </p>
           <div style={styles.heroActions}>
-            <a
-              href={WA_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={styles.btnPrimary}
-              className="btn-pulse"
-            >
-              💬 Hubungi via WhatsApp
-            </a>
+            <WhatsappWrapper>
+              <button
+                href={WA_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={styles.btnPrimary}
+                className="btn-pulse"
+              >
+                💬 Hubungi via WhatsApp
+              </button>
+            </WhatsappWrapper>
             <a href="#demo" style={styles.btnGhost}>
               Lihat Demo ↓
             </a>
@@ -377,15 +379,16 @@ export default function TrailLanding() {
             <br />
             Tim kami siap membantu dari arsitektur hingga go-live.
           </p>
-          <a
-            href={WA_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={styles.ctaBtn}
-            className="btn-pulse"
-          >
-            💬 Chat WhatsApp Sekarang
-          </a>
+          <WhatsappWrapper>
+            <button
+              target="_blank"
+              rel="noopener noreferrer"
+              style={styles.ctaBtn}
+              className="btn-pulse"
+            >
+              💬 Chat WhatsApp Sekarang
+            </button>
+          </WhatsappWrapper>
           <div style={styles.ctaNote}>
             Respon dalam &lt; 1 jam · Senin–Sabtu 08.00–21.00 WIB
           </div>
