@@ -176,37 +176,6 @@ const Navbar = () => {
     </motion.div>
   );
 
-  // Mobile Dropdown Component (untuk menu baru yang tidak punya mega menu)
-  const MobileDropdown = ({ title, items, isExpanded }) => (
-    <AnimatePresence>
-      {isExpanded && (
-        <motion.div
-          initial={{ height: 0 }}
-          animate={{ height: "auto" }}
-          exit={{ height: 0 }}
-          transition={{ duration: 0.2 }}
-          className="ml-4 mt-2 space-y-2 overflow-hidden"
-        >
-          <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide px-3 pt-2">
-            {title}
-          </div>
-          <div className="space-y-1">
-            {items.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className="block text-sm text-muted-foreground hover:text-foreground py-1 px-3 rounded transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                {item.title}
-              </Link>
-            ))}
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-
   // State untuk melacak menu dropdown mobile yang terbuka
   const [activeMobileDropdown, setActiveMobileDropdown] = useState(null);
 
@@ -251,6 +220,8 @@ const Navbar = () => {
           <nav className="hidden lg:flex gap-6 xl:gap-8 absolute left-1/2 -translate-x-1/2 items-center">
             {categories.map((category) => {
               const hasMegaMenu = megaMenuData[category.id];
+              const isExternal = category.id.startsWith("http");
+              const Tag = isExternal ? "a" : Link; // Otomatis ganti ke tag <a> jika eksternal
 
               return (
                 <div
@@ -259,8 +230,10 @@ const Navbar = () => {
                   onMouseEnter={() => handleMegaMenuEnter(category.id)}
                   onMouseLeave={() => !activeMegaMenu || handleMegaMenuLeave()}
                 >
-                  <Link
-                    href={hasMegaMenu ? "#" : category.id} // Tautan non-klik untuk dropdown
+                  <Tag
+                    href={hasMegaMenu ? "#" : category.id}
+                    target={isExternal ? "_blank" : undefined}
+                    rel={isExternal ? "noopener noreferrer" : undefined}
                     onClick={(e) => hasMegaMenu && e.preventDefault()}
                     className={cn(
                       `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative flex items-center gap-1 py-8 ${
@@ -284,7 +257,7 @@ const Navbar = () => {
                         }`}
                       />
                     )}
-                  </Link>
+                  </Tag>
                 </div>
               );
             })}
@@ -371,6 +344,14 @@ const Navbar = () => {
                       }
                     >
                       <Link
+                        target={
+                          category.id.startsWith("http") ? "_blank" : undefined
+                        }
+                        rel={
+                          category.id.startsWith("http")
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
                         href={megaMenuData[category.id] ? "#" : category.id}
                         className="flex items-center w-full"
                         onClick={(e) => {

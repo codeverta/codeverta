@@ -251,8 +251,8 @@ export const steps = [
 
 export const getCategories = (t) => [
   { id: "/produk", name: t("navbar.products"), isDropdown: true },
-  // { id: "/kategori", name: t("navbar.articles") },
-  { id: "/pelatihan", name: t("navbar.learning") },
+  { id: "https://www.linkzy.id/events", name: t("navbar.learning") },
+  { id: "/eventss", name: t("navbar.events") },
   { id: "/faq", name: t("navbar.faq"), isDropdown: false },
   { id: "/careers", name: t("navbar.careers") },
   { id: "/about", name: t("navbar.about") },
