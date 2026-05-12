@@ -50,6 +50,7 @@ import {
 } from "lucide-react";
 import { ShoppingBag, Globe, Wallet, Stethoscope } from "lucide-react";
 import clsx from "clsx";
+import HeroSection from "@/components/HeroSection";
 
 export async function getStaticProps({ locale }) {
   const filePath = path.join(process.cwd(), "projects.json");
@@ -128,90 +129,7 @@ export default function LandingPage({ projects }: any) {
     <div className="flex min-h-[100dvh] flex-col">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-10 md:py-16 lg:py-20 overflow-hidden">
-          <div className="container px-4 md:px-6 relative">
-            <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="text-center max-w-7xl mx-auto mb-12"
-            >
-              <Badge
-                className="mb-4 hover:bg-gray-50 rounded-full px-4 py-1.5 text-sm font-medium"
-                variant="secondary"
-              >
-                Leading Software Company Based in Bekasi & Yogyakarta
-              </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70 pb-3">
-                {t("home.hero.prefix")}{" "}
-                <RotatingText
-                  texts={t("home.hero.rotating", { returnObjects: true })}
-                  mainClassName="inline px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
-                  staggerFrom={"last"}
-                  initial={{ y: "100%" }}
-                  animate={{ y: 0 }}
-                  exit={{ y: "-120%" }}
-                  staggerDuration={0.025}
-                  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
-                  rotationInterval={2000}
-                />{" "}
-                {t("home.hero.suffix")
-                  .split("\n")
-                  .map((line, index) => (
-                    <span key={index} className="block">
-                      {line}
-                    </span>
-                  ))}
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                {t("home.subtitle")}
-                <br />
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <WhatsappWrapper>
-                  <Button
-                    size="lg"
-                    className="rounded-full w-full h-12 px-8 text-base"
-                  >
-                    <WhatsAppIcon />
-                    {t("home.cta.whatsapp")}
-                    <ArrowRight className="ml-2 size-4" />
-                  </Button>
-                </WhatsappWrapper>
-                <Button
-                  size="lg"
-                  asChild
-                  variant="outline"
-                  className="rounded-full h-12 px-8 text-base"
-                >
-                  <Link href="/produk">{t("home.cta.products")}</Link>
-                </Button>
-              </div>
-              <div className="max-w-3xl mx-auto flex flex-wrap items-center justify-between gap-4 mt-12 text-sm text-muted-foreground">
-                {" "}
-                <div className="flex items-center gap-1">
-                  <Check className="size-4 text-primary" />
-                  <span>{t("home.badges.consultation")}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Check className="size-4 text-primary" />
-                  <span>{t("home.badges.fast")}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Check className="size-4 text-primary" />
-                  <span>{t("home.badges.guarantee")}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <Check className="size-4 text-primary" />
-                  <span>{t("home.badges.trusted")}</span>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
+        <HeroSection t={t} />
         {/* Trusted By Section */}
         <section className="w-full bg-background py-12 border-y border-border/50">
           <div className="container mx-auto">
