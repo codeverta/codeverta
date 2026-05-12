@@ -27,16 +27,25 @@ import { useTranslation } from "next-i18next";
 
 export const getStaticProps = withI18n(["common"], function () {
   const filePath = path.join(process.cwd(), "projects.json");
-  const jsonData = fs.readFileSync(filePath, "utf-8");
-  const data = JSON.parse(jsonData);
-  const projects = data.projects || [];
+  const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
 
-  // Kirim data proyek sebagai props ke komponen
-  return {
-    props: {
-      projects,
+  // Mapping hanya field yang diperlukan untuk index page
+  const projects = (data.projects || []).map(({ product }) => ({
+    product: {
+      id: product.id,
+      name: product.name,
+      image: product.image,
+      status: product.status,
+      version: product.version,
+      category: product.category,
+      description: product.description,
+      duration: product.duration,
+      lastUpdated: product.lastUpdated,
+      technologies: product.technologies,
     },
-  };
+  }));
+
+  return { props: { projects } };
 });
 
 export default function ITProductsShowcase({ projects }) {
@@ -56,10 +65,10 @@ export default function ITProductsShowcase({ projects }) {
   return (
     <>
       <SeoHead
-        title="Produk Kami - Jasa Pembuatan Sistem Informasi dan Aplikasi Web"
+        title={`${t("common:our_products")} - Jasa Pembuatan Sistem`}
         description="Jelajahi portofolio lengkap solusi IT kami, termasuk sistem informasi dan aplikasi web yang telah kami kembangkan untuk berbagai kebutuhan bisnis dan industri."
-        url="https://bikinwebsitejogja.com/produk"
-        image="https://bikinwebsitejogja.com/og-image.png"
+        url="https://codeverta.com/produk"
+        image="https://codeverta.com/og-image.png"
       />
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-12">
         <div className="container mx-auto px-4 md:px-6">

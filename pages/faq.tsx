@@ -145,8 +145,8 @@ export default function FAQPage() {
       <SeoHead
         title="FAQ - Pertanyaan yang Sering Diajukan tentang Layanan Codeverta"
         description="Temukan jawaban atas pertanyaan umum mengenai layanan pembuatan website, sistem digital, teknis pengerjaan, dan sistem pembayaran di Codeverta."
-        url="https://bikinwebsitejogja.com/about"
-        image="https://bikinwebsitejogja.com/og-image.png"
+        url="https://codeverta.com/about"
+        image="https://codeverta.com/og-image.png"
       />
       <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8 font-sans">
         {/* Script JSON-LD untuk SEO */}

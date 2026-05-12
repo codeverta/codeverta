@@ -9,7 +9,7 @@
       "items": [
         "Data Identitas: Nama, alamat perusahaan, dan identitas resmi untuk keperluan kontrak.",
         "Data Kontak: Alamat email, nomor WhatsApp/telepon, dan alamat pengiriman.",
-        "Data Teknis: Alamat IP, jenis browser, lokasi, dan data log saat mengakses situs codeverta.com atau bikinwebsitejogja.com.",
+        "Data Teknis: Alamat IP, jenis browser, lokasi, dan data log saat mengakses situs codeverta.com atau codeverta.com.",
         "Data Proyek: Dokumentasi bisnis, alur kerja perusahaan, dan aset digital yang Anda serahkan kepada kami untuk pengembangan sistem."
       ]
     },
@@ -52,7 +52,7 @@
     },
     "contact": {
       "title": "7. Kontak Kami",
-      "content": "Jika ada pertanyaan mengenai kebijakan privasi ini, Anda dapat menghubungi kami melalui email di support@codeverta.com atau melalui kontak yang tertera di bikinwebsitejogja.com."
+      "content": "Jika ada pertanyaan mengenai kebijakan privasi ini, Anda dapat menghubungi kami melalui email di support@codeverta.com atau melalui kontak yang tertera di codeverta.com."
     }
   }
 }

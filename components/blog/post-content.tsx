@@ -88,7 +88,7 @@ export default function PostContent({ postData, slug, articleStats }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const shareUrl = `https://www.bikinwebsitejogja.com/posts/${slug}`;
+  const shareUrl = `https://www.codeverta.com/posts/${slug}`;
   const shareText = `Check out this amazing article: ${postData.title}`;
 
   const shareOptions = [
@@ -126,7 +126,7 @@ export default function PostContent({ postData, slug, articleStats }) {
         openGraph={{
           title: postData.title,
           description: postData.desc,
-          url: `https://www.bikinwebsitejogja.com/posts/${slug}`,
+          url: `https://www.codeverta.com/posts/${slug}`,
           siteName: "Codeverta",
           images: [
             {
@@ -151,15 +151,15 @@ export default function PostContent({ postData, slug, articleStats }) {
       {/* Schema Markup */}
       <NewsSchemaJsonLd
         post={postData}
-        baseUrl="https://bikinwebsitejogja.com"
+        baseUrl="https://codeverta.com"
         author={{
           name: postData.author || "Rabih Utomo",
-          url: "https://bikinwebsitejogja.com/about",
+          url: "https://codeverta.com/about",
         }}
         publisher={{
           name: "Codeverta",
-          url: "https://bikinwebsitejogja.com",
-          logo: "https://bikinwebsitejogja.com/logo.png",
+          url: "https://codeverta.com",
+          logo: "https://codeverta.com/logo.png",
         }}
         category={articleStats.category}
         keywords={postData.tags}
@@ -556,7 +556,7 @@ export default function PostContent({ postData, slug, articleStats }) {
               {/* Comments Section */}
               <div className="mt-12">
                 <DisqusThread
-                  url={"https://www.bikinwebsitejogja.com/posts/" + slug}
+                  url={"https://www.codeverta.com/posts/" + slug}
                   identifier={slug}
                   title={postData.title}
                 />

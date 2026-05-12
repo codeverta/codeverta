@@ -7,7 +7,7 @@ import WhatsAppButton from "../WhatsappButton";
 import Banner from "../Banner";
 import Head from "next/head";
 
-const DOMAIN = "https://www.bikinwebsitejogja.com";
+const DOMAIN = "https://www.codeverta.com";
 
 interface SEOProps {
   title?: string;
@@ -80,10 +80,10 @@ export default function Landing({ children, seo }: Props) {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://www.bikinwebsitejogja.com/#organization",
+        "@id": "https://www.codeverta.com/#organization",
         name: "Codeverta",
-        url: "https://www.bikinwebsitejogja.com/",
-        logo: "https://www.bikinwebsitejogja.com/images/logo.png",
+        url: "https://www.codeverta.com/",
+        logo: "https://www.codeverta.com/images/logo.png",
         sameAs: [
           "https://www.facebook.com/codeverta",
           "https://twitter.com/codeverta",
@@ -108,38 +108,38 @@ export default function Landing({ children, seo }: Props) {
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.bikinwebsitejogja.com/#website",
-        url: "https://www.bikinwebsitejogja.com/",
+        "@id": "https://www.codeverta.com/#website",
+        url: "https://www.codeverta.com/",
         name: "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
         description:
           "Codeverta menyediakan jasa pembuatan, perbaikan, pengembangan website profesional dan layanan IT untuk mendorong pertumbuhan bisnis Anda di era digital.",
         publisher: {
-          "@id": "https://www.bikinwebsitejogja.com/#organization",
+          "@id": "https://www.codeverta.com/#organization",
         },
         potentialAction: {
           "@type": "SearchAction",
-          target: "https://www.bikinwebsitejogja.com/?s={search_term_string}",
+          target: "https://www.codeverta.com/?s={search_term_string}",
           queryInput: "required name=search_term_string",
         },
         inLanguage: "id-ID",
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.bikinwebsitejogja.com/#webpage",
-        url: "https://www.bikinwebsitejogja.com/",
+        "@id": "https://www.codeverta.com/#webpage",
+        url: "https://www.codeverta.com/",
         name: "Jasa Pembuatan Website, Aplikasi & Layanan IT di Jogja | Codeverta",
         isPartOf: {
-          "@id": "https://www.bikinwebsitejogja.com/#website",
+          "@id": "https://www.codeverta.com/#website",
         },
         about: {
-          "@id": "https://www.bikinwebsitejogja.com/#organization",
+          "@id": "https://www.codeverta.com/#organization",
         },
         description:
           "Temukan jasa pembuatan website, aplikasi, LMS, dan sistem IT terbaik di Yogyakarta. Codeverta menawarkan solusi digital profesional untuk UMKM hingga Enterprise. Konsultasi gratis, garansi, dan dukungan aftersales.",
         inLanguage: "id-ID",
         primaryImageOfPage: {
           "@type": "ImageObject",
-          url: "https://www.bikinwebsitejogja.com/images/og-default.jpg",
+          url: "https://www.codeverta.com/images/og-default.jpg",
           width: 1200,
           height: 630,
           caption: "Dashboard layanan Codeverta",
@@ -147,13 +147,13 @@ export default function Landing({ children, seo }: Props) {
       },
       {
         "@type": "Service",
-        "@id": "https://www.bikinwebsitejogja.com/#service-website-development",
+        "@id": "https://www.codeverta.com/#service-website-development",
         name: "Jasa Pembuatan Website Profesional",
         serviceType: "Web Development",
         description:
           "Kami merancang dan membangun website modern, responsif, dan SEO-friendly yang dioptimalkan untuk performa dan pengalaman pengguna di semua perangkat. Cocok untuk profil perusahaan, e-commerce, hingga sistem kustom.",
         provider: {
-          "@id": "https://www.bikinwebsitejogja.com/#organization",
+          "@id": "https://www.codeverta.com/#organization",
         },
         areaServed: {
           "@type": "Place",
@@ -173,18 +173,18 @@ export default function Landing({ children, seo }: Props) {
             minPrice: 1500000,
           },
           description: "Mulai dari Rp 1,5 Juta untuk paket basic.",
-          url: "https://www.bikinwebsitejogja.com/#pricing",
+          url: "https://www.codeverta.com/#pricing",
         },
       },
       {
         "@type": "Service",
-        "@id": "https://www.bikinwebsitejogja.com/#service-seo-optimization",
+        "@id": "https://www.codeverta.com/#service-seo-optimization",
         name: "Optimasi SEO & Performa Website",
         serviceType: "SEO & Performance Optimization",
         description:
           "Tingkatkan peringkat website Anda di mesin pencari seperti Google, dan pastikan website Anda cepat, aman, serta memberikan pengalaman pengguna terbaik dengan optimasi teknis dan konten.",
         provider: {
-          "@id": "https://www.bikinwebsitejogja.com/#organization",
+          "@id": "https://www.codeverta.com/#organization",
         },
         areaServed: {
           "@type": "Place",
@@ -201,13 +201,13 @@ export default function Landing({ children, seo }: Props) {
       },
       {
         "@type": "Service",
-        "@id": "https://www.bikinwebsitejogja.com/#service-maintenance",
+        "@id": "https://www.codeverta.com/#service-maintenance",
         name: "Perbaikan & Maintenance Website",
         serviceType: "Website Maintenance & Support",
         description:
           "Mengatasi bug, error, pembaruan rutin, backup data, dan monitoring keamanan untuk menjaga website Anda selalu berjalan optimal dan aman dari ancaman siber.",
         provider: {
-          "@id": "https://www.bikinwebsitejogja.com/#organization",
+          "@id": "https://www.codeverta.com/#organization",
         },
         areaServed: {
           "@type": "Place",
@@ -224,13 +224,13 @@ export default function Landing({ children, seo }: Props) {
       },
       {
         "@type": "Service",
-        "@id": "https://www.bikinwebsitejogja.com/#service-it-support",
+        "@id": "https://www.codeverta.com/#service-it-support",
         name: "Layanan IT Support",
         serviceType: "IT Support & Solutions",
         description:
           "Menyediakan solusi komprehensif untuk semua masalah teknis IT Anda, mulai dari troubleshooting hardware, manajemen jaringan, hingga konsultasi infrastruktur IT.",
         provider: {
-          "@id": "https://www.bikinwebsitejogja.com/#organization",
+          "@id": "https://www.codeverta.com/#organization",
         },
         areaServed: {
           "@type": "Place",
@@ -257,7 +257,7 @@ export default function Landing({ children, seo }: Props) {
             "@type": "ListItem",
             position: 1,
             name: "Beranda",
-            item: "https://www.bikinwebsitejogja.com/",
+            item: "https://www.codeverta.com/",
           },
         ],
       },

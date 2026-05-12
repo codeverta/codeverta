@@ -219,7 +219,8 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex gap-6 xl:gap-8 absolute left-1/2 -translate-x-1/2 items-center">
             {categories.map((category) => {
-              const hasMegaMenu = megaMenuData[category.id];
+              // const hasMegaMenu = megaMenuData[category.id];
+              const hasMegaMenu = false;
               const isExternal = category.id.startsWith("http");
               const Tag = isExternal ? "a" : Link; // Otomatis ganti ke tag <a> jika eksternal
 
@@ -227,8 +228,8 @@ const Navbar = () => {
                 <div
                   key={category.id}
                   className="relative"
-                  onMouseEnter={() => handleMegaMenuEnter(category.id)}
-                  onMouseLeave={() => !activeMegaMenu || handleMegaMenuLeave()}
+                  // onMouseEnter={() => handleMegaMenuEnter(category.id)}
+                  // onMouseLeave={() => !activeMegaMenu || handleMegaMenuLeave()}
                 >
                   <Tag
                     href={hasMegaMenu ? "#" : category.id}

@@ -33,7 +33,7 @@ const RelatedSites = () => {
   const sites = [
     {
       name: "Bikin Website Jogja",
-      url: "https://bikinwebsitejogja.com",
+      url: "https://codeverta.com",
       description: "Jasa pembuatan website profesional",
       icon: <Code className="w-5 h-5" />,
       color: "blue",

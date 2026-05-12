@@ -7,7 +7,7 @@ const BlogSchemaJsonLd = ({
   baseUrl,
   author = {
     name: "Rabih Utomo",
-    url: "https://bikinwebsitejogja.com/about",
+    url: "https://codeverta.com/about",
   },
 }: any) => {
   if (!post) return null;

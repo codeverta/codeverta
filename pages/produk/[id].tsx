@@ -25,6 +25,7 @@ import {
   Github,
   Download,
   Sparkles,
+  Star,
 } from "lucide-react";
 
 // Import modul Node.js untuk membaca file di sisi server
@@ -115,26 +116,40 @@ export const getStaticProps = withI18n(["common"], function ({ params }) {
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const data = JSON.parse(jsonData);
 
-  // Cari proyek yang cocok dengan 'id' dari URL
   const project = data.projects.find((p) => p.product.id === params.id);
-  // Jika proyek tidak ditemukan, kembalikan 'notFound: true' untuk menampilkan halaman 404
+
   if (!project) {
-    return {
-      notFound: true,
-    };
+    return { notFound: true };
   }
 
-  const otherProducts = data.projects
-    .filter((p) => p.product.id !== params.id)
-    .slice(0, 3) // Ambil 3 saja
-    .map((p) => ({
-      id: p.product.id,
-      name: p.product.name,
-      category: p.product.category,
-      image: p.product.image,
-      description: p.product.fullDescription,
-    }));
-  // Kirim data proyek sebagai props ke komponen
+  // 1. Ambil semua produk kecuali yang sedang dibuka
+  const filteredProducts = data.projects.filter(
+    (p) => p.product.id !== params.id
+  );
+
+  // 2. Fungsi Pseudo-Random berdasarkan Seed (id produk)
+  const seededRandom = (seed) => {
+    const x = Math.sin(seed) * 10000;
+    return x - Math.floor(x);
+  };
+
+  // 3. Shuffle array secara konsisten berdasarkan ID
+  // Kita konversi ID (string/number) menjadi angka untuk seed
+  const seed = params.id
+    .split("")
+    .reduce((acc, char) => acc + char.charCodeAt(0), 0);
+
+  const shuffled = [...filteredProducts].sort(() => seededRandom(seed) - 0.5);
+
+  // 4. Ambil 3 hasil teratas
+  const otherProducts = shuffled.slice(0, 3).map((p) => ({
+    id: p.product.id,
+    name: p.product.name,
+    category: p.product.category,
+    image: p.product.image,
+    description: p.product.fullDescription,
+  }));
+
   return {
     props: {
       project,
@@ -157,19 +172,48 @@ export default function ProjectDetailPage({ project, otherProducts }) {
     specifications,
     priceList,
   } = project;
-  const siteUrl = "https://www.bikinwebsitejogja.com";
+  const siteUrl = "https://www.codeverta.com";
   const pageUrl = `${siteUrl}/produk/${project.slug}`; // Assuming you have a slug
+  // JSON-LD SEO Lengkap
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Service", // Or "Service" if that fits better
+    "@type": "Product",
     name: product.name,
     image: `${siteUrl}${product.image}`,
     description: product.fullDescription,
     brand: {
       "@type": "Brand",
-      name: "Codeverta", // Add your brand name here
+      name: "Codeverta",
     },
+    sku: product.id,
     category: product.category,
+    releaseDate: "2024-12-01",
+    // Menambahkan Review & Rating
+    aggregateRating: product.seo
+      ? {
+          "@type": "AggregateRating",
+          ratingValue: product.seo.ratingValue,
+          reviewCount: product.seo.reviewCount,
+        }
+      : undefined,
+    review: product.seo?.reviews.map((rev) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: rev.author },
+      datePublished: rev.date,
+      reviewBody: rev.body,
+      reviewRating: { "@type": "Rating", ratingValue: rev.rating },
+    })),
+    offers: {
+      "@type": "Offer",
+      url: pageUrl,
+      priceCurrency: "IDR",
+      price: "5000000", // Contoh harga mulai dari
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: "Codeverta",
+      },
+    },
   };
   return (
     <>
@@ -249,6 +293,17 @@ export default function ProjectDetailPage({ project, otherProducts }) {
                 </div>
 
                 <div className="flex gap-4">
+                  {hero.buttons?.documentation && (
+                    <Button size="lg" variant="outline" asChild>
+                      <a
+                        href={hero.buttons.links?.documentation || "#"}
+                        target="_blank"
+                      >
+                        <Download className="w-5 h-5 mr-2" />
+                        {hero.buttons.documentation}
+                      </a>
+                    </Button>
+                  )}
                   <WhatsappWrapper>
                     <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                       <ExternalLink className="w-5 h-5 mr-2" />
@@ -603,6 +658,67 @@ export default function ProjectDetailPage({ project, otherProducts }) {
               </Card>
             </TabsContent>
           </Tabs>
+          {/* Bagian UI Review di bawah Tabs Content */}
+          {product.seo?.reviews && (
+            <section className="mt-16 container mx-auto px-4">
+              <div className="flex items-center justify-between mb-8">
+                <div>
+                  <h2 className="text-2xl font-bold text-slate-900">
+                    Ulasan Klien
+                  </h2>
+                  <div className="flex items-center gap-2 mt-2">
+                    <div className="flex text-yellow-400">
+                      {[...Array(5)].map((_, i) => (
+                        <Star
+                          key={i}
+                          className={`w-5 h-5 ${
+                            i < Math.floor(product.seo?.ratingValue)
+                              ? "fill-current"
+                              : ""
+                          }`}
+                        />
+                      ))}
+                    </div>
+                    <span className="font-bold">
+                      {product.seo?.ratingValue}
+                    </span>
+                    <span className="text-slate-500">
+                      ({product.seo?.reviewCount} ulasan)
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {product.seo.reviews.map((rev, idx) => (
+                  <Card key={idx} className="bg-white border-none shadow-sm">
+                    <CardContent className="p-6">
+                      <div className="flex text-yellow-400 mb-4">
+                        {[...Array(5)].map((_, i) => (
+                          <Star
+                            key={i}
+                            className={`w-4 h-4 ${
+                              i < parseInt(rev.rating) ? "fill-current" : ""
+                            }`}
+                          />
+                        ))}
+                      </div>
+                      <p className="text-slate-700 italic mb-6">"{rev.body}"</p>
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">
+                          {rev.author[0]}
+                        </div>
+                        <div>
+                          <p className="font-semibold text-sm">{rev.author}</p>
+                          <p className="text-xs text-slate-500">{rev.role}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </section>
+          )}
           {priceList && (
             <div className="container mt-10 mx-auto max-w-7xl">
               <div className="text-center mb-16">
