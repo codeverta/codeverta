@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import {
   collection,
@@ -189,8 +189,7 @@ export default function URLShortener() {
                 </label>
                 <div className="flex">
                   <span className="inline-flex items-center px-3 rounded-l-lg border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
-                    bikinwebsitejogja.com
-                    /
+                    codeverta.com /
                   </span>
                   <input
                     type="text"
@@ -340,13 +339,20 @@ export default function URLShortener() {
   );
 }
 
-
 URLShortener.getLayout = function getLayout(page) {
-  return <Layout seo={{
-    title: "URL Shortener - Codeverta",
-    description: "Shorten your URLs easily with Codeverta's URL Shortener. Create custom short links and track clicks.",
-    ogType: "website",
-    ogTitle: "URL Shortener - Codeverta",
-    ogDescription: "Shorten your URLs easily with Codeverta's URL Shortener. Create custom short links and track clicks.",
-  }}>{page}</Layout>;
+  return (
+    <Layout
+      seo={{
+        title: "URL Shortener - Codeverta",
+        description:
+          "Shorten your URLs easily with Codeverta's URL Shortener. Create custom short links and track clicks.",
+        ogType: "website",
+        ogTitle: "URL Shortener - Codeverta",
+        ogDescription:
+          "Shorten your URLs easily with Codeverta's URL Shortener. Create custom short links and track clicks.",
+      }}
+    >
+      {page}
+    </Layout>
+  );
 };

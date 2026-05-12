@@ -23,6 +23,7 @@ const COMPANY_LINKS = [
   { href: "/terms", label: "Terms of Service" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/blog", label: "Blog & News" },
+  { href: "/faq", label: "FAQ" },
 ];
 
 const PROGRAM_LINKS = [

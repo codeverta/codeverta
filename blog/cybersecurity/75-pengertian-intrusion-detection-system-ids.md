@@ -181,7 +181,7 @@ Kombinasi ini membentuk **arsitektur keamanan berlapis (defense-in-depth)** yang
 
 Namun, IDS bukan satu-satunya solusi. Untuk keamanan menyeluruh, IDS sebaiknya digunakan bersama firewall, IPS, dan sistem pemantauan lainnya. Dengan begitu, pertahanan jaringan akan lebih kuat dan respons terhadap ancaman menjadi lebih cepat.
 
-Jika Anda ingin **membangun sistem keamanan jaringan modern untuk bisnis Anda**, konsultasikan kebutuhan teknologinya di [bikinwebsitejogja.com](https://bikinwebsitejogja.com).
+Jika Anda ingin **membangun sistem keamanan jaringan modern untuk bisnis Anda**, konsultasikan kebutuhan teknologinya di [codeverta.com](https://codeverta.com).
 Tim profesional kami siap membantu Anda membangun **website dan sistem yang aman, cepat, dan profesional.**
 
 ---
@@ -211,4 +211,4 @@ IDS dapat dipasang sebagai perangkat keras, perangkat lunak, atau layanan cloud.
 ---
 
 **Ingin website bisnis Anda lebih aman dari serangan siber?**
-Kunjungi [bikinwebsitejogja.com](https://bikinwebsitejogja.com) dan dapatkan layanan pembuatan website profesional dengan sistem keamanan terbaik untuk bisnis Anda.
+Kunjungi [codeverta.com](https://codeverta.com) dan dapatkan layanan pembuatan website profesional dengan sistem keamanan terbaik untuk bisnis Anda.

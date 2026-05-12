@@ -161,7 +161,7 @@ def get_content_from_gemini(keyword):
             "Penjelasan detail poin kedua dalam 3-6 kalimat yang melanjutkan pembahasan judul. Sertakan tips atau fakta menarik.",
             "Penjelasan detail poin ketiga dalam 3-6 kalimat yang mengakhiri pembahasan judul dengan actionable advice atau kesimpulan kuat."
           ],
-          "caption_sosmed": "Caption lengkap maksimal 2000 karakter untuk postingan media sosial. Sertakan hook, isi, call-to-action untuk mengunjungi bikinwebsitejogja.com, dan beberapa hashtag relevan seperti #jasabikinwebsite #websitejogja #digitalmarketing #umkmjogja."
+          "caption_sosmed": "Caption lengkap maksimal 2000 karakter untuk postingan media sosial. Sertakan hook, isi, call-to-action untuk mengunjungi codeverta.com, dan beberapa hashtag relevan seperti #jasabikinwebsite #websitejogja #digitalmarketing #umkmjogja."
         }}
         """        
         response = client.models.generate_content(model='gemini-2.0-flash', contents=prompt)
@@ -204,7 +204,7 @@ def get_fallback_content():
             
             "Website yang dioptimasi SEO akan membantu bisnis Anda muncul di halaman pertama Google ketika calon pelanggan mencari produk atau layanan yang Anda tawarkan. Dengan strategi konten yang tepat dan struktur website yang baik, Anda bisa mengalahkan kompetitor dan menarik lebih banyak pelanggan organik. Investasi website adalah investasi jangka panjang yang akan terus memberikan hasil untuk pertumbuhan bisnis Anda."
         ],
-        "caption_sosmed": "💡 Kenapa bisnis modern WAJIB punya website?\n\n✅ Meningkatkan kredibilitas bisnis\n✅ Memperluas jangkauan pelanggan\n✅ Buka 24/7 tanpa batas waktu\n✅ Mudah ditemukan di Google\n\nJangan sampai kompetitor Anda lebih dulu online!\n\n🚀 Konsultasi GRATIS sekarang di bikinwebsitejogja.com\n\n#jasabikinwebsite #websitejogja #digitalmarketing #umkmjogja #websitebisnis #jasapembuatanwebsite #digitalagency #onlinebusiness"
+        "caption_sosmed": "💡 Kenapa bisnis modern WAJIB punya website?\n\n✅ Meningkatkan kredibilitas bisnis\n✅ Memperluas jangkauan pelanggan\n✅ Buka 24/7 tanpa batas waktu\n✅ Mudah ditemukan di Google\n\nJangan sampai kompetitor Anda lebih dulu online!\n\n🚀 Konsultasi GRATIS sekarang di codeverta.com\n\n#jasabikinwebsite #websitejogja #digitalmarketing #umkmjogja #websitebisnis #jasapembuatanwebsite #digitalagency #onlinebusiness"
     }
 
 def generate_title_slide(title_text, cta_text, template_path, output_path):
@@ -256,7 +256,7 @@ def generate_title_slide(title_text, cta_text, template_path, output_path):
         draw.text((cta_x, cta_y), cta_text, font=font_cta, fill=TEXT_COLOR, align='center')
         
         # Website URL (bagian bawah dengan font lebih besar)
-        website_text = "www.bikinwebsitejogja.com"
+        website_text = "www.codeverta.com"
         website_bbox = draw.textbbox((0, 0), website_text, font=font_website)
         website_width = website_bbox[2] - website_bbox[0]
         website_x = (img.width - website_width) / 2
@@ -309,7 +309,7 @@ def generate_content_slide(content_text, slide_number, template_path, output_pat
         draw.text((content_x, content_y), wrapped_content, font=font_content, fill=TEXT_COLOR, align='center')
         
         # Website URL (bagian bawah dengan font lebih besar)
-        website_text = "www.bikinwebsitejogja.com"
+        website_text = "www.codeverta.com"
         website_bbox = draw.textbbox((0, 0), website_text, font=font_website)
         website_width = website_bbox[2] - website_bbox[0]
         website_x = (img.width - website_width) / 2
@@ -513,7 +513,7 @@ def main():
         "Hubungi kami untuk konsultasi GRATIS:\n"
         "📞 WA: +62 856-0134-7820\n"
         "📧 Email: contact@codeverta.com\n"
-        "🌐 Website: www.bikinwebsitejogja.com\n"
+        "🌐 Website: www.codeverta.com\n"
         "📱 Kunjungi Instagram kami: @bikinwebsitejogja"
     )
     

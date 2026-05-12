@@ -4,8 +4,8 @@ import Head from "next/head";
 export default function SeoHead({
   title = "Codeverta – Solusi Digital Bisnis Anda",
   description = "Platform profesional untuk pembuatan E-commerce, ERP, POS, HRMS, dan sistem digital lainnya.",
-  url = "https://bikinwebsitejogja.com",
-  image = "https://bikinwebsitejogja.com/og-image.png",
+  url = "https://codeverta.com",
+  image = "https://codeverta.com/og-image.png",
 }) {
   return (
     <Head>

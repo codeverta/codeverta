@@ -21,9 +21,9 @@ function App({ Component, pageProps }: AppLayoutProps) {
   const pageTitle =
     "Codeverta - Jasa Pengembangan Web & Aplikasi, Software House, Inovasi Digital & AI, Startup";
   const pageDescription = `Codeverta menyediakan jasa pembuatan, perbaikan, pengembangan website profesional dan layanan IT untuk mendorong pertumbuhan bisnis Anda di era digital untuk bisnis skala kecil sampai menengah.`;
-  const ogImageUrl = "https://bikinwebsitejogja.com/og-image.png";
+  const ogImageUrl = "https://codeverta.com/og-image.png";
   const siteName = "Codeverta";
-  const siteUrl = "https://bikinwebsitejogja.com";
+  const siteUrl = "https://codeverta.com";
   const twitterHandle = "@codeverta";
   const keywords =
     "jasa software, teknologi, inovasi digital, kecerdasan buatan, AI, software development, teknologi Indonesia, digitalisasi";

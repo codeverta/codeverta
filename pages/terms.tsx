@@ -46,7 +46,7 @@ export default function TermsPage() {
       </Card>
 
       <footer className="mt-10 text-center text-sm text-muted-foreground">
-        © 2025 codeverta.com & bikinwebsitejogja.com - All Rights Reserved.
+        © 2025 codeverta.com & codeverta.com - All Rights Reserved.
       </footer>
     </div>
   );

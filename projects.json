@@ -3,7 +3,7 @@
     {
       "product": {
         "id": "gym-management-system",
-        "name": "Gym Management System",
+        "name": "Gym Management System by Codeverta",
         "description": "Sistem terintegrasi untuk pengelolaan operasional gym, mulai dari manajemen member, absensi, hingga sistem kasir (POS).",
         "fullDescription": "Solusi digital untuk otomatisasi bisnis fitness center. Sistem ini mencakup pengelolaan membership (Gym Plan), pemantauan sesi latihan member (Gym Workout Log), hingga pencatatan penjualan inventaris gym melalui Gym POS Invoice. Memudahkan pemilik gym dalam memantau performa trainer dan retensi member secara real-time.",
         "image": "/assets/products/gym-management.png",
@@ -18,7 +18,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Coba Demo"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -219,9 +222,12 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Coba Registrasi",
-          "sourceCode": "https://github.com/codeverta",
-          "documentation": "Arsitektur Sistem"
+          "documentation": "Dokumentasi",
+          "liveDemo": "Live Demo",
+          "links": {
+            "liveDemo": "https://malabartrailrun.id",
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -460,9 +466,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Lihat Toko",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi API"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -728,6 +735,505 @@
     },
     {
       "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "RME & Hospital Management System by Codeverta",
+        "description": "Sistem Rekam Medis Elektronik terintegrasi dengan standar SatuSehat Kemenkes dan manajemen operasional klinik.",
+        "fullDescription": "Rekam Medik Elektronik adalah solusi RME komprehensif yang dirancang untuk mendigitalisasi seluruh alur kerja medis, mulai dari pendaftaran pasien, pemeriksaan dokter (soap), hingga farmasi dan kasir. Sistem ini sepenuhnya mematuhi regulasi SatuSehat (HL7 FHIR) dan menggunakan enkripsi tingkat tinggi untuk menjaga privasi data pasien.",
+        "image": "/assets/healthcare/preview.png",
+        "technologies": [
+          "Golang",
+          "React",
+          "Next.js",
+          "MariaDB",
+          "Docker",
+          "Redis",
+          "HL7 FHIR API"
+        ],
+        "category": "Healthcare IT Solutions",
+        "status": "Completed",
+        "version": "4.2.0",
+        "lastUpdated": "April 2026",
+        "client": "Klinik Pratama Sejahtera",
+        "duration": "14 bulan",
+        "teamSize": "10 specialists (Fullstack Devs, Security Engineer, Health Informatics Specialist, QA, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "86",
+          "reviews": [
+            {
+              "author": "dr. Ahmad Fauzi",
+              "role": "Kepala Klinik",
+              "date": "2026-02-20",
+              "body": "Proses bridging ke SatuSehat sangat mulus. Antarmuka pengisian rekam medisnya sangat intuitif bagi dokter.",
+              "rating": "5"
+            },
+            {
+              "author": "Maya Sari",
+              "role": "Kepala Farmasi",
+              "date": "2026-03-12",
+              "body": "Sangat membantu dalam manajemen stok obat dan e-resep. Risiko kesalahan pembacaan resep hilang sepenuhnya.",
+              "rating": "5"
+            },
+            {
+              "author": "Irvan Hakim",
+              "role": "IT Manager RS",
+              "date": "2026-04-05",
+              "body": "Arsitektur sistem sangat aman dan stabil. Dukungan multi-tenant memudahkan kami mengelola cabang klinik lain.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentasi Teknis",
+          "links": {
+            "documentation": "https://docs.medixflow.id/api-v4"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Pasien",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri Antarmuka",
+          "specs": "Keamanan & Kepatuhan"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Info Proyek RME",
+          "clientLabel": "Klien Institusi",
+          "durationLabel": "Durasi Pengembangan",
+          "teamSizeLabel": "Kapasitas Tim",
+          "lastUpdatedLabel": "Update Terakhir"
+        },
+        "platformSupport": {
+          "title": "Cakupan Layanan",
+          "items": [
+            "Dashboard Dokter & Perawat (EMR)",
+            "Modul Farmasi & E-Prescribing",
+            "Portal Pasien & Reservasi Online",
+            "Bridging SatuSehat & BPJS Kesehatan"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Data",
+          "items": [
+            "Backend Microservices dengan Golang",
+            "Implementasi Interoperabilitas HL7 FHIR",
+            "Encrypted MariaDB Storage (AES-256)",
+            "Real-time Queue Management via WebSockets"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Transisi dari rekam medis kertas ke elektronik seringkali terhambat oleh kompleksitas input data dan kekhawatiran akan keamanan data. MedixFlow hadir untuk menyelesaikan tantangan ini dengan sistem yang memprioritaskan kecepatan input data melalui template SOAP yang dapat dikustomisasi.",
+            "Sistem ini tidak hanya menyimpan data medis, tetapi juga mengintegrasikan seluruh ekosistem kesehatan mulai dari pendaftaran (online/onsite), manajemen antrean, pemeriksaan penunjang lab, hingga penagihan asuransi. Integrasi SatuSehat memastikan data pasien dapat dipertukarkan dengan aman antar fasilitas kesehatan sesuai regulasi pemerintah.",
+            "Dampaknya, efisiensi administrasi meningkat hingga 60%, waktu tunggu pasien berkurang drastis, dan yang terpenting, keputusan klinis dokter menjadi lebih akurat berkat riwayat kesehatan pasien yang tersaji lengkap dan terstruktur."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Stethoscope",
+          "title": "E-Medical Record (SOAP)",
+          "description": "Pencatatan klinis (Subjective, Objective, Assessment, Plan) yang terstruktur dan cepat."
+        },
+        {
+          "icon": "FileText",
+          "title": "E-Prescribing",
+          "description": "Resep elektronik yang terhubung langsung ke bagian farmasi untuk pengecekan stok otomatis."
+        },
+        {
+          "icon": "Users",
+          "title": "Manajemen Antrean",
+          "description": "Sistem antrean cerdas per poli dengan notifikasi real-time di layar monitor tunggu."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Bridging SatuSehat",
+          "description": "Integrasi otomatis data kunjungan pasien ke platform SatuSehat Kemenkes RI."
+        },
+        {
+          "icon": "PieChart",
+          "title": "Laporan Morbiditas",
+          "description": "Laporan otomatis 10 besar penyakit (ICD-10) untuk kebutuhan pelaporan dinas kesehatan."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Billing & Kasir",
+          "description": "Manajemen tagihan transparan dengan berbagai metode pembayaran dan klaim asuransi."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Pelayanan Pasien Digital",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "Pendaftaran",
+            "description": "Pasien mendaftar via portal online atau kios pendaftaran mandiri di lokasi."
+          },
+          {
+            "step": 2,
+            "icon": "Activity",
+            "title": "Vital Signs",
+            "description": "Perawat menginput tanda-tanda vital yang langsung muncul di dashboard dokter poli."
+          },
+          {
+            "step": 3,
+            "icon": "Stethoscope",
+            "title": "Pemeriksaan Dokter",
+            "description": "Dokter mengisi RME, memberikan diagnosa ICD-10, dan menginput rencana tindakan atau resep."
+          },
+          {
+            "step": 4,
+            "icon": "Pill",
+            "title": "Farmasi & Billing",
+            "description": "Bagian farmasi menyiapkan obat berdasarkan e-resep, sementara kasir memproses tagihan."
+          },
+          {
+            "step": 5,
+            "icon": "CloudUpload",
+            "title": "Sinkronisasi SatuSehat",
+            "description": "Sistem mengirimkan data ringkasan medis ke server Kemenkes secara otomatis setelah kunjungan selesai."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend Core",
+          "technologies": [
+            {
+              "name": "Golang (Gin)",
+              "description": "Digunakan untuk menangani logika bisnis yang berat dan integrasi API eksternal secara asinkron."
+            },
+            {
+              "name": "Redis",
+              "description": "Caching data antrean dan sesi untuk memastikan performa sistem tetap tinggi pada jam sibuk."
+            }
+          ]
+        },
+        {
+          "category": "Frontend & UI",
+          "technologies": [
+            {
+              "name": "Next.js",
+              "description": "Framework React untuk membangun dashboard medis yang cepat, responsif, dan SEO friendly."
+            },
+            {
+              "name": "Day.js",
+              "description": "Digunakan untuk manajemen jadwal praktek dokter dan perhitungan usia pasien secara presisi."
+            }
+          ]
+        },
+        {
+          "category": "Database & Security",
+          "technologies": [
+            {
+              "name": "MariaDB",
+              "description": "Penyimpanan data relasional utama dengan enkripsi data-at-rest untuk keamanan medis."
+            },
+            {
+              "name": "Vault",
+              "description": "Manajemen rahasia (secrets) untuk menyimpan API key integrasi SatuSehat dan BPJS."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dashboard Dokter - Input SOAP",
+          "image": "/assets/healthcare/preview.png",
+          "description": "Antarmuka pengisian rekam medis dengan template cerdas dan riwayat alergi pasien."
+        },
+        {
+          "title": "Manajemen Antrean Poli",
+          "image": "/assets/healthcare/manajemen-klinik.png",
+          "description": "Visualisasi antrean pasien real-time yang memudahkan koordinasi antar unit."
+        },
+        {
+          "title": "Portal SatuSehat Integration",
+          "image": "/assets/healthcare/rekam-medis-elektronik.png",
+          "description": "Status sinkronisasi data medis ke server Kemenkes secara real-time."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Standar Operasional",
+          "server": {
+            "title": "Infrastruktur Server",
+            "items": [
+              "Minimum 8GB RAM untuk Data Processing",
+              "SSD Storage (High IOPS) untuk query rekam medis",
+              "SSL Certificate (EV) untuk enkripsi jalur data"
+            ]
+          },
+          "client": {
+            "title": "Perangkat Pengguna",
+            "items": [
+              "Desktop/Laptop dengan Browser modern (Chrome/Edge)",
+              "Barcode Scanner untuk kartu pasien & label obat",
+              "Printer Label untuk identitas sampel lab"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Keamanan & Kecepatan",
+          "metrics": [
+            { "label": "Enkripsi Data", "value": "AES-256 Bit" },
+            { "label": "Latency Sync SatuSehat", "value": "< 2 Detik" },
+            { "label": "Ketersediaan Sistem", "value": "99.99%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Kepatuhan Regulasi",
+          "items": [
+            "Audit Trail (Mencatat siapa melihat rekam medis siapa)",
+            "Two-Factor Authentication (2FA) untuk akses tenaga medis",
+            "Kepatuhan PMK No. 24 Tahun 2022 tentang Rekam Medis",
+            "Automatic Session Timeout untuk keamanan workstation"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Laundry Management System by Codeverta",
+        "description": "Sistem komprehensif untuk digitalisasi operasional laundry mulai dari tracking order, manajemen outlet, hingga notifikasi otomatis.",
+        "fullDescription": "Solusi manajemen laundry end-to-end yang mengintegrasikan pencatatan transaksi (Laundry POS), manajemen stok bahan baku (Chemical Inventory), hingga pemantauan status cucian secara real-time. Dilengkapi dengan fitur membership, integrasi WhatsApp Gateway untuk notifikasi pelanggan, dan laporan keuangan otomatis.",
+        "image": "/assets/laundry-management/preview.png",
+        "technologies": ["Laravel", "Vue.js", "MySQL", "Pusher"],
+        "category": "Retail & Services",
+        "status": "Production Ready",
+        "version": "2.1.0",
+        "lastUpdated": "Maret 2026",
+        "client": "-",
+        "duration": "4 bulan",
+        "teamSize": "3 orang (Backend, Frontend, QA)"
+      },
+      "seo": {
+        "jsonLd": {
+          "@context": "https://schema.org/",
+          "@type": "SoftwareApplication",
+          "name": "Laundry Management System dari Codeverta",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web-Based / Android",
+          "offers": {
+            "@type": "Offer",
+            "price": "1500000",
+            "priceCurrency": "IDR"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "124"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Budi Santoso" },
+              "datePublished": "2026-01-15",
+              "reviewBody": "Sistem yang sangat membantu! Sekarang saya bisa pantau progres cucian dari rumah lewat HP.",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Siti Aminah" },
+              "datePublished": "2026-02-10",
+              "reviewBody": "Fitur notifikasi WhatsApp-nya sangat keren, pelanggan jadi merasa lebih profesional.",
+              "reviewRating": { "@type": "Rating", "ratingValue": "4" }
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Kerja",
+          "techStack": "Teknologi",
+          "screenshots": "Interface",
+          "specs": "Keamanan & Skalabilitas"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Detail Bisnis Laundry",
+          "clientLabel": "Developer",
+          "durationLabel": "Waktu Pengembangan",
+          "teamSizeLabel": "Struktur Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Cakupan Modul",
+          "items": [
+            "Sistem POS (Kasir) Kilat & Satuan",
+            "Manajemen Kurir & Antar-Jemput",
+            "Tracking Status Cucian (Washing, Drying, Ironing)"
+          ]
+        },
+        "architecture": {
+          "title": "Manajemen Aset & Data",
+          "items": [
+            "Integrasi Inventaris Bahan Baku (Sabun, Parfum)",
+            "Manajemen Database Pelanggan & Loyalty Point",
+            "Sistem Multi-Outlet & Hak Akses Karyawan",
+            "Laporan Laba Rugi Otomatis per Periode"
+          ]
+        },
+        "projectDescription": {
+          "title": "Tujuan Bisnis",
+          "paragraphs": [
+            "Laundry Management App by Codeverta dirancang untuk mengatasi masalah umum di bisnis laundry seperti ketidakteraturan antrian, kesalahan input data, dan sulitnya memantau produktivitas karyawan di berbagai cabang.",
+            "Sistem ini memastikan setiap 'Laundry Order' terlacak dengan unik menggunakan sistem QR Code, mulai dari saat barang diterima hingga proses 'Laundry Delivery' selesai dilakukan oleh kurir.",
+            "Pemilik bisnis dapat melakukan pengawasan terhadap stok 'Laundry Chemical' secara real-time untuk mencegah kehilangan inventaris dan mengoptimalkan pengeluaran operasional."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "Order Management",
+          "description": "Pengelolaan antrian cucian berdasarkan tingkat urgensi (Reguler, Express, Kilat)."
+        },
+        {
+          "icon": "Truck",
+          "title": "Pick-up & Delivery",
+          "description": "Modul khusus kurir untuk mengelola permintaan antar-jemput pakaian pelanggan."
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Auto Notification",
+          "description": "Mengirimkan pesan otomatis ke pelanggan saat pakaian selesai dicuci atau siap dikirim."
+        },
+        {
+          "icon": "UserCheck",
+          "title": "Membership & Promo",
+          "description": "Sistem diskon otomatis dan pengumpulan poin untuk pelanggan setia."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Financial Report",
+          "description": "Rekapitulasi omzet harian, bulanan, hingga laporan komisi untuk karyawan."
+        },
+        {
+          "icon": "Archive",
+          "title": "Inventory Tracking",
+          "description": "Pantau sisa penggunaan deterjen dan perlengkapan laundry lainnya dengan sistem peringatan stok rendah."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Proses Laundry",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Clipboard",
+            "title": "Reception",
+            "description": "Input 'Laundry Order', penimbangan berat, dan pemberian tag QR Code pada pakaian."
+          },
+          {
+            "step": 2,
+            "icon": "RefreshCw",
+            "title": "Processing",
+            "description": "Update status progres (Washing > Drying > Ironing) yang dapat dipantau pelanggan secara online."
+          },
+          {
+            "step": 3,
+            "icon": "CheckSquare",
+            "title": "Quality Control",
+            "description": "Pengecekan akhir kebersihan dan kelengkapan sebelum dikemas (Packing)."
+          },
+          {
+            "step": 4,
+            "icon": "ShoppingBag",
+            "title": "Handover",
+            "description": "Penyelesaian transaksi di POS dan penyerahan barang atau pengiriman via kurir."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "PHP Laravel",
+              "description": "Framework tangguh untuk menangani logika bisnis yang kompleks dan keamanan data transaksi."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dashboard Kasir",
+          "image": "/assets/laundry-management/codeverta-laundry-management-system.png",
+          "description": "Layar utama kasir untuk input cepat berat cucian dan pemilihan layanan."
+        },
+        {
+          "title": "Tracking Progres",
+          "image": "/assets/laundry-management/laundry-system.png",
+          "description": "Tampilan tracking status untuk memantau mesin mana yang sedang beroperasi."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Kebutuhan Sistem",
+          "server": {
+            "title": "Server Config",
+            "items": [
+              "Cloud Hosting (Shared/VPS)",
+              "PHP 8.2+",
+              "MySQL Database",
+              "Cron Job untuk Notifikasi terjadwal"
+            ]
+          },
+          "client": {
+            "title": "Akses Pengguna",
+            "items": [
+              "Thermal Printer (Cetak Struk)",
+              "Smartphone Android (Aplikasi Kurir)",
+              "Browser (Desktop/Tablet)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Standar Performa",
+          "metrics": [
+            {
+              "label": "Sync Data Outlet",
+              "value": "< 2 detik"
+            },
+            {
+              "label": "Reliability Notifikasi",
+              "value": "99.9%"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Keamanan Data",
+          "items": [
+            "Enkripsi Data Pelanggan",
+            "Daily Database Auto-Backup",
+            "Role-Based Access Control (Kasir vs Owner)"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
         "id": "digital-wedding-invitation-platform",
         "name": "Website Undangan Pernikahan Digital Interaktif",
         "description": "Platform pembuatan undangan pernikahan digital lengkap dengan RSVP, peta, galeri, dan fitur Hadiah.",
@@ -749,9 +1255,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Lihat Contoh Undangan",
-          "sourceCode": "Kode Sumber (Jika Open Source)",
-          "documentation": "Panduan Penggunaan"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -966,49 +1473,12 @@
             "Sertifikat SSL/HTTPS Otomatis"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Basic",
-          "price": "Rp 350.000",
-          "features": [
-            "1 Desain Template Premium",
-            "Fitur RSVP & Buku Tamu Online",
-            "Integrasi Google Maps",
-            "Galeri Foto (Max 10)"
-          ],
-          "description": "Cocok untuk budget terbatas, solusi cepat dengan fitur inti."
-        },
-        {
-          "tier": "Standard",
-          "price": "Rp 500.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Basic +",
-            "Fitur Amplop Digital (QRIS/Bank)",
-            "Galeri Video (Max 1)",
-            "Masa Aktif 1 Tahun"
-          ],
-          "description": "Pilihan terpopuler dengan fitur lengkap untuk donasi digital."
-        },
-        {
-          "tier": "Premium",
-          "price": "Rp 900.000",
-          "features": [
-            "Semua Fitur di Paket Standard +",
-            "Custom Domain Gratis (.id/.com)",
-            "Masa Aktif Selamanya",
-            "Custom Music Background",
-            "Prioritas Support"
-          ],
-          "description": "Pengalaman eksklusif dengan personalisasi domain dan dukungan penuh."
-        }
-      ]
+      }
     },
     {
       "product": {
         "id": "smart-pos-system",
-        "name": "Smart POS System",
+        "name": "Point of Sales (POS) System by Codeverta",
         "description": "Point of Sale system modern dengan fitur inventory dan reporting real-time.",
         "fullDescription": "Smart POS System adalah solusi point of sale yang komprehensif dan modern, dirancang khusus untuk memenuhi kebutuhan bisnis retail, restoran, dan toko. Sistem ini menawarkan fitur manajemen inventaris, laporan penjualan real-time, serta dukungan multi-channel untuk penjualan online dan offline. Dengan antarmuka yang intuitif, sistem ini memudahkan staf dalam melakukan transaksi, memantau stok, dan menghasilkan laporan bisnis secara efisien. Smart POS System juga dibangun dengan arsitektur modular dan scalable, memungkinkan integrasi dengan berbagai layanan pihak ketiga serta pengembangan fitur baru di masa depan.",
         "image": "/assets/products/33.png",
@@ -1028,11 +1498,24 @@
         "duration": "6 months",
         "teamSize": "5 developers"
       },
+      "seo": {
+        "ratingValue": "4.9",
+        "reviewCount": "24",
+        "reviews": [
+          {
+            "author": "Budi Santoso",
+            "date": "2026-01-15",
+            "body": "Sistem POS yang sangat responsif dan mudah digunakan untuk tim retail kami.",
+            "rating": "5"
+          }
+        ]
+      },
       "hero": {
         "buttons": {
-          "liveDemo": "Live Demo",
-          "sourceCode": "Source Code",
-          "documentation": "Documentation"
+          "documentation": "Documentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -1185,52 +1668,7 @@
           "title": "Security Features",
           "items": ["SSL/TLS Encryption", "Role-based Access Control"]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Starter",
-          "price": "Rp 12.000.000",
-          "features": [
-            "Point of Sale Dasar",
-            "Manajemen Produk & Kategori",
-            "Inventory Tracking Basic",
-            "Laporan Penjualan Harian",
-            "Multi-Device Support",
-            "Dapat digunakan hingga 10 outlet"
-          ],
-          "description": "Paket dasar untuk bisnis kecil yang membutuhkan POS modern dengan fitur utama penjualan dan inventaris."
-        },
-        {
-          "tier": "Standard",
-          "price": "Rp 22.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Starter +",
-            "Real-time Inventory Sync",
-            "Dashboard Analytics",
-            "Manajemen Karyawan & Role-based Access",
-            "Integrasi Barcode Scanner",
-            "Export Laporan ke Excel/PDF",
-            "Dukungan hingga 3 outlet"
-          ],
-          "description": "Paket paling populer untuk bisnis yang membutuhkan automasi, laporan lebih lengkap, dan kontrol multi-outlet."
-        },
-        {
-          "tier": "Premium",
-          "price": "Rp 40.000.000",
-          "features": [
-            "Semua Fitur di Paket Standard +",
-            "Real-time Socket.io Sync",
-            "Advanced Reporting (Profit, Trend, Heatmap)",
-            "Integrasi E-commerce",
-            "Integrasi Hardware POS (Printer, Cash Drawer, Display)",
-            "Promo & Loyalty Program",
-            "Custom Workflow & Microservices Ready",
-            "Dukungan hingga 10 outlet"
-          ],
-          "description": "Solusi POS lengkap dengan integrasi lanjutan, laporan mendalam, dan arsitektur scalable untuk bisnis berkembang."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -1257,9 +1695,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Buka Peta",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi API"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -1476,74 +1915,7 @@
             "Koneksi aman melalui HTTPS/SSL"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Starter",
-          "price": "Rp 25.000.000",
-          "features": [
-            "Peta Interaktif Basic (Leaflet)",
-            "Manajemen Layer Dasar (GeoJSON, WMS)",
-            "Upload Data GeoJSON",
-            "Kueri Atribut Sederhana",
-            "Peta Responsif & Mobile View",
-            "1 Hak Akses Admin",
-            "Hosting & Deployment Basic"
-          ],
-          "description": "Paket dasar untuk instansi atau bisnis yang membutuhkan platform pemetaan online sederhana dengan fungsi visualisasi dan manajemen data dasar."
-        },
-        {
-          "tier": "Standard",
-          "price": "Rp 55.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua fitur Starter +",
-            "Analisis Spasial (Buffer, Intersect, Union)",
-            "Visualisasi Tematik (Choropleth, Heatmap)",
-            "Manajemen Layer Lanjutan (Drag & Drop, Opacity)",
-            "Import Data (Shapefile, KML, CSV)",
-            "Export Data (GeoJSON, KML, CSV)",
-            "Role-Based Access Control",
-            "Integrasi GeoServer",
-            "Dashboard Analytics",
-            "Audit Log Aktivitas Pengguna",
-            "3 Hak Akses Admin"
-          ],
-          "description": "Paket paling populer, cocok untuk pemerintah daerah atau perusahaan yang membutuhkan analisis spasial, visualisasi data tematik, dan manajemen pengguna."
-        },
-        {
-          "tier": "Premium",
-          "price": "Rp 95.000.000",
-          "features": [
-            "Semua fitur Standard +",
-            "Advanced Spatial Analysis (Multi-layer Overlay, Dissolve, Clip)",
-            "Tile Server Optimization",
-            "Custom Thematic Styling",
-            "Integrasi Sistem Eksternal via API",
-            "Automated Scheduled Backup",
-            "Multi-level User Access (Admin, Editor, Viewer)",
-            "Performance Optimization (Caching, Tile Compression)",
-            "Server Setup Lengkap (Node.js, PostgreSQL, PostGIS, GeoServer)",
-            "Training & Dokumentasi Teknis Lengkap",
-            "5 Hak Akses Admin"
-          ],
-          "description": "Solusi lengkap WebGIS tingkat lanjut dengan analisis mendalam, performa optimal, integrasi ke sistem eksternal, dan setup server yang siap produksi."
-        },
-        {
-          "tier": "Enterprise",
-          "price": "Custom",
-          "features": [
-            "Semua fitur Premium +",
-            "Deployment On-Premise atau Private Cloud",
-            "Support SLA 99.9%",
-            "Load Balancing & HA Architecture",
-            "Integrasi dengan SIM / SIKD / ERP",
-            "Penyesuaian Fitur Khusus sesuai kebutuhan",
-            "Unlimited Admin"
-          ],
-          "description": "Paket untuk lembaga besar yang membutuhkan skala tinggi, keamanan tingkat enterprise, dan kustomisasi penuh sesuai workflow operasional."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -1570,9 +1942,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Hubungi Kami",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi API"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -1810,72 +2183,7 @@
             "Dukungan Two-Factor Authentication (2FA)"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Starter",
-          "price": "Rp 150.000.000",
-          "features": [
-            "Modul Inti: Keuangan, Inventaris, Penjualan",
-            "Dashboard Laporan Dasar",
-            "1 Gudang & 1 Cabang",
-            "15 Pengguna",
-            "Integrasi Printer & Barcode Scanner",
-            "Import Data CSV/Excel",
-            "Akses Web Multi-Platform",
-            "Garansi Maintenance 3 Bulan"
-          ],
-          "description": "Paket dasar untuk perusahaan kecil-menengah yang ingin mulai melakukan digitalisasi proses bisnis dengan modul inti ERP."
-        },
-        {
-          "tier": "Professional",
-          "price": "Rp 320.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur Starter +",
-            "Modul HRM & Payroll",
-            "Manajemen Multi-Gudang",
-            "Role-Based Access Control",
-            "Audit Trail Lengkap",
-            "Analitik & Laporan Interaktif",
-            "Integrasi Sistem Eksternal (API Basic)",
-            "30 Pengguna",
-            "Garansi Maintenance 6 Bulan"
-          ],
-          "description": "Paket paling banyak dipilih untuk perusahaan menengah yang membutuhkan alur kerja lintas departemen dengan kontrol akses yang lengkap."
-        },
-        {
-          "tier": "Premium",
-          "price": "Rp 650.000.000",
-          "features": [
-            "Semua Fitur Professional +",
-            "Modul Manufaktur (BOM, Work Order, MRP)",
-            "Antrian Asinkron (RabbitMQ)",
-            "Optimasi Performa (Caching Redis)",
-            "Custom Workflow per Departemen",
-            "SSO & Centralized Authentication",
-            "Integrasi Mesin Produksi (opsional)",
-            "60 Pengguna",
-            "Garansi Maintenance 12 Bulan"
-          ],
-          "description": "Solusi ERP lengkap dengan modul manufaktur, integrasi lanjutan, serta performa tinggi untuk perusahaan berskala besar."
-        },
-        {
-          "tier": "Enterprise",
-          "price": "Custom",
-          "features": [
-            "Semua Fitur Premium +",
-            "Deployment On-Premise atau Private Cloud",
-            "High Availability & Load Balancing",
-            "Unlimited Users",
-            "Full Custom Feature (sesuai kebutuhan bisnis)",
-            "Integrasi ERP ke sistem besar (SAP/Oracle opsional)",
-            "Support SLA 99.9%",
-            "Dedicated Technical Team"
-          ],
-          "description": "Paket skala besar khusus untuk perusahaan nasional yang membutuhkan fleksibilitas penuh dan standar enterprise."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -1902,9 +2210,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Buka Portal",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -2130,47 +2439,7 @@
             "Validasi Input untuk Mencegah Serangan XSS"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Basic HR",
-          "price": "Rp 25.000.000",
-          "features": [
-            "Database Karyawan (PIM)",
-            "Manajemen Absensi (Tanpa GPS)",
-            "Pengajuan & Persetujuan Cuti Online",
-            "Portal Self-Service Karyawan",
-            "Dukungan hingga 50 Karyawan"
-          ],
-          "description": "Solusi HRIS (Human Resource Information System) awal untuk perusahaan kecil dan menengah (UKM) yang fokus pada administrasi dasar."
-        },
-        {
-          "tier": "HR Pro",
-          "price": "Rp 50.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Basic HR +",
-            "Proses Penggajian (Payroll) Otomatis",
-            "Kalkulasi PPh 21 & BPJS",
-            "Manajemen Klaim & Reimbursement",
-            "Manajer Self-Service (MSS)",
-            "Dukungan hingga 250 Karyawan"
-          ],
-          "description": "Paket paling populer untuk perusahaan yang membutuhkan otomatisasi penuh siklus hidup karyawan termasuk proses penggajian yang kompleks."
-        },
-        {
-          "tier": "Enterprise HR",
-          "price": "Rp 95.000.000",
-          "features": [
-            "Semua Fitur di Paket HR Pro +",
-            "Integrasi API Absensi Biometrik/Pihak Ketiga",
-            "Modul Pelatihan & Pengembangan Karyawan",
-            "Laporan Analitik HR Detail (Turnover, Cost-per-Hire)",
-            "Dukungan hingga Tidak Terbatas (Unlimited) Karyawan"
-          ],
-          "description": "Platform HRMS lengkap untuk korporasi besar yang fokus pada skalabilitas, integrasi, dan analisis mendalam."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -2196,9 +2465,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Hubungi Kami",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -2436,48 +2706,7 @@
             "Komunikasi aman melalui HTTPS/SSL"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Personal",
-          "price": "Rp 7.000.000",
-          "features": [
-            "Pelacakan Transaksi (Pemasukan/Pengeluaran)",
-            "Manajemen Anggaran (Budgeting) Dasar",
-            "Dasbor Interaktif & Laporan Ringkas",
-            "Dukungan 1 Pengguna (User)",
-            "Dukungan 1 Akun Bank/Dompet"
-          ],
-          "description": "Solusi manajemen keuangan pribadi yang ideal untuk individu atau rumah tangga untuk mengontrol pengeluaran harian."
-        },
-        {
-          "tier": "Pro",
-          "price": "Rp 15.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Personal +",
-            "Laporan Keuangan Esensial (Laba Rugi, Arus Kas)",
-            "Penetapan Tujuan Keuangan (Goals Tracking)",
-            "Transaksi Berulang (Otomatisasi)",
-            "Dukungan hingga 3 Akun Bank/Dompet",
-            "Dukungan Multi-Mata Uang"
-          ],
-          "description": "Pilihan terbaik untuk profesional, *freelancer*, atau usaha super kecil yang memerlukan analisis dan otomatisasi yang lebih mendalam."
-        },
-        {
-          "tier": "Business",
-          "price": "Rp 35.000.000",
-          "features": [
-            "Semua Fitur di Paket Pro +",
-            "Manajemen Faktur/Tagihan (Invoicing)",
-            "Laporan Neraca Keuangan (Balance Sheet)",
-            "Akses Multi-Pengguna (Hingga 5 User)",
-            "Integrasi API (Misalnya untuk data e-commerce)",
-            "Dukungan Unlimited Akun Bank/Dompet"
-          ],
-          "description": "Platform lengkap untuk Usaha Kecil dan Menengah (UKM) yang membutuhkan akuntansi dasar, kolaborasi tim, dan laporan komprehensif."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -2504,9 +2733,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Buka Sistem",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi API"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -2740,48 +2970,7 @@
             "Komunikasi terenkripsi (HTTPS)"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Basic Track",
-          "price": "Rp 40.000.000",
-          "features": [
-            "Pelacakan Stok Real-time Dasar",
-            "Manajemen 1 Lokasi Gudang",
-            "Pemindaian Barcode (In/Out)",
-            "Peringatan Stok Rendah Otomatis",
-            "Laporan Inventaris Ringkas"
-          ],
-          "description": "Solusi awal yang berfokus pada akurasi stok dan efisiensi operasional harian untuk satu lokasi gudang sederhana."
-        },
-        {
-          "tier": "Advanced Flow",
-          "price": "Rp 75.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Basic Track +",
-            "Dukungan Multi-Gudang (Hingga 5 Lokasi)",
-            "Manajemen Pesanan Pembelian (Purchase Order)",
-            "Audit Inventaris (Stock Opname & Cycle Counting)",
-            "Analitik Perputaran Inventaris (Turnover)",
-            "Integrasi API (Non-Realtime)"
-          ],
-          "description": "Pilihan paling populer untuk perusahaan yang mengoperasikan beberapa gudang dan membutuhkan kontrol PO serta analisis stok yang lebih mendalam."
-        },
-        {
-          "tier": "Enterprise Sync",
-          "price": "Rp 120.000.000",
-          "features": [
-            "Semua Fitur di Paket Advanced Flow +",
-            "Arsitektur Event-Driven (Apache Kafka)",
-            "Integrasi API Real-time (ERP/E-commerce)",
-            "Pelacakan Stok berdasarkan Batch/Serial Number (FIFO/LIFO)",
-            "Manajemen Lokasi Rak (Bin Location)",
-            "Dukungan Unlimited Lokasi Gudang"
-          ],
-          "description": "Sistem kontrol inventaris berkapasitas tinggi dengan arsitektur yang canggih untuk logistik, distribusi, atau rantai pasokan berskala besar."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -2801,9 +2990,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Buka Platform",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi API"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -3024,48 +3214,7 @@
             "Validasi input untuk mencegah injeksi"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Basic Track",
-          "price": "Rp 40.000.000",
-          "features": [
-            "Pelacakan Stok Real-time Dasar",
-            "Manajemen 1 Lokasi Gudang",
-            "Pemindaian Barcode (In/Out)",
-            "Peringatan Stok Rendah Otomatis",
-            "Laporan Inventaris Ringkas"
-          ],
-          "description": "Solusi awal yang berfokus pada akurasi stok dan efisiensi operasional harian untuk satu lokasi gudang sederhana."
-        },
-        {
-          "tier": "Advanced Flow",
-          "price": "Rp 75.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Basic Track +",
-            "Dukungan Multi-Gudang (Hingga 5 Lokasi)",
-            "Manajemen Pesanan Pembelian (Purchase Order)",
-            "Audit Inventaris (Stock Opname & Cycle Counting)",
-            "Analitik Perputaran Inventaris (Turnover)",
-            "Integrasi API (Non-Realtime)"
-          ],
-          "description": "Pilihan paling populer untuk perusahaan yang mengoperasikan beberapa gudang dan membutuhkan kontrol PO serta analisis stok yang lebih mendalam."
-        },
-        {
-          "tier": "Enterprise Sync",
-          "price": "Rp 120.000.000",
-          "features": [
-            "Semua Fitur di Paket Advanced Flow +",
-            "Arsitektur Event-Driven (Apache Kafka)",
-            "Integrasi API Real-time (ERP/E-commerce)",
-            "Pelacakan Stok berdasarkan Batch/Serial Number (FIFO/LIFO)",
-            "Manajemen Lokasi Rak (Bin Location)",
-            "Dukungan Unlimited Lokasi Gudang"
-          ],
-          "description": "Sistem kontrol inventaris berkapasitas tinggi dengan arsitektur yang canggih untuk logistik, distribusi, atau rantai pasokan berskala besar."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -3092,9 +3241,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Jelajahi Kursus",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -3313,48 +3463,7 @@
             "Integrasi gerbang pembayaran (payment gateway) yang aman"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Basic Track",
-          "price": "Rp 40.000.000",
-          "features": [
-            "Pelacakan Stok Real-time Dasar",
-            "Manajemen 1 Lokasi Gudang",
-            "Pemindaian Barcode (In/Out)",
-            "Peringatan Stok Rendah Otomatis",
-            "Laporan Inventaris Ringkas"
-          ],
-          "description": "Solusi awal yang berfokus pada akurasi stok dan efisiensi operasional harian untuk satu lokasi gudang sederhana."
-        },
-        {
-          "tier": "Advanced Flow",
-          "price": "Rp 75.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Basic Track +",
-            "Dukungan Multi-Gudang (Hingga 5 Lokasi)",
-            "Manajemen Pesanan Pembelian (Purchase Order)",
-            "Audit Inventaris (Stock Opname & Cycle Counting)",
-            "Analitik Perputaran Inventaris (Turnover)",
-            "Integrasi API (Non-Realtime)"
-          ],
-          "description": "Pilihan paling populer untuk perusahaan yang mengoperasikan beberapa gudang dan membutuhkan kontrol PO serta analisis stok yang lebih mendalam."
-        },
-        {
-          "tier": "Enterprise Sync",
-          "price": "Rp 120.000.000",
-          "features": [
-            "Semua Fitur di Paket Advanced Flow +",
-            "Arsitektur Event-Driven (Apache Kafka)",
-            "Integrasi API Real-time (ERP/E-commerce)",
-            "Pelacakan Stok berdasarkan Batch/Serial Number (FIFO/LIFO)",
-            "Manajemen Lokasi Rak (Bin Location)",
-            "Dukungan Unlimited Lokasi Gudang"
-          ],
-          "description": "Sistem kontrol inventaris berkapasitas tinggi dengan arsitektur yang canggih untuk logistik, distribusi, atau rantai pasokan berskala besar."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -3377,13 +3486,41 @@
         "lastUpdated": "Juni 2025",
         "client": "Distribusi Logistik Prima",
         "duration": "12 bulan",
-        "teamSize": "8 specialists (Frontend, Backend, DBA, RFID Engineer, QA, PM)"
+        "teamSize": "8 specialists (Frontend, Backend, DBA, RFID Engineer, QA, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "48",
+          "reviews": [
+            {
+              "author": "Andi Wijaya",
+              "role": "Operations Manager",
+              "date": "2026-02-10",
+              "body": "Efisiensi gudang kami naik 40% sejak pakai sistem ini. Fitur picking rutenya sangat akurat.",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Aminah",
+              "role": "Logistics Supervisor",
+              "date": "2026-03-05",
+              "body": "Integrasi RFID-nya sangat membantu saat proses inbound barang dalam jumlah besar.",
+              "rating": "5"
+            },
+            {
+              "author": "Budi Pratama",
+              "role": "IT Director",
+              "date": "2026-04-12",
+              "body": "Arsitektur sistem sangat stabil, integrasi API ke ERP kami berjalan tanpa kendala.",
+              "rating": "4"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Buka Dasbor",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -3614,48 +3751,7 @@
             "Enkripsi komunikasi antara perangkat dan server"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "WMS Essentials",
-          "price": "Rp 90.000.000",
-          "features": [
-            "Manajemen Lokasi Rak (Bin-level Tracking) Dasar",
-            "Optimisasi Pengambilan (Picking) Rute Terpendek",
-            "Penyimpanan Terarah (Put-Away) Dasar",
-            "Dukungan 1 Lokasi Gudang",
-            "Akses hingga 15 Operator/User Gudang"
-          ],
-          "description": "Sistem WMS fungsional untuk gudang tunggal yang ingin pindah dari sistem inventaris ke sistem manajemen lokasi yang terarah."
-        },
-        {
-          "tier": "WMS Pro-Optimized",
-          "price": "Rp 160.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket WMS Essentials +",
-            "Dukungan Multi-Gudang (Hingga 3 Lokasi)",
-            "Manajemen Pengiriman (Packing & Shipping)",
-            "Fitur Siklus Hitung (Cycle Counting) Lanjutan",
-            "Integrasi API ke ERP/Sistem Penjualan (Standard)",
-            "Dukungan hingga 50 Operator/User Gudang"
-          ],
-          "description": "Pilihan populer untuk operasi logistik yang sedang berkembang, fokus pada peningkatan throughput dan akurasi di beberapa lokasi."
-        },
-        {
-          "tier": "WMS Enterprise Max",
-          "price": "Rp 250.000.000",
-          "features": [
-            "Semua Fitur di Paket WMS Pro-Optimized +",
-            "Integrasi RFID (Pelacakan Otomatis)",
-            "Alokasi Tugas Otomatis (Task Management)",
-            "Integrasi Perangkat Keras Khusus (Misal: Konveyor)",
-            "Visualisasi Tata Letak Gudang Real-time (WebSockets)",
-            "Dukungan Unlimited Lokasi Gudang & User"
-          ],
-          "description": "Platform WMS premium yang dirancang untuk pusat distribusi berkapasitas tinggi dengan kebutuhan integrasi teknologi otomatisasi yang kompleks."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -3679,11 +3775,39 @@
         "duration": "7 bulan",
         "teamSize": "5 specialists (Frontend, Laravel Backend, DBA, QA)"
       },
+      "seo": {
+        "ratingValue": "4.8",
+        "reviewCount": "32",
+        "reviews": [
+          {
+            "author": "Hendra Wijaya",
+            "role": "Senior Accountant",
+            "date": "2025-08-20",
+            "body": "Fitur double-entry jurnalnya sangat solid. Laporan PDF yang dihasilkan sangat membantu saat audit internal.",
+            "rating": "5"
+          },
+          {
+            "author": "Linda Permata",
+            "role": "Business Owner",
+            "date": "2025-09-15",
+            "body": "Sangat user-friendly untuk UKM. Sekarang saya bisa pantau profit and loss secara real-time tanpa harus buka Excel.",
+            "rating": "5"
+          },
+          {
+            "author": "Rizky Fauzi",
+            "role": "Financial Consultant",
+            "date": "2025-11-02",
+            "body": "Integrasi Chart of Accounts-nya fleksibel. Sangat memudahkan dalam pengelompokan biaya pajak.",
+            "rating": "4"
+          }
+        ]
+      },
       "hero": {
         "buttons": {
-          "liveDemo": "Buka Sistem",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -3908,48 +4032,7 @@
             "Izin Akses Berbasis Peran (Role-Based Access Control)"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "WMS Essentials",
-          "price": "Rp 90.000.000",
-          "features": [
-            "Manajemen Lokasi Rak (Bin-level Tracking) Dasar",
-            "Optimisasi Pengambilan (Picking) Rute Terpendek",
-            "Penyimpanan Terarah (Put-Away) Dasar",
-            "Dukungan 1 Lokasi Gudang",
-            "Akses hingga 15 Operator/User Gudang"
-          ],
-          "description": "Sistem WMS fungsional untuk gudang tunggal yang ingin pindah dari sistem inventaris ke sistem manajemen lokasi yang terarah."
-        },
-        {
-          "tier": "WMS Pro-Optimized",
-          "price": "Rp 160.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket WMS Essentials +",
-            "Dukungan Multi-Gudang (Hingga 3 Lokasi)",
-            "Manajemen Pengiriman (Packing & Shipping)",
-            "Fitur Siklus Hitung (Cycle Counting) Lanjutan",
-            "Integrasi API ke ERP/Sistem Penjualan (Standard)",
-            "Dukungan hingga 50 Operator/User Gudang"
-          ],
-          "description": "Pilihan populer untuk operasi logistik yang sedang berkembang, fokus pada peningkatan throughput dan akurasi di beberapa lokasi."
-        },
-        {
-          "tier": "WMS Enterprise Max",
-          "price": "Rp 250.000.000",
-          "features": [
-            "Semua Fitur di Paket WMS Pro-Optimized +",
-            "Integrasi RFID (Pelacakan Otomatis)",
-            "Alokasi Tugas Otomatis (Task Management)",
-            "Integrasi Perangkat Keras Khusus (Misal: Konveyor)",
-            "Visualisasi Tata Letak Gudang Real-time (WebSockets)",
-            "Dukungan Unlimited Lokasi Gudang & User"
-          ],
-          "description": "Platform WMS premium yang dirancang untuk pusat distribusi berkapasitas tinggi dengan kebutuhan integrasi teknologi otomatisasi yang kompleks."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -3975,9 +4058,10 @@
       },
       "hero": {
         "buttons": {
-          "liveDemo": "Coba Demo",
-          "sourceCode": "Kode Sumber",
-          "documentation": "Dokumentasi API"
+          "documentation": "Dokumentasi",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
         }
       },
       "tabs": {
@@ -4234,6 +4318,272 @@
           "description": "Platform skalabel untuk korporasi dan organisasi besar yang memerlukan integrasi mendalam, keamanan, dan dukungan kustom."
         }
       ]
+    },
+    {
+      "product": {
+        "id": "coffee-shop-pos-management-system",
+        "name": "Coffee Shop POS & Management System",
+        "description": "Sistem manajemen outlet kopi modern dengan fitur multi-tenant, inventory real-time, dan loyalitas pelanggan.",
+        "fullDescription": "Sistem Manajemen Coffee Shop ini dirancang khusus untuk industri F&B berskala cepat. Menyatukan Point of Sale (POS), manajemen inventaris bahan baku (beans & milk tracking), hingga sistem loyalitas pelanggan dalam satu dashboard. Dibangun dengan arsitektur multi-tenant yang mendukung ekspansi bisnis dari satu outlet hingga ratusan cabang secara terpusat.",
+        "image": "/assets/coffeeshop/preview.png",
+        "technologies": [
+          "Golang",
+          "Gin",
+          "React",
+          "Next.js",
+          "MariaDB",
+          "Docker",
+          "WebSockets"
+        ],
+        "category": "Food & Beverage Management",
+        "status": "Completed",
+        "version": "2.4.0",
+        "lastUpdated": "Mei 2026",
+        "client": "Brew & Beans Roastery",
+        "duration": "6 bulan",
+        "teamSize": "5 specialists (Backend Engineer, Frontend Developer, UI/UX Designer, QA, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "124",
+          "reviews": [
+            {
+              "author": "Rendra Kurnia",
+              "role": "Owner Coffee Shop",
+              "date": "2026-03-15",
+              "body": "Fitur tracking penggunaan biji kopinya sangat akurat, membantu kami menekan wastage hingga 15%.",
+              "rating": "5"
+            },
+            {
+              "author": "Sinta Dewi",
+              "role": "Operations Manager",
+              "date": "2026-04-02",
+              "body": "Sangat user-friendly untuk barista baru. Proses training jadi jauh lebih cepat.",
+              "rating": "5"
+            },
+            {
+              "author": "Budi Santoso",
+              "role": "IT Consultant",
+              "date": "2026-05-01",
+              "body": "API-nya sangat clean dan mudah diintegrasikan dengan layanan pengiriman pihak ketiga.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentasi API",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Kerja",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Detail Pengembangan",
+          "clientLabel": "Klien Bisnis",
+          "durationLabel": "Waktu Pengerjaan",
+          "teamSizeLabel": "Kapasitas Tim",
+          "lastUpdatedLabel": "Pembaruan Sistem"
+        },
+        "platformSupport": {
+          "title": "Dukungan Ekosistem",
+          "items": [
+            "Aplikasi Kasir (Tablet & Desktop)",
+            "Kitchen Display System (KDS) Real-time",
+            "Dashboard Owner berbasis Web",
+            "Integrasi QR Order untuk Pelanggan"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Microservices Architecture (Golang)",
+            "Multi-tenant Database Strategy",
+            "WebSockets untuk Sinkronisasi Order Pesanan",
+            "Progressive Web App (PWA) untuk Akses Offline"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Manajemen coffee shop modern seringkali terkendala oleh sinkronisasi stok antara gudang dan bar, antrean pesanan yang tidak teratur, serta kesulitan dalam mengelola program loyalitas pelanggan secara manual. Hal ini menyebabkan penurunan kualitas layanan dan potensi kebocoran pendapatan.",
+            "Proyek ini menghadirkan solusi digital menyeluruh dengan antarmuka 'Bento Grid' yang intuitif bagi barista. Sistem ini mengotomatiskan pengurangan stok bahan baku setiap kali menu terjual, memberikan notifikasi real-time ke dapur melalui KDS, dan mencatat preferensi pelanggan untuk strategi pemasaran yang lebih personal.",
+            "Hasil implementasi menunjukkan peningkatan kecepatan transaksi sebesar 30% pada jam sibuk, akurasi stok yang terjamin, dan kemudahan bagi owner untuk memantau performa banyak cabang sekaligus dari satu layar."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Coffee",
+          "title": "Manajemen Resep & COGS",
+          "description": "Perhitungan otomatis biaya modal (HPP) berdasarkan pemakaian beans, susu, dan sirup per cup."
+        },
+        {
+          "icon": "Users",
+          "title": "Loyalty Program & CRM",
+          "description": "Sistem poin digital dan membership untuk meningkatkan retensi kunjungan pelanggan secara otomatis."
+        },
+        {
+          "icon": "LayoutGrid",
+          "title": "Kitchen Display System",
+          "description": "Layar digital di area bar untuk memantau urutan antrean pesanan guna menghindari salah saji."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Laporan Penjualan Multi-Cabang",
+          "description": "Analisis produk terlaris dan performa jam sibuk yang dapat diakses kapan saja oleh pemilik."
+        },
+        {
+          "icon": "Zap",
+          "title": "Sistem QR Order",
+          "description": "Pelanggan dapat memesan dan membayar langsung dari meja melalui scan QR code tanpa antre."
+        },
+        {
+          "icon": "Database",
+          "title": "Inventaris Real-time",
+          "description": "Manajemen stok bahan baku dengan fitur pengingat (alert) saat persediaan mulai menipis."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Kerja Transaksi Coffee Shop",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Smartphone",
+            "title": "Pemesanan (POS/QR)",
+            "description": "Input pesanan melalui kasir atau scan QR mandiri oleh pelanggan dengan kustomisasi (extra shot, sugar level)."
+          },
+          {
+            "step": 2,
+            "icon": "CreditCard",
+            "title": "Pembayaran Digital",
+            "description": "Integrasi Payment Gateway untuk pembayaran via QRIS, E-Wallet, atau kartu secara instan."
+          },
+          {
+            "step": 3,
+            "icon": "Monitor",
+            "title": "Notifikasi Barista",
+            "description": "Pesanan otomatis muncul di Kitchen Display System (KDS) bar sesuai urutan waktu pesanan masuk."
+          },
+          {
+            "step": 4,
+            "icon": "Coffee",
+            "title": "Proses Pembuatan",
+            "description": "Barista menandai pesanan sebagai 'In Progress' atau 'Completed' yang akan memperbarui status ke pelanggan."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Pengambilan & Update Stok",
+            "description": "Pelanggan menerima notifikasi pesanan siap, dan sistem secara otomatis memotong stok bahan baku di database."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend Services",
+          "technologies": [
+            {
+              "name": "Golang (Gin)",
+              "description": "Bahasa pemrograman dengan performa tinggi untuk menangani konkurensi ribuan transaksi."
+            },
+            {
+              "name": "MariaDB",
+              "description": "Basis data relasional yang dioptimalkan untuk performa query transaksi yang cepat."
+            },
+            {
+              "name": "Docker",
+              "description": "Kontainerisasi aplikasi untuk memudahkan deployment di berbagai server outlet."
+            }
+          ]
+        },
+        {
+          "category": "Frontend Experience",
+          "technologies": [
+            {
+              "name": "React (Next.js)",
+              "description": "Framework untuk dashboard admin dengan performa SEO yang optimal dan routing cepat."
+            },
+            {
+              "name": "Day.js",
+              "description": "Library manipulasi waktu yang ringan untuk laporan penjualan harian dan bulanan."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Utility-first CSS untuk membangun UI bertema Neobrutalism yang modern."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dashboard POS Barista",
+          "image": "/assets/coffeeshop/preview.png",
+          "description": "Antarmuka kasir yang cepat dengan sistem kategori produk yang mudah diakses."
+        },
+        {
+          "title": "Analisis Stok Bahan Baku",
+          "image": "/assets/coffeeshop/pos.png",
+          "description": "Visualisasi pemakaian beans per gram dan notifikasi low-stock."
+        },
+        {
+          "title": "Laporan Penjualan Real-time",
+          "image": "/assets/coffeeshop/pos.png",
+          "description": "Grafik pendapatan harian yang dapat difilter per outlet atau per kategori menu."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Persyaratan Sistem",
+          "server": {
+            "title": "Sisi Server (Cloud)",
+            "items": [
+              "Linux Ubuntu 22.04 LTS",
+              "RAM Minimal 4GB untuk Multi-tenant",
+              "Docker Engine & Docker Compose"
+            ]
+          },
+          "client": {
+            "title": "Sisi Perangkat (Outlet)",
+            "items": [
+              "Tablet (Android/iPad) atau Laptop",
+              "Thermal Printer Bluetooth/LAN untuk Struk",
+              "Koneksi Internet Lokal (Sistem mendukung Local Sync)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Kecepatan",
+          "metrics": [
+            { "label": "Waktu Respon API", "value": "< 150ms" },
+            {
+              "label": "Sinkronisasi Stok",
+              "value": "Real-time via WebSockets"
+            },
+            { "label": "Uptime Sistem", "value": "99.9%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Protokol Keamanan",
+          "items": [
+            "JWT Authentication untuk Barista & Admin",
+            "Role-Based Access Control (RBAC)",
+            "Enkripsi Data Transaksi (SSL/TLS)",
+            "Auto-backup Database harian ke Cloud Storage"
+          ]
+        }
+      }
     }
   ]
 }
