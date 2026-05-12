@@ -1,11 +1,32 @@
 {
   "home": {
     "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
-    "subtitle": "We provide professional website creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
     "hero": {
-      "prefix": "Service for",
-      "rotating": ["Creation", "Development", "Fixing", "Maintenance"],
-      "suffix": "Websites, Applications & Other IT Services"
+      "prefix": "Digital Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
     },
     "tagline": "*Startup quality, not your typical WordPress template",
     "cta": {
