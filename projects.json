@@ -4584,6 +4584,760 @@
           ]
         }
       }
+    },
+    {
+      "product": {
+        "id": "outdoor-gear-rental-management-system",
+        "name": "Sistem Manajemen Penyewaan Alat Camping & Trail Running",
+        "description": "Sistem penyewaan alat camping dan trail running dengan manajemen stok batch, tracking pembersihan, dan booking deposit.",
+        "fullDescription": "Sistem ini dirancang khusus untuk operasional penyewaan alat outdoor skala menengah hingga besar. Mendukung manajemen inventaris detail seperti ukuran sepatu trail, masa pakai tenda, hingga kalibrasi kompor. Dilengkapi dengan sistem deposit otomatis dan integrasi asuransi alat untuk meminimalkan risiko kerugian vendor.",
+        "image": "/assets/camping/preview.png",
+        "technologies": [
+          "Golang",
+          "Gin",
+          "React",
+          "Next.js",
+          "PostgreSQL",
+          "Docker",
+          "Redis"
+        ],
+        "category": "Outdoor & Rental Management",
+        "status": "Completed",
+        "version": "1.2.0",
+        "lastUpdated": "Mei 2026",
+        "client": "Puncak Rimba Adventure",
+        "duration": "4 bulan",
+        "teamSize": "4 specialists (Backend Dev, Frontend Dev, UI/UX Designer, QA)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "85",
+          "reviews": [
+            {
+              "author": "Andika Pratama",
+              "role": "Owner Rental Outdoor",
+              "date": "2026-02-10",
+              "body": "Sangat membantu memantau stok tenda yang sedang disewa dan yang sedang dalam pembersihan (laundry).",
+              "rating": "5"
+            },
+            {
+              "author": "Maya Sari",
+              "role": "Store Manager",
+              "date": "2026-03-22",
+              "body": "Fitur denda keterlambatan otomatis membuat administrasi kami jauh lebih rapi dan transparan ke pelanggan.",
+              "rating": "5"
+            },
+            {
+              "author": "Bagus Adi",
+              "role": "Trail Runner Event Organizer",
+              "date": "2026-04-15",
+              "body": "Integrasi sistem booking untuk event trail running sangat stabil meski diakses ribuan orang sekaligus.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentasi API",
+          "links": {
+            "documentation": "https://docs.basecamp-system.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Sewa",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Detail Pengembangan",
+          "clientLabel": "Mitra Bisnis",
+          "durationLabel": "Waktu Pengerjaan",
+          "teamSizeLabel": "Kapasitas Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Ekosistem",
+          "items": [
+            "Aplikasi POS Kasir (Desktop)",
+            "Portal Booking Customer (Web Responsive)",
+            "Sistem Scan Barcode/RFID untuk Barang"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Microservices berbasis Go untuk skalabilitas tinggi",
+            "Redis Caching untuk ketersediaan stok real-time",
+            "PostgreSQL dengan skema relasional untuk tracking unit barang",
+            "Integrasi Payment Gateway untuk pembayaran deposit"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Masalah utama vendor alat camping adalah hilangnya jejak unit barang (seperti kompor atau trekking pole) dan kesulitan memantau kondisi barang setelah kembali. Sering terjadi bentrok booking karena data stok tidak sinkron secara real-time.",
+            "Solusi ini menghadirkan manajemen unit unik (Serial Number tracking). Setiap tenda atau pasang sepatu memiliki ID sendiri, sehingga riwayat kerusakan dan durasi pemakaian dapat dipantau. Sistem juga memiliki modul 'Maintenance Mode' untuk memisahkan barang yang sedang dicuci atau diperbaiki.",
+            "Implementasi sistem ini berhasil menurunkan angka kehilangan unit hingga 25% dan mempercepat proses check-out barang di toko sebesar 50% melalui sistem barcode."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "Unit Serial Tracking",
+          "description": "Lacak kondisi tiap unit alat secara spesifik, bukan sekadar jumlah stok total."
+        },
+        {
+          "icon": "Calendar",
+          "title": "Booking & Penjadwalan",
+          "description": "Kalender reservasi interaktif untuk mencegah double-booking pada tanggal yang sama."
+        },
+        {
+          "icon": "AlertTriangle",
+          "title": "Sistem Denda & Kerusakan",
+          "description": "Kalkulator otomatis untuk denda keterlambatan atau biaya kompensasi kerusakan alat."
+        },
+        {
+          "icon": "RefreshCw",
+          "title": "Manajemen Laundry",
+          "description": "Status khusus untuk alat yang kembali dalam keadaan kotor dan sedang diproses pembersihan."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Deposit Management",
+          "description": "Pengelolaan uang jaminan pelanggan yang terintegrasi dengan status pengembalian barang."
+        },
+        {
+          "icon": "Activity",
+          "title": "Analisis Masa Pakai",
+          "description": "Notifikasi otomatis jika alat (misal: tali climbing) sudah mencapai batas pakai aman."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Sewa Alat Outdoor",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Search",
+            "title": "Reservasi & Cek Stok",
+            "description": "Pelanggan memilih alat dan durasi sewa melalui portal web atau langsung di toko."
+          },
+          {
+            "step": 2,
+            "icon": "FileText",
+            "title": "Verifikasi & Deposit",
+            "description": "Input data identitas (KTP/SIM) dan pembayaran biaya sewa plus uang jaminan."
+          },
+          {
+            "step": 3,
+            "icon": "Barcode",
+            "title": "Check-out Barang",
+            "description": "Petugas scan barcode unit barang yang diambil untuk menandai status 'In Use'."
+          },
+          {
+            "step": 4,
+            "icon": "MapPin",
+            "title": "Pengembalian & QC",
+            "description": "Pengecekan kondisi fisik barang saat kembali oleh petugas Quality Control."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Closing & Refund",
+            "description": "Refund deposit jika barang aman, dan unit masuk ke antrean pembersihan/maintenance."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend Core",
+          "technologies": [
+            {
+              "name": "Golang",
+              "description": "Menangani logika peminjaman yang kompleks dengan performa konkurensi tinggi."
+            },
+            {
+              "name": "PostgreSQL",
+              "description": "Menyimpan relasi data antara pelanggan, transaksi, dan histori tiap unit barang."
+            },
+            {
+              "name": "Redis",
+              "description": "Locking system untuk memastikan satu unit barang tidak bisa dipesan dua orang sekaligus."
+            }
+          ]
+        },
+        {
+          "category": "Frontend & Interface",
+          "technologies": [
+            {
+              "name": "Next.js",
+              "description": "Menyediakan dashboard admin yang cepat dan katalog barang yang SEO-friendly."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Desain antarmuka modern dengan pendekatan mobile-first untuk akses di lapangan."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dashboard Ketersediaan Alat",
+          "image": "/assets/outdoor-rental/stock.png",
+          "description": "Tampilan grid stok tenda dan sepatu berdasarkan ukuran dan status kesiapan."
+        },
+        {
+          "title": "Panel QC & Kerusakan",
+          "image": "/assets/outdoor-rental/qc.png",
+          "description": "Formulir digital untuk mencatat kondisi barang kembali disertai upload foto."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Persyaratan Sistem",
+          "server": {
+            "title": "Backend",
+            "items": [
+              "Linux Server (Debian/Ubuntu)",
+              "RAM 2GB+",
+              "PostgreSQL 14+"
+            ]
+          },
+          "client": {
+            "title": "Hardware Toko",
+            "items": [
+              "Barcode Scanner (Handheld)",
+              "Printer Label/Barcode untuk tagging alat",
+              "Browser Modern (Chrome/Edge)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Performa",
+          "metrics": [
+            { "label": "Waktu Scan-to-DB", "value": "< 200ms" },
+            { "label": "Akurasi Inventaris", "value": "99.9%" },
+            { "label": "Kecepatan Load Katalog", "value": "0.8 detik" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Keamanan Data",
+          "items": [
+            "Enkripsi NIK/Identitas Pelanggan",
+            "Log audit untuk setiap perubahan status barang",
+            "Secure Payment Gateway Integration (Midtrans/Xendit)"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "contractor-project-management-erp",
+        "name": "Sistem Manajemen Proyek Konstruksi",
+        "description": "Sistem manajemen proyek konstruksi terpadu untuk monitoring progress fisik, pengelolaan sub-kontraktor, dan kontrol anggaran (BoQ).",
+        "fullDescription": "Platform manajemen konstruksi ini dirancang untuk menjembatani komunikasi antara kantor pusat, tim lapangan, dan klien. Sistem mencakup pengelolaan Bill of Quantities (BoQ), pengadaan material (Procurement), hingga laporan harian proyek otomatis. Dibangun dengan fokus pada akurasi data biaya untuk mencegah pembengkakan anggaran selama masa pembangunan.",
+        "image": "/assets/kontraktor/preview.png",
+        "technologies": [
+          "Golang",
+          "Gin",
+          "React",
+          "Next.js",
+          "MariaDB",
+          "Docker",
+          "S3 Storage"
+        ],
+        "category": "Construction & Real Estate",
+        "status": "In Development",
+        "version": "1.0.5-beta",
+        "lastUpdated": "Mei 2026",
+        "client": "-",
+        "duration": "8 bulan",
+        "teamSize": "6 specialists (Backend Engineer, Frontend Developer, Mobile Dev, UI/UX Designer, QA, Architect)",
+        "seo": {
+          "ratingValue": "4.7",
+          "reviewCount": "42",
+          "reviews": [
+            {
+              "author": "Ir. Ahmad Subarjo",
+              "role": "Project Manager",
+              "date": "2026-04-10",
+              "body": "Tracking progres harian jadi lebih transparan. Foto lapangan langsung tersinkron ke dashboard pusat.",
+              "rating": "5"
+            },
+            {
+              "author": "Lina Wijaya",
+              "role": "Finance Controller",
+              "date": "2026-05-02",
+              "body": "Manajemen termin pembayaran vendor sangat terbantu.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Panduan Pengguna",
+          "links": {
+            "documentation": "https://docs.zenit-build.id/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Kerja",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Detail Pengembangan",
+          "clientLabel": "Klien Utama",
+          "durationLabel": "Estimasi Pengerjaan",
+          "teamSizeLabel": "Kapasitas Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Ekosistem",
+          "items": [
+            "Web Dashboard (Admin & Owner)",
+            "Aplikasi Mobile Lapangan (Android/iOS)",
+            "Portal Vendor & Sub-kontraktor",
+            "Integrasi Cloud Storage untuk Blueprint/CAD"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Multi-tenant Architecture untuk manajemen banyak proyek",
+            "Day.js untuk penjadwalan timeline (Gantt Chart)",
+            "S3 Bucket untuk penyimpanan dokumen teknis & foto progres",
+            "Role-Based Access Control (RBAC) yang ketat per level site"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Kontraktor seringkali menghadapi selisih antara progres fisik di lapangan dengan laporan biaya yang masuk ke keuangan. Keterlambatan pengiriman material dan kurangnya dokumentasi harian sering menjadi penyebab klaim penalti dari pemilik proyek.",
+            "Aplikasi ini menghadirkan 'Bento Grid' dashboard yang menyajikan data real-time: sisa anggaran, stok material di site, hingga cuaca di lokasi proyek. Tim lapangan cukup mengunggah foto melalui aplikasi mobile untuk memperbarui persentase progres secara otomatis.",
+            "Dengan sistem ini, efisiensi manajemen material meningkat hingga 20% karena kontrol yang lebih ketat pada rantai pasokan dan validasi bertingkat sebelum material dipesan."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "FileStack",
+          "title": "Manajemen BoQ & Budget",
+          "description": "Kontrol ketat antara budget rencana vs realisasi biaya material dan jasa."
+        },
+        {
+          "icon": "Camera",
+          "title": "Laporan Harian Digital",
+          "description": "Input log harian disertai bukti foto GPS-tagged untuk validasi kehadiran dan progres."
+        },
+        {
+          "icon": "Truck",
+          "title": "Procurement & Inventory",
+          "description": "Sistem permintaan barang dari site ke gudang pusat hingga approval pembelian vendor."
+        },
+        {
+          "icon": "Users",
+          "title": "Manajemen Sub-kon",
+          "description": "Monitoring performa dan kontrak pihak ketiga dalam satu platform terpusat."
+        },
+        {
+          "icon": "CalendarDays",
+          "title": "Gantt Chart Scheduler",
+          "description": "Penjadwalan fase proyek yang interaktif untuk memantau jalur kritis (critical path)."
+        },
+        {
+          "icon": "Wallet",
+          "title": "Termin & Invoicing",
+          "description": "Pengelolaan tagihan berdasarkan milestone progres yang telah disetujui pengawas."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Kerja Manajemen Konstruksi",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "ClipboardList",
+            "title": "Project Setup",
+            "description": "Input data BoQ, durasi proyek, dan alokasi tim serta sub-kontraktor."
+          },
+          {
+            "step": 2,
+            "icon": "HardHat",
+            "title": "Eksekusi Lapangan",
+            "description": "Tim lapangan mengisi log harian dan melaporkan kendala melalui aplikasi mobile."
+          },
+          {
+            "step": 3,
+            "icon": "CheckSquare",
+            "title": "Validasi Pengawas",
+            "description": "Site Manager atau Konsultan Pengawas melakukan verifikasi progres fisik."
+          },
+          {
+            "step": 4,
+            "icon": "PieChart",
+            "title": "Monitoring Biaya",
+            "description": "Sistem menghitung efisiensi anggaran berdasarkan pemakaian material real-time."
+          },
+          {
+            "step": 5,
+            "icon": "FileCheck",
+            "title": "Milestone & Billing",
+            "description": "Penerbitan Berita Acara Progres (BAP) sebagai dasar penagihan termin ke klien."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend Services",
+          "technologies": [
+            {
+              "name": "Golang (Gin)",
+              "description": "Engine stabil untuk memproses data transaksi material yang masif."
+            },
+            {
+              "name": "MariaDB",
+              "description": "Penyimpanan data relasional dengan UUID untuk integritas data antar tabel."
+            },
+            {
+              "name": "Docker",
+              "description": "Memastikan lingkungan staging dan produksi tetap konsisten."
+            }
+          ]
+        },
+        {
+          "category": "Frontend Experience",
+          "technologies": [
+            {
+              "name": "Next.js",
+              "description": "Framework utama untuk Dashboard dengan performa rendering cepat."
+            },
+            {
+              "name": "Day.js",
+              "description": "Digunakan untuk perhitungan timeline proyek dan durasi kontrak secara akurat."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Implementasi UI Neobrutalism yang bersih untuk keterbacaan data teknis."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Project Control Center",
+          "image": "/assets/kontraktor/kontraktor.png",
+          "description": "Visualisasi progres total, budget terpakai, dan sisa hari pengerjaan."
+        },
+        {
+          "title": "Monitoring Log Harian",
+          "image": "/assets/contractor/kontraktor.png",
+          "description": "Daftar aktivitas pekerja di lapangan beserta lampiran foto dokumentasi."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Persyaratan Sistem",
+          "server": {
+            "title": "Infrastruktur",
+            "items": [
+              "Cloud Server (AWS/Google Cloud/DigitalOcean)",
+              "Ubuntu 22.04 LTS",
+              "Object Storage untuk Dokumen/Foto"
+            ]
+          },
+          "client": {
+            "title": "Perangkat Pengguna",
+            "items": [
+              "Smartphone dengan Kamera & GPS (Mobile App)",
+              "Desktop/Laptop untuk estimasi BoQ",
+              "Koneksi internet stabil (Offline mode tersedia untuk sinkronisasi foto)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Keunggulan Sistem",
+          "metrics": [
+            { "label": "Akurasi Biaya", "value": "99.8%" },
+            {
+              "label": "Upload Foto Progres",
+              "value": "Kompresi Otomatis (Sips/FFmpeg)"
+            },
+            { "label": "Uptime", "value": "99.95%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Keamanan Data",
+          "items": [
+            "Enkripsi File Dokumen Proyek",
+            "Audit Log (Siapa mengubah apa dan kapan)",
+            "Two-Factor Authentication untuk Approval Finance"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "catering-kitchen-production-system",
+        "name": "Catering & Kitchen Management Software",
+        "description": "Sistem manajemen operasional catering dengan fitur manajemen menu, jadwal pengiriman, dan kontrol bahan baku real-time.",
+        "fullDescription": "Software ini dirancang untuk menyederhanakan kompleksitas bisnis catering, mulai dari pengelolaan pesanan prasmanan hingga nasi box harian. Sistem ini mengintegrasikan daftar belanja bahan (grocery list) otomatis berdasarkan pesanan, pengaturan jadwal dapur, hingga pelacakan kurir pengiriman dalam satu dashboard intuitif.",
+        "image": "/assets/catering/preview.png",
+        "technologies": [
+          "Golang",
+          "Gin",
+          "React",
+          "Next.js",
+          "MariaDB",
+          "Docker"
+        ],
+        "category": "Food & Beverage Services",
+        "status": "Completed",
+        "version": "1.8.2",
+        "lastUpdated": "Mei 2026",
+        "client": "Selera Nusantara Catering",
+        "duration": "5 bulan",
+        "teamSize": "4 specialists",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "92",
+          "reviews": [
+            {
+              "author": "Ibu Ratna",
+              "role": "Owner Catering",
+              "date": "2026-04-15",
+              "body": "Sangat membantu dalam menghitung kebutuhan sembako harian, tidak ada lagi bahan yang terbuang sia-sia.",
+              "rating": "5"
+            },
+            {
+              "author": "Chef Junaidi",
+              "role": "Head Chef",
+              "date": "2026-05-01",
+              "body": "Manajemen resepnya sangat detail, rasa masakan jadi tetap konsisten meski porsi bertambah masif.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Panduan Admin",
+          "links": {
+            "documentation": "https://docs.zenit-catering.id/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Produksi",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri",
+          "specs": "Spesifikasi"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Detail Pengembangan",
+          "clientLabel": "Mitra Bisnis",
+          "durationLabel": "Waktu Pengerjaan",
+          "teamSizeLabel": "Kapasitas Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Ekosistem",
+          "items": [
+            "Dashboard Manajemen Dapur (Web)",
+            "Aplikasi Kurir Pengiriman (Android)",
+            "Portal Pemesanan Pelanggan",
+            "Sistem Cetak Label Kemasan Otomatis"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Multi-tenant untuk pengelolaan banyak brand catering",
+            "Automated Shopping List Generator",
+            "WebSockets untuk update status pesanan real-time",
+            "Day.js untuk manajemen kalender produksi dan pengiriman"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Bisnis catering seringkali mengalami 'kebocoran' anggaran pada sisa bahan baku yang tidak terpakai dan kesalahan jadwal kirim yang berakibat fatal pada kepuasan pelanggan. Menghitung manual kebutuhan 1000 porsi nasi box membutuhkan ketelitian tinggi agar margin tetap terjaga.",
+            "Software ini hadir dengan fitur kalkulator resep otomatis yang langsung terhubung ke stok gudang. Sistem akan memberikan peringatan jika stok menipis dan membuat daftar belanja yang presisi. Antarmuka 'Bento Grid' memudahkan admin melihat pesanan mana yang harus dimasak terlebih dahulu.",
+            "Hasilnya, efisiensi bahan baku meningkat 18%, dan hampir nol kesalahan pengiriman (zero delivery error) karena sistem rute kurir yang sudah terintegrasi dengan peta digital."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Utensils",
+          "title": "Manajemen Menu & Resep",
+          "description": "Standardisasi rasa dengan takaran bumbu yang akurat untuk setiap jumlah porsi."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Otomatisasi Daftar Belanja",
+          "description": "Konversi pesanan pelanggan menjadi daftar bahan baku (sembako, sayur, daging) secara instan."
+        },
+        {
+          "icon": "Calendar",
+          "title": "Kalender Produksi",
+          "description": "Penjadwalan aktivitas dapur mulai dari persiapan bahan (prep) hingga pengemasan."
+        },
+        {
+          "icon": "Truck",
+          "title": "Logistik Pengiriman",
+          "description": "Manajemen armada pengantar dengan estimasi waktu sampai ke lokasi acara."
+        },
+        {
+          "icon": "Receipt",
+          "title": "Billing & Quotation",
+          "description": "Pembuatan penawaran harga (quote) dan invoice secara profesional untuk klien korporat."
+        },
+        {
+          "icon": "History",
+          "title": "Tracking Bahan Baku",
+          "description": "Pantau pergerakan stok keluar masuk untuk menghindari kehilangan atau kadaluarsa."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Kerja Operasional Catering",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "FilePlus",
+            "title": "Input Pesanan",
+            "description": "Pencatatan detail pesanan (menu, jumlah porsi, lokasi, dan jam acara)."
+          },
+          {
+            "step": 2,
+            "icon": "Calculator",
+            "title": "Analisis Kebutuhan",
+            "description": "Sistem otomatis menghitung total kebutuhan bahan baku berdasarkan resep standar."
+          },
+          {
+            "step": 3,
+            "icon": "Flame",
+            "title": "Proses Masak",
+            "description": "Tim dapur bekerja berdasarkan checklist menu harian yang muncul di monitor dapur."
+          },
+          {
+            "step": 4,
+            "icon": "Package",
+            "title": "Packing & QC",
+            "description": "Pengecekan akhir jumlah porsi dan kelengkapan alat makan sebelum dikirim."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Pengiriman & Selesai",
+            "description": "Konfirmasi barang diterima oleh pelanggan dan update status transaksi di sistem."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend Services",
+          "technologies": [
+            {
+              "name": "Golang (Gin)",
+              "description": "Backend yang cepat untuk memproses ribuan data item menu dan stok."
+            },
+            {
+              "name": "MariaDB",
+              "description": "Penyimpanan data yang reliabel untuk histori transaksi dan data pelanggan."
+            },
+            {
+              "name": "Docker",
+              "description": "Kemudahan deployment aplikasi di lingkungan server manapun."
+            }
+          ]
+        },
+        {
+          "category": "Frontend & UI",
+          "technologies": [
+            {
+              "name": "Next.js",
+              "description": "Antarmuka dashboard admin yang responsif dan nyaman digunakan."
+            },
+            {
+              "name": "Day.js",
+              "description": "Penanganan jadwal produksi harian agar tidak ada orderan yang terlewat."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Desain UI modern yang bersih, cocok untuk operasional bisnis yang cepat."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dashboard Order Harian",
+          "image": "/assets/catering/orders.png",
+          "description": "Ringkasan jumlah porsi yang harus disiapkan hari ini dengan indikator prioritas."
+        },
+        {
+          "title": "Kalkulator Bahan Baku",
+          "image": "/assets/catering/ingredients.png",
+          "description": "Rincian total belanjaan mulai dari beras hingga bumbu dapur secara otomatis."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Persyaratan Sistem",
+          "server": {
+            "title": "Infrastruktur Cloud",
+            "items": [
+              "VPS Linux Ubuntu",
+              "RAM 2GB+",
+              "Koneksi SSL untuk keamanan data transaksi"
+            ]
+          },
+          "client": {
+            "title": "Perangkat Pengguna",
+            "items": [
+              "Smartphone Android/iOS untuk kurir",
+              "Printer Thermal untuk cetak label box",
+              "PC/Laptop untuk admin kantor"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Kualitas Layanan",
+          "metrics": [
+            { "label": "Kecepatan Hitung Stok", "value": "< 100ms" },
+            { "label": "Akurasi Menu", "value": "Sesuai SPPG MBG" },
+            { "label": "Uptime Sistem", "value": "99.9%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Keamanan & Protokol",
+          "items": [
+            "Login Multi-level (Owner, Admin, Chef, Kurir)",
+            "Daily Auto-backup data pesanan",
+            "Validasi input data untuk mencegah duplikasi order"
+          ]
+        }
+      }
     }
   ]
 }
