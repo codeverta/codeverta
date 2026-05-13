@@ -16,7 +16,7 @@ export default function HeroSection({ t }) {
       <div className="absolute inset-0 z-0 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]"></div>
 
       {/* Floating Cards (Z-index handled to stay behind main text but above bg grid) */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
+      <div className="absolute inset-0 z-10 pointer-events-none hidden lg:block">
         <FloatingCards />
       </div>
 
@@ -34,7 +34,7 @@ export default function HeroSection({ t }) {
             Leading Software Company Based in Bekasi & Yogyakarta
           </Badge>
 
-          <h1 className="text-5xl md:text-6xl  font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-br from-gray-900 via-gray-800 to-gray-500 dark:from-white dark:via-gray-200 dark:to-gray-500 pb-4 leading-[1.1]">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-br from-gray-900 via-gray-800 to-gray-500 dark:from-white dark:via-gray-200 dark:to-gray-500 pb-4 leading-[1.1]">
             {t("home.hero.prefix")} <br />
             <RotatingText
               texts={t("home.hero.rotating", { returnObjects: true })}
@@ -64,7 +64,7 @@ export default function HeroSection({ t }) {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <WhatsappWrapper>
+            <WhatsappWrapper className="w-full sm:w-auto">
               <Button
                 size="lg"
                 className="rounded-full w-full sm:w-auto h-14 px-8 text-base font-bold shadow-lg shadow-emerald-500/20 hover:shadow-xl hover:shadow-emerald-500/30 transition-all hover:-translate-y-0.5 bg-green-500 hover:bg-green-600 dark:bg-white text-white dark:text-gray-900"
