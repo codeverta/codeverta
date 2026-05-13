@@ -65,7 +65,7 @@ export default function ITProductsShowcase({ projects }) {
   return (
     <>
       <SeoHead
-        title={`${t("common:our_products")} - Jasa Pembuatan Sistem`}
+        title={`${t("our_products")} - Jasa Pembuatan Sistem`}
         description="Jelajahi portofolio lengkap solusi IT kami, termasuk sistem informasi dan aplikasi web yang telah kami kembangkan untuk berbagai kebutuhan bisnis dan industri."
         url="https://codeverta.com/produk"
         image="https://codeverta.com/og-image.png"

@@ -54,8 +54,12 @@ export const handleRedirectToWhatsapp = () => {
   );
 };
 
-export const WhatsappWrapper = ({ children, title = "" }) => {
-  return <a href={"/whatsappRedirect"}>{children}</a>;
+export const WhatsappWrapper = ({ children, title = "", className }) => {
+  return (
+    <a className={className} href={"/whatsappRedirect"}>
+      {children}
+    </a>
+  );
 };
 
 const WhatsappButton = ({
