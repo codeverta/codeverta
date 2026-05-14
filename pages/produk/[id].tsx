@@ -45,6 +45,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"; // Adjust path if needed
 import { withI18n } from "@/lib/withi18n";
+import { getSortedPostsData } from "@/lib/posts";
+import { ArticleSection } from "@/components/products/ArticleSection";
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
@@ -115,6 +117,16 @@ export const getStaticProps = withI18n(["common"], function ({ params }) {
   const filePath = path.join(process.cwd(), "projects.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const data = JSON.parse(jsonData);
+  const latestArticles = getSortedPostsData("blog")
+    .slice(0, 3)
+    .map((p) => ({
+      id: p.id,
+      title: p.title,
+      desc: p.desc || "",
+      date: p.date,
+      image: p.image || null,
+      tags: p.tags || "",
+    }));
 
   const project = data.projects.find((p) => p.product.id === params.id);
 
@@ -154,12 +166,17 @@ export const getStaticProps = withI18n(["common"], function ({ params }) {
     props: {
       project,
       otherProducts,
+      latestArticles,
     },
   };
 });
 
 // --- KOMPONEN UTAMA HALAMAN ---
-export default function ProjectDetailPage({ project, otherProducts }) {
+export default function ProjectDetailPage({
+  project,
+  otherProducts,
+  latestArticles,
+}) {
   const {
     product,
     hero,
@@ -806,6 +823,7 @@ export default function ProjectDetailPage({ project, otherProducts }) {
             </div>
           </div>
         </div>
+        <ArticleSection articles={latestArticles} />
       </div>
     </>
   );

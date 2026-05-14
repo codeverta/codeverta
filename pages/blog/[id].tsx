@@ -453,7 +453,7 @@ export default function BlogDetail({ postData, otherPosts }: Props) {
       </Head>
 
       {/* Top scroll progress bar */}
-      <ScrollProgress />
+      {/* <ScrollProgress /> */}
 
       {/* Sticky reading header */}
       <StickyHeader title={title} />
@@ -711,7 +711,7 @@ export default function BlogDetail({ postData, otherPosts }: Props) {
         .sticky-hdr-inner {
           max-width: 1100px;
           margin: 0 auto;
-          padding: 0.6rem 1.5rem;
+          padding: 2rem 1.5rem;
           display: flex;
           align-items: center;
           gap: 1rem;
