@@ -47,7 +47,7 @@ export default function AboutPage() {
 
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-bold mb-6 text-slate-900 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-                Our <span className="text-blue-600">Core Values</span>
+                Codeverta <span className="text-blue-600">Core Values</span>
               </h2>
               <div className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
                 <p>
@@ -135,8 +135,8 @@ const SocialImpact = () => {
             <div className="absolute -inset-1 rounded-[2rem] bg-gradient-to-tr from-rose-500/20 via-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-1000 blur-2xl" />
 
             <img
-              src="/assets/kitabisa.jpg"
-              alt="Dukungan Kanker"
+              src="/assets/images/kitabisa.jpg"
+              alt="Dukungan Pengobatan Kanker"
               className="relative rounded-2xl object-contain w-full h-[25rem] shadow-2xl"
             />
           </div>

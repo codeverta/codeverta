@@ -46,11 +46,11 @@ export const companyStats = [
 
 export const logos = [
   {
-    src: "/assets/bapperida.png",
+    src: "/assets/images/bapperida.png",
     alt: "Bapperida Papua",
   },
   {
-    src: "/assets/nsc.png",
+    src: "/assets/images/nsc.png",
     alt: "NSC Bantu Perizinan",
   },
   {
@@ -58,15 +58,15 @@ export const logos = [
     alt: "Malabar Trail Run",
   },
   {
-    src: "/assets/souvenirlilin.png",
+    src: "/assets/images/souvenirlilin.png",
     alt: "Million Candles",
   },
   {
-    src: "/assets/gis.png",
+    src: "/assets/images/gis.png",
     alt: "Global Inti Sekawan",
   },
   {
-    src: "/assets/manglayang.png",
+    src: "/assets/images/manglayang.png",
     alt: "Manglayang Academia",
     classes: "p-4", // sesuaikan nilai sesuai kebutuhan
   },
