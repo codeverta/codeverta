@@ -203,7 +203,7 @@ const Navbar = () => {
           >
             <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center overflow-hidden flex-shrink-0">
               <img
-                src="/assets/icon.png"
+                src="/assets/images/icon.png"
                 alt="Logo"
                 className="size-full object-cover"
               />
