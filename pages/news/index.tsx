@@ -306,10 +306,8 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
               <Code className="w-4 h-4 mr-1" /> Coding & Tech Tutorials
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl dark:text-white mb-4">
-              Codeverta {" "}
-              <span className="text-blue-600 dark:text-blue-400">
-                Berita
-              </span>
+              Codeverta{" "}
+              <span className="text-blue-600 dark:text-blue-400">Berita</span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
               Baca berita terbaru seputar dunia teknologi—dari tren global,
@@ -840,6 +838,7 @@ export async function getStaticProps({ locale }) {
       readTime: readTimes[index % readTimes.length],
     };
   });
+  console.log("Fetched news posts:", allPostsData);
 
   return {
     props: {
