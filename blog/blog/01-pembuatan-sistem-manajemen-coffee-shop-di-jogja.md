@@ -1,8 +1,8 @@
 ---
 title: "Software ERP Coffee Shop Codeverta: Solusi Lengkap untuk Bisnis Kopi yang Lebih Efisien"
-date: "2025-06-07"
+date: "2026-05-14"
 image: "/assets/coffeeshop/preview.png"
-desc: "Software ERP Coffee Shop Codeverta membantu mengelola POS, stok bahan baku, dan loyalitas pelanggan secara real-time. Tingkatkan efisiensi operasional hingga 30% untuk bisnis kopi Anda. Dapatkan demo gratis! (148 karakter)"
+desc: "Software ERP Coffee Shop Codeverta membantu mengelola POS, stok bahan baku, dan loyalitas pelanggan secara real-time. Tingkatkan efisiensi operasional hingga 30% untuk bisnis kopi Anda. Dapatkan demo gratis!"
 tags: "erp, software retail, coffeeshop jogja"
 ---
 
