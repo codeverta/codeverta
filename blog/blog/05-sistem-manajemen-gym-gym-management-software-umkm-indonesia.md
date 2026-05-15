@@ -1,7 +1,7 @@
 ---
-title: "Sistem Manajemen Gym untuk Studio Kecil di Indonesia: Atasi Chaos Member dan Operasional Harian"
+title: "Sistem Manajemen Gym untuk Studio Kecil di Indonesia dapat Atasi Chaos Member dan Operasional Harian"
 date: "2026-05-15"
-image: "/assets/warehouse/preview.png"
+image: "/assets/gym-management/poster1.png"
 desc: "Masalah klasik pemilik gym UMKM: member datang tapi tidak terdata, tagihan telat, jadwal kelas berantakan, dan churn rate tinggi. Pelajari solusi praktis gym management software berbasis web yang membantu mengelola member, keuangan, dan operasional secara real-time."
 tags: "gym management system, software retail, warehouse software"
 ---
