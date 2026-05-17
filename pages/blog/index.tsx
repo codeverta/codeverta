@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { getSortedPostsData } from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Image from "next/image"; // Pastikan di-import di bagian atas
 
 /* ─────────────────────────────────────────────
    Types
@@ -16,9 +17,9 @@ interface Post {
   desc: string;
   tags: string;
   category: string;
+  image?: string; // Tambahkan ini
   readTime?: string;
 }
-
 interface Props {
   allPostsData: Post[];
 }
@@ -110,6 +111,7 @@ function BackToTop() {
 /* ─────────────────────────────────────────────
    Post Card
 ───────────────────────────────────────────── */
+
 function PostCard({ post, index }: { post: Post; index: number }) {
   const tags = getTagList(post.tags);
   const num = getPostNumber(post.id);
@@ -117,8 +119,45 @@ function PostCard({ post, index }: { post: Post; index: number }) {
 
   return (
     <Link href={`/blog/${post.id}`} className="post-card" data-index={index}>
-      <div className="card-number">#{num}</div>
-      <div className="card-body">
+      {/* Gambar Postingan */}
+      <div
+        className="card-image-wrap"
+        style={{
+          position: "relative",
+          width: "160px",
+          height: "120px",
+          flexShrink: 0,
+          borderRadius: "8px",
+          overflow: "hidden",
+        }}
+      >
+        {post.image ? (
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            style={{ objectFit: "cover" }}
+            sizes="160px"
+          />
+        ) : (
+          <div
+            className="mini-img-placeholder"
+            style={{
+              width: "100%",
+              height: "100%",
+              background: "#eee",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            📄
+          </div>
+        )}
+      </div>
+
+      <div className="card-body" style={{ marginLeft: "16px", flexGrow: 1 }}>
+        <div className="card-number">#{num}</div>
         <h2 className="card-title">{post.title}</h2>
         <p className="card-desc">{post.desc}</p>
         <div className="card-meta">
@@ -945,6 +984,7 @@ export default function NewsIndex({ allPostsData }: Props) {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const allPostsData = getSortedPostsData("blog").map((post) => ({
     ...post,
+    image: post.image || null, // Pastikan field image di-pass ke client
     category: "blog",
   }));
 

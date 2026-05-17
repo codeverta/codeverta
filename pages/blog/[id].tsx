@@ -5,7 +5,8 @@ import Image from "next/image";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { getPostData, getAllPostIds, getSortedPostsData } from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-
+import fs from "fs";
+import path from "path";
 /* ─────────────────────────────────────────────
    Types
 ───────────────────────────────────────────── */
@@ -49,9 +50,17 @@ interface OtherPost {
   tags: string;
 }
 
+interface OtherProduct {
+  id: string;
+  name: string;
+  category: string;
+  image?: string;
+  description: string;
+}
 interface Props {
   postData: PostData;
   otherPosts: OtherPost[];
+  otherProducts: OtherProduct[];
 }
 
 /* ─────────────────────────────────────────────
@@ -309,7 +318,7 @@ function ShareBar({ title, url }: { title: string; url: string }) {
 function PostMiniCard({ post }: { post: OtherPost }) {
   const tags = getTagList(post.tags);
   return (
-    <Link href={`/news/${post.id}`} className="mini-card">
+    <Link href={`/blog/${post.id}`} className="mini-card">
       <div className="mini-img-wrap">
         {post.image ? (
           <Image
@@ -400,7 +409,11 @@ function StickyHeader({ title }: { title: string }) {
 /* ─────────────────────────────────────────────
    Main Page
 ───────────────────────────────────────────── */
-export default function BlogDetail({ postData, otherPosts }: Props) {
+export default function BlogDetail({
+  postData,
+  otherPosts,
+  otherProducts,
+}: Props) {
   const {
     title,
     date,
@@ -519,8 +532,56 @@ export default function BlogDetail({ postData, otherPosts }: Props) {
               <TableOfContents headings={headings} />
             </div>
           )}
-
           {/* Content */}
+          {/* ── SEKTOR PRODUK BARU ── */}
+          {otherProducts && otherProducts.length > 0 && (
+            <section
+              className="other-articles"
+              style={{ marginBottom: "2rem" }}
+            >
+              <h2 className="other-title">Produk Rekomendasi</h2>
+              <div className="other-grid">
+                {otherProducts.map((prod) => (
+                  <Link
+                    href={`/produk/${prod.id}`}
+                    key={prod.id}
+                    className="mini-card"
+                  >
+                    <div className="mini-img-wrap">
+                      {prod.image ? (
+                        <Image
+                          src={prod.image}
+                          alt={prod.name}
+                          fill
+                          style={{ objectFit: "cover" }}
+                          sizes="200px"
+                        />
+                      ) : (
+                        <div className="mini-img-placeholder">■</div>
+                      )}
+                    </div>
+                    <div className="mini-body">
+                      <div className="mini-tags">
+                        <span className="mini-tag">{prod.category}</span>
+                      </div>
+                      <h3 className="mini-title">{prod.name}</h3>
+                      <p
+                        className="mini-date"
+                        style={{
+                          display: "-webkit-box",
+                          WebkitLineClamp: 2,
+                          WebkitBoxOrient: "vertical",
+                          overflow: "hidden",
+                        }}
+                      >
+                        {prod.description}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
           <div
             className="prose"
             dangerouslySetInnerHTML={{ __html: contentHtml }}
@@ -544,7 +605,6 @@ export default function BlogDetail({ postData, otherPosts }: Props) {
 
           {/* Divider */}
           <hr className="section-hr" />
-
           {/* Other Articles */}
           {related.length > 0 && (
             <section className="other-articles">
@@ -1299,6 +1359,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 
   try {
     const postData = await getPostData(id, "news");
+
     const otherPosts = getSortedPostsData("news")
       .filter((p) => p.id !== id)
       .slice(0, 4)
@@ -1311,14 +1372,61 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
         tags: p.tags || "",
       }));
 
+    // Panggil fungsi helper di sini
+    const otherProducts = getRotatedProducts(id, 3);
+
     return {
       props: {
         postData,
         otherPosts,
+        otherProducts,
         ...(await serverSideTranslations(locale ?? "id", ["common", "order"])),
       },
     };
-  } catch {
+  } catch (error) {
+    console.log({ error });
     return { notFound: true };
   }
 };
+
+function getRotatedProducts(currentPostId: string, limit = 3) {
+  try {
+    // 1. Cari tahu urutan artikel saat ini
+    const allPosts = getSortedPostsData("news");
+    const currentPostIndex = allPosts.findIndex((p) => p.id === currentPostId);
+    const postIndex = currentPostIndex !== -1 ? currentPostIndex : 0;
+
+    // 2. Baca data dari projects.json
+    const filePath = path.join(process.cwd(), "projects.json");
+    const jsonData = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(jsonData);
+    const allProducts = data.projects || [];
+    const totalProducts = allProducts.length;
+
+    if (totalProducts === 0) return [];
+
+    // 3. Hitung indeks mulai (Round-Robin) agar merata & adil
+    const startIndex = (postIndex * limit) % totalProducts;
+
+    // 4. Ambil produk secara melingkar
+    const selectedProducts = [];
+    for (let i = 0; i < limit; i++) {
+      const targetIndex = (startIndex + i) % totalProducts;
+      if (allProducts[targetIndex]) {
+        selectedProducts.push(allProducts[targetIndex]);
+      }
+    }
+
+    // 5. Mapping struktur data penting saja
+    return selectedProducts.map((p: any) => ({
+      id: p.product.id,
+      name: p.product.name,
+      category: p.product.category,
+      image: p.product.image,
+      description: p.product.fullDescription,
+    }));
+  } catch (err) {
+    console.error("Error loading products for blog:", err);
+    return [];
+  }
+}
