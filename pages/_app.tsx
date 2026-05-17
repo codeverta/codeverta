@@ -6,7 +6,6 @@ import { NextSeo } from "next-seo";
 import packageInfo from "../package.json";
 import { appWithTranslation } from "next-i18next";
 import Landing from "@/components/layout/Landing";
-import ClickSpark from "@/components/ClickSpark";
 
 if (typeof window !== "undefined") {
   // @ts-ignore
@@ -61,15 +60,6 @@ function App({ Component, pageProps }: AppLayoutProps) {
       />
 
       {getLayout(<Component {...pageProps} {...appProps} />)}
-      <ClickSpark
-        sparkColor="#fff"
-        sparkSize={10}
-        sparkRadius={15}
-        sparkCount={8}
-        duration={400}
-      >
-        {/* Your content here */}
-      </ClickSpark>
     </>
   );
 }

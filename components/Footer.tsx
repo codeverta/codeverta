@@ -134,7 +134,7 @@ export default function Footer() {
               <div className="flex flex-wrap gap-2">
                 <div className="inline-flex bg-white/5 p-2 rounded border border-gray-700 hover:bg-white/10 transition-colors">
                   <img
-                    src="/assets/logo-pse-small.png"
+                    src="/assets/images/logo-pse-small.png"
                     alt="PSE Kominfo"
                     className="h-8 w-auto object-contain"
                     onError={(e) => (e.currentTarget.style.display = "none")}
@@ -143,7 +143,7 @@ export default function Footer() {
 
                 <div className="inline-flex bg-white/5 p-2 rounded border border-gray-700 hover:bg-white/10 transition-colors">
                   <img
-                    src="/assets/oss.webp"
+                    src="/assets/images/oss.webp"
                     alt="OSS Kementrian Investasi"
                     className="h-8 w-auto object-contain"
                     onError={(e) => (e.currentTarget.style.display = "none")}
