@@ -5393,8 +5393,10 @@
       "hero": {
         "buttons": {
           "documentation": "Panduan Klien",
+          "liveDemo": "Lihat Demo",
           "links": {
-            "documentation": "https://docs.nscjayamandiri.co.id/client-guide"
+            "documentation": "https://docs.codeverta.com/",
+            "liveDemo": "https://nscbantuperizinan.com"
           }
         }
       },
