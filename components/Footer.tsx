@@ -24,6 +24,7 @@ const COMPANY_LINKS = [
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/blog", label: "Blog & News" },
   { href: "/faq", label: "FAQ" },
+  { href: "/gallery", label: "Gallery" },
 ];
 
 const PROGRAM_LINKS = [
