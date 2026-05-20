@@ -5338,6 +5338,273 @@
           ]
         }
       }
+    },
+    {
+      "product": {
+        "id": "company-profile-nsc-jaya-mandiri",
+        "name": "Company Profile & Client Portal - PT NSC JAYA MANDIRI",
+        "description": "Website company profile interaktif terintegrasi dengan pelacakan dokumen legalitas dan sistem manajemen klien.",
+        "fullDescription": "Platform digital komprehensif untuk PT NSC JAYA MANDIRI yang berfungsi sebagai etalase layanan perizinan (PT, CV, PMA, KBLI, HAKI) sekaligus portal interaktif bagi klien untuk memantau progres pengurusan berkas legalitas mereka secara real-time.",
+        "image": "/assets/legalitas/preview.png",
+        "technologies": [
+          "Golang",
+          "React",
+          "Next.js",
+          "MariaDB",
+          "Docker",
+          "Redis",
+          "Cloud Storage API"
+        ],
+        "category": "Corporate Web & Client Portal",
+        "status": "Completed",
+        "version": "1.0.0",
+        "lastUpdated": "Mei 2026",
+        "client": "PT NSC JAYA MANDIRI",
+        "duration": "3 bulan",
+        "teamSize": "4 specialists (Backend Engineer, Frontend Developer, UI/UX Designer, QA)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "124",
+          "reviews": [
+            {
+              "author": "Hendra Wijaya",
+              "role": "Direktur Utama PT Maju Bersama",
+              "date": "2026-04-12",
+              "body": "Sangat terbantu dengan fitur tracking dokumennya. Kami bisa tahu persis sampai mana proses pendirian PT kami tanpa harus bolak-balik WhatsApp.",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Aminah",
+              "role": "Founder CV Berkah Mandiri",
+              "date": "2026-04-28",
+              "body": "Tampilan websitenya sangat profesional dan informatif. Fitur kalkulator estimasi biayanya sangat membantu sebelum kami melakukan konsultasi.",
+              "rating": "5"
+            },
+            {
+              "author": "Marcus Thorne",
+              "role": "Operations Manager PMA Synergy Indonesia",
+              "date": "2026-05-05",
+              "body": "Proses unggah dokumen untuk izin PMA sangat aman dan terstruktur. Tim IT mereka memikirkan aspek enkripsi berkas dengan sangat baik.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Panduan Klien",
+          "links": {
+            "documentation": "https://docs.nscjayamandiri.co.id/client-guide"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Layanan",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri Antarmuka",
+          "specs": "Infrastruktur & Keamanan"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Info Proyek Portal NSC",
+          "clientLabel": "Klien Korporat",
+          "durationLabel": "Durasi Pengembangan",
+          "teamSizeLabel": "Kapasitas Tim",
+          "lastUpdatedLabel": "Update Terakhir"
+        },
+        "platformSupport": {
+          "title": "Cakupan Layanan",
+          "items": [
+            "Company Profile Interaktif & Katalog Jasa",
+            "Portal Dashboard Klien (Client Area)",
+            "Sistem Pelacakan Dokumen (Real-time Tracking)",
+            "Repository Berkas Legalitas Terenkripsi"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Data",
+          "items": [
+            "RESTful API menggunakan Golang (Gin)",
+            "Server-Side Rendering (SSR) via Next.js untuk SEO Optimal",
+            "Secure Storage untuk Dokumen Akta & SK (AES-256)",
+            "Sistem Notifikasi Status Berkas via WebSockets/Email"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Perusahaan jasa legalitas sering menghadapi kendala transparansi proses, di mana klien sering merasa cemas mengenai status pengurusan izin mereka. PT NSC JAYA MANDIRI mengatasi celah komunikasi ini dengan mendigitalisasi alur layanan konvensional menjadi platform berbasis transparansi data.",
+            "Website ini dirancang tidak hanya untuk menarik klien baru melalui halaman landing yang dioptimalkan secara SEO, tetapi juga menyediakan area internal bagi klien yang sudah berjalan. Klien dapat mengunggah persyaratan seperti KTP, NPWP, dan KK secara mandiri, serta memantau setiap tahapan mulai dari pengecekan nama perusahaan, pembuatan akta di notaris, hingga terbitnya SK Kemenkumham.",
+            "Dampaknya, beban operasional customer service berkurang secara signifikan karena klien dapat melacak berkas secara mandiri. Kepercayaan klien meningkat, dan proses pengarsipan digital internal PT NSC JAYA MANDIRI menjadi jauh lebih terstruktur dan aman."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "FileText",
+          "title": "Katalog Layanan & KBLI",
+          "description": "Informasi detail paket pendirian badan usaha (PT, CV, PMA) lengkap dengan integrasi panduan kode KBLI terbaru."
+        },
+        {
+          "icon": "Search",
+          "title": "Pengecekan Nama PT",
+          "description": "Formulir pengajuan pengecekan ketersediaan nama perusahaan sebelum didaftarkan ke Kemenkumham."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Real-time Tracker",
+          "description": "Bilah progres interaktif yang menampilkan posisi berkas hukum klien di instansi pemerintahan."
+        },
+        {
+          "icon": "CloudLightning",
+          "title": "Secure Document Upload",
+          "description": "Sistem unggah dokumen persyaratan (KTP, KK, data modal) dengan validasi tipe file dan enkripsi otomatis."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Kalkulator Estimasi",
+          "description": "Fitur interaktif bagi calon klien untuk menghitung estimasi biaya berdasarkan jenis badan usaha dan zonasi."
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Integrasi Konsultasi",
+          "description": "Sistem penjadwalan konsultasi tatap muka atau daring yang terhubung langsung dengan tim legal expert."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Pelayanan Legalitas Digital",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserCheck",
+            "title": "Konsultasi & Pemilihan Paket",
+            "description": "Klien memilih jenis legalitas yang dibutuhkan dan melakukan konsultasi awal via portal website."
+          },
+          {
+            "step": 2,
+            "icon": "UploadCloud",
+            "title": "Unggah Dokumen Syarat",
+            "description": "Klien masuk ke dashboard untuk mengunggah dokumen identitas diri, susunan pengurus, dan data modal."
+          },
+          {
+            "step": 3,
+            "icon": "FileSearch",
+            "title": "Verifikasi & Draft Akta",
+            "description": "Tim legal NSC memverifikasi berkas dan menyusun draft akta yang dapat ditinjau langsung oleh klien di web."
+          },
+          {
+            "step": 4,
+            "icon": "Briefcase",
+            "title": "Proses Instansi",
+            "description": "Berkas didaftarkan ke Notaris dan Kemenkumham; klien menerima notifikasi otomatis di setiap perubahan status."
+          },
+          {
+            "step": 5,
+            "icon": "Download",
+            "title": "Penyelesaian & Serah Terima",
+            "description": "SK, Akta, dan NIB yang telah terbit diunggah ke sistem. Klien dapat mengunduh salinan digital kapan saja."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend Core",
+          "technologies": [
+            {
+              "name": "Golang (Gin)",
+              "description": "Digunakan untuk menangani API management, pemrosesan unggahan dokumen volume tinggi, dan automasi status sistem."
+            },
+            {
+              "name": "Redis",
+              "description": "Caching data statis seputar regulasi hukum, kode KBLI, serta manajemen session token akun klien."
+            }
+          ]
+        },
+        {
+          "category": "Frontend & UI",
+          "technologies": [
+            {
+              "name": "Next.js",
+              "description": "Digunakan untuk performa rendering landing page yang optimal demi SEO peringkat pencarian Google, dikombinasikan dengan Client Dashboard."
+            },
+            {
+              "name": "Day.js",
+              "description": "Digunakan untuk melacak masa berlaku izin (misal: masa berlaku paspor ekspatriat atau sewa kantor) dan penanggalan akta secara presisi."
+            }
+          ]
+        },
+        {
+          "category": "Database & Security",
+          "technologies": [
+            {
+              "name": "MariaDB",
+              "description": "Menyimpan relasi data klien, perusahaan yang didirikan, riwayat pelacakan, dan log aktivitas internal dengan aman menggunakan single quotes UUID."
+            },
+            {
+              "name": "Vault",
+              "description": "Menyimpan data rahasia enkripsi enkresi-at-rest untuk menjaga kerahasiaan dokumen sensitif milik klien korporat."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Landing Page - Jasa Perizinan",
+          "image": "/assets/legalitas/preview.png",
+          "description": "Halaman utama profesional dengan informasi paket pendirian usaha, keunggulan, dan form konsultasi cepat."
+        },
+        {
+          "title": "Dashboard Klien - Track Progres",
+          "image": "/assets/legalitas/client-dashboard.png",
+          "description": "Antarmuka interaktif bagi klien untuk memantau step-by-step pendaftaran legalitas mereka."
+        },
+        {
+          "title": "File Manager - Dokumen Legal",
+          "image": "/assets/legalitas/document-vault.png",
+          "description": "Brankas digital tempat klien mengunduh file hasil akhir (Akta, NIB, SK) yang sudah selesai diproses."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Standar Operasional",
+          "server": {
+            "title": "Infrastruktur Server",
+            "items": [
+              "Minimum 4GB RAM Cloud Compute Instance",
+              "Object Storage Terisolasi dengan kebijakan akses ketat untuk dokumen PDF/Scan",
+              "SSL/TLS Certificate untuk mengamankan data korporat yang sensitif"
+            ]
+          },
+          "client": {
+            "title": "Perangkat Pengguna",
+            "items": [
+              "Web Browser modern (Desktop atau Mobile responsive layout)",
+              "Kamera / Scanner pada gawai untuk digitalisasi dokumen fisik persyaratan"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Metrik Keamanan & Kecepatan",
+          "metrics": [
+            { "label": "Enkripsi Berkas Klien", "value": "AES-256 Bit" },
+            { "label": "Optimasi SEO (Lighthouse)", "value": "> 95 score" },
+            { "label": "Uptime SLA", "value": "99.9%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Kepatuhan Regulasi & Keamanan",
+          "items": [
+            "Audit Trail lengkap untuk mencatat akses staff internal terhadap dokumen klien",
+            "Secure Storage Policy (Pencegahan akses file langsung via URL publik)",
+            "Pemisahan data multi-tenant demi kerahasiaan antar-perusahaan klien",
+            "Sistem Session Expiry otomatis saat dashboard klien idle dalam waktu tertentu"
+          ]
+        }
+      }
     }
   ]
 }
