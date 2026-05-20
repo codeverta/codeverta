@@ -321,12 +321,33 @@ export default function ProjectDetailPage({
                       </a>
                     </Button>
                   )}
-                  <WhatsappWrapper>
-                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                      <ExternalLink className="w-5 h-5 mr-2" />
-                      {hero?.buttons.liveDemo || "Hubungi Kami"}
+                  {hero.buttons.links?.liveDemo ? (
+                    <Button
+                      size="lg"
+                      className="bg-blue-600 hover:bg-blue-700"
+                      asChild
+                    >
+                      <a
+                        href={hero.buttons.links.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="w-5 h-5 mr-2" />
+                        {hero.buttons.liveDemo || "Live Demo"}
+                      </a>
                     </Button>
-                  </WhatsappWrapper>
+                  ) : (
+                    <WhatsappWrapper>
+                      <Button
+                        size="lg"
+                        className="bg-blue-600 hover:bg-blue-700"
+                      >
+                        <ExternalLink className="w-5 h-5 mr-2" />
+                        {hero?.buttons.liveDemo || "Hubungi Kami"}
+                      </Button>
+                    </WhatsappWrapper>
+                  )}
+
                   {hero.buttons?.sourceCode && (
                     <Button size="lg" variant="outline" asChild>
                       <a

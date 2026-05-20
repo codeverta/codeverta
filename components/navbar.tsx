@@ -323,111 +323,33 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b shadow-lg"
+            className="lg:hidden absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b shadow-lg overflow-hidden"
           >
-            <div className="container mx-auto px-4 sm:px-6 py-4">
-              <div className="flex flex-col space-y-3">
-                {categories.map((category) => (
-                  <div key={category.id}>
-                    <button
-                      className={cn(
-                        `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground py-2 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 relative flex items-center justify-between w-full text-left ${
-                          !hiddenMenu.includes(category.name.toLowerCase())
-                            ? ""
-                            : "hidden"
-                        }`
-                      )}
-                      onClick={
-                        () =>
-                          megaMenuData[category.id]
-                            ? toggleMobileDropdown(category.id)
-                            : setMobileMenuOpen(false) // Jika bukan dropdown, tutup menu
-                      }
+            <div className="container mx-auto px-4 py-4 space-y-4">
+              <div className="flex flex-col space-y-1">
+                {categories.map((category) => {
+                  const isExternal = category.id.startsWith("http");
+                  const Tag = isExternal ? "a" : Link;
+                  return (
+                    <Tag
+                      key={category.id}
+                      href={category.id}
+                      target={isExternal ? "_blank" : undefined}
+                      rel={isExternal ? "noopener noreferrer" : undefined}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="text-sm font-medium text-muted-foreground hover:text-foreground py-2.5 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 block"
                     >
-                      <Link
-                        target={
-                          category.id.startsWith("http") ? "_blank" : undefined
-                        }
-                        rel={
-                          category.id.startsWith("http")
-                            ? "noopener noreferrer"
-                            : undefined
-                        }
-                        href={megaMenuData[category.id] ? "#" : category.id}
-                        className="flex items-center w-full"
-                        onClick={(e) => {
-                          if (!megaMenuData[category.id]) {
-                            setMobileMenuOpen(false);
-                          } else {
-                            e.preventDefault(); // Mencegah navigasi jika ada mega menu
-                            toggleMobileDropdown(category.id);
-                          }
-                        }}
-                      >
-                        {category.name.includes("Produk Kami") && (
-                          <span className="absolute -top-1 -right-1 flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                          </span>
-                        )}
-                        {category.name}
-                      </Link>
+                      {category.name}
+                    </Tag>
+                  );
+                })}
+              </div>
 
-                      {megaMenuData[category.id] && (
-                        <ChevronDown
-                          className={`w-4 h-4 transition-transform duration-200 ${
-                            activeMobileDropdown === category.id
-                              ? "rotate-180"
-                              : ""
-                          }`}
-                        />
-                      )}
-                    </button>
-
-                    {/* Mobile Mega Menu Content (menggunakan komponen MobileDropdown) */}
-                    {megaMenuData[category.id] && (
-                      <AnimatePresence>
-                        {activeMobileDropdown === category.id && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.2 }}
-                            className="ml-4 mt-2 space-y-2 overflow-hidden"
-                          >
-                            <div className="container mx-auto sm:px-4 sm:py-6 space-y-4">
-                              {megaMenuData[category.id].columns.map(
-                                (column, columnIndex) => (
-                                  <div key={columnIndex} className="space-y-1">
-                                    <div className="text-xs font-semibold text-muted-foreground uppercase tracking-wide px-3">
-                                      {column.title}
-                                    </div>
-                                    {column.items.map((item, itemIndex) => (
-                                      <Link
-                                        key={itemIndex}
-                                        href={item.href}
-                                        className="block text-sm text-muted-foreground hover:text-foreground sm:py-1 sm:px-3 rounded transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-                                        onClick={() => setMobileMenuOpen(false)}
-                                      >
-                                        {item.name}
-                                      </Link>
-                                    ))}
-                                  </div>
-                                )
-                              )}
-                              <div className="hidden pt-4 border-t md:flex items-center justify-between">
-                                <span className="text-sm text-muted-foreground font-medium">
-                                  Pilih Bahasa / Language
-                                </span>
-                                <LanguageSwitcher isMobile={true} />
-                              </div>
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    )}
-                  </div>
-                ))}
+              <div className="pt-4 border-t flex items-center justify-between">
+                <span className="text-sm text-muted-foreground font-medium">
+                  Bahasa
+                </span>
+                <LanguageSwitcher isMobile={true} />
               </div>
             </div>
           </motion.div>

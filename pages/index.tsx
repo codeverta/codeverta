@@ -695,8 +695,8 @@ const industries = [
 
 function IndustrySection() {
   return (
-    <section className="py-12 px-6 bg-background">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-12 bg-background">
+      <div className="container px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-sm font-semibold tracking-widest uppercase text-primary mb-3">
