@@ -1,8 +1,7 @@
 import React from "react";
 import { Briefcase, ArrowRight, Mail } from "lucide-react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import path from "path";
-import fs from "fs";
+import { getProjects } from "@/lib/projects";
 
 // Tipe data untuk Job
 type Job = {
@@ -20,10 +19,7 @@ const OPEN_JOBS: Job[] = [
 ];
 
 export async function getStaticProps({ locale }) {
-  const filePath = path.join(process.cwd(), "projects.json");
-  const jsonData = fs.readFileSync(filePath, "utf-8");
-  const data = JSON.parse(jsonData);
-  const projects = data.projects || [];
+  const projects = getProjects(locale);
 
   return {
     props: {

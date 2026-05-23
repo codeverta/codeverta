@@ -49,7 +49,8 @@ const Navbar = () => {
   const { locale, locales, push, pathname, asPath, query } = router;
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const lang = locale;
-  const megaMenuData = getMegaMenuData(t, projects);
+  const [localizedProjects, setLocalizedProjects] = useState(projects);
+  const megaMenuData = getMegaMenuData(t, localizedProjects);
   // --- Kategori Navigasi Utama yang Diperbarui ---
   const categories = getCategories(t);
 
@@ -68,6 +69,52 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    const localeCandidates = [
+      locale,
+      locale?.split("-")[0],
+      locale === "en-GB" ? "en-US" : "",
+    ].filter(Boolean);
+
+    async function loadLocalizedProjects() {
+      for (const candidate of localeCandidates) {
+        try {
+          const response = await fetch(`/locales/${candidate}/projects.json`);
+          if (!response.ok) continue;
+
+          const localizedData = await response.json();
+          if (!cancelled && Array.isArray(localizedData.projects)) {
+            const localizedById = new Map(
+              localizedData.projects.map((project) => [
+                project?.product?.id,
+                project,
+              ])
+            );
+            setLocalizedProjects({
+              ...projects,
+              ...localizedData,
+              projects: projects.projects.map(
+                (project) => localizedById.get(project?.product?.id) || project
+              ),
+            });
+          }
+          return;
+        } catch (error) {
+          continue;
+        }
+      }
+
+      if (!cancelled) setLocalizedProjects(projects);
+    }
+
+    loadLocalizedProjects();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [locale]);
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");

@@ -18,19 +18,15 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
-import fs from "fs";
-import path from "path";
 import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
 import { t } from "i18next";
 import { useTranslation } from "next-i18next";
+import { getProjects } from "@/lib/projects";
 
-export const getStaticProps = withI18n(["common"], function () {
-  const filePath = path.join(process.cwd(), "projects.json");
-  const data = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-
+export const getStaticProps = withI18n(["common"], function ({ locale }) {
   // Mapping hanya field yang diperlukan untuk index page
-  const projects = (data.projects || []).map(({ product }) => ({
+  const projects = getProjects(locale).map(({ product }) => ({
     product: {
       id: product.id,
       name: product.name,

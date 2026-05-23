@@ -25,8 +25,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTheme } from "next-themes";
 import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 import { ProjectsSection } from "@/components/landing/ProjectsSection";
-import fs from "fs";
-import path from "path";
 import RotatingText from "@/components/RotatingText";
 import { logos } from "@/lib/data";
 import { companyStats } from "@/lib/data"; // Ubah ini sesuai lokasi data stats Anda
@@ -51,12 +49,10 @@ import { ShoppingBag, Globe, Wallet, Stethoscope } from "lucide-react";
 import clsx from "clsx";
 import HeroSection from "@/components/HeroSection";
 import SeoHead from "@/components/SeoHead";
+import { getProjects } from "@/lib/projects";
 
 export async function getStaticProps({ locale }) {
-  const filePath = path.join(process.cwd(), "projects.json");
-  const jsonData = fs.readFileSync(filePath, "utf-8");
-  const data = JSON.parse(jsonData);
-  const projects = data.projects || [];
+  const projects = getProjects(locale);
 
   return {
     props: {

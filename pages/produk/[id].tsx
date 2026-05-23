@@ -33,8 +33,6 @@ import {
   PlayCircle,
 } from "lucide-react";
 
-import fs from "fs";
-import path from "path";
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import Head from "next/head";
 
@@ -51,6 +49,7 @@ import { withI18n } from "@/lib/withi18n";
 import { getSortedPostsData } from "@/lib/posts";
 import { ArticleSection } from "@/components/products/ArticleSection";
 import ImageCarousel from "@/components/ImageCarousel";
+import { getAllProjectIds, getProjectById, getProjects } from "@/lib/projects";
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
@@ -350,13 +349,9 @@ function VideoSection({ videoUrls, productName }) {
 
 // ─── getStaticPaths ────────────────────────────────────────────────────────────
 export async function getStaticPaths({ locales }) {
-  const filePath = path.join(process.cwd(), "projects.json");
-  const jsonData = fs.readFileSync(filePath, "utf-8");
-  const data = JSON.parse(jsonData);
-
   const paths = locales.flatMap((locale) =>
-    data.projects.map((project) => ({
-      params: { id: project.product.id },
+    getAllProjectIds().map((id) => ({
+      params: { id },
       locale,
     }))
   );
@@ -365,45 +360,44 @@ export async function getStaticPaths({ locales }) {
 }
 
 // ─── getStaticProps ────────────────────────────────────────────────────────────
-export const getStaticProps = withI18n(["common"], function ({ params }) {
-  const filePath = path.join(process.cwd(), "projects.json");
-  const jsonData = fs.readFileSync(filePath, "utf-8");
-  const data = JSON.parse(jsonData);
-  const latestArticles = getSortedPostsData("blog")
-    .slice(0, 3)
-    .map((p) => ({
-      id: p.id,
-      title: p.title,
-      desc: p.desc || "",
-      date: p.date,
-      image: p.image || null,
-      tags: p.tags || "",
+export const getStaticProps = withI18n(
+  ["common"],
+  function ({ params, locale }) {
+    const projects = getProjects(locale);
+    const latestArticles = getSortedPostsData("blog")
+      .slice(0, 3)
+      .map((p) => ({
+        id: p.id,
+        title: p.title,
+        desc: p.desc || "",
+        date: p.date,
+        image: p.image || null,
+        tags: p.tags || "",
+      }));
+
+    const project = getProjectById(params.id as string, locale);
+    if (!project) return { notFound: true };
+
+    const filteredProducts = projects.filter((p) => p.product.id !== params.id);
+    const seededRandom = (seed) => {
+      const x = Math.sin(seed) * 10000;
+      return x - Math.floor(x);
+    };
+    const seed = params.id
+      .split("")
+      .reduce((acc, char) => acc + char.charCodeAt(0), 0);
+    const shuffled = [...filteredProducts].sort(() => seededRandom(seed) - 0.5);
+    const otherProducts = shuffled.slice(0, 3).map((p) => ({
+      id: p.product.id,
+      name: p.product.name,
+      category: p.product.category,
+      image: p.product.image,
+      description: p.product.fullDescription,
     }));
 
-  const project = data.projects.find((p) => p.product.id === params.id);
-  if (!project) return { notFound: true };
-
-  const filteredProducts = data.projects.filter(
-    (p) => p.product.id !== params.id
-  );
-  const seededRandom = (seed) => {
-    const x = Math.sin(seed) * 10000;
-    return x - Math.floor(x);
-  };
-  const seed = params.id
-    .split("")
-    .reduce((acc, char) => acc + char.charCodeAt(0), 0);
-  const shuffled = [...filteredProducts].sort(() => seededRandom(seed) - 0.5);
-  const otherProducts = shuffled.slice(0, 3).map((p) => ({
-    id: p.product.id,
-    name: p.product.name,
-    category: p.product.category,
-    image: p.product.image,
-    description: p.product.fullDescription,
-  }));
-
-  return { props: { project, otherProducts, latestArticles } };
-});
+    return { props: { project, otherProducts, latestArticles } };
+  }
+);
 
 // ─── Main Page ─────────────────────────────────────────────────────────────────
 export default function ProjectDetailPage({
