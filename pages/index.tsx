@@ -31,7 +31,6 @@ import RotatingText from "@/components/RotatingText";
 import { logos } from "@/lib/data";
 import { companyStats } from "@/lib/data"; // Ubah ini sesuai lokasi data stats Anda
 import { AnimatedCounter } from "@/components/AnimatedCounter";
-import { getSortedPostsData } from "@/lib/posts";
 import ModernStatsSection from "@/components/ModernStats";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
@@ -51,6 +50,7 @@ import {
 import { ShoppingBag, Globe, Wallet, Stethoscope } from "lucide-react";
 import clsx from "clsx";
 import HeroSection from "@/components/HeroSection";
+import SeoHead from "@/components/SeoHead";
 
 export async function getStaticProps({ locale }) {
   const filePath = path.join(process.cwd(), "projects.json");
@@ -58,29 +58,9 @@ export async function getStaticProps({ locale }) {
   const data = JSON.parse(jsonData);
   const projects = data.projects || [];
 
-  const allPostsData = getSortedPostsData("cybersecurity").map(
-    (post, index) => {
-      // Add sample categories and read times (in a real app, these would come from the actual data)
-      const categories = ["ai"];
-      const readTimes = [
-        "3 min read",
-        "5 min read",
-        "7 min read",
-        "4 min read",
-        "6 min read",
-      ];
-
-      return {
-        ...post,
-        category: categories[index % categories.length],
-        readTime: readTimes[index % readTimes.length],
-      };
-    }
-  );
   return {
     props: {
       projects: projects.slice(0, 9),
-      allPostsData,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
@@ -124,9 +104,50 @@ export default function LandingPage({ projects }: any) {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 },
   };
+  const getList = <T,>(key: string, fallback: T[]): T[] => {
+    const translated = t(key, { returnObjects: true });
+    return Array.isArray(translated) ? (translated as T[]) : fallback;
+  };
+  const featureItems = getList("homePage.features.items", features).map(
+    (feature, index) => ({
+      ...feature,
+      icon: features[index]?.icon,
+    })
+  );
+  const stepItems = getList("homePage.process.items", steps);
+  const testimonialItems = getList("homePage.testimonials.items", testimonials);
+  const pricingItems = getList("homePage.pricing.monthly", monthlyPricing);
+  const enterprisePricingItems = getList("homePage.pricing.enterprise", [
+    {
+      name: "Enterprise",
+      price: "Rp >20Jt",
+      description: "Untuk Perusahaan dengan Sistem yang Kompleks",
+      features: [
+        "Fitur Custom Sesuai Permintaan",
+        "Integrasi dengan Sistem/Apilikasi Lain",
+        "Backup Data Berkala di Cloud",
+        "Monitoring Keamanan, Performa 24/7",
+        "Pengerjaan Prioritas",
+        "Maintenance Lebih dari 1 Tahun",
+      ],
+      cta: "Contact Sales",
+    },
+  ]);
+  const faqList = getList("homePage.faq.items", faqItems);
+  const industryItems = getList("homePage.industries.items", industries).map(
+    (industry, index) => ({
+      ...industry,
+      icon: industries[index]?.icon,
+    })
+  );
 
   return (
     <div className="flex min-h-[100dvh] flex-col">
+      <SeoHead
+        title={t("home.seo.title")}
+        description={t("home.seo.description")}
+        keywords={t("home.seo.keywords")}
+      />
       <main className="flex-1">
         {/* Hero Section */}
         <HeroSection t={t} />
@@ -182,7 +203,7 @@ export default function LandingPage({ projects }: any) {
           `}</style>
         </section>
 
-        <IndustrySection />
+        <IndustrySection t={t} industries={industryItems} />
 
         {/* <ModernStatsSection /> */}
         {/* Tambahkan konten tersebut disini */}
@@ -201,7 +222,7 @@ export default function LandingPage({ projects }: any) {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Layanan Kami
+                {t("features.badge")}
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
                 {t("features.title")}
@@ -218,7 +239,7 @@ export default function LandingPage({ projects }: any) {
               viewport={{ once: true }}
               className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
             >
-              {features.map((feature, i) => (
+              {featureItems.map((feature, i) => (
                 <motion.div key={i} variants={item}>
                   <Card className="h-full overflow-hidden border-border/40 bg-gradient-to-b from-background to-muted/10 backdrop-blur transition-all hover:shadow-md">
                     <CardContent className="p-6 flex flex-col h-full">
@@ -258,19 +279,18 @@ export default function LandingPage({ projects }: any) {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Proses Mudah, Hasil Maksimal
+                {t("process.badge")}
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Proses Pengembangan
+                {t("process.title")}
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Mulai proyek Anda hanya dalam 3 langkah sederhana bersama tim
-                ahli kami.
+                {t("process.subtitle")}
               </p>
             </motion.div>
 
             <div className="grid md:grid-cols-3 gap-8 md:gap-12 relative">
-              {steps.map((step, i) => (
+              {stepItems.map((step, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -304,19 +324,18 @@ export default function LandingPage({ projects }: any) {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Testimoni
+                {t("testimonials.badge")}
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Apa Kata Klien Kami
+                {t("testimonials.title")}
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Jangan hanya percaya kata kami. Lihat apa yang dikatakan para
-                klien yang puas dengan layanan kami.
+                {t("testimonials.subtitle")}
               </p>
             </motion.div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {testimonials.map((testimonial, i) => (
+              {testimonialItems.map((testimonial, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -377,14 +396,13 @@ export default function LandingPage({ projects }: any) {
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
                 variant="secondary"
               >
-                Harga
+                {t("pricing.badge")}
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Paket Harga yang Fleksibel & Transparan
+                {t("pricing.title")}
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Pilih paket yang paling sesuai untuk bisnis Anda. Tidak ada
-                biaya tambahan.
+                {t("pricing.subtitle")}
               </p>
             </motion.div>
 
@@ -393,16 +411,16 @@ export default function LandingPage({ projects }: any) {
                 <div className="flex justify-center mb-8">
                   <TabsList className="rounded-full p-1">
                     <TabsTrigger value="monthly" className="rounded-full px-6">
-                      Skala UMKM
+                      {t("pricing.tabs.smme")}
                     </TabsTrigger>
                     <TabsTrigger value="annually" className="rounded-full px-6">
-                      Enterprise
+                      {t("pricing.tabs.enterprise")}
                     </TabsTrigger>
                   </TabsList>
                 </div>
                 <TabsContent value="monthly">
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
-                    {monthlyPricing.map((plan, i) => (
+                    {pricingItems.map((plan, i) => (
                       <motion.div
                         key={i}
                         initial={{ opacity: 0, y: 20 }}
@@ -419,7 +437,7 @@ export default function LandingPage({ projects }: any) {
                         >
                           {plan.popular && (
                             <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
-                              Most Popular
+                              {t("pricing.card.popular")}
                             </div>
                           )}
                           <CardContent className="p-6 flex flex-col h-full">
@@ -429,7 +447,7 @@ export default function LandingPage({ projects }: any) {
                                 {plan.price}
                               </span>
                               <span className="text-muted-foreground ml-1">
-                                /sekali bayar
+                                {t("pricing.card.perProject")}
                               </span>
                             </div>
                             <p className="text-muted-foreground mt-2">
@@ -464,23 +482,7 @@ export default function LandingPage({ projects }: any) {
                 <TabsContent value="annually">
                   <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
                     <div></div>
-                    {[
-                      {
-                        name: "Enterprise",
-                        price: "Rp >20Jt",
-                        description:
-                          "Untuk Perusahaan dengan Sistem yang Kompleks",
-                        features: [
-                          "Fitur Custom Sesuai Permintaan",
-                          "Integrasi dengan Sistem/Apilikasi Lain",
-                          "Backup Data Berkala di Cloud",
-                          "Monitoring Keamanan, Performa 24/7",
-                          "Pengerjaan Prioritas",
-                          "Maintenance Lebih dari 1 Tahun",
-                        ],
-                        cta: "Contact Sales",
-                      },
-                    ].map((plan, i) => (
+                    {enterprisePricingItems.map((plan, i) => (
                       <motion.div
                         key={i}
                         initial={{ opacity: 0, y: 20 }}
@@ -497,7 +499,7 @@ export default function LandingPage({ projects }: any) {
                         >
                           {plan.popular && (
                             <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-xs font-medium rounded-bl-lg">
-                              Most Popular
+                              {t("pricing.card.popular")}
                             </div>
                           )}
                           <CardContent className="p-6 flex flex-col h-full">
@@ -558,17 +560,16 @@ export default function LandingPage({ projects }: any) {
                 FAQ
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-                Pertanyaan Umum
+                {t("faq.title")}
               </h2>
               <p className="max-w-[800px] text-muted-foreground md:text-lg">
-                Temukan jawaban untuk pertanyaan yang paling sering diajukan
-                mengenai layanan kami.
+                {t("faq.subtitle")}
               </p>
             </motion.div>
 
             <div className="mx-auto max-w-3xl">
               <Accordion type="single" collapsible className="w-full">
-                {faqItems.map((faq, i) => (
+                {faqList.map((faq, i) => (
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, y: 10 }}
@@ -609,11 +610,10 @@ export default function LandingPage({ projects }: any) {
               className="flex flex-col items-center justify-center space-y-6 text-center"
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-                Siap Memiliki Website Profesional?
+                {t("cta.title")}
               </h2>
               <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-                Hubungi kami hari ini untuk konsultasi gratis. Mari kita bangun
-                kehadiran digital yang kuat untuk bisnis Anda bersama-sama.
+                {t("cta.description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
                 <Button
@@ -621,7 +621,7 @@ export default function LandingPage({ projects }: any) {
                   variant="secondary"
                   className="rounded-full h-12 px-8 text-base"
                 >
-                  Gratis Konsultasi
+                  {t("cta.buttons.free")}
                   <ArrowRight className="ml-2 size-4" />
                 </Button>
                 <Button
@@ -629,7 +629,7 @@ export default function LandingPage({ projects }: any) {
                   variant="outline"
                   className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:bg-white/10"
                 >
-                  Hubungi sekarang
+                  {t("cta.buttons.contact")}
                 </Button>
               </div>
             </motion.div>
@@ -693,22 +693,20 @@ const industries = [
   },
 ];
 
-function IndustrySection() {
+function IndustrySection({ t, industries }) {
   return (
     <section className="py-12 bg-background">
       <div className="container px-4 md:px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-sm font-semibold tracking-widest uppercase text-primary mb-3">
-            Industry
+            {t("homePage.industries.badge")}
           </h2>
           <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Solutions for Every Industry
+            {t("homePage.industries.title")}
           </h3>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            From manufacturing plants to healthcare systems, Codeverta adapts to
-            meet the unique demands of your industry. Simplify operations,
-            optimize resources, and grow faster.
+            {t("homePage.industries.subtitle")}
           </p>
         </div>
 

@@ -1,0 +1,160 @@
+{
+  "seo": {
+    "title": "Pelatihan IT untuk Anak dan Remaja | Codeverta",
+    "description": "Kelas coding, AI, Roblox, mobile app, website, dan desain 2D/3D untuk anak dan remaja dengan metode project-based learning.",
+    "keywords": "pelatihan IT anak, kursus coding remaja, kelas AI anak, Roblox coding, belajar website, 3D design"
+  },
+  "hero": {
+    "eyebrow": "Jelajahi Program Kami",
+    "titleTop": "Kursus",
+    "titleHighlight": "Unggulan Kami",
+    "description": {
+      "before": "Kurikulum internasional yang dirancang untuk mengasah kreativitas melalui",
+      "highlight": "project-based learning",
+      "after": ". Mulai petualangan digital mereka hari ini."
+    },
+    "primaryCta": "Daftar Sekarang",
+    "secondaryCta": "Lihat Kurikulum"
+  },
+  "form": {
+    "title": "Bergabung Sekarang",
+    "nameLabel": "Nama Penanggung Jawab",
+    "namePlaceholder": "Contoh: Budi Santoso",
+    "whatsappLabel": "Nomor WhatsApp",
+    "emailLabel": "Email Aktif",
+    "emailPlaceholder": "budi@email.com",
+    "programLabel": "Pilih Program",
+    "programPlaceholder": "Pilih tingkat kursus",
+    "programs": {
+      "children": "Kelas Anak-anak (4-10 Tahun)",
+      "childrenShort": "Kelas Anak-anak (4-10 Thn)",
+      "teen": "Kelas Remaja (11-16 Tahun)",
+      "teenShort": "Kelas Remaja (11-16 Thn)"
+    },
+    "validation": {
+      "name": "Nama minimal 3 karakter",
+      "email": "Email tidak valid",
+      "whatsapp": "Nomor WhatsApp tidak valid",
+      "program": "Pilih salah satu program"
+    },
+    "submit": "Konfirmasi Pendaftaran",
+    "processing": "Memproses...",
+    "success": "Pendaftaran terkirim. Kami akan menghubungi via WhatsApp.",
+    "error": "Gagal mengirim data."
+  },
+  "tracks": {
+    "children": {
+      "imageAlt": "Kelas coding anak-anak",
+      "age": "8-10 Tahun",
+      "ageBadge": "8-10 TAHUN",
+      "title": "Kelas Anak-anak",
+      "shortDescription": "Dasar logika & kreativitas digital.",
+      "description": "Kami membekali generasi muda dengan bahasa masa depan. Melalui kurikulum pemrograman yang interaktif, siswa tidak hanya belajar coding, tetapi juga mengasah logika dan pemecahan masalah secara natural. Dengan mentor ahli dan metode hands-on learning, setiap sesi menjadi petualangan belajar yang seru.",
+      "growthTitle": "The Next-Gen Growth Map",
+      "growthDescription": "Karena investasi terbaik adalah pendidikan yang relevan dengan perkembangan zaman."
+    },
+    "teen": {
+      "imageAlt": "Kelas coding remaja",
+      "age": "8-16 Tahun",
+      "ageBadge": "8-16 TAHUN",
+      "title": "Kelas Remaja",
+      "shortDescription": "Pemrograman tingkat lanjut & AI.",
+      "description": "Dirancang untuk usia 8 hingga 16 tahun, program ini mengubah imajinasi menjadi aplikasi nyata. Siswa bereksplorasi dari visual coding hingga syntax murni seperti Python dan JavaScript. Fokus project-based learning memastikan setiap siswa pulang dengan karya digital yang siap dipamerkan.",
+      "growthTitle": "Future Leadership Blueprint",
+      "growthDescription": "Kami berkomitmen menghadirkan kualitas pendidikan yang sepadan dengan potensi besar mereka."
+    }
+  },
+  "curriculum": {
+    "eyebrow": "Kami percaya anak Anda layak mendapatkan pendidikan terbaik.",
+    "title": "Program yang Ditawarkan",
+    "filters": {
+      "all": "Semua",
+      "children": "8 - 10 Tahun",
+      "teen": "11 - 16 Tahun"
+    },
+    "availability": "Tersedia Online & Offline"
+  },
+  "labels": {
+    "years": "Tahun",
+    "perSession": "/ sesi",
+    "tools": "Tools",
+    "detail": "Detail"
+  },
+  "dialog": {
+    "aboutCourse": "Tentang Kursus:",
+    "toolsUsed": "Tools Digunakan:",
+    "outcomes": "Hasil:"
+  },
+  "courses": {
+    "roblox-2d": {
+      "title": "2D Games Development with Roblox",
+      "duration": "90 menit",
+      "sessions": "20 sesi",
+      "description": "Siswa belajar membuat dan memprogram animasi serta game sederhana melalui tugas dan proyek.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Memahami alur proses pengembangan game",
+        "Membuat animasi dan game sederhana",
+        "Membuat desain 3D dengan Roblox Studio"
+      ]
+    },
+    "mobile-apps": {
+      "title": "Mobile Apps Development",
+      "duration": "90 menit",
+      "sessions": "20 sesi",
+      "description": "Siswa mempelajari dasar pembuatan aplikasi mobile dan produk digital interaktif.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Memahami alur proses pengembangan aplikasi",
+        "Membuat aplikasi dan game seluler",
+        "Mengembangkan keterampilan block coding dan desain"
+      ]
+    },
+    "roblox-1": {
+      "title": "Roblox I",
+      "duration": "90 menit",
+      "sessions": "20 sesi",
+      "description": "Siswa belajar bahasa pemrograman Lua dan membuat game sendiri di Roblox Studio.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Membuat game interaktif Roblox seperti game mengumpulkan hadiah, Obby, dan Teleporter"
+      ]
+    },
+    "roblox-2": {
+      "title": "Roblox II",
+      "duration": "90 menit",
+      "sessions": "20 sesi",
+      "description": "Siswa melanjutkan coding dengan Lua dan fokus pada desain 3D untuk proyek game profesional.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Memahami alur pengembangan game 3D",
+        "Membuat game Roblox",
+        "Mengembangkan keterampilan coding tekstual dan desain"
+      ]
+    },
+    "website-dev": {
+      "title": "Website Development",
+      "duration": "90 menit",
+      "sessions": "20 sesi",
+      "description": "Siswa belajar membuat halaman web, layout website, dan memahami cara kerja website.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Mempelajari sintaks HTML, CSS, dan PHP",
+        "Membuat website statis dengan konsep database",
+        "Mengembangkan keterampilan coding tekstual dan desain dasar"
+      ]
+    },
+    "2d-3d-design": {
+      "title": "2D & 3D Design",
+      "duration": "90 menit",
+      "sessions": "20 sesi",
+      "description": "Siswa belajar desain 2D dan 3D sekaligus memahami hubungan desain dengan pemrograman.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Mengembangkan kreativitas dan keterampilan desain",
+        "Membuat desain 2D dan 3D",
+        "Membangun keterampilan coding dasar"
+      ]
+    }
+  }
+}

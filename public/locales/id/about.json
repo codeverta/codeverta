@@ -1,0 +1,41 @@
+{
+  "seo": {
+    "title": "Tentang Codeverta - Software House dan Partner Teknologi Bisnis",
+    "description": "Kenali Codeverta, tim pengembang, desainer, dan konsultan IT yang berfokus pada kualitas kode, komunikasi transparan, dan dampak bisnis nyata.",
+    "keywords": "tentang Codeverta, software house Indonesia, partner teknologi, konsultan IT, pengembangan software"
+  },
+  "story": {
+    "imageAlt": "Tim Codeverta berdiskusi",
+    "heading": {
+      "prefix": "Nilai Utama",
+      "highlight": "Codeverta"
+    },
+    "paragraphs": [
+      "Codeverta lahir dari keyakinan sederhana: setiap bisnis, apa pun skalanya, berhak memiliki partner teknologi yang benar-benar bisa dipercaya. Terlalu sering proyek digital tersendat karena komunikasi buruk, biaya tidak transparan, atau hasil yang tidak sesuai harapan.",
+      "Kami hadir untuk mengubah itu. Sebagai tim developer, desainer, dan konsultan IT profesional, kami berpegang pada kualitas kode, komunikasi transparan, dan keberhasilan klien. Misi kami adalah mengubah visi digital Anda menjadi solusi yang andal dan memberi nilai nyata untuk bisnis."
+    ]
+  },
+  "impact": {
+    "badge": "Misi Kami untuk Kemanusiaan",
+    "heading": {
+      "prefix": "Komitmen Kami untuk",
+      "highlight": "Perawatan Kanker"
+    },
+    "description": {
+      "before": "Di PT Zenit Technology Solution, kami percaya inovasi harus melayani tujuan yang lebih besar. Kami berkomitmen menyalurkan",
+      "pledge": "lebih dari 3% laba bersih tahunan",
+      "after": "untuk mendukung pasien kanker prasejahtera melalui"
+    },
+    "cards": {
+      "direct": {
+        "title": "Dukungan Langsung",
+        "description": "Membantu keluarga menanggung biaya pengobatan penting."
+      },
+      "ethical": {
+        "title": "Teknologi Berdampak",
+        "description": "Proyek Anda ikut mendanai dampak sosial secara langsung."
+      }
+    },
+    "imageAlt": "Dukungan pengobatan kanker melalui Kitabisa"
+  }
+}

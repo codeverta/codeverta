@@ -1,33 +1,21 @@
-// File: src/pages/Tentang.jsx
-// Anda bisa menggunakan komponen dari Shadcn seperti <Card>, <Button>, <Accordion>, dll.
-
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Users, Target, Code, ShieldCheck } from "lucide-react"; // Contoh ikon dari lucide-react
-import { WhatsappWrapper } from "@/components/WhatsappButton";
+import { ShieldCheck } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
-import { HeartHandshake, Heart, Activity } from "lucide-react";
-import { CardFooter } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Quote } from "lucide-react";
+import { Heart, Activity } from "lucide-react";
+import { useTranslation } from "next-i18next";
 
-export const getStaticProps = withI18n(["common"]);
-
-import React from "react";
-import Image from "next/image";
-import { CheckCircle2, Code2, Rocket, ArrowRight } from "lucide-react";
-import Link from "next/link";
+export const getStaticProps = withI18n(["common", "about"]);
 
 export default function AboutPage() {
+  const { t } = useTranslation("about");
+
   return (
     <div className="bg-white text-slate-900 font-sans">
+      <SeoHead
+        title={t("seo.title")}
+        description={t("seo.description")}
+        keywords={t("seo.keywords")}
+      />
       {/* --- OUR STORY / MISSION --- */}
       <section className="py-20 bg-slate-50">
         <div className="container mx-auto px-6">
@@ -37,7 +25,7 @@ export default function AboutPage() {
                 {/* Placeholder Image: Office / Team working */}
                 <img
                   src="/images/meeting.jpeg"
-                  alt="Tim Codeverta Diskusi"
+                  alt={t("story.imageAlt")}
                   className="object-cover w-full h-[25rem]"
                 />
               </div>
@@ -47,35 +35,25 @@ export default function AboutPage() {
 
             <div className="lg:w-1/2">
               <h2 className="text-3xl font-bold mb-6 text-slate-900 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-                Codeverta <span className="text-blue-600">Core Values</span>
+                {t("story.heading.prefix")}{" "}
+                <span className="text-blue-600">
+                  {t("story.heading.highlight")}
+                </span>
               </h2>
               <div className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-                <p>
-                  <strong>Codeverta</strong> was born from a simple conviction:{" "}
-                  <br /> every business, regardless of size, deserves a
-                  technology partner they can truly trust. Too often, we have
-                  seen digital projects falter due to poor communication, hidden
-                  costs, or results that fail to meet expectations.
-                </p>
-                <p>
-                  We are here to change that. As a team of professional
-                  developers, designers, and IT consultants, we are committed to
-                  three core pillars: code quality, transparent communication,
-                  and client success. Our mission is to transform your digital
-                  vision into tangible solutions that perform flawlessly and
-                  deliver real value to your business.
-                </p>
+                <p>{t("story.paragraphs.0")}</p>
+                <p>{t("story.paragraphs.1")}</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <SocialImpact />
+      <SocialImpact t={t} />
     </div>
   );
 }
 
-const SocialImpact = () => {
+const SocialImpact = ({ t }) => {
   return (
     <section className="py-24 bg-slate-50 dark:bg-slate-950">
       <div className="container mx-auto px-4">
@@ -84,21 +62,22 @@ const SocialImpact = () => {
           <div className="space-y-6">
             <div className="inline-flex items-center rounded-full border border-rose-200 bg-rose-50 px-3 py-1 text-sm font-medium text-rose-700 dark:bg-rose-900/30 dark:text-rose-400">
               <Heart className="mr-2 h-4 w-4 fill-rose-500" />
-              <span>Our Mission for Humanity</span>
+              <span>{t("impact.badge")}</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-              Our Commitment to{" "}
-              <span className="text-rose-600">Cancer Care</span>
+              {t("impact.heading.prefix")}{" "}
+              <span className="text-rose-600">
+                {t("impact.heading.highlight")}
+              </span>
             </h2>
 
             <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
-              At PT Zenit Technology Solution, we believe that innovation should
-              serve a higher purpose. We are proud to pledge{" "}
+              {t("impact.description.before")}{" "}
               <span className="font-semibold text-slate-900 dark:text-white">
-                more than 3% of our annual net profit
+                {t("impact.description.pledge")}
               </span>{" "}
-              directly to support underprivileged cancer patients via{" "}
+              {t("impact.description.after")}{" "}
               <a
                 href="http://kitabisa.com/"
                 target="_blank"
@@ -112,18 +91,22 @@ const SocialImpact = () => {
               <div className="flex items-start gap-3 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
                 <Activity className="h-6 w-6 text-rose-500 shrink-0" />
                 <div>
-                  <h4 className="font-semibold">Direct Support</h4>
+                  <h4 className="font-semibold">
+                    {t("impact.cards.direct.title")}
+                  </h4>
                   <p className="text-sm text-slate-500">
-                    Helping families cover critical treatment costs.
+                    {t("impact.cards.direct.description")}
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
                 <ShieldCheck className="h-6 w-6 text-blue-500 shrink-0" />
                 <div>
-                  <h4 className="font-semibold">Ethical Tech</h4>
+                  <h4 className="font-semibold">
+                    {t("impact.cards.ethical.title")}
+                  </h4>
                   <p className="text-sm text-slate-500">
-                    Your projects directly fund social impact.
+                    {t("impact.cards.ethical.description")}
                   </p>
                 </div>
               </div>
@@ -136,7 +119,7 @@ const SocialImpact = () => {
 
             <img
               src="/assets/images/kitabisa.jpg"
-              alt="Dukungan Pengobatan Kanker"
+              alt={t("impact.imageAlt")}
               className="relative rounded-2xl object-contain w-full h-[25rem] shadow-2xl"
             />
           </div>

@@ -39,6 +39,11 @@
       "fast": "Fast Process",
       "guarantee": "Satisfaction Guarantee",
       "trusted": "Honest & Reliable"
+    },
+    "seo": {
+      "title": "Codeverta - บริการพัฒนาเว็บ แอป ERP และโซลูชัน IT",
+      "description": "Codeverta ช่วย SME สตาร์ทอัพ และองค์กรสร้างเว็บไซต์ แอป ERP POS และระบบ IT มืออาชีพ พร้อม SEO ประสิทธิภาพ และความปลอดภัย",
+      "keywords": "พัฒนาเว็บไซต์, software house, พัฒนาแอป, ERP, POS, โซลูชัน IT"
     }
   },
   "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
@@ -227,6 +232,223 @@
       "llm_desc": "Prompt engineering for LLMs.",
       "ai_eng": "AI Engineer Course",
       "ai_eng_desc": "In-depth AI engineering."
+    }
+  },
+  "homePage": {
+    "features": {
+      "items": [
+        {
+          "title": "Professional Website Design",
+          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+        },
+        {
+          "title": "SEO & Performance Optimization",
+          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+        },
+        {
+          "title": "Repair & Maintenance",
+          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+        },
+        {
+          "title": "Reliable Website Security",
+          "description": "Protect your data and visitors with layered security and practical hardening."
+        },
+        {
+          "title": "IT Support Services",
+          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+        },
+        {
+          "title": "Aftersales Support",
+          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+        }
+      ]
+    },
+    "process": {
+      "items": [
+        {
+          "step": "01",
+          "title": "Needs Consultation",
+          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+        },
+        {
+          "step": "02",
+          "title": "Design & Development",
+          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+        },
+        {
+          "step": "03",
+          "title": "Launch & Maintenance",
+          "description": "We launch your project and provide maintenance to keep everything running well."
+        }
+      ]
+    },
+    "testimonials": {
+      "items": [
+        {
+          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
+          "author": "Sarah Widjaja",
+          "role": "Owner, Butik Elegan",
+          "rating": 5
+        },
+        {
+          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
+          "author": "Budi Santoso",
+          "role": "Marketing Manager, Maju Jaya Motor",
+          "rating": 5
+        },
+        {
+          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
+          "author": "Emily Hartono",
+          "role": "Head of Operations, Startup Cepat",
+          "rating": 5
+        },
+        {
+          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
+          "author": "David Kim",
+          "role": "CEO, InnovateNow",
+          "rating": 5
+        },
+        {
+          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
+          "author": "Lisa Puspita",
+          "role": "Creative Director, Galeri Seni",
+          "rating": 5
+        },
+        {
+          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
+          "author": "James Wilson",
+          "role": "COO, ScaleUp Inc",
+          "rating": 5
+        }
+      ]
+    },
+    "pricing": {
+      "monthly": [
+        {
+          "name": "SME Website Package",
+          "price": "Rp 2M",
+          "description": "Suitable for company profiles or portfolios.",
+          "features": [
+            "Custom design based on your request",
+            "Suitable for SMEs",
+            "Core pages and features",
+            "Free domain and hosting for 1 year",
+            "Performance-focused, not a generic WordPress template"
+          ],
+          "cta": "Choose Package"
+        },
+        {
+          "name": "Online Store Package",
+          "price": "Rp 5M",
+          "description": "Ideal for growing SMEs and online businesses.",
+          "features": [
+            "Custom design based on your request",
+            "SEO optimization",
+            "Priority development"
+          ],
+          "cta": "Choose Package",
+          "popular": true
+        },
+        {
+          "name": "Custom System Package",
+          "price": "Rp >10M",
+          "description": "For companies with more complex requirements.",
+          "features": [
+            "Advanced custom features",
+            "Design and system tailored to your needs",
+            "Monthly performance reports",
+            "Maintenance for more than 1 year"
+          ],
+          "cta": "Contact Sales"
+        }
+      ],
+      "enterprise": [
+        {
+          "name": "Enterprise",
+          "price": "Rp >20M",
+          "description": "For companies with complex systems and workflows.",
+          "features": [
+            "Custom features based on request",
+            "Integration with other systems or applications",
+            "Scheduled cloud backups",
+            "24/7 security and performance monitoring",
+            "Priority development",
+            "Maintenance for more than 1 year"
+          ],
+          "cta": "Contact Sales"
+        }
+      ]
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "How long does it take to build a website?",
+          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+        },
+        {
+          "question": "What do I need to prepare?",
+          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+        },
+        {
+          "question": "Do you provide maintenance after launch?",
+          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+        },
+        {
+          "question": "Can you repair my existing website?",
+          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+        },
+        {
+          "question": "How does payment work?",
+          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+        }
+      ]
+    },
+    "industries": {
+      "badge": "Industry",
+      "title": "Solutions for Every Industry",
+      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "items": [
+        {
+          "title": "Manufacturing",
+          "desc": "Streamline production, inventory, and delivery workflows."
+        },
+        {
+          "title": "Trading & Distribution",
+          "desc": "Manage procurement, orders, and supply chains efficiently."
+        },
+        {
+          "title": "Retail",
+          "desc": "Boost sales, manage inventory, and improve customer experience."
+        },
+        {
+          "title": "Engineering & Construction",
+          "desc": "Manage projects, resources, and budgets with better control."
+        },
+        {
+          "title": "E-commerce",
+          "desc": "Manage orders, customers, and online sales growth."
+        },
+        {
+          "title": "Education",
+          "desc": "Simplify admissions, courses, payments, and student workflows."
+        },
+        {
+          "title": "Professional Services",
+          "desc": "Streamline projects, billing, and client collaboration."
+        },
+        {
+          "title": "Financial Services",
+          "desc": "Track finances, portfolios, and compliance more easily."
+        },
+        {
+          "title": "Healthcare",
+          "desc": "Manage records, appointments, and operations in one place."
+        },
+        {
+          "title": "Non-profit",
+          "desc": "Improve fundraising, donor management, and project execution."
+        }
+      ]
     }
   }
 }

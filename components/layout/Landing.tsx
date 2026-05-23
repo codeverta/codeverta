@@ -8,6 +8,46 @@ import Banner from "../Banner";
 import Head from "next/head";
 
 const DOMAIN = "https://www.codeverta.com";
+const SUPPORTED_LOCALES = [
+  "id",
+  "en-US",
+  "en-GB",
+  "zh",
+  "ja",
+  "ko",
+  "ms",
+  "de",
+  "fr",
+  "es",
+  "ar",
+  "hi",
+  "th",
+  "vi",
+  "ru",
+];
+
+const OG_LOCALES: Record<string, string> = {
+  id: "id_ID",
+  "en-US": "en_US",
+  "en-GB": "en_GB",
+  zh: "zh_CN",
+  ja: "ja_JP",
+  ko: "ko_KR",
+  ms: "ms_MY",
+  de: "de_DE",
+  fr: "fr_FR",
+  es: "es_ES",
+  ar: "ar",
+  hi: "hi_IN",
+  th: "th_TH",
+  vi: "vi_VN",
+  ru: "ru_RU",
+};
+
+function getLocalizedUrl(locale: string, path: string) {
+  const cleanPath = path.split("?")[0].replace(/^\/+/, "");
+  return `${DOMAIN}/${locale}${cleanPath ? `/${cleanPath}` : ""}`;
+}
 
 interface SEOProps {
   title?: string;
@@ -44,8 +84,9 @@ interface Props {
 
 export default function Landing({ children, seo }: Props) {
   const router = useRouter();
-  const canonicalUrl =
-    seo?.canonical || `${DOMAIN}${router.asPath.split("?")[0]}`;
+  const locale = router.locale || "id";
+  const pagePath = router.asPath.split("?")[0] || "/";
+  const canonicalUrl = seo?.canonical || getLocalizedUrl(locale, pagePath);
 
   // Default SEO values
   const defaultSEO = {
@@ -286,6 +327,7 @@ export default function Landing({ children, seo }: Props) {
             },
           ],
           site_name: "Codeverta",
+          locale: OG_LOCALES[locale] || locale,
         }}
         twitter={{
           handle: "@codeverta",
@@ -297,6 +339,10 @@ export default function Landing({ children, seo }: Props) {
             name: "viewport",
             content: "width=device-width, initial-scale=1",
           },
+          {
+            httpEquiv: "content-language",
+            content: locale,
+          } as any,
           {
             name: "keywords",
             content:
@@ -328,6 +374,16 @@ export default function Landing({ children, seo }: Props) {
           {
             rel: "manifest",
             href: "/site.webmanifest",
+          },
+          ...SUPPORTED_LOCALES.map((supportedLocale) => ({
+            rel: "alternate",
+            hrefLang: supportedLocale,
+            href: getLocalizedUrl(supportedLocale, pagePath),
+          })),
+          {
+            rel: "alternate",
+            hrefLang: "x-default",
+            href: getLocalizedUrl("id", pagePath),
           },
           ...(seo?.additionalLinkTags || []),
         ]}

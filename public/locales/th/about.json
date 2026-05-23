@@ -1,0 +1,41 @@
+{
+  "seo": {
+    "title": "เกี่ยวกับ Codeverta - Software House และพาร์ทเนอร์เทคโนโลยี",
+    "description": "รู้จัก Codeverta ทีมพัฒนา ออกแบบ และที่ปรึกษา IT ที่เน้นคุณภาพโค้ด การสื่อสารโปร่งใส และคุณค่าทางธุรกิจ",
+    "keywords": "เกี่ยวกับ Codeverta, software house, พาร์ทเนอร์เทคโนโลยี, ที่ปรึกษา IT"
+  },
+  "story": {
+    "imageAlt": "Codeverta team discussion",
+    "heading": {
+      "prefix": "Codeverta",
+      "highlight": "Core Values"
+    },
+    "paragraphs": [
+      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
+      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+    ]
+  },
+  "impact": {
+    "badge": "Our Mission for Humanity",
+    "heading": {
+      "prefix": "Our Commitment to",
+      "highlight": "Cancer Care"
+    },
+    "description": {
+      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
+      "pledge": "more than 3% of our annual net profit",
+      "after": "to support underprivileged cancer patients via"
+    },
+    "cards": {
+      "direct": {
+        "title": "Direct Support",
+        "description": "Helping families cover critical treatment costs."
+      },
+      "ethical": {
+        "title": "Ethical Tech",
+        "description": "Your projects directly fund social impact."
+      }
+    },
+    "imageAlt": "Cancer treatment support through Kitabisa"
+  }
+}
