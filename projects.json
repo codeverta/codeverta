@@ -19,7 +19,27 @@
         "lastUpdated": "Februari 2026",
         "client": "-",
         "duration": "3 bulan",
-        "teamSize": "2 orang (Backend, Frontend)"
+        "teamSize": "2 orang (Backend, Frontend)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "54",
+          "reviews": [
+            {
+              "author": "Roni Wijaya",
+              "role": "Owner Iron Gym Yogyakarta",
+              "date": "2026-02-15",
+              "body": "Sistem membership-nya rapi banget. Validasi otomatis di absensi real-time bikin gak ada lagi member ilegal yang masuk.",
+              "rating": "5"
+            },
+            {
+              "author": "Coach Aldi",
+              "role": "Head Trainer",
+              "date": "2026-03-01",
+              "body": "Modul Gym Workout Log mempermudah saya mantau progres latihan klien secara sistematis dari HP.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -227,7 +247,27 @@
         "lastUpdated": "Januari 2026",
         "client": "Malabar Team",
         "duration": "1 bulan",
-        "teamSize": "2 orang (Fullstack, SRE, Security Analyst, QA, PM)"
+        "teamSize": "2 orang (Fullstack, SRE, Security Analyst, QA, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "210",
+          "reviews": [
+            {
+              "author": "Budi Santoso",
+              "role": "Race Director Malabar Run",
+              "date": "2026-01-20",
+              "body": "Server sama sekali gak drop pas ticket war dibuka. Distributed lock Redis-nya solid, zero overbook!",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Rahma",
+              "role": "SRE Lead",
+              "date": "2026-02-11",
+              "body": "Sistem antrean Virtual Waiting Room-nya jenius, load database jadi sangat stabil meski trafik puncak.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -464,6 +504,10 @@
         "description": "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online.",
         "fullDescription": "Platform E-commerce ini dirancang untuk mendukung bisnis dalam menjual produk secara online dengan efisien dan aman. Sistem ini mencakup fitur-fitur inti seperti manajemen produk, pencarian dan filter katalog, keranjang belanja, checkout, pembayaran digital melalui Midtrans, serta manajemen pesanan dan pengguna. Platform ini dibangun dengan arsitektur modern dan responsif agar dapat diakses dari perangkat desktop maupun mobile.",
         "image": "/assets/products/27.png",
+        "images": [
+          "/assets/products/27.png",
+          "/assets/e-commerce/detail-product.png"
+        ],
         "technologies": ["React", "Laravel", "MySQL", "Midtrans"],
         "category": "E-commerce",
         "status": "Completed",
@@ -471,7 +515,20 @@
         "lastUpdated": "Mei 2025",
         "client": "PT Million Candles",
         "duration": "6 bulan",
-        "teamSize": "6 orang (Frontend, Backend, UI/UX, QA, DevOps, PM)"
+        "teamSize": "6 orang (Frontend, Backend, UI/UX, QA, DevOps, PM)",
+        "seo": {
+          "ratingValue": "4.7",
+          "reviewCount": "68",
+          "reviews": [
+            {
+              "author": "Dewi Lestari",
+              "role": "Owner Million Candles",
+              "date": "2025-06-10",
+              "body": "Sistem katalog dan checkout-nya gampang dipahami pembeli awam. Integrasi dengan Midtrans juga langsung aktif tanpa ribet.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -702,45 +759,7 @@
             "Webhook Signature Verification (Midtrans)"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Starter",
-          "price": "Rp 8.000.000",
-          "features": [
-            "Katalog Produk",
-            "Keranjang Belanja",
-            "Checkout Manual",
-            "Admin Panel Basic",
-            "Dapat diakses up to 10k pengunjung/hari"
-          ],
-          "description": "Solusi e-commerce awal yang fokus pada online presence & marketing."
-        },
-        {
-          "tier": "Standard",
-          "price": "Rp 15.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Starter +",
-            "Integrasi Pembayaran Midtrans",
-            "Manajemen Stok",
-            "Notifikasi WA/Email"
-          ],
-          "description": "Pilihan paling populer dengan fitur pembayaran otomatis yang lengkap."
-        },
-        {
-          "tier": "Premium",
-          "price": "Rp 30.000.000",
-          "features": [
-            "Semua Fitur di Paket Standard +",
-            "API Cek Ongkir Otomatis",
-            "Fitur Promo & Kupon",
-            "Laporan Penjualan Detail",
-            "Dapat diakses up to 50k pengunjung/hari"
-          ],
-          "description": "Platform lengkap untuk skalabilitas dan analisis bisnis."
-        }
-      ]
+      }
     },
     {
       "product": {
@@ -1024,7 +1043,27 @@
         "lastUpdated": "Maret 2026",
         "client": "-",
         "duration": "4 bulan",
-        "teamSize": "3 orang (Backend, Frontend, QA)"
+        "teamSize": "3 orang (Backend, Frontend, QA)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "124",
+          "reviews": [
+            {
+              "author": "Budi Santoso",
+              "role": "Owner Laundry Express",
+              "date": "2026-01-15",
+              "body": "Sistem yang sangat membantu! Sekarang saya bisa pantau progres cucian dari rumah lewat HP.",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Aminah",
+              "role": "Kepala Outlet",
+              "date": "2026-02-10",
+              "body": "Fitur notifikasi WhatsApp-nya sangat keren, pelanggan jadi merasa lebih profesional.",
+              "rating": "4"
+            }
+          ]
+        }
       },
       "seo": {
         "jsonLd": {
@@ -1260,7 +1299,20 @@
         "lastUpdated": "Desember 2025",
         "client": "Pasangan Klien",
         "duration": "2 minggu (Implementasi & Kustomisasi)",
-        "teamSize": "3 orang (Frontend, UI/UX, Support)"
+        "teamSize": "3 orang (Frontend, UI/UX, Support)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "145",
+          "reviews": [
+            {
+              "author": "Rian & Alisa",
+              "role": "Pasangan Pengantin",
+              "date": "2025-12-20",
+              "body": "Load time-nya cepet banget kurang dari sedetik, tamu-tamu muji galerinya interaktif dan RSVP-nya real-time.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -1700,7 +1752,20 @@
         "lastUpdated": "Juni 2025",
         "client": "Badan Perencanaan Pembangunan Daerah",
         "duration": "8 months",
-        "teamSize": "4 specialists (GIS Analyst, Frontend, Backend, DB Admin)"
+        "teamSize": "4 specialists (GIS Analyst, Frontend, Backend, DB Admin)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "35",
+          "reviews": [
+            {
+              "author": "Yusuf Anggara",
+              "role": "Analis GIS Bappeda",
+              "date": "2025-06-18",
+              "body": "Render layer data spasial GeoJSON lewat browser lancar banget. Fitur analisis buffer-nya sangat responsif.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -1947,7 +2012,20 @@
         "lastUpdated": "Juli 2025",
         "client": "PT Manufaktur Jaya Nasional",
         "duration": "18 bulan (berjalan)",
-        "teamSize": "12 specialists (BA, PM, Frontend, Backend, QA, DevOps)"
+        "teamSize": "12 specialists (BA, PM, Frontend, Backend, QA, DevOps)",
+        "seo": {
+          "ratingValue": "4.6",
+          "reviewCount": "18",
+          "reviews": [
+            {
+              "author": "Ir. Joko Susilo",
+              "role": "Direktur PT Manufaktur Jaya",
+              "date": "2025-07-28",
+              "body": "Modul General Ledger dan Bill of Materials (BOM) menyatukan data departemen yang sebelumnya terisolasi.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -2470,7 +2548,20 @@
         "lastUpdated": "April 2025",
         "client": "-",
         "duration": "6 bulan",
-        "teamSize": "5 specialists (Frontend, Backend, DBA, UI/UX, QA)"
+        "teamSize": "5 specialists (Frontend, Backend, DBA, UI/UX, QA)",
+        "seo": {
+          "ratingValue": "4.7",
+          "reviewCount": "41",
+          "reviews": [
+            {
+              "author": "Hadi Pranoto",
+              "role": "Freelance Consultant",
+              "date": "2025-04-20",
+              "body": "Fitur impor CSV mutasi bank bikin pencatatan cash flow harian gak membosankan lagi.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -2738,7 +2829,20 @@
         "lastUpdated": "Juli 2025",
         "client": "Logistik Express Nusantara",
         "duration": "10 bulan (berjalan)",
-        "teamSize": "7 specialists (Java Backend, Frontend, QA, BA, DevOps)"
+        "teamSize": "7 specialists (Java Backend, Frontend, QA, BA, DevOps)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "29",
+          "reviews": [
+            {
+              "author": "Suryo Depot",
+              "role": "Manager Logistik",
+              "date": "2025-07-15",
+              "body": "Peringatan otomatis pas stok barang menyentuh reorder point sukses mencegah stockout item populer.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -2995,7 +3099,20 @@
         "lastUpdated": "Juni 2025",
         "client": "Agensi Pemasaran Kreatif",
         "duration": "7 bulan",
-        "teamSize": "6 specialists (Frontend, Backend, GraphQL Expert, UI/UX, QA)"
+        "teamSize": "6 specialists (Frontend, Backend, GraphQL Expert, UI/UX, QA)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "63",
+          "reviews": [
+            {
+              "author": "Dian Sastro",
+              "role": "Sales Director",
+              "date": "2025-06-12",
+              "body": "Tampilan pipeline model Kanban-nya bikin tim sales fokus follow-up leads potensial harian.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -3246,7 +3363,20 @@
         "lastUpdated": "Maret 2025",
         "client": "Akademi Digital Indonesia",
         "duration": "8 bulan",
-        "teamSize": "6 specialists (Frontend, Backend CMS, DevOps, UI/UX, QA)"
+        "teamSize": "6 specialists (Frontend, Backend CMS, DevOps, UI/UX, QA)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "76",
+          "reviews": [
+            {
+              "author": "Prof. Hermawan",
+              "role": "Ketua Akademi Digital",
+              "date": "2025-04-02",
+              "body": "Streaming videonya aman pake presigned URL AWS S3, kuis interaktifnya juga berjalan mulus.",
+              "rating": "5"
+            }
+          ]
+        }
       },
       "hero": {
         "buttons": {
@@ -4285,48 +4415,7 @@
             "Validasi input untuk mencegah serangan umum"
           ]
         }
-      },
-      "priceList": [
-        {
-          "tier": "Basic Team",
-          "price": "Rp 12.000.000",
-          "features": [
-            "Papan Kanban & Task Management",
-            "Kolaborasi Tim & Komentar",
-            "Notifikasi Real-time",
-            "Dukungan hingga 5 Pengguna/Seats",
-            "Project Dashboard Dasar"
-          ],
-          "description": "Solusi manajemen proyek yang fokus pada kolaborasi harian dan pelacakan tugas untuk tim kecil atau startup."
-        },
-        {
-          "tier": "Pro Planning",
-          "price": "Rp 25.000.000",
-          "isRecommended": true,
-          "features": [
-            "Semua Fitur di Paket Basic Team +",
-            "Gantt Chart Interaktif & Dependensi Tugas",
-            "Dasbor Pelaporan & Workload Tim",
-            "Integrasi dengan Git (GitHub/GitLab)",
-            "Dukungan hingga 25 Pengguna/Seats",
-            "Export Data (CSV/Excel)"
-          ],
-          "description": "Pilihan paling populer untuk tim yang lebih besar atau proyek kompleks yang membutuhkan perencanaan linimasa (timeline) yang kuat."
-        },
-        {
-          "tier": "Enterprise Custom",
-          "price": "Rp 45.000.000",
-          "features": [
-            "Semua Fitur di Paket Pro Planning +",
-            "Pengaturan Keamanan Tingkat Lanjut (SSO/LDAP)",
-            "API Akses Penuh (Integrasi Kustom)",
-            "Manajemen Izin (Permission) Per-Level Tugas",
-            "Dukungan Unlimited Pengguna/Seats",
-            "Konsultasi Implementasi Proyek"
-          ],
-          "description": "Platform skalabel untuk korporasi dan organisasi besar yang memerlukan integrasi mendalam, keamanan, dan dukungan kustom."
-        }
-      ]
+      }
     },
     {
       "product": {

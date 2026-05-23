@@ -70,10 +70,10 @@ export const logos = [
     alt: "Manglayang Academia",
     classes: "p-4", // sesuaikan nilai sesuai kebutuhan
   },
-  // {
-  //   src: "/assets/nova-tech.jpeg",
-  //   alt: "Ticket Hub",
-  // },
+  {
+    src: "/assets/images/roxgym.png",
+    alt: "Roxgym",
+  },
 ];
 
 export const features = [
