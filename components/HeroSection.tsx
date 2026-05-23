@@ -10,6 +10,13 @@ import RotatingText from "./RotatingText";
 import { WhatsAppIcon, WhatsappWrapper } from "./WhatsappButton";
 
 export default function HeroSection({ t }) {
+  const rotatingTexts = t("home.hero.rotating", { returnObjects: true });
+  const safeRotatingTexts = Array.isArray(rotatingTexts)
+    ? rotatingTexts.filter(
+        (text) => typeof text === "string" && text.length > 0
+      )
+    : ["Digital"];
+
   return (
     <section className="w-full py-16 md:py-24 overflow-hidden relative">
       {/* Background Grid - preserved your dark mode logic */}
@@ -37,7 +44,7 @@ export default function HeroSection({ t }) {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-br from-gray-900 via-gray-800 to-gray-500 dark:from-white dark:via-gray-200 dark:to-gray-500 pb-4 leading-[1.1]">
             {t("home.hero.prefix")} <br />
             <RotatingText
-              texts={t("home.hero.rotating", { returnObjects: true })}
+              texts={safeRotatingTexts}
               mainClassName="inline mt-2 px-3 sm:px-4 md:px-5 bg-cyan-400 dark:bg-cyan-500 text-gray-900 overflow-hidden py-1 sm:py-2 md:py-2 justify-center rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] border-2 border-gray-900 dark:border-white transition-all"
               staggerFrom={"last"}
               initial={{ y: "100%" }}

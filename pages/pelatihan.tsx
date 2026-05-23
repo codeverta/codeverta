@@ -32,8 +32,6 @@ import {
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import fs from "fs";
-import path from "path";
 import { useState } from "react";
 import {
   Dialog,
@@ -64,6 +62,7 @@ import {
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import SeoHead from "@/components/SeoHead";
+import { getProjects } from "@/lib/projects";
 
 interface Course {
   id: string;
@@ -182,10 +181,7 @@ const courses: Course[] = [
 ];
 
 export async function getStaticProps({ locale }) {
-  const filePath = path.join(process.cwd(), "projects.json");
-  const jsonData = fs.readFileSync(filePath, "utf-8");
-  const data = JSON.parse(jsonData);
-  const projects = data.projects || [];
+  const projects = getProjects(locale);
 
   return {
     props: {

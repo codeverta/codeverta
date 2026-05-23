@@ -7,8 +7,7 @@ import { getPostData, getAllPostIds, getSortedPostsData } from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-import fs from "fs";
-import path from "path";
+import { getProjects } from "@/lib/projects";
 /* ─────────────────────────────────────────────
    Types
 ───────────────────────────────────────────── */
@@ -1415,7 +1414,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
       }));
 
     // Panggil fungsi helper di sini
-    const otherProducts = getRotatedProducts(id, 3);
+    const otherProducts = getRotatedProducts(id, 3, locale ?? "id");
 
     return {
       props: {
@@ -1435,18 +1434,15 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   }
 };
 
-function getRotatedProducts(currentPostId: string, limit = 3) {
+function getRotatedProducts(currentPostId: string, limit = 3, locale = "id") {
   try {
     // 1. Cari tahu urutan artikel saat ini
     const allPosts = getSortedPostsData("blog");
     const currentPostIndex = allPosts.findIndex((p) => p.id === currentPostId);
     const postIndex = currentPostIndex !== -1 ? currentPostIndex : 0;
 
-    // 2. Baca data dari projects.json
-    const filePath = path.join(process.cwd(), "projects.json");
-    const jsonData = fs.readFileSync(filePath, "utf-8");
-    const data = JSON.parse(jsonData);
-    const allProducts = data.projects || [];
+    // 2. Baca data product sesuai locale aktif
+    const allProducts = getProjects(locale);
     const totalProducts = allProducts.length;
 
     if (totalProducts === 0) return [];
