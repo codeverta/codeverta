@@ -1,0 +1,60 @@
+{
+  "readTime": "menit baca",
+  "backToTop": "Kembali ke atas",
+  "index": {
+    "meta": {
+      "title": "Berita & Artikel | Blog",
+      "description": "Kumpulan artikel terbaru seputar teknologi, bisnis, dan digital marketing."
+    },
+    "hero": {
+      "eyebrow": "Publikasi & Wawasan",
+      "title": "Berita & Artikel"
+    },
+    "search": {
+      "placeholder": "Cari artikel...",
+      "aria": "Cari artikel",
+      "clear": "Hapus pencarian"
+    },
+    "sort": {
+      "aria": "Urutkan artikel",
+      "newest": "Terbaru",
+      "oldest": "Terlama"
+    },
+    "toc": {
+      "toggle": "Daftar Isi",
+      "label": "Daftar Artikel"
+    },
+    "tags": {
+      "aria": "Filter berdasarkan tag",
+      "clear": "Hapus filter ({{count}})"
+    },
+    "stats": {
+      "showing": "Menampilkan <strong>{{showing}} dari {{total}}</strong> artikel"
+    },
+    "empty": {
+      "message": "Tidak ada artikel yang cocok dengan pencarian Anda.",
+      "reset": "Reset filter"
+    }
+  },
+  "detail": {
+    "toc": "Daftar Isi",
+    "stickyBack": "Artikel",
+    "allArticles": "Semua Artikel",
+    "recommendedProducts": "Produk Rekomendasi",
+    "otherArticles": "Artikel Lainnya",
+    "share": {
+      "label": "Bagikan:",
+      "whatsapp": "Bagikan ke WhatsApp",
+      "twitter": "Bagikan ke X/Twitter",
+      "facebook": "Bagikan ke Facebook",
+      "copyAria": "Salin tautan",
+      "copied": "Tersalin!",
+      "copy": "Salin"
+    },
+    "cta": {
+      "title": "Siap Meningkatkan Bisnis?",
+      "description": "Konsultasi gratis dengan tim kami dan temukan solusi terbaik untuk bisnis Anda.",
+      "button": "Hubungi Kami →"
+    }
+  }
+}

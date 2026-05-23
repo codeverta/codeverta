@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { getPostData, getAllPostIds, getSortedPostsData } from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import fs from "fs";
 import path from "path";
 /* ─────────────────────────────────────────────
@@ -66,20 +68,20 @@ interface Props {
 /* ─────────────────────────────────────────────
    Helpers
 ───────────────────────────────────────────── */
-function formatDate(d: string) {
-  return new Date(d).toLocaleDateString("id-ID", {
+function formatDate(d: string, locale = "id") {
+  return new Date(d).toLocaleDateString(locale, {
     day: "numeric",
     month: "long",
     year: "numeric",
   });
 }
 
-function estimateReadTime(html: string) {
+function estimateReadTime(html: string, label: string) {
   const words = html
     .replace(/<[^>]+>/g, " ")
     .split(/\s+/)
     .filter(Boolean).length;
-  return `${Math.max(2, Math.ceil(words / 200))} menit baca`;
+  return `${Math.max(2, Math.ceil(words / 200))} ${label}`;
 }
 
 function getTagList(tags: string): string[] {
@@ -122,7 +124,7 @@ function ScrollProgress() {
 /* ─────────────────────────────────────────────
    Back to Top
 ───────────────────────────────────────────── */
-function BackToTop() {
+function BackToTop({ label }: { label: string }) {
   const [vis, setVis] = useState(false);
   useEffect(() => {
     const fn = () => setVis(window.scrollY > 500);
@@ -133,7 +135,7 @@ function BackToTop() {
     <button
       className={`btt${vis ? " btt-vis" : ""}`}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      aria-label="Kembali ke atas"
+      aria-label={label}
     >
       <svg
         width="18"
@@ -154,7 +156,13 @@ function BackToTop() {
 /* ─────────────────────────────────────────────
    Table of Contents (floating sidebar)
 ───────────────────────────────────────────── */
-function TableOfContents({ headings }: { headings: Heading[] }) {
+function TableOfContents({
+  headings,
+  label,
+}: {
+  headings: Heading[];
+  label: string;
+}) {
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(true);
 
@@ -179,7 +187,7 @@ function TableOfContents({ headings }: { headings: Heading[] }) {
   return (
     <div className="toc-float">
       <button className="toc-hdr" onClick={() => setOpen((v) => !v)}>
-        <span>Daftar Isi</span>
+        <span>{label}</span>
         <svg
           width="14"
           height="14"
@@ -225,7 +233,23 @@ function TableOfContents({ headings }: { headings: Heading[] }) {
 /* ─────────────────────────────────────────────
    Share Buttons
 ───────────────────────────────────────────── */
-function ShareBar({ title, url }: { title: string; url: string }) {
+function ShareBar({
+  title,
+  url,
+  labels,
+}: {
+  title: string;
+  url: string;
+  labels: {
+    share: string;
+    whatsapp: string;
+    twitter: string;
+    facebook: string;
+    copyAria: string;
+    copied: string;
+    copy: string;
+  };
+}) {
   const [copied, setCopied] = useState(false);
 
   const copy = () => {
@@ -239,13 +263,13 @@ function ShareBar({ title, url }: { title: string; url: string }) {
 
   return (
     <div className="share-bar">
-      <span className="share-label">Bagikan:</span>
+      <span className="share-label">{labels.share}</span>
       <a
         className="share-btn share-wa"
         href={`https://wa.me/?text=${enc(title + " " + url)}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Bagikan ke WhatsApp"
+        aria-label={labels.whatsapp}
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
@@ -258,7 +282,7 @@ function ShareBar({ title, url }: { title: string; url: string }) {
         )}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Bagikan ke X/Twitter"
+        aria-label={labels.twitter}
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -269,7 +293,7 @@ function ShareBar({ title, url }: { title: string; url: string }) {
         href={`https://www.facebook.com/sharer/sharer.php?u=${enc(url)}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Bagikan ke Facebook"
+        aria-label={labels.facebook}
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
           <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -278,7 +302,7 @@ function ShareBar({ title, url }: { title: string; url: string }) {
       <button
         className="share-btn share-copy"
         onClick={copy}
-        aria-label="Salin tautan"
+        aria-label={labels.copyAria}
       >
         {copied ? (
           <svg
@@ -306,7 +330,7 @@ function ShareBar({ title, url }: { title: string; url: string }) {
             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
           </svg>
         )}
-        <span>{copied ? "Tersalin!" : "Salin"}</span>
+        <span>{copied ? labels.copied : labels.copy}</span>
       </button>
     </div>
   );
@@ -315,7 +339,7 @@ function ShareBar({ title, url }: { title: string; url: string }) {
 /* ─────────────────────────────────────────────
    Related / Other Posts Card
 ───────────────────────────────────────────── */
-function PostMiniCard({ post }: { post: OtherPost }) {
+function PostMiniCard({ post, locale }: { post: OtherPost; locale: string }) {
   const tags = getTagList(post.tags);
   return (
     <Link href={`/blog/${post.id}`} className="mini-card">
@@ -354,7 +378,7 @@ function PostMiniCard({ post }: { post: OtherPost }) {
           ))}
         </div>
         <h3 className="mini-title">{post.title}</h3>
-        <p className="mini-date">{formatDate(post.date)}</p>
+        <p className="mini-date">{formatDate(post.date, locale)}</p>
       </div>
     </Link>
   );
@@ -363,7 +387,13 @@ function PostMiniCard({ post }: { post: OtherPost }) {
 /* ─────────────────────────────────────────────
    Sticky Reading Header (shows on scroll)
 ───────────────────────────────────────────── */
-function StickyHeader({ title }: { title: string }) {
+function StickyHeader({
+  title,
+  backLabel,
+}: {
+  title: string;
+  backLabel: string;
+}) {
   const [vis, setVis] = useState(false);
   const [pct, setPct] = useState(0);
 
@@ -382,7 +412,7 @@ function StickyHeader({ title }: { title: string }) {
   return (
     <div className={`sticky-hdr${vis ? " sticky-hdr-vis" : ""}`}>
       <div className="sticky-hdr-inner">
-        <Link href="/news" className="sticky-back">
+        <Link href="/blog" className="sticky-back">
           <svg
             width="16"
             height="16"
@@ -394,7 +424,7 @@ function StickyHeader({ title }: { title: string }) {
           >
             <polyline points="15 18 9 12 15 6" />
           </svg>
-          Artikel
+          {backLabel}
         </Link>
         <span className="sticky-title">{title}</span>
         <div className="sticky-pct">{Math.round(pct)}%</div>
@@ -414,6 +444,8 @@ export default function BlogDetail({
   otherPosts,
   otherProducts,
 }: Props) {
+  const { t } = useTranslation("blog");
+  const { locale = "id" } = useRouter();
   const {
     title,
     date,
@@ -426,7 +458,7 @@ export default function BlogDetail({
   } = postData;
 
   const tagList = getTagList(tags);
-  const readTime = estimateReadTime(contentHtml);
+  const readTime = estimateReadTime(contentHtml, t("readTime"));
   const [pageUrl, setPageUrl] = useState("");
 
   useEffect(() => {
@@ -469,7 +501,7 @@ export default function BlogDetail({
       {/* <ScrollProgress /> */}
 
       {/* Sticky reading header */}
-      <StickyHeader title={title} />
+      <StickyHeader title={title} backLabel={t("detail.stickyBack")} />
 
       {/* ── Cover Image Hero ── */}
       <div className="cover-wrap">
@@ -501,7 +533,7 @@ export default function BlogDetail({
             >
               <polyline points="15 18 9 12 15 6" />
             </svg>
-            Semua Artikel
+            {t("detail.allArticles")}
           </Link>
           <div className="cover-tags">
             {tagList.map((t) => (
@@ -512,7 +544,7 @@ export default function BlogDetail({
           </div>
           <h1 className="cover-title">{title}</h1>
           <div className="cover-info">
-            <span>{formatDate(date)}</span>
+            <span>{formatDate(date, locale)}</span>
             <span className="cover-dot">·</span>
             <span>{readTime}</span>
           </div>
@@ -529,7 +561,7 @@ export default function BlogDetail({
           {/* TOC (inline, mobile) */}
           {headings.length >= 3 && (
             <div className="toc-inline">
-              <TableOfContents headings={headings} />
+              <TableOfContents headings={headings} label={t("detail.toc")} />
             </div>
           )}
           {/* Content */}
@@ -539,7 +571,7 @@ export default function BlogDetail({
               className="other-articles"
               style={{ marginBottom: "2rem" }}
             >
-              <h2 className="other-title">Produk Rekomendasi</h2>
+              <h2 className="other-title">{t("detail.recommendedProducts")}</h2>
               <div className="other-grid">
                 {otherProducts.map((prod) => (
                   <Link
@@ -601,17 +633,29 @@ export default function BlogDetail({
           </div>
 
           {/* Share */}
-          <ShareBar title={title} url={pageUrl} />
+          <ShareBar
+            title={title}
+            url={pageUrl}
+            labels={{
+              share: t("detail.share.label"),
+              whatsapp: t("detail.share.whatsapp"),
+              twitter: t("detail.share.twitter"),
+              facebook: t("detail.share.facebook"),
+              copyAria: t("detail.share.copyAria"),
+              copied: t("detail.share.copied"),
+              copy: t("detail.share.copy"),
+            }}
+          />
 
           {/* Divider */}
           <hr className="section-hr" />
           {/* Other Articles */}
           {related.length > 0 && (
             <section className="other-articles">
-              <h2 className="other-title">Artikel Lainnya</h2>
+              <h2 className="other-title">{t("detail.otherArticles")}</h2>
               <div className="other-grid">
                 {related.map((p) => (
-                  <PostMiniCard key={p.id} post={p} />
+                  <PostMiniCard key={p.id} post={p} locale={locale} />
                 ))}
               </div>
             </section>
@@ -623,7 +667,7 @@ export default function BlogDetail({
           {/* TOC desktop */}
           {headings.length >= 3 && (
             <div className="toc-desktop">
-              <TableOfContents headings={headings} />
+              <TableOfContents headings={headings} label={t("detail.toc")} />
             </div>
           )}
 
@@ -644,7 +688,7 @@ export default function BlogDetail({
                 <line x1="8" y1="2" x2="8" y2="6" />
                 <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
-              <span>{formatDate(date)}</span>
+              <span>{formatDate(date, locale)}</span>
             </div>
             <div className="info-row">
               <svg
@@ -681,19 +725,16 @@ export default function BlogDetail({
           {/* CTA */}
           <div className="cta-card">
             <div className="cta-icon">🚀</div>
-            <h3 className="cta-title">Siap Meningkatkan Bisnis?</h3>
-            <p className="cta-desc">
-              Konsultasi gratis dengan tim kami dan temukan solusi terbaik untuk
-              bisnis Anda.
-            </p>
+            <h3 className="cta-title">{t("detail.cta.title")}</h3>
+            <p className="cta-desc">{t("detail.cta.description")}</p>
             <Link href="/contact" className="cta-btn">
-              Hubungi Kami →
+              {t("detail.cta.button")}
             </Link>
           </div>
         </aside>
       </div>
 
-      <BackToTop />
+      <BackToTop label={t("backToTop")} />
 
       <style jsx global>{`
         /* ── Fonts scoped ── */
@@ -1345,8 +1386,9 @@ export default function BlogDetail({
    getStaticPaths
 ───────────────────────────────────────────── */
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllPostIds("news").map(({ params }) => ({
+  const paths = getAllPostIds("blog").map(({ params, locale }) => ({
     params: { id: params.id },
+    locale,
   }));
   return { paths, fallback: "blocking" };
 };
@@ -1358,9 +1400,9 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const id = params?.id as string;
 
   try {
-    const postData = await getPostData(id, "news");
+    const postData = await getPostData(id, "blog", locale ?? "id");
 
-    const otherPosts = getSortedPostsData("news")
+    const otherPosts = getSortedPostsData("blog", locale ?? "id")
       .filter((p) => p.id !== id)
       .slice(0, 4)
       .map((p) => ({
@@ -1380,7 +1422,11 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
         postData,
         otherPosts,
         otherProducts,
-        ...(await serverSideTranslations(locale ?? "id", ["common", "order"])),
+        ...(await serverSideTranslations(locale ?? "id", [
+          "common",
+          "order",
+          "blog",
+        ])),
       },
     };
   } catch (error) {
@@ -1392,7 +1438,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 function getRotatedProducts(currentPostId: string, limit = 3) {
   try {
     // 1. Cari tahu urutan artikel saat ini
-    const allPosts = getSortedPostsData("news");
+    const allPosts = getSortedPostsData("blog");
     const currentPostIndex = allPosts.findIndex((p) => p.id === currentPostId);
     const postIndex = currentPostIndex !== -1 ? currentPostIndex : 0;
 

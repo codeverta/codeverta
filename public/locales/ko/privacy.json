@@ -1,58 +1,58 @@
 {
-  "title": "Privacy Policy",
-  "last_updated": "Last Updated: December 23, 2025",
-  "intro": "At Codeverta & BikinWebsiteJogja, we value your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information when you use our software development services.",
+  "title": "개인정보 처리방침",
+  "last_updated": "최종 업데이트: 2025년 12월 23일",
+  "intro": "Codeverta & BikinWebsiteJogja는 고객의 개인정보를 소중히 여기며 개인 데이터를 보호하기 위해 노력합니다. 본 정책은 소프트웨어 개발 서비스를 이용할 때 당사가 정보를 수집, 사용 및 보호하는 방식을 설명합니다.",
   "sections": {
     "collection": {
-      "title": "1. Information We Collect",
-      "content": "We collect several types of information to provide and improve our services:",
+      "title": "1. 수집하는 정보",
+      "content": "서비스 제공 및 개선을 위해 다음과 같은 정보를 수집합니다.",
       "items": [
-        "Identity Data: Name, company address, and official identity information for contract purposes.",
-        "Contact Data: Email address, WhatsApp/phone number, and delivery address.",
-        "Technical Data: IP address, browser type, location, and log data when accessing codeverta.com.",
-        "Project Data: Business documentation, company workflows, and digital assets you provide for system development."
+        "신원 정보: 계약 목적의 이름, 회사 주소 및 공식 식별 정보.",
+        "연락처 정보: 이메일 주소, WhatsApp/전화번호 및 배송 주소.",
+        "기술 정보: codeverta.com 접속 시 IP 주소, 브라우저 유형, 위치 및 로그 데이터.",
+        "프로젝트 정보: 시스템 개발을 위해 제공하는 비즈니스 문서, 업무 흐름 및 디지털 자산."
       ]
     },
     "usage": {
-      "title": "2. Use of Information",
-      "content": "The information we collect is used to:",
+      "title": "2. 정보의 사용",
+      "content": "수집한 정보는 다음 목적으로 사용됩니다.",
       "items": [
-        "Provide website development, mobile app, and custom system services.",
-        "Process payments and invoice administration.",
-        "Provide technical support, maintenance, and system updates.",
-        "Send important information about service or policy changes.",
-        "Analyze site usage to improve user experience."
+        "웹사이트 개발, 모바일 앱 및 맞춤형 시스템 서비스를 제공하기 위해.",
+        "결제 처리 및 인보이스 관리를 위해.",
+        "기술 지원, 유지보수 및 시스템 업데이트를 제공하기 위해.",
+        "서비스 또는 정책 변경과 관련된 중요한 정보를 보내기 위해.",
+        "사이트 사용을 분석하여 사용자 경험을 개선하기 위해."
       ]
     },
     "protection": {
-      "title": "3. Security and Data Protection",
-      "content": "We apply industry security standards to protect your data. As a software house, we understand the importance of source code and databases:",
+      "title": "3. 보안 및 데이터 보호",
+      "content": "당사는 데이터를 보호하기 위해 업계 표준 보안 조치를 적용합니다. 소프트웨어 회사로서 소스 코드와 데이터베이스의 중요성을 잘 이해하고 있습니다.",
       "items": [
-        "Data Encryption: Sensitive data is transmitted through SSL/TLS technology.",
-        "Limited Access: Only developers assigned to your project can access code repositories and databases.",
-        "NDA: Our team is bound by confidentiality obligations not to disclose your business logic or project data."
+        "데이터 암호화: 민감한 데이터는 SSL/TLS 기술을 통해 전송됩니다.",
+        "접근 제한: 프로젝트 담당 개발자만 코드 저장소와 데이터베이스에 접근할 수 있습니다.",
+        "NDA: 당사 팀은 고객의 비즈니스 로직 또는 프로젝트 데이터를 제3자에게 공개하지 않을 비밀유지 의무를 집니다."
       ]
     },
     "third_party": {
-      "title": "4. Sharing Data with Third Parties",
-      "content": "We do not sell your data. However, we work with third-party providers to run certain functions:",
+      "title": "4. 제3자와의 데이터 공유",
+      "content": "당사는 고객 데이터를 판매하지 않습니다. 다만 특정 기능을 수행하기 위해 제3자 서비스 제공업체와 협력합니다.",
       "items": [
-        "Cloud hosting providers such as AWS, Google Cloud, or Cloudflare for system deployment.",
-        "Payment gateways to process invoices securely.",
-        "Analytics services such as Google Analytics to monitor site performance."
+        "시스템 배포를 위한 AWS, Google Cloud, Cloudflare 등 클라우드 호스팅 제공업체.",
+        "인보이스 결제를 안전하게 처리하기 위한 결제 게이트웨이.",
+        "사이트 성능을 모니터링하기 위한 Google Analytics 등 분석 서비스."
       ]
     },
     "cookies": {
-      "title": "5. Cookies Policy",
-      "content": "Our site uses cookies to remember preferences such as language and recognize returning visitors. You can disable cookies in your browser settings, although some functions may not work optimally."
+      "title": "5. 쿠키 정책",
+      "content": "당사 사이트는 언어와 같은 설정을 기억하고 재방문자를 인식하기 위해 쿠키를 사용합니다. 브라우저 설정에서 쿠키를 비활성화할 수 있지만 일부 기능이 정상적으로 작동하지 않을 수 있습니다."
     },
     "rights": {
-      "title": "6. Your Rights",
-      "content": "You have the right to request access to your personal data, request corrections to inaccurate data, or request deletion from our marketing systems after the project is completed, as long as it does not conflict with legal or tax obligations."
+      "title": "6. 고객의 권리",
+      "content": "고객은 법적 또는 세무상 의무에 위배되지 않는 범위에서 개인정보 접근, 부정확한 데이터 수정, 프로젝트 완료 후 마케팅 시스템에서의 데이터 삭제를 요청할 권리가 있습니다."
     },
     "contact": {
-      "title": "7. Contact Us",
-      "content": "If you have questions about this privacy policy, you can contact us by email at support@codeverta.com or through the contact details listed on codeverta.com."
+      "title": "7. 문의",
+      "content": "본 개인정보 처리방침에 대한 질문은 support@codeverta.com 또는 codeverta.com에 기재된 연락처를 통해 문의하실 수 있습니다."
     }
   }
 }

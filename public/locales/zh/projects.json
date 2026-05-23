@@ -1,0 +1,3968 @@
+{
+  "projects": [
+    {
+      "product": {
+        "id": "gym-management-system",
+        "name": "Gym Management System by Codeverta",
+        "description": "集成了会员管理、考勤签到以及收银系统（POS）的健身房一体化运营管理系统。",
+        "fullDescription": "用于健身中心业务自动化的数字解决方案。该系统涵盖会员卡管理（健身计划）、会员训练追踪（健身锻炼日志），以及通过健身房 POS 发票记录商品销售。便于健身房经营者实时监控教练表现和会员留存率。",
+        "image": "/assets/products/gym-management.png",
+        "images": [
+          "/assets/products/gym-management.png",
+          "/assets/gym-management/poster1.png"
+        ],
+        "videoUrls": ["https://www.youtube.com/watch?v=nVCwhNEbOM8"],
+        "technologies": ["Go", "Next.js", "PostgreSQL", "Redis"],
+        "category": "Gym & Health",
+        "status": "Production Ready",
+        "version": "1.0.0",
+        "lastUpdated": "2026年2月",
+        "client": "-",
+        "duration": "3 个月",
+        "teamSize": "2 人 (后端, 前端)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "54",
+          "reviews": [
+            {
+              "author": "Roni Wijaya",
+              "role": "日惹 Iron Gym 负责人",
+              "date": "2026-02-15",
+              "body": "会员系统条理非常清晰。考勤签到的自动实时验证功能非常棒，彻底杜绝了非会员混入的情况。",
+              "rating": "5"
+            },
+            {
+              "author": "Coach Aldi",
+              "role": "总教练",
+              "date": "2026-03-01",
+              "body": "健身锻炼日志模块让我能在手机上系统化地轻松掌控客户的训练进度。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "技术文档",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心功能",
+          "workflow": "系统流程",
+          "techStack": "技术栈",
+          "screenshots": "界面展示",
+          "specs": "性能与安全"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "业务详情",
+          "clientLabel": "开发团队",
+          "durationLabel": "开发周期",
+          "teamSizeLabel": "团队总人数",
+          "lastUpdatedLabel": "最近审计"
+        },
+        "platformSupport": {
+          "title": "服务范围",
+          "items": [
+            "会员与会员计划管理",
+            "实时考勤签到追踪系统",
+            "健身房商品库存收银系统 (POS)",
+            "健身追踪与锻炼计划管理"
+          ]
+        },
+        "architecture": {
+          "title": "数据管理",
+          "items": [
+            "基于身体部位分类的健身锻炼数据结构",
+            "每笔交易自动生成健身房 POS 发票",
+            "集成的健身教练订阅管理系统",
+            "通过健身锻炼日志记录每日运动轨迹"
+          ]
+        },
+        "projectDescription": {
+          "title": "业务目标",
+          "paragraphs": [
+            "该业务专注于提高健身房的运营效率，确保“健身房会员（Gym Member）”数据与所选的“健身房会员身份（Gym Membership）”和“健身计划（Gym Plan）”实时同步，防止收入流失。",
+            "每笔零售交易（如销售保健品或矿泉水）都通过“健身房 POS 发票（Gym POS Invoice）”进行管理，并使用整齐有序的“健身房商品（Gym Item）”和“健身房 POS 商品（Gym POS Item）”数据进行记录。",
+            "通过“健身房教练（Gym Trainer）”模块提升服务质量，教练可以在“健身房课表（Gym Schedule）”中安排课程，并在“健身房锻炼日志（Gym Workout Log）”中系统地记录会员的训练进度。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Users",
+          "title": "会员系统",
+          "description": "完善的“健身房会员”数据管理，包含“健身房会员身份”状态及“健身计划”选择功能。"
+        },
+        {
+          "icon": "Calendar",
+          "title": "排课与教练管理",
+          "description": "配置团队课程或私教课程的“健身房课表”，并关联“健身房教练”与“健身房教练订阅”。"
+        },
+        {
+          "icon": "Activity",
+          "title": "锻炼追踪",
+          "description": "根据现有的“健身房锻炼”目录，记录“健身房锻炼日志”和“健身房锻炼条目”。"
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "考勤签到系统",
+          "description": "通过“健身房考勤”模块记录会员签到并验证入场准入权限。"
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "收银系统 (POS)",
+          "description": "零售收银系统，用于销售“健身房商品”和“健身房 POS 商品”，并自动生成“健身房 POS 发票”。"
+        },
+        {
+          "icon": "Settings",
+          "title": "应用配置",
+          "description": "通过“应用订阅设置”提供灵活的系统配置，以满足特定的业务运营需求。"
+        }
+      ],
+      "workflow": {
+        "title": "产品运营流程",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "会员入驻",
+            "description": "注册“健身房会员”并选择“健身计划”以激活其“健身房会员身份”。"
+          },
+          {
+            "step": 2,
+            "icon": "Clock",
+            "title": "日常考勤",
+            "description": "会员根据预先定义的“健身房课表”进行“健身房考勤”签到。"
+          },
+          {
+            "step": 3,
+            "icon": "Dumbbell",
+            "title": "锻炼执行",
+            "description": "教练指导“健身房锻炼”流程，并将其记录到“健身房锻炼日志”和“健身房锻炼条目”子记录中。"
+          },
+          {
+            "step": 4,
+            "icon": "CreditCard",
+            "title": "收银结算",
+            "description": "通过“健身房 POS 商品”处理配套商品交易，并在“健身房 POS 发票”中进行官方记录。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Go (Golang)",
+              "description": "用于处理需要极高处理速度的考勤和 POS 模块的核心业务逻辑。"
+            }
+          ]
+        },
+        {
+          "category": "Persistence",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "主数据库，用于存储映射健身房锻炼记录、身体部位和会员的关系统计数据。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "管理员控制台",
+          "image": "/assets/products/gym-1.png",
+          "description": "直观显示活跃会员概况和实时健身房考勤统计数据。"
+        },
+        {
+          "title": "收银系统 (POS) 界面",
+          "image": "/assets/products/gym-2.png",
+          "description": "专为输入健身房 POS 商品和打印健身房 POS 发票设计的收银员界面。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "基础设施规格",
+          "server": {
+            "title": "后端配置",
+            "items": [
+              "Docker 容器化部署",
+              "PostgreSQL 数据库",
+              "基于 Redis 的会话与考勤数据缓存"
+            ]
+          },
+          "client": {
+            "title": "用户访问端",
+            "items": ["Web 浏览器 (管理员控制台)", "移动端 App (会员锻炼日志)"]
+          }
+        },
+        "performanceMetrics": {
+          "title": "系统性能指标",
+          "metrics": [
+            {
+              "label": "考勤签到处理速度",
+              "value": "< 100ms"
+            },
+            {
+              "label": "发票生成速度",
+              "value": "即时生成"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "业务安全保障",
+          "items": [
+            "会员在进行健身房考勤签到时进行自动身份有效性验证",
+            "为每份生成的健身房 POS 发票提供完善的审计日志追踪",
+            "对健身房会员的个人隐私数据实施端到端的高级加密"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "High-Performance Trail Running Ticketing System",
+        "description": "高性能越野跑赛事票务注册系统，专为在抢票高峰期处理每秒数千笔的高并发交易而设计。",
+        "fullDescription": "该系统专为应对国际级越野跑赛事开放报名时的极端流量洪峰而设计。核心聚焦于数据一致性、防黄牛/爬虫机器人以及水平扩展能力。采用微服务架构构建，确保排队流程公平，并有效防御自动化脚本攻击。",
+        "image": "/assets/products/46.png",
+        "videoUrls": [
+          "https://youtu.be/HM03PfVRtLk?si=I4t96ZbHhjcdmy2q",
+          "https://youtu.be/AubgymD5NC8?si=Gc5vpVce2Grfpndy"
+        ],
+        "technologies": ["Go", "Next.js", "Redis", "PostgreSQL", "Kafka"],
+        "category": "Event Management",
+        "status": "Production Ready",
+        "version": "2.1.0",
+        "lastUpdated": "2026年1月",
+        "client": "Malabar Team",
+        "duration": "1 个月",
+        "teamSize": "2 人 (全栈, SRE, 安全分析师, QA, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "210",
+          "reviews": [
+            {
+              "author": "Budi Santoso",
+              "role": "Malabar Run 赛事总监",
+              "date": "2026-01-20",
+              "body": "在抢票通道开放、流量瞬间见顶时，服务器完全没有出现卡顿或宕机。Redis 分布式锁机制非常过硬，实现了零超卖！",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Rahma",
+              "role": "SRE 负责人",
+              "date": "2026-02-11",
+              "body": "虚拟等候室（Virtual Waiting Room）排队系统的设计堪称天才；即使在极限流量峰值下，它也能让数据库负载保持高度稳定。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "技术文档",
+          "liveDemo": "在线演示",
+          "links": {
+            "liveDemo": "https://malabartrailrun.id",
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点",
+          "workflow": "报名流程",
+          "techStack": "技术栈详情",
+          "screenshots": "界面展示",
+          "specs": "性能与安全"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "系统详情",
+          "clientLabel": "合作伙伴",
+          "durationLabel": "开发周期",
+          "teamSizeLabel": "团队总人数",
+          "lastUpdatedLabel": "最近审计"
+        },
+        "platformSupport": {
+          "title": "基础设施优化",
+          "items": [
+            "云环境下的弹性自动弹性伸缩",
+            "虚拟排队机制（虚拟等候室）",
+            "医疗体检数据与 ITRA 积分自动化验证",
+            "赛事计时与成绩系统深度集成"
+          ]
+        },
+        "architecture": {
+          "title": "系统架构设计",
+          "items": [
+            "基于 Go (Golang) 的微服务架构，保障高执行效率",
+            "通过 Redis 实现分布式锁，彻底杜绝重复占位/双重订票",
+            "采用消息队列 (Kafka) 支撑高效的异步支付处理工作流",
+            "边缘保护层设计，有效缓解第 7 层 DDoS 流量攻击"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目背景",
+          "paragraphs": [
+            "热门跑步赛事票务的核心痛点在于“抢票大战”，数万名跑者在同一秒尝试提交报名，这往往会导致传统服务器崩溃或引发严重的超卖错误。",
+            "本系统通过引入令牌桶（Token Bucket）算法来平滑限制突发请求，并搭配基于 Redis 的高性能队列，确保基于“先到先得”原则的绝对公平席位分配。",
+            "从安全研究的角度来看，该系统全面配备了对抗高级自动化机器人（如无头浏览器）的防御屏障，并通过对敏感医疗体检数据进行端到端加密来确保跑者数据的绝对安全。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Zap",
+          "title": "超高并发处理能力",
+          "description": "利用 Go routines 的轻量化优势，能够以极低的延迟轻松应对每秒 50,000 次以上的并发请求。"
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "反欺诈与机器人拦截",
+          "description": "集成 mTLS（双向传输层安全性）以及基于行为特征的质校验，彻底拦截自动化脚本和恶意抢票软件。"
+        },
+        {
+          "icon": "Users",
+          "title": "虚拟等候室",
+          "description": "交互式虚拟等候区域，在瞬时高峰期有效调节用户流量，避免底层数据库发生穿透性过载。"
+        },
+        {
+          "icon": "Activity",
+          "title": "ITRA/UTMB 积分验证",
+          "description": "通过第三方官方 API 自动验证选手的报名资格，确保其越野赛积分真实合规。"
+        },
+        {
+          "icon": "CreditCard",
+          "title": "全球支付网关集成",
+          "description": "深度集成多种主流支付网关与票务系统（包括 TIAS、XENDIT 和 MIDTRANS），配套全自动对账流水线。"
+        },
+        {
+          "icon": "Lock",
+          "title": "严格的数据隐私合规",
+          "description": "完全符合 GDPR 隐私法规中关于跑者健康指标和个人身份数据安全存储的硬性指标。"
+        }
+      ],
+      "workflow": {
+        "title": "选手报名 lifecycle 流程",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "进入等候队列",
+            "description": "当瞬时并发流量跨越预设安全阈值时，系统引导用户平滑进入虚拟排队区域。"
+          },
+          {
+            "step": 2,
+            "icon": "FileText",
+            "title": "填写表单与资格校验",
+            "description": "选手填写个人详细跑步档案，系统同步启动针对预选赛资格积分（ITRA 指数）的实时校验。"
+          },
+          {
+            "step": 3,
+            "icon": "Clock",
+            "title": "锁定配额席位",
+            "description": "系统通过高可靠性的分布式锁，为当前用户安全锁定选定的赛事席位 15 分钟。"
+          },
+          {
+            "step": 4,
+            "icon": "CreditCard",
+            "title": "执行安全支付",
+            "description": "通过高强度加密的金融级通道处理交易订单，并辅以实时的回调通知确认系统。"
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "获取参赛确认",
+            "description": "即时生成专属参赛 QR 码，同步将席位确认信息推送至选手邮箱及个人控制面板。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Go (Golang)",
+              "description": "主核心后端服务语言，凭借卓越的内存管理与无与伦比的并发处理特性而采用。"
+            },
+            {
+              "name": "gRPC",
+              "description": "一种高性能的内部微服务通信协议，旨在提供超低延迟的内部系统性能指标。"
+            }
+          ]
+        },
+        {
+          "category": "Persistence & Cache",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "底层关系型数据库，经过深度索引优化，可从容管理数百万结构化的选手报名记录。"
+            },
+            {
+              "name": "Redis Cluster",
+              "description": "高可用内存数据存储层，用于高并发排队控制及毫秒级用户状态锁机制。"
+            }
+          ]
+        },
+        {
+          "category": "DevSecOps",
+          "technologies": [
+            {
+              "name": "Kubernetes",
+              "description": "容器编排集群，根据 CPU/内存 的实时负载，驱动微服务实例实现动态水平自动伸缩。"
+            },
+            {
+              "name": "Prometheus & Grafana",
+              "description": "全方位实时基础设施监控栈，精细化追踪流量异常并即时隔离系统潜在瓶颈。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "实时排队表单界面",
+          "image": "/assets/products/47.png",
+          "description": "票务选择界面，与高并发排队系统协同运行，目标响应延迟控制在 500ms 以内。"
+        },
+        {
+          "title": "信息登记表单",
+          "image": "/assets/products/48.png",
+          "description": "完全个性化定制的报名表单，收集字段完全贴合客户的实际办赛诉求。"
+        },
+        {
+          "title": "定制化界面与 GPX 轨迹",
+          "image": "/assets/products/49.jpeg",
+          "description": "详细的赛事信息页面，配备清晰美观的交互式 GPX 数字化赛道地图叠加层。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "基础设施规格",
+          "server": {
+            "title": "云端配置标准",
+            "items": [
+              "最少配置 3 个集群节点 (每个节点 8 vCPU, 16GB 内存)",
+              "托管型 Kubernetes 环境 (如 EKS/GKE)",
+              "独立高配 Redis 实例 (内存优化型架构)",
+              "企业级 Cloudflare 防护接入，提供高级 WAF 与抗 DDoS 流量清洗能力"
+            ]
+          },
+          "client": {
+            "title": "客户端兼容性",
+            "items": [
+              "完美适配符合 ES6+ 特性标准的主流现代 Web 浏览器",
+              "响应式前端框架，完美适配 iOS 与 Android 智能移动设备"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "服务等级协议 (SLA) 与性能基准",
+          "metrics": [
+            {
+              "label": "最大并发支持用户数",
+              "value": "100,000+"
+            },
+            {
+              "label": "P99 核心响应延迟",
+              "value": "< 150 ms"
+            },
+            {
+              "label": "配额库存一致性",
+              "value": "100.0% (零超卖风险)"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "网络安全防护层",
+          "items": [
+            "基于 IP 地址与设备指纹双重校验的细粒度速率限制（Rate Limiting）",
+            "基于自动密钥轮转机制的 JWT（JSON Web Token）多层加密身份鉴权体系",
+            "严密的事务审计日志链，精准捕获每一次业务数据的微小状态跳变",
+            "符合行业高标准（AES-256）的底层静态数据存储加密技术"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-commerce Platform for SMEs/MSMEs",
+        "description": "一套配备了商品目录、购物车以及在线支付深度集成功能的全功能电商平台系统。",
+        "fullDescription": "该电商平台专为中小微企业设计，旨在帮助其高效、安全地开展线上销售业务。系统涵盖了产品管理、商品目录检索与智能筛选、购物车机制、结账流程、基于 Midtrans 的数字化支付网关集成，以及功能强大的订单与用户管理控制台。系统完全基于现代响应式架构搭建，确保用户在桌面端和移动端都能获得无缝的使用体验。",
+        "image": "/assets/products/27.png",
+        "images": [
+          "/assets/products/27.png",
+          "/assets/e-commerce/detail-product.png"
+        ],
+        "technologies": ["React", "Laravel", "MySQL", "Midtrans"],
+        "category": "E-commerce",
+        "status": "Completed",
+        "version": "1.0.0",
+        "lastUpdated": "2025年5月",
+        "client": "PT Million Candles",
+        "duration": "6 个月",
+        "teamSize": "6 人 (前端, 后端, UI/UX, QA, DevOps, PM)",
+        "seo": {
+          "ratingValue": "4.7",
+          "reviewCount": "68",
+          "reviews": [
+            {
+              "author": "Dewi Lestari",
+              "role": "Million Candles 企业负责人",
+              "date": "2025-06-10",
+              "body": "商品目录与结账流程非常直观，即便是普通消费者也操作自如。与 Midtrans 支付网关的对接可以说是无缝激活，没有任何繁琐阻碍。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "技术文档",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点",
+          "workflow": "用户流向",
+          "techStack": "技术栈详情",
+          "screenshots": "产品图集",
+          "specs": "规格详情"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "项目详情",
+          "clientLabel": "签约客户",
+          "durationLabel": "研发周期",
+          "teamSizeLabel": "团队总人数",
+          "lastUpdatedLabel": "最近更新"
+        },
+        "platformSupport": {
+          "title": "终端兼容支持",
+          "items": [
+            "原生适配各类主流现代 Web 浏览器（桌面端与移动端）",
+            "专为提升搜索引擎自然曝光率打造的深度 SEO 优化体系",
+            "与 Email 及 WhatsApp 数字化触达服务的无缝 interlocking 关联",
+            "支持 Midtrans 数字化支付以及传统手动银行转账双重链路"
+          ]
+        },
+        "architecture": {
+          "title": "系统架构设计",
+          "items": [
+            "基于 Laravel 构建的高内聚、可信赖的单体后端系统",
+            "基于 React 打造的前后端分离、高度模块化的前端展现层",
+            "采用契约型的 RESTful API 模型管理前后端数据传输枢纽",
+            "多层防线设计，强制校验 CSRF Token 并配置高严密速率限制中间件"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目详细说明",
+          "paragraphs": [
+            "本项目致力于输出高性价比的数字化线上零售工具，协助品牌方迅速开辟线上销售阵地。当下大量的中小微企业往往由于传统电商系统过于冗杂的底层研发代价而对数字化转型望而却步。",
+            "整个研发体系始终紧扣“用户体验至上”的核心方针，兼顾消费者结账便利性与企业后台配置的高效度。管理员可以极其顺畅地发布新品、归纳类目、创建大促活动并高效分发履约订单，普通买家亦可一键搜索、自由加购并完成结算。",
+            "集成的 Midtrans 支付通道提供了行业顶尖的安全性，涵盖电子钱包、各大网银及 QRIS 扫码支付。该平台已完全具备支撑各类中小规模零售业务模型快速落地的技术实力。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "ShoppingBag",
+          "title": "商品目录精细化管理",
+          "description": "一键执行产品的上架、变更与废弃，支持高清图集配置、描述格式化、基础定价控制以及库存水位警戒。"
+        },
+        {
+          "icon": "Filter",
+          "title": "智能检索与类目筛选",
+          "description": "依托高级筛选算法提供顺畅的导购体验，支持按类目、价格区间及人气热度指标进行多维度交叉筛选。"
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "购物车交互系统",
+          "description": "支持用户动态将心仪商品推入购物车队列，并允许在最终初始化结算链路前自由微调商品件数。"
+        },
+        {
+          "icon": "CreditCard",
+          "title": "极速收银与在线支付",
+          "description": "由 Midtrans 底层技术驱动的加速结算面板，全面覆盖各类主流数字化支付端口。"
+        },
+        {
+          "icon": "Truck",
+          "title": "订单流转与发货履约",
+          "description": "提供自动化的物流流转监控循环，精确追踪从最初订单确立直至最终末端投递的完整状态变更。"
+        },
+        {
+          "icon": "UserCheck",
+          "title": "安全用户体系管理",
+          "description": "高强度防护的用户账户体系，全面承载消费历史账目追踪以及严格的账号登录凭证防护。"
+        }
+      ],
+      "workflow": {
+        "title": "通用用户业务流",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Search",
+            "title": "选购浏览",
+            "description": "消费者通过顶部智能搜索条查找目标尖货，或借助侧边类目导航栏自由探寻。"
+          },
+          {
+            "step": 2,
+            "icon": "ShoppingCart",
+            "title": "心仪加购",
+            "description": "将选定的零售单品一键推入缓存购物车中，以便后续集中调用批量结算。"
+          },
+          {
+            "step": 3,
+            "icon": "CreditCard",
+            "title": "初始化结算",
+            "description": "消费者精确补充收货地址、匹配联系方式并指定首选的数字化支付方式。"
+          },
+          {
+            "step": 4,
+            "icon": "CheckCircle",
+            "title": "清算与商家确认",
+            "description": "底层清算总线完成交易划扣，同步触发自动化通知推向企业管理端与客户客户端。"
+          },
+          {
+            "step": 5,
+            "icon": "Truck",
+            "title": "物流出库履约",
+            "description": "仓库管理人员核对无误后打包发货，促使系统状态机动态跳变至对应的出库发货状态。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React",
+              "description": "行业领先的 JavaScript 前端框架，用于构建高响应、动态且高度组件化的交互式视图层。"
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "原子化的实用型 CSS 样式框架，可显著缩减前端代码体积并维持极致统一的视觉调性。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Laravel 10",
+              "description": "高优雅度的 PHP 企业级框架，自带极为稳固的路由系统、鉴权组件以及 Eloquent 对象关系映射引擎。"
+            },
+            {
+              "name": "Midtrans API",
+              "description": "深度互联的顶级数字化支付总线，承载信用卡、区域主流电子钱包及虚拟银行账户的实时清算。"
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "MySQL",
+              "description": "高稳定性的开源关系型数据库系统，委派用于高可靠性地保存商品名录、用户配置文件及核心订单交易台账。"
+            }
+          ]
+        },
+        {
+          "category": "Infrastructure & DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "将前后端核心软件依赖解耦并封装进独立的标准化容器单元中，保障多环境下敏捷部署的绝对对齐。"
+            },
+            {
+              "name": "GitHub Actions",
+              "description": "工业级 CI/CD 自动化流水线，代码一经合入即自动触发系统构建、质量核验并完成目标服务器的无缝更替。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "电商线上商城首页",
+          "image": "/assets/products/27.png",
+          "description": "展示吸睛的巨幅大促海报轮播横幅、主推核心品类网格以及爆款单品推荐模块。"
+        },
+        {
+          "title": "商品目录检索页",
+          "image": "/placeholder.svg",
+          "description": "清爽大方的网格化产品陈列样式，附带醒目的缩略预观图、精细定价标签以及一键快速加购触发按钮。"
+        },
+        {
+          "title": "统一购物车结算中心",
+          "image": "/placeholder.svg",
+          "description": "集约化的清单账目核对视图，无缝合并明细清单、运费计算组件以及多通道付款选择按钮。"
+        },
+        {
+          "title": "企业控制管理后台",
+          "image": "/placeholder.svg",
+          "description": "将实时的销售大盘图表、库存水位监控中枢以及多流向订单处理流水线高度浓缩于单个一体化视窗面板中。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统环境规格",
+          "server": {
+            "title": "服务器配置要求",
+            "items": [
+              "PHP 运行环境版本需达 8.2 或更高",
+              "MySQL 关系型数据库引擎需达 8.0 或更高",
+              "内置 Node.js 运行时环境，以便对 React 生产环境静态资源进行打包与压缩编译",
+              "底层服务器最低硬件指标建议匹配 2 vCPU 搭配 4GB RAM 的弹性算力底座"
+            ]
+          },
+          "client": {
+            "title": "用户终端环境",
+            "items": [
+              "现代主流网络浏览器（如 Google Chrome, Mozilla Firefox, Apple Safari）",
+              "常规且稳定的网络互联链路"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "核心性能指标",
+          "metrics": [
+            { "label": "核心商城首页加载耗时", "value": "< 300 ms" },
+            { "label": "API 接口平均处理延迟", "value": "< 200 ms" },
+            { "label": "结算完结转化成功率", "value": "> 100%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "全方位安全防线",
+          "items": [
+            "由 Laravel Sanctum 技术保障的轻量化、高强度 API 接口访问鉴权令牌框架",
+            "强制执行的全接口输入参数合规核验与跨站脚本攻击（XSS）恶意代码深度清洗机制",
+            "全程强制启用 HTTPS 传输层加密协议，并部署权威机构签发的合法 SSL 安全证书",
+            "部署了针对每一次传入的 Midtrans 回调数据载荷进行严格来源真伪判定与 Webhook 签名验证机制"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "RME & Hospital Management System by Codeverta",
+        "description": "电子病历系统（EMR），与印尼卫生部 SatuSehat（HL7 FHIR 标准）无缝互联，深度集成诊所全流程一体化运营管理。",
+        "fullDescription": "一套综合性的数字化医疗信息化解决方案，旨在将传统的纸质医疗流程全面迁移至安全的数字云端。系统深度串联了从最初的接诊挂号、分诊导医、医生临床结构化开药诊断（SOAP 规范病历）直到末端药房自动核扣配药以及收银结算的完整医疗闭环。系统底座完全基于 HL7 FHIR 数据规范打造，并强制执行高级别数据加密以捍卫患者医疗隐私权。",
+        "image": "/assets/healthcare/preview.png",
+        "technologies": [
+          "Golang",
+          "React",
+          "Next.js",
+          "MariaDB",
+          "Docker",
+          "Redis",
+          "HL7 FHIR API"
+        ],
+        "category": "Healthcare IT Solutions",
+        "status": "Completed",
+        "version": "4.2.0",
+        "lastUpdated": "2026年4月",
+        "client": "Klinik Pratama Sejahtera",
+        "duration": "14 个月",
+        "teamSize": "10 位专家 (全栈研发, 安全工程师, 医疗信息化专家, QA, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "86",
+          "reviews": [
+            {
+              "author": "dr. Ahmad Fauzi",
+              "role": "医疗机构负责人",
+              "date": "2026-02-20",
+              "body": "与印尼国家 SatuSehat 平台的对接极其丝滑。面向临床医生的结构化病历输入面板设计得非常直观，大幅降低了我们的系统适应成本。",
+              "rating": "5"
+            },
+            {
+              "author": "Maya Sari",
+              "role": "药房药剂科主任",
+              "date": "2026-03-12",
+              "body": "这彻底重构了我们药房的库存盘点与电子处方流转模式。过往由于手写处方字迹潦草而引发的医疗用药风险直接被降为零。",
+              "rating": "5"
+            },
+            {
+              "author": "Irvan Hakim",
+              "role": "医院信息化 IT 总监",
+              "date": "2026-04-05",
+              "body": "系统底层架构的安全度与扩展弹性超出了我们的预期。原生内置的强大租户隔离机制使得我们对外部各家二级分院的IT管理变得探囊取物。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "对接技术文档",
+          "links": {
+            "documentation": "https://docs.medixflow.id/api-v4"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点",
+          "workflow": "就医全闭环",
+          "techStack": "核心技术栈",
+          "screenshots": "系统视窗集锦",
+          "specs": "合规与安全"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "数字化医疗项目详情",
+          "clientLabel": "签约医疗机构",
+          "durationLabel": "研发布局周期",
+          "teamSizeLabel": "核心团队专家数",
+          "lastUpdatedLabel": "最近更替发布"
+        },
+        "platformSupport": {
+          "title": "系统覆盖范围",
+          "items": [
+            "临床医护一体化智能工作台 (EMR)",
+            "药房进销存管理与电子处方流转总线",
+            "患者线上自助预约挂号与健康门户",
+            "国家 SatuSehat 平台及 BPJS 医保结算 API 深度对接"
+          ]
+        },
+        "architecture": {
+          "title": "海量数据架构设计",
+          "items": [
+            "基于 Golang 语言构建的高并发、响应式的后端微服务集群",
+            "原生适配 HL7 FHIR 国际医疗互操作性框架与病历数据规范",
+            "基于 MariaDB 关系型数据库并强制加持硬件级 AES-256 数据加密",
+            "利用 WebSockets 实时网络双工协议驱动的智能排队导医系统"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目详细说明",
+          "paragraphs": [
+            "传统医疗机构向数字化转型过程中，普遍受到数据录入繁琐和数据外泄焦虑的双重掣肘。MedixFlow 顺应行业变革，通过引入可重组、可扩展的 SOAP 医生工作台病历模板，完美攻克了病历录入耗时繁琐的技术难关。",
+            "平台的应用场景不限于简单的健康数据登记，而是将挂号取号、分诊、化验排查、电子处方流转到医保结算进行一体化串联。内置的 SatuSehat API 桥接机制确保患者健康档案在完全遵循国家隐私安全法的前提下，实现跨区域医疗机构的跨院合规流转。",
+            "实际生产数据显示，该平台的引入促使医疗机构的综合行政处理时效大幅缩减 60%，患者无效排队候诊时长锐减，更关键的是，得益于病历信息的数字化呈现，临床医生的错诊漏诊风险大幅降低。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Stethoscope",
+          "title": "电子病历工作台 (SOAP)",
+          "description": "严格契合国际规范的临床文档结构，分项捕获主诉（S）、客观检查（O）、临床诊断（A）与后续治疗计划（P）。"
+        },
+        {
+          "icon": "FileText",
+          "title": "电子处方流转",
+          "description": "医生开具处方后直接以数字化加密载荷投递至药房窗口，并同步完成对应批次药品的自动库存核扣。"
+        },
+        {
+          "icon": "Users",
+          "title": "智能考勤分诊排队",
+          "description": "基于就诊科室动态建立的智能排队轮询矩阵，实时联动候诊区域的液晶数字电视屏幕显示。"
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "SatuSehat 官方对接",
+          "description": "全自动化的数据传输管道，医生诊毕后系统自动打包患者健康诊疗档案并加密上传至卫生部官方云端。"
+        },
+        {
+          "icon": "PieChart",
+          "title": "多维发病率统计图表",
+          "description": "一键提炼和统计符合 ICD-10 国际疾病分类标准的常见多发疾病排行，满足卫生局例行合规上报需求。"
+        },
+        {
+          "icon": "CreditCard",
+          "title": "综合收费与医保 POS 结算",
+          "description": "高度透明的财务收费模块，兼容现金、数字化聚合移动支付以及复杂的医保补偿结算处理。"
+        }
+      ],
+      "workflow": {
+        "title": "数字化医疗就诊生命周期",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "患者预约挂号",
+            "description": "患者借助线上自助挂号系统完成科室选定，或到院利用线下自助一体机扫码获取分诊号牌。"
+          },
+          {
+            "step": 2,
+            "icon": "Activity",
+            "title": "前置体征测量",
+            "description": "导医护士协助测量患者基础生命体征参数，体征指标瞬间自动推入目标医生的接诊视窗内。"
+          },
+          {
+            "step": 3,
+            "icon": "Stethoscope",
+            "title": "医生临床问诊",
+            "description": "接诊医生检索患者既往历史病案，结构化编写 SOAP 病历，指定 ICD-10 疾病编码并一键签发电子处方。"
+          },
+          {
+            "step": 4,
+            "icon": "Pill",
+            "title": "药房配药与财务结算",
+            "description": "药剂科后台依据到账的到处方进行审方和配药，财务收银窗口同步协助完成多渠道财务清算。"
+          },
+          {
+            "step": 5,
+            "icon": "CloudUpload",
+            "title": "国家卫生部系统同步",
+            "description": "本就诊结算会话彻底归档归口，系统后台全自动打包底层指标并通过安全网络管道 stream 投递至 SatuSehat 平台。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend Core",
+          "technologies": [
+            {
+              "name": "Golang (Gin)",
+              "description": "承载重度且复杂的核心医疗业务数据运算，以高并发架构异步维持同国家各大直属 API 的长时平稳对接。"
+            },
+            {
+              "name": "Redis",
+              "description": "工业级缓存中间件，全面锁闭和托管复杂的就诊分诊排队序列与多并发用户鉴权信息。"
+            }
+          ]
+        },
+        {
+          "category": "Frontend & UI",
+          "technologies": [
+            {
+              "name": "Next.js",
+              "description": "React 高级混合渲染框架，用于输出轻量化、亚秒级呈现且极其符合医疗信息交互的安全管理控制台。"
+            },
+            {
+              "name": "Day.js",
+              "description": "负责在前端高效呈现精细化的医生排班表轮换矩阵，并以绝对精度自动化核算患者的生理年龄。"
+            }
+          ]
+        },
+        {
+          "category": "Database & Security",
+          "technologies": [
+            {
+              "name": "MariaDB",
+              "description": "核心高可用企业级数据库，强制开启硬件级底层静态存储加密，全面保障患者敏感健康数据的物理存储安全。"
+            },
+            {
+              "name": "Vault",
+              "description": "由 HashiCorp 打造的独立密钥集中管控环境，全面对齐并加密保存 SatuSehat 与 BPJS 网络的商用级别接入令牌。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "医生工作台 - SOAP 数字化录入",
+          "image": "/assets/healthcare/preview.png",
+          "description": "集约化的全屏医生问诊界面，右侧整合了智能药学词典、诊断助手以及醒目的患者药物过敏史警告色块。"
+        },
+        {
+          "title": "实时分诊排队控制中枢",
+          "image": "/assets/healthcare/manajemen-klinik.png",
+          "description": "图形化呈现的全院候诊梯队进度视图，方便各科室导医护士根据实况执行弹性跨科室分流调配。"
+        },
+        {
+          "title": "SatuSehat 实时同步状态视窗",
+          "image": "/assets/healthcare/rekam-medis-elektronik.png",
+          "description": "专为医院IT管理人员量身定制的通信数据面板，图表呈现当前诊疗记录上报国家主网的同步健康态。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "临床合规与运行指标",
+          "server": {
+            "title": "云端基础设施规格",
+            "items": [
+              "单实例核心后端算力底座建议至少分配 8GB 物理内存，用以支撑海量数据交互",
+              "全面采用高 IOPS 级别的固态硬盘（SSD）存储矩阵，保障医疗病案历史秒级模糊调阅",
+              "全通道全面架设 Extended Validation (EV) 行业最高授信级别的 SSL 安全证书，拦截公共链路嗅探"
+            ]
+          },
+          "client": {
+            "title": "到院现场硬件配套",
+            "items": [
+              "护士站与诊室桌面终端配置现代主流网络浏览器（推荐 Google Chrome 或 Microsoft Edge）",
+              "标配医用条码扫描枪，用于瞬间识别患者诊疗卡条码或扫描核对处方标签",
+              "诊室及采样间标配专业热敏标签打印机，用以即时输出实验室化验试管专属标识"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "安全与速率指标",
+          "metrics": [
+            {
+              "label": "医疗核心病历物理加密等级",
+              "value": "AES-256 Bit 高强度级"
+            },
+            { "label": "SatuSehat 主网同步接口延迟", "value": "< 2 秒 bounds" },
+            { "label": "核心集群全年持续可用度 SLA", "value": "99.99% 生产级" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "法律合规与防御机制",
+          "items": [
+            "部署了完善的全链条行为审计记录（Audit Trail），严格追溯任意账号查阅、变更患者病历的 chronological 事实",
+            "医护人员登录强制加持基于硬件绑定的双因子安全鉴权认证（2FA）",
+            "架构完全符合印尼国家卫生部关于电子病历管理条例的 PMK No. 24 2022 核心合规指标",
+            "内置终端无操作智能休眠超时机制，防止现场医护人员离席时工作站被第三方近身侵入"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Laundry Management System by Codeverta",
+        "description": "专为洗衣行业打造的一站式数字化运营管理系统，涵盖订单追踪、多门店管理及客户自动化通知。",
+        "fullDescription": "端到端的智能化洗衣业务管理方案。完美整合了前台快易收银记账（Laundry POS）、后端洗涤助剂及原材料进销存（Chemical Inventory）以及洗涤生命周期（洗涤、烘干、熨烫）的实时进度监控。同时内置会员营销体系、WhatsApp 自助触达网关，并能一键编译输出多维度的财务报表。",
+        "image": "/assets/laundry-management/preview.png",
+        "technologies": ["Laravel", "Vue.js", "MySQL", "Pusher"],
+        "category": "Retail & Services",
+        "status": "Production Ready",
+        "version": "2.1.0",
+        "lastUpdated": "2026年3月",
+        "client": "-",
+        "duration": "4 个月",
+        "teamSize": "3 人 (后端, 前端, QA)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "124",
+          "reviews": [
+            {
+              "author": "Budi Santoso",
+              "role": "Laundry Express 创始人",
+              "date": "2026-01-15",
+              "body": "非常契合实际运营的优秀系统！现在我坐在家里，直接用手机就能清清楚楚地看到各个分店每天的衣物洗涤流转进度。",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Aminah",
+              "role": "直营门店店长",
+              "date": "2026-02-10",
+              "body": "自动触发的 WhatsApp 进度通知功能简直是获客利器，让我们的衣物托管服务瞬间变得高端和正规起来。",
+              "rating": "4"
+            }
+          ]
+        }
+      },
+      "seo": {
+        "jsonLd": {
+          "@context": "https://schema.org/",
+          "@type": "SoftwareApplication",
+          "name": "Laundry Management System by Codeverta",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web-Based / Android",
+          "offers": {
+            "@type": "Offer",
+            "price": "1500000",
+            "priceCurrency": "IDR"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "124"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Budi Santoso" },
+              "datePublished": "2026-01-15",
+              "reviewBody": "非常契合实际运营的优秀系统！现在我坐在家里，直接用手机就能清清楚楚地看到各个分店每天的衣物洗涤流转进度。",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Siti Aminah" },
+              "datePublished": "2026-02-10",
+              "reviewBody": "自动触发的 WhatsApp 进度通知功能简直是获客利器，让我们的衣物托管服务瞬间变得高端和正规起来。",
+              "reviewRating": { "@type": "Rating", "ratingValue": "4" }
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "运营指南文案",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心卖点",
+          "workflow": "洗涤流转",
+          "techStack": "系统架构栈",
+          "screenshots": "后台视窗",
+          "specs": "安全与多店扩展"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "多店商业详情",
+          "clientLabel": "技术开发商",
+          "durationLabel": "研发布局耗时",
+          "teamSizeLabel": "团队运作架构",
+          "lastUpdatedLabel": "最近更替发布"
+        },
+        "platformSupport": {
+          "title": "细分功能覆盖",
+          "items": [
+            "支持按重计价、按件精洗的高效前台收银 POS 系统",
+            "衣物派送员专用的上门取送取件物流派单模块",
+            "标准衣物状态透明追踪 (待洗、烘干中、熨烫中、待取)"
+          ]
+        },
+        "architecture": {
+          "title": "资产与集团化数据管理",
+          "items": [
+            "实时关联的前台助剂、洗涤耗材库存水位监控 (避免耗材流失)",
+            "集约化的会员档案库与阶梯式积分换礼营销系统",
+            "支持多区域、多店连锁网络下的精细化员工岗位权限划分",
+            "基于固定财务周期自动生成的门店损益表与盈亏核算"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目商业目标",
+          "paragraphs": [
+            "Codeverta 倾力打造的连锁洗衣业 ERP 平台，专为解决传统洗涤门店中极易滋生的衣物乱堆漏排、衣物重记漏记、各分店雇员劳动生产率难以异地精准考核等行业顽疾。",
+            "系统在底层代码架构上确保每一笔“洗衣订单（Laundry Order）”自客户前台交付起，便自动绑定一枚唯一的物理 QR 二维码追溯令牌，以此锁闭从最初衣物入厂到最终由“配送员（Laundry Delivery）”完成末端履约配送的闭环。",
+            "连锁投资人可以通过实时动态面板清晰掌握每家门店核心“洗涤化工原材料（Laundry Chemical）”的每日精确折耗曲线，从源头上斩断库存偷漏并大幅压降店务运营开销。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "智能接单管理",
+          "description": "基于衣物托付的紧急程度（常规、加急、特急闪洗）智能优化洗涤任务排队优先级。"
+        },
+        {
+          "icon": "Truck",
+          "title": "上门取送物流派单",
+          "description": "专为末端衣物取送人员量身打造的移动端界面，用于承接、处理并可视化定位取送路径。"
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "WhatsApp 自动化触达",
+          "description": "衣物一旦熨烫包装完毕或处于待派送状态时，后端服务器自动向目标客户触达图文短信提示。"
+        },
+        {
+          "icon": "UserCheck",
+          "title": "会员精细化运营",
+          "description": "内置自动化阶梯打折、积分累计与满额回馈机制，全力协助连锁品牌构建本地高频复购壁垒。"
+        },
+        {
+          "icon": "BarChart",
+          "title": "多维店务报表",
+          "description": "按日、按月实时汇总各大门店的营业额走势、毛利变动并自动核扣对应前台店员的提成比例。"
+        },
+        {
+          "icon": "Archive",
+          "title": "助剂消耗智能预警",
+          "description": "实时精准扣减每一次洗涤周期的洗涤剂用量，若核心库存逼近警戒线则自动发出进货提示。"
+        }
+      ],
+      "workflow": {
+        "title": "数字化洗涤标准流程",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Clipboard",
+            "title": "前台收衣开单",
+            "description": "店员快速创建“洗衣订单”，放置称重组件读取数值，并将唯一的二维码不干胶防水标签绑定至衣物收纳筐。"
+          },
+          {
+            "step": 2,
+            "icon": "RefreshCw",
+            "title": "洗涤生命周期跳变",
+            "description": "洗涤技师在工位终端更新处理状态（洗涤中 > 烘干中 > 熨烫中），状态动态映射至消费者的手机追踪链接内。"
+          },
+          {
+            "step": 3,
+            "icon": "CheckSquare",
+            "title": "严密质检包装",
+            "description": "质检工位对完成熨烫的 garment 织物执行洁净度二次核验，核准数量无误后完成数字化防尘封装。"
+          },
+          {
+            "step": 4,
+            "icon": "ShoppingBag",
+            "title": "末端交付清算",
+            "description": "在 POS 收银机终端结清尾款账目，完成面交领取或调用专职衣物派送员流转至客户上门地址。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "PHP Laravel",
+              "description": "高并发、工程级的高内聚 MVC 后端框架，用以确保多店跨区域运作下的底层账目一致性与架构防线。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "收银 POS 核心控制台",
+          "image": "/assets/laundry-management/codeverta-laundry-management-system.png",
+          "description": "专为前台打造的高效收衣面板，支持公斤数快速录入与洗涤服务类目的秒级勾选。"
+        },
+        {
+          "title": "洗涤任务可视化大屏",
+          "image": "/assets/laundry-management/laundry-system.png",
+          "description": "店务实时状态总览网格，清晰标注哪些标号的物理洗衣机和烘干机矩阵正处于生产负载状态。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "多店运行规格",
+          "server": {
+            "title": "云端基础设施建议",
+            "items": [
+              "弹性云服务器部署方案 (支持 VPS 或独立弹性算力底座)",
+              "PHP 运行环境建议达到 8.2 或更高版本",
+              "关系型数据库集群架构 MySQL",
+              "配置了底层的系统级 Cron 作业，用以每秒精准驱动通知网关的例行调度轮询"
+            ]
+          },
+          "client": {
+            "title": "门店硬件基础设施",
+            "items": [
+              "配置了主流热敏小票打印机，用以即时输出水洗标签及客户结算凭证",
+              "派送物流人员统一配备 Android 智能设备，用以承载物流端 App 指标交互",
+              "门店工作台配备任意现代网络浏览器，运行于桌面电脑或触控平板设备"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "服务性能基准",
+          "metrics": [
+            {
+              "label": "跨区域多店数据互联同步延迟",
+              "value": "< 2 秒 bounds"
+            },
+            {
+              "label": "WhatsApp 通知触达到达率",
+              "value": "99.9%"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "数据隐私安全保障",
+          "items": [
+            "对消费者手机、住址等敏感身份档案强制执行高位物理哈希加密存储",
+            "配置自动化的每日异地云端数据库备份，保障系统长期运营的抗灾害弹性",
+            "严格的 RBAC 岗位角色屏障，全面隔离前台收银员与超级投资人之间的核心财务审计数据"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Website Undangan Pernikahan Digital Interaktif",
+        "description": "集成了在线 RSVP 统计、地图导航、高清画廊以及数字礼金功能的互动式数字化婚礼请柬平台系统。",
+        "fullDescription": "该平台专为追求时尚、践行绿色环保理念并渴望与宾客产生深度数字互动的准新人倾力打造。每一份请柬生成后都拥有独一无二的专属访问 URL，完美揉合了实时的礼貌赴宴人数确认表单、无缝整合的精准路线指引（Google Maps 导航）、高清唯美的婚纱摄影画廊、数字化电子留言簿以及高安全度的线上数字礼金奉礼功能。平台自带大量奢华的高端自适应视觉主题，完美兼容各类主流屏幕尺寸。",
+        "image": "/assets/products/42.png",
+        "technologies": [
+          "Next.js",
+          "Firebase/Supabase",
+          "Vercel/Netlify",
+          "Tailwind CSS"
+        ],
+        "category": "Digital Invitation",
+        "status": "Completed",
+        "version": "1.0.0",
+        "lastUpdated": "2025年12月",
+        "client": "准新人夫妇",
+        "duration": "2 周 (快速部署与主题调优)",
+        "teamSize": "3 人 (前端, UI/UX, 技术支持)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "145",
+          "reviews": [
+            {
+              "author": "Rian & Alisa",
+              "role": "新婚夫妇",
+              "date": "2025-12-20",
+              "body": "页面呈现效率让人惊叹，首次加载耗时竟然不到一秒！来参加婚礼的宾客们对那个极富动态感的婚纱照画廊赞不绝口，实时的 RSVP 计数也让我们轻松把控了宴会桌数。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "后台操作文档",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点",
+          "workflow": "交互流程",
+          "techStack": "技术选型",
+          "screenshots": "视觉主题库",
+          "specs": "性能规格"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "项目基本详情",
+          "clientLabel": "签约用户",
+          "durationLabel": "交付耗时",
+          "teamSizeLabel": "团队总人数",
+          "lastUpdatedLabel": "最近更替"
+        },
+        "platformSupport": {
+          "title": "终端兼容性支持",
+          "items": [
+            "原生自适应各类现代主流 Web 浏览器（桌面端与移动端）",
+            "极致倾斜于“移动端体验至上”的响应式底层前端框架布局",
+            "深度挂接 Google Maps 地图导航 API 以及数字化日历日程提醒（Google/iCal）",
+            "支持用户进行个性化独立二级域名的映射与解析控制"
+          ]
+        },
+        "architecture": {
+          "title": "微服务与无服务器架构",
+          "items": [
+            "基于 Next.js/React 前端技术实现的 Serverless 无服务器展现层布局",
+            "借助 Backend as a Service (BaaS) 云引擎实时抓取和回传 RSVP 赴宴表单及留言日志",
+            "完全部署在纯静态托管网络中，彻底抹平服务器白屏等待时长",
+            "内置高度符合搜索引擎爬取规范的动态元数据组件，便于公开分享传播"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目详细说明",
+          "paragraphs": [
+            "本项目通过输出环保、低开销且饱含高级交互体验的数字化网络请柬，旨在对传统繁冗、低复用率的纸质婚礼请柬行业进行彻底的数字化变革。系统不再局限于单向的信息陈列，而是全力保障新婚夫妇与到场来宾的信息交互品质。",
+            "每套自适应当中都牢固嵌入了实时的 RSVP 数据统计组件，协助新人随时掌握宾客的到场状态和出席人数。同时，点对点的地图车载路线导航以及极富现代气息的数字礼金（电子红包）奉礼卡片，不仅极大给予了亲友便利，更为婚礼赋予了巨大的商业附加值。",
+            "新婚夫妇可以通过傻瓜式的独立控制面板，在几分钟内自由更替背景音乐、调整相册动画节奏并撰写浪漫致辞。平台的诞生不仅保障了婚礼筹备阶段的井然有序，更为海量亲友缔造了非凡的高端第一视觉印象。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Users",
+          "title": "赴宴人数在线确认 (RSVP)",
+          "description": "来宾一键填报是否出席、携眷人数等核心数据，表单状态实时流转至新人的后台统计大屏。"
+        },
+        {
+          "icon": "MapPin",
+          "title": "车载高精度路线指引",
+          "description": "深度挂接 Google Maps 地图导航 API，协助亲友一键跳转车载导航前往婚宴现场。"
+        },
+        {
+          "icon": "Image",
+          "title": "唯美多媒体画廊",
+          "description": "以极为优雅的瀑布流或网格化动效陈列新人的婚纱摄影巨作，支持内嵌高清预告视频片段。"
+        },
+        {
+          "icon": "Calendar",
+          "title": "日程一键备忘登记",
+          "description": "极为贴心的小组件，方便远道而来的亲友将婚礼大喜之日的精确deadline一键写入个人手机日历提醒中。"
+        },
+        {
+          "icon": "Gift",
+          "title": "数字化线上奉礼/红包",
+          "description": "安全浮现新人的加密网银账号或主流电子钱包收钱码，为无法到场的亲友开辟高信任度的线上奉礼路径。"
+        },
+        {
+          "icon": "Speech",
+          "title": "数字化电子祝福留言簿",
+          "description": "来宾可在网页评论区即时发布诚挚的祝福或浪漫的催更长文，留言动态瞬间全局渲染可见。"
+        }
+      ],
+      "workflow": {
+        "title": "数字化请柬生命周期交互流",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Link",
+            "title": "专属链接定向分发",
+            "description": "新人将个性化定制的唯一 H5 请柬 URL 链接通过 WhatsApp 或者是社交媒体精准定向推送至亲友群组。"
+          },
+          {
+            "step": 2,
+            "icon": "ScrollText",
+            "title": "亲友探索互动",
+            "description": "来宾轻触链接唤醒精美封面，跟随音乐节奏向下滑动浏览恋爱浪漫历程、探索婚纱摄影图集并核对日程。"
+          },
+          {
+            "step": 3,
+            "icon": "Users",
+            "title": "线上填报 RSVP 账目",
+            "description": "来宾在页面中后段根据实况勾选赴宴意愿、标记到场随行人数并顺手在留言簿中敲写真挚祝福。"
+          },
+          {
+            "step": 4,
+            "icon": "MapPin",
+            "title": "到院到场路线导航",
+            "description": "大喜之日当天，参宴亲友再次激活该数字化 H5 页面，一键调用高精度地图导航顺畅驾车到场。"
+          },
+          {
+            "step": 5,
+            "icon": "MonitorCheck",
+            "title": "实时监控掌控全盘",
+            "description": "新婚夫妇通过独立的后台视图实时审视当前的到场亲友总单、核算所需酒店席位数并批量导出财务账目表。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Next.js/React",
+              "description": "React 生态顶级的工程化全栈框架，采用先进的服务端预渲染架构，从而赋予前端首屏亚秒级的极限呈现时效。"
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "原子化视觉样式构筑工具，允许研发人员脱离复杂的原生CSS编写，在短时间内敏捷打磨出具备奢华质感的前端调性。"
+            }
+          ]
+        },
+        {
+          "category": "Backend & Database",
+          "technologies": [
+            {
+              "name": "Firebase/Supabase",
+              "description": "功能强大的 BaaS 无服务器后端资源底座，负责弹性托管高并发的用户Wish数据流并对新人登录安全严密把关。"
+            },
+            {
+              "name": "Nodemailer (optional)",
+              "description": "负责在底层静默运作的邮件派发脚本，当捕捉到高权重的RSVP赴宴变动时自动推送提醒通告。"
+            }
+          ]
+        },
+        {
+          "category": "Hosting & Deployment",
+          "technologies": [
+            {
+              "name": "Vercel/Netlify",
+              "description": "顶尖的 Serverless 静态与全栈托管网络，全面贴合 Next.js 的高并发路由特性，确保全球各节点的秒级解析分发。"
+            },
+            {
+              "name": "GitHub",
+              "description": "引入作为绝对底层的源码版本流控制中心，无缝关联 CI/CD 自动化持续部署闭环。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "数字化 H5 请柬唯美主页",
+          "image": "/assets/products/42.png",
+          "description": "浪漫精巧的开屏动效视觉层，优雅呈递新人姓名徽标、倒计时组件以及核心“开启请柬”交互功能键。"
+        },
+        {
+          "title": "RSVP 回执与线上留言区域",
+          "image": "/assets/products/43.jpeg",
+          "description": "极具留白艺术美感的表单交互空间，方便亲友敲入具体的赴宴状态并滚动展示海量祝福长文。"
+        },
+        {
+          "title": "婚礼仪式会场详情视窗",
+          "image": "/assets/products/44.png",
+          "description": "集中陈列典礼准确时刻安排的信息区，无缝内嵌了高响应度的 Google 地图图层与日历同步按钮。"
+        },
+        {
+          "title": "新人专属操控管理控制台",
+          "image": "/assets/products/45.png",
+          "description": "供新人独立运作的精简看板，全面聚合宾客签到回执折线图、Wish内容清洗审核机制以及音乐更替选项。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统与环境规格",
+          "server": {
+            "title": "无服务器平台依赖要求",
+            "items": [
+              "配置了正常运作且赋予高读写限额的 BaaS 平台服务（如 Firebase 或 Supabase 云环境）",
+              "备好个性的独立域名资产（需正确调配解析 DNS zone 区域的各条 CNAME/A 记录记录）",
+              "配置有合法的官方 Google Maps API 传输层访问鉴权密钥 key"
+            ]
+          },
+          "client": {
+            "title": "新人素材与环境筹备",
+            "items": [
+              "备妥高清、经过合理体积缩减的摄影图集包以及符合多媒体播放规范的婚纱预告片视频",
+              "确定详尽不含模糊字眼的仪式时段排期表以及无误差的地理空间经纬度坐标",
+              "绑定可靠的通讯邮箱和移动电话接码端，用以即时承载系统抛出的重要宾客到场变更告警"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "页面运行性能基准",
+          "metrics": [
+            { "label": "移动端首屏骨架呈现耗时", "value": "< 1 秒即可开屏" },
+            {
+              "label": "RSVP 表单回传实时数据同步",
+              "value": "Real-time 零时差"
+            },
+            {
+              "label": "谷歌 Mobile Lighthouse 综合审计得分",
+              "value": "> 90 优异评级"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "安全防护层配置",
+          "items": [
+            "采用高强度权限审计屏障牢固阻隔新人后台控制面板，拦截越权恶意调用",
+            "引入哈希路由模糊算法生成每套专属URL，防止恶意爬虫大范围对来宾隐私实施盲扫爆破",
+            "前端与后端全链条布防严密的类型参数合规校验，彻底将表单注入风险拒之门外",
+            "由托管端自动签发并定期自动续期的 HTTPS 安全加密传输层，加持权威 SSL 根证书"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "smart-pos-system",
+        "name": "Point of Sales (POS) System by Codeverta",
+        "description": "集成了智能库存盘点控制与多维度实时业务报表功能的新一代智能化收银（POS）管理系统。",
+        "fullDescription": "Smart POS System 是一款高度集约化、契合现代数字商业规范的顶级门店收银管理软件，专为满足大型连锁零售、高频餐饮服务以及标准综合门店的严苛运营诉求而打磨。系统原生内置了精细到库位层级的仓储监控体系、实时滚动的交易流监控总线以及兼顾线上订单核扣与线下柜台收银的多渠道一体化闭环。系统搭载极具亲和度的UI设计，可大幅度缩减前台人员的操作难度。系统底座完全基于高扩展性、高度解耦的模块化架构搭建，完美应对未来繁杂第三方业务生态的接入与功能重组需求。",
+        "image": "/assets/products/33.png",
+        "technologies": [
+          "Vue.js",
+          "Laravel",
+          "MySQL",
+          "Socket.io",
+          "Redis",
+          "Docker"
+        ],
+        "category": "Point of Sale",
+        "status": "Completed",
+        "version": "2.1.0",
+        "lastUpdated": "2024年12月",
+        "client": "Retail Chain Indonesia",
+        "duration": "6 个月",
+        "teamSize": "5 位研发工程师"
+      },
+      "seo": {
+        "ratingValue": "4.9",
+        "reviewCount": "24",
+        "reviews": [
+          {
+            "author": "Budi Santoso",
+            "date": "2026-01-15",
+            "body": "一款运行响应极其干脆利落、功能分布一目了然的卓越收银系统。我们的前台零售团队几乎在零培训的实况下直接上手无缝运作。",
+            "rating": "5"
+          }
+        ]
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "系统配置文档",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点",
+          "workflow": "交易流程图",
+          "techStack": "底层技术架构",
+          "screenshots": "功能视窗",
+          "specs": "性能规格指标"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "系统基本详情",
+          "clientLabel": "签约商户",
+          "durationLabel": "研发布局耗时",
+          "teamSizeLabel": "研发规模",
+          "lastUpdatedLabel": "最近更替发布"
+        },
+        "platformSupport": {
+          "title": "多端运行兼容支持",
+          "items": [
+            "跨平台综合 Web 应用程序",
+            "原生级别移动端响应式自适应布局",
+            "针对触控平板设备进行的深度交互流畅度调优",
+            "完美适配渐进式网络应用（PWA）运行指标"
+          ]
+        },
+        "architecture": {
+          "title": "技术架构蓝图",
+          "items": [
+            "单页面应用（SPA）前端工程化构建范式",
+            "高度标准、经过高响应度优化的 RESTful API 接口层设计",
+            "事件驱动型、毫秒级执行的数据实时同步处理机制",
+            "完全对齐微服务架构标准、开箱即用的高可扩展后端底座"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目商业目标说明",
+          "paragraphs": [
+            "Smart POS System 的立项初衷，在于协助当下锐意创新的连锁品牌打破传统零售工具的禁锢，为其构建一套将前台收银结算、后端仓库实时调拨以及管理决策大盘深度交织的一体化运转枢纽。",
+            "底层的研发逻辑赋予了整个软件极高的柔性扩展特质，在遭遇外部复杂的第三方电商平台接口挂接、新兴跨境支付网关互联或者各类小票机/条码枪等硬件集成需求时，系统能够将架构调整摩擦降至冰点。",
+            "全面引入事件驱动的实时通信组件，从根本上锁定了仓库剩余数量、资金流变动以及销售指标的同频异地跳变，帮助各级管理决策人员在任意时段都能依靠最真实、最新鲜的数据矩阵下达商业战术指令。",
+            "统一的多通道销售整合模块，允许大型企业在一个主后台中，同时无缝穿透对线下实体门店以及线上商城流向的数据监控，极大地压缩了连锁对账的行政时间损耗。",
+            "交互极富质感的高级分析面板能实时对企业净利润水平、商品库存流转速度（周转率）以及 chronologically 流量波峰走势实施深度沙盘化呈现，协助店长定制高胜率的精细化店务策略。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "ShoppingCart",
+          "title": "线上线下多渠道同频互联",
+          "description": "将数字电商结算链路与实体柜台面对面收银账目完美汇聚于单一系统视图之中。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "实时动态商业智慧大盘",
+          "description": "集约化的可视化数据报表中心，秒级汇聚各店营收毛利数据并洞察商品周转趋势趋势。"
+        }
+      ],
+      "workflow": {
+        "title": "前台交易全闭环流程",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Package",
+            "title": "条码枪极速扫码",
+            "description": "通过外接条码枪设备秒级解析产品的国际商品条码，或在平板触控名录中快速检索心仪产品。"
+          },
+          {
+            "step": 2,
+            "icon": "ShoppingCart",
+            "title": "加购与动态优惠计算",
+            "description": "自由增减结算数量，底层计价引擎自动联动执行对应的会员扣减、满减大促或折价券抵扣规则。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Vue.js 3",
+              "description": "采用组合式 API (Composition API) 范式构建的高柔性、高反应速度的前端渲染框架层。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Laravel 10",
+              "description": "构建稳固且安全的底层 API 核心，承载业务数据的高效计算流转。"
+            },
+            {
+              "name": "Socket.io",
+              "description": "专门架设的全双工实时数据总线，消弭服务器与门店收银终端之间的通信时间真空。"
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "MySQL 8",
+              "description": "工业级标准的高可用开源关系型数据库，管理核心事务账目，确保财务逻辑绝对严密。"
+            }
+          ]
+        },
+        {
+          "category": "DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "将整体应用依赖彻底集装箱化隔离，以此在分发多网点节点部署时将多环境摩擦缩减为零。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "系统总览主控制面板",
+          "image": "/assets/products/12.png",
+          "description": "集成核心销售额总计看板、多维度经营概况图表以及日常前台快易处理按钮。"
+        },
+        {
+          "title": "系统总览主控制面板",
+          "image": "/assets/products/13.png",
+          "description": "集成核心销售额总计看板、多维度经营概况图表以及日常前台快易处理按钮。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "运行规格基准",
+          "server": {
+            "title": "云端算力底座最低标准",
+            "items": [
+              "PHP 运行时版本不低于 8.1 规范",
+              "MySQL 数据库存储引擎建议配置在 8.0 或以上版本"
+            ]
+          },
+          "client": {
+            "title": "门店客户端兼容指标",
+            "items": [
+              "标准合规的现代主流网络浏览器",
+              "浏览器必须具备执行现代 JavaScript 脚本的完整权限"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "性能服务基准",
+          "metrics": [
+            { "label": "核心前台收银界面首次白屏时长", "value": "< 300 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "安全防护层配置",
+          "items": [
+            "全通道数据链路通过强安全度的 SSL/TLS 传输层协议全程锁闭",
+            "极其颗粒化的 Role-Based Access Control 权限层级屏障，守护商业资产安全"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "webgis-platform",
+        "name": "WebGIS Platform",
+        "description": "基于 Web 端的高性能地理信息系统，专为空间数据可视化、专题地图绘制和空间几何分析而设计。",
+        "fullDescription": "WebGIS Platform 是一款基于纯浏览器运行的交互式地理信息系统（GIS）专业解决方案。该系统摒弃了传统笨重的桌面软件依赖，全面赋予用户在线上传多格式空间地理坐标矢量文件、定制精美的 Choropleth 专题地图圈层、实时在前端触发诸如缓冲区（Buffering）计算或多边形空间叠加拓扑核算（Overlay）等高级地理几何算法的能力，并支持一键通过网页链接向异地协同人员分发可视化制图成果。",
+        "image": "/assets/products/28.png",
+        "technologies": [
+          "React",
+          "Leaflet.js",
+          "Node.js",
+          "PostgreSQL",
+          "PostGIS",
+          "GeoServer"
+        ],
+        "category": "Geographic Information System",
+        "status": "Completed",
+        "version": "1.5.0",
+        "lastUpdated": "2025年6月",
+        "client": "地方规划与发展发展规划局 (Bappeda)",
+        "duration": "8 months",
+        "teamSize": "4 位专家 (GIS 空间分析师, 前端工程师, 后端工程师, DB 管理员)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "35",
+          "reviews": [
+            {
+              "author": "Yusuf Anggara",
+              "role": "Bappeda 专业 GIS 空间分析师",
+              "date": "2025-06-18",
+              "body": "在浏览器端直接渲染体积极其庞大且饱含繁杂多边形网格的关系型 GeoJSON 地理矢量图层，画面流畅度非常令人惊喜。内置的区域邻近缓冲区算法的结算速度快如闪电。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "技术开发文档",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点",
+          "workflow": "分析运作流",
+          "techStack": "核心架构栈",
+          "screenshots": "功能画廊",
+          "specs": "开发规格"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "空间数字化详情",
+          "clientLabel": "签约机构",
+          "durationLabel": "研发历时",
+          "teamSizeLabel": "核心团队人数",
+          "lastUpdatedLabel": "最近更替发布"
+        },
+        "platformSupport": {
+          "title": "终端兼容性支持",
+          "items": [
+            "原生自适应各类现代桌面 Web 浏览器（如 Google Chrome, Mozilla Firefox, Microsoft Edge）",
+            "完美适配触控平板等移动端视窗的自适应展现布局",
+            "支持底层实时拦截并调用移动终端原生硬件的高精度 Geolocation 空间定位数据",
+            "提供标准干净的地图服务分发 API，便于企业三方软件无缝进行地图图层套嵌"
+          ]
+        },
+        "architecture": {
+          "title": "系统架构选型",
+          "items": [
+            "高性能的 B/S（Browser-Server）前后端分离经典研发架构",
+            "采用专为快速吞吐大规模 GeoJSON 几何空间坐标数组打造的 RESTful 架构设计",
+            "无缝整合行业主流地图切片服务器（Tile Server），标准接入 WMS/WMTS 官方图层服务",
+            "模块化、松耦合的多层地图图层树状叠加与可视化控制框架"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目商业诉求说明",
+          "paragraphs": [
+            "本系统立项根源于城市规划机构对更敏捷、更轻量化空间地理几何分析工具的切实迫切渴望。传统模式下各级规划专员及战略分析师往往必须受限于特定高配台式机并需要安装部署环境极其考究的单机重型GIS软件，协同制图效率极低。",
+            "为了打破此类空间技术壁垒，我们以前端 React 搭配 Leaflet.js 地理制图库、后端 Node.js 异步高速总线、底层搭载配备了 PostGIS 地理空间扩展组件的开源关系型数据库 PostgreSQL 为整体核心战术技术蓝图，打造出了这套颠覆单机体验的 SPA 数字化空间地图平台。",
+            "最终的落地成果构建了一个集秒级数据呈现、交互亲和度拉满与底层空间地理信息分析能力极其硬核的地理底座。用户可以轻松在线组装复杂的拓扑逻辑判别任务，并将其翻译成一目了然的专题色彩斑斓地图，大力支持城市战略决策团队稳扎稳打地根据最准确的物理坐标做决策规划。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "柔性多层地图圈层管控",
+          "description": "灵活拉取、动态重组各图层上下层级次序，并能独立精细微调 WMS, WFS 和 GeoJSON 等各类复杂图层数据包的画面不透明度参数。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "高端专题制图数据可视化",
+          "description": "一键将表格业务指标转化渲染为精巧的等值线地图（Choropleth）、高内聚热力图（Heatmap）或等级比例符号图（Graduated Symbols），瞬间洞察地域商业态势。"
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "高级空间几何算法中枢",
+          "description": "支持用户无需借助后台算力，直接在客户端浏览器本地飞速运行邻近缓冲区（Buffer）、交叉相交判别（Intersect）以及区域几何合并（Union）等硬核地理信息处理任务。"
+        },
+        {
+          "icon": "Printer",
+          "title": "数字化多功能空间标绘与测算",
+          "description": "秒级测算线性轨迹实际距离与闭合多边形真实物理投影面积，同时允许在数字画布上自由钉入地图标记（Marker）、自定义不规则轮廓以及富文本描述标记。"
+        },
+        {
+          "icon": "Database",
+          "title": "地理要素属性级动态交互式检索",
+          "description": "鼠标轻触任意地图区块边界，立即向侧边滑动展现完整的属性字段表，配合高级属性过滤语法，轻松秒筛选特定空间特征数据。"
+        },
+        {
+          "icon": "Download",
+          "title": "地图成果快速离线与矢量导出",
+          "description": "将当前地图视窗构图一键保存输出为印刷级高清大图（PNG/JPG），或将自研编辑的闭合空间图层完整提取转化为标准的 GeoJSON, KML 或 CSV 文本包。"
+        }
+      ],
+      "workflow": {
+        "title": "空间几何地理分析工作流",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Database",
+            "title": " ingestion  ingestion 地理矢量文件",
+            "description": "分析人员将现成的单机版 Shapefile 数据文件夹或标准的 GeoJSON 数据拖拽移入系统视窗，或者一键键入外部WMS地图协议链接。"
+          },
+          {
+            "step": 2,
+            "icon": "Package",
+            "title": "地图图层视觉调优",
+            "description": "利用渲染引擎自主变更矢量面的外围描边粗细、色块高亮规则、选定最具辨识度的地图图钉，以赋予地图最鲜明的业务承载力。"
+          },
+          {
+            "step": 3,
+            "icon": "BarChart3",
+            "title": "运行空间计算组件",
+            "description": "在顶部工具条快速开启所需算法组件（如“围绕核心坐标轴建立2公里半半径缓冲区”），补充好关键距离边界指标并一键运行核心计算总线。"
+          },
+          {
+            "step": 4,
+            "icon": "CheckCircle",
+            "title": "计算成果瞬间投影呈现",
+            "description": "系统前端在几毫秒内就地完成几何图形拓扑重叠处理，并将全新算出的衍生图形作为崭新图层无偏误地叠加投影投影呈现至画布中。"
+          },
+          {
+            "step": 5,
+            "icon": "Printer",
+            "title": "完备地图版面组装",
+            "description": "在画面边缘安全注入专业的制图核心要素，包括全类目地图图例说明、城市标题横幅、标准指南针以及动态变化的比例尺组件，最后执行批量导出。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "用于构建高性能模块化单页面前端应用的主流工程化库，确保地图视图外围管理组件的快速重绘。"
+            },
+            {
+              "name": "Leaflet.js",
+              "description": "开源地图技术生态中声名赫赫的轻量级地图引擎，对移动端触控捏合、平移缩放具有极致细腻的流畅度处理。"
+            },
+            {
+              "name": "Turf.js",
+              "description": "极其强悍、采用高级空间拓扑结构打造的纯前端高级地理信息处理算法引擎，彻底将算力迁移至用户端。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js (Express)",
+              "description": "异步、非阻塞的高速网络运行时层，委派用于提供高吞吐的业务数据加载交互路由支持。"
+            },
+            {
+              "name": "GeoServer",
+              "description": "业界公认符合开源 OGC 国际地理信息标准的尖端地图中继分发引擎，用于解析底层的重型空间切片。"
+            },
+            {
+              "name": "GDAL/OGR",
+              "description": "空间底层的重型开源地理矢量数据格式相互转换、解析与重组处理的泰斗级通用底层库。"
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "PostgreSQL 16",
+              "description": "全面对齐企业级并发和海量关系型数据记录的硬核顶级对象关系型开源数据库管理引擎。"
+            },
+            {
+              "name": "PostGIS 3.4",
+              "description": "为 PostgreSQL 插上翅膀的官方顶级空间地理数据扩展模块，赋予数据库利用 SQL 直接对几何要素运行高速模糊计算的能力。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "多基础底图叠加与多要素图层加载主控界面",
+          "image": "/assets/products/1.png",
+          "description": "平台主地图画布全景视窗，核心展示多层矢量斑块的覆盖效果，并在左下角常驻功能工具面板。"
+        },
+        {
+          "title": "Choropleth 专题级区域人口密度热力渲染图",
+          "image": "/assets/products/3.png",
+          "description": "基于行政规划街区边界数据自动计算出的网格人口密度分布效果，色彩深度智能联动业务变量。"
+        },
+        {
+          "title": "多地图圈层树形层级与不透明度精细调节面板",
+          "image": "/assets/products/4.jpeg",
+          "description": "高度富集的图层树管理抽屉界面，支持通过纯鼠标拖拽无级互换图层上下遮挡关系。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统研发规格与部署依赖",
+          "server": {
+            "title": "服务器配置基准要求",
+            "items": [
+              "Node.js 运行时运行环境建议搭载 18.x 长期支持版或以上",
+              "PostgreSQL 关系型数据库底层大版本需达 14+ 并保证成功部署 PostGIS 扩展包",
+              "基础服务器内部建议成功部署 Java 运行环境虚拟机 JDK 11+（用于挂载 GeoServer 地图中继器）"
+            ]
+          },
+          "client": {
+            "title": "客户端浏览器兼容性",
+            "items": [
+              "全面适配开启了高级 JavaScript 脚本执行机制、完美匹配 ES6+ 语法规格的所有现代标准网页浏览器",
+              "常规无丢包的稳定互联网络链路"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "极限服务运行效能基准",
+          "metrics": [
+            { "label": "基础二维地图画布框架首次开屏耗时", "value": "< 600ms" },
+            {
+              "label": "常规单图层上万矢量几何点重绘呈现延迟",
+              "value": "< 400ms"
+            },
+            { "label": "空间分析 API 接口综合拓扑处理时效", "value": "< 300ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "安全防护层配置要求",
+          "items": [
+            "采用高密度的 JWT（JSON Web Token）无状态令牌机制阻断和防御前端接口请求",
+            "设置针对不同业务岗位的精细化空间图层 Role-Based Access Control 权限拦截机制",
+            "针对空间属性条件查询框部署深层的SQL注入防护校验过滤网",
+            "强制通过 HTTPS 高级别数据传输层加密通道分发空间文件载荷"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "enterprise-erp-system",
+        "name": "Enterprise Resource Planning (ERP) System",
+        "description": "打通企业全维度业务链路、实现全流程数据流实时内聚与敏捷自动化的集团级现代化 ERP 管理系统。",
+        "fullDescription": "本企业级资源计划（ERP）管理系统作为整个集团数据中枢大脑的核心所在，旨在将分散在企业日常运作中的核心财务总账核算、全生命周期人力资源档案管理、多维度智能仓储调度进销存、前端多级销售漏洞管理（CRM）以及后端复杂的排产制造（MRP）进行模块化汇聚，将其融于一个高生产力、实时滚动的统一数字协作云空间中。",
+        "image": "/assets/products/29.png",
+        "technologies": [
+          "Next.js",
+          "Node.js",
+          "TypeScript",
+          "MySQL",
+          "Redis",
+          "Docker"
+        ],
+        "category": "Enterprise Resource Planning",
+        "status": "In Development",
+        "version": "0.8.0",
+        "lastUpdated": "2025年7月",
+        "client": "PT Manufaktur Jaya Nasional",
+        "duration": "18 个月 (火热研发迭代中)",
+        "teamSize": "12 位各领域专家 (资深业务分析师, 资深 PM, 前端团队, 后端专家, QA 矩阵, DevOps 工程师)",
+        "seo": {
+          "ratingValue": "4.6",
+          "reviewCount": "18",
+          "reviews": [
+            {
+              "author": "Ir. Joko Susilo",
+              "role": "PT Manufaktur Jaya Nasional 集团董事总经理",
+              "date": "2025-07-28",
+              "body": "全新上线的核心总账模块与物料清单（BOM）制造流管控体系展现出了令人称奇的系统整合度，直接打破了过往困扰我们各事业部数年之久的信息孤岛僵局。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "集团系统部署指南",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "企业模块大盘",
+          "workflow": "核心流转总线",
+          "techStack": "底层技术矩阵",
+          "screenshots": "功能视窗",
+          "specs": "集团规格指标"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "项目核心信息",
+          "clientLabel": "签约实体",
+          "durationLabel": "研发合作周期",
+          "teamSizeLabel": "专家梯队编制",
+          "lastUpdatedLabel": "最近更新更替"
+        },
+        "platformSupport": {
+          "title": "多端兼容弹性覆盖",
+          "items": [
+            "提供基于现代网络浏览器访问的企业集约化 Web 管理总控制台",
+            "配套输出专为一线外勤业务代表和前线仓库保管员量身定制的专属移动端 App",
+            "底层原生兼容主流工业级标签条码打印机、各类无线条码扫描枪硬件终端",
+            "打通通用的异构数据互联总线，完美承载大批量 CSV 与 Excel 账目的快速吞吐"
+          ]
+        },
+        "architecture": {
+          "title": "系统底层高可用设计",
+          "items": [
+            "企业级、经过高隔离性稳定性校验的安全多租户（Multi-tenancy）系统底座",
+            "采用高吞吐分布式消息队列，平滑化削峰处理高密度的后台异步账目运算",
+            "打造集中的企业用户认证网关，无缝集成集团内网单点登录（SSO）鉴权中心"
+          ]
+        },
+        "projectDescription": {
+          "title": "数字化转型立项深度剖析",
+          "paragraphs": [
+            "超大型集团化企业在日常扩张经营中，通常饱受一系列深层系统性顽疾的阻碍：财务、行政、供应链等各职能部门间数据相互割裂，业务账目过度依赖效率低下的传统手工表格处理，决策层无法实时穿透各层子公司的数据黑盒捕获真实的业绩指标。陈旧、分散且彼此独立的旧系统严重制约了集团的经营敏捷度与供应链抗风险指标。",
+            "针对以上核心阻碍，本研发团队打造了这套基于纯 Web 运行、高度松耦合、支持柔性模块化拆组的全新连锁型企业系统。基于宏大的单体工程模式，研发人员将各大最核心的职能条线（包含智慧总账、人力资本核算、动态多仓储调配等）重构为高度内聚且能深度契合的数据子服务层，完美达成跨层级数据同频，消除代码维护负担并支持多研发团队的异地并轨工程交付。",
+            "随着该数字枢纽的全面落地，集团客户成功树立了唯一的、高权威性的、毫无数据盲区的“全链路核心业务数据事实源”。这带来了各条线协同效率的历史性飙升，压缩了漫长的采购与销售周期，并能输出高度集约的智能化数据看板，切实给予管理决策层极其精准的数据支撑以定制长远的行业跨越策略。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "CreditCard",
+          "title": "智慧财务与总账精细化管理",
+          "description": "企业级重型财务系统，全面掌控科目总账簿、应收应付账款自动核销账目、实时现金头寸流水监控、集团预算硬性控制中间件以及全自动化的凭证自动结转及多维损益财务报表编译。"
+        },
+        {
+          "icon": "Users",
+          "title": "智能人力资本与薪酬总线 (HRM)",
+          "description": "集约化维护全集团雇员核心档案生命周期、处理异地多门店多班次复杂考勤打卡结算、自动化核算复杂薪金税务扣减（如 PPh 21 合规计算）以及建立数字化高管考核与KPI评估矩阵。"
+        },
+        {
+          "icon": "Package",
+          "title": "智慧仓储与供应链控制中心",
+          "description": "实时动态盘点多仓储点剩余水位，全链条监控商品入库出库、库内动态移库调拨、自动触发补货采购申请单审批流以及执行数字化盲盘库存审计盘点。"
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "销售漏斗管理与 CRM 矩阵",
+          "description": "闭环掌控从最初大客询价、标准商业方案报价、精准销售订单签署、出库履约派送物流追踪，直至最终财务开票结算与深度大客户关怀数据库记录。"
+        },
+        {
+          "icon": "Server",
+          "title": "数字化精益制造与 MRP 排产",
+          "description": "结构化维护企业多层级物料清单（BOM 树结构），智能化派发生产车间现场执行工单，实时运行高级物料需求计划（MRP）物料到货运算并无盲区监控总厂流水线实时装配进度。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "决策层数据智慧与集成报表",
+          "description": "专为企业决策高管定制的高级智能大屏，突破传统报表维度制约，实现秒级跨功能子系统（跨财务、销售、生产）调取实时核心指标运行图表。"
+        }
+      ],
+      "workflow": {
+        "title": "集团化标准“订单到现金”（Order-to-Cash）全闭环流转",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "ShoppingCart",
+            "title": "销售订单自动创建",
+            "description": "外勤业务员通过移动终端快速建立新一笔客户订货单，系统实时对接集团主客户库自动填充授信及基础信息标签。"
+          },
+          {
+            "step": 2,
+            "icon": "Package",
+            "title": "智能库存资源评估",
+            "description": "系统核心调度引擎扫描多地区仓库的对应位货架状态，核准库存深度，并对目标货品执行临时的系统级虚拟锁库隔离。"
+          },
+          {
+            "step": 3,
+            "icon": "Database",
+            "title": "物流履约与拣货派发",
+            "description": "目标区域的仓库分拣工位自动唤醒智能拣货波次清单，开始执行打包出库，系统底层数据同步向终端消费者推送实时全程货运轨迹。"
+          },
+          {
+            "step": 4,
+            "icon": "Printer",
+            "title": "财务自动开票推演",
+            "description": "出库货品一经到达客户收货 checkpoints，财务子系统立即联动业务订单，自动编写、生成标准的商业发票并一键推向企业客户邮箱。"
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "账目清算与总账归结",
+            "description": "银行收到账款并抛出到账流水通知时，财务子系统一键自动对账，结清对应发票应收款项，同时在集团主总账中自动编制会计凭证。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Next.js 14 (React)",
+              "description": "用于构建极速、高安全、承载高密度的数字化控制台的首选高级 React 渲染架构框架，首屏渲染彻底向边缘服务器对齐。"
+            },
+            {
+              "name": "TypeScript",
+              "description": "为超大规模企业代码库引入强类型编译器约束，全面在编译期过滤各类潜在类型跳变与运行期间的代码逻辑漏洞。"
+            },
+            {
+              "name": "Zustand",
+              "description": "极致轻量、彻底解除冗余模板代码的 React 客户端高响应状态管理仓库，专为流畅追踪大屏交互而配置。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js (NestJS)",
+              "description": "融合了面向对象、依赖注入（DI）等高级设计模式的工程级 NestJS 后端微服务框架，专门应对超大型分布式集群开发。"
+            },
+            {
+              "name": "TypeORM",
+              "description": "为 TypeScript 深度量身打造的高级对象关系映射器（ORM），高优雅、高安全度地同企业底层 MySQL 数据库协同交互。"
+            },
+            {
+              "name": "RabbitMQ",
+              "description": "企业级高可靠、高可用性的异步分布式消息队列中间件，负责各核心微服务之间的数据载荷高速中继分发。"
+            }
+          ]
+        },
+        {
+          "category": "Database & In-Memory",
+          "technologies": [
+            {
+              "name": "MySQL 8.0",
+              "description": "行业长盛不衰、经过极致稳定性验证、专门承担巨量高强度财务核心底层事务 ACID 安全记录的重型数据库基础设施。"
+            },
+            {
+              "name": "Redis",
+              "description": "超高速的物理内存级缓存屏障，用于短时间缓存高管大盘统计变量并严密托管数万名在职员工的账户安全登录凭证会话。"
+            }
+          ]
+        },
+        {
+          "category": "DevOps & Infrastructure",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "将整体极其复杂的子模块完整解耦封装进入标准化容器镜像中，确保开发电脑与最终生产环境架构底座的无任何摩擦环境对齐。"
+            },
+            {
+              "name": "Kubernetes",
+              "description": "业界公认的多容器集群自动编排基础设施，全权统筹企业多个子实例容器节点的自动化伸缩、健康检测与负载分平。"
+            },
+            {
+              "name": "Jenkins",
+              "description": "老牌高弹性自动化构建部署系统，全流程监管并执行项目代码合入、自动化流水单元核验及最终灰度更替发布发布。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "集团核心智慧财务控制中心大屏",
+          "image": "/placeholder.svg",
+          "description": "高内聚呈现全集团多币种现金头寸流入流出统计、集团即时毛利数据指标走势以及多层级成本核算对比的动态丰富数据图表。"
+        },
+        {
+          "title": "智能多仓储物流库存管理面板",
+          "image": "/placeholder.svg",
+          "description": "清爽规整的多维度库存名录，直观透视具体各个仓区对应排架编码上的精确库存状态，并附带一键快速移库发起入口。"
+        },
+        {
+          "title": "销售订单精细化组装与创建视窗",
+          "image": "/placeholder.svg",
+          "description": "专为企业业务员量身定制的高生产力开单面板，支持客户授信智能评估检索、产品多SKU自由组合匹配。"
+        },
+        {
+          "title": "月度销售业绩趋势与利润对比深度分析视图",
+          "image": "/placeholder.svg",
+          "description": "供销售大区总经理纵览销售漏斗转化周期、对比不同品类在特定 chronological 周期内销量起伏走势的数据分析大图。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统环境依赖与服务器标准",
+          "server": {
+            "title": "单微服务实例运行环境最低指标",
+            "items": [
+              "Node.js 运行时环境建议部署最新 LTS 稳定大版本 version 20.x 或更高",
+              "保证内网高速低延迟网络链路全面打通至 MySQL 数据库集群与 Redis 缓存哨兵集群",
+              "最低硬件基准资源建议为单个微服务节点配置 2 vCPU 搭配最少 4GB 可用内存的算力配额"
+            ]
+          },
+          "client": {
+            "title": "企业客户端浏览器要求",
+            "items": [
+              "主流跨平台现代 Web 网络浏览器（如 Google Chrome, Mozilla Firefox, Microsoft Edge 稳定版）",
+              "终端物理屏幕分辨率最低支持建议不低于 1366x768 像素，以确保密集数据表格无损还原"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "服务等级协议 (SLA) 运行基准指标",
+          "metrics": [
+            { "label": "常规单笔业务数据事务入库耗时", "value": "< 500 ms" },
+            { "label": "P95 核心高并发 API 接口响应耗时", "value": "< 200 ms" },
+            {
+              "label": "巨量跨年度复杂模块汇总分析报表编译生成耗时",
+              "value": "< 15 秒以内"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "全方位企业数据防护盾",
+          "items": [
+            "全面部署了军工级的高强度信息加密体系（全面覆盖数据静态盘存储 AES-256 加密与传输链路 TLS 加密）",
+            "精细化、可纵深防御的细粒度 Role-Based Access Control 岗位行为访问权限拦截矩阵",
+            "无盲区的系统级行为审计日志（Audit Trail），精准定位具体哪枚数字凭证在何时发起了哪笔数据的变更修改",
+            "核心财务支付审批及高管登录鉴权强制唤醒双因子安全动态验证（2FA）"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "hrms-portal",
+        "name": "HRMS Portal",
+        "description": "人力资源管理系统（HRMS），专注于精简员工全生命周期档案管理及自动化进行复杂的月度薪酬核算。",
+        "fullDescription": "HRMS Portal 是一款专为成长型企业量身定制的数字化人力资本配置管理平台，旨在全面抹平极其繁琐的日常人力资源行政事务。系统自带对等开放的员工自我管理门户（ESS）与企业高管审批面板（MSS），协助人资经理高效集中掌控员工核心档案信息库、上下班排班打卡打卡、带薪年假在线流转审批、日常差旅费用报销账目核销以及全自动的财务 payroll 算薪流程。",
+        "image": "/assets/products/32.png",
+        "technologies": [
+          "React",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "JWT",
+          "Material-UI"
+        ],
+        "category": "Human Resource Management",
+        "status": "Completed",
+        "version": "2.0.1",
+        "lastUpdated": "2025年5月",
+        "client": "-",
+        "duration": "5 个月",
+        "teamSize": "4 位资深专家 (前端工程师, 后端架构师, UI/UX 体验师, QA 工程师)"
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "技术操作指引文档",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点功能",
+          "workflow": "核心流转步骤",
+          "techStack": "核心开发栈",
+          "screenshots": "功能视窗",
+          "specs": "性能规格基准"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "项目核心信息",
+          "clientLabel": "签约商户",
+          "durationLabel": "研发合作周期",
+          "teamSizeLabel": "研发规模人员",
+          "lastUpdatedLabel": "最近更替发布"
+        },
+        "platformSupport": {
+          "title": "综合功能覆盖",
+          "items": [
+            "员工自助服务门户终端 (ESS) 交互界面",
+            "部门长审批管理门户终端 (MSS) 决策界面",
+            "全面契合桌面电脑与移动手机浏览器的全响应式 Web 架构",
+            "一键快捷将人资考核报表批量转化为高规整度的 PDF 与 Excel 数据包"
+          ]
+        },
+        "architecture": {
+          "title": "架构工程设计",
+          "items": [
+            "单体高聚合风格后端应用程序架构，基于 Node.js/Express 构建",
+            "严格遵守行业契约规范的 RESTful API 服务接口设计",
+            "采用基于加密身份令牌的 JWT 无状态访问凭证保护校验系统",
+            "细粒度的岗位权限分配阻断防线 (RBAC 机制)"
+          ]
+        },
+        "projectDescription": {
+          "title": "数字化转型价值说明",
+          "paragraphs": [
+            "多数企业在经历组织快速扩张时，普遍面临人资管理成本飙升的严峻挑战：员工打卡信息难汇总、复杂的多层级休假计算极易滋生纰漏、算薪日前夕由于各种社保与考勤漏扣错算引发劳务摩擦事件。这些重复繁琐的手工文书事务消耗了人资部门大量的战略管理精力。",
+            "针对此类人资运营痛点，我们开发了这套集约、高度数据安全的统一Web人力资源交互门户。员工可以在浏览器端完全自主变更个人最新的银行卡与基本信息档案、在线提交事假申请、并能在薪酬发放日当天自行调阅历史数字化工资条。部门领导可以无缝进行下属的考勤审批，HR部门则拥有了一个纵览员工全生命周期的集约控制中心。",
+            "该门户上线运作后，实质性推动了目标客户整个人资行政处理效能的高速跃升，将极其繁琐的手工算薪周期压缩了大半，将自主查询权下放赋予普通员工，最大程度消除了企业的用工合规隐患。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Database",
+          "title": "员工主档案中央信息库 (PIM)",
+          "description": "规整化集中维护在职及离职员工基础变量信息、历史签订的各项劳务合同细节、以及职级职称历史变动轨迹。"
+        },
+        {
+          "icon": "Clock",
+          "title": "多班次智慧考勤调度",
+          "description": "高优雅地记录每日在线或到岗打卡打卡戳、支持复杂的倒班换班轮班排班规则、月底一键结算考勤异常并自动统计旷工迟到指标。"
+        },
+        {
+          "icon": "Package",
+          "title": "带薪年假与多类目休假流转",
+          "description": "纯线上发起的请假填报与分级审批链路，系统会根据员工入职司龄自动精准扣减或释放剩余法定休假天数。"
+        },
+        {
+          "icon": "CreditCard",
+          "title": "一键全自动算薪模块 (Payroll)",
+          "description": "企业级薪酬计算公式引擎，智能关联考勤扣减、自动叠加特定职务津贴、扣减个人所得税与各项社会基本保险额度，产出精准账目。"
+        },
+        {
+          "icon": "Printer",
+          "title": "差旅报销与日常费用审核",
+          "description": "员工可随时将因公产生的差旅、应酬账目通过系统进行报销填写，支持直接利用手机相机拍照上传发票或票据图片作为核销凭据。"
+        },
+        {
+          "icon": "Users",
+          "title": "员工自助服务交互空间 (ESS)",
+          "description": "赋予每一名正式雇员自由查看核心档案范围、一键调阅下载专属薪资条、追踪请假流程状态审批的独立账号终端。"
+        }
+      ],
+      "workflow": {
+        "title": "月度例行算薪结算流程",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Clock",
+            "title": "考勤明细大对账",
+            "description": "每临近计薪周期结算截止日，系统在后台自动汇总统计出全员的出勤天数、迟到早退次数以及精确的加班时间流水明细。"
+          },
+          {
+            "step": 2,
+            "icon": "BarChart3",
+            "title": "一键激活薪酬计算",
+            "description": "人资薪酬专家进入核算面板点击启动算薪命令，底层运算总线立即对所有在册的在职员工账户依次初始化推演。"
+          },
+          {
+            "step": 3,
+            "icon": "Server",
+            "title": "公式指标多维套算",
+            "description": "系统精细演算基本底薪扣减项目、精准剔除对应个税款项以及社保个人折算比例，并根据各工位折算相应的绩效奖励金。"
+          },
+          {
+            "step": 4,
+            "icon": "CheckCircle",
+            "title": "草案复核与最终定账",
+            "description": "人资主管对生成的整体月度薪资分发表草案执行全盘审计，确认完全排除异常指标后锁定当前计薪月度数据库。"
+          },
+          {
+            "step": 5,
+            "icon": "Download",
+            "title": "电子工资条分发上线",
+            "description": "薪酬总账一经提交生效，数字化工资条（e-payslip）实时下发上线，员工通过 ESS 账户即可极具隐私安全度地调阅查验。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "用于打磨高内聚、组件化、响应迅速的动态人资管理界面的高人气主流 JavaScript 前端框架库。"
+            },
+            {
+              "name": "Redux Toolkit",
+              "description": "工业级的前端全局全局状态容器，用于保证复杂的表单多级填报交互时数据流的绝对安全受控。"
+            },
+            {
+              "name": "Material-UI (MUI)",
+              "description": "大名鼎鼎的企业级 React 组件化主题框架，确保应用在拥有完美视觉一致性的同时达成极快的工程交付速度。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js",
+              "description": "高性能的异步 I/O 事件驱动型服务端运行时环境，专门用于处理高密度员工端 API 接口吞吐。"
+            },
+            {
+              "name": "Express.js",
+              "description": "高度轻量化、极简主义的 Node.js 主流框架，为后端服务提供极其轻快的路由管控和中间件集成支撑。"
+            },
+            {
+              "name": "Mongoose",
+              "description": "专门架设在 Node.js 与 MongoDB 之间的高级对象数据模型（ODM）映射库，强力支撑数据校验架构。"
+            }
+          ]
+        },
+        {
+          "category": "Database & Security",
+          "technologies": [
+            {
+              "name": "MongoDB Atlas",
+              "description": "完全由云端托管、具备无限横向扩展特性的分布式 NoSQL 文档型数据库服务，承载海量多维雇员结构化记录。"
+            },
+            {
+              "name": "JSON Web Token (JWT)",
+              "description": "全球主流的开放安全鉴权标准，以高度轻量化的无状态加密令牌管理客户端访问凭证安全。"
+            },
+            {
+              "name": "Bcrypt.js",
+              "description": "行业高安全级别的单向密钥哈希函数中间件，对系统所有账户密码加入强动态盐值（Salt）进行不可逆散列处理。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "人资管理员总控制大盘看板",
+          "image": "/placeholder.svg",
+          "description": "中央展示全司人员异动动态折线图、当前正等待领导审批的核心假单天数、以及内网全员通告发布窗口。"
+        },
+        {
+          "title": "员工自主个人主干信息库 (ESS)",
+          "image": "/placeholder.svg",
+          "description": "在职雇员可在这里直观查看自身基本档案、自主进行手机号/紧急联系人信息微调并审阅劳务合同起止期限。"
+        },
+        {
+          "title": "线上假期填报与类型选择表单",
+          "image": "/placeholder.svg",
+          "description": "精简轻巧的请假申请视窗，快速点选目标休假类型、勾选对应日期区间、并能可视察看当前计薪年假剩余可用天数。"
+        },
+        {
+          "title": "数字化电子工资条呈现视图",
+          "image": "/placeholder.svg",
+          "description": "逐项详尽陈列月度各项基础收入薪金、精确核扣个税与社保的对账明细，并支持一键下载打印标准的 PDF 格式工资条。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统开发指标与要求要求",
+          "server": {
+            "title": "服务器配置基准指标",
+            "items": [
+              "Node.js 运行时运行环境需要匹配到不低于 18.x 长期支持版",
+              "保证底层服务器通信管道完全打通至远程 MongoDB Atlas 分布式数据库集群",
+              "最低硬件配置指标建议至少分配 2 vCPU 搭配最低 2GB RAM 内存的空间上限"
+            ]
+          },
+          "client": {
+            "title": "客户端运行环境要求",
+            "items": [
+              "任意完美启用现代标准 JavaScript 脚本的各种现代主流桌面或移动端浏览器",
+              "通用的常规互联网网络访问链路"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "核心服务等级协议 (SLA) 性能指标",
+          "metrics": [
+            {
+              "label": "P95 移动客户端首屏骨架加载耗时",
+              "value": "< 2 秒以内"
+            },
+            {
+              "label": "单批次全流程算薪处理速度 (500名雇员量)",
+              "value": "< 2 分钟以内"
+            },
+            { "label": "API 数据处理接口平均交互延迟", "value": "< 250 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "数据隐私安全防线配置",
+          "items": [
+            "全面由 JWT 传输令牌总线监管和拦截非法、越权的前后台网络调用行为",
+            "全账户密码强制经过 Bcrypt 工业级高阶散列函数添加高复杂动态盐值进行单向哈希加密",
+            "强制架设基于 RBAC 规范的精细化人资系统岗位角色权限拦截逻辑（管理员、部门长、普通雇员）",
+            "内置了深度防护网络攻击组件，对表单数据流强制清洗，规避跨站脚本攻击（XSS）隐患"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "finance-management",
+        "name": "Finance Management",
+        "description": "一款配备了智能预算制定模块以及深度财务智慧分析图表的轻量化个人与小微企业财务记账管理系统。",
+        "fullDescription": "本财务管理应用程序是一款专为高自由度自由职业者及初创小微企业量身定做的智慧型财务记账分析软件，协助其低成本、高效率地追踪每月账目资金流入、精细记录日常经营各种类目报销费用支出、定制切实可行的预算控制线并智能提取多维度的财务健康度透视指标。整个产品的终极开发诉求，在于赋予用户对其自身或企业资产状况极其透明的深度掌控权。",
+        "image": "/assets/products/34.png",
+        "technologies": [
+          "React",
+          "Django",
+          "PostgreSQL",
+          "Chart.js",
+          "Django REST Framework"
+        ],
+        "category": "Financial Management",
+        "status": "Completed",
+        "version": "1.0.0",
+        "lastUpdated": "2025年4月",
+        "client": "-",
+        "duration": "6 个月",
+        "teamSize": "5 位各领域专家 (前端工程师, 后端专家, 数据库管理员, UI/UX 体验师, QA 工程师)",
+        "seo": {
+          "ratingValue": "4.7",
+          "reviewCount": "41",
+          "reviews": [
+            {
+              "author": "Hadi Pranoto",
+              "role": "独立财务架构顾问",
+              "date": "2025-04-20",
+              "body": "系统自带的直接读取和解析银行流水 CSV 对账单文件的功能直接封神！它彻底斩断了过往每天纯人工逐笔往系统里敲账目的恶劣体验。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "系统配置文档手册",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心卖点亮点",
+          "workflow": "账目复核业务流",
+          "techStack": "核心研发栈体系",
+          "screenshots": "功能视窗",
+          "specs": "性能规格参数"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "财务数字化详情",
+          "clientLabel": "签约商户",
+          "durationLabel": "研发合作周期",
+          "teamSizeLabel": "核心团队规模",
+          "lastUpdatedLabel": "最近更替发布"
+        },
+        "platformSupport": {
+          "title": "多端兼容支持支持",
+          "items": [
+            "具备极佳响应特性的自适应全终端 Web 页面布局设计",
+            "打通通用的原始银行对账单 CSV 数字化文件一键导入总线",
+            "原生底层代码完全支持多国多币种汇率的财务入账折算机制",
+            "支持一键将会计年度/月度核心财务报表批量导出为高清晰 PDF 或常规 Excel 表格"
+          ]
+        },
+        "architecture": {
+          "title": "单体高稳定性后端选型",
+          "items": [
+            "后端架构基于严谨、高工程安全规范的开源 Python 框架 Django 搭建",
+            "全场景 API 通信由 Django REST Framework 构建的高品质接口层全权托管",
+            "前台用户操作体验全面依托高度动态、轻快高灵敏度的 React 展现层架构",
+            "系统底层部署了针对金融级财务敏感隐私明细数据实施的严格存储加密约束"
+          ]
+        },
+        "projectDescription": {
+          "title": "数字化记账研发价值说明",
+          "paragraphs": [
+            "当下大量的独立工作室和小微创客由于缺乏真正专业的、低门槛的专属财务记账软件，日常极度依赖纸质涂抹或简单低效的手工电子表格来对账目进行登记。这种落后的习惯极易因为手抖漏算造成账目两端对不齐、盲目导致资金过度超支开销、更无法通过系统化的动态图表洞察真实的日常现金留存状况。",
+            "本项目精准击碎了上述记账瓶颈，为行业开辟了一个兼顾极致极简操作与专业财务安全的 Web 在线记账协作云环境。用户可以在几秒钟内快速发布一笔交易账目、依托内置的分词算法系统会自动匹配目标消费类目、并将实时的物理开销金额同月初拟定的各环节预算警戒线运行同频对比。",
+            "伴随主控制面板上各种色彩分明、极富美感的数据分析图表的无延迟渲染，该应用全方位赋予了用户快速定位大额异常花销、挖掘潜在资金留存缝隙以及结合近期现金流动趋势定制长远商业出资策略的财务智慧能力。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "ShoppingCart",
+          "title": "多维交易流水记录",
+          "description": "极速记录每一笔经营收入或 outgoing 报销花销，支持用户自定义个性化的多层级账户科目标签。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "智慧预算防线管理",
+          "description": "自主设立每个月、每一项类目（如办公、营销推广）的最高开支防线，系统在后台对预算执行进度进行实时动态监控。"
+        },
+        {
+          "icon": "Printer",
+          "title": "会计核心账目生成",
+          "description": "由系统全自动汇总计算出标准的商业三大核心财务报表：损益表（P&L 看板）、现金流量表（Cash Flow 明细）以及简易资产负债表。"
+        },
+        {
+          "icon": "Monitor",
+          "title": "高交互数据智慧大屏",
+          "description": "将杂乱的资金流水翻译成一目了然的数据柱状图或扇形分布大图，清晰揭示消费占比权重与周期存留轨迹。"
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "储蓄奋斗目标管理 (Goals)",
+          "description": "允许用户针对特定经营动作（如筹备二店设备储备或差旅预算池）开辟独立的数字目标基金，实时跟进积累进度条。"
+        },
+        {
+          "icon": "Clock",
+          "title": "固定周期账目自动化",
+          "description": "专门针对每个月、每季度规律发生的固定入账或费用（如房屋租金、SaaS软件固定续费、每月固定人员工资开支）配置自动记账引擎。"
+        }
+      ],
+      "workflow": {
+        "title": "月度财务核对与清算标准化流程",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Database",
+            "title": "账目数据 ingestion 导入",
+            "description": "用户快速补登零散的日常零用钱开销记录，或者直接把银行下载下来的多条银行流水CSV文件通过后台一键导入系统。"
+          },
+          {
+            "step": 2,
+            "icon": "Package",
+            "title": "类别判定与批量归类",
+            "description": "系统基于账单摘要描述字段自动执行类目智能划分建议，用户只需对个别边缘账目完成手工轻触微调核准。"
+          },
+          {
+            "step": 3,
+            "icon": "BarChart3",
+            "title": "超预算漏洞全面排查",
+            "description": "核对主预算仪表盘中的完成情况，快速排查具体哪一个经营类目发生亮红灯超支，即时限制后续财务配额。"
+          },
+          {
+            "step": 4,
+            "icon": "Printer",
+            "title": "深度剖析经营损益",
+            "description": "一键拉取由数据库全自动合并生成的月度综合盈亏账簿，客观清算当前周期的企业净盈余指标或亏损敞口数据。"
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "盈余划转与目标积累",
+            "description": "将本月核算出的纯运营盈余或者留存现金，通过系统划拨推入预先在应用中开设的各项储蓄发展基金池中。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "行业长青的前端前端展现层开发框架库，完美保障客户端记账面板的高敏捷、零延迟重绘体验。"
+            },
+            {
+              "name": "Chart.js",
+              "description": "图表开发领域的知名轻量级图形引擎，全权负责将多维的流水数字渲染为富有交互美感的数据图表。"
+            },
+            {
+              "name": "Axios",
+              "description": "基于 Promise 机制运行的异步网络请求传输层，连接前台操作与后端 RESTful API 接口枢纽。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Python 3.11",
+              "description": "拥有卓越数据加工能力的通用计算机语言，坐镇后端全面指挥财务复杂的底层数学演算和分类逻辑。"
+            },
+            {
+              "name": "Django 5.0",
+              "description": "加持了极高工业级防护规范的高阶 Python 开发框架，倡导急速的敏捷迭代开发和清晰、低耦合的代码规划。"
+            },
+            {
+              "name": "Django REST Framework",
+              "description": "企业开发高柔性、健壮性十足的 Web 通信网络时首选的高阶 API 研发集成组件工具包。"
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "PostgreSQL 16",
+              "description": "在开源数据库技术生态中以严苛、硬核保护数据事务完整性与一致性著称的对象关系型重型数据库体系。"
+            }
+          ]
+        },
+        {
+          "category": "DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "将整体软件服务彻底容器化封装，抹平跨地域节点研发与服务器部署部署之间的一切底层系统依赖环境差异。"
+            },
+            {
+              "name": "Gunicorn",
+              "description": "高性能的 WSGI HTTP 网络生产服务器，专职承担在工业生产级环境下高稳定转发 Python Web 流量的任务。"
+            },
+            {
+              "name": "Nginx",
+              "description": "工业级反向代理与安全负载中枢，部署在前线全面优化静态前端资源的加载时效与 HTTPS 加密层拦截。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "智慧财务全景中央控制大盘",
+          "image": "/assets/products/34.png",
+          "description": "集约呈现当下的实时现金净额、本月资金流入流出双向轨迹图、以及大额消费排行雷达图表。"
+        },
+        {
+          "title": "新建交易流水即时录入表单",
+          "image": "/placeholder.svg",
+          "description": "高度极简的开单弹出框界面，只需填入流水数值、绑定目标分类账号账户、并能补充描述备注。"
+        },
+        {
+          "title": "多账户科目预算防线动态大屏",
+          "image": "/placeholder.svg",
+          "description": "通过高辨识度的进度彩条实时对比月初设定的限额水位与截止当下的实际折耗开支百分比。"
+        },
+        {
+          "title": "月度会计准则损益表报表详情 (P&L)",
+          "image": "/placeholder.svg",
+          "description": "由数据库自动归结分项展现的所有主营收入层级与具体经营性耗费明细，最终导出清晰的净资产结余。"
+        },
+        {
+          "title": "多类目消费比重扇形智慧图表",
+          "image": "/placeholder.svg",
+          "description": "直观揭示近期各项非固定性花销资产流向比重的饼图，支持按餐娱、交通工具、设备采买执行过滤调阅。"
+        },
+        {
+          "title": "奋斗储蓄目标基金管理视窗",
+          "image": "/placeholder.svg",
+          "description": "供用户自由开设发展备用金、锁定特定理财奋斗任务的交互管理视图，实时跟进积蓄蓄水池状态。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统开发指标与底层硬件依赖",
+          "server": {
+            "title": "服务器算力底座要求",
+            "items": [
+              "Python 开发环境建议不低于版本 3.9 规范",
+              "PostgreSQL 关系型数据库版本不低于 12 大版本",
+              "底层建议为单个服务节点倾斜最低不低于 1GB 的物理运行内存配额"
+            ]
+          },
+          "client": {
+            "title": "客户端运行终端",
+            "items": [
+              "任意成功安装并完美运行主流现代标准 JavaScript 引擎的所有主流网络浏览器"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "服务运行性能基准",
+          "metrics": [
+            { "label": "常规单笔记账事务写库写入耗时", "value": "< 300 ms" },
+            {
+              "label": "汇总编译整月财务深度核算损益表耗时",
+              "value": "< 5 秒以内"
+            },
+            { "label": "核心协同控制大盘首屏骨架完成耗时", "value": "< 500 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "安全防护层配置",
+          "items": [
+            "全账户登录密码完全由 Django 内置的高阶单向密码散列机制实施加密防护",
+            "前端与后端全总线架设严密的跨站请求伪造（CSRF）恶意网络调用拦截层",
+            "底层数据库对涉及账单明细等极为敏感的字段强制开启静态数据存储（at-rest）底层加密",
+            "强制引导整个网络通信链路上全线全时采用强加密的 HTTPS 传输层保护协议"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "warehouse-inventory-control",
+        "name": "Inventory Control System",
+        "description": "一款集成了实时仓储流向追踪、硬件级条码扫描枪对齐以及供应链自动补货预警功能的高可用企业级库存控制系统。",
+        "fullDescription": "本仓储库存控制系统（Inventory Control System）专为现代化中大型物流周转中心、分拨总仓及货品电商仓储库量身打造，提供全天候的实物库存状态追踪、无缝兼容主流移动式手持条码/QR扫描枪终端，并在商品总数跌落安全水位线或临近 shelf-life 保质期限时由服务器自动派发高权重警告通告。整个系统的立项诉求，在于全方位纠偏库存曲线、断绝物料失联风险并协助品牌大幅压降供应链持仓开销损耗。",
+        "image": "/assets/products/39.png",
+        "technologies": [
+          "Angular",
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "Apache Kafka",
+          "Docker"
+        ],
+        "category": "Inventory Management",
+        "status": "In Development",
+        "version": "0.9.0",
+        "lastUpdated": "2025年7月",
+        "client": "Logistik Express Nusantara",
+        "duration": "10 个月 (火热研发迭代中)",
+        "teamSize": "7 位各领域专家 (Java 核心后端专家, 前端团队, QA 矩阵, 资深需求分析师, DevOps 架构师)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "29",
+          "reviews": [
+            {
+              "author": "Suryo Depot",
+              "role": "物流供应链大总监",
+              "date": "2025-07-15",
+              "body": "本平台内置的自动预警总线响应奇快，在爆款商品的仓库总数触及安全再订货点阈值的同一毫秒，系统便自动向供应链发出告警提示，彻底解除了我们因畅销品断货而眼睁睁流失客户订单的严重隐患。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "技术操作手册手册",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点亮点",
+          "workflow": "入库业务全闭环",
+          "techStack": "系统架构选型",
+          "screenshots": "功能图集画廊",
+          "specs": "开发规格"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "物流项目核心信息",
+          "clientLabel": "签约商户",
+          "durationLabel": "研发合作周期",
+          "teamSizeLabel": "专家梯队编制",
+          "lastUpdatedLabel": "最近更替发布"
+        },
+        "platformSupport": {
+          "title": "综合功能支持",
+          "items": [
+            "提供专为高粉尘、高劳动强度的仓库现场操作环境优化的重型桌面端应用控制面板",
+            "原生底层无缝打通工业级手持手持扫描终端硬件，执行秒级条码读取交互",
+            "高度富集的实时物流大盘控制台",
+            "分发干净高效的标准化外接 API，支持外部大型企业 ERP 或外部线上商城系统的跨系统互联"
+          ]
+        },
+        "architecture": {
+          "title": "事件驱动高弹性架构",
+          "items": [
+            "底座选用高性能的事件驱动型（Event-Driven）研发模式",
+            "采用企业级分布式消息中间件 Apache Kafka 管理实时的业务流数据流流转",
+            "前台展现层搭载高度模块化、架构严密的开源前端工程系统 Angular"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目商业目标剖析",
+          "paragraphs": [
+            "传统的大型仓储长期被一系列顽固的管理阻碍所折磨：库存实物数目账实不符、极度依赖手工笔录造成的记录错位、缺乏敏捷供应链指挥引发的畅销单品突然断货瘫痪、以及缺乏保质期管控造成的大批量物料死库过期的资产浪费。这些问题会直接拖垮物流响应时效并引发利润流失。",
+            "为击碎上述管理壁垒，本研发团队打造了这套依靠高品质企业级核心组件（Java Spring Boot 搭配 Angular）运转的轻快仓储核心。通过构建以 Apache Kafka 为数据骨序的消息总线，货品自最初踏入收货月台、经历库位搬移直到最后物流卡车出库的每一次动作，都作为系统级事件秒级分发至整体集群的各个子系统中。",
+            "该解决方案上线后彻底帮客户抓准了物料剩余曲线，缩减了资金由于囤货被长期侵占的折损，并大幅加快了客户发货包裹的组装流转速度。自动发生的智能补货提示帮助库存管理专员实现前瞻性排查，最大程度将由于供应链无序造成的坏账压降到最低温水位。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "实时实物存量精细化监控",
+          "description": "实时精准把控分布式多仓储中心以及具体排位货架格上的货品实物剩余天数，任何异动秒级进行全局同步更新。"
+        },
+        {
+          "icon": "Server",
+          "title": "条码与二维码扫描终端直接对齐",
+          "description": "依靠专业的无线工业级手持扫描终端，成倍提速到货收货入库清点、发货拣货下架（picking）以及库内资产盘点处理效率。"
+        },
+        {
+          "icon": "Shield",
+          "title": "智能补货预警与到期监控告警",
+          "description": "允许自定义再订货安全红线（reorder point），如果剩余量亏空或某批次货品逼近临期红线，服务器全自动向管理人员发布高权重弹窗通告。"
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "采购订单标准化管理 (PO)",
+          "description": "直接在平台系统后台快速拟定、派发并全程全方位跟进发往上游供应商供货工厂的采购单交易生命周期。"
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "仓储无损循环审计 (Stock Opname)",
+          "description": "系统内置了科学的局部循环盘点（cycle counting）与年度全面静态数据盘点策略，无需强行中断日常物流出入库即可维护账实一致性指标。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "物流大数据分析与运营智能",
+          "description": "深度提取极具商业指导价值的供应链效率变量，全面拆解包括商品库存周转速率（inventory turnover）、持仓货龄分布以及发货包裹履约准时率。"
+        }
+      ],
+      "workflow": {
+        "title": "货品到货签收核销（Goods Receipt）闭环流程",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "ShoppingCart",
+            "title": "匹配核对采购单单号",
+            "description": "当承运大货卡车抵达物流园区卸货月台时，收货文员利用终端设备秒级读取送货单凭证绑定的系统PO单号。"
+          },
+          {
+            "step": 2,
+            "icon": "Server",
+            "title": "外箱包装条码扫描验证",
+            "description": "库房卸货专员采用手持无线终端对逐箱卸下的物料条码扫描验证，验证实物SKU配置无误并验证到货真实总件数。"
+          },
+          {
+            "step": 3,
+            "icon": "Package",
+            "title": "指定物理上架位货格",
+            "description": "收货子系统写入最终接纳的实物到货数量，操作人员同步根据导向在系统内指定其归宿的实体货格编码（如 A区-3排-01格）。"
+          },
+          {
+            "step": 4,
+            "icon": "Database",
+            "title": "向消息主网发布到货事件",
+            "description": "操作员一经在界面点击核准入库，一枚核心的“GoodsReceived”业务事件载荷立即被投递至底层的 Apache Kafka 对应主题集群中。"
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "全局微服务数据毫秒级跳变",
+            "description": "凡是实时订阅了该 Kafka 数据主题的外部微服务节点，瞬间完成数据流拆解，全局同频更新大盘总存量并跳变对应的PO单结算进度。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Angular 17",
+              "description": "企业级重型前端研发工程化主流框架，具备严密的依赖校验机制，专门用于稳定产出超大型物流系统前端控制台。"
+            },
+            {
+              "name": "TypeScript",
+              "description": "为前端应用引入极为苛刻的编译静态类型核验，杜绝在大规模数据字段传递中隐藏由于类型定义模糊造成的潜在运行时崩溃。"
+            },
+            {
+              "name": "RxJS",
+              "description": "基于响应式编程思想打造的 Observables 响应式流处理组件库，是管理、捕捉实时连续物流网络事件流的技术杀手锏。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Java 21",
+              "description": "行业底蕴深厚、高稳定性保障、在高并发重型企业应用研发中稳居泰斗地位的编译型后端核心平台。"
+            },
+            {
+              "name": "Spring Data JPA",
+              "description": "大幅压降底层持久化层开发摩擦的经典技术套件，负责高效率桥接和操作底层的结构化SQL数据表记录。"
+            }
+          ]
+        },
+        {
+          "category": "Database & Messaging",
+          "technologies": [
+            {
+              "name": "MySQL 8.0",
+              "description": "高稳定性的企业级关系型开源数据库，用于可靠保存核心业务流水记账单据、采购细则以及仓位映射树表格。"
+            },
+            {
+              "name": "Apache Kafka",
+              "description": "全球顶级的分布式高吞吐流媒体处理中间件，担当整个实时供应链数据管道分发的中央底层总线。"
+            }
+          ]
+        },
+        {
+          "category": "DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "将整体极其复杂的子模块完整解耦封装进入标准化容器镜像中，确保开发电脑与最终生产环境架构底座的无任何摩擦环境对齐。"
+            },
+            {
+              "name": "Kubernetes",
+              "description": "业界公认的多容器集群自动编排基础设施，全权统筹企业多个子实例容器节点的自动化伸缩、健康检测与负载分平。"
+            },
+            {
+              "name": "Jenkins",
+              "description": "老牌高弹性自动化构建部署系统，全流程监管并执行项目代码合入、自动化流水单元核验及最终灰度更替发布发布。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "实时仓储流向追踪控制大盘",
+          "image": "/placeholder.svg",
+          "description": "中央集约化呈递当前整仓库存估算总估值、日常爆款商品流转速率系数曲线以及迫在眉睫的低水位重度预警商品列表。"
+        },
+        {
+          "title": " Goods Receipt 卸货签收核销前台界面",
+          "image": "/placeholder.svg",
+          "description": "专为月台收货人员量身打磨的快触表单，完美挂接无线条码设备自动校验到货数据与采购账目。"
+        },
+        {
+          "title": "已低于安全红线的再订货商品建议明细表",
+          "image": "/placeholder.svg",
+          "description": "智能计算出的缺货采购采购清单，由系统自动筛选出当前实物件数已穿透安全备货底线的货品网格表。"
+        },
+        {
+          "title": "月度库存周转效能（Turnover）智慧图表分析",
+          "image": "/placeholder.svg",
+          "description": "高级分析数据图表，用以精细对比和深度衡量不同大类物资在特定季度时间框架中的变现与折耗速度。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统研发规格与部署服务器依赖",
+          "server": {
+            "title": "云端算力底座建议指标",
+            "items": [
+              "Java 运行时核心虚拟环境虚拟机 JVM 版本需达 17 或更高版本标准",
+              "MySQL 关系型数据库底层实例需配置在 8.0 核心版本或更高",
+              "内网网络需要长期成功挂载高性能、具备抗灾害备份能力的 Apache Kafka 消息队列分布式集群"
+            ]
+          },
+          "client": {
+            "title": "仓库前线硬件环境",
+            "items": [
+              "仓库作业电脑终端需要配置能无损解析复杂 JavaScript 代码脚本的现代网页浏览器",
+              "保障整个仓库实体空间内具备全面连贯覆盖、无盲区低丢包的工业级无线上网Wi-Fi网络覆盖链路"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "极限服务运行效能基准",
+          "metrics": [
+            {
+              "label": "条码枪打卡扫描到大盘库存变更物理延迟",
+              "value": "< 500 ms 延迟参数"
+            },
+            {
+              "label": "全集群系统级单时段事务最高承载吞吐量",
+              "value": "每小时轻松通过 1000+ 笔入库流转"
+            },
+            {
+              "label": "日常大宗供应链报表自动提取计算速度",
+              "value": "< 10 秒以内"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "信息防线与数据安全",
+          "items": [
+            "全面由 Spring Security 工业级安全套件严密阻隔全线通信令牌（支持主流 OAuth2 与 JWT 加密令牌架构）",
+            "严格建立基于职责划分的 Role-Based Access Control 用户防线，精细隔离仓库保管员、采购总监与系统高管权限",
+            "全方位记录无死角的系统日志，精准复原具体的物料在何时由哪个凭证账户发起了货架搬移",
+            "强制全程开启高强度网络数据链路加密（HTTPS 网络通道协议）"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "crm-platform",
+        "name": "CRM Platform",
+        "description": "客户关系管理系统（CRM），专为提升销售团队业绩、优化线索转化周期及稳固大客户忠诚度而设计。",
+        "fullDescription": "本 CRM（客户关系管理）系统是一套专为现代化市场营销部门及核心销售梯队量身定制的数字化客户全生命周期管理系统。平台全面覆盖潜在商业线索全渠道猎取捕获、系统化推进商机拓展漏斗、自动执行日常客户跟进任务提醒、并深度拆解销售数据，从而协助企业构建极其稳固、具备更高盈利特质的长期核心客户互信关系纽带。",
+        "image": "/assets/products/41.png",
+        "technologies": ["React", "Node.js", "MongoDB", "GraphQL", "Apollo"],
+        "category": "Customer Relationship Management",
+        "status": "Completed",
+        "version": "2.1.0",
+        "lastUpdated": "2025年6月",
+        "client": "创意市场营销全案集团",
+        "duration": "7 months",
+        "teamSize": "6 位资深专家 (前端开发, 后端核心专家, GraphQL 调优大师, UI/UX 体验师, QA 工程师)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "63",
+          "reviews": [
+            {
+              "author": "Dian Sastro",
+              "role": "全集团销售总监",
+              "date": "2025-06-12",
+              "body": "本平台搭载的 Kanban 看板式销售漏斗商机推进视图非常赞，它能让我们的一线业务代表每天百分之百投入去高效率跟进极富潜力的重点大单线索。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "技术操作指引手册",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点功能",
+          "workflow": "商机流转业务流",
+          "techStack": "核心开发栈体系",
+          "screenshots": "功能视窗",
+          "specs": "性能规格参数"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "数字化销售管理详情",
+          "clientLabel": "签约商户",
+          "durationLabel": "研发合作周期",
+          "teamSizeLabel": "核心团队规模",
+          "lastUpdatedLabel": "最近更替发布"
+        },
+        "platformSupport": {
+          "title": "综合功能覆盖",
+          "items": [
+            "提供基于浏览器运行的企业集约化 Web 销售业绩主控看板",
+            "深度内置了与主流办公邮箱服务的直接集成挂接通道（无缝双向互联 Gmail 与 Outlook 账户）",
+            "自动执行日常客户日常拜访任务计划任务排程及关键会议日程提醒",
+            "前端整体界面针对移动智能终端视窗进行了精细的流线化自适应调优，极大便利外勤团队"
+          ]
+        },
+        "architecture": {
+          "title": "高性能 GraphQL API 架构选型",
+          "items": [
+            "单页面应用（SPA）前端工程化构建模式范式",
+            "以前端极其柔性的 GraphQL 搭配 Apollo Server 技术架构作为系统级 API 接口传输总线",
+            "底层搭载在拓展性及属性微调上具备极高敏捷度的开源 NoSQL 文档型数据库 MongoDB",
+            "依托高级 GraphQL Subscriptions 多路复用订阅通信协议驱动的系统数据秒级跨屏跳变"
+          ]
+        },
+        "projectDescription": {
+          "title": "数字化 CRM 立项深度剖析",
+          "paragraphs": [
+            "一线销售部门在日常大客开发中，普遍面临诸多低效的管理痛点：由于缺乏统一跟进日志导致跟丢潜在商机客户、各业务代表跨区域沟通衔接不畅致使客户体验割裂、更无法形成一张透明的看板纵览全集团正在推进的各梯队合同商机（Pipeline）大盘。支离破碎、各自为政的客户档案严重制约了企业扩容成交规模的能力。",
+            "为了切实消弭上述业绩阻碍，我们采用了行业备受推崇的高精尖技术栈构建了这套面向集团化销售流程的集约化云 CRM 平台。在技术层面上创造性引入 GraphQL 作为数据中枢总线，全面赋予了前端界面“要什么数据、后端精准给什么形状”的按需抽取特质，大幅压降冗余字段对企业内网带宽的无端消耗，带来了前所未有的绝佳操作敏捷度。",
+            "全新落成的控制塔中心完美赋能整体业务代表开启“降本增效、智慧拓客”的崭新开发模式。销售员可在单个统一视窗下总揽任一客户的360度历史全景记录、自动把琐碎繁冗的例行联络工作交由系统脚本执行、并能通过数据图表穿透预测近期的回款绩效，直接拉升了线索成交转化胜率与大客长期复购周期价值。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Users",
+          "title": "360° 客户全生命周期档案中央控制",
+          "description": "全面透视任一联系人的立体侧写，深度整合基础核心档案、全历史邮件交互跟进日志、历史成交合同项目明细及正在推进的商业线索。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Kanban 看板式销售漏斗推进看板",
+          "description": "将杂乱的商机项目以极其直观的 Kanban 扑克牌悬挂样式进行分阶段排列呈现，支持鼠标轻松拖拽跳转商机生命周期状态。"
+        },
+        {
+          "icon": "Package",
+          "title": "全渠道商业线索（Leads）全网猎取",
+          "description": "自动抓取、集中过滤和分发来自于企业官方网站 contact 块单页、各种线上线下获客营销活动沉淀下来的海量最初线索。"
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "拜访记录与销售任务追踪契约",
+          "description": "系统化建立、指派、督办各类具体的客户跟进策略，包括日常约见考察、意向产品演示确认和核心协议谈判，锁定推进deadline。"
+        },
+        {
+          "icon": "Server",
+          "title": "企业级销售工作流自动化中间件",
+          "description": "把高重复性的跟进动作托付给自动逻辑，比如当某张商机卡片 relocation 移入“发送合同草案”阶段的同一毫秒，系统自动给大客dispatch定制的模板图文邮件。"
+        },
+        {
+          "icon": "Monitor",
+          "title": "多维度核心业绩 KPI 仪表盘",
+          "description": "实时动态捕捉至关重要的全局业绩指标走势，包含线索平均成交转化周期、各部门合同储备池总估值、以及单一外勤业务员的劳动生产率考核。"
+        }
+      ],
+      "workflow": {
+        "title": "商业线索到签署成交（Lead-to-Deal）流转全生命周期",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Package",
+            "title": "潜在商业线索捕捉入库",
+            "description": "外部客户通过官方展示门户提交一笔合作诉求，该基础线索字段经接口过滤后全自动被stream写入CRM核心数据库。"
+          },
+          {
+            "step": 2,
+            "icon": "CheckCircle",
+            "title": "线索资质深度初筛核准",
+            "description": "分配的区域线索代表拨打电话联系对方以核实真实的商业规模与意向方向，确认无误后将状态码跳变为‘Qualified’。"
+          },
+          {
+            "step": 3,
+            "icon": "Users",
+            "title": "线索转换与商机开单转换",
+            "description": "该被认可的线索一键从临时缓冲池移出，自动转换为一个正式的客户企业档案（Contact），同时在Kanban看板起始列自动创建一张商机卡片。"
+          },
+          {
+            "step": 4,
+            "icon": "BarChart3",
+            "title": "销售漏斗多阶段博弈推进",
+            "description": "销售专员在此商机卡内频繁登记日常沟通纪要（邮件往来、报价明细），并结合博弈进度逐步在看板中向右侧移库（如商务谈判阶段）。"
+          },
+          {
+            "step": 5,
+            "icon": "ShoppingCart",
+            "title": "合同成交关闭归档",
+            "description": "该项目完成长线谈判，最终被标记锁定为‘Won’（成功大卖）或‘Lost’（失单归档），其全流程历史数据轨迹进入中央数据库永久存留。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "目前构建复杂富交互、高生产力企业级 SPA 前端控制台的首选动态 JavaScript UI 开发库体系。"
+            },
+            {
+              "name": "Apollo Client",
+              "description": "功能覆盖极全的工业级 GraphQL 前端协作状态框架，自带极为精密的网络级本地数据缓存和数据同频控制机制。"
+            },
+            {
+              "name": "Ant Design",
+              "description": "享誉行业的大型企业级高品质 React 视觉组件系统，提供极佳的复杂数据网格展示交互规范支持。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js",
+              "description": "高性能的异步、事件轮询架构服务端 JavaScript 运行时环境，用以轻快开辟高柔性的企业网络接口服务。"
+            },
+            {
+              "name": "Apollo Server",
+              "description": "架设于 Express 后端中间件之上的高级 GraphQL 集中执行环境，负责管理、解析和聚合复杂的强类型 GraphQL Schema 字段架构。"
+            },
+            {
+              "name": "Mongoose",
+              "description": "成熟的 MongoDB 对象文档映射建模中间件工具库，在业务代码和 NoSQL 数据表结构间架设规范的数据有效性规则。"
+            }
+          ]
+        },
+        {
+          "category": "Database & API",
+          "technologies": [
+            {
+              "name": "MongoDB Atlas",
+              "description": "具备无限水平分区能力、高弹性自动扩容的企业级云端分布式 NoSQL 数据存储集群环境。"
+            },
+            {
+              "name": "GraphQL",
+              "description": "面向现代化数字接口的革命性强类型 API 查询声明语言，把“决定输出何种形状数据”的指挥棒安全移交给前台界面层。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "集团销售中心总核心运行控制台",
+          "image": "/placeholder.svg",
+          "description": "高内聚呈现线索商机项目总储备池折线、今日 approaches deadline 待跟进事项列表以及销售总业绩指标图表。"
+        },
+        {
+          "title": "Kanban 看板式商机发展推进视图",
+          "image": "/placeholder.svg",
+          "description": "卡片式直观呈现各阶段项目储备的图形交互大屏，支持鼠标轻巧拖拽换列，支持直接触发快捷日志录入。"
+        },
+        {
+          "title": "客户 360° 全景记录综合工作台单页",
+          "image": "/placeholder.svg",
+          "description": "集中在一张画布内无盲区呈现目标企业的核心字段表、过往全流向邮件往来历史、以及所归纳的关联交易细节。"
+        },
+        {
+          "title": "新建跟进任务与会议约见排程表单",
+          "image": "/placeholder.svg",
+          "description": "专为高效录入设计的弹出对话框，支持快速派发待办单据、设定时间红线并自动关联 parent 联系人档案。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统环境规格与硬件硬件底座要求",
+          "server": {
+            "title": "服务器配置基准",
+            "items": [
+              "Node.js 后端服务运行环境版本建议配置 LTS 稳定版 18.x 或以上标准",
+              "保证内网网络连接管道全面顺畅挂接至远程高可用 MongoDB 云数据库集群"
+            ]
+          },
+          "client": {
+            "title": "客户端浏览器兼容性",
+            "items": [
+              "完美契合启用现代主流网络浏览器，浏览器需内置有高响应度处理能力的 ES6 编译引擎"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "服务运行性能基准指标",
+          "metrics": [
+            {
+              "label": "GraphQL 单个接口查询处理耗时 (P95 基准)",
+              "value": "< 300 ms"
+            },
+            {
+              "label": "中央控制仪表大盘首次骨架开屏时效",
+              "value": "< 2 秒以内"
+            },
+            { "label": "跨屏数据订阅实时数据同步延迟", "value": "< 500 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "信息防线与数据安全",
+          "items": [
+            "采用高密度的 JWT 加密令牌架构来全面锁闭系统前後端的数据访问调用权限",
+            "设立了基于企业职务体系颗粒化、深度拦截隔离的角色鉴权授权拦截框架",
+            "后端专门布防针对恶意 GraphQL 的嵌套查询深度限制规则（Query Depth Limiting），死锁恶意算力侵占",
+            "在所有数据接口输入端部署强力的防护校验网，杜绝任何类型的网络注入破坏隐患"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "e-learning-platform",
+        "name": "E-Learning Platform",
+        "description": "一款集成了自适应超清视频流媒体在线点播技术以及交互式随堂测验模块的数字化在线教育平台系统。",
+        "fullDescription": "本在线教育系统（E-Learning Platform）是一套专为在线培训机构、独立名师团队以及学员群体打磨的数字化在线教育运营系统。整个应用生态向企业分发了一站式构建精品课程课程、系统化维护 kurikulum 章节树、以及课程线上销售变现的硬核工具链，配备了安全不卡顿的在线视频分发、智能化学习进度自动跟踪以及交互式章节考试模块，旨在大幅拔高学员的完课留存率并锁定出色的数字教学成效。",
+        "image": "/assets/products/37.png",
+        "technologies": [
+          "Next.js",
+          "React",
+          "Strapi",
+          "PostgreSQL",
+          "AWS S3",
+          "Tailwind CSS"
+        ],
+        "category": "Education Technology",
+        "status": "Completed",
+        "version": "1.2.0",
+        "lastUpdated": "2025年3月",
+        "client": "Akademi Digital Indonesia",
+        "duration": "8 个月",
+        "teamSize": "6 位专家 (前端开发, 后端 CMS 专家, DevOps 架构师, UI/UX 体验师, QA 工程师)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "76",
+          "reviews": [
+            {
+              "author": "Prof. Hermawan",
+              "role": "Akademi Digital 集团教研委员会主席",
+              "date": "2025-04-02",
+              "body": "课程核心视频资源全部使用了高级的 AWS S3 签名加密URL技术（Presigned URLs）进行了完美的防盗链安全锁闭，来宾随堂发起交互式章节考试时系统底层的实时计分反馈和数据分析功能跑得无懈可击。",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "后台内容操作手册",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心亮点功能",
+          "workflow": "学员求学 lifecycle",
+          "techStack": "选型技术栈",
+          "screenshots": "功能视窗画廊",
+          "specs": "开发技术规格"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "教育信息化项目详情",
+          "clientLabel": "签约商户",
+          "durationLabel": "研发周期",
+          "teamSizeLabel": "核心团队专家数",
+          "lastUpdatedLabel": "最近更新更替"
+        },
+        "platformSupport": {
+          "title": "综合功能覆盖",
+          "items": [
+            "实现打破终端限制、完美跨越PC/平板/手机的无阻碍线上求学体验",
+            "搭载自适应视讯点播引擎，根据用户现场带宽弹性动态微调超清视频画质",
+            "内置自动化的结业考核系统，通关后由后端自动生成高防伪数字结业证书",
+            "围绕单个特定的课程课程课时章节独立开辟专属的师生实时问答社区"
+          ]
+        },
+        "architecture": {
+          "title": " Headless 无头内容管理架构选型",
+          "items": [
+            "最符合现代大容量多媒体内容管理的 Headless CMS 无头内容架构范式",
+            "前端视图展现层基于 Next.js 研发，灵活交织静态网页生成（SSG）与动态服务端预渲染（SSR）以压榨呈现速度",
+            "多媒体重型音视频资源物理资产全面托管于高可用的云端 AWS S3 并配有防窃取签名鉴权机制",
+            "前台呈现数据完全依托标准的 RESTful API 接口，从独立的后台 Strapi 系统节点敏捷抽离分发"
+          ]
+        },
+        "projectDescription": {
+          "title": "项目商业诉求说明",
+          "paragraphs": [
+            "伴随在线培训和企业异地内训需求的井喷式爆发，传统的线上课堂往往受困于多媒体资产易被非法盗锁泄露、视频卡顿白屏等待耗时冗长、以及前台排课逻辑过于复杂令网校助教无从下手的重度尴尬境地。教研团队迫切渴望一套兼顾前台求学酣畅感与后端多媒体资产重度防护的现代化基座。",
+            "我们的研发团队以前瞻性的 headless 无头前后端解耦理念交出了完美答卷。在教研后台选用功能强大的开源 Strapi 作为无头内容中枢，教务老师可以像玩积木一样极具组件化地自主排列课程目录、搭建章节树。而在学员浏览的前端，Next.js 凭借SSG和SSR技术直接将首屏呈现性能拔高到无以复加。针对核心音视频资产处理，则全面互联了可弹性扩展、安全性硬核的 AWS S3 存储层。",
+            "落地服役的事实数据证明，该平台为广大远道而来的莘莘学子营造了前所未有的丝滑网校体验，视频随点随播无任何加载阻碍，老师们亦能凭借傻瓜式的教务面板高效率更新核心讲义课件，完全摆脱了复杂代码的操作阴影。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "精品课程树与教学内容库管理",
+          "description": "讲师可从容开辟海量全新课类、自由归纳章节 kurikulum 框架、并能轻松挂接视频、PDF课件、标准格式格式讲义等多元教材。"
+        },
+        {
+          "icon": "Monitor",
+          "title": "高防护多功能音视频播放器",
+          "description": "高安全级别的视频点播环境，支持自适应多速率切换、播放倍速调整快触键、并在后台全自动保存用户的历史精准观看分钟位置进度。"
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "随堂测验与单元在线考场",
+          "description": "允许创建多样化的考试试卷（单选单选多选题、客观简答题），支持系统后台自动比对标准答案计分、派发答疑解析并设置严格的倒计时限制。"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "学员学情监控与进度仪",
+          "description": "为讲师和求学同学双向提炼直观的进度条，清晰透视哪些课时已通关、哪些作业待递交以及随堂小测验的历史积分轨迹。"
+        },
+        {
+          "icon": "Users",
+          "title": "课时级师生实时答疑交流社区",
+          "description": "直接在单独课时视窗下方开辟专属的 T&J 数字论坛，让学员与主讲教授针对特定学术知识点展开高效的高频数字交互互动。"
+        },
+        {
+          "icon": "Printer",
+          "title": "数字结业证书智能签发机制",
+          "description": "当学员圆满斩获当前课程的全部完课token并通过最终毕业大考时，系统后台自动根据模板生成可查验的精美数字化结业证书。"
+        }
+      ],
+      "workflow": {
+        "title": "学员探求知识 Lifecycle 求学全流程",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "ShoppingCart",
+            "title": "网校选课与订单购买",
+            "description": "学员登录网校、在丰富的分类名录中发现心仪尖货、并通过对接的线上数字化清算网关一键完结购买流程。"
+          },
+          {
+            "step": 2,
+            "icon": "Monitor",
+            "title": "音视频课程按序学习",
+            "description": "求学者依序开启视频流媒体课堂，播放器静默在底层保持心跳包通信，将看完的课时在后台自动打上通关标记。"
+          },
+          {
+            "step": 3,
+            "icon": "CheckCircle",
+            "title": "递交章节随堂小试卷",
+            "description": "学完某核心主干章节后，页面自动拉起交互式小测试，学生在线作答以巩固近期吸收的核心学术知识。"
+          },
+          {
+            "step": 4,
+            "icon": "Users",
+            "title": "求助网校师生交流讨论群",
+            "description": "在钻研复杂逻辑遭遇瓶颈时，一键在当前课时下方抛出提问，等待网校主讲老师或者同班同学在留言区盖楼释疑。"
+          },
+          {
+            "step": 5,
+            "icon": "Download",
+            "title": "荣获结业数字证书证书",
+            "description": "当整门课程的章节完成百分比与最终测验达成标准时，个人主档案内的一键下载数字结业证书按钮瞬间激活高亮。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Next.js 14",
+              "description": "专为企业级高性能网站交付打造的 React 高阶单体工程框架，凭借极致的混合渲染参数（SSG/SSR）彻底碾压白屏时长。"
+            },
+            {
+              "name": "React 18",
+              "description": "整个网校前端客户端交互功能的大脑核心所在，支撑高度组件化、易维护的前端代码书写。"
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "原子化现代视觉构建工具，允许研发人员脱离复杂的原生CSS编写，在短时间内敏捷打磨出具备奢华质感的前端调性。"
+            }
+          ]
+        },
+        {
+          "category": "Backend (Headless CMS)",
+          "technologies": [
+            {
+              "name": "Strapi 4",
+              "description": "基于 Node.js 技术栈打造的高敏捷、高名气的开源无头内容管理框架，专职将结构化的教育资产数据包装成干净 API 进行分发。"
+            },
+            {
+              "name": "Node.js",
+              "description": "作为核心运行基础设施坐镇底层，强力维护 Strapi 无头服务实例的高速并发运转。"
+            }
+          ]
+        },
+        {
+          "category": "Database & Storage",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "用于安全存储教育目录、章节数据关系、系统权限等深度结构化表格的关系型开源重型数据库系统。"
+            },
+            {
+              "name": "AWS S3",
+              "description": "云端万物互联的标准化海量对象存储服务，用来高稳定性托管全网校的高清音视频资产与电子教材课件文件。"
+            },
+            {
+              "name": "AWS CloudFront",
+              "description": "覆盖全球各大城市核心节点的顶级内容分发网络（CDN），保障世界各地的网校学生视频点播延迟极低、无缓冲感。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "网校全类目课程名录大厅大厅",
+          "image": "/placeholder.svg",
+          "description": "集中陈列当前网校所有在售精选课目卡片的网格界面，附带高效的多条件属性筛选搜索面板。"
+        },
+        {
+          "title": "浸润式学员求学专属播放界面",
+          "image": "/placeholder.svg",
+          "description": "学员看视频写笔记的工作视窗，核心区域承载超清多功能播放器，侧边常驻可实时跳转折叠的课程主目录树。"
+        },
+        {
+          "title": "随堂交互式小测验答题界面表单",
+          "image": "/placeholder.svg",
+          "description": "客观选择题答题页面布局示例，界面上方常驻秒级实时变化的倒计时警告组件以及题目导航切块。"
+        },
+        {
+          "title": "学员学情历史与结业成就控制台",
+          "image": "/placeholder.svg",
+          "description": "属于学生个人的求学中心主页，直观盘点自身跟进的所有课目、总课时消耗占比、以及已荣获的防伪证书列表。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统开发指标与服务器基础设施要求",
+          "server": {
+            "title": "后端无服务器与 CMS 算力底座标准",
+            "items": [
+              "Node.js 运行时运行环境建议部署 LTS 稳定大版本 version 18.x 或更高版本标准",
+              "PostgreSQL 开源数据库集群引擎要求部署在 12 大版本或更高版本以上",
+              "必须成功打通底层服务节点对远程外部目标 AWS S3 云存储空间桶的安全策略交互通道"
+            ]
+          },
+          "client": {
+            "title": "学员就学设备环境",
+            "items": [
+              "配备了现代标准网络浏览器的 PC、平板或智能手机，且保证互联网络具备常规宽带接入速率指标"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "核心服务运行效能基准",
+          "metrics": [
+            {
+              "label": "前端静态课程网页首次呈现时效 (FCP)",
+              "value": "< 1.2 秒以内"
+            },
+            {
+              "label": "超清媒体流媒体播放器初次唤醒开播延迟",
+              "value": "< 2 秒以内"
+            },
+            {
+              "label": "无头后端 CMS 数据接口访问耗时 (P95 基准)",
+              "value": "< 200 ms"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "多媒体资产与隐私安全防护",
+          "items": [
+            "设立了高度可靠的网校通行证验证防线，严格审查前端用户的真实账号会话凭证",
+            "对网校最具金量价值的音视频资产强制套用 AWS S3 签名防盗链技术（Presigned 算法），剥离直接下载路径",
+            "加持细粒度的业务系统访问屏障，严格划分网校学生、授课主讲讲师与网校运营管理管理员权限",
+            "与顶尖的数字化聚合支付清算总线进行深度互联，全面保障线上选课收银链路的账目财务安全"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "warehouse-management-system",
+        "name": "Warehouse Management System",
+        "description": "重型工业级数字化仓库管理系统（WMS），深度支持精细到储位级的物料定位追踪以及极短路径智能拣货计算算法。",
+        "fullDescription": "Warehouse Management System (WMS) 是一款专为物流核心支柱、大型配送总仓打造的精益化智能仓储运营ERP平台。系统绝非停留在低效的扁平化存量统计层面，而是对仓库每一个物理库区、每一架排位、每一格货盘执行数字化立体映射（Bin-Level Tracing 库位级定位），通过路线规划算法为分拣人员计算极短出库走动路径，并能深度匹配工业级 RFID 射频扫码无线设备以释放极致的吞吐准确度效能指标。",
+        "image": "/assets/products/40.png",
+        "technologies": [
+          "Vue.js",
+          "Node.js",
+          "Express.js",
+          "MySQL",
+          "RFID Integration",
+          "WebSockets"
+        ],
+        "category": "Warehouse Management",
+        "status": "Completed",
+        "version": "3.0.0",
+        "lastUpdated": "2025年6月",
+        "client": "Distribusi Logistik Prima",
+        "duration": "12 个月",
+        "teamSize": "8 位专业专家 (前端研发工程师, 后端核心架构师, 数据库专家, RFID 硬件级集成专家, QA 工程师, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "48",
+          "reviews": [
+            {
+              "author": "Andi Wijaya",
+              "role": "仓储总拨中心运营总监",
+              "date": "2026-02-10",
+              "body": "自从该WMS平台整体全面服役以来，我们总仓的实物周转调度效能整整飙升了40%之巨！平台内置的拣货短路径计算模型极其精准无误。",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Aminah",
+              "role": "物流干线监督主管",
+              "date": "2026-03-05",
+              "body": "该系统在硬件层面提供的 RFID 射频自动识别中间件简直是神来之笔，在每天面临海量重型 bulk 货品大范围集中入库签收时为我们省去了无数人力开销。",
+              "rating": "5"
+            },
+            {
+              "author": "Budi Pratama",
+              "role": "集团信息化 IT 核心总监",
+              "date": "2026-04-12",
+              "body": "系统的底层代码和多线程设计表现出了行业顶尖的稳定性，其底层 API 接口同我们全集团的大型中央 ERP 主系统的 interlocking 数据流中转长时平稳无故障。",
+              "rating": "4"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "技术操作指引手册",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "项目概述",
+          "features": "核心卖点亮点",
+          "workflow": "拣货分拣全闭环",
+          "techStack": "系统架构选型",
+          "screenshots": "功能图集画廊",
+          "specs": "开发规格"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "智能仓储物流详情",
+          "clientLabel": "签约商户",
+          "durationLabel": "研发合作周期",
+          "teamSizeLabel": "核心团队专家数",
+          "lastUpdatedLabel": "最近更新更替"
+        },
+        "platformSupport": {
+          "title": "到场作业支撑范围",
+          "items": [
+            "提供专为仓库拣货员工配发的手持便携硬件移动无线终端专版软件软件",
+            "在中心控制室大屏对全仓实体平面货架布局实施三维数字化实时可视化展现",
+            "通过标准化总线直接集成外部大型自动化传输 conveyor 硬件传动控制链",
+            "分发工业级标准的干净 API，无缝向企业 ERP 或者是 TMS 物流干线系统同频输送数据流"
+          ]
+        },
+        "architecture": {
+          "title": "系统架构选型 blueprint",
+          "items": [
+            "高性能的 B/S（Browser-Server）前后端分离经典研发架构",
+            "面向标准货品物流周转业务定制的关系型 RESTful API 后端通信层设计",
+            "借助全双工 WebSockets 网络长连接为中心大屏持续提供毫秒级无延迟数据滚动",
+            "配置有专门拦截、过滤和编译 RFID 射频读写器硬件微弱信号流的专用定制 Middleware 中间件"
+          ]
+        },
+        "projectDescription": {
+          "title": "数字化 WMS 项目研发价值说明",
+          "paragraphs": [
+            "现代化超大型仓储中心的现场运作时刻面临极其沉重繁杂的物流瓶颈：仓库立方物理容积未能被合理精细精细开发导致爆仓与空置尴尬并存、分拣工人由于缺乏动线指引在偌大的厂区盲目走动且经常拿错SKU、更无法在最短时间内对特定货盘执行秒级定位。这些问题大幅增加了物流包裹的滞留周期并产生了极其昂贵的劳动力管理成本开销。",
+            "本项目通过输出整套一体化的高阶 WMS 平台将现实物理中的所有排架、货位格子进行了精密的数字化拓扑建模。系统底层运行算法模型，在实物到货入库的第一秒给出最优库位上架指令（put-away 规则），并在出库单批量来袭时智能计算出耗时、路径极短的黄金拣货动线（picking path）。最令人称道的是深度打通了 RFID 硬件射频天线技术，实现无接触式的海量物资成批扫描验证。",
+            "该系统的全面服役彻底缩减了一线工人出库拣货的折返损耗，将集团仓库账实相符精度指标无限拔高并逼近100%极限スコア，全方位扩容了仓储基地的立方容积率，协助企业在竞争惨烈的供应链赛道中确立绝对的精益物流时间优势。"
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "立体库区储位与平面 tata letak 可视化",
+          "description": "数字化精准复原仓库内所有货架、行道及具体独立货格的物理坐标树，大幅压缩Penempatan和捞取物料的耗时。"
+        },
+        {
+          "icon": "Database",
+          "title": "智能导向精准上架 (Put-Away)",
+          "description": "系统基于行业经典的 ABC 周转速率分析模型或严格的 FIFO 先进先出合规准则，对入库货品全自动指出最契合的入库存放储位编码。"
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "拣货行走路径智能优化计算",
+          "description": "将散乱的待出发订单批量归结分波次转换成数字化拣货单（pick-list），依据走动路线极短化原则排序，杜绝操作员无效折返。"
+        },
+        {
+          "icon": "Server",
+          "title": "工业级 RFID 与常规条码硬件对齐",
+          "description": "当整托盘物料途径装有 RFID 天线的物流通道闸门时实现秒级成批识别记账，完全消灭低效的单件纯人工开单录入。"
+        },
+        {
+          "icon": "Printer",
+          "title": "发货出库与包装发运管理 (Shipping)",
+          "description": "周密监管自产品复核装箱（packing）、物流快递面单自动打印、直到最后货品整齐码放装入物流货卡车车厢的完整流转线。"
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "局部无停产循环审计 (Cycle Counting)",
+          "description": "支持仓库管理专员在不中断日常物流大范围出入库的实况下，随时针对特定分区货架展开例行的动态盘点盘库，保护全局数据准度。"
+        }
+      ],
+      "workflow": {
+        "title": "出库分拣拣货（Picking）业务标准闭环流转",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Database",
+            "title": "出库订单智能波次聚合",
+            "description": "核心管理系统在后台自动检索待发货池，将发往相同目的地或包含类似SKU的数笔散单打包聚合成一个高效拣货波次。"
+          },
+          {
+            "step": 2,
+            "icon": "Monitor",
+            "title": "拣货单生成并派发终端",
+            "description": "智能计算动线引擎生成拣货单据，将物料按货位最佳行走路线编排好先后次序，无缝推送至一线操作员的手持无线设备中。"
+          },
+          {
+            "step": 3,
+            "icon": "Package",
+            "title": "库内移步到指定货架格子",
+            "description": "分拣操作员根据手持终端屏幕展示的规整导向提示信息，推车直接行进至目标货架区对应的具体独立货格编码前。"
+          },
+          {
+            "step": 4,
+            "icon": "Server",
+            "title": "条码枪或RFID确认确认",
+            "description": "操作员利用扫描终端对货位编码和货品条码（或RFID标签）扫描确认核对，完成实物拿取，大盘存量实时秒级扣减同步。"
+          },
+          {
+            "step": 5,
+            "icon": "Printer",
+            "title": "推集流转至打包核验站",
+            "description": "当本批次波次清单所有的货品悉数汇聚完毕后，分拣车被流转分发推至最末端的防错复核包装工位，等待发货发运。"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Vue.js 3",
+              "description": "配备了全新组合式 API (Composition API) 研发范式的渐进式前端框架层，专门承载复杂仓储业务管理逻辑界面。"
+            },
+            {
+              "name": "Pinia",
+              "description": "专为 Vue 3 前端应用量身打造的高亲和度、轻量化全局全局状态总控制组件，流畅追踪大规模视图参数状态。"
+            },
+            {
+              "name": "Vuetify",
+              "description": "深度切合 Google 官方 Material Design 交互设计规范的高级 React/Vue 高品质组件化 UI 系统框架。"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js",
+              "description": "基于 JavaScript V8 引擎的高性能异步服务器端运行时层，专职支撑超高速的物流 API 数据透传请求。"
+            },
+            {
+              "name": "Express.js",
+              "description": "Node.js 教育生态中极其精简老牌的 Web 核心层，用于快速开辟高吞吐、高稳定承载的 RESTful API 通信节点。"
+            },
+            {
+              "name": "Sequelize",
+              "description": "基于 Promise 设计体系构建的高级 Node.js ORM 框架组件，专门用于安全、高效地对底层 MySQL 执行关系映射操作。"
+            }
+          ]
+        },
+        {
+          "category": "Database & Real-time",
+          "technologies": [
+            {
+              "name": "MySQL 8.0",
+              "description": "行业长效服役的高可用开源关系型数据库，管理核心事务仓位映射以及全历史物流流水明细账目。"
+            },
+            {
+              "name": "Socket.IO",
+              "description": "高稳定性的 WebSockets 长连接传输组件层，全面抹平管理大屏与现场无数台操作手持终端间的通信延时真空。"
+            }
+          ]
+        },
+        {
+          "category": "硬件级物联网集成",
+          "technologies": [
+            {
+              "name": "RFID 工业级中间件",
+              "description": "专门研发的底层物联网硬件集成组件（运行于如 Node.js 环境中），负责同现场网口物理 RFID 读写器保持稳定套接字通信并过滤翻译电子标签。"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "实时仓储运营智慧指挥塔中心大屏",
+          "image": "/placeholder.svg",
+          "description": "富集化展示核心 KPI 图表，包含当前待分拣波次总量、立方物理容积利用率指标走势、以及分拣工时产出效能数据。"
+        },
+        {
+          "title": "仓储实体平面货架及三维库位可视化地图",
+          "image": "/placeholder.svg",
+          "description": "高度极富交互特性的三维可视化仓库模型，直接以不同色彩高亮标注任一独立货位格子的饱满度或实物状态。"
+        },
+        {
+          "title": "移动端手持手持终端分拣指引界面",
+          "image": "/placeholder.svg",
+          "description": "专为仓区现场工人打磨的高对比度、粗字体极简表单，指示当前去往哪条通道提取哪款SKU及其件数。"
+        },
+        {
+          "title": "基于工业 RFID 通道闸门的到货全自动签收校验界面",
+          "image": "/placeholder.svg",
+          "description": "叉车运送整托盘物料穿过闸门瞬间，界面秒级成批闪烁弹出扫描出的货品明细，并全自动同PO系统账单匹配校验对账。"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "系统环境规格与硬件配套要求",
+          "server": {
+            "title": "服务器算力基础设施指标",
+            "items": [
+              "Node.js 后端运行时环境必须达到 18.x 长期支持版或更高大版本规范",
+              "MySQL 企业级关系型数据库实例需运行在 8.0 或以上标准大版本中",
+              "局域网内部建议为承担硬件级物联网数据交互的 RFID Middleware 中间件倾斜独立的物理服务服务器"
+            ]
+          },
+          "client": {
+            "title": "仓库作业现场终端配套",
+            "items": [
+              "基于 Android 或 iOS 工业级加固版手持移动终端终端，保证内置有运行顺畅的现代标准网络浏览器",
+              "确保整个仓库实体封闭厂房内部架设了高稳定性、无盲区死角、支持高频漫游低丢包的工业级无线上网 Wi-Fi 网络链路"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "服务运行效能基准",
+          "metrics": [
+            {
+              "label": "手持硬件开枪打卡到中央大屏数据同频延迟",
+              "value": "< 1 秒以内"
+            },
+            {
+              "label": "最优拣货下架动线算法推荐生成时效",
+              "value": "< 2 秒以内"
+            },
+            {
+              "label": "核心 WebSocket 服务器长连接承载并发终端能力",
+              "value": "轻松容纳 100+ 台手持开枪同时在线打卡"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "物流信息防线与数据安全",
+          "items": [
+            "每一台分发到现场员工手中的物理移动终端账号强制执行独立的硬件串号安全登录校验",
+            "设立了细粒度的岗位安全角色屏障，全面隔离仓储搬运工、质检审查主管与全线最高管理员查看核心财务数据的权限",
+            "全方位记录无死角的系统日志（Audit Trail），精准定位任意货盘在何时由哪个凭证账户发起了货架变更修改",
+            "对终端至云端核心服务器间传递的一切物流数据载荷强制架设 SSL 加密通道进行保护"
+          ]
+        }
+      }
+    }
+  ]
+}

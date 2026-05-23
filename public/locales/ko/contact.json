@@ -1,25 +1,25 @@
 {
-  "title": "Contact Us",
-  "subtitle": "Ready to build your digital solution? Consult your project for free with our expert team.",
+  "title": "문의하기",
+  "subtitle": "디지털 솔루션을 구축할 준비가 되셨나요? 전문가 팀과 무료로 프로젝트를 상담하세요.",
   "form": {
-    "name": "Full Name",
-    "email": "Email Address",
-    "service": "Required Service",
+    "name": "성명",
+    "email": "이메일 주소",
+    "service": "필요한 서비스",
     "service_options": {
-      "web": "Website Development",
-      "mobile": "Mobile App (Android/iOS)",
-      "system": "Information System / ERP",
-      "uiux": "UI/UX Design"
+      "web": "웹사이트 개발",
+      "mobile": "모바일 앱(Android/iOS)",
+      "system": "정보 시스템 / ERP",
+      "uiux": "UI/UX 디자인"
     },
-    "message": "Project Details",
-    "placeholder_message": "Tell us a little about your business needs...",
-    "submit": "Send Inquiry"
+    "message": "프로젝트 상세",
+    "placeholder_message": "비즈니스 요구사항을 간단히 알려주세요...",
+    "submit": "문의 보내기"
   },
   "info": {
-    "office_title": "Our Office",
-    "address": "Yogyakarta, Indonesia (Serving clients across Indonesia and abroad)",
-    "whatsapp_title": "WhatsApp / Phone",
-    "email_title": "Business Email"
+    "office_title": "오피스",
+    "address": "인도네시아 욕야카르타(인도네시아 전역 및 해외 고객 지원)",
+    "whatsapp_title": "WhatsApp / 전화",
+    "email_title": "비즈니스 이메일"
   },
-  "success": "Message sent! Our team will contact you within 1x24 hours."
+  "success": "메시지가 전송되었습니다! 담당 팀이 1x24시간 이내에 연락드리겠습니다."
 }

@@ -1,6 +1,6 @@
 ---
 title: "7 Fitur Gym Management System yang Membantu Operasional RoxGym Lebih Rapi dan Efisien"
-date: "2026-05-18"
+date: "2026-05-23"
 image: "/assets/images/roxgym.png"
 desc: "Pelajari bagaimana fitur gym management system membantu RoxGym mengelola membership, absensi QR, trainer, jadwal kelas, hingga POS secara lebih efisien dan terstruktur."
 tags: "gym management, pos gym, sistem gym, sistem management gym, software management gym"
