@@ -63,6 +63,7 @@ import {
 } from "@/components/ui/select";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import SeoHead from "@/components/SeoHead";
 
 interface Course {
   id: string;
@@ -189,24 +190,43 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       projects: projects.slice(0, 3),
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, ["common", "training"])),
     },
   };
 }
 
-const formSchema = z.object({
-  name: z.string().min(3, "Nama minimal 3 karakter"),
-  email: z.string().email("Email tidak valid"),
-  whatsapp: z.string().min(10, "Nomor WhatsApp tidak valid"),
-  program: z.string().min(1, "Pilih salah satu program"),
-});
-
 const CoursePage = () => {
+  const { t } = useTranslation("training");
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
   const [activeAgeGroup, setActiveAgeGroup] = useState<
     "all" | "8-10" | "11-16"
   >("all");
   const [loading, setLoading] = useState(false);
+  const getArray = (key: string, fallback: string[]) => {
+    const translated = t(key, { returnObjects: true });
+    return Array.isArray(translated) ? (translated as string[]) : fallback;
+  };
+  const translatedCourses = courses.map((course) => ({
+    ...course,
+    title: t(`courses.${course.id}.title`, { defaultValue: course.title }),
+    duration: t(`courses.${course.id}.duration`, {
+      defaultValue: course.duration,
+    }),
+    sessions: t(`courses.${course.id}.sessions`, {
+      defaultValue: course.sessions,
+    }),
+    description: t(`courses.${course.id}.description`, {
+      defaultValue: course.description,
+    }),
+    tools: getArray(`courses.${course.id}.tools`, course.tools),
+    outcomes: getArray(`courses.${course.id}.outcomes`, course.outcomes),
+  }));
+  const formSchema = z.object({
+    name: z.string().min(3, t("form.validation.name")),
+    email: z.string().email(t("form.validation.email")),
+    whatsapp: z.string().min(10, t("form.validation.whatsapp")),
+    program: z.string().min(1, t("form.validation.program")),
+  });
   const {
     register,
     handleSubmit,
@@ -228,12 +248,12 @@ const CoursePage = () => {
       });
 
       if (res.ok) {
-        alert("Pendaftaran Terkirim! Kami akan menghubungi via WhatsApp.");
+        alert(t("form.success"));
         reset();
         setOpen(false);
       }
     } catch (error) {
-      alert("Gagal mengirim data.");
+      alert(t("form.error"));
     } finally {
       setLoading(false);
     }
@@ -241,11 +261,18 @@ const CoursePage = () => {
 
   const filteredCourses =
     activeAgeGroup === "all"
-      ? courses
-      : courses.filter((course) => course.ageGroup === activeAgeGroup);
+      ? translatedCourses
+      : translatedCourses.filter(
+          (course) => course.ageGroup === activeAgeGroup
+        );
 
   return (
     <div className="min-h-screen bg-white">
+      <SeoHead
+        title={t("seo.title")}
+        description={t("seo.description")}
+        keywords={t("seo.keywords")}
+      />
       {/* Hero Section */}
       <section className="relative py-20 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto overflow-hidden">
         {/* Background Decor */}
@@ -256,38 +283,37 @@ const CoursePage = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-sm font-bold tracking-widest text-pink-500 uppercase mb-2">
-                Explore Our Programs
+                {t("hero.eyebrow")}
               </h2>
               <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
-                <span className="text-slate-900">Kursus</span>
+                <span className="text-slate-900">{t("hero.titleTop")}</span>
                 <span className="block pb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-500">
-                  Unggulan Kami
+                  {t("hero.titleHighlight")}
                 </span>
               </h1>
             </div>
 
             <p className="text-slate-600 text-lg leading-relaxed max-w-md">
-              Kurikulum internasional yang dirancang khusus untuk mengasah
-              kreativitas melalui
+              {t("hero.description.before")}
               <span className="font-semibold text-slate-900">
                 {" "}
-                project-based learning
+                {t("hero.description.highlight")}
               </span>
-              . Mulai petualangan digital mereka hari ini.
+              {t("hero.description.after")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
                   <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-7 text-lg rounded-2xl shadow-xl">
-                    Daftar Sekarang
+                    {t("hero.primaryCta")}
                   </Button>
                 </DialogTrigger>
 
                 <DialogContent className="sm:max-w-[450px] rounded-3xl p-8">
                   <DialogHeader>
                     <DialogTitle className="text-2xl font-bold text-center">
-                      Bergabung Sekarang
+                      {t("form.title")}
                     </DialogTitle>
                   </DialogHeader>
 
@@ -297,11 +323,11 @@ const CoursePage = () => {
                   >
                     <div className="space-y-1">
                       <label className="text-sm font-semibold text-slate-700">
-                        Nama Penanggung Jawab
+                        {t("form.nameLabel")}
                       </label>
                       <Input
                         {...register("name")}
-                        placeholder="Contoh: Budi Santoso"
+                        placeholder={t("form.namePlaceholder")}
                         className="rounded-xl"
                       />
                       {errors.name && (
@@ -313,7 +339,7 @@ const CoursePage = () => {
 
                     <div className="space-y-1">
                       <label className="text-sm font-semibold text-slate-700">
-                        Nomor WhatsApp
+                        {t("form.whatsappLabel")}
                       </label>
                       <Input
                         {...register("whatsapp")}
@@ -330,12 +356,12 @@ const CoursePage = () => {
 
                     <div className="space-y-1">
                       <label className="text-sm font-semibold text-slate-700">
-                        Email Aktif
+                        {t("form.emailLabel")}
                       </label>
                       <Input
                         {...register("email")}
                         type="email"
-                        placeholder="budi@email.com"
+                        placeholder={t("form.emailPlaceholder")}
                         className="rounded-xl"
                       />
                       {errors.email && (
@@ -347,18 +373,20 @@ const CoursePage = () => {
 
                     <div className="space-y-1">
                       <label className="text-sm font-semibold text-slate-700">
-                        Pilih Program
+                        {t("form.programLabel")}
                       </label>
                       <Select onValueChange={(val) => setValue("program", val)}>
                         <SelectTrigger className="rounded-xl">
-                          <SelectValue placeholder="Pilih tingkat kursus" />
+                          <SelectValue
+                            placeholder={t("form.programPlaceholder")}
+                          />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="Kelas Anak-anak (4-10 Tahun)">
-                            Kelas Anak-anak (4-10 Thn)
+                          <SelectItem value={t("form.programs.children")}>
+                            {t("form.programs.childrenShort")}
                           </SelectItem>
-                          <SelectItem value="Kelas Remaja (11-16 Tahun)">
-                            Kelas Remaja (11-16 Thn)
+                          <SelectItem value={t("form.programs.teen")}>
+                            {t("form.programs.teenShort")}
                           </SelectItem>
                         </SelectContent>
                       </Select>
@@ -374,7 +402,7 @@ const CoursePage = () => {
                       className="w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:opacity-90 py-7 rounded-2xl font-bold text-lg text-white shadow-lg shadow-pink-100 transition-all"
                       disabled={loading}
                     >
-                      {loading ? "Memproses..." : "Konfirmasi Pendaftaran"}
+                      {loading ? t("form.processing") : t("form.submit")}
                     </Button>
                   </form>
                 </DialogContent>
@@ -384,7 +412,7 @@ const CoursePage = () => {
                   variant="outline"
                   className="px-8 py-7 text-lg rounded-2xl border-2"
                 >
-                  Lihat Kurikulum
+                  {t("hero.secondaryCta")}
                 </Button>
               </Link>
             </div>
@@ -396,19 +424,19 @@ const CoursePage = () => {
               <div className="relative overflow-hidden rounded-2xl mb-4">
                 <img
                   src="/images/little-koders.jpg"
-                  alt="Kelas Anak-anak"
+                  alt={t("tracks.children.imageAlt")}
                   className="w-full h-30 object-cover transform group-hover:scale-110 transition-duration-500"
                 />
                 <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-pink-600 font-bold text-xs px-3 py-1.5 rounded-full shadow-sm">
-                  8-10 TAHUN
+                  {t("tracks.children.ageBadge")}
                 </div>
               </div>
               <div className="px-2 pb-2">
                 <h3 className="font-bold text-xl text-slate-900">
-                  Kelas Anak-anak
+                  {t("tracks.children.title")}
                 </h3>
                 <p className="text-slate-500 text-sm mb-4">
-                  Dasar logika & kreativitas digital.
+                  {t("tracks.children.shortDescription")}
                 </p>
                 <div className="w-full h-1 bg-pink-100 rounded-full overflow-hidden">
                   <div className="w-1/3 h-full bg-pink-500" />
@@ -421,19 +449,19 @@ const CoursePage = () => {
               <div className="relative overflow-hidden rounded-2xl mb-4">
                 <img
                   src="/images/junior-koders.jpg"
-                  alt="Kelas Remaja"
+                  alt={t("tracks.teen.imageAlt")}
                   className="w-full h-30 object-cover transform group-hover:scale-110 transition-duration-500"
                 />
                 <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-blue-600 font-bold text-xs px-3 py-1.5 rounded-full shadow-sm">
-                  8-16 TAHUN
+                  {t("tracks.teen.ageBadge")}
                 </div>
               </div>
               <div className="px-2 pb-2">
                 <h3 className="font-bold text-xl text-slate-900">
-                  Kelas Remaja
+                  {t("tracks.teen.title")}
                 </h3>
                 <p className="text-slate-500 text-sm mb-4">
-                  Pemrograman tingkat lanjut & AI.
+                  {t("tracks.teen.shortDescription")}
                 </p>
                 <div className="w-full h-1 bg-blue-100 rounded-full overflow-hidden">
                   <div className="w-2/3 h-full bg-blue-500" />
@@ -451,32 +479,26 @@ const CoursePage = () => {
             <div className="order-2 lg:order-1">
               <img
                 src="/images/little-koders.jpg"
-                alt="Kelas Anak-anak"
+                alt={t("tracks.children.imageAlt")}
                 className="rounded-3xl shadow-2xl w-full max-h-[400px] object-cover"
               />
             </div>
             <div className="order-1 lg:order-2 space-y-6">
               <Badge className="bg-pink-500 text-white px-4 py-1 text-sm">
-                8-10 Tahun
+                {t("tracks.children.age")}
               </Badge>
               <h2 className="text-4xl font-bold text-gray-900">
-                Kelas Anak-anak
+                {t("tracks.children.title")}
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Kami membekali generasi muda dengan bahasa masa depan. Melalui
-                kurikulum pemrograman yang interaktif, siswa tidak hanya belajar
-                coding, tapi juga mengasah ketajaman logika dan kemampuan
-                pemecahan masalah secara natural. Dengan bimbingan mentor ahli
-                dan metode hands-on learning, kami memastikan setiap sesi
-                menjadi petualangan belajar yang seru.
+                {t("tracks.children.description")}
               </p>
               <div className="pt-6 border-t border-pink-200">
                 <h4 className="font-semibold text-gray-800 mb-2">
-                  The Next-Gen Growth Map
+                  {t("tracks.children.growthTitle")}
                 </h4>
                 <p className="text-gray-500 text-sm">
-                  Karena investasi terbaik adalah pendidikan yang relevan dengan
-                  perkembangan zaman.
+                  {t("tracks.children.growthDescription")}
                 </p>
               </div>
             </div>
@@ -490,31 +512,27 @@ const CoursePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <Badge className="bg-blue-500 text-white px-4 py-1 text-sm">
-                8-16 Tahun
+                {t("tracks.teen.age")}
               </Badge>
-              <h2 className="text-4xl font-bold text-gray-900">Kelas Remaja</h2>
+              <h2 className="text-4xl font-bold text-gray-900">
+                {t("tracks.teen.title")}
+              </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Dirancang khusus untuk rentang usia 8 hingga 16 tahun, program
-                ini mengubah imajinasi menjadi aplikasi nyata. Siswa akan
-                bereksplorasi mulai dari visual coding hingga menguasai syntax
-                murni (Python & JS). Fokus kami adalah project-based
-                learning—memastikan setiap siswa pulang dengan karya digital
-                yang siap dipamerkan.
+                {t("tracks.teen.description")}
               </p>
               <div className="pt-6 border-t border-blue-200">
                 <h4 className="font-semibold text-gray-800 mb-2">
-                  Future Leadership Blueprint
+                  {t("tracks.teen.growthTitle")}
                 </h4>
                 <p className="text-gray-500 text-sm">
-                  Kami berkomitmen menghadirkan kualitas pendidikan yang sepadan
-                  dengan potensi besar mereka.
+                  {t("tracks.teen.growthDescription")}
                 </p>
               </div>
             </div>
             <div>
               <img
                 src="/images/junior-koders.jpg"
-                alt="Kelas Remaja"
+                alt={t("tracks.teen.imageAlt")}
                 className="rounded-3xl shadow-2xl w-full max-h-[400px] object-cover"
               />
             </div>
@@ -529,11 +547,9 @@ const CoursePage = () => {
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-gray-500 mb-2">
-              We believe your child deserve the best education.
-            </p>
+            <p className="text-gray-500 mb-2">{t("curriculum.eyebrow")}</p>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Programs Offered:
+              {t("curriculum.title")}
             </h2>
 
             {/* Age Group Filter */}
@@ -543,21 +559,21 @@ const CoursePage = () => {
                 onClick={() => setActiveAgeGroup("all")}
                 className={activeAgeGroup === "all" ? "bg-gray-900" : ""}
               >
-                Semua
+                {t("curriculum.filters.all")}
               </Button>
               <Button
                 variant={activeAgeGroup === "8-10" ? "default" : "outline"}
                 onClick={() => setActiveAgeGroup("8-10")}
                 className={activeAgeGroup === "8-10" ? "bg-blue-500" : ""}
               >
-                8 - 10 Tahun
+                {t("curriculum.filters.children")}
               </Button>
               <Button
                 variant={activeAgeGroup === "11-16" ? "default" : "outline"}
                 onClick={() => setActiveAgeGroup("11-16")}
                 className={activeAgeGroup === "11-16" ? "bg-purple-500" : ""}
               >
-                11 - 16 Tahun
+                {t("curriculum.filters.teen")}
               </Button>
             </div>
 
@@ -566,7 +582,7 @@ const CoursePage = () => {
                 variant="outline"
                 className="border-green-500 text-green-600"
               >
-                Available Online & Offline
+                {t("curriculum.availability")}
               </Badge>
             </div>
           </div>
@@ -593,7 +609,7 @@ const CoursePage = () => {
                           : "bg-purple-500"
                       } text-white`}
                     >
-                      {course.ageGroup} Tahun
+                      {course.ageGroup} {t("labels.years")}
                     </Badge>
                   </div>
                 </div>
@@ -610,7 +626,8 @@ const CoursePage = () => {
                     </div>
                     <span className="text-sm text-gray-500 flex items-center gap-1">
                       <Clock className="w-4 h-4" />
-                      {course.duration} / sesi • {course.sessions}
+                      {course.duration} {t("labels.perSession")} •{" "}
+                      {course.sessions}
                     </span>
                   </div>
                   <h3 className="font-bold text-lg text-gray-900 mb-2 line-clamp-2">
@@ -622,7 +639,9 @@ const CoursePage = () => {
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-1 text-sm text-gray-500">
                       <Monitor className="w-4 h-4" />
-                      <span>{course.tools.length} Tools</span>
+                      <span>
+                        {course.tools.length} {t("labels.tools")}
+                      </span>
                     </div>
                     <Button
                       variant="ghost"
@@ -633,7 +652,7 @@ const CoursePage = () => {
                           : "text-purple-500 hover:text-purple-600"
                       } flex items-center gap-1`}
                     >
-                      Detail <ChevronRight className="w-4 h-4" />
+                      {t("labels.detail")} <ChevronRight className="w-4 h-4" />
                     </Button>
                   </div>
                 </CardContent>
@@ -666,7 +685,7 @@ const CoursePage = () => {
                           : "bg-purple-500"
                       } text-white`}
                     >
-                      {selectedCourse.ageGroup} Tahun
+                      {selectedCourse.ageGroup} {t("labels.years")}
                     </Badge>
                   </div>
                 </div>
@@ -676,7 +695,7 @@ const CoursePage = () => {
                 <DialogDescription className="flex items-center gap-4 text-sm">
                   <span className="flex items-center gap-1">
                     <Clock className="w-4 h-4" />
-                    {selectedCourse.duration} / sesi
+                    {selectedCourse.duration} {t("labels.perSession")}
                   </span>
                   <span>•</span>
                   <span>{selectedCourse.sessions}</span>
@@ -686,14 +705,14 @@ const CoursePage = () => {
               <div className="space-y-6">
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">
-                    Tentang Kursus:
+                    {t("dialog.aboutCourse")}
                   </h4>
                   <p className="text-gray-600">{selectedCourse.description}</p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">
-                    Tools Used:
+                    {t("dialog.toolsUsed")}
                   </h4>
                   <div className="flex flex-wrap gap-2">
                     {selectedCourse.tools.map((tool, index) => (
@@ -710,7 +729,9 @@ const CoursePage = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-2">Hasil:</h4>
+                  <h4 className="font-semibold text-gray-900 mb-2">
+                    {t("dialog.outcomes")}
+                  </h4>
                   <ul className="space-y-2">
                     {selectedCourse.outcomes.map((outcome, index) => (
                       <li
@@ -735,17 +756,5 @@ const CoursePage = () => {
 export default CoursePage;
 
 CoursePage.getLayout = function getLayout(page) {
-  return (
-    <Layout
-      seo={{
-        title: "Pelatihan IT untuk Anak dan Remaja",
-        description:
-          "Kelas privat coding, AI, dan 3D Design untuk anak-anak dan remaja yang diajarkan secara bilingual oleh Samantha Meliora.",
-        keywords:
-          "pelatihan IT anak, kursus coding remaja, kelas AI untuk anak, belajar 3D design, tutor IT privat",
-      }}
-    >
-      {page}
-    </Layout>
-  );
+  return <Layout>{page}</Layout>;
 };

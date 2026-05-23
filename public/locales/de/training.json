@@ -1,0 +1,160 @@
+{
+  "seo": {
+    "title": "IT-Training für Kinder und Jugendliche | Codeverta",
+    "description": "Coding-, KI-, Roblox-, App-, Website- und 2D/3D-Designkurse für Kinder und Jugendliche mit projektbasiertem Lernen.",
+    "keywords": "IT Training Kinder, Coding Kurs Jugendliche, KI Kurs, Roblox Coding"
+  },
+  "hero": {
+    "eyebrow": "Explore Our Programs",
+    "titleTop": "Our",
+    "titleHighlight": "Featured Courses",
+    "description": {
+      "before": "An international curriculum designed to build creativity through",
+      "highlight": "project-based learning",
+      "after": ". Start their digital adventure today."
+    },
+    "primaryCta": "Register Now",
+    "secondaryCta": "View Curriculum"
+  },
+  "form": {
+    "title": "Join Now",
+    "nameLabel": "Parent or Guardian Name",
+    "namePlaceholder": "Example: Budi Santoso",
+    "whatsappLabel": "WhatsApp Number",
+    "emailLabel": "Active Email",
+    "emailPlaceholder": "name@email.com",
+    "programLabel": "Choose Program",
+    "programPlaceholder": "Choose course level",
+    "programs": {
+      "children": "Children Class (4-10 Years)",
+      "childrenShort": "Children Class (4-10)",
+      "teen": "Teen Class (11-16 Years)",
+      "teenShort": "Teen Class (11-16)"
+    },
+    "validation": {
+      "name": "Name must be at least 3 characters",
+      "email": "Invalid email address",
+      "whatsapp": "Invalid WhatsApp number",
+      "program": "Please choose a program"
+    },
+    "submit": "Confirm Registration",
+    "processing": "Processing...",
+    "success": "Registration sent. We will contact you via WhatsApp.",
+    "error": "Failed to send data."
+  },
+  "tracks": {
+    "children": {
+      "imageAlt": "Children coding class",
+      "age": "8-10 Years",
+      "ageBadge": "8-10 YEARS",
+      "title": "Children Class",
+      "shortDescription": "Logic fundamentals and digital creativity.",
+      "description": "We equip young learners with the language of the future. Through an interactive programming curriculum, students learn coding while naturally building logic and problem-solving skills. With expert mentors and hands-on learning, every session becomes an exciting learning adventure.",
+      "growthTitle": "The Next-Gen Growth Map",
+      "growthDescription": "Because the best investment is education that stays relevant with the times."
+    },
+    "teen": {
+      "imageAlt": "Teen coding class",
+      "age": "8-16 Years",
+      "ageBadge": "8-16 YEARS",
+      "title": "Teen Class",
+      "shortDescription": "Advanced programming and AI.",
+      "description": "Designed for ages 8 to 16, this program turns imagination into real applications. Students explore visual coding and gradually move into pure syntax such as Python and JavaScript. Project-based learning ensures every student finishes with digital work they can proudly showcase.",
+      "growthTitle": "Future Leadership Blueprint",
+      "growthDescription": "We are committed to delivering education quality that matches their potential."
+    }
+  },
+  "curriculum": {
+    "eyebrow": "We believe your child deserves the best education.",
+    "title": "Programs Offered",
+    "filters": {
+      "all": "All",
+      "children": "8 - 10 Years",
+      "teen": "11 - 16 Years"
+    },
+    "availability": "Available Online & Offline"
+  },
+  "labels": {
+    "years": "Years",
+    "perSession": "/ session",
+    "tools": "Tools",
+    "detail": "Detail"
+  },
+  "dialog": {
+    "aboutCourse": "About the Course:",
+    "toolsUsed": "Tools Used:",
+    "outcomes": "Outcomes:"
+  },
+  "courses": {
+    "roblox-2d": {
+      "title": "2D Games Development with Roblox",
+      "duration": "90 minutes",
+      "sessions": "20 sessions",
+      "description": "Students learn to create and program simple animations and games through tasks and projects.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Understand the game development process",
+        "Create simple animations and games",
+        "Create 3D designs with Roblox Studio"
+      ]
+    },
+    "mobile-apps": {
+      "title": "Mobile Apps Development",
+      "duration": "90 minutes",
+      "sessions": "20 sessions",
+      "description": "Students learn the fundamentals of building simple mobile apps and interactive digital products.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Understand the application development process",
+        "Create mobile apps and games",
+        "Develop block coding and design skills"
+      ]
+    },
+    "roblox-1": {
+      "title": "Roblox I",
+      "duration": "90 minutes",
+      "sessions": "20 sessions",
+      "description": "Students learn the Lua programming language and create their own games in Roblox Studio.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Build interactive Roblox games such as collecting games, Obby games, and teleporters"
+      ]
+    },
+    "roblox-2": {
+      "title": "Roblox II",
+      "duration": "90 minutes",
+      "sessions": "20 sessions",
+      "description": "Students continue coding with Lua and focus more deeply on 3D design for professional game projects.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Understand 3D game development workflows",
+        "Create Roblox games",
+        "Improve textual coding and design skills"
+      ]
+    },
+    "website-dev": {
+      "title": "Website Development",
+      "duration": "90 minutes",
+      "sessions": "20 sessions",
+      "description": "Students learn to build web pages, code website layouts, and understand how websites work.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Learn HTML, CSS, and PHP syntax",
+        "Create static websites with database concepts",
+        "Develop basic textual coding and design skills"
+      ]
+    },
+    "2d-3d-design": {
+      "title": "2D & 3D Design",
+      "duration": "90 minutes",
+      "sessions": "20 sessions",
+      "description": "Students learn 2D and 3D design while understanding how design and programming connect.",
+      "tools": ["Computer", "Mouse", "Internet"],
+      "outcomes": [
+        "Develop design and creativity skills",
+        "Create 2D and 3D designs",
+        "Build basic coding skills"
+      ]
+    }
+  }
+}

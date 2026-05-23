@@ -18,6 +18,11 @@
       "fast": "Proses Cepat",
       "guarantee": "Garansi Sampai Puas",
       "trusted": "Jujur & Dapat Dipercaya"
+    },
+    "seo": {
+      "title": "Codeverta - Jasa Pengembangan Website, Aplikasi, ERP & Solusi IT",
+      "description": "Codeverta membantu UMKM, startup, dan enterprise membangun website, aplikasi, ERP, POS, dan solusi IT profesional dengan SEO, performa, dan keamanan yang kuat.",
+      "keywords": "jasa pembuatan website, software house Indonesia, jasa aplikasi, ERP UMKM, POS, solusi IT, Codeverta"
     }
   },
   "trustedBy": "Dipercaya oleh UKM, Startup, Bisnis Swasta, dan Pemerintahan",
@@ -229,6 +234,223 @@
       "llm_desc": "Teknik prompting LLM.",
       "ai_eng": "AI Engineer Course",
       "ai_eng_desc": "Kelas mendalam AI."
+    }
+  },
+  "homePage": {
+    "features": {
+      "items": [
+        {
+          "title": "Desain Website Profesional",
+          "description": "Kami merancang website modern dan responsif yang optimal di desktop maupun mobile."
+        },
+        {
+          "title": "Optimasi SEO & Performa",
+          "description": "Tingkatkan peringkat Google dan pengalaman pengguna dengan website yang cepat dan teroptimasi."
+        },
+        {
+          "title": "Perbaikan & Maintenance",
+          "description": "Tim kami siap memperbaiki bug, error, tampilan rusak, dan melakukan pembaruan rutin."
+        },
+        {
+          "title": "Keamanan Website Terjamin",
+          "description": "Lindungi data dan pengunjung website Anda dengan sistem keamanan berlapis."
+        },
+        {
+          "title": "Layanan IT Support",
+          "description": "Solusi untuk masalah teknis IT, mulai dari troubleshooting perangkat hingga manajemen jaringan."
+        },
+        {
+          "title": "Dukungan Aftersales",
+          "description": "Kami tetap mendampingi setelah launch agar website dan sistem Anda berjalan lancar."
+        }
+      ]
+    },
+    "process": {
+      "items": [
+        {
+          "step": "01",
+          "title": "Konsultasi Kebutuhan",
+          "description": "Diskusikan ide, tujuan, dan kebutuhan proyek Anda bersama kami secara gratis."
+        },
+        {
+          "step": "02",
+          "title": "Desain & Pengembangan",
+          "description": "Tim kami merancang dan membangun website, aplikasi, atau solusi IT sesuai scope."
+        },
+        {
+          "step": "03",
+          "title": "Peluncuran & Maintenance",
+          "description": "Kami meluncurkan proyek Anda dan memberi maintenance agar semuanya tetap stabil."
+        }
+      ]
+    },
+    "testimonials": {
+      "items": [
+        {
+          "quote": "Codeverta mengubah total tampilan website kami menjadi lebih profesional. Pengunjung meningkat drastis.",
+          "author": "Sarah Widjaja",
+          "role": "Owner, Butik Elegan",
+          "rating": 5
+        },
+        {
+          "quote": "Website lama kami sangat lambat. Setelah diperbaiki oleh Codeverta, kecepatannya luar biasa.",
+          "author": "Budi Santoso",
+          "role": "Manajer Marketing, Maju Jaya Motor",
+          "rating": 5
+        },
+        {
+          "quote": "Dukungan IT mereka sangat responsif. Masalah teknis di kantor kami selesai dengan cepat.",
+          "author": "Emily Hartono",
+          "role": "Kepala Operasional, Startup Cepat",
+          "rating": 5
+        },
+        {
+          "quote": "Prosesnya transparan dan hasilnya melebihi ekspektasi. Website kami menjadi kanal penjualan penting.",
+          "author": "David Kim",
+          "role": "CEO, InnovateNow",
+          "rating": 5
+        },
+        {
+          "quote": "Tim Codeverta mudah diajak komunikasi dan benar-benar memahami visi website yang kami inginkan.",
+          "author": "Lisa Puspita",
+          "role": "Direktur Kreatif, Galeri Seni",
+          "rating": 5
+        },
+        {
+          "quote": "Salah satu investasi terbaik kami. Sejak website baru diluncurkan, omzet meningkat signifikan.",
+          "author": "James Wilson",
+          "role": "COO, ScaleUp Inc",
+          "rating": 5
+        }
+      ]
+    },
+    "pricing": {
+      "monthly": [
+        {
+          "name": "Paket Website UMKM",
+          "price": "Rp 2Jt",
+          "description": "Cocok untuk profil perusahaan atau portofolio.",
+          "features": [
+            "Desain custom sesuai permintaan",
+            "Cocok untuk UMKM",
+            "Halaman dan fitur dasar",
+            "Gratis domain & hosting 1 tahun",
+            "Mengutamakan performa, bukan template WordPress biasa"
+          ],
+          "cta": "Pilih Paket"
+        },
+        {
+          "name": "Paket Toko Online",
+          "price": "Rp 5Jt",
+          "description": "Ideal untuk UKM dan bisnis online yang berkembang.",
+          "features": [
+            "Desain custom sesuai permintaan",
+            "Optimasi SEO",
+            "Pengerjaan prioritas"
+          ],
+          "cta": "Pilih Paket",
+          "popular": true
+        },
+        {
+          "name": "Paket Sistem Custom",
+          "price": "Rp >10Jt",
+          "description": "Untuk perusahaan dengan kebutuhan lebih kompleks.",
+          "features": [
+            "Fitur kompleks sesuai kebutuhan",
+            "Desain dan sistem sesuai proses bisnis",
+            "Laporan performa bulanan",
+            "Maintenance lebih dari 1 tahun"
+          ],
+          "cta": "Hubungi Sales"
+        }
+      ],
+      "enterprise": [
+        {
+          "name": "Enterprise",
+          "price": "Rp >20Jt",
+          "description": "Untuk perusahaan dengan sistem dan workflow kompleks.",
+          "features": [
+            "Fitur custom sesuai permintaan",
+            "Integrasi dengan sistem atau aplikasi lain",
+            "Backup data berkala di cloud",
+            "Monitoring keamanan dan performa 24/7",
+            "Pengerjaan prioritas",
+            "Maintenance lebih dari 1 tahun"
+          ],
+          "cta": "Hubungi Sales"
+        }
+      ]
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Berapa lama proses pembuatan website?",
+          "answer": "Waktu pengerjaan tergantung kompleksitas. Website basic biasanya 1-2 minggu, sedangkan sistem menengah bisa lebih dari 1 bulan."
+        },
+        {
+          "question": "Apa saja yang perlu saya siapkan?",
+          "answer": "Siapkan konten profil perusahaan, daftar layanan atau produk, dan gambar yang ingin ditampilkan. Jika belum ada, tim kami bisa membantu mengarahkannya."
+        },
+        {
+          "question": "Apakah ada maintenance setelah website jadi?",
+          "answer": "Ada. Kami menyediakan paket maintenance bulanan atau tahunan untuk update, backup, monitoring, dan perbaikan."
+        },
+        {
+          "question": "Bisakah memperbaiki website yang sudah ada?",
+          "answer": "Bisa. Kami audit dulu masalah website Anda, mulai dari error, kecepatan, hingga tampilan, lalu memberi solusi terbaik."
+        },
+        {
+          "question": "Bagaimana sistem pembayarannya?",
+          "answer": "Umumnya pembayaran dilakukan dengan DP 30% di awal dan pelunasan setelah website selesai serta disetujui."
+        }
+      ]
+    },
+    "industries": {
+      "badge": "Industri",
+      "title": "Solusi untuk Setiap Industri",
+      "subtitle": "Dari manufaktur hingga layanan kesehatan, Codeverta menyesuaikan solusi dengan kebutuhan industri Anda agar operasional lebih sederhana dan bisnis tumbuh lebih cepat.",
+      "items": [
+        {
+          "title": "Manufaktur",
+          "desc": "Sederhanakan produksi, inventori, dan alur pengiriman."
+        },
+        {
+          "title": "Trading & Distribusi",
+          "desc": "Kelola pembelian, pesanan, dan rantai pasok lebih efisien."
+        },
+        {
+          "title": "Retail",
+          "desc": "Tingkatkan penjualan, inventori, dan pengalaman pelanggan."
+        },
+        {
+          "title": "Engineering & Konstruksi",
+          "desc": "Kelola proyek, sumber daya, dan anggaran dengan kontrol lebih baik."
+        },
+        {
+          "title": "E-commerce",
+          "desc": "Kelola pesanan, pelanggan, dan pertumbuhan penjualan online."
+        },
+        {
+          "title": "Pendidikan",
+          "desc": "Sederhanakan pendaftaran, kursus, pembayaran, dan alur siswa."
+        },
+        {
+          "title": "Jasa Profesional",
+          "desc": "Rapikan manajemen proyek, billing, dan kolaborasi klien."
+        },
+        {
+          "title": "Layanan Keuangan",
+          "desc": "Pantau keuangan, portofolio, dan compliance dengan lebih mudah."
+        },
+        {
+          "title": "Kesehatan",
+          "desc": "Kelola rekam data, appointment, dan operasional dalam satu sistem."
+        },
+        {
+          "title": "Non-profit",
+          "desc": "Optimalkan fundraising, manajemen donor, dan eksekusi program."
+        }
+      ]
     }
   }
 }
