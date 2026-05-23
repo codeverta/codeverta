@@ -1,41 +1,41 @@
 {
   "header": {
     "title": "Codeverta",
-    "subtitle": "Professional software, website, and IT service ordering"
+    "subtitle": "ソフトウェア、Webサイト、ITサービスのご依頼"
   },
   "howToOrder": {
-    "title": "How to Order Codeverta Services",
+    "title": "Codevertaサービスの依頼方法",
     "step1": {
-      "title": "1. Contact Us",
-      "description": "Contact our team via WhatsApp or email to tell us about your project goals, timeline, and business needs.",
+      "title": "1. お問い合わせ",
+      "description": "WhatsAppまたはメールで、プロジェクトの目的、スケジュール、ビジネス要件をお知らせください。",
       "phone": "+62881011692615",
-      "contactNote": "We will help clarify the scope, recommended solution, and next steps."
+      "contactNote": "範囲、推奨ソリューション、次のステップを整理します。"
     },
     "step2": {
-      "title": "2. Consultation and Scope",
-      "description": "We review your requirements and prepare a suitable technical approach.",
-      "pickupTitle": "Online Consultation",
-      "pickupDescription": "Discuss remotely with our team from anywhere.",
-      "deliveryTitle": "On-site or Dedicated Session",
-      "deliveryDescription": "Available by appointment for selected projects and locations.",
-      "note": "*Larger projects may require a written scope of work before estimation."
+      "title": "2. 相談とスコープ確認",
+      "description": "要件を確認し、適切な技術アプローチを提案します。",
+      "pickupTitle": "オンライン相談",
+      "pickupDescription": "どこからでもリモートでご相談いただけます。",
+      "deliveryTitle": "オンサイトまたは専用セッション",
+      "deliveryDescription": "一部のプロジェクトや地域では予約制で対応可能です。",
+      "note": "*大規模プロジェクトでは、見積もり前に書面の作業範囲が必要になる場合があります。"
     },
     "step3": {
-      "title": "3. Proposal and Down Payment",
-      "description": "After the scope is agreed, we send a proposal and invoice. A down payment is required before production begins."
+      "title": "3. 提案と前払い",
+      "description": "スコープ合意後、提案書と請求書を送付します。制作開始前に前払いが必要です。"
     },
     "step4": {
-      "title": "4. Development and Review",
-      "description": "Our team builds the solution in milestones, shares progress updates, and collects feedback before final delivery."
+      "title": "4. 開発とレビュー",
+      "description": "マイルストーンごとに開発を進め、進捗を共有し、最終納品前にフィードバックを反映します。"
     },
     "step5": {
-      "title": "5. Launch and Support",
-      "description": "After final payment, we help launch the project and provide support according to the agreed warranty or maintenance plan."
+      "title": "5. リリースとサポート",
+      "description": "最終支払い後、リリースを支援し、合意された保証または保守プランに基づきサポートします。"
     }
   },
   "cta": {
-    "title": "Ready to start?",
-    "subtitle": "Talk with Codeverta and get a clear plan for your digital product.",
-    "button": "Contact via WhatsApp"
+    "title": "始める準備はできましたか？",
+    "subtitle": "Codevertaに相談して、デジタルプロダクトの明確な計画を立てましょう。",
+    "button": "WhatsAppで相談"
   }
 }

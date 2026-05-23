@@ -191,7 +191,7 @@ export const getStaticProps = withI18n(
   ["common"],
   async function ({ params, locale }) {
     const slug = params.id;
-    const postData = await getPostData(slug, "tutorials");
+    const postData = await getPostData(slug, "startups", locale ?? "id");
     return {
       props: {
         postData,

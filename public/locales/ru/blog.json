@@ -1,0 +1,60 @@
+{
+  "readTime": "min read",
+  "backToTop": "Back to top",
+  "index": {
+    "meta": {
+      "title": "News & Articles | Blog",
+      "description": "Latest articles about technology, business, and digital marketing."
+    },
+    "hero": {
+      "eyebrow": "Publications & Insights",
+      "title": "News & Articles"
+    },
+    "search": {
+      "placeholder": "Search articles...",
+      "aria": "Search articles",
+      "clear": "Clear search"
+    },
+    "sort": {
+      "aria": "Sort articles",
+      "newest": "Newest",
+      "oldest": "Oldest"
+    },
+    "toc": {
+      "toggle": "Table of Contents",
+      "label": "Article List"
+    },
+    "tags": {
+      "aria": "Filter by tag",
+      "clear": "Clear filters ({{count}})"
+    },
+    "stats": {
+      "showing": "Showing <strong>{{showing}} of {{total}}</strong> articles"
+    },
+    "empty": {
+      "message": "No articles match your search.",
+      "reset": "Reset filters"
+    }
+  },
+  "detail": {
+    "toc": "Table of Contents",
+    "stickyBack": "Articles",
+    "allArticles": "All Articles",
+    "recommendedProducts": "Recommended Products",
+    "otherArticles": "More Articles",
+    "share": {
+      "label": "Share:",
+      "whatsapp": "Share to WhatsApp",
+      "twitter": "Share to X/Twitter",
+      "facebook": "Share to Facebook",
+      "copyAria": "Copy link",
+      "copied": "Copied!",
+      "copy": "Copy"
+    },
+    "cta": {
+      "title": "Ready to Improve Your Business?",
+      "description": "Get a free consultation with our team and find the best solution for your business.",
+      "button": "Contact Us →"
+    }
+  }
+}

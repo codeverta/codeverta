@@ -1,0 +1,60 @@
+{
+  "readTime": "分で読めます",
+  "backToTop": "ページ上部へ戻る",
+  "index": {
+    "meta": {
+      "title": "ニュース・記事 | ブログ",
+      "description": "テクノロジー、ビジネス、デジタルマーケティングに関する最新記事をまとめています。"
+    },
+    "hero": {
+      "eyebrow": "出版物とインサイト",
+      "title": "ニュース・記事"
+    },
+    "search": {
+      "placeholder": "記事を検索...",
+      "aria": "記事を検索",
+      "clear": "検索をクリア"
+    },
+    "sort": {
+      "aria": "記事を並べ替え",
+      "newest": "新しい順",
+      "oldest": "古い順"
+    },
+    "toc": {
+      "toggle": "目次",
+      "label": "記事一覧"
+    },
+    "tags": {
+      "aria": "タグで絞り込み",
+      "clear": "フィルターをクリア（{{count}}）"
+    },
+    "stats": {
+      "showing": "<strong>{{showing}} / {{total}}</strong> 件の記事を表示"
+    },
+    "empty": {
+      "message": "検索条件に一致する記事はありません。",
+      "reset": "フィルターをリセット"
+    }
+  },
+  "detail": {
+    "toc": "目次",
+    "stickyBack": "記事",
+    "allArticles": "すべての記事",
+    "recommendedProducts": "おすすめ製品",
+    "otherArticles": "関連記事",
+    "share": {
+      "label": "共有:",
+      "whatsapp": "WhatsAppで共有",
+      "twitter": "X/Twitterで共有",
+      "facebook": "Facebookで共有",
+      "copyAria": "リンクをコピー",
+      "copied": "コピーしました！",
+      "copy": "コピー"
+    },
+    "cta": {
+      "title": "ビジネスを成長させる準備はできていますか？",
+      "description": "私たちのチームに無料で相談し、ビジネスに最適な解決策を見つけましょう。",
+      "button": "お問い合わせ →"
+    }
+  }
+}

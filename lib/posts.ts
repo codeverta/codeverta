@@ -21,6 +21,30 @@ import {
 // Base blog directory
 const blogBaseDirectory = path.join(process.cwd(), "blog");
 
+function normalizeLocale(locale = "id") {
+  return locale === "kr" ? "ko" : locale;
+}
+
+function getContentDirectories(folder = "blog", locale = "id") {
+  const normalizedLocale = normalizeLocale(locale);
+  const baseLocale = normalizedLocale.split("-")[0];
+  const folderDirectory = path.join(blogBaseDirectory, folder);
+  const candidates = [
+    path.join(folderDirectory, normalizedLocale),
+    path.join(folderDirectory, baseLocale),
+    folderDirectory,
+  ];
+
+  return [...new Set(candidates)].filter((dir) => fs.existsSync(dir));
+}
+
+function getMarkdownFileNames(directory) {
+  return fs
+    .readdirSync(directory, { withFileTypes: true })
+    .filter((dirent) => dirent.isFile() && dirent.name.endsWith(".md"))
+    .map((dirent) => dirent.name);
+}
+
 // Get all supported languages
 export function getSupportedLanguages() {
   // Read all directories under /blog
@@ -31,37 +55,54 @@ export function getSupportedLanguages() {
 }
 
 // Get posts for a specific language
-export function getSortedPostsData(lang = "en") {
-  const langDirectory = path.join(blogBaseDirectory, lang);
+export function getSortedPostsData(folder = "blog", locale = "id") {
+  const directories = getContentDirectories(folder, locale);
 
-  // Check if language directory exists
-  if (!fs.existsSync(langDirectory)) {
+  if (!directories.length) {
     return [];
   }
 
-  // Get file names under /blog/[lang]
-  const fileNames = fs.readdirSync(langDirectory);
-  const allPostsData = fileNames.map((fileName) => {
-    // Remove ".md" from file name to get id
-    const id = fileName.replace(/\.md$/, "");
+  const postsById = new Map();
+  const translatedSourceIds = new Set();
+  const fileNames = getMarkdownFileNames(directories[directories.length - 1]);
 
-    // Read markdown file as string
-    const fullPath = path.join(langDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-
-    // Use gray-matter to parse the post metadata section
-    const matterResult = matter(fileContents);
-
-    // Combine the data with the id and language
-    return {
-      id,
-      lang,
-      ...matterResult.data,
-    };
+  directories.forEach((directory) => {
+    getMarkdownFileNames(directory).forEach((fileName) => {
+      if (!fileNames.includes(fileName)) {
+        fileNames.push(fileName);
+      }
+    });
   });
 
-  // Sort posts by date
-  return allPostsData.sort((a, b) => {
+  const allPostsData = fileNames
+    .map((fileName) => {
+      const id = fileName.replace(/\.md$/, "");
+      const directory =
+        directories.find((candidate) =>
+          fs.existsSync(path.join(candidate, fileName))
+        ) || directories[directories.length - 1];
+      const fullPath = path.join(directory, fileName);
+      const fileContents = fs.readFileSync(fullPath, "utf8");
+      const matterResult = matter(fileContents);
+      const usedLocale =
+        path.basename(directory) === folder ? "id" : path.basename(directory);
+
+      if (matterResult.data.translationOf) {
+        translatedSourceIds.add(matterResult.data.translationOf);
+      }
+
+      return {
+        id,
+        lang: usedLocale,
+        category: folder,
+        ...matterResult.data,
+      };
+    })
+    .filter((post) => post.lang !== "id" || !translatedSourceIds.has(post.id));
+
+  allPostsData.forEach((post) => postsById.set(post.id, post));
+
+  return Array.from(postsById.values()).sort((a, b) => {
     if (a.date < b.date) {
       return 1;
     } else {
@@ -84,35 +125,40 @@ export function getAllPostsData() {
 }
 
 export function getAllPostIds(folder = "tutorials") {
-  const languages = [folder]; // Assuming 'folder' directly corresponds to a language directory
   let allPostIds = [];
+  const folderDirectory = path.join(blogBaseDirectory, folder);
 
-  languages.forEach((lang) => {
-    const langDirectory = path.join(blogBaseDirectory, lang);
+  if (!fs.existsSync(folderDirectory)) {
+    console.warn(`Content directory not found: ${folderDirectory}`);
+    return allPostIds;
+  }
 
-    // Check if the language directory exists
-    if (!fs.existsSync(langDirectory)) {
-      console.warn(`Language directory not found: ${langDirectory}`);
-      return; // Skip this language if directory doesn't exist
-    }
+  const contentDirectories = [
+    { locale: "id", directory: folderDirectory },
+    ...fs
+      .readdirSync(folderDirectory, { withFileTypes: true })
+      .filter((dirent) => dirent.isDirectory())
+      .map((dirent) => ({
+        locale: dirent.name,
+        directory: path.join(folderDirectory, dirent.name),
+      })),
+  ];
 
-    const fileNames = fs.readdirSync(langDirectory);
+  contentDirectories.forEach(({ locale, directory }) => {
+    const fileNames = getMarkdownFileNames(directory);
 
     const langPostData = fileNames.map((fileName) => {
-      // Remove ".md" from file name to get id
       const id = fileName.replace(/\.md$/, "");
-
-      // Read markdown file as string to get date from front matter
-      const fullPath = path.join(langDirectory, fileName);
+      const fullPath = path.join(directory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
       const matterResult = matter(fileContents);
 
       return {
         params: {
-          lang,
           id,
         },
-        date: matterResult.data.date, // Extract the date
+        locale,
+        date: matterResult.data.date,
       };
     });
 
@@ -133,38 +179,23 @@ export function getAllPostIds(folder = "tutorials") {
   return allPostIds;
 }
 
-export async function getPostData(id, lang = "en") {
-  // Define the fallback language order
-  const languageFallbacks = [
-    lang,
-    ...getSupportedLanguages().filter((l) => l !== lang),
-  ];
-
+export async function getPostData(id, folder = "blog", locale = "id") {
   let fileContents;
-  let usedLanguage = lang;
+  let usedLanguage = normalizeLocale(locale);
   let fullPath;
 
-  // Try each language in the fallback sequence
-  for (const currentLang of languageFallbacks) {
-    try {
-      fullPath = path.join(blogBaseDirectory, currentLang, `${id}.md`);
+  for (const directory of getContentDirectories(folder, locale)) {
+    fullPath = path.join(directory, `${id}.md`);
+    if (fs.existsSync(fullPath)) {
       fileContents = fs.readFileSync(fullPath, "utf8");
-      usedLanguage = currentLang; // Store which language was successfully found
-      break; // Exit the loop if file is found
-    } catch (error) {
-      if (error.code === "ENOENT") {
-        continue; // Try next language
-      } else {
-        throw error; // Rethrow if it's a different error
-      }
+      usedLanguage =
+        path.basename(directory) === folder ? "id" : path.basename(directory);
+      break;
     }
   }
 
-  // If file is still not found after all fallbacks
   if (!fileContents) {
-    throw new Error(
-      `Post ${id} not found in any language: ${languageFallbacks.join(", ")}`
-    );
+    throw new Error(`Post ${id} not found in ${folder} for locale ${locale}`);
   }
 
   // Use gray-matter to parse the post metadata section
@@ -178,7 +209,7 @@ export async function getPostData(id, lang = "en") {
   // frontMatter.toc !== false; // Generate TOC by default unless explicitly disabled
 
   // Get all posts in the same language to find related content
-  const allPosts = getSortedPostsData(usedLanguage);
+  const allPosts = getSortedPostsData(folder, usedLanguage);
 
   // Find related posts based on tags and content
   const relatedPosts = findRelatedPosts(id, frontMatter.tags, allPosts);

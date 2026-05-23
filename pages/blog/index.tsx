@@ -5,6 +5,8 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { getSortedPostsData } from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image"; // Pastikan di-import di bagian atas
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 /* ─────────────────────────────────────────────
    Types
@@ -27,9 +29,9 @@ interface Props {
 /* ─────────────────────────────────────────────
    Helpers
 ───────────────────────────────────────────── */
-function formatDate(dateStr: string) {
+function formatDate(dateStr: string, locale = "id") {
   const date = new Date(dateStr);
-  return date.toLocaleDateString("id-ID", {
+  return date.toLocaleDateString(locale, {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -43,10 +45,10 @@ function getTagList(tags: string): string[] {
     .filter(Boolean);
 }
 
-function slugToReadTime(id: string): string {
+function slugToReadTime(id: string, label: string): string {
   const num = id.split("-").length;
   const mins = Math.max(3, Math.min(12, Math.floor(num / 4)));
-  return `${mins} menit baca`;
+  return `${mins} ${label}`;
 }
 
 function getPostNumber(id: string): string {
@@ -88,7 +90,7 @@ function ScrollProgressBar() {
 /* ─────────────────────────────────────────────
    Back to Top Button
 ───────────────────────────────────────────── */
-function BackToTop() {
+function BackToTop({ label }: { label: string }) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -101,7 +103,7 @@ function BackToTop() {
     <button
       className={`back-to-top${visible ? " visible" : ""}`}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      aria-label="Kembali ke atas"
+      aria-label={label}
     >
       ↑
     </button>
@@ -112,10 +114,20 @@ function BackToTop() {
    Post Card
 ───────────────────────────────────────────── */
 
-function PostCard({ post, index }: { post: Post; index: number }) {
+function PostCard({
+  post,
+  index,
+  locale,
+  readTimeLabel,
+}: {
+  post: Post;
+  index: number;
+  locale: string;
+  readTimeLabel: string;
+}) {
   const tags = getTagList(post.tags);
   const num = getPostNumber(post.id);
-  const readTime = post.readTime || slugToReadTime(post.id);
+  const readTime = post.readTime || slugToReadTime(post.id, readTimeLabel);
 
   return (
     <Link href={`/blog/${post.id}`} className="post-card" data-index={index}>
@@ -161,7 +173,7 @@ function PostCard({ post, index }: { post: Post; index: number }) {
         <h2 className="card-title">{post.title}</h2>
         <p className="card-desc">{post.desc}</p>
         <div className="card-meta">
-          <span className="meta-date">{formatDate(post.date)}</span>
+          <span className="meta-date">{formatDate(post.date, locale)}</span>
           <span className="meta-dot">·</span>
           <span className="meta-readtime">{readTime}</span>
         </div>
@@ -181,7 +193,7 @@ function PostCard({ post, index }: { post: Post; index: number }) {
 /* ─────────────────────────────────────────────
    Sidebar: Table of Contents (post titles nav)
 ───────────────────────────────────────────── */
-function TableOfContents({ posts }: { posts: Post[] }) {
+function TableOfContents({ posts, label }: { posts: Post[]; label: string }) {
   const [activeIndex, setActiveIndex] = useState<number>(-1);
 
   useEffect(() => {
@@ -215,8 +227,8 @@ function TableOfContents({ posts }: { posts: Post[] }) {
   };
 
   return (
-    <nav className="toc-sidebar" aria-label="Navigasi artikel">
-      <p className="toc-label">Daftar Artikel</p>
+    <nav className="toc-sidebar" aria-label={label}>
+      <p className="toc-label">{label}</p>
       <ul className="toc-list">
         {posts.map((post, i) => (
           <li key={post.id}>
@@ -241,9 +253,15 @@ function TableOfContents({ posts }: { posts: Post[] }) {
 function SearchBar({
   query,
   onChange,
+  labels,
 }: {
   query: string;
   onChange: (v: string) => void;
+  labels: {
+    placeholder: string;
+    aria: string;
+    clear: string;
+  };
 }) {
   return (
     <div className="search-wrapper">
@@ -253,16 +271,16 @@ function SearchBar({
       <input
         type="search"
         className="search-input"
-        placeholder="Cari artikel..."
+        placeholder={labels.placeholder}
         value={query}
         onChange={(e) => onChange(e.target.value)}
-        aria-label="Cari artikel"
+        aria-label={labels.aria}
       />
       {query && (
         <button
           className="search-clear"
           onClick={() => onChange("")}
-          aria-label="Hapus pencarian"
+          aria-label={labels.clear}
         >
           ✕
         </button>
@@ -279,19 +297,21 @@ type SortKey = "newest" | "oldest" | "az" | "za";
 function SortSelect({
   value,
   onChange,
+  labels,
 }: {
   value: SortKey;
   onChange: (v: SortKey) => void;
+  labels: Record<SortKey | "aria", string>;
 }) {
   return (
     <select
       className="sort-select"
       value={value}
       onChange={(e) => onChange(e.target.value as SortKey)}
-      aria-label="Urutkan artikel"
+      aria-label={labels.aria}
     >
-      <option value="newest">Terbaru</option>
-      <option value="oldest">Terlama</option>
+      <option value="newest">{labels.newest}</option>
+      <option value="oldest">{labels.oldest}</option>
       <option value="az">A–Z</option>
       <option value="za">Z–A</option>
     </select>
@@ -305,10 +325,12 @@ function TagCloud({
   allPosts,
   active,
   onToggle,
+  label,
 }: {
   allPosts: Post[];
   active: string[];
   onToggle: (tag: string) => void;
+  label: string;
 }) {
   const freq: Record<string, number> = {};
   allPosts.forEach((p) =>
@@ -322,7 +344,7 @@ function TagCloud({
     .slice(0, 16);
 
   return (
-    <div className="tag-cloud" role="group" aria-label="Filter berdasarkan tag">
+    <div className="tag-cloud" role="group" aria-label={label}>
       {sorted.map(([tag, count]) => (
         <button
           key={tag}
@@ -342,16 +364,18 @@ function TagCloud({
 /* ─────────────────────────────────────────────
    Stats strip
 ───────────────────────────────────────────── */
-function StatsStrip({ total, showing }: { total: number; showing: number }) {
+function StatsStrip({
+  total,
+  showing,
+  label,
+}: {
+  total: number;
+  showing: number;
+  label: string;
+}) {
   return (
     <div className="stats-strip">
-      <span>
-        Menampilkan{" "}
-        <strong>
-          {showing} dari {total}
-        </strong>{" "}
-        artikel
-      </span>
+      <span dangerouslySetInnerHTML={{ __html: label }} />
     </div>
   );
 }
@@ -360,6 +384,8 @@ function StatsStrip({ total, showing }: { total: number; showing: number }) {
    Main Page
 ───────────────────────────────────────────── */
 export default function NewsIndex({ allPostsData }: Props) {
+  const { t } = useTranslation("blog");
+  const { locale = "id" } = useRouter();
   const [query, setQuery] = useState("");
   const [activeTags, setActiveTags] = useState<string[]>([]);
   const [sort, setSort] = useState<SortKey>("newest");
@@ -390,9 +416,8 @@ export default function NewsIndex({ allPostsData }: Props) {
       return 0;
     });
 
-  const pageTitle = "Berita & Artikel | Blog";
-  const pageDesc =
-    "Kumpulan artikel terbaru seputar teknologi, bisnis, dan digital marketing.";
+  const pageTitle = t("index.meta.title");
+  const pageDesc = t("index.meta.description");
 
   return (
     <>
@@ -418,8 +443,8 @@ export default function NewsIndex({ allPostsData }: Props) {
       {/* ── Hero Header ── */}
       <header className="blog-hero">
         <div className="hero-inner">
-          <div className="hero-eyebrow">Publikasi &amp; Wawasan</div>
-          <h1 className="hero-title">Berita &amp; Artikel</h1>
+          <div className="hero-eyebrow">{t("index.hero.eyebrow")}</div>
+          <h1 className="hero-title">{t("index.hero.title")}</h1>
           <p className="hero-subtitle">{pageDesc}</p>
         </div>
       </header>
@@ -427,14 +452,32 @@ export default function NewsIndex({ allPostsData }: Props) {
       {/* ── Controls ── */}
       <div className="controls-bar">
         <div className="controls-inner">
-          <SearchBar query={query} onChange={setQuery} />
-          <SortSelect value={sort} onChange={setSort} />
+          <SearchBar
+            query={query}
+            onChange={setQuery}
+            labels={{
+              placeholder: t("index.search.placeholder"),
+              aria: t("index.search.aria"),
+              clear: t("index.search.clear"),
+            }}
+          />
+          <SortSelect
+            value={sort}
+            onChange={setSort}
+            labels={{
+              aria: t("index.sort.aria"),
+              newest: t("index.sort.newest"),
+              oldest: t("index.sort.oldest"),
+              az: "A-Z",
+              za: "Z-A",
+            }}
+          />
           <button
             className={`toc-toggle-btn${showToc ? " toc-toggle-active" : ""}`}
             onClick={() => setShowToc((v) => !v)}
             aria-pressed={showToc}
           >
-            ☰ Daftar Isi
+            ☰ {t("index.toc.toggle")}
           </button>
         </div>
       </div>
@@ -446,13 +489,14 @@ export default function NewsIndex({ allPostsData }: Props) {
             allPosts={allPostsData}
             active={activeTags}
             onToggle={toggleTag}
+            label={t("index.tags.aria")}
           />
           {activeTags.length > 0 && (
             <button
               className="clear-tags-btn"
               onClick={() => setActiveTags([])}
             >
-              Hapus filter ({activeTags.length})
+              {t("index.tags.clear", { count: activeTags.length })}
             </button>
           )}
         </div>
@@ -463,18 +507,25 @@ export default function NewsIndex({ allPostsData }: Props) {
         {/* TOC Sidebar */}
         {showToc && (
           <aside className="sidebar">
-            <TableOfContents posts={filtered} />
+            <TableOfContents posts={filtered} label={t("index.toc.label")} />
           </aside>
         )}
 
         {/* Posts list */}
         <main className="posts-main">
-          <StatsStrip total={allPostsData.length} showing={filtered.length} />
+          <StatsStrip
+            total={allPostsData.length}
+            showing={filtered.length}
+            label={t("index.stats.showing", {
+              showing: filtered.length,
+              total: allPostsData.length,
+            })}
+          />
 
           {filtered.length === 0 ? (
             <div className="empty-state">
               <div className="empty-icon">📭</div>
-              <p>Tidak ada artikel yang cocok dengan pencarian Anda.</p>
+              <p>{t("index.empty.message")}</p>
               <button
                 className="reset-btn"
                 onClick={() => {
@@ -482,20 +533,26 @@ export default function NewsIndex({ allPostsData }: Props) {
                   setActiveTags([]);
                 }}
               >
-                Reset filter
+                {t("index.empty.reset")}
               </button>
             </div>
           ) : (
             <div className="post-list">
               {filtered.map((post, i) => (
-                <PostCard key={post.id} post={post} index={i} />
+                <PostCard
+                  key={post.id}
+                  post={post}
+                  index={i}
+                  locale={locale}
+                  readTimeLabel={t("readTime")}
+                />
               ))}
             </div>
           )}
         </main>
       </div>
 
-      <BackToTop />
+      <BackToTop label={t("backToTop")} />
 
       <style jsx global>{`
         /* ── Fonts ── */
@@ -982,16 +1039,22 @@ export default function NewsIndex({ allPostsData }: Props) {
    getStaticProps
 ───────────────────────────────────────────── */
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const allPostsData = getSortedPostsData("blog").map((post) => ({
-    ...post,
-    image: post.image || null, // Pastikan field image di-pass ke client
-    category: "blog",
-  }));
+  const allPostsData = getSortedPostsData("blog", locale ?? "id").map(
+    (post) => ({
+      ...post,
+      image: post.image || null, // Pastikan field image di-pass ke client
+      category: "blog",
+    })
+  );
 
   return {
     props: {
       allPostsData,
-      ...(await serverSideTranslations(locale ?? "id", ["common", "order"])),
+      ...(await serverSideTranslations(locale ?? "id", [
+        "common",
+        "order",
+        "blog",
+      ])),
     },
   };
 };

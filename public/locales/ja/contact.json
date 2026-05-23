@@ -1,25 +1,25 @@
 {
-  "title": "Contact Us",
-  "subtitle": "Ready to build your digital solution? Consult your project for free with our expert team.",
+  "title": "お問い合わせ",
+  "subtitle": "デジタルソリューションを始める準備はできていますか？専門チームに無料でご相談ください。",
   "form": {
-    "name": "Full Name",
-    "email": "Email Address",
-    "service": "Required Service",
+    "name": "氏名",
+    "email": "メールアドレス",
+    "service": "必要なサービス",
     "service_options": {
-      "web": "Website Development",
-      "mobile": "Mobile App (Android/iOS)",
-      "system": "Information System / ERP",
-      "uiux": "UI/UX Design"
+      "web": "Webサイト開発",
+      "mobile": "モバイルアプリ（Android/iOS）",
+      "system": "情報システム / ERP",
+      "uiux": "UI/UXデザイン"
     },
-    "message": "Project Details",
-    "placeholder_message": "Tell us a little about your business needs...",
-    "submit": "Send Inquiry"
+    "message": "プロジェクト詳細",
+    "placeholder_message": "ビジネス上のご要望を簡単にお聞かせください...",
+    "submit": "見積もりを送信"
   },
   "info": {
-    "office_title": "Our Office",
-    "address": "Yogyakarta, Indonesia (Serving clients across Indonesia and abroad)",
-    "whatsapp_title": "WhatsApp / Phone",
-    "email_title": "Business Email"
+    "office_title": "オフィス",
+    "address": "インドネシア・ジョグジャカルタ（インドネシア全域および海外のクライアントに対応）",
+    "whatsapp_title": "WhatsApp / 電話",
+    "email_title": "ビジネスメール"
   },
-  "success": "Message sent! Our team will contact you within 1x24 hours."
+  "success": "メッセージを送信しました！1x24時間以内に担当チームよりご連絡します。"
 }

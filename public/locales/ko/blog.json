@@ -1,0 +1,60 @@
+{
+  "readTime": "분 읽기",
+  "backToTop": "맨 위로 이동",
+  "index": {
+    "meta": {
+      "title": "뉴스 및 글 | 블로그",
+      "description": "기술, 비즈니스, 디지털 마케팅에 관한 최신 글 모음입니다."
+    },
+    "hero": {
+      "eyebrow": "출판물 및 인사이트",
+      "title": "뉴스 및 글"
+    },
+    "search": {
+      "placeholder": "글 검색...",
+      "aria": "글 검색",
+      "clear": "검색 지우기"
+    },
+    "sort": {
+      "aria": "글 정렬",
+      "newest": "최신순",
+      "oldest": "오래된순"
+    },
+    "toc": {
+      "toggle": "목차",
+      "label": "글 목록"
+    },
+    "tags": {
+      "aria": "태그로 필터링",
+      "clear": "필터 지우기({{count}})"
+    },
+    "stats": {
+      "showing": "<strong>{{showing}} / {{total}}</strong>개의 글 표시"
+    },
+    "empty": {
+      "message": "검색 조건과 일치하는 글이 없습니다.",
+      "reset": "필터 초기화"
+    }
+  },
+  "detail": {
+    "toc": "목차",
+    "stickyBack": "글",
+    "allArticles": "모든 글",
+    "recommendedProducts": "추천 제품",
+    "otherArticles": "다른 글",
+    "share": {
+      "label": "공유:",
+      "whatsapp": "WhatsApp으로 공유",
+      "twitter": "X/Twitter로 공유",
+      "facebook": "Facebook으로 공유",
+      "copyAria": "링크 복사",
+      "copied": "복사됨!",
+      "copy": "복사"
+    },
+    "cta": {
+      "title": "비즈니스를 성장시킬 준비가 되셨나요?",
+      "description": "저희 팀과 무료로 상담하고 비즈니스에 가장 적합한 솔루션을 찾아보세요.",
+      "button": "문의하기 →"
+    }
+  }
+}
