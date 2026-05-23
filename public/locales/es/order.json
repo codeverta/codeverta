@@ -1,41 +1,41 @@
 {
   "header": {
     "title": "Codeverta",
-    "subtitle": "El fabricante de velas preferido para tus momentos especiales"
+    "subtitle": "Professional software, website, and IT service ordering"
   },
   "howToOrder": {
-    "title": "Cómo pedir productos de velas",
+    "title": "How to Order Codeverta Services",
     "step1": {
-      "title": "1. Contáctanos",
-      "description": "Por favor, contáctanos a través de WhatsApp al número",
-      "phone": "081578956156",
-      "contactNote": "para comenzar tu pedido. Te ayudaremos con la información del producto y la disponibilidad de stock."
+      "title": "1. Contact Us",
+      "description": "Contact our team via WhatsApp or email to tell us about your project goals, timeline, and business needs.",
+      "phone": "+62881011692615",
+      "contactNote": "We will help clarify the scope, recommended solution, and next steps."
     },
     "step2": {
-      "title": "2. Elige el método de recogida",
-      "description": "Hay dos opciones disponibles para obtener nuestros productos:",
-      "pickupTitle": "Recoger en el lugar",
-      "pickupDescription": "Visita nuestra tienda en Jalan Kaliurang KM 9, Sleman, Yogyakarta",
-      "deliveryTitle": "Entrega a domicilio",
-      "deliveryDescription": "Podemos enviar a través de Gojek, Grab u otros servicios de envío",
-      "note": "*Los pedidos grandes requieren reserva previa"
+      "title": "2. Consultation and Scope",
+      "description": "We review your requirements and prepare a suitable technical approach.",
+      "pickupTitle": "Online Consultation",
+      "pickupDescription": "Discuss remotely with our team from anywhere.",
+      "deliveryTitle": "On-site or Dedicated Session",
+      "deliveryDescription": "Available by appointment for selected projects and locations.",
+      "note": "*Larger projects may require a written scope of work before estimation."
     },
     "step3": {
-      "title": "3. Pago inicial",
-      "description": "Para pedidos grandes, deberás pagar un depósito (DP) de al menos el 30% del precio total para confirmar el pedido. El pago se puede realizar mediante transferencia bancaria."
+      "title": "3. Proposal and Down Payment",
+      "description": "After the scope is agreed, we send a proposal and invoice. A down payment is required before production begins."
     },
     "step4": {
-      "title": "4. Envío y pago final",
-      "description": "Para el envío, el pago debe estar completo antes de que se envíen los productos. Te proporcionaremos información cuando tu pedido esté listo para ser enviado, así como el número de seguimiento del envío si está disponible."
+      "title": "4. Development and Review",
+      "description": "Our team builds the solution in milestones, shares progress updates, and collects feedback before final delivery."
     },
     "step5": {
-      "title": "5. Tiempo de producción",
-      "description": "El tiempo de producción depende de la cantidad de velas que pidas. Para pedidos pequeños, generalmente está listo en 1-3 días. Para pedidos grandes, te daremos una estimación de tiempo después de consultarte."
+      "title": "5. Launch and Support",
+      "description": "After final payment, we help launch the project and provide support according to the agreed warranty or maintenance plan."
     }
   },
   "cta": {
-    "title": "¿Listo para pedir?",
-    "subtitle": "¡Contáctanos ahora para obtener velas aromáticas de alta calidad!",
-    "button": "Contactar por WhatsApp"
+    "title": "Ready to start?",
+    "subtitle": "Talk with Codeverta and get a clear plan for your digital product.",
+    "button": "Contact via WhatsApp"
   }
 }

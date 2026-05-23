@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Codeverta",
+    "subtitle": "Pemesanan jasa software, website, dan layanan IT profesional"
+  },
+  "howToOrder": {
+    "title": "Cara Memesan Layanan Codeverta",
+    "step1": {
+      "title": "1. Hubungi Kami",
+      "description": "Hubungi tim kami melalui WhatsApp atau email untuk menjelaskan tujuan proyek, timeline, dan kebutuhan bisnis Anda.",
+      "phone": "+62881011692615",
+      "contactNote": "Kami akan membantu memperjelas ruang lingkup, rekomendasi solusi, dan langkah berikutnya."
+    },
+    "step2": {
+      "title": "2. Konsultasi dan Scope",
+      "description": "Kami meninjau kebutuhan Anda dan menyiapkan pendekatan teknis yang sesuai.",
+      "pickupTitle": "Konsultasi Online",
+      "pickupDescription": "Diskusikan kebutuhan proyek secara remote dari mana saja.",
+      "deliveryTitle": "Sesi On-site atau Dedicated",
+      "deliveryDescription": "Tersedia dengan janji untuk proyek dan lokasi tertentu.",
+      "note": "*Proyek besar dapat memerlukan scope of work tertulis sebelum estimasi."
+    },
+    "step3": {
+      "title": "3. Proposal dan DP",
+      "description": "Setelah scope disepakati, kami mengirim proposal dan invoice. DP diperlukan sebelum produksi dimulai."
+    },
+    "step4": {
+      "title": "4. Pengembangan dan Review",
+      "description": "Tim kami membangun solusi secara bertahap, mengirim update progres, dan mengumpulkan feedback sebelum serah terima final."
+    },
+    "step5": {
+      "title": "5. Launch dan Support",
+      "description": "Setelah pelunasan, kami membantu peluncuran proyek dan menyediakan dukungan sesuai garansi atau maintenance yang disepakati."
+    }
+  },
+  "cta": {
+    "title": "Siap mulai?",
+    "subtitle": "Diskusikan dengan Codeverta dan dapatkan rencana jelas untuk produk digital Anda.",
+    "button": "Hubungi via WhatsApp"
+  }
+}

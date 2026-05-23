@@ -1,41 +1,41 @@
 {
   "header": {
     "title": "Codeverta",
-    "subtitle": "Le fabricant de bougies de choix pour vos moments spéciaux"
+    "subtitle": "Professional software, website, and IT service ordering"
   },
   "howToOrder": {
-    "title": "Comment commander des produits de bougies",
+    "title": "How to Order Codeverta Services",
     "step1": {
-      "title": "1. Contactez-nous",
-      "description": "Veuillez nous contacter via WhatsApp au numéro",
-      "phone": "081578956156",
-      "contactNote": "pour commencer votre commande. Nous vous aiderons avec les informations sur les produits et la disponibilité des stocks."
+      "title": "1. Contact Us",
+      "description": "Contact our team via WhatsApp or email to tell us about your project goals, timeline, and business needs.",
+      "phone": "+62881011692615",
+      "contactNote": "We will help clarify the scope, recommended solution, and next steps."
     },
     "step2": {
-      "title": "2. Choisissez le mode de retrait",
-      "description": "Deux options sont disponibles pour obtenir nos produits :",
-      "pickupTitle": "Retrait sur place",
-      "pickupDescription": "Visitez notre magasin à Jalan Kaliurang KM 9, Sleman, Yogyakarta",
-      "deliveryTitle": "Livraison",
-      "deliveryDescription": "Nous pouvons livrer via Gojek, Grab ou d'autres services de livraison",
-      "note": "*Les commandes importantes nécessitent une réservation préalable"
+      "title": "2. Consultation and Scope",
+      "description": "We review your requirements and prepare a suitable technical approach.",
+      "pickupTitle": "Online Consultation",
+      "pickupDescription": "Discuss remotely with our team from anywhere.",
+      "deliveryTitle": "On-site or Dedicated Session",
+      "deliveryDescription": "Available by appointment for selected projects and locations.",
+      "note": "*Larger projects may require a written scope of work before estimation."
     },
     "step3": {
-      "title": "3. Acompte",
-      "description": "Pour les commandes importantes, vous devrez verser un acompte (DP) d'au moins 30% du prix total pour confirmer la commande. Le paiement peut être effectué par virement bancaire."
+      "title": "3. Proposal and Down Payment",
+      "description": "After the scope is agreed, we send a proposal and invoice. A down payment is required before production begins."
     },
     "step4": {
-      "title": "4. Expédition et paiement final",
-      "description": "Pour l'expédition, le paiement doit être effectué intégralement avant l'envoi des produits. Nous vous informerons lorsque votre commande sera prête à être expédiée, ainsi que du numéro de suivi de l'expédition si disponible."
+      "title": "4. Development and Review",
+      "description": "Our team builds the solution in milestones, shares progress updates, and collects feedback before final delivery."
     },
     "step5": {
-      "title": "5. Délai de production",
-      "description": "Le délai de commande dépend de la quantité de bougies que vous commandez. Pour les petites commandes, elles sont généralement prêtes sous 1 à 3 jours. Pour les commandes importantes, nous vous fournirons une estimation du délai après consultation."
+      "title": "5. Launch and Support",
+      "description": "After final payment, we help launch the project and provide support according to the agreed warranty or maintenance plan."
     }
   },
   "cta": {
-    "title": "Prêt à commander ?",
-    "subtitle": "Contactez-nous dès maintenant pour obtenir des bougies d'aromathérapie de haute qualité !",
-    "button": "Contacter via WhatsApp"
+    "title": "Ready to start?",
+    "subtitle": "Talk with Codeverta and get a clear plan for your digital product.",
+    "button": "Contact via WhatsApp"
   }
 }

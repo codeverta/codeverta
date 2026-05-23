@@ -1,187 +1,232 @@
 {
-  "brand": "Codeverta",
-  "flag": "🇮🇩",
-  "menu": {
-    "login": "Войти",
-    "home": "Главная",
-    "products": "Продукты",
-    "how_to_order": "Как заказать",
-    "address": "Адрес",
-    "blog": "Блог",
-    "gallery": "Галерея",
-    "about": "О нас"
+  "our_products": "Our Products",
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Software Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
   },
-  "address": {
-    "full": "Jalan Kaliurang KM 9, Слеман, Джокьякарта, Индонезия"
-  },
-  "tagline": {
-    "local_producer": "Местный производитель свечей",
-    "national_scale": "Национальный масштаб"
-  },
-  "description": "Мы являемся поставщиком высококачественных свечей различных видов, таких как ароматические свечи, сувенирные свечи, цветные свечи, декоративные свечи, ритуальные свечи, религиозные свечи, свечной завод и многое другое. Мы предлагаем красивые декоративные свечи для сувениров, которые подойдут для любого мероприятия. От свадеб до корпоративных мероприятий или путешествий, наши сувенирные декоративные свечи - идеальный выбор для создания незабываемых воспоминаний.",
-  "how_to_order_candles": "Как заказать свечи",
-  "whatsapp": "Whatsapp",
-  "our_products": "Наши продукты",
-  "other_products": "Другие продукты",
-  "disclaimer_price": "* Отображаемые цены являются оптовыми ценами дистрибьютора",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
-    "eco_friendly": "Экологически чистый",
-    "made_from": "Сделано из 100% натурального пальмового воска и эфирных масел",
-    "handmade": "Ручная работа",
-    "crafted_with_love": "Каждая свеча заливается вручную нашими мастерами",
-    "long_lasting": "Долговечный",
-    "burn_time": "До 12 часов горения каждой свечи",
-    "handcrafted_with_love": "Сделано с любовью",
-    "make_beautiful_memories": "Создайте прекрасные воспоминания с",
-    "our_candle": "Нашими свечами",
-    "souvenir_description": "С нашими сувенирными декоративными свечами вы можете увезти домой прекрасные воспоминания о вашем мероприятии или путешествии. Каждая наша свеча изготовлена из высококачественных материалов и красиво оформлена нашими художниками."
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
   },
-  "shipping": {
-    "package": "Упаковка для доставки свечей",
-    "fast_shipping": "Быстрая доставка",
-    "nationwide": "По всей Индонезии"
+  "portfolio": {
+    "title": "Projects We Have Worked On",
+    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
   },
-  "premium_collection": {
-    "title": "Премиум коллекция",
-    "subtitle": "Наша коллекция ароматических свечей",
-    "description": "Насладитесь красотой и пользой наших ароматических свечей ручной работы, изготовленных из лучших натуральных ингредиентов."
-  },
-  "quality_section": {
-    "product_quality": "Качество продукции",
-    "product_quality_description": "Мы используем только высококачественные материалы для изготовления наших декоративных свечей, и каждый наш продукт тестируется на безопасность и долговечность. У нас также есть команда талантливых художников, которые украшают каждую свечу красивым и уникальным дизайном, делая ее особенным сувениром.",
-    "size_and_color": "Размер и цвет",
-    "size_and_color_description": "Наши декоративные свечи доступны в различных размерах, от маленьких и портативных до больших и изысканных. У нас также есть различные цвета, включая белый, синий, зеленый, красный и многие другие, чтобы вы могли выбрать тот, который соответствует теме вашего мероприятия.",
-    "calming_aroma": "Успокаивающий аромат",
-    "calming_aroma_description": "Наши декоративные свечи также обладают успокаивающим ароматом, принося в помещение покой и умиротворение. Мы используем высококачественные ароматические масла, чтобы обеспечить стойкий и приятный аромат."
-  },
-  "lifespan": {
-    "title": "Срок службы",
-    "description": "До 12 часов"
-  },
-  "natural": {
-    "title": "100% натуральный",
-    "description": "Экологически чистый"
-  },
-  "business_opportunity": {
-    "title": "Возможности оптового бизнеса",
-    "description": "Развивайте свой бизнес с нашей коллекцией свечей премиум-класса. Идеально подходит для отелей, спа-салонов, бутиков и подарочных магазинов.",
-    "custom_branding": "Доступны варианты индивидуального брендинга",
-    "no_moq_white_label": "Нет минимального объема заказа и услуги white-label"
-  },
-  "wholesale_benefits": {
-    "title": "Преимущества оптовых закупок",
-    "competitive_price": "Конкурентная цена",
-    "competitive_price_description": "Получите скидку до 5% от розничной цены при оптовом заказе",
-    "exclusive_aromas": "Эксклюзивные ароматы",
-    "exclusive_aromas_description": "Доступ к эксклюзивной коллекции ароматов только для оптовых клиентов",
-    "dedicated_support": "Специальная поддержка",
-    "dedicated_support_description": "Персональный менеджер для оптовых клиентов"
-  },
-  "blog_section": {
-    "title": "Наши истории",
-    "description": "Сборник статей в блоге, посвященных различным аспектам свечей, от истории и различных видов свечей до того, как сделать свечу своими руками и как выбрать правильную свечу для различных целей. Вы также найдете вдохновляющие истории о том, как свечи могут стать символом надежды и тепла в повседневной жизни. Давайте вместе исследуем волшебство свечей и узнаем, как использовать их, чтобы осветить нашу жизнь."
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
   },
   "testimonials": {
-    "title": "Что говорят наши клиенты",
-    "sarah_johnson": {
-      "quote": "Гости нашего отеля всегда хвалят прекрасный аромат в нашем лобби. Наши ванильные ароматические свечи создают очень гостеприимную атмосферу.",
-      "name": "Сара Джонсон",
-      "position": "Менеджер отеля, The Grand Plaza"
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "Как владелица бутика, я очень ценю качество и презентацию этих свечей. Они стали нашим самым продаваемым подарочным товаром!",
-      "name": "Эмили Чен",
-      "position": "Владелец, The Curated Corner"
-    },
-    "michael_rodriguez": {
-      "quote": "Время горения этих свечей невероятно, а аромат идеален - не слишком навязчивый. Я уже купил все варианты из этой коллекции!",
-      "name": "Майкл Родригес",
-      "position": "Постоянный клиент"
-    },
-    "wedding_customer": {
-      "quote": "Спасибо @souvenirlilin за прекрасные изделия! Свечи, которые я купила на свою свадьбу, действительно добавили идеальный штрих к мероприятию, и моим гостям они очень понравились.",
-      "name": "Клиент"
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
     }
   },
-  "about_us": {
-    "content": "# О Codeverta\n\nCodeverta - это свечная компания из Джокьякарты, предлагающая широкий ассортимент уникальных и высококачественных свечей. Мы используем высококачественные материалы и передовые технологии производства для создания красивых и ароматных свечей.\n\nМы предлагаем разнообразный выбор свечей, от маленьких до больших, которые можно использовать для особых мероприятий, таких как свадьбы, дни рождения, церковные службы или при отключении электроэнергии. Кроме того, мы также предлагаем парфюмированные свечи, которые можно использовать для создания успокаивающей атмосферы в вашем доме.\n\nУ нас есть широкий выбор цветов и дизайнов, которые можно настроить в соответствии с вашим вкусом. Мы также можем изготовить свечи по вашему индивидуальному дизайну.\n\nМы высоко ценим качество и безопасность наших клиентов, поэтому всегда стараемся использовать безопасные и экологически чистые материалы.\n\nЕсли вы хотите добавить романтическую атмосферу в свой дом или ищете уникальный подарок для особого случая, не стесняйтесь посетить наш веб-сайт и ознакомиться с нашим ассортиментом свечей. Мы будем рады помочь вам найти идеальную свечу для ваших нужд."
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
   },
-  "gallery": {
-    "title": "Галерея",
-    "description": "Коллекция фотографий и видео наших продуктов"
-  },
-  "blog": {
-    "title": "Коллекция историй и советов о свечах",
-    "description": "Сборник статей в блоге, посвященных различным аспектам свечей, от истории и различных видов свечей до того, как сделать свечу своими руками и как выбрать правильную свечу для различных целей.",
-    "not_found": {
-      "title": "Статьи не найдены",
-      "description": "Попробуйте изменить ключевые слова поиска или выбранную категорию"
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
     }
   },
-  "footer": {
-    "title": "Codeverta",
-    "desc": "Codeverta предлагает широкий выбор высококачественных ароматических свечей для создания уютной и успокаивающей атмосферы в вашем доме.",
-    "about": "О нас",
-    "profile": "Профиль компании",
-    "careers": "Карьера",
-    "blog": "Блог",
-    "contact": "Свяжитесь с нами",
-    "help": "Помощь",
-    "howToBuy": "Как купить",
-    "payment": "Оплата",
-    "shipping": "Доставка",
-    "returns": "Возврат",
-    "faq": "Часто задаваемые вопросы",
-    "info": "Информация",
-    "terms": "Условия и положения",
-    "privacy": "Политика конфиденциальности",
-    "shippingPolicy": "Политика доставки",
-    "returnPolicy": "Политика возврата"
+  "navbar": {
+    "products": "Products",
+    "industry": "Industries",
+    "articles": "Articles & News",
+    "learning": "Education",
+    "blog": "Blog",
+    "events": "Events",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "about": "About Us"
   },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "whatsapp": "WhatsApp"
-  },
-  "payment": {
-    "bca": "BCA",
-    "mandiri": "Mandiri",
-    "bni": "BNI",
-    "bri": "BRI"
-  },
-  "stats": {
-    "title": "Наш вклад в цифрах",
-    "subtitle": "С 2007 года мы освещаем дома по всей Индонезии нашими свечами ручной работы",
-    "candlesProduced": {
-      "label": "Производимых свечей в день",
-      "description": "Наши высокоэффективные производственные мощности"
+  "mega_menu": {
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "view_all": "View All Products",
+      "view_all_desc": "Explore all the products we offer."
     },
-    "candleVariants": {
-      "label": "Варианты свечей",
-      "description": "Уникальные ароматы, дизайны и стили"
+    "news": {
+      "title": "News",
+      "tech": "Tech News",
+      "breaking": "Breaking News",
+      "breaking_desc": "Latest tech updates",
+      "industry": "Industry Reports",
+      "industry_desc": "Market analysis",
+      "company": "Company Updates",
+      "company_desc": "Business news",
+      "categories": "Categories",
+      "software": "Software",
+      "software_desc": "Software development news",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware innovations",
+      "mobile": "Mobile",
+      "mobile_desc": "Mobile technology",
+      "trending": "Trending",
+      "ai_rev": "AI Revolution",
+      "ai_rev_desc": "AI developments",
+      "web3": "Web3 Updates",
+      "web3_desc": "Blockchain & crypto",
+      "devops": "DevOps News",
+      "devops_desc": "Development operations"
     },
-    "yearsOfExcellence": {
-      "label": "Лет безупречности",
-      "value": "С 2007",
-      "description": "Более 17 лет производства свечей премиум-класса"
+    "startups": {
+      "title": "Startups",
+      "news": "Startup News",
+      "funding": "Funding Rounds",
+      "funding_desc": "Investment updates",
+      "launches": "New Launches",
+      "launches_desc": "Product launches",
+      "success": "Success Stories",
+      "success_desc": "Inspiring journeys",
+      "resources": "Resources",
+      "guide": "Startup Guide",
+      "guide_desc": "How to get started",
+      "investors": "Investor Network",
+      "investors_desc": "Find investors",
+      "mentorship": "Mentorship",
+      "mentorship_desc": "Get expert guidance"
     },
-    "cities": {
-      "label": "Обслуживаем всю Индонезию",
-      "value": "Крупные города",
-      "description": "Такие как Джакарта, Бали и другие"
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Phone reviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computer reviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches & more",
+      "buying_guides": "Buying Guides",
+      "deals": "Best Deals",
+      "deals_desc": "Current promotions",
+      "compare": "Comparisons",
+      "compare_desc": "Product comparisons",
+      "recommended": "Recommendations",
+      "recommended_desc": "Editor's choice"
     },
-    "candlesSold": {
-      "label": "Проданных свечей в год",
-      "description": "Нам доверяют дома и предприятия"
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Web Development",
+      "react_desc": "Learn React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobile Development",
+      "rn_desc": "Mobile applications",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift & Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programming",
+      "db_desc": "SQL & NoSQL"
     },
-    "quality": {
-      "label": "Гарантия качества",
-      "description": "Приверженность совершенству"
+    "ai": {
+      "title": "AI",
+      "news": "AI News",
+      "ml_desc": "ML developments",
+      "tools": "AI Tools",
+      "tools_desc": "Latest AI tools",
+      "research": "Research",
+      "research_desc": "Academic papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Getting Started",
+      "getting_started_desc": "AI basics",
+      "deep_learning": "Deep Learning",
+      "deep_learning_desc": "Neural networks",
+      "ethics": "AI Ethics",
+      "ethics_desc": "Responsible AI",
+      "productivity": "Productivity",
+      "image_editor": "Image Editor",
+      "image_desc": "Crop, resize, etc.",
+      "pdf_editor": "PDF Editor",
+      "pdf_desc": "Edit and convert PDFs.",
+      "other_tools": "AI & Other Tools",
+      "ai_long": "Artificial Intelligence (AI)",
+      "ai_desc": "Explore the latest developments in AI."
+    },
+    "categories": {
+      "articles": "Articles & News",
+      "main_news": "Top Stories",
+      "tech_innovation": "News (Tech & Innovation)",
+      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiration from the startup world.",
+      "gadget_reviews": "Gadget Reviews",
+      "gadget_reviews_desc": "Reviews and buying guides.",
+      "special_issues": "Special Topics",
+      "cyber_art": "Cybersecurity Articles",
+      "cyber_art_desc": "Digital security tips.",
+      "all_art": "All Articles",
+      "all_art_desc": "View all blog posts.",
+      "learning": "Learning & Guides",
+      "guides": "Guides",
+      "tutorial_desc": "Step-by-step learning guides.",
+      "classes": "Courses",
+      "cyber_course": "Cybersecurity Course",
+      "cyber_course_desc": "Latest cybersecurity classes.",
+      "llm_course": "AI LLM Course",
+      "llm_desc": "Prompt engineering for LLMs.",
+      "ai_eng": "AI Engineer Course",
+      "ai_eng_desc": "In-depth AI engineering."
     }
-  },
-  "products": {
-    "title": "Наша коллекция свечей",
-    "description": "Насладитесь нашей коллекцией свечей ручной работы, изготовленных из высококачественных натуральных материалов. Доступны различные ароматы, формы и размеры для удовлетворения ваших потребностей - от свадебных сувениров, ритуальных нужд, аварийного освещения при отключении электричества до украшения дома или особых подарков."
   }
 }

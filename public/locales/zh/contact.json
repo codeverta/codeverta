@@ -1,0 +1,25 @@
+{
+  "title": "联系我们",
+  "subtitle": "准备构建您的数字解决方案了吗？免费与我们的专家团队咨询您的项目。",
+  "form": {
+    "name": "姓名",
+    "email": "电子邮箱",
+    "service": "所需服务",
+    "service_options": {
+      "web": "网站开发",
+      "mobile": "移动应用（Android/iOS）",
+      "system": "信息系统 / ERP",
+      "uiux": "UI/UX 设计"
+    },
+    "message": "项目详情",
+    "placeholder_message": "请简单说明您的业务需求...",
+    "submit": "发送询价"
+  },
+  "info": {
+    "office_title": "我们的办公室",
+    "address": "印度尼西亚日惹（服务覆盖印度尼西亚及海外客户）",
+    "whatsapp_title": "WhatsApp / 电话",
+    "email_title": "商务邮箱"
+  },
+  "success": "消息已发送！我们的团队将在 1x24 小时内联系您。"
+}

@@ -1,183 +1,232 @@
 {
-  "brand": "Codeverta",
-  "flag": "🇫🇷",
-  "menu": {
-    "login": "Se connecter",
-    "home": "Accueil",
-    "products": "Produits",
-    "how_to_order": "Comment commander",
-    "address": "Adresse",
-    "blog": "Blog",
-    "gallery": "Galerie",
-    "about": "À propos"
+  "our_products": "Our Products",
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Software Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
   },
-  "address": {
-    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonésie"
-  },
-  "tagline": {
-    "local_producer": "Producteur local de bougies",
-    "national_scale": "À l'échelle nationale"
-  },
-  "description": "Nous sommes un fournisseur qui propose une large gamme de bougies de haute qualité telles que des bougies d'aromathérapie, des bougies souvenirs, des bougies colorées, des bougies décoratives, des bougies votives, des bougies spirituelles, une usine de bougies et bien plus encore. Nous proposons de magnifiques bougies décoratives comme souvenirs parfaits pour toute occasion. Des mariages aux événements d'entreprise en passant par les voyages, nos bougies souvenirs décoratives sont le choix idéal pour créer des souvenirs inoubliables.",
-  "how_to_order_candles": "Comment commander des bougies",
-  "whatsapp": "WhatsApp",
-  "our_products": "Nos produits",
-  "other_products": "Autres produits",
-  "disclaimer_price": "* Les prix affichés sont les prix distributeur/grossiste",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
-    "eco_friendly": "Écologique",
-    "made_from": "Fabriqué à partir de cire de palme 100% naturelle et d'huiles essentielles",
-    "handmade": "Fait main",
-    "crafted_with_love": "Chaque bougie est coulée soigneusement par nos artisans",
-    "long_lasting": "Longue durée",
-    "burn_time": "Jusqu'à 12 heures de combustion par bougie",
-    "handcrafted_with_love": "Fabriqué à la main avec amour",
-    "make_beautiful_memories": "Créez de beaux souvenirs avec",
-    "our_candle": "Nos bougies",
-    "souvenir_description": "Avec nos bougies souvenirs décoratives, vous pouvez ramener chez vous de magnifiques souvenirs de vos événements ou voyages. Chacune de nos bougies est fabriquée avec des matériaux de haute qualité et magnifiquement décorée par nos artistes."
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
   },
-  "shipping": {
-    "package": "Colis d'expédition de bougies",
-    "fast_shipping": "Expédition rapide",
-    "nationwide": "Dans toute l'Indonésie"
+  "portfolio": {
+    "title": "Projects We Have Worked On",
+    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
   },
-  "premium_collection": {
-    "title": "Collection Premium",
-    "subtitle": "Nos produits de bougies d'aromathérapie",
-    "description": "Profitez de la beauté et des bienfaits de nos bougies d'aromathérapie faites à la main avec les meilleurs ingrédients naturels."
-  },
-  "quality_section": {
-    "product_quality": "Qualité du produit",
-    "product_quality_description": "Nous utilisons uniquement des matériaux de haute qualité pour fabriquer nos bougies décoratives, et chacun de nos produits est testé pour garantir sa sécurité et sa durabilité. Nous avons également une équipe d'artistes talentueux qui décorent chaque bougie avec des designs magnifiques et uniques, ce qui en fait un souvenir spécial.",
-    "size_and_color": "Taille et couleur",
-    "size_and_color_description": "Nos bougies décoratives sont disponibles dans une variété de tailles, des petites et portables aux grandes et magnifiques. Nous avons également une variété de couleurs différentes, y compris le blanc, le bleu, le vert, le rouge et bien d'autres, afin que vous puissiez choisir celle qui correspond au thème de votre événement.",
-    "calming_aroma": "Arôme apaisant",
-    "calming_aroma_description": "Nos bougies décoratives dégagent également un arôme apaisant, apportant paix et tranquillité à la pièce. Nous utilisons des huiles parfumées de haute qualité pour offrir un arôme durable et agréable."
-  },
-  "lifespan": {
-    "title": "Durée de vie",
-    "description": "Jusqu'à 12 heures"
-  },
-  "natural": {
-    "title": "100% Naturel",
-    "description": "Respectueux de l'environnement"
-  },
-  "business_opportunity": {
-    "title": "Opportunité commerciale en gros",
-    "description": "Développez votre activité avec notre collection de bougies premium. Parfait pour les hôtels, les spas, les boutiques et les magasins de cadeaux.",
-    "custom_branding": "Options de personnalisation de marque disponibles",
-    "no_moq_white_label": "Pas de MOQ et service de marque blanche"
-  },
-  "wholesale_benefits": {
-    "title": "Avantages de l'achat en gros",
-    "competitive_price": "Prix compétitifs",
-    "competitive_price_description": "Obtenez jusqu'à 5% de réduction sur le prix de détail pour les commandes importantes",
-    "exclusive_aromas": "Arômes exclusifs",
-    "exclusive_aromas_description": "Accès à une sélection de parfums exclusifs uniquement pour les clients grossistes",
-    "dedicated_support": "Support dédié",
-    "dedicated_support_description": "Gestionnaires de compte personnels pour les clients grossistes"
-  },
-  "blog_section": {
-    "title": "Nos histoires",
-    "description": "Une collection d'articles de blog qui couvrent divers aspects des bougies, de l'histoire et des différents types de bougies, à la façon de fabriquer vos propres bougies et comment choisir les bougies adaptées à différents usages. Vous trouverez également des histoires inspirantes sur la façon dont les bougies peuvent devenir un symbole d'espoir et de chaleur dans la vie quotidienne. Explorons ensemble la magie des bougies et apprenons à les utiliser pour illuminer nos vies."
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
   },
   "testimonials": {
-    "title": "Ce que disent nos clients",
-    "sarah_johnson": {
-      "quote": "Nos clients de l'hôtel louent toujours le parfum agréable dans notre hall. Nos bougies aromatiques à la vanille créent une atmosphère très accueillante.",
-      "name": "Sarah Johnson",
-      "position": "Directrice d'hôtel, The Grand Plaza"
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "En tant que propriétaire de boutique, j'apprécie vraiment la qualité et la présentation de ces bougies. Elles sont devenues nos produits cadeaux les plus vendus !",
-      "name": "Emily Chen",
-      "position": "Propriétaire, The Curated Corner"
-    },
-    "michael_rodriguez": {
-      "quote": "La durée de combustion de ces bougies est incroyable et l'arôme est parfait - pas trop fort. J'ai déjà acheté toutes les variantes de cette collection !",
-      "name": "Michael Rodriguez",
-      "position": "Client fidèle"
-    },
-    "wedding_customer": {
-      "quote": "Merci @souvenirlilin pour les magnifiques produits ! Les bougies que j'ai achetées pour mon mariage ont vraiment ajouté la touche parfaite à l'événement, et mes invités les ont adorées.",
-      "name": "Client(e)"
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
     }
   },
-  "about_us": {
-    "content": "# À propos de Codeverta\n\nCodeverta est une entreprise de bougies basée à Yogyakarta qui propose une large gamme de bougies aux designs uniques et de haute qualité. Nous utilisons des matériaux de haute qualité et de bonnes techniques de fabrication pour créer des bougies belles et parfumées.\n\nNous offrons une large sélection de bougies, des petites bougies aux grandes bougies qui peuvent être utilisées pour des occasions spéciales telles que les mariages, les fêtes d'anniversaire, les services religieux ou les pannes de courant. De plus, nous proposons également des bougies parfumées qui peuvent être utilisées pour créer une atmosphère apaisante dans votre maison.\n\nNous avons une variété de couleurs et de designs parmi lesquels choisir qui peuvent être personnalisés selon vos goûts. Nous pouvons également fabriquer des bougies avec des designs qui correspondent à vos souhaits.\n\nNous accordons une grande importance à la qualité et à la sécurité de nos clients, c'est pourquoi nous nous efforçons toujours d'utiliser des matériaux sûrs et respectueux de l'environnement.\n\nSi vous souhaitez ajouter une atmosphère romantique à votre maison ou si vous recherchez un cadeau unique pour une occasion spéciale, n'hésitez pas à visiter notre site web et à consulter notre sélection de bougies. Nous serons heureux de vous aider à trouver les bougies adaptées à vos besoins."
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
   },
-  "gallery": {
-    "title": "Galerie",
-    "description": "Une collection de photos et de vidéos de nos produits"
-  },
-  "blog": {
-    "title": "Une collection d'histoires et de conseils sur les bougies",
-    "description": "Une collection d'articles de blog qui couvrent divers aspects des bougies, de l'histoire et des différents types de bougies, à la façon de fabriquer vos propres bougies et comment choisir les bougies adaptées à différents usages.",
-    "not_found": {
-      "title": "Aucun article trouvé",
-      "description": "Essayez de modifier les mots-clés de recherche ou la catégorie sélectionnée"
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
     }
   },
-  "footer": {
-    "title": "Codeverta",
-    "desc": "Codeverta propose une large sélection de bougies d'aromathérapie de haute qualité pour créer une atmosphère confortable et relaxante dans votre maison.",
-    "about": "À propos de nous",
-    "profile": "Profil de l'entreprise",
-    "careers": "Carrières",
+  "navbar": {
+    "products": "Products",
+    "industry": "Industries",
+    "articles": "Articles & News",
+    "learning": "Education",
     "blog": "Blog",
-    "contact": "Contactez-nous",
-    "help": "Aide",
-    "howToBuy": "Comment acheter",
-    "payment": "Paiement",
-    "shipping": "Livraison",
-    "returns": "Retours",
+    "events": "Events",
     "faq": "FAQ",
-    "info": "Informations",
-    "terms": "Conditions générales",
-    "privacy": "Politique de confidentialité",
-    "shippingPolicy": "Politique d'expédition",
-    "returnPolicy": "Politique de retour"
+    "careers": "Careers",
+    "about": "About Us"
   },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "whatsapp": "WhatsApp"
-  },
-  "payment": {
-    "bca": "BCA",
-    "mandiri": "Mandiri",
-    "bni": "BNI",
-    "bri": "BRI"
-  },
-  "stats": {
-    "title": "Notre impact en chiffres",
-    "subtitle": "Depuis 2007, nous illuminons les foyers de toute l'Indonésie avec nos bougies faites à la main",
-    "candlesProduced": {
-      "label": "Bougies produites par jour",
-      "description": "Nos installations de production à haute efficacité"
+  "mega_menu": {
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "view_all": "View All Products",
+      "view_all_desc": "Explore all the products we offer."
     },
-    "candleVariants": {
-      "label": "Variantes de bougies",
-      "description": "Arômes, designs et styles uniques"
+    "news": {
+      "title": "News",
+      "tech": "Tech News",
+      "breaking": "Breaking News",
+      "breaking_desc": "Latest tech updates",
+      "industry": "Industry Reports",
+      "industry_desc": "Market analysis",
+      "company": "Company Updates",
+      "company_desc": "Business news",
+      "categories": "Categories",
+      "software": "Software",
+      "software_desc": "Software development news",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware innovations",
+      "mobile": "Mobile",
+      "mobile_desc": "Mobile technology",
+      "trending": "Trending",
+      "ai_rev": "AI Revolution",
+      "ai_rev_desc": "AI developments",
+      "web3": "Web3 Updates",
+      "web3_desc": "Blockchain & crypto",
+      "devops": "DevOps News",
+      "devops_desc": "Development operations"
     },
-    "yearsOfExcellence": {
-      "label": "Années d'excellence",
-      "value": "Depuis 2007",
-      "description": "Plus de 17 ans de fabrication de bougies premium"
+    "startups": {
+      "title": "Startups",
+      "news": "Startup News",
+      "funding": "Funding Rounds",
+      "funding_desc": "Investment updates",
+      "launches": "New Launches",
+      "launches_desc": "Product launches",
+      "success": "Success Stories",
+      "success_desc": "Inspiring journeys",
+      "resources": "Resources",
+      "guide": "Startup Guide",
+      "guide_desc": "How to get started",
+      "investors": "Investor Network",
+      "investors_desc": "Find investors",
+      "mentorship": "Mentorship",
+      "mentorship_desc": "Get expert guidance"
     },
-    "cities": {
-      "label": "Service dans toute l'Indonésie",
-      "value": "Grandes villes",
-      "description": "Comme Jakarta, Bali et autres"
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Phone reviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computer reviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches & more",
+      "buying_guides": "Buying Guides",
+      "deals": "Best Deals",
+      "deals_desc": "Current promotions",
+      "compare": "Comparisons",
+      "compare_desc": "Product comparisons",
+      "recommended": "Recommendations",
+      "recommended_desc": "Editor's choice"
     },
-    "candlesSold": {
-      "label": "Bougies vendues par an",
-      "description": "Approuvé par les foyers et les entreprises"
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Web Development",
+      "react_desc": "Learn React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobile Development",
+      "rn_desc": "Mobile applications",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift & Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programming",
+      "db_desc": "SQL & NoSQL"
     },
-    "quality": {
-      "label": "Garantie de qualité",
-      "description": "Engagement envers l'excellence"
+    "ai": {
+      "title": "AI",
+      "news": "AI News",
+      "ml_desc": "ML developments",
+      "tools": "AI Tools",
+      "tools_desc": "Latest AI tools",
+      "research": "Research",
+      "research_desc": "Academic papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Getting Started",
+      "getting_started_desc": "AI basics",
+      "deep_learning": "Deep Learning",
+      "deep_learning_desc": "Neural networks",
+      "ethics": "AI Ethics",
+      "ethics_desc": "Responsible AI",
+      "productivity": "Productivity",
+      "image_editor": "Image Editor",
+      "image_desc": "Crop, resize, etc.",
+      "pdf_editor": "PDF Editor",
+      "pdf_desc": "Edit and convert PDFs.",
+      "other_tools": "AI & Other Tools",
+      "ai_long": "Artificial Intelligence (AI)",
+      "ai_desc": "Explore the latest developments in AI."
+    },
+    "categories": {
+      "articles": "Articles & News",
+      "main_news": "Top Stories",
+      "tech_innovation": "News (Tech & Innovation)",
+      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiration from the startup world.",
+      "gadget_reviews": "Gadget Reviews",
+      "gadget_reviews_desc": "Reviews and buying guides.",
+      "special_issues": "Special Topics",
+      "cyber_art": "Cybersecurity Articles",
+      "cyber_art_desc": "Digital security tips.",
+      "all_art": "All Articles",
+      "all_art_desc": "View all blog posts.",
+      "learning": "Learning & Guides",
+      "guides": "Guides",
+      "tutorial_desc": "Step-by-step learning guides.",
+      "classes": "Courses",
+      "cyber_course": "Cybersecurity Course",
+      "cyber_course_desc": "Latest cybersecurity classes.",
+      "llm_course": "AI LLM Course",
+      "llm_desc": "Prompt engineering for LLMs.",
+      "ai_eng": "AI Engineer Course",
+      "ai_eng_desc": "In-depth AI engineering."
     }
   }
 }

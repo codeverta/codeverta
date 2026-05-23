@@ -1,181 +1,232 @@
 {
-  "brand": "Triệu Ngọn Nến",
-  "flag": "🇻🇳",
-  "menu": {
-    "login": "Đăng nhập",
-    "home": "Trang chủ",
-    "products": "Sản phẩm",
-    "how_to_order": "Cách đặt hàng",
-    "address": "Địa chỉ",
-    "blog": "Bài viết",
-    "gallery": "Bộ sưu tập",
-    "about": "Về chúng tôi"
+  "our_products": "Our Products",
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Software Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
   },
-  "address": {
-    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesia"
-  },
-  "tagline": {
-    "local_producer": "Nhà sản xuất nến địa phương",
-    "national_scale": "Quy mô toàn quốc"
-  },
-  "description": "Chúng tôi là nhà cung cấp các loại nến chất lượng cao như nến thơm, nến quà tặng, nến màu, nến trang trí, nến thờ cúng, nến tâm linh, xưởng sản xuất nến và nhiều loại khác. Chúng tôi cung cấp các loại nến trang trí đẹp mắt làm quà tặng, phù hợp cho mọi dịp. Từ đám cưới đến sự kiện công ty hoặc du lịch, nến quà tặng trang trí của chúng tôi là lựa chọn hoàn hảo để tạo nên những kỷ niệm khó quên.",
-  "how_to_order_candles": "Cách đặt mua nến",
-  "whatsapp": "WhatsApp",
-  "our_products": "Sản phẩm của chúng tôi",
-  "other_products": "Sản phẩm khác",
-  "disclaimer_price": "* Giá hiển thị là giá dành cho nhà phân phối/bán buôn",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
-    "eco_friendly": "Thân thiện với môi trường",
-    "made_from": "Được làm từ 100% sáp cọ tự nhiên và tinh dầu",
-    "handmade": "Thủ công",
-    "crafted_with_love": "Mỗi ngọn nến được đổ cẩn thận bởi những người thợ thủ công của chúng tôi",
-    "long_lasting": "Bền lâu",
-    "burn_time": "Thời gian đốt lên đến 12 giờ cho mỗi ngọn nến",
-    "handcrafted_with_love": "Làm thủ công bằng tình yêu",
-    "make_beautiful_memories": "Tạo nên những kỷ niệm đẹp với",
-    "our_candle": "Nến của chúng tôi",
-    "souvenir_description": "Với nến quà tặng trang trí của chúng tôi, bạn có thể mang về những kỷ niệm đẹp từ sự kiện hoặc chuyến đi của mình. Mỗi ngọn nến của chúng tôi được làm từ nguyên liệu chất lượng cao và trang trí đẹp mắt bởi các nghệ nhân của chúng tôi."
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
   },
-  "shipping": {
-    "package": "Gói vận chuyển nến",
-    "fast_shipping": "Giao hàng nhanh chóng",
-    "nationwide": "Toàn quốc"
+  "portfolio": {
+    "title": "Projects We Have Worked On",
+    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
   },
-  "premium_collection": {
-    "title": "Bộ sưu tập cao cấp",
-    "subtitle": "Sản phẩm nến thơm của chúng tôi",
-    "description": "Tận hưởng vẻ đẹp và lợi ích của nến thơm thủ công của chúng tôi, được làm từ những nguyên liệu tự nhiên tốt nhất."
-  },
-  "quality_section": {
-    "product_quality": "Chất lượng sản phẩm",
-    "product_quality_description": "Chúng tôi chỉ sử dụng nguyên liệu chất lượng cao để làm nến trang trí của mình, và mỗi sản phẩm của chúng tôi đều được kiểm tra để đảm bảo an toàn và độ bền. Chúng tôi cũng có một đội ngũ nghệ nhân tài năng, những người trang trí mỗi ngọn nến bằng những thiết kế đẹp và độc đáo, biến chúng thành những món quà lưu niệm đặc biệt.",
-    "size_and_color": "Kích thước và màu sắc",
-    "size_and_color_description": "Nến trang trí của chúng tôi có nhiều kích cỡ khác nhau, từ nhỏ gọn và tiện lợi đến lớn và đẹp mắt. Chúng tôi cũng có nhiều màu sắc khác nhau, bao gồm trắng, xanh dương, xanh lá cây, đỏ và nhiều màu khác, vì vậy bạn có thể chọn màu phù hợp với chủ đề sự kiện của mình.",
-    "calming_aroma": "Hương thơm dịu nhẹ",
-    "calming_aroma_description": "Nến trang trí của chúng tôi còn mang đến hương thơm dịu nhẹ, mang lại sự bình yên và tĩnh lặng cho căn phòng. Chúng tôi sử dụng tinh dầu thơm chất lượng cao để mang đến hương thơm lâu dài và dễ chịu."
-  },
-  "lifespan": {
-    "title": "Tuổi thọ",
-    "description": "Lên đến 12 giờ"
-  },
-  "natural": {
-    "title": "100% tự nhiên",
-    "description": "Thân thiện với môi trường"
-  },
-  "business_opportunity": {
-    "title": "Cơ hội kinh doanh bán buôn",
-    "description": "Nâng tầm doanh nghiệp của bạn với bộ sưu tập nến cao cấp của chúng tôi. Hoàn hảo cho khách sạn, spa, cửa hàng boutique và cửa hàng quà tặng.",
-    "custom_branding": "Có sẵn tùy chọn xây dựng thương hiệu riêng",
-    "no_moq_white_label": "Không yêu cầu số lượng đặt hàng tối thiểu và dịch vụ nhãn trắng"
-  },
-  "wholesale_benefits": {
-    "title": "Lợi ích khi mua sỉ",
-    "competitive_price": "Giá cả cạnh tranh",
-    "competitive_price_description": "Nhận chiết khấu lên đến 5% so với giá bán lẻ cho đơn hàng số lượng lớn",
-    "exclusive_aromas": "Hương thơm độc quyền",
-    "exclusive_aromas_description": "Truy cập vào tuyển chọn hương thơm độc quyền chỉ dành cho khách hàng mua sỉ",
-    "dedicated_support": "Hỗ trợ tận tâm",
-    "dedicated_support_description": "Quản lý tài khoản cá nhân cho khách hàng mua sỉ"
-  },
-  "blog_section": {
-    "title": "Câu chuyện của chúng tôi",
-    "description": "Tuyển tập các bài viết blog thảo luận về nhiều khía cạnh khác nhau của nến, từ lịch sử và các loại nến khác nhau, đến cách tự làm nến và cách chọn nến phù hợp cho các mục đích khác nhau. Bạn cũng sẽ tìm thấy những câu chuyện truyền cảm hứng về cách nến có thể là biểu tượng của hy vọng và sự ấm áp trong cuộc sống hàng ngày. Hãy cùng nhau khám phá sự kỳ diệu của nến và học cách sử dụng chúng để thắp sáng cuộc sống của chúng ta."
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
   },
   "testimonials": {
-    "title": "Khách hàng của chúng tôi nói gì",
-    "sarah_johnson": {
-      "quote": "Khách sạn của chúng tôi luôn khen ngợi hương thơm dễ chịu trong sảnh. Nến thơm Vanilla của chúng tôi tạo ra một bầu không khí rất chào đón.",
-      "name": "Sarah Johnson",
-      "position": "Quản lý khách sạn, The Grand Plaza"
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "Là chủ một cửa hàng boutique, tôi đánh giá cao chất lượng và cách trình bày của những ngọn nến này. Chúng đã trở thành sản phẩm quà tặng bán chạy nhất của chúng tôi!",
-      "name": "Emily Chen",
-      "position": "Chủ cửa hàng, The Curated Corner"
-    },
-    "michael_rodriguez": {
-      "quote": "Thời gian đốt của những ngọn nến này thật tuyệt vời và hương thơm thì hoàn hảo - không quá nồng. Tôi đã mua mọi loại trong bộ sưu tập này!",
-      "name": "Michael Rodriguez",
-      "position": "Khách hàng thân thiết"
-    },
-    "wedding_customer": {
-      "quote": "Cảm ơn @souvenirlilin vì những sản phẩm tuyệt đẹp! Những ngọn nến tôi mua cho đám cưới của mình thực sự đã thêm một nét hoàn hảo cho sự kiện, và các vị khách của tôi rất thích chúng",
-      "name": "Khách hàng"
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
     }
   },
-  "about_us": {
-    "content": "# Về Triệu Ngọn Nến\n\nTriệu Ngọn Nến là một công ty sản xuất nến có trụ sở tại Yogyakarta, chuyên cung cấp các loại nến với thiết kế độc đáo và chất lượng cao. Chúng tôi sử dụng nguyên liệu chất lượng cao và kỹ thuật sản xuất tốt để tạo ra những ngọn nến đẹp và thơm.\n\nChúng tôi cung cấp nhiều lựa chọn nến, từ nến nhỏ đến nến lớn, có thể được sử dụng cho các sự kiện đặc biệt như đám cưới, tiệc sinh nhật, lễ nhà thờ hoặc khi mất điện. Ngoài ra, chúng tôi còn cung cấp nến thơm có thể được sử dụng để tạo không gian thư giãn trong ngôi nhà của bạn.\n\nChúng tôi có nhiều lựa chọn màu sắc và kiểu dáng có thể được điều chỉnh theo sở thích của bạn. Chúng tôi cũng có thể tạo ra nến với thiết kế theo yêu cầu của bạn.\n\nChúng tôi rất coi trọng chất lượng và sự an toàn của khách hàng, vì vậy chúng tôi luôn cố gắng sử dụng các nguyên liệu an toàn và không gây hại cho môi trường.\n\nNếu bạn muốn thêm không khí lãng mạn cho ngôi nhà của mình hoặc đang tìm kiếm một món quà độc đáo cho một sự kiện đặc biệt, đừng ngần ngại truy cập trang web của chúng tôi và xem các lựa chọn nến mà chúng tôi cung cấp. Chúng tôi rất vui được giúp bạn tìm thấy ngọn nến phù hợp với nhu cầu của bạn."
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
   },
-  "gallery": {
-    "title": "Bộ sưu tập",
-    "description": "Tuyển tập ảnh và video sản phẩm của chúng tôi"
-  },
-  "blog": {
-    "title": "Tuyển tập câu chuyện và mẹo về nến",
-    "description": "Tuyển tập các bài viết blog thảo luận về nhiều khía cạnh khác nhau của nến, từ lịch sử và các loại nến khác nhau, đến cách tự làm nến và cách chọn nến phù hợp cho các mục đích khác nhau.",
-    "not_found": {
-      "title": "Không tìm thấy bài viết nào",
-      "description": "Hãy thử thay đổi từ khóa tìm kiếm hoặc danh mục đã chọn"
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
     }
   },
-  "footer": {
-    "about": "Về chúng tôi",
-    "profile": "Hồ sơ công ty",
-    "careers": "Tuyển dụng",
+  "navbar": {
+    "products": "Products",
+    "industry": "Industries",
+    "articles": "Articles & News",
+    "learning": "Education",
     "blog": "Blog",
-    "contact": "Liên hệ",
-    "help": "Trợ giúp",
-    "howToBuy": "Hướng dẫn mua hàng",
-    "payment": "Thanh toán",
-    "shipping": "Vận chuyển",
-    "returns": "Đổi trả",
-    "faq": "Câu hỏi thường gặp",
-    "info": "Thông tin",
-    "terms": "Điều khoản & Điều kiện",
-    "privacy": "Chính sách bảo mật",
-    "shippingPolicy": "Chính sách vận chuyển",
-    "returnPolicy": "Chính sách đổi trả"
+    "events": "Events",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "about": "About Us"
   },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "whatsapp": "WhatsApp"
-  },
-  "payment": {
-    "bca": "BCA",
-    "mandiri": "Mandiri",
-    "bni": "BNI",
-    "bri": "BRI"
-  },
-  "stats": {
-    "title": "Tác động của chúng tôi qua những con số",
-    "subtitle": "Kể từ năm 2007, chúng tôi đã thắp sáng những ngôi nhà trên khắp Việt Nam bằng những ngọn nến thủ công của mình",
-    "candlesProduced": {
-      "label": "Nến sản xuất mỗi ngày",
-      "description": "Cơ sở sản xuất hiệu quả cao của chúng tôi"
+  "mega_menu": {
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "view_all": "View All Products",
+      "view_all_desc": "Explore all the products we offer."
     },
-    "candleVariants": {
-      "label": "Các loại nến",
-      "description": "Hương thơm, thiết kế và phong cách độc đáo"
+    "news": {
+      "title": "News",
+      "tech": "Tech News",
+      "breaking": "Breaking News",
+      "breaking_desc": "Latest tech updates",
+      "industry": "Industry Reports",
+      "industry_desc": "Market analysis",
+      "company": "Company Updates",
+      "company_desc": "Business news",
+      "categories": "Categories",
+      "software": "Software",
+      "software_desc": "Software development news",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware innovations",
+      "mobile": "Mobile",
+      "mobile_desc": "Mobile technology",
+      "trending": "Trending",
+      "ai_rev": "AI Revolution",
+      "ai_rev_desc": "AI developments",
+      "web3": "Web3 Updates",
+      "web3_desc": "Blockchain & crypto",
+      "devops": "DevOps News",
+      "devops_desc": "Development operations"
     },
-    "yearsOfExcellence": {
-      "label": "Năm kinh nghiệm",
-      "value": "Kể từ năm 2007",
-      "description": "Hơn 17 năm sản xuất nến cao cấp"
+    "startups": {
+      "title": "Startups",
+      "news": "Startup News",
+      "funding": "Funding Rounds",
+      "funding_desc": "Investment updates",
+      "launches": "New Launches",
+      "launches_desc": "Product launches",
+      "success": "Success Stories",
+      "success_desc": "Inspiring journeys",
+      "resources": "Resources",
+      "guide": "Startup Guide",
+      "guide_desc": "How to get started",
+      "investors": "Investor Network",
+      "investors_desc": "Find investors",
+      "mentorship": "Mentorship",
+      "mentorship_desc": "Get expert guidance"
     },
-    "cities": {
-      "label": "Phục vụ trên toàn Việt Nam",
-      "value": "Các thành phố lớn",
-      "description": "Như Hà Nội, TP. Hồ Chí Minh và các tỉnh thành khác"
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Phone reviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computer reviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches & more",
+      "buying_guides": "Buying Guides",
+      "deals": "Best Deals",
+      "deals_desc": "Current promotions",
+      "compare": "Comparisons",
+      "compare_desc": "Product comparisons",
+      "recommended": "Recommendations",
+      "recommended_desc": "Editor's choice"
     },
-    "candlesSold": {
-      "label": "Nến bán ra mỗi năm",
-      "description": "Được tin dùng bởi các hộ gia đình và doanh nghiệp"
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Web Development",
+      "react_desc": "Learn React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobile Development",
+      "rn_desc": "Mobile applications",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift & Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programming",
+      "db_desc": "SQL & NoSQL"
     },
-    "quality": {
-      "label": "Đảm bảo chất lượng",
-      "description": "Cam kết về sự xuất sắc"
+    "ai": {
+      "title": "AI",
+      "news": "AI News",
+      "ml_desc": "ML developments",
+      "tools": "AI Tools",
+      "tools_desc": "Latest AI tools",
+      "research": "Research",
+      "research_desc": "Academic papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Getting Started",
+      "getting_started_desc": "AI basics",
+      "deep_learning": "Deep Learning",
+      "deep_learning_desc": "Neural networks",
+      "ethics": "AI Ethics",
+      "ethics_desc": "Responsible AI",
+      "productivity": "Productivity",
+      "image_editor": "Image Editor",
+      "image_desc": "Crop, resize, etc.",
+      "pdf_editor": "PDF Editor",
+      "pdf_desc": "Edit and convert PDFs.",
+      "other_tools": "AI & Other Tools",
+      "ai_long": "Artificial Intelligence (AI)",
+      "ai_desc": "Explore the latest developments in AI."
+    },
+    "categories": {
+      "articles": "Articles & News",
+      "main_news": "Top Stories",
+      "tech_innovation": "News (Tech & Innovation)",
+      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiration from the startup world.",
+      "gadget_reviews": "Gadget Reviews",
+      "gadget_reviews_desc": "Reviews and buying guides.",
+      "special_issues": "Special Topics",
+      "cyber_art": "Cybersecurity Articles",
+      "cyber_art_desc": "Digital security tips.",
+      "all_art": "All Articles",
+      "all_art_desc": "View all blog posts.",
+      "learning": "Learning & Guides",
+      "guides": "Guides",
+      "tutorial_desc": "Step-by-step learning guides.",
+      "classes": "Courses",
+      "cyber_course": "Cybersecurity Course",
+      "cyber_course_desc": "Latest cybersecurity classes.",
+      "llm_course": "AI LLM Course",
+      "llm_desc": "Prompt engineering for LLMs.",
+      "ai_eng": "AI Engineer Course",
+      "ai_eng_desc": "In-depth AI engineering."
     }
   }
 }
