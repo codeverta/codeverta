@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import PricingCard from "@/components/products/PricingCard";
+import { useState } from "react";
 
-// Import semua ikon yang mungkin digunakan
 import {
   ShoppingCart,
   BarChart3,
@@ -26,14 +26,17 @@ import {
   Download,
   Sparkles,
   Star,
+  X,
+  ChevronLeft,
+  ChevronRight,
+  Play,
+  PlayCircle,
 } from "lucide-react";
 
-// Import modul Node.js untuk membaca file di sisi server
 import fs from "fs";
 import path from "path";
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import Head from "next/head";
-// /components/ui/ProjectBreadcrumb.jsx
 
 import Link from "next/link";
 import {
@@ -43,16 +46,15 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"; // Adjust path if needed
+} from "@/components/ui/breadcrumb";
 import { withI18n } from "@/lib/withi18n";
 import { getSortedPostsData } from "@/lib/posts";
 import { ArticleSection } from "@/components/products/ArticleSection";
+import ImageCarousel from "@/components/ImageCarousel";
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
     <Breadcrumb className="mb-8">
-      {" "}
-      {/* Added margin-bottom for spacing */}
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
@@ -76,7 +78,6 @@ export function ProjectBreadcrumb({ projectName }) {
   );
 }
 
-// Helper untuk memetakan nama ikon dari JSON ke komponen React
 const iconMap = {
   ShoppingCart,
   BarChart3,
@@ -96,23 +97,274 @@ const iconMap = {
   Download,
 };
 
-// Fungsi ini memberi tahu Next.js halaman mana yang harus dibuat saat build
+// ─── Image Lightbox Component ─────────────────────────────────────────────────
+function ImageLightbox({ images, initialIndex, onClose }) {
+  const [current, setCurrent] = useState(initialIndex);
+
+  const prev = () => setCurrent((c) => (c - 1 + images.length) % images.length);
+  const next = () => setCurrent((c) => (c + 1) % images.length);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      <button
+        className="absolute top-4 right-4 text-white bg-white/10 hover:bg-white/25 rounded-full p-2 transition"
+        onClick={onClose}
+      >
+        <X className="w-5 h-5" />
+      </button>
+
+      {images.length > 1 && (
+        <>
+          <button
+            className="absolute left-4 text-white bg-white/10 hover:bg-white/25 rounded-full p-3 transition"
+            onClick={(e) => {
+              e.stopPropagation();
+              prev();
+            }}
+          >
+            <ChevronLeft className="w-6 h-6" />
+          </button>
+          <button
+            className="absolute right-4 text-white bg-white/10 hover:bg-white/25 rounded-full p-3 transition"
+            onClick={(e) => {
+              e.stopPropagation();
+              next();
+            }}
+          >
+            <ChevronRight className="w-6 h-6" />
+          </button>
+        </>
+      )}
+
+      <div
+        className="relative max-w-4xl max-h-[85vh] w-full mx-16"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <Image
+          src={images[current].image || "/placeholder.svg"}
+          alt={images[current].title}
+          width={1200}
+          height={800}
+          className="w-full h-auto max-h-[75vh] object-contain rounded-lg shadow-2xl"
+        />
+        <div className="mt-3 text-center">
+          <p className="text-white font-semibold">{images[current].title}</p>
+          <p className="text-slate-300 text-sm mt-1">
+            {images[current].description}
+          </p>
+          {images.length > 1 && (
+            <p className="text-slate-400 text-xs mt-2">
+              {current + 1} / {images.length}
+            </p>
+          )}
+        </div>
+      </div>
+
+      {/* Thumbnail strip */}
+      {images.length > 1 && (
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+          {images.map((img, i) => (
+            <button
+              key={i}
+              onClick={(e) => {
+                e.stopPropagation();
+                setCurrent(i);
+              }}
+              className={`w-12 h-8 rounded overflow-hidden border-2 transition ${
+                i === current
+                  ? "border-white"
+                  : "border-transparent opacity-60 hover:opacity-100"
+              }`}
+            >
+              <Image
+                src={img.image || "/placeholder.svg"}
+                alt={img.title}
+                width={48}
+                height={32}
+                className="w-full h-full object-cover"
+              />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─── Screenshots Gallery Tab ───────────────────────────────────────────────────
+function ScreenshotsGallery({ screenshots }) {
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+
+  if (!screenshots || screenshots.length === 0) return null;
+
+  // Responsive masonry-like grid: first image bigger if count >= 3
+  const gridClass =
+    screenshots.length === 1
+      ? "grid-cols-1"
+      : screenshots.length === 2
+      ? "grid-cols-1 md:grid-cols-2"
+      : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+
+  return (
+    <>
+      <div className={`grid ${gridClass} gap-4`}>
+        {screenshots.map((screenshot, index) => (
+          <Card
+            key={index}
+            className="overflow-hidden cursor-pointer group hover:shadow-xl transition-all duration-300"
+            onClick={() => setLightboxIndex(index)}
+          >
+            <div className="relative aspect-video overflow-hidden bg-slate-100">
+              <Image
+                src={screenshot.image || "/placeholder.svg"}
+                alt={screenshot.title}
+                width={600}
+                height={400}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              {/* Overlay on hover */}
+              <div className="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/40 transition-all duration-300 flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-3 shadow-lg">
+                  <ExternalLink className="w-5 h-5 text-blue-700" />
+                </div>
+              </div>
+            </div>
+            <CardContent className="p-4">
+              <h3 className="font-semibold text-slate-900 text-sm mb-1">
+                {screenshot.title}
+              </h3>
+              <p className="text-xs text-slate-500 line-clamp-2">
+                {screenshot.description}
+              </p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+
+      {lightboxIndex !== null && (
+        <ImageLightbox
+          images={screenshots}
+          initialIndex={lightboxIndex}
+          onClose={() => setLightboxIndex(null)}
+        />
+      )}
+    </>
+  );
+}
+
+// ─── YouTube Video Section ─────────────────────────────────────────────────────
+function VideoSection({ videoUrls, productName }) {
+  if (!videoUrls || videoUrls.length === 0) return null;
+
+  const toEmbedUrl = (url) => {
+    if (!url) return url;
+    const shortMatch = url.match(/youtu\.be\/([^?&]+)/);
+    if (shortMatch) return `https://www.youtube.com/embed/${shortMatch[1]}`;
+    const watchMatch = url.match(/[?&]v=([^&]+)/);
+    if (watchMatch) return `https://www.youtube.com/embed/${watchMatch[1]}`;
+    if (url.includes("/embed/")) return url;
+    return url;
+  };
+
+  // Full-width: padding-bottom trick preserves 16:9
+  const FullVideo = ({ url, title }) => (
+    <div className="relative w-full pb-[56.25%] overflow-hidden rounded-xl border border-border bg-muted">
+      <iframe
+        className="absolute inset-0 w-full h-full"
+        src={toEmbedUrl(url)}
+        title={title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  );
+
+  // Fixed-height: explicit h-60, NO aspect-video
+  const GridVideo = ({ url, title }) => (
+    <div className="relative h-80 overflow-hidden rounded-xl border border-border bg-muted">
+      <iframe
+        className="absolute inset-0 w-full h-full"
+        src={toEmbedUrl(url)}
+        title={title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  );
+
+  return (
+    <section className="py-16 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center gap-3 mb-8">
+          <div className="bg-muted border border-border p-2 rounded-lg">
+            <PlayCircle className="w-5 h-5 text-foreground" />
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold text-foreground">
+              Video Demo
+            </h2>
+            <p className="text-muted-foreground text-sm mt-0.5">
+              Lihat video produk {productName}
+            </p>
+          </div>
+          <Badge variant="outline" className="ml-auto text-xs">
+            {videoUrls.length} Video
+          </Badge>
+        </div>
+
+        {videoUrls.length === 1 ? (
+          <div className="max-w-4xl mx-auto">
+            <FullVideo url={videoUrls[0]} title={`Video ${productName} 1`} />
+          </div>
+        ) : videoUrls.length === 2 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {videoUrls.map((url, i) => (
+              <GridVideo
+                key={i}
+                url={url}
+                title={`Video ${productName} ${i + 1}`}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="space-y-4">
+            <FullVideo url={videoUrls[0]} title={`Video ${productName} 1`} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {videoUrls.slice(1).map((url, i) => (
+                <GridVideo
+                  key={i}
+                  url={url}
+                  title={`Video ${productName} ${i + 2}`}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
+// ─── getStaticPaths ────────────────────────────────────────────────────────────
 export async function getStaticPaths({ locales }) {
   const filePath = path.join(process.cwd(), "projects.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
   const data = JSON.parse(jsonData);
 
-  const paths = locales.flatMap((locale) => {
-    return data.projects.map((project) => ({
+  const paths = locales.flatMap((locale) =>
+    data.projects.map((project) => ({
       params: { id: project.product.id },
       locale,
-    }));
-  });
+    }))
+  );
 
-  return { paths, fallback: false }; // fallback: false akan menampilkan halaman 404 jika ID tidak ditemukan
+  return { paths, fallback: false };
 }
 
-// Fungsi ini mengambil data untuk satu halaman proyek spesifik saat build
+// ─── getStaticProps ────────────────────────────────────────────────────────────
 export const getStaticProps = withI18n(["common"], function ({ params }) {
   const filePath = path.join(process.cwd(), "projects.json");
   const jsonData = fs.readFileSync(filePath, "utf-8");
@@ -129,31 +381,19 @@ export const getStaticProps = withI18n(["common"], function ({ params }) {
     }));
 
   const project = data.projects.find((p) => p.product.id === params.id);
+  if (!project) return { notFound: true };
 
-  if (!project) {
-    return { notFound: true };
-  }
-
-  // 1. Ambil semua produk kecuali yang sedang dibuka
   const filteredProducts = data.projects.filter(
     (p) => p.product.id !== params.id
   );
-
-  // 2. Fungsi Pseudo-Random berdasarkan Seed (id produk)
   const seededRandom = (seed) => {
     const x = Math.sin(seed) * 10000;
     return x - Math.floor(x);
   };
-
-  // 3. Shuffle array secara konsisten berdasarkan ID
-  // Kita konversi ID (string/number) menjadi angka untuk seed
   const seed = params.id
     .split("")
     .reduce((acc, char) => acc + char.charCodeAt(0), 0);
-
   const shuffled = [...filteredProducts].sort(() => seededRandom(seed) - 0.5);
-
-  // 4. Ambil 3 hasil teratas
   const otherProducts = shuffled.slice(0, 3).map((p) => ({
     id: p.product.id,
     name: p.product.name,
@@ -162,16 +402,10 @@ export const getStaticProps = withI18n(["common"], function ({ params }) {
     description: p.product.fullDescription,
   }));
 
-  return {
-    props: {
-      project,
-      otherProducts,
-      latestArticles,
-    },
-  };
+  return { props: { project, otherProducts, latestArticles } };
 });
 
-// --- KOMPONEN UTAMA HALAMAN ---
+// ─── Main Page ─────────────────────────────────────────────────────────────────
 export default function ProjectDetailPage({
   project,
   otherProducts,
@@ -189,23 +423,20 @@ export default function ProjectDetailPage({
     specifications,
     priceList,
   } = project;
+
   const siteUrl = "https://www.codeverta.com";
-  const pageUrl = `${siteUrl}/produk/${project.slug}`; // Assuming you have a slug
-  // JSON-LD SEO Lengkap
+  const pageUrl = `${siteUrl}/produk/${project.slug}`;
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
     image: `${siteUrl}${product.image}`,
     description: product.fullDescription,
-    brand: {
-      "@type": "Brand",
-      name: "Codeverta",
-    },
+    brand: { "@type": "Brand", name: "Codeverta" },
     sku: product.id,
     category: product.category,
     releaseDate: "2024-12-01",
-    // Menambahkan Review & Rating
     aggregateRating: product.seo
       ? {
           "@type": "AggregateRating",
@@ -224,18 +455,15 @@ export default function ProjectDetailPage({
       "@type": "Offer",
       url: pageUrl,
       priceCurrency: "IDR",
-      price: "5000000", // Contoh harga mulai dari
+      price: "5000000",
       availability: "https://schema.org/InStock",
-      seller: {
-        "@type": "Organization",
-        name: "Codeverta",
-      },
+      seller: { "@type": "Organization", name: "Codeverta" },
     },
   };
+
   return (
     <>
       <Head>
-        {/* Primary Meta Tags */}
         <title>
           Jasa Pembuatan {product.name} - {product.category}
         </title>
@@ -244,8 +472,6 @@ export default function ProjectDetailPage({
           content={product.fullDescription.substring(0, 160)}
         />
         <link rel="canonical" href={pageUrl} />
-
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={`Jasa Pembuatan ${product.name}`} />
@@ -254,8 +480,6 @@ export default function ProjectDetailPage({
           content={product.fullDescription.substring(0, 160)}
         />
         <meta property="og:image" content={`${siteUrl}${product.image}`} />
-
-        {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={pageUrl} />
         <meta
@@ -272,8 +496,9 @@ export default function ProjectDetailPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       </Head>
+
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-        {/* Hero Section */}
+        {/* ── Hero Section (image only, no videos) ── */}
         <div className="bg-white shadow-sm">
           <div className="container mx-auto px-4 py-8">
             <ProjectBreadcrumb projectName={product.name} />
@@ -284,9 +509,6 @@ export default function ProjectDetailPage({
                   <Badge variant="outline" className="text-sm">
                     {product.category}
                   </Badge>
-                  {/* <Badge className="bg-green-500 hover:bg-green-600">
-                  {product.status}
-                </Badge> */}
                   <Badge variant="secondary">v{product.version}</Badge>
                 </div>
 
@@ -309,7 +531,7 @@ export default function ProjectDetailPage({
                   ))}
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap">
                   {hero.buttons?.documentation && (
                     <Button size="lg" variant="outline" asChild>
                       <a
@@ -347,7 +569,6 @@ export default function ProjectDetailPage({
                       </Button>
                     </WhatsappWrapper>
                   )}
-
                   {hero.buttons?.sourceCode && (
                     <Button size="lg" variant="outline" asChild>
                       <a
@@ -366,20 +587,34 @@ export default function ProjectDetailPage({
                 </div>
               </div>
 
-              <div className="relative">
-                <Image
-                  src={product.image || "/placeholder.svg"}
-                  alt={product.name}
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-xl"
+              {product.images ? (
+                <ImageCarousel
+                  images={product.images}
+                  productName={product.name}
+                  videoCount={product.videoUrls?.length ?? 0}
                 />
-              </div>
+              ) : (
+                <div className="relative rounded-lg shadow-xl overflow-hidden aspect-video bg-slate-100 w-full">
+                  <Image
+                    src={product.image || "/placeholder.svg"}
+                    alt={product.name}
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Badge jumlah video jika ada */}
+                  {product.videoUrls && product.videoUrls.length > 0 && (
+                    <div className="absolute bottom-3 right-3 flex items-center gap-1.5 bg-black/70 text-white text-xs px-3 py-1.5 rounded-full backdrop-blur-sm">
+                      <Play className="w-3 h-3 fill-white" />
+                      {product.videoUrls.length} Video tersedia ↓
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>
-
-        {/* Main Content */}
+        {/* ── Main Content Tabs ── */}
         <div className="container mx-auto px-4 py-12">
           <Tabs defaultValue="overview" className="w-full">
             <TabsList className="grid w-full grid-cols-3 sm:grid-cols-6 mb-8">
@@ -424,12 +659,6 @@ export default function ProjectDetailPage({
                       </p>
                       <p className="font-semibold">{product.duration}</p>
                     </div>
-                    {/* <div>
-                    <p className="text-sm text-slate-600">
-                      {overview.projectInfo.teamSizeLabel}
-                    </p>
-                    <p className="font-semibold">{product.teamSize}</p>
-                  </div> */}
                     <div>
                       <p className="text-sm text-slate-600">
                         {overview.projectInfo.lastUpdatedLabel}
@@ -593,31 +822,9 @@ export default function ProjectDetailPage({
               </div>
             </TabsContent>
 
-            {/* Screenshots Tab */}
+            {/* ── Screenshots Tab (gallery with lightbox) ── */}
             <TabsContent value="screenshots" className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {screenshots.map((screenshot, index) => (
-                  <Card key={index} className="overflow-hidden">
-                    <div className="relative">
-                      <Image
-                        src={screenshot.image || "/placeholder.svg"}
-                        alt={screenshot.title}
-                        width={500}
-                        height={300}
-                        className="w-full h-64 object-cover"
-                      />
-                    </div>
-                    <CardContent className="p-4">
-                      <h3 className="font-semibold text-slate-900 mb-2">
-                        {screenshot.title}
-                      </h3>
-                      <p className="text-sm text-slate-600">
-                        {screenshot.description}
-                      </p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+              <ScreenshotsGallery screenshots={screenshots} />
             </TabsContent>
 
             {/* Specifications Tab */}
@@ -696,7 +903,8 @@ export default function ProjectDetailPage({
               </Card>
             </TabsContent>
           </Tabs>
-          {/* Bagian UI Review di bawah Tabs Content */}
+
+          {/* Reviews */}
           {product.seo?.reviews && (
             <section className="mt-16 container mx-auto px-4">
               <div className="flex items-center justify-between mb-8">
@@ -757,10 +965,12 @@ export default function ProjectDetailPage({
               </div>
             </section>
           )}
+
+          {/* Pricing */}
           {priceList && (
             <div className="container mt-10 mx-auto max-w-7xl">
               <div className="text-center mb-16">
-                <p className="text-slate-600 text-sm"> Pilihan Paket untuk </p>
+                <p className="text-slate-600 text-sm">Pilihan Paket untuk</p>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
                   Jasa Pembuatan {product.name}
                 </h2>
@@ -769,7 +979,6 @@ export default function ProjectDetailPage({
                   fitur, serta waktu pengembangan yang dibutuhkan.
                 </p>
               </div>
-
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
                 {priceList.map((item, index) => (
                   <PricingCard key={index} {...item} index={index} />
@@ -777,7 +986,8 @@ export default function ProjectDetailPage({
               </div>
             </div>
           )}
-          {/* Section Produk Lainnya */}
+
+          {/* Other Products */}
           <div className="bg-slate-50 border-t border-slate-200 py-20 mt-20">
             <div className="container mx-auto px-4">
               <div className="flex justify-between items-end mb-10">
@@ -844,6 +1054,12 @@ export default function ProjectDetailPage({
             </div>
           </div>
         </div>
+        {/* ── Video Section (dedicated, below hero) ── */}
+        <VideoSection
+          videoUrls={product.videoUrls}
+          productName={product.name}
+        />
+
         <ArticleSection articles={latestArticles} />
       </div>
     </>

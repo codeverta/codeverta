@@ -1,0 +1,454 @@
+[
+  {
+    "slug": "manufacturing",
+    "name": "Manufacturing",
+    "tagline": "Streamline production, manage inventory, and ensure on-time delivery.",
+    "description": "Codeverta empowers manufacturers with end-to-end visibility across every stage of production — from raw material procurement to finished goods delivery. Our platform integrates shop floor operations with back-office systems so your teams always work from a single source of truth.",
+    "icon": "⚙️",
+    "accentColor": "#F97316",
+    "heroStat": { "value": "38%", "label": "Reduction in production downtime" },
+    "challenges": [
+      "Disconnected systems between production, inventory, and finance",
+      "Difficulty tracking work-in-progress across the shop floor",
+      "Manual scheduling causing delays and resource waste",
+      "Lack of real-time visibility into machine utilization"
+    ],
+    "solutions": [
+      {
+        "title": "Production Planning & Scheduling",
+        "description": "Automated scheduling that adapts to real-time changes in demand, resources, and capacity — minimizing idle time and bottlenecks."
+      },
+      {
+        "title": "Inventory & Materials Management",
+        "description": "Track raw materials, WIP, and finished goods in real time with automated reorder triggers and multi-warehouse support."
+      },
+      {
+        "title": "Quality Control",
+        "description": "Define inspection checkpoints, capture defect data, and generate compliance reports without leaving the platform."
+      },
+      {
+        "title": "Equipment & Maintenance",
+        "description": "Schedule preventive maintenance, track asset history, and reduce unplanned downtime with alerts and dashboards."
+      }
+    ],
+    "testimonial": {
+      "quote": "Codeverta gave us complete visibility from order to shipment. Our on-time delivery improved by 42% in the first six months.",
+      "author": "Operations Director",
+      "company": "Mid-size auto parts manufacturer"
+    },
+    "featuredClients": [
+      "Automotive Parts",
+      "Consumer Electronics",
+      "Food & Beverage",
+      "Textile Mills"
+    ]
+  },
+  {
+    "slug": "trading-distribution",
+    "name": "Trading & Distribution",
+    "tagline": "Manage procurement, orders, and supply chains efficiently.",
+    "description": "In a world of fluctuating demand and complex supplier networks, Codeverta gives trading and distribution companies the agility to move fast, buy smart, and fulfill orders with precision — all in one platform.",
+    "icon": "📦",
+    "accentColor": "#3B82F6",
+    "heroStat": { "value": "55%", "label": "Faster order fulfillment cycle" },
+    "challenges": [
+      "Managing multiple suppliers across different regions and currencies",
+      "Order tracking spread across emails, spreadsheets, and legacy tools",
+      "Poor demand forecasting leading to overstock or stockouts",
+      "Difficulty reconciling purchase orders with received goods"
+    ],
+    "solutions": [
+      {
+        "title": "Procurement Management",
+        "description": "Centralize supplier management, automate purchase orders, and track deliveries from a single dashboard."
+      },
+      {
+        "title": "Order & Fulfillment",
+        "description": "Manage the full order lifecycle — from quotation to delivery — with automated status updates and customer notifications."
+      },
+      {
+        "title": "Demand Forecasting",
+        "description": "AI-assisted forecasting based on historical sales, seasonality, and market signals to prevent costly inventory imbalances."
+      },
+      {
+        "title": "Multi-Currency & Tax",
+        "description": "Handle international transactions with built-in multi-currency support, exchange rate management, and local tax compliance."
+      }
+    ],
+    "testimonial": {
+      "quote": "We cut our order processing time in half and reduced inventory holding costs significantly within the first quarter.",
+      "author": "Supply Chain Manager",
+      "company": "Regional wholesale distributor"
+    },
+    "featuredClients": [
+      "FMCG Distributors",
+      "Commodity Traders",
+      "Wholesale Importers",
+      "3PL Providers"
+    ]
+  },
+  {
+    "slug": "retail",
+    "name": "Retail",
+    "tagline": "Boost sales, manage inventory, and enhance customer experience.",
+    "description": "Whether you run a single flagship store or a multi-location retail chain, Codeverta unifies your point-of-sale, inventory, and customer data so you can deliver consistent, personalized experiences at every touchpoint.",
+    "icon": "🛍️",
+    "accentColor": "#EC4899",
+    "heroStat": {
+      "value": "29%",
+      "label": "Average increase in repeat purchases"
+    },
+    "challenges": [
+      "Disconnected POS and inventory causing stock discrepancies",
+      "No unified view of customer behavior across locations",
+      "Promotions and pricing managed manually across channels",
+      "Difficulty identifying top-performing products and stores"
+    ],
+    "solutions": [
+      {
+        "title": "Point of Sale Integration",
+        "description": "Sync transactions from every checkout lane and channel in real time, with automatic stock deductions and revenue tracking."
+      },
+      {
+        "title": "Customer Loyalty & CRM",
+        "description": "Build loyalty programs, track purchase history, and send targeted promotions that bring customers back."
+      },
+      {
+        "title": "Inventory & Replenishment",
+        "description": "Set reorder points per SKU per location and automate purchase requests to prevent stockouts during peak seasons."
+      },
+      {
+        "title": "Sales Analytics",
+        "description": "Dashboards that surface your best-selling items, underperforming categories, and margin leakage across all stores."
+      }
+    ],
+    "testimonial": {
+      "quote": "We finally have one system for everything — inventory, sales, and our loyalty program. It transformed how we run our stores.",
+      "author": "Retail Operations Head",
+      "company": "Fashion retail chain, 30+ outlets"
+    },
+    "featuredClients": [
+      "Fashion & Apparel",
+      "Grocery & Supermarkets",
+      "Electronics Retail",
+      "Specialty Stores"
+    ]
+  },
+  {
+    "slug": "engineering-construction",
+    "name": "Engineering & Construction",
+    "tagline": "Manage large-scale projects, resources, and budgets with ease.",
+    "description": "Construction projects fail on poor coordination, not poor intention. Codeverta gives project managers, finance teams, and on-site crews a shared command center to track progress, control costs, and hit every milestone.",
+    "icon": "🏗️",
+    "accentColor": "#EAB308",
+    "heroStat": {
+      "value": "44%",
+      "label": "Reduction in project cost overruns"
+    },
+    "challenges": [
+      "Budget overruns due to lack of real-time cost tracking",
+      "Resource conflicts across concurrent projects",
+      "Fragmented communication between site and office teams",
+      "Difficulty generating progress reports for clients and stakeholders"
+    ],
+    "solutions": [
+      {
+        "title": "Project Planning & Milestones",
+        "description": "Define project phases, assign tasks, and track completion against timelines with Gantt views and dependency mapping."
+      },
+      {
+        "title": "Budget & Cost Control",
+        "description": "Compare actual vs. planned costs in real time, with alerts when spending approaches thresholds."
+      },
+      {
+        "title": "Resource & Crew Management",
+        "description": "Allocate labor and equipment across projects, avoid double-booking, and track utilization by role."
+      },
+      {
+        "title": "Contractor & Subcontractor Management",
+        "description": "Manage contracts, approvals, and payments for all third-party vendors in one place."
+      }
+    ],
+    "testimonial": {
+      "quote": "For the first time, our project directors and finance team are looking at the same numbers. We avoided a major overrun on our last bid.",
+      "author": "Project Director",
+      "company": "Infrastructure engineering firm"
+    },
+    "featuredClients": [
+      "Civil Engineering",
+      "Building Contractors",
+      "MEP Firms",
+      "Infrastructure Developers"
+    ]
+  },
+  {
+    "slug": "ecommerce",
+    "name": "E-commerce",
+    "tagline": "Manage orders, track customers, and grow online sales.",
+    "description": "Scaling an online business means managing more SKUs, more orders, and more customer expectations simultaneously. Codeverta connects your storefront, warehouse, and finance — so you can grow without the chaos.",
+    "icon": "🛒",
+    "accentColor": "#10B981",
+    "heroStat": {
+      "value": "3×",
+      "label": "Order volume handled without added headcount"
+    },
+    "challenges": [
+      "Manual order processing unable to keep up with volume spikes",
+      "Returns and refunds managed through disconnected tools",
+      "No centralized customer profile across multiple sales channels",
+      "Shipping delays caused by poor warehouse coordination"
+    ],
+    "solutions": [
+      {
+        "title": "Order Management System",
+        "description": "Automate order capture, routing, and fulfillment from every sales channel — website, marketplace, or social."
+      },
+      {
+        "title": "Returns & Refunds",
+        "description": "Streamline the returns process with automated approval flows, restocking triggers, and instant refund tracking."
+      },
+      {
+        "title": "Customer 360",
+        "description": "See every customer's full purchase history, preferences, and support interactions in one profile."
+      },
+      {
+        "title": "Warehouse & Shipping",
+        "description": "Coordinate pick, pack, and ship operations with shipping carrier integrations and real-time tracking updates."
+      }
+    ],
+    "testimonial": {
+      "quote": "During our biggest sale ever, Codeverta processed 10,000 orders in one day without a single system hiccup. Absolute game changer.",
+      "author": "Co-founder",
+      "company": "D2C skincare brand"
+    },
+    "featuredClients": [
+      "D2C Brands",
+      "Marketplace Sellers",
+      "Subscription Boxes",
+      "Multi-channel Retailers"
+    ]
+  },
+  {
+    "slug": "education",
+    "name": "Education",
+    "tagline": "Simplify student admissions, courses, and fees with one platform.",
+    "description": "From enrollment to graduation, Codeverta helps educational institutions remove administrative friction so educators can focus on what matters — teaching. Manage every student journey from a single, secure platform.",
+    "icon": "🎓",
+    "accentColor": "#8B5CF6",
+    "heroStat": { "value": "70%", "label": "Less time spent on admin tasks" },
+    "challenges": [
+      "Manual enrollment and fee collection prone to errors and delays",
+      "No centralized record of student academic progress",
+      "Difficulty communicating updates to students and parents at scale",
+      "Compliance reporting done manually at end of term"
+    ],
+    "solutions": [
+      {
+        "title": "Admissions & Enrollment",
+        "description": "Digital application workflows, document collection, and enrollment confirmation — all without paper."
+      },
+      {
+        "title": "Course & Schedule Management",
+        "description": "Build and publish course catalogs, assign instructors, and manage timetables with conflict detection."
+      },
+      {
+        "title": "Fee & Payment Collection",
+        "description": "Generate fee schedules, send reminders, accept online payments, and reconcile automatically."
+      },
+      {
+        "title": "Student Portal & Communication",
+        "description": "Give students and parents a self-service portal for grades, attendance, schedules, and announcements."
+      }
+    ],
+    "testimonial": {
+      "quote": "Our admissions team handles twice the applicants now with the same staff. And parents finally stop calling us about fee receipts.",
+      "author": "Principal",
+      "company": "Private K-12 school network"
+    },
+    "featuredClients": [
+      "K-12 Schools",
+      "Universities",
+      "Vocational Institutes",
+      "Tuition Centers"
+    ]
+  },
+  {
+    "slug": "professional-services",
+    "name": "Professional Services",
+    "tagline": "Streamline project management, billing, and client collaboration.",
+    "description": "Agencies, consultancies, and service firms run on relationships and time. Codeverta helps you track every billable hour, manage client projects transparently, and invoice without chasing spreadsheets.",
+    "icon": "💼",
+    "accentColor": "#0EA5E9",
+    "heroStat": {
+      "value": "22%",
+      "label": "Increase in billable hours captured"
+    },
+    "challenges": [
+      "Time tracking done informally, leading to under-billing",
+      "Client projects managed across too many disconnected tools",
+      "Invoicing delays impacting cash flow",
+      "No visibility into team utilization and project profitability"
+    ],
+    "solutions": [
+      {
+        "title": "Time & Expense Tracking",
+        "description": "Log hours by project, client, and activity — with mobile-friendly entry and manager approval flows."
+      },
+      {
+        "title": "Project & Task Management",
+        "description": "Plan deliverables, set deadlines, assign responsibilities, and share progress with clients in real time."
+      },
+      {
+        "title": "Billing & Invoicing",
+        "description": "Auto-generate invoices from tracked time and approved expenses, with custom billing rates per client."
+      },
+      {
+        "title": "Client Collaboration Portal",
+        "description": "Give clients a branded portal to review deliverables, approve milestones, and view invoices without email back-and-forth."
+      }
+    ],
+    "testimonial": {
+      "quote": "We recovered 18% more revenue just by having accurate time tracking. The ROI on Codeverta was obvious in the first month.",
+      "author": "Managing Partner",
+      "company": "IT consulting firm"
+    },
+    "featuredClients": [
+      "Management Consulting",
+      "IT Services",
+      "Law Firms",
+      "Creative Agencies"
+    ]
+  },
+  {
+    "slug": "financial-services",
+    "name": "Financial Services",
+    "tagline": "Track finances, manage portfolios, and ensure compliance effortlessly.",
+    "description": "Financial firms operate in a high-stakes environment where accuracy, security, and compliance are non-negotiable. Codeverta provides the infrastructure to manage client portfolios, regulatory reporting, and internal finances with confidence.",
+    "icon": "📊",
+    "accentColor": "#14B8A6",
+    "heroStat": { "value": "99.9%", "label": "Audit accuracy rate" },
+    "challenges": [
+      "Regulatory reporting done manually with high risk of error",
+      "Client portfolio data scattered across legacy tools",
+      "Slow reconciliation between transactions and ledgers",
+      "Difficulty maintaining audit trails for compliance reviews"
+    ],
+    "solutions": [
+      {
+        "title": "Portfolio & Client Management",
+        "description": "Track client accounts, holdings, and transactions in real time with consolidated reporting."
+      },
+      {
+        "title": "General Ledger & Reconciliation",
+        "description": "Automated bank reconciliation and double-entry bookkeeping that closes books faster and more accurately."
+      },
+      {
+        "title": "Compliance & Reporting",
+        "description": "Generate regulatory reports with full audit trails, version history, and role-based access controls."
+      },
+      {
+        "title": "Risk & Alert Management",
+        "description": "Set thresholds and triggers that alert teams to exposure, anomalies, or compliance gaps before they escalate."
+      }
+    ],
+    "testimonial": {
+      "quote": "Our compliance team's quarterly audit used to take two weeks. With Codeverta, we complete it in three days.",
+      "author": "CFO",
+      "company": "Wealth management firm"
+    },
+    "featuredClients": [
+      "Wealth Management",
+      "Insurance",
+      "Microfinance",
+      "Brokerage Firms"
+    ]
+  },
+  {
+    "slug": "healthcare",
+    "name": "Healthcare",
+    "tagline": "Manage patient records, appointments, and hospital operations seamlessly.",
+    "description": "Healthcare providers need systems that are reliable, secure, and built for people — not just processes. Codeverta helps clinics and hospitals reduce administrative burden, improve care coordination, and keep patient data safe.",
+    "icon": "🏥",
+    "accentColor": "#EF4444",
+    "heroStat": { "value": "60%", "label": "Fewer appointment no-shows" },
+    "challenges": [
+      "Paper-based patient records causing delays and errors",
+      "Appointment scheduling inefficiencies leading to long wait times",
+      "Billing and insurance claims processed manually",
+      "No centralized view of hospital-wide resource utilization"
+    ],
+    "solutions": [
+      {
+        "title": "Patient Records (EMR)",
+        "description": "Secure, structured electronic medical records with role-based access — accessible to the right staff at the right time."
+      },
+      {
+        "title": "Appointment & Scheduling",
+        "description": "Online and front-desk scheduling with automated reminders that cut no-show rates significantly."
+      },
+      {
+        "title": "Billing & Insurance",
+        "description": "Streamline invoicing, insurance claim submission, and payment reconciliation in one integrated workflow."
+      },
+      {
+        "title": "Pharmacy & Inventory",
+        "description": "Track medicine stock, manage expiry dates, and automate reorders so critical supplies are never out."
+      }
+    ],
+    "testimonial": {
+      "quote": "Patient wait times dropped, billing errors dropped, and staff morale improved. Codeverta touched every part of how we operate.",
+      "author": "Hospital Administrator",
+      "company": "150-bed regional hospital"
+    },
+    "featuredClients": [
+      "Hospitals",
+      "Clinics & Polyclinics",
+      "Diagnostic Centers",
+      "Pharmacy Chains"
+    ]
+  },
+  {
+    "slug": "non-profit",
+    "name": "Non-profit",
+    "tagline": "Streamline fundraising, donor management, and project execution.",
+    "description": "Non-profits are asked to do more with less, every day. Codeverta gives mission-driven organizations the tools to manage donors, track program impact, and stay financially transparent — without enterprise-level complexity or cost.",
+    "icon": "🤝",
+    "accentColor": "#F59E0B",
+    "heroStat": { "value": "2×", "label": "Donor retention improvement" },
+    "challenges": [
+      "Donor data scattered across spreadsheets and email threads",
+      "Difficulty tracking restricted vs. unrestricted funding",
+      "Grant reporting done manually from disconnected sources",
+      "No clear visibility into program budgets and spend"
+    ],
+    "solutions": [
+      {
+        "title": "Donor Management & CRM",
+        "description": "Track every donor interaction, gift history, and communication preference in one place — and never let a relationship go cold."
+      },
+      {
+        "title": "Fundraising Campaigns",
+        "description": "Plan and track campaigns with goals, timelines, and real-time donation tracking against targets."
+      },
+      {
+        "title": "Grant & Fund Management",
+        "description": "Segregate funds by grant or program, track restricted spending, and generate compliance-ready reports for funders."
+      },
+      {
+        "title": "Volunteer & Project Coordination",
+        "description": "Manage volunteer rosters, assignments, and hours alongside your program delivery milestones."
+      }
+    ],
+    "testimonial": {
+      "quote": "We finally have a clear picture of where every dollar goes. Our board is happier, our funders are confident, and our team is less stressed.",
+      "author": "Executive Director",
+      "company": "Community development non-profit"
+    },
+    "featuredClients": [
+      "INGOs",
+      "Community Foundations",
+      "Social Enterprises",
+      "Religious Organizations"
+    ]
+  }
+]

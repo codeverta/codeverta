@@ -4,7 +4,7 @@
     "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
     "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
     "hero": {
-      "prefix": "Digital Solutions For Every",
+      "prefix": "Software Solutions For Every",
       "rotating": [
         "Retail",
         "Healthcare",
@@ -90,8 +90,9 @@
   },
   "navbar": {
     "products": "Products",
+    "industry": "Industries",
     "articles": "Articles & News",
-    "learning": "Training & Learning",
+    "learning": "Education",
     "blog": "Blog",
     "events": "Events",
     "faq": "FAQ",

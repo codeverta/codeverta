@@ -7,6 +7,11 @@
         "description": "Sistem terintegrasi untuk pengelolaan operasional gym, mulai dari manajemen member, absensi, hingga sistem kasir (POS).",
         "fullDescription": "Solusi digital untuk otomatisasi bisnis fitness center. Sistem ini mencakup pengelolaan membership (Gym Plan), pemantauan sesi latihan member (Gym Workout Log), hingga pencatatan penjualan inventaris gym melalui Gym POS Invoice. Memudahkan pemilik gym dalam memantau performa trainer dan retensi member secara real-time.",
         "image": "/assets/products/gym-management.png",
+        "images": [
+          "/assets/products/gym-management.png",
+          "/assets/gym-management/poster1.png"
+        ],
+        "videoUrls": ["https://www.youtube.com/watch?v=nVCwhNEbOM8"],
         "technologies": ["Go", "Next.js", "PostgreSQL", "Redis"],
         "category": "Gym & Health",
         "status": "Production Ready",
@@ -211,6 +216,10 @@
         "description": "Sistem registrasi event lari lintas alam dengan performa tinggi untuk menangani ribuan transaksi per detik saat 'war' tiket.",
         "fullDescription": "Sistem ini dirancang khusus untuk menangani lonjakan trafik ekstrem saat pembukaan registrasi event trail running skala internasional. Fokus utama pada integritas data, pencegahan bot, dan skalabilitas horizontal. Dibangun dengan arsitektur microservices untuk memastikan proses antrean (queue) yang adil dan aman dari serangan automated scripting.",
         "image": "/assets/products/46.png",
+        "videoUrls": [
+          "https://youtu.be/HM03PfVRtLk?si=I4t96ZbHhjcdmy2q",
+          "https://youtu.be/AubgymD5NC8?si=Gc5vpVce2Grfpndy"
+        ],
         "technologies": ["Go", "Next.js", "Redis", "PostgreSQL", "Kafka"],
         "category": "Event Management",
         "status": "Production Ready",
