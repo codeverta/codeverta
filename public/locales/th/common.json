@@ -1,181 +1,232 @@
 {
-  "brand": "เทียนล้านเล่ม",
-  "flag": "🇹🇭",
-  "menu": {
-    "login": "เข้าสู่ระบบ",
-    "home": "หน้าหลัก",
-    "products": "สินค้า",
-    "how_to_order": "วิธีสั่งซื้อ",
-    "address": "ที่อยู่",
-    "blog": "เรื่องราว",
-    "gallery": "แกลเลอรี่",
-    "about": "เกี่ยวกับ"
+  "our_products": "Our Products",
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Software Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
   },
-  "address": {
-    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, อินโดนีเซีย"
-  },
-  "tagline": {
-    "local_producer": "ผู้ผลิตเทียนท้องถิ่น",
-    "national_scale": "ระดับประเทศ"
-  },
-  "description": "เราคือซัพพลายเออร์ที่จัดจำหน่ายเทียนคุณภาพสูงหลากหลายชนิด เช่น เทียนอโรมา เทียนของชำร่วย เทียนสี เทียนประดับ เทียนพิธี เทียนทางศาสนา โรงงานเทียน และอื่นๆ อีกมากมาย เรานำเสนอเทียนประดับที่สวยงามสำหรับเป็นของชำร่วย เหมาะสำหรับทุกโอกาส ตั้งแต่ งานแต่งงาน งานบริษัท หรือการเดินทาง เทียนของชำร่วยของเราเป็นตัวเลือกที่สมบูรณ์แบบสำหรับการสร้างความทรงจำที่น่าประทับใจ",
-  "how_to_order_candles": "วิธีสั่งซื้อเทียน",
-  "whatsapp": "วอทส์แอป",
-  "our_products": "สินค้าของเรา",
-  "other_products": "สินค้าอื่นๆ",
-  "disclaimer_price": "* ราคาที่แสดงเป็นราคาผู้จัดจำหน่าย/ขายส่ง",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
-    "eco_friendly": "เป็นมิตรต่อสิ่งแวดล้อม",
-    "made_from": "ทำจากไขปาล์มธรรมชาติ 100% และน้ำมันหอมระเหย",
-    "handmade": "ทำด้วยมือ",
-    "crafted_with_love": "เทียนทุกเล่มถูกเทด้วยความใส่ใจจากช่างฝีมือของเรา",
-    "long_lasting": "ทนทาน",
-    "burn_time": "ระยะเวลาการเผาไหม้นานถึง 12 ชั่วโมงต่อเทียนหนึ่งเล่ม",
-    "handcrafted_with_love": "ทำด้วยมือด้วยความรัก",
-    "make_beautiful_memories": "สร้างความทรงจำที่สวยงามด้วย",
-    "our_candle": "เทียนของเรา",
-    "souvenir_description": "ด้วยเทียนของชำร่วยของเรา คุณสามารถนำความทรงจำอันแสนสุขจากการจัดงานหรือการเดินทางกลับบ้านได้ เทียนทุกเล่มของเราผลิตจากวัสดุคุณภาพสูงและตกแต่งอย่างสวยงามโดยศิลปินของเรา"
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
   },
-  "shipping": {
-    "package": "พัสดุจัดส่งเทียน",
-    "fast_shipping": "จัดส่งรวดเร็ว",
-    "nationwide": "ทั่วประเทศ"
+  "portfolio": {
+    "title": "Projects We Have Worked On",
+    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
   },
-  "premium_collection": {
-    "title": "คอลเลคชั่นพิเศษ",
-    "subtitle": "ผลิตภัณฑ์เทียนอโรมาของเรา",
-    "description": "เพลิดเพลินไปกับความงามและคุณประโยชน์ของเทียนอโรมาทำมือของเรา ซึ่งผลิตจากวัตถุดิบธรรมชาติที่ดีที่สุด"
-  },
-  "quality_section": {
-    "product_quality": "คุณภาพสินค้า",
-    "product_quality_description": "เราใช้วัตถุดิบคุณภาพสูงเท่านั้นในการทำเทียนประดับของเรา และผลิตภัณฑ์ทุกชิ้นของเราได้รับการทดสอบเพื่อให้มั่นใจในความปลอดภัยและความทนทาน นอกจากนี้ เรายังมีทีมศิลปินที่มีความสามารถซึ่งตกแต่งเทียนแต่ละเล่มด้วยการออกแบบที่สวยงามและเป็นเอกลักษณ์ ทำให้เป็นของชำร่วยที่พิเศษ",
-    "size_and_color": "ขนาดและสี",
-    "size_and_color_description": "เทียนประดับของเรามีให้เลือกหลายขนาด ตั้งแต่ขนาดเล็กพกพาสะดวกไปจนถึงขนาดใหญ่ที่สวยงาม เรายังมีสีสันที่หลากหลายให้เลือก เช่น สีขาว สีฟ้า สีเขียว สีแดง และอื่นๆ อีกมากมาย คุณจึงสามารถเลือกสีที่เข้ากับธีมงานของคุณได้",
-    "calming_aroma": "กลิ่นหอมผ่อนคลาย",
-    "calming_aroma_description": "เทียนประดับของเรายังให้กลิ่นหอมที่ผ่อนคลาย นำความสงบและความเงียบสงบมาสู่ห้อง เราใช้น้ำหอมคุณภาพสูงเพื่อให้กลิ่นหอมติดทนนานและน่ารื่นรมย์"
-  },
-  "lifespan": {
-    "title": "อายุการใช้งาน",
-    "description": "นานถึง 12 ชั่วโมง"
-  },
-  "natural": {
-    "title": "ธรรมชาติ 100%",
-    "description": "เป็นมิตรต่อสิ่งแวดล้อม"
-  },
-  "business_opportunity": {
-    "title": "โอกาสทางธุรกิจขายส่ง",
-    "description": "ยกระดับธุรกิจของคุณด้วยคอลเลคชั่นเทียนพรีเมียมของเรา เหมาะสำหรับโรงแรม สปา บูติค และร้านขายของขวัญ",
-    "custom_branding": "มีตัวเลือกการสร้างแบรนด์แบบกำหนดเอง",
-    "no_moq_white_label": "ไม่มี MOQ และบริการ White-Label"
-  },
-  "wholesale_benefits": {
-    "title": "ข้อดีของการซื้อขายส่ง",
-    "competitive_price": "ราคาที่แข่งขันได้",
-    "competitive_price_description": "รับส่วนลดสูงสุด 5% จากราคาขายปลีกสำหรับการสั่งซื้อจำนวนมาก",
-    "exclusive_aromas": "กลิ่นหอมพิเศษ",
-    "exclusive_aromas_description": "เข้าถึงตัวเลือกกลิ่นหอมพิเศษสำหรับลูกค้าขายส่งเท่านั้น",
-    "dedicated_support": "การสนับสนุนเฉพาะ",
-    "dedicated_support_description": "ผู้จัดการบัญชีส่วนตัวสำหรับลูกค้าขายส่ง"
-  },
-  "blog_section": {
-    "title": "เรื่องราวของเรา",
-    "description": "คอลเลกชันบล็อกที่กล่าวถึงแง่มุมต่างๆ ของเทียน ตั้งแต่ประวัติและความหลากหลายของเทียน ไปจนถึงวิธีทำเทียนด้วยตัวเองและวิธีเลือกเทียนที่เหมาะสมสำหรับวัตถุประสงค์ต่างๆ คุณยังจะได้พบกับเรื่องราวที่สร้างแรงบันดาลใจเกี่ยวกับวิธีที่เทียนสามารถเป็นสัญลักษณ์แห่งความหวังและความอบอุ่นในชีวิตประจำวัน มาร่วมสำรวจความมหัศจรรย์ของเทียนด้วยกันและเรียนรู้วิธีใช้เทียนเพื่อส่องสว่างชีวิตของเรา"
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
   },
   "testimonials": {
-    "title": "สิ่งที่ลูกค้าของเราพูดถึง",
-    "sarah_johnson": {
-      "quote": "แขกโรงแรมของเรามักจะชื่นชมกลิ่นหอมในล็อบบี้ของเรา เทียนอโรมาวานิลลาของเราสร้างบรรยากาศที่อบอุ่นและน่าต้อนรับ",
-      "name": "Sarah Johnson",
-      "position": "ผู้จัดการโรงแรม, The Grand Plaza"
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "ในฐานะเจ้าของบูติค ฉันชื่นชมคุณภาพและการนำเสนอของเทียนเหล่านี้มาก เทียนเหล่านี้กลายเป็นผลิตภัณฑ์ของขวัญที่ขายดีที่สุดของเรา!",
-      "name": "Emily Chen",
-      "position": "เจ้าของ, The Curated Corner"
-    },
-    "michael_rodriguez": {
-      "quote": "ระยะเวลาการเผาไหม้ของเทียนนี้ยอดเยี่ยมมากและกลิ่นหอมก็สมบูรณ์แบบ - ไม่ฉุนจนเกินไป ฉันซื้อทุกกลิ่นในคอลเลคชั่นนี้แล้ว!",
-      "name": "Michael Rodriguez",
-      "position": "ลูกค้าประจำ"
-    },
-    "wedding_customer": {
-      "quote": "ขอบคุณ @souvenirlilin สำหรับผลิตภัณฑ์ที่สวยงาม! เทียนที่ฉันซื้อสำหรับงานแต่งงานของฉันช่วยเพิ่มสัมผัสที่สมบูรณ์แบบให้กับงาน และแขกของฉันก็ชอบมันมาก",
-      "name": "ลูกค้า"
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
     }
   },
-  "about_us": {
-    "content": "# เกี่ยวกับ เทียนล้านเล่ม\n\nเทียนล้านเล่ม เป็นบริษัทผลิตเทียนจากยอกยาการ์ตาที่นำเสนอเทียนหลากหลายประเภทด้วยดีไซน์ที่เป็นเอกลักษณ์และมีคุณภาพสูง เราใช้วัตถุดิบคุณภาพสูงและเทคนิคการผลิตที่ดีเพื่อสร้างเทียนที่สวยงามและมีกลิ่นหอม\n\nเรามีเทียนให้เลือกหลากหลาย ตั้งแต่เทียนขนาดเล็กไปจนถึงเทียนขนาดใหญ่ที่สามารถใช้สำหรับงานพิเศษต่างๆ เช่น งานแต่งงาน งานเลี้ยงวันเกิด งานพิธีทางศาสนา หรือไฟดับ นอกจากนี้ เรายังมีเทียนหอมที่สามารถใช้สร้างบรรยากาศที่ผ่อนคลายในบ้านของคุณ\n\nเรามีสีสันและการออกแบบที่หลากหลายให้คุณเลือกสรรตามความชอบของคุณ นอกจากนี้ เรายังสามารถผลิตเทียนที่มีการออกแบบตามความต้องการของคุณได้อีกด้วย\n\nเราให้ความสำคัญกับคุณภาพและความปลอดภัยของลูกค้าเป็นอย่างยิ่ง ดังนั้นเราจึงพยายามใช้วัตถุดิบที่ปลอดภัยและไม่ทำลายสิ่งแวดล้อมเสมอมา\n\nหากคุณต้องการเพิ่มบรรยากาศโรแมนติกให้กับบ้านของคุณ หรือกำลังมองหาของขวัญที่ไม่เหมือนใครสำหรับงานพิเศษ อย่าลังเลที่จะเยี่ยมชมเว็บไซต์ของเราและดูตัวเลือกเทียนที่เรานำเสนอ เรายินดีที่จะช่วยคุณค้นหาเทียนที่เหมาะสมกับความต้องการของคุณ"
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
   },
-  "gallery": {
-    "title": "แกลเลอรี่",
-    "description": "คอลเลกชันรูปภาพและวิดีโอผลิตภัณฑ์ของเรา"
-  },
-  "blog": {
-    "title": "คอลเลกชันเรื่องราวและเคล็ดลับเกี่ยวกับเทียน",
-    "description": "คอลเลกชันบล็อกที่กล่าวถึงแง่มุมต่างๆ ของเทียน ตั้งแต่ประวัติและความหลากหลายของเทียน ไปจนถึงวิธีทำเทียนด้วยตัวเองและวิธีเลือกเทียนที่เหมาะสมสำหรับวัตถุประสงค์ต่างๆ",
-    "not_found": {
-      "title": "ไม่พบบทความ",
-      "description": "ลองเปลี่ยนคำหลักการค้นหาหรือหมวดหมู่ที่เลือก"
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
     }
   },
-  "footer": {
-    "about": "เกี่ยวกับเรา",
-    "profile": "ข้อมูลบริษัท",
-    "careers": "ร่วมงานกับเรา",
-    "blog": "บล็อก",
-    "contact": "ติดต่อเรา",
-    "help": "ความช่วยเหลือ",
-    "howToBuy": "วิธีสั่งซื้อ",
-    "payment": "การชำระเงิน",
-    "shipping": "การจัดส่ง",
-    "returns": "การคืนสินค้า",
-    "faq": "คำถามที่พบบ่อย",
-    "info": "ข้อมูล",
-    "terms": "ข้อกำหนดและเงื่อนไข",
-    "privacy": "นโยบายความเป็นส่วนตัว",
-    "shippingPolicy": "นโยบายการจัดส่ง",
-    "returnPolicy": "นโยบายการคืนสินค้า"
+  "navbar": {
+    "products": "Products",
+    "industry": "Industries",
+    "articles": "Articles & News",
+    "learning": "Education",
+    "blog": "Blog",
+    "events": "Events",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "about": "About Us"
   },
-  "social": {
-    "instagram": "อินสตาแกรม",
-    "facebook": "เฟซบุ๊ก",
-    "twitter": "ทวิตเตอร์",
-    "whatsapp": "วอทส์แอป"
-  },
-  "payment": {
-    "bca": "บีซีเอ",
-    "mandiri": "แมนดิริ",
-    "bni": "บีเอ็นไอ",
-    "bri": "บีอาร์ไอ"
-  },
-  "stats": {
-    "title": "ผลกระทบของเราในตัวเลข",
-    "subtitle": "ตั้งแต่ปี 2550 เราได้ส่องสว่างบ้านเรือนทั่วประเทศไทยด้วยเทียนทำมือของเรา",
-    "candlesProduced": {
-      "label": "ผลิตเทียนต่อวัน",
-      "description": "โรงงานผลิตที่มีประสิทธิภาพสูงของเรา"
+  "mega_menu": {
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "view_all": "View All Products",
+      "view_all_desc": "Explore all the products we offer."
     },
-    "candleVariants": {
-      "label": "รูปแบบเทียน",
-      "description": "กลิ่น ดีไซน์ และสไตล์ที่เป็นเอกลักษณ์"
+    "news": {
+      "title": "News",
+      "tech": "Tech News",
+      "breaking": "Breaking News",
+      "breaking_desc": "Latest tech updates",
+      "industry": "Industry Reports",
+      "industry_desc": "Market analysis",
+      "company": "Company Updates",
+      "company_desc": "Business news",
+      "categories": "Categories",
+      "software": "Software",
+      "software_desc": "Software development news",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware innovations",
+      "mobile": "Mobile",
+      "mobile_desc": "Mobile technology",
+      "trending": "Trending",
+      "ai_rev": "AI Revolution",
+      "ai_rev_desc": "AI developments",
+      "web3": "Web3 Updates",
+      "web3_desc": "Blockchain & crypto",
+      "devops": "DevOps News",
+      "devops_desc": "Development operations"
     },
-    "yearsOfExcellence": {
-      "label": "ปีแห่งความเป็นเลิศ",
-      "value": "ตั้งแต่ปี 2550",
-      "description": "17+ ปีแห่งการทำเทียนพรีเมียม"
+    "startups": {
+      "title": "Startups",
+      "news": "Startup News",
+      "funding": "Funding Rounds",
+      "funding_desc": "Investment updates",
+      "launches": "New Launches",
+      "launches_desc": "Product launches",
+      "success": "Success Stories",
+      "success_desc": "Inspiring journeys",
+      "resources": "Resources",
+      "guide": "Startup Guide",
+      "guide_desc": "How to get started",
+      "investors": "Investor Network",
+      "investors_desc": "Find investors",
+      "mentorship": "Mentorship",
+      "mentorship_desc": "Get expert guidance"
     },
-    "cities": {
-      "label": "ให้บริการทั่วประเทศไทย",
-      "value": "เมืองใหญ่",
-      "description": "เช่น กรุงเทพฯ เชียงใหม่ และอื่นๆ"
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Phone reviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computer reviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches & more",
+      "buying_guides": "Buying Guides",
+      "deals": "Best Deals",
+      "deals_desc": "Current promotions",
+      "compare": "Comparisons",
+      "compare_desc": "Product comparisons",
+      "recommended": "Recommendations",
+      "recommended_desc": "Editor's choice"
     },
-    "candlesSold": {
-      "label": "เทียนที่ขายได้ต่อปี",
-      "description": "ได้รับความไว้วางใจจากบ้านเรือนและธุรกิจต่างๆ"
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Web Development",
+      "react_desc": "Learn React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobile Development",
+      "rn_desc": "Mobile applications",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift & Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programming",
+      "db_desc": "SQL & NoSQL"
     },
-    "quality": {
-      "label": "รับประกันคุณภาพ",
-      "description": "มุ่งมั่นสู่ความเป็นเลิศ"
+    "ai": {
+      "title": "AI",
+      "news": "AI News",
+      "ml_desc": "ML developments",
+      "tools": "AI Tools",
+      "tools_desc": "Latest AI tools",
+      "research": "Research",
+      "research_desc": "Academic papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Getting Started",
+      "getting_started_desc": "AI basics",
+      "deep_learning": "Deep Learning",
+      "deep_learning_desc": "Neural networks",
+      "ethics": "AI Ethics",
+      "ethics_desc": "Responsible AI",
+      "productivity": "Productivity",
+      "image_editor": "Image Editor",
+      "image_desc": "Crop, resize, etc.",
+      "pdf_editor": "PDF Editor",
+      "pdf_desc": "Edit and convert PDFs.",
+      "other_tools": "AI & Other Tools",
+      "ai_long": "Artificial Intelligence (AI)",
+      "ai_desc": "Explore the latest developments in AI."
+    },
+    "categories": {
+      "articles": "Articles & News",
+      "main_news": "Top Stories",
+      "tech_innovation": "News (Tech & Innovation)",
+      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiration from the startup world.",
+      "gadget_reviews": "Gadget Reviews",
+      "gadget_reviews_desc": "Reviews and buying guides.",
+      "special_issues": "Special Topics",
+      "cyber_art": "Cybersecurity Articles",
+      "cyber_art_desc": "Digital security tips.",
+      "all_art": "All Articles",
+      "all_art_desc": "View all blog posts.",
+      "learning": "Learning & Guides",
+      "guides": "Guides",
+      "tutorial_desc": "Step-by-step learning guides.",
+      "classes": "Courses",
+      "cyber_course": "Cybersecurity Course",
+      "cyber_course_desc": "Latest cybersecurity classes.",
+      "llm_course": "AI LLM Course",
+      "llm_desc": "Prompt engineering for LLMs.",
+      "ai_eng": "AI Engineer Course",
+      "ai_eng_desc": "In-depth AI engineering."
     }
   }
 }

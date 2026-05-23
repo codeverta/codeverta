@@ -1,41 +1,41 @@
 {
   "header": {
     "title": "Codeverta",
-    "subtitle": "Pengeluar lilin pilihan untuk saat-saat istimewa anda"
+    "subtitle": "Professional software, website, and IT service ordering"
   },
   "howToOrder": {
-    "title": "Cara Memesan Produk Lilin",
+    "title": "How to Order Codeverta Services",
     "step1": {
-      "title": "1. Hubungi Kami",
-      "description": "Sila hubungi kami melalui WhatsApp di nombor",
-      "phone": "081578956156",
-      "contactNote": "untuk memulakan pesanan anda. Kami akan membantu dengan maklumat produk dan ketersediaan stok."
+      "title": "1. Contact Us",
+      "description": "Contact our team via WhatsApp or email to tell us about your project goals, timeline, and business needs.",
+      "phone": "+62881011692615",
+      "contactNote": "We will help clarify the scope, recommended solution, and next steps."
     },
     "step2": {
-      "title": "2. Pilih Cara Pengambilan",
-      "description": "Terdapat dua pilihan yang tersedia untuk mendapatkan produk kami:",
-      "pickupTitle": "Ambil di lokasi",
-      "pickupDescription": "Kunjungi kedai kami di Jalan Kaliurang KM 9, Sleman, Yogyakarta",
-      "deliveryTitle": "Penghantaran",
-      "deliveryDescription": "Kami boleh menghantar melalui Gojek, Grab, atau perkhidmatan penghantaran lain",
-      "note": "*Pesanan dalam kuantiti yang banyak memerlukan tempahan terlebih dahulu"
+      "title": "2. Consultation and Scope",
+      "description": "We review your requirements and prepare a suitable technical approach.",
+      "pickupTitle": "Online Consultation",
+      "pickupDescription": "Discuss remotely with our team from anywhere.",
+      "deliveryTitle": "On-site or Dedicated Session",
+      "deliveryDescription": "Available by appointment for selected projects and locations.",
+      "note": "*Larger projects may require a written scope of work before estimation."
     },
     "step3": {
-      "title": "3. Pembayaran DP",
-      "description": "Untuk pesanan dalam kuantiti yang banyak, anda perlu membayar Deposit (DP) sekurang-kurangnya 30% daripada jumlah harga untuk pengesahan pesanan. Pembayaran boleh dilakukan melalui pindahan bank."
+      "title": "3. Proposal and Down Payment",
+      "description": "After the scope is agreed, we send a proposal and invoice. A down payment is required before production begins."
     },
     "step4": {
-      "title": "4. Penghantaran & Pelunasan",
-      "description": "Untuk penghantaran, pembayaran mesti dilunaskan sebelum produk dihantar. Kami akan memberikan maklumat apabila pesanan anda sedia untuk dihantar serta nombor resi penghantaran jika ada."
+      "title": "4. Development and Review",
+      "description": "Our team builds the solution in milestones, shares progress updates, and collects feedback before final delivery."
     },
     "step5": {
-      "title": "5. Waktu Pengeluaran",
-      "description": "Tempoh masa pesanan bergantung pada jumlah lilin yang anda pesan. Untuk pesanan kecil, biasanya siap dalam 1-3 hari. Untuk pesanan besar, kami akan memberikan anggaran waktu setelah berunding dengan anda."
+      "title": "5. Launch and Support",
+      "description": "After final payment, we help launch the project and provide support according to the agreed warranty or maintenance plan."
     }
   },
   "cta": {
-    "title": "Bersedia untuk Memesan?",
-    "subtitle": "Hubungi kami sekarang untuk mendapatkan lilin aromaterapi berkualiti tinggi!",
-    "button": "Hubungi melalui WhatsApp"
+    "title": "Ready to start?",
+    "subtitle": "Talk with Codeverta and get a clear plan for your digital product.",
+    "button": "Contact via WhatsApp"
   }
 }

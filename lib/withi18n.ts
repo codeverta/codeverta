@@ -6,7 +6,7 @@ export function withI18n(
   gssp: GetStaticProps | null = null
 ) {
   return async (context) => {
-    const { locale } = context;
+    const locale = context.locale ?? context.defaultLocale ?? "id";
     const i18nProps = await serverSideTranslations(locale, namespaces);
 
     // Jika ada logic getStaticProps tambahan di halaman

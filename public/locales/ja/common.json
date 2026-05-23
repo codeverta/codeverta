@@ -1,185 +1,232 @@
 {
-  "brand": "ミリオンキャンドルズ",
-  "flag": "🇯🇵",
-  "menu": {
-    "login": "ログイン",
-    "home": "ホーム",
-    "products": "製品",
-    "how_to_order": "注文方法",
-    "address": "住所",
-    "blog": "ブログ",
-    "gallery": "ギャラリー",
-    "about": "会社情報"
+  "our_products": "Our Products",
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Software Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
   },
-  "address": {
-    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesia"
-  },
-  "tagline": {
-    "local_producer": "ローカルキャンドルメーカー",
-    "national_scale": "ナショナルスケール"
-  },
-  "description": "アロマキャンドル、ギフトキャンドル、カラフルキャンドル、装飾用キャンドル、礼拝用キャンドル、スピリチュアルキャンドル、キャンドルメイキングなど、様々な高品質キャンドルを提供しています。結婚式、企業イベント、旅行のお土産など、あらゆるイベントに最適な美しい装飾キャンドルをご用意しています。",
-  "how_to_order_candles": "キャンドルの注文方法",
-  "whatsapp": "WhatsApp",
-  "our_products": "私たちの製品",
-  "other_products": "その他の製品",
-  "disclaimer_price": "* 表示価格は卸売価格です",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
-    "eco_friendly": "エコフレンドリー",
-    "made_from": "100% 天然パームワックスとエッセンシャルオイル製",
-    "handmade": "手作り",
-    "crafted_with_love": "職人の心で丁寧に製作",
-    "long_lasting": "長持ち",
-    "burn_time": "最大12時間の燃焼時間",
-    "handcrafted_with_love": "愛情込めて手作り",
-    "make_beautiful_memories": "美しい思い出を作る",
-    "our_candle": "私たちのキャンドルと共に",
-    "souvenir_description": "私たちの装飾用ギフトキャンドルで、あなたのイベントや旅の思い出をさらに特別にしましょう。高級素材とアーティストによる美しい装飾で仕上げています。"
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
   },
-  "shipping": {
-    "package": "キャンドル配送パッケージ",
-    "fast_shipping": "迅速な配送",
-    "nationwide": "インドネシア全土対応"
+  "portfolio": {
+    "title": "Projects We Have Worked On",
+    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
   },
-  "premium_collection": {
-    "title": "プレミアムコレクション",
-    "subtitle": "アロマキャンドル製品",
-    "description": "最高級の天然素材を使った手作りアロマキャンドルの美しさと恩恵をお楽しみください。"
-  },
-  "quality_section": {
-    "product_quality": "製品の品質",
-    "product_quality_description": "高品質素材のみを使用し、安全性と耐久性を確保するために厳しくテストされた装飾キャンドルを製造しています。各キャンドルは才能あるアーティストによって美しく、独創的に仕上げられています。",
-    "size_and_color": "サイズとカラー",
-    "size_and_color_description": "装飾キャンドルは、小型から大型まで様々なサイズがあり、ホワイト、ブルー、グリーン、レッドなど多彩なカラーでイベントテーマに合わせて選べます。",
-    "calming_aroma": "リラックス効果のある香り",
-    "calming_aroma_description": "装飾キャンドルはリラックスできる香りも提供し、心の平穏をもたらします。高級フレグランスオイルを使用し、長持ちする香りを実現しています。"
-  },
-  "lifespan": {
-    "title": "寿命",
-    "description": "最大12時間"
-  },
-  "natural": {
-    "title": "100% 天然",
-    "description": "環境に優しい"
-  },
-  "business_opportunity": {
-    "title": "卸売ビジネスチャンス",
-    "description": "プレミアムキャンドルコレクションでビジネスを拡大しましょう。ホテル、スパ、ブティック、ギフトショップに最適です。",
-    "custom_branding": "カスタムブランディングオプションあり",
-    "no_moq_white_label": "最小注文数なしでホワイトラベル対応"
-  },
-  "wholesale_benefits": {
-    "title": "卸売のメリット",
-    "competitive_price": "競争力のある価格",
-    "competitive_price_description": "大量注文で小売価格より最大5%割引",
-    "exclusive_aromas": "限定フレグランス",
-    "exclusive_aromas_description": "卸売顧客専用の香りラインアップを提供",
-    "dedicated_support": "専任サポート",
-    "dedicated_support_description": "卸売顧客向けの専任マネージャーがサポート"
-  },
-  "blog_section": {
-    "title": "私たちのストーリー",
-    "description": "キャンドルの歴史、種類、手作り方法、目的別の選び方など、様々なテーマを取り上げたブログコレクションです。日常に希望と温もりをもたらすキャンドルの感動的な物語も紹介しています。キャンドルの魔法を一緒に探検しましょう。"
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
   },
   "testimonials": {
-    "title": "お客様の声",
-    "sarah_johnson": {
-      "quote": "ホテルのロビーの香りについて、ゲストからいつもお褒めの言葉をいただきます。バニラアロマキャンドルがとても温かい雰囲気を作り出してくれます。",
-      "name": "サラ・ジョンソン",
-      "position": "ホテルマネージャー、ザ・グランドプラザ"
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "ブティックオーナーとして、これらのキャンドルの品質とプレゼンテーションに非常に満足しています。ベストセラーギフト商品となりました！",
-      "name": "エミリー・チェン",
-      "position": "オーナー、ザ・キュレイテッドコーナー"
-    },
-    "michael_rodriguez": {
-      "quote": "このキャンドルは燃焼時間が長く、香りも完璧です — 強すぎずちょうどいいです。コレクションの全種類を購入しました！",
-      "name": "マイケル・ロドリゲス",
-      "position": "ロイヤルカスタマー"
-    },
-    "wedding_customer": {
-      "quote": "@souvenirlilin さんのおかげで素晴らしい製品を購入できました！結婚式のためのキャンドルがイベントに完璧なアクセントとなり、ゲストにも大好評でした。",
-      "name": "お客様"
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
     }
   },
-  "about_us": {
-    "content": "# Codevertaについて\n\nCodevertaは、ジョグジャカルタ発のキャンドル会社で、ユニークで高品質なデザインのさまざまなキャンドルを提供しています。私たちは高品質な素材と優れた製造技術を使用して、美しく香り高いキャンドルを作り上げています。\n\n小さなキャンドルから結婚式、誕生日パーティー、教会の式典、停電時など特別なイベントで使用できる大きなキャンドルまで、幅広いラインナップをご用意しています。さらに、自宅でリラックスした雰囲気を演出できる香り付きキャンドルも取り揃えています。\n\nお客様の好みに合わせてカスタマイズできるさまざまなカラーやデザインを取り揃えており、オリジナルデザインのキャンドル制作も承ります。\n\n私たちは品質とお客様の安全を非常に重視しており、常に安全で環境に優しい素材を使用するよう努めています。\n\nご自宅にロマンチックな雰囲気を加えたい方や、特別なイベントにぴったりのユニークなギフトをお探しの方は、ぜひ私たちのウェブサイトをご覧ください。あなたにぴったりのキャンドル探しをお手伝いさせていただきます。"
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
   },
-  "blog": {
-    "title": "キャンドルに関する物語とヒントのコレクション",
-    "description": "キャンドルの歴史や種類から、自分でキャンドルを作る方法、さまざまな用途に適したキャンドルの選び方まで、さまざまな側面を紹介するブログのコレクションです。",
-    "not_found": {
-      "title": "記事が見つかりませんでした",
-      "description": "検索キーワードまたは選択したカテゴリを変更してみてください"
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
     }
   },
-  "gallery": {
-    "title": "ギャラリー",
-    "description": "私たちの製品の写真とビデオのコレクション"
+  "navbar": {
+    "products": "Products",
+    "industry": "Industries",
+    "articles": "Articles & News",
+    "learning": "Education",
+    "blog": "Blog",
+    "events": "Events",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "about": "About Us"
   },
-  "stats": {
-    "title": "数字で見る私たちの影響力",
-    "subtitle": "2007年からインドネシア全土の家庭を手作りキャンドルで照らしています",
-    "candlesProduced": {
-      "label": "1日あたりのキャンドル生産数",
-      "description": "高効率な生産施設"
+  "mega_menu": {
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "view_all": "View All Products",
+      "view_all_desc": "Explore all the products we offer."
     },
-    "candleVariants": {
-      "label": "キャンドルの種類",
-      "description": "ユニークな香り、デザイン、スタイル"
+    "news": {
+      "title": "News",
+      "tech": "Tech News",
+      "breaking": "Breaking News",
+      "breaking_desc": "Latest tech updates",
+      "industry": "Industry Reports",
+      "industry_desc": "Market analysis",
+      "company": "Company Updates",
+      "company_desc": "Business news",
+      "categories": "Categories",
+      "software": "Software",
+      "software_desc": "Software development news",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware innovations",
+      "mobile": "Mobile",
+      "mobile_desc": "Mobile technology",
+      "trending": "Trending",
+      "ai_rev": "AI Revolution",
+      "ai_rev_desc": "AI developments",
+      "web3": "Web3 Updates",
+      "web3_desc": "Blockchain & crypto",
+      "devops": "DevOps News",
+      "devops_desc": "Development operations"
     },
-    "yearsOfExcellence": {
-      "label": "卓越の年数",
-      "value": "2007年から",
-      "description": "17年以上のプレミアムキャンドル制作"
+    "startups": {
+      "title": "Startups",
+      "news": "Startup News",
+      "funding": "Funding Rounds",
+      "funding_desc": "Investment updates",
+      "launches": "New Launches",
+      "launches_desc": "Product launches",
+      "success": "Success Stories",
+      "success_desc": "Inspiring journeys",
+      "resources": "Resources",
+      "guide": "Startup Guide",
+      "guide_desc": "How to get started",
+      "investors": "Investor Network",
+      "investors_desc": "Find investors",
+      "mentorship": "Mentorship",
+      "mentorship_desc": "Get expert guidance"
     },
-    "cities": {
-      "label": "インドネシア全域対応",
-      "value": "主要都市",
-      "description": "ジャカルタ、バリなど"
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Phone reviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computer reviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches & more",
+      "buying_guides": "Buying Guides",
+      "deals": "Best Deals",
+      "deals_desc": "Current promotions",
+      "compare": "Comparisons",
+      "compare_desc": "Product comparisons",
+      "recommended": "Recommendations",
+      "recommended_desc": "Editor's choice"
     },
-    "candlesSold": {
-      "label": "年間販売キャンドル数",
-      "description": "家庭と企業からの信頼"
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Web Development",
+      "react_desc": "Learn React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobile Development",
+      "rn_desc": "Mobile applications",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift & Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programming",
+      "db_desc": "SQL & NoSQL"
     },
-    "quality": {
-      "label": "品質保証",
-      "description": "卓越性への取り組み"
+    "ai": {
+      "title": "AI",
+      "news": "AI News",
+      "ml_desc": "ML developments",
+      "tools": "AI Tools",
+      "tools_desc": "Latest AI tools",
+      "research": "Research",
+      "research_desc": "Academic papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Getting Started",
+      "getting_started_desc": "AI basics",
+      "deep_learning": "Deep Learning",
+      "deep_learning_desc": "Neural networks",
+      "ethics": "AI Ethics",
+      "ethics_desc": "Responsible AI",
+      "productivity": "Productivity",
+      "image_editor": "Image Editor",
+      "image_desc": "Crop, resize, etc.",
+      "pdf_editor": "PDF Editor",
+      "pdf_desc": "Edit and convert PDFs.",
+      "other_tools": "AI & Other Tools",
+      "ai_long": "Artificial Intelligence (AI)",
+      "ai_desc": "Explore the latest developments in AI."
+    },
+    "categories": {
+      "articles": "Articles & News",
+      "main_news": "Top Stories",
+      "tech_innovation": "News (Tech & Innovation)",
+      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiration from the startup world.",
+      "gadget_reviews": "Gadget Reviews",
+      "gadget_reviews_desc": "Reviews and buying guides.",
+      "special_issues": "Special Topics",
+      "cyber_art": "Cybersecurity Articles",
+      "cyber_art_desc": "Digital security tips.",
+      "all_art": "All Articles",
+      "all_art_desc": "View all blog posts.",
+      "learning": "Learning & Guides",
+      "guides": "Guides",
+      "tutorial_desc": "Step-by-step learning guides.",
+      "classes": "Courses",
+      "cyber_course": "Cybersecurity Course",
+      "cyber_course_desc": "Latest cybersecurity classes.",
+      "llm_course": "AI LLM Course",
+      "llm_desc": "Prompt engineering for LLMs.",
+      "ai_eng": "AI Engineer Course",
+      "ai_eng_desc": "In-depth AI engineering."
     }
-  },
-  "footer": {
-    "about": "私たちについて",
-    "profile": "会社概要",
-    "careers": "採用情報",
-    "blog": "ブログ",
-    "contact": "お問い合わせ",
-    "help": "ヘルプ",
-    "howToBuy": "購入方法",
-    "payment": "お支払い",
-    "shipping": "配送",
-    "returns": "返品",
-    "faq": "よくある質問",
-    "info": "情報",
-    "terms": "利用規約",
-    "privacy": "プライバシーポリシー",
-    "shippingPolicy": "配送ポリシー",
-    "returnPolicy": "返品ポリシー"
-  },
-  "social": {
-    "instagram": "インスタグラム",
-    "facebook": "フェイスブック",
-    "twitter": "ツイッター",
-    "whatsapp": "ワッツアップ"
-  },
-  "payment": {
-    "bca": "BCA",
-    "mandiri": "Mandiri",
-    "bni": "BNI",
-    "bri": "BRI"
-  },
-  "about": {
-    "map_title": "当社のキャンドルはインドネシア全土で信頼されています",
-    "map_description": "スマトラからパプアまで、当社のキャンドルはインドネシア各地の家庭や企業に暖かさ、光、そして安らぎを届けてきました。地図上の各地点は、物語、瞬間、そして私たちの職人技の輝きを信頼してくださる忠実なお客様を表しています。"
   }
 }

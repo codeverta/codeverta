@@ -1,41 +1,41 @@
 {
   "header": {
     "title": "Codeverta",
-    "subtitle": "特別な瞬間のための信頼できるキャンドルメーカー"
+    "subtitle": "Professional software, website, and IT service ordering"
   },
   "howToOrder": {
-    "title": "キャンドルの注文方法",
+    "title": "How to Order Codeverta Services",
     "step1": {
-      "title": "1. お問い合わせ",
-      "description": "WhatsAppでご連絡ください：",
-      "phone": "081578956156",
-      "contactNote": "ご注文を開始するためにご案内いたします。商品情報や在庫状況をご提供します。"
+      "title": "1. Contact Us",
+      "description": "Contact our team via WhatsApp or email to tell us about your project goals, timeline, and business needs.",
+      "phone": "+62881011692615",
+      "contactNote": "We will help clarify the scope, recommended solution, and next steps."
     },
     "step2": {
-      "title": "2. 受取方法の選択",
-      "description": "商品の受け取り方法は2種類あります：",
-      "pickupTitle": "店舗受け取り",
-      "pickupDescription": "当店住所：インドネシア、ジョグジャカルタ、スレマン、カリウランKM9",
-      "deliveryTitle": "配達サービス",
-      "deliveryDescription": "Gojek、Grab、その他配送サービスにて配送可能",
-      "note": "*大量注文は事前予約が必要です"
+      "title": "2. Consultation and Scope",
+      "description": "We review your requirements and prepare a suitable technical approach.",
+      "pickupTitle": "Online Consultation",
+      "pickupDescription": "Discuss remotely with our team from anywhere.",
+      "deliveryTitle": "On-site or Dedicated Session",
+      "deliveryDescription": "Available by appointment for selected projects and locations.",
+      "note": "*Larger projects may require a written scope of work before estimation."
     },
     "step3": {
-      "title": "3. 内金のお支払い",
-      "description": "大量注文の場合、合計金額の30％以上の内金（DP）が必要です。銀行振込でお支払いいただけます。"
+      "title": "3. Proposal and Down Payment",
+      "description": "After the scope is agreed, we send a proposal and invoice. A down payment is required before production begins."
     },
     "step4": {
-      "title": "4. 配送と残金支払い",
-      "description": "配送には全額支払いが必要です。商品準備が完了次第ご連絡し、追跡番号を提供します（可能な場合）。"
+      "title": "4. Development and Review",
+      "description": "Our team builds the solution in milestones, shares progress updates, and collects feedback before final delivery."
     },
     "step5": {
-      "title": "5. 生産期間",
-      "description": "生産期間は注文数量によります。少量注文は通常1〜3日で準備可能です。大量注文はご相談後、見積もりをお知らせします。"
+      "title": "5. Launch and Support",
+      "description": "After final payment, we help launch the project and provide support according to the agreed warranty or maintenance plan."
     }
   },
   "cta": {
-    "title": "今すぐ注文しませんか？",
-    "subtitle": "高品質なアロマキャンドルを今すぐご注文ください！",
-    "button": "WhatsAppで連絡"
+    "title": "Ready to start?",
+    "subtitle": "Talk with Codeverta and get a clear plan for your digital product.",
+    "button": "Contact via WhatsApp"
   }
 }

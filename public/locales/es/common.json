@@ -1,183 +1,232 @@
 {
-  "brand": "Codeverta",
-  "flag": "🇪🇸",
-  "menu": {
-    "login": "Iniciar sesión",
-    "home": "Inicio",
-    "products": "Productos",
-    "how_to_order": "Cómo pedir",
-    "address": "Dirección",
-    "blog": "Blog",
-    "gallery": "Galería",
-    "about": "Acerca de"
+  "our_products": "Our Products",
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Software Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
   },
-  "address": {
-    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesia"
-  },
-  "tagline": {
-    "local_producer": "Productor local de velas",
-    "national_scale": "A escala nacional"
-  },
-  "description": "Somos un proveedor que ofrece una amplia variedad de velas de alta calidad, como velas aromáticas, velas de recuerdo, velas de colores, velas decorativas, velas de culto, velas religiosas, fábrica de velas y mucho más. Ofrecemos hermosas velas decorativas como recuerdos perfectos para cualquier ocasión. Desde bodas hasta eventos corporativos o viajes, nuestras velas decorativas de recuerdo son la elección correcta para crear recuerdos inolvidables.",
-  "how_to_order_candles": "Cómo pedir velas",
-  "whatsapp": "WhatsApp",
-  "our_products": "Nuestros productos",
-  "other_products": "Otros productos",
-  "disclaimer_price": "* Los precios mostrados son precios de distribuidor/mayorista",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
-    "eco_friendly": "Ecológico",
-    "made_from": "Hecho de cera de palma 100% natural y aceites esenciales",
-    "handmade": "Hecho a mano",
-    "crafted_with_love": "Cada vela es vertida cuidadosamente por nuestros artesanos",
-    "long_lasting": "De larga duración",
-    "burn_time": "Hasta 12 horas de tiempo de combustión por cada vela",
-    "handcrafted_with_love": "Hecho a mano con amor",
-    "make_beautiful_memories": "Crea hermosos recuerdos con",
-    "our_candle": "Nuestras velas",
-    "souvenir_description": "Con nuestras velas decorativas de recuerdo, puedes llevarte a casa hermosos recuerdos de tus eventos o viajes. Cada una de nuestras velas está hecha con materiales de alta calidad y bellamente decorada por nuestros artistas."
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
   },
-  "shipping": {
-    "package": "Paquete de envío de velas",
-    "fast_shipping": "Envío rápido",
-    "nationwide": "A toda Indonesia"
+  "portfolio": {
+    "title": "Projects We Have Worked On",
+    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
   },
-  "premium_collection": {
-    "title": "Colección Premium",
-    "subtitle": "Nuestros productos de velas aromáticas",
-    "description": "Disfruta de la belleza y los beneficios de nuestras velas aromáticas hechas a mano con los mejores ingredientes naturales."
-  },
-  "quality_section": {
-    "product_quality": "Calidad del producto",
-    "product_quality_description": "Solo utilizamos materiales de alta calidad para hacer nuestras velas decorativas, y cada uno de nuestros productos se prueba para garantizar su seguridad y durabilidad. También contamos con un equipo de artistas talentosos que decoran cada vela con diseños hermosos y únicos, lo que las convierte en un recuerdo especial.",
-    "size_and_color": "Tamaño y color",
-    "size_and_color_description": "Nuestras velas decorativas vienen en una variedad de tamaños, desde pequeñas y portátiles hasta grandes y hermosas. También tenemos una variedad de colores diferentes, incluyendo blanco, azul, verde, rojo y muchos más, para que puedas elegir el que combine con el tema de tu evento.",
-    "calming_aroma": "Aroma relajante",
-    "calming_aroma_description": "Nuestras velas decorativas también brindan un aroma relajante, trayendo paz y tranquilidad a la habitación. Utilizamos aceites de fragancia de alta calidad para proporcionar un aroma duradero y agradable."
-  },
-  "lifespan": {
-    "title": "Vida útil",
-    "description": "Hasta 12 horas"
-  },
-  "natural": {
-    "title": "100% Natural",
-    "description": "Respetuoso con el medio ambiente"
-  },
-  "business_opportunity": {
-    "title": "Oportunidad de negocio al por mayor",
-    "description": "Impulsa tu negocio con nuestra colección de velas premium. Perfecta para hoteles, spas, boutiques y tiendas de regalos.",
-    "custom_branding": "Opciones de marca personalizada disponibles",
-    "no_moq_white_label": "Sin MOQ y servicio de marca blanca"
-  },
-  "wholesale_benefits": {
-    "title": "Beneficios de la compra al por mayor",
-    "competitive_price": "Precios competitivos",
-    "competitive_price_description": "Obtén hasta un 5% de descuento sobre el precio minorista para pedidos grandes",
-    "exclusive_aromas": "Aromas exclusivos",
-    "exclusive_aromas_description": "Acceso a una selección de fragancias exclusivas solo para clientes mayoristas",
-    "dedicated_support": "Soporte dedicado",
-    "dedicated_support_description": "Administradores de cuenta personales para clientes mayoristas"
-  },
-  "blog_section": {
-    "title": "Nuestras historias",
-    "description": "Una colección de publicaciones de blog que cubren varios aspectos de las velas, desde la historia y los diferentes tipos de velas, hasta cómo hacer tus propias velas y cómo elegir las velas adecuadas para diferentes propósitos. También encontrarás historias inspiradoras sobre cómo las velas pueden convertirse en un símbolo de esperanza y calidez en la vida cotidiana. Exploremos juntos la magia de las velas y aprendamos cómo usarlas para iluminar nuestras vidas."
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
   },
   "testimonials": {
-    "title": "Lo que dicen nuestros clientes",
-    "sarah_johnson": {
-      "quote": "Nuestros huéspedes del hotel siempre elogian el agradable aroma en nuestro vestíbulo. Nuestras velas aromáticas de vainilla crean un ambiente muy acogedor.",
-      "name": "Sarah Johnson",
-      "position": "Gerente de hotel, The Grand Plaza"
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "Como dueña de una boutique, realmente aprecio la calidad y la presentación de estas velas. ¡Se han convertido en nuestros productos de regalo más vendidos!",
-      "name": "Emily Chen",
-      "position": "Propietaria, The Curated Corner"
-    },
-    "michael_rodriguez": {
-      "quote": "El tiempo de combustión de estas velas es increíble y el aroma es perfecto, no demasiado fuerte. ¡Ya he comprado todas las variantes de esta colección!",
-      "name": "Michael Rodriguez",
-      "position": "Cliente fiel"
-    },
-    "wedding_customer": {
-      "quote": "¡Gracias @souvenirlilin por los hermosos productos! Las velas que compré para mi boda realmente agregaron el toque perfecto al evento, y a mis invitados les encantaron.",
-      "name": "Cliente"
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
     }
   },
-  "about_us": {
-    "content": "# Acerca de Codeverta\n\nCodeverta es una empresa de velas con sede en Yogyakarta que ofrece una amplia variedad de velas con diseños únicos y de alta calidad. Utilizamos materiales de alta calidad y buenas técnicas de fabricación para crear velas hermosas y fragantes.\n\nOfrecemos una amplia selección de velas, desde velas pequeñas hasta velas grandes que se pueden utilizar para eventos especiales como bodas, fiestas de cumpleaños, servicios religiosos o cortes de energía. Además, también ofrecemos velas perfumadas que se pueden utilizar para crear un ambiente relajante en tu hogar.\n\nTenemos una variedad de colores y diseños para elegir que se pueden personalizar según tu gusto. También podemos hacer velas con diseños que se ajusten a tus deseos.\n\nValoramos mucho la calidad y la seguridad de nuestros clientes, por lo que siempre nos esforzamos por utilizar materiales seguros y respetuosos con el medio ambiente.\n\nSi deseas agregar un ambiente romántico a tu hogar o estás buscando un regalo único para un evento especial, no dudes en visitar nuestro sitio web y ver la selección de velas que ofrecemos. Estaremos encantados de ayudarte a encontrar las velas adecuadas para tus necesidades."
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
   },
-  "gallery": {
-    "title": "Galería",
-    "description": "Una colección de fotos y videos de nuestros productos"
-  },
-  "blog": {
-    "title": "Una colección de historias y consejos sobre velas",
-    "description": "Una colección de publicaciones de blog que cubren varios aspectos de las velas, desde la historia y los diferentes tipos de velas, hasta cómo hacer tus propias velas y cómo elegir las velas adecuadas para diferentes propósitos.",
-    "not_found": {
-      "title": "No se encontraron artículos",
-      "description": "Intenta cambiar las palabras clave de búsqueda o la categoría seleccionada"
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
     }
   },
-  "footer": {
-    "title": "Codeverta",
-    "desc": "Codeverta ofrece una amplia selección de velas aromáticas de alta calidad para crear un ambiente cómodo y relajante en tu hogar.",
-    "about": "Acerca de nosotros",
-    "profile": "Perfil de la empresa",
-    "careers": "Carreras",
+  "navbar": {
+    "products": "Products",
+    "industry": "Industries",
+    "articles": "Articles & News",
+    "learning": "Education",
     "blog": "Blog",
-    "contact": "Contáctanos",
-    "help": "Ayuda",
-    "howToBuy": "Cómo comprar",
-    "payment": "Pago",
-    "shipping": "Envío",
-    "returns": "Devoluciones",
-    "faq": "Preguntas frecuentes",
-    "info": "Información",
-    "terms": "Términos y condiciones",
-    "privacy": "Política de privacidad",
-    "shippingPolicy": "Política de envío",
-    "returnPolicy": "Política de devoluciones"
+    "events": "Events",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "about": "About Us"
   },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "whatsapp": "WhatsApp"
-  },
-  "payment": {
-    "bca": "BCA",
-    "mandiri": "Mandiri",
-    "bni": "BNI",
-    "bri": "BRI"
-  },
-  "stats": {
-    "title": "Nuestro impacto en cifras",
-    "subtitle": "Desde 2007, hemos iluminado hogares en toda Indonesia con nuestras velas hechas a mano",
-    "candlesProduced": {
-      "label": "Velas producidas por día",
-      "description": "Nuestras instalaciones de producción de alta eficiencia"
+  "mega_menu": {
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "view_all": "View All Products",
+      "view_all_desc": "Explore all the products we offer."
     },
-    "candleVariants": {
-      "label": "Variantes de velas",
-      "description": "Aromas, diseños y estilos únicos"
+    "news": {
+      "title": "News",
+      "tech": "Tech News",
+      "breaking": "Breaking News",
+      "breaking_desc": "Latest tech updates",
+      "industry": "Industry Reports",
+      "industry_desc": "Market analysis",
+      "company": "Company Updates",
+      "company_desc": "Business news",
+      "categories": "Categories",
+      "software": "Software",
+      "software_desc": "Software development news",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware innovations",
+      "mobile": "Mobile",
+      "mobile_desc": "Mobile technology",
+      "trending": "Trending",
+      "ai_rev": "AI Revolution",
+      "ai_rev_desc": "AI developments",
+      "web3": "Web3 Updates",
+      "web3_desc": "Blockchain & crypto",
+      "devops": "DevOps News",
+      "devops_desc": "Development operations"
     },
-    "yearsOfExcellence": {
-      "label": "Años de excelencia",
-      "value": "Desde 2007",
-      "description": "Más de 17 años creando velas premium"
+    "startups": {
+      "title": "Startups",
+      "news": "Startup News",
+      "funding": "Funding Rounds",
+      "funding_desc": "Investment updates",
+      "launches": "New Launches",
+      "launches_desc": "Product launches",
+      "success": "Success Stories",
+      "success_desc": "Inspiring journeys",
+      "resources": "Resources",
+      "guide": "Startup Guide",
+      "guide_desc": "How to get started",
+      "investors": "Investor Network",
+      "investors_desc": "Find investors",
+      "mentorship": "Mentorship",
+      "mentorship_desc": "Get expert guidance"
     },
-    "cities": {
-      "label": "Servicio en toda Indonesia",
-      "value": "Grandes ciudades",
-      "description": "Como Yakarta, Bali y otras"
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Phone reviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computer reviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches & more",
+      "buying_guides": "Buying Guides",
+      "deals": "Best Deals",
+      "deals_desc": "Current promotions",
+      "compare": "Comparisons",
+      "compare_desc": "Product comparisons",
+      "recommended": "Recommendations",
+      "recommended_desc": "Editor's choice"
     },
-    "candlesSold": {
-      "label": "Velas vendidas por año",
-      "description": "Confiado por hogares y empresas"
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Web Development",
+      "react_desc": "Learn React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobile Development",
+      "rn_desc": "Mobile applications",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift & Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programming",
+      "db_desc": "SQL & NoSQL"
     },
-    "quality": {
-      "label": "Garantía de calidad",
-      "description": "Compromiso con la excelencia"
+    "ai": {
+      "title": "AI",
+      "news": "AI News",
+      "ml_desc": "ML developments",
+      "tools": "AI Tools",
+      "tools_desc": "Latest AI tools",
+      "research": "Research",
+      "research_desc": "Academic papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Getting Started",
+      "getting_started_desc": "AI basics",
+      "deep_learning": "Deep Learning",
+      "deep_learning_desc": "Neural networks",
+      "ethics": "AI Ethics",
+      "ethics_desc": "Responsible AI",
+      "productivity": "Productivity",
+      "image_editor": "Image Editor",
+      "image_desc": "Crop, resize, etc.",
+      "pdf_editor": "PDF Editor",
+      "pdf_desc": "Edit and convert PDFs.",
+      "other_tools": "AI & Other Tools",
+      "ai_long": "Artificial Intelligence (AI)",
+      "ai_desc": "Explore the latest developments in AI."
+    },
+    "categories": {
+      "articles": "Articles & News",
+      "main_news": "Top Stories",
+      "tech_innovation": "News (Tech & Innovation)",
+      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiration from the startup world.",
+      "gadget_reviews": "Gadget Reviews",
+      "gadget_reviews_desc": "Reviews and buying guides.",
+      "special_issues": "Special Topics",
+      "cyber_art": "Cybersecurity Articles",
+      "cyber_art_desc": "Digital security tips.",
+      "all_art": "All Articles",
+      "all_art_desc": "View all blog posts.",
+      "learning": "Learning & Guides",
+      "guides": "Guides",
+      "tutorial_desc": "Step-by-step learning guides.",
+      "classes": "Courses",
+      "cyber_course": "Cybersecurity Course",
+      "cyber_course_desc": "Latest cybersecurity classes.",
+      "llm_course": "AI LLM Course",
+      "llm_desc": "Prompt engineering for LLMs.",
+      "ai_eng": "AI Engineer Course",
+      "ai_eng_desc": "In-depth AI engineering."
     }
   }
 }

@@ -21,7 +21,20 @@ import { getCategories, getMegaMenuData } from "@/lib/data";
 
 const languages = [
   { code: "id", name: "Indonesia", flag: "🇮🇩" },
-  { code: "en-US", name: "English", flag: "🇺🇸" },
+  { code: "en-US", name: "English (US)", flag: "🇺🇸" },
+  { code: "en-GB", name: "English (UK)", flag: "🇬🇧" },
+  { code: "zh", name: "中文", flag: "🇨🇳" },
+  { code: "ja", name: "日本語", flag: "🇯🇵" },
+  { code: "ko", name: "한국어", flag: "🇰🇷" },
+  { code: "ms", name: "Melayu", flag: "🇲🇾" },
+  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "fr", name: "Français", flag: "🇫🇷" },
+  { code: "es", name: "Español", flag: "🇪🇸" },
+  { code: "ar", name: "العربية", flag: "🇸🇦" },
+  { code: "hi", name: "हिन्दी", flag: "🇮🇳" },
+  { code: "th", name: "ไทย", flag: "🇹🇭" },
+  { code: "vi", name: "Tiếng Việt", flag: "🇻🇳" },
+  { code: "ru", name: "Русский", flag: "🇷🇺" },
 ];
 
 // Responsive Navbar Component
@@ -99,27 +112,31 @@ const Navbar = () => {
             exit={{ opacity: 0, y: 10 }}
             className={`absolute ${
               isMobile ? "bottom-full mb-2" : "top-full mt-2"
-            } right-0 w-40 bg-background border rounded-xl shadow-xl z-[60] overflow-hidden`}
+            } right-0 w-56 max-h-80 overflow-y-auto bg-background border rounded-xl shadow-xl z-[60]`}
           >
-            {languages.map((l) => (
-              <Link
-                href="/"
-                locale={l.code}
-                key={l.code}
-                className="w-full flex items-center justify-between px-4 py-3 hover:bg-accent transition-colors text-sm"
-                onClick={() => {
-                  setLangDropdownOpen(false);
-                }}
-              >
-                <div className="flex items-center gap-3">
-                  <span>{l.flag}</span>
-                  <span className={lang === l.code ? "font-bold" : ""}>
-                    {l.name}
-                  </span>
-                </div>
-                {lang === l.code && <Check className="w-4 h-4 text-primary" />}
-              </Link>
-            ))}
+            {languages
+              .filter((l) => !locales || locales.includes(l.code))
+              .map((l) => (
+                <button
+                  type="button"
+                  key={l.code}
+                  className="w-full flex items-center justify-between px-4 py-3 hover:bg-accent transition-colors text-sm text-left"
+                  onClick={() => {
+                    changeLanguage(l.code);
+                    setLangDropdownOpen(false);
+                  }}
+                >
+                  <div className="flex items-center gap-3">
+                    <span>{l.flag}</span>
+                    <span className={lang === l.code ? "font-bold" : ""}>
+                      {l.name}
+                    </span>
+                  </div>
+                  {lang === l.code && (
+                    <Check className="w-4 h-4 text-primary" />
+                  )}
+                </button>
+              ))}
           </motion.div>
         )}
       </AnimatePresence>

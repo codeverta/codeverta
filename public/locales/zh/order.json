@@ -1,41 +1,41 @@
 {
   "header": {
     "title": "Codeverta",
-    "subtitle": "您值得信赖的特殊时刻蜡烛制造商"
+    "subtitle": "Professional software, website, and IT service ordering"
   },
   "howToOrder": {
-    "title": "如何订购蜡烛",
+    "title": "How to Order Codeverta Services",
     "step1": {
-      "title": "1. 联系我们",
-      "description": "请通过 WhatsApp 联系我们：",
-      "phone": "081578956156",
-      "contactNote": "开始您的订单。我们将协助您了解产品信息和库存情况。"
+      "title": "1. Contact Us",
+      "description": "Contact our team via WhatsApp or email to tell us about your project goals, timeline, and business needs.",
+      "phone": "+62881011692615",
+      "contactNote": "We will help clarify the scope, recommended solution, and next steps."
     },
     "step2": {
-      "title": "2. 选择取货或送货",
-      "description": "我们提供两种收货方式：",
-      "pickupTitle": "到店自取",
-      "pickupDescription": "欢迎到我们的店铺：Yogyakarta，Sleman，Kaliurang KM 9",
-      "deliveryTitle": "送货服务",
-      "deliveryDescription": "我们可以通过 Gojek、Grab 或其他快递服务配送",
-      "note": "*大量订单需提前预订"
+      "title": "2. Consultation and Scope",
+      "description": "We review your requirements and prepare a suitable technical approach.",
+      "pickupTitle": "Online Consultation",
+      "pickupDescription": "Discuss remotely with our team from anywhere.",
+      "deliveryTitle": "On-site or Dedicated Session",
+      "deliveryDescription": "Available by appointment for selected projects and locations.",
+      "note": "*Larger projects may require a written scope of work before estimation."
     },
     "step3": {
-      "title": "3. 支付定金",
-      "description": "大宗订单需支付至少 30% 的定金（DP）以确认订单。可通过银行转账支付。"
+      "title": "3. Proposal and Down Payment",
+      "description": "After the scope is agreed, we send a proposal and invoice. A down payment is required before production begins."
     },
     "step4": {
-      "title": "4. 发货与尾款支付",
-      "description": "发货前需支付全款。我们将在订单准备就绪时通知您，并提供快递单号（如有）。"
+      "title": "4. Development and Review",
+      "description": "Our team builds the solution in milestones, shares progress updates, and collects feedback before final delivery."
     },
     "step5": {
-      "title": "5. 生产时间",
-      "description": "生产时间取决于订购数量。小量订单通常在 1-3 天内完成。大量订单将在咨询后提供估算时间。"
+      "title": "5. Launch and Support",
+      "description": "After final payment, we help launch the project and provide support according to the agreed warranty or maintenance plan."
     }
   },
   "cta": {
-    "title": "准备好下单了吗？",
-    "subtitle": "立即联系我们，获取高品质香薰蜡烛！",
-    "button": "通过 WhatsApp 联系"
+    "title": "Ready to start?",
+    "subtitle": "Talk with Codeverta and get a clear plan for your digital product.",
+    "button": "Contact via WhatsApp"
   }
 }

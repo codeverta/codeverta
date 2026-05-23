@@ -1,181 +1,232 @@
 {
-  "brand": "मिलियन कैंडल्स",
-  "flag": "🇮🇩",
-  "menu": {
-    "login": "लॉग इन करें",
-    "home": "होम",
-    "products": "उत्पाद",
-    "how_to_order": "ऑर्डर कैसे करें",
-    "address": "पता",
-    "blog": "ब्लॉग",
-    "gallery": "गैलरी",
-    "about": "हमारे बारे में"
+  "our_products": "Our Products",
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Software Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
   },
-  "address": {
-    "full": "जालान कालीउरांग KM 9, स्लेमान, योग्यकार्ता, इंडोनेशिया"
-  },
-  "tagline": {
-    "local_producer": "स्थानीय मोमबत्ती निर्माता",
-    "national_scale": "राष्ट्रीय स्तर पर"
-  },
-  "description": "हम एक सप्लायर हैं जो विभिन्न प्रकार की उच्च गुणवत्ता वाली मोमबत्तियाँ प्रदान करते हैं जैसे कि अरोमाथेरेपी मोमबत्तियाँ, स्मारिका मोमबत्तियाँ, रंगीन मोमबत्तियाँ, सजावटी मोमबत्तियाँ, पूजा मोमबत्तियाँ, आध्यात्मिक मोमबत्तियाँ, मोमबत्ती कारखाना और भी बहुत कुछ। हम स्मारिकाओं के लिए सुंदर सजावटी मोमबत्तियाँ प्रदान करते हैं जो किसी भी अवसर के लिए उपयुक्त हैं। शादियों से लेकर कॉर्पोरेट कार्यक्रमों या यात्राओं तक, हमारी स्मारिका सजावटी मोमबत्तियाँ अविस्मरणीय यादें बनाने के लिए एकदम सही विकल्प हैं।",
-  "how_to_order_candles": "मोमबत्तियाँ कैसे ऑर्डर करें",
-  "whatsapp": "व्हाट्सएप",
-  "our_products": "हमारे उत्पाद",
-  "other_products": "अन्य उत्पाद",
-  "disclaimer_price": "* प्रदर्शित मूल्य वितरक/थोक मूल्य हैं",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
-    "eco_friendly": "पर्यावरण के अनुकूल",
-    "made_from": "100% प्राकृतिक पाम वैक्स और एसेंशियल ऑयल से निर्मित",
-    "handmade": "हस्तनिर्मित",
-    "crafted_with_love": "प्रत्येक मोमबत्ती हमारे कारीगरों द्वारा सावधानीपूर्वक प्रेम से बनाई जाती है",
-    "long_lasting": "लंबे समय तक चलने वाली",
-    "burn_time": "प्रत्येक मोमबत्ती के लिए 12 घंटे तक का जलने का समय",
-    "handcrafted_with_love": "प्रेम से हस्तनिर्मित",
-    "make_beautiful_memories": "के साथ खूबसूरत यादें बनाएं",
-    "our_candle": "हमारी मोमबत्ती",
-    "souvenir_description": "हमारी स्मारिका सजावटी मोमबत्तियों के साथ, आप अपने कार्यक्रम या यात्रा की खूबसूरत यादें घर ले जा सकते हैं। हमारी प्रत्येक मोमबत्ती उच्च गुणवत्ता वाली सामग्री से बनी है और हमारे कलाकारों द्वारा खूबसूरती से सजाई गई है।"
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
   },
-  "shipping": {
-    "package": "मोमबत्ती शिपिंग पैकेज",
-    "fast_shipping": "तेज़ शिपिंग",
-    "nationwide": "पूरे भारत में"
+  "portfolio": {
+    "title": "Projects We Have Worked On",
+    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
   },
-  "premium_collection": {
-    "title": "प्रीमियम संग्रह",
-    "subtitle": "हमारे अरोमाथेरेपी मोमबत्ती उत्पाद",
-    "description": "सर्वोत्तम प्राकृतिक सामग्री से बनी हमारी हस्तनिर्मित अरोमाथेरेपी मोमबत्तियों की सुंदरता और लाभों का आनंद लें।"
-  },
-  "quality_section": {
-    "product_quality": "उत्पाद की गुणवत्ता",
-    "product_quality_description": "हम अपनी सजावटी मोमबत्तियाँ बनाने के लिए केवल उच्च गुणवत्ता वाली सामग्री का उपयोग करते हैं, और हमारे प्रत्येक उत्पाद का सुरक्षा और स्थायित्व सुनिश्चित करने के लिए परीक्षण किया जाता है। हमारे पास प्रतिभाशाली कलाकारों की एक टीम भी है जो प्रत्येक मोमबत्ती को सुंदर और अद्वितीय डिजाइनों से सजाते हैं, जिससे यह एक विशेष स्मारिका बन जाती है।",
-    "size_and_color": "आकार और रंग",
-    "size_and_color_description": "हमारी सजावटी मोमबत्तियाँ विभिन्न आकारों में आती हैं, छोटी और पोर्टेबल से लेकर बड़ी और सुंदर तक। हमारे पास सफेद, नीला, हरा, लाल और कई अन्य सहित विभिन्न रंग भी हैं, ताकि आप अपनी कार्यक्रम थीम के अनुरूप चुन सकें।",
-    "calming_aroma": "शांत सुगंध",
-    "calming_aroma_description": "हमारी सजावटी मोमबत्तियाँ एक शांत सुगंध भी प्रदान करती हैं, जो कमरे में शांति और सुकून लाती हैं। हम लंबे समय तक चलने वाली और सुखद सुगंध प्रदान करने के लिए उच्च गुणवत्ता वाले सुगंध तेलों का उपयोग करते हैं।"
-  },
-  "lifespan": {
-    "title": "जीवनकाल",
-    "description": "12 घंटे तक"
-  },
-  "natural": {
-    "title": "100% प्राकृतिक",
-    "description": "पर्यावरण के अनुकूल"
-  },
-  "business_opportunity": {
-    "title": "थोक व्यापार अवसर",
-    "description": "हमारे प्रीमियम मोमबत्ती संग्रह के साथ अपने व्यवसाय को बढ़ाएं। होटल, स्पा, बुटीक और उपहार की दुकानों के लिए बिल्कुल सही।",
-    "custom_branding": "कस्टम ब्रांडिंग विकल्प उपलब्ध हैं",
-    "no_moq_white_label": "कोई MOQ और व्हाइट-लेबल सेवाएं नहीं"
-  },
-  "wholesale_benefits": {
-    "title": "थोक खरीद के लाभ",
-    "competitive_price": "प्रतिस्पर्धी मूल्य",
-    "competitive_price_description": "बड़ी मात्रा में ऑर्डर के लिए खुदरा मूल्य से 5% तक की छूट प्राप्त करें",
-    "exclusive_aromas": "विशेष सुगंध",
-    "exclusive_aromas_description": "केवल थोक ग्राहकों के लिए विशेष सुगंध विकल्पों तक पहुंच",
-    "dedicated_support": "समर्पित समर्थन",
-    "dedicated_support_description": "थोक ग्राहकों के लिए व्यक्तिगत खाता प्रबंधक"
-  },
-  "blog_section": {
-    "title": "हमारी कहानियाँ",
-    "description": "मोमबत्तियों के विभिन्न पहलुओं पर चर्चा करने वाले ब्लॉगों का एक संग्रह, इतिहास और विभिन्न प्रकार की मोमबत्तियों से लेकर, अपनी खुद की मोमबत्तियाँ कैसे बनाएं और विभिन्न उद्देश्यों के लिए सही मोमबत्ती कैसे चुनें। आपको प्रेरणादायक कहानियाँ भी मिलेंगी कि कैसे मोमबत्तियाँ दैनिक जीवन में आशा और गर्मी का प्रतीक बन सकती हैं। आइए मिलकर मोमबत्तियों के जादू का पता लगाएं और सीखें कि अपने जीवन को रोशन करने के लिए उनका उपयोग कैसे करें।"
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
   },
   "testimonials": {
-    "title": "हमारे ग्राहक क्या कहते हैं",
-    "sarah_johnson": {
-      "quote": "हमारे होटल के मेहमान हमेशा हमारी लॉबी में सुखद सुगंध की प्रशंसा करते हैं। हमारी वनीला अरोमा मोमबत्तियाँ एक बहुत ही स्वागत योग्य माहौल बनाती हैं।",
-      "name": "सारा जॉनसन",
-      "position": "होटल मैनेजर, द ग्रैंड प्लाजा"
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "एक बुटीक मालिक के रूप में, मैं इन मोमबत्तियों की गुणवत्ता और प्रस्तुति की बहुत सराहना करती हूं। ये मोमबत्तियाँ हमारी सबसे ज्यादा बिकने वाली उपहार उत्पाद बन गई हैं!",
-      "name": "एमिली चेन",
-      "position": "मालिक, द क्यूरेटेड कॉर्नर"
-    },
-    "michael_rodriguez": {
-      "quote": "इन मोमबत्तियों का जलने का समय अविश्वसनीय है और सुगंध एकदम सही है - बहुत तेज नहीं। मैंने इस संग्रह में हर प्रकार की मोमबत्ती खरीदी है!",
-      "name": "माइकल रोड्रिगेज",
-      "position": "वफादार ग्राहक"
-    },
-    "wedding_customer": {
-      "quote": "सुंदर उत्पाद के लिए @souvenirlilin धन्यवाद! मैंने अपनी शादी के लिए जो मोमबत्तियाँ खरीदीं, उन्होंने वास्तव में कार्यक्रम में एक आदर्श स्पर्श जोड़ा, और मेरे मेहमानों ने उन्हें बहुत पसंद किया",
-      "name": "ग्राहक"
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
     }
   },
-  "about_us": {
-    "content": "# मिलियन कैंडल्स के बारे में\n\nमिलियन कैंडल्स योग्यकार्ता की एक मोमबत्ती कंपनी है जो अद्वितीय डिजाइन और उच्च गुणवत्ता वाली विभिन्न प्रकार की मोमबत्तियाँ प्रदान करती है। हम सुंदर और सुगंधित मोमबत्तियाँ बनाने के लिए उच्च गुणवत्ता वाली सामग्री और अच्छी निर्माण तकनीकों का उपयोग करते हैं।\n\nहम छोटी मोमबत्तियों से लेकर बड़ी मोमबत्तियों तक विभिन्न प्रकार के विकल्प प्रदान करते हैं जिनका उपयोग विशेष कार्यक्रमों जैसे शादियों, जन्मदिन पार्टियों, चर्च पूजा कार्यक्रमों या बिजली कटौती के लिए किया जा सकता है। इसके अलावा, हम सुगंधित मोमबत्तियाँ भी प्रदान करते हैं जिनका उपयोग आपके घर में शांत वातावरण बनाने के लिए किया जा सकता है।\n\nहमारे पास विभिन्न प्रकार के रंग और डिज़ाइन विकल्प हैं जिन्हें आपके स्वाद के अनुसार अनुकूलित किया जा सकता है। हम आपकी इच्छाओं के अनुसार डिजाइन के साथ मोमबत्तियाँ भी बना सकते हैं।\n\nहम गुणवत्ता और ग्राहक सुरक्षा को बहुत महत्व देते हैं, इसलिए हम हमेशा ऐसी सामग्री का उपयोग करने का प्रयास करते हैं जो सुरक्षित हो और पर्यावरण को नुकसान न पहुँचाए।\n\nयदि आप अपने घर में एक रोमांटिक माहौल जोड़ना चाहते हैं या किसी विशेष कार्यक्रम के लिए एक अनोखा उपहार ढूंढ रहे हैं, तो हमारी वेबसाइट पर जाने और हमारे द्वारा पेश किए जाने वाले मोमबत्ती विकल्पों को देखने में संकोच न करें। हमें आपकी आवश्यकताओं के लिए सही मोमबत्ती खोजने में आपकी सहायता करने में खुशी होगी।"
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
   },
-  "gallery": {
-    "title": "गैलरी",
-    "description": "हमारे उत्पादों की तस्वीरें और वीडियो का संग्रह"
-  },
-  "blog": {
-    "title": "मोमबत्तियों के बारे में कहानियों और युक्तियों का संग्रह",
-    "description": "मोमबत्तियों के विभिन्न पहलुओं पर चर्चा करने वाले ब्लॉगों का एक संग्रह, इतिहास और विभिन्न प्रकार की मोमबत्तियों से लेकर, अपनी खुद की मोमबत्तियाँ कैसे बनाएं और विभिन्न उद्देश्यों के लिए सही मोमबत्ती कैसे चुनें।",
-    "not_found": {
-      "title": "कोई लेख नहीं मिला",
-      "description": "खोज कीवर्ड या चयनित श्रेणी बदलने का प्रयास करें"
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
     }
   },
-  "footer": {
-    "about": "हमारे बारे में",
-    "profile": "कंपनी प्रोफाइल",
-    "careers": "करियर",
-    "blog": "ब्लॉग",
-    "contact": "हमसे संपर्क करें",
-    "help": "सहायता",
-    "howToBuy": "कैसे खरीदें",
-    "payment": "भुगतान",
-    "shipping": "शिपिंग",
-    "returns": "वापसी",
+  "navbar": {
+    "products": "Products",
+    "industry": "Industries",
+    "articles": "Articles & News",
+    "learning": "Education",
+    "blog": "Blog",
+    "events": "Events",
     "faq": "FAQ",
-    "info": "जानकारी",
-    "terms": "नियम और शर्तें",
-    "privacy": "गोपनीयता नीति",
-    "shippingPolicy": "शिपिंग नीति",
-    "returnPolicy": "वापसी नीति"
+    "careers": "Careers",
+    "about": "About Us"
   },
-  "social": {
-    "instagram": "इंस्टाग्राम",
-    "facebook": "फेसबुक",
-    "twitter": "ट्विटर",
-    "whatsapp": "व्हाट्सएप"
-  },
-  "payment": {
-    "bca": "बीसीए",
-    "mandiri": "मंदीरी",
-    "bni": "बीएनआई",
-    "bri": "बीआरआई"
-  },
-  "stats": {
-    "title": "आंकड़ों में हमारा प्रभाव",
-    "subtitle": "2007 से, हमने अपनी हस्तनिर्मित मोमबत्तियों से पूरे भारत में घरों को रोशन किया है",
-    "candlesProduced": {
-      "label": "प्रति दिन उत्पादित मोमबत्तियाँ",
-      "description": "हमारी उच्च दक्षता उत्पादन सुविधाएं"
+  "mega_menu": {
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "view_all": "View All Products",
+      "view_all_desc": "Explore all the products we offer."
     },
-    "candleVariants": {
-      "label": "मोमबत्ती प्रकार",
-      "description": "अद्वितीय सुगंध, डिजाइन और शैलियाँ"
+    "news": {
+      "title": "News",
+      "tech": "Tech News",
+      "breaking": "Breaking News",
+      "breaking_desc": "Latest tech updates",
+      "industry": "Industry Reports",
+      "industry_desc": "Market analysis",
+      "company": "Company Updates",
+      "company_desc": "Business news",
+      "categories": "Categories",
+      "software": "Software",
+      "software_desc": "Software development news",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware innovations",
+      "mobile": "Mobile",
+      "mobile_desc": "Mobile technology",
+      "trending": "Trending",
+      "ai_rev": "AI Revolution",
+      "ai_rev_desc": "AI developments",
+      "web3": "Web3 Updates",
+      "web3_desc": "Blockchain & crypto",
+      "devops": "DevOps News",
+      "devops_desc": "Development operations"
     },
-    "yearsOfExcellence": {
-      "label": "उत्कृष्टता के वर्ष",
-      "value": "2007 से",
-      "description": "17+ साल प्रीमियम मोमबत्तियाँ बनाने का"
+    "startups": {
+      "title": "Startups",
+      "news": "Startup News",
+      "funding": "Funding Rounds",
+      "funding_desc": "Investment updates",
+      "launches": "New Launches",
+      "launches_desc": "Product launches",
+      "success": "Success Stories",
+      "success_desc": "Inspiring journeys",
+      "resources": "Resources",
+      "guide": "Startup Guide",
+      "guide_desc": "How to get started",
+      "investors": "Investor Network",
+      "investors_desc": "Find investors",
+      "mentorship": "Mentorship",
+      "mentorship_desc": "Get expert guidance"
     },
-    "cities": {
-      "label": "पूरे भारत में सेवा",
-      "value": "बड़े शहर",
-      "description": "जैसे दिल्ली, मुंबई और अन्य"
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Phone reviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computer reviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches & more",
+      "buying_guides": "Buying Guides",
+      "deals": "Best Deals",
+      "deals_desc": "Current promotions",
+      "compare": "Comparisons",
+      "compare_desc": "Product comparisons",
+      "recommended": "Recommendations",
+      "recommended_desc": "Editor's choice"
     },
-    "candlesSold": {
-      "label": "प्रति वर्ष बेची गई मोमबत्तियाँ",
-      "description": "घरों और व्यवसायों द्वारा विश्वसनीय"
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Web Development",
+      "react_desc": "Learn React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobile Development",
+      "rn_desc": "Mobile applications",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift & Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programming",
+      "db_desc": "SQL & NoSQL"
     },
-    "quality": {
-      "label": "गुणवत्ता आश्वासन",
-      "description": "उत्कृष्टता के प्रति प्रतिबद्धता"
+    "ai": {
+      "title": "AI",
+      "news": "AI News",
+      "ml_desc": "ML developments",
+      "tools": "AI Tools",
+      "tools_desc": "Latest AI tools",
+      "research": "Research",
+      "research_desc": "Academic papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Getting Started",
+      "getting_started_desc": "AI basics",
+      "deep_learning": "Deep Learning",
+      "deep_learning_desc": "Neural networks",
+      "ethics": "AI Ethics",
+      "ethics_desc": "Responsible AI",
+      "productivity": "Productivity",
+      "image_editor": "Image Editor",
+      "image_desc": "Crop, resize, etc.",
+      "pdf_editor": "PDF Editor",
+      "pdf_desc": "Edit and convert PDFs.",
+      "other_tools": "AI & Other Tools",
+      "ai_long": "Artificial Intelligence (AI)",
+      "ai_desc": "Explore the latest developments in AI."
+    },
+    "categories": {
+      "articles": "Articles & News",
+      "main_news": "Top Stories",
+      "tech_innovation": "News (Tech & Innovation)",
+      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiration from the startup world.",
+      "gadget_reviews": "Gadget Reviews",
+      "gadget_reviews_desc": "Reviews and buying guides.",
+      "special_issues": "Special Topics",
+      "cyber_art": "Cybersecurity Articles",
+      "cyber_art_desc": "Digital security tips.",
+      "all_art": "All Articles",
+      "all_art_desc": "View all blog posts.",
+      "learning": "Learning & Guides",
+      "guides": "Guides",
+      "tutorial_desc": "Step-by-step learning guides.",
+      "classes": "Courses",
+      "cyber_course": "Cybersecurity Course",
+      "cyber_course_desc": "Latest cybersecurity classes.",
+      "llm_course": "AI LLM Course",
+      "llm_desc": "Prompt engineering for LLMs.",
+      "ai_eng": "AI Engineer Course",
+      "ai_eng_desc": "In-depth AI engineering."
     }
   }
 }

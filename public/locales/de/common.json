@@ -1,187 +1,232 @@
 {
-  "brand": "Codeverta",
-  "flag": "🇩🇪",
-  "menu": {
-    "login": "Anmelden",
-    "home": "Startseite",
-    "products": "Produkte",
-    "how_to_order": "Bestellanleitung",
-    "address": "Adresse",
-    "blog": "Blog",
-    "gallery": "Galerie",
-    "about": "Über uns"
+  "our_products": "Our Products",
+  "home": {
+    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
+    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "hero": {
+      "prefix": "Software Solutions For Every",
+      "rotating": [
+        "Retail",
+        "Healthcare",
+        "Fitness",
+        "Hospitality",
+        "Education",
+        "Manufacturing",
+        "E-commerce",
+        "Education",
+        "Finance",
+        "Real Estate",
+        "Nonprofit",
+        "Entertainment",
+        "Transportation",
+        "Food & Beverage",
+        "Consulting",
+        "Legal",
+        "Marketing",
+        "Automotive",
+        "Energy",
+        "Telecommunications"
+      ],
+      "suffix": "Industry"
+    },
+    "tagline": "*Startup quality, not your typical WordPress template",
+    "cta": {
+      "whatsapp": "WhatsApp Us Now",
+      "products": "View Products"
+    },
+    "badges": {
+      "consultation": "Free Consultation",
+      "fast": "Fast Process",
+      "guarantee": "Satisfaction Guarantee",
+      "trusted": "Honest & Reliable"
+    }
   },
-  "address": {
-    "full": "Jalan Kaliurang KM 9, Sleman, Yogyakarta, Indonesien"
-  },
-  "tagline": {
-    "local_producer": "Lokaler Kerzenhersteller",
-    "national_scale": "National tätig"
-  },
-  "description": "Wir sind ein Lieferant, der eine große Auswahl an hochwertigen Kerzen anbietet, wie Aromakerzen, Souvenirkerzen, farbige Kerzen, dekorative Kerzen, Andachtskerzen, spirituelle Kerzen, Kerzen aus eigener Herstellung und vieles mehr. Wir bieten wunderschöne dekorative Kerzen als Souvenirs an, die für jeden Anlass geeignet sind. Von Hochzeiten über Firmenveranstaltungen bis hin zu Reisen sind unsere dekorativen Souvenirkerzen die perfekte Wahl für unvergessliche Erinnerungen.",
-  "how_to_order_candles": "So bestellen Sie Kerzen",
-  "whatsapp": "WhatsApp",
-  "our_products": "Unsere Produkte",
-  "other_products": "Weitere Produkte",
-  "disclaimer_price": "* Die angezeigten Preise sind Großhandels-/Händlerpreise",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
-    "eco_friendly": "Umweltfreundlich",
-    "made_from": "Hergestellt aus 100% natürlichem Palmwachs und ätherischen Ölen",
-    "handmade": "Handgefertigt",
-    "crafted_with_love": "Jede Kerze wird von unseren Handwerkern sorgfältig gegossen",
-    "long_lasting": "Langlebig",
-    "burn_time": "Bis zu 12 Stunden Brenndauer pro Kerze",
-    "handcrafted_with_love": "Mit Liebe handgefertigt",
-    "make_beautiful_memories": "Schaffen Sie wunderschöne Erinnerungen mit",
-    "our_candle": "Unseren Kerzen",
-    "souvenir_description": "Mit unseren dekorativen Souvenirkerzen können Sie wunderschöne Erinnerungen an Ihre Veranstaltungen oder Reisen mit nach Hause nehmen. Jede unserer Kerzen wird aus hochwertigen Materialien gefertigt und von unseren Künstlern wunderschön verziert."
+    "badge": "Our Services",
+    "title": "Complete Solutions for Your Digital Needs",
+    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
   },
-  "shipping": {
-    "package": "Kerzenversandpaket",
-    "fast_shipping": "Schneller Versand",
-    "nationwide": "Bundesweit"
+  "portfolio": {
+    "title": "Projects We Have Worked On",
+    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
   },
-  "premium_collection": {
-    "title": "Premium Kollektion",
-    "subtitle": "Unsere Aromakerzenprodukte",
-    "description": "Genießen Sie die Schönheit und die Vorteile unserer handgefertigten Aromakerzen aus besten natürlichen Inhaltsstoffen."
-  },
-  "quality_section": {
-    "product_quality": "Produktqualität",
-    "product_quality_description": "Wir verwenden nur hochwertige Materialien für unsere dekorativen Kerzen, und jedes unserer Produkte wird auf Sicherheit und Haltbarkeit geprüft. Wir haben auch ein Team talentierter Künstler, die jede Kerze mit wunderschönen und einzigartigen Designs verzieren, was sie zu einem besonderen Souvenir macht.",
-    "size_and_color": "Größe und Farbe",
-    "size_and_color_description": "Unsere dekorativen Kerzen sind in verschiedenen Größen erhältlich, von klein und handlich bis groß und prächtig. Wir haben auch eine Vielzahl verschiedener Farben, darunter Weiß, Blau, Grün, Rot und viele mehr, sodass Sie diejenige auswählen können, die zum Thema Ihrer Veranstaltung passt.",
-    "calming_aroma": "Beruhigendes Aroma",
-    "calming_aroma_description": "Unsere dekorativen Kerzen verströmen zudem ein beruhigendes Aroma, das Frieden und Ruhe in den Raum bringt. Wir verwenden hochwertige Duftöle für ein langanhaltendes und angenehmes Aroma."
-  },
-  "lifespan": {
-    "title": "Lebensdauer",
-    "description": "Bis zu 12 Stunden"
-  },
-  "natural": {
-    "title": "100% Natürlich",
-    "description": "Umweltfreundlich"
-  },
-  "business_opportunity": {
-    "title": "Großhandelsgeschäftsmöglichkeiten",
-    "description": "Steigern Sie Ihr Geschäft mit unserer Premium-Kerzenkollektion. Perfekt für Hotels, Spas, Boutiquen und Geschenkläden.",
-    "custom_branding": "Sonderbranding-Optionen verfügbar",
-    "no_moq_white_label": "Kein Mindestbestellwert und White-Label-Service"
-  },
-  "wholesale_benefits": {
-    "title": "Vorteile des Großeinkaufs",
-    "competitive_price": "Wettbewerbsfähige Preise",
-    "competitive_price_description": "Erhalten Sie bis zu 5% Rabatt auf den Einzelhandelspreis bei Großbestellungen",
-    "exclusive_aromas": "Exklusive Düfte",
-    "exclusive_aromas_description": "Zugang zu einer Auswahl exklusiver Düfte nur für Großhandelskunden",
-    "dedicated_support": "Spezielle Unterstützung",
-    "dedicated_support_description": "Persönliche Kundenbetreuer für Großhandelskunden"
-  },
-  "blog_section": {
-    "title": "Unsere Geschichten",
-    "description": "Eine Sammlung von Blogbeiträgen, die verschiedene Aspekte von Kerzen behandeln, von der Geschichte und den verschiedenen Arten von Kerzen bis hin zur Herstellung eigener Kerzen und der Auswahl der richtigen Kerzen für verschiedene Zwecke. Sie finden auch inspirierende Geschichten darüber, wie Kerzen im Alltag zu einem Symbol der Hoffnung und Wärme werden können. Lassen Sie uns gemeinsam die Magie der Kerzen entdecken und lernen, wie wir sie nutzen können, um unser Leben zu erhellen."
+  "process": {
+    "badge": "Easy Process, Maximum Results",
+    "title": "Development Process",
+    "subtitle": "Start your project in just 3 simple steps with our expert team."
   },
   "testimonials": {
-    "title": "Was unsere Kunden sagen",
-    "sarah_johnson": {
-      "quote": "Unsere Hotelgäste loben immer das angenehme Aroma in unserer Lobby. Unsere Vanille-Duftkerzen schaffen eine sehr einladende Atmosphäre.",
-      "name": "Sarah Johnson",
-      "position": "Hotelmanagerin, The Grand Plaza"
+    "badge": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Flexible & Transparent Pricing Plans",
+    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "tabs": {
+      "smme": "SME Scale",
+      "enterprise": "Enterprise"
     },
-    "emily_chen": {
-      "quote": "Als Boutique-Besitzerin schätze ich die Qualität und Präsentation dieser Kerzen sehr. Sie sind zu unseren meistverkauften Geschenkartikeln geworden!",
-      "name": "Emily Chen",
-      "position": "Inhaberin, The Curated Corner"
-    },
-    "michael_rodriguez": {
-      "quote": "Die Brenndauer dieser Kerzen ist unglaublich und der Duft ist perfekt – nicht zu aufdringlich. Ich habe bereits jede Variante dieser Kollektion gekauft!",
-      "name": "Michael Rodriguez",
-      "position": "Treuer Kunde"
-    },
-    "wedding_customer": {
-      "quote": "Vielen Dank @souvenirlilin für die wunderschönen Produkte! Die Kerzen, die ich für meine Hochzeit gekauft habe, haben der Veranstaltung wirklich die perfekte Note verliehen, und meine Gäste waren begeistert.",
-      "name": "Kunde/Kundin"
+    "card": {
+      "popular": "Most Popular",
+      "perProject": "/one-time payment",
+      "contactSales": "Contact Sales"
     }
   },
-  "about_us": {
-    "content": "# Über Codeverta\n\nCodeverta ist ein Kerzenunternehmen aus Yogyakarta, das eine Vielzahl einzigartiger und hochwertiger Kerzen anbietet. Wir verwenden hochwertige Materialien und gute Herstellungstechniken, um schöne und duftende Kerzen zu kreieren.\n\nWir bieten eine große Auswahl an Kerzen, von kleinen bis hin zu großen Kerzen, die für besondere Anlässe wie Hochzeiten, Geburtstagsfeiern, Gottesdienste oder Stromausfälle verwendet werden können. Darüber hinaus bieten wir auch Duftkerzen an, die verwendet werden können, um eine beruhigende Atmosphäre in Ihrem Zuhause zu schaffen.\n\nWir haben eine Vielzahl von Farben und Designs zur Auswahl, die an Ihren Geschmack angepasst werden können. Wir können auch Kerzen mit Designs nach Ihren Wünschen herstellen.\n\nWir legen großen Wert auf die Qualität und Sicherheit unserer Kunden und bemühen uns daher stets, sichere und umweltfreundliche Materialien zu verwenden.\n\nWenn Sie die romantische Atmosphäre in Ihrem Zuhause verbessern oder ein einzigartiges Geschenk für einen besonderen Anlass suchen, zögern Sie nicht, unsere Website zu besuchen und unsere Auswahl an Kerzen anzusehen. Wir helfen Ihnen gerne dabei, die richtigen Kerzen für Ihre Bedürfnisse zu finden."
+  "faq": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to the most frequently asked questions about our services."
   },
-  "gallery": {
-    "title": "Galerie",
-    "description": "Eine Sammlung von Fotos und Videos unserer Produkte"
-  },
-  "blog": {
-    "title": "Eine Sammlung von Geschichten und Tipps rund um Kerzen",
-    "description": "Eine Sammlung von Blogbeiträgen, die verschiedene Aspekte von Kerzen behandeln, von der Geschichte und den verschiedenen Arten von Kerzen bis hin zur Herstellung eigener Kerzen und der Auswahl der richtigen Kerzen für verschiedene Zwecke.",
-    "not_found": {
-      "title": "Keine Artikel gefunden",
-      "description": "Versuchen Sie, die Suchbegriffe oder die ausgewählte Kategorie zu ändern"
+  "cta": {
+    "title": "Ready for a Professional Website?",
+    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "buttons": {
+      "free": "Free Consultation",
+      "contact": "Contact Now"
     }
   },
-  "footer": {
-    "title": "Codeverta",
-    "desc": "Codeverta bietet eine große Auswahl an hochwertigen Aromakerzen, um eine gemütliche und entspannende Atmosphäre in Ihrem Zuhause zu schaffen.",
-    "about": "Über uns",
-    "profile": "Unternehmensprofil",
-    "careers": "Karriere",
+  "navbar": {
+    "products": "Products",
+    "industry": "Industries",
+    "articles": "Articles & News",
+    "learning": "Education",
     "blog": "Blog",
-    "contact": "Kontaktieren Sie uns",
-    "help": "Hilfe",
-    "howToBuy": "Wie man kauft",
-    "payment": "Zahlung",
-    "shipping": "Versand",
-    "returns": "Rücksendungen",
+    "events": "Events",
     "faq": "FAQ",
-    "info": "Informationen",
-    "terms": "Allgemeine Geschäftsbedingungen",
-    "privacy": "Datenschutzbestimmungen",
-    "shippingPolicy": "Versandrichtlinien",
-    "returnPolicy": "Rückgaberichtlinien"
+    "careers": "Careers",
+    "about": "About Us"
   },
-  "social": {
-    "instagram": "Instagram",
-    "facebook": "Facebook",
-    "twitter": "Twitter",
-    "whatsapp": "WhatsApp"
-  },
-  "payment": {
-    "bca": "BCA",
-    "mandiri": "Mandiri",
-    "bni": "BNI",
-    "bri": "BRI"
-  },
-  "stats": {
-    "title": "Unser Einfluss in Zahlen",
-    "subtitle": "Seit 2007 erhellen wir Häuser in ganz Indonesien mit unseren handgefertigten Kerzen",
-    "candlesProduced": {
-      "label": "Produzierte Kerzen pro Tag",
-      "description": "Unsere hocheffizienten Produktionsanlagen"
+  "mega_menu": {
+    "products": {
+      "title": "Products",
+      "all": "All Products",
+      "view_all": "View All Products",
+      "view_all_desc": "Explore all the products we offer."
     },
-    "candleVariants": {
-      "label": "Kerzenvarianten",
-      "description": "Einzigartige Düfte, Designs und Stile"
+    "news": {
+      "title": "News",
+      "tech": "Tech News",
+      "breaking": "Breaking News",
+      "breaking_desc": "Latest tech updates",
+      "industry": "Industry Reports",
+      "industry_desc": "Market analysis",
+      "company": "Company Updates",
+      "company_desc": "Business news",
+      "categories": "Categories",
+      "software": "Software",
+      "software_desc": "Software development news",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware innovations",
+      "mobile": "Mobile",
+      "mobile_desc": "Mobile technology",
+      "trending": "Trending",
+      "ai_rev": "AI Revolution",
+      "ai_rev_desc": "AI developments",
+      "web3": "Web3 Updates",
+      "web3_desc": "Blockchain & crypto",
+      "devops": "DevOps News",
+      "devops_desc": "Development operations"
     },
-    "yearsOfExcellence": {
-      "label": "Jahre der Exzellenz",
-      "value": "Seit 2007",
-      "description": "Über 17 Jahre Herstellung von Premium-Kerzen"
+    "startups": {
+      "title": "Startups",
+      "news": "Startup News",
+      "funding": "Funding Rounds",
+      "funding_desc": "Investment updates",
+      "launches": "New Launches",
+      "launches_desc": "Product launches",
+      "success": "Success Stories",
+      "success_desc": "Inspiring journeys",
+      "resources": "Resources",
+      "guide": "Startup Guide",
+      "guide_desc": "How to get started",
+      "investors": "Investor Network",
+      "investors_desc": "Find investors",
+      "mentorship": "Mentorship",
+      "mentorship_desc": "Get expert guidance"
     },
-    "cities": {
-      "label": "Lieferung in ganz Indonesien",
-      "value": "Großstädte",
-      "description": "Wie Jakarta, Bali und andere"
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Phone reviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computer reviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches & more",
+      "buying_guides": "Buying Guides",
+      "deals": "Best Deals",
+      "deals_desc": "Current promotions",
+      "compare": "Comparisons",
+      "compare_desc": "Product comparisons",
+      "recommended": "Recommendations",
+      "recommended_desc": "Editor's choice"
     },
-    "candlesSold": {
-      "label": "Verkaufte Kerzen pro Jahr",
-      "description": "Vertraut von Haushalten und Unternehmen"
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Web Development",
+      "react_desc": "Learn React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobile Development",
+      "rn_desc": "Mobile applications",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift & Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programming",
+      "db_desc": "SQL & NoSQL"
     },
-    "quality": {
-      "label": "Qualitätsgarantie",
-      "description": "Engagement für Exzellenz"
+    "ai": {
+      "title": "AI",
+      "news": "AI News",
+      "ml_desc": "ML developments",
+      "tools": "AI Tools",
+      "tools_desc": "Latest AI tools",
+      "research": "Research",
+      "research_desc": "Academic papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Getting Started",
+      "getting_started_desc": "AI basics",
+      "deep_learning": "Deep Learning",
+      "deep_learning_desc": "Neural networks",
+      "ethics": "AI Ethics",
+      "ethics_desc": "Responsible AI",
+      "productivity": "Productivity",
+      "image_editor": "Image Editor",
+      "image_desc": "Crop, resize, etc.",
+      "pdf_editor": "PDF Editor",
+      "pdf_desc": "Edit and convert PDFs.",
+      "other_tools": "AI & Other Tools",
+      "ai_long": "Artificial Intelligence (AI)",
+      "ai_desc": "Explore the latest developments in AI."
+    },
+    "categories": {
+      "articles": "Articles & News",
+      "main_news": "Top Stories",
+      "tech_innovation": "News (Tech & Innovation)",
+      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiration from the startup world.",
+      "gadget_reviews": "Gadget Reviews",
+      "gadget_reviews_desc": "Reviews and buying guides.",
+      "special_issues": "Special Topics",
+      "cyber_art": "Cybersecurity Articles",
+      "cyber_art_desc": "Digital security tips.",
+      "all_art": "All Articles",
+      "all_art_desc": "View all blog posts.",
+      "learning": "Learning & Guides",
+      "guides": "Guides",
+      "tutorial_desc": "Step-by-step learning guides.",
+      "classes": "Courses",
+      "cyber_course": "Cybersecurity Course",
+      "cyber_course_desc": "Latest cybersecurity classes.",
+      "llm_course": "AI LLM Course",
+      "llm_desc": "Prompt engineering for LLMs.",
+      "ai_eng": "AI Engineer Course",
+      "ai_eng_desc": "In-depth AI engineering."
     }
-  },
-  "products": {
-    "title": "Unsere Kerzenkollektion",
-    "description": "Entdecken Sie unsere handgefertigte Kerzenkollektion aus hochwertigen, natürlichen Materialien. Erhältlich in einer Vielzahl von Düften, Formen und Größen, um Ihre Bedürfnisse zu erfüllen – von Hochzeitsgeschenken über religiöse Zwecke, Notfallbedarf bei Stromausfall bis hin zu Heimdekoration oder besonderen Geschenken."
   }
 }

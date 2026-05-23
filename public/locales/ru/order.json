@@ -1,41 +1,41 @@
 {
   "header": {
     "title": "Codeverta",
-    "subtitle": "Лучший производитель свечей для ваших особых моментов"
+    "subtitle": "Professional software, website, and IT service ordering"
   },
   "howToOrder": {
-    "title": "Как заказать свечную продукцию",
+    "title": "How to Order Codeverta Services",
     "step1": {
-      "title": "1. Свяжитесь с нами",
-      "description": "Пожалуйста, свяжитесь с нами через WhatsApp по номеру",
-      "phone": "081578956156",
-      "contactNote": "чтобы начать ваш заказ. Мы поможем с информацией о продуктах и наличии на складе."
+      "title": "1. Contact Us",
+      "description": "Contact our team via WhatsApp or email to tell us about your project goals, timeline, and business needs.",
+      "phone": "+62881011692615",
+      "contactNote": "We will help clarify the scope, recommended solution, and next steps."
     },
     "step2": {
-      "title": "2. Выберите способ получения",
-      "description": "Доступны два варианта получения нашей продукции:",
-      "pickupTitle": "Самовывоз",
-      "pickupDescription": "Посетите наш магазин по адресу: Jalan Kaliurang KM 9, Слеман, Джокьякарта",
-      "deliveryTitle": "Доставка",
-      "deliveryDescription": "Мы можем отправить через Gojek, Grab или другие службы доставки",
-      "note": "*Крупные заказы требуют предварительного бронирования"
+      "title": "2. Consultation and Scope",
+      "description": "We review your requirements and prepare a suitable technical approach.",
+      "pickupTitle": "Online Consultation",
+      "pickupDescription": "Discuss remotely with our team from anywhere.",
+      "deliveryTitle": "On-site or Dedicated Session",
+      "deliveryDescription": "Available by appointment for selected projects and locations.",
+      "note": "*Larger projects may require a written scope of work before estimation."
     },
     "step3": {
-      "title": "3. Предоплата",
-      "description": "Для крупных заказов вам необходимо внести предоплату (DP) в размере не менее 30% от общей стоимости для подтверждения заказа. Оплата может быть произведена банковским переводом."
+      "title": "3. Proposal and Down Payment",
+      "description": "After the scope is agreed, we send a proposal and invoice. A down payment is required before production begins."
     },
     "step4": {
-      "title": "4. Доставка и окончательный расчет",
-      "description": "Для доставки оплата должна быть произведена полностью до отправки товара. Мы предоставим информацию, когда ваш заказ будет готов к отправке, а также номер отслеживания, если он имеется."
+      "title": "4. Development and Review",
+      "description": "Our team builds the solution in milestones, shares progress updates, and collects feedback before final delivery."
     },
     "step5": {
-      "title": "5. Время производства",
-      "description": "Срок выполнения заказа зависит от количества заказанных вами свечей. Небольшие заказы обычно готовы в течение 1-3 дней. Для крупных заказов мы предоставим ориентировочное время после консультации с вами."
+      "title": "5. Launch and Support",
+      "description": "After final payment, we help launch the project and provide support according to the agreed warranty or maintenance plan."
     }
   },
   "cta": {
-    "title": "Готовы заказать?",
-    "subtitle": "Свяжитесь с нами прямо сейчас, чтобы получить высококачественные ароматические свечи!",
-    "button": "Связаться через WhatsApp"
+    "title": "Ready to start?",
+    "subtitle": "Talk with Codeverta and get a clear plan for your digital product.",
+    "button": "Contact via WhatsApp"
   }
 }
