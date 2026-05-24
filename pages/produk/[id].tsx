@@ -611,7 +611,7 @@ export default function ProjectDetailPage({
         {/* ── Main Content Tabs ── */}
         <div className="container mx-auto px-4 py-12">
           <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full grid-cols-3 sm:grid-cols-6 mb-8">
+            <TabsList className="grid w-full gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mb-24 md:mb-12">
               <TabsTrigger value="overview">
                 {tabs.triggers.overview}
               </TabsTrigger>
@@ -629,7 +629,6 @@ export default function ProjectDetailPage({
               </TabsTrigger>
               <TabsTrigger value="specs">{tabs.triggers.specs}</TabsTrigger>
             </TabsList>
-
             {/* Overview Tab */}
             <TabsContent value="overview" className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
