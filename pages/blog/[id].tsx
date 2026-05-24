@@ -3,7 +3,12 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { getPostData, getAllPostIds, getSortedPostsData } from "lib/posts";
+import {
+  getPostData,
+  getAllPostIds,
+  getSortedPostsData,
+  getLocalizedPostPaths,
+} from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
@@ -62,6 +67,7 @@ interface Props {
   postData: PostData;
   otherPosts: OtherPost[];
   otherProducts: OtherProduct[];
+  localizedPaths?: Record<string, string>;
 }
 
 /* ─────────────────────────────────────────────
@@ -1415,12 +1421,14 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 
     // Panggil fungsi helper di sini
     const otherProducts = getRotatedProducts(id, 3, locale ?? "id");
+    const localizedPaths = getLocalizedPostPaths(id, "blog");
 
     return {
       props: {
         postData,
         otherPosts,
         otherProducts,
+        localizedPaths,
         ...(await serverSideTranslations(locale ?? "id", [
           "common",
           "order",

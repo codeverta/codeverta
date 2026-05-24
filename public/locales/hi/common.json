@@ -1,44 +1,44 @@
 {
-  "our_products": "Our Products",
+  "our_products": "हमारे उत्पाद",
   "home": {
-    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
-    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "title": "छोटे और मध्यम आकार के व्यवसायों के लिए प्रोफेशनल वेबसाइट निर्माण और आईटी समाधान",
+    "subtitle": "हम डिजिटल युग में आपके व्यवसाय के विकास को गति देने के लिए छोटे और मध्यम आकार के व्यवसायों को प्रोफेशनल सॉफ्टवेयर निर्माण, सुधार, विकास सेवाएं और आईटी समाधान प्रदान करते हैं।",
     "hero": {
-      "prefix": "Software Solutions For Every",
+      "prefix": "हर एक के लिए सॉफ्टवेयर समाधान",
       "rotating": [
-        "Retail",
-        "Healthcare",
-        "Fitness",
-        "Hospitality",
-        "Education",
-        "Manufacturing",
-        "E-commerce",
-        "Education",
-        "Finance",
-        "Real Estate",
-        "Nonprofit",
-        "Entertainment",
-        "Transportation",
-        "Food & Beverage",
-        "Consulting",
-        "Legal",
-        "Marketing",
-        "Automotive",
-        "Energy",
-        "Telecommunications"
+        "रिटेल (Retail)",
+        "स्वास्थ्य सेवा (Healthcare)",
+        "फिटनेस (Fitness)",
+        "आतिथ्य (Hospitality)",
+        "शिक्षा (Education)",
+        "विनिर्माण (Manufacturing)",
+        "ई-कॉमर्स (E-commerce)",
+        "शिक्षा (Education)",
+        "वित्त (Finance)",
+        "रियल एस्टेट (Real Estate)",
+        "गैर-लाभकारी संस्था (Nonprofit)",
+        "मनोरंजन (Entertainment)",
+        "परिवहन (Transportation)",
+        "खाद्य और पेय (Food & Beverage)",
+        "परामर्श (Consulting)",
+        "कानूनी (Legal)",
+        "मार्केटिंग (Marketing)",
+        "ऑटोमोटिव (Automotive)",
+        "ऊर्जा (Energy)",
+        "दूरसंचार (Telecommunications)"
       ],
-      "suffix": "Industry"
+      "suffix": "उद्योग"
     },
-    "tagline": "*Startup quality, not your typical WordPress template",
+    "tagline": "*स्टार्टअप जैसी क्वालिटी, आपका सामान्य वर्डप्रेस टेम्पलेट नहीं",
     "cta": {
-      "whatsapp": "WhatsApp Us Now",
-      "products": "View Products"
+      "whatsapp": "हमें अभी व्हाट्सएप करें",
+      "products": "उत्पाद देखें"
     },
     "badges": {
-      "consultation": "Free Consultation",
-      "fast": "Fast Process",
-      "guarantee": "Satisfaction Guarantee",
-      "trusted": "Honest & Reliable"
+      "consultation": "मुफ़्त परामर्श",
+      "fast": "तेज़ प्रक्रिया",
+      "guarantee": "संतुष्टि की गारंटी",
+      "trusted": "ईमानदार और विश्वसनीय"
     },
     "seo": {
       "title": "Codeverta - वेब, ऐप, ERP और IT समाधान विकास सेवाएँ",
@@ -46,220 +46,220 @@
       "keywords": "web development, software house, app development, ERP, POS, IT solutions"
     }
   },
-  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
+  "trustedBy": "छोटे और मध्यम उद्यमों, स्टार्टअप्स और सरकार द्वारा विश्वसनीय",
   "features": {
-    "badge": "Our Services",
-    "title": "Complete Solutions for Your Digital Needs",
-    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
+    "badge": "हमारी सेवाएँ",
+    "title": "आपकी डिजिटल ज़रूरतों के लिए संपूर्ण समाधान",
+    "subtitle": "शानदार वेबसाइटों से लेकर विश्वसनीय आईटी सपोर्ट तक, हम वह सब कुछ प्रदान करते हैं जो आपको ऑनलाइन सफल होने के लिए चाहिए।"
   },
   "portfolio": {
-    "title": "Projects We Have Worked On",
-    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
+    "title": "परियोजनाएं जिन पर हमने काम किया है",
+    "subtitle": "हमारी हालिया परियोजनाओं को देखें जो उच्च गुणवत्ता वाले डिजिटल समाधान देने के लिए हमारी विशेषज्ञता और समर्पण को प्रदर्शित करती हैं।"
   },
   "process": {
-    "badge": "Easy Process, Maximum Results",
-    "title": "Development Process",
-    "subtitle": "Start your project in just 3 simple steps with our expert team."
+    "badge": "आसान प्रक्रिया, अधिकतम परिणाम",
+    "title": "विकास प्रक्रिया",
+    "subtitle": "हमारी विशेषज्ञ टीम के साथ केवल 3 सरल चरणों में अपना प्रोजेक्ट शुरू करें।"
   },
   "testimonials": {
-    "badge": "Testimonials",
-    "title": "What Our Clients Say",
-    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+    "badge": "प्रशंसापत्र",
+    "title": "हमारे ग्राहक क्या कहते हैं",
+    "subtitle": "सिर्फ हमारी बातों पर न जाएं। देखें कि हमारे संतुष्ट ग्राहकों का हमारी सेवाओं के बारे में क्या कहना है।"
   },
   "pricing": {
-    "badge": "Pricing",
-    "title": "Flexible & Transparent Pricing Plans",
-    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "badge": "कीमतें",
+    "title": "लचीली और पारदर्शी मूल्य निर्धारण योजनाएं",
+    "subtitle": "वह योजना चुनें जो आपके व्यवसाय के लिए सबसे उपयुक्त हो। कोई छिपी हुई फीस नहीं।",
     "tabs": {
-      "smme": "SME Scale",
-      "enterprise": "Enterprise"
+      "smme": "SME स्केल",
+      "enterprise": "एंटरप्राइज"
     },
     "card": {
-      "popular": "Most Popular",
-      "perProject": "/one-time payment",
-      "contactSales": "Contact Sales"
+      "popular": "सबसे लोकप्रिय",
+      "perProject": "/एक बार का भुगतान",
+      "contactSales": "बिक्री टीम से संपर्क करें"
     }
   },
   "faq": {
     "badge": "FAQ",
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to the most frequently asked questions about our services."
+    "title": "अक्सर पूछे जाने वाले प्रश्न",
+    "subtitle": "हमारी सेवाओं के बारे में अक्सर पूछे जाने वाले प्रश्नों के उत्तर पाएँ।"
   },
   "cta": {
-    "title": "Ready for a Professional Website?",
-    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "title": "एक प्रोफेशनल वेबसाइट के लिए तैयार हैं?",
+    "description": "मुफ़्त परामर्श के लिए आज ही हमसे संपर्क करें। आइए मिलकर आपके व्यवसाय के लिए एक मजबूत डिजिटल उपस्थिति का निर्माण करें।",
     "buttons": {
-      "free": "Free Consultation",
-      "contact": "Contact Now"
+      "free": "मुफ़्त परामर्श",
+      "contact": "अभी संपर्क करें"
     }
   },
   "navbar": {
-    "products": "Products",
-    "industry": "Industries",
-    "articles": "Articles & News",
-    "learning": "Education",
-    "blog": "Blog",
-    "events": "Events",
+    "products": "उत्पाद",
+    "industry": "उद्योग",
+    "articles": "लेख और समाचार",
+    "learning": "शिक्षा",
+    "blog": "ब्लॉग",
+    "events": "इवेंट्स",
     "faq": "FAQ",
-    "careers": "Careers",
-    "about": "About Us"
+    "careers": "करियर",
+    "about": "हमारे बारे में"
   },
   "mega_menu": {
     "products": {
-      "title": "Products",
-      "all": "All Products",
-      "view_all": "View All Products",
-      "view_all_desc": "Explore all the products we offer."
+      "title": "उत्पाद",
+      "all": "सभी उत्पाद",
+      "view_all": "सभी उत्पाद देखें",
+      "view_all_desc": "हमारे द्वारा पेश किए जाने वाले सभी उत्पादों को एक्सप्लोर करें।"
     },
     "news": {
-      "title": "News",
-      "tech": "Tech News",
-      "breaking": "Breaking News",
-      "breaking_desc": "Latest tech updates",
-      "industry": "Industry Reports",
-      "industry_desc": "Market analysis",
-      "company": "Company Updates",
-      "company_desc": "Business news",
-      "categories": "Categories",
-      "software": "Software",
-      "software_desc": "Software development news",
-      "hardware": "Hardware",
-      "hardware_desc": "Hardware innovations",
-      "mobile": "Mobile",
-      "mobile_desc": "Mobile technology",
-      "trending": "Trending",
-      "ai_rev": "AI Revolution",
-      "ai_rev_desc": "AI developments",
-      "web3": "Web3 Updates",
-      "web3_desc": "Blockchain & crypto",
-      "devops": "DevOps News",
-      "devops_desc": "Development operations"
+      "title": "समाचार",
+      "tech": "टेक समाचार",
+      "breaking": "ब्रेकिंग न्यूज़",
+      "breaking_desc": "नवीनतम टेक अपडेट",
+      "industry": "उद्योग रिपोर्ट",
+      "industry_desc": "बाज़ार विश्लेषण",
+      "company": "कंपनी अपडेट",
+      "company_desc": "बिजनेस समाचार",
+      "categories": "श्रेणियाँ",
+      "software": "सॉफ्टवेयर",
+      "software_desc": "सॉफ्टवेयर विकास समाचार",
+      "hardware": "हार्डवेयर",
+      "hardware_desc": "हार्डवेयर नवाचार",
+      "mobile": "मोबाइल",
+      "mobile_desc": "मोबाइल तकनीक",
+      "trending": "ट्रेंडिंग",
+      "ai_rev": "एआई क्रांति",
+      "ai_rev_desc": "एआई विकास",
+      "web3": "Web3 अपडेट",
+      "web3_desc": "ब्लॉकचेन और क्रिप्टो",
+      "devops": "DevOps समाचार",
+      "devops_desc": "डेवलपमेंट ऑपरेशंस"
     },
     "startups": {
-      "title": "Startups",
-      "news": "Startup News",
-      "funding": "Funding Rounds",
-      "funding_desc": "Investment updates",
-      "launches": "New Launches",
-      "launches_desc": "Product launches",
-      "success": "Success Stories",
-      "success_desc": "Inspiring journeys",
-      "resources": "Resources",
-      "guide": "Startup Guide",
-      "guide_desc": "How to get started",
-      "investors": "Investor Network",
-      "investors_desc": "Find investors",
-      "mentorship": "Mentorship",
-      "mentorship_desc": "Get expert guidance"
+      "title": "स्टार्टअप्स",
+      "news": "स्टार्टअप समाचार",
+      "funding": "फंडिंग राउंड",
+      "funding_desc": "निवेश अपडेट",
+      "launches": "नए लॉन्च",
+      "launches_desc": "उत्पाद लॉन्च",
+      "success": "सफलता की कहानियां",
+      "success_desc": "प्रेरणादायक यात्राएं",
+      "resources": "संसाधन",
+      "guide": "स्टार्टअप गाइड",
+      "guide_desc": "शुरुआत कैसे करें",
+      "investors": "इन्वेस्टर नेटवर्क",
+      "investors_desc": "इन्वेस्टर खोजें",
+      "mentorship": "मेंटरशिप",
+      "mentorship_desc": "विशेषज्ञ मार्गदर्शन प्राप्त करें"
     },
     "gadget": {
-      "title": "Gadgets",
-      "reviews": "Reviews",
-      "smartphones": "Smartphones",
-      "smartphones_desc": "Phone reviews",
-      "laptops": "Laptops",
-      "laptops_desc": "Computer reviews",
-      "wearables": "Wearables",
-      "wearables_desc": "Smartwatches & more",
-      "buying_guides": "Buying Guides",
-      "deals": "Best Deals",
-      "deals_desc": "Current promotions",
-      "compare": "Comparisons",
-      "compare_desc": "Product comparisons",
-      "recommended": "Recommendations",
-      "recommended_desc": "Editor's choice"
+      "title": "गैजेट्स",
+      "reviews": "समीक्षाएं",
+      "smartphones": "स्मार्टफोन",
+      "smartphones_desc": "फोन समीक्षाएं",
+      "laptops": "लैपटॉप",
+      "laptops_desc": "कंप्यूटर समीक्षाएं",
+      "wearables": "वियरेबल्स",
+      "wearables_desc": "स्मार्टवॉच और बहुत कुछ",
+      "buying_guides": "बाइंग गाइड",
+      "deals": "सर्वोत्तम डील्स",
+      "deals_desc": "वर्तमान प्रमोशन",
+      "compare": "तुलना",
+      "compare_desc": "उत्पादों की तुलना",
+      "recommended": "अनुशंसित",
+      "recommended_desc": "संपादक की पसंद"
     },
     "tutorials": {
-      "title": "Tutorials",
-      "web_dev": "Web Development",
-      "react_desc": "Learn React.js",
-      "nextjs_desc": "Full-stack React",
-      "js_desc": "JS best practices",
-      "mobile_dev": "Mobile Development",
-      "rn_desc": "Mobile applications",
-      "flutter_desc": "Cross-platform",
-      "ios_desc": "Swift & Objective-C",
-      "backend": "Backend",
-      "node_desc": "Server-side JS",
-      "python_desc": "Python programming",
-      "db_desc": "SQL & NoSQL"
+      "title": "ट्यूटोरियल",
+      "web_dev": "वेब डेवलपमेंट",
+      "react_desc": "React.js सीखें",
+      "nextjs_desc": "फुल-स्टैक React",
+      "js_desc": "JS सर्वोत्तम अभ्यास",
+      "mobile_dev": "मोबाइल डेवलपमेंट",
+      "rn_desc": "मोबाइल एप्लिकेशन",
+      "flutter_desc": "क्रॉस-प्लेटफ़ॉर्म",
+      "ios_desc": "Swift और Objective-C",
+      "backend": "बैकएंड",
+      "node_desc": "सर्वर-साइड JS",
+      "python_desc": "पायथन प्रोग्रामिंग",
+      "db_desc": "SQL और NoSQL"
     },
     "ai": {
-      "title": "AI",
-      "news": "AI News",
-      "ml_desc": "ML developments",
-      "tools": "AI Tools",
-      "tools_desc": "Latest AI tools",
-      "research": "Research",
-      "research_desc": "Academic papers",
-      "tutorials": "Tutorials",
-      "getting_started": "Getting Started",
-      "getting_started_desc": "AI basics",
-      "deep_learning": "Deep Learning",
-      "deep_learning_desc": "Neural networks",
-      "ethics": "AI Ethics",
-      "ethics_desc": "Responsible AI",
-      "productivity": "Productivity",
-      "image_editor": "Image Editor",
-      "image_desc": "Crop, resize, etc.",
-      "pdf_editor": "PDF Editor",
-      "pdf_desc": "Edit and convert PDFs.",
-      "other_tools": "AI & Other Tools",
-      "ai_long": "Artificial Intelligence (AI)",
-      "ai_desc": "Explore the latest developments in AI."
+      "title": "एआई",
+      "news": "एआई समाचार",
+      "ml_desc": "एमएल विकास",
+      "tools": "एआई टूल्स",
+      "tools_desc": "नवीनतम एआई टूल्स",
+      "research": "अनुसंधान",
+      "research_desc": "अकादमिक पेपर्स",
+      "tutorials": "ट्यूटोरियल",
+      "getting_started": "शुरुआत करना",
+      "getting_started_desc": "एआई की बुनियादी बातें",
+      "deep_learning": "डीप लर्निंग",
+      "deep_learning_desc": "न्यूरल नेटवर्क",
+      "ethics": "एआई नैतिकता",
+      "ethics_desc": "जिम्मेदार एआई",
+      "productivity": "उत्पादकता",
+      "image_editor": "इमेज एडिटर",
+      "image_desc": "क्रॉप, रीसाइज, आदि।",
+      "pdf_editor": "पीडीएफ एडिटर",
+      "pdf_desc": "पीडीएफ संपादित और कनवर्ट करें।",
+      "other_tools": "एआई और अन्य टूल्स",
+      "ai_long": "कृत्रिम बुद्धिमत्ता (AI)",
+      "ai_desc": "एआई में नवीनतम विकास का पता लगाएं।"
     },
     "categories": {
-      "articles": "Articles & News",
-      "main_news": "Top Stories",
-      "tech_innovation": "News (Tech & Innovation)",
-      "tech_innovation_desc": "Latest news on tech and innovation.",
-      "startup_stories": "Startups",
-      "startup_stories_desc": "Inspiration from the startup world.",
-      "gadget_reviews": "Gadget Reviews",
-      "gadget_reviews_desc": "Reviews and buying guides.",
-      "special_issues": "Special Topics",
-      "cyber_art": "Cybersecurity Articles",
-      "cyber_art_desc": "Digital security tips.",
-      "all_art": "All Articles",
-      "all_art_desc": "View all blog posts.",
-      "learning": "Learning & Guides",
-      "guides": "Guides",
-      "tutorial_desc": "Step-by-step learning guides.",
-      "classes": "Courses",
-      "cyber_course": "Cybersecurity Course",
-      "cyber_course_desc": "Latest cybersecurity classes.",
-      "llm_course": "AI LLM Course",
-      "llm_desc": "Prompt engineering for LLMs.",
-      "ai_eng": "AI Engineer Course",
-      "ai_eng_desc": "In-depth AI engineering."
+      "articles": "लेख और समाचार",
+      "main_news": "शीर्ष कहानियां",
+      "tech_innovation": "समाचार (तकनीक और नवाचार)",
+      "tech_innovation_desc": "तकनीक और नवाचार पर नवीनतम समाचार।",
+      "startup_stories": "स्टार्टअप्स",
+      "startup_stories_desc": "स्टार्टअप की दुनिया से प्रेरणा।",
+      "gadget_reviews": "गैजेट समीक्षाएं",
+      "gadget_reviews_desc": "समीक्षाएं और बाइंग गाइड।",
+      "special_issues": "विशेष विषय",
+      "cyber_art": "साइबर सुरक्षा लेख",
+      "cyber_art_desc": "डिजिटल सुरक्षा युक्तियाँ।",
+      "all_art": "सभी लेख",
+      "all_art_desc": "सभी ब्लॉग पोस्ट देखें।",
+      "learning": "सीखना और गाइड",
+      "guides": "गाइड",
+      "tutorial_desc": "चरण-दर-चरण लर्निंग गाइड।",
+      "classes": "पाठ्यक्रम",
+      "cyber_course": "साइबर सुरक्षा पाठ्यक्रम",
+      "cyber_course_desc": "नवीनतम साइबर सुरक्षा कक्षाएं।",
+      "llm_course": "एआई एलएलएम पाठ्यक्रम",
+      "llm_desc": "एलएलएम के लिए प्रॉम्ट इंजीनियरिंग।",
+      "ai_eng": "एआई इंजीनियर पाठ्यक्रम",
+      "ai_eng_desc": "गहन एआई इंजीनियरिंग।"
     }
   },
   "homePage": {
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "प्रोफेशनल वेबसाइट डिज़ाइन",
+          "description": "हम आधुनिक, रिस्पॉन्सिव वेबसाइटें डिज़ाइन करते हैं जो डेस्कटॉप और मोबाइल पर खूबसूरती से काम करती हैं।"
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "SEO और परफॉर्मेंस ऑप्टिमाइज़ेशन",
+          "description": "तेज़, ऑप्टिमाइज़्ड वेब पेजों के साथ गूगल विज़िबिलिटी और यूज़र एक्सपीरियंस में सुधार करें।"
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "मरम्मत और रखरखाव",
+          "description": "हमारी टीम बग्स, त्रुटियों, खराब लेआउट को ठीक करती है और आपकी वेबसाइट को अपडेट रखती है।"
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "विश्वसनीय वेबसाइट सुरक्षा",
+          "description": "परतदार सुरक्षा और व्यावहारिक सुदृढ़ीकरण के साथ अपने डेटा और आगंतुकों की रक्षा करें।"
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "आईटी सपोर्ट सेवाएँ",
+          "description": "हार्डवेयर समस्या निवारण से लेकर नेटवर्क प्रबंधन तक, तकनीकी समस्याओं में सहायता प्राप्त करें।"
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "बिक्री के बाद सहायता (Aftersales Support)",
+          "description": "हम लॉन्च के बाद भी आपकी वेबसाइट और सिस्टम का समर्थन जारी रखते हैं ताकि संचालन सुचारू रहे।"
         }
       ]
     },
@@ -267,57 +267,57 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "आवश्यकता परामर्श",
+          "description": "हमारी टीम के साथ अपने विचारों, लक्ष्यों और परियोजना आवश्यकताओं पर मुफ़्त में चर्चा करें।"
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "डिज़ाइन और विकास",
+          "description": "हम सहमत दायरे के आधार पर आपकी वेबसाइट, एप्लिकेशन या आईटी समाधान का डिज़ाइन और निर्माण करते हैं।"
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "लॉन्च और रखरखाव",
+          "description": "हम आपका प्रोजेक्ट लॉन्च करते हैं और सब कुछ अच्छी तरह से चलाने के लिए रखरखाव प्रदान करते हैं।"
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
+          "quote": "Codeverta ने हमारी वेबसाइट को पूरी तरह से कुछ अधिक प्रोफेशनल में बदल दिया। आगंतुकों की संख्या में काफी सुधार हुआ है।",
           "author": "Sarah Widjaja",
-          "role": "Owner, Butik Elegan",
+          "role": "मालिक, बुटिक एलिगन",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
+          "quote": "हमारी पुरानी वेबसाइट बहुत धीमी थी। Codeverta द्वारा इसे ठीक करने के बाद, स्पीड उत्कृष्ट हो गई थी।",
           "author": "Budi Santoso",
-          "role": "Marketing Manager, Maju Jaya Motor",
+          "role": "मार्केटिंग मैनेजर, माजू जया मोटर",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
+          "quote": "उनका आईटी सपोर्ट अत्यधिक उत्तरदायी है। हमारे कार्यालय की तकनीकी समस्याओं को तुरंत संभाल लिया जाता है।",
           "author": "Emily Hartono",
-          "role": "Head of Operations, Startup Cepat",
+          "role": "संचालन प्रमुख, स्टार्टअप सेपत",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
+          "quote": "प्रक्रिया पारदर्शी थी और परिणाम उम्मीदों से बढ़कर रहा। हमारी वेबसाइट अब एक प्रमुख बिक्री चैनल है।",
           "author": "David Kim",
-          "role": "CEO, InnovateNow",
+          "role": "सीईओ, इनोवेटनाउ",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
+          "quote": "Codeverta टीम के साथ संवाद करना आसान है और वे वास्तव में उस विज़न को समझते हैं जो हम चाहते हैं।",
           "author": "Lisa Puspita",
-          "role": "Creative Director, Galeri Seni",
+          "role": "क्रिएटिव डायरेक्टर, गैलेरी सेनी",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
+          "quote": "हमारे सर्वोत्तम निवेशों में से एक। जब से नई वेबसाइट लॉन्च हुई है, राजस्व में उल्लेखनीय वृद्धि हुई है।",
           "author": "James Wilson",
-          "role": "COO, ScaleUp Inc",
+          "role": "सीओओ, स्केलअप इंक",
           "rating": 5
         }
       ]
@@ -325,130 +325,282 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
+          "name": "SME वेबसाइट पैकेज",
           "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "description": "कंपनी प्रोफाइल या पोर्टफोलियो के लिए उपयुक्त।",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "आपकी पसंद के आधार पर कस्टम डिज़ाइन",
+            "SMEs के लिए उपयुक्त",
+            "मुख्य पेज और विशेषताएं",
+            "1 वर्ष के लिए निःशुल्क डोमेन और होस्टिंग",
+            "परफॉर्मेंस पर केंद्रित, कोई सामान्य वर्डप्रेस टेम्पलेट नहीं"
           ],
-          "cta": "Choose Package"
+          "cta": "पैकेज चुनें"
         },
         {
-          "name": "Online Store Package",
+          "name": "ऑनलाइन स्टोर पैकेज",
           "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "description": "बढ़ते हुए SMEs और ऑनलाइन व्यवसायों के लिए आदर्श।",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "आपकी पसंद के आधार पर कस्टम डिज़ाइन",
+            "SEO ऑप्टिमाइज़ेशन",
+            "प्राथमिकता विकास"
           ],
-          "cta": "Choose Package",
+          "cta": "पैकेज चुनें",
           "popular": true
         },
         {
-          "name": "Custom System Package",
+          "name": "कस्टम सिस्टम पैकेज",
           "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "description": "अधिक जटिल आवश्यकताओं वाली कंपनियों के लिए।",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "उन्नत कस्टम सुविधाएँ",
+            "आपकी आवश्यकताओं के अनुरूप डिज़ाइन और सिस्टम",
+            "मासिक परफॉर्मेंस रिपोर्ट",
+            "1 वर्ष से अधिक के लिए रखरखाव"
           ],
-          "cta": "Contact Sales"
+          "cta": "बिक्री टीम से संपर्क करें"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
+          "name": "एंटरप्राइज",
           "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "description": "जटिल सिस्टम और वर्कफ़्लो वाली कंपनियों के लिए।",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "अनुरोध पर आधारित कस्टम सुविधाएँ",
+            "अन्य प्रणालियों या अनुप्रयोगों के साथ एकीकरण",
+            "अनुसूचित क्लाउड बैकअप",
+            "24/7 सुरक्षा और परफॉर्मेंस की निगरानी",
+            "प्राथमिकता विकास",
+            "1 वर्ष से अधिक के लिए रखरखाव"
           ],
-          "cta": "Contact Sales"
+          "cta": "बिक्री टीम से संपर्क करें"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "वेबसाइट बनाने में कितना समय लगता है?",
+          "answer": "समय सीमा जटिलता पर निर्भर करती है। एक बुनियादी वेबसाइट में आमतौर पर 1-2 सप्ताह लगते हैं, जबकि मध्यम स्तर के सिस्टम में एक महीने से अधिक का समय लग सकता है।"
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "मुझे क्या तैयारी करने की आवश्यकता है?",
+          "answer": "कंपनी प्रोफाइल टेक्स्ट, सेवाओं या उत्पादों की सूची और जो भी इमेज आप दिखाना चाहते हैं, उन्हें तैयार रखें। यदि आपके पास अभी वे नहीं हैं, तो हमारी टीम आपका मार्गदर्शन करने में मदद कर सकती है।"
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "क्या आप लॉन्च के बाद रखरखाव प्रदान करते हैं?",
+          "answer": "हाँ। हम मासिक या वार्षिक रखरखाव पैकेज पेश करते हैं जिसमें अपडेट, बैकअप, मॉनिटरिंग और चल रहे सुधार शामिल हैं।"
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "क्या आप मेरी मौजूदा वेबसाइट की मरम्मत कर सकते?",
+          "answer": "हाँ। हम पहले आपकी वेबसाइट का ऑडिट करते हैं, त्रुटियों, स्पीड या लेआउट की समस्याओं की पहचान करते हैं, और सर्वोत्तम समाधान की सिफारिश करते।"
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "भुगतान कैसे काम करता है?",
+          "answer": "भुगतान आमतौर पर 30% जमा (अग्रिम) राशि के साथ किया जाता है और शेष राशि वेबसाइट पूरी होने और स्वीकृत होने के बाद दी जाती है।"
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "उद्योग",
+      "title": "हर उद्योग के लिए समाधान",
+      "subtitle": "मैन्युफैक्चरिंग प्लांट से लेकर हेल्थकेयर सिस्टम तक, Codeverta आपके उद्योग की ज़रूरतों के अनुकूल ढल जाता है ताकि संचालन सरल और विकास तेज़ हो सके।",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "विनिर्माण (Manufacturing)",
+          "desc": "उत्पादन, इन्वेंट्री और डिलीवरी वर्कफ़्लो को सुव्यवस्थित करें।"
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "व्यापार और वितरण",
+          "desc": "प्रोक्योरमेंट, ऑर्डर और सप्लाई चेन को कुशलतापूर्वक प्रबंधित करें।"
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "रिटेल (Retail)",
+          "desc": "बिक्री बढ़ाएँ, इन्वेंट्री प्रबंधित करें और ग्राहक अनुभव में सुधार करें।"
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "इंजीनियरिंग और निर्माण",
+          "desc": "बेहतर नियंत्रण के साथ परियोजनाओं, संसाधनों और बजट का प्रबंधन करें।"
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "ई-कॉमर्स",
+          "desc": "ऑर्डर, ग्राहकों और ऑनलाइन बिक्री वृद्धि का प्रबंधन करें।"
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "शिक्षा",
+          "desc": "प्रवेश, पाठ्यक्रम, भुगतान और छात्र वर्कफ़्लो को सरल बनाएं।"
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "प्रोफेशनल सेवाएँ",
+          "desc": "परियोजनाओं, बिलिंग और ग्राहक सहयोग को सुव्यवस्थित करें।"
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "वित्तीय सेवाएँ",
+          "desc": "वित्त, पोर्टफोलियो और अनुपालन को अधिक आसानी से ट्रैक करें।"
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "स्वास्थ्य सेवा",
+          "desc": "रिकॉर्ड, अपॉइंटमेंट और संचालन को एक ही स्थान पर प्रबंधित करें।"
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "गैर-लाभकारी संस्था",
+          "desc": "फंडरेजिंग, डोनर मैनेजमेंट और प्रोजेक्ट एक्ज़ीक्यूशन में सुधार करें।"
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Codeverta डिजिटल उत्पाद - Information Systems, ERP, POS और Web App Portfolio",
+      "description": "Codeverta डिजिटल उत्पाद देखें: information systems, ERP, POS, e-commerce, web applications, ticketing, EMR और कई industries के लिए custom IT solutions.",
+      "keywords": "Codeverta digital products, information system portfolio, web applications, ERP, POS, software house, business IT solutions, custom software"
+    },
+    "hero": {
+      "title": "IT Solutions Portfolio",
+      "subtitle": "विभिन्न business और industry needs के लिए विकसित information systems और web applications का पूरा collection."
+    },
+    "status": {
+      "productionReady": "Production Ready",
+      "completed": "Completed",
+      "inDevelopment": "In Development"
+    },
+    "card": {
+      "updated": "Updated",
+      "viewDetail": "Details देखें",
+      "contact": "संपर्क करें"
+    },
+    "cta": {
+      "title": "Custom IT Solution चाहिए?",
+      "description": "हम आपके business needs के अनुसार information system develop करने में मदद कर सकते हैं."
+    },
+    "schema": {
+      "home": "Home",
+      "products": "Products",
+      "itemListName": "Codeverta Digital Product Portfolio"
+    }
+  },
+  "cookieConsent": {
+    "title": "हम cookies का उपयोग करते हैं",
+    "description": "हम साइट को चलाने, भाषा प्राथमिकताओं को याद रखने और पेज के प्रदर्शन को समझने के लिए आवश्यक कुकीज़ का उपयोग करते हैं। एनालिटिक्स कुकीज़ का उपयोग केवल आपकी सहमति से किया जाता है।",
+    "accept": "स्वीकार करें",
+    "reject": "Non-essential अस्वीकार",
+    "learnMore": "Privacy policy पढ़ें"
+  },
+  "footer": {
+    "description": "मजबूत security standards के साथ high-quality, honest और transparent digital solutions बनाने वाला IT service provider.",
+    "partOf": "का हिस्सा",
+    "rights": "सभी अधिकार सुरक्षित.",
+    "company": {
+      "title": "कंपनी",
+      "links": {
+        "about": "हमारे बारे में",
+        "contact": "संपर्क",
+        "terms": "सेवा की शर्तें",
+        "privacy": "गोपनीयता नीति",
+        "blog": "ब्लॉग और समाचार",
+        "faq": "FAQ",
+        "gallery": "गैलरी"
+      }
+    },
+    "programs": {
+      "title": "प्रोग्राम्स",
+      "links": {
+        "cybersecurity": "साइबर सुरक्षा कोर्स",
+        "aiEngineer": "एआई इंजीनियर",
+        "consulting": "आईटी परामर्श",
+        "development": "सॉफ्टवेयर विकास"
+      }
+    },
+    "legal": {
+      "title": "Legal & Trust",
+      "registered": "Officially Registered",
+      "certifications": "Certifications & Security"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta - Terms & Conditions",
+      "description": "सॉफ्टवेयर विकास, वेबसाइट सेवाओं, भुगतान, बौद्धिक संपदा और देयता सीमाओं के लिए कोडवर्टा के नियम और शर्तें पढ़ें।",
+      "keywords": "Codeverta terms, terms of service, software development agreement, website service terms"
+    },
+    "schema": {
+      "about": "नियम और शर्तें"
+    },
+    "title": "नियम और शर्तें",
+    "last_updated": "अंतिम अपडेट: 23 दिसंबर, 2025",
+    "intro": "Codeverta और BikinWebsiteJogja में आपका स्वागत है। हमारी साइट तक पहुँचने या हमारी सेवाओं का उपयोग करके, आप निम्नलिखित शर्तों से सहमत होते हैं।",
+    "sections": {
+      "services": {
+        "title": "1. सेवाओं का दायरा",
+        "content": "Codeverta स्वीकृत प्रस्ताव या कार्य विवरण के अनुसार सॉफ्टवेयर विकास, वेबसाइट निर्माण, एप्लिकेशन विकास, सिस्टम एकीकरण और आईटी परामर्श प्रदान करता है।"
+      },
+      "payment": {
+        "title": "2. भुगतान की शर्तें",
+        "content": "भुगतान स्वीकृत प्रस्ताव, चालान (invoice) या माइलस्टोन अनुसूची का पालन करते हैं। उत्पादन शुरू होने से पहले एक जमा राशि की आवश्यकता होती है, और अंतिम भुगतान अंतिम संपत्ति सौंपने से पहले देय होता है।"
+      },
+      "ip": {
+        "title": "3. बौद्धिक संपदा",
+        "content": "पूर्ण भुगतान के बाद, अनुबंध के अनुसार स्रोत कोड उपयोग अधिकार या स्वामित्व प्रदान किया जाता है। तीसरे पक्ष के पुस्तकालय (third-party libraries), टेम्पलेट, लाइसेंस और मुख्य ढांचे उनके अपने लाइसेंस के अधीन रहते हैं।"
+      },
+      "liability": {
+        "title": "4. देयता की सीमा",
+        "content": "वारंटी या रखरखाव की अवधि समाप्त होने के बाद सिस्टम के दुरुपयोग, अन्य पक्षों द्वारा किए गए परिवर्तनों, होस्टिंग/डोमेन मुद्दों, या तीसरे पक्ष के एकीकरण के कारण होने वाले नुकसान के लिए हम उत्तरदायी नहीं हैं।"
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - अक्सर पूछे जाने वाले प्रश्न",
+      "description": "Website development, digital systems, technical workflow और payment process के जवाब पाएँ.",
+      "keywords": "Codeverta FAQ, website development questions, custom software, IT project payment, maintenance"
+    },
+    "title": "अक्सर पूछे जाने वाले प्रश्न",
+    "subtitle": "Website development, digital systems, technical workflow और payment process के जवाब पाएँ.",
+    "cta": {
+      "title": "क्या कोई और प्रश्न है?",
+      "description": "अपनी digital needs पर हमसे consult करें. हमारी team मदद के लिए तैयार है.",
+      "whatsapp": "WhatsApp Chat",
+      "portfolio": "Portfolio देखें"
+    },
+    "items": [
+      {
+        "question": "प्रत्येक प्रकार के सिस्टम के लिए विकास में कितना समय लगता है?",
+        "answer": "समय सीमा परियोजना के पैमाने और जटिलता पर निर्भर करती है। एक साधारण वेबसाइट में अक्सर 1-2 सप्ताह लगते हैं, मध्यम आकार के सिस्टम जैसे ई-कॉमर्स, पीओएस और एचआरएमएस में लगभग 1-3 महीने लगते हैं, जबकि ईआरपी या डब्ल्यूएमएस में कई महीने लग सकते हैं।"
+      },
+      {
+        "question": "परियोजना शुरू होने से पहले मुझे क्या तैयारी करनी चाहिए?",
+        "answer": "सुविधा आवश्यकताओं, डिज़ाइन संदर्भ, प्रारंभिक डेटा संरचना, सामग्री, फ़ोटो और कंपनी दस्तावेज़ तैयार करें। तकनीकी परियोजनाओं के लिए, हम विकास से पहले आवश्यकताओं और व्यावसायिक वर्कफ़्लो को परिष्कृत करने में मदद करते हैं।"
+      },
+      {
+        "question": "क्या भविष्य में सिस्टम का विस्तार किया जा सकता है?",
+        "answer": "हाँ। ई-कॉमर्स, ईआरपी, एचआरएमएस, सीआरएम और डब्ल्यूएमएस जैसे सिस्टम मॉड्यूलर रूप से बनाए गए हैं ताकि नई सुविधाएँ, एपीआई एकीकरण, भुगतान या सर्वर माइग्रेशन को चरणों में जोड़ा जा सके।"
+      },
+      {
+        "question": "क्या आप लॉन्च के बाद रखरखाव प्रदान करते हैं?",
+        "answer": "हाँ। हम मासिक या वार्षिक रखरखाव की पेशकश करते हैं जिसमें बग फिक्स, सुरक्षा अपडेट, सर्वर मॉनिटरिंग, बैकअप और छोटी सुविधाएं जोड़ना शामिल है।"
+      },
+      {
+        "question": "क्या आप मेरे व्यवसाय के लिए कस्टम सुविधाएँ बना सकते हैं?",
+        "answer": "हाँ। हम मॉड्यूल, वर्कफ़्लो, रिपोर्ट और Midtrans, GeoServer, Socket.io, GraphQL, Kafka, RFID या अन्य प्रणालियों जैसे एकीकरण को कस्टमाइज़ कर सकते हैं।"
+      },
+      {
+        "question": "ऑर्डर से लेकर परिनियोजन (deployment) तक का वर्कफ़्लो क्या है?",
+        "answer": "प्रक्रिया परामर्श, आवश्यकता विश्लेषण, प्रस्ताव, प्रारंभिक भुगतान, यूआई/यूएक्स डिज़ाइन, विकास, परीक्षण, संशोधन, अंतिम रूप देने, अंतिम भुगतान और आपके सर्वर या क्लाउड पर परिनियोजन के साथ शुरू होती है।"
+      },
+      {
+        "question": "सॉफ्टवेयर विकास के लिए भुगतान कैसे काम करता है?",
+        "answer": "भुगतान आमतौर पर 30% जमा राशि के साथ शुरू होता है और शेष राशि परियोजना पूरी होने और स्वीकृत होने के बाद दी जाती है। बड़े प्रोजेक्ट्स का भुगतान माइलस्टोन के अनुसार किया जा सकता है।"
+      },
+      {
+        "question": "आप किन तकनीकों का उपयोग करते हैं?",
+        "answer": "तकनीकी स्टैक प्रोजेक्ट पर निर्भर करता है। हम Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS और क्लाउड सेवाओं जैसी तकनीकों का उपयोग करते हैं।"
+      },
+      {
+        "question": "क्या सिस्टम विभिन्न उपकरणों पर प्रतिक्रियाशील (responsive) हैं?",
+        "answer": "हाँ। हमारे वेब सिस्टम डेस्कटॉप, टैबलेट और स्मार्टफोन पर रिस्पॉन्सिव हैं। पीओएस या डब्ल्यूएमएस इंटरफेस को टच डिवाइस और फील्ड ऑपरेशन्स के लिए भी ऑप्टिमाइज़ किया जा सकता है।"
+      }
+    ]
   }
 }

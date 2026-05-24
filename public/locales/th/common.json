@@ -1,44 +1,44 @@
 {
-  "our_products": "Our Products",
+  "our_products": "ผลิตภัณฑ์ของเรา",
   "home": {
-    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
-    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "title": "บริการรับทำเว็บไซต์มืออาชีพและโซลูชัน IT สำหรับธุรกิจขนาดกลางและขนาดย่อม (SME)",
+    "subtitle": "เราให้บริการสร้าง ซ่อมแซม พัฒนาซอฟต์แวร์ และโซลูชัน IT แบบมืออาชีพ เพื่อขับเคลื่อนการเติบโตของธุรกิจคุณในยุคดิจิทัล สำหรับธุรกิจขนาดกลางและขนาดย่อม",
     "hero": {
-      "prefix": "Software Solutions For Every",
+      "prefix": "โซลูชันซอฟต์แวร์สำหรับทุก",
       "rotating": [
-        "Retail",
-        "Healthcare",
-        "Fitness",
-        "Hospitality",
-        "Education",
-        "Manufacturing",
-        "E-commerce",
-        "Education",
-        "Finance",
-        "Real Estate",
-        "Nonprofit",
-        "Entertainment",
-        "Transportation",
-        "Food & Beverage",
-        "Consulting",
-        "Legal",
-        "Marketing",
-        "Automotive",
-        "Energy",
-        "Telecommunications"
+        "ธุรกิจค้าปลีก",
+        "การแพทย์และสาธารณสุข",
+        "ฟิตเนสและสุขภาพ",
+        "การโรงแรมและการบริการ",
+        "การศึกษา",
+        "การผลิตและโรงงาน",
+        "อีคอมเมิร์ซ",
+        "การศึกษา",
+        "การเงินและการธนาคาร",
+        "อสังหาริมทรัพย์",
+        "องค์กรไม่แสวงหากำไร",
+        "ความบันเทิง",
+        "การขนส่งและโลจิสติกส์",
+        "อาหารและเครื่องดื่ม (F&B)",
+        "ธุรกิจที่ปรึกษา",
+        "กฎหมาย",
+        "การตลาด",
+        "ยานยนต์",
+        "พลังงาน",
+        "โทรคมนาคม"
       ],
-      "suffix": "Industry"
+      "suffix": "อุตสาหกรรม"
     },
-    "tagline": "*Startup quality, not your typical WordPress template",
+    "tagline": "*คุณภาพระดับ Startup ไม่ใช่เทมเพลต WordPress ทั่วไป",
     "cta": {
-      "whatsapp": "WhatsApp Us Now",
-      "products": "View Products"
+      "line": "ติดต่อเราทาง LINE ตอนนี้",
+      "products": "ดูผลิตภัณฑ์"
     },
     "badges": {
-      "consultation": "Free Consultation",
-      "fast": "Fast Process",
-      "guarantee": "Satisfaction Guarantee",
-      "trusted": "Honest & Reliable"
+      "consultation": "ปรึกษาฟรี",
+      "fast": "ขั้นตอนรวดเร็ว",
+      "guarantee": "รับประกันความพึงพอใจ",
+      "trusted": "ซื่อสัตย์และเชื่อถือได้"
     },
     "seo": {
       "title": "Codeverta - บริการพัฒนาเว็บ แอป ERP และโซลูชัน IT",
@@ -46,220 +46,220 @@
       "keywords": "พัฒนาเว็บไซต์, software house, พัฒนาแอป, ERP, POS, โซลูชัน IT"
     }
   },
-  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
+  "trustedBy": "ได้รับความไว้วางใจจากธุรกิจ SME, สตาร์ทอัพ และหน่วยงานภาครัฐ",
   "features": {
-    "badge": "Our Services",
-    "title": "Complete Solutions for Your Digital Needs",
-    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
+    "badge": "บริการของเรา",
+    "title": "โซลูชันที่ครบวงจรสำหรับทุกความต้องการดิจิทัลของคุณ",
+    "subtitle": "ตั้งแต่เว็บไซต์ที่สวยงามไปจนถึงการสนับสนุน IT ที่น่าเชื่อถือ เรามีทุกสิ่งที่คุณต้องการเพื่อความสำเร็จในโลกออนไลน์"
   },
   "portfolio": {
-    "title": "Projects We Have Worked On",
-    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
+    "title": "โปรเจกต์ที่เราเคยร่วมงาน",
+    "subtitle": "ชมผลงานล่าสุดบางส่วนของเราที่แสดงถึงความเชี่ยวชาญและความมุ่งมั่นในการส่งมอบโซลูชันดิจิทัลคุณภาพสูง"
   },
   "process": {
-    "badge": "Easy Process, Maximum Results",
-    "title": "Development Process",
-    "subtitle": "Start your project in just 3 simple steps with our expert team."
+    "badge": "ขั้นตอนง่ายๆ ผลลัพธ์สูงสุด",
+    "title": "กระบวนการพัฒนา",
+    "subtitle": "เริ่มต้นโปรเจกต์ของคุณด้วย 3 ขั้นตอนง่ายๆ ร่วมกับทีมงานผู้เชี่ยวชาญของเรา"
   },
   "testimonials": {
-    "badge": "Testimonials",
-    "title": "What Our Clients Say",
-    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+    "badge": "รีวิวจากลูกค้า",
+    "title": "สิ่งที่ลูกค้าพูดถึงเรา",
+    "subtitle": "อย่าเพิ่งเชื่อคำพูดเราฝ่ายเดียว มาดูสิ่งที่ลูกค้าที่ประทับใจพูดถึงบริการของเรากันดีกว่า"
   },
   "pricing": {
-    "badge": "Pricing",
-    "title": "Flexible & Transparent Pricing Plans",
-    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "badge": "การกำหนดราคา",
+    "title": "แผนราคาที่ยืดหยุ่นและโปร่งใส",
+    "subtitle": "เลือกแผนที่เหมาะสมกับธุรกิจของคุณมากที่สุด ไม่มีค่าธรรมเนียมแอบแฝง",
     "tabs": {
-      "smme": "SME Scale",
-      "enterprise": "Enterprise"
+      "smme": "ระดับ SME",
+      "enterprise": "ระดับองค์กรใหญ่"
     },
     "card": {
-      "popular": "Most Popular",
-      "perProject": "/one-time payment",
-      "contactSales": "Contact Sales"
+      "popular": "ยอดนิยมที่สุด",
+      "perProject": "/ชำระเงินครั้งเดียว",
+      "contactSales": "ติดต่อฝ่ายขาย"
     }
   },
   "faq": {
     "badge": "FAQ",
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to the most frequently asked questions about our services."
+    "title": "คำถามที่พบบ่อย",
+    "subtitle": "ค้นหาคำตอบสำหรับคำถามที่พบบ่อยที่สุดเกี่ยวกับบริการของเรา"
   },
   "cta": {
-    "title": "Ready for a Professional Website?",
-    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "title": "พร้อมสำหรับเว็บไซต์ระดับมืออาชีพหรือยัง?",
+    "description": "ติดต่อเราวันนี้เพื่อรับการปรึกษาฟรี มาร่วมสร้างตัวตนบนโลกออนไลน์ที่แข็งแกร่งให้กับธุรกิจของคุณไปด้วยกัน",
     "buttons": {
-      "free": "Free Consultation",
-      "contact": "Contact Now"
+      "free": "ปรึกษาฟรี",
+      "contact": "ติดต่อตอนนี้"
     }
   },
   "navbar": {
-    "products": "Products",
-    "industry": "Industries",
-    "articles": "Articles & News",
-    "learning": "Education",
-    "blog": "Blog",
-    "events": "Events",
+    "products": "ผลิตภัณฑ์",
+    "industry": "อุตสาหกรรม",
+    "articles": "บทความและข่าวสาร",
+    "learning": "การเรียนรู้",
+    "blog": "บล็อก",
+    "events": "กิจกรรม",
     "faq": "FAQ",
-    "careers": "Careers",
-    "about": "About Us"
+    "careers": "ร่วมงานกับเรา",
+    "about": "เกี่ยวกับเรา"
   },
   "mega_menu": {
     "products": {
-      "title": "Products",
-      "all": "All Products",
-      "view_all": "View All Products",
-      "view_all_desc": "Explore all the products we offer."
+      "title": "ผลิตภัณฑ์",
+      "all": "ผลิตภัณฑ์ทั้งหมด",
+      "view_all": "ดูผลิตภัณฑ์ทั้งหมด",
+      "view_all_desc": "สำรวจผลิตภัณฑ์ทั้งหมดที่เรามีให้บริการ"
     },
     "news": {
-      "title": "News",
-      "tech": "Tech News",
-      "breaking": "Breaking News",
-      "breaking_desc": "Latest tech updates",
-      "industry": "Industry Reports",
-      "industry_desc": "Market analysis",
-      "company": "Company Updates",
-      "company_desc": "Business news",
-      "categories": "Categories",
-      "software": "Software",
-      "software_desc": "Software development news",
-      "hardware": "Hardware",
-      "hardware_desc": "Hardware innovations",
-      "mobile": "Mobile",
-      "mobile_desc": "Mobile technology",
-      "trending": "Trending",
-      "ai_rev": "AI Revolution",
-      "ai_rev_desc": "AI developments",
-      "web3": "Web3 Updates",
-      "web3_desc": "Blockchain & crypto",
-      "devops": "DevOps News",
-      "devops_desc": "Development operations"
+      "title": "ข่าวสาร",
+      "tech": "ข่าวเทคโนโลยี",
+      "breaking": "ข่าวเด่นประเด็นร้อน",
+      "breaking_desc": "อัปเดตเทคโนโลยีล่าสุด",
+      "industry": "รายงานอุตสาหกรรม",
+      "industry_desc": "การวิเคราะห์ตลาด",
+      "company": "อัปเดตจากบริษัท",
+      "company_desc": "ข่าวสารทางธุรกิจ",
+      "categories": "หมวดหมู่",
+      "software": "ซอฟต์แวร์",
+      "software_desc": "ข่าวสารวงการพัฒนาซอฟต์แวร์",
+      "hardware": "ฮาร์ดแวร์",
+      "hardware_desc": "นวัตกรรมด้านฮาร์ดแวร์",
+      "mobile": "โมบายล์",
+      "mobile_desc": "เทคโนโลยีมือถือ",
+      "trending": "กำลังมาแรง",
+      "ai_rev": "การปฏิวัติ AI",
+      "ai_rev_desc": "ความคืบหน้าด้าน AI",
+      "web3": "อัปเดต Web3",
+      "web3_desc": "บล็อกเชนและคริปโต",
+      "devops": "ข่าว DevOps",
+      "devops_desc": "กระบวนการพัฒนาและ운영"
     },
     "startups": {
-      "title": "Startups",
-      "news": "Startup News",
-      "funding": "Funding Rounds",
-      "funding_desc": "Investment updates",
-      "launches": "New Launches",
-      "launches_desc": "Product launches",
-      "success": "Success Stories",
-      "success_desc": "Inspiring journeys",
-      "resources": "Resources",
-      "guide": "Startup Guide",
-      "guide_desc": "How to get started",
-      "investors": "Investor Network",
-      "investors_desc": "Find investors",
-      "mentorship": "Mentorship",
-      "mentorship_desc": "Get expert guidance"
+      "title": "สตาร์ทอัพ",
+      "news": "ข่าวสตาร์ทอัพ",
+      "funding": "รอบการระดมทุน",
+      "funding_desc": "อัปเดตการลงทุน",
+      "launches": "เปิดตัวใหม่",
+      "launches_desc": "การเปิดตัวผลิตภัณฑ์ใหม่",
+      "success": "เรื่องราวความสำเร็จ",
+      "success_desc": "เส้นทางธุรกิจที่สร้างแรงบันดาลใจ",
+      "resources": "แหล่งข้อมูล",
+      "guide": "คู่มือสตาร์ทอัพ",
+      "guide_desc": "วิธีเริ่มต้นธุรกิจ",
+      "investors": "เครือข่ายนักลงทุน",
+      "investors_desc": "ค้นหานักลงทุน",
+      "mentorship": "ระบบพี่เลี้ยง (Mentorship)",
+      "mentorship_desc": "รับคำแนะนำจากผู้เชี่ยวชาญ"
     },
     "gadget": {
-      "title": "Gadgets",
-      "reviews": "Reviews",
-      "smartphones": "Smartphones",
-      "smartphones_desc": "Phone reviews",
-      "laptops": "Laptops",
-      "laptops_desc": "Computer reviews",
-      "wearables": "Wearables",
-      "wearables_desc": "Smartwatches & more",
-      "buying_guides": "Buying Guides",
-      "deals": "Best Deals",
-      "deals_desc": "Current promotions",
-      "compare": "Comparisons",
-      "compare_desc": "Product comparisons",
-      "recommended": "Recommendations",
-      "recommended_desc": "Editor's choice"
+      "title": "แกดเจ็ต",
+      "reviews": "รีวิว",
+      "smartphones": "สมาร์ทโฟน",
+      "smartphones_desc": "รีวิวโทรศัพท์มือถือ",
+      "laptops": "แล็ปท็อป",
+      "laptops_desc": "รีวิวคอมพิวเตอร์",
+      "wearables": "อุปกรณ์สวมใส่",
+      "wearables_desc": "สมาร์ทวอทช์และอื่นๆ",
+      "buying_guides": "คู่มือการเลือกซื้อ",
+      "deals": "ดีลที่ดีที่สุด",
+      "deals_desc": "โปรโมชันปัจจุบัน",
+      "compare": "เปรียบเทียบ",
+      "compare_desc": "เปรียบเทียบผลิตภัณฑ์",
+      "recommended": "สินค้าแนะนำ",
+      "recommended_desc": "ทางเลือกจากบรรณาธิการ"
     },
     "tutorials": {
-      "title": "Tutorials",
-      "web_dev": "Web Development",
-      "react_desc": "Learn React.js",
+      "title": "บทเรียน",
+      "web_dev": "การพัฒนาเว็บ",
+      "react_desc": "เรียนรู้ React.js",
       "nextjs_desc": "Full-stack React",
-      "js_desc": "JS best practices",
-      "mobile_dev": "Mobile Development",
-      "rn_desc": "Mobile applications",
-      "flutter_desc": "Cross-platform",
+      "js_desc": "แนวทางปฏิบัติที่ดีที่สุดของ JS",
+      "mobile_dev": "การพัฒนาแอปมือถือ",
+      "rn_desc": "แอปพลิเคชันมือถือ",
+      "flutter_desc": "ข้ามแพลตฟอร์ม",
       "ios_desc": "Swift & Objective-C",
-      "backend": "Backend",
-      "node_desc": "Server-side JS",
-      "python_desc": "Python programming",
+      "backend": "แบ็คเอนด์",
+      "node_desc": "JS ฝั่งเซิร์ฟเวอร์",
+      "python_desc": "การเขียนโปรแกรม Python",
       "db_desc": "SQL & NoSQL"
     },
     "ai": {
       "title": "AI",
-      "news": "AI News",
-      "ml_desc": "ML developments",
-      "tools": "AI Tools",
-      "tools_desc": "Latest AI tools",
-      "research": "Research",
-      "research_desc": "Academic papers",
-      "tutorials": "Tutorials",
-      "getting_started": "Getting Started",
-      "getting_started_desc": "AI basics",
-      "deep_learning": "Deep Learning",
-      "deep_learning_desc": "Neural networks",
-      "ethics": "AI Ethics",
-      "ethics_desc": "Responsible AI",
-      "productivity": "Productivity",
-      "image_editor": "Image Editor",
-      "image_desc": "Crop, resize, etc.",
-      "pdf_editor": "PDF Editor",
-      "pdf_desc": "Edit and convert PDFs.",
-      "other_tools": "AI & Other Tools",
-      "ai_long": "Artificial Intelligence (AI)",
-      "ai_desc": "Explore the latest developments in AI."
+      "news": "ข่าว AI",
+      "ml_desc": "การพัฒนาเกี่ยวกับ ML",
+      "tools": "เครื่องมือ AI",
+      "tools_desc": "เครื่องมือ AI ล่าสุด",
+      "research": "งานวิจัย",
+      "research_desc": "เอกสารวิชาการ",
+      "tutorials": "บทเรียน",
+      "getting_started": "เริ่มต้นใช้งาน",
+      "getting_started_desc": "พื้นฐาน AI",
+      "deep_learning": "ดีปเลิร์นนิง",
+      "deep_learning_desc": "โครงข่ายประสาทเทียม",
+      "ethics": "จริยธรรม AI",
+      "ethics_desc": "AI ที่มีความรับผิดชอบ",
+      "productivity": "การเพิ่มประสิทธิภาพ",
+      "image_editor": "เครื่องมือแก้ไขรูปภาพ",
+      "image_desc": "ครอบตัด เปลี่ยนขนาด ฯลฯ",
+      "pdf_editor": "เครื่องมือแก้ไข PDF",
+      "pdf_desc": "แก้ไขและแปลงไฟล์ PDF",
+      "other_tools": "AI และเครื่องมืออื่นๆ",
+      "ai_long": "ปัญญาประดิษฐ์ (AI)",
+      "ai_desc": "สำรวจการพัฒนาล่าสุดในด้าน AI"
     },
     "categories": {
-      "articles": "Articles & News",
-      "main_news": "Top Stories",
-      "tech_innovation": "News (Tech & Innovation)",
-      "tech_innovation_desc": "Latest news on tech and innovation.",
-      "startup_stories": "Startups",
-      "startup_stories_desc": "Inspiration from the startup world.",
-      "gadget_reviews": "Gadget Reviews",
-      "gadget_reviews_desc": "Reviews and buying guides.",
-      "special_issues": "Special Topics",
-      "cyber_art": "Cybersecurity Articles",
-      "cyber_art_desc": "Digital security tips.",
-      "all_art": "All Articles",
-      "all_art_desc": "View all blog posts.",
-      "learning": "Learning & Guides",
-      "guides": "Guides",
-      "tutorial_desc": "Step-by-step learning guides.",
-      "classes": "Courses",
-      "cyber_course": "Cybersecurity Course",
-      "cyber_course_desc": "Latest cybersecurity classes.",
-      "llm_course": "AI LLM Course",
-      "llm_desc": "Prompt engineering for LLMs.",
-      "ai_eng": "AI Engineer Course",
-      "ai_eng_desc": "In-depth AI engineering."
+      "articles": "บทความและข่าวสาร",
+      "main_news": "เรื่องเด่น",
+      "tech_innovation": "ข่าวสาร (เทคโนโลยีและนวัตกรรม)",
+      "tech_innovation_desc": "ข่าวสารล่าสุดเกี่ยวกับเทคโนโลยีและนวัตกรรม",
+      "startup_stories": "สตาร์ทอัพ",
+      "startup_stories_desc": "แรงบันดาลใจจากโลกสตาร์ทอัพ",
+      "gadget_reviews": "รีวิวแกดเจ็ต",
+      "gadget_reviews_desc": "รีวิวและคู่มือการเลือกซื้อ",
+      "special_issues": "หัวข้อพิเศษ",
+      "cyber_art": "บทความความปลอดภัยไซเบอร์",
+      "cyber_art_desc": "เคล็ดลับความปลอดภัยดิจิทัล",
+      "all_art": "บทความทั้งหมด",
+      "all_art_desc": "ดูโพสต์บล็อกทั้งหมด",
+      "learning": "การเรียนรู้และคู่มือ",
+      "guides": "คู่มือ",
+      "tutorial_desc": "คู่มือการเรียนรู้ทีละขั้นตอน",
+      "classes": "คอร์สเรียน",
+      "cyber_course": "คอร์สความปลอดภัยไซเบอร์",
+      "cyber_course_desc": "คลาสเรียนความปลอดภัยไซเบอร์ล่าสุด",
+      "llm_course": "คอร์ส AI LLM",
+      "llm_desc": "Prompt engineering สำหรับ LLM",
+      "ai_eng": "คอร์สวิศวกร AI",
+      "ai_eng_desc": "เจาะลึกวิศวกรรม AI"
     }
   },
   "homePage": {
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "การออกแบบเว็บไซต์ระดับมืออาชีพ",
+          "description": "เราออกแบบเว็บไซต์ที่ทันสมัยและรองรับการแสดงผลแบบ responsive ซึ่งทำงานได้อย่างสวยงามทั้งบนเดสก์ท็อปและมือถือ"
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "การเพิ่มประสิทธิภาพ SEO และ Performance",
+          "description": "ปรับปรุงการมองเห็นบน Google และประสบการณ์ผู้ใช้ด้วยหน้าเว็บที่รวดเร็วและได้รับการปรับแต่งมาอย่างดี"
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "การซ่อมแซมและการบำรุงรักษา",
+          "description": "ทีมงานของเราช่วยแก้ไขบั๊ก ข้อผิดพลาด เลย์เอาต์ที่พัง และดูแลเว็บไซต์ของคุณให้ทันสมัยอยู่เสมอ"
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "ความปลอดภัยของเว็บไซต์ที่เชื่อถือได้",
+          "description": "ปกป้องข้อมูลและผู้เข้าชมของคุณด้วยระบบความปลอดภัยหลายชั้นและการติดตั้งโครงสร้างที่รัดกุม"
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "บริการสนับสนุนด้าน IT",
+          "description": "รับความช่วยเหลือเกี่ยวกับปัญหาทางเทคนิค ตั้งแต่การแก้ไขปัญหาฮาร์ดแวร์ไปจนถึงการจัดการระบบเครือข่าย"
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "บริการหลังการขาย",
+          "description": "เรายังคงสนับสนุนเว็บไซต์และระบบของคุณอย่างต่อเนื่องหลังจากการเปิดตัว เพื่อให้การดำเนินงานของคุณราบรื่นไม่มีสะดุด"
         }
       ]
     },
@@ -267,56 +267,56 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "ปรึกษาความต้องการ",
+          "description": "พูดคุยเกี่ยวกับไอเดีย เป้าหมาย และความต้องการของโปรเจกต์กับทีมงานของเราได้ฟรี"
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "การออกแบบและพัฒนา",
+          "description": "เราออกแบบและสร้างเว็บไซต์ แอปพลิเคชัน หรือโซลูชัน IT ของคุณตามขอบเขตงานที่ตกลงกันไว้"
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "เปิดตัวและบำรุงรักษา",
+          "description": "เราเปิดตัวโปรเจกต์ของคุณและให้บริการบำรุงรักษาเพื่อให้ทุกอย่างทำงานได้อย่างมีประสิทธิภาพ"
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
-          "author": "Sarah Widjaja",
-          "role": "Owner, Butik Elegan",
+          "quote": "Codeverta เปลี่ยนแปลงเว็บไซต์ของเราให้ดูเป็นมืออาชีพมากขึ้นอย่างสิ้นเชิง จำนวนผู้เข้าชมเว็บไซต์เพิ่มขึ้นอย่างมีนัยสำคัญ",
+          "author": "สาระ วิcurrentวัฒน์",
+          "role": "เจ้าของร้าน Butik Elegan",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
-          "author": "Budi Santoso",
-          "role": "Marketing Manager, Maju Jaya Motor",
+          "quote": "เว็บไซต์เดิมของเราช้ามาก หลังจากที่ Codeverta เข้ามาช่วยแก้ไข ตอนนี้ความเร็วดีเยี่ยมมากครับ",
+          "author": "บุญส่ง สันติสุข",
+          "role": "ผู้จัดการฝ่ายการตลาด Maju Jaya Motor",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
-          "author": "Emily Hartono",
-          "role": "Head of Operations, Startup Cepat",
+          "quote": "ฝ่ายสนับสนุน IT ของพวกเขาตอบสนองไวมาก ปัญหาทางเทคนิคในสำนักงานของเราได้รับการจัดการอย่างรวดเร็ว",
+          "author": "อรพินท์ หะริณสุต",
+          "role": "หัวหน้าฝ่ายปฏิบัติการ Startup Cepat",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
-          "author": "David Kim",
+          "quote": "กระบวนการทำงานมีความโปร่งใสและผลลัพธ์ที่ได้ก็เกินความคาดหมาย ปัจจุบันเว็บไซต์ของเราเป็นช่องทางการขายหลักไปแล้ว",
+          "author": "เดวิด คิม",
           "role": "CEO, InnovateNow",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
-          "author": "Lisa Puspita",
-          "role": "Creative Director, Galeri Seni",
+          "quote": "ทีมงาน Codeverta สื่อสารด้วยง่ายมาก และเข้าใจวิสัยทัศน์ที่เราต้องการจะสื่อสารอย่างแท้จริง",
+          "author": "ลลิสา ศิลปเสนีย์",
+          "role": "ผู้อำนวยการฝ่ายสร้างสรรค์ Galeri Seni",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
-          "author": "James Wilson",
+          "quote": "หนึ่งในการลงทุนที่ดีที่สุดของเรา ตั้งแต่เปิดตัวเว็บไซต์ใหม่ รายได้เพิ่มขึ้นอย่างเห็นได้ชัด",
+          "author": "เจมส์ วิลสัน",
           "role": "COO, ScaleUp Inc",
           "rating": 5
         }
@@ -325,130 +325,282 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
-          "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "name": "แพ็กเกจเว็บไซต์สำหรับ SME",
+          "price": "เริ่มต้น 25,000 บาท",
+          "description": "เหมาะสำหรับเว็บไซต์โปรไฟล์บริษัทหรือพอร์ตโฟลิโอเก็บผลงาน",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "ออกแบบตามโครงสร้างเฉพาะตามความต้องการของคุณ",
+            "เหมาะสมและคุ้มค่าสำหรับธุรกิจ SME",
+            "หน้าเว็บและฟังก์ชันหลักพื้นฐานครบครัน",
+            "ฟรีโดเมนและโฮสติ้งเป็นเวลา 1 ปี",
+            "เน้นประสิทธิภาพการโหลด ไม่ใช่เทมเพลต WordPress สำเร็จรูปทั่วไป"
           ],
-          "cta": "Choose Package"
+          "cta": "เลือกแพ็กเกจ"
         },
         {
-          "name": "Online Store Package",
-          "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "name": "แพ็กเกจร้านค้าออนไลน์ (E-commerce)",
+          "price": "เริ่มต้น 60,000 บาท",
+          "description": "เหมาะสำหรับธุรกิจ SME ที่กำลังเติบโตและเน้นการขายออนไลน์",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "ออกแบบโครงสร้างเฉพาะตามความต้องการของคุณ",
+            "การเพิ่มประสิทธิภาพ SEO เต็มรูปแบบ",
+            "สิทธิ์การพัฒนาในลำดับความสำคัญระดับสูง"
           ],
-          "cta": "Choose Package",
+          "cta": "เลือกแพ็กเกจ",
           "popular": true
         },
         {
-          "name": "Custom System Package",
-          "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "name": "แพ็กเกจระบบคัสตอมตามสั่ง",
+          "price": "เริ่มต้น 120,000 บาท",
+          "description": "สำหรับบริษัทที่มีความต้องการระบบที่ซับซ้อนเฉพาะทาง",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "ฟังก์ชันคัสตอมขั้นสูงระดับแอดวานซ์",
+            "การออกแบบและวางระบบที่ปรับแต่งให้เข้ากับเวิร์กโฟลว์ของคุณ",
+            "รายงานประสิทธิภาพการทำงานรายเดือน",
+            "บริการดูแลและบำรุงรักษาระบบมากกว่า 1 ปี"
           ],
-          "cta": "Contact Sales"
+          "cta": "ติดต่อฝ่ายขาย"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
-          "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "name": "ระดับองค์กรใหญ่ (Enterprise)",
+          "price": "เริ่มต้น 300,000 บาท",
+          "description": "สำหรับบริษัทที่มีระบบภายในและเวิร์กโฟลว์ที่ซับซ้อนสูง",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "ฟังก์ชันคัสตอมเต็มรูปแบบตามคำขอขององค์กร",
+            "การเชื่อมต่อ API ร่วมกับระบบเดิมหรือแอปพลิเคชันอื่นๆ",
+            "ระบบสำรองข้อมูลบนคลาวด์แบบกำหนดเวลาอัตโนมัติ",
+            "การตรวจสอบความปลอดภัยและประสิทธิภาพตลอด 24 ชั่วโมงทุกวัน",
+            "ทีมพัฒนาดูแลในลำดับความสำคัญสูงสุด",
+            "บริการดูแลและบำรุงรักษาระบบมากกว่า 1 ปี"
           ],
-          "cta": "Contact Sales"
+          "cta": "ติดต่อฝ่ายขาย"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "ใช้เวลานานเท่าใดในการสร้างเว็บไซต์?",
+          "answer": "ระยะเวลาขึ้นอยู่กับความซับซ้อน เว็บไซต์พื้นฐานทั่วไปมักใช้เวลา 1-2 สัปดาห์ ในขณะที่ระบบขนาดกลางขึ้นไปอาจใช้เวลามากกว่าหนึ่งเดือน"
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "ฉันต้องเตรียมตัวอะไรบ้างก่อนเริ่มงาน?",
+          "answer": "เตรียมเนื้อหาโปรไฟล์บริษัท รายการบริการหรือผลิตภัณฑ์ และรูปภาพใดๆ ที่คุณต้องการจัดแสดง หากคุณยังไม่มี ทีมงานของเราสามารถช่วยให้คำแนะนำในการเตรียมข้อมูลได้"
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "คุณมีบริการดูแลระบบหลังเปิดตัวหรือไม่?",
+          "answer": "มีครับ เรามีแพ็กเกจการบำรุงรักษารายเดือนหรือรายปี ซึ่งครอบคลุมทั้งการอัปเดต การสำรองข้อมูล การมอนิเตอร์ระบบ และการแก้ไขปัญหาที่เกิดขึ้นอย่างต่อเนื่อง"
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "คุณสามารถซ่อมแซมแก้ไขเว็บไซต์เดิมที่มีอยู่ของฉันได้ไหม?",
+          "answer": "ได้ครับ ทีมงานเราจะทำการตรวจสอบเว็บไซต์ของคุณก่อน เพื่อค้นหาปัญหา เช่น ข้อผิดพลาด บั๊ก ความเร็วในการโหลด หรือเลย์เอาต์ที่พัง จากนั้นจะแนะนำแนวทางแก้ไขที่ดีที่สุดให้"
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "กระบวนการชำระเงินทำงานอย่างไร?",
+          "answer": "โดยปกติจะแบ่งการชำระเงินเป็น มัดจำงวดแรก 30% เพื่อเริ่มดำเนินงาน และชำระส่วนที่เหลือหลังจากเว็บไซต์เสร็จสมบูรณ์และได้รับการตรวจสอบอนุมัติแล้ว"
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "อุตสาหกรรม",
+      "title": "โซลูชันสำหรับทุกอุตสาหกรรม",
+      "subtitle": "ตั้งแต่โรงงานผลิตไปจนถึงระบบการดูแลสุขภาพ Codeverta ปรับตัวให้เข้ากับความต้องการในอุตสาหกรรมของคุณ เพื่อให้การดำเนินงานง่ายขึ้นและการเติบโตรวดเร็วยิ่งขึ้น",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "การผลิตและโรงงาน",
+          "desc": "ปรับปรุงกระบวนการผลิต คลังสินค้า และเวิร์กโฟลว์การจัดส่งให้มีประสิทธิภาพ"
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "การค้าและการจัดจำหน่าย",
+          "desc": "จัดการการจัดซื้อจัดจ้าง คำสั่งซื้อ และซัพพลายเชนได้อย่างมีประสิทธิภาพ"
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "ธุรกิจค้าปลีก",
+          "desc": "เพิ่มยอดขาย จัดการคลังสินค้า และปรับปรุงประสบการณ์ที่ดีให้กับลูกค้า"
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "วิศวกรรมและการก่อสร้าง",
+          "desc": "จัดการโปรเจกต์ ทรัพยากร และงบประมาณด้วยการควบคุมที่ดีขึ้น"
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "อีคอมเมิร์ซ",
+          "desc": "จัดการคำสั่งซื้อ ลูกค้า และขับเคลื่อนการเติบโตของยอดขายออนไลน์"
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "การศึกษา",
+          "desc": "ลดขั้นตอนการรับสมัคร คอร์สเรียน การชำระเงิน และเวิร์กโฟลว์ของนักเรียน"
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "บริการระดับมืออาชีพ",
+          "desc": "จัดการโปรเจกต์ ระบบการเรียกเก็บเงิน และการทำงานร่วมกับลูกค้าให้เป็นระบบ"
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "บริการทางการเงิน",
+          "desc": "ติดตามการเงิน พอร์ตโฟลิโอ และการปฏิบัติตามกฎระเบียบได้ง่ายขึ้น"
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "การแพทย์และสาธารณสุข",
+          "desc": "จัดการประวัติการรักษา นัดหมาย และการดำเนินงานทั้งหมดในที่เดียว"
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "องค์กรไม่แสวงหากำไร",
+          "desc": "ปรับปรุงการระดมทุน การจัดการผู้บริจาค และการดำเนินโครงการต่างๆ ให้ดียิ่งขึ้น"
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "ผลิตภัณฑ์ดิจิทัล Codeverta - พอร์ตโฟลิโอระบบสารสนเทศ ERP POS และเว็บแอป",
+      "description": "สำรวจผลิตภัณฑ์ดิจิทัลของ Codeverta: ระบบสารสนเทศ ERP POS อีคอมเมิร์ซ เว็บแอป ระบบตั๋ว EMR และโซลูชัน IT แบบกำหนดเองสำหรับหลายอุตสาหกรรม",
+      "keywords": "ผลิตภัณฑ์ดิจิทัล Codeverta, ระบบสารสนเทศ, เว็บแอป, ERP, POS, software house, โซลูชัน IT ธุรกิจ, ซอฟต์แวร์ custom"
+    },
+    "hero": {
+      "title": "พอร์ตโฟลิโอโซลูชัน IT",
+      "subtitle": "คอลเลกชันระบบสารสนเทศและเว็บแอปที่เราพัฒนาสำหรับความต้องการทางธุรกิจและอุตสาหกรรมที่หลากหลาย"
+    },
+    "status": {
+      "productionReady": "พร้อมใช้งานจริง",
+      "completed": "เสร็จสมบูรณ์",
+      "inDevelopment": "กำลังพัฒนา"
+    },
+    "card": {
+      "updated": "อัปเดตเมื่อ",
+      "viewDetail": "ดูรายละเอียด",
+      "contact": "ติดต่อเรา"
+    },
+    "cta": {
+      "title": "ต้องการโซลูชัน IT แบบกำหนดเอง?",
+      "description": "เราพร้อมช่วยพัฒนาระบบสารสนเทศให้ตรงกับความต้องการของธุรกิจคุณ"
+    },
+    "schema": {
+      "home": "หน้าแรก",
+      "products": "ผลิตภัณฑ์",
+      "itemListName": "พอร์ตโฟลิโอผลิตภัณฑ์ดิจิทัล Codeverta"
+    }
+  },
+  "cookieConsent": {
+    "title": "เราใช้คุกกี้",
+    "description": "เราใช้คุกกี้ที่จำเป็นเพื่อเปิดใช้งานการใช้งานเว็บไซต์ จดจำการตั้งค่าภาษา และทำความเข้าใจประสิทธิภาพของหน้าเว็บ คุกกี้เพื่อการวิเคราะห์จะถูกใช้งานเมื่อได้รับความยินยอมจากคุณเท่านั้น",
+    "accept": "ยอมรับทั้งหมด",
+    "reject": "ปฏิเสธคุกกี้ไม่จำเป็น",
+    "learnMore": "อ่านนโยบายความเป็นส่วนตัว"
+  },
+  "footer": {
+    "description": "ผู้ให้บริการ IT ที่มุ่งสร้างโซลูชันดิจิทัลคุณภาพสูง ซื่อสัตย์ โปร่งใส และมีมาตรฐานความปลอดภัยที่ดีเยี่ยม",
+    "partOf": "ส่วนหนึ่งของ",
+    "rights": "สงวนลิขสิทธิ์.",
+    "company": {
+      "title": "บริษัท",
+      "links": {
+        "about": "เกี่ยวกับเรา",
+        "contact": "ติดต่อเรา",
+        "terms": "เงื่อนไขการให้บริการ",
+        "privacy": "นโยบายความเป็นส่วนตัว",
+        "blog": "บล็อก & ข่าวสาร",
+        "faq": "FAQ",
+        "gallery": "แกลเลอรี"
+      }
+    },
+    "programs": {
+      "title": "โปรแกรม",
+      "links": {
+        "cybersecurity": "คอร์สความปลอดภัยไซเบอร์",
+        "aiEngineer": "คอร์สวิศวกร AI",
+        "consulting": "บริการที่ปรึกษา IT",
+        "development": "การพัฒนาซอฟต์แวร์"
+      }
+    },
+    "legal": {
+      "title": "กฎหมายและความน่าเชื่อถือ",
+      "registered": "จดทะเบียนอย่างเป็นทางการ",
+      "certifications": "ใบรับรองและความปลอดภัย"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta - ข้อกำหนดและเงื่อนไขการใช้งาน",
+      "description": "อ่านข้อกำหนดและเงื่อนไขของ Codeverta สำหรับการพัฒนาซอฟต์แวร์ บริการเว็บไซต์ การชำระเงิน ทรัพย์สินทางปัญญา และขอบเขตการจำกัดความรับผิดชอบ",
+      "keywords": "เงื่อนไข Codeverta, ข้อกำหนดการให้บริการ, ข้อตกลงการพัฒนาซอฟต์แวร์, ข้อกำหนดบริการเว็บ"
+    },
+    "schema": {
+      "about": "ข้อกำหนดและเงื่อนไข"
+    },
+    "title": "ข้อกำหนดและเงื่อนไข",
+    "last_updated": "อัปเดตล่าสุด: 23 ธันวาคม 2025",
+    "intro": "ยินดีต้อนรับสู่ Codeverta & BikinWebsiteJogja เมื่อเข้าสู่ไซต์ของเราหรือใช้บริการของเรา แสดงว่าคุณยอมรับข้อกำหนดต่อไปนี้",
+    "sections": {
+      "services": {
+        "title": "1. ขอบเขตการให้บริการ",
+        "content": "Codeverta ให้บริการพัฒนาซอฟต์แวร์ สร้างเว็บไซต์ พัฒนาแอปพลิเคชัน การรวมระบบ (system integration) และการปรึกษาด้าน IT ตามข้อเสนอที่ได้รับอนุมัติหรือขอบเขตของงาน (SOW)"
+      },
+      "payment": {
+        "title": "2. เงื่อนไขการชำระเงิน",
+        "content": "การชำระเงินเป็นไปตามข้อเสนอ ใบแจ้งหนี้ หรือกำหนดการส่งมอบงาน (Milestone) ที่ตกลงกันไว้ จำเป็นต้องชำระเงินมัดจำก่อนเริ่มดำเนินการผลิต และต้องชำระเงินงวดสุดท้ายก่อนการส่งมอบสินทรัพย์ระบบขั้นสุดท้าย"
+      },
+      "ip": {
+        "title": "3. ทรัพย์สินทางปัญญา",
+        "content": "หลังจากชำระเงินเต็มจำนวน สิทธิ์ในการใช้งานซอร์สโค้ดหรือความเป็นเจ้าของจะได้รับการส่งมอบตามสัญญา อย่างไรก็ตาม ไลบรารีบุคคลที่สาม เทมเพลต ใบอนุญาตพาณิชย์ และเฟรมเวิร์กหลักยังคงอยู่ภายใต้เงื่อนไขใบอนุญาตของตนเอง"
+      },
+      "liability": {
+        "title": "4. ข้อจำกัดความรับผิดชอบ",
+        "content": "เราจะไม่รับผิดชอบต่อความสูญเสียที่เกิดจากการใช้งานระบบในทางที่ผิด การแก้ไขดัดแปลงโดยบุคคลอื่น ปัญหาเกี่ยวกับโฮสติ้ง/โดเมน หรือการเชื่อมต่อกับระบบภายนอกของบุคคลที่สามหลังจากสิ้นสุดระยะเวลารับประกันหรือการบำรุงรักษา"
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - คำถามที่พบบ่อย",
+      "description": "ค้นหาคำตอบเกี่ยวกับการทำเว็บไซต์ ระบบดิจิทัล ขั้นตอนเทคนิค และกระบวนการชำระเงิน",
+      "keywords": "Codeverta FAQ, คำถามทำเว็บไซต์, พัฒนาซอฟต์แวร์คัสตอม, ชำระเงินโปรเจกต์ IT, การบำรุงรักษา"
+    },
+    "title": "คำถามที่พบบ่อย",
+    "subtitle": "ค้นหาคำตอบเกี่ยวกับการทำเว็บไซต์ ระบบดิจิทัล ขั้นตอนเทคนิค และกระบวนการชำระเงิน",
+    "cta": {
+      "title": "ยังคงมีคำถามอื่นหรือไม่?",
+      "description": "พูดคุยเกี่ยวกับความต้องการดิจิทัลของคุณกับเรา ทีมงานของเราพร้อมให้ความช่วยเหลือเสมอ",
+      "line": "แชทผ่าน LINE",
+      "portfolio": "ดูผลงาน"
+    },
+    "items": [
+      {
+        "question": "ระยะเวลาการพัฒนาสำหรับระบบแต่ละประเภทใช้เวลานานเท่าใด?",
+        "answer": "ระยะเวลาขึ้นอยู่กับขนาดและความซับซ้อนของโปรเจกต์ เว็บไซต์ทั่วไปมักใช้เวลา 1-2 สัปดาห์ ระบบขนาดกลาง เช่น อีคอมเมิร์ซ, POS และ HRMS ใช้เวลาประมาณ 1-3 เดือน ในขณะที่ระบบขนาดใหญ่อย่าง ERP หรือ WMS อาจใช้เวลาหลายเดือน"
+      },
+      {
+        "question": "ฉันควรเตรียมอะไรบ้างก่อนเริ่มโปรเจกต์?",
+        "answer": "เตรียมความต้องการฟังก์ชันพื้นฐาน เอกสารอ้างอิงการออกแบบ โครงสร้างข้อมูลเบื้องต้น เนื้อหา รูปภาพ และเอกสารของบริษัท สำหรับโปรเจกต์ทางเทคนิค เราจะช่วยสรุปความต้องการและเวิร์กโฟลว์ทางธุรกิจก่อนเริ่มพัฒนาจริง"
+      },
+      {
+        "question": "ระบบสามารถขยายหรืออัปเกรดเพิ่มเติมในอนาคตได้หรือไม่?",
+        "answer": "ได้ครับ ระบบต่างๆ เช่น อีคอมเมิร์ซ, ERP, HRMS, CRM และ WMS ถูกสร้างขึ้นในรูปแบบโมดูลาร์ (แยกส่วนอิสระ) เพื่อให้สามารถเพิ่มฟังก์ชันใหม่ๆ การเชื่อมต่อ API ภายนอก ระบบชำระเงิน หรือการย้ายเซิร์ฟเวอร์ในภายหลังเป็นขั้นตอนได้โดยไม่กระทบระบบเดิม"
+      },
+      {
+        "question": "คุณมีบริการบำรุงรักษาดูแลระบบหลังการเปิดตัวหรือไม่?",
+        "answer": "มีครับ เราเสนอบริการดูแลรักษารายเดือนหรือรายปี ครอบคลุมการแก้ไขบั๊ก อัปเดตความปลอดภัย การมอนิเตอร์เซิร์ฟเวอร์ การสำรองข้อมูล และการเพิ่มฟังก์ชันย่อยๆ"
+      },
+      {
+        "question": "สามารถสร้างฟังก์ชันคัสตอมเฉพาะสำหรับธุรกิจของฉันได้ไหม?",
+        "answer": "ได้แน่นอนครับ เราสามารถปรับแต่งโมดูล เวิร์กโฟลว์ รายงาน และเชื่อมต่อระบบภายนอก เช่น PromptPay, Omise, GeoServer, Socket.io, GraphQL, Kafka, RFID หรือระบบโครงสร้างอื่นๆ ได้ตามความต้องการ"
+      },
+      {
+        "question": "ขั้นตอนการทำงานตั้งแต่สั่งซื้อจนถึงส่งมอบระบบ (Deployment) เป็นอย่างไร?",
+        "answer": "กระบวนการเริ่มต้นจากการให้คำปรึกษา การวิเคราะห์ความต้องการ การส่งข้อเสนอ การชำระเงินงวดแรก การออกแบบ UI/UX การพัฒนาโปรแกรม การทดสอบระบบ การแก้ไขปรับปรุง การสรุปงาน การชำระเงินงวดสุดท้าย และดำเนินการติดตั้งระบบไปยังเซิร์ฟเวอร์หรือคลาวด์ของคุณ"
+      },
+      {
+        "question": "การชำระเงินสำหรับการพัฒนาซอฟต์แวร์ทำงานอย่างไร?",
+        "answer": "โดยทั่วไปจะเริ่มชำระมัดจำงวดแรก 30% และส่วนที่เหลือหลังจากโปรเจกต์เสร็จสมบูรณ์และได้รับการอนุมัติ สำหรับโปรเจกต์ขนาดใหญ่สามารถแบ่งชำระตามความสำเร็จของแต่ละงวดงาน (Milestone) ได้"
+      },
+      {
+        "question": "คุณใช้เทคโนโลยีอะไรในการพัฒนาบ้าง?",
+        "answer": "เทคโนโลยีสแต็กที่เลือกใช้ขึ้นอยู่กับแต่ละโปรเจกต์ ทีมเรามีความเชี่ยวชาญในเทคโนโลยีมาตรฐานสากล เช่น Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS และบริการคลาวด์ต่างๆ"
+      },
+      {
+        "question": "ระบบรองรับการแสดงผลแบบ Responsive ในอุปกรณ์ต่างๆ หรือไม่?",
+        "answer": "รองรับอย่างสมบูรณ์ครับ ระบบเว็บของเราแสดงผลได้เป็นระเบียบสวยงามทั้งบนเดสก์ท็อป แท็บเล็ต และสมาร์ทโฟน นอกจากนี้ อินเทอร์เฟซของระบบ POS หรือ WMS ยังสามารถปรับแต่งให้เหมาะสมสำหรับอุปกรณ์หน้าจอสัมผัสและการปฏิบัติงานในภาคสนามได้อีกด้วย"
+      }
+    ]
   }
 }

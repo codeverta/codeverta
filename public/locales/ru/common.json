@@ -1,44 +1,44 @@
 {
-  "our_products": "Our Products",
+  "our_products": "Наши продукты",
   "home": {
-    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
-    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "title": "Профессиональное создание сайтов и IT-решения для малого и среднего бизнеса",
+    "subtitle": "Мы предоставляем услуги по созданию, технической поддержке, разработке программного обеспечения и IT-решениям для стимулирования роста вашего бизнеса в цифровую эпоху.",
     "hero": {
-      "prefix": "Software Solutions For Every",
+      "prefix": "Программные решения для любой",
       "rotating": [
-        "Retail",
-        "Healthcare",
-        "Fitness",
-        "Hospitality",
-        "Education",
-        "Manufacturing",
-        "E-commerce",
-        "Education",
-        "Finance",
-        "Real Estate",
-        "Nonprofit",
-        "Entertainment",
-        "Transportation",
-        "Food & Beverage",
-        "Consulting",
-        "Legal",
-        "Marketing",
-        "Automotive",
-        "Energy",
-        "Telecommunications"
+        "Розничная торговля",
+        "Здравоохранение",
+        "Фитнес",
+        "Гостиничный бизнес",
+        "Образование",
+        "Производство",
+        "Электронная коммерция",
+        "Образование",
+        "Финансы",
+        "Недвижимость",
+        "Некоммерческие организации",
+        "Развлечения",
+        "Транспорт и логистика",
+        "Общественное питание",
+        "Консалтинг",
+        "Юриспруденция",
+        "Маркетинг",
+        "Автомобильная промышленность",
+        "Энергетика",
+        "Телекоммуникации"
       ],
-      "suffix": "Industry"
+      "suffix": "отрасли"
     },
-    "tagline": "*Startup quality, not your typical WordPress template",
+    "tagline": "*Качество уровня стартапа, а не обычный шаблон WordPress",
     "cta": {
-      "whatsapp": "WhatsApp Us Now",
-      "products": "View Products"
+      "telegram": "Написать нам в Telegram",
+      "products": "Посмотреть продукты"
     },
     "badges": {
-      "consultation": "Free Consultation",
-      "fast": "Fast Process",
-      "guarantee": "Satisfaction Guarantee",
-      "trusted": "Honest & Reliable"
+      "consultation": "Бесплатная консультация",
+      "fast": "Быстрый процесс",
+      "guarantee": "Гарантия качества",
+      "trusted": "Честно и надежно"
     },
     "seo": {
       "title": "Codeverta - разработка веб-сайтов, приложений, ERP и IT-решений",
@@ -46,220 +46,220 @@
       "keywords": "разработка сайтов, software house, разработка приложений, ERP, POS, IT решения"
     }
   },
-  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
+  "trustedBy": "Нам доверяют представители малого и среднего бизнеса, стартапы и государственные структуры",
   "features": {
-    "badge": "Our Services",
-    "title": "Complete Solutions for Your Digital Needs",
-    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
+    "badge": "Наши услуги",
+    "title": "Комплексные решения для ваших цифровых задач",
+    "subtitle": "От создания современных сайтов до надежной IT-поддержки — мы предоставляем все необходимое для вашего успеха в сети."
   },
   "portfolio": {
-    "title": "Projects We Have Worked On",
-    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
+    "title": "Проекты, над которыми мы работали",
+    "subtitle": "Ознакомьтесь с нашими недавними проектами, которые демонстрируют наш опыт и стремление к созданию высококачественных цифровых решений."
   },
   "process": {
-    "badge": "Easy Process, Maximum Results",
-    "title": "Development Process",
-    "subtitle": "Start your project in just 3 simple steps with our expert team."
+    "badge": "Простой процесс, максимальный результат",
+    "title": "Процесс разработки",
+    "subtitle": "Запустите свой проект всего за 3 простых шага с нашей командой экспертов."
   },
   "testimonials": {
-    "badge": "Testimonials",
-    "title": "What Our Clients Say",
-    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+    "badge": "Отзывы",
+    "title": "Что говорят наши клиенты",
+    "subtitle": "Не верьте нам на слово. Посмотрите, что говорят наши довольные клиенты о сотрудничестве с нами."
   },
   "pricing": {
-    "badge": "Pricing",
-    "title": "Flexible & Transparent Pricing Plans",
-    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "badge": "Цены",
+    "title": "Гибкие и прозрачные тарифные планы",
+    "subtitle": "Выберите тариф, который лучше всего подходит вашему бизнесу. Никаких скрытых комиссий.",
     "tabs": {
-      "smme": "SME Scale",
-      "enterprise": "Enterprise"
+      "smme": "Малый и средний бизнес",
+      "enterprise": "Корпорации"
     },
     "card": {
-      "popular": "Most Popular",
-      "perProject": "/one-time payment",
-      "contactSales": "Contact Sales"
+      "popular": "Самый популярный",
+      "perProject": "/единоразовый платеж",
+      "contactSales": "Связаться с отделом продаж"
     }
   },
   "faq": {
     "badge": "FAQ",
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to the most frequently asked questions about our services."
+    "title": "Часто задаваемые вопросы",
+    "subtitle": "Найдите ответы на самые популярные вопросы о наших услугах."
   },
   "cta": {
-    "title": "Ready for a Professional Website?",
-    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "title": "Готовы к созданию профессионального сайта?",
+    "description": "Свяжитесь с нами сегодня для бесплатной консультации. Давайте вместе создадим сильное цифровое присутствие для вашего бизнеса.",
     "buttons": {
-      "free": "Free Consultation",
-      "contact": "Contact Now"
+      "free": "Бесплатная консультация",
+      "contact": "Связаться сейчас"
     }
   },
   "navbar": {
-    "products": "Products",
-    "industry": "Industries",
-    "articles": "Articles & News",
-    "learning": "Education",
-    "blog": "Blog",
-    "events": "Events",
+    "products": "Продукты",
+    "industry": "Отрасли",
+    "articles": "Статьи и новости",
+    "learning": "Обучение",
+    "blog": "Блог",
+    "events": "Мероприятия",
     "faq": "FAQ",
-    "careers": "Careers",
-    "about": "About Us"
+    "careers": "Вакансии",
+    "about": "О нас"
   },
   "mega_menu": {
     "products": {
-      "title": "Products",
-      "all": "All Products",
-      "view_all": "View All Products",
-      "view_all_desc": "Explore all the products we offer."
+      "title": "Продукты",
+      "all": "Все продукты",
+      "view_all": "Посмотреть все продукты",
+      "view_all_desc": "Изучите все продукты, которые мы предлагаем."
     },
     "news": {
-      "title": "News",
-      "tech": "Tech News",
-      "breaking": "Breaking News",
-      "breaking_desc": "Latest tech updates",
-      "industry": "Industry Reports",
-      "industry_desc": "Market analysis",
-      "company": "Company Updates",
-      "company_desc": "Business news",
-      "categories": "Categories",
-      "software": "Software",
-      "software_desc": "Software development news",
-      "hardware": "Hardware",
-      "hardware_desc": "Hardware innovations",
-      "mobile": "Mobile",
-      "mobile_desc": "Mobile technology",
-      "trending": "Trending",
-      "ai_rev": "AI Revolution",
-      "ai_rev_desc": "AI developments",
-      "web3": "Web3 Updates",
-      "web3_desc": "Blockchain & crypto",
-      "devops": "DevOps News",
-      "devops_desc": "Development operations"
+      "title": "Новости",
+      "tech": "Новости технологий",
+      "breaking": "Срочные новости",
+      "breaking_desc": "Последние IT-обновления",
+      "industry": "Отраслевые отчеты",
+      "industry_desc": "Анализ рынка",
+      "company": "Новости компании",
+      "company_desc": "Бизнес-новости",
+      "categories": "Категории",
+      "software": "ПО",
+      "software_desc": "Новости разработки программного обеспечения",
+      "hardware": "Железо",
+      "hardware_desc": "Инновации в сфере оборудования",
+      "mobile": "Мобильные технологии",
+      "mobile_desc": "Мобильный сектор",
+      "trending": "В тренде",
+      "ai_rev": "Революция ИИ",
+      "ai_rev_desc": "Развитие искусственного интеллекта",
+      "web3": "Обновления Web3",
+      "web3_desc": "Блокчейн и криптовалюты",
+      "devops": "Новости DevOps",
+      "devops_desc": "Процессы разработки и интеграции"
     },
     "startups": {
-      "title": "Startups",
-      "news": "Startup News",
-      "funding": "Funding Rounds",
-      "funding_desc": "Investment updates",
-      "launches": "New Launches",
-      "launches_desc": "Product launches",
-      "success": "Success Stories",
-      "success_desc": "Inspiring journeys",
-      "resources": "Resources",
-      "guide": "Startup Guide",
-      "guide_desc": "How to get started",
-      "investors": "Investor Network",
-      "investors_desc": "Find investors",
-      "mentorship": "Mentorship",
-      "mentorship_desc": "Get expert guidance"
+      "title": "Стартапы",
+      "news": "Новости стартапов",
+      "funding": "Раунды финансирования",
+      "funding_desc": "Инвестиционные обновления",
+      "launches": "Новые запуски",
+      "launches_desc": "Релизы продуктов",
+      "success": "Истории успеха",
+      "success_desc": "Вдохновляющие кейсы",
+      "resources": "Ресурсы",
+      "guide": "Руководство для стартапов",
+      "guide_desc": "Как начать свой бизнес",
+      "investors": "Сеть инвесторов",
+      "investors_desc": "Поиск финансирования",
+      "mentorship": "Менторство",
+      "mentorship_desc": "Получите руководство от экспертов"
     },
     "gadget": {
-      "title": "Gadgets",
-      "reviews": "Reviews",
-      "smartphones": "Smartphones",
-      "smartphones_desc": "Phone reviews",
-      "laptops": "Laptops",
-      "laptops_desc": "Computer reviews",
-      "wearables": "Wearables",
-      "wearables_desc": "Smartwatches & more",
-      "buying_guides": "Buying Guides",
-      "deals": "Best Deals",
-      "deals_desc": "Current promotions",
-      "compare": "Comparisons",
-      "compare_desc": "Product comparisons",
-      "recommended": "Recommendations",
-      "recommended_desc": "Editor's choice"
+      "title": "Гаджеты",
+      "reviews": "Обзоры",
+      "smartphones": "Смартфоны",
+      "smartphones_desc": "Обзоры телефонов",
+      "laptops": "Ноутбуки",
+      "laptops_desc": "Обзоры компьютеров",
+      "wearables": "Носимые устройства",
+      "wearables_desc": "Смарт-часы и многое другое",
+      "buying_guides": "Руководства по выбору",
+      "deals": "Лучшие предложения",
+      "deals_desc": "Текущие акции",
+      "compare": "Сравнения",
+      "compare_desc": "Сравнение характеристик продуктов",
+      "recommended": "Рекомендации",
+      "recommended_desc": "Выбор редакции"
     },
     "tutorials": {
-      "title": "Tutorials",
-      "web_dev": "Web Development",
-      "react_desc": "Learn React.js",
-      "nextjs_desc": "Full-stack React",
-      "js_desc": "JS best practices",
-      "mobile_dev": "Mobile Development",
-      "rn_desc": "Mobile applications",
-      "flutter_desc": "Cross-platform",
-      "ios_desc": "Swift & Objective-C",
-      "backend": "Backend",
-      "node_desc": "Server-side JS",
-      "python_desc": "Python programming",
-      "db_desc": "SQL & NoSQL"
+      "title": "Обучение",
+      "web_dev": "Веб-разработка",
+      "react_desc": "Изучение React.js",
+      "nextjs_desc": "Full-stack на React",
+      "js_desc": "Лучшие практики JS",
+      "mobile_dev": "Мобильная разработка",
+      "rn_desc": "Мобильные приложения",
+      "flutter_desc": "Кроссплатформенность",
+      "ios_desc": "Swift и Objective-C",
+      "backend": "Бэкенд",
+      "node_desc": "Серверный JS",
+      "python_desc": "Программирование на Python",
+      "db_desc": "SQL и NoSQL"
     },
     "ai": {
-      "title": "AI",
-      "news": "AI News",
-      "ml_desc": "ML developments",
-      "tools": "AI Tools",
-      "tools_desc": "Latest AI tools",
-      "research": "Research",
-      "research_desc": "Academic papers",
-      "tutorials": "Tutorials",
-      "getting_started": "Getting Started",
-      "getting_started_desc": "AI basics",
-      "deep_learning": "Deep Learning",
-      "deep_learning_desc": "Neural networks",
-      "ethics": "AI Ethics",
-      "ethics_desc": "Responsible AI",
-      "productivity": "Productivity",
-      "image_editor": "Image Editor",
-      "image_desc": "Crop, resize, etc.",
-      "pdf_editor": "PDF Editor",
-      "pdf_desc": "Edit and convert PDFs.",
-      "other_tools": "AI & Other Tools",
-      "ai_long": "Artificial Intelligence (AI)",
-      "ai_desc": "Explore the latest developments in AI."
+      "title": "ИИ",
+      "news": "Новости ИИ",
+      "ml_desc": "Развитие машинного обучения",
+      "tools": "Инструменты ИИ",
+      "tools_desc": "Новейшие ИИ-сервисы",
+      "research": "Исследования",
+      "research_desc": "Научные публикации",
+      "tutorials": "Руководства",
+      "getting_started": "С чего начать",
+      "getting_started_desc": "Основы ИИ",
+      "deep_learning": "Глубокое обучение",
+      "deep_learning_desc": "Нейронные сети",
+      "ethics": "Этика ИИ",
+      "ethics_desc": "Ответственный ИИ",
+      "productivity": "Продуктивность",
+      "image_editor": "Фоторедактор",
+      "image_desc": "Обрезка, изменение размера и т.д.",
+      "pdf_editor": "PDF-редактор",
+      "pdf_desc": "Редактирование и конвертация PDF.",
+      "other_tools": "ИИ и другие инструменты",
+      "ai_long": "Искусственный интеллект (ИИ)",
+      "ai_desc": "Изучите последние достижения в области ИИ."
     },
     "categories": {
-      "articles": "Articles & News",
-      "main_news": "Top Stories",
-      "tech_innovation": "News (Tech & Innovation)",
-      "tech_innovation_desc": "Latest news on tech and innovation.",
-      "startup_stories": "Startups",
-      "startup_stories_desc": "Inspiration from the startup world.",
-      "gadget_reviews": "Gadget Reviews",
-      "gadget_reviews_desc": "Reviews and buying guides.",
-      "special_issues": "Special Topics",
-      "cyber_art": "Cybersecurity Articles",
-      "cyber_art_desc": "Digital security tips.",
-      "all_art": "All Articles",
-      "all_art_desc": "View all blog posts.",
-      "learning": "Learning & Guides",
-      "guides": "Guides",
-      "tutorial_desc": "Step-by-step learning guides.",
-      "classes": "Courses",
-      "cyber_course": "Cybersecurity Course",
-      "cyber_course_desc": "Latest cybersecurity classes.",
-      "llm_course": "AI LLM Course",
-      "llm_desc": "Prompt engineering for LLMs.",
-      "ai_eng": "AI Engineer Course",
-      "ai_eng_desc": "In-depth AI engineering."
+      "articles": "Статьи и новости",
+      "main_news": "Главные новости",
+      "tech_innovation": "Новости (Технологии и инновации)",
+      "tech_innovation_desc": "Последние новости из мира IT и инноваций.",
+      "startup_stories": "Статьи о стартапах",
+      "startup_stories_desc": "Вдохновение из мира стартап-индустрии.",
+      "gadget_reviews": "Обзоры гаджетов",
+      "gadget_reviews_desc": "Тест-драйвы устройств и гиды покупателя.",
+      "special_issues": "Специальные темы",
+      "cyber_art": "Статьи по кибербезопасности",
+      "cyber_art_desc": "Советы по цифровой безопасности бизнеса.",
+      "all_art": "Все статьи",
+      "all_art_desc": "Посмотреть все записи в блоге.",
+      "learning": "Обучение и гайды",
+      "guides": "Руководства",
+      "tutorial_desc": "Пошаговые обучающие материалы.",
+      "classes": "Курсы",
+      "cyber_course": "Курс по кибербезопасности",
+      "cyber_course_desc": "Актуальные программы обучения безопасности.",
+      "llm_course": "Курс по ИИ и LLM",
+      "llm_desc": "Промпт-инжиниринг для языковых моделей.",
+      "ai_eng": "Курс AI-инженера",
+      "ai_eng_desc": "Глубокое погружение в разработку ИИ."
     }
   },
   "homePage": {
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "Профессиональный веб-дизайн",
+          "description": "Мы проектируем современные адаптивные сайты, которые безупречно работают как на десктопах, так и на мобильных устройствах."
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "SEO и оптимизация производительности",
+          "description": "Повышайте видимость в поисковых системах и улучшайте пользовательский опыт благодаря быстрой загрузке страниц."
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "Ремонт и техническая поддержка",
+          "description": "Наша команда устраняет баги, системные ошибки, исправляет сломанную верстку и поддерживает ваш сайт в актуальном состоянии."
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "Надежная безопасность сайта",
+          "description": "Защитите свои коммерческие данные и конфиденциальность посетителей с помощью многоуровневых систем защиты."
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "Услуги IT-поддержки",
+          "description": "Помощь в решении любых технических проблем — от устранения неполадок с оборудованием до управления сетями в офисе."
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "Постпродажное сопровождение",
+          "description": "Мы продолжаем поддерживать ваш сайт и системы после запуска, обеспечивая непрерывность бизнес-процессов."
         }
       ]
     },
@@ -267,57 +267,57 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "Консультация и аудит",
+          "description": "Бесплатно обсудите свои идеи, цели и технические требования к проекту с нашей командой."
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "Проектирование и разработка",
+          "description": "Мы создаем дизайн и пишем код для вашего сайта, приложения или IT-системы строго в рамках утвержденного ТЗ."
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "Запуск и обслуживание",
+          "description": "Мы развертываем ваш проект на сервере и обеспечиваем его дальнейшую стабильную работу."
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
-          "author": "Sarah Widjaja",
-          "role": "Owner, Butik Elegan",
+          "quote": "Codeverta полностью преобразила наш сайт, сделав его по-настоящему профессиональным. Конверсия и количество клиентов заметно выросли.",
+          "author": "Сара Виджая",
+          "role": "Владелица Butik Elegan",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
-          "author": "Budi Santoso",
-          "role": "Marketing Manager, Maju Jaya Motor",
+          "quote": "Наш старый сайт работал очень медленно. После того как команда Codeverta провела оптимизацию, скорость загрузки стала отличной.",
+          "author": "Буди Сантосо",
+          "role": "Маркетинг-менеджер Maju Jaya Motor",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
-          "author": "Emily Hartono",
-          "role": "Head of Operations, Startup Cepat",
+          "quote": "Их IT-поддержка реагирует мгновенно. Любые технические неполадки в нашем офисе устраняются в кратчайшие сроки.",
+          "author": "Эмили Хартоно",
+          "role": "Операционный директор Startup Cepat",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
-          "author": "David Kim",
-          "role": "CEO, InnovateNow",
+          "quote": "Процесс разработки был абсолютно прозрачным, а результат превзошел ожидания. Теперь сайт — наш главный канал продаж.",
+          "author": "Дэвид Ким",
+          "role": "CEO InnovateNow",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
-          "author": "Lisa Puspita",
-          "role": "Creative Director, Galeri Seni",
+          "quote": "С командой Codeverta очень легко общаться, они глубоко понимают бизнес-задачи и наше видение продукта.",
+          "author": "Лиза Пуспита",
+          "role": "Креативный директор Галереи Искусств",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
-          "author": "James Wilson",
-          "role": "COO, ScaleUp Inc",
+          "quote": "Одно из лучших вложений в наш маркетинг. С момента запуска нового сайта наша выручка ощутимо увеличилась.",
+          "author": "Джеймс Уилсон",
+          "role": "COO ScaleUp Inc",
           "rating": 5
         }
       ]
@@ -325,130 +325,282 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
-          "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "name": "Сайт для малого бизнеса",
+          "price": "от 50 000 руб.",
+          "description": "Подходит для корпоративных сайтов-визиток, посадочных страниц (Landing Page) или портфолио.",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "Индивидуальный дизайн под ваши задачи",
+            "Оптимально для компаний малого бизнеса",
+            "Основные страницы и базовый функционал",
+            "Помощь в подборе домена и хостинга",
+            "Фокус на высокую производительность без готовых шаблонов"
           ],
-          "cta": "Choose Package"
+          "cta": "Выбрать пакет"
         },
         {
-          "name": "Online Store Package",
-          "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "name": "Интернет-магазин",
+          "price": "от 120 000 руб.",
+          "description": "Идеально для растущего бизнеса и онлайн-продаж.",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "Кастомный дизайн и структура каталога",
+            "Базовая SEO-оптимизация при запуске",
+            "Приоритетная разработка и интеграция платежей"
           ],
-          "cta": "Choose Package",
+          "cta": "Выбрать пакет",
           "popular": true
         },
         {
-          "name": "Custom System Package",
-          "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "name": "Индивидуальная система",
+          "price": "от 250 000 руб.",
+          "description": "Для компаний со специфическими и сложными бизнес-требованиями.",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "Продвинутый кастомный функционал",
+            "Архитектура и логика под ваши бизнес-процессы",
+            "Ежемесячные отчеты о производительности",
+            "Техническая поддержка на длительный срок"
           ],
-          "cta": "Contact Sales"
+          "cta": "Связаться с отделом продаж"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
-          "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "name": "Корпоративный тариф",
+          "price": "от 500 000 руб.",
+          "description": "Для крупного бизнеса со сложными экосистемами и масштабным воркфлоу.",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "Полностью кастомная разработка модулей по запросу",
+            "Бесшовная интеграция со сторонними системами и API",
+            "Резервное копирование в облако по расписанию",
+            "Мониторинг безопасности и аптайма 24/7",
+            "Максимальный приоритет команды разработчиков",
+            "Выделенная поддержка на срок более 1 года"
           ],
-          "cta": "Contact Sales"
+          "cta": "Связаться с отделом продаж"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "Сколько времени занимает создание веб-сайта?",
+          "answer": "Сроки зависят от сложности проекта. Базовый сайт обычно разрабатывается за 1–2 недели, тогда как средние и крупные системы могут занять больше месяца."
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "Что мне нужно подготовить перед началом проекта?",
+          "answer": "Вам необходимо подготовить информацию о компании, список услуг или товаров, а также логотип и фотоматериалы (при наличии). Если у вас их пока нет, наша команда поможет составить структуру."
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "Предоставляете ли вы поддержку после запуска проекта?",
+          "answer": "Да. Мы предлагаем ежемесячные или ежегодные пакеты технического обслуживания, которые включают установку обновлений, резервное копирование, мониторинг безопасности и оперативное исправление ошибок."
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "Можете ли вы исправить или доработать мой существующий сайт?",
+          "answer": "Да. Мы проводим предварительный аудит вашего ресурса, выявляем критические ошибки, проблемы со скоростью или версткой и предлагаем оптимальный план оптимизации."
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "Как устроен процесс оплаты?",
+          "answer": "Стандартная схема работы предполагает поэтапную оплату: 30-50% в качестве предоплаты для старта разработки, а оставшаяся часть — после завершения, тестирования и финального согласования проекта."
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "Отрасли",
+      "title": "Решения для любого сегмента рынка",
+      "subtitle": "От производственных предприятий до медицинских центров — Codeverta адаптируется под специфику вашей ниши, упрощая внутренние операции и ускоряя темпы роста.",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "Производство",
+          "desc": "Оптимизация рабочих процессов выпуска продукции, инвентаризации и логистики."
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "Торговля и дистрибуция",
+          "desc": "Эффективное управление закупками, заказами и цепочками поставок."
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "Ритейл",
+          "desc": "Стимулирование продаж, автоматизация склада и улучшение клиентского опыта."
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "Проектирование и строительство",
+          "desc": "Контроль проектов, управление ресурсами и прозрачный учет бюджетов."
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "Электронная коммерция",
+          "desc": "Управление заказами, клиентской базой и масштабированием онлайн-продаж."
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "Образование",
+          "desc": "Упрощение процессов записи, ведения курсов, приема платежей и работы со студентами."
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "Профессиональные услуги",
+          "desc": "Систематизация ведения проектов, выставления счетов и взаимодействия с клиентами."
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "Финансовые услуги",
+          "desc": "Удобное отслеживание транзакций, портфелей и соблюдения регуляторных требований."
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "Здравоохранение",
+          "desc": "Учет медицинских карт, ведение расписания приемов и координация работы персонала."
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "Некоммерческий сектор",
+          "desc": "Повышение эффективности фандрайзинга, работы с донорами и реализации программ."
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Цифровые продукты Codeverta - портфолио информационных систем, ERP, POS и веб-приложений",
+      "description": "Изучите цифровые продукты Codeverta: информационные системы, ERP, POS, e-commerce, веб-приложения, ticketing, EMR и индивидуальные IT-решения для разных отраслей.",
+      "keywords": "цифровые продукты Codeverta, портфолио информационных систем, веб-приложения, ERP, POS, software house, бизнес IT решения, кастомное ПО"
+    },
+    "hero": {
+      "title": "Портфолио IT-решений",
+      "subtitle": "Полная коллекция информационных систем и веб-приложений, разработанных нами для разных бизнес-задач и отраслей."
+    },
+    "status": {
+      "productionReady": "Готово к эксплуатации",
+      "completed": "Завершено",
+      "inDevelopment": "В разработке"
+    },
+    "card": {
+      "updated": "Обновлено",
+      "viewDetail": "Подробнее",
+      "contact": "Связаться"
+    },
+    "cta": {
+      "title": "Нужно индивидуальное IT-решение?",
+      "description": "Мы готовы помочь разработать информационную систему под задачи вашего бизнеса."
+    },
+    "schema": {
+      "home": "Главная",
+      "products": "Продукты",
+      "itemListName": "Портфолио цифровых продуктов Codeverta"
+    }
+  },
+  "cookieConsent": {
+    "title": "Мы используем cookie",
+    "description": "Мы используем необходимые файлы cookie для работы сайта, сохранения языковых настроек и анализа производительности страниц. Аналитические файлы cookie используются только с вашего согласия.",
+    "accept": "Принять",
+    "reject": "Отклонить необязательные",
+    "learnMore": "Читать политику конфиденциальности"
+  },
+  "footer": {
+    "description": "IT-поставщик, создающий качественные, честные и прозрачные цифровые решения с сильными стандартами безопасности.",
+    "partOf": "Часть",
+    "rights": "Все права защищены.",
+    "company": {
+      "title": "Компания",
+      "links": {
+        "about": "О нас",
+        "contact": "Контакты",
+        "terms": "Условия использования",
+        "privacy": "Политика конфиденциальности",
+        "blog": "Блог и новости",
+        "faq": "FAQ",
+        "gallery": "Галерея"
+      }
+    },
+    "programs": {
+      "title": "Программы",
+      "links": {
+        "cybersecurity": "Курс по кибербезопасности",
+        "aiEngineer": "AI Engineer",
+        "consulting": "IT-консалтинг",
+        "development": "Разработка ПО"
+      }
+    },
+    "legal": {
+      "title": "Право и доверие",
+      "registered": "Официально зарегистрировано",
+      "certifications": "Сертификации и безопасность"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta - Условия использования",
+      "description": "Ознакомьтесь с условиями использования Codeverta в отношении разработки программного обеспечения, веб-услуг, оплаты, интеллектуальной собственности и ограничений ответственности.",
+      "keywords": "условия Codeverta, условия предоставления услуг, договор на разработку ПО, условия веб-сервиса"
+    },
+    "schema": {
+      "about": "Условия использования"
+    },
+    "title": "Условия использования",
+    "last_updated": "Последнее обновление: 23 декабря 2025 года",
+    "intro": "Добро пожаловать в Codeverta и BikinWebsiteJogja. Получая доступ к нашему сайту или используя наши услуги, вы соглашаетесь со следующими условиями.",
+    "sections": {
+      "services": {
+        "title": "1. Объем предоставляемых услуг",
+        "content": "Codeverta осуществляет разработку программного обеспечения, создание сайтов, мобильных приложений, системную интеграцию и IT-консалтинг в соответствии с утвержденным коммерческим предложением или техническим заданием (ТЗ)."
+      },
+      "payment": {
+        "title": "2. Условия оплаты",
+        "content": "Платежи осуществляются согласно утвержденному предложению, счету или графику этапов разработки. До начала производства требуется внесение предоплаты, а финальный расчет производится перед итоговой передачей цифровых активов."
+      },
+      "ip": {
+        "title": "3. Интеллектуальная собственность",
+        "content": "После полной оплаты клиенту передаются права на использование исходного кода или право собственности в соответствии с договором. Сторонние библиотеки, шаблоны, лицензии и базовые фреймворки остаются предметом действия их собственных лицензий."
+      },
+      "liability": {
+        "title": "4. Ограничение ответственности",
+        "content": "Мы не несем ответственности за убытки, вызванные нецелевым использованием системы, изменениями со стороны третьих лиц, техническими проблемами на стороне хостинга/домена или интеграциями сторонних сервисов после окончания гарантийного срока или периода обслуживания."
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - Частые вопросы",
+      "description": "Ответы о разработке сайтов, цифровых системах, техническом процессе и оплате.",
+      "keywords": "Codeverta FAQ, вопросы по разработке сайтов, кастомное ПО, оплата IT-проектов, техническая поддержка"
+    },
+    "title": "Частые вопросы",
+    "subtitle": "Ответы о разработке сайтов, цифровых системах, техническом процессе и оплате.",
+    "cta": {
+      "title": "Остались вопросы?",
+      "description": "Обсудите с нами ваши цифровые задачи. Наша команда готова помочь.",
+      "telegram": "Чат Telegram",
+      "portfolio": "Смотреть портфолио"
+    },
+    "items": [
+      {
+        "question": "Сколько времени занимает разработка каждого типа систем?",
+        "answer": "Сроки зависят от масштаба и сложности проекта. Простой веб-сайт обычно занимает 1–2 недели; среднемасштабные системы, такие как интернет-магазины, POS-терминалы и HRMS, требуют около 1–3 месяцев, в то время как полноценная ERP или WMS может разрабатываться в течение нескольких месяцев."
+      },
+      {
+        "question": "Что мне следует подготовить до начала проекта?",
+        "answer": "Подготовьте функциональные требования к системе, примеры понравившегося дизайна, структуру исходных данных, текстовый контент, фотографии и учредительные документы компании. Для сложных технических проектов мы помогаем детализировать ТЗ и оптимизировать бизнес-процессы перед началом кодинга."
+      },
+      {
+        "question": "Можно ли расширить или масштабировать систему в будущем?",
+        "answer": "Да. Такие системы, как e-commerce платформы, ERP, HRMS, CRM и WMS, создаются по модульному принципу, поэтому новые функции, интеграции по API, платежные шлюзы или миграция на более мощные серверы могут добавляться поэтапно."
+      },
+      {
+        "question": "Предоставляете ли вы техническую поддержку после запуска?",
+        "answer": "Да. Мы предлагаем пакеты ежемесячного или ежегодного обслуживания, покрывающие исправление багов, обновления безопасности, мониторинг серверов, резервное копирование и добавление небольших доработок."
+      },
+      {
+        "question": "Можете ли вы разработать уникальные функции специально под мой бизнес?",
+        "answer": "Да. Мы можем кастомизировать любые модули, рабочие процессы, генерацию отчетов и настраивать интеграции с такими системами, как платежные шлюзы, GeoServer, Socket.io, GraphQL, Kafka, RFID-системы и прочее ПО."
+      },
+      {
+        "question": "Каков рабочий процесс от заказа до развертывания проекта?",
+        "answer": "Процесс начинается с первичной консультации и анализа требований, затем следуют коммерческое предложение, внесение предоплаты, проектирование UI/UX дизайна, непосредственная разработка, тестирование, этапы правок, финализация, итоговая оплата и деплой (развертывание) на вашем сервере или в облаке."
+      },
+      {
+        "question": "Как устроена оплата разработки программного обеспечения?",
+        "answer": "Обычно работа строится по схеме с предоплатой в размере 30-50% и выплатой оставшейся суммы после завершения и согласования проекта. Для крупных долгосрочных проектов возможна поэтапная оплата (по закрытии фиксированных Meilensteins/этапов)."
+      },
+      {
+        "question": "Какие технологии вы используете в работе?",
+        "answer": "Стек технологий подбирается индивидуально под проект. Мы пишем код и развертываем архитектуру с использованием Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS и современных облачных сервисов."
+      },
+      {
+        "question": "Адаптированы ли системы для работы на различных устройствах?",
+        "answer": "Да. Все наши веб-системы имеют адаптивную верстку и корректно отображаются на десктопах, планшетах и смартфонах. Интерфейсы для POS или WMS-систем могут быть отдельно оптимизированы для сенсорных экранов и работы сотрудников в полевых условиях."
+      }
+    ]
   }
 }

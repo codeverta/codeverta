@@ -1,44 +1,44 @@
 {
-  "our_products": "Our Products",
+  "our_products": "منتجاتنا",
   "home": {
-    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
-    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "title": "إنشاء مواقع إلكترونية احترافية وحلول تقنية معلومات للشركات الصغيرة والمتوسطة",
+    "subtitle": "نحن نقدم خدمات احترافية في إنشاء البرمجيات وإصلاحها وتطويرها، بالإضافة إلى حلول تقنية المعلومات لتعزيز نمو عملك في العصر الرقمي للشركات الصغيرة والمتوسطة.",
     "hero": {
-      "prefix": "Software Solutions For Every",
+      "prefix": "حلول برمجية لكل",
       "rotating": [
-        "Retail",
-        "Healthcare",
-        "Fitness",
-        "Hospitality",
-        "Education",
-        "Manufacturing",
-        "E-commerce",
-        "Education",
-        "Finance",
-        "Real Estate",
-        "Nonprofit",
-        "Entertainment",
-        "Transportation",
-        "Food & Beverage",
-        "Consulting",
-        "Legal",
-        "Marketing",
-        "Automotive",
-        "Energy",
-        "Telecommunications"
+        "قطاع التجزئة",
+        "الرعاية الصحية",
+        "اللياقة البدنية",
+        "الضيافة",
+        "التعليم",
+        "التصنيع",
+        "التجارة الإلكترونية",
+        "التعليم",
+        "المالية",
+        "العقارات",
+        "المؤسسات غير الربحية",
+        "الترفيه",
+        "النقل",
+        "الأغذية والمشروبات",
+        "الاستشارات",
+        "الخدمات القانونية",
+        "التسويق",
+        "السيارات",
+        "الطاقة",
+        "الاتصالات"
       ],
-      "suffix": "Industry"
+      "suffix": "قطاع"
     },
-    "tagline": "*Startup quality, not your typical WordPress template",
+    "tagline": "*جودة الشركات الناشئة، وليس قالب ووردبريس تقليدي",
     "cta": {
-      "whatsapp": "WhatsApp Us Now",
-      "products": "View Products"
+      "whatsapp": "تواصل معنا عبر واتساب الآن",
+      "products": "عرض المنتجات"
     },
     "badges": {
-      "consultation": "Free Consultation",
-      "fast": "Fast Process",
-      "guarantee": "Satisfaction Guarantee",
-      "trusted": "Honest & Reliable"
+      "consultation": "استشارة مجانية",
+      "fast": "عملية سريعة",
+      "guarantee": "ضمان الرضا",
+      "trusted": "صادق وموثوق"
     },
     "seo": {
       "title": "Codeverta - تطوير الويب والتطبيقات وأنظمة ERP وحلول تقنية المعلومات",
@@ -46,220 +46,220 @@
       "keywords": "تطوير مواقع, شركة برمجيات, تطوير تطبيقات, ERP, POS, حلول تقنية"
     }
   },
-  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
+  "trustedBy": "محل ثقة الشركات الصغيرة والمتوسطة، الشركات الناشئة، والجهات الحكومية",
   "features": {
-    "badge": "Our Services",
-    "title": "Complete Solutions for Your Digital Needs",
-    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
+    "badge": "خدماتنا",
+    "title": "حلول متكاملة لاحتياجاتك الرقمية",
+    "subtitle": "من المواقع الإلكترونية المذهلة إلى الدعم الفني الموثوق، نقدم كل ما تحتاجه للنجاح عبر الإنترنت."
   },
   "portfolio": {
-    "title": "Projects We Have Worked On",
-    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
+    "title": "مشاريع قمنا بالعمل عليها",
+    "subtitle": "شاهد بعض مشاريعنا الأخيرة التي تبرز خبرتنا والتزامنا بتقديم حلول رقمية عالية الجودة."
   },
   "process": {
-    "badge": "Easy Process, Maximum Results",
-    "title": "Development Process",
-    "subtitle": "Start your project in just 3 simple steps with our expert team."
+    "badge": "عملية سهلة، نتائج قصوى",
+    "title": "عملية التطوير",
+    "subtitle": "ابدأ مشروعك في 3 خطوات بسيطة فقط مع فريق الخبراء لدينا."
   },
   "testimonials": {
-    "badge": "Testimonials",
-    "title": "What Our Clients Say",
-    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+    "badge": "آراء العملاء",
+    "title": "ماذا يقول عملاؤنا",
+    "subtitle": "لا تكتفِ بكلامنا فقط. شاهد ما يقوله عملاؤنا الراضون عن خدماتنا."
   },
   "pricing": {
-    "badge": "Pricing",
-    "title": "Flexible & Transparent Pricing Plans",
-    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "badge": "الأسعار",
+    "title": "خطط أسعار مرنة وشفافة",
+    "subtitle": "اختر الخطة التي تناسب عملك. لا توجد رسوم خفية.",
     "tabs": {
-      "smme": "SME Scale",
-      "enterprise": "Enterprise"
+      "smme": "الشركات الصغيرة والمتوسطة",
+      "enterprise": "المؤسسات والشركات الكبرى"
     },
     "card": {
-      "popular": "Most Popular",
-      "perProject": "/one-time payment",
-      "contactSales": "Contact Sales"
+      "popular": "الأكثر رواجاً",
+      "perProject": "/دفع لمرة واحدة",
+      "contactSales": "اتصل بالمبيعات"
     }
   },
   "faq": {
-    "badge": "FAQ",
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to the most frequently asked questions about our services."
+    "badge": "الأسئلة الشائعة",
+    "title": "الأسئلة الأكثر تكراراً",
+    "subtitle": "ابحث عن إجابات للأسئلة الأكثر شيوعاً حول خدماتنا."
   },
   "cta": {
-    "title": "Ready for a Professional Website?",
-    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "title": "هل أنت مستعد لموقع إلكتروني احترافي؟",
+    "description": "اتصل بنا اليوم للحصول على استشارة مجانية. لنبني معاً حضوراً رقمياً قوياً لعملك.",
     "buttons": {
-      "free": "Free Consultation",
-      "contact": "Contact Now"
+      "free": "استشارة مجانية",
+      "contact": "اتصل الآن"
     }
   },
   "navbar": {
-    "products": "Products",
-    "industry": "Industries",
-    "articles": "Articles & News",
-    "learning": "Education",
-    "blog": "Blog",
-    "events": "Events",
-    "faq": "FAQ",
-    "careers": "Careers",
-    "about": "About Us"
+    "products": "المنتجات",
+    "industry": "القطاعات",
+    "articles": "المقالات والأخبار",
+    "learning": "التعليم",
+    "blog": "المدونة",
+    "events": "الفعاليات",
+    "faq": "الأسئلة الشائعة",
+    "careers": "الوظائف",
+    "about": "من نحن"
   },
   "mega_menu": {
     "products": {
-      "title": "Products",
-      "all": "All Products",
-      "view_all": "View All Products",
-      "view_all_desc": "Explore all the products we offer."
+      "title": "المنتجات",
+      "all": "جميع المنتجات",
+      "view_all": "عرض جميع المنتجات",
+      "view_all_desc": "استكشف جميع المنتجات التي نقدمها."
     },
     "news": {
-      "title": "News",
-      "tech": "Tech News",
-      "breaking": "Breaking News",
-      "breaking_desc": "Latest tech updates",
-      "industry": "Industry Reports",
-      "industry_desc": "Market analysis",
-      "company": "Company Updates",
-      "company_desc": "Business news",
-      "categories": "Categories",
-      "software": "Software",
-      "software_desc": "Software development news",
-      "hardware": "Hardware",
-      "hardware_desc": "Hardware innovations",
-      "mobile": "Mobile",
-      "mobile_desc": "Mobile technology",
-      "trending": "Trending",
-      "ai_rev": "AI Revolution",
-      "ai_rev_desc": "AI developments",
-      "web3": "Web3 Updates",
-      "web3_desc": "Blockchain & crypto",
-      "devops": "DevOps News",
-      "devops_desc": "Development operations"
+      "title": "الأخبار",
+      "tech": "أخبار التكنولوجيا",
+      "breaking": "أخبار عاجلة",
+      "breaking_desc": "أحدث مستجدات التقنية",
+      "industry": "تقارير القطاع",
+      "industry_desc": "تحليل السوق",
+      "company": "أخبار الشركة",
+      "company_desc": "أخبار الأعمال",
+      "categories": "الفئات",
+      "software": "البرمجيات",
+      "software_desc": "أخبار تطوير البرمجيات",
+      "hardware": "العتاد والأجهزة",
+      "hardware_desc": "ابتكارات الأجهزة الإلكترونية",
+      "mobile": "الهواتف المحمولة",
+      "mobile_desc": "تقنيات الهاتف المحمول",
+      "trending": "الرائج الآن",
+      "ai_rev": "ثورة الذكاء الاصطناعي",
+      "ai_rev_desc": "تطورات الذكاء الاصطناعي",
+      "web3": "مستجدات Web3",
+      "web3_desc": "البلوكشين والعملات المشفرة",
+      "devops": "أخبار DevOps",
+      "devops_desc": "عمليات التطوير والتشغيل"
     },
     "startups": {
-      "title": "Startups",
-      "news": "Startup News",
-      "funding": "Funding Rounds",
-      "funding_desc": "Investment updates",
-      "launches": "New Launches",
-      "launches_desc": "Product launches",
-      "success": "Success Stories",
-      "success_desc": "Inspiring journeys",
-      "resources": "Resources",
-      "guide": "Startup Guide",
-      "guide_desc": "How to get started",
-      "investors": "Investor Network",
-      "investors_desc": "Find investors",
-      "mentorship": "Mentorship",
-      "mentorship_desc": "Get expert guidance"
+      "title": "الشركات الناشئة",
+      "news": "أخبار الشركات الناشئة",
+      "funding": "جولات التمويل",
+      "funding_desc": "تحديثات الاستثمار",
+      "launches": "إطلاقات جديدة",
+      "launches_desc": "إطلاق المنتجات",
+      "success": "قصص النجاح",
+      "success_desc": "رحلات ملهمة",
+      "resources": "المصادر",
+      "guide": "دليل الشركات الناشئة",
+      "guide_desc": "كيف تبدأ مشروعك",
+      "investors": "شبكة المستثمرين",
+      "investors_desc": "ابحث عن مستثمرين",
+      "mentorship": "التوجيه والإرشاد",
+      "mentorship_desc": "احصل على توجيه من الخبراء"
     },
     "gadget": {
-      "title": "Gadgets",
-      "reviews": "Reviews",
-      "smartphones": "Smartphones",
-      "smartphones_desc": "Phone reviews",
-      "laptops": "Laptops",
-      "laptops_desc": "Computer reviews",
-      "wearables": "Wearables",
-      "wearables_desc": "Smartwatches & more",
-      "buying_guides": "Buying Guides",
-      "deals": "Best Deals",
-      "deals_desc": "Current promotions",
-      "compare": "Comparisons",
-      "compare_desc": "Product comparisons",
-      "recommended": "Recommendations",
-      "recommended_desc": "Editor's choice"
+      "title": "الأجهزة والأدوات",
+      "reviews": "المراجعات",
+      "smartphones": "الهواتف الذكية",
+      "smartphones_desc": "مراجعات الهواتف",
+      "laptops": "الحواسيب المحمولة",
+      "laptops_desc": "مراجعات الحواسيب",
+      "wearables": "الأجهزة القابلة للارتداء",
+      "wearables_desc": "الساعات الذكية والمزيد",
+      "buying_guides": "أدلة الشراء",
+      "deals": "أفضل العروض",
+      "deals_desc": "العروض الترويجية الحالية",
+      "compare": "المقارنات",
+      "compare_desc": "مقارنات المنتجات",
+      "recommended": "موصى به",
+      "recommended_desc": "اختيار المحرر"
     },
     "tutorials": {
-      "title": "Tutorials",
-      "web_dev": "Web Development",
-      "react_desc": "Learn React.js",
-      "nextjs_desc": "Full-stack React",
-      "js_desc": "JS best practices",
-      "mobile_dev": "Mobile Development",
-      "rn_desc": "Mobile applications",
-      "flutter_desc": "Cross-platform",
-      "ios_desc": "Swift & Objective-C",
-      "backend": "Backend",
-      "node_desc": "Server-side JS",
-      "python_desc": "Python programming",
-      "db_desc": "SQL & NoSQL"
+      "title": "الدروس التعليمية",
+      "web_dev": "تطوير الويب",
+      "react_desc": "تعلم React.js",
+      "nextjs_desc": "تطوير الويب المتكامل بنظام Next.js",
+      "js_desc": "أفضل ممارسات جافا سكريبت",
+      "mobile_dev": "تطوير تطبيقات الهاتف",
+      "rn_desc": "تطبيقات الهاتف المحمول",
+      "flutter_desc": "تطوير متعدد المنصات",
+      "ios_desc": "تطوير لـ iOS باستخدام Swift و Objective-C",
+      "backend": "برمجة الخلفية (Backend)",
+      "node_desc": "بيئة تشغيل Node.js للـ Server",
+      "python_desc": "برمجة بايثون",
+      "db_desc": "قواعد البيانات SQL و NoSQL"
     },
     "ai": {
-      "title": "AI",
-      "news": "AI News",
-      "ml_desc": "ML developments",
-      "tools": "AI Tools",
-      "tools_desc": "Latest AI tools",
-      "research": "Research",
-      "research_desc": "Academic papers",
-      "tutorials": "Tutorials",
-      "getting_started": "Getting Started",
-      "getting_started_desc": "AI basics",
-      "deep_learning": "Deep Learning",
-      "deep_learning_desc": "Neural networks",
-      "ethics": "AI Ethics",
-      "ethics_desc": "Responsible AI",
-      "productivity": "Productivity",
-      "image_editor": "Image Editor",
-      "image_desc": "Crop, resize, etc.",
-      "pdf_editor": "PDF Editor",
-      "pdf_desc": "Edit and convert PDFs.",
-      "other_tools": "AI & Other Tools",
-      "ai_long": "Artificial Intelligence (AI)",
-      "ai_desc": "Explore the latest developments in AI."
+      "title": "الذكاء الاصطناعي",
+      "news": "أخبار الذكاء الاصطناعي",
+      "ml_desc": "تطورات تعلم الآلة",
+      "tools": "أدوات الذكاء الاصطناعي",
+      "tools_desc": "أحدث أدوات الذكاء الاصطناعي",
+      "research": "الأبحاث",
+      "research_desc": "الأوراق الأكاديمية العلمية",
+      "tutorials": "الدروس التعليمية",
+      "getting_started": "البداية",
+      "getting_started_desc": "أساسيات الذكاء الاصطناعي",
+      "deep_learning": "التعلم العميق",
+      "deep_learning_desc": "الشبكات العصبية",
+      "ethics": "أخلاقيات الذكاء الاصطناعي",
+      "ethics_desc": "الذكاء الاصطناعي المسؤول",
+      "productivity": "الإنتاجية",
+      "image_editor": "محرر الصور",
+      "image_desc": "قص، تغيير الحجم، إلخ.",
+      "pdf_editor": "محرر PDF",
+      "pdf_desc": "تعديل وتحويل ملفات PDF.",
+      "other_tools": "الذكاء الاصطناعي وأدوات أخرى",
+      "ai_long": "الذكاء الاصطناعي (AI)",
+      "ai_desc": "استكشف أحدث التطورات في مجال الذكاء الاصطناعي."
     },
     "categories": {
-      "articles": "Articles & News",
-      "main_news": "Top Stories",
-      "tech_innovation": "News (Tech & Innovation)",
-      "tech_innovation_desc": "Latest news on tech and innovation.",
-      "startup_stories": "Startups",
-      "startup_stories_desc": "Inspiration from the startup world.",
-      "gadget_reviews": "Gadget Reviews",
-      "gadget_reviews_desc": "Reviews and buying guides.",
-      "special_issues": "Special Topics",
-      "cyber_art": "Cybersecurity Articles",
-      "cyber_art_desc": "Digital security tips.",
-      "all_art": "All Articles",
-      "all_art_desc": "View all blog posts.",
-      "learning": "Learning & Guides",
-      "guides": "Guides",
-      "tutorial_desc": "Step-by-step learning guides.",
-      "classes": "Courses",
-      "cyber_course": "Cybersecurity Course",
-      "cyber_course_desc": "Latest cybersecurity classes.",
-      "llm_course": "AI LLM Course",
-      "llm_desc": "Prompt engineering for LLMs.",
-      "ai_eng": "AI Engineer Course",
-      "ai_eng_desc": "In-depth AI engineering."
+      "articles": "المقالات والأخبار",
+      "main_news": "أبرز القصص والأخبار",
+      "tech_innovation": "أخبار (التكنولوجيا والابتكار)",
+      "tech_innovation_desc": "أحدث الأخبار حول التكنولوجيا والابتكار.",
+      "startup_stories": "الشركات الناشئة",
+      "startup_stories_desc": "إلهام من عالم الشركات الناشئة.",
+      "gadget_reviews": "مراجعات الأجهزة",
+      "gadget_reviews_desc": "المراجعات وأدلة الشراء.",
+      "special_issues": "مواضيع خاصة",
+      "cyber_art": "مقالات الأمن السيبراني",
+      "cyber_art_desc": "نصائح الأمن الرقمي.",
+      "all_art": "جميع المقالات",
+      "all_art_desc": "عرض جميع تدوينات المدونة.",
+      "learning": "التعليم والأدلة",
+      "guides": "الأدلة",
+      "tutorial_desc": "أدلة تعليمية خطوة بخطوة.",
+      "classes": "الدورات التدريبية",
+      "cyber_course": "دورة الأمن السيبراني",
+      "cyber_course_desc": "أحدث فصول الأمن السيبراني.",
+      "llm_course": "دورة النماذج اللغوية الكبيرة (LLM)",
+      "llm_desc": "هندسة الأوامر (Prompt Engineering) للنماذج اللغوية.",
+      "ai_eng": "دورة مهندس ذكاء اصطناعي",
+      "ai_eng_desc": "هندسة ذكاء اصطناعي متعمقة."
     }
   },
   "homePage": {
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "تصميم مواقع إلكترونية احترافي",
+          "description": "نصمم مواقع إلكترونية حديثة ومتجاوبة تعمل بشكل رائع على الحواسيب والهواتف المحمولة."
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "تحسين محركات البحث والأداء (SEO)",
+          "description": "حسن ظهورك على جوجل وتجربة المستخدم من خلال صفحات ويب سريعة ومحسنة."
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "الإصلاح والصيانة",
+          "description": "يقوم فريقنا بإصلاح الأخطاء، البرمجيات الخبيثة، والتصاميم المعطلة، ويحافظ على تحديث موقعك باستمرار."
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "أمن مواقع إلكترونية موثوق",
+          "description": "احمِ بياناتك وزوارك من خلال أمان متعدد الطبقات وحماية عملية."
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "خدمات دعم تقنية المعلومات",
+          "description": "احصل على المساعدة في المشكلات الفنية، من استكشاف أخطاء الأجهزة وإصلاحها إلى إدارة الشبكات."
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "دعم ما بعد البيع",
+          "description": "نواصل دعم موقعك وأنظمتك بعد الإطلاق لضمان سير العمليات بسلاسة."
         }
       ]
     },
@@ -267,57 +267,57 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "استشارة الاحتياجات",
+          "description": "ناقش أفكارك، أهدافك، ومتطلبات مشروعك مع فريقنا مجاناً."
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "التصميم والتطوير",
+          "description": "نقوم بتصميم وبناء موقعك، تطبيقك، أو حلك التقني بناءً على النطاق المتفق عليه."
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "الإطلاق والصيانة",
+          "description": "نطلق مشروعك ونوفر الصيانة اللازمة للحفاظ على تشغيل كل شيء بشكل ممتاز."
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
-          "author": "Sarah Widjaja",
-          "role": "Owner, Butik Elegan",
+          "quote": "حولت Codeverta موقعنا بالكامل إلى شيء أكثر احترافية. لقد تحسنت أعداد الزوار بشكل ملحوظ.",
+          "author": "سارة ويجايا",
+          "role": "مالكة، بوتيك إيليغان",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
-          "author": "Budi Santoso",
-          "role": "Marketing Manager, Maju Jaya Motor",
+          "quote": "كان موقعنا القديم بطيئاً جداً. بعد أن قامت Codeverta بإصلاحه، أصبحت السرعة ممتازة.",
+          "author": "بودي سانتوسو",
+          "role": "مدير التسويق، ماجو جايا موتور",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
-          "author": "Emily Hartono",
-          "role": "Head of Operations, Startup Cepat",
+          "quote": "الدعم الفني لديهم سريع الاستجابة للغاية. يتم التعامل مع المشكلات الفنية في مكتبنا بسرعة.",
+          "author": "إيميلي هارتونو",
+          "role": "رئيسة العمليات، ستارت آب سيبات",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
-          "author": "David Kim",
-          "role": "CEO, InnovateNow",
+          "quote": "كانت العملية شفافة والنتيجة تجاوزت التوقعات. أصبح موقعنا الآن قناة مبيعات رئيسية.",
+          "author": "ديفيد كيم",
+          "role": "الرئيس التنفيذي، InnovateNow",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
-          "author": "Lisa Puspita",
-          "role": "Creative Director, Galeri Seni",
+          "quote": "فريق Codeverta سهل التواصل معه ويفهم حقاً الرؤية التي نريد تحقيقها.",
+          "author": "ليسا بوسبيتا",
+          "role": "المديرة الإبداعية، غاليري سيني",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
-          "author": "James Wilson",
-          "role": "COO, ScaleUp Inc",
+          "quote": "واحد من أفضل استثماراتنا. منذ إطلاق الموقع الجديد، زادت الإيرادات بشكل ملحوظ.",
+          "author": "جيمس ويلسون",
+          "role": "رئيس العمليات، ScaleUp Inc",
           "rating": 5
         }
       ]
@@ -325,130 +325,282 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
-          "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "name": "باقة مواقع الشركات الصغيرة والمتوسطة",
+          "price": "2 مليون روبية",
+          "description": "مناسبة للتعريف بالشركات أو المعارض الشخصية والأعمال.",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "تصميم مخصص بناءً على طلبك",
+            "مناسب للشركات الصغيرة والمتوسطة",
+            "الصفحات والميزات الأساسية",
+            "نطاق واستضافة مجانية لمدة سنة واحدة",
+            "يركز على الأداء، وليس قالب ووردبريس تقليدي"
           ],
-          "cta": "Choose Package"
+          "cta": "اختر الباقة"
         },
         {
-          "name": "Online Store Package",
-          "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "name": "باقة المتجر الإلكتروني",
+          "price": "5 ملايين روبية",
+          "description": "مثالية للشركات الصغيرة والمتوسطة النامية والأعمال التجارية عبر الإنترنت.",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "تصميم مخصص بناءً على طلبك",
+            "تحسين محركات البحث (SEO)",
+            "أولوية التطوير"
           ],
-          "cta": "Choose Package",
+          "cta": "اختر الباقة",
           "popular": true
         },
         {
-          "name": "Custom System Package",
-          "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "name": "باقة الأنظمة المخصصة",
+          "price": "أكبر من 10 ملايين روبية",
+          "description": "للشركات التي لديها متطلبات أكثر تعقيداً.",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "ميزات مخصصة متقدمة",
+            "تصميم ونظام مصمم خصيصاً لاحتياجاتك",
+            "تقارير أداء شهرية",
+            "صيانة لأكثر من سنة"
           ],
-          "cta": "Contact Sales"
+          "cta": "اتصل بالمبيعات"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
-          "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "name": "المؤسسات والشركات الكبرى",
+          "price": "أكبر من 20 مليون روبية",
+          "description": "للشركات التي لديها أنظمة وسير عمل معقدة.",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "ميزات مخصصة بناءً على الطلب",
+            "التكامل مع الأنظمة أو التطبيقات الأخرى",
+            "نسخ احتياطي سحابي مجدول",
+            "مراقبة الأمان والأداء على مدار الساعة 24/7",
+            "أولوية التطوير",
+            "صيانة لأكثر من سنة"
           ],
-          "cta": "Contact Sales"
+          "cta": "اتصل بالمبيعات"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "كم من الوقت يستغرق بناء موقع إلكتروني؟",
+          "answer": "يعتمد الجدول الزمني على مدى التعقيد. يستغرق الموقع الأساسي عادةً من أسبوع إلى أسبوعين، في حين قد تستغرق الأنظمة متوسطة الحجم أكثر من شهر."
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "ما الذي أحتاج إلى تحضيره؟",
+          "answer": "قم بإعداد نصوص التعريف بالشركة، وقوائم الخدمات أو المنتجات، وأي صور تريد عرضها. إذا لم تكن جاهزة لديك بعد، يمكن لفريقنا مساعدتك وتوجيهك."
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "هل تقدمون خدمات الصيانة بعد الإطلاق؟",
+          "answer": "نعم. نحن نقدم باقات صيانة شهرية أو سنوية تغطي التحديثات، النسخ الاحتياطي، المراقبة، والإصلاحات المستمرة."
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "هل يمكنك إصلاح موقعي الحالي؟",
+          "answer": "نعم. نقوم بفحص وتدقيق موقعك أولاً، وتحديد المشكلات مثل الأخطاء البرمجية أو مشاكل السرعة أو التخطيط، ثم نوصي بأفضل طريقة للإصلاح."
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "كيف تتم عملية الدفع؟",
+          "answer": "يتم الدفع عادةً عن طريق إيداع دفعة مقدمة بنسبة 30%، والمبلغ المتبقي بعد اكتمال الموقع والموافقة عليه."
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "القطاع",
+      "title": "حلول لكل قطاع",
+      "subtitle": "من مصانع الإنتاج إلى أنظمة الرعاية الصحية، تتكيف Codeverta مع احتياجات قطاعك لتصبح العمليات أبسط والنمو أسرع.",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "التصنيع",
+          "desc": "تبسيط عمليات الإنتاج، المخزون، وسير عمل التوصيل."
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "التجارة والتوزيع",
+          "desc": "إدارة المشتريات، الطلبات، وسلاسل الإمداد بكفاءة."
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "التجزئة",
+          "desc": "تعزيز المبيعات، إدارة المخزون، وتحسين تجربة العملاء."
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "الهندسة والإنشاءات",
+          "desc": "إدارة المشاريع، الموارد، والميزانيات بتحكم أفضل."
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "التجارة الإلكترونية",
+          "desc": "إدارة الطلبات، العملاء، ونمو المبيعات عبر الإنترنت."
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "التعليم",
+          "desc": "تسهيل عمليات القبول، الدورات، المدفوعات، وسير عمل الطلاب."
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "الخدمات المهنية",
+          "desc": "تبسيط المشاريع، الفواتير، والتعاون مع العملاء."
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "الخدمات المالية",
+          "desc": "تتبع الشؤون المالية، المحافظ الاستثمارية، والامتثال بسهولة أكبر."
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "الرعاية الصحية",
+          "desc": "إدارة السجلات، المواعيد، والعمليات في مكان واحد."
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "المؤسسات غير الربحية",
+          "desc": "تحسين جمع التبرعات، إدارة المانحين، وتنفيذ المشاريع."
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "منتجات Codeverta الرقمية - أنظمة معلومات وERP وPOS وتطبيقات ويب",
+      "description": "استكشف منتجات Codeverta الرقمية: أنظمة المعلومات وERP وPOS والتجارة الإلكترونية وتطبيقات الويب والتذاكر والسجلات الطبية الإلكترونية وحلول تقنية مخصصة لعدة قطاعات.",
+      "keywords": "منتجات Codeverta الرقمية, أنظمة معلومات, تطبيقات ويب, ERP, POS, شركة برمجيات, حلول تقنية للأعمال, برمجيات مخصصة"
+    },
+    "hero": {
+      "title": "محفظة حلول تقنية المعلومات",
+      "subtitle": "مجموعة كاملة من أنظمة المعلومات وتطبيقات الويب التي طورناها لتلبية احتياجات أعمال وقطاعات متنوعة."
+    },
+    "status": {
+      "productionReady": "جاهز للإنتاج",
+      "completed": "مكتمل",
+      "inDevelopment": "قيد التطوير"
+    },
+    "card": {
+      "updated": "آخر تحديث",
+      "viewDetail": "عرض التفاصيل",
+      "contact": "تواصل معنا"
+    },
+    "cta": {
+      "title": "هل تحتاج إلى حل تقني مخصص؟",
+      "description": "نحن جاهزون لمساعدتك في تطوير نظام معلومات يناسب احتياجات عملك."
+    },
+    "schema": {
+      "home": "الرئيسية",
+      "products": "المنتجات",
+      "itemListName": "محفظة منتجات Codeverta الرقمية"
+    }
+  },
+  "cookieConsent": {
+    "title": "نستخدم ملفات تعريف الارتباط",
+    "description": "We use essential cookies to run the site, remember language preferences, and understand page performance. Analytics cookies are used only with your consent.",
+    "accept": "موافقة",
+    "reject": "رفض غير الضروري",
+    "learnMore": "اقرأ سياسة الخصوصية"
+  },
+  "footer": {
+    "description": "مزود خدمات تقنية يبني حلولاً رقمية عالية الجودة بصدق وشفافية ومعايير أمان قوية.",
+    "partOf": "جزء من",
+    "rights": "جميع الحقوق محفوظة.",
+    "company": {
+      "title": "الشركة",
+      "links": {
+        "about": "About Us",
+        "contact": "Contact",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy",
+        "blog": "Blog & News",
+        "faq": "FAQ",
+        "gallery": "Gallery"
+      }
+    },
+    "programs": {
+      "title": "البرامج",
+      "links": {
+        "cybersecurity": "Cyber Security Course",
+        "aiEngineer": "AI Engineer",
+        "consulting": "IT Consulting",
+        "development": "Software Development"
+      }
+    },
+    "legal": {
+      "title": "القانون والثقة",
+      "registered": "مسجل رسمياً",
+      "certifications": "الشهادات والأمان"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta - الشروط والأحكام",
+      "description": "Read Codeverta terms and conditions for software development, website services, payment, intellectual property, and liability limits.",
+      "keywords": "Codeverta terms, terms of service, software development agreement, website service terms"
+    },
+    "schema": {
+      "about": "الشروط والأحكام"
+    },
+    "title": "الشروط والأحكام",
+    "last_updated": "Last updated: December 23, 2025",
+    "intro": "Welcome to Codeverta & BikinWebsiteJogja. By accessing our site or using our services, you agree to the following terms.",
+    "sections": {
+      "services": {
+        "title": "1. Scope of Services",
+        "content": "Codeverta provides software development, website creation, application development, system integration, and IT consulting according to the approved proposal or statement of work."
+      },
+      "payment": {
+        "title": "2. Payment Terms",
+        "content": "Payments follow the agreed proposal, invoice, or milestone schedule. A deposit is required before production begins, and final payment is due before final asset handover."
+      },
+      "ip": {
+        "title": "3. Intellectual Property",
+        "content": "After full payment, source code usage rights or ownership are granted according to the contract. Third-party libraries, templates, licences, and core frameworks remain subject to their own licences."
+      },
+      "liability": {
+        "title": "4. Limitation of Liability",
+        "content": "We are not liable for losses caused by system misuse, changes by other parties, hosting/domain issues, or third-party integrations after the warranty or maintenance period ends."
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - الأسئلة الشائعة",
+      "description": "اعثر على إجابات حول تطوير المواقع والأنظمة الرقمية وسير العمل والدفع.",
+      "keywords": "Codeverta FAQ, website development questions, custom software, IT project payment, maintenance"
+    },
+    "title": "الأسئلة الشائعة",
+    "subtitle": "اعثر على إجابات حول تطوير المواقع والأنظمة الرقمية وسير العمل والدفع.",
+    "cta": {
+      "title": "هل لديك سؤال آخر؟",
+      "description": "لا تتردد في استشارتنا حول احتياجاتك الرقمية. فريقنا جاهز للمساعدة.",
+      "whatsapp": "محادثة واتساب",
+      "portfolio": "عرض الأعمال"
+    },
+    "items": [
+      {
+        "question": "How long does development take for each type of system?",
+        "answer": "The timeline depends on project scale and complexity. A simple website often takes 1-2 weeks, mid-sized systems such as E-commerce, POS, and HRMS take about 1-3 months, while ERP or WMS can take several months."
+      },
+      {
+        "question": "What should I prepare before the project starts?",
+        "answer": "Prepare feature requirements, design references, initial data structure, content, photos, and company documents. For technical projects, we help refine requirements and business workflows before development."
+      },
+      {
+        "question": "Can the system be expanded in the future?",
+        "answer": "Yes. Systems such as E-commerce, ERP, HRMS, CRM, and WMS are built modularly so new features, API integrations, payments, or server migration can be added in stages."
+      },
+      {
+        "question": "Do you provide maintenance after launch?",
+        "answer": "Yes. We offer monthly or annual maintenance covering bug fixes, security updates, server monitoring, backups, and small feature additions."
+      },
+      {
+        "question": "Can you build custom features for my business?",
+        "answer": "Yes. We can customise modules, workflows, reports, and integrations such as Midtrans, GeoServer, Socket.io, GraphQL, Kafka, RFID, or other systems."
+      },
+      {
+        "question": "What is the workflow from order to deployment?",
+        "answer": "The process starts with consultation, requirement analysis, proposal, initial payment, UI/UX design, development, testing, revision, finalisation, final payment, and deployment to your server or cloud."
+      },
+      {
+        "question": "How does payment work for software development?",
+        "answer": "Payment usually starts with a 30% deposit and the remaining balance after the project is completed and approved. Larger projects can be paid by milestone."
+      },
+      {
+        "question": "What technologies do you use?",
+        "answer": "The stack depends on the project. We use technologies such as Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS, and cloud services."
+      },
+      {
+        "question": "Are the systems responsive on different devices?",
+        "answer": "Yes. Our web systems are responsive on desktop, tablet, and smartphone. POS or WMS interfaces can also be optimised for touch devices and field operations."
+      }
+    ]
   }
 }

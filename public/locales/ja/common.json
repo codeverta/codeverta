@@ -1,24 +1,25 @@
 {
   "our_products": "私たちの製品",
   "home": {
-    "title": "中小企業向けのプロフェッショナルなWebサイト・アプリ・ITサービス",
-    "subtitle": "Codevertaは、Webサイト制作、改修、開発、ITサービスを通じて、中小企業のデジタル成長を支援します。",
+    "title": "中小企業向けのプロフェッショナルなWebサイト制作とITソリューション",
+    "subtitle": "私たちは、中小企業向けにプロフェッショナルなソフトウェア制作、改修、開発サービス、およびITソリューションを提供し、デジタル時代におけるビジネスの成長を支援します。",
     "hero": {
       "prefix": "あらゆる業界のための",
       "rotating": [
         "小売",
-        "医療",
+        "医療・ヘルスケア",
         "フィットネス",
-        "ホテル・宿泊",
+        "ホテル・宿泊・飲食",
         "教育",
         "製造",
         "EC",
+        "教育",
         "金融",
         "不動産",
-        "非営利",
+        "非営利団体",
         "エンタメ",
-        "交通",
-        "飲食",
+        "交通・物流",
+        "飲食・フードサービス",
         "コンサルティング",
         "法律",
         "マーケティング",
@@ -30,7 +31,7 @@
     },
     "tagline": "*スタートアップ品質。よくあるWordPressテンプレートではありません",
     "cta": {
-      "whatsapp": "WhatsAppで相談",
+      "whatsapp": "今すぐWhatsAppで相談",
       "products": "製品を見る"
     },
     "badges": {
@@ -45,7 +46,7 @@
       "keywords": "Web制作, ソフトウェア会社, アプリ開発, ERP, POS, ITソリューション"
     }
   },
-  "trustedBy": "中小企業、スタートアップ、民間企業、政府機関に信頼されています",
+  "trustedBy": "中小企業、スタートアップ、政府機関に信頼されています",
   "features": {
     "badge": "サービス",
     "title": "デジタル課題に応える総合ソリューション",
@@ -53,7 +54,7 @@
   },
   "portfolio": {
     "title": "これまでに手がけたプロジェクト",
-    "subtitle": "高品質なデジタルソリューションを提供する私たちの実績をご覧ください。"
+    "subtitle": "高品質なデジタルソリューションを提供する、私たちの専門知識と情熱が詰まった最新の実績をご覧ください。"
   },
   "process": {
     "badge": "簡単なプロセスで最大の成果を",
@@ -63,14 +64,14 @@
   "testimonials": {
     "badge": "お客様の声",
     "title": "クライアントの評価",
-    "subtitle": "私たちの言葉だけでなく、サービスに満足されたクライアントの声をご覧ください。"
+    "subtitle": "私たちの言葉だけでなく、サービスに満足されたクライアントの実際の声をご覧ください。"
   },
   "pricing": {
     "badge": "料金",
     "title": "柔軟で透明性の高い料金プラン",
     "subtitle": "ビジネスに最適なプランを選べます。隠れた費用はありません。",
     "tabs": {
-      "smme": "中小企業向け",
+      "smme": "中小企業向け規模",
       "enterprise": "エンタープライズ"
     },
     "card": {
@@ -93,25 +94,33 @@
     }
   },
   "terms": {
+    "seo": {
+      "title": "Codeverta - 利用規約",
+      "description": "ソフトウェア開発、Webサイトサービス、支払い、知的財産、および責任制限に関するCodevertaの利用規約をお読みください。",
+      "keywords": "Codeverta規約, 利用規約, ソフトウェア開発契約, Webサイトサービス規約"
+    },
+    "schema": {
+      "about": "利用規約"
+    },
     "title": "利用規約",
     "last_updated": "最終更新日: 2025年12月23日",
-    "intro": "Codeverta & BikinWebsiteJogjaへようこそ。当サイトにアクセスすることで、以下の条件に同意したものとみなされます。",
+    "intro": "CodevertaおよびBikinWebsiteJogjaへようこそ。当サイトへのアクセスまたは当社のサービスを利用することにより、お客様は以下の規約に同意したものとみなされます。",
     "sections": {
       "services": {
         "title": "1. サービス範囲",
-        "content": "Codevertaは、書面で合意された作業範囲（SOW）に基づき、ソフトウェア開発、Webサイト制作、ITコンサルティングを提供します。"
+        "content": "Codevertaは、承認された提案書または作業範囲記述書（SOW）に従い、ソフトウェア開発、Webサイト制作、アプリケーション開発、システム統合、およびITコンサルティングを提供します。"
       },
       "payment": {
         "title": "2. 支払い条件",
-        "content": "支払いはマイルストーンごとに行われます。プロジェクト開始前に50%の前払いが必要で、最終成果物の引き渡し前に残額をお支払いいただきます。"
+        "content": "お支払いは、合意された提案書、請求書、またはマイルストーンスケジュールに従います。開発（制作）開始前に着手金が必要となり、最終的な納品前に残金のお支払いが必要となります。"
       },
       "ip": {
         "title": "3. 知的財産権",
-        "content": "全額支払い完了後、第三者ライブラリまたはCodeverta独自のコアフレームワークを除き、ソースコードの所有権はクライアントに移転します。"
+        "content": "全額のお支払いが完了した後、契約に従ってソースコードの使用権または所有権が譲渡されます。サードパーティのライブラリ、テンプレート、ライセンス、およびコアフレームワークは、それぞれのライセンス条項に従うものとします。"
       },
       "liability": {
         "title": "4. 責任の制限",
-        "content": "保証期間終了後のシステムの誤用、またはホスティング・ドメインなど第三者サービスの障害による事業損失について、当社は責任を負いません。"
+        "content": "保証期間または保守（メンテナンス）期間の終了後、システムの誤用、他者による変更、ホスティング/ドメインの問題、またはサードパーティの統合によって生じた損害について、当社は一切の責任を負いません。"
       }
     }
   },
@@ -119,7 +128,7 @@
     "products": "製品",
     "industry": "業界",
     "articles": "記事・ニュース",
-    "learning": "コース",
+    "learning": "教育",
     "events": "イベント",
     "blog": "ブログ",
     "careers": "採用情報",
@@ -144,7 +153,7 @@
       "company_desc": "ビジネスニュース",
       "categories": "カテゴリー",
       "software": "ソフトウェア",
-      "software_desc": "ソフトウェア開発",
+      "software_desc": "ソフトウェア開発ニュース",
       "hardware": "ハードウェア",
       "hardware_desc": "ハードウェアの革新",
       "mobile": "モバイル",
@@ -228,7 +237,7 @@
       "pdf_desc": "PDFの編集と変換。",
       "other_tools": "AI・その他ツール",
       "ai_long": "人工知能（AI）",
-      "ai_desc": "AIの最新動向を探る。"
+      "ai_desc": "AI의最新動向を探る。"
     },
     "categories": {
       "articles": "記事・ニュース",
@@ -260,28 +269,28 @@
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "プロフェッショナルなWebサイトデザイン",
+          "description": "デスクトップでもモバイルでも美しく機能する、モダンでレスポンシブなWebサイトをデザインします。"
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "SEO & パフォーマンス最適化",
+          "description": "高速で最適化されたウェブページにより、Googleでの視認性（検索順位）とユーザーエクスペリエンスを向上させます。"
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "修理 & メンテナンス",
+          "description": "当社のチームがバグ、エラー、崩れたレイアウトを修正し、Webサイトを常に最新の状態に保ちます。"
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "信頼性の高いWebサイトセキュリティ",
+          "description": "多層防御と実用的なセキュリティ強化により、データと訪問者を保護します。"
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "ITサポートサービス",
+          "description": "ハードウェアのトラブルシューティングからネットワーク管理まで、技術的な問題の解決をサポートします。"
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "アフターセールスサポート",
+          "description": "リリース後もWebサイトやシステムの運用をサポートし、スムーズな業務運営を維持します。"
         }
       ]
     },
@@ -289,57 +298,57 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "ニーズのヒアリング（無料相談）",
+          "description": "お客様のアイデア、目標、プロジェクトの要件について、当社のチームと無料でご相談いただけます。"
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "デザイン & 開発",
+          "description": "合意された要件に基づき、Webサイト、アプリケーション、またはITソリューションを設計・構築します。"
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "リリース & メンテナンス",
+          "description": "プロジェクトをリリース（公開）し、すべてが円滑に機能し続けるようメンテナンスを提供します。"
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
+          "quote": "Codevertaのおかげで、私たちのWebサイトはよりプロフェッショナルなものへと完全に生まれ変わりました。訪問者数も大幅に増加しました。",
           "author": "Sarah Widjaja",
-          "role": "Owner, Butik Elegan",
+          "role": "Butik Elegan オーナー",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
+          "quote": "以前のWebサイトは非常に低速でした。Codevertaに修正してもらった後は、素晴らしい速度になりました。",
           "author": "Budi Santoso",
-          "role": "Marketing Manager, Maju Jaya Motor",
+          "role": "Maju Jaya Motor マーケティングマネージャー",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
+          "quote": "ITサポートの対応が非常に早いです。オフィス内の技術的なトラブルも迅速に解決してくれます。",
           "author": "Emily Hartono",
-          "role": "Head of Operations, Startup Cepat",
+          "role": "Startup Cepat 運用責任者",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
+          "quote": "プロセスが透明で、結果は期待以上でした。現在、Webサイトは当社の重要な販売チャネルとなっています。",
           "author": "David Kim",
-          "role": "CEO, InnovateNow",
+          "role": "InnovateNow CEO",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
+          "quote": "Codevertaのチームはコミュニケーションが取りやすく、私たちが目指すビジョンを本当によく理解してくれます。",
           "author": "Lisa Puspita",
-          "role": "Creative Director, Galeri Seni",
+          "role": "Galeri Seni クリエイティブディレクター",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
+          "quote": "最高の投資の一つです。新しいWebサイトがオープンして以来、売上が明らかに伸びています。",
           "author": "James Wilson",
-          "role": "COO, ScaleUp Inc",
+          "role": "ScaleUp Inc COO",
           "rating": 5
         }
       ]
@@ -347,130 +356,251 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
+          "name": "中小企業向けWebサイトパック",
           "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "description": "会社案内（コーポレートサイト）やポートフォリオに適しています。",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "ご要望に応じたカスタムデザイン",
+            "中小企業に最適",
+            "主要なページと機能",
+            "1年間の無料ドメイン＆ホスティング",
+            "パフォーマンス重視（ありきたりなWordPressテンプレートは使用しません）"
           ],
-          "cta": "Choose Package"
+          "cta": "プランを選ぶ"
         },
         {
-          "name": "Online Store Package",
+          "name": "オンラインストア（EC）パック",
           "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "description": "成長中の中小企業やオンラインビジネスに最適です。",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "ご要望に応じたカスタムデザイン",
+            "SEO最適化",
+            "優先的な開発"
           ],
-          "cta": "Choose Package",
+          "cta": "プランを選ぶ",
           "popular": true
         },
         {
-          "name": "Custom System Package",
+          "name": "カスタムシステムパック",
           "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "description": "より複雑な要件を持つ企業向けです。",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "高度なカスタム機能",
+            "ニーズに合わせた個別デザインとシステム",
+            "月次パフォーマンスレポート",
+            "1年以上の長期メンテナンス対応"
           ],
-          "cta": "Contact Sales"
+          "cta": "営業に相談"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
+          "name": "エンタープライズ",
           "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "description": "複雑なシステムやワークフローを持つ企業向けです。",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "リクエストに応じたカスタム機能",
+            "他システムやアプリとの連携インテグレーション",
+            "スケジュール化された定期クラウドバックアップ",
+            "24時間年中無休のセキュリティ＆パフォーマンス監視",
+            "最優先での開発進行",
+            "1年以上の長期メンテナンス対応"
           ],
-          "cta": "Contact Sales"
+          "cta": "営業に相談"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "Webサイトの制作にはどのくらいの期間がかかりますか？",
+          "answer": "期間は複雑さによって異なります。基本的なWebサイトは通常1〜2週間かかりますが、中規模以上のシステムは1か月以上かかる場合があります。"
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "事前に何を準備すればよいですか？",
+          "answer": "会社概要のテキスト、サービスや製品のリスト、掲載したい画像などをご用意ください。まだ用意できていない場合は、当社のチームが案内をサポートいたします。"
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "公開後もメンテナンスは提供されますか？",
+          "answer": "はい。アップデート、バックアップ、監視、継続的な修正などをカバーする、月額または年額のメンテナンスパッケージをご用意しています。"
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "既存のWebサイトを修理・改修することは可能ですか？",
+          "answer": "はい。まずWebサイトを監査し、エラー、速度、レイアウトの問題などの原因を特定した上で、最適な修正方法を提案します。"
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "支払いはどのように行われますか？",
+          "answer": "通常、最初に着手金として30%をお支払いいただき、Webサイトが完成して承認された後に残りの金額をお支払いいただきます。"
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "業界",
+      "title": "あらゆる業界のためのソリューション",
+      "subtitle": "製造工場から医療システムまで、Codevertaはお客様の業界ニーズに適応し、運用の効率化と迅速な成長をサポートします。",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "製造",
+          "desc": "生産、在庫、出荷のワークフローを効率化します。"
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "貿易・流通",
+          "desc": "調達、注文、サプライチェーンを効率的に管理します。"
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "小売",
+          "desc": "売上を伸ばし、在庫を管理し、顧客体験を向上させます。"
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "エンジニアリング・建設",
+          "desc": "プロジェクト、リソース、予算をより高いレベルで管理・統制します。"
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "Eコマース（EC）",
+          "desc": "注文、顧客、およびオンライン売上の成長を管理します。"
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "教育",
+          "desc": "入学手続き、コース管理、決済、学生のワークフローを簡素化します。"
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "プロフェッショナルサービス",
+          "desc": "プロジェクト、請求、クライアントとの共同作業を合理化します。"
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "金融サービス",
+          "desc": "財務、ポートフォリオ、コンプライアンスをより簡単に追跡します。"
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "医療・ヘルスケア",
+          "desc": "カルテ、予約、日々の運用を一箇所で管理します。"
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "非営利団体",
+          "desc": "資金調達、寄付者管理、プロジェクトの遂行能力を向上させます。"
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Codeverta デジタル製品 - 情報システム、ERP、POS、Webアプリ実績",
+      "description": "Codeverta のデジタル製品をご覧ください。情報システム、ERP、POS、EC、Webアプリ、チケット、電子カルテ、多業種向けカスタムITソリューションを紹介します。",
+      "keywords": "Codeverta デジタル製品, 情報システム実績, Webアプリ, ERP, POS, ソフトウェア会社, ITソリューション, カスタムソフトウェア"
+    },
+    "hero": {
+      "title": "ITソリューション実績",
+      "subtitle": "さまざまなビジネスと業界のニーズに向けて開発した情報システムとWebアプリの一覧です。"
+    },
+    "status": {
+      "productionReady": "本番利用可能",
+      "completed": "完了",
+      "inDevelopment": "開発中"
+    },
+    "card": {
+      "updated": "更新",
+      "viewDetail": "詳細を見る",
+      "contact": "お問い合わせ"
+    },
+    "cta": {
+      "title": "カスタムITソリューションが必要ですか？",
+      "description": "ビジネス要件に合わせた情報システム開発をサポートします。"
+    },
+    "schema": {
+      "home": "ホーム",
+      "products": "製品",
+      "itemListName": "Codeverta デジタル製品実績"
+    }
+  },
+  "cookieConsent": {
+    "title": "Cookieを使用しています",
+    "description": "当サイトの運営、言語設定の記憶、およびページパフォーマンスの把握のために不可欠なCookieを使用しています。アナリティクスCookieはお客様の同意がある場合のみ使用されます。",
+    "accept": "同意する",
+    "reject": "任意Cookieを拒否",
+    "learnMore": "プライバシーポリシーを見る"
+  },
+  "footer": {
+    "description": "高品質で誠実、透明性のあるデジタルソリューションを強固なセキュリティ基準で構築するITサービス会社です。",
+    "partOf": "所属",
+    "rights": "全著作権所有。",
+    "company": {
+      "title": "会社",
+      "links": {
+        "about": "私たちについて",
+        "contact": "お問い合わせ",
+        "terms": "利用規約",
+        "privacy": "プライバシーポリシー",
+        "blog": "ブログ＆ニュース",
+        "faq": "FAQ",
+        "gallery": "ギャラリー"
+      }
+    },
+    "programs": {
+      "title": "プログラム",
+      "links": {
+        "cybersecurity": "サイバーセキュリティコース",
+        "aiEngineer": "AIエンジニア",
+        "consulting": "ITコンサルティング",
+        "development": "ソフトウェア開発"
+      }
+    },
+    "legal": {
+      "title": "法務・信頼",
+      "registered": "公式登録",
+      "certifications": "認証・セキュリティ"
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - よくある質問",
+      "description": "Web制作、デジタルシステム、開発フロー、支払いについての回答をご覧ください。",
+      "keywords": "Codeverta FAQ, Webサイト開発の質問, カスタムソフトウェア, ITプロジェクトの支払い, メンテナンス"
+    },
+    "title": "よくある質問",
+    "subtitle": "Web制作、デジタルシステム、開発フロー、支払いについての回答をご覧ください。",
+    "cta": {
+      "title": "他に質問がありますか？",
+      "description": "デジタル化のご相談をお気軽にどうぞ。私たちのチームがサポートします。",
+      "whatsapp": "WhatsAppで相談",
+      "portfolio": "実績を見る"
+    },
+    "items": [
+      {
+        "question": "システムの種類ごとに、開発にはどのくらいの期間がかかりますか？",
+        "answer": "期間はプロジェクトの規模や複雑さによって異なります。シンプルなWebサイトは1〜2週間、ECサイト、POS、HRMSなどの中規模システムは約1〜3か月、ERPやWMSなどの大型システムは数か月かかる場合があります。"
+      },
+      {
+        "question": "プロジェクト開始前に何を準備すべきですか？",
+        "answer": "機能要件、デザインの参考、初期のデータ構造、掲載テキスト、写真、会社の書類などをご用意ください。技術的なプロジェクトの場合、開発を開始する前に要件やビジネスワークフローの整理・具体化を当社がサポートいたします。"
+      },
+      {
+        "question": "将来的にシステムを拡張・機能追加することは可能ですか？",
+        "answer": "はい。EC、ERP、HRMS、CRM、WMSなどのシステムはモジュール形式で構築されているため、新しい機能、API連携、決済、サーバー移行などを段階的に追加していくことができます。"
+      },
+      {
+        "question": "公開後もメンテナンスは提供されますか？",
+        "answer": "はい。バグ修正、セキュリティアップデート、サーバー監視、バックアップ、軽微な機能追加などをカバーする、月額または年額のメンテナンスを提供しています。"
+      },
+      {
+        "question": "自社ビジネス向けのカスタム機能を構築してもらうことはできますか？",
+        "answer": "はい。モジュール、ワークフロー、レポート、およびMidtrans、GeoServer、Socket.io、GraphQL、Kafka、RFID、またはその他の外部システムとの連携・統合を個別にカスタマイズできます。"
+      },
+      {
+        "question": "注文から導入（デプロイ）までのワークフローを教えてください。",
+        "answer": "プロセスは、ご相談、要件分析、提案、着手金のお支払い、UI/UXデザイン、開発、テスト、修正・調整、最終仕上げ、残金のお支払い、そしてお客様のサーバーまたはクラウドへの導入という流れで進行します。"
+      },
+      {
+        "question": "ソフトウェア開発の支払いはどのような仕組みですか？",
+        "answer": "通常、最初に着手金として30%をお支払いいただき、プロジェクトが完成して承認された後に残金をお支払いいただきます。大規模なプロジェクトの場合は、マイルストーン（開発フェーズ）ごとの分割払いも可能です。"
+      },
+      {
+        "question": "どのような技術（テックスタック）を使用していますかに使用していますか？",
+        "answer": "使用する技術はプロジェクトによって異なります。私たちは、Next.js、React、Vue、Laravel、Node.js、Django、PostgreSQL、Redis、Docker、Kafka、PostGIS、各種クラウドサービスなどの技術を採用しています。"
+      },
+      {
+        "question": "システムは異なるデバイスでレスポンシブに対応していますか？",
+        "answer": "はい。当社のWebシステムは、デスクトップ、タブレット、スマートフォンでレスポンシブに対応しています。POSやWMSのインターフェースは、タッチデバイスや現場での作業向けに最適化することも可能です。"
+      }
+    ]
   }
 }

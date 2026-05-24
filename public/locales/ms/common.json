@@ -1,44 +1,44 @@
 {
-  "our_products": "Our Products",
+  "our_products": "Produk Kami",
   "home": {
-    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
-    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "title": "Pembuatan Laman Web Profesional dan Solusi IT untuk Perusahaan Kecil dan Sederhana (PKS)",
+    "subtitle": "Kami menyediakan perkhidmatan pembuatan, pembaikan, pembangunan perisian profesional dan solusi IT untuk memacu pertumbuhan perniagaan anda dalam era digital bagi perusahaan kecil dan sederhana.",
     "hero": {
-      "prefix": "Software Solutions For Every",
+      "prefix": "Solusi Perisian Untuk Setiap",
       "rotating": [
-        "Retail",
-        "Healthcare",
-        "Fitness",
-        "Hospitality",
-        "Education",
-        "Manufacturing",
-        "E-commerce",
-        "Education",
-        "Finance",
-        "Real Estate",
-        "Nonprofit",
-        "Entertainment",
-        "Transportation",
-        "Food & Beverage",
-        "Consulting",
-        "Legal",
-        "Marketing",
-        "Automotive",
-        "Energy",
-        "Telecommunications"
+        "Peruncitan",
+        "Penjagaan Kesihatan",
+        "Kecergasan",
+        "Perhotelan & Sektor Servis",
+        "Pendidikan",
+        "Pembuatan & Kilang",
+        "E-dagang",
+        "Pendidikan",
+        "Kewangan",
+        "Hartanah",
+        "Pertubuhan Bukan Untung",
+        "Hiburan",
+        "Pengangkutan & Logistik",
+        "Makanan & Minuman (F&B)",
+        "Perniagaan Konsultasi",
+        "Undang-undang",
+        "Pemasaran",
+        "Automotif",
+        "Tenaga",
+        "Telekomunikasi"
       ],
-      "suffix": "Industry"
+      "suffix": "Industri"
     },
-    "tagline": "*Startup quality, not your typical WordPress template",
+    "tagline": "*Kualiti taraf Startup, bukan templat WordPress biasa anda",
     "cta": {
-      "whatsapp": "WhatsApp Us Now",
-      "products": "View Products"
+      "whatsapp": "Hubungi Kami di WhatsApp",
+      "products": "Lihat Produk"
     },
     "badges": {
-      "consultation": "Free Consultation",
-      "fast": "Fast Process",
-      "guarantee": "Satisfaction Guarantee",
-      "trusted": "Honest & Reliable"
+      "consultation": "Konsultasi Percuma",
+      "fast": "Proses Pantas",
+      "guarantee": "Jaminan Kepuasan",
+      "trusted": "Jujur & Boleh Dipercayai"
     },
     "seo": {
       "title": "Codeverta - Perkhidmatan Pembangunan Web, Aplikasi, ERP & IT",
@@ -46,220 +46,220 @@
       "keywords": "pembangunan laman web, software house, pembangunan aplikasi, ERP, POS, solusi IT"
     }
   },
-  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
+  "trustedBy": "Dipercayai oleh Perusahaan Kecil dan Sederhana (PKS), Startup, dan Agensi Kerajaan",
   "features": {
-    "badge": "Our Services",
-    "title": "Complete Solutions for Your Digital Needs",
-    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
+    "badge": "Perkhidmatan Kami",
+    "title": "Solusi Lengkap untuk Keperluan Digital Anda",
+    "subtitle": "Daripada laman web yang memukau hinggalah sokongan IT yang boleh diharap, kami menyediakan semua yang anda perlukan untuk berjaya dalam talian."
   },
   "portfolio": {
-    "title": "Projects We Have Worked On",
-    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
+    "title": "Projek yang Telah Kami Siapkan",
+    "subtitle": "Lihat beberapa projek terbaru kami yang memamerkan kepakaran dan dedikasi kami dalam menyampaikan solusi digital berkualiti tinggi."
   },
   "process": {
-    "badge": "Easy Process, Maximum Results",
-    "title": "Development Process",
-    "subtitle": "Start your project in just 3 simple steps with our expert team."
+    "badge": "Proses Mudah, Hasil Maksimum",
+    "title": "Proses Pembangunan",
+    "subtitle": "Mulakan projek anda dalam hanya 3 langkah mudah bersama pasukan pakar kami."
   },
   "testimonials": {
-    "badge": "Testimonials",
-    "title": "What Our Clients Say",
-    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+    "badge": "Testimoni",
+    "title": "Apa Kata Pelanggan Kami",
+    "subtitle": "Jangan hanya dengar kata kami. Lihat apa yang pelanggan kami yang puas hati katakan tentang perkhidmatan kami."
   },
   "pricing": {
-    "badge": "Pricing",
-    "title": "Flexible & Transparent Pricing Plans",
-    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "badge": "Harga",
+    "title": "Pelan Harga yang Fleksibel & Telus",
+    "subtitle": "Pilih pelan yang paling sesuai dengan perniagaan anda. Tiada caj tersembunyi.",
     "tabs": {
-      "smme": "SME Scale",
-      "enterprise": "Enterprise"
+      "smme": "Skala PKS",
+      "enterprise": "Perusahaan Besar"
     },
     "card": {
-      "popular": "Most Popular",
-      "perProject": "/one-time payment",
-      "contactSales": "Contact Sales"
+      "popular": "Paling Popular",
+      "perProject": "/bayaran sekali seumur hidup",
+      "contactSales": "Hubungi Bahagian Jualan"
     }
   },
   "faq": {
     "badge": "FAQ",
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to the most frequently asked questions about our services."
+    "title": "Soalan Lazim",
+    "subtitle": "Cari jawapan kepada soalan yang paling kerap ditanya mengenai perkhidmatan kami."
   },
   "cta": {
-    "title": "Ready for a Professional Website?",
-    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "title": "Bersedia untuk Laman Web Profesional?",
+    "description": "Hubungi kami hari ini untuk konsultasi percuma. Mari kita bina kehadiran digital yang kukuh untuk perniagaan anda bersama-sama.",
     "buttons": {
-      "free": "Free Consultation",
-      "contact": "Contact Now"
+      "free": "Konsultasi Percuma",
+      "contact": "Hubungi Sekarang"
     }
   },
   "navbar": {
-    "products": "Products",
-    "industry": "Industries",
-    "articles": "Articles & News",
-    "learning": "Education",
+    "products": "Produk",
+    "industry": "Industri",
+    "articles": "Artikel & Berita",
+    "learning": "Pendidikan",
     "blog": "Blog",
-    "events": "Events",
+    "events": "Acara",
     "faq": "FAQ",
-    "careers": "Careers",
-    "about": "About Us"
+    "careers": "Kerjaya",
+    "about": "Tentang Kami"
   },
   "mega_menu": {
     "products": {
-      "title": "Products",
-      "all": "All Products",
-      "view_all": "View All Products",
-      "view_all_desc": "Explore all the products we offer."
+      "title": "Produk",
+      "all": "Semua Produk",
+      "view_all": "Lihat Semua Produk",
+      "view_all_desc": "Terokai semua produk yang kami tawarkan."
     },
     "news": {
-      "title": "News",
-      "tech": "Tech News",
-      "breaking": "Breaking News",
-      "breaking_desc": "Latest tech updates",
-      "industry": "Industry Reports",
-      "industry_desc": "Market analysis",
-      "company": "Company Updates",
-      "company_desc": "Business news",
-      "categories": "Categories",
-      "software": "Software",
-      "software_desc": "Software development news",
-      "hardware": "Hardware",
-      "hardware_desc": "Hardware innovations",
-      "mobile": "Mobile",
-      "mobile_desc": "Mobile technology",
+      "title": "Berita",
+      "tech": "Berita Teknologi",
+      "breaking": "Berita Tergempar",
+      "breaking_desc": "Kemas kini teknologi terkini",
+      "industry": "Laporan Industri",
+      "industry_desc": "Analisis pasaran",
+      "company": "Perkembangan Syarikat",
+      "company_desc": "Berita perniagaan",
+      "categories": "Kategori",
+      "software": "Perisian",
+      "software_desc": "Berita pembangunan perisian",
+      "hardware": "Perkakasan",
+      "hardware_desc": "Inovasi perkakasan",
+      "mobile": "Mudah Alih",
+      "mobile_desc": "Teknologi mudah alih",
       "trending": "Trending",
-      "ai_rev": "AI Revolution",
-      "ai_rev_desc": "AI developments",
-      "web3": "Web3 Updates",
-      "web3_desc": "Blockchain & crypto",
-      "devops": "DevOps News",
-      "devops_desc": "Development operations"
+      "ai_rev": "Revolusi AI",
+      "ai_rev_desc": "Perkembangan AI",
+      "web3": "Kemas kini Web3",
+      "web3_desc": "Blockchain & kripto",
+      "devops": "Berita DevOps",
+      "devops_desc": "Operasi pembangunan"
     },
     "startups": {
-      "title": "Startups",
-      "news": "Startup News",
-      "funding": "Funding Rounds",
-      "funding_desc": "Investment updates",
-      "launches": "New Launches",
-      "launches_desc": "Product launches",
-      "success": "Success Stories",
-      "success_desc": "Inspiring journeys",
-      "resources": "Resources",
-      "guide": "Startup Guide",
-      "guide_desc": "How to get started",
-      "investors": "Investor Network",
-      "investors_desc": "Find investors",
+      "title": "Startup",
+      "news": "Berita Startup",
+      "funding": "Pusingan Dana",
+      "funding_desc": "Kemas kini pelaburan",
+      "launches": "Peluncuran Baru",
+      "launches_desc": "Peluncuran produk",
+      "success": "Kisah Kejayaan",
+      "success_desc": "Perjalanan yang memberi inspirasi",
+      "resources": "Sumber",
+      "guide": "Panduan Startup",
+      "guide_desc": "Cara untuk bermula",
+      "investors": "Rangkaian Pelabur",
+      "investors_desc": "Cari pelabur",
       "mentorship": "Mentorship",
-      "mentorship_desc": "Get expert guidance"
+      "mentorship_desc": "Dapatkan bimbingan pakar"
     },
     "gadget": {
-      "title": "Gadgets",
-      "reviews": "Reviews",
-      "smartphones": "Smartphones",
-      "smartphones_desc": "Phone reviews",
-      "laptops": "Laptops",
-      "laptops_desc": "Computer reviews",
-      "wearables": "Wearables",
-      "wearables_desc": "Smartwatches & more",
-      "buying_guides": "Buying Guides",
-      "deals": "Best Deals",
-      "deals_desc": "Current promotions",
-      "compare": "Comparisons",
-      "compare_desc": "Product comparisons",
-      "recommended": "Recommendations",
-      "recommended_desc": "Editor's choice"
+      "title": "Gajet",
+      "reviews": "Ulasan",
+      "smartphones": "Telefon Pintar",
+      "smartphones_desc": "Ulasan telefon",
+      "laptops": "Komputer Riba",
+      "laptops_desc": "Ulasan komputer",
+      "wearables": "Peranti Boleh Pakai",
+      "wearables_desc": "Jam tangan pintar & lain-lain",
+      "buying_guides": "Panduan Membeli",
+      "deals": "Tawaran Terbaik",
+      "deals_desc": "Promosi semasa",
+      "compare": "Perbandingan",
+      "compare_desc": "Perbandingan produk",
+      "recommended": "Rekomendasi",
+      "recommended_desc": "Pilihan editor"
     },
     "tutorials": {
-      "title": "Tutorials",
-      "web_dev": "Web Development",
-      "react_desc": "Learn React.js",
-      "nextjs_desc": "Full-stack React",
-      "js_desc": "JS best practices",
-      "mobile_dev": "Mobile Development",
-      "rn_desc": "Mobile applications",
-      "flutter_desc": "Cross-platform",
+      "title": "Tutorial",
+      "web_dev": "Pembangunan Web",
+      "react_desc": "Belajar React.js",
+      "nextjs_desc": "React full-stack",
+      "js_desc": "Amalan terbaik JS",
+      "mobile_dev": "Pembangunan Mudah Alih",
+      "rn_desc": "Aplikasi mudah alih",
+      "flutter_desc": "Silang platform (Cross-platform)",
       "ios_desc": "Swift & Objective-C",
       "backend": "Backend",
-      "node_desc": "Server-side JS",
-      "python_desc": "Python programming",
+      "node_desc": "JS sebelah pelayan",
+      "python_desc": "Pengaturcaraan Python",
       "db_desc": "SQL & NoSQL"
     },
     "ai": {
       "title": "AI",
-      "news": "AI News",
-      "ml_desc": "ML developments",
-      "tools": "AI Tools",
-      "tools_desc": "Latest AI tools",
-      "research": "Research",
-      "research_desc": "Academic papers",
-      "tutorials": "Tutorials",
-      "getting_started": "Getting Started",
-      "getting_started_desc": "AI basics",
-      "deep_learning": "Deep Learning",
-      "deep_learning_desc": "Neural networks",
-      "ethics": "AI Ethics",
-      "ethics_desc": "Responsible AI",
-      "productivity": "Productivity",
-      "image_editor": "Image Editor",
-      "image_desc": "Crop, resize, etc.",
-      "pdf_editor": "PDF Editor",
-      "pdf_desc": "Edit and convert PDFs.",
-      "other_tools": "AI & Other Tools",
-      "ai_long": "Artificial Intelligence (AI)",
-      "ai_desc": "Explore the latest developments in AI."
+      "news": "Berita AI",
+      "ml_desc": "Perkembangan ML",
+      "tools": "Alatan AI",
+      "tools_desc": "Alatan AI terkini",
+      "research": "Penyelidikan",
+      "research_desc": "Kertas akademik",
+      "tutorials": "Tutorial",
+      "getting_started": "Langkah Pertama",
+      "getting_started_desc": "Asas AI",
+      "deep_learning": "Pembelajaran Mendalam",
+      "deep_learning_desc": "Rangkaian neural",
+      "ethics": "Etika AI",
+      "ethics_desc": "AI yang bertanggungjawab",
+      "productivity": "Produktiviti",
+      "image_editor": "Editor Gambar",
+      "image_desc": "Potong, ubah saiz, dll.",
+      "pdf_editor": "Editor PDF",
+      "pdf_desc": "Edit dan tukar PDF.",
+      "other_tools": "AI & Alatan Lain",
+      "ai_long": "Kecerdasan Buatan (AI)",
+      "ai_desc": "Terokai perkembangan terkini dalam AI."
     },
     "categories": {
-      "articles": "Articles & News",
-      "main_news": "Top Stories",
-      "tech_innovation": "News (Tech & Innovation)",
-      "tech_innovation_desc": "Latest news on tech and innovation.",
-      "startup_stories": "Startups",
-      "startup_stories_desc": "Inspiration from the startup world.",
-      "gadget_reviews": "Gadget Reviews",
-      "gadget_reviews_desc": "Reviews and buying guides.",
-      "special_issues": "Special Topics",
-      "cyber_art": "Cybersecurity Articles",
-      "cyber_art_desc": "Digital security tips.",
-      "all_art": "All Articles",
-      "all_art_desc": "View all blog posts.",
-      "learning": "Learning & Guides",
-      "guides": "Guides",
-      "tutorial_desc": "Step-by-step learning guides.",
-      "classes": "Courses",
-      "cyber_course": "Cybersecurity Course",
-      "cyber_course_desc": "Latest cybersecurity classes.",
-      "llm_course": "AI LLM Course",
-      "llm_desc": "Prompt engineering for LLMs.",
-      "ai_eng": "AI Engineer Course",
-      "ai_eng_desc": "In-depth AI engineering."
+      "articles": "Artikel & Berita",
+      "main_news": "Berita Utama",
+      "tech_innovation": "Berita (Teknologi & Inovasi)",
+      "tech_innovation_desc": "Berita terkini mengenai teknologi dan inovasi.",
+      "startup_stories": "Startup",
+      "startup_stories_desc": "Inspirasi dari dunia startup.",
+      "gadget_reviews": "Ulasan Gajet",
+      "gadget_reviews_desc": "Ulasan dan panduan membeli.",
+      "special_issues": "Topik Khas",
+      "cyber_art": "Artikel Keselamatan Siber",
+      "cyber_art_desc": "Tips keselamatan digital.",
+      "all_art": "Semua Artikel",
+      "all_art_desc": "Lihat semua hantaran blog.",
+      "learning": "Pembelajaran & Panduan",
+      "guides": "Panduan",
+      "tutorial_desc": "Panduan pembelajaran langkah demi langkah.",
+      "classes": "Kursus",
+      "cyber_course": "Kursus Keselamatan Siber",
+      "cyber_course_desc": "Kelas keselamatan siber terkini.",
+      "llm_course": "Kursus AI LLM",
+      "llm_desc": "Kejuruteraan prom (Prompt engineering) untuk LLM.",
+      "ai_eng": "Kursus Jurutera AI",
+      "ai_eng_desc": "Kejuruteraan AI secara mendalam."
     }
   },
   "homePage": {
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "Reka Bentuk Laman Web Profesional",
+          "description": "Kami mereka bentuk laman web moden dan responsif yang berfungsi dengan cantik pada komputer meja dan peranti mudah alih."
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "SEO & Optimisasi Prestasi",
+          "description": "Tingkatkan keterlihatan Google dan pengalaman pengguna dengan halaman web yang pantas dan dioptimumkan."
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "Pembaikan & Penyelenggaraan",
+          "description": "Pasukan kami membaiki bug, ralat, susun atur yang rosak, dan memastikan laman web anda sentiasa dikemas kini."
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "Keselamatan Laman Web yang Dipercayai",
+          "description": "Lindungi data dan pelawat anda dengan keselamatan berlapis dan pengerasan sistem yang praktikal."
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "Perkhidmatan Sokongan IT",
+          "description": "Dapatkan bantuan untuk masalah teknikal, daripada penyelesaian masalah perkakasan hinggalah pengurusan rangkaian."
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "Sokongan Selepas Jualan",
+          "description": "Kami terus menyokong laman web dan sistem anda selepas diluncurkan supaya operasi perniagaan berjalan lancar."
         }
       ]
     },
@@ -267,55 +267,55 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "Konsultasi Keperluan",
+          "description": "Bincangkan idea, matlamat, dan keperluan projek anda dengan pasukan kami secara percuma."
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "Reka Bentuk & Pembangunan",
+          "description": "Kami mereka bentuk dan membina laman web, aplikasi, atau solusi IT anda berdasarkan skop yang dipersetujui."
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "Peluncuran & Penyelenggaraan",
+          "description": "Kami meluncurkan projek anda dan menyediakan penyelenggaraan untuk memastikan semuanya berjalan lancar."
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
+          "quote": "Codeverta mengubah sepenuhnya laman web kami menjadi sesuatu yang lebih profesional. Jumlah pelawat meningkat dengan ketara.",
           "author": "Sarah Widjaja",
-          "role": "Owner, Butik Elegan",
+          "role": "Pemilik, Butik Elegan",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
+          "quote": "Laman web lama kami sangat perlahan. Selepas Codeverta membaikinya, prestasinya menjadi sangat cemerlang.",
           "author": "Budi Santoso",
-          "role": "Marketing Manager, Maju Jaya Motor",
+          "role": "Pengurus Pemasaran, Maju Jaya Motor",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
+          "quote": "Sokongan IT mereka sangat responsif. Masalah teknikal di pejabat kami dikendalikan dengan cepat.",
           "author": "Emily Hartono",
-          "role": "Head of Operations, Startup Cepat",
+          "role": "Ketua Operasi, Startup Cepat",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
+          "quote": "Prosesnya telus dan hasilnya melebihi jangkaan. Laman web kami kini menjadi saluran jualan utama.",
           "author": "David Kim",
           "role": "CEO, InnovateNow",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
+          "quote": "Pasukan Codeverta sangat mudah untuk berkomunikasi dan benar-benar memahami visi yang kami inginkan.",
           "author": "Lisa Puspita",
-          "role": "Creative Director, Galeri Seni",
+          "role": "Pengarah Kreatif, Galeri Seni",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
+          "quote": "Salah satu pelaburan terbaik kami. Sejak laman web baru diluncurkan, hasil pendapatan meningkat secara ketara.",
           "author": "James Wilson",
           "role": "COO, ScaleUp Inc",
           "rating": 5
@@ -325,130 +325,282 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
-          "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "name": "Pakej Laman Web PKS",
+          "price": "RM 3,500",
+          "description": "Sesuai untuk profil syarikat atau portfolio.",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "Reka bentuk tersuai (custom) berdasarkan permintaan anda",
+            "Sesuai untuk PKS tempatan",
+            "Halaman dan fungsi teras",
+            "Domain dan hosting percuma selama 1 tahun",
+            "Fokus pada prestasi, bukan templat WordPress generik"
           ],
-          "cta": "Choose Package"
+          "cta": "Pilih Pakej"
         },
         {
-          "name": "Online Store Package",
-          "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "name": "Pakej Kedai Dalam Talian (E-dagang)",
+          "price": "RM 8,500",
+          "description": "Ideal untuk PKS yang sedang berkembang dan perniagaan dalam talian.",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "Reka bentuk custom berdasarkan permintaan anda",
+            "Optimisasi SEO penuh",
+            "Pembangunan keutamaan tinggi"
           ],
-          "cta": "Choose Package",
+          "cta": "Pilih Pakej",
           "popular": true
         },
         {
-          "name": "Custom System Package",
-          "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "name": "Pakej Sistem Khas (Custom)",
+          "price": "RM >15,000",
+          "description": "Untuk syarikat yang mempunyai keperluan yang lebih kompleks.",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "Fungsi custom tahap lanjutan",
+            "Reka bentuk dan sistem yang disesuaikan dengan keperluan kerja anda",
+            "Laporan prestasi bulanan",
+            "Penyelenggaraan selama lebih daripada 1 tahun"
           ],
-          "cta": "Contact Sales"
+          "cta": "Hubungi Bahagian Jualan"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
-          "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "name": "Pakej Enterprise",
+          "price": "RM >35,000",
+          "description": "Untuk syarikat dengan sistem dan aliran kerja (workflow) yang kompleks.",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "Fungsi khusus berdasarkan permintaan",
+            "Integrasi dengan sistem atau aplikasi sedia ada",
+            "Sandaran cloud (Cloud backup) berjadual",
+            "Pemantauan keselamatan dan prestasi 24/7",
+            "Pembangunan keutamaan tertinggi",
+            "Penyelenggaraan selama lebih daripada 1 tahun"
           ],
-          "cta": "Contact Sales"
+          "cta": "Hubungi Bahagian Jualan"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "Berapa lamakah masa yang diambil untuk membina laman web?",
+          "answer": "Garis masa bergantung pada tahap kompleksiti. Laman web asas biasanya mengambil masa 1-2 minggu, manakala sistem skala sederhana mungkin mengambil masa lebih daripada sebulan."
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "Apakah yang perlu saya sediakan?",
+          "answer": "Sediakan teks profil syarikat, senarai perkhidmatan atau produk, dan sebarang gambar yang ingin anda paparkan. Jika anda belum mempunyainya, pasukan kami sedia membantu membimbing anda."
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "Adakah anda menyediakan penyelenggaraan selepas laman web diluncurkan?",
+          "answer": "Ya. Kami menawarkan pakej penyelenggaraan bulanan atau tahunan yang merangkumi kemas kini, sandaran data, pemantauan, dan pembaikan berterusan."
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "Bolehkah anda membaiki laman web sedia ada saya?",
+          "answer": "Ya. Kami akan mengaudit laman web anda terlebih dahulu, mengenal pasti masalah seperti ralat, isu kelajuan, atau susun atur, dan mengesyorkan penyelesaian terbaik."
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "Bagaimanakah proses pembayaran berfungsi?",
+          "answer": "Pembayaran biasanya dibuat dengan deposit 30% sebagai pendahuluan dan baki selebihnya dibayar selepas laman web siap sepenuhnya dan diluluskan."
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "Industri",
+      "title": "Solusi untuk Setiap Industri",
+      "subtitle": "Daripada loji pembuatan hinggalah sistem penjagaan kesihatan, Codeverta menyesuaikan diri dengan keperluan industri anda supaya operasi menjadi lebih mudah dan pertumbuhan menjadi lebih pantas.",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "Pembuatan & Kilang",
+          "desc": "Whal selaraskan aliran kerja pengeluaran, inventori, dan penghantaran."
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "Perdagangan & Pengedar",
+          "desc": "Urus perolehan, pesanan, dan rantaian bekalan (supply chain) dengan cekap."
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "Peruncitan",
+          "desc": "Tingkatkan jualan, urus stok inventori, dan tingkatkan pengalaman pelanggan."
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "Kejuruteraan & Pembinaan",
+          "desc": "Urus projek, sumber, dan bajet kewangan dengan kawalan yang lebih baik."
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "E-dagang",
+          "desc": "Urus pesanan, data pelanggan, dan pacu pertumbuhan jualan dalam talian."
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "Pendidikan",
+          "desc": "Permudahkan proses kemasukan, kursus, pembayaran, dan aliran kerja pelajar."
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "Perkhidmatan Profesional",
+          "desc": "Kemaskan pengurusan projek, pengebilan (billing), dan kolaborasi pelanggan."
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "Perkhidmatan Kewangan",
+          "desc": "Jejaki kewangan, portfolio, dan pematuhan peraturan (compliance) dengan lebih mudah."
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "Penjagaan Kesihatan",
+          "desc": "Urus rekod perubatan, janji temu, dan operasi klinik/hospital di satu tempat."
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "Pertubuhan Bukan Untung",
+          "desc": "Tingkatkan kutipan dana, pengurusan penderma, dan pelaksanaan projek."
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Produk Digital Codeverta - Portfolio Sistem Maklumat, ERP, POS & Aplikasi Web",
+      "description": "Terokai produk digital Codeverta: sistem maklumat, ERP, POS, e-dagang, aplikasi web, ticketing, EMR dan penyelesaian IT tersuai untuk pelbagai industri.",
+      "keywords": "produk digital Codeverta, portfolio sistem maklumat, aplikasi web, ERP, POS, software house, penyelesaian IT bisnes, perisian tersuai"
+    },
+    "hero": {
+      "title": "Portfolio Penyelesaian IT",
+      "subtitle": "Koleksi lengkap sistem maklumat dan aplikasi web yang kami bangunkan untuk pelbagai keperluan bisnes dan industri."
+    },
+    "status": {
+      "productionReady": "Sedia Produksi",
+      "completed": "Selesai",
+      "inDevelopment": "Dalam Pembangunan"
+    },
+    "card": {
+      "updated": "Dikemas kini",
+      "viewDetail": "Lihat Butiran",
+      "contact": "Hubungi Kami"
+    },
+    "cta": {
+      "title": "Perlukan Penyelesaian IT Tersuai?",
+      "description": "Kami bersedia membantu membangunkan sistem maklumat mengikut keperluan bisnes anda."
+    },
+    "schema": {
+      "home": "Laman Utama",
+      "products": "Produk",
+      "itemListName": "Portfolio Produk Digital Codeverta"
+    }
+  },
+  "cookieConsent": {
+    "title": "Kami menggunakan kuki",
+    "description": "Kami menggunakan kuki penting untuk menjalankan tapak, mengingati pilihan bahasa dan memahami prestasi halaman. Kuki analitik digunakan hanya dengan persetujuan anda.",
+    "accept": "Terima Semua",
+    "reject": "Tolak Bukan Penting",
+    "learnMore": "Baca dasar privasi"
+  },
+  "footer": {
+    "description": "Penyedia perkhidmatan IT yang membina penyelesaian digital berkualiti tinggi, jujur dan telus dengan standard keselamatan kukuh.",
+    "partOf": "Sebahagian daripada",
+    "rights": "Hak cipta terpelihara.",
+    "company": {
+      "title": "Syarikat",
+      "links": {
+        "about": "Tentang Kami",
+        "contact": "Hubungi Kami",
+        "terms": "Terma Perkhidmatan",
+        "privacy": "Dasar Privasi",
+        "blog": "Blog & Berita",
+        "faq": "FAQ",
+        "gallery": "Galeri"
+      }
+    },
+    "programs": {
+      "title": "Program",
+      "links": {
+        "cybersecurity": "Kursus Keselamatan Siber",
+        "aiEngineer": "Jurutera AI",
+        "consulting": "Konsultasi IT",
+        "development": "Pembangunan Perisian"
+      }
+    },
+    "legal": {
+      "title": "Legal & Kepercayaan",
+      "registered": "Berdaftar secara rasmi",
+      "certifications": "Pensijilan & Keselamatan"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta - Terma & Syarat",
+      "description": "Baca terma dan syarat Codeverta untuk pembangunan perisian, perkhidmatan laman web, pembayaran, harta intelek dan had liabiliti.",
+      "keywords": "terma Codeverta, terma perkhidmatan, perjanjian pembangunan perisian, terma perkhidmatan laman web"
+    },
+    "schema": {
+      "about": "Terma & Syarat"
+    },
+    "title": "Terma & Syarat",
+    "last_updated": "Terakhir dikemas kini: 23 Disember 2025",
+    "intro": "Selamat datang ke Codeverta & BikinWebsiteJogja. Dengan mengakses tapak kami atau menggunakan perkhidmatan kami, anda bersetuju dengan terma berikut.",
+    "sections": {
+      "services": {
+        "title": "1. Skop Perkhidmatan",
+        "content": "Codeverta menyediakan pembangunan perisian, pembuatan laman web, pembangunan aplikasi, integrasi sistem, dan konsultasi IT mengikut cadangan (proposal) yang diluluskan atau penyataan skop kerja (SOW)."
+      },
+      "payment": {
+        "title": "2. Syarat Pembayaran",
+        "content": "Pembayaran mengikut cadangan yang dipersetujui, invois, opsyen atau jadual fasa kerja (milestone). Deposit diperlukan sebelum produksi bermula, dan bayaran akhir perlu dijelaskan sebelum penyerahan aset sistem sepenuhnya."
+      },
+      "ip": {
+        "title": "3. Harta Intelek & Hak Milik",
+        "content": "Selepas pembayaran penuh, hak penggunaan kod sumber atau hak milik diberikan mengikut kontrak. Walau bagaimanapun, pustaka pihak ketiga (third-party libraries), templat, lesen komersial dan rangka kerja teras (core frameworks) kekal tertakluk kepada lesen asal mereka sendiri."
+      },
+      "legal": {
+        "title": "4. Had Liabiliti",
+        "content": "Kami tidak bertanggungjawab terhadap kerugian yang disebabkan oleh penyalahgunaan sistem, perubahan oleh pihak lain, masalah hosting/domain, atau integrasi pihak ketiga selepas tempoh jaminan atau penyelenggaraan tamat."
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - Soalan Lazim",
+      "description": "Dapatkan jawapan tentang pembangunan laman web, sistem digital, proses teknikal dan pembayaran.",
+      "keywords": "Codeverta FAQ, soalan pembangunan laman web, perisian custom, pembayaran projek IT, penyelenggaraan"
+    },
+    "title": "Soalan Lazim",
+    "subtitle": "Dapatkan jawapan tentang pembangunan laman web, sistem digital, proses teknikal dan pembayaran.",
+    "cta": {
+      "title": "Masih ada soalan?",
+      "description": "Sila berunding tentang keperluan digital anda. Pasukan kami sedia membantu.",
+      "whatsapp": "Sembang melalui LINE / WhatsApp",
+      "portfolio": "Lihat Portfolio"
+    },
+    "items": [
+      {
+        "question": "Berapakah tempoh masa pembangunan untuk setiap jenis sistem?",
+        "answer": "Garis masa bergantung pada skala projek dan tahap kompleksiti. Laman web mudah selalunya mengambil masa 1-2 minggu, sistem berskala sederhana seperti E-dagang, POS dan HRMS mengambil masa sekitar 1-3 bulan, manakala ERP atau WMS yang rumit boleh memakan masa beberapa bulan."
+      },
+      {
+        "question": "Apakah yang perlu saya sediakan sebelum projek bermula?",
+        "answer": "Sediakan keperluan fungsi, rujukan reka bentuk, struktur data awal, kandungan teks, foto, dan dokumen rasmi syarikat. Untuk projek teknikal, kami sedia membantu memperhalusi keperluan fungsi dan aliran kerja perniagaan sebelum kod ditulis."
+      },
+      {
+        "question": "Adakah sistem boleh dikembangkan atau dinaik taraf pada masa hadapan?",
+        "answer": "Ya. Sistem seperti E-dagang, ERP, HRMS, CRM dan WMS dibina secara modular (bóc tách) supaya ciri baharu, integrasi API, gerbang pembayaran (payment gateway) tempatan atau migrasi pelayan boleh ditambah secara berperingkat tanpa mengganggu sistem sedia ada."
+      },
+      {
+        "question": "Adakah anda menyediakan perkhidmatan penyelenggaraan selepas sistem diluncurkan?",
+        "answer": "Ya. Kami menawarkan penyelenggaraan bulanan atau tahunan yang merangkumi pembaikan bug, kemas kini keselamatan, pemantauan pelayan, sandaran data, dan penambahan ciri-ciri kecil."
+      },
+      {
+        "question": "Bolehkah anda membina fungsi khas (custom) mengikut model perniagaan saya?",
+        "answer": "Ya. Kami boleh menyesuaikan modul, aliran kerja, laporan dinamik dan mengintegrasikan sistem pihak ketiga seperti DuitNow, FPX, GeoServer, Socket.io, GraphQL, Kafka, RFID atau perkakasan industri yang lain."
+      },
+      {
+        "question": "Bagaimanakah aliran kerja daripada tempahan sehingga peluncuran (Deployment) sistem?",
+        "answer": "Proses bermula dengan konsultasi, analisis keperluan, penyerahan cadangan kerja, pembayaran deposit, reka bentuk UI/UX, pembangunan kod, fasa ujian, semakan semula, pemuktamadan, pembayaran baki akhir, dan peluncuran ke pelayan cloud atau pelayan fizikal anda."
+      },
+      {
+        "question": "Bagaimanakah proses pembayaran untuk projek pembangunan perisian?",
+        "answer": "Pembayaran biasanya bermula dengan deposit 30% untuk memulakan kerja dan baki selebihnya dijelaskan selepas projek siap sepenuhnya serta diluluskan. Projek berskala besar boleh dibayar mengikut fasa pencapaian (Milestone)."
+      },
+      {
+        "question": "Apakah teknologi yang anda gunakan dalam pembangunan?",
+        "answer": "Teknologi stack bergantung sepenuhnya pada keperluan projek anda. Kami pakar dalam teknologi standard industri termasuk Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS dan perkhidmatan cloud terkemuka."
+      },
+      {
+        "question": "Adakah sistem paparan responsif pada pelbagai jenis peranti?",
+        "answer": "Ya. Sistem web kami direka bentuk responsif sepenuhnya agar kelihatan kemas pada komputer meja, tablet dan telefon pintar. Antara muka untuk kegunaan POS atau WMS juga boleh dioptimumkan khas untuk peranti skrin sentuh serta operasi lapangan."
+      }
+    ]
   }
 }

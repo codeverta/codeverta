@@ -54,5 +54,18 @@
       "title": "7. Kontak Kami",
       "content": "Jika ada pertanyaan mengenai kebijakan privasi ini, Anda dapat menghubungi kami melalui email di support@codeverta.com atau melalui kontak yang tertera di codeverta.com."
     }
+  },
+  "seo": {
+    "title": "Codeverta - 隐私政策",
+    "description": "Learn how Codeverta collects, uses, protects personal data, uses cookies, and respects privacy rights for software and website service users.",
+    "keywords": "Codeverta privacy policy, data protection, cookies, personal data"
+  },
+  "notice": {
+    "before": "This document applies to all entities managed by",
+    "and": "and",
+    "after": "By continuing to use our services, you are deemed to agree to the points above."
+  },
+  "schema": {
+    "about": "隐私政策"
   }
 }

@@ -1,23 +1,24 @@
 {
   "our_products": "我们的产品",
   "home": {
-    "title": "面向中小企业的专业网站、应用和 IT 服务",
-    "subtitle": "我们提供专业的网站制作、修复、开发和 IT 服务，帮助中小企业在数字时代成长。",
+    "title": "面向中小企业的专业网站制作与 IT 解决方案",
+    "subtitle": "我们提供专业的软件制作、修复、开发服务以及 IT 解决方案，助力中小企业在数字时代实现业务增长。",
     "hero": {
       "prefix": "面向各行业的",
       "rotating": [
         "零售",
-        "医疗",
+        "医疗健康",
         "健身",
-        "酒店",
+        "酒店餐饮",
         "教育",
         "制造",
         "电商",
+        "教育",
         "金融",
         "房地产",
-        "非营利",
+        "非营利组织",
         "娱乐",
-        "交通",
+        "交通运输",
         "餐饮",
         "咨询",
         "法律",
@@ -28,16 +29,16 @@
       ],
       "suffix": "软件解决方案"
     },
-    "tagline": "*创业公司级质量，而不是普通 WordPress 模板",
+    "tagline": "*创业公司级质量，绝非普通的 WordPress 模板",
     "cta": {
-      "whatsapp": "立即 WhatsApp 联系",
+      "whatsapp": "立即 WhatsApp 联系我们",
       "products": "查看产品"
     },
     "badges": {
       "consultation": "免费咨询",
-      "fast": "流程快速",
-      "guarantee": "满意保证",
-      "trusted": "诚实可靠"
+      "fast": "流程高效",
+      "guarantee": "满意度保证",
+      "trusted": "诚信可靠"
     },
     "seo": {
       "title": "Codeverta - 网站、应用、ERP 与 IT 解决方案开发服务",
@@ -45,33 +46,33 @@
       "keywords": "网站开发服务, 软件公司, 应用开发, ERP, POS系统, IT解决方案"
     }
   },
-  "trustedBy": "受到中小企业、创业公司、私营企业和政府机构信任",
+  "trustedBy": "深受中小企业、创业公司及政府机构的信任",
   "features": {
     "badge": "我们的服务",
     "title": "满足您数字化需求的一站式解决方案",
-    "subtitle": "从高质量网站到可靠 IT 支持，我们提供您在线成功所需的一切。"
+    "subtitle": "从精美的网站到可靠的 IT 支持，我们提供您在网络上取得成功所需的一切。"
   },
   "portfolio": {
     "title": "我们完成的项目",
-    "subtitle": "查看我们近期项目，了解我们交付高质量数字解决方案的能力与投入。"
+    "subtitle": "查看我们近期的项目案例，了解我们在交付高质量数字解决方案方面的专业实力与专注投入。"
   },
   "process": {
     "badge": "流程简单，成果最大化",
     "title": "开发流程",
-    "subtitle": "只需 3 个简单步骤，即可与我们的专业团队启动项目。"
+    "subtitle": "只需 3 个简单步骤，即可与我们的专家团队启动您的项目。"
   },
   "testimonials": {
     "badge": "客户评价",
     "title": "客户怎么说",
-    "subtitle": "不要只听我们说，看看满意客户对我们服务的评价。"
+    "subtitle": "无需只听我们的一面之词。来看看满意的客户对我们服务的真实评价。"
   },
   "pricing": {
-    "badge": "价格",
+    "badge": "价格方案",
     "title": "灵活透明的价格方案",
-    "subtitle": "选择最适合您业务的方案，无隐藏费用。",
+    "subtitle": "选择最适合您业务的方案。绝无隐藏费用。",
     "tabs": {
-      "smme": "中小企业",
-      "enterprise": "企业"
+      "smme": "中小企业规模",
+      "enterprise": "大型企业"
     },
     "card": {
       "popular": "最受欢迎",
@@ -80,13 +81,13 @@
     }
   },
   "faq": {
-    "badge": "FAQ",
+    "badge": "常见问题",
     "title": "常见问题",
-    "subtitle": "查找关于我们服务的常见问题答案。"
+    "subtitle": "查找关于我们服务最常遇到的问题解答。"
   },
   "cta": {
-    "title": "准备好拥有专业网站了吗？",
-    "description": "立即联系我们获得免费咨询。让我们一起为您的业务建立强大的数字化形象。",
+    "title": "准备好拥有专业的网站了吗？",
+    "description": "欢迎立即联系我们获取免费咨询。让我们携手为您的业务打造强大的数字化形象。",
     "buttons": {
       "free": "免费咨询",
       "contact": "立即联系"
@@ -96,169 +97,169 @@
     "products": "产品",
     "industry": "行业",
     "articles": "文章与新闻",
-    "learning": "课程",
-    "events": "活动",
+    "learning": "教育",
     "blog": "博客",
-    "careers": "招聘",
-    "faq": "FAQ",
+    "events": "活动",
+    "faq": "常见问题",
+    "careers": "招贤纳士",
     "about": "关于我们"
   },
   "mega_menu": {
     "products": {
-      "title": "Products",
-      "all": "All Products",
-      "view_all": "View All Products",
-      "view_all_desc": "Explore all the products we offer."
+      "title": "产品",
+      "all": "所有产品",
+      "view_all": "查看所有产品",
+      "view_all_desc": "探索我们提供的所有产品。"
     },
     "news": {
-      "title": "News",
-      "tech": "Tech News",
-      "breaking": "Breaking News",
-      "breaking_desc": "Latest tech updates",
-      "industry": "Industry Reports",
-      "industry_desc": "Market analysis",
-      "company": "Company Updates",
-      "company_desc": "Business news",
-      "categories": "Categories",
-      "software": "Software",
-      "software_desc": "Software development news",
-      "hardware": "Hardware",
-      "hardware_desc": "Hardware innovations",
-      "mobile": "Mobile",
-      "mobile_desc": "Mobile technology",
-      "trending": "Trending",
-      "ai_rev": "AI Revolution",
-      "ai_rev_desc": "AI developments",
-      "web3": "Web3 Updates",
-      "web3_desc": "Blockchain & crypto",
-      "devops": "DevOps News",
-      "devops_desc": "Development operations"
+      "title": "新闻",
+      "tech": "科技动态",
+      "breaking": "即时快讯",
+      "breaking_desc": "最新科技资讯",
+      "industry": "行业报告",
+      "industry_desc": "市场深度分析",
+      "company": "公司动态",
+      "company_desc": "商业与企业新闻",
+      "categories": "分类",
+      "software": "软件领域",
+      "software_desc": "软件开发相关新闻",
+      "hardware": "硬件前沿",
+      "hardware_desc": "硬件技术创新",
+      "mobile": "移动技术",
+      "mobile_desc": "移动端科技",
+      "trending": "热门趋势",
+      "ai_rev": "AI 变革",
+      "ai_rev_desc": "人工智能新进展",
+      "web3": "Web3 资讯",
+      "web3_desc": "区块链与加密货币",
+      "devops": "DevOps 动态",
+      "devops_desc": "开发运维进展"
     },
     "startups": {
-      "title": "Startups",
-      "news": "Startup News",
-      "funding": "Funding Rounds",
-      "funding_desc": "Investment updates",
-      "launches": "New Launches",
-      "launches_desc": "Product launches",
-      "success": "Success Stories",
-      "success_desc": "Inspiring journeys",
-      "resources": "Resources",
-      "guide": "Startup Guide",
-      "guide_desc": "How to get started",
-      "investors": "Investor Network",
-      "investors_desc": "Find investors",
-      "mentorship": "Mentorship",
-      "mentorship_desc": "Get expert guidance"
+      "title": "创业公司",
+      "news": "创业新闻",
+      "funding": "融资快讯",
+      "funding_desc": "最新投资动态",
+      "launches": "新品发布",
+      "launches_desc": "产品上线动态",
+      "success": "成功故事",
+      "success_desc": "励志的创业历程",
+      "resources": "资源中心",
+      "guide": "创业指南",
+      "guide_desc": "如何轻松起步",
+      "investors": "投资者网络",
+      "investors_desc": "寻找投资意向",
+      "mentorship": "导师指导",
+      "mentorship_desc": "获取专家指导意见"
     },
     "gadget": {
-      "title": "Gadgets",
-      "reviews": "Reviews",
-      "smartphones": "Smartphones",
-      "smartphones_desc": "Phone reviews",
-      "laptops": "Laptops",
-      "laptops_desc": "Computer reviews",
-      "wearables": "Wearables",
-      "wearables_desc": "Smartwatches & more",
-      "buying_guides": "Buying Guides",
-      "deals": "Best Deals",
-      "deals_desc": "Current promotions",
-      "compare": "Comparisons",
-      "compare_desc": "Product comparisons",
-      "recommended": "Recommendations",
-      "recommended_desc": "Editor's choice"
+      "title": "数码科技",
+      "reviews": "深度测评",
+      "smartphones": "智能手机",
+      "smartphones_desc": "手机评测",
+      "laptops": "笔记本电脑",
+      "laptops_desc": "电脑评测",
+      "wearables": "智能穿戴",
+      "wearables_desc": "智能手表及更多",
+      "buying_guides": "选购指南",
+      "deals": "超值特惠",
+      "deals_desc": "当前优惠活动",
+      "compare": "横向对比",
+      "compare_desc": "产品参数对比",
+      "recommended": "编辑推荐",
+      "recommended_desc": "编辑精选推荐"
     },
     "tutorials": {
-      "title": "Tutorials",
-      "web_dev": "Web Development",
-      "react_desc": "Learn React.js",
-      "nextjs_desc": "Full-stack React",
-      "js_desc": "JS best practices",
-      "mobile_dev": "Mobile Development",
-      "rn_desc": "Mobile applications",
-      "flutter_desc": "Cross-platform",
-      "ios_desc": "Swift & Objective-C",
-      "backend": "Backend",
-      "node_desc": "Server-side JS",
-      "python_desc": "Python programming",
-      "db_desc": "SQL & NoSQL"
+      "title": "技术教程",
+      "web_dev": "Web 前端开发",
+      "react_desc": "学习 React.js",
+      "nextjs_desc": "全栈 React 开发",
+      "js_desc": "JavaScript 最佳实践",
+      "mobile_dev": "移动端开发",
+      "rn_desc": "移动应用开发",
+      "flutter_desc": "跨平台技术",
+      "ios_desc": "Swift 与 Objective-C",
+      "backend": "后端开发",
+      "node_desc": "服务端 JavaScript",
+      "python_desc": "Python 编程基础",
+      "db_desc": "SQL 与 NoSQL 数据库"
     },
     "ai": {
-      "title": "AI",
-      "news": "AI News",
-      "ml_desc": "ML developments",
-      "tools": "AI Tools",
-      "tools_desc": "Latest AI tools",
-      "research": "Research",
-      "research_desc": "Academic papers",
-      "tutorials": "Tutorials",
-      "getting_started": "Getting Started",
-      "getting_started_desc": "AI basics",
-      "deep_learning": "Deep Learning",
-      "deep_learning_desc": "Neural networks",
-      "ethics": "AI Ethics",
-      "ethics_desc": "Responsible AI",
-      "productivity": "Productivity",
-      "image_editor": "Image Editor",
-      "image_desc": "Crop, resize, etc.",
-      "pdf_editor": "PDF Editor",
-      "pdf_desc": "Edit and convert PDFs.",
-      "other_tools": "AI & Other Tools",
-      "ai_long": "Artificial Intelligence (AI)",
-      "ai_desc": "Explore the latest developments in AI."
+      "title": "人工智能",
+      "news": "AI 新闻",
+      "ml_desc": "机器学习新进展",
+      "tools": "AI O工具",
+      "tools_desc": "最新热门 AI O工具",
+      "research": "前沿研究",
+      "research_desc": "学术论文追踪",
+      "tutorials": "技术教程",
+      "getting_started": "新手入门",
+      "getting_started_desc": "AI 基础知识",
+      "deep_learning": "深度学习",
+      "deep_learning_desc": "神经网络架构",
+      "ethics": "AI 伦理",
+      "ethics_desc": "负责任的人工智能",
+      "productivity": "高效生产力",
+      "image_editor": "图像编辑器",
+      "image_desc": "裁剪、调整大小等",
+      "pdf_editor": "PDF 编辑器",
+      "pdf_desc": "编辑与转换 PDF 文档。",
+      "other_tools": "AI 及其他工具",
+      "ai_long": "人工智能 (AI)",
+      "ai_desc": "探索人工智能的最新发展动态。"
     },
     "categories": {
-      "articles": "Articles & News",
-      "main_news": "Top Stories",
-      "tech_innovation": "News (Tech & Innovation)",
-      "tech_innovation_desc": "Latest news on tech and innovation.",
-      "startup_stories": "Startups",
-      "startup_stories_desc": "Inspiration from the startup world.",
-      "gadget_reviews": "Gadget Reviews",
-      "gadget_reviews_desc": "Reviews and buying guides.",
-      "special_issues": "Special Topics",
-      "cyber_art": "Cybersecurity Articles",
-      "cyber_art_desc": "Digital security tips.",
-      "all_art": "All Articles",
-      "all_art_desc": "View all blog posts.",
-      "learning": "Learning & Guides",
-      "guides": "Guides",
-      "tutorial_desc": "Step-by-step learning guides.",
-      "classes": "Courses",
-      "cyber_course": "Cybersecurity Course",
-      "cyber_course_desc": "Latest cybersecurity classes.",
-      "llm_course": "AI LLM Course",
-      "llm_desc": "Prompt engineering for LLMs.",
-      "ai_eng": "AI Engineer Course",
-      "ai_eng_desc": "In-depth AI engineering."
+      "articles": "文章与新闻",
+      "main_news": "头条新闻",
+      "tech_innovation": "资讯 (科技与创新)",
+      "tech_innovation_desc": "关于科技与创新的最新消息。",
+      "startup_stories": "创业聚焦",
+      "startup_stories_desc": "来自创业世界的灵感启发。",
+      "gadget_reviews": "数码评测",
+      "gadget_reviews_desc": "产品测评与选购指南。",
+      "special_issues": "专题版块",
+      "cyber_art": "网络安全文章",
+      "cyber_art_desc": "数字安全防护技巧。",
+      "all_art": "全部文章",
+      "all_art_desc": "查看所有博客文章。",
+      "learning": "知识库与指南",
+      "guides": "实战指南",
+      "tutorial_desc": "手把手教学步骤指南。",
+      "classes": "精品课程",
+      "cyber_course": "网络安全课程",
+      "cyber_course_desc": "最新网络安全培训班。",
+      "llm_course": "AI 大语言模型课程",
+      "llm_desc": "面向 LLM 的提示词工程。",
+      "ai_eng": "AI 工程师课程",
+      "ai_eng_desc": "深度 AI 工程技术培训。"
     }
   },
   "homePage": {
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "专业的网站设计",
+          "description": "我们设计现代且具备响应式的网站，在桌面端和移动端都能呈现完美的视觉与操作体验。"
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "SEO 与性能优化",
+          "description": "通过快速、优化的网页加载速度，提升 Google 搜索排名及用户体验。"
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "修复与日常维护",
+          "description": "我们的团队负责修复程序漏洞（Bug）、系统错误、错乱布局，并确保您的网站始终处于最新状态。"
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "安全可靠的网站防护",
+          "description": "通过多层安全机制与实用的系统加固，保护您的商业数据与访客隐私。"
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "IT 支持服务",
+          "description": "协助解决各类技术难题，涵盖从硬件故障排查到网络架构管理的方方面面。"
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "完善的售后支持",
+          "description": "项目上线后我们仍会持续提供技术支持，确保您的网站与系统能长期平稳运行。"
         }
       ]
     },
@@ -266,55 +267,55 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "需求对接咨询",
+          "description": "与我们的团队免费讨论您的核心想法、商业目标以及具体的项目技术需求。"
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "设计与深度开发",
+          "description": "我们根据前期评估确定的合作范围，为您量身设计并构建网站、应用或 IT 解决方案。"
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "正式上线与维护",
+          "description": "我们将推动您的项目正式平稳发布，并提供持续的系统维护，以保证各项功能完美运转。"
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
+          "quote": "Codeverta 将我们的网站彻底改头换面，呈现出了极高的专业水准。我们的访客转化数量得到了非常显著的提升。",
           "author": "Sarah Widjaja",
           "role": "Owner, Butik Elegan",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
+          "quote": "我们以前的老网站加载特别慢。在 Codeverta 帮我们完成深度重构后，网页的响应速度非常令人惊喜。",
           "author": "Budi Santoso",
           "role": "Marketing Manager, Maju Jaya Motor",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
+          "quote": "他们的 IT 支持团队反馈极其迅速。我们办公室里遇到的技术故障总能在第一时间得到妥善处理。",
           "author": "Emily Hartono",
           "role": "Head of Operations, Startup Cepat",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
+          "quote": "整个技术研发流程非常透明，最终交付的成果完全超出了我们的预期。现在的网站已经成为我们最核心的销售渠道。",
           "author": "David Kim",
           "role": "CEO, InnovateNow",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
+          "quote": "与 Codeverta 团队沟通顺畅无阻，他们能够真正深刻地理解并精准还原我们想要的商业愿景。",
           "author": "Lisa Puspita",
           "role": "Creative Director, Galeri Seni",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
+          "quote": "这是我们做过的最明智的投资之一。自新网站上线以来，我们企业感受到了非常明显的营收增长。",
           "author": "James Wilson",
           "role": "COO, ScaleUp Inc",
           "rating": 5
@@ -324,130 +325,282 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
+          "name": "中小企业标准网站套餐",
           "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "description": "非常适合用于搭建公司形象展示、企业官网或个人作品集。",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "完全基于您的实际需求进行定制化设计",
+            "完美契合中小企业的基础展示需求",
+            "包含企业核心页面及实用基础功能",
+            "赠送为期 1 年的免费域名及高规格服务器托管",
+            "完全专注于加载性能，绝非流水线式通用 WordPress 模板"
           ],
-          "cta": "Choose Package"
+          "cta": "选择此套餐"
         },
         {
-          "name": "Online Store Package",
+          "name": "标准网店电商套餐",
           "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "description": "适合有线上销售及业务扩张需求的中小企业和网商。",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "完全基于您的实际需求进行定制化设计",
+            "内置全方位的 SEO 搜索引擎深度优化",
+            "享受技术团队的高优先级排期开发支持"
           ],
-          "cta": "Choose Package",
+          "cta": "选择此套餐",
           "popular": true
         },
         {
-          "name": "Custom System Package",
+          "name": "高级定制系统套餐",
           "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "description": "专门面向有较为复杂业务逻辑及功能需求的成长型企业。",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "量身定制开发高级且复杂的业务功能模块",
+            "根据您的实际业务深度打磨系统架构与交互设计",
+            "按月提供专业的系统技术性能报告",
+            "包含长达 1 年以上的全方位技术维护保障"
           ],
-          "cta": "Contact Sales"
+          "cta": "联系销售团队"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
+          "name": "集团企业级方案",
           "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "description": "专为具有复杂内部系统生态、多重工作流的高标准企业打造。",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "完全基于企业具体业务复杂需求展开深度开发",
+            "支持与您现有的其他三方系统或应用无缝对接",
+            "提供全自动、定时化的云端高可靠性数据备份",
+            "24/7 全天候网络安全防御与全系统性能监控分析",
+            "全团队最高开发优先级响应通道",
+            "提供为期 1 年以上的专属大客户级技术维护保障"
           ],
-          "cta": "Contact Sales"
+          "cta": "联系销售团队"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "开发一个网站通常需要多长时间？",
+          "answer": "具体的研发周期主要取决于项目的复杂程度。一个基础展示型的企业网站通常需要 1-2 周即可交付，而具备中大型业务逻辑的复杂系统则可能需要一个月以上的时间。"
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "我作为客户前期需要准备哪些材料？",
+          "answer": "您需要准备公司简介的文本、服务或产品清单以及您希望在网站上展示的图片素材。如果这些材料目前还不完整，我们的团队会提供详细的设计提纲引导您进行准备。"
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "项目交付上线后，你们是否提供后期技术维护？",
+          "answer": "是的。我们提供灵活的按月或按年技术维护套餐，内容全面涵盖系统版本更新、数据定期备份、服务器稳定性监控以及日常故障修复服务。"
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "你们可以帮我们修复现有的旧网站吗？",
+          "answer": "完全可以。我们的专家团队会首先对您现有的网站展开全面的技术审计，精准定位系统错误、加载卡顿或页面布局错乱等根本原因，并为您制定最合理的修复优化方案。"
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "你们的付款流程和款项结算方式是怎样的？",
+          "answer": "我们的标准付款流程通常为：项目启动前支付 30% 的定金，在项目全部开发完成并由您测试通过、最终验收签字后再支付剩余的尾款。"
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "覆盖行业",
+      "title": "为各行各业量身定制技术方案",
+      "subtitle": "从现代化的制造工厂到复杂的医疗管理系统，Codeverta 都能精准契合您的行业特性与核心诉求，让企业内部运营变得更简单，业务增长变得更高效。",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "工业制造",
+          "desc": "全面优化生产排程、库存周转以及物料交付的工作流。"
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "贸易与物流分销",
+          "desc": "实现采购管理、订单跟进以及整条供应链的高效协同。"
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "线下零售",
+          "desc": "有效激发业绩增长、精确管理库存，全方位提升到店客户体验。"
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "工程与建筑施工",
+          "desc": "以数字化手段更精细地管控工程项目周期、人员资源和资金预算。"
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "电子商务",
+          "desc": "轻松应对大批量线上订单、会员客户精细化运营及销售额持续增长。"
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "教育培训",
+          "desc": "大幅简化招生录取、教务排课、学费收缴以及学生日常管理工作。"
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "专业服务外包",
+          "desc": "使项目管理进度、财务计费账单以及客户间协同沟通井然有序。"
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "金融服务",
+          "desc": "更加安全、便捷地追踪日常账目、投资组合管理并满足行业合规标准。"
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "医疗健康",
+          "desc": "在一套系统内集中高效地管理电子病历、预约挂号及医院日常运转。"
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "社会公益与非营利",
+          "desc": "全面提升募捐管理、捐赠人关系维护以及公益项目的落地执行效率。"
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Codeverta 数字产品 - 信息系统、ERP、POS 与 Web 应用作品集",
+      "description": "探索 Codeverta 数字产品：信息系统、ERP、POS、电商、Web 应用、票务、电子病历以及面向多行业的定制 IT 解决方案。",
+      "keywords": "Codeverta 数字产品, 信息系统作品集, Web应用, ERP, POS, 软件公司, 企业IT解决方案, 定制软件"
+    },
+    "hero": {
+      "title": "IT 解决方案作品集",
+      "subtitle": "我们为不同行业和业务需求开发的信息系统与 Web 应用完整集合。"
+    },
+    "status": {
+      "productionReady": "可投入生产",
+      "completed": "已完成",
+      "inDevelopment": "开发中"
+    },
+    "card": {
+      "updated": "更新于",
+      "viewDetail": "查看详情",
+      "contact": "联系我们"
+    },
+    "cta": {
+      "title": "需要定制 IT 解决方案？",
+      "description": "我们可以根据您的具体业务流程需求，为您量身开发最合适的信息系统。"
+    },
+    "schema": {
+      "home": "首页",
+      "products": "产品",
+      "itemListName": "Codeverta 数字产品作品集"
+    }
+  },
+  "cookieConsent": {
+    "title": "我们使用 Cookie",
+    "description": "我们使用必要的 Cookie 来确保网站的基本运行、记忆您的语言偏好并分析网页的访问性能。只有在获得您明确同意的情况下，我们才会启用分析类 Cookie。",
+    "accept": "完全接受",
+    "reject": "拒绝非必要",
+    "learnMore": "阅读隐私政策全文"
+  },
+  "footer": {
+    "description": "一家致力于提供高质量、诚信和透明数字解决方案的 IT 服务提供商，始终坚守严苛的安全标准。",
+    "partOf": "隶属于",
+    "rights": "保留所有权利。",
+    "company": {
+      "title": "公司信息",
+      "links": {
+        "about": "关于我们",
+        "contact": "联系我们",
+        "terms": "服务条款",
+        "privacy": "隐私政策",
+        "blog": "博客与新闻",
+        "faq": "常见问题",
+        "gallery": "企业画廊"
+      }
+    },
+    "programs": {
+      "title": "服务项目",
+      "links": {
+        "cybersecurity": "网络安全培训课程",
+        "aiEngineer": "AI 工程师训练营",
+        "consulting": "IT 战略咨询",
+        "development": "高端软件定制开发"
+      }
+    },
+    "legal": {
+      "title": "合规与信任",
+      "registered": "官方正式注册实体",
+      "certifications": "专业认证与安全标准"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta - 服务条款与条件",
+      "description": "阅读 Codeverta 有关软件开发、网站建设服务、款项结算方式、知识产权归属以及责任限制的官方条款与条件。",
+      "keywords": "Codeverta 条款, 服务条款, 软件开发协议, 网站建设服务条款"
+    },
+    "schema": {
+      "about": "服务条款与条件"
+    },
+    "title": "服务条款与条件",
+    "last_updated": "最后更新日期：2025年12月23日",
+    "intro": "欢迎访问 Codeverta 和 BikinWebsiteJogja。一旦您访问我们的网站或使用我们的任何服务，即代表您完全同意并接受以下所有条款安排。",
+    "sections": {
+      "services": {
+        "title": "1. 服务交付范围",
+        "content": "Codeverta 将严格按照双方最终确认并批准的商业提案或工作说明书（SOW），向您提供定制软件开发、网站建设、移动端应用开发、系统集成整合以及 IT 战略咨询服务。"
+      },
+      "payment": {
+        "title": "2. 款项结算条款",
+        "content": "所有费用的支付均须严格遵循事先达成的报价提案、商务发票或项目阶段性里程碑（Milestone）时间表。在项目正式投入研发生产前必须结清首期定金，全部技术资产在进行最终交付交接前需结清项目尾款。"
+      },
+      "ip": {
+        "title": "3. 知识产权与版权归属",
+        "content": "在您付清合同约定的全额款项后，相关定制开发的源代码使用权或所有权将依照合同明确约定进行授予和移交。但项目中所包含或引用的任何第三方代码库、基础设计模板、外部商业许可及核心底层开发框架，仍须遵循其各自原有的授权协议许可限制。"
+      },
+      "liability": {
+        "title": "4. 责任范围与免责限制",
+        "content": "在项目的质量保证期（保修期）或有偿技术维护服务期结束后，由于对系统的恶意滥用、非我方技术人员擅自进行的系统改动、三方主机服务器或域名出现的运营故障、以及任何三方系统集成接口变动引发的经济损失，我方均不承担任何法律与赔偿责任。"
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - 常见问题解答中心",
+      "description": "为您集中解答关于定制网站开发、数字化系统架构、项目技术流转流程以及款项结算方式的所有疑问。",
+      "keywords": "Codeverta FAQ, 网站开发常见疑问, 软件定制开发需求, IT项目付款流程, 后期技术维护维护"
+    },
+    "title": "常见问题解答",
+    "subtitle": "为您集中解答关于定制网站开发、数字化系统架构、项目技术流转流程以及款项结算方式的所有疑问。",
+    "cta": {
+      "title": "没有找到您想问的问题？",
+      "description": "欢迎随时与我们分享您的数字化想法，我们的技术专家团队随时准备为您提供专业解答。",
+      "whatsapp": "WhatsApp 线上咨询",
+      "portfolio": "前往查看项目作品集"
+    },
+    "items": [
+      {
+        "question": "开发不同类型的数字化系统分别需要多长时间？",
+        "answer": "具体的开发周期取决于项目的整体业务规模和技术复杂度。一个结构简单的常规网站通常需要 1-2 周；中等规模的系统（例如标准电子商务平台、POS 收银系统和 HRMS 人力资源管理系统）需要大约 1-3 个月；而大型的企业级 ERP 或 WMS 仓储管理系统则通常需要数月的时间展开深度开发。"
+      },
+      {
+        "question": "在项目正式启动开发前，我需要提前准备什么？",
+        "answer": "您需要准备一份基础的功能性期望列表、心仪的设计风格参考、企业初始的业务数据结构、系统展示所需的文本和照片内容以及相关的公司资质文件。对于复杂的技术项目，在投入正式代码编写前，我们也会安排专家协助您一同梳理、精简功能边界和商业日常工作流。"
+      },
+      {
+        "question": "系统在以后有新需求时是否支持升级和功能扩展？",
+        "answer": "完全可以。我们所构建的电子商务、ERP、HRMS、CRM 以及 WMS 等系统均采用高内聚、低耦合的模块化架构，因此在企业后续的成长过程中，完全支持分阶段平滑地添加全新的业务功能模块、接入全新三方 API 接口、集成全新支付网关或执行服务器架构迁移。"
+      },
+      {
+        "question": "系统正式交付上线后，你们提供日常技术支持和维护吗？",
+        "answer": "是的。我们提供完善且连续的按月或按年技术维护服务。维护范围全面涵盖了系统偶发 Bug 的修复、关键安全漏洞的补丁升级、服务器底层稳定性不间断监控、灾备数据定期备份以及轻量级小功能微调。"
+      },
+      {
+        "question": "你们能针对我的特殊业务模式开发非常独特的非标功能吗？",
+        "answer": "完全可以。我们具备极强的底层定制研发实力，能够根据您企业特定的复杂业务场景，深度定制独家业务模块、审批工作流、各类经营分析报表，并可以高度定制集成包括 Midtrans 支付、GeoServer 地理信息系统、Socket.io 实时通讯、GraphQL 高性能检索、Kafka 分布式消息队列以及现场 RFID 射频识别等在内的各类软硬件生态系统。"
+      },
+      {
+        "question": "一个项目从正式下单到最终部署上线的技术流转流程是怎样的？",
+        "answer": "我们的标准技术流转流程为：前期的技术方案咨询评估 -> 全面的核心需求分析 -> 提供技术提案与报价单 -> 签订合同并支付项目首期定金 -> 展开 UI/UX 原型及视觉设计 -> 编写前后端代码开发 -> 交付技术测试与 QA 排查 -> 根据反馈执行优化调整 -> 项目最终定型验收 -> 结清项目尾款 -> 协助正式部署部署并发布至您的私有服务器或指定的云端架构。"
+      },
+      {
+        "question": "软件定制开发服务的款项支付比例和结款逻辑是怎样的？",
+        "answer": "常规项目的结款逻辑通常为首付 30% 的项目定金以启动研发生产，在项目整体按照约定范围开发完毕、并通过您的最终验收审查后结清剩余 70% 的尾款。对于整体研发周期较长的大型项目，我们也可以根据明确的技术成果划分，采取分阶段、按里程碑节点（Milestone）进行款项结算。"
+      },
+      {
+        "question": "你们在开发过程中主要使用哪些主流的技术栈？",
+        "answer": "具体的技术栈选型会完全依据项目的业务形态而定。我们技术团队目前的核心技术栈包含但不仅限于：Next.js、React、Vue、Laravel、Node.js、Django 等主流前后端框架，PostgreSQL、MySQL/MariaDB 以及 Redis 高性能缓存等数据库管理系统，并深度采用 Docker 容器化、Kafka 消息队列、PostGIS 空间地理数据库以及先进的现代化云服务基础架构。"
+      },
+      {
+        "question": "你们开发出来的数字化系统是否支持多终端屏幕自适应（Responsive）？",
+        "answer": "是的。我们设计并开发的所有 Web 系统均天然具备完美的响应式自适应布局结构，能够在宽屏桌面电脑、平板设备以及各类主流智能手机上提供同样出色的视觉和交互体验。针对 POS 收银系统或 WMS 仓储手持端等特殊应用场景，我们还会额外针对触摸屏操作和复杂的户外移动作业环境进行专属的交互体验与性能优化。"
+      }
+    ]
   }
 }

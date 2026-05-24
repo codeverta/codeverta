@@ -54,5 +54,18 @@
       "title": "7. お問い合わせ",
       "content": "本プライバシーポリシーに関するご質問は、support@codeverta.comまたはcodeverta.comに記載の連絡先までお問い合わせください。"
     }
+  },
+  "seo": {
+    "title": "Codeverta - プライバシーポリシー",
+    "description": "Learn how Codeverta collects, uses, protects personal data, uses cookies, and respects privacy rights for software and website service users.",
+    "keywords": "Codeverta privacy policy, data protection, cookies, personal data"
+  },
+  "notice": {
+    "before": "This document applies to all entities managed by",
+    "and": "and",
+    "after": "By continuing to use our services, you are deemed to agree to the points above."
+  },
+  "schema": {
+    "about": "プライバシーポリシー"
   }
 }
