@@ -322,12 +322,10 @@ export default function OrgChart() {
   return (
     <div className="bg-slate-50 p-8 font-sans">
       {/* Header */}
-      <div className="mb-8 md:mb-10 flex flex-col md:flex-row items-start md:items-end justify-between max-w-5xl mx-auto w-full gap-4">
-        <div>
-          <h2 className="text-3xl font-bold mb-6 text-slate-900 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Struktur Organisasi
-          </h2>
-        </div>
+      <div className="mb-8 md:mb-10 text-center">
+        <h2 className="text-3xl font-bold mb-6 text-slate-900 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+          Struktur Organisasi
+        </h2>
       </div>
       {/* Tree */}
       <div className="overflow-x-auto pb-8 w-full hide-scrollbar">
