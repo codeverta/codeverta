@@ -1752,6 +1752,14 @@
         "description": "A web-based Geographic Information System designed for thematic mapping operations and detailed spatial analysis loops.",
         "fullDescription": "WebGIS Platform is an interactive, browser-accessible Geographic Information System (GIS) solution engineered to streamline geospatial data visualization, analysis, and management datasets. The architecture enables users to securely upload coordinate files, compose custom thematic vector layouts, execute core spatial operations like buffering or polygon overlay tracking, and seamlessly share target maps with remote clients directly via web browser environments.",
         "image": "/assets/products/28.png",
+        "images": ["/assets/products/28.png"],
+        "videoUrls": [
+          "https://youtu.be/jI0c2yaZrD4?si=xQVvJuHYU1ZCgQk4",
+          "https://youtu.be/fvC7ajq_FXM?si=n6VTosQu8UD7CbYy",
+          "https://youtu.be/4NIvfhO2TpM?si=xg3pdF2coF8128Fq",
+          "https://youtu.be/BON-_Wodlic?si=vhzIa-krFDaOsbfI",
+          "https://youtu.be/YywAMhPT5co?si=s6VI7fK9j2y5vzDW"
+        ],
         "technologies": [
           "React",
           "Leaflet.js",
