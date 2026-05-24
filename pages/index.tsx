@@ -82,10 +82,6 @@ export default function LandingPage({ projects }: any) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
-
   const container = {
     hidden: { opacity: 0 },
     show: {

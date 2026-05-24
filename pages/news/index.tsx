@@ -838,7 +838,6 @@ export async function getStaticProps({ locale }) {
       readTime: readTimes[index % readTimes.length],
     };
   });
-  console.log("Fetched news posts:", allPostsData);
 
   return {
     props: {

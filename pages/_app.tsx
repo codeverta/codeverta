@@ -6,6 +6,8 @@ import { NextSeo } from "next-seo";
 import packageInfo from "../package.json";
 import { appWithTranslation } from "next-i18next";
 import Landing from "@/components/layout/Landing";
+import { buildSeoMeta, getAlternateLinks, SITE_NAME } from "@/lib/seo";
+import { useRouter } from "next/router";
 
 if (typeof window !== "undefined") {
   // @ts-ignore
@@ -13,50 +15,61 @@ if (typeof window !== "undefined") {
 }
 
 function App({ Component, pageProps }: AppLayoutProps) {
+  const router = useRouter();
   const appProps = { getRelationship, getRelationships };
   const getLayout =
     Component.getLayout || ((page: ReactNode) => <Landing>{page}</Landing>);
-  // seo
-  const pageTitle =
-    "Codeverta - Jasa Pengembangan Web & Aplikasi, Software House, Inovasi Digital & AI, Startup";
-  const pageDescription = `Codeverta menyediakan jasa pembuatan, perbaikan, pengembangan website profesional dan layanan IT untuk mendorong pertumbuhan bisnis Anda di era digital untuk bisnis skala kecil sampai menengah.`;
-  const ogImageUrl = "https://codeverta.com/og-image.png";
-  const siteName = "Codeverta";
-  const siteUrl = "https://codeverta.com";
-  const twitterHandle = "@codeverta";
-  const keywords =
-    "jasa software, teknologi, inovasi digital, kecerdasan buatan, AI, software development, teknologi Indonesia, digitalisasi";
+  const seo = buildSeoMeta({
+    locale: router.locale,
+    path: router.asPath,
+  });
 
   return (
     <>
       <NextSeo
-        title={pageTitle}
-        description={pageDescription}
+        title={seo.title}
+        description={seo.description}
+        canonical={seo.canonical}
         openGraph={{
-          title: pageTitle,
-          description: pageDescription,
+          title: seo.title,
+          description: seo.description,
           images: [
             {
-              url: ogImageUrl,
-              alt: pageTitle,
+              url: seo.image,
+              width: 1200,
+              height: 630,
+              alt: seo.title,
             },
           ],
-          url: siteUrl,
+          url: seo.canonical,
           type: "website",
-          site_name: siteName,
+          site_name: SITE_NAME,
+          locale: seo.ogLocale,
         }}
         twitter={{
-          handle: twitterHandle,
-          site: siteUrl,
-          cardType:
-            "Jasa Pengembangan Web & Aplikasi, Software House, Inovasi Digital & AI, Startup",
+          handle: "@codeverta",
+          site: "@codeverta",
+          cardType: "summary_large_image",
         }}
         additionalMetaTags={[
           {
             name: "keywords",
-            content: keywords,
+            content: seo.keywords,
+          },
+          {
+            name: "robots",
+            content: "index,follow",
+          },
+          {
+            httpEquiv: "content-language",
+            content: seo.locale,
+          } as any,
+          {
+            name: "author",
+            content: SITE_NAME,
           },
         ]}
+        additionalLinkTags={getAlternateLinks(seo.path)}
       />
 
       {getLayout(<Component {...pageProps} {...appProps} />)}
