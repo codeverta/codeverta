@@ -1738,6 +1738,13 @@
         "description": "Sistem Informasi Geografis berbasis web untuk pemetaan dan analisis spasial.",
         "fullDescription": "WebGIS Platform adalah sebuah solusi Sistem Informasi Geografis (SIG) interaktif berbasis web yang dirancang untuk visualisasi, analisis, dan manajemen data geospasial. Platform ini memungkinkan pengguna untuk mengunggah data, membuat peta tematik, melakukan analisis spasial seperti buffering dan overlay, serta membagikan hasilnya dengan mudah melalui browser.",
         "image": "/assets/products/28.png",
+        "videoUrls": [
+          "https://youtu.be/jI0c2yaZrD4?si=xQVvJuHYU1ZCgQk4",
+          "https://youtu.be/fvC7ajq_FXM?si=n6VTosQu8UD7CbYy",
+          "https://youtu.be/4NIvfhO2TpM?si=xg3pdF2coF8128Fq",
+          "https://youtu.be/BON-_Wodlic?si=vhzIa-krFDaOsbfI",
+          "https://youtu.be/YywAMhPT5co?si=s6VI7fK9j2y5vzDW"
+        ],
         "technologies": [
           "React",
           "Leaflet.js",
