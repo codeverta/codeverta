@@ -6,48 +6,12 @@ import Navbar from "@/components/navbar";
 import WhatsAppButton from "../WhatsappButton";
 import Banner from "../Banner";
 import Head from "next/head";
-
-const DOMAIN = "https://www.codeverta.com";
-const SUPPORTED_LOCALES = [
-  "id",
-  "en-US",
-  "en-GB",
-  "zh",
-  "ja",
-  "ko",
-  "ms",
-  "de",
-  "fr",
-  "es",
-  "ar",
-  "hi",
-  "th",
-  "vi",
-  "ru",
-];
-
-const OG_LOCALES: Record<string, string> = {
-  id: "id_ID",
-  "en-US": "en_US",
-  "en-GB": "en_GB",
-  zh: "zh_CN",
-  ja: "ja_JP",
-  ko: "ko_KR",
-  ms: "ms_MY",
-  de: "de_DE",
-  fr: "fr_FR",
-  es: "es_ES",
-  ar: "ar",
-  hi: "hi_IN",
-  th: "th_TH",
-  vi: "vi_VN",
-  ru: "ru_RU",
-};
-
-function getLocalizedUrl(locale: string, path: string) {
-  const cleanPath = path.split("?")[0].replace(/^\/+/, "");
-  return `${DOMAIN}/${locale}${cleanPath ? `/${cleanPath}` : ""}`;
-}
+import {
+  buildSeoMeta,
+  getAlternateLinks,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/seo";
 
 interface SEOProps {
   title?: string;
@@ -84,36 +48,30 @@ interface Props {
 
 export default function Landing({ children, seo }: Props) {
   const router = useRouter();
-  const locale = router.locale || "id";
-  const pagePath = router.asPath.split("?")[0] || "/";
-  const canonicalUrl = seo?.canonical || getLocalizedUrl(locale, pagePath);
+  const pageSEO = buildSeoMeta({
+    locale: router.locale,
+    path: router.asPath,
+    title: seo?.title,
+    description: seo?.description,
+    keywords: seo?.keywords,
+    image: seo?.ogImage || seo?.twitterImage,
+    canonical: seo?.canonical,
+  });
+  const locale = pageSEO.locale;
+  const canonicalUrl = pageSEO.canonical;
 
   // Default SEO values
   const defaultSEO = {
-    title: "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
-    description:
-      "Codeverta provides innovative digital solutions for your business needs. Expert web development, mobile apps, and digital transformation services.",
-    ogTitle:
-      seo?.ogTitle ||
-      seo?.title ||
-      "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
-    ogDescription:
-      seo?.ogDescription ||
-      seo?.description ||
-      "Codeverta provides innovative digital solutions for your business needs. Expert web development, mobile apps, and digital transformation services.",
-    ogImage: seo?.ogImage || `${DOMAIN}/images/og-default.jpg`,
+    title: pageSEO.title,
+    description: pageSEO.description,
+    ogTitle: seo?.ogTitle || pageSEO.title,
+    ogDescription: seo?.ogDescription || pageSEO.description,
+    ogImage: seo?.ogImage || pageSEO.image,
     ogType: seo?.ogType || "website",
     twitterCard: seo?.twitterCard || "summary_large_image",
-    twitterTitle:
-      seo?.twitterTitle ||
-      seo?.title ||
-      "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
-    twitterDescription:
-      seo?.twitterDescription ||
-      seo?.description ||
-      "Codeverta provides innovative digital solutions for your business needs.",
-    twitterImage:
-      seo?.twitterImage || seo?.ogImage || `${DOMAIN}/images/og-default.jpg`,
+    twitterTitle: seo?.twitterTitle || pageSEO.title,
+    twitterDescription: seo?.twitterDescription || pageSEO.description,
+    twitterImage: seo?.twitterImage || seo?.ogImage || pageSEO.image,
   };
 
   const ldJson = {
@@ -123,8 +81,8 @@ export default function Landing({ children, seo }: Props) {
         "@type": "Organization",
         "@id": "https://www.codeverta.com/#organization",
         name: "Codeverta",
-        url: "https://www.codeverta.com/",
-        logo: "https://www.codeverta.com/images/logo.png",
+        url: `${SITE_URL}/`,
+        logo: `${SITE_URL}/images/logo.png`,
         sameAs: [
           "https://www.facebook.com/codeverta",
           "https://twitter.com/codeverta",
@@ -150,10 +108,9 @@ export default function Landing({ children, seo }: Props) {
       {
         "@type": "WebSite",
         "@id": "https://www.codeverta.com/#website",
-        url: "https://www.codeverta.com/",
-        name: "Codeverta | Jasa Pembuatan Website, Aplikasi, LMS, Sistem di Jogja",
-        description:
-          "Codeverta menyediakan jasa pembuatan, perbaikan, pengembangan website profesional dan layanan IT untuk mendorong pertumbuhan bisnis Anda di era digital.",
+        url: `${SITE_URL}/`,
+        name: pageSEO.title,
+        description: pageSEO.description,
         publisher: {
           "@id": "https://www.codeverta.com/#organization",
         },
@@ -166,21 +123,20 @@ export default function Landing({ children, seo }: Props) {
       },
       {
         "@type": "WebPage",
-        "@id": "https://www.codeverta.com/#webpage",
-        url: "https://www.codeverta.com/",
-        name: "Jasa Pembuatan Website, Aplikasi & Layanan IT di Jogja | Codeverta",
+        "@id": `${canonicalUrl}#webpage`,
+        url: canonicalUrl,
+        name: pageSEO.title,
         isPartOf: {
           "@id": "https://www.codeverta.com/#website",
         },
         about: {
           "@id": "https://www.codeverta.com/#organization",
         },
-        description:
-          "Temukan jasa pembuatan website, aplikasi, LMS, dan sistem IT terbaik di Yogyakarta. Codeverta menawarkan solusi digital profesional untuk UMKM hingga Enterprise. Konsultasi gratis, garansi, dan dukungan aftersales.",
-        inLanguage: "id-ID",
+        description: pageSEO.description,
+        inLanguage: locale,
         primaryImageOfPage: {
           "@type": "ImageObject",
-          url: "https://www.codeverta.com/images/og-default.jpg",
+          url: pageSEO.image,
           width: 1200,
           height: 630,
           caption: "Dashboard layanan Codeverta",
@@ -326,8 +282,8 @@ export default function Landing({ children, seo }: Props) {
               alt: defaultSEO.ogTitle,
             },
           ],
-          site_name: "Codeverta",
-          locale: OG_LOCALES[locale] || locale,
+          site_name: SITE_NAME,
+          locale: pageSEO.ogLocale,
         }}
         twitter={{
           handle: "@codeverta",
@@ -345,13 +301,11 @@ export default function Landing({ children, seo }: Props) {
           } as any,
           {
             name: "keywords",
-            content:
-              seo?.keywords ||
-              "web development, mobile apps, digital solutions, software development, codeverta",
+            content: pageSEO.keywords,
           },
           {
             name: "author",
-            content: seo?.author || "Codeverta Team",
+            content: seo?.author || SITE_NAME,
           },
           {
             name: "robots",
@@ -375,16 +329,7 @@ export default function Landing({ children, seo }: Props) {
             rel: "manifest",
             href: "/site.webmanifest",
           },
-          ...SUPPORTED_LOCALES.map((supportedLocale) => ({
-            rel: "alternate",
-            hrefLang: supportedLocale,
-            href: getLocalizedUrl(supportedLocale, pagePath),
-          })),
-          {
-            rel: "alternate",
-            hrefLang: "x-default",
-            href: getLocalizedUrl("id", pagePath),
-          },
+          ...getAlternateLinks(pageSEO.path),
           ...(seo?.additionalLinkTags || []),
         ]}
       />
