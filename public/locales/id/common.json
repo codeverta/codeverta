@@ -73,25 +73,33 @@
     }
   },
   "terms": {
+    "seo": {
+      "title": "Syarat dan Ketentuan Codeverta - Layanan Software, Website & IT",
+      "description": "Baca syarat dan ketentuan penggunaan layanan Codeverta, termasuk ruang lingkup layanan, pembayaran, hak kekayaan intelektual, dan batas tanggung jawab.",
+      "keywords": "syarat ketentuan Codeverta, terms of service, layanan software, jasa website, kontrak pengembangan"
+    },
+    "schema": {
+      "about": "Syarat penggunaan layanan pengembangan software Codeverta"
+    },
     "title": "Syarat & Ketentuan",
     "last_updated": "Terakhir diperbarui: 23 Desember 2025",
-    "intro": "Selamat datang di Codeverta & BikinWebsiteJogja. Dengan mengakses situs kami, Anda menyetujui ketentuan berikut.",
+    "intro": "Selamat datang di Codeverta & BikinWebsiteJogja. Dengan mengakses situs atau menggunakan layanan kami, Anda menyetujui ketentuan berikut.",
     "sections": {
       "services": {
         "title": "1. Ruang Lingkup Layanan",
-        "content": "Codeverta menyediakan layanan pengembangan perangkat lunak, pembuatan website, dan konsultasi IT sesuai kesepakatan tertulis (SOW)."
+        "content": "Codeverta menyediakan layanan pengembangan perangkat lunak, pembuatan website, aplikasi, integrasi sistem, dan konsultasi IT sesuai kesepakatan tertulis atau ruang lingkup kerja yang disetujui."
       },
       "payment": {
         "title": "2. Ketentuan Pembayaran",
-        "content": "Pembayaran dilakukan bertahap (milestone). DP sebesar 50% wajib dibayarkan sebelum proyek dimulai. Pelunasan dilakukan sebelum serah terima aset final."
+        "content": "Pembayaran dilakukan sesuai proposal, invoice, atau milestone yang disepakati. Uang muka diperlukan sebelum produksi dimulai, dan pelunasan dilakukan sebelum serah terima aset final."
       },
       "ip": {
         "title": "3. Hak Kekayaan Intelektual",
-        "content": "Setelah pelunasan, hak milik kode sumber (source code) diberikan kepada klien, kecuali komponen library pihak ketiga atau core framework milik Codeverta."
+        "content": "Setelah pelunasan, hak pakai atau kepemilikan source code diberikan sesuai kontrak. Komponen library pihak ketiga, template, lisensi, dan core framework tetap tunduk pada lisensi masing-masing."
       },
       "liability": {
         "title": "4. Batasan Tanggung Jawab",
-        "content": "Kami tidak bertanggung jawab atas kerugian bisnis akibat penyalahgunaan sistem atau gangguan pihak ketiga (hosting/domain) setelah masa garansi berakhir."
+        "content": "Kami tidak bertanggung jawab atas kerugian akibat penyalahgunaan sistem, perubahan oleh pihak lain, gangguan hosting/domain, atau integrasi pihak ketiga setelah masa garansi atau maintenance berakhir."
       }
     }
   },
@@ -452,5 +460,126 @@
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Produk Digital Codeverta - Portfolio Sistem Informasi, ERP, POS & Aplikasi Web",
+      "description": "Jelajahi portfolio produk digital Codeverta: sistem informasi, ERP, POS, e-commerce, aplikasi web, ticketing, RME, dan solusi IT custom untuk berbagai industri.",
+      "keywords": "produk digital Codeverta, portfolio sistem informasi, aplikasi web, ERP, POS, software house Indonesia, solusi IT bisnis, sistem custom"
+    },
+    "hero": {
+      "title": "Portfolio Solusi IT",
+      "subtitle": "Koleksi lengkap sistem informasi dan aplikasi web yang telah kami kembangkan untuk berbagai kebutuhan bisnis dan industri."
+    },
+    "status": {
+      "productionReady": "Siap Produksi",
+      "completed": "Selesai",
+      "inDevelopment": "Dalam Pengerjaan"
+    },
+    "card": {
+      "updated": "Update",
+      "viewDetail": "Lihat Detail",
+      "contact": "Hubungi Kami"
+    },
+    "cta": {
+      "title": "Butuh Solusi IT Custom?",
+      "description": "Kami siap membantu mengembangkan sistem informasi sesuai kebutuhan bisnis Anda."
+    },
+    "schema": {
+      "home": "Beranda",
+      "products": "Produk",
+      "itemListName": "Portfolio Produk Digital Codeverta"
+    }
+  },
+  "cookieConsent": {
+    "title": "Kami menggunakan cookie",
+    "description": "Kami memakai cookie penting untuk menjalankan situs, menyimpan preferensi bahasa, dan memahami performa halaman. Cookie analitik hanya digunakan jika Anda menyetujuinya.",
+    "accept": "Setuju",
+    "reject": "Tolak non-esensial",
+    "learnMore": "Baca kebijakan privasi"
+  },
+  "footer": {
+    "description": "Penyedia jasa IT yang berdedikasi membangun solusi digital berkualitas tinggi, jujur, dan transparan dengan standar keamanan terbaik.",
+    "partOf": "Bagian dari",
+    "rights": "Seluruh hak cipta dilindungi.",
+    "company": {
+      "title": "Perusahaan",
+      "links": {
+        "about": "Tentang Kami",
+        "contact": "Kontak",
+        "terms": "Syarat Layanan",
+        "privacy": "Kebijakan Privasi",
+        "blog": "Blog & Berita",
+        "faq": "FAQ",
+        "gallery": "Galeri"
+      }
+    },
+    "programs": {
+      "title": "Program",
+      "links": {
+        "cybersecurity": "Kursus Cyber Security",
+        "aiEngineer": "AI Engineer",
+        "consulting": "Konsultasi IT",
+        "development": "Pengembangan Software"
+      }
+    },
+    "legal": {
+      "title": "Legal & Kepercayaan",
+      "registered": "Terdaftar Resmi",
+      "certifications": "Sertifikasi & Keamanan"
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "FAQ Codeverta - Pertanyaan Umum Layanan Website, Software & IT",
+      "description": "Temukan jawaban atas pertanyaan umum tentang layanan pembuatan website, software custom, timeline proyek, pembayaran, maintenance, dan teknologi Codeverta.",
+      "keywords": "FAQ Codeverta, pertanyaan jasa website, software custom, maintenance website, pembayaran proyek IT"
+    },
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Temukan jawaban mengenai layanan pembuatan website, sistem digital, teknis pengerjaan, hingga sistem pembayaran kami.",
+    "cta": {
+      "title": "Masih memiliki pertanyaan lain?",
+      "description": "Jangan ragu untuk berkonsultasi mengenai kebutuhan digital Anda. Tim kami siap membantu Anda.",
+      "whatsapp": "Chat WhatsApp",
+      "portfolio": "Lihat Portfolio"
+    },
+    "items": [
+      {
+        "question": "Berapa lama waktu pengembangan untuk tiap jenis sistem?",
+        "answer": "Durasi pengerjaan bergantung pada skala dan kompleksitas proyek. Website sederhana biasanya selesai 1-2 minggu, sistem menengah seperti E-commerce, POS, dan HRMS sekitar 1-3 bulan, sedangkan ERP atau WMS dapat memerlukan beberapa bulan."
+      },
+      {
+        "question": "Apa yang harus saya siapkan sebelum proyek dimulai?",
+        "answer": "Siapkan kebutuhan fitur, referensi desain, struktur data awal, konten, foto, dan dokumen perusahaan. Untuk proyek teknis, kami membantu merapikan kebutuhan dan alur bisnis sebelum development."
+      },
+      {
+        "question": "Apakah sistem bisa dikembangkan lagi di masa depan?",
+        "answer": "Bisa. Sistem seperti E-commerce, ERP, HRMS, CRM, dan WMS dibangun modular sehingga fitur baru, integrasi API, pembayaran, atau migrasi server dapat ditambahkan bertahap."
+      },
+      {
+        "question": "Apakah ada dukungan maintenance setelah proyek selesai?",
+        "answer": "Ada. Kami menyediakan maintenance bulanan atau tahunan untuk perbaikan bug, update keamanan, monitoring server, backup, dan penambahan fitur kecil."
+      },
+      {
+        "question": "Bisakah fitur dibuat khusus sesuai kebutuhan bisnis?",
+        "answer": "Bisa. Kami dapat menyesuaikan modul, workflow, laporan, integrasi Midtrans, GeoServer, Socket.io, GraphQL, Kafka, RFID, atau sistem lain sesuai kebutuhan."
+      },
+      {
+        "question": "Bagaimana alur kerja dari pemesanan hingga deployment?",
+        "answer": "Proses dimulai dari konsultasi, analisis kebutuhan, proposal, pembayaran awal, desain UI/UX, pengembangan, testing, revisi, finalisasi, pelunasan, lalu deployment ke server atau cloud."
+      },
+      {
+        "question": "Bagaimana sistem pembayaran layanan pengembangan software?",
+        "answer": "Umumnya pembayaran dilakukan dengan DP 30% sebagai tanda jadi dan pelunasan setelah proyek selesai serta disetujui. Untuk proyek besar, pembayaran dapat dibagi per milestone."
+      },
+      {
+        "question": "Teknologi apa saja yang digunakan?",
+        "answer": "Tech stack disesuaikan dengan kebutuhan. Kami menggunakan teknologi seperti Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS, dan layanan cloud."
+      },
+      {
+        "question": "Apakah sistem responsif di berbagai perangkat?",
+        "answer": "Ya. Sistem web kami dibuat responsif untuk desktop, tablet, dan smartphone. Untuk POS atau WMS, tampilan juga dapat dioptimalkan untuk perangkat sentuh dan operasional lapangan."
+      }
+    ]
   }
 }

@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps, AppLayoutProps } from "next/app";
 import { getRelationship, getRelationships } from "utils";
-import { ReactNode } from "react";
 import { NextSeo } from "next-seo";
 import packageInfo from "../package.json";
 import { appWithTranslation } from "next-i18next";
@@ -17,12 +16,16 @@ if (typeof window !== "undefined") {
 function App({ Component, pageProps }: AppLayoutProps) {
   const router = useRouter();
   const appProps = { getRelationship, getRelationships };
-  const getLayout =
-    Component.getLayout || ((page: ReactNode) => <Landing>{page}</Landing>);
   const seo = buildSeoMeta({
     locale: router.locale,
     path: router.asPath,
   });
+  const page = <Component {...pageProps} {...appProps} />;
+  const pageWithLayout = Component.getLayout ? (
+    Component.getLayout(page)
+  ) : (
+    <Landing localizedPaths={pageProps.localizedPaths}>{page}</Landing>
+  );
 
   return (
     <>
@@ -72,7 +75,7 @@ function App({ Component, pageProps }: AppLayoutProps) {
         additionalLinkTags={getAlternateLinks(seo.path)}
       />
 
-      {getLayout(<Component {...pageProps} {...appProps} />)}
+      {pageWithLayout}
     </>
   );
 }

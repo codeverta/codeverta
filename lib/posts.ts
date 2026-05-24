@@ -17,6 +17,7 @@ import {
   insertTableOfContents,
   addIdsToHeadings,
 } from "./toc";
+import { SUPPORTED_LOCALES } from "./seo";
 
 // Base blog directory
 const blogBaseDirectory = path.join(process.cwd(), "blog");
@@ -31,9 +32,10 @@ function getContentDirectories(folder = "blog", locale = "id") {
   const folderDirectory = path.join(blogBaseDirectory, folder);
   const candidates = [
     path.join(folderDirectory, normalizedLocale),
+    normalizedLocale === "en-GB" ? path.join(folderDirectory, "en-US") : "",
     path.join(folderDirectory, baseLocale),
     folderDirectory,
-  ];
+  ].filter(Boolean);
 
   return [...new Set(candidates)].filter((dir) => fs.existsSync(dir));
 }
@@ -177,6 +179,73 @@ export function getAllPostIds(folder = "tutorials") {
   });
 
   return allPostIds;
+}
+
+function readPostFrontMatter(directory, fileName) {
+  const fullPath = path.join(directory, fileName);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  return matter(fileContents).data;
+}
+
+function getAllPostRecords(folder = "blog") {
+  const folderDirectory = path.join(blogBaseDirectory, folder);
+
+  if (!fs.existsSync(folderDirectory)) {
+    return [];
+  }
+
+  const contentDirectories = [
+    { locale: "id", directory: folderDirectory },
+    ...fs
+      .readdirSync(folderDirectory, { withFileTypes: true })
+      .filter((dirent) => dirent.isDirectory())
+      .map((dirent) => ({
+        locale: normalizeLocale(dirent.name),
+        directory: path.join(folderDirectory, dirent.name),
+      })),
+  ];
+
+  return contentDirectories.flatMap(({ locale, directory }) =>
+    getMarkdownFileNames(directory).map((fileName) => {
+      const id = fileName.replace(/\.md$/, "");
+      const data = readPostFrontMatter(directory, fileName);
+
+      return {
+        id,
+        locale,
+        translationKey: data.translationOf || id,
+      };
+    })
+  );
+}
+
+export function getLocalizedPostPaths(id, folder = "blog") {
+  const records = getAllPostRecords(folder);
+  const currentRecord = records.find((record) => record.id === id);
+  const translationKey = currentRecord?.translationKey || id;
+  const translationRecords = records.filter(
+    (record) =>
+      record.id === translationKey || record.translationKey === translationKey
+  );
+  const pathsByLocale = {};
+
+  SUPPORTED_LOCALES.forEach((locale) => {
+    const targetRecord =
+      translationRecords.find((record) => record.locale === locale) ||
+      (locale === "en-GB"
+        ? translationRecords.find((record) => record.locale === "en-US")
+        : undefined) ||
+      translationRecords.find(
+        (record) => record.locale === locale.split("-")[0]
+      ) ||
+      translationRecords.find((record) => record.locale === "id");
+
+    if (targetRecord) {
+      pathsByLocale[locale] = `/${folder}/${targetRecord.id}`;
+    }
+  });
+
+  return pathsByLocale;
 }
 
 export async function getPostData(id, folder = "blog", locale = "id") {

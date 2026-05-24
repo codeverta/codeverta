@@ -1,44 +1,44 @@
 {
-  "our_products": "Our Products",
+  "our_products": "Nuestros productos",
   "home": {
-    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
-    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "title": "Creación de sitios web profesionales y soluciones de TI para pequeñas y medianas empresas",
+    "subtitle": "Ofrecemos servicios profesionales de creación, reparación y desarrollo de software, así como soluciones de TI para impulsar el crecimiento de su negocio en la era digital para pequeñas y medianas empresas.",
     "hero": {
-      "prefix": "Software Solutions For Every",
+      "prefix": "Soluciones de software para cada",
       "rotating": [
-        "Retail",
-        "Healthcare",
-        "Fitness",
-        "Hospitality",
-        "Education",
-        "Manufacturing",
-        "E-commerce",
-        "Education",
-        "Finance",
-        "Real Estate",
-        "Nonprofit",
-        "Entertainment",
-        "Transportation",
-        "Food & Beverage",
-        "Consulting",
+        "Comercio minorista",
+        "Salud",
+        "Gimnasios y Fitness",
+        "Hospitalidad y Turismo",
+        "Educación",
+        "Manufactura",
+        "Comercio electrónico",
+        "Educación",
+        "Finanzas",
+        "Bienes raíces",
+        "Organizaciones sin fines de lucro",
+        "Entretenimiento",
+        "Transporte y Logística",
+        "Alimentos y Bebidas",
+        "Consultoría",
         "Legal",
         "Marketing",
-        "Automotive",
-        "Energy",
-        "Telecommunications"
+        "Automotriz",
+        "Energía",
+        "Telecomunicaciones"
       ],
-      "suffix": "Industry"
+      "suffix": "Industria"
     },
-    "tagline": "*Startup quality, not your typical WordPress template",
+    "tagline": "*Calidad de startup, no la típica plantilla de WordPress",
     "cta": {
-      "whatsapp": "WhatsApp Us Now",
-      "products": "View Products"
+      "whatsapp": "Contáctanos por WhatsApp",
+      "products": "Ver productos"
     },
     "badges": {
-      "consultation": "Free Consultation",
-      "fast": "Fast Process",
-      "guarantee": "Satisfaction Guarantee",
-      "trusted": "Honest & Reliable"
+      "consultation": "Consulta gratuita",
+      "fast": "Proceso rápido",
+      "guarantee": "Garantía de satisfacción",
+      "trusted": "Honesto y confiable"
     },
     "seo": {
       "title": "Codeverta - Desarrollo web, apps, ERP y soluciones IT",
@@ -46,220 +46,220 @@
       "keywords": "desarrollo web, software house, desarrollo de apps, ERP, POS, soluciones IT"
     }
   },
-  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
+  "trustedBy": "Con la confianza de pequeñas y medianas empresas, startups y el gobierno",
   "features": {
-    "badge": "Our Services",
-    "title": "Complete Solutions for Your Digital Needs",
-    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
+    "badge": "Nuestros servicios",
+    "title": "Soluciones completas para sus necesidades digitales",
+    "subtitle": "Desde sitios web impresionantes hasta soporte de TI confiable, ofrecemos todo lo que necesita para triunfar en línea."
   },
   "portfolio": {
-    "title": "Projects We Have Worked On",
-    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
+    "title": "Proyectos en los que hemos trabajado",
+    "subtitle": "Vea algunos de nuestros proyectos recientes que muestran nuestra experiencia y dedicación en la entrega de soluciones digitales de alta calidad."
   },
   "process": {
-    "badge": "Easy Process, Maximum Results",
-    "title": "Development Process",
-    "subtitle": "Start your project in just 3 simple steps with our expert team."
+    "badge": "Proceso fácil, máximos resultados",
+    "title": "Proceso de desarrollo",
+    "subtitle": "Comience su proyecto en solo 3 sencillos pasos con nuestro equipo de expertos."
   },
   "testimonials": {
-    "badge": "Testimonials",
-    "title": "What Our Clients Say",
-    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+    "badge": "Testimonios",
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "No se quede solo con nuestra palabra. Vea lo que nuestros clientes satisfechos dicen sobre nuestros servicios."
   },
   "pricing": {
-    "badge": "Pricing",
-    "title": "Flexible & Transparent Pricing Plans",
-    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "badge": "Precios",
+    "title": "Planes de precios flexibles y transparentes",
+    "subtitle": "Elija el plan que mejor se adapte a su negocio. Sin tarifas ocultas.",
     "tabs": {
-      "smme": "SME Scale",
-      "enterprise": "Enterprise"
+      "smme": "Escala Pyme",
+      "enterprise": "Empresarial"
     },
     "card": {
-      "popular": "Most Popular",
-      "perProject": "/one-time payment",
-      "contactSales": "Contact Sales"
+      "popular": "Más popular",
+      "perProject": "/pago único",
+      "contactSales": "Contactar a ventas"
     }
   },
   "faq": {
-    "badge": "FAQ",
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to the most frequently asked questions about our services."
+    "badge": "Preguntas frecuentes",
+    "title": "Preguntas frecuentes",
+    "subtitle": "Encuentre respuestas a las preguntas más comunes sobre nuestros servicios."
   },
   "cta": {
-    "title": "Ready for a Professional Website?",
-    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "title": "¿Listo para un sitio web profesional?",
+    "description": "Contáctenos hoy mismo para una consulta gratuita. Construyamos juntos una sólida presencia digital para su negocio.",
     "buttons": {
-      "free": "Free Consultation",
-      "contact": "Contact Now"
+      "free": "Consulta gratuita",
+      "contact": "Contactar ahora"
     }
   },
   "navbar": {
-    "products": "Products",
-    "industry": "Industries",
-    "articles": "Articles & News",
-    "learning": "Education",
+    "products": "Productos",
+    "industry": "Industrias",
+    "articles": "Artículos y Noticias",
+    "learning": "Educación",
     "blog": "Blog",
-    "events": "Events",
+    "events": "Eventos",
     "faq": "FAQ",
-    "careers": "Careers",
-    "about": "About Us"
+    "careers": "Bolsa de trabajo",
+    "about": "Sobre nosotros"
   },
   "mega_menu": {
     "products": {
-      "title": "Products",
-      "all": "All Products",
-      "view_all": "View All Products",
-      "view_all_desc": "Explore all the products we offer."
+      "title": "Productos",
+      "all": "Todos los productos",
+      "view_all": "Ver todos los productos",
+      "view_all_desc": "Explore todos los productos que ofrecemos."
     },
     "news": {
-      "title": "News",
-      "tech": "Tech News",
-      "breaking": "Breaking News",
-      "breaking_desc": "Latest tech updates",
-      "industry": "Industry Reports",
-      "industry_desc": "Market analysis",
-      "company": "Company Updates",
-      "company_desc": "Business news",
-      "categories": "Categories",
+      "title": "Noticias",
+      "tech": "Noticias tecnológicas",
+      "breaking": "Última hora",
+      "breaking_desc": "Últimas actualizaciones tecnológicas",
+      "industry": "Informes de la industria",
+      "industry_desc": "Análisis de mercado",
+      "company": "Actualizaciones de la empresa",
+      "company_desc": "Noticias de negocios",
+      "categories": "Categorías",
       "software": "Software",
-      "software_desc": "Software development news",
+      "software_desc": "Noticias de desarrollo de software",
       "hardware": "Hardware",
-      "hardware_desc": "Hardware innovations",
-      "mobile": "Mobile",
-      "mobile_desc": "Mobile technology",
-      "trending": "Trending",
-      "ai_rev": "AI Revolution",
-      "ai_rev_desc": "AI developments",
-      "web3": "Web3 Updates",
-      "web3_desc": "Blockchain & crypto",
-      "devops": "DevOps News",
-      "devops_desc": "Development operations"
+      "hardware_desc": "Innovaciones de hardware",
+      "mobile": "Móviles",
+      "mobile_desc": "Tecnología móvil",
+      "trending": "Tendencias",
+      "ai_rev": "Revolución de la IA",
+      "ai_rev_desc": "Avances en IA",
+      "web3": "Actualizaciones de Web3",
+      "web3_desc": "Blockchain y cripto",
+      "devops": "Noticias de DevOps",
+      "devops_desc": "Operaciones de desarrollo"
     },
     "startups": {
       "title": "Startups",
-      "news": "Startup News",
-      "funding": "Funding Rounds",
-      "funding_desc": "Investment updates",
-      "launches": "New Launches",
-      "launches_desc": "Product launches",
-      "success": "Success Stories",
-      "success_desc": "Inspiring journeys",
-      "resources": "Resources",
-      "guide": "Startup Guide",
-      "guide_desc": "How to get started",
-      "investors": "Investor Network",
-      "investors_desc": "Find investors",
-      "mentorship": "Mentorship",
-      "mentorship_desc": "Get expert guidance"
+      "news": "Noticias de Startups",
+      "funding": "Rondas de financiación",
+      "funding_desc": "Actualizaciones de inversión",
+      "launches": "Nuevos lanzamientos",
+      "launches_desc": "Lanzamientos de productos",
+      "success": "Casos de éxito",
+      "success_desc": "Trayectorias inspiradoras",
+      "resources": "Recursos",
+      "guide": "Guía para Startups",
+      "guide_desc": "Cómo empezar",
+      "investors": "Red de inversores",
+      "investors_desc": "Encontrar inversores",
+      "mentorship": "Mentoría",
+      "mentorship_desc": "Obtenga orientación de expertos"
     },
     "gadget": {
       "title": "Gadgets",
-      "reviews": "Reviews",
+      "reviews": "Reseñas",
       "smartphones": "Smartphones",
-      "smartphones_desc": "Phone reviews",
+      "smartphones_desc": "Reseñas de teléfonos",
       "laptops": "Laptops",
-      "laptops_desc": "Computer reviews",
+      "laptops_desc": "Reseñas de computadoras",
       "wearables": "Wearables",
-      "wearables_desc": "Smartwatches & more",
-      "buying_guides": "Buying Guides",
-      "deals": "Best Deals",
-      "deals_desc": "Current promotions",
-      "compare": "Comparisons",
-      "compare_desc": "Product comparisons",
-      "recommended": "Recommendations",
-      "recommended_desc": "Editor's choice"
+      "wearables_desc": "Smartwatches y más",
+      "buying_guides": "Guías de compra",
+      "deals": "Mejores ofertas",
+      "deals_desc": "Promociones actuales",
+      "compare": "Comparativas",
+      "compare_desc": "Comparaciones de productos",
+      "recommended": "Recomendados",
+      "recommended_desc": "Elección del editor"
     },
     "tutorials": {
-      "title": "Tutorials",
-      "web_dev": "Web Development",
-      "react_desc": "Learn React.js",
-      "nextjs_desc": "Full-stack React",
-      "js_desc": "JS best practices",
-      "mobile_dev": "Mobile Development",
-      "rn_desc": "Mobile applications",
-      "flutter_desc": "Cross-platform",
-      "ios_desc": "Swift & Objective-C",
+      "title": "Tutoriales",
+      "web_dev": "Desarrollo Web",
+      "react_desc": "Aprenda React.js",
+      "nextjs_desc": "React full-stack",
+      "js_desc": "Buenas prácticas de JS",
+      "mobile_dev": "Desarrollo Móvil",
+      "rn_desc": "Aplicaciones móviles",
+      "flutter_desc": "Multiplataforma",
+      "ios_desc": "Swift y Objective-C",
       "backend": "Backend",
-      "node_desc": "Server-side JS",
-      "python_desc": "Python programming",
-      "db_desc": "SQL & NoSQL"
+      "node_desc": "JS del lado del servidor",
+      "python_desc": "Programación en Python",
+      "db_desc": "SQL y NoSQL"
     },
     "ai": {
-      "title": "AI",
-      "news": "AI News",
-      "ml_desc": "ML developments",
-      "tools": "AI Tools",
-      "tools_desc": "Latest AI tools",
-      "research": "Research",
-      "research_desc": "Academic papers",
-      "tutorials": "Tutorials",
-      "getting_started": "Getting Started",
-      "getting_started_desc": "AI basics",
+      "title": "IA",
+      "news": "Noticias de IA",
+      "ml_desc": "Avances en ML",
+      "tools": "Herramientas de IA",
+      "tools_desc": "Últimas herramientas de IA",
+      "research": "Investigación",
+      "research_desc": "Artículos académicos",
+      "tutorials": "Tutoriales",
+      "getting_started": "Primeros pasos",
+      "getting_started_desc": "Básicos de IA",
       "deep_learning": "Deep Learning",
-      "deep_learning_desc": "Neural networks",
-      "ethics": "AI Ethics",
-      "ethics_desc": "Responsible AI",
-      "productivity": "Productivity",
-      "image_editor": "Image Editor",
-      "image_desc": "Crop, resize, etc.",
-      "pdf_editor": "PDF Editor",
-      "pdf_desc": "Edit and convert PDFs.",
-      "other_tools": "AI & Other Tools",
-      "ai_long": "Artificial Intelligence (AI)",
-      "ai_desc": "Explore the latest developments in AI."
+      "deep_learning_desc": "Redes neuronales",
+      "ethics": "Ética en la IA",
+      "ethics_desc": "IA responsable",
+      "productivity": "Productividad",
+      "image_editor": "Editor de imágenes",
+      "image_desc": "Recortar, redimensionar, etc.",
+      "pdf_editor": "Editor de PDF",
+      "pdf_desc": "Editar y convertir PDFs.",
+      "other_tools": "IA y otras herramientas",
+      "ai_long": "Inteligencia Artificial (IA)",
+      "ai_desc": "Explore los últimos avances en IA."
     },
     "categories": {
-      "articles": "Articles & News",
-      "main_news": "Top Stories",
-      "tech_innovation": "News (Tech & Innovation)",
-      "tech_innovation_desc": "Latest news on tech and innovation.",
+      "articles": "Artículos y Noticias",
+      "main_news": "Historias destacadas",
+      "tech_innovation": "Noticias (Tecnología e Innovación)",
+      "tech_innovation_desc": "Últimas noticias sobre tecnología e innovación.",
       "startup_stories": "Startups",
-      "startup_stories_desc": "Inspiration from the startup world.",
-      "gadget_reviews": "Gadget Reviews",
-      "gadget_reviews_desc": "Reviews and buying guides.",
-      "special_issues": "Special Topics",
-      "cyber_art": "Cybersecurity Articles",
-      "cyber_art_desc": "Digital security tips.",
-      "all_art": "All Articles",
-      "all_art_desc": "View all blog posts.",
-      "learning": "Learning & Guides",
-      "guides": "Guides",
-      "tutorial_desc": "Step-by-step learning guides.",
-      "classes": "Courses",
-      "cyber_course": "Cybersecurity Course",
-      "cyber_course_desc": "Latest cybersecurity classes.",
-      "llm_course": "AI LLM Course",
-      "llm_desc": "Prompt engineering for LLMs.",
-      "ai_eng": "AI Engineer Course",
-      "ai_eng_desc": "In-depth AI engineering."
+      "startup_stories_desc": "Inspiración del mundo de las startups.",
+      "gadget_reviews": "Reseñas de gadgets",
+      "gadget_reviews_desc": "Reseñas y guías de compra.",
+      "special_issues": "Temas especiales",
+      "cyber_art": "Artículos de Ciberseguridad",
+      "cyber_art_desc": "Consejos de seguridad digital.",
+      "all_art": "Todos los artículos",
+      "all_art_desc": "Ver todas las publicaciones del blog.",
+      "learning": "Aprendizaje y Guías",
+      "guides": "Guías",
+      "tutorial_desc": "Guías de aprendizaje paso a paso.",
+      "classes": "Cursos",
+      "cyber_course": "Curso de Ciberseguridad",
+      "cyber_course_desc": "Últimas clases de ciberseguridad.",
+      "llm_course": "Curso de IA LLM",
+      "llm_desc": "Prompt engineering para LLMs.",
+      "ai_eng": "Curso de Ingeniero de IA",
+      "ai_eng_desc": "Ingeniería de IA en profundidad."
     }
   },
   "homePage": {
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "Diseño web profesional",
+          "description": "Diseñamos sitios web modernos y responsivos yang funcionan de manera excelente en computadoras y móviles."
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "Optimización SEO y rendimiento",
+          "description": "Mejore la visibilidad en Google y la experiencia del usuario con páginas web rápidas y optimizadas."
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "Reparación y mantenimiento",
+          "description": "Nuestro equipo corrige errores, bugs, fallas de diseño y mantiene su sitio web actualizado."
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "Seguridad web confiable",
+          "description": "Proteja sus datos y a sus visitantes con seguridad multicapa y optimizaciones prácticas."
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "Servicios de soporte de TI",
+          "description": "Obtenga ayuda con problemas técnicos, desde la solución de problemas de hardware hasta la gestión de redes."
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "Soporte posventa",
+          "description": "Seguimos brindando soporte a su sitio web y sistemas después del lanzamiento para mantener sus operaciones estables."
         }
       ]
     },
@@ -267,55 +267,55 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "Consulta de necesidades",
+          "description": "Dialogue de forma gratuita sobre sus ideas, objetivos y requisitos de proyecto con nuestro equipo."
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "Diseño y desarrollo",
+          "description": "Diseñamos y construimos su sitio web, aplicación o solución de TI según el alcance acordado."
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "Lanzamiento y mantenimiento",
+          "description": "Lanzamos su proyecto y brindamos mantenimiento para que todo siga funcionando correctamente."
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
+          "quote": "Codeverta transformó completamente nuestro sitio web en algo mucho más profesional. El número de visitantes mejoró significativamente.",
           "author": "Sarah Widjaja",
-          "role": "Owner, Butik Elegan",
+          "role": "Propietaria, Butik Elegan",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
+          "quote": "Nuestro sitio web anterior era muy lento. Después de que Codeverta lo solucionó, la velocidad pasó a ser excelente.",
           "author": "Budi Santoso",
-          "role": "Marketing Manager, Maju Jaya Motor",
+          "role": "Gerente de Marketing, Maju Jaya Motor",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
+          "quote": "Su soporte de TI es sumamente receptivo. Los problemas técnicos en nuestra oficina se resuelven rápidamente.",
           "author": "Emily Hartono",
-          "role": "Head of Operations, Startup Cepat",
+          "role": "Jefa de Operaciones, Startup Cepat",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
+          "quote": "El proceso fue transparente y el resultado superó las expectativas. Nuestro sitio web es ahora un canal de ventas clave.",
           "author": "David Kim",
           "role": "CEO, InnovateNow",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
+          "quote": "Es muy fácil comunicarse con el equipo de Codeverta y realmente entienden la visión que queremos plasmar.",
           "author": "Lisa Puspita",
-          "role": "Creative Director, Galeri Seni",
+          "role": "Directora Creativa, Galeri Seni",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
+          "quote": "Una de nuestras mejores inversiones. Desde el lanzamiento del nuevo sitio web, los ingresos han aumentado notablemente.",
           "author": "James Wilson",
           "role": "COO, ScaleUp Inc",
           "rating": 5
@@ -325,130 +325,282 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
+          "name": "Paquete Web Pyme",
           "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "description": "Adecuado para perfiles de empresas o portfolios.",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "Diseño a medida según sus requerimientos",
+            "Ideal para pymes",
+            "Páginas y funciones esenciales",
+            "Dominio y hosting gratuitos por 1 año",
+            "Enfocado en el rendimiento, no es una plantilla genérica de WordPress"
           ],
-          "cta": "Choose Package"
+          "cta": "Elegir paquete"
         },
         {
-          "name": "Online Store Package",
+          "name": "Paquete Tienda en Línea",
           "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "description": "Ideal para pymes en crecimiento y negocios en línea.",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "Diseño a medida según sus requerimientos",
+            "Optimización SEO",
+            "Desarrollo prioritario"
           ],
-          "cta": "Choose Package",
+          "cta": "Elegir paquete",
           "popular": true
         },
         {
-          "name": "Custom System Package",
+          "name": "Paquete de Sistema a Medida",
           "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "description": "Para empresas con requisitos más complejos.",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "Funciones avanzadas personalizadas",
+            "Diseño y sistema adaptados a sus necesidades",
+            "Informes de rendimiento mensuales",
+            "Mantenimiento por más de 1 año"
           ],
-          "cta": "Contact Sales"
+          "cta": "Contactar a ventas"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
+          "name": "Empresarial",
           "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "description": "Para empresas con sistemas y flujos de trabajo complejos.",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "Funciones personalizadas según su solicitud",
+            "Integración con otros sistemas o aplicaciones",
+            "Copias de seguridad programadas en la nube",
+            "Monitoreo de seguridad y rendimiento 24/7",
+            "Desarrollo prioritario",
+            "Mantenimiento por más de 1 año"
           ],
-          "cta": "Contact Sales"
+          "cta": "Contactar a ventas"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "¿Cuánto tiempo se tarda en construir un sitio web?",
+          "answer": "El cronograma depende de la complejidad. Un sitio web básico suele tardar entre 1 y 2 semanas, mientras que los sistemas a mediana escala pueden requerir más de un mes."
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "¿Qué necesito preparar?",
+          "answer": "Prepare el texto del perfil de la empresa, la lista de servicios o productos y las imágenes que desee mostrar. Si aún no los tiene, nuestro equipo puede guiarle."
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "¿Ofrecen mantenimiento después del lanzamiento?",
+          "answer": "Sí. Ofrecemos paquetes de mantenimiento mensuales o anuales que cubren actualizaciones, copias de seguridad, monitoreo y correcciones continuas."
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "¿Pueden reparar mi sitio web existente?",
+          "answer": "Sí. Primero auditamos su sitio web, identificamos problemas como errores, velocidad o fallas de diseño, y recomendamos la mejor solución."
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "¿Cómo funciona el pago?",
+          "answer": "El pago generalmente se realiza con un depósito del 30% inicial y el saldo restante una vez que el sitio web se ha completado y aprobado."
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "Industria",
+      "title": "Soluciones para cada industria",
+      "subtitle": "Desde plantas de fabricación hasta sistemas de salud, Codeverta se adapta a las necesidades de su industria para que las operaciones sean más sencillas y el crecimiento más rápido.",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "Manufactura",
+          "desc": "Optimice los flujos de trabajo de producción, inventario y entregas."
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "Comercio y Distribución",
+          "desc": "Gestione compras, pedidos y cadenas de suministro de manera eficiente."
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "Comercio minorista",
+          "desc": "Impulse las ventas, gestione el inventario y mejore la experiencia del cliente."
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "Ingeniería y Construcción",
+          "desc": "Gestione proyectos, recursos y presupuestos con un mejor control."
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "Comercio electrónico",
+          "desc": "Gestione pedidos, clientes y el crecimiento de las ventas en línea."
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "Educación",
+          "desc": "Simplifique las admisiones, los cursos, los pagos y los flujos de trabajo de los estudiantes."
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "Servicios profesionales",
+          "desc": "Optimice los proyectos, la facturación y la colaboración con los clientes."
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "Servicios financieros",
+          "desc": "Realice un seguimiento de las finanzas, carteras y el cumplimiento con mayor facilidad."
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "Salud",
+          "desc": "Gestione historiales, citas y operaciones en un solo lugar."
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "Organizaciones sin fines de lucro",
+          "desc": "Mejore la recaudación de fondos, la gestión de donantes y la ejecución de proyectos."
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Productos digitales Codeverta - Portfolio de sistemas, ERP, POS y aplicaciones web",
+      "description": "Explora los productos digitales de Codeverta: sistemas de información, ERP, POS, e-commerce, aplicaciones web, ticketing, EMR y soluciones IT a medida para múltiples industrias.",
+      "keywords": "productos digitales Codeverta, portfolio sistemas información, aplicaciones web, ERP, POS, software house, soluciones IT empresariales, software a medida"
+    },
+    "hero": {
+      "title": "Portfolio de soluciones IT",
+      "subtitle": "Una colección completa de sistemas de información y aplicaciones web que hemos desarrollado para diversas necesidades empresariales e industriales."
+    },
+    "status": {
+      "productionReady": "Listo para producción",
+      "completed": "Completado",
+      "inDevelopment": "En desarrollo"
+    },
+    "card": {
+      "updated": "Actualizado",
+      "viewDetail": "Ver detalles",
+      "contact": "Contáctanos"
+    },
+    "cta": {
+      "title": "¿Necesitas una solución IT a medida?",
+      "description": "Podemos ayudarte a desarrollar un sistema de información adaptado a las necesidades de tu negocio."
+    },
+    "schema": {
+      "home": "Inicio",
+      "products": "Productos",
+      "itemListName": "Portfolio de productos digitales Codeverta"
+    }
+  },
+  "cookieConsent": {
+    "title": "Usamos cookies",
+    "description": "Utilizamos cookies esenciales para el funcionamiento del sitio, recordar las preferencias de idioma y analizar el rendimiento de las páginas. Las cookies analíticas solo se utilizan con su consentimiento.",
+    "accept": "Aceptar",
+    "reject": "Rechazar no esenciales",
+    "learnMore": "Leer política de privacidad"
+  },
+  "footer": {
+    "description": "Proveedor de servicios IT dedicado a crear soluciones digitales de alta calidad, honestas y transparentes con altos estándares de seguridad.",
+    "partOf": "Parte de",
+    "rights": "Todos los derechos reservados.",
+    "company": {
+      "title": "Empresa",
+      "links": {
+        "about": "Sobre nosotros",
+        "contact": "Contacto",
+        "terms": "Términos de servicio",
+        "privacy": "Política de privacidad",
+        "blog": "Blog y Noticias",
+        "faq": "FAQ",
+        "gallery": "Galería"
+      }
+    },
+    "programs": {
+      "title": "Programas",
+      "links": {
+        "cybersecurity": "Curso de Ciberseguridad",
+        "aiEngineer": "Ingeniero de IA",
+        "consulting": "Consultoría de TI",
+        "development": "Desarrollo de Software"
+      }
+    },
+    "legal": {
+      "title": "Legal y confianza",
+      "registered": "Registrado oficialmente",
+      "certifications": "Certificaciones y seguridad"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta - Términos y condiciones",
+      "description": "Lea los términos y condiciones de Codeverta para el desarrollo de software, servicios de sitios web, pagos, propiedad intelectual y límites de responsabilidad.",
+      "keywords": "términos de Codeverta, términos de servicio, acuerdo de desarrollo de software, términos de servicio de sitio web"
+    },
+    "schema": {
+      "about": "Términos y condiciones"
+    },
+    "title": "Términos y condiciones",
+    "last_updated": "Última actualización: 23 de diciembre de 2025",
+    "intro": "Bienvenido a Codeverta y BikinWebsiteJogja. Al acceder a nuestro sitio o utilizar nuestros servicios, usted acepta los siguientes términos.",
+    "sections": {
+      "services": {
+        "title": "1. Alcance de los servicios",
+        "content": "Codeverta proporciona desarrollo de software, creación de sitios web, desarrollo de aplicaciones, integración de sistemas y consultoría de TI de acuerdo con la propuesta aprobada o la declaración de trabajo."
+      },
+      "payment": {
+        "title": "2. Términos de pago",
+        "content": "Los pagos se realizan según la propuesta acordada, la factura o el calendario de hitos. Se requiere un depósito antes de comenzar la producción, y el pago final debe efectuarse antes de la entrega definitiva de los activos."
+      },
+      "ip": {
+        "title": "3. Propiedad intelectual",
+        "content": "Después del pago total, se otorgan los derechos de uso o la propiedad del código fuente según el contrato. Las bibliotecas de terceros, plantillas, licencias y frameworks base siguen estando sujetos a sus propias licencias."
+      },
+      "liability": {
+        "title": "4. Limitación de responsabilidad",
+        "content": "No nos hacemos responsables de las pérdidas causadas por el uso indebido del sistema, cambios realizados por terceros, problemas de hosting/dominio o integraciones de terceros después de que finalice el período de garantía o mantenimiento."
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - Preguntas frecuentes",
+      "description": "Encuentra respuestas sobre desarrollo web, sistemas digitales, flujo técnico y pagos.",
+      "keywords": "Codeverta FAQ, preguntas sobre desarrollo web, software a medida, pago de proyectos de TI, mantenimiento"
+    },
+    "title": "Preguntas frecuentes",
+    "subtitle": "Encuentra respuestas sobre desarrollo web, sistemas digitales, flujo técnico y pagos.",
+    "cta": {
+      "title": "¿Tienes otra pregunta?",
+      "description": "Consulta tus necesidades digitales con nosotros. Nuestro equipo está listo para ayudarte.",
+      "whatsapp": "Chat WhatsApp",
+      "portfolio": "Ver portfolio"
+    },
+    "items": [
+      {
+        "question": "¿Cuánto tiempo toma el desarrollo para cada tipo de sistema?",
+        "answer": "El cronograma depende de la escala y complejidad del proyecto. Un sitio web simple suele tardar entre 1 y 2 semanas; los sistemas medianos como E-commerce, POS y HRMS toman alrededor de 1 a 3 meses, mientras que un ERP o WMS puede requerir varios meses."
+      },
+      {
+        "question": "¿Qué debo preparar antes de comenzar el proyecto?",
+        "answer": "Prepare los requerimientos de funciones, referencias de diseño, estructura inicial de datos, contenido, fotos y documentos de la empresa. Para proyectos técnicos, ayudamos a definir los requerimientos y flujos de trabajo comerciales antes del desarrollo."
+      },
+      {
+        "question": "¿Se puede expandir el sistema en el futuro?",
+        "answer": "Sí. Los sistemas como E-commerce, ERP, HRMS, CRM y WMS están construidos de forma modular para que se puedan agregar nuevas funciones, integraciones de API, pasarelas de pago o migraciones de servidor en etapas posteriores."
+      },
+      {
+        "question": "¿Ofrecen mantenimiento después del lanzamiento?",
+        "answer": "Sí. Ofrecemos mantenimiento mensual o anual que cubre corrección de errores, actualizaciones de seguridad, monitoreo de servidores, copias de seguridad y pequeñas incorporaciones de funciones."
+      },
+      {
+        "question": "¿Pueden construir funciones personalizadas para mi negocio?",
+        "answer": "Sí. Podemos personalizar módulos, flujos de trabajo, informes e integraciones como Midtrans, GeoServer, Socket.io, GraphQL, Kafka, RFID u otros sistemas."
+      },
+      {
+        "question": "¿Cuál es el flujo de trabajo desde el pedido hasta el despliegue?",
+        "answer": "El proceso comienza con la consulta, análisis de requerimientos, propuesta, pago inicial, diseño de UI/UX, desarrollo, pruebas, revisiones, finalización, pago final y el despliegue en su servidor o nube."
+      },
+      {
+        "question": "¿Cómo funciona el pago para el desarrollo de software?",
+        "answer": "El pago generalmente comienza con un depósito del 30% y el saldo restante se abona una vez finalizado y aprobado el proyecto. Los proyectos más grandes se pueden pagar por hitos."
+      },
+      {
+        "question": "¿Qué tecnologías utilizan?",
+        "answer": "El stack tecnológico depende del proyecto. Utilizamos tecnologías como Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS y servicios en la nube."
+      },
+      {
+        "question": "¿Los sistemas son responsivos en diferentes dispositivos?",
+        "answer": "Sí. Nuestros sistemas web son responsivos en computadoras, tablets y smartphones. Las interfaces de POS o WMS también se pueden optimizar para dispositivos táctiles y operaciones de campo."
+      }
+    ]
   }
 }

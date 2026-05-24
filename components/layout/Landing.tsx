@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar";
 import WhatsAppButton from "../WhatsappButton";
 import Banner from "../Banner";
 import Head from "next/head";
+import CookieConsent from "@/components/CookieConsent";
 import {
   buildSeoMeta,
   getAlternateLinks,
@@ -44,9 +45,10 @@ interface SEOProps {
 interface Props {
   children: React.ReactNode;
   seo?: SEOProps;
+  localizedPaths?: Record<string, string>;
 }
 
-export default function Landing({ children, seo }: Props) {
+export default function Landing({ children, seo, localizedPaths }: Props) {
   const router = useRouter();
   const pageSEO = buildSeoMeta({
     locale: router.locale,
@@ -340,8 +342,9 @@ export default function Landing({ children, seo }: Props) {
         />
       </Head>
       {/* <Banner /> */}
-      <Navbar />
+      <Navbar localizedPaths={localizedPaths} />
       {children}
+      <CookieConsent />
       <WhatsAppButton />
       <Footer />
     </>

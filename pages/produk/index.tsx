@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -11,18 +10,19 @@ import {
   ExternalLink,
   Eye,
   Clock,
-  Users,
   Calendar,
   Wrench,
   CheckCircle,
 } from "lucide-react";
 import Link from "next/link";
+import Head from "next/head";
+import { useRouter } from "next/router";
 import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
-import { t } from "i18next";
 import { useTranslation } from "next-i18next";
 import { getProjects } from "@/lib/projects";
+import { buildSeoMeta, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 export const getStaticProps = withI18n(["common"], function ({ locale }) {
   // Mapping hanya field yang diperlukan untuk index page
@@ -46,36 +46,142 @@ export const getStaticProps = withI18n(["common"], function ({ locale }) {
 
 export default function ITProductsShowcase({ projects }) {
   const { t } = useTranslation("common");
+  const router = useRouter();
+  const seo = buildSeoMeta({
+    locale: router.locale,
+    path: "/produk",
+    title: t("productsPage.seo.title"),
+    description: t("productsPage.seo.description"),
+    keywords: t("productsPage.seo.keywords"),
+  });
   const statusConfig = {
+    "Production Ready": {
+      color: "bg-green-500 hover:bg-green-600",
+      icon: CheckCircle,
+      label: t("productsPage.status.productionReady"),
+    },
     Completed: {
       color: "bg-green-500 hover:bg-green-600",
       icon: CheckCircle,
-      label: "Selesai",
+      label: t("productsPage.status.completed"),
     },
     "In Development": {
       color: "bg-orange-500 hover:bg-orange-600",
       icon: Wrench,
-      label: "Dalam Pengerjaan",
+      label: t("productsPage.status.inDevelopment"),
     },
   };
+
+  const productListSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${seo.canonical}#collection`,
+        url: seo.canonical,
+        name: seo.title,
+        description: seo.description,
+        inLanguage: seo.locale,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": `${SITE_URL}/#website`,
+          name: SITE_NAME,
+          url: SITE_URL,
+        },
+        about: {
+          "@type": "Organization",
+          "@id": `${SITE_URL}/#organization`,
+          name: SITE_NAME,
+          url: SITE_URL,
+        },
+        mainEntity: {
+          "@id": `${seo.canonical}#products`,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${seo.canonical}#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: t("productsPage.schema.home"),
+            item: `${SITE_URL}/${seo.locale}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: t("productsPage.schema.products"),
+            item: seo.canonical,
+          },
+        ],
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${seo.canonical}#products`,
+        name: t("productsPage.schema.itemListName"),
+        description: seo.description,
+        numberOfItems: projects.length,
+        itemListElement: projects.map(({ product }, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          url: `${seo.canonical}/${product.id}`,
+          item: {
+            "@type": "SoftwareApplication",
+            "@id": `${seo.canonical}/${product.id}#software`,
+            name: product.name,
+            description: product.description,
+            applicationCategory: product.category,
+            operatingSystem: "Web",
+            image: product.image?.startsWith("http")
+              ? product.image
+              : `${SITE_URL}${product.image}`,
+            softwareVersion: product.version,
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "IDR",
+              availability: "https://schema.org/InStock",
+              url: `${seo.canonical}/${product.id}`,
+              category: product.status,
+            },
+            publisher: {
+              "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
+              name: SITE_NAME,
+              url: SITE_URL,
+            },
+          },
+        })),
+      },
+    ],
+  };
+
   return (
     <>
       <SeoHead
-        title={`${t("our_products")} - Jasa Pembuatan Sistem`}
-        description="Jelajahi portofolio lengkap solusi IT kami, termasuk sistem informasi dan aplikasi web yang telah kami kembangkan untuk berbagai kebutuhan bisnis dan industri."
-        url="https://codeverta.com/produk"
-        image="https://codeverta.com/og-image.png"
+        title={seo.title}
+        description={seo.description}
+        keywords={seo.keywords}
+        image={seo.image}
       />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(productListSchema),
+          }}
+        />
+      </Head>
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-12">
         <div className="container mx-auto px-4 md:px-6">
           {/* Header Section */}
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-slate-900 mb-4">
-              IT Solutions Portfolio
+              {t("productsPage.hero.title")}
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Koleksi lengkap sistem informasi dan aplikasi web yang telah kami
-              kembangkan untuk berbagai kebutuhan bisnis dan industri
+              {t("productsPage.hero.subtitle")}
             </p>
           </div>
 
@@ -139,7 +245,10 @@ export default function ITProductsShowcase({ projects }) {
                       </div>
                       <div className="flex items-center gap-1.5 text-slate-600 col-span-2">
                         <Calendar className="w-3.5 h-3.5 text-slate-400" />
-                        <span>Update: {product.lastUpdated}</span>
+                        <span>
+                          {t("productsPage.card.updated")}:{" "}
+                          {product.lastUpdated}
+                        </span>
                       </div>
                     </div>
 
@@ -162,7 +271,7 @@ export default function ITProductsShowcase({ projects }) {
                         className="w-full bg-blue-600 hover:bg-blue-700"
                       >
                         <Eye className="w-4 h-4 mr-2" />
-                        Lihat Detail
+                        {t("productsPage.card.viewDetail")}
                       </Button>
                     </Link>
                     <WhatsappWrapper title={product.name}>
@@ -172,7 +281,7 @@ export default function ITProductsShowcase({ projects }) {
                         className="flex-1 bg-transparent"
                       >
                         <WhatsAppIcon />
-                        Hubungi Kami
+                        {t("productsPage.card.contact")}
                       </Button>
                     </WhatsappWrapper>
                   </CardFooter>
@@ -185,11 +294,10 @@ export default function ITProductsShowcase({ projects }) {
           <div className="text-center mt-16">
             <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
               <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                Butuh Solusi IT Custom?
+                {t("productsPage.cta.title")}
               </h2>
               <p className="text-slate-600 mb-6">
-                Kami siap membantu mengembangkan sistem informasi sesuai
-                kebutuhan bisnis Anda
+                {t("productsPage.cta.description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <WhatsappWrapper>

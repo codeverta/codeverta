@@ -16,22 +16,24 @@ const keywords = [
   "pt zenit technology solution",
 ];
 
-// Data Menu (Bisa dipindahkan ke file config terpisah)
 const COMPANY_LINKS = [
-  { href: "/about", label: "About Us" },
-  { href: "/contact", label: "Contact Page" },
-  { href: "/terms", label: "Terms of Service" },
-  { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/blog", label: "Blog & News" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/gallery", label: "Gallery" },
+  { href: "/about", labelKey: "footer.company.links.about" },
+  { href: "/contact", labelKey: "footer.company.links.contact" },
+  { href: "/terms", labelKey: "footer.company.links.terms" },
+  { href: "/privacy-policy", labelKey: "footer.company.links.privacy" },
+  { href: "/blog", labelKey: "footer.company.links.blog" },
+  { href: "/faq", labelKey: "footer.company.links.faq" },
+  { href: "/gallery", labelKey: "footer.company.links.gallery" },
 ];
 
 const PROGRAM_LINKS = [
-  { href: "/course/cybersecurity", label: "Cyber Security Course" },
-  { href: "/course/ai-engineer", label: "AI Engineer" },
-  { href: "/services/consulting", label: "IT Consulting" },
-  { href: "/services/development", label: "Software Development" },
+  {
+    href: "/course/cybersecurity",
+    labelKey: "footer.programs.links.cybersecurity",
+  },
+  { href: "/course/ai-engineer", labelKey: "footer.programs.links.aiEngineer" },
+  { href: "/contact", labelKey: "footer.programs.links.consulting" },
+  { href: "/produk", labelKey: "footer.programs.links.development" },
 ];
 
 const CERTIFICATIONS = ["Indeks KAMI BSSN v5.0", "NIST CSF", "CAIQ v4"];
@@ -50,16 +52,14 @@ export default function Footer() {
             <div>
               <h4 className="font-bold text-2xl text-white mb-2">Codeverta</h4>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Penyedia jasa IT yang berdedikasi membangun solusi digital
-                berkualitas tinggi, jujur, dan transparan dengan standar
-                keamanan terbaik.
+                {t("footer.description")}
               </p>
             </div>
 
             {/* Induk Perusahaan */}
             <div className="pt-4 border-t border-gray-700">
               <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                Bagian dari
+                {t("footer.partOf")}
               </p>
               <p className="mt-1 text-sm font-bold text-gray-300">
                 PT ZENIT TECHNOLOGY SOLUTION
@@ -93,7 +93,9 @@ export default function Footer() {
 
           {/* === Kolom 2: Company === */}
           <div>
-            <h4 className="font-bold text-lg mb-6 text-white">Company</h4>
+            <h4 className="font-bold text-lg mb-6 text-white">
+              {t("footer.company.title")}
+            </h4>
             <ul className="space-y-3 text-sm text-gray-400">
               {COMPANY_LINKS.map((link) => (
                 <li key={link.href}>
@@ -101,7 +103,7 @@ export default function Footer() {
                     href={link.href}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    {link.label}
+                    {t(link.labelKey)}
                   </Link>
                 </li>
               ))}
@@ -110,7 +112,9 @@ export default function Footer() {
 
           {/* === Kolom 3: Programs === */}
           <div>
-            <h4 className="font-bold text-lg mb-6 text-white">Programs</h4>
+            <h4 className="font-bold text-lg mb-6 text-white">
+              {t("footer.programs.title")}
+            </h4>
             <ul className="space-y-3 text-sm text-gray-400">
               {PROGRAM_LINKS.map((link) => (
                 <li key={link.href}>
@@ -118,7 +122,7 @@ export default function Footer() {
                     href={link.href}
                     className="hover:text-white transition-colors duration-200"
                   >
-                    {link.label}
+                    {t(link.labelKey)}
                   </Link>
                 </li>
               ))}
@@ -127,11 +131,15 @@ export default function Footer() {
 
           {/* === Kolom 4: Legal & Trust === */}
           <div>
-            <h4 className="font-bold text-lg mb-6 text-white">Legal & Trust</h4>
+            <h4 className="font-bold text-lg mb-6 text-white">
+              {t("footer.legal.title")}
+            </h4>
 
             {/* PSE Badge */}
             <div className="mb-6">
-              <p className="text-xs text-gray-500 mb-2">Terdaftar Resmi</p>
+              <p className="text-xs text-gray-500 mb-2">
+                {t("footer.legal.registered")}
+              </p>
               <div className="flex flex-wrap gap-2">
                 <div className="inline-flex bg-white/5 p-2 rounded border border-gray-700 hover:bg-white/10 transition-colors">
                   <img
@@ -156,7 +164,7 @@ export default function Footer() {
             {/* Certifications */}
             <div>
               <p className="text-xs text-gray-500 mb-2">
-                Sertifikasi & Keamanan
+                {t("footer.legal.certifications")}
               </p>
               <div className="flex flex-wrap gap-2">
                 {CERTIFICATIONS.map((cert) => (
@@ -175,8 +183,8 @@ export default function Footer() {
         {/* === Footer Bottom === */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p className="text-center md:text-left">
-            &copy; {new Date().getFullYear()} PT Zenit Technology Solution. All
-            rights reserved.
+            &copy; {new Date().getFullYear()} PT Zenit Technology Solution.{" "}
+            {t("footer.rights")}
           </p>
           <div className="mt-4 md:mt-0 flex items-center gap-4 text-xs">
             <span>v{version}</span>

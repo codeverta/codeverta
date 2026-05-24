@@ -1,265 +1,265 @@
 {
-  "our_products": "Our Products",
+  "our_products": "Sản phẩm của chúng tôi",
   "home": {
-    "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
-    "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
+    "title": "Thiết kế Website Chuyên nghiệp và Giải pháp IT cho Doanh nghiệp Vừa và Nhỏ",
+    "subtitle": "Chúng tôi cung cấp các dịch vụ lập trình, sửa chữa, phát triển phần mềm chuyên nghiệp và giải pháp IT nhằm thúc đẩy sự tăng trưởng cho các doanh nghiệp vừa và nhỏ trong kỷ nguyên số.",
     "hero": {
-      "prefix": "Software Solutions For Every",
+      "prefix": "Giải pháp phần mềm cho mọi",
       "rotating": [
-        "Retail",
-        "Healthcare",
-        "Fitness",
-        "Hospitality",
-        "Education",
-        "Manufacturing",
-        "E-commerce",
-        "Education",
-        "Finance",
-        "Real Estate",
-        "Nonprofit",
-        "Entertainment",
-        "Transportation",
-        "Food & Beverage",
-        "Consulting",
-        "Legal",
+        "Bán lẻ",
+        "Y tế & Chăm sóc sức khỏe",
+        "Thể hình & Fitness",
+        "Nhà hàng & Khách sạn",
+        "Giáo dục",
+        "Sản xuất",
+        "Thương mại điện tử",
+        "Giáo dục",
+        "Tài chính",
+        "Bất động sản",
+        "Tổ chức phi lợi nhuận",
+        "Giải trí",
+        "Vận tải & Logistics",
+        "F&B (Ẩm thực & Đồ uống)",
+        "Tư vấn doanh nghiệp",
+        "Pháp lý",
         "Marketing",
-        "Automotive",
-        "Energy",
-        "Telecommunications"
+        "Ô tô & Xe máy",
+        "Năng lượng",
+        "Viễn thông"
       ],
-      "suffix": "Industry"
+      "suffix": "Ngành nghề"
     },
-    "tagline": "*Startup quality, not your typical WordPress template",
+    "tagline": "*Chất lượng chuẩn Startup, không phải các mẫu WordPress thông thường",
     "cta": {
-      "whatsapp": "WhatsApp Us Now",
-      "products": "View Products"
+      "zalo": "Liên hệ qua Zalo ngay",
+      "products": "Xem sản phẩm"
     },
     "badges": {
-      "consultation": "Free Consultation",
-      "fast": "Fast Process",
-      "guarantee": "Satisfaction Guarantee",
-      "trusted": "Honest & Reliable"
+      "consultation": "Tư vấn miễn phí",
+      "fast": "Quy trình nhanh chóng",
+      "guarantee": "Cam kết hài lòng",
+      "trusted": "Trung thực & Uy tín"
     },
     "seo": {
       "title": "Codeverta - Phát triển website, ứng dụng, ERP và giải pháp IT",
-      "description": "Codeverta giúp SME, startup và doanh nghiệp xây dựng website, ứng dụng, ERP, POS và hệ thống IT chuyên nghiệp với SEO, hiệu năng và bảo mật.",
-      "keywords": "phát triển website, software house, phát triển ứng dụng, ERP, POS, giải pháp IT"
+      "description": "Codeverta giúp các doanh nghiệp SME, startup và công ty xây dựng website, ứng dụng, hệ thống ERP, POS và hạ tầng IT chuyên nghiệp tối ưu tốt về SEO, hiệu năng và bảo mật.",
+      "keywords": "phát triển website, công ty phần mềm, phát triển ứng dụng, phần mềm ERP, hệ thống POS, giải pháp IT doanh nghiệp"
     }
   },
-  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
+  "trustedBy": "Được tin dùng bởi các Doanh nghiệp vừa & nhỏ (SME), Startup và các Cơ quan tổ chức",
   "features": {
-    "badge": "Our Services",
-    "title": "Complete Solutions for Your Digital Needs",
-    "subtitle": "From stunning websites to reliable IT support, we provide everything you need to succeed online."
+    "badge": "Dịch vụ của chúng tôi",
+    "title": "Giải pháp toàn diện cho nhu cầu chuyển đổi số",
+    "subtitle": "Từ những website giao diện bắt mắt đến hệ thống hỗ trợ IT đáng tin cậy, chúng tôi cung cấp mọi thứ bạn cần để thành công trên môi trường trực tuyến."
   },
   "portfolio": {
-    "title": "Projects We Have Worked On",
-    "subtitle": "See some of our recent projects that showcase our expertise and dedication to delivering high-quality digital solutions."
+    "title": "Các dự án chúng tôi đã thực hiện",
+    "subtitle": "Xem qua các dự án gần đây của chúng tôi để thấy được năng lực chuyên môn và sự tận tâm trong việc bàn giao các giải pháp số chất lượng cao."
   },
   "process": {
-    "badge": "Easy Process, Maximum Results",
-    "title": "Development Process",
-    "subtitle": "Start your project in just 3 simple steps with our expert team."
+    "badge": "Quy trình đơn giản, Kết quả tối ưu",
+    "title": "Quy trình phát triển",
+    "subtitle": "Bắt đầu dự án của bạn chỉ với 3 bước đơn giản cùng đội ngũ chuyên gia của chúng tôi."
   },
   "testimonials": {
-    "badge": "Testimonials",
-    "title": "What Our Clients Say",
-    "subtitle": "Don't just take our word for it. See what our satisfied clients have to say about our services."
+    "badge": "Ý kiến khách hàng",
+    "title": "Khách hàng nói gì về chúng tôi",
+    "subtitle": "Không chỉ là lời nói từ phía chúng tôi, hãy xem những khách hàng hài lòng chia sẻ gì về dịch vụ."
   },
   "pricing": {
-    "badge": "Pricing",
-    "title": "Flexible & Transparent Pricing Plans",
-    "subtitle": "Choose the plan that best fits your business. No hidden fees.",
+    "badge": "Bảng giá",
+    "title": "Các gói chi phí linh hoạt & minh bạch",
+    "subtitle": "Chọn gói dịch vụ phù hợp nhất với mô hình kinh doanh của bạn. Cam kết không có chi phí ẩn.",
     "tabs": {
-      "smme": "SME Scale",
-      "enterprise": "Enterprise"
+      "smme": "Quy mô SME",
+      "enterprise": "Doanh nghiệp lớn"
     },
     "card": {
-      "popular": "Most Popular",
-      "perProject": "/one-time payment",
-      "contactSales": "Contact Sales"
+      "popular": "Phổ biến nhất",
+      "perProject": "/thanh toán một lần",
+      "contactSales": "Liên hệ phòng kinh doanh"
     }
   },
   "faq": {
     "badge": "FAQ",
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to the most frequently asked questions about our services."
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Tìm câu trả lời cho những thắc mắc phổ biến nhất về dịch vụ của chúng tôi."
   },
   "cta": {
-    "title": "Ready for a Professional Website?",
-    "description": "Contact us today for a free consultation. Let's build a strong digital presence for your business together.",
+    "title": "Bạn đã sẵn sàng cho một Website chuyên nghiệp?",
+    "description": "Liên hệ với chúng tôi ngay hôm nay để được tư vấn miễn phí. Hãy cùng nhau xây dựng một sự hiện diện số vững chắc cho doanh nghiệp của bạn.",
     "buttons": {
-      "free": "Free Consultation",
-      "contact": "Contact Now"
+      "free": "Tư vấn miễn phí",
+      "contact": "Liên hệ ngay"
     }
   },
   "navbar": {
-    "products": "Products",
-    "industry": "Industries",
-    "articles": "Articles & News",
-    "learning": "Education",
+    "products": "Sản phẩm",
+    "industry": "Ngành nghề",
+    "articles": "Tin tức & Bài viết",
+    "learning": "Đào tạo",
     "blog": "Blog",
-    "events": "Events",
+    "events": "Sự kiện",
     "faq": "FAQ",
-    "careers": "Careers",
-    "about": "About Us"
+    "careers": "Tuyển dụng",
+    "about": "Về chúng tôi"
   },
   "mega_menu": {
     "products": {
-      "title": "Products",
-      "all": "All Products",
-      "view_all": "View All Products",
-      "view_all_desc": "Explore all the products we offer."
+      "title": "Sản phẩm",
+      "all": "Tất cả sản phẩm",
+      "view_all": "Xem tất cả sản phẩm",
+      "view_all_desc": "Khám phá toàn bộ các sản phẩm chúng tôi cung cấp."
     },
     "news": {
-      "title": "News",
-      "tech": "Tech News",
-      "breaking": "Breaking News",
-      "breaking_desc": "Latest tech updates",
-      "industry": "Industry Reports",
-      "industry_desc": "Market analysis",
-      "company": "Company Updates",
-      "company_desc": "Business news",
-      "categories": "Categories",
-      "software": "Software",
-      "software_desc": "Software development news",
-      "hardware": "Hardware",
-      "hardware_desc": "Hardware innovations",
-      "mobile": "Mobile",
-      "mobile_desc": "Mobile technology",
-      "trending": "Trending",
-      "ai_rev": "AI Revolution",
-      "ai_rev_desc": "AI developments",
-      "web3": "Web3 Updates",
-      "web3_desc": "Blockchain & crypto",
-      "devops": "DevOps News",
-      "devops_desc": "Development operations"
+      "title": "Tin tức",
+      "tech": "Tin công nghệ",
+      "breaking": "Tin nóng",
+      "breaking_desc": "Cập nhật công nghệ mới nhất",
+      "industry": "Báo cáo thị trường",
+      "industry_desc": "Phân tích thị trường",
+      "company": "Tin nội bộ công ty",
+      "company_desc": "Tin tức kinh doanh",
+      "categories": "Danh mục",
+      "software": "Phần mềm",
+      "software_desc": "Tin tức phát triển phần mềm",
+      "hardware": "Phần cứng",
+      "hardware_desc": "Đổi mới công nghệ phần cứng",
+      "mobile": "Di động",
+      "mobile_desc": "Công nghệ di động",
+      "trending": "Xu hướng",
+      "ai_rev": "Cách mạng AI",
+      "ai_rev_desc": "Các bước tiến về AI",
+      "web3": "Cập nhật Web3",
+      "web3_desc": "Blockchain & tiền mã hóa",
+      "devops": "Tin tức DevOps",
+      "devops_desc": "Vận hành và phát triển phần mềm"
     },
     "startups": {
-      "title": "Startups",
-      "news": "Startup News",
-      "funding": "Funding Rounds",
-      "funding_desc": "Investment updates",
-      "launches": "New Launches",
-      "launches_desc": "Product launches",
-      "success": "Success Stories",
-      "success_desc": "Inspiring journeys",
-      "resources": "Resources",
-      "guide": "Startup Guide",
-      "guide_desc": "How to get started",
-      "investors": "Investor Network",
-      "investors_desc": "Find investors",
-      "mentorship": "Mentorship",
-      "mentorship_desc": "Get expert guidance"
+      "title": "Startup",
+      "news": "Tin tức Startup",
+      "funding": "Các vòng gọi vốn",
+      "funding_desc": "Cập nhật tình hình đầu tư",
+      "launches": "Ra mắt sản phẩm mới",
+      "launches_desc": "Các sản phẩm mới lên sàn",
+      "success": "Câu chuyện thành công",
+      "success_desc": "Hành trình truyền cảm hứng",
+      "resources": "Tài nguyên",
+      "guide": "Cẩm nang Startup",
+      "guide_desc": "Làm thế nào để bắt đầu",
+      "investors": "Mạng lưới nhà đầu tư",
+      "investors_desc": "Tìm kiếm nhà đầu tư phù hợp",
+      "mentorship": "Cố vấn (Mentorship)",
+      "mentorship_desc": "Nhận sự dẫn dắt từ chuyên gia"
     },
     "gadget": {
-      "title": "Gadgets",
-      "reviews": "Reviews",
-      "smartphones": "Smartphones",
-      "smartphones_desc": "Phone reviews",
-      "laptops": "Laptops",
-      "laptops_desc": "Computer reviews",
-      "wearables": "Wearables",
-      "wearables_desc": "Smartwatches & more",
-      "buying_guides": "Buying Guides",
-      "deals": "Best Deals",
-      "deals_desc": "Current promotions",
-      "compare": "Comparisons",
-      "compare_desc": "Product comparisons",
-      "recommended": "Recommendations",
-      "recommended_desc": "Editor's choice"
+      "title": "Thiết bị công nghệ",
+      "reviews": "Đánh giá chi tiết",
+      "smartphones": "Điện thoại",
+      "smartphones_desc": "Đánh giá điện thoại",
+      "laptops": "Máy tính bảng & Laptop",
+      "laptops_desc": "Đánh giá máy tính",
+      "wearables": "Thiết bị đeo thông minh",
+      "wearables_desc": "Đồng hồ thông minh & phụ kiện",
+      "buying_guides": "Tư vấn chọn mua",
+      "deals": "Ưu đãi tốt nhất",
+      "deals_desc": "Các chương trình khuyến mãi hiện tại",
+      "compare": "So sánh sản phẩm",
+      "compare_desc": "So sánh thông số kỹ thuật",
+      "recommended": "Gợi ý chọn lọc",
+      "recommended_desc": "Lựa chọn từ ban biên tập"
     },
     "tutorials": {
-      "title": "Tutorials",
-      "web_dev": "Web Development",
-      "react_desc": "Learn React.js",
-      "nextjs_desc": "Full-stack React",
-      "js_desc": "JS best practices",
-      "mobile_dev": "Mobile Development",
-      "rn_desc": "Mobile applications",
-      "flutter_desc": "Cross-platform",
-      "ios_desc": "Swift & Objective-C",
-      "backend": "Backend",
-      "node_desc": "Server-side JS",
-      "python_desc": "Python programming",
-      "db_desc": "SQL & NoSQL"
+      "title": "Hướng dẫn kỹ thuật",
+      "web_dev": "Phát triển Web",
+      "react_desc": "Học lập trình React.js",
+      "nextjs_desc": "Lập trình React Full-stack",
+      "js_desc": "Tối ưu hóa mã nguồn JS",
+      "mobile_dev": "Phát triển Ứng dụng di động",
+      "rn_desc": "Ứng dụng Mobile thuần",
+      "flutter_desc": "Lập trình đa nền tảng",
+      "ios_desc": "Lập trình Swift & Objective-C",
+      "backend": "Lập trình Backend",
+      "node_desc": "JS phía máy chủ",
+      "python_desc": "Ngôn ngữ lập trình Python",
+      "db_desc": "Hệ quản trị CSDL SQL & NoSQL"
     },
     "ai": {
-      "title": "AI",
-      "news": "AI News",
-      "ml_desc": "ML developments",
-      "tools": "AI Tools",
-      "tools_desc": "Latest AI tools",
-      "research": "Research",
-      "research_desc": "Academic papers",
-      "tutorials": "Tutorials",
-      "getting_started": "Getting Started",
-      "getting_started_desc": "AI basics",
+      "title": "Trí tuệ nhân tạo (AI)",
+      "news": "Tin tức AI",
+      "ml_desc": "Sự phát triển của Machine Learning",
+      "tools": "Công cụ AI",
+      "tools_desc": "Các bộ công cụ AI mới nhất",
+      "research": "Nghiên cứu khoa học",
+      "research_desc": "Các bài báo và tài liệu học thuật",
+      "tutorials": "Tài liệu hướng dẫn",
+      "getting_started": "Nhập môn AI",
+      "getting_started_desc": "Kiến thức cơ bản về AI",
       "deep_learning": "Deep Learning",
-      "deep_learning_desc": "Neural networks",
-      "ethics": "AI Ethics",
-      "ethics_desc": "Responsible AI",
-      "productivity": "Productivity",
-      "image_editor": "Image Editor",
-      "image_desc": "Crop, resize, etc.",
-      "pdf_editor": "PDF Editor",
-      "pdf_desc": "Edit and convert PDFs.",
-      "other_tools": "AI & Other Tools",
-      "ai_long": "Artificial Intelligence (AI)",
-      "ai_desc": "Explore the latest developments in AI."
+      "deep_learning_desc": "Mạng lưới thần kinh nhân tạo",
+      "ethics": "Đạo đức AI",
+      "ethics_desc": "Ứng dụng AI có trách nhiệm",
+      "productivity": "Hiệu suất làm việc",
+      "image_editor": "Trình chỉnh sửa ảnh",
+      "image_desc": "Cắt, thay đổi kích thước ảnh...",
+      "pdf_editor": "Trình chỉnh sửa PDF",
+      "pdf_desc": "Chỉnh sửa và chuyển đổi file PDF.",
+      "other_tools": "AI & Các công cụ khác",
+      "ai_long": "Trí tuệ nhân tạo (AI)",
+      "ai_long_desc": "Khám phá các bước tiến mới nhất của AI."
     },
     "categories": {
-      "articles": "Articles & News",
-      "main_news": "Top Stories",
-      "tech_innovation": "News (Tech & Innovation)",
-      "tech_innovation_desc": "Latest news on tech and innovation.",
-      "startup_stories": "Startups",
-      "startup_stories_desc": "Inspiration from the startup world.",
-      "gadget_reviews": "Gadget Reviews",
-      "gadget_reviews_desc": "Reviews and buying guides.",
-      "special_issues": "Special Topics",
-      "cyber_art": "Cybersecurity Articles",
-      "cyber_art_desc": "Digital security tips.",
-      "all_art": "All Articles",
-      "all_art_desc": "View all blog posts.",
-      "learning": "Learning & Guides",
-      "guides": "Guides",
-      "tutorial_desc": "Step-by-step learning guides.",
-      "classes": "Courses",
-      "cyber_course": "Cybersecurity Course",
-      "cyber_course_desc": "Latest cybersecurity classes.",
-      "llm_course": "AI LLM Course",
-      "llm_desc": "Prompt engineering for LLMs.",
-      "ai_eng": "AI Engineer Course",
-      "ai_eng_desc": "In-depth AI engineering."
+      "articles": "Tin tức & Bài viết",
+      "main_news": "Tin nổi bật",
+      "tech_innovation": "Tin tức (Công nghệ & Đổi mới)",
+      "tech_innovation_desc": "Cập nhật mới nhất về công nghệ và đổi mới sáng tạo.",
+      "startup_stories": "Góc khởi nghiệp",
+      "startup_stories_desc": "Cảm hứng và câu chuyện từ thế giới startup.",
+      "gadget_reviews": "Đánh giá thiết bị",
+      "gadget_reviews_desc": "Các bài viết đánh giá và tư vấn mua sắm.",
+      "special_issues": "Chuyên đề đặc biệt",
+      "cyber_art": "An toàn thông tin",
+      "cyber_art_desc": "Các mẹo bảo mật và an ninh mạng.",
+      "all_art": "Tất cả bài viết",
+      "all_art_desc": "Xem toàn bộ các bài viết trên blog.",
+      "learning": "Tài liệu & Hướng dẫn",
+      "guides": "Cẩm nang hướng dẫn",
+      "tutorial_desc": "Các bước hướng dẫn học tập chi tiết.",
+      "classes": "Khóa học học tập",
+      "cyber_course": "Khóa học An ninh mạng",
+      "cyber_course_desc": "Các lớp học cập nhật về an toàn thông tin.",
+      "llm_course": "Khóa học AI LLM",
+      "llm_desc": "Kỹ nghệ viết câu lệnh (Prompt) cho LLM.",
+      "ai_eng": "Khóa học Kỹ sư AI",
+      "ai_eng_desc": "Đào tạo chuyên sâu về kỹ thuật AI."
     }
   },
   "homePage": {
     "features": {
       "items": [
         {
-          "title": "Professional Website Design",
-          "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
+          "title": "Thiết kế Website chuyên nghiệp",
+          "description": "Chúng tôi thiết kế các trang web hiện đại, chuẩn responsive hiển thị mượt mà trên cả máy tính lẫn điện thoại."
         },
         {
-          "title": "SEO & Performance Optimization",
-          "description": "Improve Google visibility and user experience with fast, optimized web pages."
+          "title": "Tối ưu hóa SEO & Hiệu năng",
+          "description": "Cải thiện thứ hạng tìm kiếm Google và tối ưu trải nghiệm người dùng với tốc độ tải trang cực nhanh."
         },
         {
-          "title": "Repair & Maintenance",
-          "description": "Our team fixes bugs, errors, broken layouts, and keeps your website updated."
+          "title": "Sửa chữa & Bảo trì hệ thống",
+          "description": "Đội ngũ kỹ thuật hỗ trợ khắc phục lỗi code, xử lý layout bị vỡ và cập nhật tính năng định kỳ cho website."
         },
         {
-          "title": "Reliable Website Security",
-          "description": "Protect your data and visitors with layered security and practical hardening."
+          "title": "Bảo mật Website toàn diện",
+          "description": "Bảo vệ dữ liệu kinh doanh và thông tin khách hàng bằng các lớp bảo mật đa tầng kiên cố."
         },
         {
-          "title": "IT Support Services",
-          "description": "Get help with technical issues, from hardware troubleshooting to network management."
+          "title": "Dịch vụ hỗ trợ kỹ thuật IT",
+          "description": "Hỗ trợ xử lý nhanh các sự cố kỹ thuật hạ tầng mạng, cấu hình máy chủ và vận hành nội bộ."
         },
         {
-          "title": "Aftersales Support",
-          "description": "We keep supporting your website and systems after launch so operations stay smooth."
+          "title": "Hỗ trợ sau bàn giao (Aftersales)",
+          "description": "Chúng tôi duy trì đồng hành, bảo hành hệ thống sau khi bàn giao để hoạt động kinh doanh luôn thông suốt."
         }
       ]
     },
@@ -267,55 +267,55 @@
       "items": [
         {
           "step": "01",
-          "title": "Needs Consultation",
-          "description": "Discuss your ideas, goals, and project requirements with our team for free."
+          "title": "Tư vấn nhu cầu thực tế",
+          "description": "Thảo luận miễn phí về ý tưởng, mục tiêu kinh doanh và xác định các yêu cầu kỹ thuật cùng đội ngũ của chúng tôi."
         },
         {
           "step": "02",
-          "title": "Design & Development",
-          "description": "We design and build your website, application, or IT solution based on the agreed scope."
+          "title": "Thiết kế & Lập trình",
+          "description": "Tiến hành thiết kế giao diện UI/UX và viết mã nguồn xây dựng hệ thống bám sát theo yêu cầu (ТЗ) đã thống nhất."
         },
         {
           "step": "03",
-          "title": "Launch & Maintenance",
-          "description": "We launch your project and provide maintenance to keep everything running well."
+          "title": "Nghiệm thu & Vận hành",
+          "description": "Bàn giao dự án, cấu hình chạy thực tế trên máy chủ và cung cấp các dịch vụ bảo trì định kỳ."
         }
       ]
     },
     "testimonials": {
       "items": [
         {
-          "quote": "Codeverta completely transformed our website into something more professional. Visitor numbers improved significantly.",
-          "author": "Sarah Widjaja",
-          "role": "Owner, Butik Elegan",
+          "quote": "Codeverta đã nâng cấp hoàn toàn trang web cũ của chúng tôi lên diện mạo chuyên nghiệp vượt bậc. Tỷ lệ tiếp cận khách hàng mới tăng trưởng rất rõ rệt.",
+          "author": "Nguyễn Thị Thu Hương",
+          "role": "Chủ thương hiệu, Butik Elegan",
           "rating": 5
         },
         {
-          "quote": "Our old website was very slow. After Codeverta fixed it, the speed was excellent.",
-          "author": "Budi Santoso",
-          "role": "Marketing Manager, Maju Jaya Motor",
+          "quote": "Website cũ của chúng tôi tải trang cực kỳ chậm. Sau khi đội ngũ Codeverta rà soát và tối ưu lại mã nguồn, tốc độ chạy hiện tại vô cùng mượt mà.",
+          "author": "Trần Minh Tuấn",
+          "role": "Trưởng phòng Marketing, Maju Jaya Motor",
           "rating": 5
         },
         {
-          "quote": "Their IT support is highly responsive. Technical problems in our office are handled quickly.",
-          "author": "Emily Hartono",
-          "role": "Head of Operations, Startup Cepat",
+          "quote": "Dịch vụ hỗ trợ IT của họ cực kỳ nhanh chóng. Mọi sự cố gián đoạn kỹ thuật tại văn phòng chúng tôi đều được xử lý gọn gàng chỉ trong thời gian ngắn.",
+          "author": "Lê Hoàng Nam",
+          "role": "Giám đốc vận hành, Startup Cepat",
           "rating": 5
         },
         {
-          "quote": "The process was transparent and the result exceeded expectations. Our website is now a key sales channel.",
+          "quote": "Quy trình làm việc minh bạch và kết quả bàn giao vượt xa mong đợi. Hệ thống website hiện đã trở thành kênh mang lại doanh thu cốt lõi cho công ty.",
           "author": "David Kim",
           "role": "CEO, InnovateNow",
           "rating": 5
         },
         {
-          "quote": "The Codeverta team is easy to communicate with and truly understands the vision we want.",
-          "author": "Lisa Puspita",
-          "role": "Creative Director, Galeri Seni",
+          "quote": "Đội ngũ Codeverta rất dễ trao đổi, có tư duy giải pháp tốt và hiểu chính xác bài toán vận hành mà chúng tôi muốn triển khai.",
+          "author": "Phan Mỹ Linh",
+          "role": "Giám đốc sáng tạo, Galeri Seni",
           "rating": 5
         },
         {
-          "quote": "One of our best investments. Since the new website launched, revenue has increased noticeably.",
+          "quote": "Một trong những khoản đầu tư công nghệ xứng đáng nhất năm nay của chúng tôi. Doanh số bán hàng trực tuyến tăng lên đáng kể từ khi đổi website mới.",
           "author": "James Wilson",
           "role": "COO, ScaleUp Inc",
           "rating": 5
@@ -325,130 +325,282 @@
     "pricing": {
       "monthly": [
         {
-          "name": "SME Website Package",
-          "price": "Rp 2M",
-          "description": "Suitable for company profiles or portfolios.",
+          "name": "Gói Website Doanh nghiệp / SME",
+          "price": "Từ 15.000.000 đ",
+          "description": "Phù hợp làm website giới thiệu công ty, landing page sản phẩm hoặc portfolio cá nhân.",
           "features": [
-            "Custom design based on your request",
-            "Suitable for SMEs",
-            "Core pages and features",
-            "Free domain and hosting for 1 year",
-            "Performance-focused, not a generic WordPress template"
+            "Thiết kế giao diện độc quyền dựa trên yêu cầu thực tế",
+            "Tối ưu tốt nhất cho các doanh nghiệp vừa & nhỏ",
+            "Đầy đủ các trang nội dung và tính năng cốt lõi",
+            "Hỗ trợ cấu hình tên miền và máy chủ lưu trữ",
+            "Cam kết tối ưu hiệu năng vận hành, không sử dụng template dựng sẵn"
           ],
-          "cta": "Choose Package"
+          "cta": "Chọn gói này"
         },
         {
-          "name": "Online Store Package",
-          "price": "Rp 5M",
-          "description": "Ideal for growing SMEs and online businesses.",
+          "name": "Gói Website Thương mại điện tử",
+          "price": "Từ 35.000.000 đ",
+          "description": "Giải pháp lý tưởng cho các shop bán hàng, chuỗi bán lẻ trực tuyến.",
           "features": [
-            "Custom design based on your request",
-            "SEO optimization",
-            "Priority development"
+            "Giao diện chuẩn UI/UX tối ưu tỷ lệ chuyển đổi đơn hàng",
+            "Cấu hình chuẩn SEO tối ưu bộ máy tìm kiếm Google",
+            "Hỗ trợ tích hợp cổng thanh toán trực tuyến (VNPAY, Momo...)"
           ],
-          "cta": "Choose Package",
+          "cta": "Chọn gói này",
           "popular": true
         },
         {
-          "name": "Custom System Package",
-          "price": "Rp >10M",
-          "description": "For companies with more complex requirements.",
+          "name": "Hệ thống Phần mềm theo yêu cầu",
+          "price": "Từ 70.000.000 đ",
+          "description": "Dành cho các doanh nghiệp có quy trình quản lý nội bộ phức tạp.",
           "features": [
-            "Advanced custom features",
-            "Design and system tailored to your needs",
-            "Monthly performance reports",
-            "Maintenance for more than 1 year"
+            "Xây dựng các phân hệ tính năng chuyên sâu riêng biệt",
+            "Thiết kế kiến trúc hệ thống bám sát luồng vận hành thực tế",
+            "Báo cáo định kỳ tình trạng hiệu năng hệ thống",
+            "Cam kết bảo hành và bảo trì kỹ thuật dài hạn"
           ],
-          "cta": "Contact Sales"
+          "cta": "Liên hệ phòng kinh doanh"
         }
       ],
       "enterprise": [
         {
-          "name": "Enterprise",
-          "price": "Rp >20M",
-          "description": "For companies with complex systems and workflows.",
+          "name": "Giải pháp Enterprise / Tập đoàn",
+          "price": "Từ 150.000.000 đ",
+          "description": "Dành cho doanh nghiệp lớn cần hệ thống đồng bộ hóa hệ sinh thái dữ liệu phức tạp.",
           "features": [
-            "Custom features based on request",
-            "Integration with other systems or applications",
-            "Scheduled cloud backups",
-            "24/7 security and performance monitoring",
-            "Priority development",
-            "Maintenance for more than 1 year"
+            "Phát triển phần mềm tùy chỉnh không giới hạn tính năng",
+            "Kết nối đồng bộ dữ liệu API với hệ thống sẵn có của doanh nghiệp",
+            "Hệ thống tự động sao lưu dữ liệu đám mây (Cloud Backup) theo lịch",
+            "Giám sát an ninh mạng và duy trì uptime hệ thống 24/7",
+            "Đội ngũ kỹ sư cấp cao ưu tiên xử lý yêu cầu khẩn cấp",
+            "Chính sách đồng hành bảo trì dài hạn trên 1 năm"
           ],
-          "cta": "Contact Sales"
+          "cta": "Liên hệ phòng kinh doanh"
         }
       ]
     },
     "faq": {
       "items": [
         {
-          "question": "How long does it take to build a website?",
-          "answer": "The timeline depends on complexity. A basic website usually takes 1-2 weeks, while medium-scale systems may take more than a month."
+          "question": "Thời gian hoàn thành một dự án website thường mất bao lâu?",
+          "answer": "Thời gian bàn giao phụ thuộc hoàn toàn vào độ phức tạp của tính năng. Một website giới thiệu doanh nghiệp cơ bản thường mất từ 1-2 tuần, trong khi các phần mềm hệ thống quản lý chuyên sâu có thể cần hơn một tháng để hoàn thiện."
         },
         {
-          "question": "What do I need to prepare?",
-          "answer": "Prepare company profile text, services or product lists, and any images you want to show. If you do not have them yet, our team can help guide you."
+          "question": "Tôi cần chuẩn bị trước những thông tin gì?",
+          "answer": "Hãy chuẩn bị tài liệu giới thiệu chung về công ty, danh mục sản phẩm/dịch vụ chi tiết, hình ảnh chất lượng cao và logo thương hiệu. Nếu bạn chưa có sẵn, đội ngũ biên tập của chúng tôi sẽ hướng dẫn bạn chuẩn bị theo khung cấu trúc."
         },
         {
-          "question": "Do you provide maintenance after launch?",
-          "answer": "Yes. We offer monthly or annual maintenance packages covering updates, backups, monitoring, and ongoing fixes."
+          "question": "Sau khi hệ thống đi vào hoạt động, công ty có hỗ trợ bảo trì không?",
+          "answer": "Có. Chúng tôi cung cấp các gói dịch vụ bảo trì định kỳ hàng tháng hoặc hàng năm nhằm đảm bảo việc cập nhật bảo mật, sao lưu dữ liệu, giám sát máy chủ và hỗ trợ kỹ thuật liên tục."
         },
         {
-          "question": "Can you repair my existing website?",
-          "answer": "Yes. We audit your website first, identify issues such as errors, speed, or layout problems, and recommend the best fix."
+          "question": "Codeverta có nhận sửa chữa, tối ưu lại website cũ hay không?",
+          "answer": "Có. Đội ngũ chuyên gia của chúng tôi sẽ tiến hành audit rà soát kỹ thuật toàn bộ trang web cũ, tìm ra nguyên nhân gây chậm, lỗi layout hoặc lỗ hổng bảo mật, từ đó đưa ra phương án khắc phục tối ưu."
         },
         {
-          "question": "How does payment work?",
-          "answer": "Payment is usually made with a 30% deposit and the remaining balance after the website is completed and approved."
+          "question": "Phương thức thanh toán và quyết toán chi phí như thế nào?",
+          "answer": "Thông thường, quy trình thanh toán sẽ chia làm các giai đoạn: tạm ứng trước 30-50% chi phí hợp đồng để triển khai nghiên cứu lập trình, phần chi phí còn lại sẽ thanh toán sau khi nghiệm thu kỹ thuật và bàn giao hệ thống."
         }
       ]
     },
     "industries": {
-      "badge": "Industry",
-      "title": "Solutions for Every Industry",
-      "subtitle": "From manufacturing plants to healthcare systems, Codeverta adapts to your industry needs so operations become simpler and growth becomes faster.",
+      "badge": "Ngành nghề",
+      "title": "Giải pháp chuyên biệt cho từng lĩnh vực",
+      "subtitle": "Từ các nhà máy sản xuất quy mô lớn đến hệ thống quản lý y tế, Codeverta tinh chỉnh kiến trúc phần mềm phù hợp với đặc thù ngành, giúp tinh gọn bộ máy và tăng tốc doanh thu.",
       "items": [
         {
-          "title": "Manufacturing",
-          "desc": "Streamline production, inventory, and delivery workflows."
+          "title": "Sản xuất & Công nghiệp",
+          "desc": "Tối ưu hóa quy trình quản lý dây chuyền, kiểm kê kho bãi và logistics."
         },
         {
-          "title": "Trading & Distribution",
-          "desc": "Manage procurement, orders, and supply chains efficiently."
+          "title": "Thương mại & Phân phối",
+          "desc": "Quản lý luồng mua hàng, theo dõi đơn hàng và chuỗi cung ứng hiệu quả."
         },
         {
-          "title": "Retail",
-          "desc": "Boost sales, manage inventory, and improve customer experience."
+          "title": "Bán lẻ (Retail)",
+          "desc": "Thúc đẩy doanh số bán hàng, kiểm soát tồn kho trực quan và tối ưu trải nghiệm mua sắm."
         },
         {
-          "title": "Engineering & Construction",
-          "desc": "Manage projects, resources, and budgets with better control."
+          "title": "Kỹ thuật & Xây dựng",
+          "desc": "Giám sát tiến độ dự án, quản lý phân bổ nhân lực và kiểm soát ngân sách minh bạch."
         },
         {
-          "title": "E-commerce",
-          "desc": "Manage orders, customers, and online sales growth."
+          "title": "Thương mại điện tử",
+          "desc": "Xử lý lượng đơn hàng lớn, quản lý dữ liệu người dùng và vận hành chuỗi vận chuyển mượt mà."
         },
         {
-          "title": "Education",
-          "desc": "Simplify admissions, courses, payments, and student workflows."
+          "title": "Giáo dục & Đào tạo",
+          "desc": "Đơn giản hóa quy trình tuyển sinh, quản lý lịch học, số hóa học phí và chấm công."
         },
         {
-          "title": "Professional Services",
-          "desc": "Streamline projects, billing, and client collaboration."
+          "title": "Dịch vụ chuyên nghiệp",
+          "desc": "Chuẩn hóa tiến độ dự án, tự động hóa hóa đơn và tối ưu cộng tác làm việc với khách hàng."
         },
         {
-          "title": "Financial Services",
-          "desc": "Track finances, portfolios, and compliance more easily."
+          "title": "Dịch vụ tài chính",
+          "desc": "Theo dõi dòng tiền, quản lý danh mục đầu tư và đảm bảo tính tuân thủ pháp lý dễ dàng."
         },
         {
-          "title": "Healthcare",
-          "desc": "Manage records, appointments, and operations in one place."
+          "title": "Y tế & Chăm sóc sức khỏe",
+          "desc": "Quản lý hồ sơ bệnh án điện tử, đồng bộ lịch hẹn khám và điều phối vận hành bệnh viện."
         },
         {
-          "title": "Non-profit",
-          "desc": "Improve fundraising, donor management, and project execution."
+          "title": "Tổ chức phi lợi nhuận",
+          "desc": "Nâng cao hiệu quả kêu gọi quỹ, quản lý minh bạch nguồn tài trợ và thực thi dự án."
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Sản phẩm số Codeverta - Portfolio hệ thống thông tin, ERP, POS & ứng dụng web",
+      "description": "Khám phá sản phẩm số Codeverta: hệ thống thông tin, ERP, POS, thương mại điện tử, ứng dụng web, ticketing, EMR và giải pháp IT tuỳ chỉnh cho nhiều ngành.",
+      "keywords": "sản phẩm số Codeverta, portfolio hệ thống thông tin, ứng dụng web, ERP, POS, công ty phần mềm, giải pháp IT doanh nghiệp, phần mềm tuỳ chỉnh"
+    },
+    "hero": {
+      "title": "Portfolio giải pháp IT",
+      "subtitle": "Bộ sưu tập đầy đủ các hệ thống thông tin và ứng dụng web chúng tôi đã phát triển cho nhiều nhu cầu kinh doanh và ngành nghề."
+    },
+    "status": {
+      "productionReady": "Sẵn sàng vận hành",
+      "completed": "Hoàn thành",
+      "inDevelopment": "Đang phát triển"
+    },
+    "card": {
+      "updated": "Cập nhật",
+      "viewDetail": "Xem chi tiết",
+      "contact": "Liên hệ"
+    },
+    "cta": {
+      "title": "Cần giải pháp IT tuỳ chỉnh?",
+      "description": "Chúng tôi sẵn sàng phát triển hệ thống thông tin phù hợp với nhu cầu kinh doanh của bạn."
+    },
+    "schema": {
+      "home": "Trang chủ",
+      "products": "Sản phẩm",
+      "itemListName": "Portfolio sản phẩm số Codeverta"
+    }
+  },
+  "cookieConsent": {
+    "title": "Chúng tôi sử dụng cookie",
+    "description": "Chúng tôi sử dụng các cookie thiết yếu để duy trì hoạt động ổn định của website, ghi nhớ tùy chọn ngôn ngữ và phân tích hiệu năng tải trang. Các cookie phân tích hành vi chỉ được bật khi có sự đồng ý của bạn.",
+    "accept": "Đồng ý tất cả",
+    "reject": "Từ chối cookie không thiết yếu",
+    "learnMore": "Đọc chính sách bảo mật"
+  },
+  "footer": {
+    "description": "Nhà cung cấp dịch vụ IT xây dựng giải pháp số chất lượng cao, trung thực, minh bạch với tiêu chuẩn bảo mật vững chắc.",
+    "partOf": "Một phần của",
+    "rights": "Bảo lưu mọi quyền.",
+    "company": {
+      "title": "Công ty",
+      "links": {
+        "about": "Về chúng tôi",
+        "contact": "Liên hệ",
+        "terms": "Điều khoản dịch vụ",
+        "privacy": "Chính sách bảo mật",
+        "blog": "Blog & Tin tức",
+        "faq": "FAQ",
+        "gallery": "Thư viện ảnh"
+      }
+    },
+    "programs": {
+      "title": "Chương trình",
+      "links": {
+        "cybersecurity": "Khóa học An ninh mạng",
+        "aiEngineer": "Kỹ sư AI",
+        "consulting": "Tư vấn IT",
+        "development": "Phát triển phần mềm"
+      }
+    },
+    "legal": {
+      "title": "Pháp lý & tin cậy",
+      "registered": "Đăng ký chính thức",
+      "certifications": "Chứng nhận & bảo mật"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta - Điều khoản & điều kiện dịch vụ",
+      "description": "Xem chi tiết các điều khoản và điều kiện của Codeverta về phát triển phần mềm, dịch vụ website, thanh toán, sở hữu trí tuệ và giới hạn trách nhiệm.",
+      "keywords": "điều khoản Codeverta, điều khoản dịch vụ, hợp đồng phát triển phần mềm, điều khoản dịch vụ website"
+    },
+    "schema": {
+      "about": "Điều khoản & điều kiện"
+    },
+    "title": "Điều khoản & điều kiện",
+    "last_updated": "Cập nhật lần cuối: Ngày 23 tháng 12 năm 2025",
+    "intro": "Chào mừng bạn đến với Codeverta & BikinWebsiteJogja. Bằng cách truy cập trang web hoặc sử dụng dịch vụ của chúng tôi, bạn đồng ý tuân thủ các điều khoản dưới đây.",
+    "sections": {
+      "services": {
+        "title": "1. Phạm vi cung cấp dịch vụ",
+        "content": "Codeverta thực hiện lập trình phần mềm, thiết kế website, xây dựng ứng dụng di động, tích hợp hệ thống và tư vấn chiến lược IT tuân thủ nghiêm ngặt theo biên bản đề xuất hoặc bảng mô tả phạm vi công việc (SOW) đã phê duyệt."
+      },
+      "payment": {
+        "title": "2. Điều khoản thanh toán",
+        "content": "Các khoản chi phí tuân theo đề xuất, hóa đơn hoặc tiến độ cột mốc (Milestone) đã thỏa thuận. Khách hàng cần hoàn tất khoản tạm ứng trước khi triển khai lập trình, và khoản chi phí còn lại cần thanh toán trước khi bàn giao toàn bộ tài sản kỹ thuật."
+      },
+      "ip": {
+        "title": "3. Sở hữu trí tuệ & Bản quyền",
+        "content": "Sau khi nhận đầy đủ thanh toán theo hợp đồng, quyền sử dụng mã nguồn hoặc quyền sở hữu sản phẩm sẽ được chuyển giao chính thức cho khách hàng. Tuy nhiên, các thư viện mã nguồn mở của bên thứ ba, template mẫu, bản quyền thương mại và core framework nền tảng vẫn thuộc phạm vi giấy phép gốc của chúng."
+      },
+      "liability": {
+        "title": "4. Giới hạn trách nhiệm pháp lý",
+        "content": "Chúng tôi không chịu trách nhiệm đối với các tổn thất phát sinh do khách hàng tự ý thay đổi mã nguồn, lạm dụng hệ thống sai mục đích, sự cố gián đoạn từ phía nhà cung cấp máy chủ/tên miền hoặc các thay đổi cấu trúc API từ bên thứ ba sau khi kết thúc thời hạn bảo hành hoặc bảo trì."
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - Câu hỏi thường gặp",
+      "description": "Tìm câu trả lời chi tiết về phát triển website, hệ thống số, quy trình kỹ thuật chuyển giao và tỷ lệ thanh toán.",
+      "keywords": "Codeverta FAQ, câu hỏi phát triển website, lập trình phần mềm theo yêu cầu, quy trình thanh toán dự án IT, bảo trì bảo hành"
+    },
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Tìm câu trả lời chi tiết về phát triển website, hệ thống số, quy trình kỹ thuật chuyển giao và tỷ lệ thanh toán.",
+    "cta": {
+      "title": "Bạn còn câu hỏi khác?",
+      "description": "Hãy trao đổi với chúng tôi về nhu cầu số của bạn. Đội ngũ chuyên gia luôn sẵn sàng hỗ trợ.",
+      "zalo": "Chat Zalo",
+      "portfolio": "Xem portfolio"
+    },
+    "items": [
+      {
+        "question": "Thời gian lập trình và hoàn thiện cho từng loại hệ thống là bao lâu?",
+        "answer": "Tiến độ bàn giao phụ thuộc hoàn toàn vào quy mô và độ phức tạp của tính năng. Một website giới thiệu doanh nghiệp cơ bản thường mất từ 1-2 tuần; các hệ thống tầm trung như Thương mại điện tử, POS收银, hoặc phần mềm HRMS nhân sự cần khoảng 1-3 tháng; trong khi hệ thống ERP lớn hoặc phần mềm quản lý kho WMS chuyên sâu có thể kéo dài nhiều tháng để hoàn thiện."
+      },
+      {
+        "question": "Tôi cần chuẩn bị những tài liệu gì trước khi bắt đầu dự án?",
+        "answer": "Hãy chuẩn bị tài liệu mô tả tính năng mong muốn, link website mẫu tham khảo, sơ đồ cấu trúc dữ liệu ban đầu, nội dung văn bản, hình ảnh chất lượng cao và các giấy tờ pháp lý liên quan của doanh nghiệp. Đối với các dự án lớn, chúng tôi sẽ cử chuyên gia hỗ trợ bạn chuẩn bị, tối ưu lại luồng vận hành thực tế trước khi viết mã nguồn."
+      },
+      {
+        "question": "Hệ thống phần mềm sau này có thể mở rộng thêm tính năng mới không?",
+        "answer": "Có. Các hệ thống Thương mại điện tử, ERP, HRMS, CRM hay WMS do chúng tôi xây dựng đều tuân theo kiến trúc mô-đun (bóc tách độc lập), cho phép doanh nghiệp dễ dàng nâng cấp, tích hợp thêm API bên thứ ba, kết nối cổng thanh toán mới hoặc dịch chuyển hạ tầng máy chủ theo từng giai đoạn phát triển mà không làm gián đoạn vận hành."
+      },
+      {
+        "question": "Sau khi nghiệm thu dự án, công ty có hỗ trợ bảo trì định kỳ không?",
+        "answer": "Có. Chúng tôi cung cấp các gói dịch vụ bảo trì hàng tháng hoặc hàng năm nhằm xử lý các lỗi code phát sinh, cập nhật bản vá bảo mật, giám sát hiệu năng máy chủ, tự động sao lưu dữ liệu sao lưu dữ liệu và hỗ trợ tinh chỉnh các tính năng nhỏ."
+      },
+      {
+        "question": "Công ty có nhận xây dựng các tính năng đặc thù riêng cho doanh nghiệp tôi không?",
+        "answer": "Có. Chúng tôi có năng lực làm chủ mã nguồn thuần, hoàn toàn có thể xây dựng các phân hệ chức năng độc quyền, quy trình duyệt hồ sơ nội bộ tùy biến, hệ thống báo cáo chuyên sâu và tích hợp đa nền tảng như Midtrans, GeoServer, Socket.io, GraphQL, Kafka, hệ thống định vị RFID hoặc các thiết bị phần cứng khác."
+      },
+      {
+        "question": "Quy trình làm việc từ lúc tiếp nhận yêu cầu đến khi bàn giao thực tế như thế nào?",
+        "answer": "Quy trình tiêu chuẩn bao gồm: Tiếp nhận thông tin & Khảo sát bài toán -> Phân tích sâu yêu cầu kỹ thuật -> Gửi báo cáo giải pháp & Báo giá -> Ký kết hợp đồng & Nhận tạm ứng -> Thiết kế giao diện UI/UX -> Lập trình Front-end & Back-end -> Kiểm thử nội bộ & Rà soát QA -> Khách hàng test nghiệm thu -> Tối ưu hoàn thiện -> Nhận thanh toán nốt phần chi phí còn lại -> Triển khai cài đặt hệ thống lên máy chủ (Server/Cloud) của bạn."
+      },
+      {
+        "question": "Tỷ lệ thanh toán chi phí cho dự án phát triển phần mềm được chia như thế nào?",
+        "answer": "Thông thường, quy trình sẽ bắt đầu bằng việc thanh toán trước 30% giá trị hợp đồng làm phí cọc triển khai, phần chi phí còn lại sẽ thanh toán sau khi toàn bộ hệ thống được hoàn thiện và nghiệm thu phê duyệt. Đối với các dự án lớn dài hạn, chi phí có thể chia nhỏ thanh toán theo tiến độ từng cột mốc (Milestone) bàn giao cụ thể."
+      },
+      {
+        "question": "Codeverta hiện đang sử dụng những công nghệ và framework nào?",
+        "answer": "Hạ tầng công nghệ sẽ được lựa chọn tối ưu nhất dựa trên bài toán kinh doanh cụ thể của bạn. Đội ngũ của chúng tôi hiện đang làm chủ tốt các stack công nghệ hiện đại bao gồm: Next.js, React, Vue cho Front-end; Laravel, Node.js, Django cho cấu trúc Back-end; PostgreSQL, MySQL/MariaDB và hệ thống lưu trữ đệm Redis; cùng với giải pháp container Docker, Kafka xử lý luồng dữ liệu, PostGIS quản lý dữ liệu không gian và các dịch vụ đám mây tiên tiến."
+      },
+      {
+        "question": "Giao diện hệ thống có hiển thị tốt trên các thiết bị màn hình khác nhau không?",
+        "answer": "Có. Toàn bộ hệ thống web do chúng tôi xây dựng đều đạt chuẩn thiết kế responsive, tự động co giãn tối ưu hiển thị trên màn hình máy tính, máy tính bảng và điện thoại di động. Đối với các giao diện quản lý đặc thù như màn hình POS bán hàng hay máy cầm tay cầm tay WMS tại kho, chúng tôi sẽ thực hiện tối ưu giao diện chuyên biệt cho thao tác cảm ứng mượt mà nhất trong môi trường làm việc thực địa."
+      }
+    ]
   }
 }

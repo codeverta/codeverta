@@ -38,7 +38,11 @@ const languages = [
 ];
 
 // Responsive Navbar Component
-const Navbar = () => {
+const Navbar = ({
+  localizedPaths,
+}: {
+  localizedPaths?: Record<string, string>;
+}) => {
   const { t } = useTranslation("common");
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -51,6 +55,9 @@ const Navbar = () => {
   const lang = locale;
   const [localizedProjects, setLocalizedProjects] = useState(projects);
   const megaMenuData = getMegaMenuData(t, localizedProjects);
+  const availableLanguages = languages.filter(
+    (language) => !locales || locales.includes(language.code)
+  );
   // --- Kategori Navigasi Utama yang Diperbarui ---
   const categories = getCategories(t);
 
@@ -134,6 +141,13 @@ const Navbar = () => {
     setActiveMegaMenu(null);
   };
   const changeLanguage = (newLocale) => {
+    const targetPath = localizedPaths?.[newLocale];
+
+    if (targetPath) {
+      push(targetPath, targetPath, { locale: newLocale });
+      return;
+    }
+
     push({ pathname, query }, asPath, { locale: newLocale });
   };
   const LanguageSwitcher = ({ isMobile = false }) => (
@@ -159,11 +173,10 @@ const Navbar = () => {
             exit={{ opacity: 0, y: 10 }}
             className={`absolute ${
               isMobile ? "bottom-full mb-2" : "top-full mt-2"
-            } right-0 w-56 max-h-80 overflow-y-auto bg-background border rounded-xl shadow-xl z-[60]`}
+            } right-0 w-[min(92vw,36rem)] max-h-[70vh] overflow-y-auto bg-background border rounded-xl shadow-xl z-[60]`}
           >
-            {languages
-              .filter((l) => !locales || locales.includes(l.code))
-              .map((l) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-2">
+              {availableLanguages.map((l) => (
                 <button
                   type="button"
                   key={l.code}
@@ -184,6 +197,7 @@ const Navbar = () => {
                   )}
                 </button>
               ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

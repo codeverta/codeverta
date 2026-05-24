@@ -450,5 +450,157 @@
         }
       ]
     }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Codeverta Digital Products - Information Systems, ERP, POS & Web App Portfolio",
+      "description": "Explore Codeverta digital products: information systems, ERP, POS, e-commerce, web applications, ticketing, EMR, and custom IT solutions for multiple industries.",
+      "keywords": "Codeverta digital products, information system portfolio, web applications, ERP, POS, software house, business IT solutions, custom software"
+    },
+    "hero": {
+      "title": "IT Solutions Portfolio",
+      "subtitle": "A complete collection of information systems and web applications we have developed for diverse business and industry needs."
+    },
+    "status": {
+      "productionReady": "Production Ready",
+      "completed": "Completed",
+      "inDevelopment": "In Development"
+    },
+    "card": {
+      "updated": "Updated",
+      "viewDetail": "View Details",
+      "contact": "Contact Us"
+    },
+    "cta": {
+      "title": "Need a Custom IT Solution?",
+      "description": "We are ready to help develop an information system tailored to your business needs."
+    },
+    "schema": {
+      "home": "Home",
+      "products": "Products",
+      "itemListName": "Codeverta Digital Product Portfolio"
+    }
+  },
+  "cookieConsent": {
+    "title": "We use cookies",
+    "description": "We use essential cookies to run the site, remember language preferences, and understand page performance. Analytics cookies are used only with your consent.",
+    "accept": "Accept",
+    "reject": "Reject non-essential",
+    "learnMore": "Read our privacy policy"
+  },
+  "footer": {
+    "description": "An IT service provider dedicated to building high-quality, honest, and transparent digital solutions with strong security standards.",
+    "partOf": "Part of",
+    "rights": "All rights reserved.",
+    "company": {
+      "title": "Company",
+      "links": {
+        "about": "About Us",
+        "contact": "Contact",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy",
+        "blog": "Blog & News",
+        "faq": "FAQ",
+        "gallery": "Gallery"
+      }
+    },
+    "programs": {
+      "title": "Programs",
+      "links": {
+        "cybersecurity": "Cyber Security Course",
+        "aiEngineer": "AI Engineer",
+        "consulting": "IT Consulting",
+        "development": "Software Development"
+      }
+    },
+    "legal": {
+      "title": "Legal & Trust",
+      "registered": "Officially Registered",
+      "certifications": "Certifications & Security"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta Terms and Conditions - Software, Website & IT Services",
+      "description": "Read Codeverta terms and conditions for software development, website services, payment, intellectual property, and liability limits.",
+      "keywords": "Codeverta terms, terms of service, software development agreement, website service terms"
+    },
+    "schema": {
+      "about": "Terms for using Codeverta software development services"
+    },
+    "title": "Terms & Conditions",
+    "last_updated": "Last updated: December 23, 2025",
+    "intro": "Welcome to Codeverta & BikinWebsiteJogja. By accessing our site or using our services, you agree to the following terms.",
+    "sections": {
+      "services": {
+        "title": "1. Scope of Services",
+        "content": "Codeverta provides software development, website creation, application development, system integration, and IT consulting according to the approved proposal or statement of work."
+      },
+      "payment": {
+        "title": "2. Payment Terms",
+        "content": "Payments follow the agreed proposal, invoice, or milestone schedule. A deposit is required before production begins, and final payment is due before final asset handover."
+      },
+      "ip": {
+        "title": "3. Intellectual Property",
+        "content": "After full payment, source code usage rights or ownership are granted according to the contract. Third-party libraries, templates, licences, and core frameworks remain subject to their own licences."
+      },
+      "liability": {
+        "title": "4. Limitation of Liability",
+        "content": "We are not liable for losses caused by system misuse, changes by other parties, hosting/domain issues, or third-party integrations after the warranty or maintenance period ends."
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - Website, Software & IT Service Questions",
+      "description": "Find answers about Codeverta website development, custom software, project timelines, payments, maintenance, and technology stack.",
+      "keywords": "Codeverta FAQ, website development questions, custom software, IT project payment, maintenance"
+    },
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers about website development, digital systems, technical workflow, and our payment process.",
+    "cta": {
+      "title": "Still have another question?",
+      "description": "Feel free to consult us about your digital needs. Our team is ready to help.",
+      "whatsapp": "Chat on WhatsApp",
+      "portfolio": "View Portfolio"
+    },
+    "items": [
+      {
+        "question": "How long does development take for each type of system?",
+        "answer": "The timeline depends on project scale and complexity. A simple website often takes 1-2 weeks, mid-sized systems such as E-commerce, POS, and HRMS take about 1-3 months, while ERP or WMS can take several months."
+      },
+      {
+        "question": "What should I prepare before the project starts?",
+        "answer": "Prepare feature requirements, design references, initial data structure, content, photos, and company documents. For technical projects, we help refine requirements and business workflows before development."
+      },
+      {
+        "question": "Can the system be expanded in the future?",
+        "answer": "Yes. Systems such as E-commerce, ERP, HRMS, CRM, and WMS are built modularly so new features, API integrations, payments, or server migration can be added in stages."
+      },
+      {
+        "question": "Do you provide maintenance after launch?",
+        "answer": "Yes. We offer monthly or annual maintenance covering bug fixes, security updates, server monitoring, backups, and small feature additions."
+      },
+      {
+        "question": "Can you build custom features for my business?",
+        "answer": "Yes. We can customise modules, workflows, reports, and integrations such as Midtrans, GeoServer, Socket.io, GraphQL, Kafka, RFID, or other systems."
+      },
+      {
+        "question": "What is the workflow from order to deployment?",
+        "answer": "The process starts with consultation, requirement analysis, proposal, initial payment, UI/UX design, development, testing, revision, finalisation, final payment, and deployment to your server or cloud."
+      },
+      {
+        "question": "How does payment work for software development?",
+        "answer": "Payment usually starts with a 30% deposit and the remaining balance after the project is completed and approved. Larger projects can be paid by milestone."
+      },
+      {
+        "question": "What technologies do you use?",
+        "answer": "The stack depends on the project. We use technologies such as Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS, and cloud services."
+      },
+      {
+        "question": "Are the systems responsive on different devices?",
+        "answer": "Yes. Our web systems are responsive on desktop, tablet, and smartphone. POS or WMS interfaces can also be optimised for touch devices and field operations."
+      }
+    ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "title": "Privacy Policy",
+  "title": "Politique de confidentialité",
   "last_updated": "Last Updated: December 23, 2025",
   "intro": "At Codeverta & BikinWebsiteJogja, we value your privacy and are committed to protecting your personal data. This policy explains how we collect, use, and safeguard your information when you use our software development services.",
   "sections": {
@@ -54,5 +54,18 @@
       "title": "7. Contact Us",
       "content": "If you have questions about this privacy policy, you can contact us by email at support@codeverta.com or through the contact details listed on codeverta.com."
     }
+  },
+  "seo": {
+    "title": "Codeverta - Politique de confidentialité",
+    "description": "Learn how Codeverta collects, uses, protects personal data, uses cookies, and respects privacy rights for software and website service users.",
+    "keywords": "Codeverta privacy policy, data protection, cookies, personal data"
+  },
+  "notice": {
+    "before": "This document applies to all entities managed by",
+    "and": "and",
+    "after": "By continuing to use our services, you are deemed to agree to the points above."
+  },
+  "schema": {
+    "about": "Politique de confidentialité"
   }
 }
