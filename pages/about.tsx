@@ -3,6 +3,7 @@ import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
 import { Heart, Activity } from "lucide-react";
 import { useTranslation } from "next-i18next";
+import OrgChart from "@/components/OrgChart";
 
 export const getStaticProps = withI18n(["common", "about"]);
 
@@ -48,6 +49,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <OrgChart />
       <SocialImpact t={t} />
     </div>
   );
