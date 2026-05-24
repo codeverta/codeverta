@@ -25,7 +25,7 @@ export default function AboutPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 {/* Placeholder Image: Office / Team working */}
                 <img
-                  src="/images/meeting.jpeg"
+                  src="/assets/images/meeting.jpeg"
                   alt={t("story.imageAlt")}
                   className="object-cover w-full h-[25rem]"
                 />
