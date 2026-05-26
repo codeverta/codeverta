@@ -151,7 +151,7 @@ const Navbar = ({
     push({ pathname, query }, asPath, { locale: newLocale });
   };
   const LanguageSwitcher = ({ isMobile = false }) => (
-    <div className="relative">
+    <div className={isMobile ? "" : "relative"}>
       <button
         onClick={() => setLangDropdownOpen(!langDropdownOpen)}
         className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -167,38 +167,94 @@ const Navbar = ({
 
       <AnimatePresence>
         {langDropdownOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 10 }}
-            className={`absolute ${
-              isMobile ? "bottom-full mb-2" : "top-full mt-2"
-            } right-0 w-[min(92vw,36rem)] max-h-[70vh] overflow-y-auto bg-background border rounded-xl shadow-xl z-[60]`}
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-2">
-              {availableLanguages.map((l) => (
-                <button
-                  type="button"
-                  key={l.code}
-                  className="w-full flex items-center justify-between px-4 py-3 hover:bg-accent transition-colors text-sm text-left"
-                  onClick={() => {
-                    changeLanguage(l.code);
-                    setLangDropdownOpen(false);
-                  }}
+          <>
+            {/* Tampilan MOBILE: Dialog / Modal Pop-up */}
+            {isMobile ? (
+              <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+                {/* Backdrop / Latar Belakang Gelap */}
+                {/* <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 bg-black/50 backdrop-blur-sm"
+                onClick={() => setLangDropdownOpen(false)}
+              /> */}
+
+                {/* Kotak Dialog */}
+                <motion.div
+                  initial={{ scale: 0.95, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  exit={{ scale: 0.95, opacity: 0 }}
+                  className="relative w-full mt-20 max-w-md max-h-[80vh] overflow-y-auto bg-background border rounded-2xl shadow-2xl p-4 z-10"
                 >
-                  <div className="flex items-center gap-3">
-                    <span>{l.flag}</span>
-                    <span className={lang === l.code ? "font-bold" : ""}>
-                      {l.name}
+                  <div className="flex items-center justify-between pb-3 mb-3 border-b">
+                    <span className="font-bold text-base text-foreground">
+                      Pilih Bahasa
                     </span>
+                    <button
+                      onClick={() => setLangDropdownOpen(false)}
+                      className="text-muted-foreground hover:text-foreground text-sm p-1"
+                    >
+                      Tutup
+                    </button>
                   </div>
-                  {lang === l.code && (
-                    <Check className="w-4 h-4 text-primary" />
-                  )}
-                </button>
-              ))}
-            </div>
-          </motion.div>
+                  <div className="grid grid-cols-2 gap-1">
+                    {availableLanguages.map((l) => (
+                      <button
+                        type="button"
+                        key={l.code}
+                        className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-accent transition-colors text-sm text-left ${
+                          lang === l.code ? "bg-accent font-bold" : ""
+                        }`}
+                        onClick={() => {
+                          changeLanguage(l.code);
+                          setLangDropdownOpen(false);
+                        }}
+                      >
+                        <span>{l.flag}</span>
+                        <span className="truncate">{l.name}</span>
+                        {lang === l.code && (
+                          <Check className="w-4 h-4 text-primary ml-auto flex-shrink-0" />
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                </motion.div>
+              </div>
+            ) : (
+              // Tampilan DESKTOP: Tetap Dropdown Biasa
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 10 }}
+                className="absolute top-full mt-2 right-0 w-72 max-h-[70vh] overflow-y-auto bg-background border rounded-xl shadow-xl z-[60]"
+              >
+                <div className="flex flex-col py-1">
+                  {availableLanguages.map((l) => (
+                    <button
+                      type="button"
+                      key={l.code}
+                      className="w-full flex items-center justify-between px-4 py-2.5 hover:bg-accent transition-colors text-sm text-left"
+                      onClick={() => {
+                        changeLanguage(l.code);
+                        setLangDropdownOpen(false);
+                      }}
+                    >
+                      <div className="flex items-center gap-3">
+                        <span>{l.flag}</span>
+                        <span className={lang === l.code ? "font-bold" : ""}>
+                          {l.name}
+                        </span>
+                      </div>
+                      {lang === l.code && (
+                        <Check className="w-4 h-4 text-primary" />
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </motion.div>
+            )}
+          </>
         )}
       </AnimatePresence>
     </div>
@@ -401,7 +457,7 @@ const Navbar = ({
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b shadow-lg overflow-hidden"
+            className="lg:hidden absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b shadow-lg overflow-visible"
           >
             <div className="container mx-auto px-4 py-4 space-y-4">
               <div className="flex flex-col space-y-1">
