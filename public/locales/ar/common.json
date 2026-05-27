@@ -479,6 +479,18 @@
       "home": "الرئيسية",
       "products": "المنتجات",
       "itemListName": "محفظة منتجات Codeverta الرقمية"
+    },
+    "categories": {
+      "badge": "فئات المنتجات",
+      "title": "تصفح حسب احتياج العمل",
+      "description": "قم بتصفية منتجات Codeverta حسب القطاع ومجال التشغيل، من POS و ERP إلى الصحة والتعليم والمستودعات وإدارة العملاء.",
+      "all": "كل الفئات",
+      "productsLabel": "منتجات رقمية",
+      "categoriesLabel": "فئات الحلول",
+      "productionReadyLabel": "جاهز أو مكتمل",
+      "showing": "عرض {{count}} حلول",
+      "emptyTitle": "لا توجد منتجات في هذه الفئة بعد",
+      "emptyDescription": "اختر فئة أخرى أو تواصل معنا لبناء نظام مخصص."
     }
   },
   "cookieConsent": {

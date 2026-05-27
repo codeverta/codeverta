@@ -1,43 +1,40 @@
 import { useState } from "react";
+import { useTranslation } from "next-i18next";
 
-// ─── Data (Sama persis) ──────────────────────────────────────────────────────
+type ColorKey = "purple" | "blue" | "teal" | "orange" | "violet" | "slate";
 
-const orgData = {
+type OrgNodeData = {
+  id: string;
+  color: ColorKey;
+  children: OrgNodeData[];
+};
+
+type OrgTranslate = (key: string) => string;
+
+const orgData: OrgNodeData = {
   id: "ceo",
-  role: "CEO / Co-founder",
-  sub: "Visi, strategi",
   color: "purple",
   children: [
     {
       id: "cto",
-      role: "CTO",
-      sub: "Arsitektur & teknis",
       color: "blue",
       children: [
         {
           id: "eng",
-          role: "Engineering",
-          sub: "Frontend, backend, mobile",
           color: "blue",
           children: [
             {
               id: "fe",
-              role: "Frontend",
-              sub: "React / Vue / UI",
               color: "slate",
               children: [],
             },
             {
               id: "be",
-              role: "Backend",
-              sub: "API, DB, services",
               color: "slate",
               children: [],
             },
             {
               id: "mob",
-              role: "Mobile",
-              sub: "iOS & Android",
               color: "slate",
               children: [],
             },
@@ -45,15 +42,11 @@ const orgData = {
         },
         {
           id: "devops",
-          role: "DevOps / Infra",
-          sub: "Cloud, CI/CD, SRE",
           color: "blue",
           children: [],
         },
         {
           id: "qa",
-          role: "QA / Testing",
-          sub: "Manual & automation",
           color: "blue",
           children: [],
         },
@@ -61,21 +54,15 @@ const orgData = {
     },
     {
       id: "cpo",
-      role: "CPO",
-      sub: "Roadmap produk",
       color: "teal",
       children: [
         {
           id: "pm",
-          role: "Product Manager",
-          sub: "Fitur, backlog, OKR",
           color: "slate",
           children: [],
         },
         {
           id: "uxd",
-          role: "UI/UX Design",
-          sub: "Figma & research",
           color: "slate",
           children: [],
         },
@@ -83,21 +70,15 @@ const orgData = {
     },
     {
       id: "cmo",
-      role: "CMO",
-      sub: "Marketing & growth",
       color: "orange",
       children: [
         {
           id: "growth",
-          role: "Growth / SEO",
-          sub: "Konten, ads, SEO",
           color: "slate",
           children: [],
         },
         {
           id: "sales",
-          role: "Sales / BD",
-          sub: "Lead, closing, mitra",
           color: "slate",
           children: [],
         },
@@ -105,21 +86,15 @@ const orgData = {
     },
     {
       id: "cfo",
-      role: "CFO",
-      sub: "Keuangan & legal",
       color: "violet",
       children: [
         {
           id: "fin",
-          role: "Finance",
-          sub: "Pembukuan, pajak",
           color: "slate",
           children: [],
         },
         {
           id: "hr",
-          role: "HR / People",
-          sub: "Rekrut & kultur",
           color: "slate",
           children: [],
         },
@@ -128,32 +103,19 @@ const orgData = {
   ],
 };
 
-const descriptions = {
-  ceo: "Memimpin perusahaan, menentukan visi jangka panjang.",
-  cto: "Bertanggung jawab atas arsitektur teknis, stack teknologi, dan kualitas engineering.",
-  cpo: "Mendefinisikan roadmap produk dan memprioritaskan fitur berdasarkan data pengguna.",
-  cmo: "Merancang strategi pemasaran, brand awareness, dan pertumbuhan pengguna.",
-  cfo: "Mengelola keuangan, legal, compliance, dan perencanaan anggaran.",
-  eng: "Tim inti pengembang — frontend, backend, dan mobile.",
-  devops:
-    "Mengelola infrastruktur cloud, pipeline CI/CD, dan keandalan sistem (SRE).",
-  qa: "Memastikan kualitas produk melalui pengujian manual dan automation.",
-  fe: "Membangun antarmuka pengguna dengan React, Vue, atau framework modern lainnya.",
-  be: "Mengembangkan API, logika bisnis, dan pengelolaan database.",
-  mob: "Mengembangkan aplikasi native atau cross-platform untuk iOS dan Android.",
-  pm: "Mengelola backlog, menentukan prioritas fitur, dan memastikan OKR terpenuhi.",
-  uxd: "Merancang pengalaman pengguna dan antarmuka menggunakan Figma dan riset UX.",
-  growth:
-    "Menjalankan strategi konten, SEO, dan iklan untuk akuisisi pengguna.",
-  sales:
-    "Mengidentifikasi prospek, melakukan closing, dan membangun kemitraan bisnis.",
-  fin: "Mengelola pembukuan, laporan keuangan, pajak, dan audit.",
-  hr: "Rekrutmen, onboarding, pengembangan budaya, dan retensi talenta.",
-};
-
 // ─── Color map (Light Mode) ──────────────────────────────────────────────────
 
-const colorMap = {
+const colorMap: Record<
+  ColorKey,
+  {
+    card: string;
+    role: string;
+    sub: string;
+    badge: string;
+    line: string;
+    detail: string;
+  }
+> = {
   purple: {
     card: "bg-purple-50 border-purple-200",
     role: "text-purple-900",
@@ -206,13 +168,23 @@ const colorMap = {
 
 // ─── OrgNode component ────────────────────────────────────────────────────────
 
-function OrgNode({ node, depth = 0 }) {
+function OrgNode({
+  node,
+  depth = 0,
+  t,
+}: {
+  node: OrgNodeData;
+  depth?: number;
+  t: OrgTranslate;
+}) {
   const [expanded, setExpanded] = useState(depth < 2);
   const [showDetail, setShowDetail] = useState(false);
 
   const c = colorMap[node.color] || colorMap.slate;
   const hasChildren = node.children && node.children.length > 0;
-  const desc = descriptions[node.id];
+  const role = t(`orgChart.nodes.${node.id}.role`);
+  const sub = t(`orgChart.nodes.${node.id}.sub`);
+  const desc = t(`orgChart.nodes.${node.id}.description`);
 
   const cardWidth = depth === 0 ? "w-60" : depth === 1 ? "w-48" : "w-44";
 
@@ -239,9 +211,9 @@ function OrgNode({ node, depth = 0 }) {
               className={`font-semibold truncate leading-tight ${c.role}`}
               style={{ fontSize: depth === 0 ? 14 : 13 }}
             >
-              {node.role}
+              {role}
             </p>
-            <p className={`text-xs mt-0.5 truncate ${c.sub}`}>{node.sub}</p>
+            <p className={`text-xs mt-0.5 truncate ${c.sub}`}>{sub}</p>
           </div>
 
           {hasChildren && (
@@ -252,7 +224,11 @@ function OrgNode({ node, depth = 0 }) {
                 e.stopPropagation();
                 setExpanded((v) => !v);
               }}
-              aria-label={expanded ? "Collapse" : "Expand"}
+              aria-label={
+                expanded
+                  ? t("orgChart.actions.collapse")
+                  : t("orgChart.actions.expand")
+              }
             >
               {expanded ? "−" : `+${node.children.length}`}
             </button>
@@ -295,7 +271,7 @@ function OrgNode({ node, depth = 0 }) {
                     (colorMap[child.color] || colorMap.slate).line
                   }`}
                 />
-                <OrgNode node={child} depth={depth + 1} />
+                <OrgNode node={child} depth={depth + 1} t={t} />
               </div>
             ))}
           </div>
@@ -308,41 +284,48 @@ function OrgNode({ node, depth = 0 }) {
 // ─── Legend ───────────────────────────────────────────────────────────────────
 
 const legend = [
-  { label: "C-Suite", color: "bg-purple-400" },
-  { label: "Engineering", color: "bg-blue-400" },
-  { label: "Product", color: "bg-teal-400" },
-  { label: "Marketing", color: "bg-orange-400" },
-  { label: "Finance & HR", color: "bg-violet-400" },
-  { label: "Sub-team", color: "bg-slate-400" },
+  { key: "cSuite", color: "bg-purple-400" },
+  { key: "engineering", color: "bg-blue-400" },
+  { key: "product", color: "bg-teal-400" },
+  { key: "marketing", color: "bg-orange-400" },
+  { key: "financeHr", color: "bg-violet-400" },
+  { key: "subTeam", color: "bg-slate-400" },
 ];
 
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function OrgChart() {
+  const { t } = useTranslation("about");
+
   return (
     <div className="bg-slate-50 p-8 font-sans">
       {/* Header */}
       <div className="mb-8 md:mb-10 text-center">
-        <h2 className="text-3xl font-bold mb-6 text-slate-900 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
-          Struktur Organisasi
+        <h2 className="text-3xl font-bold text-slate-900 md:text-4xl tracking-tight dark:text-white">
+          {t("orgChart.heading")}
         </h2>
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600 dark:text-slate-400">
+          {t("orgChart.description")}
+        </p>
       </div>
       {/* Tree */}
       <div className="overflow-x-auto pb-8 w-full hide-scrollbar">
         <div className="w-max mx-auto px-4 md:px-0">
-          <OrgNode node={orgData} depth={0} />
+          <OrgNode node={orgData} depth={0} t={t} />
         </div>
       </div>
 
       {/* Legend */}
       <div className="flex flex-wrap justify-center gap-3 mt-8">
-        {legend.map(({ label, color }) => (
+        {legend.map(({ key, color }) => (
           <div
-            key={label}
+            key={key}
             className="flex items-center gap-2 rounded-full px-4 py-1.5 bg-white border border-slate-200 shadow-sm"
           >
             <span className={`w-2.5 h-2.5 rounded-full ${color}`} />
-            <span className="text-xs font-medium text-slate-600">{label}</span>
+            <span className="text-xs font-medium text-slate-600">
+              {t(`orgChart.legend.${key}`)}
+            </span>
           </div>
         ))}
       </div>

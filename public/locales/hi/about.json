@@ -5,37 +5,147 @@
     "keywords": "about Codeverta, software house, technology partner, IT consultant"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "Codeverta टीम की चर्चा",
     "heading": {
       "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "highlight": "के मूल मूल्य"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "Codeverta एक सरल विश्वास से जन्मा: हर व्यवसाय, चाहे उसका आकार कुछ भी हो, एक ऐसे तकनीकी साझेदार का हकदार है जिस पर वह सच में भरोसा कर सके। अक्सर डिजिटल प्रोजेक्ट कमजोर संवाद, छिपी लागतों या अपेक्षाओं पर खरे न उतरने वाले परिणामों के कारण असफल हो जाते हैं।",
+      "हम इसे बदलने के लिए यहाँ हैं। पेशेवर डेवलपर्स, डिजाइनरों और IT सलाहकारों की टीम के रूप में, हम कोड गुणवत्ता, पारदर्शी संवाद और क्लाइंट की सफलता पर ध्यान देते हैं। हमारा मिशन आपकी डिजिटल दृष्टि को भरोसेमंद समाधानों में बदलना है जो वास्तविक व्यावसायिक मूल्य दें।"
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "मानवता के लिए हमारा मिशन",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "हमारी प्रतिबद्धता",
+      "highlight": "कैंसर देखभाल के लिए"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "PT Zenit Technology Solution में, हम मानते हैं कि नवाचार को एक बड़े उद्देश्य की सेवा करनी चाहिए। हम गर्व से",
+      "pledge": "अपने वार्षिक शुद्ध लाभ का 3% से अधिक",
+      "after": "Kitabisa के माध्यम से वंचित कैंसर रोगियों की सहायता के लिए समर्पित करने का संकल्प लेते हैं"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "प्रत्यक्ष सहायता",
+        "description": "परिवारों को महत्वपूर्ण उपचार लागतों को वहन करने में मदद करना।"
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "नैतिक तकनीक",
+        "description": "आपके प्रोजेक्ट सीधे सामाजिक प्रभाव को वित्तपोषित करते हैं।"
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "Kitabisa के माध्यम से कैंसर उपचार सहायता"
+  },
+  "orgChart": {
+    "heading": "संगठनात्मक संरचना",
+    "actions": {
+      "expand": "विस्तार करें",
+      "collapse": "समेटें"
+    },
+    "legend": {
+      "cSuite": "नेतृत्व टीम",
+      "engineering": "इंजीनियरिंग",
+      "product": "प्रोडक्ट",
+      "marketing": "मार्केटिंग",
+      "financeHr": "फाइनेंस और HR",
+      "subTeam": "उप-टीम"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / सह-संस्थापक",
+        "sub": "विजन और रणनीति",
+        "description": "कंपनी का नेतृत्व करता है और दीर्घकालिक विजन तय करता है।"
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "आर्किटेक्चर और तकनीक",
+        "description": "तकनीकी आर्किटेक्चर, टेक स्टैक और इंजीनियरिंग गुणवत्ता की जिम्मेदारी लेता है।"
+      },
+      "eng": {
+        "role": "इंजीनियरिंग",
+        "sub": "Frontend, backend, mobile",
+        "description": "Frontend, backend और mobile को संभालने वाली मुख्य डेवलपमेंट टीम।"
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "React, Vue और अन्य आधुनिक frameworks से user interface बनाता है।"
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, services",
+        "description": "API, business logic और database management विकसित करता है।"
+      },
+      "mob": {
+        "role": "Mobile",
+        "sub": "iOS और Android",
+        "description": "iOS और Android के लिए native या cross-platform apps विकसित करता है।"
+      },
+      "devops": {
+        "role": "DevOps / Infra",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "Cloud infrastructure, CI/CD pipelines और system reliability संभालता है।"
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Manual और automation",
+        "description": "Manual और automated testing से product quality सुनिश्चित करता है।"
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Product roadmap",
+        "description": "Product roadmap तय करता है और user data के आधार पर features को प्राथमिकता देता है।"
+      },
+      "pm": {
+        "role": "Product Manager",
+        "sub": "Features, backlog, OKR",
+        "description": "Backlog, feature priorities और OKR delivery संभालता है।"
+      },
+      "uxd": {
+        "role": "UI/UX Design",
+        "sub": "Figma और research",
+        "description": "Figma और UX research से user experience और interface design करता है।"
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Marketing और growth",
+        "description": "Marketing strategy, brand awareness और user growth डिजाइन करता है।"
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Content, ads, SEO",
+        "description": "User acquisition के लिए content, SEO और advertising strategies चलाता है।"
+      },
+      "sales": {
+        "role": "Sales / BD",
+        "sub": "Leads, closing, partners",
+        "description": "Prospects पहचानता है, deals close करता है और partnerships बनाता है।"
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Finance और legal",
+        "description": "Finance, legal, compliance और budget planning संभालता है।"
+      },
+      "fin": {
+        "role": "Finance",
+        "sub": "Bookkeeping, tax",
+        "description": "Bookkeeping, financial reports, tax और audits संभालता है।"
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Hiring और culture",
+        "description": "Recruitment, onboarding, culture development और talent retention संभालता है।"
+      }
+    },
+    "description": "हमारी कंपनी संरचना product, engineering, marketing, finance और people operations को एक दिशा में रखती है ताकि हर project स्पष्ट ownership के साथ आगे बढ़े।"
+  },
+  "location": {
+    "badge": "हमारा स्थान",
+    "heading": "Yogyakarta में Codeverta से मिलें",
+    "description": "Google Maps पर हमारे कार्यालय का स्थान देखें और जब आप हमारी टीम के साथ website, application, LMS, information system या अन्य IT service project पर चर्चा करना चाहें, तो directions प्राप्त करें।",
+    "mapTitle": "Google Maps पर Codeverta कार्यालय का स्थान",
+    "cta": "Google Maps में खोलें"
   }
 }

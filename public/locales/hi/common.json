@@ -479,6 +479,18 @@
       "home": "Home",
       "products": "Products",
       "itemListName": "Codeverta Digital Product Portfolio"
+    },
+    "categories": {
+      "badge": "Product Categories",
+      "title": "Business Need के अनुसार देखें",
+      "description": "Codeverta products को industry और operational area के अनुसार filter करें, POS और ERP से लेकर healthcare, education, warehouse और customer management systems तक।",
+      "all": "सभी categories",
+      "productsLabel": "Digital products",
+      "categoriesLabel": "Solution categories",
+      "productionReadyLabel": "Ready या completed",
+      "showing": "{{count}} solutions दिखाए जा रहे हैं",
+      "emptyTitle": "इस category में अभी कोई product नहीं है",
+      "emptyDescription": "दूसरी category चुनें या custom system के लिए हमसे संपर्क करें।"
     }
   },
   "cookieConsent": {

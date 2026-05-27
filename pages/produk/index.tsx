@@ -13,10 +13,14 @@ import {
   Calendar,
   Wrench,
   CheckCircle,
+  Boxes,
+  Layers3,
+  PackageCheck,
 } from "lucide-react";
 import Link from "next/link";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { useMemo, useState } from "react";
 import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
@@ -24,29 +28,60 @@ import { useTranslation } from "next-i18next";
 import { getProjects } from "@/lib/projects";
 import { buildSeoMeta, SITE_NAME, SITE_URL } from "@/lib/seo";
 
-export const getStaticProps = withI18n(["common"], function ({ locale }) {
-  // Mapping hanya field yang diperlukan untuk index page
-  const projects = getProjects(locale).map(({ product }) => ({
-    product: {
-      id: product.id,
-      name: product.name,
-      image: product.image,
-      status: product.status,
-      version: product.version,
-      category: product.category,
-      description: product.description,
-      duration: product.duration,
-      lastUpdated: product.lastUpdated,
-      technologies: product.technologies,
-    },
-  }));
+type ProductSummary = {
+  id: string;
+  name: string;
+  image: string;
+  status: string;
+  version: string;
+  category: string;
+  description: string;
+  duration: string;
+  lastUpdated: string;
+  technologies: string[];
+};
 
-  return { props: { projects } };
-});
+type ProductProject = {
+  product: ProductSummary;
+};
 
-export default function ITProductsShowcase({ projects }) {
+type ProductsPageProps = {
+  projects: ProductProject[];
+};
+
+type CategoryFilter = {
+  id: string;
+  name: string;
+  count: number;
+};
+
+export const getStaticProps = withI18n(
+  ["common"],
+  function ({ locale }: { locale?: string }) {
+    // Mapping hanya field yang diperlukan untuk index page
+    const projects = getProjects(locale).map(({ product }) => ({
+      product: {
+        id: product.id,
+        name: product.name,
+        image: product.image,
+        status: product.status,
+        version: product.version,
+        category: product.category,
+        description: product.description,
+        duration: product.duration,
+        lastUpdated: product.lastUpdated,
+        technologies: product.technologies,
+      },
+    }));
+
+    return { props: { projects } };
+  }
+);
+
+export default function ITProductsShowcase({ projects }: ProductsPageProps) {
   const { t } = useTranslation("common");
   const router = useRouter();
+  const [activeCategory, setActiveCategory] = useState("all");
   const seo = buildSeoMeta({
     locale: router.locale,
     path: "/produk",
@@ -54,7 +89,10 @@ export default function ITProductsShowcase({ projects }) {
     description: t("productsPage.seo.description"),
     keywords: t("productsPage.seo.keywords"),
   });
-  const statusConfig = {
+  const statusConfig: Record<
+    string,
+    { color: string; icon: typeof CheckCircle; label: string }
+  > = {
     "Production Ready": {
       color: "bg-green-500 hover:bg-green-600",
       icon: CheckCircle,
@@ -71,6 +109,39 @@ export default function ITProductsShowcase({ projects }) {
       label: t("productsPage.status.inDevelopment"),
     },
   };
+  const categories = useMemo<CategoryFilter[]>(() => {
+    const categoryMap = projects.reduce<Map<string, number>>(
+      (acc, { product }) => {
+        acc.set(product.category, (acc.get(product.category) || 0) + 1);
+        return acc;
+      },
+      new Map<string, number>()
+    );
+
+    const categoryItems: CategoryFilter[] = Array.from(categoryMap.entries())
+      .map(([name, count]) => ({ id: name, name, count }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+
+    return [
+      {
+        id: "all",
+        name: t("productsPage.categories.all"),
+        count: projects.length,
+      },
+      ...categoryItems,
+    ];
+  }, [projects, t]);
+
+  const filteredProjects = useMemo(() => {
+    if (activeCategory === "all") return projects;
+    return projects.filter(
+      ({ product }) => product.category === activeCategory
+    );
+  }, [activeCategory, projects]);
+
+  const productionReadyCount = projects.filter(({ product }) =>
+    ["Production Ready", "Completed"].includes(product.status)
+  ).length;
 
   const productListSchema = {
     "@context": "https://schema.org",
@@ -164,6 +235,7 @@ export default function ITProductsShowcase({ projects }) {
         description={seo.description}
         keywords={seo.keywords}
         image={seo.image}
+        url={seo.canonical}
       />
       <Head>
         <script
@@ -173,11 +245,14 @@ export default function ITProductsShowcase({ projects }) {
           }}
         />
       </Head>
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-12">
+      <div className="min-h-screen bg-slate-50 py-12">
         <div className="container mx-auto px-4 md:px-6">
           {/* Header Section */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-slate-900 mb-4">
+          <div className="mx-auto mb-10 max-w-4xl text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-blue-600">
+              {t("productsPage.categories.badge")}
+            </p>
+            <h1 className="text-4xl font-bold tracking-tight text-slate-900 mb-4 md:text-5xl">
               {t("productsPage.hero.title")}
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -185,9 +260,87 @@ export default function ITProductsShowcase({ projects }) {
             </p>
           </div>
 
+          <section className="mb-10">
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+                <Boxes className="mb-4 h-5 w-5 text-blue-600" />
+                <p className="text-3xl font-bold text-slate-900">
+                  {projects.length}
+                </p>
+                <p className="mt-1 text-sm text-slate-500">
+                  {t("productsPage.categories.productsLabel")}
+                </p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+                <Layers3 className="mb-4 h-5 w-5 text-teal-600" />
+                <p className="text-3xl font-bold text-slate-900">
+                  {categories.length - 1}
+                </p>
+                <p className="mt-1 text-sm text-slate-500">
+                  {t("productsPage.categories.categoriesLabel")}
+                </p>
+              </div>
+              <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+                <PackageCheck className="mb-4 h-5 w-5 text-emerald-600" />
+                <p className="text-3xl font-bold text-slate-900">
+                  {productionReadyCount}
+                </p>
+                <p className="mt-1 text-sm text-slate-500">
+                  {t("productsPage.categories.productionReadyLabel")}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="mb-8 rounded-xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
+            <div className="mb-5 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+              <div>
+                <h2 className="text-2xl font-bold text-slate-900">
+                  {t("productsPage.categories.title")}
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-600">
+                  {t("productsPage.categories.description")}
+                </p>
+              </div>
+              <p className="text-sm font-medium text-slate-500">
+                {t("productsPage.categories.showing", {
+                  count: filteredProjects.length,
+                })}
+              </p>
+            </div>
+            <div className="flex gap-2 overflow-x-auto pb-2">
+              {categories.map((category) => {
+                const isActive = activeCategory === category.id;
+                return (
+                  <button
+                    key={category.id}
+                    type="button"
+                    onClick={() => setActiveCategory(category.id)}
+                    className={`whitespace-nowrap rounded-full border px-4 py-2 text-sm font-medium transition ${
+                      isActive
+                        ? "border-blue-600 bg-blue-600 text-white shadow-sm"
+                        : "border-slate-200 bg-white text-slate-700 hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700"
+                    }`}
+                  >
+                    {category.name}
+                    <span
+                      className={`ml-2 rounded-full px-2 py-0.5 text-xs ${
+                        isActive
+                          ? "bg-white/20 text-white"
+                          : "bg-slate-100 text-slate-500"
+                      }`}
+                    >
+                      {category.count}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
+          </section>
+
           {/* Products Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {projects.map(({ product }) => {
+            {filteredProjects.map(({ product }) => {
               const currentStatus =
                 statusConfig[product.status] || statusConfig.Completed;
               const StatusIcon = currentStatus.icon;
@@ -274,11 +427,11 @@ export default function ITProductsShowcase({ projects }) {
                         {t("productsPage.card.viewDetail")}
                       </Button>
                     </Link>
-                    <WhatsappWrapper title={product.name}>
+                    <WhatsappWrapper title={product.name} className="flex-1">
                       <Button
                         size="sm"
                         variant="outline"
-                        className="flex-1 bg-transparent"
+                        className="w-full bg-transparent"
                       >
                         <WhatsAppIcon />
                         {t("productsPage.card.contact")}
@@ -290,6 +443,17 @@ export default function ITProductsShowcase({ projects }) {
             })}
           </div>
 
+          {filteredProjects.length === 0 && (
+            <div className="rounded-xl border border-dashed border-slate-300 bg-white p-10 text-center">
+              <h3 className="text-xl font-semibold text-slate-900">
+                {t("productsPage.categories.emptyTitle")}
+              </h3>
+              <p className="mt-2 text-slate-600">
+                {t("productsPage.categories.emptyDescription")}
+              </p>
+            </div>
+          )}
+
           {/* Call to Action */}
           <div className="text-center mt-16">
             <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
@@ -300,7 +464,7 @@ export default function ITProductsShowcase({ projects }) {
                 {t("productsPage.cta.description")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <WhatsappWrapper>
+                <WhatsappWrapper className="inline-flex">
                   <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
                     <ExternalLink className="w-5 h-5 mr-2" />
                     {t("home.badges.consultation")}

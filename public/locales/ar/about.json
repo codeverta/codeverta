@@ -5,37 +5,147 @@
     "keywords": "عن Codeverta, شركة برمجيات, شريك تقني, استشارات تقنية"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "نقاش فريق Codeverta",
     "heading": {
       "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "highlight": "القيم الأساسية"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "وُلدت Codeverta من قناعة بسيطة: كل شركة، مهما كان حجمها، تستحق شريكًا تقنيًا يمكنها الوثوق به حقًا. كثيرًا ما تفشل المشاريع الرقمية بسبب ضعف التواصل أو التكاليف المخفية أو النتائج التي لا تلبي التوقعات.",
+      "نحن هنا لتغيير ذلك. بصفتنا فريقًا من المطورين والمصممين ومستشاري تقنية المعلومات المحترفين، نركز على جودة الكود، والتواصل الشفاف، ونجاح العميل. مهمتنا هي تحويل رؤيتك الرقمية إلى حلول موثوقة تقدم قيمة حقيقية للأعمال."
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "رسالتنا من أجل الإنسانية",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "التزامنا تجاه",
+      "highlight": "رعاية مرضى السرطان"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "في PT Zenit Technology Solution، نؤمن بأن الابتكار يجب أن يخدم هدفًا أسمى. ونلتزم بكل فخر بتخصيص",
+      "pledge": "أكثر من 3% من صافي أرباحنا السنوية",
+      "after": "لدعم مرضى السرطان غير القادرين عبر"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "دعم مباشر",
+        "description": "مساعدة العائلات على تغطية تكاليف العلاج الأساسية."
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "تقنية أخلاقية",
+        "description": "مشاريعكم تمول الأثر الاجتماعي بشكل مباشر."
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "دعم علاج السرطان عبر Kitabisa"
+  },
+  "orgChart": {
+    "heading": "الهيكل التنظيمي",
+    "actions": {
+      "expand": "توسيع",
+      "collapse": "طي"
+    },
+    "legend": {
+      "cSuite": "الإدارة التنفيذية",
+      "engineering": "الهندسة",
+      "product": "المنتج",
+      "marketing": "التسويق",
+      "financeHr": "المالية والموارد البشرية",
+      "subTeam": "فريق فرعي"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "الرئيس التنفيذي / الشريك المؤسس",
+        "sub": "الرؤية والاستراتيجية",
+        "description": "يقود الشركة ويحدد الرؤية طويلة المدى."
+      },
+      "cto": {
+        "role": "الرئيس التقني",
+        "sub": "الهندسة المعمارية والتقنية",
+        "description": "يشرف على المعمارية التقنية، وحزمة التقنيات، وجودة الهندسة."
+      },
+      "eng": {
+        "role": "الهندسة",
+        "sub": "الواجهة الأمامية، الخلفية، الجوال",
+        "description": "فريق التطوير الأساسي للواجهة الأمامية والخلفية والجوال."
+      },
+      "fe": {
+        "role": "الواجهة الأمامية",
+        "sub": "React / Vue / UI",
+        "description": "يبني واجهات المستخدم باستخدام React و Vue وأطر حديثة أخرى."
+      },
+      "be": {
+        "role": "الخلفية",
+        "sub": "API، قواعد البيانات، الخدمات",
+        "description": "يطور واجهات API ومنطق الأعمال وإدارة قواعد البيانات."
+      },
+      "mob": {
+        "role": "الجوال",
+        "sub": "iOS و Android",
+        "description": "يطور تطبيقات أصلية أو متعددة المنصات لنظامي iOS و Android."
+      },
+      "devops": {
+        "role": "DevOps / البنية التحتية",
+        "sub": "السحابة، CI/CD، SRE",
+        "description": "يدير البنية التحتية السحابية وخطوط CI/CD وموثوقية النظام."
+      },
+      "qa": {
+        "role": "QA / الاختبار",
+        "sub": "يدوي وأتمتة",
+        "description": "يضمن جودة المنتج عبر الاختبارات اليدوية والمؤتمتة."
+      },
+      "cpo": {
+        "role": "رئيس المنتج",
+        "sub": "خارطة طريق المنتج",
+        "description": "يحدد خارطة طريق المنتج ويرتب أولويات الميزات بناءً على بيانات المستخدمين."
+      },
+      "pm": {
+        "role": "مدير المنتج",
+        "sub": "الميزات، backlog، OKR",
+        "description": "يدير backlog وأولويات الميزات وتحقيق OKR."
+      },
+      "uxd": {
+        "role": "تصميم UI/UX",
+        "sub": "Figma والبحث",
+        "description": "يصمم تجربة المستخدم والواجهات باستخدام Figma وأبحاث UX."
+      },
+      "cmo": {
+        "role": "رئيس التسويق",
+        "sub": "التسويق والنمو",
+        "description": "يصمم استراتيجية التسويق والوعي بالعلامة ونمو المستخدمين."
+      },
+      "growth": {
+        "role": "النمو / SEO",
+        "sub": "المحتوى، الإعلانات، SEO",
+        "description": "ينفذ استراتيجيات المحتوى و SEO والإعلانات لاكتساب المستخدمين."
+      },
+      "sales": {
+        "role": "المبيعات / تطوير الأعمال",
+        "sub": "عملاء محتملون، إغلاق، شركاء",
+        "description": "يحدد العملاء المحتملين، يغلق الصفقات، ويبني الشراكات."
+      },
+      "cfo": {
+        "role": "المدير المالي",
+        "sub": "المالية والقانونية",
+        "description": "يدير المالية والشؤون القانونية والامتثال وتخطيط الميزانية."
+      },
+      "fin": {
+        "role": "المالية",
+        "sub": "محاسبة، ضرائب",
+        "description": "يدير المحاسبة والتقارير المالية والضرائب والتدقيق."
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "التوظيف والثقافة",
+        "description": "يدير التوظيف والتأهيل وبناء الثقافة والاحتفاظ بالمواهب."
+      }
+    },
+    "description": "صُمم هيكل شركتنا ليجعل فرق المنتج والهندسة والتسويق والمالية والموارد البشرية تعمل بتناغم، مع مسؤوليات واضحة لكل مشروع."
+  },
+  "location": {
+    "badge": "موقعنا",
+    "heading": "زوروا Codeverta في يوجياكارتا",
+    "description": "اعثر على موقع مكتبنا على Google Maps واحصل على الاتجاهات عندما ترغب في مناقشة مشروع موقع ويب أو تطبيق أو LMS أو نظام معلومات أو أي خدمة تقنية أخرى مع فريقنا.",
+    "mapTitle": "موقع مكتب Codeverta على Google Maps",
+    "cta": "افتح في Google Maps"
   }
 }

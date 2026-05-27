@@ -5,37 +5,147 @@
     "keywords": "về Codeverta, software house, đối tác công nghệ, tư vấn IT"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "Đội ngũ Codeverta thảo luận",
     "heading": {
       "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "highlight": "Giá trị cốt lõi"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "Codeverta ra đời từ một niềm tin đơn giản: mọi doanh nghiệp, dù lớn hay nhỏ, đều xứng đáng có một đối tác công nghệ thật sự đáng tin cậy. Các dự án số quá thường thất bại vì giao tiếp kém, chi phí ẩn hoặc kết quả không đáp ứng kỳ vọng.",
+      "Chúng tôi ở đây để thay đổi điều đó. Là đội ngũ gồm các lập trình viên, nhà thiết kế và tư vấn IT chuyên nghiệp, chúng tôi tập trung vào chất lượng mã nguồn, giao tiếp minh bạch và thành công của khách hàng. Sứ mệnh của chúng tôi là biến tầm nhìn số của bạn thành những giải pháp đáng tin cậy, tạo ra giá trị kinh doanh thực sự."
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "Sứ mệnh của chúng tôi vì con người",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "Cam kết của chúng tôi với",
+      "highlight": "chăm sóc ung thư"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "Tại PT Zenit Technology Solution, chúng tôi tin rằng đổi mới nên phục vụ một mục đích lớn hơn. Chúng tôi tự hào cam kết dành",
+      "pledge": "hơn 3% lợi nhuận ròng hằng năm",
+      "after": "để hỗ trợ bệnh nhân ung thư có hoàn cảnh khó khăn thông qua"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "Hỗ trợ trực tiếp",
+        "description": "Giúp các gia đình trang trải chi phí điều trị quan trọng."
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "Công nghệ có đạo đức",
+        "description": "Dự án của bạn trực tiếp tài trợ cho tác động xã hội."
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "Hỗ trợ điều trị ung thư qua Kitabisa"
+  },
+  "orgChart": {
+    "heading": "Cơ cấu tổ chức",
+    "actions": {
+      "expand": "Mở rộng",
+      "collapse": "Thu gọn"
+    },
+    "legend": {
+      "cSuite": "Ban lãnh đạo",
+      "engineering": "Kỹ thuật",
+      "product": "Sản phẩm",
+      "marketing": "Marketing",
+      "financeHr": "Tài chính và HR",
+      "subTeam": "Nhóm phụ"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / Đồng sáng lập",
+        "sub": "Tầm nhìn và chiến lược",
+        "description": "Dẫn dắt công ty và xác định tầm nhìn dài hạn."
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "Kiến trúc và công nghệ",
+        "description": "Phụ trách kiến trúc kỹ thuật, công nghệ sử dụng và chất lượng kỹ thuật."
+      },
+      "eng": {
+        "role": "Kỹ thuật",
+        "sub": "Frontend, backend, mobile",
+        "description": "Đội ngũ phát triển cốt lõi gồm frontend, backend và mobile."
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "Xây dựng giao diện người dùng bằng React, Vue và các framework hiện đại khác."
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, services",
+        "description": "Phát triển API, logic nghiệp vụ và quản lý cơ sở dữ liệu."
+      },
+      "mob": {
+        "role": "Mobile",
+        "sub": "iOS và Android",
+        "description": "Phát triển ứng dụng native hoặc cross-platform cho iOS và Android."
+      },
+      "devops": {
+        "role": "DevOps / Hạ tầng",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "Quản lý hạ tầng cloud, pipeline CI/CD và độ tin cậy hệ thống."
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Manual và automation",
+        "description": "Đảm bảo chất lượng sản phẩm bằng kiểm thử thủ công và tự động."
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Product roadmap",
+        "description": "Xác định roadmap sản phẩm và ưu tiên tính năng dựa trên dữ liệu người dùng."
+      },
+      "pm": {
+        "role": "Product Manager",
+        "sub": "Tính năng, backlog, OKR",
+        "description": "Quản lý backlog, ưu tiên tính năng và việc hoàn thành OKR."
+      },
+      "uxd": {
+        "role": "UI/UX Design",
+        "sub": "Figma và research",
+        "description": "Thiết kế trải nghiệm người dùng và giao diện bằng Figma và nghiên cứu UX."
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Marketing và growth",
+        "description": "Thiết kế chiến lược marketing, nhận diện thương hiệu và tăng trưởng người dùng."
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Nội dung, quảng cáo, SEO",
+        "description": "Triển khai chiến lược nội dung, SEO và quảng cáo để thu hút người dùng."
+      },
+      "sales": {
+        "role": "Sales / BD",
+        "sub": "Leads, closing, partners",
+        "description": "Xác định khách hàng tiềm năng, chốt giao dịch và xây dựng đối tác."
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Tài chính và pháp lý",
+        "description": "Quản lý tài chính, pháp lý, tuân thủ và kế hoạch ngân sách."
+      },
+      "fin": {
+        "role": "Finance",
+        "sub": "Sổ sách, thuế",
+        "description": "Quản lý sổ sách, báo cáo tài chính, thuế và kiểm toán."
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Tuyển dụng và văn hóa",
+        "description": "Phụ trách tuyển dụng, onboarding, phát triển văn hóa và giữ chân nhân tài."
+      }
+    },
+    "description": "Cơ cấu công ty của chúng tôi giúp sản phẩm, kỹ thuật, marketing, tài chính và vận hành nhân sự phối hợp thống nhất để mỗi dự án có trách nhiệm rõ ràng."
+  },
+  "location": {
+    "badge": "Vị trí của chúng tôi",
+    "heading": "Ghé thăm Codeverta tại Yogyakarta",
+    "description": "Tìm vị trí văn phòng của chúng tôi trên Google Maps và nhận chỉ đường khi bạn muốn trao đổi với đội ngũ về website, ứng dụng, LMS, hệ thống thông tin hoặc các dịch vụ IT khác.",
+    "mapTitle": "Vị trí văn phòng Codeverta trên Google Maps",
+    "cta": "Mở trong Google Maps"
   }
 }

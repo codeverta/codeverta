@@ -153,17 +153,23 @@ export default function LandingPage({ projects }: any) {
             <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
               <div className="flex animate-scroll gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
                 {[...logos, ...logos].map((logo, index) => (
-                  <img
+                  <Link
                     key={index}
-                    src={logo.src}
-                    alt={logo.alt}
-                    title={logo.alt}
-                    /* h-12 untuk mobile, md:h-24 untuk desktop */
-                    className={clsx(
-                      "h-12 md:h-20 w-auto flex-none opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 dark:invert ",
-                      logo.classes
-                    )}
-                  />
+                    href={logo.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-none"
+                  >
+                    <img
+                      src={logo.src}
+                      alt={logo.alt}
+                      title={logo.alt}
+                      className={clsx(
+                        "h-12 md:h-20 w-auto opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 dark:invert",
+                        logo.classes
+                      )}
+                    />
+                  </Link>
                 ))}
               </div>
             </div>
@@ -182,11 +188,9 @@ export default function LandingPage({ projects }: any) {
             .animate-scroll {
               display: flex;
               width: max-content;
-              /* Default mobile: Lebih cepat (15s) */
               animation: scroll 10s linear infinite;
             }
 
-            /* Desktop: Speed normal (30s) */
             @media (min-width: 768px) {
               .animate-scroll {
                 animation: scroll 30s linear infinite;
@@ -194,7 +198,6 @@ export default function LandingPage({ projects }: any) {
             }
           `}</style>
         </section>
-
         <IndustrySection t={t} industries={industryItems} />
 
         {/* <ModernStatsSection /> */}

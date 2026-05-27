@@ -489,6 +489,18 @@
       "home": "Beranda",
       "products": "Produk",
       "itemListName": "Portfolio Produk Digital Codeverta"
+    },
+    "categories": {
+      "badge": "Kategori Produk",
+      "title": "Jelajahi Berdasarkan Kebutuhan Bisnis",
+      "description": "Filter produk Codeverta berdasarkan industri dan area operasional, mulai dari POS, ERP, kesehatan, edukasi, gudang, hingga sistem manajemen pelanggan.",
+      "all": "Semua kategori",
+      "productsLabel": "Produk digital",
+      "categoriesLabel": "Kategori solusi",
+      "productionReadyLabel": "Produk siap pakai atau selesai",
+      "showing": "Menampilkan {{count}} solusi",
+      "emptyTitle": "Belum ada produk di kategori ini",
+      "emptyDescription": "Pilih kategori lain atau hubungi kami untuk sistem custom."
     }
   },
   "cookieConsent": {

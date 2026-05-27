@@ -7,7 +7,7 @@
   "story": {
     "imageAlt": "Tim Codeverta berdiskusi",
     "heading": {
-      "prefix": "Visi dan Misi di ",
+      "prefix": "Visi dan Misi di",
       "highlight": "Codeverta"
     },
     "paragraphs": [
@@ -37,5 +37,115 @@
       }
     },
     "imageAlt": "Dukungan pengobatan kanker melalui Kitabisa"
+  },
+  "orgChart": {
+    "heading": "Struktur Organisasi",
+    "actions": {
+      "expand": "Perluas",
+      "collapse": "Ciutkan"
+    },
+    "legend": {
+      "cSuite": "C-Suite",
+      "engineering": "Engineering",
+      "product": "Produk",
+      "marketing": "Marketing",
+      "financeHr": "Keuangan dan HR",
+      "subTeam": "Sub-tim"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / Co-founder",
+        "sub": "Visi dan strategi",
+        "description": "Memimpin perusahaan dan menentukan visi jangka panjang."
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "Arsitektur dan teknologi",
+        "description": "Bertanggung jawab atas arsitektur teknis, stack teknologi, dan kualitas engineering."
+      },
+      "eng": {
+        "role": "Engineering",
+        "sub": "Frontend, backend, mobile",
+        "description": "Tim inti pengembang yang mencakup frontend, backend, dan mobile."
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "Membangun antarmuka pengguna dengan React, Vue, dan framework modern lainnya."
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, layanan",
+        "description": "Mengembangkan API, logika bisnis, dan pengelolaan database."
+      },
+      "mob": {
+        "role": "Mobile",
+        "sub": "iOS dan Android",
+        "description": "Mengembangkan aplikasi native atau cross-platform untuk iOS dan Android."
+      },
+      "devops": {
+        "role": "DevOps / Infra",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "Mengelola infrastruktur cloud, pipeline CI/CD, dan keandalan sistem."
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Manual dan automation",
+        "description": "Memastikan kualitas produk melalui pengujian manual dan otomatis."
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Roadmap produk",
+        "description": "Mendefinisikan roadmap produk dan memprioritaskan fitur berdasarkan data pengguna."
+      },
+      "pm": {
+        "role": "Product Manager",
+        "sub": "Fitur, backlog, OKR",
+        "description": "Mengelola backlog, menentukan prioritas fitur, dan memastikan OKR terpenuhi."
+      },
+      "uxd": {
+        "role": "UI/UX Design",
+        "sub": "Figma dan riset",
+        "description": "Merancang pengalaman pengguna dan antarmuka menggunakan Figma dan riset UX."
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Marketing dan growth",
+        "description": "Merancang strategi pemasaran, brand awareness, dan pertumbuhan pengguna."
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Konten, iklan, SEO",
+        "description": "Menjalankan strategi konten, SEO, dan iklan untuk akuisisi pengguna."
+      },
+      "sales": {
+        "role": "Sales / BD",
+        "sub": "Lead, closing, mitra",
+        "description": "Mengidentifikasi prospek, melakukan closing, dan membangun kemitraan bisnis."
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Keuangan dan legal",
+        "description": "Mengelola keuangan, legal, compliance, dan perencanaan anggaran."
+      },
+      "fin": {
+        "role": "Finance",
+        "sub": "Pembukuan, pajak",
+        "description": "Mengelola pembukuan, laporan keuangan, pajak, dan audit."
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Rekrut dan kultur",
+        "description": "Menangani rekrutmen, onboarding, pengembangan budaya, dan retensi talenta."
+      }
+    },
+    "description": "Struktur perusahaan kami dirancang agar produk, engineering, marketing, keuangan, dan people operations bergerak selaras dengan tanggung jawab yang jelas."
+  },
+  "location": {
+    "badge": "Lokasi Kami",
+    "heading": "Kunjungi Codeverta di Yogyakarta",
+    "description": "Temukan lokasi kantor kami di Google Maps dan dapatkan rute ketika Anda ingin berdiskusi tentang website, aplikasi, LMS, sistem informasi, atau layanan IT lainnya bersama tim kami.",
+    "mapTitle": "Lokasi kantor Codeverta di Google Maps",
+    "cta": "Buka di Google Maps"
   }
 }

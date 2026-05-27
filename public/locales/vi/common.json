@@ -479,6 +479,18 @@
       "home": "Trang chủ",
       "products": "Sản phẩm",
       "itemListName": "Portfolio sản phẩm số Codeverta"
+    },
+    "categories": {
+      "badge": "Danh mục sản phẩm",
+      "title": "Duyệt theo nhu cầu kinh doanh",
+      "description": "Lọc sản phẩm Codeverta theo ngành và khu vực vận hành, từ POS và ERP đến y tế, giáo dục, kho bãi và hệ thống quản lý khách hàng.",
+      "all": "Tất cả danh mục",
+      "productsLabel": "Sản phẩm số",
+      "categoriesLabel": "Danh mục giải pháp",
+      "productionReadyLabel": "Sẵn sàng hoặc hoàn tất",
+      "showing": "Đang hiển thị {{count}} giải pháp",
+      "emptyTitle": "Chưa có sản phẩm trong danh mục này",
+      "emptyDescription": "Chọn danh mục khác hoặc liên hệ với chúng tôi để làm hệ thống tuỳ chỉnh."
     }
   },
   "cookieConsent": {

@@ -479,6 +479,18 @@
       "home": "Laman Utama",
       "products": "Produk",
       "itemListName": "Portfolio Produk Digital Codeverta"
+    },
+    "categories": {
+      "badge": "Kategori Produk",
+      "title": "Teroka Mengikut Keperluan Bisnes",
+      "description": "Tapis produk Codeverta mengikut industri dan operasi, daripada POS dan ERP hingga kesihatan, pendidikan, gudang, dan sistem pengurusan pelanggan.",
+      "all": "Semua kategori",
+      "productsLabel": "Produk digital",
+      "categoriesLabel": "Kategori penyelesaian",
+      "productionReadyLabel": "Sedia atau selesai",
+      "showing": "Memaparkan {{count}} penyelesaian",
+      "emptyTitle": "Belum ada produk dalam kategori ini",
+      "emptyDescription": "Pilih kategori lain atau hubungi kami untuk sistem custom."
     }
   },
   "cookieConsent": {

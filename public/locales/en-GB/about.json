@@ -37,5 +37,115 @@
       }
     },
     "imageAlt": "Cancer treatment support through Kitabisa"
+  },
+  "orgChart": {
+    "heading": "Organisational Structure",
+    "actions": {
+      "expand": "Expand",
+      "collapse": "Collapse"
+    },
+    "legend": {
+      "cSuite": "C-Suite",
+      "engineering": "Engineering",
+      "product": "Product",
+      "marketing": "Marketing",
+      "financeHr": "Finance and HR",
+      "subTeam": "Sub-team"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / Co-founder",
+        "sub": "Vision and strategy",
+        "description": "Leads the company and defines the long-term vision."
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "Architecture and technology",
+        "description": "Owns technical architecture, technology stack, and engineering quality."
+      },
+      "eng": {
+        "role": "Engineering",
+        "sub": "Frontend, backend, mobile",
+        "description": "Core development team covering frontend, backend, and mobile."
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "Builds user interfaces with React, Vue, and other modern frameworks."
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, services",
+        "description": "Develops APIs, business logic, and database management."
+      },
+      "mob": {
+        "role": "Mobile",
+        "sub": "iOS and Android",
+        "description": "Develops native or cross-platform apps for iOS and Android."
+      },
+      "devops": {
+        "role": "DevOps / Infra",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "Manages cloud infrastructure, CI/CD pipelines, and system reliability."
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Manual and automation",
+        "description": "Ensures product quality through manual and automated testing."
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Product roadmap",
+        "description": "Defines the product roadmap and prioritizes features based on user data."
+      },
+      "pm": {
+        "role": "Product Manager",
+        "sub": "Features, backlog, OKR",
+        "description": "Manages the backlog, feature priorities, and OKR delivery."
+      },
+      "uxd": {
+        "role": "UI/UX Design",
+        "sub": "Figma and research",
+        "description": "Designs user experience and interfaces using Figma and UX research."
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Marketing and growth",
+        "description": "Designs marketing strategy, brand awareness, and user growth."
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Content, ads, SEO",
+        "description": "Runs content, SEO, and advertising strategies for user acquisition."
+      },
+      "sales": {
+        "role": "Sales / BD",
+        "sub": "Leads, closing, partners",
+        "description": "Identifies prospects, closes deals, and builds business partnerships."
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Finance and legal",
+        "description": "Manages finance, legal, compliance, and budget planning."
+      },
+      "fin": {
+        "role": "Finance",
+        "sub": "Bookkeeping, tax",
+        "description": "Manages bookkeeping, financial reports, tax, and audits."
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Hiring and culture",
+        "description": "Handles recruitment, onboarding, culture development, and talent retention."
+      }
+    },
+    "description": "Our company structure keeps product, engineering, marketing, finance, and people operations aligned so every project moves with clear ownership."
+  },
+  "location": {
+    "badge": "Our Location",
+    "heading": "Visit Codeverta in Yogyakarta",
+    "description": "Find our office location on Google Maps and get directions when you want to discuss a website, application, LMS, information system, or other IT service project with our team.",
+    "mapTitle": "Codeverta office location on Google Maps",
+    "cta": "Open in Google Maps"
   }
 }

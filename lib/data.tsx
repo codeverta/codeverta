@@ -48,31 +48,38 @@ export const logos = [
   {
     src: "/assets/images/bapperida.png",
     alt: "Bapperida Papua",
+    url: "https://bapperida.papua.go.id/",
   },
   {
     src: "/assets/images/nsc.png",
     alt: "NSC Bantu Perizinan",
+    url: "https://nscbantuperizinan.com/",
   },
   {
     src: "https://malabartrailrun.id/logo.png",
     alt: "Malabar Trail Run",
+    url: "https://malabartrailrun.id",
   },
   {
     src: "/assets/images/souvenirlilin.png",
     alt: "Million Candles",
+    url: "https://souvenirlilin.id/",
   },
   {
     src: "/assets/images/gis.png",
     alt: "Global Inti Sekawan",
+    url: "https://globalintisekawan.com/",
   },
   {
     src: "/assets/images/manglayang.png",
     alt: "Manglayang Academia",
-    classes: "p-4", // sesuaikan nilai sesuai kebutuhan
+    classes: "p-4",
+    url: "https://manglayangacademia.id",
   },
   {
     src: "/assets/images/roxgym.png",
     alt: "Roxgym",
+    url: "https://roxgym.id",
   },
 ];
 

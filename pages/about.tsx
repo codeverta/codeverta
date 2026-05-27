@@ -16,6 +16,7 @@ export default function AboutPage() {
         title={t("seo.title")}
         description={t("seo.description")}
         keywords={t("seo.keywords")}
+        url="https://codeverta.com/about"
       />
       {/* --- OUR STORY / MISSION --- */}
       <section className="py-20 bg-slate-50">
@@ -50,12 +51,59 @@ export default function AboutPage() {
         </div>
       </section>
       <OrgChart />
+      <LocationMap t={t} />
       <SocialImpact t={t} />
     </div>
   );
 }
 
-const SocialImpact = ({ t }) => {
+type AboutTranslate = (key: string) => string;
+
+const LocationMap = ({ t }: { t: AboutTranslate }) => {
+  const mapUrl =
+    "https://www.google.com/maps?q=-7.7248765,110.3979139&z=18&output=embed";
+  const directionsUrl = "https://maps.app.goo.gl/iR4RFPnsUrSRNf8G9";
+
+  return (
+    <section className="py-20 bg-white dark:bg-slate-950">
+      <div className="container mx-auto px-4">
+        <div className="mb-8 max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-wide text-blue-600">
+            {t("location.badge")}
+          </p>
+          <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+            {t("location.heading")}
+          </h2>
+          <p className="mt-4 text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+            {t("location.description")}
+          </p>
+        </div>
+
+        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+          <iframe
+            src={mapUrl}
+            title={t("location.mapTitle")}
+            className="h-[24rem] w-full md:h-[30rem]"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+        </div>
+
+        <a
+          href={directionsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 inline-flex items-center rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
+        >
+          {t("location.cta")}
+        </a>
+      </div>
+    </section>
+  );
+};
+
+const SocialImpact = ({ t }: { t: AboutTranslate }) => {
   return (
     <section className="py-24 bg-slate-50 dark:bg-slate-950">
       <div className="container mx-auto px-4">
