@@ -479,6 +479,18 @@
       "home": "Accueil",
       "products": "Produits",
       "itemListName": "Portfolio des produits numériques Codeverta"
+    },
+    "categories": {
+      "badge": "Catégories de produits",
+      "title": "Parcourir par besoin métier",
+      "description": "Filtrez les produits Codeverta par secteur et domaine opérationnel, du POS et ERP à la santé, l éducation, l entrepôt et la gestion client.",
+      "all": "Toutes les catégories",
+      "productsLabel": "Produits numériques",
+      "categoriesLabel": "Catégories de solutions",
+      "productionReadyLabel": "Prêt ou terminé",
+      "showing": "{{count}} solutions affichées",
+      "emptyTitle": "Aucun produit dans cette catégorie pour le moment",
+      "emptyDescription": "Choisissez une autre catégorie ou contactez-nous pour un système sur mesure."
     }
   },
   "cookieConsent": {

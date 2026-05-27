@@ -5,37 +5,147 @@
     "keywords": "เกี่ยวกับ Codeverta, software house, พาร์ทเนอร์เทคโนโลยี, ที่ปรึกษา IT"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "ทีม Codeverta กำลังพูดคุย",
     "heading": {
       "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "highlight": "ค่านิยมหลัก"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "Codeverta เกิดจากความเชื่อง่าย ๆ ว่า ทุกธุรกิจไม่ว่าจะมีขนาดเท่าใด ควรมีพาร์ทเนอร์ด้านเทคโนโลยีที่ไว้วางใจได้อย่างแท้จริง โครงการดิจิทัลจำนวนมากล้มเหลวเพราะการสื่อสารที่ไม่ดี ต้นทุนแฝง หรือผลลัพธ์ที่ไม่ตรงตามความคาดหวัง",
+      "เรามาเพื่อเปลี่ยนสิ่งนั้น ในฐานะทีมของนักพัฒนา นักออกแบบ และที่ปรึกษา IT มืออาชีพ เราให้ความสำคัญกับคุณภาพโค้ด การสื่อสารที่โปร่งใส และความสำเร็จของลูกค้า ภารกิจของเราคือเปลี่ยนวิสัยทัศน์ดิจิทัลของคุณให้เป็นโซลูชันที่เชื่อถือได้และสร้างคุณค่าทางธุรกิจจริง"
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "พันธกิจของเราเพื่อมนุษยชาติ",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "ความมุ่งมั่นของเราต่อ",
+      "highlight": "การดูแลผู้ป่วยมะเร็ง"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "ที่ PT Zenit Technology Solution เราเชื่อว่านวัตกรรมควรรับใช้เป้าหมายที่ยิ่งใหญ่กว่า เราขอให้คำมั่นว่าจะมอบ",
+      "pledge": "มากกว่า 3% ของกำไรสุทธิประจำปี",
+      "after": "เพื่อสนับสนุนผู้ป่วยมะเร็งที่ขาดแคลนผ่าน"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "การสนับสนุนโดยตรง",
+        "description": "ช่วยครอบครัวรับภาระค่าใช้จ่ายการรักษาที่จำเป็น"
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "เทคโนโลยีที่มีจริยธรรม",
+        "description": "โครงการของคุณสนับสนุนผลกระทบทางสังคมโดยตรง"
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "การสนับสนุนการรักษามะเร็งผ่าน Kitabisa"
+  },
+  "orgChart": {
+    "heading": "โครงสร้างองค์กร",
+    "actions": {
+      "expand": "ขยาย",
+      "collapse": "ย่อ"
+    },
+    "legend": {
+      "cSuite": "ผู้บริหาร",
+      "engineering": "วิศวกรรม",
+      "product": "ผลิตภัณฑ์",
+      "marketing": "การตลาด",
+      "financeHr": "การเงินและ HR",
+      "subTeam": "ทีมย่อย"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / ผู้ร่วมก่อตั้ง",
+        "sub": "วิสัยทัศน์และกลยุทธ์",
+        "description": "นำบริษัทและกำหนดวิสัยทัศน์ระยะยาว"
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "สถาปัตยกรรมและเทคโนโลยี",
+        "description": "รับผิดชอบสถาปัตยกรรมเทคนิค เทคโนโลยีสแต็ก และคุณภาพงานวิศวกรรม"
+      },
+      "eng": {
+        "role": "วิศวกรรม",
+        "sub": "Frontend, backend, mobile",
+        "description": "ทีมพัฒนาหลักที่ดูแล frontend, backend และ mobile"
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "สร้างส่วนติดต่อผู้ใช้ด้วย React, Vue และ framework สมัยใหม่อื่น ๆ"
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, services",
+        "description": "พัฒนา API, business logic และการจัดการฐานข้อมูล"
+      },
+      "mob": {
+        "role": "Mobile",
+        "sub": "iOS และ Android",
+        "description": "พัฒนาแอป native หรือ cross-platform สำหรับ iOS และ Android"
+      },
+      "devops": {
+        "role": "DevOps / Infra",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "ดูแล cloud infrastructure, CI/CD pipeline และความน่าเชื่อถือของระบบ"
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Manual และ automation",
+        "description": "รับประกันคุณภาพผลิตภัณฑ์ผ่านการทดสอบแบบ manual และ automated"
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Product roadmap",
+        "description": "กำหนด product roadmap และจัดลำดับความสำคัญของฟีเจอร์ตามข้อมูลผู้ใช้"
+      },
+      "pm": {
+        "role": "Product Manager",
+        "sub": "Features, backlog, OKR",
+        "description": "จัดการ backlog, ลำดับความสำคัญของฟีเจอร์ และการส่งมอบ OKR"
+      },
+      "uxd": {
+        "role": "UI/UX Design",
+        "sub": "Figma และ research",
+        "description": "ออกแบบประสบการณ์ผู้ใช้และ interface ด้วย Figma และ UX research"
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Marketing และ growth",
+        "description": "ออกแบบกลยุทธ์การตลาด การรับรู้แบรนด์ และการเติบโตของผู้ใช้"
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Content, ads, SEO",
+        "description": "ดำเนินกลยุทธ์ content, SEO และโฆษณาเพื่อหาผู้ใช้ใหม่"
+      },
+      "sales": {
+        "role": "Sales / BD",
+        "sub": "Leads, closing, partners",
+        "description": "ค้นหา prospect ปิดการขาย และสร้างพันธมิตรทางธุรกิจ"
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Finance และ legal",
+        "description": "จัดการการเงิน กฎหมาย compliance และการวางแผนงบประมาณ"
+      },
+      "fin": {
+        "role": "Finance",
+        "sub": "Bookkeeping, tax",
+        "description": "จัดการบัญชี รายงานการเงิน ภาษี และ audit"
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Hiring และ culture",
+        "description": "ดูแล recruitment, onboarding, culture development และ talent retention"
+      }
+    },
+    "description": "โครงสร้างบริษัทของเราช่วยให้ทีมผลิตภัณฑ์ วิศวกรรม การตลาด การเงิน และ people operations ทำงานไปในทิศทางเดียวกัน พร้อมความรับผิดชอบที่ชัดเจนในทุกโครงการ"
+  },
+  "location": {
+    "badge": "ที่ตั้งของเรา",
+    "heading": "เยี่ยมชม Codeverta ที่ยอกยาการ์ตา",
+    "description": "ค้นหาที่ตั้งสำนักงานของเราบน Google Maps และขอเส้นทางเมื่อคุณต้องการปรึกษาทีมของเราเกี่ยวกับเว็บไซต์ แอปพลิเคชัน LMS ระบบสารสนเทศ หรือบริการ IT อื่น ๆ",
+    "mapTitle": "ที่ตั้งสำนักงาน Codeverta บน Google Maps",
+    "cta": "เปิดใน Google Maps"
   }
 }

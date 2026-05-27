@@ -5,37 +5,147 @@
     "keywords": "sobre Codeverta, software house, socio tecnológico, consultor IT"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "Conversación del equipo de Codeverta",
     "heading": {
       "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "highlight": "Valores fundamentales"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "Codeverta nació de una convicción sencilla: toda empresa, sin importar su tamaño, merece un socio tecnológico en el que pueda confiar de verdad. Con demasiada frecuencia, los proyectos digitales fracasan por mala comunicación, costos ocultos o resultados que no cumplen las expectativas.",
+      "Estamos aquí para cambiar eso. Como equipo de desarrolladores, diseñadores y consultores IT profesionales, nos enfocamos en la calidad del código, la comunicación transparente y el éxito del cliente. Nuestra misión es convertir tu visión digital en soluciones confiables que generen valor real para el negocio."
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "Nuestra misión para la humanidad",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "Nuestro compromiso con",
+      "highlight": "la atención del cáncer"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "En PT Zenit Technology Solution, creemos que la innovación debe servir a un propósito mayor. Nos comprometemos con orgullo a destinar",
+      "pledge": "más del 3% de nuestra utilidad neta anual",
+      "after": "a apoyar a pacientes con cáncer de bajos recursos a través de"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "Apoyo directo",
+        "description": "Ayudamos a las familias a cubrir costos críticos de tratamiento."
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "Tecnología ética",
+        "description": "Tus proyectos financian directamente un impacto social."
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "Apoyo al tratamiento del cáncer a través de Kitabisa"
+  },
+  "orgChart": {
+    "heading": "Estructura organizativa",
+    "actions": {
+      "expand": "Expandir",
+      "collapse": "Contraer"
+    },
+    "legend": {
+      "cSuite": "Dirección",
+      "engineering": "Ingeniería",
+      "product": "Producto",
+      "marketing": "Marketing",
+      "financeHr": "Finanzas y RR. HH.",
+      "subTeam": "Subequipo"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / Cofundador",
+        "sub": "Visión y estrategia",
+        "description": "Lidera la empresa y define la visión a largo plazo."
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "Arquitectura y tecnología",
+        "description": "Responsable de la arquitectura técnica, el stack tecnológico y la calidad de ingeniería."
+      },
+      "eng": {
+        "role": "Ingeniería",
+        "sub": "Frontend, backend, móvil",
+        "description": "Equipo central de desarrollo para frontend, backend y móvil."
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "Construye interfaces de usuario con React, Vue y otros frameworks modernos."
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, servicios",
+        "description": "Desarrolla API, lógica de negocio y gestión de bases de datos."
+      },
+      "mob": {
+        "role": "Móvil",
+        "sub": "iOS y Android",
+        "description": "Desarrolla apps nativas o multiplataforma para iOS y Android."
+      },
+      "devops": {
+        "role": "DevOps / Infra",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "Gestiona infraestructura cloud, pipelines CI/CD y confiabilidad del sistema."
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Manual y automatización",
+        "description": "Asegura la calidad del producto con pruebas manuales y automatizadas."
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Roadmap de producto",
+        "description": "Define el roadmap de producto y prioriza funciones según datos de usuarios."
+      },
+      "pm": {
+        "role": "Product Manager",
+        "sub": "Funciones, backlog, OKR",
+        "description": "Gestiona el backlog, prioridades de funciones y cumplimiento de OKR."
+      },
+      "uxd": {
+        "role": "Diseño UI/UX",
+        "sub": "Figma e investigación",
+        "description": "Diseña experiencia de usuario e interfaces con Figma e investigación UX."
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Marketing y crecimiento",
+        "description": "Diseña estrategia de marketing, reconocimiento de marca y crecimiento de usuarios."
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Contenido, anuncios, SEO",
+        "description": "Ejecuta estrategias de contenido, SEO y publicidad para adquisición de usuarios."
+      },
+      "sales": {
+        "role": "Ventas / BD",
+        "sub": "Leads, cierre, socios",
+        "description": "Identifica prospectos, cierra acuerdos y construye alianzas comerciales."
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Finanzas y legal",
+        "description": "Gestiona finanzas, legal, cumplimiento y planificación presupuestaria."
+      },
+      "fin": {
+        "role": "Finanzas",
+        "sub": "Contabilidad, impuestos",
+        "description": "Gestiona contabilidad, reportes financieros, impuestos y auditorías."
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Contratación y cultura",
+        "description": "Gestiona reclutamiento, onboarding, cultura y retención de talento."
+      }
+    },
+    "description": "Nuestra estructura empresarial alinea producto, ingeniería, marketing, finanzas y operaciones de personas para que cada proyecto avance con responsabilidades claras."
+  },
+  "location": {
+    "badge": "Nuestra ubicación",
+    "heading": "Visita Codeverta en Yogyakarta",
+    "description": "Encuentra la ubicación de nuestra oficina en Google Maps y obtén indicaciones cuando quieras conversar con nuestro equipo sobre un sitio web, aplicación, LMS, sistema de información u otro servicio IT.",
+    "mapTitle": "Ubicación de la oficina de Codeverta en Google Maps",
+    "cta": "Abrir en Google Maps"
   }
 }

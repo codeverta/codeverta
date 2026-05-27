@@ -510,6 +510,18 @@
       "home": "ホーム",
       "products": "製品",
       "itemListName": "Codeverta デジタル製品実績"
+    },
+    "categories": {
+      "badge": "製品カテゴリ",
+      "title": "ビジネスニーズ別に探す",
+      "description": "POS、ERP、医療、教育、倉庫、顧客管理システムなど、業界や業務領域ごとに Codeverta の製品を絞り込めます。",
+      "all": "すべてのカテゴリ",
+      "productsLabel": "デジタル製品",
+      "categoriesLabel": "ソリューションカテゴリ",
+      "productionReadyLabel": "提供可能または完了",
+      "showing": "{{count}} 件のソリューションを表示",
+      "emptyTitle": "このカテゴリにはまだ製品がありません",
+      "emptyDescription": "別のカテゴリを選ぶか、カスタムシステムについてご相談ください。"
     }
   },
   "cookieConsent": {

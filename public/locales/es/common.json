@@ -479,6 +479,18 @@
       "home": "Inicio",
       "products": "Productos",
       "itemListName": "Portfolio de productos digitales Codeverta"
+    },
+    "categories": {
+      "badge": "Categorías de productos",
+      "title": "Explora por necesidad de negocio",
+      "description": "Filtra los productos de Codeverta por industria y área operativa, desde POS y ERP hasta salud, educación, almacén y gestión de clientes.",
+      "all": "Todas las categorías",
+      "productsLabel": "Productos digitales",
+      "categoriesLabel": "Categorías de solución",
+      "productionReadyLabel": "Listo o completado",
+      "showing": "Mostrando {{count}} soluciones",
+      "emptyTitle": "Aún no hay productos en esta categoría",
+      "emptyDescription": "Elige otra categoría o contáctanos para un sistema personalizado."
     }
   },
   "cookieConsent": {

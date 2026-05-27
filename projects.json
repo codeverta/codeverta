@@ -5719,6 +5719,265 @@
           ]
         }
       }
+    },
+    {
+      "product": {
+        "id": "property-listing-management-system",
+        "name": "PropNex Smart Listing & Agent Portal",
+        "description": "Sistem manajemen listing properti modern dengan fitur virtual tour integration, manajemen komisi agen, dan sinkronisasi multi-portal otomatis.",
+        "fullDescription": "Software ini dirancang untuk agensi properti independen maupun korporat dalam mengelola inventaris rumah, apartemen, dan ruko secara digital. Sistem ini mengintegrasikan pelacakan prospek (leads) pembeli, pembagian komisi agen, hingga otomatisasi pembuatan brosur cetak dan digital dalam satu dashboard terpusat.",
+        "image": "/assets/property-listing/preview.png",
+        "technologies": [
+          "Golang",
+          "Gin",
+          "React",
+          "Next.js",
+          "MariaDB",
+          "Docker"
+        ],
+        "category": "Real Estate & Property Management",
+        "status": "Completed",
+        "version": "2.1.0",
+        "lastUpdated": "Mei 2026",
+        "client": "Mega Jaya Property Agensi",
+        "duration": "5 bulan",
+        "teamSize": "4 specialists",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "124",
+          "reviews": [
+            {
+              "author": "Bapak Hermawan",
+              "role": "Principal Agensi",
+              "date": "2026-03-10",
+              "body": "Sangat membantu memantau performa puluhan agen di lapangan. Data listing jadi rapi dan tidak ada lagi iklan ganda.",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Sarah",
+              "role": "Senior Property Consultant",
+              "date": "2026-04-22",
+              "body": "Fitur kirim brosur otomatis via WhatsApp membuat prospek closing jauh lebih cepat dari biasanya.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Panduan Admin",
+          "links": {
+            "documentation": "https://docs.zenit-property.id/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Ringkasan",
+          "features": "Fitur Utama",
+          "workflow": "Alur Penjualan",
+          "techStack": "Teknologi",
+          "screenshots": "Galeri Portal",
+          "specs": "Spesifikasi"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Detail Pengembangan",
+          "clientLabel": "Mitra Bisnis",
+          "durationLabel": "Waktu Pengerjaan",
+          "teamSizeLabel": "Kapasitas Tim",
+          "lastUpdatedLabel": "Pembaruan Terakhir"
+        },
+        "platformSupport": {
+          "title": "Dukungan Ekosistem",
+          "items": [
+            "Dashboard Admin & Principal (Web)",
+            "Portal Listing Publik Konsumen (Responsive Web)",
+            "Aplikasi CRM Agen Properti (Android/iOS)",
+            "Generator Brosur & Price List Otomatis"
+          ]
+        },
+        "architecture": {
+          "title": "Arsitektur Sistem",
+          "items": [
+            "Multi-agent & Multi-branch tiering untuk agensi besar",
+            "Automated PDF Brochure & Watermark Generator",
+            "Geo-fencing untuk rekomendasi properti terdekat",
+            "Algoritma matching otomatis antara kriteria pembeli dan stok properti"
+          ]
+        },
+        "projectDescription": {
+          "title": "Deskripsi Proyek",
+          "paragraphs": [
+            "Agensi properti sering menghadapi masalah koordinasi internal seperti unit yang sudah terjual namun masih diiklankan, atau lambatnya agen dalam mengirimkan detail brosur saat ada calon pembeli yang tertarik via telepon.",
+            "Software ini hadir memberikan solusi integrasi total. Begitu admin mengubah status unit menjadi 'Sold', seluruh halaman listing publik, aplikasi agen, dan materi promosi digital akan langsung terupdate secara real-time. Manajemen database klien juga dienkripsi untuk melindungi data pembeli dari penyalahgunaan.",
+            "Implementasi sistem ini berhasil meningkatkan efisiensi waktu respon agen sebesar 35%, serta meminimalisir perselisihan klaim komisi internal berkat pencatatan transaksi yang transparan."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Home",
+          "title": "Manajemen Database Listing",
+          "description": "Penyimpanan data unit (Primary & Secondary) lengkap dengan spesifikasi, harga, dan peta lokasi."
+        },
+        {
+          "icon": "Users",
+          "title": "CRM Prospek & Pembeli",
+          "description": "Pantau status interaksi calon pembeli mulai dari cold call, survei lokasi, hingga negosiasi."
+        },
+        {
+          "icon": "Layers",
+          "title": "Kalkulator Komisi & Split",
+          "description": "Perhitungan otomatis bagian komisi antara Agen, Team Leader, dan Kantor Agensi secara akurat."
+        },
+        {
+          "icon": "Share2",
+          "title": "Blasting Media Sosial & WA",
+          "description": "Satu klik untuk membagikan info properti ke WhatsApp dan platform iklan eksternal."
+        },
+        {
+          "icon": "Eye",
+          "title": "Integrasi Virtual Tour 360",
+          "description": "Sematkan link Matterport atau video walkthrough langsung di dalam detail halaman properti."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Analitik Performa Agen",
+          "description": "Statistik performa jumlah listing aktif, jumlah survei, dan total penjualan per bulan."
+        }
+      ],
+      "workflow": {
+        "title": "Alur Kerja Operasional Agensi",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "FilePlus",
+            "title": "Listing & Mapping",
+            "description": "Agen memasukkan data properti baru (titik maps, foto, legalitas sertifikat, dan harga)."
+          },
+          {
+            "step": 2,
+            "icon": "ShieldCheck",
+            "title": "Verifikasi Internal",
+            "description": "Principal atau Admin menyetujui listing untuk memastikan harga pasar logis dan dokumen valid."
+          },
+          {
+            "step": 3,
+            "icon": "Megaphone",
+            "title": "Publikasi Otomatis",
+            "description": "Unit langsung tayang di portal properti utama dan siap ditawarkan oleh seluruh jaringan agen."
+          },
+          {
+            "step": 4,
+            "icon": "Calendar",
+            "title": "Jadwal Open House",
+            "description": "Pencatatan janji temu dan survei lokasi langsung bersama calon pembeli potensial."
+          },
+          {
+            "step": 5,
+            "icon": "Award",
+            "title": "Closing & Pembagian",
+            "description": "Transaksi deal, pencetakan invoice komisi, dan update otomatis status unit menjadi terjual."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend Services",
+          "technologies": [
+            {
+              "name": "Golang (Gin)",
+              "description": "Engine backend berkinerja tinggi untuk memproses ribuan data koordinat properti dan pencarian filter yang kompleks."
+            },
+            {
+              "name": "MariaDB",
+              "description": "Menyimpan data relasional sensitif seperti riwayat harga, komisi keuangan, dan data enkripsi klien."
+            },
+            {
+              "name": "Docker",
+              "description": "Standardisasi lingkungan aplikasi untuk kemudahan skalabilitas server saat traffic iklan melonjak."
+            }
+          ]
+        },
+        {
+          "category": "Frontend & UI",
+          "technologies": [
+            {
+              "name": "Next.js",
+              "description": "Memastikan portal pencarian properti konsumen memiliki SEO yang bagus dan loading halaman yang instan."
+            },
+            {
+              "name": "Image Optimization API",
+              "description": "Kompresi otomatis foto-foto rumah berukuran besar agar tetap jernih tanpa membebani kuota pengguna."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Desain antarmuka minimalis, elegan, dan clean untuk meningkatkan impresi mewah pada properti."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Halaman Utama Portal Publik",
+          "image": "/assets/property-listing/property-listing.png",
+          "description": "Tampilan pencarian properti modern berdasarkan tipe, harga, dan peta interaktif."
+        },
+        {
+          "title": "Detail Brosur Digital",
+          "image": "/assets/property-listing/property-listing-1.png",
+          "description": "Layout preview spesifikasi teknis unit siap ekspor untuk dikirim ke prospek."
+        },
+        {
+          "title": "Template Desain Ringkas",
+          "image": "/assets/property-listing/simple-design.png",
+          "description": "Pilihan tampilan brosur minimalis satu halaman untuk iklan cepat."
+        },
+        {
+          "title": "Poster Promosi Media Sosial",
+          "image": "/assets/property-listing/poster.png",
+          "description": "Generator otomatis gambar berukuran square untuk kebutuhan feed Instagram agen."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Persyaratan Sistem",
+          "server": {
+            "title": "Infrastruktur Cloud",
+            "items": [
+              "VPS Linux Ubuntu Server",
+              "RAM 4GB+ (disarankan untuk pemrosesan file gambar resolusi tinggi)",
+              "Object Storage (S3) khusus untuk penyimpanan galeri foto properti"
+            ]
+          },
+          "client": {
+            "title": "Perangkat Pengguna",
+            "items": [
+              "Browser modern (Chrome/Safari) untuk tim admin dan konsumen",
+              "Smartphone Android/iOS dengan GPS aktif untuk aplikasi mobile agen",
+              "Koneksi internet stabil untuk load virtual tour 360"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Kualitas Layanan",
+          "metrics": [
+            { "label": "Kecepatan Filter Properti", "value": "< 120ms" },
+            { "label": "Akurasi Lokasi GPS", "value": "Radius < 5 meter" },
+            { "label": "Uptime Sistem", "value": "99.95%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Keamanan & Protokol",
+          "items": [
+            "Watermarking otomatis pada foto unit untuk mencegah pencurian listing oleh agensi lain",
+            "Role-Based Access Control (RBAC) ketat untuk data nomor telepon pembeli",
+            "Daily automated database backup & audit log aktivitas modifikasi harga properti"
+          ]
+        }
+      }
     }
   ]
 }

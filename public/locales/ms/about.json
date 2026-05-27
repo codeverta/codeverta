@@ -5,37 +5,147 @@
     "keywords": "tentang Codeverta, software house, rakan teknologi, konsultan IT"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "Perbincangan pasukan Codeverta",
     "heading": {
-      "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "prefix": "Nilai Teras",
+      "highlight": "Codeverta"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "Codeverta lahir daripada satu keyakinan mudah: setiap perniagaan, tanpa mengira saiz, berhak memiliki rakan teknologi yang benar-benar boleh dipercayai. Terlalu banyak projek digital gagal kerana komunikasi yang lemah, kos tersembunyi, atau hasil yang tidak menepati jangkaan.",
+      "Kami hadir untuk mengubah perkara itu. Sebagai pasukan pembangun, pereka bentuk, dan perunding IT profesional, kami memberi tumpuan kepada kualiti kod, komunikasi yang telus, dan kejayaan pelanggan. Misi kami ialah menukar visi digital anda kepada penyelesaian yang boleh dipercayai dan memberi nilai perniagaan sebenar."
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "Misi Kami untuk Kemanusiaan",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "Komitmen Kami terhadap",
+      "highlight": "Penjagaan Kanser"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "Di PT Zenit Technology Solution, kami percaya inovasi harus berkhidmat untuk tujuan yang lebih besar. Kami dengan bangga berikrar menyalurkan",
+      "pledge": "lebih daripada 3% keuntungan bersih tahunan",
+      "after": "untuk menyokong pesakit kanser kurang berkemampuan melalui"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "Sokongan Langsung",
+        "description": "Membantu keluarga menampung kos rawatan penting."
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "Teknologi Beretika",
+        "description": "Projek anda secara langsung membiayai impak sosial."
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "Sokongan rawatan kanser melalui Kitabisa"
+  },
+  "orgChart": {
+    "heading": "Struktur Organisasi",
+    "actions": {
+      "expand": "Kembangkan",
+      "collapse": "Kuncupkan"
+    },
+    "legend": {
+      "cSuite": "C-Suite",
+      "engineering": "Kejuruteraan",
+      "product": "Produk",
+      "marketing": "Pemasaran",
+      "financeHr": "Kewangan dan HR",
+      "subTeam": "Subpasukan"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / Pengasas bersama",
+        "sub": "Visi dan strategi",
+        "description": "Memimpin syarikat dan menetapkan visi jangka panjang."
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "Seni bina dan teknologi",
+        "description": "Bertanggungjawab terhadap seni bina teknikal, stack teknologi, dan kualiti engineering."
+      },
+      "eng": {
+        "role": "Kejuruteraan",
+        "sub": "Frontend, backend, mobile",
+        "description": "Pasukan pembangunan teras yang merangkumi frontend, backend, dan mobile."
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "Membina antara muka pengguna dengan React, Vue, dan framework moden lain."
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, perkhidmatan",
+        "description": "Membangunkan API, logik bisnes, dan pengurusan pangkalan data."
+      },
+      "mob": {
+        "role": "Mobile",
+        "sub": "iOS dan Android",
+        "description": "Membangunkan aplikasi native atau cross-platform untuk iOS dan Android."
+      },
+      "devops": {
+        "role": "DevOps / Infra",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "Mengurus infrastruktur cloud, pipeline CI/CD, dan kebolehpercayaan sistem."
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Manual dan automasi",
+        "description": "Memastikan kualiti produk melalui ujian manual dan automasi."
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Roadmap produk",
+        "description": "Menentukan roadmap produk dan mengutamakan ciri berdasarkan data pengguna."
+      },
+      "pm": {
+        "role": "Product Manager",
+        "sub": "Ciri, backlog, OKR",
+        "description": "Mengurus backlog, keutamaan ciri, dan pencapaian OKR."
+      },
+      "uxd": {
+        "role": "UI/UX Design",
+        "sub": "Figma dan kajian",
+        "description": "Mereka pengalaman pengguna dan antara muka menggunakan Figma dan kajian UX."
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Pemasaran dan growth",
+        "description": "Merancang strategi pemasaran, kesedaran jenama, dan pertumbuhan pengguna."
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Kandungan, iklan, SEO",
+        "description": "Menjalankan strategi kandungan, SEO, dan iklan untuk pemerolehan pengguna."
+      },
+      "sales": {
+        "role": "Sales / BD",
+        "sub": "Lead, closing, rakan kongsi",
+        "description": "Mengenal pasti prospek, menutup jualan, dan membina kerjasama bisnes."
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Kewangan dan legal",
+        "description": "Mengurus kewangan, legal, compliance, dan perancangan bajet."
+      },
+      "fin": {
+        "role": "Finance",
+        "sub": "Pembukuan, cukai",
+        "description": "Mengurus pembukuan, laporan kewangan, cukai, dan audit."
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Rekrut dan budaya",
+        "description": "Mengendalikan rekrutmen, onboarding, pembangunan budaya, dan pengekalan bakat."
+      }
+    },
+    "description": "Struktur syarikat kami memastikan produk, kejuruteraan, pemasaran, kewangan, dan operasi people bergerak selaras dengan tanggungjawab yang jelas."
+  },
+  "location": {
+    "badge": "Lokasi Kami",
+    "heading": "Lawati Codeverta di Yogyakarta",
+    "description": "Cari lokasi pejabat kami di Google Maps dan dapatkan arah apabila anda ingin berbincang tentang laman web, aplikasi, LMS, sistem maklumat, atau projek perkhidmatan IT lain bersama pasukan kami.",
+    "mapTitle": "Lokasi pejabat Codeverta di Google Maps",
+    "cta": "Buka di Google Maps"
   }
 }

@@ -5,37 +5,147 @@
     "keywords": "关于Codeverta, 软件公司, 技术伙伴, IT顾问, 软件开发"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "Codeverta 团队讨论",
     "heading": {
       "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "highlight": "核心价值"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "Codeverta 源于一个简单的信念：每一家企业，无论规模大小，都应该拥有一个真正值得信赖的技术伙伴。数字化项目常常因为沟通不畅、隐藏成本或成果不符合预期而失败。",
+      "我们希望改变这种情况。作为由专业开发人员、设计师和 IT 顾问组成的团队，我们专注于代码质量、透明沟通和客户成功。我们的使命是把您的数字愿景转化为可靠方案，并创造真实的业务价值。"
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "我们的人道使命",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "我们对",
+      "highlight": "癌症护理的承诺"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "在 PT Zenit Technology Solution，我们相信创新应该服务更高的目标。我们郑重承诺将",
+      "pledge": "年度净利润的 3% 以上",
+      "after": "通过以下平台支持经济困难的癌症患者"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "直接支持",
+        "description": "帮助家庭承担关键治疗费用。"
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "有温度的科技",
+        "description": "您的项目将直接资助社会影响行动。"
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "通过 Kitabisa 支持癌症治疗"
+  },
+  "orgChart": {
+    "heading": "组织架构",
+    "actions": {
+      "expand": "展开",
+      "collapse": "收起"
+    },
+    "legend": {
+      "cSuite": "高管团队",
+      "engineering": "工程",
+      "product": "产品",
+      "marketing": "市场营销",
+      "financeHr": "财务与人力资源",
+      "subTeam": "子团队"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / 联合创始人",
+        "sub": "愿景与战略",
+        "description": "领导公司并制定长期愿景。"
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "架构与技术",
+        "description": "负责技术架构、技术栈和工程质量。"
+      },
+      "eng": {
+        "role": "工程",
+        "sub": "前端、后端、移动端",
+        "description": "覆盖前端、后端和移动端的核心开发团队。"
+      },
+      "fe": {
+        "role": "前端",
+        "sub": "React / Vue / UI",
+        "description": "使用 React、Vue 和其他现代框架构建用户界面。"
+      },
+      "be": {
+        "role": "后端",
+        "sub": "API、数据库、服务",
+        "description": "开发 API、业务逻辑和数据库管理。"
+      },
+      "mob": {
+        "role": "移动端",
+        "sub": "iOS 与 Android",
+        "description": "为 iOS 和 Android 开发原生或跨平台应用。"
+      },
+      "devops": {
+        "role": "DevOps / 基础设施",
+        "sub": "云、CI/CD、SRE",
+        "description": "管理云基础设施、CI/CD 流水线和系统可靠性。"
+      },
+      "qa": {
+        "role": "QA / 测试",
+        "sub": "手动与自动化",
+        "description": "通过手动和自动化测试确保产品质量。"
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "产品路线图",
+        "description": "制定产品路线图，并基于用户数据确定功能优先级。"
+      },
+      "pm": {
+        "role": "产品经理",
+        "sub": "功能、待办、OKR",
+        "description": "管理待办事项、功能优先级和 OKR 交付。"
+      },
+      "uxd": {
+        "role": "UI/UX 设计",
+        "sub": "Figma 与研究",
+        "description": "使用 Figma 和 UX 研究设计用户体验与界面。"
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "营销与增长",
+        "description": "制定营销策略、品牌认知和用户增长计划。"
+      },
+      "growth": {
+        "role": "增长 / SEO",
+        "sub": "内容、广告、SEO",
+        "description": "执行内容、SEO 和广告策略以获取用户。"
+      },
+      "sales": {
+        "role": "销售 / 商务拓展",
+        "sub": "线索、成交、伙伴",
+        "description": "识别潜在客户、促成交易并建立商业合作。"
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "财务与法务",
+        "description": "管理财务、法务、合规和预算规划。"
+      },
+      "fin": {
+        "role": "财务",
+        "sub": "记账、税务",
+        "description": "管理记账、财务报告、税务和审计。"
+      },
+      "hr": {
+        "role": "HR / 人才",
+        "sub": "招聘与文化",
+        "description": "负责招聘、入职、文化建设和人才留存。"
+      }
+    },
+    "description": "我们的公司架构让产品、工程、市场、财务和人才运营保持协同，确保每个项目都有清晰的责任归属。"
+  },
+  "location": {
+    "badge": "我们的位置",
+    "heading": "在日惹拜访 Codeverta",
+    "description": "在 Google Maps 上查看我们的办公室位置。当您想与团队讨论网站、应用、LMS、信息系统或其他 IT 服务项目时，可以直接获取路线。",
+    "mapTitle": "Codeverta 办公室在 Google Maps 上的位置",
+    "cta": "在 Google Maps 中打开"
   }
 }

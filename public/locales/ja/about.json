@@ -5,37 +5,147 @@
     "keywords": "Codevertaについて, ソフトウェア会社, 技術パートナー, ITコンサルタント"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "Codeverta チームのディスカッション",
     "heading": {
       "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "highlight": "のコアバリュー"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "Codeverta は、規模に関係なくすべての企業には本当に信頼できるテクノロジーパートナーが必要だという、シンプルな信念から生まれました。デジタルプロジェクトは、コミュニケーション不足、不透明な費用、期待と異なる成果によって失敗することが少なくありません。",
+      "私たちはそれを変えるために存在しています。プロの開発者、デザイナー、IT コンサルタントのチームとして、コード品質、透明なコミュニケーション、クライアントの成功に注力しています。お客様のデジタルビジョンを、確かなビジネス価値を生む信頼性の高いソリューションへ変えることが私たちの使命です。"
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "人々のための私たちの使命",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "私たちの",
+      "highlight": "がん治療支援への取り組み"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "PT Zenit Technology Solution では、イノベーションはより大きな目的に役立つべきだと考えています。私たちは",
+      "pledge": "年間純利益の 3% 以上",
+      "after": "を、Kitabisa を通じて経済的に困難ながん患者の支援に充てることを約束します"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "直接支援",
+        "description": "重要な治療費を家族が負担できるよう支援します。"
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "倫理的なテクノロジー",
+        "description": "お客様のプロジェクトが社会的インパクトを直接支えます。"
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "Kitabisa を通じたがん治療支援"
+  },
+  "orgChart": {
+    "heading": "組織構成",
+    "actions": {
+      "expand": "展開",
+      "collapse": "折りたたむ"
+    },
+    "legend": {
+      "cSuite": "経営陣",
+      "engineering": "エンジニアリング",
+      "product": "プロダクト",
+      "marketing": "マーケティング",
+      "financeHr": "財務と人事",
+      "subTeam": "サブチーム"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / 共同創業者",
+        "sub": "ビジョンと戦略",
+        "description": "会社を率い、長期的なビジョンを定めます。"
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "アーキテクチャと技術",
+        "description": "技術アーキテクチャ、技術スタック、エンジニアリング品質を統括します。"
+      },
+      "eng": {
+        "role": "エンジニアリング",
+        "sub": "フロントエンド、バックエンド、モバイル",
+        "description": "フロントエンド、バックエンド、モバイルを担う中核開発チームです。"
+      },
+      "fe": {
+        "role": "フロントエンド",
+        "sub": "React / Vue / UI",
+        "description": "React、Vue、その他のモダンフレームワークで UI を構築します。"
+      },
+      "be": {
+        "role": "バックエンド",
+        "sub": "API、DB、サービス",
+        "description": "API、ビジネスロジック、データベース管理を開発します。"
+      },
+      "mob": {
+        "role": "モバイル",
+        "sub": "iOS と Android",
+        "description": "iOS と Android 向けのネイティブまたはクロスプラットフォームアプリを開発します。"
+      },
+      "devops": {
+        "role": "DevOps / インフラ",
+        "sub": "クラウド、CI/CD、SRE",
+        "description": "クラウドインフラ、CI/CD パイプライン、システム信頼性を管理します。"
+      },
+      "qa": {
+        "role": "QA / テスト",
+        "sub": "手動と自動化",
+        "description": "手動および自動テストで製品品質を確保します。"
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "プロダクトロードマップ",
+        "description": "プロダクトロードマップを定義し、ユーザーデータに基づいて機能を優先します。"
+      },
+      "pm": {
+        "role": "プロダクトマネージャー",
+        "sub": "機能、バックログ、OKR",
+        "description": "バックログ、機能優先度、OKR 達成を管理します。"
+      },
+      "uxd": {
+        "role": "UI/UX デザイン",
+        "sub": "Figma とリサーチ",
+        "description": "Figma と UX リサーチを使って体験とインターフェースを設計します。"
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "マーケティングと成長",
+        "description": "マーケティング戦略、ブランド認知、ユーザー成長を設計します。"
+      },
+      "growth": {
+        "role": "グロース / SEO",
+        "sub": "コンテンツ、広告、SEO",
+        "description": "ユーザー獲得のためにコンテンツ、SEO、広告戦略を実行します。"
+      },
+      "sales": {
+        "role": "営業 / 事業開発",
+        "sub": "リード、成約、パートナー",
+        "description": "見込み客を発掘し、商談を成約し、事業提携を築きます。"
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "財務と法務",
+        "description": "財務、法務、コンプライアンス、予算計画を管理します。"
+      },
+      "fin": {
+        "role": "財務",
+        "sub": "記帳、税務",
+        "description": "記帳、財務報告、税務、監査を管理します。"
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "採用と文化",
+        "description": "採用、オンボーディング、文化形成、人材定着を担当します。"
+      }
+    },
+    "description": "私たちの組織構成は、プロダクト、エンジニアリング、マーケティング、財務、人材領域が連携し、各プロジェクトを明確な責任体制で進めるためのものです。"
+  },
+  "location": {
+    "badge": "所在地",
+    "heading": "ジョグジャカルタの Codeverta へお越しください",
+    "description": "Google Maps でオフィス所在地を確認できます。Web サイト、アプリ、LMS、情報システム、その他 IT サービスについて相談したいときにルートを取得してください。",
+    "mapTitle": "Google Maps 上の Codeverta オフィス所在地",
+    "cta": "Google Maps で開く"
   }
 }

@@ -479,6 +479,18 @@
       "home": "홈",
       "products": "제품",
       "itemListName": "Codeverta 디지털 제품 및 시스템 포트폴리오"
+    },
+    "categories": {
+      "badge": "제품 카테고리",
+      "title": "비즈니스 요구별로 살펴보기",
+      "description": "POS와 ERP부터 헬스케어, 교육, 창고, 고객 관리 시스템까지 산업과 운영 영역별로 Codeverta 제품을 필터링하세요.",
+      "all": "전체 카테고리",
+      "productsLabel": "디지털 제품",
+      "categoriesLabel": "솔루션 카테고리",
+      "productionReadyLabel": "준비 완료 또는 완료",
+      "showing": "{{count}}개 솔루션 표시",
+      "emptyTitle": "이 카테고리에는 아직 제품이 없습니다",
+      "emptyDescription": "다른 카테고리를 선택하거나 맞춤형 시스템을 문의해 주세요."
     }
   },
   "cookieConsent": {

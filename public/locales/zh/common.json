@@ -479,6 +479,18 @@
       "home": "首页",
       "products": "产品",
       "itemListName": "Codeverta 数字产品作品集"
+    },
+    "categories": {
+      "badge": "产品分类",
+      "title": "按业务需求浏览",
+      "description": "按行业和运营领域筛选 Codeverta 产品，涵盖 POS、ERP、医疗、教育、仓库和客户管理系统。",
+      "all": "全部分类",
+      "productsLabel": "数字产品",
+      "categoriesLabel": "解决方案分类",
+      "productionReadyLabel": "已就绪或已完成",
+      "showing": "显示 {{count}} 个解决方案",
+      "emptyTitle": "该分类暂无产品",
+      "emptyDescription": "请选择其他分类，或联系我们定制系统。"
     }
   },
   "cookieConsent": {

@@ -5,37 +5,147 @@
     "keywords": "о Codeverta, software house, технологический партнер, IT консультант"
   },
   "story": {
-    "imageAlt": "Codeverta team discussion",
+    "imageAlt": "Обсуждение команды Codeverta",
     "heading": {
       "prefix": "Codeverta",
-      "highlight": "Core Values"
+      "highlight": "ключевые ценности"
     },
     "paragraphs": [
-      "Codeverta was born from a simple conviction: every business, regardless of size, deserves a technology partner they can truly trust. Too often, digital projects fail because of poor communication, hidden costs, or results that do not meet expectations.",
-      "We are here to change that. As a team of professional developers, designers, and IT consultants, we focus on code quality, transparent communication, and client success. Our mission is to turn your digital vision into reliable solutions that deliver real business value."
+      "Codeverta родилась из простого убеждения: каждый бизнес, независимо от размера, заслуживает технологического партнера, которому можно по-настоящему доверять. Слишком часто цифровые проекты терпят неудачу из-за плохой коммуникации, скрытых затрат или результатов, которые не соответствуют ожиданиям.",
+      "Мы здесь, чтобы это изменить. Как команда профессиональных разработчиков, дизайнеров и IT-консультантов, мы сосредоточены на качестве кода, прозрачной коммуникации и успехе клиента. Наша миссия — превратить ваше цифровое видение в надежные решения, которые приносят реальную бизнес-ценность."
     ]
   },
   "impact": {
-    "badge": "Our Mission for Humanity",
+    "badge": "Наша миссия ради человечности",
     "heading": {
-      "prefix": "Our Commitment to",
-      "highlight": "Cancer Care"
+      "prefix": "Наша приверженность",
+      "highlight": "помощи онкологическим пациентам"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
-      "pledge": "more than 3% of our annual net profit",
-      "after": "to support underprivileged cancer patients via"
+      "before": "В PT Zenit Technology Solution мы верим, что инновации должны служить более высокой цели. Мы с гордостью обязуемся направлять",
+      "pledge": "более 3% нашей годовой чистой прибыли",
+      "after": "на поддержку малообеспеченных онкологических пациентов через"
     },
     "cards": {
       "direct": {
-        "title": "Direct Support",
-        "description": "Helping families cover critical treatment costs."
+        "title": "Прямая поддержка",
+        "description": "Помогаем семьям покрывать критически важные расходы на лечение."
       },
       "ethical": {
-        "title": "Ethical Tech",
-        "description": "Your projects directly fund social impact."
+        "title": "Этичные технологии",
+        "description": "Ваши проекты напрямую финансируют социальное воздействие."
       }
     },
-    "imageAlt": "Cancer treatment support through Kitabisa"
+    "imageAlt": "Поддержка лечения рака через Kitabisa"
+  },
+  "orgChart": {
+    "heading": "Организационная структура",
+    "actions": {
+      "expand": "Развернуть",
+      "collapse": "Свернуть"
+    },
+    "legend": {
+      "cSuite": "Руководство",
+      "engineering": "Разработка",
+      "product": "Продукт",
+      "marketing": "Маркетинг",
+      "financeHr": "Финансы и HR",
+      "subTeam": "Подкоманда"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / сооснователь",
+        "sub": "Видение и стратегия",
+        "description": "Руководит компанией и определяет долгосрочное видение."
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "Архитектура и технологии",
+        "description": "Отвечает за техническую архитектуру, технологический стек и качество разработки."
+      },
+      "eng": {
+        "role": "Разработка",
+        "sub": "Frontend, backend, mobile",
+        "description": "Ключевая команда разработки, охватывающая frontend, backend и mobile."
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "Создает пользовательские интерфейсы на React, Vue и других современных фреймворках."
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, services",
+        "description": "Разрабатывает API, бизнес-логику и управление базами данных."
+      },
+      "mob": {
+        "role": "Mobile",
+        "sub": "iOS и Android",
+        "description": "Разрабатывает native или cross-platform приложения для iOS и Android."
+      },
+      "devops": {
+        "role": "DevOps / Infra",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "Управляет cloud-инфраструктурой, CI/CD pipelines и надежностью системы."
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Manual и automation",
+        "description": "Обеспечивает качество продукта через ручное и автоматизированное тестирование."
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Product roadmap",
+        "description": "Определяет product roadmap и приоритизирует функции на основе данных пользователей."
+      },
+      "pm": {
+        "role": "Product Manager",
+        "sub": "Features, backlog, OKR",
+        "description": "Управляет backlog, приоритетами функций и достижением OKR."
+      },
+      "uxd": {
+        "role": "UI/UX Design",
+        "sub": "Figma и research",
+        "description": "Проектирует пользовательский опыт и интерфейсы с помощью Figma и UX research."
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Marketing и growth",
+        "description": "Разрабатывает маркетинговую стратегию, узнаваемость бренда и рост пользователей."
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Content, ads, SEO",
+        "description": "Запускает content, SEO и advertising strategies для привлечения пользователей."
+      },
+      "sales": {
+        "role": "Sales / BD",
+        "sub": "Leads, closing, partners",
+        "description": "Находит prospects, закрывает сделки и развивает business partnerships."
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Finance и legal",
+        "description": "Управляет finance, legal, compliance и budget planning."
+      },
+      "fin": {
+        "role": "Finance",
+        "sub": "Bookkeeping, tax",
+        "description": "Управляет bookkeeping, financial reports, tax и audits."
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Hiring и culture",
+        "description": "Отвечает за recruitment, onboarding, culture development и удержание талантов."
+      }
+    },
+    "description": "Наша структура компании помогает продукту, разработке, маркетингу, финансам и people operations работать согласованно, чтобы каждый проект имел понятную зону ответственности."
+  },
+  "location": {
+    "badge": "Наше местоположение",
+    "heading": "Посетите Codeverta в Джокьякарте",
+    "description": "Найдите наш офис на Google Maps и получите маршрут, если хотите обсудить с нашей командой сайт, приложение, LMS, информационную систему или другой IT-сервис.",
+    "mapTitle": "Расположение офиса Codeverta на Google Maps",
+    "cta": "Открыть в Google Maps"
   }
 }
