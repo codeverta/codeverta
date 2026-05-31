@@ -4,8 +4,8 @@
       "product": {
         "id": "gym-management-system",
         "name": "Gym Management System by Codeverta",
-        "description": "Sistem terintegrasi untuk pengelolaan operasional gym, mulai dari manajemen member, absensi, hingga sistem kasir (POS).",
-        "fullDescription": "Solusi digital untuk otomatisasi bisnis fitness center. Sistem ini mencakup pengelolaan membership (Gym Plan), pemantauan sesi latihan member (Gym Workout Log), hingga pencatatan penjualan inventaris gym melalui Gym POS Invoice. Memudahkan pemilik gym dalam memantau performa trainer dan retensi member secara real-time.",
+        "description": "Sistem manajemen gym komprehensif yang mengintegrasikan administrasi member, operasional kelas, sistem kasir (POS), hingga pelacakan performa latihan dalam satu dashboard terpadu.",
+        "fullDescription": "Solusi manajemen gym end-to-end yang dirancang untuk mengoptimalkan operasional bisnis fitness center. Sistem ini menyederhanakan alur kerja mulai dari registrasi member dan manajemen paket keanggotaan, sistem presensi QR code yang presisi, pengelolaan jadwal kelas, hingga transaksi ritel melalui modul POS yang terintegrasi. Dilengkapi dengan analitik real-time, pemilik gym dapat memantau pendapatan, performa trainer, serta retensi member dengan efisiensi tinggi, mengurangi risiko kebocoran data, dan meningkatkan produktivitas staf",
         "image": "/assets/products/gym-management.png",
         "images": [
           "/assets/products/gym-management.png",
@@ -88,42 +88,42 @@
         "projectDescription": {
           "title": "Tujuan Bisnis",
           "paragraphs": [
-            "Bisnis ini berfokus pada efisiensi operasional gym dengan memastikan data 'Gym Member' sinkron dengan 'Gym Membership' dan 'Gym Plan' yang dipilih untuk mencegah kebocoran pendapatan.",
-            "Setiap transaksi retail seperti penjualan suplemen atau air mineral dikelola melalui 'Gym POS Invoice' menggunakan data 'Gym Item' dan 'Gym POS Item' yang terdata rapi.",
-            "Peningkatan kualitas layanan dilakukan melalui modul 'Gym Trainer' yang dapat menjadwalkan sesi di 'Gym Schedule' dan mendokumentasikan progres latihan member pada 'Gym Workout Log' secara sistematis."
+            "Fokus utama sistem adalah digitalisasi operasional gym untuk meminimalisir kesalahan manual. Dengan integrasi data membership yang terpusat, pemilik dapat memantau status aktif setiap member secara akurat untuk mencegah kebocoran pendapatan.",
+            "Modul POS (Point of Sales) memudahkan pengelolaan inventaris dan penjualan produk ritel, memastikan setiap transaksi tercatat otomatis dalam laporan keuangan.",
+            "Peningkatan layanan diberikan melalui fitur penjadwalan kelas yang dinamis, sistem presensi QR Code yang efisien, serta alat monitoring progres latihan yang membantu trainer memberikan layanan personal yang lebih baik."
           ]
         }
       },
       "features": [
         {
           "icon": "Users",
-          "title": "Membership System",
-          "description": "Pengelolaan data 'Gym Member' lengkap dengan status 'Gym Membership' dan pemilihan 'Gym Plan'."
+          "title": "Membership & CRM",
+          "description": "Pengelolaan database member, status keanggotaan, dan paket Gym Plan yang fleksibel."
+        },
+        {
+          "icon": "QrCode",
+          "title": "Smart Attendance",
+          "description": "Presensi berbasis QR Code untuk Member, Personal Trainer, dan Karyawan dengan validasi waktu real-time."
         },
         {
           "icon": "Calendar",
-          "title": "Scheduling & Trainer",
-          "description": "Pengaturan 'Gym Schedule' untuk kelas atau sesi personal dengan 'Gym Trainer' dan 'Gym Trainer Subscription'."
-        },
-        {
-          "icon": "Activity",
-          "title": "Workout Tracking",
-          "description": "Pencatatan 'Gym Workout Log' dan 'Gym Workout Item' berdasarkan daftar 'Gym Exercise' yang tersedia."
-        },
-        {
-          "icon": "CheckCircle",
-          "title": "Attendance System",
-          "description": "Modul 'Gym Attendance' untuk mencatat kehadiran member dan validasi akses masuk."
+          "title": "Class & Schedule",
+          "description": "Manajemen jadwal kelas, pendaftaran sesi, dan pemantauan tingkat partisipasi secara sistematis."
         },
         {
           "icon": "ShoppingCart",
-          "title": "Point of Sales",
-          "description": "Sistem kasir untuk menjual 'Gym Item' dan 'Gym POS Item' yang menghasilkan 'Gym POS Invoice'."
+          "title": "Integrated POS",
+          "description": "Sistem kasir lengkap untuk penjualan inventaris produk gym dengan pelacakan invoice otomatis."
         },
         {
-          "icon": "Settings",
-          "title": "App Configuration",
-          "description": "Pengaturan fleksibel untuk sistem melalui 'App Subscription Settings' sesuai kebutuhan operasional."
+          "icon": "TrendingUp",
+          "title": "Business Analytics",
+          "description": "Visualisasi grafik pendapatan membership dan tren penjualan produk untuk evaluasi bisnis."
+        },
+        {
+          "icon": "FileText",
+          "title": "Data Management",
+          "description": "Kemudahan eksport data laporan untuk kebutuhan audit, payroll karyawan, dan administrasi."
         }
       ],
       "workflow": {
@@ -132,26 +132,26 @@
           {
             "step": 1,
             "icon": "UserPlus",
-            "title": "Member Onboarding",
-            "description": "Registrasi 'Gym Member' dan pemilihan 'Gym Plan' untuk mengaktifkan 'Gym Membership'."
+            "title": "Onboarding",
+            "description": "Registrasi member baru dan pemilihan paket keanggotaan yang sesuai."
           },
           {
             "step": 2,
-            "icon": "Clock",
-            "title": "Daily Attendance",
-            "description": "Member melakukan 'Gym Attendance' sesuai dengan 'Gym Schedule' yang telah ditetapkan."
+            "icon": "QrCode",
+            "title": "Check-in",
+            "description": "Member melakukan presensi via QR Code saat tiba di lokasi gym."
           },
           {
             "step": 3,
             "icon": "Dumbbell",
-            "title": "Workout Execution",
-            "description": "Trainer mengarahkan 'Gym Exercise' dan mencatatnya ke 'Gym Workout Log' serta 'Gym Workout Item'."
+            "title": "Activity",
+            "description": "Member mengikuti kelas terjadwal atau sesi latihan bersama Personal Trainer."
           },
           {
             "step": 4,
             "icon": "CreditCard",
-            "title": "Point of Sale",
-            "description": "Transaksi item pendukung melalui 'Gym POS Item' yang terekam dalam 'Gym POS Invoice'."
+            "title": "Transaction",
+            "description": "Pembelian suplemen atau item pendukung lainnya melalui sistem kasir POS."
           }
         ]
       },
