@@ -38,6 +38,26 @@ function getLocalizedProjectsFile(locale = "id") {
   return null;
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+}
+
+function mergeProjectObject(base: any, localized: any): any {
+  if (!isRecord(base) || !isRecord(localized)) return localized ?? base;
+
+  const merged: Record<string, unknown> = { ...base };
+
+  for (const [key, value] of Object.entries(localized)) {
+    if (isRecord(value) && isRecord(merged[key])) {
+      merged[key] = mergeProjectObject(merged[key], value);
+    } else {
+      merged[key] = value;
+    }
+  }
+
+  return merged;
+}
+
 function mergeProjects(baseProjects: any[], localizedProjects: any[]) {
   const localizedById = new Map(
     localizedProjects.map((project) => [project?.product?.id, project])
@@ -47,7 +67,10 @@ function mergeProjects(baseProjects: any[], localizedProjects: any[]) {
   const merged = baseProjects.map((project) => {
     const id = project?.product?.id;
     seenIds.add(id);
-    return localizedById.get(id) || project;
+    const localizedProject = localizedById.get(id);
+    return localizedProject
+      ? mergeProjectObject(project, localizedProject)
+      : project;
   });
 
   for (const project of localizedProjects) {
