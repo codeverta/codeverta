@@ -1,0 +1,71 @@
+{
+  "title": "Privacybeleid",
+  "last_updated": "Laatst bijgewerkt: 23 december 2025",
+  "intro": "Bij Codeverta & BikinWebsiteJogja hechten wij waarde aan uw privacy en beschermen wij uw persoonsgegevens. Dit beleid legt uit hoe wij informatie verzamelen, gebruiken en beveiligen wanneer u onze softwareontwikkelingsdiensten gebruikt.",
+  "sections": {
+    "collection": {
+      "title": "1. Informatie die wij verzamelen",
+      "content": "Wij verzamelen verschillende soorten informatie om onze diensten te leveren en te verbeteren:",
+      "items": [
+        "Identiteitsgegevens: naam, bedrijfsadres en officiële identiteitsinformatie voor contractdoeleinden.",
+        "Contactgegevens: e-mailadres, WhatsApp-/telefoonnummer en afleveradres.",
+        "Technische gegevens: IP-adres, browsertype, locatie en loggegevens bij toegang tot codeverta.com.",
+        "Projectgegevens: bedrijfsdocumentatie, workflows en digitale assets die u aanlevert voor systeemontwikkeling."
+      ]
+    },
+    "usage": {
+      "title": "2. Gebruik van informatie",
+      "content": "De informatie die wij verzamelen wordt gebruikt om:",
+      "items": [
+        "Websiteontwikkeling, mobiele apps en maatwerksystemen te leveren.",
+        "Betalingen en factuuradministratie te verwerken.",
+        "Technische ondersteuning, onderhoud en systeemupdates te bieden.",
+        "Belangrijke informatie over service- of beleidswijzigingen te sturen.",
+        "Sitegebruik te analyseren en de gebruikerservaring te verbeteren."
+      ]
+    },
+    "protection": {
+      "title": "3. Beveiliging en gegevensbescherming",
+      "content": "Wij passen beveiligingsstandaarden uit de sector toe om uw data te beschermen. Als software house begrijpen wij het belang van broncode en databases:",
+      "items": [
+        "Data-encryptie: gevoelige data wordt verzonden via SSL/TLS-technologie.",
+        "Beperkte toegang: alleen developers die aan uw project zijn toegewezen hebben toegang tot repositories en databases.",
+        "NDA: ons team is gebonden aan geheimhouding en deelt uw business logic of projectdata niet."
+      ]
+    },
+    "third_party": {
+      "title": "4. Delen van data met derden",
+      "content": "Wij verkopen uw data niet. Wel werken wij met derde partijen om bepaalde functies uit te voeren:",
+      "items": [
+        "Cloudhostingproviders zoals AWS, Google Cloud of Cloudflare voor systeemdeployment.",
+        "Payment gateways om facturen veilig te verwerken.",
+        "Analyticsdiensten zoals Google Analytics om siteprestaties te monitoren."
+      ]
+    },
+    "cookies": {
+      "title": "5. Cookiebeleid",
+      "content": "Onze site gebruikt cookies om voorkeuren zoals taal te onthouden en terugkerende bezoekers te herkennen. U kunt cookies uitschakelen in uw browserinstellingen, al werken sommige functies dan mogelijk minder goed."
+    },
+    "rights": {
+      "title": "6. Uw rechten",
+      "content": "U heeft het recht om toegang tot uw persoonsgegevens te vragen, onjuiste gegevens te laten corrigeren of verwijdering uit onze marketingsystemen te verzoeken nadat het project is afgerond, zolang dit niet strijdig is met wettelijke of fiscale verplichtingen."
+    },
+    "contact": {
+      "title": "7. Contact opnemen",
+      "content": "Heeft u vragen over dit privacybeleid, neem dan contact met ons op via support@codeverta.com of via de contactgegevens op codeverta.com."
+    }
+  },
+  "seo": {
+    "title": "Privacybeleid van Codeverta - Databescherming, cookies en gebruikersrechten",
+    "description": "Lees hoe Codeverta persoonsgegevens verzamelt, gebruikt, beschermt, cookies inzet en privacyrechten respecteert voor gebruikers van software- en websitediensten.",
+    "keywords": "Codeverta privacybeleid, databescherming, cookies, persoonsgegevens, gebruikersrechten"
+  },
+  "notice": {
+    "before": "Dit document geldt voor alle entiteiten beheerd door",
+    "and": "en",
+    "after": "Door onze diensten te blijven gebruiken, wordt u geacht akkoord te gaan met bovenstaande punten."
+  },
+  "schema": {
+    "about": "Beleid voor gegevensbescherming en gebruikersprivacy"
+  }
+}

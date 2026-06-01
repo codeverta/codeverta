@@ -1,0 +1,25 @@
+{
+  "title": "Neem contact op",
+  "subtitle": "Klaar om uw digitale oplossing te bouwen? Bespreek uw project gratis met ons ervaren team.",
+  "form": {
+    "name": "Volledige naam",
+    "email": "E-mailadres",
+    "service": "Gewenste dienst",
+    "service_options": {
+      "web": "Websiteontwikkeling",
+      "mobile": "Mobiele app (Android/iOS)",
+      "system": "Informatiesysteem / ERP",
+      "uiux": "UI/UX-design"
+    },
+    "message": "Projectdetails",
+    "placeholder_message": "Vertel kort wat uw bedrijf nodig heeft...",
+    "submit": "Aanvraag versturen"
+  },
+  "info": {
+    "office_title": "Ons kantoor",
+    "address": "Yogyakarta, Indonesië (wij bedienen klanten in Indonesië en internationaal)",
+    "whatsapp_title": "WhatsApp / telefoon",
+    "email_title": "Zakelijk e-mailadres"
+  },
+  "success": "Bericht verzonden! Ons team neemt binnen 1x24 uur contact met u op."
+}

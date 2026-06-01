@@ -1,0 +1,60 @@
+{
+  "readTime": "min lezen",
+  "backToTop": "Terug naar boven",
+  "index": {
+    "meta": {
+      "title": "Nieuws & artikelen | Blog",
+      "description": "Nieuwste artikelen over technologie, business en digitale marketing."
+    },
+    "hero": {
+      "eyebrow": "Publicaties & inzichten",
+      "title": "Nieuws & artikelen"
+    },
+    "search": {
+      "placeholder": "Zoek artikelen...",
+      "aria": "Artikelen zoeken",
+      "clear": "Zoekopdracht wissen"
+    },
+    "sort": {
+      "aria": "Artikelen sorteren",
+      "newest": "Nieuwste",
+      "oldest": "Oudste"
+    },
+    "toc": {
+      "toggle": "Inhoudsopgave",
+      "label": "Artikellijst"
+    },
+    "tags": {
+      "aria": "Filter op tag",
+      "clear": "Filters wissen ({{count}})"
+    },
+    "stats": {
+      "showing": "<strong>{{showing}} van {{total}}</strong> artikelen weergegeven"
+    },
+    "empty": {
+      "message": "Geen artikelen gevonden voor uw zoekopdracht.",
+      "reset": "Filters resetten"
+    }
+  },
+  "detail": {
+    "toc": "Inhoudsopgave",
+    "stickyBack": "Artikelen",
+    "allArticles": "Alle artikelen",
+    "recommendedProducts": "Aanbevolen producten",
+    "otherArticles": "Meer artikelen",
+    "share": {
+      "label": "Delen:",
+      "whatsapp": "Delen via WhatsApp",
+      "twitter": "Delen op X/Twitter",
+      "facebook": "Delen op Facebook",
+      "copyAria": "Link kopiëren",
+      "copied": "Gekopieerd!",
+      "copy": "Kopiëren"
+    },
+    "cta": {
+      "title": "Klaar om uw bedrijf te verbeteren?",
+      "description": "Vraag een gratis consult aan bij ons team en vind de beste oplossing voor uw bedrijf.",
+      "button": "Neem contact op →"
+    }
+  }
+}

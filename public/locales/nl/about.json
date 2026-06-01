@@ -1,0 +1,151 @@
+{
+  "seo": {
+    "title": "Over Codeverta - Software house en technologiepartner voor bedrijven",
+    "description": "Leer Codeverta kennen: een team van developers, designers en IT-consultants dat focust op codekwaliteit, transparante communicatie en meetbare bedrijfswaarde.",
+    "keywords": "over Codeverta, software house, technologiepartner, IT-consultant, softwareontwikkeling"
+  },
+  "story": {
+    "imageAlt": "Teamoverleg van Codeverta",
+    "heading": {
+      "prefix": "Codeverta",
+      "highlight": "Kernwaarden"
+    },
+    "paragraphs": [
+      "Codeverta is ontstaan vanuit een eenvoudige overtuiging: elk bedrijf, ongeacht de grootte, verdient een technologiepartner die echt te vertrouwen is. Digitale projecten mislukken te vaak door slechte communicatie, verborgen kosten of resultaten die niet aan verwachtingen voldoen.",
+      "Wij willen dat veranderen. Als team van professionele developers, designers en IT-consultants richten wij ons op codekwaliteit, transparante communicatie en het succes van de klant. Onze missie is om uw digitale visie om te zetten in betrouwbare oplossingen die echte bedrijfswaarde leveren."
+    ]
+  },
+  "impact": {
+    "badge": "Onze missie voor menselijkheid",
+    "heading": {
+      "prefix": "Onze inzet voor",
+      "highlight": "kankerzorg"
+    },
+    "description": {
+      "before": "Bij PT Zenit Technology Solution geloven wij dat innovatie een hoger doel moet dienen. Daarom beloven wij",
+      "pledge": "meer dan 3% van onze jaarlijkse nettowinst",
+      "after": "te steunen voor kansarme kankerpatiënten via"
+    },
+    "cards": {
+      "direct": {
+        "title": "Directe steun",
+        "description": "Gezinnen helpen met kritieke behandelingskosten."
+      },
+      "ethical": {
+        "title": "Ethische technologie",
+        "description": "Uw projecten dragen direct bij aan sociale impact."
+      }
+    },
+    "imageAlt": "Steun voor kankerbehandeling via Kitabisa"
+  },
+  "orgChart": {
+    "heading": "Organisatiestructuur",
+    "actions": {
+      "expand": "Uitklappen",
+      "collapse": "Inklappen"
+    },
+    "legend": {
+      "cSuite": "C-suite",
+      "engineering": "Engineering",
+      "product": "Product",
+      "marketing": "Marketing",
+      "financeHr": "Finance en HR",
+      "subTeam": "Subteam"
+    },
+    "nodes": {
+      "ceo": {
+        "role": "CEO / medeoprichter",
+        "sub": "Visie en strategie",
+        "description": "Leidt het bedrijf en bepaalt de langetermijnvisie."
+      },
+      "cto": {
+        "role": "CTO",
+        "sub": "Architectuur en technologie",
+        "description": "Is verantwoordelijk voor technische architectuur, technologiestack en engineeringkwaliteit."
+      },
+      "eng": {
+        "role": "Engineering",
+        "sub": "Frontend, backend, mobiel",
+        "description": "Kernontwikkelteam voor frontend, backend en mobiel."
+      },
+      "fe": {
+        "role": "Frontend",
+        "sub": "React / Vue / UI",
+        "description": "Bouwt gebruikersinterfaces met React, Vue en andere moderne frameworks."
+      },
+      "be": {
+        "role": "Backend",
+        "sub": "API, DB, services",
+        "description": "Ontwikkelt API’s, business logic en databasebeheer."
+      },
+      "mob": {
+        "role": "Mobiel",
+        "sub": "iOS en Android",
+        "description": "Ontwikkelt native of cross-platform apps voor iOS en Android."
+      },
+      "devops": {
+        "role": "DevOps / Infra",
+        "sub": "Cloud, CI/CD, SRE",
+        "description": "Beheert cloudinfrastructuur, CI/CD-pipelines en systeembetrouwbaarheid."
+      },
+      "qa": {
+        "role": "QA / Testing",
+        "sub": "Handmatig en automatisering",
+        "description": "Bewaakt productkwaliteit via handmatige en geautomatiseerde tests."
+      },
+      "cpo": {
+        "role": "CPO",
+        "sub": "Productroadmap",
+        "description": "Bepaalt de productroadmap en prioriteert features op basis van gebruikersdata."
+      },
+      "pm": {
+        "role": "Productmanager",
+        "sub": "Features, backlog, OKR",
+        "description": "Beheert backlog, featureprioriteiten en OKR-delivery."
+      },
+      "uxd": {
+        "role": "UI/UX-design",
+        "sub": "Figma en research",
+        "description": "Ontwerpt gebruikerservaring en interfaces met Figma en UX-research."
+      },
+      "cmo": {
+        "role": "CMO",
+        "sub": "Marketing en groei",
+        "description": "Bepaalt marketingstrategie, merkbekendheid en gebruikersgroei."
+      },
+      "growth": {
+        "role": "Growth / SEO",
+        "sub": "Content, advertenties, SEO",
+        "description": "Voert content-, SEO- en advertentiestrategieën uit voor acquisitie."
+      },
+      "sales": {
+        "role": "Sales / BD",
+        "sub": "Leads, closing, partners",
+        "description": "Identificeert prospects, sluit deals en bouwt zakelijke partnerships."
+      },
+      "cfo": {
+        "role": "CFO",
+        "sub": "Finance en legal",
+        "description": "Beheert finance, juridische zaken, compliance en budgetplanning."
+      },
+      "fin": {
+        "role": "Finance",
+        "sub": "Boekhouding, belasting",
+        "description": "Beheert boekhouding, financiële rapportages, belasting en audits."
+      },
+      "hr": {
+        "role": "HR / People",
+        "sub": "Werving en cultuur",
+        "description": "Verzorgt recruitment, onboarding, cultuurontwikkeling en talentbehoud."
+      }
+    },
+    "description": "Onze bedrijfsstructuur houdt product, engineering, marketing, finance en people operations op één lijn, zodat elk project duidelijke eigenaarschap en voortgang heeft."
+  },
+  "location": {
+    "badge": "Onze locatie",
+    "heading": "Bezoek Codeverta in Yogyakarta",
+    "description": "Vind onze kantoorlocatie op Google Maps en vraag een route aan wanneer u een website, applicatie, LMS, informatiesysteem of ander IT-serviceproject met ons team wilt bespreken.",
+    "mapTitle": "Kantoorlocatie van Codeverta op Google Maps",
+    "cta": "Openen in Google Maps"
+  }
+}

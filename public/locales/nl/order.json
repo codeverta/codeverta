@@ -1,0 +1,41 @@
+{
+  "header": {
+    "title": "Codeverta",
+    "subtitle": "Professionele software-, website- en IT-diensten bestellen"
+  },
+  "howToOrder": {
+    "title": "Hoe u Codeverta-diensten bestelt",
+    "step1": {
+      "title": "1. Neem contact op",
+      "description": "Neem contact op via WhatsApp of e-mail en vertel ons over uw projectdoelen, planning en bedrijfsbehoeften.",
+      "phone": "+62881011692615",
+      "contactNote": "Wij helpen de scope, aanbevolen oplossing en volgende stappen te verduidelijken."
+    },
+    "step2": {
+      "title": "2. Consultatie en scope",
+      "description": "Wij beoordelen uw eisen en bereiden een passende technische aanpak voor.",
+      "pickupTitle": "Online consultatie",
+      "pickupDescription": "Bespreek op afstand met ons team, waar u ook bent.",
+      "deliveryTitle": "On-site of dedicated sessie",
+      "deliveryDescription": "Op afspraak beschikbaar voor geselecteerde projecten en locaties.",
+      "note": "*Grotere projecten vereisen mogelijk een schriftelijke scope of work vóór de schatting."
+    },
+    "step3": {
+      "title": "3. Voorstel en aanbetaling",
+      "description": "Na akkoord op de scope sturen wij een voorstel en factuur. Een aanbetaling is vereist voordat productie start."
+    },
+    "step4": {
+      "title": "4. Ontwikkeling en review",
+      "description": "Ons team bouwt de oplossing in mijlpalen, deelt voortgangsupdates en verzamelt feedback vóór de eindoplevering."
+    },
+    "step5": {
+      "title": "5. Lancering en support",
+      "description": "Na eindbetaling helpen wij met de lancering en bieden support volgens de afgesproken garantie of onderhoudsregeling."
+    }
+  },
+  "cta": {
+    "title": "Klaar om te starten?",
+    "subtitle": "Praat met Codeverta en krijg een duidelijk plan voor uw digitale product.",
+    "button": "Contact via WhatsApp"
+  }
+}
