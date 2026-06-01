@@ -35,6 +35,7 @@ const languages = [
   { code: "th", name: "ไทย", flag: "🇹🇭" },
   { code: "vi", name: "Tiếng Việt", flag: "🇻🇳" },
   { code: "ru", name: "Русский", flag: "🇷🇺" },
+  { code: "nl", name: "Nederlands", flag: "🇳🇱" },
 ];
 
 // Responsive Navbar Component

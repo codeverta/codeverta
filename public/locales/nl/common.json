@@ -1,0 +1,617 @@
+{
+  "our_products": "Onze producten",
+  "home": {
+    "title": "Professionele websites en IT-oplossingen voor het mkb",
+    "subtitle": "Wij leveren professionele softwareontwikkeling, websiteverbetering, maatwerkapplicaties en IT-oplossingen om uw bedrijf te laten groeien in het digitale tijdperk.",
+    "hero": {
+      "prefix": "Softwareoplossingen voor elke",
+      "rotating": [
+        "Retail",
+        "Zorg",
+        "Fitness",
+        "Hospitality",
+        "Onderwijs",
+        "Productie",
+        "E-commerce",
+        "Financiën",
+        "Vastgoed",
+        "Non-profit",
+        "Entertainment",
+        "Transport",
+        "Food & Beverage",
+        "Consultancy",
+        "Juridisch",
+        "Marketing",
+        "Automotive",
+        "Energie",
+        "Telecommunicatie"
+      ],
+      "suffix": "sector"
+    },
+    "tagline": "*Startupkwaliteit, geen standaard WordPress-template",
+    "cta": {
+      "whatsapp": "WhatsApp ons nu",
+      "products": "Bekijk producten"
+    },
+    "badges": {
+      "consultation": "Gratis consult",
+      "fast": "Snel proces",
+      "guarantee": "Tevredenheidsgarantie",
+      "trusted": "Eerlijk en betrouwbaar"
+    },
+    "seo": {
+      "title": "Codeverta - Ontwikkeling van websites, apps, ERP en IT-oplossingen",
+      "description": "Codeverta helpt mkb-bedrijven, startups en ondernemingen met professionele websites, apps, ERP, POS en IT-systemen met sterke SEO, prestaties en beveiliging.",
+      "keywords": "website ontwikkeling, software house, app ontwikkeling, ERP voor mkb, POS systeem, IT oplossingen, Codeverta"
+    }
+  },
+  "trustedBy": "Vertrouwd door mkb-bedrijven, startups en overheid",
+  "features": {
+    "badge": "Onze diensten",
+    "title": "Complete oplossingen voor uw digitale behoeften",
+    "subtitle": "Van sterke websites tot betrouwbare IT-ondersteuning: wij leveren wat uw bedrijf nodig heeft om online te groeien."
+  },
+  "portfolio": {
+    "title": "Projecten waaraan wij hebben gewerkt",
+    "subtitle": "Bekijk enkele recente projecten die onze expertise en focus op hoogwaardige digitale oplossingen laten zien."
+  },
+  "process": {
+    "badge": "Eenvoudig proces, maximaal resultaat",
+    "title": "Ontwikkelproces",
+    "subtitle": "Start uw project in 3 duidelijke stappen met ons ervaren team."
+  },
+  "testimonials": {
+    "badge": "Testimonials",
+    "title": "Wat onze klanten zeggen",
+    "subtitle": "Lees hoe klanten onze diensten ervaren en welke resultaten zij hebben behaald."
+  },
+  "pricing": {
+    "badge": "Prijzen",
+    "title": "Flexibele en transparante pakketten",
+    "subtitle": "Kies het pakket dat past bij uw bedrijf. Geen verborgen kosten.",
+    "tabs": {
+      "smme": "Mkb-schaal",
+      "enterprise": "Enterprise"
+    },
+    "card": {
+      "popular": "Meest gekozen",
+      "perProject": "/eenmalige betaling",
+      "contactSales": "Neem contact op"
+    }
+  },
+  "faq": {
+    "badge": "FAQ",
+    "title": "Veelgestelde vragen",
+    "subtitle": "Vind antwoorden op de meest gestelde vragen over onze diensten."
+  },
+  "cta": {
+    "title": "Klaar voor een professionele website?",
+    "description": "Neem vandaag contact op voor een gratis consult. Samen bouwen we aan een sterke digitale aanwezigheid voor uw bedrijf.",
+    "buttons": {
+      "free": "Gratis consult",
+      "contact": "Neem contact op"
+    }
+  },
+  "navbar": {
+    "products": "Producten",
+    "industry": "Sectoren",
+    "articles": "Artikelen & nieuws",
+    "learning": "Educatie",
+    "blog": "Blog",
+    "events": "Evenementen",
+    "faq": "FAQ",
+    "careers": "Carrière",
+    "about": "Over ons"
+  },
+  "mega_menu": {
+    "products": {
+      "title": "Producten",
+      "all": "Alle producten",
+      "view_all": "Bekijk alle producten",
+      "view_all_desc": "Ontdek alle producten die wij aanbieden."
+    },
+    "news": {
+      "title": "Nieuws",
+      "tech": "Technieuws",
+      "breaking": "Laatste nieuws",
+      "breaking_desc": "De nieuwste tech-updates",
+      "industry": "Sectorrapporten",
+      "industry_desc": "Marktanalyse",
+      "company": "Bedrijfsupdates",
+      "company_desc": "Zakelijk nieuws",
+      "categories": "Categorieën",
+      "software": "Software",
+      "software_desc": "Nieuws over softwareontwikkeling",
+      "hardware": "Hardware",
+      "hardware_desc": "Hardware-innovaties",
+      "mobile": "Mobiel",
+      "mobile_desc": "Mobiele technologie",
+      "trending": "Trending",
+      "ai_rev": "AI-revolutie",
+      "ai_rev_desc": "Ontwikkelingen in AI",
+      "web3": "Web3-updates",
+      "web3_desc": "Blockchain en crypto",
+      "devops": "DevOps-nieuws",
+      "devops_desc": "Development operations"
+    },
+    "startups": {
+      "title": "Startups",
+      "news": "Startupnieuws",
+      "funding": "Financieringsrondes",
+      "funding_desc": "Investeringsupdates",
+      "launches": "Nieuwe lanceringen",
+      "launches_desc": "Productlanceringen",
+      "success": "Succesverhalen",
+      "success_desc": "Inspirerende trajecten",
+      "resources": "Bronnen",
+      "guide": "Startupgids",
+      "guide_desc": "Hoe u kunt beginnen",
+      "investors": "Investeerdersnetwerk",
+      "investors_desc": "Vind investeerders",
+      "mentorship": "Mentorschap",
+      "mentorship_desc": "Krijg begeleiding van experts"
+    },
+    "gadget": {
+      "title": "Gadgets",
+      "reviews": "Reviews",
+      "smartphones": "Smartphones",
+      "smartphones_desc": "Telefoonreviews",
+      "laptops": "Laptops",
+      "laptops_desc": "Computerreviews",
+      "wearables": "Wearables",
+      "wearables_desc": "Smartwatches en meer",
+      "buying_guides": "Koopgidsen",
+      "deals": "Beste deals",
+      "deals_desc": "Actuele promoties",
+      "compare": "Vergelijkingen",
+      "compare_desc": "Productvergelijkingen",
+      "recommended": "Aanbevelingen",
+      "recommended_desc": "Keuze van de redactie"
+    },
+    "tutorials": {
+      "title": "Tutorials",
+      "web_dev": "Webontwikkeling",
+      "react_desc": "Leer React.js",
+      "nextjs_desc": "Full-stack React",
+      "js_desc": "JS best practices",
+      "mobile_dev": "Mobiele ontwikkeling",
+      "rn_desc": "Mobiele applicaties",
+      "flutter_desc": "Cross-platform",
+      "ios_desc": "Swift en Objective-C",
+      "backend": "Backend",
+      "node_desc": "Server-side JS",
+      "python_desc": "Python programmeren",
+      "db_desc": "SQL en NoSQL"
+    },
+    "ai": {
+      "title": "AI",
+      "news": "AI-nieuws",
+      "ml_desc": "ML-ontwikkelingen",
+      "tools": "AI-tools",
+      "tools_desc": "Nieuwste AI-tools",
+      "research": "Onderzoek",
+      "research_desc": "Academische papers",
+      "tutorials": "Tutorials",
+      "getting_started": "Aan de slag",
+      "getting_started_desc": "Basis van AI",
+      "deep_learning": "Deep learning",
+      "deep_learning_desc": "Neurale netwerken",
+      "ethics": "AI-ethiek",
+      "ethics_desc": "Verantwoorde AI",
+      "productivity": "Productiviteit",
+      "image_editor": "Afbeeldingseditor",
+      "image_desc": "Bijsnijden, formaat wijzigen, enz.",
+      "pdf_editor": "PDF-editor",
+      "pdf_desc": "PDF’s bewerken en converteren.",
+      "other_tools": "AI en andere tools",
+      "ai_long": "Kunstmatige intelligentie (AI)",
+      "ai_desc": "Ontdek de nieuwste ontwikkelingen in AI."
+    },
+    "categories": {
+      "articles": "Artikelen & nieuws",
+      "main_news": "Topverhalen",
+      "tech_innovation": "Nieuws (tech & innovatie)",
+      "tech_innovation_desc": "Laatste nieuws over technologie en innovatie.",
+      "startup_stories": "Startups",
+      "startup_stories_desc": "Inspiratie uit de startupwereld.",
+      "gadget_reviews": "Gadgetreviews",
+      "gadget_reviews_desc": "Reviews en koopgidsen.",
+      "special_issues": "Speciale onderwerpen",
+      "cyber_art": "Cybersecurity-artikelen",
+      "cyber_art_desc": "Tips voor digitale beveiliging.",
+      "all_art": "Alle artikelen",
+      "all_art_desc": "Bekijk alle blogposts.",
+      "learning": "Leren & gidsen",
+      "guides": "Gidsen",
+      "tutorial_desc": "Stap-voor-stap leergidsen.",
+      "classes": "Cursussen",
+      "cyber_course": "Cybersecuritycursus",
+      "cyber_course_desc": "Nieuwste cybersecuritylessen.",
+      "llm_course": "AI LLM-cursus",
+      "llm_desc": "Prompt engineering voor LLM’s.",
+      "ai_eng": "AI Engineer-cursus",
+      "ai_eng_desc": "Diepgaande AI-engineering."
+    }
+  },
+  "homePage": {
+    "features": {
+      "items": [
+        {
+          "title": "Professioneel webdesign",
+          "description": "Wij ontwerpen moderne, responsieve websites die uitstekend werken op desktop en mobiel."
+        },
+        {
+          "title": "SEO en prestatieoptimalisatie",
+          "description": "Verbeter uw zichtbaarheid in Google en gebruikerservaring met snelle, geoptimaliseerde pagina’s."
+        },
+        {
+          "title": "Reparatie en onderhoud",
+          "description": "Ons team lost bugs, fouten en kapotte layouts op en houdt uw website actueel."
+        },
+        {
+          "title": "Betrouwbare websitebeveiliging",
+          "description": "Bescherm data en bezoekers met gelaagde beveiliging en praktische hardening."
+        },
+        {
+          "title": "IT-ondersteuning",
+          "description": "Krijg hulp bij technische problemen, van hardware tot netwerkbeheer."
+        },
+        {
+          "title": "Nazorg",
+          "description": "Wij blijven uw website en systemen ondersteunen na livegang, zodat alles soepel blijft draaien."
+        }
+      ]
+    },
+    "process": {
+      "items": [
+        {
+          "step": "01",
+          "title": "Behoeftegesprek",
+          "description": "Bespreek gratis uw ideeën, doelen en projectvereisten met ons team."
+        },
+        {
+          "step": "02",
+          "title": "Ontwerp en ontwikkeling",
+          "description": "Wij ontwerpen en bouwen uw website, applicatie of IT-oplossing volgens de afgesproken scope."
+        },
+        {
+          "step": "03",
+          "title": "Lancering en onderhoud",
+          "description": "Wij lanceren uw project en bieden onderhoud zodat alles goed blijft werken."
+        }
+      ]
+    },
+    "testimonials": {
+      "items": [
+        {
+          "quote": "Codeverta heeft onze website volledig professioneler gemaakt. Het aantal bezoekers is duidelijk gestegen.",
+          "author": "Sarah Widjaja",
+          "role": "Eigenaar, Butik Elegan",
+          "rating": 5
+        },
+        {
+          "quote": "Onze oude website was erg traag. Na de optimalisatie door Codeverta is de snelheid uitstekend.",
+          "author": "Budi Santoso",
+          "role": "Marketingmanager, Maju Jaya Motor",
+          "rating": 5
+        },
+        {
+          "quote": "Hun IT-support reageert snel. Technische problemen op kantoor worden direct opgepakt.",
+          "author": "Emily Hartono",
+          "role": "Head of Operations, Startup Cepat",
+          "rating": 5
+        },
+        {
+          "quote": "Het proces was transparant en het resultaat overtrof onze verwachtingen. Onze website is nu een belangrijk verkoopkanaal.",
+          "author": "David Kim",
+          "role": "CEO, InnovateNow",
+          "rating": 5
+        },
+        {
+          "quote": "Het Codeverta-team communiceert prettig en begrijpt echt welke visie wij willen neerzetten.",
+          "author": "Lisa Puspita",
+          "role": "Creative Director, Galeri Seni",
+          "rating": 5
+        },
+        {
+          "quote": "Een van onze beste investeringen. Sinds de nieuwe website live staat, is de omzet merkbaar gestegen.",
+          "author": "James Wilson",
+          "role": "COO, ScaleUp Inc",
+          "rating": 5
+        }
+      ]
+    },
+    "pricing": {
+      "monthly": [
+        {
+          "name": "Mkb-websitepakket",
+          "price": "Rp 2M",
+          "description": "Geschikt voor bedrijfsprofielen of portfolio’s.",
+          "features": [
+            "Maatwerkdesign op basis van uw wensen",
+            "Geschikt voor het mkb",
+            "Kernpagina’s en basisfuncties",
+            "Gratis domein en hosting voor 1 jaar",
+            "Prestatiegericht, geen generieke WordPress-template"
+          ],
+          "cta": "Kies pakket"
+        },
+        {
+          "name": "Webshoppakket",
+          "price": "Rp 5M",
+          "description": "Ideaal voor groeiende mkb-bedrijven en online business.",
+          "features": [
+            "Maatwerkdesign op basis van uw wensen",
+            "SEO-optimalisatie",
+            "Prioritaire ontwikkeling"
+          ],
+          "cta": "Kies pakket",
+          "popular": true
+        },
+        {
+          "name": "Maatwerksysteempakket",
+          "price": "Rp >10M",
+          "description": "Voor bedrijven met complexere behoeften.",
+          "features": [
+            "Geavanceerde maatwerkfuncties",
+            "Ontwerp en systeem afgestemd op uw behoeften",
+            "Maandelijkse prestatierapporten",
+            "Onderhoud langer dan 1 jaar"
+          ],
+          "cta": "Neem contact op"
+        }
+      ],
+      "enterprise": [
+        {
+          "name": "Enterprise",
+          "price": "Rp >20M",
+          "description": "Voor bedrijven met complexe systemen en workflows.",
+          "features": [
+            "Maatwerkfuncties op aanvraag",
+            "Integratie met andere systemen of applicaties",
+            "Geplande cloudback-ups",
+            "24/7 beveiligings- en prestatiemonitoring",
+            "Prioritaire ontwikkeling",
+            "Onderhoud langer dan 1 jaar"
+          ],
+          "cta": "Neem contact op"
+        }
+      ]
+    },
+    "faq": {
+      "items": [
+        {
+          "question": "Hoe lang duurt het om een website te bouwen?",
+          "answer": "De planning hangt af van de complexiteit. Een eenvoudige website duurt meestal 1-2 weken, terwijl middelgrote systemen meer dan een maand kunnen duren."
+        },
+        {
+          "question": "Wat moet ik voorbereiden?",
+          "answer": "Bereid bedrijfsprofieltekst, diensten- of productlijsten en gewenste afbeeldingen voor. Als u die nog niet heeft, helpt ons team met de voorbereiding."
+        },
+        {
+          "question": "Bieden jullie onderhoud na lancering?",
+          "answer": "Ja. Wij bieden maandelijkse of jaarlijkse onderhoudspakketten voor updates, back-ups, monitoring en doorlopende fixes."
+        },
+        {
+          "question": "Kunnen jullie mijn bestaande website repareren?",
+          "answer": "Ja. We auditen eerst uw website, identificeren problemen zoals fouten, snelheid of layout, en adviseren de beste oplossing."
+        },
+        {
+          "question": "Hoe werkt de betaling?",
+          "answer": "Meestal start het project met een aanbetaling van 30%, met het restant na oplevering en goedkeuring."
+        }
+      ]
+    },
+    "industries": {
+      "badge": "Sector",
+      "title": "Oplossingen voor elke sector",
+      "subtitle": "Van productiebedrijven tot zorgsystemen: Codeverta past zich aan uw sector aan zodat processen eenvoudiger worden en groei sneller gaat.",
+      "items": [
+        {
+          "title": "Productie",
+          "desc": "Stroomlijn productie, voorraad en leveringsprocessen."
+        },
+        {
+          "title": "Handel en distributie",
+          "desc": "Beheer inkoop, orders en supply chains efficiënter."
+        },
+        {
+          "title": "Retail",
+          "desc": "Verhoog verkoop, beheer voorraad en verbeter klantbeleving."
+        },
+        {
+          "title": "Engineering en bouw",
+          "desc": "Beheer projecten, resources en budgetten met meer controle."
+        },
+        {
+          "title": "E-commerce",
+          "desc": "Beheer orders, klanten en online omzetgroei."
+        },
+        {
+          "title": "Onderwijs",
+          "desc": "Vereenvoudig inschrijvingen, cursussen, betalingen en studentprocessen."
+        },
+        {
+          "title": "Professionele diensten",
+          "desc": "Stroomlijn projecten, facturatie en samenwerking met klanten."
+        },
+        {
+          "title": "Financiële diensten",
+          "desc": "Volg financiën, portfolio’s en compliance eenvoudiger."
+        },
+        {
+          "title": "Zorg",
+          "desc": "Beheer dossiers, afspraken en operaties op één plek."
+        },
+        {
+          "title": "Non-profit",
+          "desc": "Verbeter fondsenwerving, donorbeheer en projectuitvoering."
+        }
+      ]
+    }
+  },
+  "productsPage": {
+    "seo": {
+      "title": "Digitale producten van Codeverta - Informatiesystemen, ERP, POS en webapps",
+      "description": "Ontdek de digitale producten van Codeverta: informatiesystemen, ERP, POS, e-commerce, webapplicaties, ticketing, EMR en maatwerk IT-oplossingen voor meerdere sectoren.",
+      "keywords": "Codeverta digitale producten, portfolio informatiesystemen, webapplicaties, ERP, POS, software house, zakelijke IT-oplossingen, maatwerksoftware"
+    },
+    "hero": {
+      "title": "Portfolio van IT-oplossingen",
+      "subtitle": "Een complete collectie informatiesystemen en webapplicaties die wij hebben ontwikkeld voor uiteenlopende zakelijke en sectorbehoeften."
+    },
+    "status": {
+      "productionReady": "Productieklaar",
+      "completed": "Voltooid",
+      "inDevelopment": "In ontwikkeling"
+    },
+    "card": {
+      "updated": "Bijgewerkt",
+      "viewDetail": "Bekijk details",
+      "contact": "Neem contact op"
+    },
+    "cta": {
+      "title": "Een maatwerk IT-oplossing nodig?",
+      "description": "Wij helpen graag met de ontwikkeling van een informatiesysteem dat past bij uw bedrijfsbehoeften."
+    },
+    "schema": {
+      "home": "Home",
+      "products": "Producten",
+      "itemListName": "Codeverta portfolio van digitale producten"
+    },
+    "categories": {
+      "badge": "Productcategorieën",
+      "title": "Bladeren op zakelijke behoefte",
+      "description": "Filter Codeverta-producten op sector en operationeel gebied, van POS en ERP tot zorg, onderwijs, magazijn en klantbeheer.",
+      "all": "Alle categorieën",
+      "productsLabel": "Digitale producten",
+      "categoriesLabel": "Oplossingscategorieën",
+      "productionReadyLabel": "Klaar of voltooid",
+      "showing": "{{count}} oplossingen weergegeven",
+      "emptyTitle": "Nog geen producten in deze categorie",
+      "emptyDescription": "Kies een andere categorie of neem contact op voor een maatwerksysteem."
+    }
+  },
+  "cookieConsent": {
+    "title": "Wij gebruiken cookies",
+    "description": "Wij gebruiken essentiële cookies om de site te laten werken, taalvoorkeuren te onthouden en paginaprestaties te begrijpen. Analytics-cookies gebruiken we alleen met uw toestemming.",
+    "accept": "Accepteren",
+    "reject": "Niet-essentiële cookies weigeren",
+    "learnMore": "Lees ons privacybeleid"
+  },
+  "footer": {
+    "description": "Een IT-dienstverlener die hoogwaardige, eerlijke en transparante digitale oplossingen bouwt met sterke beveiligingsstandaarden.",
+    "partOf": "Onderdeel van",
+    "rights": "Alle rechten voorbehouden.",
+    "company": {
+      "title": "Bedrijf",
+      "links": {
+        "about": "Over ons",
+        "contact": "Contact",
+        "terms": "Servicevoorwaarden",
+        "privacy": "Privacybeleid",
+        "blog": "Blog & nieuws",
+        "faq": "FAQ",
+        "gallery": "Galerij"
+      }
+    },
+    "programmes": {
+      "title": "Programma’s",
+      "links": {
+        "cybersecurity": "Cybersecuritycursus",
+        "aiEngineer": "AI Engineer",
+        "consulting": "IT-consulting",
+        "development": "Softwareontwikkeling"
+      }
+    },
+    "legal": {
+      "title": "Juridisch & vertrouwen",
+      "registered": "Officieel geregistreerd",
+      "certifications": "Certificeringen & beveiliging"
+    }
+  },
+  "terms": {
+    "seo": {
+      "title": "Codeverta algemene voorwaarden - Software, website en IT-diensten",
+      "description": "Lees de algemene voorwaarden van Codeverta voor softwareontwikkeling, websitediensten, betalingen, intellectueel eigendom en aansprakelijkheidsbeperkingen.",
+      "keywords": "Codeverta voorwaarden, servicevoorwaarden, softwareontwikkeling overeenkomst, voorwaarden websitediensten"
+    },
+    "schema": {
+      "about": "Voorwaarden voor het gebruik van Codeverta softwareontwikkelingsdiensten"
+    },
+    "title": "Algemene voorwaarden",
+    "last_updated": "Laatst bijgewerkt: 23 december 2025",
+    "intro": "Welkom bij Codeverta & BikinWebsiteJogja. Door onze site te bezoeken of onze diensten te gebruiken, gaat u akkoord met de volgende voorwaarden.",
+    "sections": {
+      "services": {
+        "title": "1. Omvang van diensten",
+        "content": "Codeverta levert softwareontwikkeling, websitebouw, applicatieontwikkeling, systeemintegratie en IT-consulting volgens de goedgekeurde offerte of scope of work."
+      },
+      "payment": {
+        "title": "2. Betalingsvoorwaarden",
+        "content": "Betalingen volgen de overeengekomen offerte, factuur of mijlpaalplanning. Voor aanvang van de productie is een aanbetaling vereist; de eindbetaling vindt plaats vóór overdracht van de definitieve assets."
+      },
+      "ip": {
+        "title": "3. Intellectueel eigendom",
+        "content": "Na volledige betaling worden gebruiksrechten of eigendom van de broncode verstrekt volgens het contract. Bibliotheken, templates, licenties en frameworks van derden blijven onder hun eigen licenties vallen."
+      },
+      "liability": {
+        "title": "4. Beperking van aansprakelijkheid",
+        "content": "Wij zijn niet aansprakelijk voor verliezen door verkeerd systeemgebruik, wijzigingen door derden, hosting- of domeinproblemen, of integraties van derden nadat garantie- of onderhoudsperiode is verlopen."
+      }
+    }
+  },
+  "faqPage": {
+    "seo": {
+      "title": "Codeverta FAQ - Vragen over websites, software en IT-diensten",
+      "description": "Vind antwoorden over websiteontwikkeling, maatwerksoftware, projectplanning, betalingen, onderhoud en technologie stack van Codeverta.",
+      "keywords": "Codeverta FAQ, vragen websiteontwikkeling, maatwerksoftware, betaling IT-project, onderhoud"
+    },
+    "title": "Veelgestelde vragen",
+    "subtitle": "Vind antwoorden over websiteontwikkeling, digitale systemen, technische workflow en ons betalingsproces.",
+    "cta": {
+      "title": "Heeft u nog een andere vraag?",
+      "description": "Overleg gerust met ons over uw digitale behoeften. Ons team helpt graag.",
+      "whatsapp": "Chat via WhatsApp",
+      "portfolio": "Bekijk portfolio"
+    },
+    "items": [
+      {
+        "question": "Hoe lang duurt ontwikkeling per type systeem?",
+        "answer": "De planning hangt af van schaal en complexiteit. Een eenvoudige website duurt vaak 1-2 weken, middelgrote systemen zoals e-commerce, POS en HRMS ongeveer 1-3 maanden, terwijl ERP of WMS meerdere maanden kan duren."
+      },
+      {
+        "question": "Wat moet ik voorbereiden voordat het project start?",
+        "answer": "Bereid feature-eisen, designreferenties, initiële datastructuur, content, foto’s en bedrijfsdocumenten voor. Voor technische projecten helpen wij eisen en bedrijfsprocessen verder te verfijnen."
+      },
+      {
+        "question": "Kan het systeem later worden uitgebreid?",
+        "answer": "Ja. Systemen zoals e-commerce, ERP, HRMS, CRM en WMS bouwen we modulair, zodat nieuwe functies, API-integraties, betalingen of servermigratie gefaseerd kunnen worden toegevoegd."
+      },
+      {
+        "question": "Bieden jullie onderhoud na livegang?",
+        "answer": "Ja. Wij bieden maandelijks of jaarlijks onderhoud voor bugfixes, beveiligingsupdates, servermonitoring, back-ups en kleine feature-uitbreidingen."
+      },
+      {
+        "question": "Kunnen jullie maatwerkfuncties bouwen voor mijn bedrijf?",
+        "answer": "Ja. Wij kunnen modules, workflows, rapportages en integraties aanpassen, bijvoorbeeld Midtrans, GeoServer, Socket.io, GraphQL, Kafka, RFID of andere systemen."
+      },
+      {
+        "question": "Hoe verloopt het proces van bestelling tot deployment?",
+        "answer": "Het proces begint met consultatie, analyse van eisen, voorstel, aanbetaling, UI/UX-design, ontwikkeling, testen, revisies, afronding, eindbetaling en deployment naar uw server of cloud."
+      },
+      {
+        "question": "Hoe werkt betaling voor softwareontwikkeling?",
+        "answer": "Meestal start betaling met een aanbetaling van 30% en volgt de rest na afronding en goedkeuring. Grotere projecten kunnen per mijlpaal worden betaald."
+      },
+      {
+        "question": "Welke technologieën gebruiken jullie?",
+        "answer": "De stack hangt af van het project. Wij gebruiken onder andere Next.js, React, Vue, Laravel, Node.js, Django, PostgreSQL, Redis, Docker, Kafka, PostGIS en clouddiensten."
+      },
+      {
+        "question": "Zijn de systemen responsief op verschillende apparaten?",
+        "answer": "Ja. Onze websystemen zijn responsief op desktop, tablet en smartphone. POS- of WMS-interfaces kunnen ook worden geoptimaliseerd voor touchscreens en veldoperaties."
+      }
+    ]
+  }
+}

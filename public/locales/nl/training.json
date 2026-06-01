@@ -1,0 +1,160 @@
+{
+  "seo": {
+    "title": "IT-training voor kinderen en tieners | Codeverta",
+    "description": "Coding-, AI-, Roblox-, mobiele app-, website- en 2D/3D-designlessen voor kinderen en tieners met project-based learning.",
+    "keywords": "IT-training kinderen, codingles tieners, AI-les kinderen, Roblox coding, webdevelopment cursus, 3D-design les"
+  },
+  "hero": {
+    "eyebrow": "Ontdek onze programma’s",
+    "titleTop": "Onze",
+    "titleHighlight": "aanbevolen cursussen",
+    "description": {
+      "before": "Een internationaal curriculum ontworpen om creativiteit te ontwikkelen via",
+      "highlight": "project-based learning",
+      "after": ". Start vandaag hun digitale avontuur."
+    },
+    "primaryCta": "Nu aanmelden",
+    "secondaryCta": "Bekijk curriculum"
+  },
+  "form": {
+    "title": "Doe mee",
+    "nameLabel": "Naam ouder of voogd",
+    "namePlaceholder": "Voorbeeld: Budi Santoso",
+    "whatsappLabel": "WhatsApp-nummer",
+    "emailLabel": "Actief e-mailadres",
+    "emailPlaceholder": "naam@email.com",
+    "programLabel": "Kies programma",
+    "programPlaceholder": "Kies cursusniveau",
+    "programs": {
+      "children": "Kinderklas (4-10 jaar)",
+      "childrenShort": "Kinderklas (4-10)",
+      "teen": "Tienerklas (11-16 jaar)",
+      "teenShort": "Tienerklas (11-16)"
+    },
+    "validation": {
+      "name": "Naam moet minimaal 3 tekens bevatten",
+      "email": "Ongeldig e-mailadres",
+      "whatsapp": "Ongeldig WhatsApp-nummer",
+      "program": "Kies een programma"
+    },
+    "submit": "Registratie bevestigen",
+    "processing": "Verwerken...",
+    "success": "Registratie verzonden. Wij nemen contact op via WhatsApp.",
+    "error": "Verzenden mislukt."
+  },
+  "tracks": {
+    "children": {
+      "imageAlt": "Codingles voor kinderen",
+      "age": "8-10 jaar",
+      "ageBadge": "8-10 JAAR",
+      "title": "Kinderklas",
+      "shortDescription": "Basis van logica en digitale creativiteit.",
+      "description": "Wij geven jonge leerlingen de taal van de toekomst. Via een interactief programmeercurriculum leren studenten coderen terwijl zij logisch denken en probleemoplossing ontwikkelen.",
+      "growthTitle": "Groeikaart voor de volgende generatie",
+      "growthDescription": "Omdat de beste investering onderwijs is dat relevant blijft."
+    },
+    "teen": {
+      "imageAlt": "Codingles voor tieners",
+      "age": "8-16 jaar",
+      "ageBadge": "8-16 JAAR",
+      "title": "Tienerklas",
+      "shortDescription": "Geavanceerd programmeren en AI.",
+      "description": "Dit programma voor 8 tot 16 jaar zet verbeelding om in echte applicaties. Studenten verkennen visueel coderen en groeien naar syntax zoals Python en JavaScript.",
+      "growthTitle": "Blauwdruk voor toekomstig leiderschap",
+      "growthDescription": "Wij leveren onderwijs dat past bij hun potentieel."
+    }
+  },
+  "curriculum": {
+    "eyebrow": "Wij geloven dat uw kind het beste onderwijs verdient.",
+    "title": "Aangeboden programma’s",
+    "filters": {
+      "all": "Alles",
+      "children": "8 - 10 jaar",
+      "teen": "11 - 16 jaar"
+    },
+    "availability": "Online en offline beschikbaar"
+  },
+  "labels": {
+    "years": "Jaar",
+    "perSession": "/ sessie",
+    "tools": "Tools",
+    "detail": "Detail"
+  },
+  "dialog": {
+    "aboutCourse": "Over de cursus:",
+    "toolsUsed": "Gebruikte tools:",
+    "outcomes": "Resultaten:"
+  },
+  "courses": {
+    "roblox-2d": {
+      "title": "2D-gameontwikkeling met Roblox",
+      "duration": "90 minuten",
+      "sessions": "20 sessies",
+      "description": "Studenten leren eenvoudige animaties en games maken en programmeren via taken en projecten.",
+      "tools": ["Computer", "Muis", "Internet"],
+      "outcomes": [
+        "Het gameontwikkelproces begrijpen",
+        "Eenvoudige animaties en games maken",
+        "3D-designs maken met Roblox Studio"
+      ]
+    },
+    "mobile-apps": {
+      "title": "Ontwikkeling van mobiele apps",
+      "duration": "90 minuten",
+      "sessions": "20 sessies",
+      "description": "Studenten leren de basis van eenvoudige mobiele apps en interactieve digitale producten.",
+      "tools": ["Computer", "Muis", "Internet"],
+      "outcomes": [
+        "Het appontwikkelproces begrijpen",
+        "Mobiele apps en games maken",
+        "Block coding en designvaardigheden ontwikkelen"
+      ]
+    },
+    "roblox-1": {
+      "title": "Roblox I",
+      "duration": "90 minuten",
+      "sessions": "20 sessies",
+      "description": "Studenten leren Lua-programmeren en maken eigen games in Roblox Studio.",
+      "tools": ["Computer", "Muis", "Internet"],
+      "outcomes": [
+        "Interactieve Roblox-games bouwen zoals collecting games, Obby-games en teleporters"
+      ]
+    },
+    "roblox-2": {
+      "title": "Roblox II",
+      "duration": "90 minuten",
+      "sessions": "20 sessies",
+      "description": "Studenten gaan verder met Lua en focussen dieper op 3D-design voor professionele gameprojecten.",
+      "tools": ["Computer", "Muis", "Internet"],
+      "outcomes": [
+        "3D-gameontwikkelworkflows begrijpen",
+        "Roblox-games maken",
+        "Textual coding en designvaardigheden verbeteren"
+      ]
+    },
+    "website-dev": {
+      "title": "Websiteontwikkeling",
+      "duration": "90 minuten",
+      "sessions": "20 sessies",
+      "description": "Studenten leren webpagina’s bouwen, websitelayouts coderen en begrijpen hoe websites werken.",
+      "tools": ["Computer", "Muis", "Internet"],
+      "outcomes": [
+        "HTML-, CSS- en PHP-syntax leren",
+        "Statische websites maken met databaseconcepten",
+        "Basisvaardigheden in textual coding en design ontwikkelen"
+      ]
+    },
+    "2d-3d-design": {
+      "title": "2D- en 3D-design",
+      "duration": "90 minuten",
+      "sessions": "20 sessies",
+      "description": "Studenten leren 2D- en 3D-design en begrijpen hoe design en programmeren samenhangen.",
+      "tools": ["Computer", "Muis", "Internet"],
+      "outcomes": [
+        "Design- en creativiteitsvaardigheden ontwikkelen",
+        "2D- en 3D-designs maken",
+        "Basisvaardigheden in coding opbouwen"
+      ]
+    }
+  }
+}

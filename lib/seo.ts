@@ -19,6 +19,7 @@ export const SUPPORTED_LOCALES = [
   "th",
   "vi",
   "ru",
+  "nl",
 ] as const;
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
@@ -39,6 +40,7 @@ export const OG_LOCALES: Record<SupportedLocale, string> = {
   th: "th_TH",
   vi: "vi_VN",
   ru: "ru_RU",
+  nl: "nl_NL",
 };
 
 type LocaleSeoCopy = {
@@ -672,6 +674,47 @@ const BASE_COPY: Record<SupportedLocale, LocaleSeoCopy> = {
       app: "Веб-приложения",
     },
   },
+  nl: {
+    service: "Website-, app-, ERP- en IT-oplossingen",
+    description:
+      "Codeverta helpt mkb-bedrijven, startups en ondernemingen met snelle, veilige en schaalbare websites, applicaties, ERP, POS, bedrijfsautomatisering en IT-oplossingen.",
+    keywords:
+      "website ontwikkeling, software house, app ontwikkeling, ERP, POS systeem, IT oplossingen, Codeverta",
+    labels: {
+      "/": "Website-, app- en IT-oplossingen",
+      about: "Over ons",
+      pelatihan: "Training in coding en technologie",
+      produk: "Digitale producten",
+      blog: "Technologieblog",
+      faq: "FAQ",
+      contact: "Contact",
+      careers: "Carrière",
+      terms: "Algemene voorwaarden",
+      "privacy-policy": "Privacybeleid",
+      games: "Games",
+      image: "Afbeeldingstools",
+      pdf: "PDF-tools",
+      course: "Online cursussen",
+      cybersecurity: "Cybersecurity",
+      ai: "Kunstmatige intelligentie",
+      news: "Technologienieuws",
+      gadget: "Gadgets",
+      startups: "Startups",
+      tutorials: "Tutorials",
+      gallery: "Galerij",
+      download: "Downloads",
+      editor: "Code-editor",
+      short: "URL-verkorter",
+      qr: "QR-codegenerator",
+      picker: "Kleurkiezer",
+      "invoice-generator": "Factuurgenerator",
+      "favicon-generator": "Favicon-generator",
+      "blog-form": "Blogformulier",
+      article: "Artikelen",
+      prompting: "Prompting",
+      app: "Webapps",
+    },
+  },
 };
 
 const FALLBACK_LABELS = BASE_COPY["en-US"].labels;
@@ -697,6 +740,7 @@ const DESCRIPTION_BY_SECTION: Partial<
     th: "อ่านบทวิเคราะห์ กรณีศึกษา และคู่มือเทคโนโลยีจาก Codeverta เพื่อเติบโตด้วยผลิตภัณฑ์ดิจิทัล",
     vi: "Đọc insight, case study và hướng dẫn công nghệ từ Codeverta để phát triển doanh nghiệp bằng sản phẩm số.",
     ru: "Читайте материалы, кейсы и технологические руководства Codeverta для роста бизнеса с цифровыми продуктами.",
+    nl: "Lees inzichten, cases en technologiegidsen van Codeverta om je bedrijf te laten groeien met digitale producten.",
   },
 };
 
