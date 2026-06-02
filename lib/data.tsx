@@ -256,8 +256,34 @@ export const steps = [
   },
 ];
 
+const industryNavItems = [
+  { slug: "manufacturing", icon: "⚙️", fallback: "Manufacturing" },
+  {
+    slug: "trading-distribution",
+    icon: "📦",
+    fallback: "Trading & Distribution",
+  },
+  { slug: "retail", icon: "🛍️", fallback: "Retail" },
+  {
+    slug: "engineering-construction",
+    icon: "🏗️",
+    fallback: "Engineering & Construction",
+  },
+  { slug: "ecommerce", icon: "🛒", fallback: "E-commerce" },
+  { slug: "education", icon: "🎓", fallback: "Education" },
+  {
+    slug: "professional-services",
+    icon: "💼",
+    fallback: "Professional Services",
+  },
+  { slug: "financial-services", icon: "📊", fallback: "Financial Services" },
+  { slug: "healthcare", icon: "🏥", fallback: "Healthcare" },
+  { slug: "non-profit", icon: "🤝", fallback: "Non-profit" },
+];
+
 export const getCategories = (t) => [
   { id: "/produk", name: t("navbar.products"), isDropdown: false },
+  { id: "/industry", name: t("navbar.industry"), isDropdown: true },
   { id: "/pelatihan", name: t("navbar.learning") },
   { id: "/blog", name: t("navbar.blog") },
   { id: "https://www.linkzy.id/events", name: t("navbar.events") },
@@ -266,92 +292,134 @@ export const getCategories = (t) => [
   { id: "/about", name: t("navbar.about") },
 ];
 
-export const getMegaMenuData = (t, projects = { projects: [] }) => ({
-  // 1. MENU PRODUK (Software & Projects)
-  "/produk": {
-    title: t("mega_menu.products.title"), // Judul: Products
-    columns: [
-      // Menampilkan Project/Software dari Database (Dynamic)
-      ...projects.projects.map((project) => ({
-        title: project.name,
-        items: [
-          {
-            name: project.product.name,
-            href: `/produk/${project.product.id}`,
-            description: project.product.description,
-          },
-        ],
-      })),
-      // Opsi statis untuk melihat semua produk
-      // {
-      //   title: t("mega_menu.products.all"),
-      //   items: [
-      //     {
-      //       name: t("mega_menu.products.view_all"),
-      //       href: "/produk",
-      //       description: t("mega_menu.products.view_all_desc"),
-      //     },
-      //   ],
-      // },
-    ],
-  },
+export const getMegaMenuData = (t, projects = { projects: [] }) => {
+  const translatedIndustries = t("homePage.industries.items", {
+    returnObjects: true,
+  });
+  const industryItems = industryNavItems.map((item, index) => {
+    const translated =
+      Array.isArray(translatedIndustries) && translatedIndustries[index]
+        ? translatedIndustries[index]
+        : {};
 
-  // 2. MENU PELATIHAN (Individual & Course)
-  "/academy": {
-    title: "Academy", // Atau gunakan t("mega_menu.academy.title")
-    columns: [
-      {
-        title: "Career Bootcamp",
-        items: [
-          {
-            name: "Cyber Security",
-            href: "/course/cybersecurity",
-            description: t("mega_menu.categories.cyber_course_desc"),
-          },
-          {
-            name: "AI Engineer",
-            href: "/course/ai-engineer",
-            description: t("mega_menu.categories.ai_eng_desc"),
-          },
-        ],
-      },
-      {
-        title: "Short Course & Guide",
-        items: [
-          {
-            name: "Prompt Engineering",
-            href: "/course/prompting",
-            description: t("mega_menu.categories.llm_desc"),
-          },
-          {
-            name: "Free Tutorials",
-            href: "/tutorials",
-            description: t("mega_menu.categories.tutorial_desc"),
-          },
-        ],
-      },
-    ],
-  },
+    return {
+      name: `${item.icon} ${translated.title || item.fallback}`,
+      href: `/industry/${item.slug}`,
+      description:
+        translated.desc ||
+        t("homePage.industries.subtitle") ||
+        "Explore industry-specific digital solutions.",
+    };
+  });
 
-  // 3. MENU INFORMASI (Disederhanakan: Blog & News)
-  "/resources": {
-    title: "Resources",
-    columns: [
-      {
-        title: "Insights",
-        items: [
-          {
-            name: "Tech News",
-            href: "/news",
-            description: t("mega_menu.news.tech"),
-          },
-          {
-            name: "Articles & Blog",
-            href: "/blog",
-            description: t("mega_menu.categories.all_art_desc"),
-          },
-        ],
-      },
-    ],
-  },
-});
+  return {
+    // 1. MENU PRODUK (Software & Projects)
+    "/produk": {
+      title: t("mega_menu.products.title"), // Judul: Products
+      columns: [
+        // Menampilkan Project/Software dari Database (Dynamic)
+        ...projects.projects.slice(0, 6).map((project) => ({
+          title: project.name,
+          items: [
+            {
+              name: project.product.name,
+              href: `/produk/${project.product.id}`,
+              description: project.product.description,
+            },
+          ],
+        })),
+        // Opsi statis untuk melihat semua produk
+        {
+          title: t("mega_menu.products.all"),
+          items: [
+            {
+              name: t("mega_menu.products.view_all"),
+              href: "/produk",
+              description: t("mega_menu.products.view_all_desc"),
+            },
+          ],
+        },
+      ],
+    },
+
+    "/industry": {
+      title: t("navbar.industry"),
+      columns: [
+        {
+          title: t("homePage.industries.title"),
+          items: [
+            {
+              name: t("navbar.industry"),
+              href: "/industry",
+              description: t("homePage.industries.subtitle"),
+            },
+            ...industryItems.slice(0, 5),
+          ],
+        },
+        {
+          title: t("homePage.industries.badge"),
+          items: industryItems.slice(5),
+        },
+      ],
+    },
+
+    // 2. MENU PELATIHAN (Individual & Course)
+    "/academy": {
+      title: "Academy", // Atau gunakan t("mega_menu.academy.title")
+      columns: [
+        {
+          title: "Career Bootcamp",
+          items: [
+            {
+              name: "Cyber Security",
+              href: "/course/cybersecurity",
+              description: t("mega_menu.categories.cyber_course_desc"),
+            },
+            {
+              name: "AI Engineer",
+              href: "/course/ai-engineer",
+              description: t("mega_menu.categories.ai_eng_desc"),
+            },
+          ],
+        },
+        {
+          title: "Short Course & Guide",
+          items: [
+            {
+              name: "Prompt Engineering",
+              href: "/course/prompting",
+              description: t("mega_menu.categories.llm_desc"),
+            },
+            {
+              name: "Free Tutorials",
+              href: "/tutorials",
+              description: t("mega_menu.categories.tutorial_desc"),
+            },
+          ],
+        },
+      ],
+    },
+
+    // 3. MENU INFORMASI (Disederhanakan: Blog & News)
+    "/resources": {
+      title: "Resources",
+      columns: [
+        {
+          title: "Insights",
+          items: [
+            {
+              name: "Tech News",
+              href: "/news",
+              description: t("mega_menu.news.tech"),
+            },
+            {
+              name: "Articles & Blog",
+              href: "/blog",
+              description: t("mega_menu.categories.all_art_desc"),
+            },
+          ],
+        },
+      ],
+    },
+  };
+};

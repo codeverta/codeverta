@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "Solutions pour chaque secteur | Codeverta",
+    "indexDescription": "De l’industrie manufacturière à la santé, Codeverta adapte ses solutions numériques aux besoins de votre secteur.",
+    "indexKeywords": "solutions logicielles sectorielles, ERP par secteur, applications métier, Codeverta",
+    "detailTitleTemplate": "Solutions logicielles pour {{industry}} | Codeverta",
+    "detailDescriptionTemplate": "Découvrez les solutions Codeverta pour les équipes {{industry}} : opérations, automatisation, reporting, intégration et workflows numériques évolutifs.",
+    "detailKeywordsTemplate": "logiciel {{industry}}, ERP {{industry}}, transformation digitale {{industry}}, Codeverta"
+  },
+  "index": {
+    "badge": "Solutions sectorielles",
+    "titlePrefix": "Solutions pour",
+    "titleHighlight": "chaque secteur",
+    "description": "De la production aux systèmes de santé, Codeverta s’adapte aux exigences uniques de votre secteur. Simplifiez les opérations, optimisez les ressources et accélérez la croissance.",
+    "statLabel": "Secteurs servis",
+    "ctaEyebrow": "Votre secteur n’apparaît pas ?",
+    "ctaTitle": "Créons votre solution sur mesure",
+    "ctaDescription": "Codeverta est hautement configurable. Notre équipe adapte chaque module à vos workflows et exigences de conformité.",
+    "ctaButton": "Parler à notre équipe"
+  },
+  "detail": {
+    "breadcrumbHome": "Accueil",
+    "breadcrumbIndustries": "Secteurs",
+    "badge": "Solution sectorielle",
+    "primaryCta": "Commencer",
+    "secondaryCta": "Demander une démo",
+    "statNote": "Moyenne des clients Codeverta",
+    "trustedBy": "Adopté par des entreprises dans",
+    "problemEyebrow": "Le problème",
+    "problemTitleTemplate": "Défis des équipes {{industry}}",
+    "solutionEyebrow": "Ce que nous proposons",
+    "solutionTitle": "Comment Codeverta le résout",
+    "moreEyebrow": "Autres secteurs",
+    "moreTitle": "Explorer nos autres solutions",
+    "viewAll": "Voir tous les secteurs",
+    "bottomTitleTemplate": "Prêt à transformer vos opérations {{industry}} ?",
+    "bottomDescription": "Parlez à un spécialiste Codeverta qui comprend votre secteur.",
+    "bottomCta": "Réserver une consultation gratuite"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "Industrie manufacturière",
+      "tagline": "Optimisez la production, les inventaires et les flux logistiques.",
+      "description": "Optimisez la production, les inventaires et les flux logistiques. Codeverta aide les équipes Industrie manufacturière à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "38%",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Industrie manufacturière"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "Négoce & Distribution",
+      "tagline": "Gérez efficacement les approvisionnements, les commandes et la supply chain.",
+      "description": "Gérez efficacement les approvisionnements, les commandes et la supply chain. Codeverta aide les équipes Négoce & Distribution à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "55%",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Négoce & Distribution"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "Commerce de détail",
+      "tagline": "Boostez vos ventes, gérez vos stocks et améliorez l'expérience client.",
+      "description": "Boostez vos ventes, gérez vos stocks et améliorez l'expérience client. Codeverta aide les équipes Commerce de détail à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "29%",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Commerce de détail"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "Ingénierie & Construction",
+      "tagline": "Pilotez vos projets, ressources et budgets avec un meilleur contrôle.",
+      "description": "Pilotez vos projets, ressources et budgets avec un meilleur contrôle. Codeverta aide les équipes Ingénierie & Construction à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "44%",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Ingénierie & Construction"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "E-commerce",
+      "tagline": "Gérez vos commandes, vos clients et la croissance de vos ventes en ligne.",
+      "description": "Gérez vos commandes, vos clients et la croissance de vos ventes en ligne. Codeverta aide les équipes E-commerce à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "3×",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise E-commerce"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "Éducation",
+      "tagline": "Simplifiez les admissions, les cours, les paiements et le suivi des étudiants.",
+      "description": "Simplifiez les admissions, les cours, les paiements et le suivi des étudiants. Codeverta aide les équipes Éducation à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "70%",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Éducation"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "Services professionnels",
+      "tagline": "Rationalisez vos projets, votre facturation et la collaboration client.",
+      "description": "Rationalisez vos projets, votre facturation et la collaboration client. Codeverta aide les équipes Services professionnels à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "22%",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Services professionnels"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "Services financiers",
+      "tagline": "Suivez vos finances, vos portefeuilles et votre conformité plus facilement.",
+      "description": "Suivez vos finances, vos portefeuilles et votre conformité plus facilement. Codeverta aide les équipes Services financiers à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Services financiers"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "Santé",
+      "tagline": "Gérez les dossiers médicaux, les rendez-vous et les opérations en un seul endroit.",
+      "description": "Gérez les dossiers médicaux, les rendez-vous et les opérations en un seul endroit. Codeverta aide les équipes Santé à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "60%",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Santé"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "Association à but non lucratif",
+      "tagline": "Améliorez la collecte de fonds, la gestion des donateurs et l'exécution des projets.",
+      "description": "Améliorez la collecte de fonds, la gestion des donateurs et l'exécution des projets. Codeverta aide les équipes Association à but non lucratif à unifier les données, automatiser les processus et créer des workflows numériques plus rapides, sûrs et évolutifs.",
+      "heroStat": {
+        "value": "2×",
+        "label": "amélioration de l’efficacité opérationnelle"
+      },
+      "challenges": [
+        "Les données opérationnelles sont dispersées entre plusieurs systèmes et feuilles de calcul.",
+        "Les validations manuelles ralentissent les décisions et l’exécution.",
+        "Les équipes peinent à suivre la performance, les coûts et l’avancement en temps réel.",
+        "Les rapports de direction prennent trop de temps et génèrent facilement des erreurs."
+      ],
+      "solutions": [
+        {
+          "title": "Automatisation des workflows",
+          "description": "Digitalisez les processus clés pour automatiser tâches, validations et notifications."
+        },
+        {
+          "title": "Tableaux de bord temps réel",
+          "description": "Suivez les KPI, l’état opérationnel et la performance des équipes depuis une seule vue."
+        },
+        {
+          "title": "Intégration système",
+          "description": "Connectez sites web, ERP, POS, CRM, paiements et bases de données existantes."
+        },
+        {
+          "title": "Reporting et contrôle",
+          "description": "Créez des rapports fiables, des pistes d’audit et un contrôle d’accès par rôle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta nous a aidés à unifier les données, accélérer les processus et prendre chaque jour des décisions fondées sur les chiffres.",
+        "author": "Responsable des opérations",
+        "company": "Entreprise Association à but non lucratif"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}

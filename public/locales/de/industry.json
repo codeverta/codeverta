@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "Lösungen für jede Branche | Codeverta",
+    "indexDescription": "Von Fertigung bis Gesundheitswesen passt Codeverta digitale Lösungen an die Anforderungen Ihrer Branche an.",
+    "indexKeywords": "Branchensoftware, ERP nach Branche, Business-Anwendungen, Codeverta",
+    "detailTitleTemplate": "Softwarelösungen für {{industry}} | Codeverta",
+    "detailDescriptionTemplate": "Entdecken Sie Codeverta-Lösungen für {{industry}}: Betrieb, Automatisierung, Reporting, Integration und skalierbare digitale Workflows.",
+    "detailKeywordsTemplate": "{{industry}} Software, {{industry}} ERP, digitale Transformation {{industry}}, Codeverta"
+  },
+  "index": {
+    "badge": "Branchenlösungen",
+    "titlePrefix": "Lösungen für",
+    "titleHighlight": "jede Branche",
+    "description": "Von Produktionsstätten bis zu Gesundheitssystemen passt sich Codeverta an Ihre Branche an. Vereinfachen Sie Abläufe, optimieren Sie Ressourcen und wachsen Sie schneller.",
+    "statLabel": "Bediente Branchen",
+    "ctaEyebrow": "Ihre Branche ist nicht dabei?",
+    "ctaTitle": "Wir bauen Ihre individuelle Lösung",
+    "ctaDescription": "Codeverta ist flexibel konfigurierbar. Wir passen jedes Modul an Ihre Workflows und Compliance-Anforderungen an.",
+    "ctaButton": "Mit unserem Team sprechen"
+  },
+  "detail": {
+    "breadcrumbHome": "Startseite",
+    "breadcrumbIndustries": "Branchen",
+    "badge": "Branchenlösung",
+    "primaryCta": "Loslegen",
+    "secondaryCta": "Demo anfragen",
+    "statNote": "Durchschnitt der Codeverta-Kunden",
+    "trustedBy": "Vertrauen von Unternehmen in",
+    "problemEyebrow": "Das Problem",
+    "problemTitleTemplate": "Herausforderungen für {{industry}}-Teams",
+    "solutionEyebrow": "Was wir anbieten",
+    "solutionTitle": "Wie Codeverta es löst",
+    "moreEyebrow": "Weitere Branchen",
+    "moreTitle": "Weitere Lösungen entdecken",
+    "viewAll": "Alle Branchen ansehen",
+    "bottomTitleTemplate": "Bereit, Ihre {{industry}}-Abläufe zu transformieren?",
+    "bottomDescription": "Sprechen Sie mit einem Codeverta-Spezialisten, der Ihre Branche versteht.",
+    "bottomCta": "Kostenlose Beratung buchen"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "Produktion",
+      "tagline": "Optimieren Sie Produktions-, Bestands- und Lieferabläufe.",
+      "description": "Optimieren Sie Produktions-, Bestands- und Lieferabläufe. Codeverta hilft Produktion-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "38%",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Produktion Unternehmen"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "Handel & Vertrieb",
+      "tagline": "Verwalten Sie Beschaffung, Aufträge und Lieferketten effizient.",
+      "description": "Verwalten Sie Beschaffung, Aufträge und Lieferketten effizient. Codeverta hilft Handel & Vertrieb-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "55%",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Handel & Vertrieb Unternehmen"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "Einzelhandel",
+      "tagline": "Steigern Sie den Umsatz, verwalten Sie Lagerbestände und verbessern Sie das Kundenerlebnis.",
+      "description": "Steigern Sie den Umsatz, verwalten Sie Lagerbestände und verbessern Sie das Kundenerlebnis. Codeverta hilft Einzelhandel-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "29%",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Einzelhandel Unternehmen"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "Ingenieurwesen & Bauwesen",
+      "tagline": "Verwalten Sie Projekte, Ressourcen und Budgets mit besserer Kontrolle.",
+      "description": "Verwalten Sie Projekte, Ressourcen und Budgets mit besserer Kontrolle. Codeverta hilft Ingenieurwesen & Bauwesen-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "44%",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Ingenieurwesen & Bauwesen Unternehmen"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "E-Commerce",
+      "tagline": "Verwalten Sie Bestellungen, Kunden und das Online-Umsatzwachstum.",
+      "description": "Verwalten Sie Bestellungen, Kunden und das Online-Umsatzwachstum. Codeverta hilft E-Commerce-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "3×",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "E-Commerce Unternehmen"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "Bildung",
+      "tagline": "Vereinfachen Sie Zulassungen, Kurse, Zahlungen und die Arbeitsabläufe von Studierenden.",
+      "description": "Vereinfachen Sie Zulassungen, Kurse, Zahlungen und die Arbeitsabläufe von Studierenden. Codeverta hilft Bildung-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "70%",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Bildung Unternehmen"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "Professionelle Dienstleistungen",
+      "tagline": "Optimieren Sie Projekte, Abrechnungen und die Zusammenarbeit mit Kunden.",
+      "description": "Optimieren Sie Projekte, Abrechnungen und die Zusammenarbeit mit Kunden. Codeverta hilft Professionelle Dienstleistungen-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "22%",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Professionelle Dienstleistungen Unternehmen"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "Finanzdienstleistungen",
+      "tagline": "Verfolgen Sie Finanzen, Portfolios und Compliance einfacher.",
+      "description": "Verfolgen Sie Finanzen, Portfolios und Compliance einfacher. Codeverta hilft Finanzdienstleistungen-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Finanzdienstleistungen Unternehmen"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "Gesundheitswesen",
+      "tagline": "Verwalten Sie Patientenakten, Termine und Abläufe an einem zentralen Ort.",
+      "description": "Verwalten Sie Patientenakten, Termine und Abläufe an einem zentralen Ort. Codeverta hilft Gesundheitswesen-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "60%",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Gesundheitswesen Unternehmen"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "Gemeinnützig",
+      "tagline": "Verbessern Sie Fundraising, Spenderverwaltung und Projektumsetzung.",
+      "description": "Verbessern Sie Fundraising, Spenderverwaltung und Projektumsetzung. Codeverta hilft Gemeinnützig-Teams, Daten zu vereinheitlichen, Prozesse zu automatisieren und schnellere, sichere sowie skalierbare digitale Workflows aufzubauen.",
+      "heroStat": {
+        "value": "2×",
+        "label": "Verbesserung der betrieblichen Effizienz"
+      },
+      "challenges": [
+        "Betriebsdaten sind über mehrere Systeme und Tabellen verteilt.",
+        "Manuelle Freigaben verlangsamen Entscheidungen und Umsetzung.",
+        "Teams können Leistung, Kosten und Fortschritt kaum in Echtzeit überwachen.",
+        "Managementberichte dauern zu lange und sind fehleranfällig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow-Automatisierung",
+          "description": "Digitalisieren Sie Kernprozesse, damit Aufgaben, Freigaben und Benachrichtigungen automatisch laufen."
+        },
+        {
+          "title": "Echtzeit-Dashboards",
+          "description": "Überwachen Sie KPIs, Betriebsstatus und Teamleistung in einer Ansicht."
+        },
+        {
+          "title": "Systemintegration",
+          "description": "Verbinden Sie Websites, ERP, POS, CRM, Zahlungen und bestehende Datenbanken."
+        },
+        {
+          "title": "Reporting und Kontrolle",
+          "description": "Erstellen Sie präzise Berichte, Audit-Trails und rollenbasierte Zugriffskontrolle."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hat uns geholfen, Daten zu vereinheitlichen, Prozesse zu beschleunigen und täglich zahlenbasiert zu entscheiden.",
+        "author": "Leitung Operations",
+        "company": "Gemeinnützig Unternehmen"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}
