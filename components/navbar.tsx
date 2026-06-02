@@ -135,6 +135,8 @@ const Navbar = ({
   const handleMegaMenuEnter = (categoryId) => {
     if (megaMenuData[categoryId]) {
       setActiveMegaMenu(categoryId);
+    } else {
+      setActiveMegaMenu(null);
     }
   };
 
@@ -354,8 +356,8 @@ const Navbar = ({
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex gap-6 xl:gap-8 absolute left-1/2 -translate-x-1/2 items-center">
             {categories.map((category) => {
-              // const hasMegaMenu = megaMenuData[category.id];
-              const hasMegaMenu = false;
+              const hasMegaMenu =
+                category.isDropdown && megaMenuData[category.id];
               const isExternal = category.id.startsWith("http");
               const Tag = isExternal ? "a" : Link; // Otomatis ganti ke tag <a> jika eksternal
 
@@ -363,14 +365,12 @@ const Navbar = ({
                 <div
                   key={category.id}
                   className="relative"
-                  // onMouseEnter={() => handleMegaMenuEnter(category.id)}
-                  // onMouseLeave={() => !activeMegaMenu || handleMegaMenuLeave()}
+                  onMouseEnter={() => handleMegaMenuEnter(category.id)}
                 >
                   <Tag
-                    href={hasMegaMenu ? "#" : category.id}
+                    href={category.id}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noopener noreferrer" : undefined}
-                    onClick={(e) => hasMegaMenu && e.preventDefault()}
                     className={cn(
                       `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative flex items-center gap-1 py-8 ${
                         !hiddenMenu.includes(category.name.toLowerCase())
@@ -464,7 +464,77 @@ const Navbar = ({
               <div className="flex flex-col space-y-1">
                 {categories.map((category) => {
                   const isExternal = category.id.startsWith("http");
+                  const hasMegaMenu =
+                    category.isDropdown && megaMenuData[category.id];
                   const Tag = isExternal ? "a" : Link;
+
+                  if (hasMegaMenu) {
+                    const isOpen = activeMobileDropdown === category.id;
+
+                    return (
+                      <div key={category.id} className="rounded-lg">
+                        <button
+                          type="button"
+                          onClick={() => toggleMobileDropdown(category.id)}
+                          className="w-full flex items-center justify-between text-sm font-medium text-muted-foreground hover:text-foreground py-2.5 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                          aria-expanded={isOpen}
+                        >
+                          <span>{category.name}</span>
+                          <ChevronDown
+                            className={`w-4 h-4 transition-transform ${
+                              isOpen ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+
+                        <AnimatePresence>
+                          {isOpen && (
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: "auto" }}
+                              exit={{ opacity: 0, height: 0 }}
+                              transition={{ duration: 0.18 }}
+                              className="overflow-hidden"
+                            >
+                              <div className="mt-1 space-y-3 rounded-xl border bg-muted/20 p-3">
+                                {megaMenuData[category.id].columns.map(
+                                  (column, columnIndex) => (
+                                    <div
+                                      key={columnIndex}
+                                      className="space-y-1"
+                                    >
+                                      <p className="px-2 pb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                                        {column.title}
+                                      </p>
+                                      {column.items.map((item, itemIndex) => (
+                                        <Link
+                                          key={itemIndex}
+                                          href={item.href}
+                                          onClick={() => {
+                                            setActiveMobileDropdown(null);
+                                            setMobileMenuOpen(false);
+                                          }}
+                                          className="block rounded-lg px-2 py-2 hover:bg-background"
+                                        >
+                                          <span className="block text-sm font-medium text-foreground">
+                                            {item.name}
+                                          </span>
+                                          <span className="mt-0.5 line-clamp-2 block text-xs leading-relaxed text-muted-foreground">
+                                            {item.description}
+                                          </span>
+                                        </Link>
+                                      ))}
+                                    </div>
+                                  )
+                                )}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    );
+                  }
+
                   return (
                     <Tag
                       key={category.id}

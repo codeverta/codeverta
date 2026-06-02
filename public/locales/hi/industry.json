@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "हर उद्योग के लिए समाधान | Codeverta",
+    "indexDescription": "मैन्युफैक्चरिंग से हेल्थकेयर तक, Codeverta आपके उद्योग की जरूरतों के अनुसार डिजिटल समाधान बनाता है।",
+    "indexKeywords": "industry software solutions, ERP by industry, business applications, Codeverta",
+    "detailTitleTemplate": "{{industry}} सॉफ्टवेयर समाधान | Codeverta",
+    "detailDescriptionTemplate": "{{industry}} टीमों के लिए Codeverta समाधान देखें: operations, automation, reporting, integration और scalable digital workflows.",
+    "detailKeywordsTemplate": "{{industry}} software, {{industry}} ERP, {{industry}} digital transformation, Codeverta"
+  },
+  "index": {
+    "badge": "इंडस्ट्री समाधान",
+    "titlePrefix": "समाधान",
+    "titleHighlight": "हर उद्योग के लिए",
+    "description": "मैन्युफैक्चरिंग प्लांट से हेल्थकेयर सिस्टम तक, Codeverta आपके उद्योग की जरूरतों के अनुसार ऑपरेशन सरल करता है, resources optimize करता है और growth तेज करता है।",
+    "statLabel": "सेवित उद्योग",
+    "ctaEyebrow": "आपका उद्योग नहीं दिख रहा?",
+    "ctaTitle": "आइए आपका custom solution बनाएं",
+    "ctaDescription": "Codeverta highly configurable है। हमारी टीम आपके workflows और compliance requirements के अनुसार हर module tailor करती है।",
+    "ctaButton": "हमारी टीम से बात करें"
+  },
+  "detail": {
+    "breadcrumbHome": "होम",
+    "breadcrumbIndustries": "उद्योग",
+    "badge": "इंडस्ट्री समाधान",
+    "primaryCta": "शुरू करें",
+    "secondaryCta": "Demo request करें",
+    "statNote": "Codeverta customer average",
+    "trustedBy": "इन क्षेत्रों की कंपनियों द्वारा trusted",
+    "problemEyebrow": "समस्या",
+    "problemTitleTemplate": "{{industry}} teams की challenges",
+    "solutionEyebrow": "हम क्या देते हैं",
+    "solutionTitle": "Codeverta इसे कैसे हल करता है",
+    "moreEyebrow": "अन्य उद्योग",
+    "moreTitle": "अन्य solutions देखें",
+    "viewAll": "सभी industries देखें",
+    "bottomTitleTemplate": "क्या आप अपने {{industry}} operations transform करने के लिए तैयार हैं?",
+    "bottomDescription": "अपने industry को समझने वाले Codeverta specialist से बात करें।",
+    "bottomCta": "Free consultation book करें"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "विनिर्माण (Manufacturing)",
+      "tagline": "उत्पादन, इन्वेंट्री और डिलीवरी वर्कफ़्लो को सुव्यवस्थित करें।",
+      "description": "उत्पादन, इन्वेंट्री और डिलीवरी वर्कफ़्लो को सुव्यवस्थित करें। Codeverta विनिर्माण (Manufacturing) teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "38%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "विनिर्माण (Manufacturing) company"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "व्यापार और वितरण",
+      "tagline": "प्रोक्योरमेंट, ऑर्डर और सप्लाई चेन को कुशलतापूर्वक प्रबंधित करें।",
+      "description": "प्रोक्योरमेंट, ऑर्डर और सप्लाई चेन को कुशलतापूर्वक प्रबंधित करें। Codeverta व्यापार और वितरण teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "55%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "व्यापार और वितरण company"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "रिटेल (Retail)",
+      "tagline": "बिक्री बढ़ाएँ, इन्वेंट्री प्रबंधित करें और ग्राहक अनुभव में सुधार करें।",
+      "description": "बिक्री बढ़ाएँ, इन्वेंट्री प्रबंधित करें और ग्राहक अनुभव में सुधार करें। Codeverta रिटेल (Retail) teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "29%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "रिटेल (Retail) company"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "इंजीनियरिंग और निर्माण",
+      "tagline": "बेहतर नियंत्रण के साथ परियोजनाओं, संसाधनों और बजट का प्रबंधन करें।",
+      "description": "बेहतर नियंत्रण के साथ परियोजनाओं, संसाधनों और बजट का प्रबंधन करें। Codeverta इंजीनियरिंग और निर्माण teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "44%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "इंजीनियरिंग और निर्माण company"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "ई-कॉमर्स",
+      "tagline": "ऑर्डर, ग्राहकों और ऑनलाइन बिक्री वृद्धि का प्रबंधन करें।",
+      "description": "ऑर्डर, ग्राहकों और ऑनलाइन बिक्री वृद्धि का प्रबंधन करें। Codeverta ई-कॉमर्स teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "3×",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "ई-कॉमर्स company"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "शिक्षा",
+      "tagline": "प्रवेश, पाठ्यक्रम, भुगतान और छात्र वर्कफ़्लो को सरल बनाएं।",
+      "description": "प्रवेश, पाठ्यक्रम, भुगतान और छात्र वर्कफ़्लो को सरल बनाएं। Codeverta शिक्षा teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "70%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "शिक्षा company"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "प्रोफेशनल सेवाएँ",
+      "tagline": "परियोजनाओं, बिलिंग और ग्राहक सहयोग को सुव्यवस्थित करें।",
+      "description": "परियोजनाओं, बिलिंग और ग्राहक सहयोग को सुव्यवस्थित करें। Codeverta प्रोफेशनल सेवाएँ teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "22%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "प्रोफेशनल सेवाएँ company"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "वित्तीय सेवाएँ",
+      "tagline": "वित्त, पोर्टफोलियो और अनुपालन को अधिक आसानी से ट्रैक करें।",
+      "description": "वित्त, पोर्टफोलियो और अनुपालन को अधिक आसानी से ट्रैक करें। Codeverta वित्तीय सेवाएँ teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "वित्तीय सेवाएँ company"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "स्वास्थ्य सेवा",
+      "tagline": "रिकॉर्ड, अपॉइंटमेंट और संचालन को एक ही स्थान पर प्रबंधित करें।",
+      "description": "रिकॉर्ड, अपॉइंटमेंट और संचालन को एक ही स्थान पर प्रबंधित करें। Codeverta स्वास्थ्य सेवा teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "60%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "स्वास्थ्य सेवा company"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "गैर-लाभकारी संस्था",
+      "tagline": "फंडरेजिंग, डोनर मैनेजमेंट और प्रोजेक्ट एक्ज़ीक्यूशन में सुधार करें।",
+      "description": "फंडरेजिंग, डोनर मैनेजमेंट और प्रोजेक्ट एक्ज़ीक्यूशन में सुधार करें। Codeverta गैर-लाभकारी संस्था teams को data unify करने, processes automate करने और तेज, सुरक्षित, scalable digital workflows बनाने में मदद करता है।",
+      "heroStat": {
+        "value": "2×",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data कई systems और spreadsheets में बिखरा हुआ है।",
+        "Manual approvals decisions और execution को धीमा करते हैं।",
+        "Teams performance, cost और progress को real time में monitor नहीं कर पातीं।",
+        "Management reporting में बहुत समय लगता है और errors की संभावना रहती है।"
+      ],
+      "solutions": [
+        {
+          "title": "वर्कफ़्लो ऑटोमेशन",
+          "description": "मुख्य प्रक्रियाओं को डिजिटल करें ताकि कार्य, अनुमोदन और सूचनाएँ अपने-आप चलें।"
+        },
+        {
+          "title": "रीयल-टाइम डैशबोर्ड",
+          "description": "KPI, संचालन स्थिति और टीम प्रदर्शन को एक ही दृश्य में देखें।"
+        },
+        {
+          "title": "सिस्टम इंटीग्रेशन",
+          "description": "वेबसाइट, ERP, POS, CRM, भुगतान और मौजूदा डेटाबेस को जोड़ें।"
+        },
+        {
+          "title": "रिपोर्टिंग और नियंत्रण",
+          "description": "सटीक रिपोर्ट, ऑडिट ट्रेल और भूमिका-आधारित एक्सेस नियंत्रण बनाएं।"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta ने हमें data unify करने, processes तेज करने और हर दिन numbers-based decisions लेने में मदद की।",
+        "author": "संचालन प्रमुख",
+        "company": "गैर-लाभकारी संस्था company"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}

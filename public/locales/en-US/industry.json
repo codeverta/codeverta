@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "Solutions for Every Industry | Codeverta",
+    "indexDescription": "From manufacturing plants to healthcare systems, Codeverta adapts to meet the unique demands of your industry.",
+    "indexKeywords": "industry software solutions, ERP by industry, business applications, Codeverta",
+    "detailTitleTemplate": "{{industry}} Software Solutions | Codeverta",
+    "detailDescriptionTemplate": "Explore Codeverta solutions for {{industry}} teams: operations, automation, reporting, integration, and scalable digital workflows.",
+    "detailKeywordsTemplate": "{{industry}} software, {{industry}} ERP, {{industry}} digital transformation, Codeverta"
+  },
+  "index": {
+    "badge": "Industry Solutions",
+    "titlePrefix": "Solutions for",
+    "titleHighlight": "Every Industry",
+    "description": "From manufacturing plants to healthcare systems, Codeverta adapts to meet the unique demands of your industry. Simplify operations, optimize resources, and grow faster.",
+    "statLabel": "Industries Served",
+    "ctaEyebrow": "Don't see your industry?",
+    "ctaTitle": "Let's build your custom solution",
+    "ctaDescription": "Codeverta is highly configurable. Our team will work with you to tailor every module to your specific workflows and compliance requirements.",
+    "ctaButton": "Talk to our team"
+  },
+  "detail": {
+    "breadcrumbHome": "Home",
+    "breadcrumbIndustries": "Industries",
+    "badge": "Industry Solution",
+    "primaryCta": "Get started",
+    "secondaryCta": "Request a demo",
+    "statNote": "Codeverta customer average",
+    "trustedBy": "Trusted by companies in",
+    "problemEyebrow": "The Problem",
+    "problemTitleTemplate": "Challenges {{industry}} teams face",
+    "solutionEyebrow": "What We Offer",
+    "solutionTitle": "How Codeverta solves it",
+    "moreEyebrow": "More Industries",
+    "moreTitle": "Explore our other solutions",
+    "viewAll": "View all industries",
+    "bottomTitleTemplate": "Ready to transform your {{industry}} operations?",
+    "bottomDescription": "Talk to a Codeverta specialist who understands your industry.",
+    "bottomCta": "Book a free consultation"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "Manufacturing",
+      "tagline": "Streamline production, inventory, and delivery workflows.",
+      "description": "Codeverta empowers manufacturers with end-to-end visibility across every stage of production — from raw material procurement to finished goods delivery. Our platform integrates shop floor operations with back-office systems so your teams always work from a single source of truth.",
+      "heroStat": {
+        "value": "38%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Manufacturing company"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "Trading & Distribution",
+      "tagline": "Manage procurement, orders, and supply chains efficiently.",
+      "description": "In a world of fluctuating demand and complex supplier networks, Codeverta gives trading and distribution companies the agility to move fast, buy smart, and fulfill orders with precision — all in one platform.",
+      "heroStat": {
+        "value": "55%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Trading & Distribution company"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "Retail",
+      "tagline": "Boost sales, manage inventory, and improve customer experience.",
+      "description": "Whether you run a single flagship store or a multi-location retail chain, Codeverta unifies your point-of-sale, inventory, and customer data so you can deliver consistent, personalized experiences at every touchpoint.",
+      "heroStat": {
+        "value": "29%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Retail company"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "Engineering & Construction",
+      "tagline": "Manage projects, resources, and budgets with better control.",
+      "description": "Construction projects fail on poor coordination, not poor intention. Codeverta gives project managers, finance teams, and on-site crews a shared command center to track progress, control costs, and hit every milestone.",
+      "heroStat": {
+        "value": "44%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Engineering & Construction company"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "E-commerce",
+      "tagline": "Manage orders, customers, and online sales growth.",
+      "description": "Scaling an online business means managing more SKUs, more orders, and more customer expectations simultaneously. Codeverta connects your storefront, warehouse, and finance — so you can grow without the chaos.",
+      "heroStat": {
+        "value": "3×",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "E-commerce company"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "tagline": "Simplify admissions, courses, payments, and student workflows.",
+      "description": "From enrollment to graduation, Codeverta helps educational institutions remove administrative friction so educators can focus on what matters — teaching. Manage every student journey from a single, secure platform.",
+      "heroStat": {
+        "value": "70%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Education company"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "Professional Services",
+      "tagline": "Streamline projects, billing, and client collaboration.",
+      "description": "Agencies, consultancies, and service firms run on relationships and time. Codeverta helps you track every billable hour, manage client projects transparently, and invoice without chasing spreadsheets.",
+      "heroStat": {
+        "value": "22%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Professional Services company"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "Financial Services",
+      "tagline": "Track finances, portfolios, and compliance more easily.",
+      "description": "Financial firms operate in a high-stakes environment where accuracy, security, and compliance are non-negotiable. Codeverta provides the infrastructure to manage client portfolios, regulatory reporting, and internal finances with confidence.",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Financial Services company"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "Healthcare",
+      "tagline": "Manage records, appointments, and operations in one place.",
+      "description": "Healthcare providers need systems that are reliable, secure, and built for people — not just processes. Codeverta helps clinics and hospitals reduce administrative burden, improve care coordination, and keep patient data safe.",
+      "heroStat": {
+        "value": "60%",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Healthcare company"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "Non-profit",
+      "tagline": "Improve fundraising, donor management, and project execution.",
+      "description": "Non-profits are asked to do more with less, every day. Codeverta gives mission-driven organizations the tools to manage donors, track program impact, and stay financially transparent — without enterprise-level complexity or cost.",
+      "heroStat": {
+        "value": "2×",
+        "label": "operational efficiency improvement"
+      },
+      "challenges": [
+        "Operational data is scattered across multiple systems and spreadsheets.",
+        "Manual approvals slow down decisions and execution.",
+        "Teams struggle to monitor performance, cost, and progress in real time.",
+        "Management reporting takes too long and is prone to errors."
+      ],
+      "solutions": [
+        {
+          "title": "Workflow Automation",
+          "description": "Digitize core processes so tasks, approvals, and notifications run automatically."
+        },
+        {
+          "title": "Real-time Dashboards",
+          "description": "Monitor KPIs, operational status, and team performance from one view."
+        },
+        {
+          "title": "System Integration",
+          "description": "Connect websites, ERP, POS, CRM, payments, and existing databases."
+        },
+        {
+          "title": "Reporting and Control",
+          "description": "Build accurate reports, audit trails, and role-based access control."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta helped us unify data, speed up processes, and make number-based decisions every day.",
+        "author": "Operations Lead",
+        "company": "Non-profit company"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}

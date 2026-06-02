@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "Solusi untuk Setiap Industri | Codeverta",
+    "indexDescription": "Dari manufaktur hingga kesehatan, Codeverta menyesuaikan solusi digital dengan kebutuhan unik industri Anda.",
+    "indexKeywords": "solusi software industri, ERP industri, aplikasi bisnis, Codeverta",
+    "detailTitleTemplate": "Solusi Software {{industry}} | Codeverta",
+    "detailDescriptionTemplate": "Jelajahi solusi Codeverta untuk tim {{industry}}: operasional, otomasi, laporan, integrasi, dan workflow digital yang skalabel.",
+    "detailKeywordsTemplate": "software {{industry}}, ERP {{industry}}, transformasi digital {{industry}}, Codeverta"
+  },
+  "index": {
+    "badge": "Solusi Industri",
+    "titlePrefix": "Solusi untuk",
+    "titleHighlight": "Setiap Industri",
+    "description": "Dari pabrik manufaktur hingga sistem kesehatan, Codeverta menyesuaikan diri dengan kebutuhan unik industri Anda. Sederhanakan operasional, optimalkan sumber daya, dan tumbuh lebih cepat.",
+    "statLabel": "Industri Dilayani",
+    "ctaEyebrow": "Industri Anda belum ada?",
+    "ctaTitle": "Mari bangun solusi khusus untuk bisnis Anda",
+    "ctaDescription": "Codeverta sangat fleksibel. Tim kami akan menyesuaikan setiap modul dengan workflow dan kebutuhan kepatuhan bisnis Anda.",
+    "ctaButton": "Bicara dengan tim kami"
+  },
+  "detail": {
+    "breadcrumbHome": "Beranda",
+    "breadcrumbIndustries": "Industri",
+    "badge": "Solusi Industri",
+    "primaryCta": "Mulai sekarang",
+    "secondaryCta": "Minta demo",
+    "statNote": "Rata-rata pelanggan Codeverta",
+    "trustedBy": "Dipercaya perusahaan di",
+    "problemEyebrow": "Masalah",
+    "problemTitleTemplate": "Tantangan yang dihadapi tim {{industry}}",
+    "solutionEyebrow": "Yang Kami Tawarkan",
+    "solutionTitle": "Bagaimana Codeverta menyelesaikannya",
+    "moreEyebrow": "Industri Lainnya",
+    "moreTitle": "Jelajahi solusi lainnya",
+    "viewAll": "Lihat semua industri",
+    "bottomTitleTemplate": "Siap mentransformasi operasional {{industry}}?",
+    "bottomDescription": "Bicara dengan spesialis Codeverta yang memahami industri Anda.",
+    "bottomCta": "Pesan konsultasi gratis"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "Manufaktur",
+      "tagline": "Sederhanakan produksi, inventori, dan alur pengiriman.",
+      "description": "Sederhanakan produksi, inventori, dan alur pengiriman. Codeverta membantu tim Manufaktur menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "38%",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Manufaktur"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "Trading & Distribusi",
+      "tagline": "Kelola pembelian, pesanan, dan rantai pasok lebih efisien.",
+      "description": "Kelola pembelian, pesanan, dan rantai pasok lebih efisien. Codeverta membantu tim Trading & Distribusi menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "55%",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Trading & Distribusi"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "Retail",
+      "tagline": "Tingkatkan penjualan, inventori, dan pengalaman pelanggan.",
+      "description": "Tingkatkan penjualan, inventori, dan pengalaman pelanggan. Codeverta membantu tim Retail menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "29%",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Retail"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "Engineering & Konstruksi",
+      "tagline": "Kelola proyek, sumber daya, dan anggaran dengan kontrol lebih baik.",
+      "description": "Kelola proyek, sumber daya, dan anggaran dengan kontrol lebih baik. Codeverta membantu tim Engineering & Konstruksi menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "44%",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Engineering & Konstruksi"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "E-commerce",
+      "tagline": "Kelola pesanan, pelanggan, dan pertumbuhan penjualan online.",
+      "description": "Kelola pesanan, pelanggan, dan pertumbuhan penjualan online. Codeverta membantu tim E-commerce menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "3×",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan E-commerce"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "Pendidikan",
+      "tagline": "Sederhanakan pendaftaran, kursus, pembayaran, dan alur siswa.",
+      "description": "Sederhanakan pendaftaran, kursus, pembayaran, dan alur siswa. Codeverta membantu tim Pendidikan menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "70%",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Pendidikan"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "Jasa Profesional",
+      "tagline": "Rapikan manajemen proyek, billing, dan kolaborasi klien.",
+      "description": "Rapikan manajemen proyek, billing, dan kolaborasi klien. Codeverta membantu tim Jasa Profesional menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "22%",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Jasa Profesional"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "Layanan Keuangan",
+      "tagline": "Pantau keuangan, portofolio, dan compliance dengan lebih mudah.",
+      "description": "Pantau keuangan, portofolio, dan compliance dengan lebih mudah. Codeverta membantu tim Layanan Keuangan menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Layanan Keuangan"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "Kesehatan",
+      "tagline": "Kelola rekam data, appointment, dan operasional dalam satu sistem.",
+      "description": "Kelola rekam data, appointment, dan operasional dalam satu sistem. Codeverta membantu tim Kesehatan menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "60%",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Kesehatan"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "Non-profit",
+      "tagline": "Optimalkan fundraising, manajemen donor, dan eksekusi program.",
+      "description": "Optimalkan fundraising, manajemen donor, dan eksekusi program. Codeverta membantu tim Non-profit menyatukan data, mengotomasi proses, dan membangun workflow digital yang lebih cepat, aman, dan mudah dikembangkan.",
+      "heroStat": {
+        "value": "2×",
+        "label": "peningkatan efisiensi operasional"
+      },
+      "challenges": [
+        "Data operasional tersebar di banyak sistem dan spreadsheet.",
+        "Proses persetujuan masih manual sehingga memperlambat keputusan.",
+        "Tim sulit memantau performa, biaya, dan progres secara real-time.",
+        "Laporan untuk manajemen membutuhkan waktu lama dan rawan kesalahan."
+      ],
+      "solutions": [
+        {
+          "title": "Otomasi Workflow",
+          "description": "Digitalisasi proses inti agar tugas, approval, dan notifikasi berjalan otomatis."
+        },
+        {
+          "title": "Dashboard Real-time",
+          "description": "Pantau KPI, status operasional, dan performa tim dari satu tampilan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan website, ERP, POS, CRM, payment, dan database yang sudah Anda gunakan."
+        },
+        {
+          "title": "Laporan dan Kontrol",
+          "description": "Bangun laporan akurat, audit trail, dan kontrol akses sesuai peran pengguna."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses, dan membuat keputusan berbasis angka setiap hari.",
+        "author": "Kepala Operasional",
+        "company": "Perusahaan Non-profit"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}

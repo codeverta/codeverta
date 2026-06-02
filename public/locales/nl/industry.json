@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "Oplossingen voor elke sector | Codeverta",
+    "indexDescription": "Van productie tot gezondheidszorg: Codeverta past digitale oplossingen aan de behoeften van uw sector aan.",
+    "indexKeywords": "sectorsoftware, ERP per sector, bedrijfsapplicaties, Codeverta",
+    "detailTitleTemplate": "Softwareoplossingen voor {{industry}} | Codeverta",
+    "detailDescriptionTemplate": "Ontdek Codeverta-oplossingen voor {{industry}} teams: operations, automatisering, rapportage, integratie en schaalbare digitale workflows.",
+    "detailKeywordsTemplate": "{{industry}} software, {{industry}} ERP, digitale transformatie {{industry}}, Codeverta"
+  },
+  "index": {
+    "badge": "Sectoroplossingen",
+    "titlePrefix": "Oplossingen voor",
+    "titleHighlight": "elke sector",
+    "description": "Van productiefabrieken tot zorgsystemen: Codeverta past zich aan uw sector aan. Vereenvoudig processen, optimaliseer resources en groei sneller.",
+    "statLabel": "Sectoren bediend",
+    "ctaEyebrow": "Staat uw sector er niet bij?",
+    "ctaTitle": "Laten we uw maatwerkoplossing bouwen",
+    "ctaDescription": "Codeverta is flexibel configureerbaar. Ons team past elke module aan uw workflows en compliance-eisen aan.",
+    "ctaButton": "Praat met ons team"
+  },
+  "detail": {
+    "breadcrumbHome": "Home",
+    "breadcrumbIndustries": "Sectoren",
+    "badge": "Sectoroplossing",
+    "primaryCta": "Aan de slag",
+    "secondaryCta": "Demo aanvragen",
+    "statNote": "Gemiddelde van Codeverta-klanten",
+    "trustedBy": "Vertrouwd door bedrijven in",
+    "problemEyebrow": "Het probleem",
+    "problemTitleTemplate": "Uitdagingen voor {{industry}} teams",
+    "solutionEyebrow": "Wat wij bieden",
+    "solutionTitle": "Hoe Codeverta het oplost",
+    "moreEyebrow": "Meer sectoren",
+    "moreTitle": "Ontdek andere oplossingen",
+    "viewAll": "Bekijk alle sectoren",
+    "bottomTitleTemplate": "Klaar om uw {{industry}} operations te transformeren?",
+    "bottomDescription": "Praat met een Codeverta-specialist die uw sector begrijpt.",
+    "bottomCta": "Gratis consult boeken"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "Productie",
+      "tagline": "Stroomlijn productie, voorraad en leveringsprocessen.",
+      "description": "Stroomlijn productie, voorraad en leveringsprocessen. Codeverta helpt Productie teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "38%",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Productie bedrijf"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "Handel en distributie",
+      "tagline": "Beheer inkoop, orders en supply chains efficiënter.",
+      "description": "Beheer inkoop, orders en supply chains efficiënter. Codeverta helpt Handel en distributie teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "55%",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Handel en distributie bedrijf"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "Retail",
+      "tagline": "Verhoog verkoop, beheer voorraad en verbeter klantbeleving.",
+      "description": "Verhoog verkoop, beheer voorraad en verbeter klantbeleving. Codeverta helpt Retail teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "29%",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Retail bedrijf"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "Engineering en bouw",
+      "tagline": "Beheer projecten, resources en budgetten met meer controle.",
+      "description": "Beheer projecten, resources en budgetten met meer controle. Codeverta helpt Engineering en bouw teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "44%",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Engineering en bouw bedrijf"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "E-commerce",
+      "tagline": "Beheer orders, klanten en online omzetgroei.",
+      "description": "Beheer orders, klanten en online omzetgroei. Codeverta helpt E-commerce teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "3×",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "E-commerce bedrijf"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "Onderwijs",
+      "tagline": "Vereenvoudig inschrijvingen, cursussen, betalingen en studentprocessen.",
+      "description": "Vereenvoudig inschrijvingen, cursussen, betalingen en studentprocessen. Codeverta helpt Onderwijs teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "70%",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Onderwijs bedrijf"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "Professionele diensten",
+      "tagline": "Stroomlijn projecten, facturatie en samenwerking met klanten.",
+      "description": "Stroomlijn projecten, facturatie en samenwerking met klanten. Codeverta helpt Professionele diensten teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "22%",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Professionele diensten bedrijf"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "Financiële diensten",
+      "tagline": "Volg financiën, portfolio’s en compliance eenvoudiger.",
+      "description": "Volg financiën, portfolio’s en compliance eenvoudiger. Codeverta helpt Financiële diensten teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Financiële diensten bedrijf"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "Zorg",
+      "tagline": "Beheer dossiers, afspraken en operaties op één plek.",
+      "description": "Beheer dossiers, afspraken en operaties op één plek. Codeverta helpt Zorg teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "60%",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Zorg bedrijf"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "Non-profit",
+      "tagline": "Verbeter fondsenwerving, donorbeheer en projectuitvoering.",
+      "description": "Verbeter fondsenwerving, donorbeheer en projectuitvoering. Codeverta helpt Non-profit teams data te verenigen, processen te automatiseren en snellere, veiligere en schaalbare digitale workflows te bouwen.",
+      "heroStat": {
+        "value": "2×",
+        "label": "verbetering van operationele efficiëntie"
+      },
+      "challenges": [
+        "Operationele data staat verspreid over meerdere systemen en spreadsheets.",
+        "Handmatige goedkeuringen vertragen beslissingen en uitvoering.",
+        "Teams hebben moeite om prestaties, kosten en voortgang real-time te volgen.",
+        "Managementrapportages kosten te veel tijd en zijn foutgevoelig."
+      ],
+      "solutions": [
+        {
+          "title": "Workflowautomatisering",
+          "description": "Digitaliseer kernprocessen zodat taken, goedkeuringen en meldingen automatisch lopen."
+        },
+        {
+          "title": "Real-time dashboards",
+          "description": "Monitor KPI’s, operationele status en teamprestaties vanuit één overzicht."
+        },
+        {
+          "title": "Systeemintegratie",
+          "description": "Verbind websites, ERP, POS, CRM, betalingen en bestaande databases."
+        },
+        {
+          "title": "Rapportage en controle",
+          "description": "Bouw nauwkeurige rapportages, audit trails en rolgebaseerde toegangscontrole."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta hielp ons data te verenigen, processen te versnellen en dagelijks beslissingen op cijfers te baseren.",
+        "author": "Operations lead",
+        "company": "Non-profit bedrijf"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}

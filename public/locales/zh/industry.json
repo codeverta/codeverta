@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "适用于各行业的解决方案 | Codeverta",
+    "indexDescription": "从制造工厂到医疗系统，Codeverta 根据行业需求提供数字化解决方案。",
+    "indexKeywords": "行业软件解决方案, 行业 ERP, 商业应用, Codeverta",
+    "detailTitleTemplate": "{{industry}} 软件解决方案 | Codeverta",
+    "detailDescriptionTemplate": "了解 Codeverta 面向 {{industry}} 团队的运营、自动化、报表、集成和可扩展数字流程。",
+    "detailKeywordsTemplate": "{{industry}} 软件, {{industry}} ERP, {{industry}} 数字化转型, Codeverta"
+  },
+  "index": {
+    "badge": "行业解决方案",
+    "titlePrefix": "面向",
+    "titleHighlight": "各行业的解决方案",
+    "description": "从制造工厂到医疗系统，Codeverta 适配您行业的独特需求，帮助简化运营、优化资源并加速增长。",
+    "statLabel": "服务行业",
+    "ctaEyebrow": "没有看到您的行业？",
+    "ctaTitle": "让我们打造您的定制方案",
+    "ctaDescription": "Codeverta 高度可配置，我们会根据您的工作流和合规要求定制每个模块。",
+    "ctaButton": "联系团队"
+  },
+  "detail": {
+    "breadcrumbHome": "首页",
+    "breadcrumbIndustries": "行业",
+    "badge": "行业解决方案",
+    "primaryCta": "开始使用",
+    "secondaryCta": "申请演示",
+    "statNote": "Codeverta 客户平均值",
+    "trustedBy": "受到这些领域企业信任",
+    "problemEyebrow": "问题",
+    "problemTitleTemplate": "{{industry}} 团队面临的挑战",
+    "solutionEyebrow": "我们提供",
+    "solutionTitle": "Codeverta 如何解决",
+    "moreEyebrow": "更多行业",
+    "moreTitle": "探索其他解决方案",
+    "viewAll": "查看所有行业",
+    "bottomTitleTemplate": "准备升级您的 {{industry}} 运营了吗？",
+    "bottomDescription": "与了解您行业的 Codeverta 专家交流。",
+    "bottomCta": "预约免费咨询"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "工业制造",
+      "tagline": "全面优化生产排程、库存周转以及物料交付的工作流。",
+      "description": "全面优化生产排程、库存周转以及物料交付的工作流。 Codeverta 帮助 工业制造 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "38%",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "工业制造 企业"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "贸易与物流分销",
+      "tagline": "实现采购管理、订单跟进以及整条供应链的高效协同。",
+      "description": "实现采购管理、订单跟进以及整条供应链的高效协同。 Codeverta 帮助 贸易与物流分销 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "55%",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "贸易与物流分销 企业"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "线下零售",
+      "tagline": "有效激发业绩增长、精确管理库存，全方位提升到店客户体验。",
+      "description": "有效激发业绩增长、精确管理库存，全方位提升到店客户体验。 Codeverta 帮助 线下零售 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "29%",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "线下零售 企业"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "工程与建筑施工",
+      "tagline": "以数字化手段更精细地管控工程项目周期、人员资源和资金预算。",
+      "description": "以数字化手段更精细地管控工程项目周期、人员资源和资金预算。 Codeverta 帮助 工程与建筑施工 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "44%",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "工程与建筑施工 企业"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "电子商务",
+      "tagline": "轻松应对大批量线上订单、会员客户精细化运营及销售额持续增长。",
+      "description": "轻松应对大批量线上订单、会员客户精细化运营及销售额持续增长。 Codeverta 帮助 电子商务 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "3×",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "电子商务 企业"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "教育培训",
+      "tagline": "大幅简化招生录取、教务排课、学费收缴以及学生日常管理工作。",
+      "description": "大幅简化招生录取、教务排课、学费收缴以及学生日常管理工作。 Codeverta 帮助 教育培训 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "70%",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "教育培训 企业"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "专业服务外包",
+      "tagline": "使项目管理进度、财务计费账单以及客户间协同沟通井然有序。",
+      "description": "使项目管理进度、财务计费账单以及客户间协同沟通井然有序。 Codeverta 帮助 专业服务外包 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "22%",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "专业服务外包 企业"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "金融服务",
+      "tagline": "更加安全、便捷地追踪日常账目、投资组合管理并满足行业合规标准。",
+      "description": "更加安全、便捷地追踪日常账目、投资组合管理并满足行业合规标准。 Codeverta 帮助 金融服务 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "金融服务 企业"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "医疗健康",
+      "tagline": "在一套系统内集中高效地管理电子病历、预约挂号及医院日常运转。",
+      "description": "在一套系统内集中高效地管理电子病历、预约挂号及医院日常运转。 Codeverta 帮助 医疗健康 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "60%",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "医疗健康 企业"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "社会公益与非营利",
+      "tagline": "全面提升募捐管理、捐赠人关系维护以及公益项目的落地执行效率。",
+      "description": "全面提升募捐管理、捐赠人关系维护以及公益项目的落地执行效率。 Codeverta 帮助 社会公益与非营利 团队整合数据、自动化流程，并构建更快速、安全、可扩展的数字工作流。",
+      "heroStat": {
+        "value": "2×",
+        "label": "运营效率提升"
+      },
+      "challenges": [
+        "运营数据分散在多个系统和表格中。",
+        "人工审批拖慢决策和执行。",
+        "团队难以实时监控绩效、成本和进度。",
+        "管理报表耗时长且容易出错。"
+      ],
+      "solutions": [
+        {
+          "title": "工作流自动化",
+          "description": "数字化核心流程，让任务、审批和通知自动运行。"
+        },
+        {
+          "title": "实时仪表盘",
+          "description": "在一个视图中监控 KPI、运营状态和团队表现。"
+        },
+        {
+          "title": "系统集成",
+          "description": "连接网站、ERP、POS、CRM、支付和现有数据库。"
+        },
+        {
+          "title": "报表与控制",
+          "description": "构建准确报表、审计轨迹和基于角色的访问控制。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta 帮助我们统一数据、加快流程，并每天基于数字做决策。",
+        "author": "运营负责人",
+        "company": "社会公益与非营利 企业"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}

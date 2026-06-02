@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "Giải pháp cho mọi ngành | Codeverta",
+    "indexDescription": "Từ sản xuất đến y tế, Codeverta điều chỉnh giải pháp số theo nhu cầu riêng của ngành bạn.",
+    "indexKeywords": "phần mềm theo ngành, ERP theo ngành, ứng dụng doanh nghiệp, Codeverta",
+    "detailTitleTemplate": "Giải pháp phần mềm cho {{industry}} | Codeverta",
+    "detailDescriptionTemplate": "Khám phá giải pháp Codeverta cho đội ngũ {{industry}}: vận hành, tự động hóa, báo cáo, tích hợp và workflow số có thể mở rộng.",
+    "detailKeywordsTemplate": "phần mềm {{industry}}, ERP {{industry}}, chuyển đổi số {{industry}}, Codeverta"
+  },
+  "index": {
+    "badge": "Giải pháp ngành",
+    "titlePrefix": "Giải pháp cho",
+    "titleHighlight": "mọi ngành",
+    "description": "Từ nhà máy sản xuất đến hệ thống y tế, Codeverta thích nghi với nhu cầu riêng của ngành bạn. Đơn giản hóa vận hành, tối ưu nguồn lực và tăng trưởng nhanh hơn.",
+    "statLabel": "Ngành được phục vụ",
+    "ctaEyebrow": "Chưa thấy ngành của bạn?",
+    "ctaTitle": "Hãy xây dựng giải pháp riêng cho bạn",
+    "ctaDescription": "Codeverta có khả năng cấu hình cao. Chúng tôi điều chỉnh từng module theo workflow và yêu cầu tuân thủ của bạn.",
+    "ctaButton": "Trao đổi với đội ngũ"
+  },
+  "detail": {
+    "breadcrumbHome": "Trang chủ",
+    "breadcrumbIndustries": "Ngành",
+    "badge": "Giải pháp ngành",
+    "primaryCta": "Bắt đầu",
+    "secondaryCta": "Yêu cầu demo",
+    "statNote": "Trung bình khách hàng Codeverta",
+    "trustedBy": "Được tin dùng bởi công ty trong",
+    "problemEyebrow": "Vấn đề",
+    "problemTitleTemplate": "Thách thức của đội ngũ {{industry}}",
+    "solutionEyebrow": "Chúng tôi cung cấp",
+    "solutionTitle": "Codeverta giải quyết như thế nào",
+    "moreEyebrow": "Ngành khác",
+    "moreTitle": "Khám phá giải pháp khác",
+    "viewAll": "Xem tất cả ngành",
+    "bottomTitleTemplate": "Sẵn sàng chuyển đổi vận hành {{industry}}?",
+    "bottomDescription": "Trao đổi với chuyên gia Codeverta hiểu ngành của bạn.",
+    "bottomCta": "Đặt lịch tư vấn miễn phí"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "Sản xuất & Công nghiệp",
+      "tagline": "Tối ưu hóa quy trình quản lý dây chuyền, kiểm kê kho bãi và logistics.",
+      "description": "Tối ưu hóa quy trình quản lý dây chuyền, kiểm kê kho bãi và logistics. Codeverta giúp đội ngũ Sản xuất & Công nghiệp hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "38%",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Sản xuất & Công nghiệp"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "Thương mại & Phân phối",
+      "tagline": "Quản lý luồng mua hàng, theo dõi đơn hàng và chuỗi cung ứng hiệu quả.",
+      "description": "Quản lý luồng mua hàng, theo dõi đơn hàng và chuỗi cung ứng hiệu quả. Codeverta giúp đội ngũ Thương mại & Phân phối hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "55%",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Thương mại & Phân phối"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "Bán lẻ (Retail)",
+      "tagline": "Thúc đẩy doanh số bán hàng, kiểm soát tồn kho trực quan và tối ưu trải nghiệm mua sắm.",
+      "description": "Thúc đẩy doanh số bán hàng, kiểm soát tồn kho trực quan và tối ưu trải nghiệm mua sắm. Codeverta giúp đội ngũ Bán lẻ (Retail) hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "29%",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Bán lẻ (Retail)"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "Kỹ thuật & Xây dựng",
+      "tagline": "Giám sát tiến độ dự án, quản lý phân bổ nhân lực và kiểm soát ngân sách minh bạch.",
+      "description": "Giám sát tiến độ dự án, quản lý phân bổ nhân lực và kiểm soát ngân sách minh bạch. Codeverta giúp đội ngũ Kỹ thuật & Xây dựng hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "44%",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Kỹ thuật & Xây dựng"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "Thương mại điện tử",
+      "tagline": "Xử lý lượng đơn hàng lớn, quản lý dữ liệu người dùng và vận hành chuỗi vận chuyển mượt mà.",
+      "description": "Xử lý lượng đơn hàng lớn, quản lý dữ liệu người dùng và vận hành chuỗi vận chuyển mượt mà. Codeverta giúp đội ngũ Thương mại điện tử hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "3×",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Thương mại điện tử"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "Giáo dục & Đào tạo",
+      "tagline": "Đơn giản hóa quy trình tuyển sinh, quản lý lịch học, số hóa học phí và chấm công.",
+      "description": "Đơn giản hóa quy trình tuyển sinh, quản lý lịch học, số hóa học phí và chấm công. Codeverta giúp đội ngũ Giáo dục & Đào tạo hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "70%",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Giáo dục & Đào tạo"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "Dịch vụ chuyên nghiệp",
+      "tagline": "Chuẩn hóa tiến độ dự án, tự động hóa hóa đơn và tối ưu cộng tác làm việc với khách hàng.",
+      "description": "Chuẩn hóa tiến độ dự án, tự động hóa hóa đơn và tối ưu cộng tác làm việc với khách hàng. Codeverta giúp đội ngũ Dịch vụ chuyên nghiệp hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "22%",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Dịch vụ chuyên nghiệp"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "Dịch vụ tài chính",
+      "tagline": "Theo dõi dòng tiền, quản lý danh mục đầu tư và đảm bảo tính tuân thủ pháp lý dễ dàng.",
+      "description": "Theo dõi dòng tiền, quản lý danh mục đầu tư và đảm bảo tính tuân thủ pháp lý dễ dàng. Codeverta giúp đội ngũ Dịch vụ tài chính hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Dịch vụ tài chính"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "Y tế & Chăm sóc sức khỏe",
+      "tagline": "Quản lý hồ sơ bệnh án điện tử, đồng bộ lịch hẹn khám và điều phối vận hành bệnh viện.",
+      "description": "Quản lý hồ sơ bệnh án điện tử, đồng bộ lịch hẹn khám và điều phối vận hành bệnh viện. Codeverta giúp đội ngũ Y tế & Chăm sóc sức khỏe hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "60%",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Y tế & Chăm sóc sức khỏe"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "Tổ chức phi lợi nhuận",
+      "tagline": "Nâng cao hiệu quả kêu gọi quỹ, quản lý minh bạch nguồn tài trợ và thực thi dự án.",
+      "description": "Nâng cao hiệu quả kêu gọi quỹ, quản lý minh bạch nguồn tài trợ và thực thi dự án. Codeverta giúp đội ngũ Tổ chức phi lợi nhuận hợp nhất dữ liệu, tự động hóa quy trình và xây dựng workflow số nhanh hơn, an toàn hơn, dễ mở rộng hơn.",
+      "heroStat": {
+        "value": "2×",
+        "label": "cải thiện hiệu quả vận hành"
+      },
+      "challenges": [
+        "Dữ liệu vận hành bị phân tán giữa nhiều hệ thống và bảng tính.",
+        "Phê duyệt thủ công làm chậm quyết định và thực thi.",
+        "Đội ngũ khó theo dõi hiệu suất, chi phí và tiến độ theo thời gian thực.",
+        "Báo cáo quản trị mất nhiều thời gian và dễ sai sót."
+      ],
+      "solutions": [
+        {
+          "title": "Tự động hóa workflow",
+          "description": "Số hóa quy trình cốt lõi để tác vụ, phê duyệt và thông báo chạy tự động."
+        },
+        {
+          "title": "Dashboard thời gian thực",
+          "description": "Theo dõi KPI, trạng thái vận hành và hiệu suất đội ngũ trong một màn hình."
+        },
+        {
+          "title": "Tích hợp hệ thống",
+          "description": "Kết nối website, ERP, POS, CRM, thanh toán và cơ sở dữ liệu hiện có."
+        },
+        {
+          "title": "Báo cáo và kiểm soát",
+          "description": "Xây dựng báo cáo chính xác, audit trail và phân quyền theo vai trò."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta giúp chúng tôi hợp nhất dữ liệu, tăng tốc quy trình và ra quyết định dựa trên số liệu mỗi ngày.",
+        "author": "Trưởng bộ phận vận hành",
+        "company": "Công ty Tổ chức phi lợi nhuận"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}

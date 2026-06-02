@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "Penyelesaian untuk Setiap Industri | Codeverta",
+    "indexDescription": "Daripada pembuatan hingga penjagaan kesihatan, Codeverta menyesuaikan penyelesaian digital mengikut keperluan industri anda.",
+    "indexKeywords": "penyelesaian perisian industri, ERP industri, aplikasi perniagaan, Codeverta",
+    "detailTitleTemplate": "Penyelesaian Perisian {{industry}} | Codeverta",
+    "detailDescriptionTemplate": "Lihat penyelesaian Codeverta untuk pasukan {{industry}}: operasi, automasi, laporan, integrasi dan aliran kerja digital yang boleh diskala.",
+    "detailKeywordsTemplate": "perisian {{industry}}, ERP {{industry}}, transformasi digital {{industry}}, Codeverta"
+  },
+  "index": {
+    "badge": "Penyelesaian Industri",
+    "titlePrefix": "Penyelesaian untuk",
+    "titleHighlight": "Setiap Industri",
+    "description": "Daripada kilang pembuatan hingga sistem kesihatan, Codeverta menyesuaikan diri dengan keperluan unik industri anda. Mudahkan operasi, optimumkan sumber dan berkembang lebih pantas.",
+    "statLabel": "Industri Dilayani",
+    "ctaEyebrow": "Tidak nampak industri anda?",
+    "ctaTitle": "Mari bina penyelesaian khusus anda",
+    "ctaDescription": "Codeverta sangat boleh dikonfigurasi. Pasukan kami akan menyesuaikan modul dengan aliran kerja dan keperluan pematuhan anda.",
+    "ctaButton": "Bercakap dengan pasukan kami"
+  },
+  "detail": {
+    "breadcrumbHome": "Laman utama",
+    "breadcrumbIndustries": "Industri",
+    "badge": "Penyelesaian Industri",
+    "primaryCta": "Mulakan",
+    "secondaryCta": "Minta demo",
+    "statNote": "Purata pelanggan Codeverta",
+    "trustedBy": "Dipercayai syarikat dalam",
+    "problemEyebrow": "Masalah",
+    "problemTitleTemplate": "Cabaran pasukan {{industry}}",
+    "solutionEyebrow": "Apa yang Kami Tawarkan",
+    "solutionTitle": "Bagaimana Codeverta menyelesaikannya",
+    "moreEyebrow": "Industri Lain",
+    "moreTitle": "Terokai penyelesaian lain",
+    "viewAll": "Lihat semua industri",
+    "bottomTitleTemplate": "Bersedia mengubah operasi {{industry}} anda?",
+    "bottomDescription": "Bercakap dengan pakar Codeverta yang memahami industri anda.",
+    "bottomCta": "Tempah konsultasi percuma"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "Pembuatan & Kilang",
+      "tagline": "Selaraskan aliran kerja pengeluaran, inventori, dan penghantaran.",
+      "description": "Selaraskan aliran kerja pengeluaran, inventori, dan penghantaran. Codeverta membantu pasukan Pembuatan & Kilang menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "38%",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Pembuatan & Kilang"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "Perdagangan & Pengedar",
+      "tagline": "Urus perolehan, pesanan, dan rantaian bekalan (supply chain) dengan cekap.",
+      "description": "Urus perolehan, pesanan, dan rantaian bekalan (supply chain) dengan cekap. Codeverta membantu pasukan Perdagangan & Pengedar menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "55%",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Perdagangan & Pengedar"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "Peruncitan",
+      "tagline": "Tingkatkan jualan, urus stok inventori, dan tingkatkan pengalaman pelanggan.",
+      "description": "Tingkatkan jualan, urus stok inventori, dan tingkatkan pengalaman pelanggan. Codeverta membantu pasukan Peruncitan menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "29%",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Peruncitan"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "Kejuruteraan & Pembinaan",
+      "tagline": "Urus projek, sumber, dan bajet kewangan dengan kawalan yang lebih baik.",
+      "description": "Urus projek, sumber, dan bajet kewangan dengan kawalan yang lebih baik. Codeverta membantu pasukan Kejuruteraan & Pembinaan menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "44%",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Kejuruteraan & Pembinaan"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "E-dagang",
+      "tagline": "Urus pesanan, data pelanggan, dan pacu pertumbuhan jualan dalam talian.",
+      "description": "Urus pesanan, data pelanggan, dan pacu pertumbuhan jualan dalam talian. Codeverta membantu pasukan E-dagang menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "3×",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat E-dagang"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "Pendidikan",
+      "tagline": "Permudahkan proses kemasukan, kursus, pembayaran, dan aliran kerja pelajar.",
+      "description": "Permudahkan proses kemasukan, kursus, pembayaran, dan aliran kerja pelajar. Codeverta membantu pasukan Pendidikan menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "70%",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Pendidikan"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "Perkhidmatan Profesional",
+      "tagline": "Kemaskan pengurusan projek, pengebilan (billing), dan kolaborasi pelanggan.",
+      "description": "Kemaskan pengurusan projek, pengebilan (billing), dan kolaborasi pelanggan. Codeverta membantu pasukan Perkhidmatan Profesional menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "22%",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Perkhidmatan Profesional"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "Perkhidmatan Kewangan",
+      "tagline": "Jejaki kewangan, portfolio, dan pematuhan peraturan (compliance) dengan lebih mudah.",
+      "description": "Jejaki kewangan, portfolio, dan pematuhan peraturan (compliance) dengan lebih mudah. Codeverta membantu pasukan Perkhidmatan Kewangan menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Perkhidmatan Kewangan"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "Penjagaan Kesihatan",
+      "tagline": "Urus rekod perubatan, janji temu, dan operasi klinik/hospital di satu tempat.",
+      "description": "Urus rekod perubatan, janji temu, dan operasi klinik/hospital di satu tempat. Codeverta membantu pasukan Penjagaan Kesihatan menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "60%",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Penjagaan Kesihatan"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "Pertubuhan Bukan Untung",
+      "tagline": "Tingkatkan kutipan dana, pengurusan penderma, dan pelaksanaan projek.",
+      "description": "Tingkatkan kutipan dana, pengurusan penderma, dan pelaksanaan projek. Codeverta membantu pasukan Pertubuhan Bukan Untung menyatukan data, mengautomasi proses dan membina aliran kerja digital yang lebih pantas, selamat dan boleh diskala.",
+      "heroStat": {
+        "value": "2×",
+        "label": "peningkatan kecekapan operasi"
+      },
+      "challenges": [
+        "Data operasi tersebar dalam banyak sistem dan hamparan kerja.",
+        "Kelulusan manual melambatkan keputusan dan pelaksanaan.",
+        "Pasukan sukar memantau prestasi, kos dan kemajuan secara masa nyata.",
+        "Laporan pengurusan mengambil masa terlalu lama dan mudah berlaku ralat."
+      ],
+      "solutions": [
+        {
+          "title": "Automasi Aliran Kerja",
+          "description": "Digitalkan proses utama supaya tugasan, kelulusan dan notifikasi berjalan automatik."
+        },
+        {
+          "title": "Papan Pemuka Masa Nyata",
+          "description": "Pantau KPI, status operasi dan prestasi pasukan daripada satu paparan."
+        },
+        {
+          "title": "Integrasi Sistem",
+          "description": "Hubungkan laman web, ERP, POS, CRM, pembayaran dan pangkalan data sedia ada."
+        },
+        {
+          "title": "Laporan dan Kawalan",
+          "description": "Bina laporan tepat, jejak audit dan kawalan akses berdasarkan peranan."
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta membantu kami menyatukan data, mempercepat proses dan membuat keputusan berasaskan angka setiap hari.",
+        "author": "Ketua Operasi",
+        "company": "Syarikat Pertubuhan Bukan Untung"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}

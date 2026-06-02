@@ -1,0 +1,482 @@
+{
+  "seo": {
+    "indexTitle": "あらゆる業界向けソリューション | Codeverta",
+    "indexDescription": "製造から医療まで、Codeverta は業界固有のニーズに合わせたデジタルソリューションを提供します。",
+    "indexKeywords": "業界向けソフトウェア, 業界 ERP, 業務アプリ, Codeverta",
+    "detailTitleTemplate": "{{industry}} 向けソフトウェアソリューション | Codeverta",
+    "detailDescriptionTemplate": "Codeverta の {{industry}} 向け運用、自動化、レポート、連携、拡張可能なデジタルワークフローをご覧ください。",
+    "detailKeywordsTemplate": "{{industry}} ソフトウェア, {{industry}} ERP, {{industry}} DX, Codeverta"
+  },
+  "index": {
+    "badge": "業界ソリューション",
+    "titlePrefix": "あらゆる業界のための",
+    "titleHighlight": "ソリューション",
+    "description": "製造現場から医療システムまで、Codeverta は業界特有の要件に適応し、業務を簡素化し、リソースを最適化し、成長を加速します。",
+    "statLabel": "対応業界",
+    "ctaEyebrow": "該当する業界がありませんか？",
+    "ctaTitle": "貴社専用のソリューションを構築しましょう",
+    "ctaDescription": "Codeverta は柔軟に構成できます。ワークフローとコンプライアンス要件に合わせて各モジュールを調整します。",
+    "ctaButton": "チームに相談"
+  },
+  "detail": {
+    "breadcrumbHome": "ホーム",
+    "breadcrumbIndustries": "業界",
+    "badge": "業界ソリューション",
+    "primaryCta": "始める",
+    "secondaryCta": "デモを依頼",
+    "statNote": "Codeverta 顧客平均",
+    "trustedBy": "導入企業の分野",
+    "problemEyebrow": "課題",
+    "problemTitleTemplate": "{{industry}} チームが直面する課題",
+    "solutionEyebrow": "提供内容",
+    "solutionTitle": "Codeverta の解決方法",
+    "moreEyebrow": "その他の業界",
+    "moreTitle": "他のソリューションを見る",
+    "viewAll": "すべての業界を見る",
+    "bottomTitleTemplate": "{{industry}} の業務を変革する準備はできていますか？",
+    "bottomDescription": "業界を理解する Codeverta の専門家にご相談ください。",
+    "bottomCta": "無料相談を予約"
+  },
+  "industries": {
+    "manufacturing": {
+      "name": "製造",
+      "tagline": "生産、在庫、出荷のワークフローを効率化します。",
+      "description": "生産、在庫、出荷のワークフローを効率化します。 Codeverta は 製造 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "38%",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "製造 企業"
+      },
+      "featuredClients": [
+        "Automotive Parts",
+        "Consumer Electronics",
+        "Food & Beverage",
+        "Textile Mills"
+      ]
+    },
+    "trading-distribution": {
+      "name": "貿易・流通",
+      "tagline": "調達、注文、サプライチェーンを効率的に管理します。",
+      "description": "調達、注文、サプライチェーンを効率的に管理します。 Codeverta は 貿易・流通 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "55%",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "貿易・流通 企業"
+      },
+      "featuredClients": [
+        "FMCG Distributors",
+        "Commodity Traders",
+        "Wholesale Importers",
+        "3PL Providers"
+      ]
+    },
+    "retail": {
+      "name": "小売",
+      "tagline": "売上を伸ばし、在庫を管理し、顧客体験を向上させます。",
+      "description": "売上を伸ばし、在庫を管理し、顧客体験を向上させます。 Codeverta は 小売 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "29%",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "小売 企業"
+      },
+      "featuredClients": [
+        "Fashion & Apparel",
+        "Grocery & Supermarkets",
+        "Electronics Retail",
+        "Specialty Stores"
+      ]
+    },
+    "engineering-construction": {
+      "name": "エンジニアリング・建設",
+      "tagline": "プロジェクト、リソース、予算をより高いレベルで管理・統制します。",
+      "description": "プロジェクト、リソース、予算をより高いレベルで管理・統制します。 Codeverta は エンジニアリング・建設 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "44%",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "エンジニアリング・建設 企業"
+      },
+      "featuredClients": [
+        "Civil Engineering",
+        "Building Contractors",
+        "MEP Firms",
+        "Infrastructure Developers"
+      ]
+    },
+    "ecommerce": {
+      "name": "Eコマース（EC）",
+      "tagline": "注文、顧客、およびオンライン売上の成長を管理します。",
+      "description": "注文、顧客、およびオンライン売上の成長を管理します。 Codeverta は Eコマース（EC） チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "3×",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "Eコマース（EC） 企業"
+      },
+      "featuredClients": [
+        "D2C Brands",
+        "Marketplace Sellers",
+        "Subscription Boxes",
+        "Multi-channel Retailers"
+      ]
+    },
+    "education": {
+      "name": "教育",
+      "tagline": "入学手続き、コース管理、決済、学生のワークフローを簡素化します。",
+      "description": "入学手続き、コース管理、決済、学生のワークフローを簡素化します。 Codeverta は 教育 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "70%",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "教育 企業"
+      },
+      "featuredClients": [
+        "K-12 Schools",
+        "Universities",
+        "Vocational Institutes",
+        "Tuition Centers"
+      ]
+    },
+    "professional-services": {
+      "name": "プロフェッショナルサービス",
+      "tagline": "プロジェクト、請求、クライアントとの共同作業を合理化します。",
+      "description": "プロジェクト、請求、クライアントとの共同作業を合理化します。 Codeverta は プロフェッショナルサービス チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "22%",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "プロフェッショナルサービス 企業"
+      },
+      "featuredClients": [
+        "Management Consulting",
+        "IT Services",
+        "Law Firms",
+        "Creative Agencies"
+      ]
+    },
+    "financial-services": {
+      "name": "金融サービス",
+      "tagline": "財務、ポートフォリオ、コンプライアンスをより簡単に追跡します。",
+      "description": "財務、ポートフォリオ、コンプライアンスをより簡単に追跡します。 Codeverta は 金融サービス チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "99.9%",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "金融サービス 企業"
+      },
+      "featuredClients": [
+        "Wealth Management",
+        "Insurance",
+        "Microfinance",
+        "Brokerage Firms"
+      ]
+    },
+    "healthcare": {
+      "name": "医療・ヘルスケア",
+      "tagline": "カルテ、予約、日々の運用を一箇所で管理します。",
+      "description": "カルテ、予約、日々の運用を一箇所で管理します。 Codeverta は 医療・ヘルスケア チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "60%",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "医療・ヘルスケア 企業"
+      },
+      "featuredClients": [
+        "Hospitals",
+        "Clinics & Polyclinics",
+        "Diagnostic Centers",
+        "Pharmacy Chains"
+      ]
+    },
+    "non-profit": {
+      "name": "非営利団体",
+      "tagline": "資金調達、寄付者管理、プロジェクトの遂行能力を向上させます。",
+      "description": "資金調達、寄付者管理、プロジェクトの遂行能力を向上させます。 Codeverta は 非営利団体 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "heroStat": {
+        "value": "2×",
+        "label": "業務効率の改善"
+      },
+      "challenges": [
+        "業務データが複数のシステムやスプレッドシートに分散しています。",
+        "手作業の承認が意思決定と実行を遅らせています。",
+        "チームはパフォーマンス、コスト、進捗をリアルタイムで把握しにくいです。",
+        "経営レポート作成に時間がかかり、エラーも起きやすいです。"
+      ],
+      "solutions": [
+        {
+          "title": "ワークフロー自動化",
+          "description": "主要プロセスをデジタル化し、タスク、承認、通知を自動化します。"
+        },
+        {
+          "title": "リアルタイムダッシュボード",
+          "description": "KPI、運用状況、チーム実績を一画面で監視します。"
+        },
+        {
+          "title": "システム連携",
+          "description": "Web、ERP、POS、CRM、決済、既存データベースを接続します。"
+        },
+        {
+          "title": "レポートと統制",
+          "description": "正確なレポート、監査証跡、ロールベースアクセス制御を構築します。"
+        }
+      ],
+      "testimonial": {
+        "quote": "Codeverta によりデータが統合され、プロセスが速くなり、毎日数字に基づく判断ができるようになりました。",
+        "author": "オペレーション責任者",
+        "company": "非営利団体 企業"
+      },
+      "featuredClients": [
+        "INGOs",
+        "Community Foundations",
+        "Social Enterprises",
+        "Religious Organizations"
+      ]
+    }
+  }
+}
