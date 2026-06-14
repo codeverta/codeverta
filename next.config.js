@@ -26,6 +26,7 @@ const nextConfig = {
     ];
   },
   reactStrictMode: false,
+  output: "standalone",
   staticPageGenerationTimeout: 120,
   typescript: {
     // Ignore TypeScript errors during production builds

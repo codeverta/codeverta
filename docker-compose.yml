@@ -1,0 +1,21 @@
+services:
+  codeverta:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_BASE_API: ${NEXT_PUBLIC_BASE_API:-}
+        NEXT_PUBLIC_BASE: ${NEXT_PUBLIC_BASE:-}
+        NEXT_PUBLIC_MIDTRANS_CLIENT_KEY: ${NEXT_PUBLIC_MIDTRANS_CLIENT_KEY:-}
+        SITE_URL: ${SITE_URL:-https://codeverta.com}
+    image: codeverta:latest
+    container_name: codeverta
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOSTNAME: 0.0.0.0
+    ports:
+      - "3000:3000"

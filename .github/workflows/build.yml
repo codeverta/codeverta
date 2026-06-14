@@ -1,6 +1,8 @@
 name: Build
 
-on: [pull_request]
+on:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -9,19 +11,26 @@ jobs:
       NEXT_PUBLIC_BASE_API: ${{ secrets.NEXT_PUBLIC_BASE_API }}
       NEXT_PUBLIC_BASE: ${{ secrets.NEXT_PUBLIC_BASE }}
       NEXT_PUBLIC_MIDTRANS_CLIENT_KEY: ${{ secrets.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY }}
+      SITE_URL: ${{ vars.SITE_URL || 'https://codeverta.com' }}
+      HUSKY: 0
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build
-        run: npm run build
-
-      - name: Check for errors
-        run: |
-          if [ $? -ne 0 ]; then
-            echo "Build failed"
-            exit 1
-          fi
+        run: pnpm run build
