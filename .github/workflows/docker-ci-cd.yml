@@ -1,0 +1,122 @@
+name: Docker CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+env:
+  IMAGE_NAME: ghcr.io/${{ github.repository }}
+  HUSKY: 0
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+    outputs:
+      image: ${{ steps.meta.outputs.tags }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        if: github.event_name != 'pull_request'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.IMAGE_NAME }}
+          tags: |
+            type=raw,value=latest,enable={{is_default_branch}}
+            type=sha,prefix=sha-
+            type=ref,event=branch
+            type=ref,event=pr
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: ./Dockerfile
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            NEXT_PUBLIC_BASE_API=${{ secrets.NEXT_PUBLIC_BASE_API }}
+            NEXT_PUBLIC_BASE=${{ secrets.NEXT_PUBLIC_BASE }}
+            NEXT_PUBLIC_MIDTRANS_CLIENT_KEY=${{ secrets.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY }}
+            SITE_URL=${{ vars.SITE_URL || 'https://codeverta.com' }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  deploy:
+    needs: docker
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    env:
+      DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+      DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+      DEPLOY_PORT: ${{ secrets.DEPLOY_PORT || '22' }}
+      DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+      GHCR_USERNAME: ${{ secrets.GHCR_USERNAME }}
+      GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
+      APP_ENV_FILE: ${{ secrets.APP_ENV_FILE }}
+
+    steps:
+      - name: Check deploy secrets
+        id: deploy_secrets
+        shell: bash
+        run: |
+          if [ -n "$DEPLOY_HOST" ] && [ -n "$DEPLOY_USER" ] && [ -n "$DEPLOY_SSH_KEY" ] && [ -n "$GHCR_USERNAME" ] && [ -n "$GHCR_TOKEN" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "Deploy skipped. Set DEPLOY_HOST, DEPLOY_USER, DEPLOY_SSH_KEY, GHCR_USERNAME, and GHCR_TOKEN to enable SSH deployment."
+          fi
+
+      - name: Deploy over SSH
+        if: steps.deploy_secrets.outputs.enabled == 'true'
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ env.DEPLOY_HOST }}
+          username: ${{ env.DEPLOY_USER }}
+          key: ${{ env.DEPLOY_SSH_KEY }}
+          port: ${{ env.DEPLOY_PORT }}
+          envs: IMAGE_NAME,GHCR_USERNAME,GHCR_TOKEN,APP_ENV_FILE
+          script: |
+            set -e
+            mkdir -p ~/codeverta
+            cd ~/codeverta
+
+            if [ -n "$APP_ENV_FILE" ]; then
+              printf '%s\n' "$APP_ENV_FILE" > .env
+            fi
+
+            echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GHCR_USERNAME" --password-stdin
+            docker pull "$IMAGE_NAME:latest"
+            docker stop codeverta || true
+            docker rm codeverta || true
+            docker run -d \
+              --name codeverta \
+              --restart unless-stopped \
+              --env-file .env \
+              -e NODE_ENV=production \
+              -e PORT=3000 \
+              -e HOSTNAME=0.0.0.0 \
+              -p 3000:3000 \
+              "$IMAGE_NAME:latest"
+            docker image prune -f
