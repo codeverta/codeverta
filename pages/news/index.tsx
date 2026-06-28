@@ -5,6 +5,7 @@ import { useState, useEffect, useMemo } from "react";
 import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { appendOfficeLocation } from "@/lib/seo";
 
 // Shadcn UI components
 import { Button } from "@/components/ui/button";
@@ -173,13 +174,13 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 
   // Get meta description
   const metaDescription = useMemo(() => {
-    if (searchTerm) {
-      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting news about coding, programming, and technology.`;
-    }
-    return allPostsData.length > 0
+    const baseDesc = searchTerm
+      ? `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting news about coding, programming, and technology.`
+      : allPostsData.length > 0
       ? allPostsData[0].desc
       : "Discover coding news, tech guides, and programming tips for developers of all levels.";
-  }, [searchTerm, allPostsData]);
+    return appendOfficeLocation(baseDesc, router.locale);
+  }, [searchTerm, allPostsData, router.locale]);
 
   // Format date function
   const formatPostDate = (dateString: string) => {

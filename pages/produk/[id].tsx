@@ -35,6 +35,8 @@ import {
 
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { appendOfficeLocation } from "@/lib/seo";
 
 import Link from "next/link";
 import {
@@ -418,6 +420,7 @@ export default function ProjectDetailPage({
     priceList,
   } = project;
 
+  const { locale = "id" } = useRouter();
   const siteUrl = "https://www.codeverta.com";
   const pageUrl = `${siteUrl}/produk/${project.slug}`;
 
@@ -455,24 +458,23 @@ export default function ProjectDetailPage({
     },
   };
 
+  const finalDesc = appendOfficeLocation(
+    product.fullDescription.substring(0, 160),
+    locale
+  );
+
   return (
     <>
       <Head>
         <title>
           Jasa Pembuatan {product.name} - {product.category}
         </title>
-        <meta
-          name="description"
-          content={product.fullDescription.substring(0, 160)}
-        />
+        <meta name="description" content={finalDesc} />
         <link rel="canonical" href={pageUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={`Jasa Pembuatan ${product.name}`} />
-        <meta
-          property="og:description"
-          content={product.fullDescription.substring(0, 160)}
-        />
+        <meta property="og:description" content={finalDesc} />
         <meta property="og:image" content={`${siteUrl}${product.image}`} />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content={pageUrl} />
@@ -480,10 +482,7 @@ export default function ProjectDetailPage({
           property="twitter:title"
           content={`Jasa Pembuatan ${product.name}`}
         />
-        <meta
-          property="twitter:description"
-          content={product.fullDescription.substring(0, 160)}
-        />
+        <meta property="twitter:description" content={finalDesc} />
         <meta property="twitter:image" content={`${siteUrl}${product.image}`} />
         <script
           type="application/ld+json"

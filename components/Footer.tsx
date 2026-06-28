@@ -88,6 +88,14 @@ export default function Footer() {
                   </WhatsappWrapper>
                 </div>
               </div>
+              <div>
+                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
+                  Alamat Kantor
+                </p>
+                <p className="text-sm font-medium text-gray-300">
+                  Jl. Kaliurang, Sleman, Yogyakarta, Indonesia
+                </p>
+              </div>
             </div>
           </div>
 

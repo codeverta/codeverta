@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { appendOfficeLocation } from "@/lib/seo";
 import Layout from "components/layout/Landing";
 import { getSortedPostsData } from "lib/posts";
 import Link from "next/link";
@@ -174,13 +175,13 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 
   // Get meta description
   const metaDescription = useMemo(() => {
-    if (searchTerm) {
-      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting startups about coding, programming, and technology.`;
-    }
-    return allPostsData.length > 0
+    const baseDesc = searchTerm
+      ? `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting startups about coding, programming, and technology.`
+      : allPostsData.length > 0
       ? allPostsData[0].desc
       : "Discover coding startups, tech guides, and programming tips for developers of all levels.";
-  }, [searchTerm, allPostsData]);
+    return appendOfficeLocation(baseDesc, router.locale);
+  }, [searchTerm, allPostsData, router.locale]);
 
   // Format date function
   const formatPostDate = (dateString: string) => {
@@ -308,15 +309,12 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl lg:text-6xl dark:text-white mb-4">
               Codeverta{" "}
-              <span className="text-blue-600 dark:text-blue-400">
-                Startups
-              </span>
+              <span className="text-blue-600 dark:text-blue-400">Startups</span>
             </h1>
             <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto mb-8">
-              Ikuti perkembangan startup
-              teknologi di Indonesia dan dunia. Codeverta menghadirkan berita,
-              kisah sukses, pendanaan, inovasi, dan wawasan bisnis dari
-              ekosistem startup yang terus berkembang.
+              Ikuti perkembangan startup teknologi di Indonesia dan dunia.
+              Codeverta menghadirkan berita, kisah sukses, pendanaan, inovasi,
+              dan wawasan bisnis dari ekosistem startup yang terus berkembang.
             </p>
 
             {/* Search form */}
@@ -828,9 +826,7 @@ export async function getStaticProps({ locale }) {
   // Get posts and add sample categories and read times
   const allPostsData = getSortedPostsData("startups").map((post, index) => {
     // Add sample categories and read times (in a real app, these would come from the actual data)
-    const categories = [
-      "Tutorial",
-    ];
+    const categories = ["Tutorial"];
     const readTimes = [
       "3 min read",
       "5 min read",

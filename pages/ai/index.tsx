@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { appendOfficeLocation } from "@/lib/seo";
 import Layout from "components/layout/Landing";
 import { getSortedPostsData } from "lib/posts";
 import Link from "next/link";
@@ -174,13 +175,13 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 
   // Get meta description
   const metaDescription = useMemo(() => {
-    if (searchTerm) {
-      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting ai about coding, programming, and technology.`;
-    }
-    return allPostsData.length > 0
+    const baseDesc = searchTerm
+      ? `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting ai about coding, programming, and technology.`
+      : allPostsData.length > 0
       ? allPostsData[0].desc
       : "Discover coding ai, tech guides, and programming tips for developers of all levels.";
-  }, [searchTerm, allPostsData]);
+    return appendOfficeLocation(baseDesc, router.locale);
+  }, [searchTerm, allPostsData, router.locale]);
 
   // Format date function
   const formatPostDate = (dateString: string) => {
@@ -831,9 +832,7 @@ export async function getStaticProps({ locale }) {
   // Get posts and add sample categories and read times
   const allPostsData = getSortedPostsData("ai").map((post, index) => {
     // Add sample categories and read times (in a real app, these would come from the actual data)
-    const categories = [
-      "ai",
-    ];
+    const categories = ["ai"];
     const readTimes = [
       "3 min read",
       "5 min read",

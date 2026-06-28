@@ -13,6 +13,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { getProjects } from "@/lib/projects";
+import { appendOfficeLocation } from "@/lib/seo";
 /* ─────────────────────────────────────────────
    Types
 ───────────────────────────────────────────── */
@@ -462,6 +463,8 @@ export default function BlogDetail({
     relatedPosts,
   } = postData;
 
+  const finalDesc = appendOfficeLocation(desc || "", locale);
+
   const tagList = getTagList(tags);
   const readTime = estimateReadTime(contentHtml, t("readTime"));
   const [pageUrl, setPageUrl] = useState("");
@@ -485,9 +488,9 @@ export default function BlogDetail({
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={desc} />
+        <meta name="description" content={finalDesc} />
         <meta property="og:title" content={title} />
-        <meta property="og:description" content={desc} />
+        <meta property="og:description" content={finalDesc} />
         {image && <meta property="og:image" content={image} />}
         <meta property="og:type" content="article" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

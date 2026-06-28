@@ -803,6 +803,45 @@ function getLabel(locale: SupportedLocale, key: string) {
   );
 }
 
+const OFFICE_LOCATION_TEXT: Record<SupportedLocale, string> = {
+  id: " Lokasi kantor kami di Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  "en-US":
+    " Our office is located at Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  "en-GB":
+    " Our office is located at Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  zh: " 我们的办公室位于 Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia。",
+  ja: " オフィス所在地：Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia。",
+  ko: " 사무실 위치: Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  ms: " Lokasi pejabat kami di Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  de: " Unser Büro befindet sich in der Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  fr: " Notre bureau est situé à Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  es: " Nuestra oficina está ubicada en Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  ar: " يقع مكتبنا في Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  hi: " हमारा कार्यालय Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia में स्थित है।",
+  th: " สำนักงานของเราตั้งอยู่ที่ Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia",
+  vi: " Văn phòng của chúng tôi tại Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  ru: " Наш офис находится по адресу: Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  nl: " Ons kantoor is gevestigd aan de Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+};
+
+export function appendOfficeLocation(
+  description: string,
+  locale?: string
+): string {
+  const safeLocale = normalizeLocale(locale);
+  const officeLocationSuffix = OFFICE_LOCATION_TEXT[safeLocale];
+  if (!description) return officeLocationSuffix.trim();
+  if (
+    description.includes("Jl Kaliurang") ||
+    description.includes("Jl. Kaliurang")
+  ) {
+    return description;
+  }
+  return description.endsWith(".")
+    ? `${description}${officeLocationSuffix}`
+    : `${description}.${officeLocationSuffix}`;
+}
+
 export function buildSeoMeta({
   locale,
   path = "/",
@@ -837,7 +876,10 @@ export function buildSeoMeta({
     title:
       title ||
       (safePath === "/" ? `${SITE_NAME} - ${copy.service}` : generatedTitle),
-    description: description || sectionDescription || copy.description,
+    description: appendOfficeLocation(
+      description || sectionDescription || copy.description,
+      safeLocale
+    ),
     canonical: canonical || getLocalizedUrl(safeLocale, safePath),
     image: image?.startsWith("http")
       ? image
