@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { appendOfficeLocation } from "@/lib/seo";
 import Layout from "components/layout/Landing";
 import { getSortedPostsData } from "lib/posts";
 import Link from "next/link";
@@ -174,13 +175,13 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 
   // Get meta description
   const metaDescription = useMemo(() => {
-    if (searchTerm) {
-      return `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting cybersecurity about coding, programming, and technology.`;
-    }
-    return allPostsData.length > 0
+    const baseDesc = searchTerm
+      ? `Search results for "${searchTerm}" on our tech tutorial blog. Find interesting cybersecurity about coding, programming, and technology.`
+      : allPostsData.length > 0
       ? allPostsData[0].desc
       : "Discover coding cybersecurity, tech guides, and programming tips for developers of all levels.";
-  }, [searchTerm, allPostsData]);
+    return appendOfficeLocation(baseDesc, router.locale);
+  }, [searchTerm, allPostsData, router.locale]);
 
   // Format date function
   const formatPostDate = (dateString: string) => {

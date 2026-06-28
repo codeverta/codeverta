@@ -7,6 +7,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image"; // Pastikan di-import di bagian atas
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
+import { appendOfficeLocation } from "@/lib/seo";
 
 /* ─────────────────────────────────────────────
    Types
@@ -418,14 +419,15 @@ export default function NewsIndex({ allPostsData }: Props) {
 
   const pageTitle = t("index.meta.title");
   const pageDesc = t("index.meta.description");
+  const metaDescription = appendOfficeLocation(pageDesc, locale);
 
   return (
     <>
       <Head>
         <title>{pageTitle}</title>
-        <meta name="description" content={pageDesc} />
+        <meta name="description" content={metaDescription} />
         <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDesc} />
+        <meta property="og:description" content={metaDescription} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
