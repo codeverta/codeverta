@@ -178,6 +178,24 @@ Kalau coffeeshop Anda saat ini omzet bagus tapi untung tidak nampak, atau staf s
 
 **CTA:** Kami sering bantu pemilik coffeeshop membangun sistem POS dan inventory yang pas untuk skala kecil-menengah. Kalau Anda penasaran gimana caranya, bisa hubungi kami untuk konsultasi singkat. Tidak ada biaya, cuma sharing pengalaman.
 
+## FAQ Tentang Coffee Shop Boncos
+
+### Apa penyebab utama coffee shop boncos di bulan ramai?
+
+Penyebab utamanya: stok bocor (bahan terbuang karena tidak terpantau), salah hitung pesanan karena sistem manual, dan tidak ada sistem yang mencatat HPP (Harga Pokok Penjualan) secara real-time. Omzet besar tapi margin habis karena biaya operasional membengkak tanpa disadari.
+
+### Berapa omzet coffee shop kecil yang ideal?
+
+Idealnya, margin bersih coffee shop kecil 15-25% dari omzet. Kalau omzet Rp 5 juta/hari tapi bersih cuma Rp 200-300 ribu, ada yang bocor. Biasanya di stok dan tenaga kerja.
+
+### Apakah sistem POS bisa membantu coffee shop kecil?
+
+Sangat membantu. POS digital bukan sekadar mesin kasir — dia mencatat stok otomatis, ngasih peringatan kalau bahan mau habis, dan bikin laporan harian tanpa perlu staf khusus. Coffee shop kecil yang pake POS biasanya langsung tahu titik bocornya dalam 1-2 minggu.
+
+### Apakah coffee shop di Jogja perlu sistem management?
+
+Jogja pasar coffee shop-nya padat. Kalau sistem Anda masih manual, keunggulan kompetitif Anda tipis. Sistem management bikin Anda bisa bedain pelanggan setia vs one-timer, manage stok pas weekend ramai, dan tau persis hidangan apa yang paling laku.
+
 **Saran Internal Linking:**
 
 - Link ke artikel manajemen keuangan UMKM

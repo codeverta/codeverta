@@ -365,3 +365,23 @@ Pelajaran dari perusahaan besar seperti McDonald's dan restoran berskala luas ad
 > bisnis yang serius dengan operasional harus serius dengan data POS.
 
 Karena dalam bisnis retail dan F&B, masalah besar sering dimulai dari titik paling kecil: transaksi kasir yang tidak tercatat dengan benar.
+
+---
+
+## FAQ Tentang Kasir Modern dan POS
+
+### Apa bedanya kasir modern dengan mesin kasir biasa?
+
+Mesin kasir biasa hanya mencatat transaksi jual — itu pun sering manual. Kasir modern (POS digital) mencatat stok otomatis, menghitung HPP, mengirim order ke dapur, nyimpen data pelanggan, dan bikin laporan real-time. Satu alat bisa ngelakuin kerjaan 3 orang.
+
+### Apakah aplikasi POS cocok untuk UMKM?
+
+Ya, justru UMKM yang paling diuntungkan. Dengan staf minimal, POS mengotomatiskan pekerjaan yang biasanya butuh orang tambahan. Banyak UMKM di Jogja beralih ke POS dan melihat peningkatan efisiensi 30-40%.
+
+### Berapa biaya aplikasi POS untuk toko kecil?
+
+Biaya tergantung fitur: POS dasar mulai Rp 2-5 juta (sekali bayar) atau Rp 150-300rb/bulan (langganan). Yang penting bukan harganya, tapi fitur yang sesuai kebutuhan. Konsultasi dulu baru pilih yang pas.
+
+### Bisakah POS diintegrasikan dengan Gojek/Grab?
+
+Bisa. POS modern biasanya support integrasi dengan platform delivery, QRIS, GoPay — jadi pesanan dari GoFood langsung masuk ke sistem POS Anda. Barista tidak perlu catat manual.
