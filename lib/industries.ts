@@ -10,6 +10,10 @@ export type Industry = {
   solutions: { title: string; description: string }[];
   testimonial: { quote: string; author: string; company: string };
   featuredClients: string[];
+  images: {
+    hero: string[];
+    gallery: string[];
+  };
 };
 
 export type IndustryPageCopy = {

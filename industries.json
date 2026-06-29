@@ -41,7 +41,25 @@
       "Consumer Electronics",
       "Food & Beverage",
       "Textile Mills"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/erp/homepage.png",
+        "/assets/erp/sales-forecast-for-manufacturing.png",
+        "/assets/warehouse/preview.png",
+        "/assets/warehouse/dashboard.png"
+      ],
+      "gallery": [
+        "/assets/warehouse/stock-entry.png",
+        "/assets/warehouse/warehouse.png",
+        "/assets/warehouse/perangkat-iot.png",
+        "/assets/erp/payments-homepage.png",
+        "/assets/products/1.png",
+        "/assets/products/2.png",
+        "/assets/products/3.png",
+        "/assets/products/5.png"
+      ]
+    }
   },
   {
     "slug": "trading-distribution",
@@ -85,7 +103,25 @@
       "Commodity Traders",
       "Wholesale Importers",
       "3PL Providers"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/warehouse/preview.png",
+        "/assets/warehouse/dashboard.png",
+        "/assets/erp/homepage.png",
+        "/assets/warehouse/warehouse.png"
+      ],
+      "gallery": [
+        "/assets/warehouse/stock-entry.png",
+        "/assets/warehouse/perangkat-iot.png",
+        "/assets/erp/payments-homepage.png",
+        "/assets/products/6.png",
+        "/assets/products/7.png",
+        "/assets/products/8.png",
+        "/assets/products/9.png",
+        "/assets/products/10.png"
+      ]
+    }
   },
   {
     "slug": "retail",
@@ -132,7 +168,25 @@
       "Grocery & Supermarkets",
       "Electronics Retail",
       "Specialty Stores"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/coffeeshop/pos.png",
+        "/assets/coffeeshop/preview.png",
+        "/assets/catering/pos-catering.png",
+        "/assets/laundry-management/preview.png"
+      ],
+      "gallery": [
+        "/assets/coffeeshop/coffeeshop-poster.png",
+        "/assets/catering/preview.png",
+        "/assets/catering/poster-usaha-catering.png",
+        "/assets/laundry-management/laundry-system.png",
+        "/assets/laundry-management/laundry-management-system.png",
+        "/assets/laundry-management/codeverta-laundry-management-system.png",
+        "/assets/products/12.png",
+        "/assets/products/13.png"
+      ]
+    }
   },
   {
     "slug": "engineering-construction",
@@ -179,7 +233,25 @@
       "Building Contractors",
       "MEP Firms",
       "Infrastructure Developers"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/kontraktor/preview.png",
+        "/assets/kontraktor/kontraktor.png",
+        "/assets/property-listing/preview.png",
+        "/assets/property-listing/property-listing.png"
+      ],
+      "gallery": [
+        "/assets/property-listing/property-listing-ui.png",
+        "/assets/property-listing/poster.png",
+        "/assets/property-listing/property-listing-1.png",
+        "/assets/property-listing/simple-design.png",
+        "/assets/products/15.png",
+        "/assets/products/16.png",
+        "/assets/products/17.png",
+        "/assets/products/18.png"
+      ]
+    }
   },
   {
     "slug": "ecommerce",
@@ -226,7 +298,25 @@
       "Marketplace Sellers",
       "Subscription Boxes",
       "Multi-channel Retailers"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/e-commerce/detail-product.png",
+        "/assets/coffeeshop/pos.png",
+        "/assets/camping/point-of-sales.png",
+        "/assets/camping/preview.png"
+      ],
+      "gallery": [
+        "/assets/camping/dashboard.png",
+        "/assets/products/19.png",
+        "/assets/products/20.png",
+        "/assets/products/21.png",
+        "/assets/products/22.png",
+        "/assets/products/23.png",
+        "/assets/products/24.png",
+        "/assets/products/25.png"
+      ]
+    }
   },
   {
     "slug": "education",
@@ -270,7 +360,25 @@
       "Universities",
       "Vocational Institutes",
       "Tuition Centers"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/products/26.png",
+        "/assets/products/27.png",
+        "/assets/products/28.png",
+        "/assets/products/29.png"
+      ],
+      "gallery": [
+        "/assets/products/30.png",
+        "/assets/products/31.png",
+        "/assets/products/32.png",
+        "/assets/products/33.png",
+        "/assets/products/34.png",
+        "/assets/products/35.png",
+        "/assets/products/36.png",
+        "/assets/products/37.png"
+      ]
+    }
   },
   {
     "slug": "professional-services",
@@ -317,7 +425,25 @@
       "IT Services",
       "Law Firms",
       "Creative Agencies"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/ticketing/ticketing-event-system.png",
+        "/assets/ticketing/poster.png",
+        "/assets/gym-management/preview.png",
+        "/assets/gym-management/gym-management.png"
+      ],
+      "gallery": [
+        "/assets/gym-management/admin-dashboard.png",
+        "/assets/gym-management/gym-manager.png",
+        "/assets/gym-management/daftar-member.png",
+        "/assets/gym-management/member.png",
+        "/assets/gym-management/admin.png",
+        "/assets/gym-management/presensi.png",
+        "/assets/gym-management/trainer.png",
+        "/assets/gym-management/jadwal.png"
+      ]
+    }
   },
   {
     "slug": "financial-services",
@@ -361,7 +487,25 @@
       "Insurance",
       "Microfinance",
       "Brokerage Firms"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/erp/homepage.png",
+        "/assets/erp/payments-homepage.png",
+        "/assets/products/38.png",
+        "/assets/products/39.png"
+      ],
+      "gallery": [
+        "/assets/products/40.png",
+        "/assets/products/41.png",
+        "/assets/products/42.png",
+        "/assets/products/44.png",
+        "/assets/products/45.png",
+        "/assets/products/46.png",
+        "/assets/products/47.png",
+        "/assets/products/48.png"
+      ]
+    }
   },
   {
     "slug": "healthcare",
@@ -405,7 +549,25 @@
       "Clinics & Polyclinics",
       "Diagnostic Centers",
       "Pharmacy Chains"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/healthcare/preview.png",
+        "/assets/healthcare/rekam-medis-elektronik.png",
+        "/assets/healthcare/manajemen-klinik.png",
+        "/assets/products/SCR-20250728-bkxj.png"
+      ],
+      "gallery": [
+        "/assets/products/SCR-20250728-bkry.png",
+        "/assets/products/SCR-20250728-bkug.png",
+        "/assets/images/meeting.jpeg",
+        "/assets/products/4.jpeg",
+        "/assets/products/43.jpeg",
+        "/assets/products/49.jpeg",
+        "/assets/images/privy.png",
+        "/assets/images/copilot.png"
+      ]
+    }
   },
   {
     "slug": "non-profit",
@@ -449,6 +611,24 @@
       "Community Foundations",
       "Social Enterprises",
       "Religious Organizations"
-    ]
+    ],
+    "images": {
+      "hero": [
+        "/assets/images/kitabisa.jpg",
+        "/assets/products/gym-management.png",
+        "/assets/camping/preview.png",
+        "/assets/camping/dashboard.png"
+      ],
+      "gallery": [
+        "/assets/images/souvenirlilin.png",
+        "/assets/images/lilin.png",
+        "/assets/images/lilin.webp",
+        "/assets/images/lilin1.webp",
+        "/assets/images/lilin2.webp",
+        "/assets/images/homepage-souvenirlilin-id.png",
+        "/assets/images/malabar.jpg",
+        "/assets/images/uny.png"
+      ]
+    }
   }
 ]
