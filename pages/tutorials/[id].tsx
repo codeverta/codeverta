@@ -16,7 +16,8 @@ import CopyLinkButton from "components/CopyLinkButton";
 import Layout from "components/layout/Landing";
 import RelatedPosts from "components/RelatedPosts";
 import BlogSchemaJsonLd from "components/BlogSchemaJsonLd";
-import BreadcrumbSchemaJsonLd from "components/BreadcrumbSchemaJsonLd"; // Import the new component
+import BreadcrumbSchemaJsonLd from "components/BreadcrumbSchemaJsonLd";
+import LeadMagnet from "components/LeadMagnet";
 import { convertDate, estimateReadingTime } from "lib/functions";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import DisqusThread from "components/DisqusThread";
@@ -159,6 +160,23 @@ function Post({ postData, slug }) {
               selection:bg-blue-100 dark:selection:bg-blue-900"
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
+
+            {/* Lead Magnet / CTA — contextual capture */}
+            <LeadMagnet
+              variant="footer"
+              relatedProduct={
+                postData.tags?.split(",")?.[0]?.trim() || undefined
+              }
+              productLink={
+                postData.tags
+                  ? `https://codeverta.com/produk/${postData.tags
+                      .split(",")[0]
+                      .trim()
+                      .replace(/\s+/g, "-")}`
+                  : undefined
+              }
+            />
+
             <DisqusThread
               url={"https://www.codeverta.com/news/" + slug}
               identifier={slug}

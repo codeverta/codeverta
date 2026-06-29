@@ -122,6 +122,87 @@ export function parseHowToSection(content: string) {
   return null;
 }
 
+// Map of tag keywords -> product slugs (so CTAs link to relevant products)
+const PRODUCT_TAG_MAP: Record<string, string> = {
+  gym: "/produk/gym-management-system",
+  "manajemen gym": "/produk/gym-management-system",
+  "software gym": "/produk/gym-management-system",
+  "sistem gym": "/produk/gym-management-system",
+  "gym management": "/produk/gym-management-system",
+  laundry: "/produk/laundry-management-system",
+  "manajemen laundry": "/produk/laundry-management-system",
+  kontraktor: "/produk/project-management-system",
+  konstruksi: "/produk/project-management-system",
+  "manajemen proyek": "/produk/project-management-system",
+  "software kontraktor": "/produk/project-management-system",
+  "coffee shop": "/produk/coffee-shop-erp",
+  coffeeshop: "/produk/coffee-shop-erp",
+  kasir: "/produk/point-of-sale",
+  pos: "/produk/point-of-sale",
+  "point of sale": "/produk/point-of-sale",
+  "aplikasi kasir": "/produk/point-of-sale",
+  retail: "/produk/point-of-sale",
+  hotel: "/produk/hotel-management-system",
+  penginapan: "/produk/hotel-management-system",
+  "manajemen hotel": "/produk/hotel-management-system",
+  rental: "/produk/rental-management-system",
+  "rental motor": "/produk/rental-management-system",
+  "rental mobil": "/produk/rental-management-system",
+  warehouse: "/produk/warehouse-management-system",
+  gudang: "/produk/warehouse-management-system",
+  "manajemen gudang": "/produk/warehouse-management-system",
+  catering: "/produk/food-beverage-management",
+  "makanan dan minuman": "/produk/food-beverage-management",
+  kesehatan: "/produk/rme-hospital-management-system",
+  "rumah sakit": "/produk/rme-hospital-management-system",
+  "rekam medis": "/produk/rme-hospital-management-system",
+  ecommerce: "/produk/ecommerce-platform",
+  "e-commerce": "/produk/ecommerce-platform",
+  event: "/produk/ticketing-system",
+  ticketing: "/produk/ticketing-system",
+  undangan: "/produk/digital-invitation",
+  pernikahan: "/produk/digital-invitation",
+};
+
+// Auto-insert CTA block at end of article based on tags
+export function insertProductCta(content: string, tags?: string): string {
+  if (!tags) return content;
+
+  const tagList = tags
+    .toLowerCase()
+    .split(",")
+    .map((t) => t.trim());
+  let productUrl = "";
+  let productName = "";
+
+  for (const tag of tagList) {
+    for (const [key, url] of Object.entries(PRODUCT_TAG_MAP)) {
+      if (tag.includes(key)) {
+        productUrl = url;
+        // Derive friendly name from URL
+        productName = url
+          .replace("/produk/", "")
+          .split("-")
+          .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+          .join(" ");
+        break;
+      }
+    }
+    if (productUrl) break;
+  }
+
+  if (!productUrl) return content;
+
+  // Only inject if no existing CTA block
+  if (content.includes("<!--CTA:")) return content;
+
+  const ctaBlock = `\n\n---\n\n<!--CTA:${productUrl}-->\n\n### 🚀 Butuh Sistem Serupa?\n\nKami dari **Codeverta** bisa bantu bangunkan sistem [${productName}](${productUrl}) yang sesuai dengan kebutuhan bisnis Anda.\n\n👉 **[Konsultasi Gratis →](https://wa.me/62881011692615?text=Halo%20Codeverta%2C%20saya%20tertarik%20dengan%20${encodeURIComponent(
+    productName
+  )}%20setelah%20membaca%20artikel.)**\n\nTim teknis kami siap mendiskusikan kebutuhan Anda tanpa biaya.\n`;
+
+  return content + ctaBlock;
+}
+
 // Insert suggestion to read related articles
 export function insertRelatedPostLinks(content, relatedPosts, lang) {
   if (!relatedPosts || relatedPosts.length === 0) return content;

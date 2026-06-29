@@ -403,3 +403,23 @@ Kasir yang baik membantu owner mengendalikan bisnis.
 Jika bisnis kamu mulai ramai, punya banyak produk, atau siap membuka cabang, inilah saatnya mengevaluasi apakah aplikasi kasir yang dipakai sekarang masih cukup.
 
 Karena ketika cabang bertambah, masalah kecil di kasir bisa berubah menjadi masalah besar di laporan, stok, dan profit.
+
+---
+
+## FAQ Tentang POS untuk Bisnis Bercabang
+
+### Apa keuntungan utama POS multi-cabang?
+
+Dengan POS multi-cabang, Anda bisa lihat penjualan semua cabang dari satu dashboard. Tahu cabang mana yang paling laku, barang apa yang cepat habis, dan stok bisa dipindahkan antar cabang. Semua real-time.
+
+### Apakah POS multi-cabang mahal?
+
+Tergantung jumlah cabang dan fitur. Untuk 2-3 cabang, investasi biasanya Rp 15-40 juta — termasuk hardware, software, dan training. Bandingkan dengan gaji 1 orang staf admin per cabang yang Rp 4-5 juta/bulan — POS biasanya balik modal dalam 3-6 bulan.
+
+### Bagaimana cara milih POS untuk bisnis bercabang?
+
+Prioritas: (1) cloud-based — data real-time dari mana saja, (2) offline mode — tetap jalan kalau internet mati, (3) stok terpusat — bisa lihat per-cabang dan gabungan, (4) support lokal — ada tim teknis yang bisa bantu pas ada masalah.
+
+### Apakah data penjualan semua cabang aman disimpan di cloud?
+
+Ya, selama pilih POS yang pake enkripsi dan backup otomatis. Codeverta pake PostgreSQL dengan backup harian + enkripsi. Data tetap aman bahkan kalau hardware rusak.

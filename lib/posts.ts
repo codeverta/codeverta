@@ -9,6 +9,7 @@ import gfm from "remark-gfm";
 import { insertContextualLinks, findRelatedPosts } from "./functions";
 import {
   insertRelatedPostLinks,
+  insertProductCta,
   parseFAQSection,
   parseHowToSection,
 } from "./parser";
@@ -295,6 +296,9 @@ export async function getPostData(id, folder = "blog", locale = "id") {
   if (shouldGenerateTOC && headings.length >= 3) {
     enhancedContent = insertTableOfContents(enhancedContent, usedLanguage);
   }
+
+  // Insert contextual CTA block based on article tags
+  enhancedContent = insertProductCta(enhancedContent, frontMatter.tags);
 
   // // Insert contextual links within the content
   // enhancedContent = insertContextualLinks(enhancedContent, allPosts, id);
