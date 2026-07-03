@@ -2,7 +2,7 @@
 title: "Kasir Modern Bukan Sekadar Mesin Kasir: Cara POS Membuat Bisnis Lebih Rapi"
 date: "2026-05-26"
 image: "/assets/products/33.png"
-desc: "Pelajari bagaimana kasir modern, aplikasi POS, dan software kasir membantu toko, restoran, coffee shop, dan bisnis retail mengurangi salah hitung, mempercepat transaksi, dan membaca data penjualan."
+desc: "Masih hitung pakai kalkulator? 60% pemilik toko akui pernah salah kasih kembalian. Pelajari cara POS modern bikin transaksi 3x lebih cepat dan stok auto-update."
 tags: "kasir, aplikasi kasir, aplikasi pos, mesin kasir, pos kasir, aplikasi point of sales, software kasir, kasir online"
 ---
 

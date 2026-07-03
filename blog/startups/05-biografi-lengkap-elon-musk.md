@@ -1,11 +1,10 @@
 ---
-
 title: "Biografi Elon Musk Lengkap: Perjalanan Hidup, Kesuksesan, dan Inovasi"
 date: "2025-06-11"
 image: "/assets/elon.png"
+noindex: true
 desc: "Biografi Elon Musk: Kisah hidup Elon Musk dari masa kecil hingga menjadi salah satu inovator terbesar di dunia. Artikel ini lengkap dengan insight, fakta menarik, dan FAQ."
 tags: "Elon Musk, biografi, inovasi"
-
 ---
 
 ## Biografi Elon Musk Lengkap: Perjalanan Hidup, Kesuksesan, dan Inovasi
@@ -18,7 +17,7 @@ Elon Musk adalah salah satu tokoh paling berpengaruh di dunia teknologi modern. 
 
 Elon Musk lahir pada tanggal 28 Juni 1971 di Pretoria, Afrika Selatan. Ibunya, Maye Musk, adalah seorang ahli gizi dan model terkenal, sedangkan ayahnya, Errol Musk, adalah seorang insinyur dan pilot. Dari kecil, Elon sudah menunjukkan minat yang besar terhadap teknologi dan sains.
 
-Di usia 10 tahun, Musk mendapatkan komputer pertamanya, Commodore VIC-20. Dengan semangat belajar yang tinggi, dia mengajarkan dirinya sendiri cara pemrograman dan berhasil membuat game pertamanya, *Blastar*, pada usia 12 tahun. Game tersebut kemudian dijual seharga 500 dolar, menjadi salah satu pencapaian awalnya di bidang teknologi.
+Di usia 10 tahun, Musk mendapatkan komputer pertamanya, Commodore VIC-20. Dengan semangat belajar yang tinggi, dia mengajarkan dirinya sendiri cara pemrograman dan berhasil membuat game pertamanya, _Blastar_, pada usia 12 tahun. Game tersebut kemudian dijual seharga 500 dolar, menjadi salah satu pencapaian awalnya di bidang teknologi.
 
 ---
 
@@ -56,7 +55,7 @@ Musk menjadi CEO Tesla pada tahun 2008 dan terus mendorong inovasi, termasuk pen
 
 Pada tahun 2002, Musk mendirikan SpaceX (Space Exploration Technologies Corp.) dengan misi besar: membuat perjalanan ke luar angkasa lebih terjangkau dan, pada akhirnya, memungkinkan manusia tinggal di planet lain. SpaceX berhasil mengembangkan roket Falcon 1, Falcon 9, Falcon Heavy, dan Starship.
 
-SpaceX menjadi perusahaan swasta pertama yang berhasil mengirimkan kargo ke Stasiun Luar Angkasa Internasional (ISS) dan mendaratkan roket kembali ke Bumi, membuka era baru transportasi antariksa yang dapat digunakan kembali (*reusable rockets*).
+SpaceX menjadi perusahaan swasta pertama yang berhasil mengirimkan kargo ke Stasiun Luar Angkasa Internasional (ISS) dan mendaratkan roket kembali ke Bumi, membuka era baru transportasi antariksa yang dapat digunakan kembali (_reusable rockets_).
 
 ---
 
@@ -76,7 +75,7 @@ Sebagai figur publik, Elon Musk sering menjadi sorotan media, baik karena cuitan
 
 ## Fakta Menarik Tentang Elon Musk
 
-✅ Elon Musk pernah muncul sebagai cameo di film *Iron Man 2* (2010) dan menjadi inspirasi karakter Tony Stark.
+✅ Elon Musk pernah muncul sebagai cameo di film _Iron Man 2_ (2010) dan menjadi inspirasi karakter Tony Stark.
 
 ✅ Musk memiliki enam anak dan sangat peduli dengan pendidikan mereka. Dia mendirikan sekolah eksperimental bernama Ad Astra (sekarang Astra Nova).
 
@@ -106,4 +105,3 @@ A: Melalui Tesla, Musk mempopulerkan kendaraan listrik, mendorong produsen mobil
 ## Kesimpulan
 
 Biografi Elon Musk mencerminkan perjalanan luar biasa seorang visioner yang tidak pernah berhenti berinovasi. Dari seorang anak yang gemar membaca dan memprogram game sederhana, Musk kini menjadi simbol perubahan dan masa depan teknologi. Dengan visi yang berani dan ambisi untuk mengubah dunia, Elon Musk telah menjadi inspirasi bagi banyak orang, membuktikan bahwa mimpi besar dan kerja keras bisa membawa dampak yang luar biasa.
-

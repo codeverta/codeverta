@@ -123,6 +123,7 @@ export default function PostContent({ postData, slug, articleStats }) {
       <NextSeo
         title={`${postData.title} | Codeverta`}
         description={postData.desc}
+        noindex={postData.noindex === true}
         openGraph={{
           title: postData.title,
           description: postData.desc,

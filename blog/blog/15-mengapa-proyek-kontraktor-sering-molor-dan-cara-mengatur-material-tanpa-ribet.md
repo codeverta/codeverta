@@ -2,7 +2,7 @@
 title: "Mengapa Proyek Kontraktor Sering Molor dan Cara Mengatur Material Tanpa Ribet"
 date: "2026-06-25"
 image: "/assets/kontraktor/kontraktor.png"
-desc: "Proyek molor, material hilang, tukang nggak jelas kerjanya? Bedah akar masalah manajemen proyek kontraktor dan solusi praktis yang langsung bisa dipakai."
+desc: "Proyek molor 40% lebih lama dari jadwal? Material hilang gak jelas? Temukan 5 penyebab utama proyek kontraktor overbudget + cara ngatur material tanpa ribet."
 tags: "manajemen proyek, kontraktor, software kontraktor, manajemen material bangunan"
 ---
 

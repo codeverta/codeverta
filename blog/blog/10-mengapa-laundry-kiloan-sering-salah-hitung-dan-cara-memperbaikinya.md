@@ -2,7 +2,7 @@
 title: "Mengapa Laundry Kiloan Sering Salah Hitung dan Cara Memperbaikinya Tanpa Ribet"
 date: "2026-05-20"
 image: "/assets/laundry-management/laundry-management-system.png"
-desc: "Boncos tiap bulan karena pakaian hilang, salah hitung kilo, dan kasir tidak sesuai? Panduan praktis mengelola laundry kiloan agar untung tetap terjaga."
+desc: "Tiap bulan boncos karena pakaian hilang & salah hitung kilo? 1 dari 3 laundry kiloan alami ini. Simak cara mengelola laundry biar untung naik 30% dalam 2 bulan."
 tags: "laundry management, software laundry, sistem kasir laundry"
 ---
 

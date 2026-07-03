@@ -2,6 +2,7 @@
 title: "Skandal eFishery: Kebangkrutan Startup Akuakultur Indonesia Senilai Rp9,8 Triliun"
 date: "2025-05-15"
 image: "https://picsum.photos/seed/technology/1200/600"
+noindex: true
 desc: "Mengungkap skandal keuangan eFishery, startup unicorn Indonesia, yang mengguncang dunia teknologi dengan manipulasi laporan keuangan dan dampaknya terhadap ekosistem startup."
 tags: "eFishery, skandal startup, kebangkrutan, manipulasi keuangan, unicorn Indonesia"
 ---

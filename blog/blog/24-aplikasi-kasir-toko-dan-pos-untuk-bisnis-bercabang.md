@@ -2,7 +2,7 @@
 title: "Aplikasi Kasir Toko dan POS untuk Bisnis Bercabang: Belajar dari Retail dan Restoran Besar"
 date: "2026-05-26"
 image: "/assets/products/42.png"
-desc: "Panduan membangun aplikasi kasir toko, POS kasir multi-cabang, dan software kasir yang siap berkembang, lengkap dengan studi kasus Starbucks, Oracle Simphony, dan pelajaran untuk UMKM."
+desc: "Bisnis Anda buka cabang baru? Jangan pake POS cabang lama yang laporannya terpisah. Pelajari cara POS multi-cabang menyatukan stok, penjualan, & laporan dalam 1 dashboard."
 tags: "aplikasi kasir toko, aplikasi kasir terbaik, kasir online, aplikasi point of sales, pos kasir, aplikasi pos, software kasir, kasir pintar, mesin kasir"
 ---
 

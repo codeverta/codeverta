@@ -7,6 +7,7 @@ import { appWithTranslation } from "next-i18next";
 import Landing from "@/components/layout/Landing";
 import { buildSeoMeta, getAlternateLinks, SITE_NAME } from "@/lib/seo";
 import { useRouter } from "next/router";
+import { GAScript, useGAPageView } from "@/components/GAScript";
 
 if (typeof window !== "undefined") {
   // @ts-ignore
@@ -27,8 +28,12 @@ function App({ Component, pageProps }: AppLayoutProps) {
     <Landing localizedPaths={pageProps.localizedPaths}>{page}</Landing>
   );
 
+  // GA page view tracking
+  useGAPageView();
+
   return (
     <>
+      <GAScript />
       <NextSeo
         title={seo.title}
         description={seo.description}

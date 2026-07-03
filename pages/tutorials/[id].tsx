@@ -41,6 +41,7 @@ function Post({ postData, slug }) {
       <NextSeo
         title={`${postData.title} | Codeverta`}
         description={postData.desc}
+        noindex={postData.noindex === true}
         openGraph={{
           title: postData.title,
           description: postData.desc,
