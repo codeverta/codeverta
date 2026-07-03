@@ -2,7 +2,7 @@
 title: "Aplikasi Kasir Gratis vs Berbayar: Mana yang Cocok untuk Toko, Coffee Shop, dan UMKM?"
 date: "2026-05-26"
 image: "/assets/products/28.png"
-desc: "Panduan memilih aplikasi kasir gratis, aplikasi kasir Android, aplikasi kasir PC, hingga POS berbayar seperti Kasir Pintar, Majoo, Olsera, iReap, NutaPOS, dan software kasir custom."
+desc: "Bingung milih POS gratis atau berbayar? Kami bedah 8 software kasir (Kasir Pintar, Majoo, Olsera, iReap, dll) — lengkap dengan biaya, fitur, dan kapan harus upgrade."
 tags: "aplikasi kasir gratis, kasir pintar, aplikasi kasir android, aplikasi kasir gratis android, aplikasi kasir gratis pc, aplikasi kasir pc, aplikasi pos gratis, kasir pintar login, kasir pintar desktop, kasir pintar pro, olsera pos, majoo kasir, ireap pos pro, kasirpro, nutapos"
 ---
 
