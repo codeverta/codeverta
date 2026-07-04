@@ -62,30 +62,21 @@ type AboutTranslate = (key: string) => string;
 
 const team = [
   {
-    img: "/assets/employee/bu_wulan_finance.png",
-    name: "Wulan Maheswari, S.E.",
-    role: "Chief Financial Officer & HR",
-    linkedin: "https://www.linkedin.com/company/pt-zenit-technology-solution",
-    instagram: "https://www.instagram.com/codeverta",
+    img: "/assets/employee/nevi_marketing.jpg",
+    name: "Eka Anefia Savitri S.Hum.",
+    role: "Lead Marketing & Legal",
+    linkedin: "https://www.linkedin.com/in/eka-anefia-safitri-a16a31150/",
   },
   {
-    img: "/assets/employee/nabila_marketing.png",
-    name: "Nabila Salma Hadiya, S.M.",
-    role: "Growth & Chief Marketing Officer",
-    linkedin: "https://www.linkedin.com/company/pt-zenit-technology-solution",
-    instagram: "https://www.instagram.com/codeverta",
+    img: "/assets/employee/samantha_meliora_boss.jpeg",
+    name: "Samantha Meliora Samosir B.Sc.IT",
+    role: "Co-Founder",
+    linkedin: "https://www.linkedin.com/in/samanthameliorasamosir/",
   },
   {
-    img: "/assets/employee/pak_bernard_project_manager.png",
-    name: "Bernard Prasetyo, S.T., PMP",
-    role: "CTO, Project Manager & Engineer",
-    linkedin: "https://www.linkedin.com/company/pt-zenit-technology-solution",
-    instagram: "https://www.instagram.com/codeverta",
-  },
-  {
-    img: "/assets/employee/rabih_cybersecurity_engineer.jpeg",
+    img: "/assets/employee/rabih.jpg",
     name: "Rabih Utomo, S.Kom.",
-    role: "Red Team, Cybersecurity Engineer",
+    role: "Engineer, AI & Cybersecurity",
     linkedin: "https://www.linkedin.com/in/rabih-ganteng/",
     instagram: "https://www.instagram.com/0xrabih",
   },
@@ -108,7 +99,7 @@ const TeamSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {team.map((member) => (
             <div
               key={member.name}
