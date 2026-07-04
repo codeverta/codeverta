@@ -5,23 +5,20 @@ import { withI18n } from "@/lib/withi18n";
 import { Industry, IndustryPageCopy } from "@/lib/industries";
 import { getLocalizedUrl, SITE_NAME, SITE_URL } from "@/lib/seo";
 
-export const getStaticProps = withI18n(
-  ["common", "industry"],
-  async function ({ locale }) {
-    const { getIndustries, getIndustryPageCopy } = await import(
-      "@/lib/industries.server"
-    );
-    const safeLocale = locale || "en-US";
+export const getStaticProps = withI18n(["common"], async function ({ locale }) {
+  const { getIndustries, getIndustryPageCopy } = await import(
+    "@/lib/industries.server"
+  );
+  const safeLocale = locale || "en-US";
 
-    return {
-      props: {
-        industries: getIndustries(safeLocale),
-        copy: getIndustryPageCopy(safeLocale),
-        locale: safeLocale,
-      },
-    };
-  }
-);
+  return {
+    props: {
+      industries: getIndustries(safeLocale),
+      copy: getIndustryPageCopy(safeLocale),
+      locale: safeLocale,
+    },
+  };
+});
 
 export default function IndustryPage({
   industries,

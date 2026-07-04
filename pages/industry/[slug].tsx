@@ -21,7 +21,7 @@ export const getStaticPaths: GetStaticPaths = async ({ locales = [] }) => {
 
 /* ── getStaticProps ── */
 export const getStaticProps: GetStaticProps = withI18n(
-  ["common", "industry"],
+  ["common"],
   async ({ params, locale }) => {
     const { getIndustries, getIndustryBySlug, getIndustryPageCopy } =
       await import("@/lib/industries.server");

@@ -850,7 +850,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       allPostsData,
-      ...(await serverSideTranslations(locale, ["common", "order"])),
+      ...(await serverSideTranslations(locale, ["common"])),
     },
   };
 }
