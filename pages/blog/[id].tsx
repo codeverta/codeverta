@@ -1394,11 +1394,7 @@ export default function BlogDetail({
    getStaticPaths
 ───────────────────────────────────────────── */
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = getAllPostIds("blog").map(({ params, locale }) => ({
-    params: { id: params.id },
-    locale,
-  }));
-  return { paths, fallback: "blocking" };
+  return { paths: [], fallback: "blocking" };
 };
 
 /* ─────────────────────────────────────────────
@@ -1439,8 +1435,10 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
         ])),
       },
     };
-  } catch (error) {
-    console.log({ error });
+  } catch (error: any) {
+    if (!(error instanceof Error && error.message.includes("not found in"))) {
+      console.log({ error });
+    }
     return { notFound: true };
   }
 };

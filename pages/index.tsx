@@ -54,9 +54,20 @@ import { getProjects } from "@/lib/projects";
 export async function getStaticProps({ locale }) {
   const projects = getProjects(locale);
 
+  // Only pass fields the ProjectsSection actually needs — saves ~50 kB
+  const trimmed = projects.slice(0, 9).map((p) => ({
+    product: {
+      id: p.product.id,
+      image: p.product.image,
+      name: p.product.name,
+      description: p.product.description,
+      technologies: p.product.technologies,
+    },
+  }));
+
   return {
     props: {
-      projects: projects.slice(0, 9),
+      projects: trimmed,
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };

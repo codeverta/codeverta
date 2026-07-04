@@ -57,23 +57,6 @@ export async function getStaticProps({ params, locale }) {
   };
 }
 
-export async function getStaticPaths({ locales }) {
-  const postIds = getAllPostIds(POST_CATEGORY); // Menggunakan kategori yang dipilih
-  const paths = [];
-
-  postIds.forEach((postId) => {
-    for (const locale of locales) {
-      paths.push({
-        params: {
-          id: postId.params.id,
-        },
-        locale,
-      });
-    }
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
+export async function getStaticPaths() {
+  return { paths: [], fallback: "blocking" };
 }

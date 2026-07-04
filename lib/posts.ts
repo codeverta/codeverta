@@ -265,6 +265,30 @@ export async function getPostData(id, folder = "blog", locale = "id") {
   }
 
   if (!fileContents) {
+    const folderDirectory = path.join(blogBaseDirectory, folder);
+    if (fs.existsSync(folderDirectory)) {
+      const allDirs = [
+        folderDirectory,
+        ...fs
+          .readdirSync(folderDirectory, { withFileTypes: true })
+          .filter((dirent) => dirent.isDirectory())
+          .map((dirent) => path.join(folderDirectory, dirent.name)),
+      ];
+      for (const directory of allDirs) {
+        fullPath = path.join(directory, `${id}.md`);
+        if (fs.existsSync(fullPath)) {
+          fileContents = fs.readFileSync(fullPath, "utf8");
+          usedLanguage =
+            path.basename(directory) === folder
+              ? "id"
+              : path.basename(directory);
+          break;
+        }
+      }
+    }
+  }
+
+  if (!fileContents) {
     throw new Error(`Post ${id} not found in ${folder} for locale ${locale}`);
   }
 
