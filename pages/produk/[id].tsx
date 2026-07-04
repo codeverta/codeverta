@@ -349,16 +349,8 @@ function VideoSection({ videoUrls, productName }) {
   );
 }
 
-// ─── getStaticPaths ────────────────────────────────────────────────────────────
-export async function getStaticPaths({ locales }) {
-  const paths = locales.flatMap((locale) =>
-    getAllProjectIds().map((id) => ({
-      params: { id },
-      locale,
-    }))
-  );
-
-  return { paths, fallback: false };
+export async function getStaticPaths() {
+  return { paths: [], fallback: "blocking" };
 }
 
 // ─── getStaticProps ────────────────────────────────────────────────────────────

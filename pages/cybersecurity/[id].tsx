@@ -606,29 +606,6 @@ export async function getStaticProps({ params, locale }) {
   };
 }
 
-// getStaticPaths replaces generateStaticParams - they're functionally similar
-export async function getStaticPaths({ locales }) {
-  const postIds = getAllPostIds("cybersecurity");
-  const paths: {
-    params: {
-      id: string;
-    };
-    locale: string;
-  }[] = [];
-
-  postIds.forEach((postId) => {
-    for (const locale of locales) {
-      paths.push({
-        params: {
-          id: postId.params.id,
-        },
-        locale,
-      });
-    }
-  });
-
-  return {
-    paths,
-    fallback: false,
-  };
+export async function getStaticPaths() {
+  return { paths: [], fallback: "blocking" };
 }

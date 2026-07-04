@@ -848,7 +848,14 @@ export async function getStaticProps({ locale }) {
 
   return {
     props: {
-      allPostsData,
+      allPostsData: allPostsData.map((post) => ({
+        id: post.id,
+        title: post.title,
+        desc: post.desc,
+        date: post.date,
+        category: post.category,
+        readTime: post.readTime,
+      })),
       ...(await serverSideTranslations(locale, ["common"])),
     },
   };
