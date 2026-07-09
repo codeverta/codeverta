@@ -210,7 +210,6 @@ export default function LandingPage({ projects }: any) {
           `}</style>
         </section>
         <IndustrySection t={t} industries={industryItems} />
-
         {/* <ModernStatsSection /> */}
         {/* Tambahkan konten tersebut disini */}
         <ProjectsSection projects={projects} />

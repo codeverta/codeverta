@@ -1,0 +1,3366 @@
+{
+  "projects": [
+    {
+      "product": {
+        "id": "gym-management-system",
+        "name": "Gym-Management-System von Codeverta",
+        "description": "Ein umfassendes Fitnessstudio-Managementsystem, das Mitgliederverwaltung, Kursbetrieb, Point-of-Sale (POS)-System und die Verfolgung von Trainingsleistungen in einem einzigen Dashboard integriert.",
+        "fullDescription": "Eine End-to-End-Fitnessstudio-Managementlösung, die entwickelt wurde, um den Betrieb von Fitnesscentern zu optimieren. Das System vereinfacht Arbeitsabläufe von der Mitgliederregistrierung und Abonnementverwaltung bis hin zur präzisen QR-Code-Anwesenheitskontrolle, Kursplanung und dem Einzelhandel über ein integriertes POS-Modul. Mit Echtzeitanalysen können Studiobesitzer Einnahmen, Trainerleistung und Mitgliederbindung effizient überwachen, Datenverluste reduzieren und die Mitarbeiterproduktivität steigern.",
+        "image": "/assets/products/gym-management.png",
+        "images": [
+          "/assets/products/gym-management.png",
+          "/assets/gym-management/poster1.png"
+        ],
+        "videoUrls": ["https://www.youtube.com/watch?v=nVCwhNEbOM8"],
+        "technologies": ["Go", "Next.js", "PostgreSQL", "Redis"],
+        "category": "Gym & Gesundheit",
+        "status": "Produktionsbereit",
+        "version": "1.0.0",
+        "lastUpdated": "Februar 2026",
+        "client": "-",
+        "duration": "3 Monate",
+        "teamSize": "2 Personen (Backend, Frontend)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "54",
+          "reviews": [
+            {
+              "author": "Roni Wijaya",
+              "role": "Inhaber Iron Gym Yogyakarta",
+              "date": "2026-02-15",
+              "body": "Das Mitgliedschaftssystem ist sehr ordentlich. Die automatische Anwesenheitsvalidierung in Echtzeit verhindert, dass unbefugte Personen das Gym betreten.",
+              "rating": "5"
+            },
+            {
+              "author": "Coach Aldi",
+              "role": "Cheftrainer",
+              "date": "2026-03-01",
+              "body": "Das Gym-Workout-Log-Modul macht es mir leicht, die Trainingsfortschritte meiner Kunden systematisch vom Handy aus zu verfolgen.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Systemablauf",
+          "techStack": "Technologie",
+          "screenshots": "Interface",
+          "specs": "Leistung & Sicherheit"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Geschäftsdetails",
+          "clientLabel": "Entwickler",
+          "durationLabel": "Entwicklung",
+          "teamSizeLabel": "Gesamtteam",
+          "lastUpdatedLabel": "Letztes Audit"
+        },
+        "platformSupport": {
+          "title": "Leistungsumfang",
+          "items": [
+            "Mitgliederverwaltung & Abonnements",
+            "Echtzeit-Anwesenheitssystem",
+            "Point of Sale (POS) für Inventar",
+            "Trainingstracking & Trainingsprogramme"
+          ]
+        },
+        "architecture": {
+          "title": "Datenverwaltung",
+          "items": [
+            "Datenstruktur für Übungen basierend auf Körperteilen",
+            "Automatisierte POS-Rechnungen für jede Transaktion",
+            "Integriertes Trainer-Abonnementsystem",
+            "Tägliche Aktivitätsprotokollierung per Workout-Log"
+          ]
+        },
+        "projectDescription": {
+          "title": "Geschäftsziel",
+          "paragraphs": [
+            "Der Hauptfokus liegt auf der Digitalisierung der Fitnessstudio-Abläufe, um manuelle Fehler zu minimieren. Durch zentralisierte Mitgliedsdaten können Inhaber den Status jedes Mitglieds präzise überwachen und Einnahmeverluste vermeiden.",
+            "Das POS-Modul vereinfacht die Inventarverwaltung und den Verkauf von Produkten, wobei jede Transaktion automatisch in Finanzberichten erfasst wird.",
+            "Die Servicequalität wird durch dynamische Kursplanung, effiziente QR-Code-Anwesenheitskontrolle und Monitoring-Tools für Trainingsfortschritte gesteigert, die es Trainern ermöglichen, eine bessere personalisierte Betreuung anzubieten."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Users",
+          "title": "Mitgliedschaft & CRM",
+          "description": "Verwaltung der Mitgliederdatenbank, Mitgliedschaftsstatus und flexible Gym-Pläne."
+        },
+        {
+          "icon": "QrCode",
+          "title": "Intelligente Anwesenheit",
+          "description": "QR-Code-basierte Anwesenheitskontrolle für Mitglieder, Trainer und Mitarbeiter mit Echtzeitvalidierung."
+        },
+        {
+          "icon": "Calendar",
+          "title": "Kurse & Zeitpläne",
+          "description": "Verwaltung von Kursplänen, Sitzungsanmeldungen und systematisches Monitoring der Teilnehmerzahlen."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Integriertes POS",
+          "description": "Vollständiges Kassensystem für den Verkauf von Inventarartikeln mit automatischer Rechnungsverfolgung."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Business-Analytik",
+          "description": "Grafische Visualisierung von Einnahmen und Produktverkaufstrends zur Geschäftsbeurteilung."
+        },
+        {
+          "icon": "FileText",
+          "title": "Datenverwaltung",
+          "description": "Einfacher Export von Berichten für Audits, Lohnabrechnungen und Administration."
+        }
+      ],
+      "workflow": {
+        "title": "Produkt-Ablauf",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "Onboarding",
+            "description": "Registrierung neuer Mitglieder und Auswahl der passenden Mitgliedschaft."
+          },
+          {
+            "step": 2,
+            "icon": "QrCode",
+            "title": "Check-in",
+            "description": "Mitglieder checken sich bei Ankunft im Gym per QR-Code ein."
+          },
+          {
+            "step": 3,
+            "icon": "Dumbbell",
+            "title": "Aktivität",
+            "description": "Mitglieder besuchen geplante Kurse oder trainieren mit einem Personal Trainer."
+          },
+          {
+            "step": 4,
+            "icon": "CreditCard",
+            "title": "Transaktion",
+            "description": "Kauf von Nahrungsergänzungsmitteln oder Zubehör über das POS-System."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Go (Golang)",
+              "description": "Verwendet für die Geschäftslogik der Anwesenheits- und POS-Module, die hohe Geschwindigkeit erfordern."
+            }
+          ]
+        },
+        {
+          "category": "Persistenz",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "Primäre Datenbank für relationale Daten zwischen Übungen, Körperteilen und Mitgliedern."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Admin-Dashboard",
+          "image": "/assets/products/gym-1.png",
+          "description": "Übersicht der aktiven Mitglieder und Statistiken zur Gym-Anwesenheit."
+        },
+        {
+          "title": "Point-of-Sale-Interface",
+          "image": "/assets/products/gym-2.png",
+          "description": "Kassenoberfläche für die Eingabe von POS-Artikeln und Druck von POS-Rechnungen."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Infrastruktur-Spezifikationen",
+          "server": {
+            "title": "Backend-Konfiguration",
+            "items": [
+              "Docker-Containerisierung",
+              "PostgreSQL-Datenbank",
+              "Redis für Sitzungs- und Anwesenheits-Caching"
+            ]
+          },
+          "client": {
+            "title": "Benutzerzugriff",
+            "items": [
+              "Webbrowser (Admin-Dashboard)",
+              "Mobile App (Mitglieder-Workout-Log)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Systemziele",
+          "metrics": [
+            {
+              "label": "Verarbeitung der Anwesenheit",
+              "value": "< 100ms"
+            },
+            {
+              "label": "Rechnungserstellung",
+              "value": "Sofort"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Geschäftsschutz",
+          "items": [
+            "Automatische Mitgliedschaftsvalidierung bei Anwesenheit",
+            "Audit-Log für jede erstellte POS-Rechnung",
+            "Verschlüsselung der persönlichen Daten der Mitglieder"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "High-Performance Trail-Running-Ticketing-System",
+        "description": "Registrierungssystem für Trail-Running-Events mit hoher Performance zur Bewältigung tausender Transaktionen pro Sekunde.",
+        "fullDescription": "Dieses System wurde speziell entwickelt, um extreme Verkehrssprünge bei der Registrierung für internationale Trail-Running-Events zu bewältigen. Der Fokus liegt auf Datenintegrität, Bot-Prävention und horizontaler Skalierbarkeit. Aufgebaut mit einer Microservices-Architektur, um eine faire Warteschlange (Queue) sicherzustellen und sich vor automatisierten Scripting-Angriffen zu schützen.",
+        "image": "/assets/products/46.png",
+        "videoUrls": [
+          "https://youtu.be/HM03PfVRtLk?si=I4t96ZbHhjcdmy2q",
+          "https://youtu.be/AubgymD5NC8?si=Gc5vpVce2Grfpndy"
+        ],
+        "technologies": ["Go", "Next.js", "Redis", "PostgreSQL", "Kafka"],
+        "category": "Event-Management",
+        "status": "Produktionsbereit",
+        "version": "2.1.0",
+        "lastUpdated": "Januar 2026",
+        "client": "Malabar Team",
+        "duration": "1 Monat",
+        "teamSize": "2 Personen (Fullstack, SRE, Sicherheitsanalyst, QA, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "210",
+          "reviews": [
+            {
+              "author": "Budi Santoso",
+              "role": "Race Director Malabar Run",
+              "date": "2026-01-20",
+              "body": "Der Server ist bei der Ticket-Aktion nicht abgestürzt. Das Redis Distributed Lock ist solide, kein Überbuchen!",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Rahma",
+              "role": "SRE Lead",
+              "date": "2026-02-11",
+              "body": "Das virtuelle Warteschlangensystem ist genial, die Datenbanklast blieb selbst bei Spitzenverkehr sehr stabil.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "liveDemo": "Live-Demo",
+          "links": {
+            "liveDemo": "https://malabartrailrun.id",
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Registrierungsablauf",
+          "techStack": "Technologie",
+          "screenshots": "Interface",
+          "specs": "Leistung & Sicherheit"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Systemdetails",
+          "clientLabel": "Partner",
+          "durationLabel": "Entwicklung",
+          "teamSizeLabel": "Gesamtteam",
+          "lastUpdatedLabel": "Letztes Audit"
+        },
+        "platformSupport": {
+          "title": "Infrastruktur-Optimierung",
+          "items": [
+            "Auto-Scaling in einer Cloud-Umgebung",
+            "Virtuelle Warteschlange (Virtual Waiting Room)",
+            "Medizinische Datenvalidierung & ITRA-Punkte",
+            "Integration des Race-Result-Timing-Systems"
+          ]
+        },
+        "architecture": {
+          "title": "Systemdesign",
+          "items": [
+            "Go (Golang)-basierte Microservices für schnelle Ausführung",
+            "Distributed Locking mit Redis zur Vermeidung von Doppelbuchungen",
+            "Message Broker (Kafka) für asynchrone Zahlungsabwicklung",
+            "Edge Protection zur Minderung von Layer-7-DDoS-Angriffen"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projekthintergrund",
+          "paragraphs": [
+            "Das Hauptproblem bei der Ticketvergabe für beliebte Lauf-Events ist der 'Race War', bei dem tausende Läufer gleichzeitig versuchen, sich anzumelden, was oft zu Serverabstürzen oder Überbuchungen führt.",
+            "Dieses System implementiert den Token-Bucket-Algorithmus zur Begrenzung der Anforderungsrate und eine Redis-basierte Warteschlange, um sicherzustellen, dass die ersten Läufer fair einen Platz erhalten.",
+            "Aus der Perspektive der Sicherheitsforschung ist das System mit Schutz gegen fortgeschrittene Bots (Headless Browser) und Datensicherheit für Teilnehmer durch End-to-End-Verschlüsselung sensibler medizinischer Daten ausgestattet."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Zap",
+          "title": "Handhabung hoher Parallelität",
+          "description": "Fähig, über 50.000 Anfragen pro Sekunde mit minimaler Latenz durch Go-Routines zu verarbeiten."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "Anti-Bot & Betrugserkennung",
+          "description": "mTLS-Integration und verhaltensbasierte Herausforderungen zur Eliminierung automatisierter Skripte/Bots."
+        },
+        {
+          "icon": "Users",
+          "title": "Virtueller Warteraum",
+          "description": "Interaktiver virtueller Warteraum zur Steuerung des Benutzerstroms bei Verkehrsspitzen, um Datenbanküberlastungen zu vermeiden."
+        },
+        {
+          "icon": "Activity",
+          "title": "ITRA/UTMB-Index-Validierung",
+          "description": "Automatische Validierung der Teilnehmerqualifikationen über externe APIs zur Verifizierung der Laufpunkte."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Globales Zahlungsgateway",
+          "description": "Unterstützt Integrationen mit mehreren Zahlungsgateways & Ticketing-Systemen wie TIAS, XENDIT und MIDTRANS mit automatischem Abgleich."
+        },
+        {
+          "icon": "Lock",
+          "title": "Datenschutzkonformität",
+          "description": "Vollständige Einhaltung der DSGVO für die Speicherung von Gesundheitsdaten und Läuferidentitäten."
+        }
+      ],
+      "workflow": {
+        "title": "Registrierungsablauf",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "Warteschlangeneintritt",
+            "description": "Teilnehmer betreten eine virtuelle Warteschlange, wenn der Verkehr den Schwellenwert überschreitet."
+          },
+          {
+            "step": 2,
+            "icon": "FileText",
+            "title": "Qualifikation & Formular",
+            "description": "Eingabe der Laufdaten und Validierung der Qualifikationspunkte (ITRA-Index)."
+          },
+          {
+            "step": 3,
+            "icon": "Clock",
+            "title": "Slot-Sperrung",
+            "description": "Das System sperrt den Slot für 15 Minuten mittels Distributed Lock."
+          },
+          {
+            "step": 4,
+            "icon": "CreditCard",
+            "title": "Sichere Zahlung",
+            "description": "Zahlungsprozess über verschlüsselte Kanäle mit Echtzeit-Benachrichtigung."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Bestätigung des Race-Kits",
+            "description": "Ausstellung des Ticket-QR-Codes und Slot-Bestätigung per E-Mail/Dashboard."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Go (Golang)",
+              "description": "Hauptsprache für Backend-Dienste, effizient in Speichermanagement und Parallelität."
+            },
+            {
+              "name": "gRPC",
+              "description": "Kommunikationsprotokoll zwischen Diensten (Inter-Service) für ultra-niedrige Latenz."
+            }
+          ]
+        },
+        {
+          "category": "Persistenz & Cache",
+          "technologies": [
+            {
+              "name": "PostgreSQL",
+              "description": "Primäre Datenbank mit optimierter Indexierung für Millionen von Teilnehmerdatensätzen."
+            },
+            {
+              "name": "Redis Cluster",
+              "description": "In-Memory-Speicher für Warteschlangenverwaltung und Session-Locking."
+            }
+          ]
+        },
+        {
+          "category": "DevSecOps",
+          "technologies": [
+            {
+              "name": "Kubernetes",
+              "description": "Container-Orchestrierung für dynamisches Auto-Scaling basierend auf CPU/RAM-Last."
+            },
+            {
+              "name": "Prometheus & Grafana",
+              "description": "Echtzeitüberwachung zur Erkennung von Verkehrsanomalien und Systemengpässen."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Echtzeit-Warteschlangenformular",
+          "image": "/assets/products/47.png",
+          "description": "Ansicht der Ticketwahl mit Hochgeschwindigkeits-Warteschlangensystem (<500ms)."
+        },
+        {
+          "title": "Anmeldeformular",
+          "image": "/assets/products/48.png",
+          "description": "Benutzerdefiniertes Anmeldeformular mit Feldern nach Kundenwunsch."
+        },
+        {
+          "title": "Benutzerdefiniertes Interface & GPX",
+          "image": "/assets/products/49.jpeg",
+          "description": "Seite mit Renndetails, ausgestattet mit interaktiver GPX-Karte."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Infrastruktur-Spezifikationen",
+          "server": {
+            "title": "Cloud-Konfiguration",
+            "items": [
+              "Mindestens 3 Knoten-Cluster (8 vCPU, 16 GB RAM jeweils)",
+              "Managed Kubernetes (EKS/GKE)",
+              "Dedizierte Redis-Instanz (speicheroptimiert)",
+              "Cloudflare Enterprise für WAF & DDoS-Schutz"
+            ]
+          },
+          "client": {
+            "title": "Kunde",
+            "items": [
+              "Moderner Webbrowser (Support für ES6+)",
+              "Mobile responsiv (iOS & Android)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "SLA & Benchmarks",
+          "metrics": [
+            {
+              "label": "Max. gleichzeitige Benutzer",
+              "value": "100.000+"
+            },
+            {
+              "label": "P99 Antwortzeit",
+              "value": "< 150 ms"
+            },
+            {
+              "label": "Inventarkonsistenz",
+              "value": "100,0% (Null Überbuchung)"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Cybersicherheits-Schicht",
+          "items": [
+            "Rate Limiting basierend auf IP & Fingerprinting",
+            "JWT (JSON Web Token) mit periodischer Schlüsselrotation",
+            "Umfassendes Audit-Log für jede Transaktionszustandsänderung",
+            "Data Encryption at Rest (AES-256)"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-Commerce-Plattform für KMU/Kleinstunternehmen",
+        "description": "Komplette E-Commerce-Plattform mit Katalog, Warenkorb und Online-Zahlung.",
+        "fullDescription": "Diese E-Commerce-Plattform wurde entwickelt, um Unternehmen dabei zu unterstützen, ihre Produkte effizient und sicher online zu verkaufen. Das System umfasst Kernfunktionen wie Produktverwaltung, Katalogsuche und -filterung, Warenkorb, Checkout, digitale Zahlungen über Midtrans sowie Bestell- und Benutzerverwaltung. Die Plattform ist mit einer modernen, reaktionsschnellen Architektur aufgebaut, damit sie sowohl auf Desktop- als auch auf Mobilgeräten zugänglich ist.",
+        "image": "/assets/products/27.png",
+        "images": [
+          "/assets/products/27.png",
+          "/assets/e-commerce/detail-product.png"
+        ],
+        "technologies": ["React", "Laravel", "MySQL", "Midtrans"],
+        "category": "E-Commerce",
+        "status": "Abgeschlossen",
+        "version": "1.0.0",
+        "lastUpdated": "Mai 2025",
+        "client": "PT Million Candles",
+        "duration": "6 Monate",
+        "teamSize": "6 Personen (Frontend, Backend, UI/UX, QA, DevOps, PM)",
+        "seo": {
+          "ratingValue": "4.7",
+          "reviewCount": "68",
+          "reviews": [
+            {
+              "author": "Dewi Lestari",
+              "role": "Inhaberin Million Candles",
+              "date": "2025-06-10",
+              "body": "Das Katalog- und Checkout-System ist für Laien leicht verständlich. Die Integration mit Midtrans ist sofort ohne Komplikationen aktiv.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Benutzerablauf",
+          "techStack": "Technologie",
+          "screenshots": "Galerie",
+          "specs": "Spezifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Projektinformationen",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Plattformunterstützung",
+          "items": [
+            "Zugriff via Webbrowser (Desktop & Mobile)",
+            "SEO-Optimierung für Suchsichtbarkeit",
+            "Integration mit E-Mail & WhatsApp",
+            "Checkout mit Midtrans & manueller Überweisung"
+          ]
+        },
+        "architecture": {
+          "title": "Systemarchitektur",
+          "items": [
+            "Monolithisches Backend mit Laravel",
+            "Separates Frontend basierend auf React",
+            "RESTful API für die Kommunikation zwischen Frontend & Backend",
+            "Sicherheits-Middleware für CSRF & Rate Limiting"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Dieses Projekt zielt darauf ab, dem Kunden eine digitale Lösung anzubieten, um seine Online-Vertriebskanäle zu erweitern. Viele KMU und mittlere Unternehmen haben Schwierigkeiten, einen eigenen E-Commerce aufzubauen, da Systeme oft zu komplex sind.",
+            "Diese Plattform wurde mit einem Fokus auf Benutzerfreundlichkeit entwickelt, sowohl für Käufer als auch für Administratoren. Admins können Produkte, Kategorien, Aktionen und Bestellungen ohne Schwierigkeiten verwalten, während Käufer Produkte suchen, zum Warenkorb hinzufügen und einfach bezahlen können.",
+            "Die Integration der Zahlungsfunktion mit Midtrans ermöglicht sichere und schnelle Transaktionen, einschließlich Methoden wie E-Wallets, Banküberweisungen und QRIS. Die Plattform ist für verschiedene Einzelhandelsgeschäftsmodelle kleiner bis mittlerer Größe einsatzbereit."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "ShoppingBag",
+          "title": "Produktkatalogverwaltung",
+          "description": "Produkte hinzufügen, bearbeiten und löschen mit Bildern, Beschreibungen, Preisen und Lagerbestand."
+        },
+        {
+          "icon": "Filter",
+          "title": "Suche & Kategoriefilter",
+          "description": "Einfache Navigation mit Filtern basierend auf Kategorie, Preis und Beliebtheit."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Warenkorb",
+          "description": "Benutzer können Produkte zum Warenkorb hinzufügen und die Menge vor dem Checkout anpassen."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Checkout & Zahlung",
+          "description": "Schneller Bezahlvorgang über Midtrans mit verschiedenen Zahlungsmethoden."
+        },
+        {
+          "icon": "Truck",
+          "title": "Versandverwaltung",
+          "description": "Automatische Benachrichtigungen und Sendungsverfolgung vom Bestätigungszeitpunkt bis zur Auslieferung."
+        },
+        {
+          "icon": "UserCheck",
+          "title": "Benutzerverwaltung",
+          "description": "Verwaltung von Benutzerkonten, Kaufhistorie und Anmeldesicherheit."
+        }
+      ],
+      "workflow": {
+        "title": "Allgemeiner Benutzerablauf",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Search",
+            "title": "Katalog durchsuchen",
+            "description": "Benutzer suchen Produkte über die Suche oder die Kategorienavigation."
+          },
+          {
+            "step": 2,
+            "icon": "ShoppingCart",
+            "title": "In den Warenkorb legen",
+            "description": "Ausgewählte Produkte werden für den Kauf in den Warenkorb gelegt."
+          },
+          {
+            "step": 3,
+            "icon": "CreditCard",
+            "title": "Checkout",
+            "description": "Der Benutzer gibt Lieferdetails ein und wählt eine Zahlungsmethode."
+          },
+          {
+            "step": 4,
+            "icon": "CheckCircle",
+            "title": "Zahlung & Bestätigung",
+            "description": "Das System verarbeitet die Zahlung und sendet eine Benachrichtigung an Admin & Benutzer."
+          },
+          {
+            "step": 5,
+            "icon": "Truck",
+            "title": "Produktversand",
+            "description": "Der Admin bearbeitet und versendet das Produkt, dann aktualisiert das System den Bestellstatus."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React",
+              "description": "JavaScript-Bibliothek zum Aufbau interaktiver und responsiver Benutzeroberflächen."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Utility-first CSS-Framework für schnelles und konsistentes Styling."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Laravel 10",
+              "description": "Modernes PHP-Framework, das Routing, Authentifizierung und ORM (Eloquent) bereitstellt."
+            },
+            {
+              "name": "Midtrans API",
+              "description": "Führendes Zahlungsgateway in Indonesien für Kreditkarten, E-Wallets und Banküberweisungen."
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "MySQL",
+              "description": "Relationales Datenbanksystem zum Speichern von Produktdaten, Benutzern und Transaktionen."
+            }
+          ]
+        },
+        {
+          "category": "Infrastructure & DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "Frontend und Backend in isolierten Containern für einfache Bereitstellung."
+            },
+            {
+              "name": "GitHub Actions",
+              "description": "CI/CD-Pipeline zur Automatisierung von Build- und Bereitstellungsprozessen bei Code-Updates."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Startseite des Shops",
+          "image": "/assets/products/26.png",
+          "description": "Zeigt Werbebanner, Hauptkategorien und Top-Produkte."
+        },
+        {
+          "title": "Produktkatalog",
+          "image": "/placeholder.svg",
+          "description": "Produktgitter mit Bild, Name, Preis und 'In den Warenkorb'-Button."
+        },
+        {
+          "title": "Checkout-Seite",
+          "image": "/placeholder.svg",
+          "description": "Checkout-Formular mit Auswahl der Zahlungsmethode und Lieferadresse."
+        },
+        {
+          "title": "Admin-Dashboard",
+          "image": "/placeholder.svg",
+          "description": "Verkaufsstatistik, Produktverwaltung und Bestellliste auf einem Panel."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Server-Bedarf",
+            "items": [
+              "PHP 8.2+",
+              "MySQL 8+",
+              "Node.js für React-Builds",
+              "2 vCPU, 4GB RAM minimum"
+            ]
+          },
+          "client": {
+            "title": "Kunden-Bedarf",
+            "items": [
+              "Moderner Browser (Chrome, Firefox, Safari)",
+              "Stabile Internetverbindung"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [
+            { "label": "Ladezeit Startseite", "value": "< 300 ms" },
+            { "label": "Durchschnittliche API-Antwort", "value": "< 200 ms" },
+            { "label": "Checkout-Abschlussrate", "value": "> 100%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "Authentifizierung & Autorisierung basierend auf Laravel Sanctum",
+            "Eingabe-Validierung & Sanitization",
+            "HTTPS-Integration mit SSL-Zertifikat",
+            "Webhook-Signaturprüfung (Midtrans)"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "E-DME & Krankenhaus-Managementsystem von Codeverta",
+        "description": "System für elektronische Patientenakten, integriert mit dem SatuSehat-Standard des Gesundheitsministeriums und klinischer Betriebsführung.",
+        "fullDescription": "Elektronische Patientenakten (E-DME) ist eine umfassende Lösung, die entwickelt wurde, um den gesamten medizinischen Arbeitsablauf zu digitalisieren, von der Patientenregistrierung über die ärztliche Untersuchung (SOAP) bis hin zu Apotheke und Kasse. Dieses System erfüllt vollständig die SatuSehat-Regulierung (HL7 FHIR) und verwendet eine Verschlüsselung auf hohem Niveau, um die Privatsphäre der Patientendaten zu wahren.",
+        "image": "/assets/healthcare/preview.png",
+        "technologies": [
+          "Golang",
+          "React",
+          "Next.js",
+          "MariaDB",
+          "Docker",
+          "Redis",
+          "HL7 FHIR API"
+        ],
+        "category": "Healthcare IT-Lösungen",
+        "status": "Abgeschlossen",
+        "version": "4.2.0",
+        "lastUpdated": "April 2026",
+        "client": "Klinik Pratama Sejahtera",
+        "duration": "14 Monate",
+        "teamSize": "10 Spezialisten (Fullstack Devs, Security Engineer, Health Informatics Specialist, QA, PM)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "86",
+          "reviews": [
+            {
+              "author": "Dr. Ahmad Fauzi",
+              "role": "Klinikleiter",
+              "date": "2026-02-20",
+              "body": "Die Überbrückung zu SatuSehat verläuft sehr reibungslos. Das Interface zur Eingabe der Patientenakten ist sehr intuitiv für Ärzte.",
+              "rating": "5"
+            },
+            {
+              "author": "Maya Sari",
+              "role": "Pharmazeutische Leitung",
+              "date": "2026-03-12",
+              "body": "Sehr hilfreich bei der Medikamentenbestandsverwaltung und E-Rezepten. Das Risiko von Fehlern beim Lesen von Rezepten wurde komplett eliminiert.",
+              "rating": "5"
+            },
+            {
+              "author": "Irvan Hakim",
+              "role": "IT-Manager Krankenhaus",
+              "date": "2026-04-05",
+              "body": "Die Systemarchitektur ist sehr sicher und stabil. Multi-Tenant-Support macht es uns leicht, andere Klinikzweigstellen zu verwalten.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Technische Dokumentation",
+          "links": {
+            "documentation": "https://docs.medixflow.id/api-v4"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Patientenablauf",
+          "techStack": "Technologie",
+          "screenshots": "Interface-Galerie",
+          "specs": "Sicherheit & Compliance"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Projektinfo E-DME",
+          "clientLabel": "Institutioneller Kunde",
+          "durationLabel": "Entwicklungsdauer",
+          "teamSizeLabel": "Teamkapazität",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Leistungsumfang",
+          "items": [
+            "Arzt- & Pflege-Dashboard (DME)",
+            "Apotheken-Modul & E-Prescribing",
+            "Patientenportal & Online-Reservierung",
+            "Bridging SatuSehat & BPJS Kesehatan"
+          ]
+        },
+        "architecture": {
+          "title": "Datenarchitektur",
+          "items": [
+            "Microservices-Backend mit Golang",
+            "Implementierung der Interoperabilität HL7 FHIR",
+            "Verschlüsselte MariaDB-Speicherung (AES-256)",
+            "Echtzeit-Warteschlangenverwaltung über WebSockets"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Der Übergang von Papierakten zur Elektronik wird oft durch die Komplexität der Dateneingabe und Sicherheitsbedenken gebremst. MedixFlow löst diese Herausforderung mit einem System, das Dateneingabegeschwindigkeit durch anpassbare SOAP-Vorlagen priorisiert.",
+            "Dieses System speichert nicht nur medizinische Daten, sondern integriert auch das gesamte Gesundheitsökosystem, von der Registrierung (online/vor Ort), Warteschlangenmanagement, Laboruntersuchungen bis hin zur Versicherungsabrechnung. Die SatuSehat-Integration stellt sicher, dass Patientendaten gemäß staatlichen Vorschriften sicher zwischen Gesundheitseinrichtungen ausgetauscht werden können.",
+            "Dank dessen steigt die Verwaltungseffizienz um bis zu 60%, Wartezeiten werden drastisch verkürzt und klinische Entscheidungen werden präziser durch eine vollständig und strukturiert vorliegende Krankengeschichte unterstützt."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Stethoscope",
+          "title": "E-Medical Record (SOAP)",
+          "description": "Strukturierte und schnelle klinische Aufzeichnung (Subjective, Objective, Assessment, Plan)."
+        },
+        {
+          "icon": "FileText",
+          "title": "E-Prescribing",
+          "description": "Elektronische Rezepte, die direkt mit der Apotheke verbunden sind, um den Lagerbestand automatisch zu prüfen."
+        },
+        {
+          "icon": "Users",
+          "title": "Warteschlangenmanagement",
+          "description": "Intelligentes Warteschlangensystem pro Abteilung mit Echtzeitbenachrichtigungen auf Bildschirmen."
+        },
+        {
+          "icon": "ShieldCheck",
+          "title": "SatuSehat-Bridging",
+          "description": "Automatische Integration von Patientendaten zur SatuSehat-Plattform des Gesundheitsministeriums."
+        },
+        {
+          "icon": "PieChart",
+          "title": "Morbiditätsberichte",
+          "description": "Automatische Berichte zu den 10 häufigsten Krankheiten (CIM-10) für Berichte an das Gesundheitsamt."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Abrechnung & Kasse",
+          "description": "Transparente Rechnungsverwaltung mit verschiedenen Zahlungsmethoden und Versicherungsklagen."
+        }
+      ],
+      "workflow": {
+        "title": "Ablauf der digitalen Patientenbetreuung",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "UserPlus",
+            "title": "Registrierung",
+            "description": "Patienten registrieren sich über das Online-Portal oder an Selbstregistrierungskiosken vor Ort."
+          },
+          {
+            "step": 2,
+            "icon": "Activity",
+            "title": "Vitalparameter",
+            "description": "Das Pflegepersonal gibt Vitalparameter ein, die direkt im Dashboard des Stationsarztes erscheinen."
+          },
+          {
+            "step": 3,
+            "icon": "Stethoscope",
+            "title": "Ärztliche Untersuchung",
+            "description": "Der Arzt füllt die E-DME aus, stellt eine CIM-10-Diagnose und gibt Behandlungsplan oder Rezepte ein."
+          },
+          {
+            "step": 4,
+            "icon": "Pill",
+            "title": "Apotheke & Abrechnung",
+            "description": "Die Apotheke bereitet Medikamente basierend auf E-Rezepten vor, während die Kasse die Rechnung verarbeitet."
+          },
+          {
+            "step": 5,
+            "icon": "CloudUpload",
+            "title": "SatuSehat-Synchronisation",
+            "description": "Das System sendet nach Abschluss des Besuchs automatisch Zusammenfassungen an den Ministeriumsserver."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Cœur Backend",
+          "technologies": [
+            {
+              "name": "Golang (Gin)",
+              "description": "Verwendet, um schwere Geschäftslogik und asynchrone API-Integrationen externer Dienste zu handhaben."
+            },
+            {
+              "name": "Redis",
+              "description": "Caching von Warteschlangendaten und Sitzungen, um hohe Systemperformance während Stoßzeiten zu gewährleisten."
+            }
+          ]
+        },
+        {
+          "category": "Frontend & UI",
+          "technologies": [
+            {
+              "name": "Next.js",
+              "description": "React-Framework für den Aufbau eines schnellen, responsiven und SEO-freundlichen medizinischen Dashboards."
+            },
+            {
+              "name": "Day.js",
+              "description": "Verwendet für die Verwaltung der Sprechzeiten von Ärzten und die präzise Berechnung des Patientenalters."
+            }
+          ]
+        },
+        {
+          "category": "Database & Security",
+          "technologies": [
+            {
+              "name": "MariaDB",
+              "description": "Primäre relationale Datenbankspeicherung mit Data-at-Rest-Verschlüsselung für medizinische Sicherheit."
+            },
+            {
+              "name": "Vault",
+              "description": "Geheimnisverwaltung (Secrets Management) für die Speicherung von SatuSehat- und BPJS-Integrationsschlüsseln."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Arzt-Dashboard - SOAP-Eingabe",
+          "image": "/assets/healthcare/preview.png",
+          "description": "Interface zur Eingabe von Patientenakten mit intelligenten Vorlagen und Patientenallergiehistorie."
+        },
+        {
+          "title": "Warteschlangenmanagement Poliklinik",
+          "image": "/assets/healthcare/manajemen-klinik.png",
+          "description": "Echtzeit-Visualisierung der Patientenwarteschlange zur Vereinfachung der abteilungsübergreifenden Koordination."
+        },
+        {
+          "title": "Integrationsportal SatuSehat",
+          "image": "/assets/healthcare/rekam-medis-elektronik.png",
+          "description": "Status der Echtzeit-Synchronisation medizinischer Daten zum Ministeriumsserver."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Betriebsstandards",
+          "server": {
+            "title": "Server-Infrastruktur",
+            "items": [
+              "Minimum 8GB RAM für Datenverarbeitung",
+              "SSD-Speicher (Hohe IOPS) für E-DME-Abfragen",
+              "SSL-Zertifikat (EV) für Datenpfad-Verschlüsselung"
+            ]
+          },
+          "client": {
+            "title": "Benutzergeräte",
+            "items": [
+              "Desktop/Laptop mit modernem Browser (Chrome/Edge)",
+              "Barcode-Scanner für Patientenkarten & Medikamentenetiketten",
+              "Etikettendrucker für Laborproben-ID"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Sicherheits- & Geschwindigkeitsmetriken",
+          "metrics": [
+            { "label": "Datenverschlüsselung", "value": "AES-256 Bit" },
+            { "label": "Latenz SatuSehat-Synchro", "value": "< 2 Sekunden" },
+            { "label": "Systemverfügbarkeit", "value": "99.99%" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Regulatorische Compliance",
+          "items": [
+            "Audit Trail (Protokollierung wer welche Patientenakten sieht)",
+            "Zwei-Faktor-Authentifizierung (2FA) für medizinisches Personal",
+            "Einhaltung der PMK Nr. 24 von 2022 zu medizinischen Aufzeichnungen",
+            "Automatischer Sitzungs-Timeout für Workstation-Sicherheit"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Wäscherei-Managementsystem von Codeverta",
+        "description": "Umfassendes System zur Digitalisierung von Wäschereibetrieben, von der Auftragsverfolgung bis zur Standortverwaltung und automatischen Benachrichtigungen.",
+        "fullDescription": "End-to-End-Wäscherei-Managementlösung, die Transaktionsaufzeichnung (Laundry POS), Bestandsverwaltung von Rohstoffen (Chemical Inventory) bis zur Überwachung des Wäschestatus in Echtzeit integriert. Ausgestattet mit Mitgliedschaftsfunktionen, WhatsApp-Gateway-Integration für Kundenbenachrichtigungen und automatischen Finanzberichten.",
+        "image": "/assets/laundry-management/preview.png",
+        "technologies": ["Laravel", "Vue.js", "MySQL", "Pusher"],
+        "category": "Einzelhandel & Dienstleistungen",
+        "status": "Produktionsbereit",
+        "version": "2.1.0",
+        "lastUpdated": "März 2026",
+        "client": "-",
+        "duration": "4 Monate",
+        "teamSize": "3 Personen (Backend, Frontend, QA)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "124",
+          "reviews": [
+            {
+              "author": "Budi Santoso",
+              "role": "Inhaber Laundry Express",
+              "date": "2026-01-15",
+              "body": "Ein sehr hilfreiches System! Jetzt kann ich den Fortschritt der Wäsche von zu Hause aus über mein Handy verfolgen.",
+              "rating": "5"
+            },
+            {
+              "author": "Siti Aminah",
+              "role": "Filialleiterin",
+              "date": "2026-02-10",
+              "body": "Die WhatsApp-Benachrichtigungsfunktion ist sehr cool, die Kunden fühlen sich professioneller bedient.",
+              "rating": "4"
+            }
+          ]
+        }
+      },
+      "seo": {
+        "jsonLd": {
+          "@context": "https://schema.org/",
+          "@type": "SoftwareApplication",
+          "name": "Wäscherei-Managementsystem von Codeverta",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web-basiert / Android",
+          "offers": {
+            "@type": "Offer",
+            "price": "1500000",
+            "priceCurrency": "IDR"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "124"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Budi Santoso" },
+              "datePublished": "2026-01-15",
+              "reviewBody": "Ein sehr hilfreiches System! Jetzt kann ich den Fortschritt der Wäsche von zu Hause aus über mein Handy verfolgen.",
+              "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+            },
+            {
+              "@type": "Review",
+              "author": { "@type": "Person", "name": "Siti Aminah" },
+              "datePublished": "2026-02-10",
+              "reviewBody": "Die WhatsApp-Benachrichtigungsfunktion ist sehr cool, die Kunden fühlen sich professioneller bedient.",
+              "reviewRating": { "@type": "Rating", "ratingValue": "4" }
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Arbeitsablauf",
+          "techStack": "Technologie",
+          "screenshots": "Interface",
+          "specs": "Sicherheit & Skalierbarkeit"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Details Wäschereigeschäft",
+          "clientLabel": "Entwickler",
+          "durationLabel": "Entwicklungszeit",
+          "teamSizeLabel": "Teamstruktur",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Modulumfang",
+          "items": [
+            "POS-System (Kasse) Express & Standard",
+            "Kurier- & Abhol-/Zustellmanagement",
+            "Verfolgung des Wäschestatus (Waschen, Trocknen, Bügeln)"
+          ]
+        },
+        "architecture": {
+          "title": "Asset- & Datenverwaltung",
+          "items": [
+            "Integration der Rohstoffbestände (Seife, Parfüm)",
+            "Verwaltung der Kundendatenbank & Treuepunkte",
+            "Multi-Outlet-System & Mitarbeiterzugriffsrechte",
+            "Automatischer Gewinn- und Verlustbericht pro Periode"
+          ]
+        },
+        "projectDescription": {
+          "title": "Geschäftsziel",
+          "paragraphs": [
+            "Die Wäscherei-Management-App von Codeverta wurde entwickelt, um häufige Probleme im Wäschereigeschäft zu lösen, wie ungeordnete Warteschlangen, Dateneingabefehler und Schwierigkeiten bei der Überwachung der Mitarbeiterproduktivität in verschiedenen Filialen.",
+            "Dieses System stellt sicher, dass jede 'Wäschereibestellung' eindeutig mit einem QR-Code verfolgt wird, vom Zeitpunkt des Erhalts der Waren bis zum Abschluss der 'Wäschereilieferung' durch den Kurier.",
+            "Geschäftsinhaber können den Bestand an 'Wäscherei-Chemikalien' in Echtzeit überwachen, um Inventarverluste zu vermeiden und operative Ausgaben zu optimieren."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "Auftragsmanagement",
+          "description": "Verwaltung der Waschwarteschlange basierend auf Dringlichkeitsstufe (Regulär, Express, Eil)."
+        },
+        {
+          "icon": "Truck",
+          "title": "Abholung & Lieferung",
+          "description": "Spezialmodul für Kuriere zur Verwaltung von Abhol- und Zustellanfragen der Kundenwäsche."
+        },
+        {
+          "icon": "MessageSquare",
+          "title": "Automatische Benachrichtigung",
+          "description": "Senden Sie automatische Nachrichten an Kunden, wenn die Kleidung gewaschen oder zur Lieferung bereit ist."
+        },
+        {
+          "icon": "UserCheck",
+          "title": "Mitgliedschaft & Promo",
+          "description": "Automatisches Rabattsystem und Punktesammlung für treue Kunden."
+        },
+        {
+          "icon": "BarChart",
+          "title": "Finanzbericht",
+          "description": "Tägliche, monatliche Umsatzaufstellung bis hin zum Provisionsbericht für Mitarbeiter."
+        },
+        {
+          "icon": "Archive",
+          "title": "Inventarverfolgung",
+          "description": "Überwachen Sie den Restverbrauch von Waschmitteln und anderem Zubehör mit einem Benachrichtigungssystem für niedrige Bestände."
+        }
+      ],
+      "workflow": {
+        "title": "Ablauf des Waschprozesses",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Clipboard",
+            "title": "Empfang",
+            "description": "Eingabe der 'Wäschereibestellung', Gewichtung und Anbringen des QR-Code-Tags an der Kleidung."
+          },
+          {
+            "step": 2,
+            "icon": "RefreshCw",
+            "title": "Verarbeitung",
+            "description": "Aktualisierung des Fortschrittsstatus (Waschen > Trocknen > Bügeln), der vom Kunden online verfolgt werden kann."
+          },
+          {
+            "step": 3,
+            "icon": "CheckSquare",
+            "title": "Qualitätskontrolle",
+            "description": "Endkontrolle der Sauberkeit und Vollständigkeit vor dem Verpacken (Packing)."
+          },
+          {
+            "step": 4,
+            "icon": "ShoppingBag",
+            "title": "Übergabe",
+            "description": "Abschluss der Transaktion am POS und Übergabe der Waren oder Versand per Kurier."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "PHP Laravel",
+              "description": "Robustes Framework zur Bewältigung komplexer Geschäftslogik und Transaktionsdatensicherheit."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Kassen-Dashboard",
+          "image": "/assets/laundry-management/codeverta-laundry-management-system.png",
+          "description": "Hauptbildschirm des Kassierers für die schnelle Eingabe des Wäschegewichts und der Dienstleistungsauswahl."
+        },
+        {
+          "title": "Verfolgung des Fortschritts",
+          "image": "/assets/laundry-management/laundry-system.png",
+          "description": "Status-Verfolgungsansicht zur Überwachung, welche Maschinen gerade in Betrieb sind."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Besoins système",
+          "server": {
+            "title": "Server-Konfiguration",
+            "items": [
+              "Cloud-Hosting (Shared/VPS)",
+              "PHP 8.2+",
+              "MySQL-Datenbank",
+              "Cron-Job für geplante Benachrichtigungen"
+            ]
+          },
+          "client": {
+            "title": "Benutzerzugriff",
+            "items": [
+              "Thermodrucker (Belegdruck)",
+              "Android-Smartphone (Kurier-App)",
+              "Browser (Desktop/Tablet)"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsstandard",
+          "metrics": [
+            {
+              "label": "Synchro Filialdaten",
+              "value": "< 2 Sekunden"
+            },
+            {
+              "label": "Benachrichtigungszuverlässigkeit",
+              "value": "99.9%"
+            }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Datensicherheit",
+          "items": [
+            "Verschlüsselung der Kundendaten",
+            "Tägliches automatisches Datenbank-Backup",
+            "Rollenbasierte Zugriffskontrolle (Kassierer vs Inhaber)"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Interaktive digitale Hochzeits-Einladungswebsite",
+        "description": "Plattform zur Erstellung digitaler Hochzeitseinladungen inklusive RSVP, Karte, Galerie und Geschenkfunktionen.",
+        "fullDescription": "Diese Plattform wurde speziell für Paare entworfen, die ihren Gästen ein modernes, umweltfreundliches und interaktives Einladungserlebnis bieten möchten. Jede Einladung ist mit einer eindeutigen URL, einer Bestätigungsfunktion für die Anwesenheit (RSVP), integrierter Wegbeschreibung (Google Maps), einer Foto-/Videogalerie und einem digitalen Gästebuch oder Geschenk-Feature ausgestattet. Die Plattform bietet verschiedene Premium-Designs, die auf verschiedenen Geräten responsiv sind.",
+        "image": "/assets/products/42.png",
+        "technologies": [
+          "Next.js",
+          "Firebase/Supabase",
+          "Vercel/Netlify",
+          "Tailwind CSS"
+        ],
+        "category": "Digitale Einladung",
+        "status": "Abgeschlossen",
+        "version": "1.0.0",
+        "lastUpdated": "Dezember 2025",
+        "client": "Kundenpaar",
+        "duration": "2 Wochen (Implementierung & Anpassung)",
+        "teamSize": "3 Personen (Frontend, UI/UX, Support)",
+        "seo": {
+          "ratingValue": "4.9",
+          "reviewCount": "145",
+          "reviews": [
+            {
+              "author": "Rian & Alisa",
+              "role": "Brautpaar",
+              "date": "2025-12-20",
+              "body": "Die Ladezeit ist sehr schnell, unter einer Sekunde, die Gäste lobten die interaktive Galerie und das Echtzeit-RSVP.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Nutzungsablauf",
+          "techStack": "Technologie",
+          "screenshots": "Designgalerie",
+          "specs": "Spezifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Projektinformationen",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Plattformunterstützung",
+          "items": [
+            "Zugriff via Webbrowser (Desktop & Mobile)",
+            "Responsive Design (Mobile-First)",
+            "Integration mit Google Maps & Datum (Kalender)",
+            "Eigene Domain (Optional)"
+          ]
+        },
+        "architecture": {
+          "title": "Systemarchitektur",
+          "items": [
+            "Serverless Frontend (Next.js/React)",
+            "Backend as a Service (BaaS) für RSVP-Daten & Gästebuch",
+            "Statisches Hosting für schnelle Ladezeiten",
+            "SEO-Optimierung für öffentliche Einladungen"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Dieses Projekt bietet eine moderne, praktische und kostengünstige Lösung für Hochzeitseinladungen. Als Ersatz für gedruckte Einladungen liegt der Fokus auf der Interaktion mit den Gästen und der einfachen Informationsweitergabe über die Veranstaltung.",
+            "Jede Einladung ist mit einer RSVP-Funktion ausgestattet, um die Anzahl der Gäste in Echtzeit zu verfolgen. Features wie Kartennavigation und digitale Geschenkfunktionen (digitale Umschläge) bieten dem Brautpaar einen signifikanten Mehrwert.",
+            "Die Anpassung des Designs, der Hintergrundmusik und der Inhalte wird vollständig über ein intuitives Dashboard verwaltet. Das Hauptziel ist es, einen unvergesslichen Eindruck bei den Gästen zu hinterlassen und gleichzeitig den Planungsprozess der Hochzeit zu vereinfachen."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Users",
+          "title": "Teilnahmebestätigung (RSVP)",
+          "description": "Gäste können ihre Teilnahme direkt bestätigen. Daten werden in Echtzeit gespeichert."
+        },
+        {
+          "icon": "MapPin",
+          "title": "Interaktive Wegbeschreibung",
+          "description": "Integration von Google Maps für die Navigation zum Empfangs- und Veranstaltungsort."
+        },
+        {
+          "icon": "Image",
+          "title": "Foto- & Videogalerie",
+          "description": "Zeigt die schönsten Momente des Paares in einem schönen Galerieformat und mit Pre-Wedding-Videos."
+        },
+        {
+          "icon": "Calendar",
+          "title": "Termin speichern",
+          "description": "Funktion für Gäste, das Veranstaltungsdatum direkt in ihren digitalen Kalender (Google/iCal) zu speichern."
+        },
+        {
+          "icon": "Gift",
+          "title": "Digitaler Umschlag/Geschenke",
+          "description": "Informationen zum Bankkonto oder E-Wallet für Gäste, die ein digitales Geschenk senden möchten."
+        },
+        {
+          "icon": "Speech",
+          "title": "Digitales Gästebuch",
+          "description": "Gäste können online Glückwünsche und Gebete hinterlassen, die für das Paar sofort sichtbar sind."
+        }
+      ],
+      "workflow": {
+        "title": "Ablauf der Nutzung der digitalen Einladung",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Link",
+            "title": "Einladungslink erhalten",
+            "description": "Gäste erhalten einen eindeutigen Einladungslink via WhatsApp oder soziale Medien."
+          },
+          {
+            "step": 2,
+            "icon": "ScrollText",
+            "title": "Veranstaltungsdetails ansehen",
+            "description": "Gäste durchstöbern vollständige Informationen zur Veranstaltung, den Ort und die Galerie."
+          },
+          {
+            "step": 3,
+            "icon": "Users",
+            "title": "Anwesenheitsbestätigung (RSVP)",
+            "description": "Gäste füllen das Bestätigungsformular aus oder hinterlassen Glückwünsche."
+          },
+          {
+            "step": 4,
+            "icon": "MapPin",
+            "title": "Zugriff auf den Standort",
+            "description": "Gäste nutzen die integrierte Google Maps-Funktion für die Navigation am Tag der Veranstaltung."
+          },
+          {
+            "step": 5,
+            "icon": "MonitorCheck",
+            "title": "Paar überwacht Daten",
+            "description": "Das Paar überwacht die Teilnehmerzahl und die Wünsche in Echtzeit über das Admin-Dashboard."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Next.js/React",
+              "description": "React-Framework zum Aufbau schneller, leistungsfähiger und serverseitig gerenderter Web-Apps."
+            },
+            {
+              "name": "Tailwind CSS",
+              "description": "Utility-first CSS-Framework für schnelles Design und einfache Anpassung."
+            }
+          ]
+        },
+        {
+          "category": "Backend & Database",
+          "technologies": [
+            {
+              "name": "Firebase/Supabase",
+              "description": "Backend as a Service (BaaS) zum Speichern von RSVP-Daten, Wünschen und zur Verwaltung der Benutzer (Paare)."
+            },
+            {
+              "name": "Nodemailer (optional)",
+              "description": "Verwendet zum Senden wichtiger Benachrichtigungen per E-Mail (z.B. bei Eingang einer RSVP-Benachrichtigung)."
+            }
+          ]
+        },
+        {
+          "category": "Hosting & Deployment",
+          "technologies": [
+            {
+              "name": "Vercel/Netlify",
+              "description": "Serverless Hosting-Plattform, optimal für Next.js/React-Apps für Geschwindigkeit und Skalierbarkeit."
+            },
+            {
+              "name": "GitHub",
+              "description": "Verwendet für die Verwaltung des Quellcodes und die CI/CD-Automatisierung."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Startansicht der Einladung",
+          "image": "/assets/products/42.png",
+          "description": "Startseite mit Foto-Cover, Namen des Paares und 'Einladung öffnen'-Button."
+        },
+        {
+          "title": "RSVP & Gästebuch-Feature",
+          "image": "/assets/products/43.jpeg",
+          "description": "Anwesenheitsbestätigungsformular und Feld für Glückwünsche der Gäste."
+        },
+        {
+          "title": "Seite Standortdetails",
+          "image": "/assets/products/44.png",
+          "description": "Veranstaltungsinformationsblock mit Google Maps-Integration und 'Termin speichern'-Button."
+        },
+        {
+          "title": "Admin-Dashboard (Paar)",
+          "image": "/assets/products/45.png",
+          "description": "Panel zum Einsehen der RSVP-Daten, der Wunschliste und zur Bearbeitung der Einladungsinhalte."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Server-/Dienstbedarf",
+            "items": [
+              "Aktiver BaaS-Dienst (Firebase/Supabase)",
+              "Eigene Domain (Optional, DNS-Konfiguration erforderlich)",
+              "Integration Google Maps API Key"
+            ]
+          },
+          "client": {
+            "title": "Bedarf Kunde (Paar)",
+            "items": [
+              "Pre-Wedding Fotos & Videos in hoher Auflösung",
+              "Genaue Details zu Ort & Zeit der Veranstaltung",
+              "Zugang zu E-Mail/Telefonnummer für Benachrichtigungen"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [
+            { "label": "Ladezeit Startseite", "value": "< 1 Sekunde" },
+            { "label": "RSVP-Aktualisierungszeit", "value": "Echtzeit" },
+            { "label": "Mobile Lighthouse-Score", "value": "> 90" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "Sichere Benutzerauthentifizierung (Paar)",
+            "Einmaliger Einladungslink (Schutz vor zufälligem Zugriff)",
+            "Eingabevalidierung für RSVP & Gästebuch",
+            "Automatisches SSL/HTTPS-Zertifikat"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "smart-pos-system",
+        "name": "Point of Sales (POS)-System von Codeverta",
+        "description": "Modernes Point-of-Sale-System mit Inventarfunktionen und Echtzeitberichten.",
+        "fullDescription": "Das Smart POS System ist eine umfassende und moderne Point-of-Sale-Lösung, die speziell entwickelt wurde, um die Anforderungen von Einzelhandelsunternehmen, Restaurants und Läden zu erfüllen. Das System bietet Inventarverwaltung, Echtzeit-Verkaufsberichte sowie Multi-Channel-Support für Online- und Offline-Verkäufe. Mit einer intuitiven Benutzeroberfläche erleichtert das System das Personal bei Transaktionen, der Bestandsüberwachung und der effizienten Erstellung von Geschäftsberichten. Das Smart POS System ist zudem mit einer modularen und skalierbaren Architektur aufgebaut, die Integrationen mit verschiedenen Drittanbieterdiensten sowie die Entwicklung neuer Funktionen für die Zukunft ermöglicht.",
+        "image": "/assets/products/33.png",
+        "technologies": [
+          "Vue.js",
+          "Laravel",
+          "MySQL",
+          "Socket.io",
+          "Redis",
+          "Docker"
+        ],
+        "category": "Point of Sale",
+        "status": "Abgeschlossen",
+        "version": "2.1.0",
+        "lastUpdated": "Dezember 2024",
+        "client": "Retail Chain Indonesia",
+        "duration": "6 Monate",
+        "teamSize": "5 Entwickler"
+      },
+      "seo": {
+        "ratingValue": "4.9",
+        "reviewCount": "24",
+        "reviews": [
+          {
+            "author": "Budi Santoso",
+            "date": "2026-01-15",
+            "body": "Ein sehr reaktionsschnelles und einfach zu bedienendes POS-System für unser Einzelhandelsteam.",
+            "rating": "5"
+          }
+        ]
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Funktionen",
+          "workflow": "Workflow",
+          "techStack": "Technologie",
+          "screenshots": "Screenshots",
+          "specs": "Spezifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Projektinformationen",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Plattformunterstützung",
+          "items": [
+            "Webanwendung",
+            "Mobile Responsive",
+            "Tablett-optimiert",
+            "PWA-Support"
+          ]
+        },
+        "architecture": {
+          "title": "Architektur",
+          "items": [
+            "SPA (Single Page App)",
+            "RESTful API",
+            "Echtzeit-Updates",
+            "Microservices bereit"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Das Smart POS System wurde entwickelt, um die Anforderungen moderner Einzelhandelsunternehmen, Restaurants und Geschäfte zu erfüllen, die ein Point-of-Sale-System wünschen, das in Inventar- und Echtzeitberichte integriert ist.",
+            "Das System ist mit einer skalierbaren und modularen Architektur konzipiert, die das Hinzufügen neuer Funktionen und die Integration mit externen Systemen wie E-Commerce, Zahlungsgateways und POS-Hardware erleichtert.",
+            "Die Implementierung der Echtzeittechnologie stellt sicher, dass alle Bestandsdaten, Transaktionen und Berichte immer aktualisiert sind, sodass die Unternehmensleitung schnell und präzise Entscheidungen treffen kann.",
+            "Die Multi-Channel-Verkaufsfunktion ermöglicht es Unternehmen, Produkte sowohl offline als auch online auf einer einzigen Plattform zu verkaufen, was die Überwachung der Verkaufsleistung über verschiedene Kanäle erleichtert.",
+            "Ein interaktives Analyse-Dashboard zeigt Verkaufsdaten, Gewinne und Trends in Echtzeit an und unterstützt Manager bei der Planung effektiverer Geschäftsstrategien."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "ShoppingCart",
+          "title": "Multi-Channel-Verkauf",
+          "description": "Unterstützt Online- und Offline-Verkäufe in einem integrierten System"
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Echtzeitanalyse",
+          "description": "Analyse-Dashboard mit Verkaufsberichten, Gewinnen und Echtzeittrends"
+        }
+      ],
+      "workflow": {
+        "title": "Workflow der Verkaufstransaktion",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Package",
+            "title": "Produkt-Scannen",
+            "description": "Scannen Sie den Produkt-Barcode oder wählen Sie aus dem Katalog"
+          },
+          {
+            "step": 2,
+            "icon": "ShoppingCart",
+            "title": "Warenkorbverwaltung",
+            "description": "Menge hinzufügen/reduzieren, Rabatte oder Aktionen anwenden"
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Vue.js 3",
+              "description": "Progressives JavaScript-Framework für reaktive Benutzeroberflächen"
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Laravel 10",
+              "description": "PHP-Framework zum Erstellen sicherer und skalierbarer APIs"
+            },
+            {
+              "name": "Socket.io",
+              "description": "Bibliothek für Echtzeit-Kommunikation zwischen Server und Client"
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "MySQL 8",
+              "description": "Zuverlässiges relationales Datenbanksystem"
+            }
+          ]
+        },
+        {
+          "category": "DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "Containerisierung von Anwendungen für Konsistenz in der Umgebung"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Dashboard-Übersicht",
+          "image": "/assets/products/12.png",
+          "description": "Haupt-Dashboard mit Verkaufsübersicht und Schnellaktionen"
+        },
+        {
+          "title": "Dashboard-Übersicht",
+          "image": "/assets/products/13.png",
+          "description": "Haupt-Dashboard mit Verkaufsübersicht und Schnellaktionen"
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Server-Anforderungen",
+            "items": ["PHP 8.1 oder höher", "MySQL 8.0 oder höher"]
+          },
+          "client": {
+            "title": "Client-Anforderungen",
+            "items": ["Moderner Webbrowser", "JavaScript aktiviert"]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [{ "label": "Seitenladezeit", "value": "< 300 ms" }]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "SSL/TLS-Verschlüsselung",
+            "Rollenbasierte Zugriffskontrolle"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "webgis-platform",
+        "name": "WebGIS-Plattform",
+        "description": "Webbasiertes geografisches Informationssystem für Kartierung und räumliche Analyse.",
+        "fullDescription": "Die WebGIS-Plattform ist eine interaktive, webbasierte Geographic Information System (GIS)-Lösung, die für die Visualisierung, Analyse und Verwaltung von Geodaten konzipiert ist. Die Plattform ermöglicht es Benutzern, Daten hochzuladen, thematische Karten zu erstellen, räumliche Analysen wie Pufferung und Überlagerung durchzuführen sowie die Ergebnisse einfach über den Browser zu teilen.",
+        "image": "/assets/products/28.png",
+        "images": [
+          "/assets/products/28.png",
+          "/assets/products/29.png",
+          "/assets/products/30.png",
+          "/assets/products/31.png",
+          "/assets/products/32.png"
+        ],
+        "videoUrls": [
+          "https://youtu.be/jI0c2yaZrD4?si=xQVvJuHYU1ZCgQk4",
+          "https://youtu.be/fvC7ajq_FXM?si=n6VTosQu8UD7CbYy",
+          "https://youtu.be/4NIvfhO2TpM?si=xg3pdF2coF8128Fq",
+          "https://youtu.be/BON-_Wodlic?si=vhzIa-krFDaOsbfI",
+          "https://youtu.be/YywAMhPT5co?si=s6VI7fK9j2y5vzDW"
+        ],
+        "technologies": [
+          "React",
+          "Leaflet.js",
+          "Node.js",
+          "PostgreSQL",
+          "PostGIS",
+          "GeoServer"
+        ],
+        "category": "Geografisches Informationssystem",
+        "status": "Abgeschlossen",
+        "version": "1.5.0",
+        "lastUpdated": "Juni 2025",
+        "client": "Behörde für regionale Entwicklungsplanung",
+        "duration": "8 Monate",
+        "teamSize": "4 Spezialisten (GIS-Analyst, Frontend, Backend, DB-Admin)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "35",
+          "reviews": [
+            {
+              "author": "Yusuf Anggara",
+              "role": "GIS-Analyst Bappeda",
+              "date": "2025-06-18",
+              "body": "Das Rendern von GeoJSON-Raumdatenebenen über den Browser ist sehr flüssig. Das Puffer-Analyse-Feature ist sehr reaktionsschnell.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Arbeitsablauf",
+          "techStack": "Technologie",
+          "screenshots": "Galerie",
+          "specs": "Spezifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Infos Projekt",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Plattformunterstützung",
+          "items": [
+            "Desktop-Webbrowser (Chrome, Firefox, Edge)",
+            "Tablet-responsive Ansicht",
+            "Geolokalisierungszugriff für Mobilgeräte",
+            "API-Integration für externe Systeme"
+          ]
+        },
+        "architecture": {
+          "title": "Systemarchitektur",
+          "items": [
+            "Client-Server-Architektur",
+            "RESTful API für GeoJSON-Daten",
+            "Integration Tile Server (WMS/WMTS)",
+            "Modulares und flexibles Ebenensystem"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Dieses Projekt entstand aus der Notwendigkeit für ein modernes räumliches Analysewerkzeug, das ohne komplexe Desktop-Software-Installationen zugänglich ist. Das Ziel ist es, Planern, Analysten und Entscheidungsträgern eine zentralisierte Plattform zur kollaborativen Arbeit mit Geodaten zu bieten.",
+            "Wir haben eine reaktive Single-Page-App (SPA) mit React und Leaflet.js auf der Frontend-Seite aufgebaut. Auf der Backend-Seite verwaltet Node.js die Geschäftslogik und Authentifizierung, während PostgreSQL mit der PostGIS-Erweiterung als robuste Datenbank dient, um räumliche Daten effizient zu speichern und abzufragen.",
+            "Das Ergebnis ist eine Plattform, die nicht nur schnell und intuitiv, sondern auch leistungsstark ist. Benutzer können komplexe Analysen durchführen und informative Datenvisualisierungen erstellen, die eine strategische Entscheidungsfindung auf Basis präziser Standortdaten unterstützen."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "Flexible Ebenenverwaltung",
+          "description": "Ebenen verschiedener Datentypen wie WMS, WFS und GeoJSON hinzufügen, anordnen und die Transparenz verwalten."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Thematische Datenvisualisierung",
+          "description": "Erstellen Sie Choroplethenkarten, Heatmaps und abgestufte Symbole, um Muster und Trends in Ihren Daten zu visualisieren."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Räumliche Analyse",
+          "description": "Führen Sie Geoverarbeitungsvorgänge wie Pufferung, Schnittpunkte und Vereinigungen direkt im Browser durch."
+        },
+        {
+          "icon": "Printer",
+          "title": "Mess- und Annotationstools",
+          "description": "Messen Sie Entfernungen und Flächen und fügen Sie Marker, Polygone und Annotationstexte auf der Karte hinzu."
+        },
+        {
+          "icon": "Database",
+          "title": "Interaktive Datenabfrage",
+          "description": "Klicken Sie auf Merkmale in der Karte, um Attributinformationen anzuzeigen oder Filter zur Suche nach spezifischen Daten zu verwenden."
+        },
+        {
+          "icon": "Download",
+          "title": "Karten- und Datenexport",
+          "description": "Exportieren Sie die aktuelle Kartenansicht als Bild (PNG/JPG) oder exportieren Sie Layer-Daten in GeoJSON-, KML- und CSV-Formate."
+        }
+      ],
+      "workflow": {
+        "title": "Workflow der räumlichen Analyse",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Database",
+            "title": "Daten laden",
+            "description": "Benutzer laden Raumdaten hoch (z. B. Shapefile, GeoJSON) oder verbinden sich mit externen Kartendiensten (WMS)."
+          },
+          {
+            "step": 2,
+            "icon": "Package",
+            "title": "Ebenen-Styling",
+            "description": "Anpassung der Ebenendarstellung, wie Farbe, Linienstärke und Markierungssymbole, um sie informativ zu gestalten."
+          },
+          {
+            "step": 3,
+            "icon": "BarChart3",
+            "title": "Analyse durchführen",
+            "description": "Wählen Sie ein Analysewerkzeug (z. B. 'Puffer erstellen'), stellen Sie Parameter ein und führen Sie den Prozess aus."
+          },
+          {
+            "step": 4,
+            "icon": "CheckCircle",
+            "title": "Ergebnisvisualisierung",
+            "description": "Die Analyseergebnisse werden automatisch als neue Ebene über der Karte zur Auswertung hinzugefügt."
+          },
+          {
+            "step": 5,
+            "icon": "Printer",
+            "title": "Kartenkomposition",
+            "description": "Hinzufügen kartografischer Elemente wie Legende, Titel und Skalenleiste vor dem Export."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "JavaScript-Bibliothek zum Erstellen einer reaktiven und komponentenorientierten Benutzeroberfläche."
+            },
+            {
+              "name": "Leaflet.js",
+              "description": "Leichte und flexible Open-Source-Bibliothek für interaktive Karten."
+            },
+            {
+              "name": "Turf.js",
+              "description": "Bibliothek für fortgeschrittene Geodatenanalyse auf der Client-Seite."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js (Express)",
+              "description": "JavaScript-Laufzeitumgebung zum Erstellen schneller und skalierbarer APIs."
+            },
+            {
+              "name": "GeoServer",
+              "description": "Open-Source-Server zur Veröffentlichung von Geodaten unter Verwendung von OGC-Standards."
+            },
+            {
+              "name": "GDAL/OGR",
+              "description": "Bibliothek zum Lesen, Schreiben und Konvertieren verschiedener räumlicher Datenformate."
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "PostgreSQL 16",
+              "description": "Leistungsstarkes und open-source objekt-relationales Datenbanksystem."
+            },
+            {
+              "name": "PostGIS 3.4",
+              "description": "Räumliche Erweiterung für PostgreSQL, die Unterstützung für geografische Objekte hinzufügt."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Hauptansicht mit Basiskartenebene und Verteilungsdaten",
+          "image": "/assets/products/1.png",
+          "description": "Die Hauptschnittstelle zeigt eine Basiskarte mit mehreren Vektordatenebenen und einem Toolpanel auf der linken Seite."
+        },
+        {
+          "title": "Visualisierungsergebnis der thematischen Karte (Choroplethen)",
+          "image": "/assets/products/3.png",
+          "description": "Beispiel einer Bevölkerungsdichtekarte pro Bezirk, eingefärbt nach Datenklassifizierung."
+        },
+        {
+          "title": "Ebenenmanager zum Organisieren von Reihenfolge und Deckkraft",
+          "image": "/assets/products/4.jpeg",
+          "description": "Interaktives Ebenenmanagement-Panel, das Drag-and-Drop und Sichtbarkeitsänderungen ermöglicht."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Serveranforderungen",
+            "items": [
+              "Node.js 18.x oder höher",
+              "PostgreSQL 14+ mit PostGIS",
+              "Java 11+ (für GeoServer)"
+            ]
+          },
+          "client": {
+            "title": "Client-Anforderungen",
+            "items": [
+              "Moderner Browser mit JavaScript-Support (ES6+)",
+              "Stabile Internetverbindung"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [
+            { "label": "Initialer Karten-Ladezeit", "value": "< 600ms" },
+            { "label": "Ebenen-Rendering (Durchschnitt)", "value": "< 400ms" },
+            { "label": "API-Antwort räumliche Analyse", "value": "< 300ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "Benutzerauthentifizierung mit JWT (JSON Web Token)",
+            "Rollenbasierte Zugriffskontrolle",
+            "Eingabevalidierung zur Verhinderung von Injektionsangriffen",
+            "Sichere Verbindung via HTTPS/SSL"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "enterprise-erp-system",
+        "name": "Enterprise Resource Planning (ERP)-System",
+        "description": "Integriertes ERP-System zur Verwaltung aller Geschäftsprozesse des Unternehmens.",
+        "fullDescription": "Dieses Enterprise Resource Planning (ERP)-System wurde als zentralisierte Lösung entwickelt, um alle Kernfunktionen eines Unternehmens – Finanzen, Personalwesen, Bestandsverwaltung, Vertrieb und Produktion – in einer kohärenten Echtzeit-Plattform zu integrieren und zu automatisieren.",
+        "image": "/assets/products/29.png",
+        "technologies": [
+          "Next.js",
+          "Node.js",
+          "TypeScript",
+          "MySQL",
+          "Redis",
+          "Docker"
+        ],
+        "category": "Enterprise Resource Planning",
+        "status": "In Entwicklung",
+        "version": "0.8.0",
+        "lastUpdated": "Juli 2025",
+        "client": "PT Manufaktur Jaya Nasional",
+        "duration": "18 Monate (laufend)",
+        "teamSize": "12 Spezialisten (BA, PM, Frontend, Backend, QA, DevOps)",
+        "seo": {
+          "ratingValue": "4.6",
+          "reviewCount": "18",
+          "reviews": [
+            {
+              "author": "Ir. Joko Susilo",
+              "role": "Direktor PT Manufaktur Jaya",
+              "date": "2025-07-28",
+              "body": "Das Modul für Hauptbuch und Materialliste (BOM) vereinigt Daten aus Abteilungen, die zuvor isoliert waren.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmodule",
+          "workflow": "Prozessablauf",
+          "techStack": "Technologie",
+          "screenshots": "Galerie",
+          "specs": "Spezifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Projektinformationen",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Plattformunterstützung",
+          "items": [
+            "Multi-Plattform-Zugriff via Webbrowser",
+            "Mobile App für Vertrieb & Lager",
+            "Drucker- & Barcode-Scanner-Integration",
+            "Datenexport & -import via CSV/Excel"
+          ]
+        },
+        "architecture": {
+          "title": "Systemarchitektur",
+          "items": [
+            "Sichere Multi-Tenancy-Unterstützung",
+            "Message-Queue für asynchrone Prozesse",
+            "Zentralisiertes Authentifizierungs-Gateway (SSO)"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Dieses Projekt löst häufige Herausforderungen in großen Unternehmen: Daten, die zwischen Abteilungen isoliert sind, ineffiziente manuelle Prozesse und ein Mangel an Echtzeitdaten für die Entscheidungsfindung. Fragmentierte Alt-Systeme behindern das Geschäftswachstum und die Agilität.",
+            "Die Lösung ist der Aufbau eines modularen ERP-Systems auf Webbasis. Mit einer monolithischen Architektur wird jedes Kernmodul (Finanzen, Personal, Bestandsverwaltung usw.) als unabhängiger Dienst entwickelt, die miteinander kommunizieren. Dies gewährleistet Skalierbarkeit, Wartungsfreundlichkeit und ermöglicht parallele Entwicklung.",
+            "Mit dieser Plattform erhält der Kunde eine 'Single Source of Truth' für alle operativen Daten, steigert die Effizienz drastisch, beschleunigt Geschäftsprozesse und bietet integrierte Analyseberichte für strategische Entscheidungen."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "CreditCard",
+          "title": "Finanzmanagement",
+          "description": "Vollständiges Modul für Hauptbuch, Kreditoren-/Debitorenbuchhaltung, Kassenverwaltung, Budgetierung und Finanzberichte."
+        },
+        {
+          "icon": "Users",
+          "title": "Human Resource Management (HRM)",
+          "description": "Verwaltung von Mitarbeiterdaten, Anwesenheit, Lohnabrechnung (Payroll), Rekrutierung und Leistungsbewertung."
+        },
+        {
+          "icon": "Package",
+          "title": "Inventar- & Lagerverwaltung",
+          "description": "Bestandsverfolgung in Echtzeit, Multi-Lager-Verwaltung, Bestellungen, Lagerumschlag und Bestandsaufnahmen."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Verkauf & CRM",
+          "description": "Verwaltung von Angeboten, Verkaufsaufträgen, Lieferungen bis zur Rechnungserstellung und Kundenverwaltung."
+        },
+        {
+          "icon": "Server",
+          "title": "Fertigung & Produktion",
+          "description": "Verwaltung von Materialstücklisten (BOM), Arbeitsaufträgen, Materialbedarfsplanung (MRP) und Verfolgung von Produktionsprozessen."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Berichte & Analytik",
+          "description": "Interaktive Dashboards mit anpassbaren Funktionen zur Echtzeit-Berichterstellung aus verschiedenen Modulen."
+        }
+      ],
+      "workflow": {
+        "title": "Ablauf 'Order-to-Cash'",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "ShoppingCart",
+            "title": "Erstellung Verkaufsauftrag",
+            "description": "Das Vertriebsteam erstellt neue Kundenbestellungen im System; Kundendaten werden automatisch ausgefüllt."
+          },
+          {
+            "step": 2,
+            "icon": "Package",
+            "title": "Überprüfung & Bestandsallokation",
+            "description": "Das System prüft automatisch die Warenverfügbarkeit im Lager und alloziert die Artikel für die Bestellung."
+          },
+          {
+            "step": 3,
+            "icon": "Database",
+            "title": "Lieferprozess",
+            "description": "Das Lagerpersonal erhält eine Benachrichtigung zum Kommissionieren, Verpacken und Versenden der Waren. Lieferstatus wird aktualisiert."
+          },
+          {
+            "step": 4,
+            "icon": "Printer",
+            "title": "Rechnungserstellung",
+            "description": "Nach Versand der Waren erstellt die Finanzabteilung automatisch die Rechnung für den Kunden."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Zahlungserfassung",
+            "description": "Nach Zahlungseingang registriert das System den Betrag, gleicht die Rechnung aus und aktualisiert das Hauptbuch (General Ledger)."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Next.js 14 (React)",
+              "description": "React-Framework für moderne Webanwendungen mit Server-Side Rendering (SSR) und hoher Leistung."
+            },
+            {
+              "name": "TypeScript",
+              "description": "JavaScript-Superset mit statischer Typisierung für Skalierbarkeit und Code-Zuverlässigkeit."
+            },
+            {
+              "name": "Zustand",
+              "description": "Leichte und einfache State-Management-Lösung für React."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js (NestJS)",
+              "description": "Progresives Node.js-Framework zum Erstellen effizienter und skalierbarer serverseitiger Anwendungen."
+            },
+            {
+              "name": "TypeORM",
+              "description": "Object-Relational Mapper (ORM) für TypeScript und JavaScript mit MySQL-Unterstützung."
+            },
+            {
+              "name": "RabbitMQ",
+              "description": "Message-Broker für zuverlässige asynchrone Kommunikation zwischen Microservices."
+            }
+          ]
+        },
+        {
+          "category": "Database & In-Memory",
+          "technologies": [
+            {
+              "name": "MySQL 8.0",
+              "description": "Bewährtes relationales Datenbanksystem für Transaktionsdaten."
+            },
+            {
+              "name": "Redis",
+              "description": "Verwendet für Caching, Sitzungsverwaltung und als einfacher Message-Broker."
+            }
+          ]
+        },
+        {
+          "category": "DevOps & Infrastructure",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "Plattform für Containerisierung, um Anwendungen konsistent zu verpacken und auszuführen."
+            },
+            {
+              "name": "Kubernetes",
+              "description": "Orchestrierungssystem für die Automatisierung von Deployment und Skalierung von Anwendungen."
+            },
+            {
+              "name": "Jenkins",
+              "description": "Automatisierungsserver zum Bauen, Testen und Deployment von Anwendungen (CI/CD)."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Haupt-Finanz-Dashboard",
+          "image": "/placeholder.svg",
+          "description": "Zusammenfassung von Cashflow, Gewinn und Verlust sowie anderen wichtigen Finanzkennzahlen in Grafiken."
+        },
+        {
+          "title": "Inventar-Verwaltungsmodul",
+          "image": "/placeholder.svg",
+          "description": "Produktdaten-Tabelle mit Informationen zu Lagerbestand, Regalplätzen und Schnellaktionen wie Lagerübertragungen."
+        },
+        {
+          "title": "Formular zur Erstellung von Verkaufsaufträgen",
+          "image": "/placeholder.svg",
+          "description": "Interface zur Erstellung neuer Verkaufsaufträge mit interaktiver Kundenauswahl und Produktartikeln."
+        },
+        {
+          "title": "Monatlicher Verkaufsanalysebericht",
+          "image": "/placeholder.svg",
+          "description": "Beispiel für einen Analysebericht, der die Verkaufsleistung der Produkte im Zeitverlauf vergleicht."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Server-Bedarf (pro Microservice)",
+            "items": [
+              "Node.js 20.x oder höher",
+              "Konnektivität zu MySQL & Redis",
+              "Minimal 2 vCPU, 4GB RAM"
+            ]
+          },
+          "client": {
+            "title": "Client-Anforderungen",
+            "items": [
+              "Moderner Browser (Chrome, Firefox, Edge)",
+              "Bildschirmauflösung mindestens 1366x768"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [
+            { "label": "Transaktionsverarbeitungszeit", "value": "< 500 ms" },
+            { "label": "API-Antwortzeit (P95)", "value": "< 200 ms" },
+            { "label": "Berichterstellung (komplex)", "value": "< 15 Sekunden" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "Datenverschlüsselung (at-rest und in-transit)",
+            "Granulare rollenbasierte Zugriffskontrolle (RBAC)",
+            "Umfassende Audit-Protokollierung",
+            "Unterstützung für Zwei-Faktor-Authentifizierung (2FA)"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "hrms-portal",
+        "name": "HRMS-Portal",
+        "description": "Human Resource Management System zur Mitarbeiter- und Lohnabrechnungsverwaltung.",
+        "fullDescription": "Das HRMS-Portal ist eine Plattform für das Personalwesen, die entwickelt wurde, um Verwaltungsaufgaben im Personalbereich zu vereinfachen und zu automatisieren. Das System bietet ein Self-Service-Portal für Mitarbeiter und Führungskräfte sowie umfassende Tools für das HR-Team, um Mitarbeiterdaten, Anwesenheit, Urlaub, Anträge und Gehaltsabrechnungen zu verwalten.",
+        "image": "/assets/products/32.png",
+        "technologies": [
+          "React",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "JWT",
+          "Material-UI"
+        ],
+        "category": "Human Resource Management",
+        "status": "Abgeschlossen",
+        "version": "2.0.1",
+        "lastUpdated": "Mai 2025",
+        "client": "-",
+        "duration": "5 Monate",
+        "teamSize": "4 Spezialisten (Frontend, Backend, UI/UX, QA)"
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Prozessablauf",
+          "techStack": "Technologie",
+          "screenshots": "Galerie",
+          "specs": "Spesifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Infos Projekt",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Funktionsumfang",
+          "items": [
+            "Employee Self-Service (ESS)",
+            "Manager Self-Service (MSS)",
+            "Zugriff via Desktop & Web Mobile",
+            "Berichtsexport in PDF & Excel"
+          ]
+        },
+        "architecture": {
+          "title": "Systemarchitektur",
+          "items": [
+            "Monolithische Architektur (Node.js/Express)",
+            "RESTful API",
+            "Token-basierte Authentifizierung (JWT)",
+            "Rollenbasierte Zugriffskontrolle (RBAC)"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Dieses Projekt zielt darauf ab, manuelle und zeitraubende HR-Prozesse in ein effizientes digitales System umzuwandeln. Die Hauptprobleme lagen beim Anwesenheits-Tracking, dem komplexen Urlaubsmanagement und der Gewährleistung von Genauigkeit und Pünktlichkeit bei der Lohnabrechnung.",
+            "Wir haben ein zentrales Webportal entwickelt, das sicher und einfach zu bedienen ist. Mitarbeiter können selbstständig auf persönliche Daten zugreifen, Urlaub beantragen und ihre Gehaltsabrechnungen einsehen. Führungskräfte können Anträge ihres Teams genehmigen, während die HR-Abteilung über ein Dashboard verfügt, um den gesamten Lebenszyklus der Mitarbeiter zu überwachen.",
+            "Die Einführung dieses Portals konnte den administrativen HR-Aufwand signifikant senken, die Mitarbeiter durch direkten Datenzugriff stärken und die Einhaltung arbeitsrechtlicher Vorschriften sicherstellen."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Database",
+          "title": "Mitarbeiterdatenbank (PIM)",
+          "description": "Zentraler Speicher für strukturierte Mitarbeiterdaten, von persönlichen Informationen über Verträge bis zur Stellenhistorie."
+        },
+        {
+          "icon": "Clock",
+          "title": "Anwesenheitsverwaltung",
+          "description": "Funktion zur Zeiterfassung (Clock in/out), Schichtplanung und automatisierte Anwesenheitszusammenfassung."
+        },
+        {
+          "icon": "Package",
+          "title": "Urlaubsmanagement",
+          "description": "Online-Antrags- und Genehmigungsworkflow für Urlaube mit automatischer Berechnung des Urlaubsanspruchs."
+        },
+        {
+          "icon": "CreditCard",
+          "title": "Gehaltsabrechnung (Payroll)",
+          "description": "Automatisierte und präzise Berechnung von Gehalt, Zulagen, Steuerabzügen und Versicherungsbeiträgen."
+        },
+        {
+          "icon": "Printer",
+          "title": "Ansprüche & Kostenerstattung",
+          "description": "Mitarbeiter können Spesenabrechnungen (z.B. Dienstreisekosten) online inklusive Nachweisen einreichen."
+        },
+        {
+          "icon": "Users",
+          "title": "Self-Service-Portal für Mitarbeiter",
+          "description": "Jeder Mitarbeiter hat Zugriff, um sein Profil einzusehen, Gehaltsabrechnungen herunterzuladen und Antragsstatus zu überwachen."
+        }
+      ],
+      "workflow": {
+        "title": "Ablauf der monatlichen Gehaltsabrechnung",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Clock",
+            "title": "Synchronisation der Anwesenheitsdaten",
+            "description": "Das System fasst automatisch Anwesenheits-, Verspätungs- und Überstundendaten aller Mitarbeiter zum Ende des Zeitraums zusammen."
+          },
+          {
+            "step": 2,
+            "icon": "BarChart3",
+            "title": "Durchführung der Gehaltsabrechnung",
+            "description": "Der HR-Admin startet den Gehaltsabrechnungsprozess mit einem Klick, was die Berechnungen für alle aktiven Mitarbeiter auslöst."
+          },
+          {
+            "step": 3,
+            "icon": "Server",
+            "title": "Gehaltskomponenten-Kalkulation",
+            "description": "Das System berechnet das Bruttogehalt, Steuer- und Versicherungsabzüge sowie andere Zulagen gemäß geltenden Regeln."
+          },
+          {
+            "step": 4,
+            "icon": "CheckCircle",
+            "title": "Überprüfung & Finalisierung",
+            "description": "Die HR-Abteilung prüft den Entwurf des Gehaltsberichts, um Fehler vor der Finalisierung auszuschließen."
+          },
+          {
+            "step": 5,
+            "icon": "Download",
+            "title": "Veröffentlichung Gehaltsabrechnung",
+            "description": "Nach der Finalisierung wird die elektronische Gehaltsabrechnung (e-payslip) erstellt und kann von jedem Mitarbeiter in seinem Portal eingesehen werden."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "JavaScript-Bibliothek zum Erstellen einer interaktiven und dynamischen Benutzeroberfläche."
+            },
+            {
+              "name": "Redux Toolkit",
+              "description": "Standardbibliothek für vorhersehbares State-Management in JavaScript-Anwendungen."
+            },
+            {
+              "name": "Material-UI (MUI)",
+              "description": "Beliebtes React-UI-Komponenten-Framework für schnelles und konsistentes Design."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js",
+              "description": "Effiziente serverseitige JavaScript-Ausführungsumgebung zum Aufbau von APIs."
+            },
+            {
+              "name": "Express.js",
+              "description": "Minimalistisches und flexibles Web-Framework für Node.js."
+            },
+            {
+              "name": "Mongoose",
+              "description": "Object Data Modeling (ODM)-Bibliothek für MongoDB und Node.js."
+            }
+          ]
+        },
+        {
+          "category": "Database & Security",
+          "technologies": [
+            {
+              "name": "MongoDB Atlas",
+              "description": "Vollständig verwalteter NoSQL-Dokumentendatenbank-Service in der Cloud."
+            },
+            {
+              "name": "JSON Web Token (JWT)",
+              "description": "Offener Standard zur Erstellung sicherer Zugriffstokens zwischen Parteien."
+            },
+            {
+              "name": "Bcrypt.js",
+              "description": "Bibliothek zum sicheren Hashing von Passwörtern."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Haupt-Dashboard HR-Admin",
+          "image": "/placeholder.svg",
+          "description": "Zeigt statistische Zusammenfassungen zu Mitarbeitern, ausstehende Anträge und interne Ankündigungen."
+        },
+        {
+          "title": "Mitarbeiterprofilseite (Self-Service)",
+          "image": "/placeholder.svg",
+          "description": "Mitarbeiter können persönliche Daten einsehen/aktualisieren und Arbeitsvertragsinformationen prüfen."
+        },
+        {
+          "title": "Online-Urlaubsantragsformular",
+          "image": "/placeholder.svg",
+          "description": "Einfache Schnittstelle zur Auswahl der Urlaubsart, des Zeitraums und zum Einsehen des verbleibenden Urlaubskontingents."
+        },
+        {
+          "title": "Ansicht der digitalen Gehaltsabrechnung",
+          "image": "/placeholder.svg",
+          "description": "Details zu Einnahme- und Abzugskomponenten im übersichtlichen PDF-Format zum Download."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Server-Anforderungen",
+            "items": [
+              "Node.js 18.x oder höher",
+              "Verbindung zu MongoDB Atlas",
+              "RAM mindestens 2GB"
+            ]
+          },
+          "client": {
+            "title": "Kunden-Anforderungen",
+            "items": [
+              "Moderner Browser mit JavaScript-Support",
+              "Internetverbindung"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [
+            { "label": "Ladezeit Seite (P95)", "value": "< 2 Sekunden" },
+            { "label": "Payroll-Prozess (500 MA)", "value": "< 2 Minuten" },
+            { "label": "API-Antwortzeit", "value": "< 250 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "JWT-basierte Authentifizierung",
+            "Passwort-Hashing mit Salt",
+            "Rollenbasierte Zugriffskontrolle (Admin, Manager, Mitarbeiter)",
+            "Eingabevalidierung zur Verhinderung von XSS-Angriffen"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "finance-management",
+        "name": "Finanzmanagement",
+        "description": "Finanzmanagementsystem mit Funktionen für Budgetierung und Finanzberichterstattung.",
+        "fullDescription": "Diese Finanzmanagement-Anwendung ist ein intuitives Werkzeug für Einzelpersonen und kleine Unternehmen, um Einnahmen und Ausgaben zu verfolgen, realistische Budgets zu erstellen und detaillierte Finanzberichte zu erstellen. Ziel ist es, den Benutzern volle Transparenz und Kontrolle über ihre finanzielle Gesundheit zu geben.",
+        "image": "/assets/products/34.png",
+        "technologies": [
+          "React",
+          "Django",
+          "PostgreSQL",
+          "Chart.js",
+          "Django REST Framework"
+        ],
+        "category": "Finanzmanagement",
+        "status": "Abgeschlossen",
+        "version": "1.0.0",
+        "lastUpdated": "April 2025",
+        "client": "-",
+        "duration": "6 Monate",
+        "teamSize": "5 Spezialisten (Frontend, Backend, DBA, UI/UX, QA)",
+        "seo": {
+          "ratingValue": "4.7",
+          "reviewCount": "41",
+          "reviews": [
+            {
+              "author": "Hadi Pranoto",
+              "role": "Freiberuflicher Berater",
+              "date": "2025-04-20",
+              "body": "Die Importfunktion für CSV-Bankauszüge macht die tägliche Cashflow-Erfassung weniger langweilig.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Arbeitsablauf",
+          "techStack": "Technologie",
+          "screenshots": "Galerie",
+          "specs": "Spesifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Infos Projekt",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Funktionsumfang",
+          "items": [
+            "Responsives Webdesign",
+            "Datenimport aus CSV (Bankkonto)",
+            "Multi-Währungs-Support",
+            "Export von Berichten in PDF/Excel"
+          ]
+        },
+        "architecture": {
+          "title": "Systemarchitektur",
+          "items": [
+            "Monolithische Architektur (Django)",
+            "API über Django REST Framework",
+            "Reaktive Benutzeroberfläche mit React",
+            "Sichere Verarbeitung von Finanzdaten"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Viele Menschen und kleine Unternehmen haben Schwierigkeiten, ihre Finanzen effektiv zu verfolgen, aufgrund mühsamer manueller Prozesse und mangelnder geeigneter Werkzeuge. Dies führt zu übermäßigen Ausgaben, Schwierigkeiten beim Sparen und einem mangelnden Verständnis ihrer finanziellen Position.",
+            "Dieses Projekt löst die Herausforderung durch die Bereitstellung einer sicheren und benutzerfreundlichen Webanwendung. Benutzer können schnell jede Transaktion erfassen, sie automatisch kategorisieren und die tatsächlichen Ausgaben mit dem festgelegten Budget vergleichen.",
+            "Mit einer klaren Datenvisualisierung über ein interaktives Dashboard und umfassenden Berichten ermöglicht die App Benutzern, Ausgabegewohnheiten zu identifizieren, Einsparmöglichkeiten zu entdecken und intelligentere Finanzentscheidungen zu treffen, um ihre Ziele zu erreichen."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "ShoppingCart",
+          "title": "Transaktionsverfolgung",
+          "description": "Erfassen Sie alle Einnahmen und Ausgaben einfach, komplett mit anpassbaren Kategorien."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Budgetverwaltung",
+          "description": "Erstellen Sie monatliche oder periodische Budgets für jede Kategorie und überwachen Sie den Fortschritt in Echtzeit."
+        },
+        {
+          "icon": "Printer",
+          "title": "Finanzberichte",
+          "description": "Erstellen Sie wesentliche Berichte wie Gewinn- und Verlustrechnung (Income Statement), Cashflow und Bilanz."
+        },
+        {
+          "icon": "Monitor",
+          "title": "Interaktives Dashboard",
+          "description": "Visualisieren Sie Ihre Finanzdaten durch Grafiken und Diagramme, wie Ausgabenverteilung und Einnahmentrends."
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "Zielsetzung (Goals)",
+          "description": "Legen Sie Finanzziele fest (z.B. Notfallfonds, Urlaub) und verfolgen Sie den Fortschritt Ihrer Ersparnisse."
+        },
+        {
+          "icon": "Clock",
+          "title": "Wiederkehrende Transaktionen",
+          "description": "Automatisieren Sie die Erfassung für regelmäßige Rechnungen und Einkommen wie Gehalt, Abonnements und Ratenzahlungen."
+        }
+      ],
+      "workflow": {
+        "title": "Ablauf der monatlichen Finanzübersicht",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Database",
+            "title": "Dateneingabe & Import",
+            "description": "Der Benutzer erfasst tägliche Transaktionen oder importiert Berichte von Bankkontobewegungen im CSV-Format."
+          },
+          {
+            "step": 2,
+            "icon": "Package",
+            "title": "Transaktionskategorisierung",
+            "description": "Das System schlägt basierend auf der Beschreibung automatisch Kategorien vor, die der Benutzer verifiziert."
+          },
+          {
+            "step": 3,
+            "icon": "BarChart3",
+            "title": "Budgetüberprüfung",
+            "description": "Überprüfung des Budget-Dashboards, um zu sehen, welche Kategorien innerhalb des Ziels liegen und welche die Grenze überschreiten."
+          },
+          {
+            "step": 4,
+            "icon": "Printer",
+            "title": "Berichtsanalyse",
+            "description": "Erstellung einer monatlichen Gewinn- und Verlustrechnung, um den finanziellen Überschuss oder Defizit für den Zeitraum zu verstehen."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Aktualisierung der Ziele",
+            "description": "Zuweisung verbleibender Gelder oder Überschüsse zu den Sparzielen, die in der Anwendung festgelegt wurden."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "JavaScript-Bibliothek zum Erstellen einer reichen und interaktiven Benutzeroberfläche."
+            },
+            {
+              "name": "Chart.js",
+              "description": "Bibliothek zum Erstellen responsiver und ansprechender Grafiken und Diagramme."
+            },
+            {
+              "name": "Axios",
+              "description": "Promise-basierter HTTP-Client für Anfragen an die Backend-API."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Python 3.11",
+              "description": "Vielseitige Programmiersprache, populär für die serverseitige Webentwicklung."
+            },
+            {
+              "name": "Django 5.0",
+              "description": "High-Level Python Web-Framework, das schnelle Entwicklung und sauberes Design fördert."
+            },
+            {
+              "name": "Django REST Framework",
+              "description": "Leistungsstarkes und flexibles Toolkit zum Erstellen von Web-APIs."
+            }
+          ]
+        },
+        {
+          "category": "Database",
+          "technologies": [
+            {
+              "name": "PostgreSQL 16",
+              "description": "Fortschrittliches und zuverlässiges objekt-relationales Datenbanksystem für Datenintegrität."
+            }
+          ]
+        },
+        {
+          "category": "DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "Plattform zum Entwickeln, Versenden und Ausführen von Anwendungen in Containern."
+            },
+            {
+              "name": "Gunicorn",
+              "description": "WSGI HTTP-Server für das Produktions-Deployment von Python-Anwendungen."
+            },
+            {
+              "name": "Nginx",
+              "description": "Webserver, der als Reverse-Proxy und zum Bedienen statischer Dateien verwendet wird."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Haupt-Dashboard mit Finanzübersicht",
+          "image": "/assets/products/5.png",
+          "description": "Zeigt das aktuelle Guthaben, Cashflow-Grafiken und Top-Ausgaben in einer Ansicht."
+        },
+        {
+          "title": "Seite für neue Transaktionserfassung",
+          "image": "/assets/products/6.png",
+          "description": "Einfaches Formular zur Eingabe von Betrag, Datum, Kategorie und Transaktionsbeschreibung."
+        },
+        {
+          "title": "Ansicht der Budgetüberwachung (Budget)",
+          "image": "/assets/products/7.png",
+          "description": "Visuelle Fortschrittsbalken, die reale Ausgaben mit dem festgelegten Budget pro Kategorie vergleichen."
+        },
+        {
+          "title": "Monatlicher Gewinn- und Verlustbericht (P&L)",
+          "image": "/assets/products/8.png",
+          "description": "Berichtstabelle, die alle Einnahme- und Ausgabequellen auflistet, um den Nettogewinn zu ermitteln."
+        },
+        {
+          "title": "Diagramm zur Analyse der Ausgaben",
+          "image": "/assets/products/9.png",
+          "description": "Kreisdiagramm, das den Prozentsatz der Ausgaben nach Kategorie zeigt, wie Lebensmittel, Transport und Unterhaltung."
+        },
+        {
+          "title": "Einstellung der Finanzziele",
+          "image": "/assets/products/10.png",
+          "description": "Interface zum Festlegen und Verfolgen des Fortschritts bei Sparzielen, wie Notfallfonds oder Urlaub."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Server-Anforderungen",
+            "items": ["Python 3.9+", "PostgreSQL 12+", "RAM mindestens 1GB"]
+          },
+          "client": {
+            "title": "Client-Anforderungen",
+            "items": ["Moderner Browser mit JavaScript-Support"]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [
+            { "label": "Transaktionsspeicherzeit", "value": "< 300 ms" },
+            {
+              "label": "Berichterstellung (monatlich)",
+              "value": "< 5 Sekunden"
+            },
+            { "label": "Dashboard-Ladezeit", "value": "< 500 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "Passwort-Hashing (Django-Standard)",
+            "Cross-Site Request Forgery (CSRF)-Schutz",
+            "Verschlüsselung sensibler Daten in der Datenbank (at-rest)",
+            "Sichere Kommunikation über HTTPS/SSL"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "warehouse-inventory-control",
+        "name": "Inventarkontrollsystem",
+        "description": "Inventarkontrollsystem mit Echtzeitverfolgung und automatisierten Warnmeldungen.",
+        "fullDescription": "Dieses Inventarkontrollsystem wurde für moderne Lager und Vertriebszentren entwickelt und bietet Bestandsverfolgung in Echtzeit, Integration von Barcode-/QR-Scannern sowie automatische Warnungen bei niedrigen Lagerbeständen oder Artikeln, die kurz vor dem Verfallsdatum stehen. Ziel ist es, Lagerbestände zu optimieren, Engpässe zu verhindern und Verschwendung zu reduzieren.",
+        "image": "/assets/products/39.png",
+        "technologies": [
+          "Angular",
+          "Java",
+          "Spring Boot",
+          "MySQL",
+          "Apache Kafka",
+          "Docker"
+        ],
+        "category": "Bestandsverwaltung",
+        "status": "In Entwicklung",
+        "version": "0.9.0",
+        "lastUpdated": "Juli 2025",
+        "client": "Logistik Express Nusantara",
+        "duration": "10 Monate (laufend)",
+        "teamSize": "7 Spezialisten (Java Backend, Frontend, QA, BA, DevOps)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "29",
+          "reviews": [
+            {
+              "author": "Suryo Depot",
+              "role": "Logistikmanager",
+              "date": "2025-07-15",
+              "body": "Die automatische Warnung, wenn der Lagerbestand den Nachbestellpunkt erreicht, hat den Ausverkauf beliebter Artikel erfolgreich verhindert.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Arbeitsablauf",
+          "techStack": "Technologie",
+          "screenshots": "Galerie",
+          "specs": "Spesifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Infos Projekt",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Funktionsumfang",
+          "items": [
+            "Desktop-App für den Lagerboden",
+            "Integration mit Barcode-Scanner-Hardware",
+            "Echtzeit-Monitoring-Dashboard",
+            "API zur Integration mit ERP/Verkaufssystemen"
+          ]
+        },
+        "architecture": {
+          "title": "Systemarchitektur",
+          "items": [
+            "Event-Driven Architecture",
+            "Echtzeit-Datenstreaming via Apache Kafka",
+            "Reaktives Frontend-Interface mit Angular"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Traditionelle Lagerverwaltung steht oft vor Problemen wie ungenauen Bestandsdaten, Fehlern durch manuelle Protokollierung, Engpässen bei beliebten Artikeln und Verlusten durch abgelaufene Waren. Diese Probleme haben direkte Auswirkungen auf die operative Effizienz und Rentabilität.",
+            "Um dies zu lösen, bauen wir ein robustes Inventarsystem unter Verwendung von Enterprise-Technologiestacks (Java Spring Boot und Angular). Die ereignisbasierte Architektur (event-driven) mit Apache Kafka als Rückgrat stellt sicher, dass jede Bestandsbewegung — vom Empfang bis zum Versand — in Echtzeit verarbeitet und an alle Systemkomponenten übertragen wird.",
+            "Das System bietet eine sehr hohe Datengenauigkeit, senkt die Lagerkosten, optimiert die Bestandsniveaus und beschleunigt die Auftragsabwicklung. Automatisierte Warnungen ermöglichen proaktives Management, minimieren Verluste erheblich und steigern die Kundenzufriedenheit."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Package",
+          "title": "Echtzeit-Bestandsverfolgung",
+          "description": "Überwachen Sie Bestandsmengen und Standorte in verschiedenen Lagern oder Regalen (Bins) direkt bei Änderungen."
+        },
+        {
+          "icon": "Server",
+          "title": "Barcode- & QR-Scannen",
+          "description": "Beschleunigen Sie Wareneingang, Picking und Inventur mit Handheld-Scannern."
+        },
+        {
+          "icon": "Shield",
+          "title": "Automatische Warnungen & Benachrichtigungen",
+          "description": "Setzen Sie Nachbestellpunkte (Reorder Points) und erhalten Sie automatische Benachrichtigungen bei niedrigem Bestand oder baldigem Verfallsdatum."
+        },
+        {
+          "icon": "ShoppingCart",
+          "title": "Bestellverwaltung",
+          "description": "Erstellen, senden und verfolgen Sie den Status von Bestellungen (Purchase Order) an Lieferanten direkt im System."
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "Inventaraudit (Stock Opname)",
+          "description": "Einrichtung zur Durchführung von Zykluszählungen oder vollständigen Inventuren mit minimaler Unterbrechung des Lagerbetriebs."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Berichte & Analytik",
+          "description": "Analyse wichtiger Metriken wie Lagerumschlag (Inventory Turnover), Bestandsalter und Auftragsabwicklungsgenauigkeit."
+        }
+      ],
+      "workflow": {
+        "title": "Workflow Warenannahme (Goods Receipt)",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "ShoppingCart",
+            "title": "Abgleich Purchase Order",
+            "description": "Der Lagerbetreiber scannt die PO-Nummer vom Versanddokument, wenn die Waren vor Ort ankommen."
+          },
+          {
+            "step": 2,
+            "icon": "Server",
+            "title": "Artikelnscannen",
+            "description": "Jeder Artikel in der Sendung wird per Barcode gescannt, um Produkt und Menge zu verifizieren."
+          },
+          {
+            "step": 3,
+            "icon": "Package",
+            "title": "Mengen- & Standort-Update",
+            "description": "Das System protokolliert die erhaltene Menge und der Bediener gibt den Lagerort ein (z. B. Regal A-01)."
+          },
+          {
+            "step": 4,
+            "icon": "Database",
+            "title": "Publikation Event 'Wareneingang'",
+            "description": "Nach Bestätigung wird ein 'GoodsReceived'-Ereignis in das Apache Kafka-Topic veröffentlicht."
+          },
+          {
+            "step": 5,
+            "icon": "CheckCircle",
+            "title": "Systemaktualisierung in Echtzeit",
+            "description": "Andere Dienste, die dieses Topic abonniert haben, aktualisieren sofort das Inventarniveau und den PO-Status."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "Angular 17",
+              "description": "Komponentenbasiertes Frontend-Framework, das stark für den Aufbau groß angelegter Anwendungen ist."
+            },
+            {
+              "name": "TypeScript",
+              "description": "JavaScript-Superset, das statische Typisierung für Codezuverlässigkeit bereitstellt."
+            },
+            {
+              "name": "RxJS",
+              "description": "Bibliothek für reaktive Programmierung mittels Observables, ideal für die Handhabung von Event-Streams."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Java 21",
+              "description": "Matürliche, zuverlässige und leistungsstarke Programmiersprache für Enterprise-Anwendungen."
+            },
+            {
+              "name": "Spring Data JPA",
+              "description": "Vereinfacht die Datenpersistenzschicht durch Repositories für SQL-Datenbanken."
+            }
+          ]
+        },
+        {
+          "category": "Database & Messaging",
+          "technologies": [
+            {
+              "name": "MySQL 8.0",
+              "description": "Ein beliebtes und erprobtes relationales Datenbanksystem für Transaktionsdaten."
+            },
+            {
+              "name": "Apache Kafka",
+              "description": "Verteilte Streaming-Plattform zum Aufbau von Echtzeit-Datenpipelines."
+            }
+          ]
+        },
+        {
+          "category": "DevOps",
+          "technologies": [
+            {
+              "name": "Docker",
+              "description": "Containerisierungsplattform für Konsistenz von der Entwicklung bis zur Produktion."
+            },
+            {
+              "name": "Kubernetes",
+              "description": "Orchestrierungssystem für die Automatisierung von Deployment, Skalierung und Container-Management."
+            },
+            {
+              "name": "Jenkins",
+              "description": "Automatisierungsserver für CI/CD-Pipelines, von Build über Test bis Deployment."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Echtzeit-Bestands-Dashboard",
+          "image": "/placeholder.svg",
+          "description": "Zeigt Schlüsselmetriken wie den Gesamtwert des Inventars, schnelllebige Artikel und Warnungen bei niedrigem Bestand."
+        },
+        {
+          "title": "Interface Warenannahme (Goods Receipt)",
+          "image": "/placeholder.svg",
+          "description": "Scanner-basiertes Formular zur Erfassung eingehender Waren basierend auf der Purchase Order."
+        },
+        {
+          "title": "Liste der Produkte mit niedrigem Lagerbestand",
+          "image": "/placeholder.svg",
+          "description": "Tabelle, die automatisch Produkte filtert, die den Nachbestellpunkt erreicht oder unterschritten haben."
+        },
+        {
+          "title": "Bericht zur Analyse des Lagerumschlags",
+          "image": "/placeholder.svg",
+          "description": "Grafik, die zeigt, wie schnell Lagerartikel in einem bestimmten Zeitraum verkauft wurden."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Server-Anforderungen",
+            "items": [
+              "Java (JVM) 17+",
+              "MySQL Server 8.0+",
+              "Apache Kafka-Cluster"
+            ]
+          },
+          "client": {
+            "title": "Client-Anforderungen",
+            "items": [
+              "Moderner Browser (Chrome, Firefox)",
+              "Netzwerkverbindung zum Anwendungsserver"
+            ]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [
+            { "label": "Latenz Bestandsaktualisierung", "value": "< 500 ms" },
+            { "label": "Transaktionsdurchsatz", "value": "1000+ pro Stunde" },
+            { "label": "Berichterstellungszeit", "value": "< 10 Sekunden" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "Authentifizierung & Autorisierung mit Spring Security (OAuth2/JWT)",
+            "Rollenbasierte Zugriffskontrolle (Admin, Lagerarbeiter, Manager)",
+            "Audit-Log für alle Bestandsbewegungen",
+            "Verschlüsselte Kommunikation (HTTPS)"
+          ]
+        }
+      }
+    },
+    {
+      "product": {
+        "id": "crm-platform",
+        "name": "CRM-Plattform",
+        "description": "Customer Relationship Management zur Verwaltung von Kundenbeziehungen.",
+        "fullDescription": "Diese Plattform für Customer Relationship Management (CRM) ist eine umfassende Lösung für Vertriebs- und Marketingteams, die entwickelt wurde, um den gesamten Lebenszyklus des Kunden zu verwalten. Das System hilft bei der Verfolgung von Interaktionen, der Verwaltung von Interessenten (Leads), der Automatisierung von Verkaufsabläufen und der Analyse von Daten, um stärkere und profitablere Kundenbeziehungen aufzubauen.",
+        "image": "/assets/products/41.png",
+        "technologies": ["React", "Node.js", "MongoDB", "GraphQL", "Apollo"],
+        "category": "Customer Relationship Management",
+        "status": "Abgeschlossen",
+        "version": "2.1.0",
+        "lastUpdated": "Juni 2025",
+        "client": "Kreative Marketingagentur",
+        "duration": "7 Monate",
+        "teamSize": "6 Spezialisten (Frontend, Backend, GraphQL Expert, UI/UX, QA)",
+        "seo": {
+          "ratingValue": "4.8",
+          "reviewCount": "63",
+          "reviews": [
+            {
+              "author": "Dian Sastro",
+              "role": "Vertriebsleiterin",
+              "date": "2025-06-12",
+              "body": "Die Kanban-Modell-Pipeline-Ansicht ermöglicht es dem Vertriebsteam, sich täglich auf die Nachverfolgung potenzieller Leads zu konzentrieren.",
+              "rating": "5"
+            }
+          ]
+        }
+      },
+      "hero": {
+        "buttons": {
+          "documentation": "Dokumentation",
+          "links": {
+            "documentation": "https://docs.codeverta.com/"
+          }
+        }
+      },
+      "tabs": {
+        "triggers": {
+          "overview": "Übersicht",
+          "features": "Hauptmerkmale",
+          "workflow": "Arbeitsablauf",
+          "techStack": "Technologie",
+          "screenshots": "Galerie",
+          "specs": "Spesifikationen"
+        }
+      },
+      "overview": {
+        "projectInfo": {
+          "title": "Infos Projekt",
+          "clientLabel": "Kunde",
+          "durationLabel": "Dauer",
+          "teamSizeLabel": "Teamgröße",
+          "lastUpdatedLabel": "Letzte Aktualisierung"
+        },
+        "platformSupport": {
+          "title": "Funktionsumfang",
+          "items": [
+            "Webbasiertes Verkaufs-Dashboard",
+            "E-Mail-Integration (Gmail/Outlook)",
+            "Aufgaben- & Terminplanung",
+            "Responsive Ansicht für Außendienstteams"
+          ]
+        },
+        "architecture": {
+          "title": "Systemarchitektur",
+          "items": [
+            "Single Page Application (SPA)",
+            "Flexible API mit GraphQL & Apollo Server",
+            "Flexibles NoSQL-Datenbankschema (MongoDB)",
+            "Echtzeit-Updates mit GraphQL-Abonnements"
+          ]
+        },
+        "projectDescription": {
+          "title": "Projektbeschreibung",
+          "paragraphs": [
+            "Vertriebsteams stehen oft vor Herausforderungen wie dem Verlust von Leads, inkonsistenter Nachverfolgung und mangelnder Sichtbarkeit der Verkaufspipeline. Verstreute Kundendaten erschweren es dem Team, ein personalisiertes und integriertes Erlebnis zu bieten.",
+            "Um dieses Problem zu lösen, haben wir eine zentralisierte CRM-Plattform unter Verwendung moderner Technologiestacks aufgebaut. Die Nutzung von GraphQL als API-Schicht ermöglicht es dem Frontend, benötigte Daten spezifisch und effizient anzufordern, was die Ladezeiten verkürzt und die Reaktionsfähigkeit der Anwendung erhöht.",
+            "Das Ergebnis ist eine Plattform, die das Vertriebsteam befähigt, intelligenter zu arbeiten. Sie können den gesamten Prozess von einem Ort aus verwalten, Routineaufgaben automatisieren und wertvolle Erkenntnisse aus Daten gewinnen, was letztendlich die Produktivität, Konversionsraten und Kundenbindung steigert."
+          ]
+        }
+      },
+      "features": [
+        {
+          "icon": "Users",
+          "title": "360°-Kontaktmanagement",
+          "description": "Zeigen Sie das vollständige Profil jedes Kontakts an, einschließlich Details, Interaktionshistorie, E-Mails und zugehöriger Geschäfte (Deals)."
+        },
+        {
+          "icon": "BarChart3",
+          "title": "Verkaufspipeline-Management",
+          "description": "Visualisieren und verwalten Sie Geschäfte über anpassbare Verkaufsphasen in einer Kanban-Ansicht."
+        },
+        {
+          "icon": "Package",
+          "title": "Lead-Management",
+          "description": "Erfassen, qualifizieren und verteilen Sie Interessenten aus verschiedenen Quellen wie Webformularen oder Marketingkampagnen."
+        },
+        {
+          "icon": "CheckCircle",
+          "title": "Aktivitäts- & Aufgabenverfolgung",
+          "description": "Planen und verfolgen Sie alle Verkaufsaktivitäten wie Anrufe, Treffen und E-Mails für jeden Kontakt oder Deal."
+        },
+        {
+          "icon": "Server",
+          "title": "Workflow-Automatisierung",
+          "description": "Automatisieren Sie wiederkehrende Aufgaben, wie das Senden von Follow-up-E-Mails oder das Erstellen neuer Aufgaben, wenn ein Geschäft die Phase wechselt."
+        },
+        {
+          "icon": "Monitor",
+          "title": "Dashboard & Analytische Berichte",
+          "description": "Überwachen Sie wichtige Verkaufsmetriken (KPIs) wie Konversionsrate, Pipeline-Wert und Teamleistung in Echtzeit."
+        }
+      ],
+      "workflow": {
+        "title": "Ablauf der 'Lead-to-Deal'-Konvertierung",
+        "steps": [
+          {
+            "step": 1,
+            "icon": "Package",
+            "title": "Lead-Erfassung",
+            "description": "Neue Leads aus den Kontaktformularen der Website gelangen automatisch in das CRM-System."
+          },
+          {
+            "step": 2,
+            "icon": "CheckCircle",
+            "title": "Lead-Qualifizierung",
+            "description": "Das Vertriebsteam kontaktiert den Interessenten, um Bedürfnisse und Interesse zu verifizieren, dann wird der Status auf 'Qualifiziert' gesetzt."
+          },
+          {
+            "step": 3,
+            "icon": "Users",
+            "title": "Konvertierung in Kontakt & Deal",
+            "description": "Der qualifizierte Lead wird in einen neuen Kontakt und ein neues Geschäft (Deal) in der Anfangsphase des Pipelines umgewandelt."
+          },
+          {
+            "step": 4,
+            "icon": "BarChart3",
+            "title": "Fortschritt in der Pipeline",
+            "description": "Vertriebsmitarbeiter erfassen alle Aktivitäten (Anrufe, Angebote) und verschieben das Geschäft durch die Pipeline-Phasen (z.B. Verhandlung)."
+          },
+          {
+            "step": 5,
+            "icon": "ShoppingCart",
+            "title": "Geschäftsabschluss",
+            "description": "Das Geschäft wird als 'Won' (Erfolgreich) oder 'Lost' (Gescheitert) markiert, und die Historie wird dauerhaft gespeichert."
+          }
+        ]
+      },
+      "techStack": [
+        {
+          "category": "Frontend",
+          "technologies": [
+            {
+              "name": "React 18",
+              "description": "JavaScript-Bibliothek zum Erstellen einer dynamischen und effizienten Benutzeroberfläche."
+            },
+            {
+              "name": "Apollo Client",
+              "description": "Umfassender GraphQL-Client zur State-Management- und Datencaching-Verwaltung vom Server."
+            },
+            {
+              "name": "Ant Design",
+              "description": "Enterprise-React-UI-Komponentenbibliothek zum Erstellen eleganter Schnittstellen."
+            }
+          ]
+        },
+        {
+          "category": "Backend",
+          "technologies": [
+            {
+              "name": "Node.js",
+              "description": "JavaScript-Laufzeitumgebung auf der Serverseite zum Erstellen skalierbarer Netzwerkanwendungen."
+            },
+            {
+              "name": "Apollo Server",
+              "description": "GraphQL-Server für Express.js, der das Erstellen von GraphQL-APIs erleichtert."
+            },
+            {
+              "name": "Mongoose",
+              "description": "Object Data Modeling (ODM)-Bibliothek für MongoDB, die Validierung und Geschäftslogik bereitstellt."
+            }
+          ]
+        },
+        {
+          "category": "Database & API",
+          "technologies": [
+            {
+              "name": "MongoDB Atlas",
+              "description": "Flexibler und leicht skalierbarer NoSQL-Datenbank-Cloud-Service."
+            },
+            {
+              "name": "GraphQL",
+              "description": "Abfragesprache für APIs, die dem Client die Möglichkeit gibt, genau die benötigten Daten anzufordern."
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        {
+          "title": "Haupt-Verkaufs-Dashboard",
+          "image": "/placeholder.svg",
+          "description": "Affiche le résumé du pipeline, les activités à venir et la performance globale des ventes."
+        },
+        {
+          "title": "Ansicht Kanban Sales Pipeline",
+          "image": "/placeholder.svg",
+          "description": "Visualisierung der Geschäfte in verschiedenen Verkaufsphasen mit Drag-and-Drop-Funktionalität."
+        },
+        {
+          "title": "Detaillierte 360°-Kontaktseite",
+          "image": "/placeholder.svg",
+          "description": "Alle Informationen über den Kunden, einschließlich Kommunikationshistorie und Transaktionen, auf einer Seite."
+        },
+        {
+          "title": "Formular zur Aktivitätsplanung",
+          "image": "/placeholder.svg",
+          "description": "Dialog zum Erstellen von Aufgaben oder Planen von Treffen, die direkt mit dem Kontakt oder Geschäft verknüpft sind."
+        }
+      ],
+      "specifications": {
+        "systemRequirements": {
+          "title": "Systemanforderungen",
+          "server": {
+            "title": "Besoins serveur",
+            "items": [
+              "Node.js 18.x oder höher",
+              "Verbindung zum MongoDB-Cluster"
+            ]
+          },
+          "client": {
+            "title": "Besoins client",
+            "items": ["Moderner Browser mit JavaScript-Support (ES6)"]
+          }
+        },
+        "performanceMetrics": {
+          "title": "Leistungsmetriken",
+          "metrics": [
+            {
+              "label": "GraphQL-Abfrageantwortzeit (P95)",
+              "value": "< 300 ms"
+            },
+            { "label": "Dashboard-Ladezeit", "value": "< 2 Sekunden" },
+            { "label": "Echtzeit-Update-Latenz", "value": "< 500 ms" }
+          ]
+        },
+        "securityFeatures": {
+          "title": "Sicherheitsmerkmale",
+          "items": [
+            "JWT/OAuth2-basierte Authentifizierung",
+            "Autorisierung und rollenbasierte Zugriffsberechtigungen",
+            "Schutz gegen gefährliche GraphQL-Abfragen (Query-Depth-Limiting)",
+            "Eingabevalidierung zur Verhinderung von Injektionen"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,4 +1,6 @@
-// Province name mapping
+// lib/map.ts
+
+// Full province id → name map (still used to render the base map paths)
 export const provinceNames = {
   IDAC: "Aceh",
   IDBA: "Bali",
@@ -36,40 +38,71 @@ export const provinceNames = {
   IDYO: "Yogyakarta",
 };
 
-// Sample data with detailed information - replace with your actual data
-export const sampleData = {
-  IDAC: { value: 75, customers: 12, growth: "+5%" },
-  IDBA: { value: 90, customers: 18, growth: "+7%" },
-  IDBB: { value: 45, customers: 9, growth: "+2%" },
-  IDBE: { value: 60, customers: 6, growth: "+1%" },
-  IDBT: { value: 85, customers: 17, growth: "+6%" },
-  IDGO: { value: 30, customers: 4, growth: "0%" },
-  IDJA: { value: 50, customers: 10, growth: "+3%" },
-  IDJB: { value: 95, customers: 25, growth: "+10%" },
-  IDJI: { value: 80, customers: 20, growth: "+6%" },
-  IDJK: { value: 100, customers: 30, growth: "+15%" },
-  IDJT: { value: 70, customers: 14, growth: "+4%" },
-  IDKB: { value: 40, customers: 5, growth: "+1%" },
-  IDKI: { value: 65, customers: 8, growth: "+2%" },
-  IDKR: { value: 55, customers: 7, growth: "+3%" },
-  IDKS: { value: 75, customers: 10, growth: "+5%" },
-  IDKT: { value: 35, customers: 4, growth: "0%" },
-  IDKU: { value: 25, customers: 3, growth: "-1%" },
-  IDLA: { value: 60, customers: 9, growth: "+4%" },
-  IDMA: { value: 45, customers: 6, growth: "+2%" },
-  IDMU: { value: 30, customers: 3, growth: "0%" },
-  IDNB: { value: 70, customers: 10, growth: "+5%" },
-  IDNT: { value: 50, customers: 7, growth: "+3%" },
-  IDPA: { value: 20, customers: 2, growth: "-2%" },
-  IDPB: { value: 15, customers: 1, growth: "-3%" },
-  IDRI: { value: 65, customers: 11, growth: "+4%" },
-  IDSA: { value: 40, customers: 5, growth: "+1%" },
-  IDSB: { value: 80, customers: 16, growth: "+8%" },
-  IDSG: { value: 35, customers: 4, growth: "+1%" },
-  IDSN: { value: 75, customers: 15, growth: "+6%" },
-  IDSR: { value: 25, customers: 3, growth: "-1%" },
-  IDSS: { value: 60, customers: 8, growth: "+3%" },
-  IDST: { value: 50, customers: 6, growth: "+2%" },
-  IDSU: { value: 85, customers: 21, growth: "+9%" },
-  IDYO: { value: 90, customers: 22, growth: "+8%" },
+// Only the provinces you actually want pinned as customer locations.
+// Add/remove keys here to control which pins show up on the map.
+export type CustomerRegion = {
+  name: string;
+  city: string;
+  customers: number;
+  growth: string;
+  highlights: string[];
+  description: string;
 };
+
+export const customerRegions: Record<string, CustomerRegion> = {
+  IDJK: {
+    name: "Jakarta",
+    city: "Jakarta & sekitarnya",
+    customers: 1,
+    growth: "+10%",
+    highlights: ["UMKM Retail", "Startup Fintech", "Manufaktur"],
+    description: "Pusat bisnis dan teknologi Indonesia.",
+  },
+  IDJB: {
+    name: "Jawa Barat",
+    city: "Bandung & sekitarnya",
+    customers: 2,
+    growth: "+10%",
+    highlights: ["UMKM Retail", "Startup Fintech", "Manufaktur"],
+    description:
+      "Basis klien terbesar kami, didominasi bisnis retail dan startup digital di kawasan Bandung Raya.",
+  },
+  IDYO: {
+    name: "Yogyakarta",
+    city: "Kota Jogja",
+    customers: 5,
+    growth: "+8%",
+    highlights: ["Edtech", "UMKM Kreatif", "F&B"],
+    description:
+      "Pusat kolaborasi kami dengan komunitas kreatif dan kampus, banyak proyek edtech dan UMKM lokal.",
+  },
+  IDJI: {
+    name: "Jawa Timur",
+    city: "Surabaya & Malang",
+    customers: 1,
+    growth: "+1%",
+    highlights: ["UMKM"],
+    description:
+      "Banyak klien UMKM di Surabaya dan Malang, termasuk bisnis kuliner, fashion, dan jasa.",
+  },
+  IDBA: {
+    name: "Bali",
+    city: "Denpasar & Badung",
+    customers: 2,
+    growth: "+7%",
+    highlights: ["Hospitality", "Travel Tech", "UMKM Ekspor"],
+    description:
+      "Klien berbasis pariwisata dan hospitality, dengan kebutuhan sistem booking dan manajemen properti.",
+  },
+  IDPA: {
+    name: "Papua",
+    city: "Jayapura",
+    customers: 1,
+    growth: "2%",
+    highlights: ["Pemerintahan Daerah", "Pembangunan Infrastruktur"],
+    description: "Membantu membangun infrastruktur digital Provinsi Papua.",
+  },
+};
+
+// (sampleData kept for backward-compat if referenced elsewhere; safe to delete if unused)
+export const sampleData = customerRegions;
