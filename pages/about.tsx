@@ -78,7 +78,7 @@ const team = [
   {
     img: "/assets/employee/rabih.jpg",
     name: "Rabih Utomo, S.Kom.",
-    role: "Engineer, AI & Cybersecurity",
+    role: "-",
     linkedin: "https://www.linkedin.com/in/rabih-ganteng/",
     instagram: "https://www.instagram.com/0xrabih",
   },
