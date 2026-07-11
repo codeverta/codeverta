@@ -72,13 +72,13 @@ const team = [
   {
     img: "/assets/employee/samantha_meliora_boss.jpeg",
     name: "Samantha Meliora Samosir B.Sc.IT",
-    role: "Co-Founder",
+    role: "Co-Founder, PM",
     linkedin: "https://www.linkedin.com/in/samanthameliorasamosir/",
   },
   {
     img: "/assets/employee/rabih.jpg",
-    name: "Rabih Utomo, S.Kom.",
-    role: "-",
+    name: "Rabih Utomo",
+    role: "Engineer",
     linkedin: "https://www.linkedin.com/in/rabih-ganteng/",
     instagram: "https://www.instagram.com/0xrabih",
   },
