@@ -44,7 +44,7 @@ export default function HeroSection({ t }) {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-br from-gray-900 via-gray-800 to-gray-500 dark:from-white dark:via-gray-200 dark:to-gray-500 pb-4 leading-[1.1]">
             {t("home.hero.prefix")} <br />
             <RotatingText
-              texts={safeRotatingTexts}
+              texts={rotatingTexts}
               mainClassName="inline mt-2 px-3 sm:px-4 md:px-5 bg-cyan-400 dark:bg-cyan-500 text-gray-900 overflow-hidden py-1 sm:py-2 md:py-2 justify-center rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] border-2 border-gray-900 dark:border-white transition-all"
               staggerFrom={"last"}
               initial={{ y: "100%" }}
@@ -56,13 +56,6 @@ export default function HeroSection({ t }) {
               rotationInterval={2500}
             />{" "}
             {t("home.hero.suffix")}
-            {/* {t("home.hero.suffix")
-              .split("\n")
-              .map((line, index) => (
-                <span key={index} className="block mt-2">
-                  {line}
-                </span>
-              ))} */}
           </h1>
 
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">

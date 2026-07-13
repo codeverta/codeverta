@@ -377,6 +377,14 @@
         "/assets/products/35.png",
         "/assets/products/36.png",
         "/assets/products/37.png"
+      ],
+      "screenshots": [
+        "/assets/learning-management-system/ai-chat.png",
+        "/assets/learning-management-system/certificate.png",
+        "/assets/learning-management-system/learning-schedule.png",
+        "/assets/learning-management-system/lessong-detail.png",
+        "/assets/learning-management-system/quizzes.png",
+        "/assets/learning-management-system/subscriptions.png"
       ]
     }
   },
@@ -555,17 +563,32 @@
         "/assets/healthcare/preview.png",
         "/assets/healthcare/rekam-medis-elektronik.png",
         "/assets/healthcare/manajemen-klinik.png",
-        "/assets/products/SCR-20250728-bkxj.png"
+        "/assets/healthcare/doctor-dashboard.png"
       ],
       "gallery": [
-        "/assets/products/SCR-20250728-bkry.png",
-        "/assets/products/SCR-20250728-bkug.png",
-        "/assets/images/meeting.jpeg",
-        "/assets/products/4.jpeg",
-        "/assets/products/43.jpeg",
-        "/assets/products/49.jpeg",
-        "/assets/images/privy.png",
-        "/assets/images/copilot.png"
+        "/assets/healthcare/lab-test-investigation.png",
+        "/assets/healthcare/preview.png",
+        "/assets/healthcare/profitability-analysis.png",
+        "/assets/healthcare/service-unit-tree.png",
+        "/assets/healthcare/issues.png",
+        "/assets/healthcare/medication-request.png",
+        "/assets/healthcare/patient-schedule.png",
+        "/assets/healthcare/maintenance-tasks.png",
+        "/assets/healthcare/patient-abha.png",
+        "/assets/healthcare/rekam-medis-elektronik.png",
+        "/assets/healthcare/healthcare-patient-appointment.png",
+        "/assets/healthcare/admit-patient.png",
+        "/assets/healthcare/manajemen-klinik.png",
+        "/assets/healthcare/doctor-detail.png",
+        "/assets/healthcare/point-of-sales-pharamcy.png",
+        "/assets/healthcare/patient-history.png",
+        "/assets/healthcare/sertifikasi-rumah-sakit.png",
+        "/assets/healthcare/stock-ageing.png",
+        "/assets/healthcare/patient-detail.png",
+        "/assets/healthcare/asset-maintenance-log.png",
+        "/assets/healthcare/monthly-attendance-sheet.png",
+        "/assets/healthcare/patient-medication-history.png",
+        "/assets/healthcare/doctor-dashboard.png"
       ]
     }
   },
