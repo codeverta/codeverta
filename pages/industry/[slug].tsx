@@ -435,6 +435,41 @@ export default function IndustryDetailPage({
           </div>
         </section>
 
+        {/* ── App Screenshots (education LMS) ── */}
+        {industry.images?.screenshots &&
+          industry.images.screenshots.length > 0 && (
+            <section className="bg-white py-24 px-6 border-b border-slate-200">
+              <div className="max-w-[90rem] mx-auto">
+                <div className="text-center mb-16">
+                  <div className="text-xs font-black tracking-widest uppercase text-slate-400 mb-3">
+                    Platform Screenshots
+                  </div>
+                  <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+                    Learning Management System
+                  </h2>
+                  <p className="text-lg text-slate-500 max-w-2xl mx-auto">
+                    A look inside our LMS platform — from AI chat to
+                    certificates, schedules, and quizzes.
+                  </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {industry.images.screenshots.map((src, idx) => (
+                    <div
+                      key={idx}
+                      className="group bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300"
+                    >
+                      <img
+                        src={src}
+                        alt={`Screenshot ${idx + 1}`}
+                        className="w-full object-cover aspect-[4/3] group-hover:scale-[1.02] transition-transform duration-500"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
         {/* ── Explore More Industries ── */}
         <section className="bg-white py-32 px-6 border-b border-slate-200">
           <div className="max-w-[90rem] mx-auto">

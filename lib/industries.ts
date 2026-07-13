@@ -13,6 +13,7 @@ export type Industry = {
   images: {
     hero: string[];
     gallery: string[];
+    screenshots?: string[];
   };
 };
 
