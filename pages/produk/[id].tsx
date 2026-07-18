@@ -36,7 +36,8 @@ import {
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { appendOfficeLocation } from "@/lib/seo";
+import { appendOfficeLocation, getLocalizedUrl } from "@/lib/seo";
+import SeoHead from "@/components/SeoHead";
 
 import Link from "next/link";
 import {
@@ -414,7 +415,7 @@ export default function ProjectDetailPage({
 
   const { locale = "id" } = useRouter();
   const siteUrl = "https://www.codeverta.com";
-  const pageUrl = `${siteUrl}/produk/${project.slug}`;
+  const pageUrl = getLocalizedUrl(locale, `/produk/${product.id}`);
 
   const schema = {
     "@context": "https://schema.org",
@@ -457,25 +458,14 @@ export default function ProjectDetailPage({
 
   return (
     <>
+      <SeoHead
+        title={`Jasa Pembuatan ${product.name} - ${product.category}`}
+        description={finalDesc}
+        url={pageUrl}
+        image={`${siteUrl}${product.image}`}
+      />
+
       <Head>
-        <title>
-          Jasa Pembuatan {product.name} - {product.category}
-        </title>
-        <meta name="description" content={finalDesc} />
-        <link rel="canonical" href={pageUrl} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={pageUrl} />
-        <meta property="og:title" content={`Jasa Pembuatan ${product.name}`} />
-        <meta property="og:description" content={finalDesc} />
-        <meta property="og:image" content={`${siteUrl}${product.image}`} />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content={pageUrl} />
-        <meta
-          property="twitter:title"
-          content={`Jasa Pembuatan ${product.name}`}
-        />
-        <meta property="twitter:description" content={finalDesc} />
-        <meta property="twitter:image" content={`${siteUrl}${product.image}`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}

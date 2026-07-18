@@ -86,7 +86,7 @@ const team = [
 
 const TeamSection = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 hidden bg-white">
       <div className="container mx-auto px-4">
         <div className="mb-14 text-center max-w-2xl mx-auto">
           <p className="text-sm font-semibold uppercase tracking-wide text-blue-600 mb-3">
