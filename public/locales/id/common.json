@@ -112,7 +112,8 @@
     "blog": "Blog",
     "careers": "Careers",
     "faq": "FAQ",
-    "about": "Tentang Kami"
+    "about": "Tentang Kami",
+    "contact": "Hubungi Kami"
   },
   "mega_menu": {
     "products": {
@@ -496,9 +497,9 @@
       "description": "Filter produk Codeverta berdasarkan industri dan area operasional, mulai dari POS, ERP, kesehatan, edukasi, gudang, hingga sistem manajemen pelanggan.",
       "all": "Semua kategori",
       "productsLabel": "Produk digital",
-      "categoriesLabel": "Kategori solusi",
+      "categoriesLabel": "Kategori produk",
       "productionReadyLabel": "Produk siap pakai atau selesai",
-      "showing": "Menampilkan {{count}} solusi",
+      "showing": "Menampilkan {{count}} produk",
       "emptyTitle": "Belum ada produk di kategori ini",
       "emptyDescription": "Pilih kategori lain atau hubungi kami untuk sistem custom."
     }

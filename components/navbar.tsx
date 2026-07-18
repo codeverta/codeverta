@@ -322,6 +322,75 @@ const Navbar = ({
     );
   };
 
+  // Simple dropdown for grouped nav items (children)
+  const [activeSimpleDropdown, setActiveSimpleDropdown] = useState<
+    string | null
+  >(null);
+
+  const SimpleDropdown = ({ category }) => {
+    const isOpen = activeSimpleDropdown === category.id;
+    return (
+      <div
+        className="relative"
+        onMouseEnter={() => {
+          setActiveSimpleDropdown(category.id);
+          setActiveMegaMenu(null);
+        }}
+        onMouseLeave={() => setActiveSimpleDropdown(null)}
+      >
+        <button
+          className={cn(
+            `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative flex items-center gap-1 py-8`,
+            isOpen && "text-foreground"
+          )}
+        >
+          {category.name}
+          <ChevronDown
+            className={`w-4 h-4 transition-transform duration-200 ${
+              isOpen ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.15 }}
+              className="absolute top-full left-1/2 -translate-x-1/2 min-w-[220px] bg-background border rounded-2xl shadow-xl z-[60] py-2 overflow-hidden"
+            >
+              {category.children.map((child) => {
+                const isExt = child.external || child.id.startsWith("http");
+                const Tag = isExt ? "a" : Link;
+                return (
+                  <Tag
+                    key={child.id}
+                    href={child.id}
+                    target={isExt ? "_blank" : undefined}
+                    rel={isExt ? "noopener noreferrer" : undefined}
+                    onClick={() => setActiveSimpleDropdown(null)}
+                    className="flex flex-col px-4 py-3 hover:bg-accent transition-colors group"
+                  >
+                    <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                      {child.name}
+                    </span>
+                    {child.description && (
+                      <span className="text-xs text-muted-foreground mt-0.5 leading-relaxed">
+                        {child.description}
+                      </span>
+                    )}
+                  </Tag>
+                );
+              })}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
+  };
+
   // ------------------------------------------------------------------------------------------------
 
   return (
@@ -356,10 +425,16 @@ const Navbar = ({
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex gap-6 xl:gap-8 absolute left-1/2 -translate-x-1/2 items-center">
             {categories.map((category) => {
+              // Grouped dropdown (children array)
+              if (category.children && category.children.length > 0) {
+                return <SimpleDropdown key={category.id} category={category} />;
+              }
+
+              // Legacy: mega menu
               const hasMegaMenu =
                 category.isDropdown && megaMenuData[category.id];
               const isExternal = category.id.startsWith("http");
-              const Tag = isExternal ? "a" : Link; // Otomatis ganti ke tag <a> jika eksternal
+              const Tag = isExternal ? "a" : Link;
 
               return (
                 <div
@@ -463,6 +538,76 @@ const Navbar = ({
             <div className="container mx-auto px-4 py-4 space-y-4">
               <div className="flex flex-col space-y-1">
                 {categories.map((category) => {
+                  // ── Grouped children dropdown ──────────────────
+                  if (category.children && category.children.length > 0) {
+                    const isOpen = activeMobileDropdown === category.id;
+                    return (
+                      <div key={category.id} className="rounded-lg">
+                        <button
+                          type="button"
+                          onClick={() => toggleMobileDropdown(category.id)}
+                          className="w-full flex items-center justify-between text-sm font-medium text-muted-foreground hover:text-foreground py-2.5 px-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+                          aria-expanded={isOpen}
+                        >
+                          <span>{category.name}</span>
+                          <ChevronDown
+                            className={`w-4 h-4 transition-transform ${
+                              isOpen ? "rotate-180" : ""
+                            }`}
+                          />
+                        </button>
+
+                        <AnimatePresence>
+                          {isOpen && (
+                            <motion.div
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: "auto" }}
+                              exit={{ opacity: 0, height: 0 }}
+                              transition={{ duration: 0.18 }}
+                              className="overflow-hidden"
+                            >
+                              <div className="mt-1 rounded-xl border bg-muted/20 p-2 space-y-0.5">
+                                {category.children.map((child) => {
+                                  const isExt =
+                                    child.external ||
+                                    child.id.startsWith("http");
+                                  const Tag = isExt ? "a" : Link;
+                                  return (
+                                    <Tag
+                                      key={child.id}
+                                      href={child.id}
+                                      target={isExt ? "_blank" : undefined}
+                                      rel={
+                                        isExt
+                                          ? "noopener noreferrer"
+                                          : undefined
+                                      }
+                                      onClick={() => {
+                                        setActiveMobileDropdown(null);
+                                        setMobileMenuOpen(false);
+                                      }}
+                                      className="flex flex-col rounded-lg px-3 py-2.5 hover:bg-background transition-colors"
+                                    >
+                                      <span className="text-sm font-medium text-foreground">
+                                        {child.name}
+                                      </span>
+                                      {child.description && (
+                                        <span className="mt-0.5 text-xs leading-relaxed text-muted-foreground line-clamp-1">
+                                          {child.description}
+                                        </span>
+                                      )}
+                                    </Tag>
+                                  );
+                                })}
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    );
+                  }
+
+                  // ── Legacy mega menu ───────────────────────────
                   const isExternal = category.id.startsWith("http");
                   const hasMegaMenu =
                     category.isDropdown && megaMenuData[category.id];
@@ -535,6 +680,7 @@ const Navbar = ({
                     );
                   }
 
+                  // ── Plain link ─────────────────────────────────
                   return (
                     <Tag
                       key={category.id}

@@ -259,39 +259,6 @@ export default function ITProductsShowcase({ projects }: ProductsPageProps) {
               {t("productsPage.hero.subtitle")}
             </p>
           </div>
-
-          <section className="mb-10">
-            <div className="grid gap-4 md:grid-cols-3">
-              <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-                <Boxes className="mb-4 h-5 w-5 text-blue-600" />
-                <p className="text-3xl font-bold text-slate-900">
-                  {projects.length}
-                </p>
-                <p className="mt-1 text-sm text-slate-500">
-                  {t("productsPage.categories.productsLabel")}
-                </p>
-              </div>
-              <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-                <Layers3 className="mb-4 h-5 w-5 text-teal-600" />
-                <p className="text-3xl font-bold text-slate-900">
-                  {categories.length - 1}
-                </p>
-                <p className="mt-1 text-sm text-slate-500">
-                  {t("productsPage.categories.categoriesLabel")}
-                </p>
-              </div>
-              <div className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-                <PackageCheck className="mb-4 h-5 w-5 text-emerald-600" />
-                <p className="text-3xl font-bold text-slate-900">
-                  {productionReadyCount}
-                </p>
-                <p className="mt-1 text-sm text-slate-500">
-                  {t("productsPage.categories.productionReadyLabel")}
-                </p>
-              </div>
-            </div>
-          </section>
-
           <section className="mb-8 rounded-xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
             <div className="mb-5 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
               <div>
@@ -453,26 +420,6 @@ export default function ITProductsShowcase({ projects }: ProductsPageProps) {
               </p>
             </div>
           )}
-
-          {/* Call to Action */}
-          <div className="text-center mt-16">
-            <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto">
-              <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                {t("productsPage.cta.title")}
-              </h2>
-              <p className="text-slate-600 mb-6">
-                {t("productsPage.cta.description")}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <WhatsappWrapper className="inline-flex">
-                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                    <ExternalLink className="w-5 h-5 mr-2" />
-                    {t("home.badges.consultation")}
-                  </Button>
-                </WhatsappWrapper>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </>
