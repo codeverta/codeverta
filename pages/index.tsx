@@ -161,33 +161,97 @@ export default function LandingPage({ projects }: any) {
               {t("trustedBy")}
             </p>
 
-            <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-              <div className="flex animate-scroll gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
-                {[...logos, ...logos].map((logo, index) => (
-                  <Link
-                    key={index}
-                    href={logo.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-none"
-                  >
-                    <img
-                      src={logo.src}
-                      alt={logo.alt}
-                      title={logo.alt}
-                      className={clsx(
-                        "h-12 md:h-20 w-auto opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 dark:invert",
-                        logo.classes
+            {(() => {
+              const half = Math.ceil(logos.length / 2);
+              const row1 = logos.slice(0, half);
+              const row2 = logos.slice(half);
+
+              return (
+                <div className="flex flex-col gap-8">
+                  {/* Row 1 - Scroll Left */}
+                  <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                    <div className="flex animate-scroll-left gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
+                      {[...row1, ...row1, ...row1, ...row1].map(
+                        (logo, index) => (
+                          <div
+                            key={index}
+                            className="group/item relative flex flex-col items-center flex-none"
+                          >
+                            <Link
+                              href={logo.url}
+                              target={logo.url !== "#" ? "_blank" : undefined}
+                              rel={
+                                logo.url !== "#"
+                                  ? "noopener noreferrer"
+                                  : undefined
+                              }
+                              className="flex-none flex items-center justify-center"
+                            >
+                              <img
+                                src={logo.src}
+                                alt={logo.alt}
+                                title={logo.alt}
+                                className={clsx(
+                                  "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110 dark:invert",
+                                  logo.classes
+                                )}
+                              />
+                            </Link>
+                            {/* Company Name Tooltip / Label on Hover */}
+                            <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
+                              {logo.alt}
+                            </span>
+                          </div>
+                        )
                       )}
-                    />
-                  </Link>
-                ))}
-              </div>
-            </div>
+                    </div>
+                  </div>
+
+                  {/* Row 2 - Scroll Right */}
+                  <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                    <div className="flex animate-scroll-right gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
+                      {[...row2, ...row2, ...row2, ...row2].map(
+                        (logo, index) => (
+                          <div
+                            key={index}
+                            className="group/item relative flex flex-col items-center flex-none"
+                          >
+                            <Link
+                              href={logo.url}
+                              target={logo.url !== "#" ? "_blank" : undefined}
+                              rel={
+                                logo.url !== "#"
+                                  ? "noopener noreferrer"
+                                  : undefined
+                              }
+                              className="flex-none flex items-center justify-center"
+                            >
+                              <img
+                                src={logo.src}
+                                alt={logo.alt}
+                                title={logo.alt}
+                                className={clsx(
+                                  "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110 dark:invert",
+                                  logo.classes
+                                )}
+                              />
+                            </Link>
+                            {/* Company Name Tooltip / Label on Hover */}
+                            <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
+                              {logo.alt}
+                            </span>
+                          </div>
+                        )
+                      )}
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
           </div>
 
           <style jsx>{`
-            @keyframes scroll {
+            @keyframes scrollLeft {
               from {
                 transform: translateX(0);
               }
@@ -196,16 +260,25 @@ export default function LandingPage({ projects }: any) {
               }
             }
 
-            .animate-scroll {
-              display: flex;
-              width: max-content;
-              animation: scroll 10s linear infinite;
+            @keyframes scrollRight {
+              from {
+                transform: translateX(-50%);
+              }
+              to {
+                transform: translateX(0);
+              }
             }
 
-            @media (min-width: 768px) {
-              .animate-scroll {
-                animation: scroll 30s linear infinite;
-              }
+            .animate-scroll-left {
+              display: flex;
+              width: max-content;
+              animation: scrollLeft 25s linear infinite;
+            }
+
+            .animate-scroll-right {
+              display: flex;
+              width: max-content;
+              animation: scrollRight 25s linear infinite;
             }
           `}</style>
         </section>

@@ -615,5 +615,21 @@
         "answer": "네, 완벽하게 지원합니다. 저희가 빌드하는 모든 웹 기반 시스템 및 정보 플랫폼은 고도화된 미디어 쿼리 기반의 반응형 자바스크립트 아키텍처(Responsive Web)를 기본 탑재하고 있어, 넓은 화면의 고해상도 데스크톱 모니터는 물론 사무용 태블릿 디바이스, 그리고 현장 근무자들의 다양한 스마트폰 환경에서도 일관되게 최적화된 화면 레이아웃과 직관적인 터치 UX 인터페이스를 선사합니다. 특히 공장/물류 현장의 PDA 터치 단말기나 오프라인 매장의 특수 POS 터치 스크린 하드웨어 등 야외 특수 환경에서 구동될 특수 디바이스용 인터페이스의 경우, 열악한 조도와 현장 필드 작업자의 글러브 터치 환경까지 디테일하게 고려한 전용 터치 최적화 UI 가이드를 적용해 드립니다."
       }
     ]
+  },
+  "careersPage": {
+    "seo": {
+      "title": "Codeverta Careers - Join Our Software House & IT Solutions Team",
+      "description": "Discover career opportunities at Codeverta for developers, designers, and tech talents looking to build websites, apps, ERP, POS, and business IT solutions.",
+      "keywords": "Codeverta careers, software house jobs, developer jobs, Indonesia IT jobs, tech careers"
+    },
+    "title": "Join Our Team",
+    "subtitle": "We build the technology of tomorrow with integrity and innovation.",
+    "open_positions": "Open Positions",
+    "open_positions_count": "{{count}} Openings",
+    "apply_now": "Apply Now",
+    "no_jobs_title": "No Open Positions Currently",
+    "no_jobs_description": "Although we may not have active openings right now, we are always interested in meeting exceptional talent. If you believe you can bring value to our team, feel free to send your CV for our database.",
+    "send_email": "Send an Intro Email",
+    "future_contact_note": "We will reach out to you if a suitable position opens up in the future."
   }
 }

@@ -770,7 +770,11 @@ export function normalizePath(path = "/") {
 export function getLocalizedUrl(locale: string, path = "/") {
   const safeLocale = normalizeLocale(locale);
   const cleanPath = normalizePath(path).replace(/^\/+/, "");
-  return `${SITE_URL}/${safeLocale}${cleanPath ? `/${cleanPath}` : ""}`;
+  const localizedPath =
+    safeLocale === DEFAULT_LOCALE
+      ? cleanPath
+      : `${safeLocale}${cleanPath ? `/${cleanPath}` : ""}`;
+  return `${SITE_URL}${localizedPath ? `/${localizedPath}` : ""}`;
 }
 
 export function getAlternateLinks(path = "/") {
