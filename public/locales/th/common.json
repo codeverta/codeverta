@@ -615,5 +615,21 @@
         "answer": "รองรับอย่างสมบูรณ์ครับ ระบบเว็บของเราแสดงผลได้เป็นระเบียบสวยงามทั้งบนเดสก์ท็อป แท็บเล็ต และสมาร์ทโฟน นอกจากนี้ อินเทอร์เฟซของระบบ POS หรือ WMS ยังสามารถปรับแต่งให้เหมาะสมสำหรับอุปกรณ์หน้าจอสัมผัสและการปฏิบัติงานในภาคสนามได้อีกด้วย"
       }
     ]
+  },
+  "careersPage": {
+    "seo": {
+      "title": "Codeverta Careers - Join Our Software House & IT Solutions Team",
+      "description": "Discover career opportunities at Codeverta for developers, designers, and tech talents looking to build websites, apps, ERP, POS, and business IT solutions.",
+      "keywords": "Codeverta careers, software house jobs, developer jobs, Indonesia IT jobs, tech careers"
+    },
+    "title": "Join Our Team",
+    "subtitle": "We build the technology of tomorrow with integrity and innovation.",
+    "open_positions": "Open Positions",
+    "open_positions_count": "{{count}} Openings",
+    "apply_now": "Apply Now",
+    "no_jobs_title": "No Open Positions Currently",
+    "no_jobs_description": "Although we may not have active openings right now, we are always interested in meeting exceptional talent. If you believe you can bring value to our team, feel free to send your CV for our database.",
+    "send_email": "Send an Intro Email",
+    "future_contact_note": "We will reach out to you if a suitable position opens up in the future."
   }
 }

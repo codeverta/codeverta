@@ -594,5 +594,21 @@
         "answer": "Ya. Sistem web kami dibuat responsif untuk desktop, tablet, dan smartphone. Untuk POS atau WMS, tampilan juga dapat dioptimalkan untuk perangkat sentuh dan operasional lapangan."
       }
     ]
+  },
+  "careersPage": {
+    "seo": {
+      "title": "Karier Codeverta - Bergabung dengan Tim Software House dan IT Solutions",
+      "description": "Temukan peluang karier di Codeverta untuk developer, designer, dan talenta teknologi yang ingin membangun website, aplikasi, ERP, POS, dan solusi IT bisnis.",
+      "keywords": "karier Codeverta, lowongan software house, pekerjaan developer, IT jobs Indonesia, karier teknologi"
+    },
+    "title": "Bergabung Bersama Kami",
+    "subtitle": "Kami membangun teknologi masa depan dengan integritas dan inovasi.",
+    "open_positions": "Posisi Terbuka",
+    "open_positions_count": "{{count}} Lowongan",
+    "apply_now": "Lamar Sekarang",
+    "no_jobs_title": "Saat ini belum ada posisi terbuka",
+    "no_jobs_description": "Meskipun kami tidak sedang membuka rekrutmen aktif, kami selalu tertarik bertemu talenta luar biasa. Jika Anda yakin memiliki nilai tambah, kirimkan CV Anda untuk basis data kami.",
+    "send_email": "Kirim Email Perkenalan",
+    "future_contact_note": "Kami akan menghubungi Anda jika ada posisi yang sesuai di masa depan."
   }
 }

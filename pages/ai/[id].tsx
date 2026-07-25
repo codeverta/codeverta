@@ -26,6 +26,12 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import DisqusThread from "components/DisqusThread";
 import ScrollIndicator from "@/components/ScrollIndicator";
 import AdSense from "components/AdSense"; // Ensure this path is correct
+import {
+  getAlternateLinks,
+  getLocalizedUrl,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/seo";
 
 // --- Helper Components ---
 
@@ -250,22 +256,31 @@ const Breadcrumb = ({ postTitle }) => (
 
 // --- Main Component ---
 
-function Post({ postData, slug, allPostsData }) {
+function Post({ postData, slug, allPostsData, locale }) {
   const backgroundImageUrl = `https://picsum.photos/seed/${slug}/800/450`;
   const readingTime = estimateReadingTime(
     postData.contentHtml.replace(/<[^>]*>/g, "")
   );
+  const pagePath = `/ai/${slug}`;
+  const canonicalUrl = getLocalizedUrl(locale, pagePath);
+  const seoTitle = `${postData.title} | ${SITE_NAME} AI Insights`;
+  const seoDescription =
+    postData.desc ||
+    `Baca panduan AI dari ${SITE_NAME} tentang ${postData.title}, lengkap dengan konsep, manfaat, workflow, dan penerapan untuk bisnis digital.`;
+
   return (
     <>
       <ScrollIndicator />
       <NextSeo
-        title={`${postData.title} | Million Candles`}
-        description={postData.desc}
+        title={seoTitle}
+        description={seoDescription}
+        canonical={canonicalUrl}
+        additionalLinkTags={getAlternateLinks(pagePath)}
         openGraph={{
-          title: postData.title,
-          description: postData.desc,
-          url: `https://www.souvenirlilin.id/posts/${slug}`,
-          siteName: "Million Candles",
+          title: seoTitle,
+          description: seoDescription,
+          url: canonicalUrl,
+          siteName: SITE_NAME,
           images: [
             {
               url: postData.image || backgroundImageUrl,
@@ -279,10 +294,10 @@ function Post({ postData, slug, allPostsData }) {
       />
       <BlogSchemaJsonLd
         post={postData}
-        baseUrl="https://souvenirlilin.id"
+        baseUrl={SITE_URL}
         author={{
           name: postData.author || "Rabih Utomo",
-          url: "https://souvenirlilin.id/about",
+          url: `${SITE_URL}/about`,
         }}
       />
       <BreadcrumbSchemaJsonLd slug={slug} postTitle={postData.title} />
@@ -348,7 +363,7 @@ function Post({ postData, slug, allPostsData }) {
                 <AdSense type="feed" className="mb-8" />
 
                 <DisqusThread
-                  url={"https://www.souvenirlilin.id/posts/" + slug}
+                  url={`${canonicalUrl}`}
                   identifier={slug}
                   title={postData.title}
                 />

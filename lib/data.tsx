@@ -81,6 +81,16 @@ export const logos = [
     alt: "Roxgym",
     url: "https://roxgym.id",
   },
+  {
+    src: "/assets/images/logo-kitafuture.png",
+    alt: "Kita Future",
+    url: "#",
+  },
+  {
+    src: "/assets/images/logo-inspirasien.png",
+    alt: "Inspirasien",
+    url: "#",
+  },
 ];
 
 export const features = [
