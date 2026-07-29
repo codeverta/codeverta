@@ -84,12 +84,12 @@ export const logos = [
   {
     src: "/assets/images/logo-kitafuture.png",
     alt: "Kita Future",
-    url: "#",
+    url: "https://kitafuture.com",
   },
   {
     src: "/assets/images/logo-inspirasien.png",
     alt: "Inspirasien",
-    url: "#",
+    url: "https://inspirasien.id",
   },
 ];
 
@@ -267,32 +267,70 @@ export const steps = [
 ];
 
 const industryNavItems = [
-  { slug: "manufacturing", icon: "⚙️", fallback: "Manufacturing" },
+  {
+    slug: "manufacturing",
+    icon: "⚙️",
+    fallback: "Manufacturing",
+    image: "/assets/erp/sales-forecast-for-manufacturing.png",
+  },
   {
     slug: "trading-distribution",
     icon: "📦",
     fallback: "Trading & Distribution",
+    image: "/assets/warehouse/preview.png",
   },
-  { slug: "retail", icon: "🛍️", fallback: "Retail" },
+  {
+    slug: "retail",
+    icon: "🛍️",
+    fallback: "Retail",
+    image: "/assets/coffeeshop/pos.png",
+  },
   {
     slug: "engineering-construction",
     icon: "🏗️",
     fallback: "Engineering & Construction",
+    image: "/assets/kontraktor/preview.png",
   },
-  { slug: "ecommerce", icon: "🛒", fallback: "E-commerce" },
-  { slug: "education", icon: "🎓", fallback: "Education" },
+  {
+    slug: "ecommerce",
+    icon: "🛒",
+    fallback: "E-commerce",
+    image: "/assets/e-commerce/landing-page.png",
+  },
+  {
+    slug: "education",
+    icon: "🎓",
+    fallback: "Education",
+    image: "/images/junior-koders.jpg",
+  },
   {
     slug: "professional-services",
     icon: "💼",
     fallback: "Professional Services",
+    image: "/images/meeting.jpeg",
   },
-  { slug: "financial-services", icon: "📊", fallback: "Financial Services" },
-  { slug: "healthcare", icon: "🏥", fallback: "Healthcare" },
-  { slug: "non-profit", icon: "🤝", fallback: "Non-profit" },
+  {
+    slug: "financial-services",
+    icon: "📊",
+    fallback: "Financial Services",
+    image: "/assets/erp/payments-homepage.png",
+  },
+  {
+    slug: "healthcare",
+    icon: "🏥",
+    fallback: "Healthcare",
+    image: "/assets/healthcare/preview.png",
+  },
+  {
+    slug: "non-profit",
+    icon: "🤝",
+    fallback: "Non-profit",
+    image: "/assets/images/kitabisa.jpg",
+  },
 ];
 
 export const getCategories = (t) => [
-  { id: "/produk", name: t("navbar.products"), isDropdown: false },
+  { id: "/produk", name: t("navbar.products"), isDropdown: true },
   { id: "/industry", name: t("navbar.industry"), isDropdown: true },
   {
     id: "pelajari",
@@ -357,6 +395,7 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => {
     return {
       name: `${item.icon} ${translated.title || item.fallback}`,
       href: `/industry/${item.slug}`,
+      image: item.image,
       description:
         translated.desc ||
         t("homePage.industries.subtitle") ||
@@ -376,6 +415,7 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => {
             {
               name: project.product.name,
               href: `/produk/${project.product.id}`,
+              image: project.product.image,
               description: project.product.description,
             },
           ],
@@ -387,6 +427,7 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => {
             {
               name: t("mega_menu.products.view_all"),
               href: "/produk",
+              image: "/assets/products/48.png",
               description: t("mega_menu.products.view_all_desc"),
             },
           ],
@@ -403,6 +444,7 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => {
             {
               name: t("navbar.industry"),
               href: "/industry",
+              image: "/assets/erp/homepage.png",
               description: t("homePage.industries.subtitle"),
             },
             ...industryItems.slice(0, 5),
