@@ -287,14 +287,14 @@ export default function LandingPage({ projects }: any) {
         {/* Tambahkan konten tersebut disini */}
         <ProjectsSection projects={projects} />
         {/* Features Section */}
-        <section id="features" className="w-full py-20 md:py-32">
+        <section id="features" className="w-full py-12 md:py-32">
           <div className="container px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
+              className="flex flex-col items-center justify-center space-y-3 md:space-y-4 text-center mb-8 md:mb-12"
             >
               <Badge
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
@@ -302,10 +302,10 @@ export default function LandingPage({ projects }: any) {
               >
                 {t("features.badge")}
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              <h2 className="text-2xl md:text-4xl font-bold tracking-tight">
                 {t("features.title")}
               </h2>
-              <p className="max-w-[800px] text-muted-foreground md:text-lg">
+              <p className="max-w-[800px] text-sm md:text-lg leading-relaxed">
                 {t("features.subtitle")}
               </p>
             </motion.div>
@@ -315,12 +315,19 @@ export default function LandingPage({ projects }: any) {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+              role="region"
+              aria-label={t("features.badge")}
+              tabIndex={0}
+              className="flex gap-4 overflow-x-auto overscroll-x-contain snap-x snap-mandatory scroll-smooth -mx-4 px-4 pb-3 md:mx-0 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             >
               {featureItems.map((feature, i) => (
-                <motion.div key={i} variants={item}>
+                <motion.div
+                  key={i}
+                  variants={item}
+                  className="min-w-[82vw] max-w-[82vw] snap-start sm:min-w-[46vw] sm:max-w-[46vw] md:min-w-0 md:max-w-none"
+                >
                   <Card className="h-full overflow-hidden border-border/40 bg-gradient-to-b from-background to-muted/10 backdrop-blur transition-all hover:shadow-md">
-                    <CardContent className="p-6 flex flex-col h-full">
+                    <CardContent className="p-5 md:p-6 flex flex-col h-full">
                       <div className="size-10 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center text-primary mb-4">
                         {feature.icon}
                       </div>
@@ -389,14 +396,14 @@ export default function LandingPage({ projects }: any) {
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="w-full py-20 md:py-32">
+        <section id="testimonials" className="w-full py-12 md:py-32">
           <div className="container px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
+              className="flex flex-col items-center justify-center space-y-3 md:space-y-4 text-center mb-8 md:mb-12"
             >
               <Badge
                 className="rounded-full px-4 py-1.5 text-sm font-medium"
@@ -404,15 +411,20 @@ export default function LandingPage({ projects }: any) {
               >
                 {t("testimonials.badge")}
               </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              <h2 className="text-2xl md:text-4xl font-bold tracking-tight">
                 {t("testimonials.title")}
               </h2>
-              <p className="max-w-[800px] text-muted-foreground md:text-lg">
+              <p className="max-w-[800px] text-sm md:text-lg leading-relaxed">
                 {t("testimonials.subtitle")}
               </p>
             </motion.div>
 
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div
+              role="region"
+              aria-label={t("testimonials.badge")}
+              tabIndex={0}
+              className="flex gap-4 overflow-x-auto overscroll-x-contain snap-x snap-mandatory scroll-smooth -mx-4 px-4 pb-3 md:mx-0 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-3 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
               {testimonialItems.map((testimonial, i) => (
                 <motion.div
                   key={i}
@@ -420,9 +432,10 @@ export default function LandingPage({ projects }: any) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: i * 0.05 }}
+                  className="min-w-[84vw] max-w-[84vw] snap-start sm:min-w-[46vw] sm:max-w-[46vw] md:min-w-0 md:max-w-none"
                 >
                   <Card className="h-full overflow-hidden border-border/40 bg-gradient-to-b from-background to-muted/10 backdrop-blur transition-all hover:shadow-md">
-                    <CardContent className="p-6 flex flex-col h-full">
+                    <CardContent className="p-5 md:p-6 flex flex-col h-full">
                       <div className="flex mb-4">
                         {Array(testimonial.rating)
                           .fill(0)
@@ -433,7 +446,7 @@ export default function LandingPage({ projects }: any) {
                             />
                           ))}
                       </div>
-                      <p className="text-lg mb-6 flex-grow">
+                      <p className="text-base md:text-lg mb-5 md:mb-6 flex-grow">
                         {testimonial.quote}
                       </p>
                       <div className="flex items-center gap-4 mt-auto pt-4 border-t border-border/40">
@@ -773,27 +786,32 @@ const industries = [
 
 function IndustrySection({ t, industries }) {
   return (
-    <section className="py-12 bg-background">
+    <section id="industries" className="py-12 bg-background">
       <div className="container px-4 md:px-6">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-8 md:mb-16">
           <h2 className="text-sm font-semibold tracking-widest uppercase text-primary mb-3">
             {t("homePage.industries.badge")}
           </h2>
-          <h3 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <h3 className="text-2xl md:text-4xl font-bold tracking-tight mb-3 md:mb-4">
             {t("homePage.industries.title")}
           </h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-sm md:text-lg leading-relaxed">
             {t("homePage.industries.subtitle")}
           </p>
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <div
+          role="region"
+          aria-label={t("homePage.industries.badge")}
+          tabIndex={0}
+          className="flex gap-4 overflow-x-auto overscroll-x-contain snap-x snap-mandatory scroll-smooth -mx-4 px-4 pb-3 md:mx-0 md:grid md:grid-cols-4 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+        >
           {industries.map((item, index) => (
             <div
               key={index}
-              className="group p-6 rounded-xl border bg-card transition-all hover:shadow-md hover:border-primary/50"
+              className="group min-w-[76vw] max-w-[76vw] snap-start p-5 rounded-xl border bg-card transition-all hover:shadow-md hover:border-primary/50 sm:min-w-[46vw] sm:max-w-[46vw] md:min-w-0 md:max-w-none md:p-6"
             >
               <item.icon className="w-8 h-8 mb-4 text-muted-foreground group-hover:text-primary transition-colors" />
               <h4 className="font-semibold text-base mb-2">{item.title}</h4>

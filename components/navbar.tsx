@@ -51,7 +51,8 @@ const Navbar = ({
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
-  const { locale, locales, push, pathname, asPath, query } = router;
+  const { locale, locales, defaultLocale, push, pathname, asPath, query } =
+    router;
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const lang = locale;
   const [localizedProjects, setLocalizedProjects] = useState(projects);
@@ -153,6 +154,12 @@ const Navbar = ({
 
     push({ pathname, query }, asPath, { locale: newLocale });
   };
+
+  // A document navigation prevents the top-level dynamic short-link route
+  // (`/[shortCode]`) from taking over `/produk` during a client transition.
+  const getProductHref = () =>
+    locale && locale !== defaultLocale ? `/${locale}/produk` : "/produk";
+
   const LanguageSwitcher = ({ isMobile = false }) => (
     <div className={isMobile ? "" : "relative"}>
       <button
@@ -287,24 +294,41 @@ const Navbar = ({
                 {column.title}
               </h3>
               <div className="space-y-3">
-                {column.items.map((item, itemIndex) => (
-                  <Link
-                    key={itemIndex}
-                    href={item.href}
-                    className="block group p-3 rounded-lg hover:bg-accent transition-colors duration-200"
-                    onClick={() => {
-                      setActiveMegaMenu(null);
-                      setMobileMenuOpen(false);
-                    }}
-                  >
-                    <div className="font-medium text-foreground group-hover:text-primary transition-colors duration-200">
-                      {item.name}
-                    </div>
-                    <div className="text-sm text-muted-foreground mt-1">
-                      {item.description}
-                    </div>
-                  </Link>
-                ))}
+                {column.items.map((item, itemIndex) => {
+                  const isProductsIndex = item.href === "/produk";
+                  const ItemTag = isProductsIndex ? "a" : Link;
+
+                  return (
+                    <ItemTag
+                      key={itemIndex}
+                      href={isProductsIndex ? getProductHref() : item.href}
+                      className="group flex gap-3 rounded-xl p-2 transition-colors duration-200 hover:bg-accent"
+                      onClick={() => {
+                        setActiveMegaMenu(null);
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      {item.image && (
+                        <div className="relative h-16 w-24 flex-none overflow-hidden rounded-lg border bg-muted">
+                          <img
+                            src={item.image}
+                            alt=""
+                            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
+                      <div className="min-w-0 py-0.5">
+                        <div className="font-medium text-foreground group-hover:text-primary transition-colors duration-200">
+                          {item.name}
+                        </div>
+                        <div className="mt-1 line-clamp-2 text-sm text-muted-foreground">
+                          {item.description}
+                        </div>
+                      </div>
+                    </ItemTag>
+                  );
+                })}
               </div>
             </div>
           ))}
@@ -340,8 +364,8 @@ const Navbar = ({
       >
         <button
           className={cn(
-            `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative flex items-center gap-1 py-8`,
-            isOpen && "text-foreground"
+            "relative flex cursor-pointer items-center gap-1 py-8 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground after:absolute after:bottom-5 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100",
+            isOpen && "text-primary after:scale-x-100"
           )}
         >
           {category.name}
@@ -404,7 +428,7 @@ const Navbar = ({
           {/* Logo */}
           <Link
             href={"/"}
-            className="flex-shrink-0 z-10 hover:bg-gray-50 dark:hover:bg-gray-800 p-2 rounded-lg cursor-pointer flex items-center gap-2 font-bold"
+            className="min-w-0 flex-shrink z-10 hover:bg-gray-50 dark:hover:bg-gray-800 p-1 sm:p-2 rounded-lg cursor-pointer flex items-center gap-2 font-bold"
             onClick={() => setMobileMenuOpen(false)}
           >
             <div className="size-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center overflow-hidden flex-shrink-0">
@@ -414,9 +438,9 @@ const Navbar = ({
                 className="size-full object-cover"
               />
             </div>
-            <div className="flex flex-col leading-tight hidden sm:flex">
-              <span className="text-base">Codeverta</span>
-              <span className="text-[10px] font-medium text-gray-500 tracking-tighter uppercase">
+            <div className="flex min-w-0 flex-col leading-tight">
+              <span className="text-sm sm:text-base">Codeverta</span>
+              <span className="truncate text-[8px] min-[360px]:text-[9px] sm:text-[10px] font-medium text-gray-500 tracking-tighter uppercase">
                 PT Zenit Technology Solution
               </span>
             </div>
@@ -431,10 +455,12 @@ const Navbar = ({
               }
 
               // Legacy: mega menu
-              const hasMegaMenu =
-                category.isDropdown && megaMenuData[category.id];
+              const hasMegaMenu = Boolean(
+                category.isDropdown && megaMenuData[category.id]
+              );
               const isExternal = category.id.startsWith("http");
-              const Tag = isExternal ? "a" : Link;
+              const isProductsIndex = category.id === "/produk";
+              const Tag = isExternal || isProductsIndex ? "a" : Link;
 
               return (
                 <div
@@ -443,15 +469,19 @@ const Navbar = ({
                   onMouseEnter={() => handleMegaMenuEnter(category.id)}
                 >
                   <Tag
-                    href={category.id}
+                    href={isProductsIndex ? getProductHref() : category.id}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noopener noreferrer" : undefined}
                     className={cn(
-                      `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative flex items-center gap-1 py-8 ${
+                      `text-sm font-medium text-muted-foreground transition-colors hover:text-foreground cursor-pointer relative flex items-center gap-1 py-8 after:absolute after:bottom-5 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:rounded-full after:bg-primary after:transition-transform after:duration-300 hover:after:scale-x-100 ${
                         !hiddenMenu.includes(category.name.toLowerCase())
                           ? ""
                           : "hidden"
-                      } ${activeMegaMenu === category.id ? "text-primary" : ""}`
+                      } ${
+                        activeMegaMenu === category.id
+                          ? "text-primary after:scale-x-100"
+                          : ""
+                      }`
                     )}
                   >
                     {category.name.includes("Produk Kami") && (
@@ -651,24 +681,46 @@ const Navbar = ({
                                       <p className="px-2 pb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                                         {column.title}
                                       </p>
-                                      {column.items.map((item, itemIndex) => (
-                                        <Link
-                                          key={itemIndex}
-                                          href={item.href}
-                                          onClick={() => {
-                                            setActiveMobileDropdown(null);
-                                            setMobileMenuOpen(false);
-                                          }}
-                                          className="block rounded-lg px-2 py-2 hover:bg-background"
-                                        >
-                                          <span className="block text-sm font-medium text-foreground">
-                                            {item.name}
-                                          </span>
-                                          <span className="mt-0.5 line-clamp-2 block text-xs leading-relaxed text-muted-foreground">
-                                            {item.description}
-                                          </span>
-                                        </Link>
-                                      ))}
+                                      {column.items.map((item, itemIndex) => {
+                                        const isProductsIndex =
+                                          item.href === "/produk";
+                                        const ItemTag = isProductsIndex
+                                          ? "a"
+                                          : Link;
+
+                                        return (
+                                          <ItemTag
+                                            key={itemIndex}
+                                            href={
+                                              isProductsIndex
+                                                ? getProductHref()
+                                                : item.href
+                                            }
+                                            onClick={() => {
+                                              setActiveMobileDropdown(null);
+                                              setMobileMenuOpen(false);
+                                            }}
+                                            className="flex gap-3 rounded-lg px-2 py-2 hover:bg-background"
+                                          >
+                                            {item.image && (
+                                              <img
+                                                src={item.image}
+                                                alt=""
+                                                className="h-12 w-16 flex-none rounded-md border object-cover"
+                                                loading="lazy"
+                                              />
+                                            )}
+                                            <span className="min-w-0">
+                                              <span className="block text-sm font-medium text-foreground">
+                                                {item.name}
+                                              </span>
+                                              <span className="mt-0.5 line-clamp-2 block text-xs leading-relaxed text-muted-foreground">
+                                                {item.description}
+                                              </span>
+                                            </span>
+                                          </ItemTag>
+                                        );
+                                      })}
                                     </div>
                                   )
                                 )}

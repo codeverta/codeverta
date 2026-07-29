@@ -44,9 +44,9 @@ export function ProjectsSection({ projects }: any) {
                   <Image
                     src={projectItem.product.image}
                     alt={projectItem.product.name}
-                    layout="fill"
-                    objectFit="contain"
-                    className="transition-transform duration-300 hover:scale-105"
+                    fill
+                    sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
+                    className="object-contain transition-transform duration-300 hover:scale-105"
                   />
                 </div>
               </CardHeader>
