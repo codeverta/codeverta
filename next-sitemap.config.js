@@ -1,33 +1,16 @@
 // next-sitemap.config.js
-// Updated: adds hreflang alternate links + additional sitemap entries for blog articles
+// Updated: adds dynamic path-specific hreflang alternate links for Next.js i18n
+const nextI18nConfig = require("./next-i18next.config");
+
+const siteUrl = process.env.SITE_URL || "https://codeverta.com";
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://codeverta.com",
+  siteUrl: siteUrl,
   generateRobotsTxt: true,
   sitemapSize: 5000,
 
-  // Add alternate language refs for every page
-  alternateRefs: [
-    { href: "https://codeverta.com", hreflang: "id" },
-    { href: "https://codeverta.com/en-US", hreflang: "en-US" },
-    { href: "https://codeverta.com/en-GB", hreflang: "en-GB" },
-    { href: "https://codeverta.com/zh", hreflang: "zh" },
-    { href: "https://codeverta.com/ja", hreflang: "ja" },
-    { href: "https://codeverta.com/ko", hreflang: "ko" },
-    { href: "https://codeverta.com/ms", hreflang: "ms" },
-    { href: "https://codeverta.com/de", hreflang: "de" },
-    { href: "https://codeverta.com/fr", hreflang: "fr" },
-    { href: "https://codeverta.com/es", hreflang: "es" },
-    { href: "https://codeverta.com/ar", hreflang: "ar" },
-    { href: "https://codeverta.com/hi", hreflang: "hi" },
-    { href: "https://codeverta.com/th", hreflang: "th" },
-    { href: "https://codeverta.com/vi", hreflang: "vi" },
-    { href: "https://codeverta.com/ru", hreflang: "ru" },
-    { href: "https://codeverta.com/nl", hreflang: "nl" },
-    { href: "https://codeverta.com", hreflang: "x-default" },
-  ],
-
-  // Priority and changefreq for different content types
+  // Priority and changefreq for different content types + dynamic hreflang generator
   transform: async (config, path) => {
     // Default priority
     let priority = 0.7;
@@ -48,8 +31,8 @@ module.exports = {
       priority = 0.8;
       changefreq = "monthly";
     }
-    // Blog/tutorial articles (problem-oriented content)
-    else if (path.startsWith("/tutorials")) {
+    // Blog/tutorial articles
+    else if (path.startsWith("/tutorials") || path.startsWith("/blog")) {
       priority = 0.8;
       changefreq = "weekly";
     }
@@ -59,11 +42,47 @@ module.exports = {
       changefreq = "daily";
     }
 
+    // Ensure clean path starting with /
+    const cleanPath = path.startsWith("/") ? path : `/${path}`;
+
+    // Extract raw route without locale prefix if present
+    let routePath = cleanPath;
+    for (const loc of nextI18nConfig.i18n.locales) {
+      if (
+        loc !== nextI18nConfig.i18n.defaultLocale &&
+        (routePath === `/${loc}` || routePath.startsWith(`/${loc}/`))
+      ) {
+        routePath = routePath.substring(loc.length + 1) || "/";
+        break;
+      }
+    }
+
+    // Generate alternateRefs using siteUrl + locale path
+    const alternateRefs = nextI18nConfig.i18n.locales.map((locale) => {
+      const isDefault = locale === nextI18nConfig.i18n.defaultLocale;
+      const localePath = isDefault
+        ? routePath
+        : `/${locale}${routePath === "/" ? "" : routePath}`;
+      return {
+        href: `${siteUrl}${localePath}`,
+        hreflang: locale,
+        hrefIsAbsolute: true,
+      };
+    });
+
+    // Add x-default
+    alternateRefs.push({
+      href: `${siteUrl}${routePath}`,
+      hreflang: "x-default",
+      hrefIsAbsolute: true,
+    });
+
     return {
-      loc: path,
+      loc: cleanPath,
       changefreq,
       priority,
       lastmod: new Date().toISOString(),
+      alternateRefs,
     };
   },
 
