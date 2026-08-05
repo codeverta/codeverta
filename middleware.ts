@@ -2,17 +2,63 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 const DEFAULT_LOCALE_PREFIX = "/id";
+const CANONICAL_HOST = "www.codeverta.com";
+const PRODUCTION_HOSTS = new Set(["codeverta.com", CANONICAL_HOST]);
 
 export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  // Use the standard URL implementation so query mutations are reflected in
+  // the redirect target consistently across standalone/proxied deployments.
+  const url = new URL(request.url);
+  const { pathname } = url;
+  const forwardedHost = request.headers.get("x-forwarded-host");
+  const hostHeader = forwardedHost || request.headers.get("host");
+  const hostname = (hostHeader || url.hostname).split(":")[0].toLowerCase();
+  const forwardedProtocol = request.headers.get("x-forwarded-proto");
+  const protocol = forwardedProtocol || url.protocol.replace(":", "");
+  let shouldRedirect = false;
+
+  // Keep redirects, canonicals, hreflang links, and sitemaps on one origin.
+  if (PRODUCTION_HOSTS.has(hostname)) {
+    if (hostname !== CANONICAL_HOST || url.hostname !== CANONICAL_HOST) {
+      url.hostname = CANONICAL_HOST;
+      url.port = "";
+      shouldRedirect = true;
+    }
+
+    if (protocol !== "https") {
+      url.protocol = "https:";
+      url.port = "";
+      shouldRedirect = true;
+    }
+  }
 
   if (
     pathname === DEFAULT_LOCALE_PREFIX ||
     pathname.startsWith(`${DEFAULT_LOCALE_PREFIX}/`)
   ) {
-    const url = request.nextUrl.clone();
     url.pathname = pathname.replace(DEFAULT_LOCALE_PREFIX, "") || "/";
-    return NextResponse.redirect(url, 308);
+    shouldRedirect = true;
+  }
+
+  // This legacy parameter is ignored by the page and only creates duplicates.
+  if (url.searchParams.has("tag")) {
+    url.searchParams.delete("tag");
+    shouldRedirect = true;
+  }
+
+  // Remove the structured-data template URL previously crawled by Google.
+  if (url.searchParams.has("s")) {
+    url.searchParams.delete("s");
+    shouldRedirect = true;
+  }
+
+  if (shouldRedirect) {
+    const redirectOrigin = PRODUCTION_HOSTS.has(hostname)
+      ? `https://${CANONICAL_HOST}`
+      : url.origin;
+    const redirectUrl = new URL(url.pathname, redirectOrigin);
+    redirectUrl.search = url.searchParams.toString();
+    return NextResponse.redirect(redirectUrl, 308);
   }
 
   return NextResponse.next();
@@ -20,6 +66,11 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)",
+    { source: "/", locale: false },
+    {
+      source:
+        "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)",
+      locale: false,
+    },
   ],
 };

@@ -777,6 +777,26 @@ export function getLocalizedUrl(locale: string, path = "/") {
   return `${SITE_URL}${localizedPath ? `/${localizedPath}` : ""}`;
 }
 
+function normalizeCanonicalUrl(url: string) {
+  try {
+    const parsedUrl = new URL(url, SITE_URL);
+    if (
+      parsedUrl.hostname === "codeverta.com" ||
+      parsedUrl.hostname === "www.codeverta.com"
+    ) {
+      parsedUrl.protocol = "https:";
+      parsedUrl.hostname = "www.codeverta.com";
+      parsedUrl.port = "";
+    }
+    parsedUrl.hash = "";
+    return parsedUrl
+      .toString()
+      .replace(/\/$/, parsedUrl.pathname === "/" ? "/" : "");
+  } catch {
+    return getLocalizedUrl(DEFAULT_LOCALE, url);
+  }
+}
+
 export function getAlternateLinks(path = "/") {
   return [
     ...SUPPORTED_LOCALES.map((locale) => ({
@@ -884,7 +904,9 @@ export function buildSeoMeta({
       description || sectionDescription || copy.description,
       safeLocale
     ),
-    canonical: canonical || getLocalizedUrl(safeLocale, safePath),
+    canonical: canonical
+      ? normalizeCanonicalUrl(canonical)
+      : getLocalizedUrl(safeLocale, safePath),
     image: image?.startsWith("http")
       ? image
       : image
