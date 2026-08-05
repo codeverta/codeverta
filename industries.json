@@ -44,12 +44,16 @@
     ],
     "images": {
       "hero": [
-        "/assets/erp/homepage.png",
+        "/assets/manufacturing/production-floor.png",
         "/assets/erp/sales-forecast-for-manufacturing.png",
         "/assets/warehouse/preview.png",
         "/assets/warehouse/dashboard.png"
       ],
       "gallery": [
+        "/assets/manufacturing/production-planning.png",
+        "/assets/manufacturing/inventory-warehouse.png",
+        "/assets/manufacturing/quality-control.png",
+        "/assets/manufacturing/maintenance-logistics.png",
         "/assets/warehouse/stock-entry.png",
         "/assets/warehouse/warehouse.png",
         "/assets/warehouse/perangkat-iot.png",
@@ -363,12 +367,16 @@
     ],
     "images": {
       "hero": [
-        "/assets/products/26.png",
+        "/assets/education/education-dashboard.png",
         "/assets/products/27.png",
         "/assets/products/28.png",
         "/assets/products/29.png"
       ],
       "gallery": [
+        "/assets/education/admissions-enrollment.png",
+        "/assets/education/course-schedule.png",
+        "/assets/education/fee-collection.png",
+        "/assets/education/student-portal.png",
         "/assets/products/30.png",
         "/assets/products/31.png",
         "/assets/products/32.png",
@@ -498,12 +506,14 @@
     ],
     "images": {
       "hero": [
-        "/assets/erp/homepage.png",
+        "/assets/financial-services/operations-command-center.png",
         "/assets/erp/payments-homepage.png",
         "/assets/products/38.png",
         "/assets/products/39.png"
       ],
       "gallery": [
+        "/assets/financial-services/portfolio-analysis.png",
+        "/assets/financial-services/compliance-review.png",
         "/assets/products/40.png",
         "/assets/products/41.png",
         "/assets/products/42.png",

@@ -80,6 +80,17 @@ const Navbar = ({
   }, []);
 
   useEffect(() => {
+    if (!mobileMenuOpen) return;
+
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [mobileMenuOpen]);
+
+  useEffect(() => {
     let cancelled = false;
     const localeCandidates = [
       locale,
@@ -419,9 +430,9 @@ const Navbar = ({
 
   return (
     <header
-      className={`print:hidden sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 ${
-        isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"
-      }`}
+      className={`print:hidden sticky top-0 w-full backdrop-blur-lg transition-all duration-300 ${
+        mobileMenuOpen ? "z-[100]" : "z-50"
+      } ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"}`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between relative">
@@ -559,13 +570,13 @@ const Navbar = ({
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
-            className="lg:hidden absolute top-16 inset-x-0 bg-background/95 backdrop-blur-lg border-b shadow-lg overflow-visible"
+            className="absolute inset-x-0 top-16 z-50 h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain border-t bg-background shadow-xl lg:hidden"
           >
-            <div className="container mx-auto px-4 py-4 space-y-4">
+            <div className="container mx-auto min-h-full space-y-3 px-4 py-3 pb-[calc(1rem+env(safe-area-inset-bottom))]">
               <div className="flex flex-col space-y-1">
                 {categories.map((category) => {
                   // ── Grouped children dropdown ──────────────────
@@ -671,14 +682,14 @@ const Navbar = ({
                               transition={{ duration: 0.18 }}
                               className="overflow-hidden"
                             >
-                              <div className="mt-1 space-y-3 rounded-xl border bg-muted/20 p-3">
+                              <div className="mt-1 space-y-3 rounded-xl border border-border/70 bg-muted/30 p-2.5">
                                 {megaMenuData[category.id].columns.map(
                                   (column, columnIndex) => (
                                     <div
                                       key={columnIndex}
-                                      className="space-y-1"
+                                      className="space-y-1.5"
                                     >
-                                      <p className="px-2 pb-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                                      <p className="px-2 pb-0.5 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
                                         {column.title}
                                       </p>
                                       {column.items.map((item, itemIndex) => {
@@ -700,21 +711,21 @@ const Navbar = ({
                                               setActiveMobileDropdown(null);
                                               setMobileMenuOpen(false);
                                             }}
-                                            className="flex gap-3 rounded-lg px-2 py-2 hover:bg-background"
+                                            className="flex items-start gap-3 rounded-lg bg-background/70 p-2 transition-colors hover:bg-background"
                                           >
                                             {item.image && (
                                               <img
                                                 src={item.image}
                                                 alt=""
-                                                className="h-12 w-16 flex-none rounded-md border object-cover"
+                                                className="h-14 w-20 flex-none rounded-lg border bg-muted object-cover"
                                                 loading="lazy"
                                               />
                                             )}
                                             <span className="min-w-0">
-                                              <span className="block text-sm font-medium text-foreground">
+                                              <span className="line-clamp-2 block text-sm font-semibold leading-snug text-foreground">
                                                 {item.name}
                                               </span>
-                                              <span className="mt-0.5 line-clamp-2 block text-xs leading-relaxed text-muted-foreground">
+                                              <span className="mt-1 block max-h-10 overflow-hidden text-xs leading-relaxed text-muted-foreground">
                                                 {item.description}
                                               </span>
                                             </span>
