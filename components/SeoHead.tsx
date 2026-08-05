@@ -1,12 +1,17 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { buildSeoMeta, getAlternateLinks, SITE_NAME } from "@/lib/seo";
+import {
+  buildSeoMeta,
+  getAlternateLinks,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/seo";
 
 export default function SeoHead({
   title = "Codeverta – Solusi Digital Bisnis Anda",
   description = "Platform profesional untuk pembuatan E-commerce, ERP, POS, HRMS, dan sistem digital lainnya.",
   url,
-  image = "https://codeverta.com/og-image.png",
+  image = `${SITE_URL}/og-image.png`,
   keywords = "",
 }) {
   const router = useRouter();

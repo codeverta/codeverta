@@ -2,7 +2,7 @@
 // Updated: adds dynamic path-specific hreflang alternate links for Next.js i18n
 const nextI18nConfig = require("./next-i18next.config");
 
-const siteUrl = process.env.SITE_URL || "https://codeverta.com";
+const siteUrl = process.env.SITE_URL || "https://www.codeverta.com";
 
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {

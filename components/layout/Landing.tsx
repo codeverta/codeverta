@@ -116,11 +116,6 @@ export default function Landing({ children, seo, localizedPaths }: Props) {
         publisher: {
           "@id": "https://www.codeverta.com/#organization",
         },
-        potentialAction: {
-          "@type": "SearchAction",
-          target: "https://www.codeverta.com/?s={search_term_string}",
-          queryInput: "required name=search_term_string",
-        },
         inLanguage: "id-ID",
       },
       {
