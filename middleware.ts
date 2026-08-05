@@ -13,20 +13,14 @@ export function middleware(request: NextRequest) {
   const forwardedHost = request.headers.get("x-forwarded-host");
   const hostHeader = forwardedHost || request.headers.get("host");
   const hostname = (hostHeader || url.hostname).split(":")[0].toLowerCase();
-  const forwardedProtocol = request.headers.get("x-forwarded-proto");
-  const protocol = forwardedProtocol || url.protocol.replace(":", "");
   let shouldRedirect = false;
 
-  // Keep redirects, canonicals, hreflang links, and sitemaps on one origin.
+  // Cloudflare Tunnel terminates HTTPS before this request reaches Next.js.
+  // Only normalize the public hostname here; forcing the internal HTTP hop to
+  // HTTPS causes an infinite redirect loop behind the tunnel.
   if (PRODUCTION_HOSTS.has(hostname)) {
-    if (hostname !== CANONICAL_HOST || url.hostname !== CANONICAL_HOST) {
+    if (hostname !== CANONICAL_HOST) {
       url.hostname = CANONICAL_HOST;
-      url.port = "";
-      shouldRedirect = true;
-    }
-
-    if (protocol !== "https") {
-      url.protocol = "https:";
       url.port = "";
       shouldRedirect = true;
     }
