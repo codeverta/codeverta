@@ -244,24 +244,24 @@ export default function IndustryDetailPage({
                 <div className="flex flex-col gap-6 -translate-y-12 group-hover:-translate-y-8 transition-transform duration-1000">
                   <img
                     src={industry.images.hero[0]}
-                    alt="Corporate"
+                    alt={`${industry.name} operations`}
                     className="rounded-3xl object-cover h-[350px] w-full shadow-2xl border border-white/10"
                   />
                   <img
                     src={industry.images.hero[1]}
-                    alt="Enterprise"
+                    alt={`${industry.name} analytics`}
                     className="rounded-3xl object-cover h-[250px] w-full shadow-2xl border border-white/10"
                   />
                 </div>
                 <div className="flex flex-col gap-6 translate-y-12 group-hover:translate-y-8 transition-transform duration-1000">
                   <img
                     src={industry.images.hero[2]}
-                    alt="Business"
+                    alt={`${industry.name} team`}
                     className="rounded-3xl object-cover h-[250px] w-full shadow-2xl border border-white/10"
                   />
                   <img
                     src={industry.images.hero[3]}
-                    alt="Architecture"
+                    alt={`${industry.name} workspace`}
                     className="rounded-3xl object-cover h-[350px] w-full shadow-2xl border border-white/10"
                   />
                 </div>
@@ -317,7 +317,7 @@ export default function IndustryDetailPage({
                   key={idx}
                   src={imgSrc}
                   className="rounded-2xl w-full object-cover break-inside-avoid shadow-sm hover:shadow-xl transition-all duration-300"
-                  alt={`Gallery ${idx + 1}`}
+                  alt={`${industry.name} operations visual ${idx + 1}`}
                 />
               ))}
             </div>
