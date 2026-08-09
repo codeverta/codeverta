@@ -5,6 +5,7 @@ import { getPostData, getAllPostIds } from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // Import komponen konten yang sudah kita buat
 import PostContent from "@/components/blog/post-content";
+import { getLocaleRedirect } from "@/lib/seo";
 
 const POST_CATEGORY = "gadget"; // Ganti ke "gadget" atau yang lain jika diperlukan
 
@@ -43,6 +44,8 @@ export default Post;
 
 export async function getStaticProps({ params, locale }) {
   const slug = params.id;
+  const redirect = getLocaleRedirect(locale, `/gadget/${slug}`);
+  if (redirect) return { notFound: true };
   const postData = await getPostData(slug, POST_CATEGORY); // Menggunakan kategori yang dipilih
 
   // Menambahkan data kategori/stats dasar ke postData jika diperlukan untuk komponen PostContent

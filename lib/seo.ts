@@ -24,6 +24,33 @@ export const SUPPORTED_LOCALES = [
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
+const PRODUCT_LOCALES: SupportedLocale[] = [
+  "id",
+  "en-US",
+  "zh",
+  "ja",
+  "ko",
+  "de",
+  "fr",
+  "th",
+];
+
+// These sections currently have Indonesian source content only. Publishing
+// locale-prefixed fallbacks as independent pages creates duplicate clusters.
+const DEFAULT_ONLY_SECTIONS = new Set([
+  "news",
+  "cybersecurity",
+  "ai",
+  "gadget",
+  "startups",
+  "tutorials",
+  "gallery",
+  "app",
+  "pdf",
+  "course",
+  "jasa-pembuatan-website-event",
+]);
+
 export const OG_LOCALES: Record<SupportedLocale, string> = {
   id: "id_ID",
   "en-US": "en_US",
@@ -777,6 +804,44 @@ export function getLocalizedUrl(locale: string, path = "/") {
   return `${SITE_URL}${localizedPath ? `/${localizedPath}` : ""}`;
 }
 
+export function getLocalizedPath(locale: string, path = "/") {
+  return getLocalizedUrl(locale, path).replace(SITE_URL, "") || "/";
+}
+
+export function getLocaleRedirect(locale: string | undefined, path: string) {
+  const canonicalLocale = getCanonicalLocale(locale, path);
+  if (normalizeLocale(locale) === canonicalLocale) return null;
+
+  return {
+    destination: getLocalizedPath(canonicalLocale, path),
+    permanent: true,
+  };
+}
+
+export function getAvailableLocalesForPath(path = "/"): SupportedLocale[] {
+  const cleanPath = normalizePath(path);
+  const section = cleanPath.split("/").filter(Boolean)[0] || "";
+
+  if (section === "produk") return PRODUCT_LOCALES;
+  if (DEFAULT_ONLY_SECTIONS.has(section)) return [DEFAULT_LOCALE];
+  return [...SUPPORTED_LOCALES];
+}
+
+export function getCanonicalLocale(locale?: string, path = "/") {
+  const safeLocale = normalizeLocale(locale);
+  const availableLocales = getAvailableLocalesForPath(path);
+
+  if (availableLocales.includes(safeLocale)) return safeLocale;
+  if (safeLocale === "en-GB" && availableLocales.includes("en-US")) {
+    return "en-US";
+  }
+  return DEFAULT_LOCALE;
+}
+
+export function isIndexableLocale(locale?: string, path = "/") {
+  return normalizeLocale(locale) === getCanonicalLocale(locale, path);
+}
+
 function normalizeCanonicalUrl(url: string) {
   try {
     const parsedUrl = new URL(url, SITE_URL);
@@ -797,9 +862,13 @@ function normalizeCanonicalUrl(url: string) {
   }
 }
 
-export function getAlternateLinks(path = "/") {
+export function getAlternateLinks(
+  path = "/",
+  locales?: readonly SupportedLocale[]
+) {
+  const availableLocales = locales || getAvailableLocalesForPath(path);
   return [
-    ...SUPPORTED_LOCALES.map((locale) => ({
+    ...availableLocales.map((locale) => ({
       rel: "alternate",
       hrefLang: locale,
       href: getLocalizedUrl(locale, path),
@@ -885,6 +954,7 @@ export function buildSeoMeta({
 } = {}): SeoMeta {
   const safeLocale = normalizeLocale(locale);
   const safePath = normalizePath(path);
+  const canonicalLocale = getCanonicalLocale(safeLocale, safePath);
   const copy = BASE_COPY[safeLocale];
   const segments = safePath.split("/").filter(Boolean);
   const sectionKey = segments[0] || "/";
@@ -906,7 +976,7 @@ export function buildSeoMeta({
     ),
     canonical: canonical
       ? normalizeCanonicalUrl(canonical)
-      : getLocalizedUrl(safeLocale, safePath),
+      : getLocalizedUrl(canonicalLocale, safePath),
     image: image?.startsWith("http")
       ? image
       : image

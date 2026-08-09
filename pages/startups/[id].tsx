@@ -23,6 +23,7 @@ import DisqusThread from "components/DisqusThread";
 import TOC from "@/components/TOC";
 // Dynamic Breadcrumb Component
 import Breadcrumb from "@/components/Breadcrumb";
+import { getLocaleRedirect } from "@/lib/seo";
 import { withI18n } from "@/lib/withi18n";
 function Post({ postData, slug }) {
   // Generate a random background image URL from Lorem Picsum
@@ -192,6 +193,8 @@ export const getStaticProps = withI18n(
   ["common"],
   async function ({ params, locale }) {
     const slug = params.id;
+    const redirect = getLocaleRedirect(locale, `/startups/${slug}`);
+    if (redirect) return { notFound: true };
     const postData = await getPostData(slug, "startups", locale ?? "id");
     return {
       props: {

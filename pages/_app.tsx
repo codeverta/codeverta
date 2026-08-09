@@ -5,7 +5,12 @@ import { NextSeo } from "next-seo";
 import packageInfo from "../package.json";
 import { appWithTranslation } from "next-i18next";
 import Landing from "@/components/layout/Landing";
-import { buildSeoMeta, getAlternateLinks, SITE_NAME } from "@/lib/seo";
+import {
+  buildSeoMeta,
+  getAlternateLinks,
+  isIndexableLocale,
+  SITE_NAME,
+} from "@/lib/seo";
 import { useRouter } from "next/router";
 import { GAScript, useGAPageView } from "@/components/GAScript";
 
@@ -21,11 +26,17 @@ function App({ Component, pageProps }: AppLayoutProps) {
     locale: router.locale,
     path: router.asPath,
   });
+  const indexableLocale = isIndexableLocale(router.locale, router.asPath);
   const page = <Component {...pageProps} {...appProps} />;
   const pageWithLayout = Component.getLayout ? (
     Component.getLayout(page)
   ) : (
-    <Landing localizedPaths={pageProps.localizedPaths}>{page}</Landing>
+    <Landing
+      localizedPaths={pageProps.localizedPaths}
+      availableLocales={pageProps.availableLocales}
+    >
+      {page}
+    </Landing>
   );
 
   // GA page view tracking
@@ -66,7 +77,7 @@ function App({ Component, pageProps }: AppLayoutProps) {
           },
           {
             name: "robots",
-            content: "index,follow",
+            content: indexableLocale ? "index,follow" : "noindex,follow",
           },
           {
             httpEquiv: "content-language",
@@ -77,7 +88,10 @@ function App({ Component, pageProps }: AppLayoutProps) {
             content: SITE_NAME,
           },
         ]}
-        additionalLinkTags={getAlternateLinks(seo.path)}
+        additionalLinkTags={getAlternateLinks(
+          seo.path,
+          pageProps.availableLocales
+        )}
       />
 
       {pageWithLayout}

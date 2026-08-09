@@ -6,6 +6,7 @@ import { useState, useEffect, useMemo } from "react";
 import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { getLocaleRedirect } from "@/lib/seo";
 
 // Shadcn UI components
 import { Button } from "@/components/ui/button";
@@ -828,6 +829,8 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 }
 
 export async function getStaticProps({ locale }) {
+  const redirect = getLocaleRedirect(locale, "/tutorials");
+  if (redirect) return { notFound: true };
   // Get posts and add sample categories and read times
   const allPostsData = getSortedPostsData("tutorials").map((post, index) => {
     // Add sample categories and read times (in a real app, these would come from the actual data)

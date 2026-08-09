@@ -10,8 +10,10 @@ import CookieConsent from "@/components/CookieConsent";
 import {
   buildSeoMeta,
   getAlternateLinks,
+  isIndexableLocale,
   SITE_NAME,
   SITE_URL,
+  SupportedLocale,
 } from "@/lib/seo";
 
 interface SEOProps {
@@ -46,9 +48,15 @@ interface Props {
   children: React.ReactNode;
   seo?: SEOProps;
   localizedPaths?: Record<string, string>;
+  availableLocales?: readonly SupportedLocale[];
 }
 
-export default function Landing({ children, seo, localizedPaths }: Props) {
+export default function Landing({
+  children,
+  seo,
+  localizedPaths,
+  availableLocales,
+}: Props) {
   const router = useRouter();
   const pageSEO = buildSeoMeta({
     locale: router.locale,
@@ -61,6 +69,7 @@ export default function Landing({ children, seo, localizedPaths }: Props) {
   });
   const locale = pageSEO.locale;
   const canonicalUrl = pageSEO.canonical;
+  const indexableLocale = isIndexableLocale(router.locale, router.asPath);
 
   // Default SEO values
   const defaultSEO = {
@@ -264,7 +273,7 @@ export default function Landing({ children, seo, localizedPaths }: Props) {
         title={seo?.title || defaultSEO.title}
         description={seo?.description || defaultSEO.description}
         canonical={canonicalUrl}
-        noindex={seo?.noindex || false}
+        noindex={seo?.noindex || !indexableLocale}
         nofollow={seo?.nofollow || false}
         openGraph={{
           type: defaultSEO.ogType,
@@ -306,9 +315,9 @@ export default function Landing({ children, seo, localizedPaths }: Props) {
           },
           {
             name: "robots",
-            content: `${seo?.noindex ? "noindex" : "index"},${
-              seo?.nofollow ? "nofollow" : "follow"
-            }`,
+            content: `${
+              seo?.noindex || !indexableLocale ? "noindex" : "index"
+            },${seo?.nofollow ? "nofollow" : "follow"}`,
           },
           ...(seo?.additionalMetaTags || []),
         ]}
@@ -326,7 +335,7 @@ export default function Landing({ children, seo, localizedPaths }: Props) {
             rel: "manifest",
             href: "/site.webmanifest",
           },
-          ...getAlternateLinks(pageSEO.path),
+          ...getAlternateLinks(pageSEO.path, availableLocales),
           ...(seo?.additionalLinkTags || []),
         ]}
       />

@@ -1,9 +1,18 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import Document, {
+  DocumentContext,
+  DocumentInitialProps,
+  Head,
+  Html,
+  Main,
+  NextScript,
+} from "next/document";
 import { GA_TRACKING_ID } from "lib/gtag";
 
-export default function Document() {
+type CodevertaDocumentProps = DocumentInitialProps & { locale: string };
+
+export default function CodevertaDocument({ locale }: CodevertaDocumentProps) {
   return (
-    <Html lang="en">
+    <Html lang={locale || "id"}>
       <Head>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
@@ -49,3 +58,8 @@ export default function Document() {
     </Html>
   );
 }
+
+CodevertaDocument.getInitialProps = async (ctx: DocumentContext) => {
+  const initialProps = await Document.getInitialProps(ctx);
+  return { ...initialProps, locale: ctx.locale || "id" };
+};

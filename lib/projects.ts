@@ -112,3 +112,27 @@ export function getAllProjectIds() {
 export function getProjectById(id: string, locale = "id") {
   return getProjects(locale).find((project) => project.product.id === id);
 }
+
+export function getAvailableProjectLocales(id: string) {
+  const locales = ["id", "en-US", "zh", "ja", "ko", "de", "fr", "th"];
+
+  return locales.filter((locale) => {
+    if (locale === "id") {
+      return Boolean(getProjectById(id, "id"));
+    }
+    const localizedFile = getLocalizedProjectsFile(locale);
+    const localizedData = localizedFile
+      ? readProjectsFile(localizedFile)
+      : null;
+    return Boolean(
+      localizedData?.projects?.some((project) => project?.product?.id === id)
+    );
+  });
+}
+
+export function getProjectContentLocale(id: string, locale = "id") {
+  const availableLocales = getAvailableProjectLocales(id);
+  if (availableLocales.includes(locale)) return locale;
+  if (locale === "en-GB" && availableLocales.includes("en-US")) return "en-US";
+  return "id";
+}

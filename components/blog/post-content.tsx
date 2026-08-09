@@ -30,9 +30,12 @@ import DisqusThread from "../DisqusThread";
 import Breadcrumb from "@/components/Breadcrumb";
 import TOC from "@/components/TOC";
 import { estimateReadingTime } from "lib/functions"; // Pastikan path ini benar
+import { useRouter } from "next/router";
+import { getLocalizedUrl, SITE_URL } from "@/lib/seo";
 
 // Definisi Props untuk PostContent
 export default function PostContent({ postData, slug, articleStats }) {
+  const router = useRouter();
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
@@ -88,7 +91,11 @@ export default function PostContent({ postData, slug, articleStats }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const shareUrl = `https://www.codeverta.com/posts/${slug}`;
+  const section = String(articleStats.category || "blog").toLowerCase();
+  const shareUrl = getLocalizedUrl(
+    router.locale || "id",
+    `/${section}/${slug}`
+  );
   const shareText = `Check out this amazing article: ${postData.title}`;
 
   const shareOptions = [
@@ -127,7 +134,7 @@ export default function PostContent({ postData, slug, articleStats }) {
         openGraph={{
           title: postData.title,
           description: postData.desc,
-          url: `https://www.codeverta.com/posts/${slug}`,
+          url: shareUrl,
           siteName: "Codeverta",
           images: [
             {
@@ -137,7 +144,7 @@ export default function PostContent({ postData, slug, articleStats }) {
               alt: postData.title,
             },
           ],
-          locale: "en_US",
+          locale: postData.lang || router.locale || "id",
           type: "article",
         }}
         twitter={{
@@ -152,15 +159,15 @@ export default function PostContent({ postData, slug, articleStats }) {
       {/* Schema Markup */}
       <NewsSchemaJsonLd
         post={postData}
-        baseUrl="https://codeverta.com"
+        baseUrl={SITE_URL}
         author={{
           name: postData.author || "Rabih Utomo",
-          url: "https://codeverta.com/about",
+          url: `${SITE_URL}/about`,
         }}
         publisher={{
           name: "Codeverta",
-          url: "https://codeverta.com",
-          logo: "https://codeverta.com/logo.png",
+          url: SITE_URL,
+          logo: `${SITE_URL}/logo.png`,
         }}
         category={articleStats.category}
         keywords={postData.tags}

@@ -25,6 +25,7 @@ import DisqusThread from "components/DisqusThread";
 import Breadcrumb from "@/components/Breadcrumb";
 import TOC from "@/components/TOC";
 import { withI18n } from "@/lib/withi18n";
+import { getLocaleRedirect } from "@/lib/seo";
 // Improved TOC Component with smooth scrolling
 
 function Post({ postData, slug }) {
@@ -208,6 +209,8 @@ export const getStaticProps = withI18n(
   ["common"],
   async function ({ params, locale }) {
     const slug = params.id;
+    const redirect = getLocaleRedirect(locale, `/tutorials/${slug}`);
+    if (redirect) return { notFound: true };
     const postData = await getPostData(slug, "tutorials");
     return {
       props: {

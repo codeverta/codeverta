@@ -26,7 +26,12 @@ import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
 import { useTranslation } from "next-i18next";
 import { getProjects } from "@/lib/projects";
-import { buildSeoMeta, SITE_NAME, SITE_URL } from "@/lib/seo";
+import {
+  buildSeoMeta,
+  getLocaleRedirect,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/seo";
 
 type ProductSummary = {
   id: string;
@@ -58,6 +63,8 @@ type CategoryFilter = {
 export const getStaticProps = withI18n(
   ["common"],
   function ({ locale }: { locale?: string }) {
+    const redirect = getLocaleRedirect(locale, "/produk");
+    if (redirect) return { notFound: true };
     // Mapping hanya field yang diperlukan untuk index page
     const projects = getProjects(locale).map(({ product }) => ({
       product: {
