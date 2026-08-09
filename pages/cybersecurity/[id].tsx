@@ -51,6 +51,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import DisqusThread from "components/DisqusThread";
 import Breadcrumb from "@/components/Breadcrumb";
 import TOC from "@/components/TOC";
+import { getLocaleRedirect } from "@/lib/seo";
 
 function Post({ postData, slug }) {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -595,6 +596,8 @@ export default Post;
 // In Pages Router, we use getStaticProps instead of directly fetching data in component
 export async function getStaticProps({ params, locale }) {
   const slug = params.id;
+  const redirect = getLocaleRedirect(locale, `/cybersecurity/${slug}`);
+  if (redirect) return { notFound: true };
   const postData = await getPostData(slug, "cybersecurity");
   return {
     props: {

@@ -13,6 +13,7 @@ export default function SeoHead({
   url,
   image = `${SITE_URL}/og-image.png`,
   keywords = "",
+  availableLocales,
 }) {
   const router = useRouter();
   const seo = buildSeoMeta({
@@ -34,7 +35,7 @@ export default function SeoHead({
 
       {/* Canonical */}
       <link rel="canonical" href={seo.canonical} />
-      {getAlternateLinks(seo.path).map((link) => (
+      {getAlternateLinks(seo.path, availableLocales).map((link) => (
         <link
           key={link.hrefLang}
           rel={link.rel}

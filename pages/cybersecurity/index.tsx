@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { appendOfficeLocation } from "@/lib/seo";
+import { appendOfficeLocation, getLocaleRedirect } from "@/lib/seo";
 import Layout from "components/layout/Landing";
 import { getSortedPostsData } from "lib/posts";
 import Link from "next/link";
@@ -825,6 +825,8 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
 }
 
 export async function getStaticProps({ locale }) {
+  const redirect = getLocaleRedirect(locale, "/cybersecurity");
+  if (redirect) return { notFound: true };
   // Get posts and add sample categories and read times
   const allPostsData = getSortedPostsData("cybersecurity").map(
     (post, index) => {

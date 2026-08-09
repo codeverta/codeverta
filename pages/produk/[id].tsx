@@ -52,7 +52,13 @@ import { withI18n } from "@/lib/withi18n";
 import { getSortedPostsData } from "@/lib/posts";
 import { ArticleSection } from "@/components/products/ArticleSection";
 import ImageCarousel from "@/components/ImageCarousel";
-import { getAllProjectIds, getProjectById, getProjects } from "@/lib/projects";
+import {
+  getAllProjectIds,
+  getAvailableProjectLocales,
+  getProjectById,
+  getProjectContentLocale,
+  getProjects,
+} from "@/lib/projects";
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
@@ -358,6 +364,10 @@ export async function getStaticPaths() {
 export const getStaticProps = withI18n(
   ["common"],
   function ({ params, locale }) {
+    const contentLocale = getProjectContentLocale(params.id, locale);
+    if (contentLocale !== locale) {
+      return { notFound: true };
+    }
     const projects = getProjects(locale);
     const latestArticles = getSortedPostsData("blog")
       .slice(0, 3)
@@ -390,7 +400,14 @@ export const getStaticProps = withI18n(
       description: p.product.fullDescription,
     }));
 
-    return { props: { project, otherProducts, latestArticles } };
+    return {
+      props: {
+        project,
+        otherProducts,
+        latestArticles,
+        availableLocales: getAvailableProjectLocales(params.id),
+      },
+    };
   }
 );
 
@@ -399,6 +416,7 @@ export default function ProjectDetailPage({
   project,
   otherProducts,
   latestArticles,
+  availableLocales,
 }) {
   const {
     product,
@@ -463,6 +481,7 @@ export default function ProjectDetailPage({
         description={finalDesc}
         url={pageUrl}
         image={`${siteUrl}${product.image}`}
+        availableLocales={availableLocales}
       />
 
       <Head>

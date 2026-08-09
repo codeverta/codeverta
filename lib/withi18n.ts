@@ -12,6 +12,10 @@ export function withI18n(
     // Jika ada logic getStaticProps tambahan di halaman
     const pageProps = gssp ? await gssp(context) : { props: {} };
 
+    if ("redirect" in pageProps || "notFound" in pageProps) {
+      return pageProps;
+    }
+
     return {
       ...pageProps,
       props: {

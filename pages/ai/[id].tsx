@@ -28,6 +28,7 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 import AdSense from "components/AdSense"; // Ensure this path is correct
 import {
   getAlternateLinks,
+  getLocaleRedirect,
   getLocalizedUrl,
   SITE_NAME,
   SITE_URL,
@@ -417,6 +418,8 @@ export default Post;
 // ... keep getStaticProps and getStaticPaths as they were ...
 export async function getStaticProps({ params, locale }) {
   const slug = params.id;
+  const redirect = getLocaleRedirect(locale, `/ai/${slug}`);
+  if (redirect) return { notFound: true };
   const postData = await getPostData(slug, "ai");
   const allPostsData = getSortedPostsData(locale).splice(0, 6);
 
