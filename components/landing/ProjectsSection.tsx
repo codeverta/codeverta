@@ -66,7 +66,7 @@ export function ProjectsSection({ projects }: any) {
               <CardFooter>
                 <Button asChild className="w-full" variant="outline">
                   {/* Tombol yang akan mengarah ke detail proyek nantinya */}
-                  <Link href={`/produk/${projectItem.product.id}`}>
+                  <Link href={`/products/${projectItem.product.id}`}>
                     Lihat Detail
                     <ArrowRight className="ml-2 size-4" />
                   </Link>
@@ -83,7 +83,7 @@ export function ProjectsSection({ projects }: any) {
             size="lg"
             className="rounded-full h-12 px-8 text-base"
           >
-            <Link href="/produk">
+            <Link href="/products">
               Lihat Lainnya
               <ArrowRight className="ml-2 size-4" />
             </Link>

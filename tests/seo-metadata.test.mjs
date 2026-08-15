@@ -49,8 +49,8 @@ const cases = [
     description: /website|aplikasi|ERP/i,
   },
   {
-    route: "/produk/point-of-sale",
-    canonical: "https://www.codeverta.com/produk/point-of-sale",
+    route: "/products/point-of-sale",
+    canonical: "https://www.codeverta.com/products/point-of-sale",
     title: /POS|Kasir/i,
     description: /POS|stok|retail/i,
   },
@@ -85,3 +85,40 @@ for (const expected of cases) {
     assert.match(metadata.html, /type=["']application\/ld\+json["']/i);
   });
 }
+
+test("Japanese product recommendations use valid Japanese articles", async () => {
+  const response = await fetch(`${baseUrl}/ja/products/e-commerce-platform`, {
+    redirect: "follow",
+  });
+  assert.equal(response.ok, true);
+
+  const html = await response.text();
+  assert.match(html, /関連記事/);
+  assert.doesNotMatch(html, /Coba Baca Artikel/);
+  assert.doesNotMatch(
+    html,
+    /26-codeverta-membantu-digitalisasi-healthcare-indonesia-integrasi-satusehat/
+  );
+
+  const articlePath = html.match(/href=["'](\/ja\/blog\/[^"']+)["']/)?.[1];
+  assert.ok(articlePath, "Japanese product page has no Japanese article link");
+
+  const articleResponse = await fetch(`${baseUrl}${articlePath}`);
+  assert.equal(
+    articleResponse.ok,
+    true,
+    `${articlePath} returned HTTP ${articleResponse.status}`
+  );
+});
+
+test("legacy localized product URLs redirect permanently to /products", async () => {
+  const response = await fetch(`${baseUrl}/ja/produk/e-commerce-platform`, {
+    redirect: "manual",
+  });
+
+  assert.ok([301, 308].includes(response.status));
+  assert.equal(
+    new URL(response.headers.get("location"), baseUrl).pathname,
+    "/ja/products/e-commerce-platform"
+  );
+});

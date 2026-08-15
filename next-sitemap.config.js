@@ -34,7 +34,7 @@ function splitLocalePath(inputPath) {
 function getAvailableLocales(routePath) {
   const segments = routePath.split("/").filter(Boolean);
   const section = segments[0] || "";
-  if (section === "produk") {
+  if (section === "products") {
     return segments[1]
       ? getAvailableProductLocales(segments[1])
       : productLocales;
@@ -220,7 +220,7 @@ module.exports = {
       for (const project of projects) {
         const id = project?.product?.id;
         if (!id) continue;
-        const routePath = `/produk/${id}`;
+        const routePath = `/products/${id}`;
         entries.push({
           loc: locale === defaultLocale ? routePath : `/${locale}${routePath}`,
           changefreq: "weekly",
@@ -246,7 +246,7 @@ module.exports = {
       changefreq = "weekly";
     }
     // Product pages
-    else if (path.startsWith("/produk")) {
+    else if (path.startsWith("/products")) {
       priority = 0.9;
       changefreq = "weekly";
     }

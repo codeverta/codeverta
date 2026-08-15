@@ -173,7 +173,7 @@ export default function FAQPage() {
                 {t("faqPage.cta.whatsapp")}
               </button>
               <Link
-                href={"/produk"}
+                href={"/products"}
                 className="inline-flex items-center justify-center px-6 py-3 border border-slate-600 text-base font-medium rounded-md text-white hover:bg-slate-800 transition-colors w-full sm:w-auto"
               >
                 {t("faqPage.cta.portfolio")}

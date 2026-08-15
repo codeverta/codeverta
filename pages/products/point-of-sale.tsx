@@ -2,15 +2,15 @@ import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import {
-  Package,
+  ShoppingCart,
   BarChart3,
-  Truck,
-  Scan,
-  ClipboardList,
-  Bell,
+  Package,
+  Printer,
+  Smartphone,
+  CreditCard,
   CheckCircle,
   ArrowRight,
-  Boxes,
+  Users,
   TrendingUp,
   Clock,
   Star,
@@ -28,67 +28,67 @@ import {
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import SeoHead from "@/components/SeoHead";
 import Layout from "@/components/layout/Landing";
-import { getSortedPostsData } from "@/lib/posts";
+import { getLocalizedPostsData } from "@/lib/posts";
 import { withI18n } from "@/lib/withi18n";
 
+// ── Data ──
 const FEATURES = [
   {
+    icon: ShoppingCart,
+    title: "POS Cepat & Intuitif",
+    desc: "Transaksi dalam hitungan detik. Support barcode scanner, QRIS, dan multi-payment.",
+  },
+  {
     icon: Package,
-    title: "Manajemen Stok Real-Time",
-    desc: "Stok otomatis terupdate untuk setiap transaksi masuk & keluar. Tau persis jumlah barang kapan pun.",
-  },
-  {
-    icon: Scan,
-    title: "Barcode & QR Code",
-    desc: "Scan barcode untuk receiving, picking, packing, dan shipping. Cepat dan minim human error.",
-  },
-  {
-    icon: Truck,
-    title: "Manajemen Pengiriman",
-    desc: "Atur pengiriman, delivery note, packing slip, dan tracking status pengiriman.",
-  },
-  {
-    icon: ClipboardList,
-    title: "Purchase & Sales Order",
-    desc: "Kelola purchase order, sales order, dan blanket order. Auto-update stok saat barang datang.",
+    title: "Inventory Real-Time",
+    desc: "Stok otomatis terupdate setiap ada transaksi. Dapat notifikasi kalau stok mau habis.",
   },
   {
     icon: BarChart3,
-    title: "Laporan Inventori",
-    desc: "Lihat stok minimum, barang slow-moving, valuation inventory, dan histori mutasi.",
+    title: "Laporan Penjualan Otomatis",
+    desc: "Lihat produk terlaris, jam sibuk, dan profit harian/mingguan/bulanan — satu klik.",
   },
   {
-    icon: Bell,
-    title: "Notifikasi Stok Minimum",
-    desc: "Dapat peringatan otomatis saat stok barang di bawah minimum. Gak perlu cek manual.",
+    icon: Users,
+    title: "Manajemen Customer",
+    desc: "Riwayat belanja, poin loyalitas, dan data pelanggan tersimpan rapi.",
+  },
+  {
+    icon: Printer,
+    title: "Struk & Invoice Digital",
+    desc: "Cetak struk thermal atau kirim invoice digital via WhatsApp/Email.",
+  },
+  {
+    icon: Smartphone,
+    title: "Multi-Outlet & Mobile",
+    desc: "Pantau semua cabang dari satu dashboard. Cocok untuk bisnis bercabang.",
   },
 ];
 
 const PRICING_PLANS = [
   {
-    tier: "Starter",
-    price: "Rp 200rb",
-    description: "Untuk gudang skala kecil (1-2 gudang)",
+    tier: "Basic",
+    price: "Rp 100rb",
+    description: "Untuk toko kecil dengan 1 outlet",
     features: [
-      "Manajemen 1-2 gudang",
-      "Stok real-time",
-      "Barcode scanning",
-      "Laporan stok dasar",
+      "1 outlet",
+      "POS cepat",
+      "Manajemen stok dasar",
+      "Laporan penjualan harian",
       "Support email",
     ],
   },
   {
     tier: "Pro",
-    price: "Rp 450rb",
-    description: "Untuk bisnis dengan 3-5 gudang & tim lebih besar",
+    price: "Rp 250rb",
+    description: "Untuk bisnis dengan 2-5 outlet",
     features: [
-      "Hingga 5 gudang",
-      "Semua fitur Starter",
-      "Purchase & sales order",
-      "Manajemen pengiriman",
-      "Batch & serial number tracking",
-      "Laporan inventori lengkap",
-      "Integrasi dengan POS & akuntansi",
+      "Hingga 5 outlet",
+      "Semua fitur Basic",
+      "Inventory real-time multi-cabang",
+      "Manajemen customer + poin",
+      "Laporan keuangan lengkap",
+      "Integrasi QRIS & e-wallet",
       "Prioritas support",
     ],
     isRecommended: true,
@@ -96,50 +96,45 @@ const PRICING_PLANS = [
   {
     tier: "Enterprise",
     price: "Custom",
-    description: "Multi-gudang skala besar dengan automation",
+    description: "Bisnis skala besar dengan kebutuhan khusus",
     features: [
-      "Multi-gudang unlimited",
-      "RFID integration",
-      "API integrasi ERP",
+      "Multi-cabang unlimited",
+      "White label",
+      "API integrasi",
       "Dedicated server",
       "Training staf onsite",
-      "24/7 priority support",
-      "Dapat dikustomisasi",
+      "24/7 support",
     ],
   },
 ];
 
 const FAQS = [
   {
-    q: "Apakah WMS ini cocok untuk UMKM?",
-    a: "Sangat cocok. Paket Starter kami didesain untuk UMKM dengan skala gudang kecil. Fiturnya sederhana, mudah dipelajari, dan gak butuh IT training.",
+    q: "Apakah POS ini bisa untuk toko kelontong kecil?",
+    a: "Bisa. Paket Basic kami cocok untuk toko kecil dengan 1 outlet. Interface-nya sederhana dan mudah dipelajari — staf bisa operasional dalam 1 jam.",
   },
   {
-    q: "Bisa integrasi dengan sistem yang sudah ada?",
-    a: "Bisa. Kami punya API yang bisa diintegrasikan dengan POS, sistem akuntansi, atau e-commerce Anda. Tim teknis kami akan bantu setup.",
+    q: "Bagaimana cara migrasi data dari sistem lama?",
+    a: "Kami bantu migrasi data produk, stok, dan pelanggan dari Excel atau software lama. Biasanya selesai dalam 1-2 hari.",
   },
   {
-    q: "Apakah data bisa di-export ke Excel?",
-    a: "Tentu. Semua data bisa di-export ke CSV/Excel. Jadi Anda tetap punya backup data dan bisa dianalisis lebih lanjut.",
+    q: "Apakah bisa integrasi dengan printer thermal?",
+    a: "Bisa. Sistem kami mendukung berbagai merek printer thermal ESC/POS. Tinggal colok dan setting sekali.",
   },
   {
-    q: "Berapa lama implementasinya?",
-    a: "Untuk paket Starter biasanya 3-7 hari. Paket Pro dan Enterprise butuh 1-3 minggu tergantung kompleksitas integrasi.",
+    q: "Apakah data penjualan aman?",
+    a: "Data Anda tersimpan di server dengan encryption dan backup harian otomatis. Hanya pemilik dan staf yang diberi akses yang bisa melihat data.",
   },
 ];
 
-function WarehouseManagementSystem({
-  latestArticles,
-}: {
-  latestArticles: ArticlePreview[];
-}) {
+function PointOfSale({ latestArticles }: { latestArticles: ArticlePreview[] }) {
   return (
     <>
       <SeoHead
-        title="Warehouse Management System untuk UMKM Indonesia | Codeverta"
-        description="Sistem manajemen gudang dengan stok real-time, barcode scanning, dan laporan inventori otomatis. Mulai dari Rp 200rb/bulan."
-        url="https://codeverta.com/produk/warehouse-management-system"
-        keywords="warehouse management system, software gudang, sistem inventory barang, manajemen gudang, wms indonesia"
+        title="Aplikasi Kasir & POS untuk UMKM Indonesia | Codeverta"
+        description="Aplikasi POS modern dengan manajemen stok real-time, laporan otomatis, dan multi-outlet. Mulai dari Rp 100rb/bulan. Cocok untuk retail, F&B, dan UMKM."
+        url="https://codeverta.com/products/point-of-sale"
+        keywords="aplikasi kasir, software kasir toko, aplikasi pos retail, pos kasir, kasir online, point of sale indonesia"
       />
 
       <Head>
@@ -147,15 +142,15 @@ function WarehouseManagementSystem({
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            name: "WMS Codeverta",
+            name: "POS Kasir Codeverta",
             description:
-              "Warehouse management system dengan stok real-time, barcode, dan laporan inventori.",
+              "Aplikasi POS modern dengan inventory real-time, laporan otomatis, dan multi-outlet.",
             brand: { "@type": "Brand", name: "Codeverta" },
             offers: {
               "@type": "AggregateOffer",
               priceCurrency: "IDR",
-              lowPrice: "200000",
-              highPrice: "450000",
+              lowPrice: "100000",
+              highPrice: "250000",
               offerCount: 3,
             },
           })}
@@ -163,22 +158,21 @@ function WarehouseManagementSystem({
       </Head>
 
       {/* ── Hero ── */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 text-white">
         <div className="container mx-auto px-4 py-20 md:py-28">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-amber-500/20 text-amber-300 border-amber-500/30 mb-6">
-              Warehouse Management System
+            <Badge className="bg-emerald-500/20 text-emerald-300 border-emerald-500/30 mb-6">
+              Point of Sale System
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              Stok Berantakan, Barang Sering Hilang?{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">
-                Saatnya WMS.
+              Masih Pakai Kalkulator & Buku Stok?{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-400">
+                Saatnya Ganti ke POS Modern.
               </span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Kelola stok, barang masuk/keluar, dan laporan inventori secara
-              real-time. Barcode scan, batch tracking, dan notifikasi stok
-              minimum.
+              Aplikasi kasir yang bisa handle transaksi, stok, laporan, dan
+              multi-cabang dari satu dashboard. Gak perlu IT training.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <WhatsappWrapper>
@@ -211,34 +205,37 @@ function WarehouseManagementSystem({
       <section className="bg-slate-50 dark:bg-slate-800/50 py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
+            <p className="text-emerald-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
               Masalah vs Solusi
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">
-              Manual Gak Cukup Buat Skala Bisnis Anda
+              Manual Itu Rentan Salah
             </h2>
+
             <div className="space-y-6">
               {[
                 {
-                  problem: "Tahu-tahu stok barang kosong pas ada order besar",
+                  problem:
+                    "Transaksi pakai kalkulator — sering salah hitung kembalian",
                   solution:
-                    "Stok real-time + notifikasi minimum stok. Gak ada lagi kejadian kehabisan stok.",
+                    "POS otomatis hitung total dan kembalian. Scan barang, bayar, selesai.",
                 },
                 {
                   problem:
-                    "Barang hilang atau salah kirim karena catatan manual",
+                    "Stok barang gak update — tahu-tahu best seller udah kosong",
                   solution:
-                    "Setiap barang tercatat dengan barcode. Tahu posisi dan riwayat mutasi barang.",
+                    "Stok otomatis berkurang setiap transaksi. Notifikasi kalau stok mau habis.",
                 },
                 {
-                  problem: "Receiving barang lama karena harus cek satu-satu",
+                  problem:
+                    "Rekap penjualan akhir bulan manual — makan waktu 1-2 hari",
                   solution:
-                    "Scan barcode pas barang datang. Otomatis update stok dan generate receiving report.",
+                    "Laporan penjualan real-time. Produk terlaris, jam sibuk, profit — langsung lihat.",
                 },
                 {
-                  problem: "Laporan stok akhir bulan makan waktu berhari-hari",
+                  problem: "Multi-cabang, laporan masing-masing terpisah",
                   solution:
-                    "Laporan inventori satu klik. Stok valuation, slow-moving items, semuanya langsung jadi.",
+                    "Semua cabang terpusat di satu dashboard. Bandingkan performa antar cabang.",
                 },
               ].map((item, i) => (
                 <div
@@ -253,7 +250,7 @@ function WarehouseManagementSystem({
                       {item.problem}
                     </p>
                     <div className="hidden md:block">
-                      <ArrowRight className="w-5 h-5 text-amber-500 mt-1" />
+                      <ArrowRight className="w-5 h-5 text-emerald-500 mt-1" />
                     </div>
                     <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded-full shrink-0 hidden md:block">
                       <CheckCircle className="w-4 h-4 text-green-500" />
@@ -280,12 +277,13 @@ function WarehouseManagementSystem({
       {/* ── Fitur ── */}
       <section id="fitur" className="bg-white dark:bg-slate-900 py-20">
         <div className="container mx-auto px-4">
-          <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
+          <p className="text-emerald-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
             Fitur Lengkap
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">
-            Kontrol Penuh Atas Gudang Anda
+            Lebih dari Sekadar Kasir
           </h2>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {FEATURES.map((f) => (
               <Card
@@ -293,8 +291,8 @@ function WarehouseManagementSystem({
                 className="border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow"
               >
                 <CardContent className="p-6">
-                  <div className="bg-amber-100 dark:bg-amber-900/30 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <f.icon className="w-6 h-6 text-amber-600 dark:text-amber-400" />
+                  <div className="bg-emerald-100 dark:bg-emerald-900/30 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                    <f.icon className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
                     {f.title}
@@ -312,28 +310,30 @@ function WarehouseManagementSystem({
       {/* ── Harga ── */}
       <section className="bg-slate-50 dark:bg-slate-800/50 py-20">
         <div className="container mx-auto px-4">
-          <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
+          <p className="text-emerald-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
             Harga
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white text-center mb-4">
-            Mulai dari Rp 200rb/Bulan
+            Mulai dari Rp 100rb/Bulan
           </h2>
           <p className="text-slate-500 text-center max-w-xl mx-auto mb-12">
-            Investasi yang balik modal dengan mengurangi kehilangan stok dan
-            efisiensi operasional.
+            Investasi kecil yang langsung terasa dampaknya. Gak perlu ribet
+            install server sendiri.
           </p>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {PRICING_PLANS.map((plan, i) => (
               <PricingCard key={plan.tier} index={i} {...plan} />
             ))}
           </div>
+
           <div className="text-center mt-12">
             <WhatsappWrapper>
               <Button
                 size="lg"
                 className="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-6"
               >
-                Konsultasi Gratis — Tentukan Paket yang Tepat
+                Konsultasi Gratis — Cari Tahu Paket yang Cocok
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </WhatsappWrapper>
@@ -344,7 +344,7 @@ function WarehouseManagementSystem({
       {/* ── FAQ ── */}
       <section className="bg-white dark:bg-slate-900 py-20">
         <div className="container mx-auto px-4 max-w-3xl">
-          <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
+          <p className="text-emerald-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
             FAQ
           </p>
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white text-center mb-12">
@@ -372,19 +372,19 @@ function WarehouseManagementSystem({
       </section>
 
       {/* ── CTA Final ── */}
-      <section className="bg-gradient-to-br from-amber-600 to-orange-700 text-white py-20">
+      <section className="bg-gradient-to-br from-emerald-600 to-teal-700 text-white py-20">
         <div className="container mx-auto px-4 text-center max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Rapikan Gudang Anda Mulai Hari Ini
+            Siap Ganti ke POS Modern?
           </h2>
-          <p className="text-amber-100 text-lg mb-10">
-            Konsultasi gratis 30 menit. Tim kami siap bantu setup WMS sesuai
-            kebutuhan bisnis Anda.
+          <p className="text-emerald-100 text-lg mb-10">
+            Konsultasi gratis 30 menit. Tim teknis kami siap bantu analisis
+            kebutuhan toko Anda.
           </p>
           <WhatsappWrapper>
             <Button
               size="lg"
-              className="bg-white text-amber-600 hover:bg-amber-50 font-bold text-lg px-10 py-7"
+              className="bg-white text-emerald-600 hover:bg-emerald-50 font-bold text-lg px-10 py-7"
             >
               Chat via WhatsApp Sekarang
               <ArrowRight className="ml-2 w-5 h-5" />
@@ -398,31 +398,34 @@ function WarehouseManagementSystem({
   );
 }
 
-WarehouseManagementSystem.getLayout = function (page: React.ReactNode) {
+PointOfSale.getLayout = function (page: React.ReactNode) {
   return <Layout>{page}</Layout>;
 };
 
-export default WarehouseManagementSystem;
+export default PointOfSale;
 
-export const getStaticProps = withI18n(["common"], function () {
-  const latestArticles = getSortedPostsData("blog")
-    .filter((p) => {
-      const tags = (p.tags || "").toLowerCase();
-      return (
-        tags.includes("gudang") ||
-        tags.includes("warehouse") ||
-        tags.includes("inventory")
-      );
-    })
-    .slice(0, 3)
-    .map((p: any) => ({
-      id: p.id,
-      title: p.title,
-      desc: p.desc || "",
-      date: p.date,
-      image: p.image || null,
-      tags: p.tags || "",
-    }));
+export const getStaticProps = withI18n(
+  ["common", "blog"],
+  function ({ locale }) {
+    const latestArticles = getLocalizedPostsData("blog", locale ?? "id")
+      .filter((p) => {
+        const tags = (p.tags || "").toLowerCase();
+        return (
+          tags.includes("kasir") ||
+          tags.includes("pos") ||
+          tags.includes("retail")
+        );
+      })
+      .slice(0, 3)
+      .map((p: any) => ({
+        id: p.id,
+        title: p.title,
+        desc: p.desc || "",
+        date: p.date,
+        image: p.image || null,
+        tags: p.tags || "",
+      }));
 
-  return { props: { latestArticles } };
-});
+    return { props: { latestArticles } };
+  }
+);

@@ -587,7 +587,7 @@ export default function BlogDetail({
               <div className="other-grid">
                 {otherProducts.map((prod) => (
                   <Link
-                    href={`/produk/${prod.id}`}
+                    href={`/products/${prod.id}`}
                     key={prod.id}
                     className="mini-card"
                   >

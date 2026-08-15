@@ -226,7 +226,7 @@ export const faqItems = [
   {
     question: "Apa saja yang perlu saya siapkan?",
     answer:
-      "Anda cukup menyiapkan konten seperti teks profil perusahaan, daftar layanan/produk, dan gambar/foto yang ingin ditampilkan. Jika belum ada, tim kami bisa membantu mengarahkannya.",
+      "Anda cukup menyiapkan konten seperti teks profil perusahaan, daftar layanan/products, dan gambar/foto yang ingin ditampilkan. Jika belum ada, tim kami bisa membantu mengarahkannya.",
   },
   {
     question: "Apakah ada layanan maintenance setelah website jadi?",
@@ -330,7 +330,7 @@ const industryNavItems = [
 ];
 
 export const getCategories = (t) => [
-  { id: "/produk", name: t("navbar.products"), isDropdown: true },
+  { id: "/products", name: t("navbar.products"), isDropdown: true },
   { id: "/industry", name: t("navbar.industry"), isDropdown: true },
   {
     id: "pelajari",
@@ -405,7 +405,7 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => {
 
   return {
     // 1. MENU PRODUK (Software & Projects)
-    "/produk": {
+    "/products": {
       title: t("mega_menu.products.title"), // Judul: Products
       columns: [
         // Menampilkan Project/Software dari Database (Dynamic)
@@ -414,7 +414,7 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => {
           items: [
             {
               name: project.product.name,
-              href: `/produk/${project.product.id}`,
+              href: `/products/${project.product.id}`,
               image: project.product.image,
               description: project.product.description,
             },
@@ -426,7 +426,7 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => {
           items: [
             {
               name: t("mega_menu.products.view_all"),
-              href: "/produk",
+              href: "/products",
               image: "/assets/products/48.png",
               description: t("mega_menu.products.view_all_desc"),
             },

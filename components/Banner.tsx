@@ -40,7 +40,7 @@ const Banner = () => {
 
           <div className="flex items-center space-x-2">
             <Link
-              href="/produk"
+              href="/products"
               className="inline-flex items-center bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 rounded-full px-3 py-1.5 text-xs font-medium transition-all duration-200"
             >
               <span>Lihat</span>
@@ -104,7 +104,7 @@ const Banner = () => {
             </p>
 
             <Link
-              href="/produk"
+              href="/products"
               className="inline-flex items-center space-x-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm border border-white/30 rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 hover:scale-105 hover:shadow-lg group"
             >
               <span>Lihat Sekarang</span>

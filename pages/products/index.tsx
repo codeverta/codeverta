@@ -63,7 +63,7 @@ type CategoryFilter = {
 export const getStaticProps = withI18n(
   ["common"],
   function ({ locale }: { locale?: string }) {
-    const redirect = getLocaleRedirect(locale, "/produk");
+    const redirect = getLocaleRedirect(locale, "/products");
     if (redirect) return { notFound: true };
     // Mapping hanya field yang diperlukan untuk index page
     const projects = getProjects(locale).map(({ product }) => ({
@@ -91,7 +91,7 @@ export default function ITProductsShowcase({ projects }: ProductsPageProps) {
   const [activeCategory, setActiveCategory] = useState("all");
   const seo = buildSeoMeta({
     locale: router.locale,
-    path: "/produk",
+    path: "/products",
     title: t("productsPage.seo.title"),
     description: t("productsPage.seo.description"),
     keywords: t("productsPage.seo.keywords"),
@@ -355,7 +355,7 @@ export default function ITProductsShowcase({ projects }: ProductsPageProps) {
                         {product.category}
                       </Badge>
                     </div>
-                    <Link href={`/produk/${product.id}`}>
+                    <Link href={`/products/${product.id}`}>
                       <h3 className="text-xl font-semibold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
                         {product.name}
                       </h3>
@@ -390,7 +390,7 @@ export default function ITProductsShowcase({ projects }: ProductsPageProps) {
 
                   <CardFooter className="p-6 pt-0 flex gap-2">
                     <Link
-                      href={`/produk/${product.id}`}
+                      href={`/products/${product.id}`}
                       className="flex-1 block"
                     >
                       <Button

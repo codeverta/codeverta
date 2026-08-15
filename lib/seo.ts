@@ -767,7 +767,7 @@ export function getAvailableLocalesForPath(path = "/"): SupportedLocale[] {
   const cleanPath = normalizePath(path);
   const section = cleanPath.split("/").filter(Boolean)[0] || "";
 
-  if (section === "produk") return PRODUCT_LOCALES;
+  if (section === "products") return PRODUCT_LOCALES;
   if (DEFAULT_ONLY_SECTIONS.has(section)) return [DEFAULT_LOCALE];
   return [...SUPPORTED_LOCALES];
 }
