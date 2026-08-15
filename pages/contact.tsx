@@ -196,7 +196,7 @@ export default function ContactPage() {
                       {t("info.email_title")}
                     </h3>
                     <p className="font-mono-label text-sm text-[#B9BDD1] mt-1">
-                      hello@codeverta.com
+                      contact@codeverta.com
                     </p>
                   </div>
                 </div>

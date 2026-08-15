@@ -141,6 +141,16 @@
     },
     "description": "Struktur perusahaan kami dirancang agar produk, engineering, marketing, keuangan, dan people operations bergerak selaras dengan tanggung jawab yang jelas."
   },
+  "customerMap": {
+    "loading": "Memuat peta...",
+    "badge": "Sebaran pelanggan",
+    "heading": {
+      "before": "Pelanggan kami di seluruh ",
+      "after": ""
+    },
+    "description": "Kami membantu bisnis membangun infrastruktur digital dari Jakarta hingga Papua. Tahun ini, kami juga mempersiapkan langkah untuk menghadirkan layanan ke pasar global.",
+    "customerUnit": "pelanggan"
+  },
   "location": {
     "badge": "Lokasi Kami",
     "heading": "Kunjungi Codeverta di Yogyakarta",

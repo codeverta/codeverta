@@ -1,9 +1,9 @@
 {
   "seo": {
-    "indexTitle": "โซลูชันสำหรับทุกอุตสาหกรรม | Codeverta",
+    "indexTitle": "โซลูชันซอฟต์แวร์และระบบ ERP รายอุตสาหกรรมในประเทศไทย (กรุงเทพฯ, ชลบุรี, ระยอง) | Codeverta",
     "indexDescription": "ตั้งแต่การผลิตถึงระบบสุขภาพ Codeverta ปรับโซลูชันดิจิทัลให้เข้ากับความต้องการของอุตสาหกรรมคุณ",
     "indexKeywords": "ซอฟต์แวร์อุตสาหกรรม, ERP ตามอุตสาหกรรม, แอปธุรกิจ, Codeverta",
-    "detailTitleTemplate": "โซลูชันซอฟต์แวร์สำหรับ {{industry}} | Codeverta",
+    "detailTitleTemplate": "โซลูชันซอฟต์แวร์ {{industry}} ในประเทศไทย (กรุงเทพฯ, ชลบุรี) | Codeverta",
     "detailDescriptionTemplate": "สำรวจโซลูชัน Codeverta สำหรับทีม {{industry}}: การปฏิบัติการ อัตโนมัติ รายงาน การเชื่อมต่อ และ workflow ดิจิทัลที่ขยายได้",
     "detailKeywordsTemplate": "ซอฟต์แวร์ {{industry}}, ERP {{industry}}, digital transformation {{industry}}, Codeverta"
   },
@@ -25,7 +25,7 @@
     "primaryCta": "เริ่มต้น",
     "secondaryCta": "ขอเดโม",
     "statNote": "ค่าเฉลี่ยลูกค้า Codeverta",
-    "trustedBy": "ได้รับความไว้วางใจจากบริษัทใน",
+    "trustedBy": "ได้รับความไว้วางใจจากบริษัทชั้นนำในประเทศไทย:",
     "problemEyebrow": "ปัญหา",
     "problemTitleTemplate": "ความท้าทายของทีม {{industry}}",
     "solutionEyebrow": "สิ่งที่เรานำเสนอ",

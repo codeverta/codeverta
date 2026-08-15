@@ -425,9 +425,13 @@ export default function NewsIndex({ allPostsData }: Props) {
     <>
       <Head>
         <title>{pageTitle}</title>
-        <meta name="description" content={metaDescription} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={metaDescription} />
+        <meta key="description" name="description" content={metaDescription} />
+        <meta key="og:title" property="og:title" content={pageTitle} />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={metaDescription}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -1048,10 +1052,13 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
       category: "blog",
     })
   );
+  const localizedPosts = allPostsData.filter(
+    (post) => post.lang === (locale ?? "id")
+  );
 
   return {
     props: {
-      allPostsData,
+      allPostsData: localizedPosts,
       ...(await serverSideTranslations(locale ?? "id", [
         "common",
         "order",

@@ -1,7 +1,7 @@
 {
   "title": "プライバシーポリシー",
   "last_updated": "最終更新日: 2025年12月23日",
-  "intro": "Codeverta & BikinWebsiteJogjaでは、お客様のプライバシーを尊重し、個人データの保護に努めています。本ポリシーでは、ソフトウェア開発サービスの利用時に当社が情報をどのように収集、利用、保護するかを説明します。",
+  "intro": "Codeverta（コードバータ）では、お客様のプライバシーを尊重し、個人データの保護に努めています。本ポリシーでは、Web・アプリ・システム開発サービスの利用時に当社が情報をどのように収集、利用、保護するかを説明します。",
   "sections": {
     "collection": {
       "title": "1. 収集する情報",
@@ -57,8 +57,8 @@
   },
   "seo": {
     "title": "Codeverta - プライバシーポリシー",
-    "description": "Learn how Codeverta collects, uses, protects personal data, uses cookies, and respects privacy rights for software and website service users.",
-    "keywords": "Codeverta privacy policy, data protection, cookies, personal data"
+    "description": "Codevertaが提供するWeb・アプリ・システム開発サービスにおける個人情報の収集・利用・保護方針に関する記載です。",
+    "keywords": "Codeverta プライバシーポリシー, 個人情報保護方針, データセキュリティ"
   },
   "notice": {
     "before": "This document applies to all entities managed by",

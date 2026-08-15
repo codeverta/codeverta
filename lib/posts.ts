@@ -33,7 +33,6 @@ function getContentDirectories(folder = "blog", locale = "id") {
   const folderDirectory = path.join(blogBaseDirectory, folder);
   const candidates = [
     path.join(folderDirectory, normalizedLocale),
-    normalizedLocale === "en-GB" ? path.join(folderDirectory, "en-US") : "",
     path.join(folderDirectory, baseLocale),
     folderDirectory,
   ].filter(Boolean);
@@ -233,13 +232,9 @@ export function getLocalizedPostPaths(id, folder = "blog") {
   SUPPORTED_LOCALES.forEach((locale) => {
     const targetRecord =
       translationRecords.find((record) => record.locale === locale) ||
-      (locale === "en-GB"
-        ? translationRecords.find((record) => record.locale === "en-US")
-        : undefined) ||
       translationRecords.find(
         (record) => record.locale === locale.split("-")[0]
-      ) ||
-      translationRecords.find((record) => record.locale === "id");
+      );
 
     if (targetRecord) {
       pathsByLocale[locale] = `/${folder}/${targetRecord.id}`;
@@ -261,30 +256,6 @@ export async function getPostData(id, folder = "blog", locale = "id") {
       usedLanguage =
         path.basename(directory) === folder ? "id" : path.basename(directory);
       break;
-    }
-  }
-
-  if (!fileContents) {
-    const folderDirectory = path.join(blogBaseDirectory, folder);
-    if (fs.existsSync(folderDirectory)) {
-      const allDirs = [
-        folderDirectory,
-        ...fs
-          .readdirSync(folderDirectory, { withFileTypes: true })
-          .filter((dirent) => dirent.isDirectory())
-          .map((dirent) => path.join(folderDirectory, dirent.name)),
-      ];
-      for (const directory of allDirs) {
-        fullPath = path.join(directory, `${id}.md`);
-        if (fs.existsSync(fullPath)) {
-          fileContents = fs.readFileSync(fullPath, "utf8");
-          usedLanguage =
-            path.basename(directory) === folder
-              ? "id"
-              : path.basename(directory);
-          break;
-        }
-      }
     }
   }
 

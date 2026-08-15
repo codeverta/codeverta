@@ -22,7 +22,7 @@
       "highlight": "Krebsbehandlung"
     },
     "description": {
-      "before": "Bei PT Zenit Technology Solution glauben wir, dass Innovation einem höheren Zweck dienen sollte. Wir verpflichten uns,",
+      "before": "Bei Zenit Technology Solution Pte. Ltd. glauben wir, dass Innovation einem höheren Zweck dienen sollte. Wir verpflichten uns,",
       "pledge": "mehr als 3% unseres jährlichen Nettogewinns",
       "after": "über folgende Plattform zur Unterstützung benachteiligter Krebspatienten bereitzustellen"
     },
@@ -140,6 +140,16 @@
       }
     },
     "description": "Unsere Unternehmensstruktur sorgt dafür, dass Produkt, Engineering, Marketing, Finanzen und People Operations abgestimmt arbeiten und jedes Projekt klare Verantwortlichkeiten hat."
+  },
+  "customerMap": {
+    "loading": "Karte wird geladen...",
+    "badge": "Servicegebiete",
+    "heading": {
+      "before": "Digitale Unterstützung in ",
+      "after": ""
+    },
+    "description": "Wir unterstützen digitale Vorhaben in wichtigen Wirtschafts- und Technologiezentren wie Berlin, Hamburg, München, Frankfurt, Köln, Düsseldorf und Stuttgart.",
+    "customerUnit": "Kunden"
   },
   "location": {
     "badge": "Unser Standort",

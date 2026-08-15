@@ -1,9 +1,20 @@
 {
+  "ui": {
+    "chooseLanguage": "Choose language",
+    "close": "Close",
+    "officeAddress": "Office address",
+    "whatsapp": {
+      "help": "How can we help?",
+      "defaultMessage": "Hello, I would like to ask about Codeverta's services.",
+      "ariaLabel": "Chat via WhatsApp"
+    }
+  },
   "our_products": "Our Products",
   "home": {
     "title": "Professional Website Creation and IT Solutions for Small to Medium-Sized Businesses",
     "subtitle": "We provide professional software creation, repair, development services, and IT solutions to drive your business growth in the digital era for small to medium-sized businesses.",
     "hero": {
+      "badge": "Leading Software Company Based in Bekasi & Yogyakarta",
       "prefix": "Software Solutions For Every",
       "rotating": [
         "Retail",
@@ -46,7 +57,7 @@
       "keywords": "web development services, software house, app development, SME ERP, POS system, IT solutions, Codeverta"
     }
   },
-  "trustedBy": "Trusted by Small Medium Enterprises, Startups, and Government",
+  "trustedBy": "Trusted by Small Medium Enterprise, Startups, and Government",
   "features": {
     "badge": "Our Services",
     "title": "Complete Solutions for Your Digital Needs",
@@ -105,7 +116,13 @@
     "faq": "FAQ",
     "careers": "Careers",
     "about": "About Us",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "about_desc": "About our team & mission",
+    "careers_desc": "Join our team",
+    "contact_desc": "Get in touch or request a quote",
+    "learning_desc": "Tech courses & bootcamps",
+    "blog_desc": "Latest articles & insights",
+    "events_desc": "Tech events & meetups"
   },
   "mega_menu": {
     "products": {
@@ -245,8 +262,8 @@
           "description": "We design modern, responsive websites that work beautifully across desktop and mobile."
         },
         {
-          "title": "SEO & Performance Optimisation",
-          "description": "Improve Google visibility and user experience with fast, optimised web pages."
+          "title": "SEO & Performance Optimization",
+          "description": "Improve Google visibility and user experience with fast, optimized web pages."
         },
         {
           "title": "Repair & Maintenance",
@@ -332,7 +349,7 @@
           "price": "Rp 2M",
           "description": "Suitable for company profiles or portfolios.",
           "features": [
-            "Bespoke design based on your request",
+            "Custom design based on your request",
             "Suitable for SMEs",
             "Core pages and features",
             "Free domain and hosting for 1 year",
@@ -345,19 +362,19 @@
           "price": "Rp 5M",
           "description": "Ideal for growing SMEs and online businesses.",
           "features": [
-            "Bespoke design based on your request",
-            "SEO optimisation",
+            "Custom design based on your request",
+            "SEO optimization",
             "Priority development"
           ],
           "cta": "Choose Package",
           "popular": true
         },
         {
-          "name": "Bespoke System Package",
+          "name": "Custom System Package",
           "price": "Rp >10M",
           "description": "For companies with more complex requirements.",
           "features": [
-            "Advanced bespoke features",
+            "Advanced custom features",
             "Design and system tailored to your needs",
             "Monthly performance reports",
             "Maintenance for more than 1 year"
@@ -371,7 +388,7 @@
           "price": "Rp >20M",
           "description": "For companies with complex systems and workflows.",
           "features": [
-            "Bespoke features based on request",
+            "Custom features based on request",
             "Integration with other systems or applications",
             "Scheduled cloud backups",
             "24/7 security and performance monitoring",
@@ -457,8 +474,8 @@
   "productsPage": {
     "seo": {
       "title": "Codeverta Digital Products - Information Systems, ERP, POS & Web App Portfolio",
-      "description": "Explore Codeverta digital products: information systems, ERP, POS, e-commerce, web applications, ticketing, EMR, and bespoke IT solutions for multiple industries.",
-      "keywords": "Codeverta digital products, information system portfolio, web applications, ERP, POS, software house, business IT solutions, bespoke software"
+      "description": "Explore Codeverta digital products: information systems, ERP, POS, e-commerce, web applications, ticketing, EMR, and custom IT solutions for multiple industries.",
+      "keywords": "Codeverta digital products, information system portfolio, web applications, ERP, POS, software house, business IT solutions, custom software"
     },
     "hero": {
       "title": "IT Solutions Portfolio",
@@ -475,7 +492,7 @@
       "contact": "Contact Us"
     },
     "cta": {
-      "title": "Need a Bespoke IT Solution?",
+      "title": "Need a Custom IT Solution?",
       "description": "We are ready to help develop an information system tailored to your business needs."
     },
     "schema": {
@@ -493,7 +510,7 @@
       "productionReadyLabel": "Ready or completed",
       "showing": "Showing {{count}} solutions",
       "emptyTitle": "No products in this category yet",
-      "emptyDescription": "Choose another category or contact us for a bespoke system."
+      "emptyDescription": "Choose another category or contact us for a custom system."
     }
   },
   "cookieConsent": {
@@ -519,8 +536,8 @@
         "gallery": "Gallery"
       }
     },
-    "programmes": {
-      "title": "Programmes",
+    "programs": {
+      "title": "Programs",
       "links": {
         "cybersecurity": "Cyber Security Course",
         "aiEngineer": "AI Engineer",
@@ -568,8 +585,8 @@
   "faqPage": {
     "seo": {
       "title": "Codeverta FAQ - Website, Software & IT Service Questions",
-      "description": "Find answers about Codeverta website development, bespoke software, project timelines, payments, maintenance, and technology stack.",
-      "keywords": "Codeverta FAQ, website development questions, bespoke software, IT project payment, maintenance"
+      "description": "Find answers about Codeverta website development, custom software, project timelines, payments, maintenance, and technology stack.",
+      "keywords": "Codeverta FAQ, website development questions, custom software, IT project payment, maintenance"
     },
     "title": "Frequently Asked Questions",
     "subtitle": "Find answers about website development, digital systems, technical workflow, and our payment process.",
@@ -597,7 +614,7 @@
         "answer": "Yes. We offer monthly or annual maintenance covering bug fixes, security updates, server monitoring, backups, and small feature additions."
       },
       {
-        "question": "Can you build bespoke features for my business?",
+        "question": "Can you build custom features for my business?",
         "answer": "Yes. We can customise modules, workflows, reports, and integrations such as Midtrans, GeoServer, Socket.io, GraphQL, Kafka, RFID, or other systems."
       },
       {

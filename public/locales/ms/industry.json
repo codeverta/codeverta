@@ -1,9 +1,9 @@
 {
   "seo": {
-    "indexTitle": "Penyelesaian untuk Setiap Industri | Codeverta",
+    "indexTitle": "Penyelesaian Perisian & ERP Mengikut Industri di Malaysia (Kuala Lumpur, Penang, Johor Bahru) | Codeverta",
     "indexDescription": "Daripada pembuatan hingga penjagaan kesihatan, Codeverta menyesuaikan penyelesaian digital mengikut keperluan industri anda.",
     "indexKeywords": "penyelesaian perisian industri, ERP industri, aplikasi perniagaan, Codeverta",
-    "detailTitleTemplate": "Penyelesaian Perisian {{industry}} | Codeverta",
+    "detailTitleTemplate": "Penyelesaian Perisian {{industry}} di Malaysia (Kuala Lumpur, Penang) | Codeverta",
     "detailDescriptionTemplate": "Lihat penyelesaian Codeverta untuk pasukan {{industry}}: operasi, automasi, laporan, integrasi dan aliran kerja digital yang boleh diskala.",
     "detailKeywordsTemplate": "perisian {{industry}}, ERP {{industry}}, transformasi digital {{industry}}, Codeverta"
   },
@@ -25,7 +25,7 @@
     "primaryCta": "Mulakan",
     "secondaryCta": "Minta demo",
     "statNote": "Purata pelanggan Codeverta",
-    "trustedBy": "Dipercayai syarikat dalam",
+    "trustedBy": "Dipercayai oleh syarikat di Malaysia:",
     "problemEyebrow": "Masalah",
     "problemTitleTemplate": "Cabaran pasukan {{industry}}",
     "solutionEyebrow": "Apa yang Kami Tawarkan",

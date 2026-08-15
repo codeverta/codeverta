@@ -364,10 +364,9 @@ export async function getStaticPaths() {
 export const getStaticProps = withI18n(
   ["common"],
   function ({ params, locale }) {
-    const contentLocale = getProjectContentLocale(params.id, locale);
-    if (contentLocale !== locale) {
-      return { notFound: true };
-    }
+    const project = getProjectById(params.id as string, locale);
+    if (!project) return { notFound: true };
+
     const projects = getProjects(locale);
     const latestArticles = getSortedPostsData("blog")
       .slice(0, 3)
@@ -379,9 +378,6 @@ export const getStaticProps = withI18n(
         image: p.image || null,
         tags: p.tags || "",
       }));
-
-    const project = getProjectById(params.id as string, locale);
-    if (!project) return { notFound: true };
 
     const filteredProducts = projects.filter((p) => p.product.id !== params.id);
     const seededRandom = (seed) => {

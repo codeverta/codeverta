@@ -3,10 +3,11 @@
 const nextI18nConfig = require("./next-i18next.config");
 const fs = require("fs");
 const path = require("path");
+const matter = require("gray-matter");
 
 const siteUrl = process.env.SITE_URL || "https://www.codeverta.com";
 const defaultLocale = nextI18nConfig.i18n.defaultLocale;
-const productLocales = ["id", "en-US", "zh", "ja", "ko", "de", "fr", "th"];
+const productLocales = nextI18nConfig.i18n.locales;
 const defaultOnlySections = new Set([
   "news",
   "cybersecurity",
@@ -98,6 +99,32 @@ function markdownSlugs(directory) {
     .map((fileName) => fileName.replace(/\.md$/, ""));
 }
 
+function getBlogTranslationGroups() {
+  const blogDirectory = path.join(process.cwd(), "blog", "blog");
+  const sources = [
+    { locale: defaultLocale, directory: blogDirectory },
+    ...nextI18nConfig.i18n.locales
+      .filter((locale) => locale !== defaultLocale)
+      .map((locale) => ({
+        locale,
+        directory: path.join(blogDirectory, locale),
+      })),
+  ];
+  const groups = new Map();
+
+  for (const source of sources) {
+    for (const slug of markdownSlugs(source.directory)) {
+      const file = path.join(source.directory, `${slug}.md`);
+      const frontMatter = matter(fs.readFileSync(file, "utf8")).data;
+      const translationKey = frontMatter.translationOf || slug;
+      const group = groups.get(translationKey) || [];
+      group.push({ locale: source.locale, slug, file });
+      groups.set(translationKey, group);
+    }
+  }
+  return groups;
+}
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: siteUrl,
@@ -127,6 +154,43 @@ module.exports = {
             .statSync(path.join(directory, `${slug}.md`))
             .mtime.toISOString(),
           alternateRefs: getAlternateRefs(routePath),
+        });
+      }
+    }
+
+    for (const records of getBlogTranslationGroups().values()) {
+      const uniqueRecords = [
+        ...new Map(records.map((record) => [record.locale, record])).values(),
+      ];
+      const defaultRecord =
+        uniqueRecords.find((record) => record.locale === defaultLocale) ||
+        uniqueRecords[0];
+      const alternateRefs = uniqueRecords.map((record) => ({
+        href: `${siteUrl}${
+          record.locale === defaultLocale ? "" : `/${record.locale}`
+        }/blog/${record.slug}`,
+        hreflang: record.locale,
+        hrefIsAbsolute: true,
+      }));
+      alternateRefs.push({
+        href: `${siteUrl}${
+          defaultRecord.locale === defaultLocale
+            ? ""
+            : `/${defaultRecord.locale}`
+        }/blog/${defaultRecord.slug}`,
+        hreflang: "x-default",
+        hrefIsAbsolute: true,
+      });
+
+      for (const record of uniqueRecords) {
+        entries.push({
+          loc: `${
+            record.locale === defaultLocale ? "" : `/${record.locale}`
+          }/blog/${record.slug}`,
+          changefreq: "weekly",
+          priority: 0.8,
+          lastmod: fs.statSync(record.file).mtime.toISOString(),
+          alternateRefs,
         });
       }
     }

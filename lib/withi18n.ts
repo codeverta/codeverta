@@ -1,11 +1,11 @@
-import { GetStaticProps } from "next";
+import type { GetStaticProps, GetStaticPropsContext } from "next/dist/types";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export function withI18n(
   namespaces = ["common"],
   gssp: GetStaticProps | null = null
 ) {
-  return async (context) => {
+  return async (context: GetStaticPropsContext) => {
     const locale = context.locale ?? context.defaultLocale ?? "id";
     const i18nProps = await serverSideTranslations(locale, namespaces);
 

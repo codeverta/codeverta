@@ -1,8 +1,8 @@
 {
   "seo": {
-    "title": "Codevertaについて - ソフトウェア会社とビジネステクノロジーパートナー",
-    "description": "Codevertaはコード品質、透明なコミュニケーション、事業価値に注力する開発者、デザイナー、ITコンサルタントのチームです。",
-    "keywords": "Codevertaについて, ソフトウェア会社, 技術パートナー, ITコンサルタント"
+    "title": "Codevertaについて - 東京・日本のDX＆ソフトウェア開発パートナー",
+    "description": "Codevertaは、東京・渋谷をはじめ日本全国の企業に向けて、確かな技術力と透明性の高いコミュニケーションでWeb・アプリ・システム開発を提供するプロフェッショナルチームです。",
+    "keywords": "Codevertaについて, 東京 ソフトウェア会社, 渋谷 システム開発, 日本 DX推進, ITコンサルタント"
   },
   "story": {
     "imageAlt": "Codeverta チームのディスカッション",
@@ -22,7 +22,7 @@
       "highlight": "がん治療支援への取り組み"
     },
     "description": {
-      "before": "PT Zenit Technology Solution では、イノベーションはより大きな目的に役立つべきだと考えています。私たちは",
+      "before": "Zenit Technology Solution Pte. Ltd. では、イノベーションはより大きな目的に役立つべきだと考えています。私たちは",
       "pledge": "年間純利益の 3% 以上",
       "after": "を、Kitabisa を通じて経済的に困難ながん患者の支援に充てることを約束します"
     },
@@ -141,11 +141,21 @@
     },
     "description": "私たちの組織構成は、プロダクト、エンジニアリング、マーケティング、財務、人材領域が連携し、各プロジェクトを明確な責任体制で進めるためのものです。"
   },
+  "customerMap": {
+    "loading": "地図を読み込んでいます...",
+    "badge": "対応エリア",
+    "heading": {
+      "before": "",
+      "after": "全国のビジネスをサポート"
+    },
+    "description": "東京、横浜、名古屋、大阪、福岡、札幌をはじめ、日本各地の企業がデジタル基盤を構築できるよう支援しています。",
+    "customerUnit": "社のお客様"
+  },
   "location": {
-    "badge": "所在地",
-    "heading": "ジョグジャカルタの Codeverta へお越しください",
-    "description": "Google Maps でオフィス所在地を確認できます。Web サイト、アプリ、LMS、情報システム、その他 IT サービスについて相談したいときにルートを取得してください。",
-    "mapTitle": "Google Maps 上の Codeverta オフィス所在地",
+    "badge": "拠点案内",
+    "heading": "東京・渋谷拠点および日本全国対応サポート",
+    "description": "東京・渋谷拠点を中心に、日本全国の企業・店舗のデジタル課題・DX推進にご対応いたします。Webサイト、スマホアプリ、ERP、POS、ITサービスについてお気軽にご相談ください。",
+    "mapTitle": "Codeverta オフィス所在地マップ",
     "cta": "Google Maps で開く"
   }
 }

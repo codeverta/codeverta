@@ -3,8 +3,7 @@ module.exports = {
     defaultLocale: "id",
     locales: [
       "id",
-      "en-US",
-      "en-GB",
+      "en",
       "zh",
       "ja",
       "ko",
@@ -23,8 +22,7 @@ module.exports = {
   },
   fallbackLng: {
     default: ["id"],
-    "en-GB": ["en-US"],
-    nl: ["en-GB"],
+    nl: ["en"],
   },
   localePath: "./public/locales",
   reloadOnPrerender: process.env.NODE_ENV === "development",

@@ -38,7 +38,10 @@ export default function HeroSection({ t }) {
             className="mb-5 md:mb-8 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border border-gray-200 dark:border-zinc-800 shadow-sm rounded-full px-4 md:px-5 py-1.5 md:py-2 text-xs md:text-sm leading-relaxed font-semibold text-gray-700 dark:text-gray-300 transition-all hover:shadow-md cursor-default"
             variant="secondary"
           >
-            Leading Software Company Based in Bekasi & Yogyakarta
+            {t(
+              "home.hero.badge",
+              "Leading Software Company Based in Bekasi & Yogyakarta"
+            )}
           </Badge>
 
           <h1 className="text-[2.25rem] min-[390px]:text-[2.5rem] md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-br from-gray-900 via-gray-800 to-gray-500 dark:from-white dark:via-gray-200 dark:to-gray-500 pb-2 md:pb-4 leading-[1.08] md:leading-[1.1]">

@@ -5,8 +5,7 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 
 export const SUPPORTED_LOCALES = [
   "id",
-  "en-US",
-  "en-GB",
+  "en",
   "zh",
   "ja",
   "ko",
@@ -24,16 +23,7 @@ export const SUPPORTED_LOCALES = [
 
 export type SupportedLocale = (typeof SUPPORTED_LOCALES)[number];
 
-const PRODUCT_LOCALES: SupportedLocale[] = [
-  "id",
-  "en-US",
-  "zh",
-  "ja",
-  "ko",
-  "de",
-  "fr",
-  "th",
-];
+const PRODUCT_LOCALES: SupportedLocale[] = [...SUPPORTED_LOCALES];
 
 // These sections currently have Indonesian source content only. Publishing
 // locale-prefixed fallbacks as independent pages creates duplicate clusters.
@@ -53,8 +43,7 @@ const DEFAULT_ONLY_SECTIONS = new Set([
 
 export const OG_LOCALES: Record<SupportedLocale, string> = {
   id: "id_ID",
-  "en-US": "en_US",
-  "en-GB": "en_GB",
+  en: "en_US",
   zh: "zh_CN",
   ja: "ja_JP",
   ko: "ko_KR",
@@ -130,7 +119,7 @@ const BASE_COPY: Record<SupportedLocale, LocaleSeoCopy> = {
       app: "Aplikasi Web",
     },
   },
-  "en-US": {
+  en: {
     service: "Web, App, ERP & IT Solution Development Services",
     description:
       "Codeverta helps SMEs, startups, and enterprises build fast, secure, scalable websites, applications, ERP, POS, business automation, and IT solutions.",
@@ -163,47 +152,6 @@ const BASE_COPY: Record<SupportedLocale, LocaleSeoCopy> = {
       short: "URL Shortener",
       qr: "QR Code Generator",
       picker: "Color Picker",
-      "invoice-generator": "Invoice Generator",
-      "favicon-generator": "Favicon Generator",
-      "blog-form": "Blog Form",
-      article: "Articles",
-      prompting: "Prompting",
-      app: "Web Apps",
-    },
-  },
-  "en-GB": {
-    service: "Website, App, ERP & IT Solution Development Services",
-    description:
-      "Codeverta helps SMEs, startups, and enterprises build fast, secure, scalable websites, applications, ERP, POS, business automation, and IT solutions.",
-    keywords:
-      "website development services, software house, app development, SME ERP, POS system, IT solutions, Codeverta",
-    labels: {
-      "/": "Website, App & IT Solution Development Services",
-      about: "About Us",
-      pelatihan: "Coding & Technology Training",
-      produk: "Digital Products",
-      blog: "Technology Blog",
-      faq: "FAQ",
-      contact: "Contact",
-      careers: "Careers",
-      terms: "Terms & Conditions",
-      "privacy-policy": "Privacy Policy",
-      games: "Games",
-      image: "Image Tools",
-      pdf: "PDF Tools",
-      course: "Online Courses",
-      cybersecurity: "Cybersecurity",
-      ai: "Artificial Intelligence",
-      news: "Technology News",
-      gadget: "Gadgets",
-      startups: "Startups",
-      tutorials: "Tutorials",
-      gallery: "Gallery",
-      download: "Downloads",
-      editor: "Code Editor",
-      short: "URL Shortener",
-      qr: "QR Code Generator",
-      picker: "Colour Picker",
       "invoice-generator": "Invoice Generator",
       "favicon-generator": "Favicon Generator",
       "blog-form": "Blog Form",
@@ -253,13 +201,13 @@ const BASE_COPY: Record<SupportedLocale, LocaleSeoCopy> = {
     },
   },
   ja: {
-    service: "Web、アプリ、ERP、IT ソリューション開発サービス",
+    service: "東京・渋谷発のDX・Web/アプリ/ERP開発・ITソリューション",
     description:
-      "Codeverta は中小企業、スタートアップ、エンタープライズ向けに、高速で安全、拡張性の高い Web サイト、アプリ、ERP、POS、自動化、IT ソリューションを構築します。",
+      "東京・渋谷を拠点に、日本の企業や店舗が抱える人手不足・DX推進・業務効率化の課題を解決。高品質なWebサイト制作、スマホアプリ開発、ERP・POS導入まで最適化したシステムを開発・提供します。",
     keywords:
-      "Web開発, ソフトウェア会社, アプリ開発, ERP, POS, ITソリューション, Codeverta",
+      "東京 Web制作, 渋谷 システム開発, 日本 DX推進, アプリ開発 東京, ERP導入, 店舗POS, 業務効率化, ITソリューション, Codeverta",
     labels: {
-      "/": "Web、アプリ、IT ソリューション開発サービス",
+      "/": "東京・渋谷発のDX・Web/アプリ/ERP開発・ITソリューション",
       about: "私たちについて",
       pelatihan: "コーディング・技術研修",
       produk: "デジタル製品",
@@ -744,17 +692,14 @@ const BASE_COPY: Record<SupportedLocale, LocaleSeoCopy> = {
   },
 };
 
-const FALLBACK_LABELS = BASE_COPY["en-US"].labels;
+const FALLBACK_LABELS = BASE_COPY["en"].labels;
 
 const DESCRIPTION_BY_SECTION: Partial<
   Record<string, Record<SupportedLocale, string>>
 > = {
   blog: {
     id: "Baca insight, studi kasus, dan panduan teknologi dari Codeverta untuk membantu bisnis tumbuh lewat produk digital.",
-    "en-US":
-      "Read Codeverta insights, case studies, and technology guides to grow your business with digital products.",
-    "en-GB":
-      "Read Codeverta insights, case studies, and technology guides to grow your business with digital products.",
+    en: "Read Codeverta insights, case studies, and technology guides to grow your business with digital products.",
     zh: "阅读 Codeverta 的洞察、案例研究和技术指南，借助数字产品推动业务增长。",
     ja: "Codeverta のインサイト、事例、技術ガイドでデジタル製品による事業成長を支援します。",
     ko: "Codeverta의 인사이트, 사례 연구, 기술 가이드를 통해 디지털 제품으로 비즈니스를 성장시키세요.",
@@ -832,9 +777,6 @@ export function getCanonicalLocale(locale?: string, path = "/") {
   const availableLocales = getAvailableLocalesForPath(path);
 
   if (availableLocales.includes(safeLocale)) return safeLocale;
-  if (safeLocale === "en-GB" && availableLocales.includes("en-US")) {
-    return "en-US";
-  }
   return DEFAULT_LOCALE;
 }
 
@@ -864,19 +806,22 @@ function normalizeCanonicalUrl(url: string) {
 
 export function getAlternateLinks(
   path = "/",
-  locales?: readonly SupportedLocale[]
+  locales?: readonly SupportedLocale[],
+  localizedPaths?: Record<string, string>
 ) {
   const availableLocales = locales || getAvailableLocalesForPath(path);
+  const defaultPath = localizedPaths?.[DEFAULT_LOCALE] || path;
+
   return [
     ...availableLocales.map((locale) => ({
       rel: "alternate",
       hrefLang: locale,
-      href: getLocalizedUrl(locale, path),
+      href: getLocalizedUrl(locale, localizedPaths?.[locale] || path),
     })),
     {
       rel: "alternate",
       hrefLang: "x-default",
-      href: getLocalizedUrl(DEFAULT_LOCALE, path),
+      href: getLocalizedUrl(DEFAULT_LOCALE, defaultPath),
     },
   ];
 }
@@ -898,12 +843,9 @@ function getLabel(locale: SupportedLocale, key: string) {
 
 const OFFICE_LOCATION_TEXT: Record<SupportedLocale, string> = {
   id: " Lokasi kantor kami di Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  "en-US":
-    " Our office is located at Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  "en-GB":
-    " Our office is located at Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+  en: " Our office is located at Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
   zh: " 我们的办公室位于 Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia。",
-  ja: " オフィス所在地：Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia。",
+  ja: " 日本拠点：東京都渋谷区（東京・大阪をはじめ日本全国の企業課題に対応）。",
   ko: " 사무실 위치: Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
   ms: " Lokasi pejabat kami di Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
   de: " Unser Büro befindet sich in der Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
@@ -926,7 +868,9 @@ export function appendOfficeLocation(
   if (!description) return officeLocationSuffix.trim();
   if (
     description.includes("Jl Kaliurang") ||
-    description.includes("Jl. Kaliurang")
+    description.includes("Jl. Kaliurang") ||
+    description.includes("東京都") ||
+    description.includes("東京")
   ) {
     return description;
   }
@@ -943,6 +887,7 @@ export function buildSeoMeta({
   keywords,
   image,
   canonical,
+  includeOfficeLocation = true,
 }: {
   locale?: string;
   path?: string;
@@ -951,6 +896,7 @@ export function buildSeoMeta({
   keywords?: string;
   image?: string;
   canonical?: string;
+  includeOfficeLocation?: boolean;
 } = {}): SeoMeta {
   const safeLocale = normalizeLocale(locale);
   const safePath = normalizePath(path);
@@ -970,10 +916,12 @@ export function buildSeoMeta({
     title:
       title ||
       (safePath === "/" ? `${SITE_NAME} - ${copy.service}` : generatedTitle),
-    description: appendOfficeLocation(
-      description || sectionDescription || copy.description,
-      safeLocale
-    ),
+    description: includeOfficeLocation
+      ? appendOfficeLocation(
+          description || sectionDescription || copy.description,
+          safeLocale
+        )
+      : description || sectionDescription || copy.description,
     canonical: canonical
       ? normalizeCanonicalUrl(canonical)
       : getLocalizedUrl(canonicalLocale, safePath),

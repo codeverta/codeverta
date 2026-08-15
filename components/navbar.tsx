@@ -21,8 +21,7 @@ import { getCategories, getMegaMenuData } from "@/lib/data";
 
 const languages = [
   { code: "id", name: "Indonesia", flag: "🇮🇩" },
-  { code: "en-US", name: "English (US)", flag: "🇺🇸" },
-  { code: "en-GB", name: "English (UK)", flag: "🇬🇧" },
+  { code: "en", name: "English", flag: "🇺🇸" },
   { code: "zh", name: "中文", flag: "🇨🇳" },
   { code: "ja", name: "日本語", flag: "🇯🇵" },
   { code: "ko", name: "한국어", flag: "🇰🇷" },
@@ -92,11 +91,7 @@ const Navbar = ({
 
   useEffect(() => {
     let cancelled = false;
-    const localeCandidates = [
-      locale,
-      locale?.split("-")[0],
-      locale === "en-GB" ? "en-US" : "",
-    ].filter(Boolean);
+    const localeCandidates = [locale, locale?.split("-")[0]].filter(Boolean);
 
     async function loadLocalizedProjects() {
       for (const candidate of localeCandidates) {
@@ -156,6 +151,10 @@ const Navbar = ({
     setActiveMegaMenu(null);
   };
   const changeLanguage = (newLocale) => {
+    // Keep an explicit choice above automatic browser/region detection.
+    document.cookie = `NEXT_LOCALE=${encodeURIComponent(
+      newLocale
+    )}; Path=/; Max-Age=31536000; SameSite=Lax`;
     const targetPath = localizedPaths?.[newLocale];
 
     if (targetPath) {
@@ -210,13 +209,13 @@ const Navbar = ({
                 >
                   <div className="flex items-center justify-between pb-3 mb-3 border-b">
                     <span className="font-bold text-base text-foreground">
-                      Pilih Bahasa
+                      {t("ui.chooseLanguage")}
                     </span>
                     <button
                       onClick={() => setLangDropdownOpen(false)}
                       className="text-muted-foreground hover:text-foreground text-sm p-1"
                     >
-                      Tutup
+                      {t("ui.close")}
                     </button>
                   </div>
                   <div className="grid grid-cols-2 gap-1">
@@ -452,7 +451,9 @@ const Navbar = ({
             <div className="flex min-w-0 flex-col leading-tight">
               <span className="text-sm sm:text-base">Codeverta</span>
               <span className="truncate text-[8px] min-[360px]:text-[9px] sm:text-[10px] font-medium text-gray-500 tracking-tighter uppercase">
-                PT Zenit Technology Solution
+                {locale === "id"
+                  ? "PT Zenit Technology Solution"
+                  : "Zenit Technology Solution Pte. Ltd."}
               </span>
             </div>
           </Link>

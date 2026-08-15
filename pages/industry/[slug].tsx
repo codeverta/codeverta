@@ -1,10 +1,17 @@
 import Head from "next/head";
 import Link from "next/link";
-import { GetStaticPaths, GetStaticProps } from "next";
+import type { GetStaticPaths, GetStaticProps } from "next/dist/types";
 import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
 import { Industry, IndustryPageCopy, interpolate } from "@/lib/industries";
 import { getLocalizedUrl, SITE_NAME, SITE_URL } from "@/lib/seo";
+import {
+  ensureMarketDescription,
+  ensureMarketKeywords,
+  ensureMarketTitle,
+  fillMarketTemplate,
+  getIndustryMarket,
+} from "@/lib/industry-markets";
 
 /* ── getStaticPaths ── */
 export const getStaticPaths: GetStaticPaths = async ({ locales = [] }) => {
@@ -26,7 +33,7 @@ export const getStaticProps: GetStaticProps = withI18n(
     const { getIndustries, getIndustryBySlug, getIndustryPageCopy } =
       await import("@/lib/industries.server");
     const slug = params?.slug as string;
-    const safeLocale = locale || "en-US";
+    const safeLocale = locale || "en";
     const industry = getIndustryBySlug(slug, safeLocale);
 
     if (!industry) {
@@ -58,15 +65,23 @@ export default function IndustryDetailPage({
   copy: IndustryPageCopy;
   locale: string;
 }) {
-  const title = interpolate(copy.seo.detailTitleTemplate, {
-    industry: industry.name,
-  });
-  const description = interpolate(copy.seo.detailDescriptionTemplate, {
-    industry: industry.name,
-  });
-  const keywords = interpolate(copy.seo.detailKeywordsTemplate, {
-    industry: industry.name,
-  });
+  const market = getIndustryMarket(locale);
+  const title = ensureMarketTitle(
+    interpolate(copy.seo.detailTitleTemplate, { industry: industry.name }),
+    market
+  );
+  const description = ensureMarketDescription(
+    interpolate(copy.seo.detailDescriptionTemplate, {
+      industry: industry.name,
+    }),
+    market
+  );
+  const keywords = ensureMarketKeywords(
+    interpolate(copy.seo.detailKeywordsTemplate, {
+      industry: industry.name,
+    }),
+    market
+  );
   const canonical = getLocalizedUrl(locale, `/industry/${industry.slug}`);
   const schemaGraph = {
     "@context": "https://schema.org",
@@ -83,10 +98,21 @@ export default function IndustryDetailPage({
           name: SITE_NAME,
           url: SITE_URL,
         },
-        areaServed: {
-          "@type": "Country",
-          name: "Indonesia",
-        },
+        areaServed: [
+          {
+            "@type": "Country",
+            name: market.country,
+            identifier: market.countryCode,
+          },
+          ...market.cities.map((city) => ({
+            "@type": "City",
+            name: city,
+            containedInPlace: {
+              "@type": "Country",
+              name: market.country,
+            },
+          })),
+        ],
         serviceType: `${industry.name} software solution`,
         audience: {
           "@type": "BusinessAudience",
@@ -139,6 +165,7 @@ export default function IndustryDetailPage({
         description={description}
         keywords={keywords}
         url={canonical}
+        includeOfficeLocation={false}
       />
       <Head>
         <script
@@ -200,7 +227,7 @@ export default function IndustryDetailPage({
                   style={{ color: "var(--accent)" }}
                 >
                   {industry.tagline}
-                </span>
+                </span>{" "}
                 {industry.description}
               </p>
               <div className="flex flex-wrap gap-4 items-center">
@@ -244,24 +271,24 @@ export default function IndustryDetailPage({
                 <div className="flex flex-col gap-6 -translate-y-12 group-hover:-translate-y-8 transition-transform duration-1000">
                   <img
                     src={industry.images.hero[0]}
-                    alt={`${industry.name} operations`}
+                    alt={`${industry.name} — ${market.cities[0]}, ${market.country}`}
                     className="rounded-3xl object-cover h-[350px] w-full shadow-2xl border border-white/10"
                   />
                   <img
                     src={industry.images.hero[1]}
-                    alt={`${industry.name} analytics`}
+                    alt={`${industry.name} — ${market.cities[1]}, ${market.country}`}
                     className="rounded-3xl object-cover h-[250px] w-full shadow-2xl border border-white/10"
                   />
                 </div>
                 <div className="flex flex-col gap-6 translate-y-12 group-hover:translate-y-8 transition-transform duration-1000">
                   <img
                     src={industry.images.hero[2]}
-                    alt={`${industry.name} team`}
+                    alt={`${industry.name} — ${market.cities[2]}, ${market.country}`}
                     className="rounded-3xl object-cover h-[250px] w-full shadow-2xl border border-white/10"
                   />
                   <img
                     src={industry.images.hero[3]}
-                    alt={`${industry.name} workspace`}
+                    alt={`${industry.name} — ${market.cities[3]}, ${market.country}`}
                     className="rounded-3xl object-cover h-[350px] w-full shadow-2xl border border-white/10"
                   />
                 </div>
@@ -273,7 +300,9 @@ export default function IndustryDetailPage({
         {/* ── Featured Clients Enterprise Marquee ── */}
         <div className="bg-slate-900 border-b border-slate-800 py-6 px-6 overflow-hidden flex flex-col md:flex-row items-center gap-8 shadow-inner">
           <span className="text-xs font-black tracking-[0.2em] uppercase text-slate-500 whitespace-nowrap shrink-0">
-            {copy.detail.trustedBy}
+            {fillMarketTemplate(market.trustedByTemplate, {
+              industry: industry.name,
+            })}
           </span>
           <div
             className="flex gap-8 overflow-hidden w-full"
@@ -304,11 +333,10 @@ export default function IndustryDetailPage({
           <div className="max-w-[90rem] mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-                Global Impact & Operations
+                {market.coverageTitle}
               </h2>
               <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-                Visualizing our commitment to excellence, scalable
-                infrastructure, and industry-leading corporate environments.
+                {market.coverageDescription}
               </p>
             </div>
             <div className="columns-1 sm:columns-2 lg:columns-4 gap-6 space-y-6">
@@ -317,7 +345,9 @@ export default function IndustryDetailPage({
                   key={idx}
                   src={imgSrc}
                   className="rounded-2xl w-full object-cover break-inside-avoid shadow-sm hover:shadow-xl transition-all duration-300"
-                  alt={`${industry.name} operations visual ${idx + 1}`}
+                  alt={`${industry.name} — ${
+                    market.cities[idx % market.cities.length]
+                  }, ${market.country}`}
                 />
               ))}
             </div>
@@ -442,14 +472,13 @@ export default function IndustryDetailPage({
               <div className="max-w-[90rem] mx-auto">
                 <div className="text-center mb-16">
                   <div className="text-xs font-black tracking-widest uppercase text-slate-400 mb-3">
-                    Platform Screenshots
+                    {copy.detail.solutionEyebrow}
                   </div>
                   <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-                    Learning Management System
+                    {industry.name} — {market.cities.slice(0, 3).join(" · ")}
                   </h2>
                   <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-                    A look inside our LMS platform — from AI chat to
-                    certificates, schedules, and quizzes.
+                    {market.coverageDescription}
                   </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -460,7 +489,9 @@ export default function IndustryDetailPage({
                     >
                       <img
                         src={src}
-                        alt={`Screenshot ${idx + 1}`}
+                        alt={`${industry.name} — ${
+                          market.cities[idx % market.cities.length]
+                        }, ${market.country}`}
                         className="w-full object-cover aspect-[4/3] group-hover:scale-[1.02] transition-transform duration-500"
                       />
                     </div>

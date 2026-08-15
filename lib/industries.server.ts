@@ -2,6 +2,11 @@ import fs from "fs";
 import path from "path";
 import baseIndustries from "../industries.json";
 import { Industry, IndustryPageCopy } from "./industries";
+import {
+  ensureMarketContent,
+  fillMarketTemplate,
+  getIndustryMarket,
+} from "./industry-markets";
 
 const defaultCopy: IndustryPageCopy = {
   seo: {
@@ -68,12 +73,8 @@ function deepMerge<T>(base: T, override: unknown): T {
   return merged as T;
 }
 
-function getIndustryLocaleFile(locale = "en-US") {
-  const candidates = [
-    locale,
-    locale.split("-")[0],
-    locale === "en-GB" ? "en-US" : "",
-  ].filter(Boolean);
+function getIndustryLocaleFile(locale = "en") {
+  const candidates = [locale, locale.split("-")[0]].filter(Boolean);
 
   for (const candidate of candidates) {
     const filePath = path.join(
@@ -89,7 +90,7 @@ function getIndustryLocaleFile(locale = "en-US") {
   return null;
 }
 
-export function getIndustryPageCopy(locale = "en-US"): IndustryPageCopy {
+export function getIndustryPageCopy(locale = "en"): IndustryPageCopy {
   const filePath = getIndustryLocaleFile(locale);
   if (!filePath) return defaultCopy;
 
@@ -102,19 +103,35 @@ export function getIndustryPageCopy(locale = "en-US"): IndustryPageCopy {
   }
 }
 
-export function getIndustries(locale = "en-US"): Industry[] {
+export function getIndustries(locale = "en"): Industry[] {
   const copy = getIndustryPageCopy(locale);
   const localizedBySlug = copy.industries || {};
+  const market = getIndustryMarket(locale);
 
-  return (baseIndustries as Industry[]).map((industry) =>
-    deepMerge(industry, localizedBySlug[industry.slug])
-  );
+  return (baseIndustries as Industry[]).map((industry) => {
+    const localized = deepMerge(industry, localizedBySlug[industry.slug]);
+
+    return {
+      ...localized,
+      tagline: ensureMarketContent(localized.tagline, market, localized.name),
+      description: ensureMarketContent(
+        localized.description,
+        market,
+        localized.name
+      ),
+      heroStat: localized.heroStat,
+      challenges: localized.challenges,
+      solutions: localized.solutions,
+      testimonial: localized.testimonial,
+      featuredClients: localized.featuredClients,
+    };
+  });
 }
 
 export function getIndustrySlugs() {
   return (baseIndustries as Industry[]).map((industry) => industry.slug);
 }
 
-export function getIndustryBySlug(slug: string, locale = "en-US") {
+export function getIndustryBySlug(slug: string, locale = "en") {
   return getIndustries(locale).find((industry) => industry.slug === slug);
 }

@@ -4,7 +4,7 @@ import { withI18n } from "@/lib/withi18n";
 import { Heart, Activity } from "lucide-react";
 import { useTranslation } from "next-i18next";
 import OrgChart from "@/components/OrgChart";
-import IndonesiaHeatmap from "@/components/IndonesiaHeatmap";
+import CustomerMap from "@/components/CustomerMap";
 
 export const getStaticProps = withI18n(["common", "about"]);
 
@@ -51,7 +51,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <IndonesiaHeatmap />
+      <CustomerMap />
       <TeamSection />
       <OrgChart />
       <LocationMap t={t} />

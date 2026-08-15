@@ -1,4 +1,14 @@
 {
+  "ui": {
+    "chooseLanguage": "Sprache wählen",
+    "close": "Schließen",
+    "officeAddress": "Büroadresse",
+    "whatsapp": {
+      "help": "Wie können wir Ihnen helfen?",
+      "defaultMessage": "Hallo, ich möchte mehr über die Dienstleistungen von Codeverta erfahren.",
+      "ariaLabel": "Über WhatsApp chatten"
+    }
+  },
   "our_products": "Unsere Produkte",
   "home": {
     "title": "Professionelle Website-Erstellung und IT-Lösungen für kleine und mittlere Unternehmen",
@@ -105,7 +115,13 @@
     "faq": "FAQ",
     "careers": "Karriere",
     "about": "Über uns",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "about_desc": "Über unser Team & unsere Mission",
+    "careers_desc": "Werden Sie Teil unseres Teams",
+    "contact_desc": "Kontaktieren Sie uns oder Angebot anfordern",
+    "learning_desc": "Tech-Kurse & Bootcamps",
+    "blog_desc": "Neueste Artikel & Einblicke",
+    "events_desc": "Tech-Events & Treffen"
   },
   "mega_menu": {
     "products": {

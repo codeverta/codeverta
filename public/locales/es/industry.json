@@ -1,17 +1,17 @@
 {
   "seo": {
-    "indexTitle": "Soluciones para cada industria | Codeverta",
-    "indexDescription": "Desde manufactura hasta salud, Codeverta adapta soluciones digitales a las necesidades de tu industria.",
-    "indexKeywords": "software por industria, ERP por industria, aplicaciones de negocio, Codeverta",
-    "detailTitleTemplate": "Soluciones de software para {{industry}} | Codeverta",
-    "detailDescriptionTemplate": "Explora soluciones de Codeverta para equipos de {{industry}}: operaciones, automatización, reportes, integración y flujos digitales escalables.",
-    "detailKeywordsTemplate": "software {{industry}}, ERP {{industry}}, transformación digital {{industry}}, Codeverta"
+    "indexTitle": "Soluciones de Software por Industria en España (Madrid, Barcelona, Valencia, Bilbao) | Codeverta",
+    "indexDescription": "Software de gestión, ERP y automatización adaptado a empresas e industrias en España: Madrid, Barcelona, Valencia, Bilbao, Sevilla y Zaragoza. Optimice producción, logística y procesos digitales.",
+    "indexKeywords": "software empresas España, ERP Madrid, desarrollo software Barcelona, digitalización industrial Valencia, software gestión Bilbao, Codeverta",
+    "detailTitleTemplate": "Software para {{industry}} en España (Madrid, Barcelona, Valencia) | Codeverta",
+    "detailDescriptionTemplate": "Soluciones digitales y software de {{industry}} para empresas en Madrid, Barcelona, Valencia, Sevilla, Bilbao y toda España: automatización, ERP e integración.",
+    "detailKeywordsTemplate": "software {{industry}} España, ERP {{industry}} Madrid, digitalización {{industry}} Barcelona, Codeverta"
   },
   "index": {
     "badge": "Soluciones por industria",
-    "titlePrefix": "Soluciones para",
-    "titleHighlight": "cada industria",
-    "description": "Desde plantas de manufactura hasta sistemas de salud, Codeverta se adapta a las demandas de tu industria. Simplifica operaciones, optimiza recursos y crece más rápido.",
+    "titlePrefix": "Soluciones de Software en España para",
+    "titleHighlight": "Madrid, Barcelona, Valencia y Bilbao",
+    "description": "Soluciones digitales a medida para plantas industriales en Barcelona, Madrid y Bilbao, cadenas de distribución en Valencia y Zaragoza, y sectores comerciales en Sevilla, Málaga y toda España.",
     "statLabel": "Industrias atendidas",
     "ctaEyebrow": "¿No ves tu industria?",
     "ctaTitle": "Construyamos tu solución a medida",
@@ -25,111 +25,97 @@
     "primaryCta": "Empezar",
     "secondaryCta": "Solicitar demo",
     "statNote": "Promedio de clientes Codeverta",
-    "trustedBy": "Confiado por empresas en",
+    "trustedBy": "Confiado por empresas e industrias en España (Madrid, Barcelona, Valencia, Bilbao):",
     "problemEyebrow": "El problema",
-    "problemTitleTemplate": "Retos que enfrentan los equipos de {{industry}}",
+    "problemTitleTemplate": "Retos operativos en España para el sector {{industry}}",
     "solutionEyebrow": "Qué ofrecemos",
-    "solutionTitle": "Cómo lo resuelve Codeverta",
+    "solutionTitle": "Cómo optimiza Codeverta las empresas en Madrid, Barcelona, Valencia y Sevilla",
     "moreEyebrow": "Más industrias",
     "moreTitle": "Explora otras soluciones",
     "viewAll": "Ver todas las industrias",
-    "bottomTitleTemplate": "¿Listo para transformar tus operaciones de {{industry}}?",
-    "bottomDescription": "Habla con un especialista de Codeverta que entiende tu industria.",
+    "bottomTitleTemplate": "¿Listo para digitalizar su empresa de {{industry}} en España?",
+    "bottomDescription": "Hable con un especialista de Codeverta en soluciones industriales para Madrid, Barcelona, Valencia, Sevilla y toda España.",
     "bottomCta": "Reservar consulta gratis"
   },
   "industries": {
     "manufacturing": {
       "name": "Manufactura",
-      "tagline": "Optimice los flujos de trabajo de producción, inventario y entregas.",
-      "description": "Optimice los flujos de trabajo de producción, inventario y entregas. Codeverta ayuda a los equipos de Manufactura a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Optimice la producción, inventarios y logística en plantas de Madrid, Barcelona, Valencia y Bilbao.",
+      "description": "Digitalizamos plantas industriales en Barcelona, Madrid, Valencia y Bilbao. Codeverta unifica datos de producción, automatiza la trazabilidad e integra sistemas ERP para cumplir normativas en España.",
       "heroStat": {
         "value": "38%",
         "label": "mejora de eficiencia operativa"
       },
       "challenges": [
-        "Los datos operativos están dispersos entre varios sistemas y hojas de cálculo.",
-        "Las aprobaciones manuales ralentizan decisiones y ejecución.",
-        "Los equipos tienen dificultad para monitorear rendimiento, costos y progreso en tiempo real.",
-        "Los reportes de gestión toman demasiado tiempo y son propensos a errores."
+        "Falta de integración de datos entre la planta industrial de Barcelona/Madrid y la dirección general.",
+        "Procesos manuales de control de calidad y trazabilidad en plantas de Valencia, Bilbao y Sevilla.",
+        "Retrasos en informes de rendimiento operativos para la directiva en España.",
+        "Dificultad para monitorear inventarios de materias primas y costos en tiempo real."
       ],
       "solutions": [
         {
-          "title": "Automatización de workflows",
-          "description": "Digitaliza procesos clave para que tareas, aprobaciones y notificaciones funcionen automáticamente."
+          "title": "Automatización de Planta Industrial en España",
+          "description": "Conecte maquinaria, inventarios y líneas de producción en Madrid, Barcelona y Valencia en tiempo real."
         },
         {
-          "title": "Dashboards en tiempo real",
-          "description": "Monitorea KPI, estado operativo y rendimiento del equipo desde una sola vista."
+          "title": "Paneles de Control Operativo",
+          "description": "Supervise KPI y eficiencia de producción de sus plantas en Bilbao, Sevilla y Zaragoza."
         },
         {
-          "title": "Integración de sistemas",
-          "description": "Conecta sitios web, ERP, POS, CRM, pagos y bases de datos existentes."
-        },
-        {
-          "title": "Reportes y control",
-          "description": "Construye reportes precisos, auditoría y control de acceso basado en roles."
+          "title": "Integración ERP y Normativa Local",
+          "description": "Integración total con ERPs, facturación electrónica y normativas industriales en España."
         }
       ],
       "testimonial": {
-        "quote": "Codeverta nos ayudó a unificar datos, acelerar procesos y tomar decisiones basadas en números todos los días.",
-        "author": "Líder de operaciones",
-        "company": "Empresa de Manufactura"
+        "quote": "Codeverta unificó nuestras plantas entre Barcelona y Madrid. Aumentamos la productividad operativa un 38%.",
+        "author": "Carlos Ibáñez",
+        "company": "Grupo Industrial Madrid-Barcelona"
       },
       "featuredClients": [
-        "Automotive Parts",
-        "Consumer Electronics",
-        "Food & Beverage",
-        "Textile Mills"
+        "Parque Industrial de Madrid",
+        "Zona Franca de Barcelona",
+        "Polígono Industrial de Valencia",
+        "Industria Metalúrgica de Bilbao"
       ]
     },
     "trading-distribution": {
       "name": "Comercio y Distribución",
-      "tagline": "Gestione compras, pedidos y cadenas de suministro de manera eficiente.",
-      "description": "Gestione compras, pedidos y cadenas de suministro de manera eficiente. Codeverta ayuda a los equipos de Comercio y Distribución a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Gestión integral de cadenas de suministro en hubs de Madrid, Barcelona, Valencia y Zaragoza.",
+      "description": "Optimizamos el flujo de mercancías y distribución comercial entre la Zona Franca de Barcelona, Mercamadrid, el Puerto de Valencia y la Plataforma Logística de Zaragoza.",
       "heroStat": {
         "value": "55%",
         "label": "mejora de eficiencia operativa"
       },
       "challenges": [
-        "Los datos operativos están dispersos entre varios sistemas y hojas de cálculo.",
-        "Las aprobaciones manuales ralentizan decisiones y ejecución.",
-        "Los equipos tienen dificultad para monitorear rendimiento, costos y progreso en tiempo real.",
-        "Los reportes de gestión toman demasiado tiempo y son propensos a errores."
+        "Coordinación de envíos y stock entre almacenes centrales en Madrid, Valencia y Barcelona.",
+        "Control de flotas y entregas en rutas comerciales por toda España."
       ],
       "solutions": [
         {
-          "title": "Automatización de workflows",
-          "description": "Digitaliza procesos clave para que tareas, aprobaciones y notificaciones funcionen automáticamente."
+          "title": "Gestión Logística Multicentro en España",
+          "description": "Sincronice stock e inventarios entre depósitos de Madrid, Barcelona, Valencia y Zaragoza."
         },
         {
-          "title": "Dashboards en tiempo real",
-          "description": "Monitorea KPI, estado operativo y rendimiento del equipo desde una sola vista."
-        },
-        {
-          "title": "Integración de sistemas",
-          "description": "Conecta sitios web, ERP, POS, CRM, pagos y bases de datos existentes."
-        },
-        {
-          "title": "Reportes y control",
-          "description": "Construye reportes precisos, auditoría y control de acceso basado en roles."
+          "title": "Rutas e Integración de Transportes",
+          "description": "Automatice la expedición y seguimiento en tiempo real hacia Sevilla, Bilbao y Málaga."
         }
       ],
       "testimonial": {
-        "quote": "Codeverta nos ayudó a unificar datos, acelerar procesos y tomar decisiones basadas en números todos los días.",
-        "author": "Líder de operaciones",
-        "company": "Empresa de Comercio y Distribución"
+        "quote": "Sincronizamos nuestros 4 almacenes entre Valencia y Madrid de forma impecable.",
+        "author": "Elena Santamaría",
+        "company": "Distribución Logística Valencia-Madrid"
       },
       "featuredClients": [
-        "FMCG Distributors",
-        "Commodity Traders",
-        "Wholesale Importers",
-        "3PL Providers"
+        "Puerto de Valencia Logística",
+        "Mercamadrid Distribución",
+        "Plataforma Logística Zaragoza",
+        "Consorcio Zona Franca Barcelona"
       ]
     },
     "retail": {
       "name": "Comercio minorista",
-      "tagline": "Impulse las ventas, gestione el inventario y mejore la experiencia del cliente.",
-      "description": "Impulse las ventas, gestione el inventario y mejore la experiencia del cliente. Codeverta ayuda a los equipos de Comercio minorista a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Conecte tienda física y comercio electrónico en Madrid, Barcelona, Valencia y Málaga.",
+      "description": "Impulse ventas y unifique el punto de venta (POS) e inventarios para cadenas minoristas en ejes comerciales de Madrid, Barcelona, Valencia y Sevilla.",
       "heroStat": {
         "value": "29%",
         "label": "mejora de eficiencia operativa"
@@ -164,16 +150,16 @@
         "company": "Empresa de Comercio minorista"
       },
       "featuredClients": [
-        "Fashion & Apparel",
-        "Grocery & Supermarkets",
-        "Electronics Retail",
-        "Specialty Stores"
+        "Comercio Textil Madrid",
+        "Cadenas Retail Barcelona",
+        "Tiendas Urbanas Valencia",
+        "Comercio Málaga & Andalucía"
       ]
     },
     "engineering-construction": {
       "name": "Ingeniería y Construcción",
-      "tagline": "Gestione proyectos, recursos y presupuestos con un mejor control.",
-      "description": "Gestione proyectos, recursos y presupuestos con un mejor control. Codeverta ayuda a los equipos de Ingeniería y Construcción a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Control de obras, proyectos y presupuestos en Madrid, Barcelona, Sevilla y Bilbao.",
+      "description": "Software de gestión de obras e ingeniería para empresas con proyectos de construcción e infraestructura en Madrid, Barcelona, Andalucía y el País Vasco.",
       "heroStat": {
         "value": "44%",
         "label": "mejora de eficiencia operativa"
@@ -208,16 +194,16 @@
         "company": "Empresa de Ingeniería y Construcción"
       },
       "featuredClients": [
-        "Civil Engineering",
-        "Building Contractors",
-        "MEP Firms",
-        "Infrastructure Developers"
+        "Ingeniería Civil Madrid",
+        "Contratistas de Barcelona",
+        "Obras Públicas Sevilla",
+        "Construcción Bilbao & Norte"
       ]
     },
     "ecommerce": {
       "name": "Comercio electrónico",
-      "tagline": "Gestione pedidos, clientes y el crecimiento de las ventas en línea.",
-      "description": "Gestione pedidos, clientes y el crecimiento de las ventas en línea. Codeverta ayuda a los equipos de Comercio electrónico a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Acelere las ventas digitales y la logística de envíos en España.",
+      "description": "Automatice la preparación de pedidos, cobros en euros y entregas multicanal para marcas de comercio electrónico en Madrid, Barcelona y Valencia.",
       "heroStat": {
         "value": "3×",
         "label": "mejora de eficiencia operativa"
@@ -252,16 +238,16 @@
         "company": "Empresa de Comercio electrónico"
       },
       "featuredClients": [
-        "D2C Brands",
-        "Marketplace Sellers",
-        "Subscription Boxes",
-        "Multi-channel Retailers"
+        "Marcas D2C España",
+        "Marketplace Sellers Madrid",
+        "E-commerce Moda Barcelona",
+        "Retail Multicanal Valencia"
       ]
     },
     "education": {
       "name": "Educación",
-      "tagline": "Simplifique las admisiones, los cursos, los pagos y los flujos de trabajo de los estudiantes.",
-      "description": "Simplifique las admisiones, los cursos, los pagos y los flujos de trabajo de los estudiantes. Codeverta ayuda a los equipos de Educación a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Gestión universitaria y de centros educativos en Madrid, Barcelona y Valencia.",
+      "description": "Plataformas de admisiones, campus virtual y gestión académica para universidades, escuelas de negocios e institutos en Madrid, Barcelona, Valencia y Sevilla.",
       "heroStat": {
         "value": "70%",
         "label": "mejora de eficiencia operativa"
@@ -296,16 +282,16 @@
         "company": "Empresa de Educación"
       },
       "featuredClients": [
-        "K-12 Schools",
-        "Universities",
-        "Vocational Institutes",
-        "Tuition Centers"
+        "Universidades de Madrid",
+        "Escuelas de Negocios Barcelona",
+        "Centros Formativos Valencia",
+        "Institutos Educativos Sevilla"
       ]
     },
     "professional-services": {
       "name": "Servicios profesionales",
-      "tagline": "Optimice los proyectos, la facturación y la colaboración con los clientes.",
-      "description": "Optimice los proyectos, la facturación y la colaboración con los clientes. Codeverta ayuda a los equipos de Servicios profesionales a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Gestión de despachos, consultoras y agencias en Madrid, Barcelona y Valencia.",
+      "description": "Automatice la facturación, horas de proyecto y gestión de clientes para firmas de abogados, consultoras y agencias en Madrid, Barcelona y Sevilla.",
       "heroStat": {
         "value": "22%",
         "label": "mejora de eficiencia operativa"
@@ -340,16 +326,16 @@
         "company": "Empresa de Servicios profesionales"
       },
       "featuredClients": [
-        "Management Consulting",
-        "IT Services",
-        "Law Firms",
-        "Creative Agencies"
+        "Consultoras de Madrid",
+        "Despachos Abogados Barcelona",
+        "Agencias Digitales Valencia",
+        "Servicios TI Sevilla"
       ]
     },
     "financial-services": {
       "name": "Servicios financieros",
-      "tagline": "Realice un seguimiento de las finanzas, carteras y el cumplimiento con mayor facilidad.",
-      "description": "Realice un seguimiento de las finanzas, carteras y el cumplimiento con mayor facilidad. Codeverta ayuda a los equipos de Servicios financieros a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Soluciones FinTech y gestión patrimonial en Madrid, Barcelona y Bilbao.",
+      "description": "Sistemas seguros de gestión de carteras y cumplimiento normativo en los distritos financieros de Madrid, Barcelona, Valencia y Bilbao.",
       "heroStat": {
         "value": "99.9%",
         "label": "mejora de eficiencia operativa"
@@ -384,16 +370,16 @@
         "company": "Empresa de Servicios financieros"
       },
       "featuredClients": [
-        "Wealth Management",
-        "Insurance",
-        "Microfinance",
-        "Brokerage Firms"
+        "Distrito Financiero Madrid",
+        "Hub FinTech Barcelona",
+        "Aseguradoras Valencia",
+        "Banca Privada Bilbao"
       ]
     },
     "healthcare": {
       "name": "Salud",
-      "tagline": "Gestione historiales, citas y operaciones en un solo lugar.",
-      "description": "Gestione historiales, citas y operaciones en un solo lugar. Codeverta ayuda a los equipos de Salud a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Gestión de historias clínicas y citas para hospitales de Madrid, Barcelona y Valencia.",
+      "description": "Sistemas de información hospitalaria e integración médica para clínicas y centros diagnósticos en Madrid, Barcelona, Sevilla y Valencia.",
       "heroStat": {
         "value": "60%",
         "label": "mejora de eficiencia operativa"
@@ -428,16 +414,16 @@
         "company": "Empresa de Salud"
       },
       "featuredClients": [
-        "Hospitals",
-        "Clinics & Polyclinics",
-        "Diagnostic Centers",
-        "Pharmacy Chains"
+        "Red Hospitalaria Madrid",
+        "Clínicas Especializadas Barcelona",
+        "Centros Diagnósticos Valencia",
+        "Red Farmacéutica Sevilla"
       ]
     },
     "non-profit": {
       "name": "Organizaciones sin fines de lucro",
-      "tagline": "Mejore la recaudación de fondos, la gestión de donantes y la ejecución de proyectos.",
-      "description": "Mejore la recaudación de fondos, la gestión de donantes y la ejecución de proyectos. Codeverta ayuda a los equipos de Organizaciones sin fines de lucro a unificar datos, automatizar procesos y crear workflows digitales más rápidos, seguros y escalables.",
+      "tagline": "Gestión de socios, donaciones y proyectos sociales en España.",
+      "description": "Plataformas de captación de fondos y seguimiento de proyectos comunitarios para ONGs y fundaciones en Madrid, Barcelona, Valencia y Sevilla.",
       "heroStat": {
         "value": "2×",
         "label": "mejora de eficiencia operativa"
@@ -472,10 +458,10 @@
         "company": "Empresa de Organizaciones sin fines de lucro"
       },
       "featuredClients": [
-        "INGOs",
-        "Community Foundations",
-        "Social Enterprises",
-        "Religious Organizations"
+        "Fundaciones Sociales Madrid",
+        "ONGs Barcelona",
+        "Entidades Solidarias Valencia",
+        "Asociaciones Sevilla"
       ]
     }
   }

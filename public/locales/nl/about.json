@@ -22,7 +22,7 @@
       "highlight": "kankerzorg"
     },
     "description": {
-      "before": "Bij PT Zenit Technology Solution geloven wij dat innovatie een hoger doel moet dienen. Daarom beloven wij",
+      "before": "Bij Zenit Technology Solution Pte. Ltd. geloven wij dat innovatie een hoger doel moet dienen. Daarom beloven wij",
       "pledge": "meer dan 3% van onze jaarlijkse nettowinst",
       "after": "te steunen voor kansarme kankerpatiënten via"
     },
@@ -140,6 +140,16 @@
       }
     },
     "description": "Onze bedrijfsstructuur houdt product, engineering, marketing, finance en people operations op één lijn, zodat elk project duidelijke eigenaarschap en voortgang heeft."
+  },
+  "customerMap": {
+    "loading": "Kaart laden...",
+    "badge": "Servicegebieden",
+    "heading": {
+      "before": "Digitale ondersteuning in ",
+      "after": ""
+    },
+    "description": "Wij ondersteunen digitale initiatieven in belangrijke zakelijke en technologische centra, waaronder Amsterdam, Rotterdam, Den Haag, Utrecht, Eindhoven en Groningen.",
+    "customerUnit": "klanten"
   },
   "location": {
     "badge": "Onze locatie",

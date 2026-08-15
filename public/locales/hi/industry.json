@@ -1,9 +1,9 @@
 {
   "seo": {
-    "indexTitle": "हर उद्योग के लिए समाधान | Codeverta",
+    "indexTitle": "भारत के प्रमुख शहरों के लिए उद्योग-विशिष्ट सॉफ्टवेयर और ERP समाधान (मुंबई, बेंगलुरु, दिल्ली) | Codeverta",
     "indexDescription": "मैन्युफैक्चरिंग से हेल्थकेयर तक, Codeverta आपके उद्योग की जरूरतों के अनुसार डिजिटल समाधान बनाता है।",
     "indexKeywords": "industry software solutions, ERP by industry, business applications, Codeverta",
-    "detailTitleTemplate": "{{industry}} सॉफ्टवेयर समाधान | Codeverta",
+    "detailTitleTemplate": "{{industry}} के लिए सॉफ्टवेयर समाधान (मुंबई, बेंगलुरु, दिल्ली) | Codeverta",
     "detailDescriptionTemplate": "{{industry}} टीमों के लिए Codeverta समाधान देखें: operations, automation, reporting, integration और scalable digital workflows.",
     "detailKeywordsTemplate": "{{industry}} software, {{industry}} ERP, {{industry}} digital transformation, Codeverta"
   },
@@ -25,7 +25,7 @@
     "primaryCta": "शुरू करें",
     "secondaryCta": "Demo request करें",
     "statNote": "Codeverta customer average",
-    "trustedBy": "इन क्षेत्रों की कंपनियों द्वारा trusted",
+    "trustedBy": "भारत के प्रमुख शहरों में विश्वसनीय:",
     "problemEyebrow": "समस्या",
     "problemTitleTemplate": "{{industry}} teams की challenges",
     "solutionEyebrow": "हम क्या देते हैं",

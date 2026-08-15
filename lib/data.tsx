@@ -334,48 +334,48 @@ export const getCategories = (t) => [
   { id: "/industry", name: t("navbar.industry"), isDropdown: true },
   {
     id: "pelajari",
-    name: t("navbar.learn", "Lainnya"),
+    name: t("navbar.learn", "More"),
     isDropdown: true,
     children: [
       {
         id: "/pelatihan",
         name: t("navbar.learning"),
-        description: t("navbar.learning_desc", "Kursus & bootcamp teknologi"),
+        description: t("navbar.learning_desc", "Tech courses & bootcamps"),
       },
       {
         id: "/blog",
         name: t("navbar.blog"),
-        description: t("navbar.blog_desc", "Artikel & insight terkini"),
+        description: t("navbar.blog_desc", "Latest articles & insights"),
       },
       {
         id: "https://www.linkzy.id/events",
         name: t("navbar.events"),
-        description: t("navbar.events_desc", "Event & meetup teknologi"),
+        description: t("navbar.events_desc", "Tech events & meetups"),
         external: true,
       },
     ],
   },
   {
     id: "perusahaan",
-    name: t("navbar.company", "Perusahaan"),
+    name: t("navbar.company", "Company"),
     isDropdown: true,
     children: [
       {
         id: "/about",
         name: t("navbar.about"),
-        description: t("navbar.about_desc", "Tentang tim & misi kami"),
+        description: t("navbar.about_desc", "About our team & mission"),
       },
       {
         id: "/careers",
         name: t("navbar.careers"),
-        description: t("navbar.careers_desc", "Bergabung bersama kami"),
+        description: t("navbar.careers_desc", "Join our team"),
       },
       {
         id: "/contact",
         name: t("navbar.contact"),
         description: t(
           "navbar.contact_desc",
-          "Kirim penawaran atau tanya-tanya"
+          "Get in touch or request a quote"
         ),
       },
     ],

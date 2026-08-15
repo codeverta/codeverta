@@ -22,7 +22,7 @@
       "highlight": "les soins contre le cancer"
     },
     "description": {
-      "before": "Chez PT Zenit Technology Solution, nous pensons que l innovation doit servir un objectif plus grand. Nous nous engageons fièrement à consacrer",
+      "before": "Chez Zenit Technology Solution Pte. Ltd., nous pensons que l innovation doit servir un objectif plus grand. Nous nous engageons fièrement à consacrer",
       "pledge": "plus de 3% de notre bénéfice net annuel",
       "after": "au soutien des patients atteints de cancer en situation précaire via"
     },
@@ -140,6 +140,16 @@
       }
     },
     "description": "Notre structure d entreprise aligne produit, ingénierie, marketing, finance et opérations humaines afin que chaque projet avance avec des responsabilités claires."
+  },
+  "customerMap": {
+    "loading": "Chargement de la carte...",
+    "badge": "Zones d’intervention",
+    "heading": {
+      "before": "Nous accompagnons les entreprises en ",
+      "after": ""
+    },
+    "description": "Nous accompagnons les initiatives numériques dans les principaux pôles économiques et technologiques, notamment Paris, Lyon, Marseille, Toulouse, Bordeaux et Lille.",
+    "customerUnit": "clients"
   },
   "location": {
     "badge": "Notre emplacement",

@@ -1,17 +1,17 @@
 {
   "seo": {
-    "indexTitle": "Solusi untuk Setiap Industri | Codeverta",
-    "indexDescription": "Dari manufaktur hingga kesehatan, Codeverta menyesuaikan solusi digital dengan kebutuhan unik industri Anda.",
-    "indexKeywords": "solusi software industri, ERP industri, aplikasi bisnis, Codeverta",
-    "detailTitleTemplate": "Solusi Software {{industry}} | Codeverta",
-    "detailDescriptionTemplate": "Jelajahi solusi Codeverta untuk tim {{industry}}: operasional, otomasi, laporan, integrasi, dan workflow digital yang skalabel.",
-    "detailKeywordsTemplate": "software {{industry}}, ERP {{industry}}, transformasi digital {{industry}}, Codeverta"
+    "indexTitle": "Solusi Software & ERP per Industri di Jakarta, Surabaya, Bandung & Indonesia | Codeverta",
+    "indexDescription": "Solusi software industri untuk perusahaan di Jakarta, Surabaya, Bandung, Semarang, Medan, dan seluruh Indonesia: manufaktur, perdagangan, konstruksi, retail, dan kesehatan.",
+    "indexKeywords": "software industri Indonesia, ERP Jakarta, pembuatan aplikasi Surabaya, otomasi bisnis Bandung, Codeverta",
+    "detailTitleTemplate": "Solusi Software {{industry}} di Jakarta, Surabaya & Seluruh Indonesia | Codeverta",
+    "detailDescriptionTemplate": "Jelajahi solusi software {{industry}} untuk tim di Jakarta, Surabaya, Bandung, Medan, dan seluruh Indonesia: operasional, otomasi, ERP, dan integrasi.",
+    "detailKeywordsTemplate": "software {{industry}} Indonesia, ERP {{industry}} Jakarta, digitalisasi {{industry}} Surabaya, Codeverta"
   },
   "index": {
     "badge": "Solusi Industri",
-    "titlePrefix": "Solusi untuk",
-    "titleHighlight": "Setiap Industri",
-    "description": "Dari pabrik manufaktur hingga sistem kesehatan, Codeverta menyesuaikan diri dengan kebutuhan unik industri Anda. Sederhanakan operasional, optimalkan sumber daya, dan tumbuh lebih cepat.",
+    "titlePrefix": "Solusi Software Industri di",
+    "titleHighlight": "Jakarta, Surabaya & Bandung",
+    "description": "Dari kawasan industri di Cikarang, Karawang, dan Surabaya hingga sektor perdagangan di Jakarta, Bandung, Semarang, dan Medan, Codeverta menyesuaikan solusi digital dengan kebutuhan bisnis di Indonesia.",
     "statLabel": "Industri Dilayani",
     "ctaEyebrow": "Industri Anda belum ada?",
     "ctaTitle": "Mari bangun solusi khusus untuk bisnis Anda",
@@ -25,16 +25,16 @@
     "primaryCta": "Mulai sekarang",
     "secondaryCta": "Minta demo",
     "statNote": "Rata-rata pelanggan Codeverta",
-    "trustedBy": "Dipercaya perusahaan di",
+    "trustedBy": "Dipercaya oleh perusahaan di Jakarta, Surabaya, Bandung & Medan:",
     "problemEyebrow": "Masalah",
-    "problemTitleTemplate": "Tantangan yang dihadapi tim {{industry}}",
+    "problemTitleTemplate": "Tantangan operasional tim {{industry}} di Jakarta, Surabaya & Bandung",
     "solutionEyebrow": "Yang Kami Tawarkan",
-    "solutionTitle": "Bagaimana Codeverta menyelesaikannya",
+    "solutionTitle": "Cara Codeverta mengoptimalkan bisnis di Jakarta, Surabaya & seluruh Indonesia",
     "moreEyebrow": "Industri Lainnya",
     "moreTitle": "Jelajahi solusi lainnya",
     "viewAll": "Lihat semua industri",
-    "bottomTitleTemplate": "Siap mentransformasi operasional {{industry}}?",
-    "bottomDescription": "Bicara dengan spesialis Codeverta yang memahami industri Anda.",
+    "bottomTitleTemplate": "Siap mendigitalisasi operasional {{industry}} Anda di Indonesia?",
+    "bottomDescription": "Konsultasikan kebutuhan sistem bisnis Anda dengan tim spesialis Codeverta di Jakarta, Surabaya, Bandung, dan seluruh Indonesia.",
     "bottomCta": "Pesan konsultasi gratis"
   },
   "industries": {
@@ -76,10 +76,10 @@
         "company": "Perusahaan Manufaktur"
       },
       "featuredClients": [
-        "Automotive Parts",
-        "Consumer Electronics",
-        "Food & Beverage",
-        "Textile Mills"
+        "Kawasan Industri Cikarang & Karawang",
+        "Kawasan Industri Rungkut Surabaya",
+        "Sentra Industri Bandung",
+        "Kawasan Industri Kendal"
       ]
     },
     "trading-distribution": {
@@ -120,10 +120,10 @@
         "company": "Perusahaan Trading & Distribusi"
       },
       "featuredClients": [
-        "FMCG Distributors",
-        "Commodity Traders",
-        "Wholesale Importers",
-        "3PL Providers"
+        "Hub Logistik Tanjung Perak Surabaya",
+        "Pusat Distribusi Jakarta",
+        "Logistik Pelabuhan Belawan Medan",
+        "Jaringan Distribusi Semarang"
       ]
     },
     "retail": {

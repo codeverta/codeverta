@@ -1,4 +1,14 @@
 {
+  "ui": {
+    "chooseLanguage": "选择语言",
+    "close": "关闭",
+    "officeAddress": "办公地址",
+    "whatsapp": {
+      "help": "有什么可以帮助您？",
+      "defaultMessage": "您好，我想咨询 Codeverta 的服务。",
+      "ariaLabel": "通过 WhatsApp 咨询"
+    }
+  },
   "our_products": "我们的产品",
   "home": {
     "title": "面向中小企业的专业网站制作与 IT 解决方案",
@@ -105,7 +115,13 @@
     "faq": "常见问题",
     "careers": "招贤纳士",
     "about": "关于我们",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "about_desc": "关于我们的团队与使命",
+    "careers_desc": "加入我们的团队",
+    "contact_desc": "联系我们或获取报价",
+    "learning_desc": "技术课程与训练营",
+    "blog_desc": "最新文章与洞察",
+    "events_desc": "技术活动与聚会"
   },
   "mega_menu": {
     "products": {

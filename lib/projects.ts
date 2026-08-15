@@ -17,11 +17,7 @@ function readProjectsFile(filePath: string): ProjectData | null {
 }
 
 function getLocalizedProjectsFile(locale = "id") {
-  const localeCandidates = [
-    locale,
-    locale.split("-")[0],
-    locale === "en-GB" ? "en-US" : "",
-  ].filter(Boolean);
+  const localeCandidates = [locale, locale.split("-")[0]].filter(Boolean);
 
   for (const candidate of localeCandidates) {
     const filePath = path.join(
@@ -114,25 +110,29 @@ export function getProjectById(id: string, locale = "id") {
 }
 
 export function getAvailableProjectLocales(id: string) {
-  const locales = ["id", "en-US", "zh", "ja", "ko", "de", "fr", "th"];
+  const locales = [
+    "id",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "ms",
+    "de",
+    "fr",
+    "es",
+    "ar",
+    "hi",
+    "th",
+    "vi",
+    "ru",
+    "nl",
+  ];
 
-  return locales.filter((locale) => {
-    if (locale === "id") {
-      return Boolean(getProjectById(id, "id"));
-    }
-    const localizedFile = getLocalizedProjectsFile(locale);
-    const localizedData = localizedFile
-      ? readProjectsFile(localizedFile)
-      : null;
-    return Boolean(
-      localizedData?.projects?.some((project) => project?.product?.id === id)
-    );
-  });
+  return locales.filter((locale) => Boolean(getProjectById(id, locale)));
 }
 
 export function getProjectContentLocale(id: string, locale = "id") {
-  const availableLocales = getAvailableProjectLocales(id);
-  if (availableLocales.includes(locale)) return locale;
-  if (locale === "en-GB" && availableLocales.includes("en-US")) return "en-US";
+  const project = getProjectById(id, locale);
+  if (project) return locale;
   return "id";
 }

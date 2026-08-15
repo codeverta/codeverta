@@ -1,18 +1,12 @@
-import Document, {
-  DocumentContext,
-  DocumentInitialProps,
-  Head,
-  Html,
-  Main,
-  NextScript,
-} from "next/document";
+import { Head, Html, Main, NextScript } from "next/document";
 import { GA_TRACKING_ID } from "lib/gtag";
 
-type CodevertaDocumentProps = DocumentInitialProps & { locale: string };
-
-export default function CodevertaDocument({ locale }: CodevertaDocumentProps) {
+export default function CodevertaDocument() {
   return (
-    <Html lang={locale || "id"}>
+    // Next.js Pages Router reads the active i18n locale from its server-side
+    // document context and applies it to <html lang>. Keeping this server-only
+    // avoids duplicating route parsing or changing the attribute after hydrate.
+    <Html>
       <Head>
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <script
@@ -58,8 +52,3 @@ export default function CodevertaDocument({ locale }: CodevertaDocumentProps) {
     </Html>
   );
 }
-
-CodevertaDocument.getInitialProps = async (ctx: DocumentContext) => {
-  const initialProps = await Document.getInitialProps(ctx);
-  return { ...initialProps, locale: ctx.locale || "id" };
-};

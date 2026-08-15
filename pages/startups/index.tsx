@@ -298,7 +298,7 @@ export default function Home({ allPostsData }: { allPostsData: PostMeta[] }) {
             ? `${selectedCategory} - Codeverta Startups`
             : "Codeverta - Programming & Technology Startups"}
         </title>
-        <meta name="description" content={metaDescription} />
+        <meta key="description" name="description" content={metaDescription} />
       </Head>
       <main className="bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900 min-h-screen pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
