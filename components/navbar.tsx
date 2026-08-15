@@ -166,9 +166,9 @@ const Navbar = ({
   };
 
   // A document navigation prevents the top-level dynamic short-link route
-  // (`/[shortCode]`) from taking over `/produk` during a client transition.
+  // (`/[shortCode]`) from taking over `/products` during a client transition.
   const getProductHref = () =>
-    locale && locale !== defaultLocale ? `/${locale}/produk` : "/produk";
+    locale && locale !== defaultLocale ? `/${locale}/products` : "/products";
 
   const LanguageSwitcher = ({ isMobile = false }) => (
     <div className={isMobile ? "" : "relative"}>
@@ -305,7 +305,7 @@ const Navbar = ({
               </h3>
               <div className="space-y-3">
                 {column.items.map((item, itemIndex) => {
-                  const isProductsIndex = item.href === "/produk";
+                  const isProductsIndex = item.href === "/products";
                   const ItemTag = isProductsIndex ? "a" : Link;
 
                   return (
@@ -471,7 +471,7 @@ const Navbar = ({
                 category.isDropdown && megaMenuData[category.id]
               );
               const isExternal = category.id.startsWith("http");
-              const isProductsIndex = category.id === "/produk";
+              const isProductsIndex = category.id === "/products";
               const Tag = isExternal || isProductsIndex ? "a" : Link;
 
               return (
@@ -695,7 +695,7 @@ const Navbar = ({
                                       </p>
                                       {column.items.map((item, itemIndex) => {
                                         const isProductsIndex =
-                                          item.href === "/produk";
+                                          item.href === "/products";
                                         const ItemTag = isProductsIndex
                                           ? "a"
                                           : Link;

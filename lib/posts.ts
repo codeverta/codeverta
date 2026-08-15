@@ -113,6 +113,17 @@ export function getSortedPostsData(folder = "blog", locale = "id") {
   });
 }
 
+// Strict locale variant for UI modules that must never surface a fallback
+// article under a locale-prefixed URL.
+export function getLocalizedPostsData(folder = "blog", locale = "id") {
+  const normalizedLocale = normalizeLocale(locale);
+  const contentLocale = normalizedLocale.split("-")[0];
+
+  return getSortedPostsData(folder, contentLocale).filter(
+    (post) => post.lang === contentLocale
+  );
+}
+
 // Get all posts across all languages
 export function getAllPostsData() {
   const languages = getSupportedLanguages();

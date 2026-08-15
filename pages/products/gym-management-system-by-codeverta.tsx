@@ -26,7 +26,7 @@ import {
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import SeoHead from "@/components/SeoHead";
 import Layout from "@/components/layout/Landing";
-import { getSortedPostsData } from "@/lib/posts";
+import { getLocalizedPostsData } from "@/lib/posts";
 import { withI18n } from "@/lib/withi18n";
 
 // ── Fonts ──
@@ -326,7 +326,7 @@ function GymManagementSystem({ latestArticles }: Props) {
       <SeoHead
         title="Sistem Manajemen Gym untuk UKM Indonesia | Codeverta"
         description="Kelola member, kehadiran, jadwal trainer, dan keuangan gym dari satu dashboard. Cocok untuk gym kecil & menengah. Mulai dari Rp 150rb/bulan."
-        url="https://codeverta.com/produk/gym-management-system"
+        url="https://codeverta.com/products/gym-management-system"
         keywords="sistem manajemen gym, software gym, gym management system, aplikasi gym, manajemen member gym, software fitness"
       />
 
@@ -870,23 +870,26 @@ GymManagementSystem.getLayout = function (page: React.ReactNode) {
 
 export default GymManagementSystem;
 
-export const getStaticProps = withI18n(["common"], function () {
-  const latestArticles = getSortedPostsData("blog")
-    .filter((p) => {
-      const tags = (p.tags || "").toLowerCase();
-      return tags.includes("gym") || tags.includes("fitness");
-    })
-    .slice(0, 3)
-    .map((p: any) => ({
-      id: p.id,
-      title: p.title,
-      desc: p.desc || "",
-      date: p.date,
-      image: p.image || null,
-      tags: p.tags || "",
-    }));
+export const getStaticProps = withI18n(
+  ["common", "blog"],
+  function ({ locale }) {
+    const latestArticles = getLocalizedPostsData("blog", locale ?? "id")
+      .filter((p) => {
+        const tags = (p.tags || "").toLowerCase();
+        return tags.includes("gym") || tags.includes("fitness");
+      })
+      .slice(0, 3)
+      .map((p: any) => ({
+        id: p.id,
+        title: p.title,
+        desc: p.desc || "",
+        date: p.date,
+        image: p.image || null,
+        tags: p.tags || "",
+      }));
 
-  return {
-    props: { latestArticles },
-  };
-});
+    return {
+      props: { latestArticles },
+    };
+  }
+);

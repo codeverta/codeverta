@@ -49,7 +49,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { withI18n } from "@/lib/withi18n";
-import { getSortedPostsData } from "@/lib/posts";
+import { getLocalizedPostsData } from "@/lib/posts";
 import { ArticleSection } from "@/components/products/ArticleSection";
 import ImageCarousel from "@/components/ImageCarousel";
 import {
@@ -72,7 +72,7 @@ export function ProjectBreadcrumb({ projectName }) {
         <BreadcrumbSeparator />
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link href="/produk">Produk</Link>
+            <Link href="/products">Produk</Link>
           </BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbSeparator />
@@ -362,13 +362,13 @@ export async function getStaticPaths() {
 
 // ─── getStaticProps ────────────────────────────────────────────────────────────
 export const getStaticProps = withI18n(
-  ["common"],
+  ["common", "blog"],
   function ({ params, locale }) {
     const project = getProjectById(params.id as string, locale);
     if (!project) return { notFound: true };
 
     const projects = getProjects(locale);
-    const latestArticles = getSortedPostsData("blog")
+    const latestArticles = getLocalizedPostsData("blog", locale ?? "id")
       .slice(0, 3)
       .map((p) => ({
         id: p.id,
@@ -429,7 +429,7 @@ export default function ProjectDetailPage({
 
   const { locale = "id" } = useRouter();
   const siteUrl = "https://www.codeverta.com";
-  const pageUrl = getLocalizedUrl(locale, `/produk/${product.id}`);
+  const pageUrl = getLocalizedUrl(locale, `/products/${product.id}`);
 
   const schema = {
     "@context": "https://schema.org",
@@ -989,7 +989,7 @@ export default function ProjectDetailPage({
                   </p>
                 </div>
                 <Button variant="outline" asChild className="hidden md:flex">
-                  <Link href="/produk">Lihat Semua Produk</Link>
+                  <Link href="/products">Lihat Semua Produk</Link>
                 </Button>
               </div>
 
@@ -1025,7 +1025,7 @@ export default function ProjectDetailPage({
                         className="w-full justify-between p-0 hover:bg-transparent hover:text-blue-700"
                         asChild
                       >
-                        <Link href={`/produk/${item.id}`}>
+                        <Link href={`/products/${item.id}`}>
                           Pelajari Selengkapnya
                           <ExternalLink className="w-4 h-4 ml-2" />
                         </Link>
@@ -1037,7 +1037,7 @@ export default function ProjectDetailPage({
 
               <div className="mt-10 md:hidden">
                 <Button variant="outline" className="w-full" asChild>
-                  <Link href="/produk">Lihat Semua Produk</Link>
+                  <Link href="/products">Lihat Semua Produk</Link>
                 </Button>
               </div>
             </div>

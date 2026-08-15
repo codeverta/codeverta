@@ -171,7 +171,7 @@ function Post({ postData, slug }) {
               }
               productLink={
                 postData.tags
-                  ? `https://codeverta.com/produk/${postData.tags
+                  ? `https://codeverta.com/products/${postData.tags
                       .split(",")[0]
                       .trim()
                       .replace(/\s+/g, "-")}`

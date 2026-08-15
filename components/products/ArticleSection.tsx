@@ -29,6 +29,8 @@ import Image from "next/image";
 import { ArrowRight, Clock, Tag } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 /* ── Types ── */
 export interface ArticlePreview {
@@ -40,17 +42,17 @@ export interface ArticlePreview {
   tags: string;
 }
 
-function formatDate(d: string) {
-  return new Date(d).toLocaleDateString("id-ID", {
+function formatDate(d: string, locale: string) {
+  return new Date(d).toLocaleDateString(locale, {
     day: "numeric",
     month: "short",
     year: "numeric",
   });
 }
 
-function estimateReadTime(desc: string) {
+function estimateReadTime(desc: string, readTimeLabel: string) {
   const words = desc.split(/\s+/).filter(Boolean).length;
-  return `${Math.max(2, Math.ceil(words / 40))} mnt`;
+  return `${Math.max(2, Math.ceil(words / 40))} ${readTimeLabel}`;
 }
 
 function firstTag(tags: string) {
@@ -60,13 +62,19 @@ function firstTag(tags: string) {
 /* ── Single Article Card ── */
 function ArticleCard({
   article,
+  locale,
+  readTimeLabel,
+  readArticleLabel,
   featured = false,
 }: {
   article: ArticlePreview;
+  locale: string;
+  readTimeLabel: string;
+  readArticleLabel: string;
   featured?: boolean;
 }) {
   const tag = firstTag(article.tags);
-  const readTime = estimateReadTime(article.desc);
+  const readTime = estimateReadTime(article.desc, readTimeLabel);
 
   if (featured) {
     return (
@@ -121,10 +129,10 @@ function ArticleCard({
                 <Clock className="w-3 h-3" />
                 {readTime}
               </span>
-              <span>{formatDate(article.date)}</span>
+              <span>{formatDate(article.date, locale)}</span>
             </div>
             <span className="text-blue-600 text-xs font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
-              Baca <ArrowRight className="w-3 h-3" />
+              {readArticleLabel} <ArrowRight className="w-3 h-3" />
             </span>
           </div>
         </div>
@@ -182,7 +190,7 @@ function ArticleCard({
               <Clock className="w-3 h-3" />
               {readTime}
             </span>
-            <span>{formatDate(article.date)}</span>
+            <span>{formatDate(article.date, locale)}</span>
           </div>
           <ArrowRight className="w-3.5 h-3.5 text-blue-500 group-hover:translate-x-1 transition-transform" />
         </div>
@@ -193,6 +201,9 @@ function ArticleCard({
 
 /* ── Section Component ── */
 export function ArticleSection({ articles }: { articles: ArticlePreview[] }) {
+  const { t } = useTranslation("blog");
+  const { locale = "id" } = useRouter();
+
   if (!articles || articles.length === 0) return null;
 
   const [featured, ...rest] = articles;
@@ -205,18 +216,18 @@ export function ArticleSection({ articles }: { articles: ArticlePreview[] }) {
           <div>
             <p className="text-blue-600 text-xs font-semibold uppercase tracking-widest mb-2 flex items-center gap-1.5">
               <Tag className="w-3.5 h-3.5" />
-              Blog &amp; Insight
+              {t("index.hero.eyebrow")}
             </p>
             <h2 className="text-3xl font-bold text-slate-900">
-              Coba Baca Artikel
+              {t("detail.otherArticles")}
             </h2>
             <p className="text-slate-500 mt-2 text-sm">
-              Tips, tutorial, dan wawasan seputar teknologi untuk bisnis Anda
+              {t("index.meta.description")}
             </p>
           </div>
           <Button variant="outline" asChild className="hidden md:flex">
             <Link href="/blog">
-              Semua Artikel
+              {t("detail.allArticles")}
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </Button>
@@ -225,13 +236,25 @@ export function ArticleSection({ articles }: { articles: ArticlePreview[] }) {
         {/* Layout: 1 featured full-width + 2 cards below — atau 3 cards kalau mobile */}
         <div className="flex flex-col gap-5">
           {/* Featured — artikel pertama, lebih lebar */}
-          <ArticleCard article={featured} featured />
+          <ArticleCard
+            article={featured}
+            locale={locale}
+            readTimeLabel={t("readTime")}
+            readArticleLabel={t("detail.stickyBack")}
+            featured
+          />
 
           {/* Dua artikel berikutnya */}
           {rest.length > 0 && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {rest.map((a) => (
-                <ArticleCard key={a.id} article={a} />
+                <ArticleCard
+                  key={a.id}
+                  article={a}
+                  locale={locale}
+                  readTimeLabel={t("readTime")}
+                  readArticleLabel={t("detail.stickyBack")}
+                />
               ))}
             </div>
           )}
@@ -241,7 +264,7 @@ export function ArticleSection({ articles }: { articles: ArticlePreview[] }) {
         <div className="mt-8 md:hidden">
           <Button variant="outline" className="w-full" asChild>
             <Link href="/blog">
-              Lihat Semua Artikel
+              {t("detail.allArticles")}
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
           </Button>

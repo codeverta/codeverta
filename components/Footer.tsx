@@ -33,7 +33,7 @@ const PROGRAM_LINKS = [
   },
   { href: "/course/ai-engineer", labelKey: "footer.programs.links.aiEngineer" },
   { href: "/contact", labelKey: "footer.programs.links.consulting" },
-  { href: "/produk", labelKey: "footer.programs.links.development" },
+  { href: "/products", labelKey: "footer.programs.links.development" },
 ];
 
 const CERTIFICATIONS = ["Indeks KAMI BSSN v5.0", "NIST CSF", "CAIQ v4"];
