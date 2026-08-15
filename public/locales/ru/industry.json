@@ -1,9 +1,9 @@
 {
   "seo": {
-    "indexTitle": "Решения для каждой отрасли | Codeverta",
+    "indexTitle": "Отраслевое программное обеспечение и ERP в Москве, Санкт-Петербурге и регионах | Codeverta",
     "indexDescription": "От производства до здравоохранения Codeverta адаптирует цифровые решения под требования вашей отрасли.",
     "indexKeywords": "отраслевое ПО, ERP по отраслям, бизнес приложения, Codeverta",
-    "detailTitleTemplate": "Программные решения для {{industry}} | Codeverta",
+    "detailTitleTemplate": "Программные решения для {{industry}} в Москве и Санкт-Петербурге | Codeverta",
     "detailDescriptionTemplate": "Изучите решения Codeverta для команд {{industry}}: операции, автоматизация, отчеты, интеграции и масштабируемые цифровые процессы.",
     "detailKeywordsTemplate": "ПО для {{industry}}, ERP {{industry}}, цифровая трансформация {{industry}}, Codeverta"
   },
@@ -25,7 +25,7 @@
     "primaryCta": "Начать",
     "secondaryCta": "Запросить демо",
     "statNote": "Средний результат клиентов Codeverta",
-    "trustedBy": "Нам доверяют компании в",
+    "trustedBy": "Доверяют компании по всей России:",
     "problemEyebrow": "Проблема",
     "problemTitleTemplate": "Вызовы команд {{industry}}",
     "solutionEyebrow": "Что мы предлагаем",

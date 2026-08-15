@@ -10,6 +10,7 @@ export default function Gallery({ images }) {
       <Head>
         <title>Portfolio & Assets Gallery | Codeverta</title>
         <meta
+          key="description"
           name="description"
           content="Kumpulan galeri gambar dari berbagai project seperti camping, kontraktor, dan gym management."
         />

@@ -1,4 +1,14 @@
 {
+  "ui": {
+    "chooseLanguage": "Taal kiezen",
+    "close": "Sluiten",
+    "officeAddress": "Kantooradres",
+    "whatsapp": {
+      "help": "Hoe kunnen we u helpen?",
+      "defaultMessage": "Hallo, ik wil graag meer weten over de diensten van Codeverta.",
+      "ariaLabel": "Chatten via WhatsApp"
+    }
+  },
   "our_products": "Onze producten",
   "home": {
     "title": "Professionele websites en IT-oplossingen voor het mkb",
@@ -104,7 +114,13 @@
     "faq": "FAQ",
     "careers": "Carrière",
     "about": "Over ons",
-    "contact": "Contact"
+    "contact": "Contact",
+    "about_desc": "Over ons team & onze missie",
+    "careers_desc": "Word onderdeel van ons team",
+    "contact_desc": "Neem contact op of vraag een offerte aan",
+    "learning_desc": "Techcursussen & bootcamps",
+    "blog_desc": "Laatste artikelen & inzichten",
+    "events_desc": "Techevenementen & meetups"
   },
   "mega_menu": {
     "products": {

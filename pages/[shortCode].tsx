@@ -71,7 +71,7 @@ export default function RedirectPage() {
     return (
       <>
         <Head>
-          <meta name="robots" content="noindex,nofollow" />
+          <meta key="robots" name="robots" content="noindex,nofollow" />
         </Head>
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
           <div className="text-center">
@@ -90,7 +90,7 @@ export default function RedirectPage() {
     return (
       <>
         <Head>
-          <meta name="robots" content="noindex,nofollow" />
+          <meta key="robots" name="robots" content="noindex,nofollow" />
         </Head>
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
           <div className="max-w-md mx-auto text-center p-8">

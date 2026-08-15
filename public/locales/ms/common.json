@@ -1,4 +1,14 @@
 {
+  "ui": {
+    "chooseLanguage": "Pilih bahasa",
+    "close": "Tutup",
+    "officeAddress": "Alamat pejabat",
+    "whatsapp": {
+      "help": "Ada yang boleh kami bantu?",
+      "defaultMessage": "Helo, saya ingin bertanya tentang perkhidmatan Codeverta.",
+      "ariaLabel": "Sembang melalui WhatsApp"
+    }
+  },
   "our_products": "Produk Kami",
   "home": {
     "title": "Pembuatan Laman Web Profesional dan Solusi IT untuk Perusahaan Kecil dan Sederhana (PKS)",
@@ -105,7 +115,13 @@
     "faq": "FAQ",
     "careers": "Kerjaya",
     "about": "Tentang Kami",
-    "contact": "Hubungi Kami"
+    "contact": "Hubungi Kami",
+    "about_desc": "Tentang pasukan & misi kami",
+    "careers_desc": "Sertai pasukan kami",
+    "contact_desc": "Hubungi kami atau minta sebut harga",
+    "learning_desc": "Kursus & bootcamp teknologi",
+    "blog_desc": "Artikel & insight terkini",
+    "events_desc": "Acara & perjumpaan teknologi"
   },
   "mega_menu": {
     "products": {

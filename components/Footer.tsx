@@ -62,7 +62,9 @@ export default function Footer() {
                 {t("footer.partOf")}
               </p>
               <p className="mt-1 text-sm font-bold text-gray-300">
-                PT ZENIT TECHNOLOGY SOLUTION
+                {locale === "id"
+                  ? "PT ZENIT TECHNOLOGY SOLUTION"
+                  : "ZENIT TECHNOLOGY SOLUTION PTE. LTD."}
               </p>
             </div>
 
@@ -90,7 +92,7 @@ export default function Footer() {
               </div>
               <div>
                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">
-                  Alamat Kantor
+                  {t("ui.officeAddress")}
                 </p>
                 <p className="text-sm font-medium text-gray-300">
                   Jl. Kaliurang, Sleman, Yogyakarta, Indonesia
@@ -191,8 +193,11 @@ export default function Footer() {
         {/* === Footer Bottom === */}
         <div className="mt-16 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p className="text-center md:text-left">
-            &copy; {new Date().getFullYear()} PT Zenit Technology Solution.{" "}
-            {t("footer.rights")}
+            &copy; {new Date().getFullYear()}{" "}
+            {locale === "id"
+              ? "PT Zenit Technology Solution"
+              : "Zenit Technology Solution Pte. Ltd."}
+            . {t("footer.rights")}
           </p>
           <div className="mt-4 md:mt-0 flex items-center gap-4 text-xs">
             <span>v{version}</span>

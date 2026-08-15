@@ -104,17 +104,27 @@ export default function Landing({
           "@type": "ContactPoint",
           telephone: "+6285601347820",
           contactType: "Customer Service",
-          areaServed: "ID",
-          availableLanguage: "id",
+          areaServed: locale === "ja" ? "JP" : "ID",
+          availableLanguage: locale === "ja" ? "ja" : locale || "id",
         },
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: "Jl Kaliurang KM 9.3",
-          addressLocality: "Ngaglik",
-          addressRegion: "DIY",
-          postalCode: "55581",
-          addressCountry: "ID",
-        },
+        address:
+          locale === "ja"
+            ? {
+                "@type": "PostalAddress",
+                streetAddress: "Shibuya-ku",
+                addressLocality: "Tokyo",
+                addressRegion: "Tokyo",
+                postalCode: "150-0002",
+                addressCountry: "JP",
+              }
+            : {
+                "@type": "PostalAddress",
+                streetAddress: "Jl Kaliurang KM 9.3",
+                addressLocality: "Ngaglik",
+                addressRegion: "DIY",
+                postalCode: "55581",
+                addressCountry: "ID",
+              },
       },
       {
         "@type": "WebSite",
@@ -125,7 +135,7 @@ export default function Landing({
         publisher: {
           "@id": "https://www.codeverta.com/#organization",
         },
-        inLanguage: "id-ID",
+        inLanguage: locale === "ja" ? "ja-JP" : "id-ID",
       },
       {
         "@type": "WebPage",
@@ -296,6 +306,11 @@ export default function Landing({
           site: "@codeverta",
           cardType: defaultSEO.twitterCard,
         }}
+        languageAlternates={getAlternateLinks(
+          pageSEO.path,
+          availableLocales,
+          localizedPaths
+        ).map(({ hrefLang, href }) => ({ hrefLang, href }))}
         additionalMetaTags={[
           {
             name: "viewport",
@@ -313,12 +328,6 @@ export default function Landing({
             name: "author",
             content: seo?.author || SITE_NAME,
           },
-          {
-            name: "robots",
-            content: `${
-              seo?.noindex || !indexableLocale ? "noindex" : "index"
-            },${seo?.nofollow ? "nofollow" : "follow"}`,
-          },
           ...(seo?.additionalMetaTags || []),
         ]}
         additionalLinkTags={[
@@ -335,8 +344,9 @@ export default function Landing({
             rel: "manifest",
             href: "/site.webmanifest",
           },
-          ...getAlternateLinks(pageSEO.path, availableLocales),
-          ...(seo?.additionalLinkTags || []),
+          ...(seo?.additionalLinkTags || []).filter(
+            (link) => link.rel !== "alternate"
+          ),
         ]}
       />
       <Head>

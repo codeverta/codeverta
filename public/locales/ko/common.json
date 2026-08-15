@@ -1,4 +1,14 @@
 {
+  "ui": {
+    "chooseLanguage": "언어 선택",
+    "close": "닫기",
+    "officeAddress": "사무실 주소",
+    "whatsapp": {
+      "help": "무엇을 도와드릴까요?",
+      "defaultMessage": "안녕하세요. Codeverta 서비스에 대해 문의하고 싶습니다.",
+      "ariaLabel": "WhatsApp으로 상담"
+    }
+  },
   "our_products": "우리의 제품",
   "home": {
     "title": "중소기업을 위한 전문 웹사이트 제작 및 IT 솔루션",
@@ -105,7 +115,13 @@
     "faq": "FAQ",
     "careers": "채용 정보",
     "about": "회사 소개",
-    "contact": "문의하기"
+    "contact": "문의하기",
+    "about_desc": "팀 및 미션 소개",
+    "careers_desc": "채용 정보 및 팀 합류",
+    "contact_desc": "문의하기 및 견적 요청",
+    "learning_desc": "기술 강좌 및 부트캠프",
+    "blog_desc": "최신 아티클 및 인사이트",
+    "events_desc": "테크 이벤트 및 밋업"
   },
   "mega_menu": {
     "products": {

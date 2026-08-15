@@ -1,9 +1,20 @@
 {
+  "ui": {
+    "chooseLanguage": "Pilih Bahasa",
+    "close": "Tutup",
+    "officeAddress": "Alamat Kantor",
+    "whatsapp": {
+      "help": "Ada yang bisa kami bantu?",
+      "defaultMessage": "Halo, saya ingin bertanya tentang layanan Codeverta.",
+      "ariaLabel": "Chat melalui WhatsApp"
+    }
+  },
   "our_products": "Produk Kami",
   "home": {
     "title": "Jasa Pengembangan Website, Aplikasi & Layanan IT Lainnya",
     "subtitle": "Kami menyediakan jasa pembuatan, perbaikan, pengembangan website profesional dan layanan IT untuk mendorong pertumbuhan bisnis Anda di era digital untuk bisnis skala kecil sampai menengah.",
     "hero": {
+      "badge": "Perusahaan Software Terkemuka Berbasis di Bekasi & Yogyakarta",
       "prefix": "Jasa",
       "rotating": ["Pembuatan", "Pengembangan", "Perbaikan", "Maintenance"],
       "suffix": "Website, Aplikasi & Layanan IT Lainnya"
@@ -115,7 +126,13 @@
     "careers": "Careers",
     "faq": "FAQ",
     "about": "Tentang Kami",
-    "contact": "Hubungi Kami"
+    "contact": "Hubungi Kami",
+    "about_desc": "Tentang tim & misi kami",
+    "careers_desc": "Bergabung bersama kami",
+    "contact_desc": "Kirim penawaran atau tanya-tanya",
+    "learning_desc": "Kursus & bootcamp teknologi",
+    "blog_desc": "Artikel & insight terkini",
+    "events_desc": "Event & meetup teknologi"
   },
   "mega_menu": {
     "products": {

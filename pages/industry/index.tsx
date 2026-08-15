@@ -4,21 +4,30 @@ import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
 import { Industry, IndustryPageCopy } from "@/lib/industries";
 import { getLocalizedUrl, SITE_NAME, SITE_URL } from "@/lib/seo";
+import {
+  ensureMarketDescription,
+  ensureMarketKeywords,
+  ensureMarketTitle,
+  getIndustryMarket,
+} from "@/lib/industry-markets";
 
-export const getStaticProps = withI18n(["common"], async function ({ locale }) {
-  const { getIndustries, getIndustryPageCopy } = await import(
-    "@/lib/industries.server"
-  );
-  const safeLocale = locale || "en-US";
+export const getStaticProps = withI18n(
+  ["common"],
+  async function ({ locale }: { locale?: string }) {
+    const { getIndustries, getIndustryPageCopy } = await import(
+      "@/lib/industries.server"
+    );
+    const safeLocale = locale || "en";
 
-  return {
-    props: {
-      industries: getIndustries(safeLocale),
-      copy: getIndustryPageCopy(safeLocale),
-      locale: safeLocale,
-    },
-  };
-});
+    return {
+      props: {
+        industries: getIndustries(safeLocale),
+        copy: getIndustryPageCopy(safeLocale),
+        locale: safeLocale,
+      },
+    };
+  }
+);
 
 export default function IndustryPage({
   industries,
@@ -30,12 +39,19 @@ export default function IndustryPage({
   locale: string;
 }) {
   const canonical = getLocalizedUrl(locale, "/industry");
+  const market = getIndustryMarket(locale);
+  const seoTitle = ensureMarketTitle(copy.seo.indexTitle, market);
+  const seoDescription = ensureMarketDescription(
+    copy.seo.indexDescription,
+    market
+  );
+  const seoKeywords = ensureMarketKeywords(copy.seo.indexKeywords, market);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": `${canonical}#itemlist`,
-    name: copy.seo.indexTitle,
-    description: copy.seo.indexDescription,
+    name: seoTitle,
+    description: seoDescription,
     url: canonical,
     inLanguage: locale,
     publisher: {
@@ -55,10 +71,11 @@ export default function IndustryPage({
   return (
     <>
       <SeoHead
-        title={copy.seo.indexTitle}
-        description={copy.seo.indexDescription}
-        keywords={copy.seo.indexKeywords}
+        title={seoTitle}
+        description={seoDescription}
+        keywords={seoKeywords}
         url={canonical}
+        includeOfficeLocation={false}
       />
       <Head>
         <script
@@ -86,6 +103,34 @@ export default function IndustryPage({
             <span className="text-sm font-medium text-slate-500">
               {copy.index.statLabel}
             </span>
+          </div>
+        </section>
+
+        <section className="max-w-7xl mx-auto px-6 pb-16">
+          <div className="rounded-2xl border border-blue-100 bg-white p-7 md:p-9 shadow-sm">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-blue-600 mb-3">
+              {market.coverageEyebrow}
+            </p>
+            <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
+                  {market.coverageTitle}
+                </h2>
+                <p className="text-slate-600 leading-relaxed max-w-3xl">
+                  {market.coverageDescription}
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 lg:max-w-md lg:justify-end">
+                {market.cities.map((city) => (
+                  <span
+                    key={city}
+                    className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700"
+                  >
+                    {city}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 

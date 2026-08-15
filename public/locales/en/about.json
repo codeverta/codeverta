@@ -22,7 +22,7 @@
       "highlight": "Cancer Care"
     },
     "description": {
-      "before": "At PT Zenit Technology Solution, we believe innovation should serve a higher purpose. We proudly pledge",
+      "before": "At Zenit Technology Solution Pte. Ltd., we believe innovation should serve a higher purpose. We proudly pledge",
       "pledge": "more than 3% of our annual net profit",
       "after": "to support underprivileged cancer patients via"
     },
@@ -140,6 +140,16 @@
       }
     },
     "description": "Our company structure keeps product, engineering, marketing, finance, and people operations aligned so every project moves with clear ownership."
+  },
+  "customerMap": {
+    "loading": "Loading map...",
+    "badge": "Service coverage",
+    "heading": {
+      "before": "Supporting businesses across the ",
+      "after": ""
+    },
+    "description": "Our team supports digital initiatives in major technology and business hubs, from New York and Boston to Texas, California, and Washington.",
+    "customerUnit": "customers"
   },
   "location": {
     "badge": "Our Location",

@@ -1,4 +1,14 @@
 {
+  "ui": {
+    "chooseLanguage": "Chọn ngôn ngữ",
+    "close": "Đóng",
+    "officeAddress": "Địa chỉ văn phòng",
+    "whatsapp": {
+      "help": "Chúng tôi có thể giúp gì cho bạn?",
+      "defaultMessage": "Xin chào, tôi muốn hỏi về dịch vụ của Codeverta.",
+      "ariaLabel": "Trò chuyện qua WhatsApp"
+    }
+  },
   "our_products": "Sản phẩm của chúng tôi",
   "home": {
     "title": "Thiết kế Website Chuyên nghiệp và Giải pháp IT cho Doanh nghiệp Vừa và Nhỏ",
@@ -105,7 +115,13 @@
     "faq": "FAQ",
     "careers": "Tuyển dụng",
     "about": "Về chúng tôi",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "about_desc": "Về đội ngũ & sứ mệnh của chúng tôi",
+    "careers_desc": "Gia nhập đội ngũ của chúng tôi",
+    "contact_desc": "Liên hệ hoặc yêu cầu báo giá",
+    "learning_desc": "Khóa học & bootcamp công nghệ",
+    "blog_desc": "Bài viết & góc nhìn mới nhất",
+    "events_desc": "Sự kiện & meetup công nghệ"
   },
   "mega_menu": {
     "products": {

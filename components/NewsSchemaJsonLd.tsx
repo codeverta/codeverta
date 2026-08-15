@@ -67,7 +67,7 @@ const NewsSchemaJsonLd = ({
       month: "long",
       day: "numeric",
     })} - Codeverta`,
-    inLanguage: "en-US",
+    inLanguage: "en",
   };
 
   return (

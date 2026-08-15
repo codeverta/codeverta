@@ -1,17 +1,17 @@
 {
   "seo": {
-    "indexTitle": "Lösungen für jede Branche | Codeverta",
-    "indexDescription": "Von Fertigung bis Gesundheitswesen passt Codeverta digitale Lösungen an die Anforderungen Ihrer Branche an.",
-    "indexKeywords": "Branchensoftware, ERP nach Branche, Business-Anwendungen, Codeverta",
-    "detailTitleTemplate": "Softwarelösungen für {{industry}} | Codeverta",
-    "detailDescriptionTemplate": "Entdecken Sie Codeverta-Lösungen für {{industry}}: Betrieb, Automatisierung, Reporting, Integration und skalierbare digitale Workflows.",
-    "detailKeywordsTemplate": "{{industry}} Software, {{industry}} ERP, digitale Transformation {{industry}}, Codeverta"
+    "indexTitle": "Industriesoftware & ERP-Lösungen in Deutschland (Berlin, München, Frankfurt) | Codeverta",
+    "indexDescription": "Software- und ERP-Lösungen für Unternehmen in Deutschland: Berlin, München, Frankfurt, Hamburg und Stuttgart. Optimieren Sie Fertigung, Logistik und Geschäftsprozesse.",
+    "indexKeywords": "Software Deutschland, ERP München, IT Berlin, Digitalisierung Frankfurt, Industrie 4.0 Stuttgart, Codeverta",
+    "detailTitleTemplate": "Softwarelösungen für {{industry}} in Deutschland (Berlin, München, Frankfurt) | Codeverta",
+    "detailDescriptionTemplate": "Digitale Lösungen und {{industry}}-Software für Unternehmen in Berlin, München, Frankfurt, Hamburg und ganz Deutschland.",
+    "detailKeywordsTemplate": "Software {{industry}} Deutschland, ERP {{industry}} München, Digitalisierung {{industry}} Berlin, Codeverta"
   },
   "index": {
     "badge": "Branchenlösungen",
-    "titlePrefix": "Lösungen für",
-    "titleHighlight": "jede Branche",
-    "description": "Von Produktionsstätten bis zu Gesundheitssystemen passt sich Codeverta an Ihre Branche an. Vereinfachen Sie Abläufe, optimieren Sie Ressourcen und wachsen Sie schneller.",
+    "titlePrefix": "Industriesoftware für Unternehmen in",
+    "titleHighlight": "Berlin, München & Frankfurt",
+    "description": "Von Industrieparks in München und Stuttgart bis hin zu Logistikzentren in Frankfurt und Hamburg – Codeverta passt digitale Lösungen an die betrieblichen Anforderungen in Deutschland an.",
     "statLabel": "Bediente Branchen",
     "ctaEyebrow": "Ihre Branche ist nicht dabei?",
     "ctaTitle": "Wir bauen Ihre individuelle Lösung",
@@ -25,16 +25,16 @@
     "primaryCta": "Loslegen",
     "secondaryCta": "Demo anfragen",
     "statNote": "Durchschnitt der Codeverta-Kunden",
-    "trustedBy": "Vertrauen von Unternehmen in",
+    "trustedBy": "Vertraut von Unternehmen in Berlin, München, Frankfurt & Hamburg:",
     "problemEyebrow": "Das Problem",
-    "problemTitleTemplate": "Herausforderungen für {{industry}}-Teams",
+    "problemTitleTemplate": "Operative Herausforderungen für {{industry}}-Teams in Deutschland (Berlin, München, Frankfurt)",
     "solutionEyebrow": "Was wir anbieten",
-    "solutionTitle": "Wie Codeverta es löst",
+    "solutionTitle": "Wie Codeverta Unternehmen in München, Berlin & Frankfurt unterstützt",
     "moreEyebrow": "Weitere Branchen",
     "moreTitle": "Weitere Lösungen entdecken",
     "viewAll": "Alle Branchen ansehen",
-    "bottomTitleTemplate": "Bereit, Ihre {{industry}}-Abläufe zu transformieren?",
-    "bottomDescription": "Sprechen Sie mit einem Codeverta-Spezialisten, der Ihre Branche versteht.",
+    "bottomTitleTemplate": "Bereit für die Digitalisierung Ihres {{industry}}-Betriebs in Deutschland?",
+    "bottomDescription": "Sprechen Sie mit einem Codeverta-Spezialisten für Unternehmen in Berlin, München, Frankfurt und ganz Deutschland.",
     "bottomCta": "Kostenlose Beratung buchen"
   },
   "industries": {
@@ -76,10 +76,10 @@
         "company": "Produktion Unternehmen"
       },
       "featuredClients": [
-        "Automotive Parts",
-        "Consumer Electronics",
-        "Food & Beverage",
-        "Textile Mills"
+        "Industriepark München",
+        "Produktionszentrum Stuttgart",
+        "Maschinenbau Rhein-Ruhr",
+        "Technologie-Hub Berlin"
       ]
     },
     "trading-distribution": {
@@ -120,10 +120,10 @@
         "company": "Handel & Vertrieb Unternehmen"
       },
       "featuredClients": [
-        "FMCG Distributors",
-        "Commodity Traders",
-        "Wholesale Importers",
-        "3PL Providers"
+        "Logistikzentrum Frankfurt",
+        "Hamburger Hafen Logistik",
+        "Güterverkehr München",
+        "Ruhrgebiet Distribution"
       ]
     },
     "retail": {
@@ -164,10 +164,10 @@
         "company": "Einzelhandel Unternehmen"
       },
       "featuredClients": [
-        "Fashion & Apparel",
-        "Grocery & Supermarkets",
-        "Electronics Retail",
-        "Specialty Stores"
+        "Retail Berlin",
+        "Mode-Handel München",
+        "Einzelhandel Hamburg",
+        "Store-Netzwerk Köln"
       ]
     },
     "engineering-construction": {

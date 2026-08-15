@@ -1,37 +1,46 @@
 {
+  "ui": {
+    "chooseLanguage": "言語を選択",
+    "close": "閉じる",
+    "officeAddress": "オフィス所在地",
+    "whatsapp": {
+      "help": "何かお手伝いできることはありますか？",
+      "defaultMessage": "こんにちは。Codevertaのサービスについて相談したいです。",
+      "ariaLabel": "WhatsAppで相談"
+    }
+  },
   "our_products": "私たちの製品",
   "home": {
-    "title": "中小企業向けのプロフェッショナルなWebサイト制作とITソリューション",
-    "subtitle": "私たちは、中小企業向けにプロフェッショナルなソフトウェア制作、改修、開発サービス、およびITソリューションを提供し、デジタル時代におけるビジネスの成長を支援します。",
+    "title": "東京・渋谷拠点のDX・Webサイト制作・アプリ＆システム開発",
+    "subtitle": "東京をはじめ日本全国の中小企業・店舗・スタートアップの業務効率化とDX推進を支援。高品質なWeb制作、スマホアプリ開発、ERP・POS導入でビジネスの成長を実現します。",
     "hero": {
-      "prefix": "あらゆる業界のための",
+      "badge": "東京・渋谷を拠点とする先進的IT・ソフトウェア開発企業",
+      "prefix": "日本全国のあらゆる業界のDXを推進する",
       "rotating": [
-        "小売",
-        "医療・ヘルスケア",
-        "フィットネス",
-        "ホテル・宿泊・飲食",
-        "教育",
-        "製造",
-        "EC",
-        "教育",
-        "金融",
-        "不動産",
+        "EC・店舗",
+        "医療・クリニック",
+        "フィットネス・ジム",
+        "飲食・ホテル・観光",
+        "教育・スクール",
+        "製造・物流",
+        "金融・FinTech",
+        "不動産・建設",
         "非営利団体",
         "エンタメ",
-        "交通・物流",
-        "飲食・フードサービス",
+        "交通・ロジスティクス",
+        "フードサービス",
         "コンサルティング",
-        "法律",
+        "士業・法律",
         "マーケティング",
-        "自動車",
+        "モビリティ",
         "エネルギー",
-        "通信"
+        "IT・通信"
       ],
-      "suffix": "ソフトウェアソリューション"
+      "suffix": "IT・システム開発ソリューション"
     },
     "tagline": "*スタートアップ品質。よくあるWordPressテンプレートではありません",
     "cta": {
-      "whatsapp": "今すぐWhatsAppで相談",
+      "whatsapp": "今すぐオンライン相談",
       "products": "製品を見る"
     },
     "badges": {
@@ -41,9 +50,9 @@
       "trusted": "誠実で信頼できる"
     },
     "seo": {
-      "title": "Codeverta - Web・アプリ・ERP・ITソリューション開発",
-      "description": "Codevertaは中小企業、スタートアップ、企業向けに、SEO・性能・セキュリティを重視したWebサイト、アプリ、ERP、POS、ITシステムを開発します。",
-      "keywords": "Web制作, ソフトウェア会社, アプリ開発, ERP, POS, ITソリューション"
+      "title": "東京・日本全国対応のDX・Web制作・アプリ開発・ERP導入 | Codeverta",
+      "description": "東京・渋谷を拠点に、日本の企業・店舗が抱える人手不足や業務効率化の課題をITで解決。Webサイト制作・スマホアプリ開発・ERP・POS導入まで一気通貫でサポートします。",
+      "keywords": "東京 Web制作, 渋谷 システム開発, 日本 DX推進, アプリ開発 東京, 業務効率化, ERP導入, 店舗デジタル化, Codeverta"
     }
   },
   "trustedBy": "中小企業、スタートアップ、政府機関に信頼されています",
@@ -86,8 +95,8 @@
     "subtitle": "サービスに関するよくある質問への回答をご確認ください。"
   },
   "cta": {
-    "title": "プロフェッショナルなWebサイトを始めませんか？",
-    "description": "無料相談から始められます。ビジネスのための強いデジタルプレゼンスを一緒に作りましょう。",
+    "title": "日本のビジネスに最適なWeb・システム開発を始めませんか？",
+    "description": "東京・渋谷拠点から全国対応。課題ヒアリングから開発・運用まで、まずは無料オンライン相談でお気軽にお問い合わせください。",
     "buttons": {
       "free": "無料相談",
       "contact": "今すぐ相談"
@@ -134,9 +143,15 @@
     "events": "イベント",
     "blog": "ブログ",
     "careers": "採用情報",
+    "careers_desc": "Codevertaで一緒に働きませんか",
     "faq": "FAQ",
     "about": "私たちについて",
-    "contact": "お問い合わせ"
+    "about_desc": "チームとミッションのご紹介",
+    "contact": "お問い合わせ",
+    "contact_desc": "お問い合わせ・お見積もり相談",
+    "learning_desc": "IT講座＆ブートキャンプ",
+    "blog_desc": "最新記事＆インサイト",
+    "events_desc": "テックイベント＆ミートアップ"
   },
   "mega_menu": {
     "products": {
@@ -620,9 +635,9 @@
   },
   "careersPage": {
     "seo": {
-      "title": "Codeverta Careers - Join Our Software House & IT Solutions Team",
-      "description": "Discover career opportunities at Codeverta for developers, designers, and tech talents looking to build websites, apps, ERP, POS, and business IT solutions.",
-      "keywords": "Codeverta careers, software house jobs, developer jobs, Indonesia IT jobs, tech careers"
+      "title": "採用情報 | Codeverta - Web・アプリ・システム開発チーム",
+      "description": "東京・日本のDXを牽引するCodevertaの採用情報。エンジニア、デザイナー、ITコンサルタントのキャリア機会をご案内します。",
+      "keywords": "Codeverta 採用, IT求人 東京, エンジニア採用, システムエンジニア 募集, Webデザイナー 求人"
     },
     "title": "Join Our Team",
     "subtitle": "We build the technology of tomorrow with integrity and innovation.",

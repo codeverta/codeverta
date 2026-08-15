@@ -1,17 +1,17 @@
 {
   "seo": {
-    "indexTitle": "あらゆる業界向けソリューション | Codeverta",
-    "indexDescription": "製造から医療まで、Codeverta は業界固有のニーズに合わせたデジタルソリューションを提供します。",
-    "indexKeywords": "業界向けソフトウェア, 業界 ERP, 業務アプリ, Codeverta",
-    "detailTitleTemplate": "{{industry}} 向けソフトウェアソリューション | Codeverta",
-    "detailDescriptionTemplate": "Codeverta の {{industry}} 向け運用、自動化、レポート、連携、拡張可能なデジタルワークフローをご覧ください。",
-    "detailKeywordsTemplate": "{{industry}} ソフトウェア, {{industry}} ERP, {{industry}} DX, Codeverta"
+    "indexTitle": "日本全国・主要都市向け産業別IT・システム開発ソリューション（東京・大阪・名古屋） | Codeverta",
+    "indexDescription": "製造業から医療、流通、建設まで、東京・大阪・名古屋・福岡などの日本企業の現場課題に対応する開発・ERP・業務自動化ソリューション。",
+    "indexKeywords": "東京 IT開発, 大阪 システム開発, 名古屋 産業ERP, 日本 DX推進, 店舗POS, Codeverta",
+    "detailTitleTemplate": "{{industry}}向けIT・システム開発ソリューション（東京・大阪・日本全国） | Codeverta",
+    "detailDescriptionTemplate": "東京・大阪をはじめ日本全国の{{industry}}企業向けシステム開発：業務自動化、ERP、POS、データ連携・最適化。",
+    "detailKeywordsTemplate": "{{industry}} システム開発 東京, {{industry}} DX 大阪, {{industry}} ERP 日本, Codeverta"
   },
   "index": {
     "badge": "業界ソリューション",
-    "titlePrefix": "あらゆる業界のための",
-    "titleHighlight": "ソリューション",
-    "description": "製造現場から医療システムまで、Codeverta は業界特有の要件に適応し、業務を簡素化し、リソースを最適化し、成長を加速します。",
+    "titlePrefix": "日本全国の主要都市向け",
+    "titleHighlight": "東京・大阪・名古屋の産業別DX",
+    "description": "東京の大手町・渋谷、大阪の梅田・心斎橋、名古屋の栄、福岡の天神など、日本全国の企業・店舗の現場課題に応える開発・ERP・業務自動化ソリューション。",
     "statLabel": "対応業界",
     "ctaEyebrow": "該当する業界がありませんか？",
     "ctaTitle": "貴社専用のソリューションを構築しましょう",
@@ -25,23 +25,23 @@
     "primaryCta": "始める",
     "secondaryCta": "デモを依頼",
     "statNote": "Codeverta 顧客平均",
-    "trustedBy": "導入企業の分野",
+    "trustedBy": "東京・大阪・名古屋・福岡の導入企業例:",
     "problemEyebrow": "課題",
-    "problemTitleTemplate": "{{industry}} チームが直面する課題",
+    "problemTitleTemplate": "日本（東京・大阪・名古屋）の{{industry}}現場が直面する課題",
     "solutionEyebrow": "提供内容",
-    "solutionTitle": "Codeverta の解決方法",
+    "solutionTitle": "Codevertaが提案する東京・大阪・日本全国の企業向け解決策",
     "moreEyebrow": "その他の業界",
     "moreTitle": "他のソリューションを見る",
     "viewAll": "すべての業界を見る",
-    "bottomTitleTemplate": "{{industry}} の業務を変革する準備はできていますか？",
-    "bottomDescription": "業界を理解する Codeverta の専門家にご相談ください。",
+    "bottomTitleTemplate": "東京・日本全国の{{industry}}事業のデジタル化を始めませんか？",
+    "bottomDescription": "東京・渋谷拠点を中心に、日本全国の{{industry}}業界に詳しい専任スタッフがご相談に対応します。",
     "bottomCta": "無料相談を予約"
   },
   "industries": {
     "manufacturing": {
       "name": "製造",
-      "tagline": "生産、在庫、出荷のワークフローを効率化します。",
-      "description": "生産、在庫、出荷のワークフローを効率化します。 Codeverta は 製造 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "tagline": "東京・関東の精密機械、名古屋の自動車産業、大阪の金属加工など日本全国の工場DXを推進。",
+      "description": "東京・大阪・名古屋・福岡など日本各地の工場現場に最適化したERP・生産管理システム。生産データ一元化と業務自動化を実現します。",
       "heroStat": {
         "value": "38%",
         "label": "業務効率の改善"
@@ -76,16 +76,16 @@
         "company": "製造 企業"
       },
       "featuredClients": [
-        "Automotive Parts",
-        "Consumer Electronics",
-        "Food & Beverage",
-        "Textile Mills"
+        "東京・関東製造業エリア",
+        "関西・大阪産業ハブ",
+        "中部・名古屋自動車産業",
+        "九州・福岡テクノロジー拠点"
       ]
     },
     "trading-distribution": {
       "name": "貿易・流通",
-      "tagline": "調達、注文、サプライチェーンを効率的に管理します。",
-      "description": "調達、注文、サプライチェーンを効率的に管理します。 Codeverta は 貿易・流通 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "tagline": "東京港・横浜港・大阪港の港湾物流および全国主要物流拠点を結ぶ在庫・配送統合管理。",
+      "description": "関東・関西・中部の物流ハブを結ぶ総合サプライチェーン管理システム。",
       "heroStat": {
         "value": "55%",
         "label": "業務効率の改善"
@@ -120,16 +120,16 @@
         "company": "貿易・流通 企業"
       },
       "featuredClients": [
-        "FMCG Distributors",
-        "Commodity Traders",
-        "Wholesale Importers",
-        "3PL Providers"
+        "東京港・横浜物流センター",
+        "大阪・港湾ロジスティクス",
+        "名古屋総合物流",
+        "福岡・九州流通ハブ"
       ]
     },
     "retail": {
       "name": "小売",
-      "tagline": "売上を伸ばし、在庫を管理し、顧客体験を向上させます。",
-      "description": "売上を伸ばし、在庫を管理し、顧客体験を向上させます。 Codeverta は 小売 チームのデータ統合、プロセス自動化、より高速で安全かつ拡張可能なデジタルワークフロー構築を支援します。",
+      "tagline": "東京（渋谷・銀座）・大阪（梅田）・福岡（天神）の実店舗とEC在庫をリアルタイム一元管理。",
+      "description": "日本全国の店舗ネットワークとECサイトを同期するPOS＆オムニチャネルソリューション。",
       "heroStat": {
         "value": "29%",
         "label": "業務効率の改善"
@@ -164,10 +164,10 @@
         "company": "小売 企業"
       },
       "featuredClients": [
-        "Fashion & Apparel",
-        "Grocery & Supermarkets",
-        "Electronics Retail",
-        "Specialty Stores"
+        "東京・渋谷リテール",
+        "大阪・心斎橋商業チェーン",
+        "名古屋・栄店舗ネットワーク",
+        "福岡・天神リテール"
       ]
     },
     "engineering-construction": {
@@ -208,10 +208,10 @@
         "company": "エンジニアリング・建設 企業"
       },
       "featuredClients": [
-        "Civil Engineering",
-        "Building Contractors",
-        "MEP Firms",
-        "Infrastructure Developers"
+        "東京ゼネコン・建設",
+        "関西土木・建築",
+        "中部インフラ開発",
+        "九州建設ネットワーク"
       ]
     },
     "ecommerce": {
@@ -252,10 +252,10 @@
         "company": "Eコマース（EC） 企業"
       },
       "featuredClients": [
-        "D2C Brands",
-        "Marketplace Sellers",
-        "Subscription Boxes",
-        "Multi-channel Retailers"
+        "東京D2Cブランド",
+        "大阪EC事業者",
+        "全国マルチチャネル通販",
+        "福岡コマース拠点"
       ]
     },
     "education": {
@@ -296,10 +296,10 @@
         "company": "教育 企業"
       },
       "featuredClients": [
-        "K-12 Schools",
-        "Universities",
-        "Vocational Institutes",
-        "Tuition Centers"
+        "東京主要大学",
+        "関西高等教育機関",
+        "中部専門スクール",
+        "全国オンライン学習"
       ]
     },
     "professional-services": {
@@ -340,10 +340,10 @@
         "company": "プロフェッショナルサービス 企業"
       },
       "featuredClients": [
-        "Management Consulting",
-        "IT Services",
-        "Law Firms",
-        "Creative Agencies"
+        "大手町コンサルティング",
+        "丸の内法律事務所",
+        "渋谷デジタルエージェンシー",
+        "関西ITサービス"
       ]
     },
     "financial-services": {
@@ -384,10 +384,10 @@
         "company": "金融サービス 企業"
       },
       "featuredClients": [
-        "Wealth Management",
-        "Insurance",
-        "Microfinance",
-        "Brokerage Firms"
+        "兜町金融・FinTech",
+        "関西資産運用",
+        "東京保険ネットワーク",
+        "全国証券ソリューション"
       ]
     },
     "healthcare": {
@@ -428,10 +428,10 @@
         "company": "医療・ヘルスケア 企業"
       },
       "featuredClients": [
-        "Hospitals",
-        "Clinics & Polyclinics",
-        "Diagnostic Centers",
-        "Pharmacy Chains"
+        "東京総合病院グループ",
+        "関西医療クリニック",
+        "中部診断センター",
+        "全国薬局チェーン"
       ]
     },
     "non-profit": {
@@ -472,10 +472,10 @@
         "company": "非営利団体 企業"
       },
       "featuredClients": [
-        "INGOs",
-        "Community Foundations",
-        "Social Enterprises",
-        "Religious Organizations"
+        "東京社会貢献ファンド",
+        "関西NPO法人",
+        "全国福祉団体",
+        "地域創生プロジェクト"
       ]
     }
   }

@@ -1,5 +1,6 @@
 import { CircleXIcon } from "lucide-react";
 import React, { useState } from "react";
+import { useTranslation } from "next-i18next";
 
 // WhatsApp Icon Component (since we can't import from MUI)
 export const WhatsAppIcon = () => (
@@ -72,13 +73,17 @@ export const WhatsappWrapper = ({
 
 const WhatsappButton = ({
   phoneNumber = "+62881011692615",
-  message = "Halo, saya ingin bertanya...",
+  message,
+}: {
+  phoneNumber?: string;
+  message?: string;
 }) => {
+  const { t } = useTranslation("common");
   const [isVisible, setIsVisible] = useState(true);
 
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
+      message || t("ui.whatsapp.defaultMessage")
     )}`;
     window.open(url, "_blank");
   };
@@ -94,7 +99,7 @@ const WhatsappButton = ({
           >
             <CircleXIcon size={16} />
           </button>
-          <p className="text-sm font-medium">Ada yang bisa kami bantu?</p>
+          <p className="text-sm font-medium">{t("ui.whatsapp.help")}</p>
           {/* Arrow Tooltip */}
           <div className="absolute -bottom-2 right-6 w-4 h-4 bg-white border-r border-b border-gray-100 rotate-45"></div>
         </div>
@@ -109,7 +114,7 @@ const WhatsappButton = ({
         <button
           onClick={handleClick}
           className="relative bg-[#25D366] p-3 sm:p-4 rounded-full shadow-lg hover:bg-[#20ba5a] transition-all transform hover:scale-110 active:scale-95 flex items-center justify-center"
-          aria-label="Chat via WhatsApp"
+          aria-label={t("ui.whatsapp.ariaLabel")}
         >
           <svg
             viewBox="0 0 24 24"

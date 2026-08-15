@@ -2,10 +2,19 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import {
   buildSeoMeta,
-  getAlternateLinks,
+  isIndexableLocale,
   SITE_NAME,
   SITE_URL,
 } from "@/lib/seo";
+
+type SeoHeadProps = {
+  title?: string;
+  description?: string;
+  url?: string;
+  image?: string;
+  keywords?: string;
+  includeOfficeLocation?: boolean;
+};
 
 export default function SeoHead({
   title = "Codeverta – Solusi Digital Bisnis Anda",
@@ -13,8 +22,8 @@ export default function SeoHead({
   url,
   image = `${SITE_URL}/og-image.png`,
   keywords = "",
-  availableLocales,
-}) {
+  includeOfficeLocation = true,
+}: SeoHeadProps) {
   const router = useRouter();
   const seo = buildSeoMeta({
     locale: router.locale,
@@ -24,43 +33,58 @@ export default function SeoHead({
     keywords,
     image,
     canonical: url,
+    includeOfficeLocation,
   });
+  const indexable = isIndexableLocale(router.locale, router.asPath);
 
   return (
     <Head>
       <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
-      {seo.keywords ? <meta name="keywords" content={seo.keywords} /> : null}
-      <meta httpEquiv="content-language" content={seo.locale} />
+      <meta key="description" name="description" content={seo.description} />
+      {seo.keywords ? (
+        <meta key="keywords" name="keywords" content={seo.keywords} />
+      ) : null}
+      <meta
+        key="content-language"
+        httpEquiv="content-language"
+        content={seo.locale}
+      />
 
       {/* Canonical */}
-      <link rel="canonical" href={seo.canonical} />
-      {getAlternateLinks(seo.path, availableLocales).map((link) => (
-        <link
-          key={link.hrefLang}
-          rel={link.rel}
-          hrefLang={link.hrefLang}
-          href={link.href}
-        />
-      ))}
-
+      <link key="canonical" rel="canonical" href={seo.canonical} />
       {/* Open Graph */}
-      <meta property="og:title" content={seo.title} />
-      <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content={seo.image} />
-      <meta property="og:url" content={seo.canonical} />
-      <meta property="og:type" content="website" />
-      <meta property="og:site_name" content={SITE_NAME} />
-      <meta property="og:locale" content={seo.ogLocale} />
+      <meta key="og:title" property="og:title" content={seo.title} />
+      <meta
+        key="og:description"
+        property="og:description"
+        content={seo.description}
+      />
+      <meta key="og:image" property="og:image" content={seo.image} />
+      <meta key="og:url" property="og:url" content={seo.canonical} />
+      <meta key="og:type" property="og:type" content="website" />
+      <meta key="og:site_name" property="og:site_name" content={SITE_NAME} />
+      <meta key="og:locale" property="og:locale" content={seo.ogLocale} />
 
       {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.image} />
+      <meta
+        key="twitter:card"
+        name="twitter:card"
+        content="summary_large_image"
+      />
+      <meta key="twitter:title" name="twitter:title" content={seo.title} />
+      <meta
+        key="twitter:description"
+        name="twitter:description"
+        content={seo.description}
+      />
+      <meta key="twitter:image" name="twitter:image" content={seo.image} />
 
       {/* Robots */}
-      <meta name="robots" content="index, follow" />
+      <meta
+        key="robots"
+        name="robots"
+        content={indexable ? "index,follow" : "noindex,follow"}
+      />
     </Head>
   );
 }

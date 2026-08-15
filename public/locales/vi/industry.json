@@ -1,9 +1,9 @@
 {
   "seo": {
-    "indexTitle": "Giải pháp cho mọi ngành | Codeverta",
+    "indexTitle": "Giải Pháp Phần Mềm & ERP Theo Ngành Tại Việt Nam (TP.HCM, Hà Nội, Đà Nẵng) | Codeverta",
     "indexDescription": "Từ sản xuất đến y tế, Codeverta điều chỉnh giải pháp số theo nhu cầu riêng của ngành bạn.",
     "indexKeywords": "phần mềm theo ngành, ERP theo ngành, ứng dụng doanh nghiệp, Codeverta",
-    "detailTitleTemplate": "Giải pháp phần mềm cho {{industry}} | Codeverta",
+    "detailTitleTemplate": "Giải Pháp Phần Mềm {{industry}} Tại Việt Nam (TP.HCM, Hà Nội) | Codeverta",
     "detailDescriptionTemplate": "Khám phá giải pháp Codeverta cho đội ngũ {{industry}}: vận hành, tự động hóa, báo cáo, tích hợp và workflow số có thể mở rộng.",
     "detailKeywordsTemplate": "phần mềm {{industry}}, ERP {{industry}}, chuyển đổi số {{industry}}, Codeverta"
   },
@@ -25,7 +25,7 @@
     "primaryCta": "Bắt đầu",
     "secondaryCta": "Yêu cầu demo",
     "statNote": "Trung bình khách hàng Codeverta",
-    "trustedBy": "Được tin dùng bởi công ty trong",
+    "trustedBy": "Được tin tưởng bởi các doanh nghiệp tại Việt Nam:",
     "problemEyebrow": "Vấn đề",
     "problemTitleTemplate": "Thách thức của đội ngũ {{industry}}",
     "solutionEyebrow": "Chúng tôi cung cấp",

@@ -488,9 +488,13 @@ export default function BlogDetail({
     <>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={finalDesc} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={finalDesc} />
+        <meta key="description" name="description" content={finalDesc} />
+        <meta key="og:title" property="og:title" content={title} />
+        <meta
+          key="og:description"
+          property="og:description"
+          content={finalDesc}
+        />
         {image && <meta property="og:image" content={image} />}
         <meta property="og:type" content="article" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -1405,8 +1409,11 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
 
   try {
     const postData = await getPostData(id, "blog", locale ?? "id");
+    const requestedLocale = locale ?? "id";
+    if (postData.lang !== requestedLocale) return { notFound: true };
 
     const otherPosts = getSortedPostsData("blog", locale ?? "id")
+      .filter((post) => post.lang === requestedLocale)
       .filter((p) => p.id !== id)
       .slice(0, 4)
       .map((p) => ({
@@ -1428,6 +1435,7 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
         otherPosts,
         otherProducts,
         localizedPaths,
+        availableLocales: Object.keys(localizedPaths),
         ...(await serverSideTranslations(locale ?? "id", [
           "common",
           "order",
