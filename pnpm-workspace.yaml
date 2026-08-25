@@ -1,3 +1,6 @@
+packages:
+  - "."
+
 allowBuilds:
   "@firebase/util": set this to true or false
   "@prisma/client": set this to true or false
