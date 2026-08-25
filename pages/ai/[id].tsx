@@ -3,7 +3,12 @@ import React, { useEffect, useRef } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { getPostData, getAllPostIds, getSortedPostsData } from "lib/posts";
+import {
+  getPostData,
+  getAllPostIds,
+  getSortedPostsData,
+  getLegacyPostDestination,
+} from "lib/posts";
 import {
   Calendar,
   User,
@@ -120,11 +125,7 @@ const OtherPostsWidget = ({ posts, currentPostId }) => {
       </h3>
       <div className="space-y-4">
         {filteredPosts.map((post) => (
-          <Link
-            key={post.id}
-            href={`/posts/${post.id}`}
-            className="group block"
-          >
+          <Link key={post.id} href={`/ai/${post.id}`} className="group block">
             <div className="flex flex-col gap-1">
               <span className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">
                 {post.category || "Blog"}
@@ -296,12 +297,18 @@ function Post({ postData, slug, allPostsData, locale }) {
       <BlogSchemaJsonLd
         post={postData}
         baseUrl={SITE_URL}
+        url={canonicalUrl}
         author={{
           name: postData.author || "Rabih Utomo",
           url: `${SITE_URL}/about`,
         }}
       />
-      <BreadcrumbSchemaJsonLd slug={slug} postTitle={postData.title} />
+      <BreadcrumbSchemaJsonLd
+        slug={slug}
+        postTitle={postData.title}
+        category="ai"
+        url={canonicalUrl}
+      />
 
       <main className="min-h-screen bg-gray-50 dark:bg-gray-950 pb-12">
         {/* Top Ad Banner - High Visibility */}
@@ -400,7 +407,7 @@ function Post({ postData, slug, allPostsData, locale }) {
               <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
                 Related Articles
               </h2>
-              <RelatedPosts posts={postData.relatedPosts} />
+              <RelatedPosts posts={postData.relatedPosts} basePath="/ai" />
             </section>
           )}
         </div>
@@ -420,7 +427,15 @@ export async function getStaticProps({ params, locale }) {
   const slug = params.id;
   const redirect = getLocaleRedirect(locale, `/ai/${slug}`);
   if (redirect) return { notFound: true };
-  const postData = await getPostData(slug, "ai");
+  let postData;
+  try {
+    postData = await getPostData(slug, "ai");
+  } catch {
+    const destination = getLegacyPostDestination(slug);
+    return destination && destination !== `/ai/${slug}`
+      ? { redirect: { destination, permanent: true } }
+      : { notFound: true };
+  }
   const allPostsData = getSortedPostsData(locale).splice(0, 6);
 
   return {

@@ -33,7 +33,7 @@ const categoryColors = {
   entertainment: "bg-indigo-100 text-indigo-800 hover:bg-indigo-200",
 };
 
-const RelatedPosts = ({ posts }) => {
+const RelatedPosts = ({ posts, basePath = "/blog" }) => {
   if (!posts || posts.length === 0) return null;
 
   return (
@@ -96,7 +96,7 @@ const RelatedPosts = ({ posts }) => {
               </CardHeader>
 
               <CardContent className="pt-4">
-                <Link href={`/posts/${post.id}`} className="block group">
+                <Link href={`${basePath}/${post.id}`} className="block group">
                   <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2">
                     {post.title}
                   </h4>
@@ -117,7 +117,7 @@ const RelatedPosts = ({ posts }) => {
                   className="text-blue-600 dark:text-blue-400 p-0"
                   asChild
                 >
-                  <Link href={`/posts/${post.id}`}>
+                  <Link href={`${basePath}/${post.id}`}>
                     Baca
                     <ArrowRight className="w-4 h-4 ml-1" />
                   </Link>

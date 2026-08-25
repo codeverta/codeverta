@@ -3,7 +3,11 @@ import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { getPostData, getAllPostIds } from "lib/posts";
+import {
+  getPostData,
+  getAllPostIds,
+  getLegacyPostDestination,
+} from "lib/posts";
 import {
   Calendar,
   User,
@@ -109,7 +113,7 @@ function Post({ postData, slug }) {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const shareUrl = `https://www.codeverta.com/posts/${slug}`;
+  const shareUrl = `https://www.codeverta.com/cybersecurity/${slug}`;
   const shareText = `Check out this amazing article: ${postData.title}`;
 
   const shareOptions = [
@@ -158,7 +162,7 @@ function Post({ postData, slug }) {
         openGraph={{
           title: postData.title,
           description: postData.desc,
-          url: `https://www.codeverta.com/posts/${slug}`,
+          url: shareUrl,
           siteName: "Codeverta",
           images: [
             {
@@ -313,6 +317,7 @@ function Post({ postData, slug }) {
       <NewsSchemaJsonLd
         post={postData}
         baseUrl="https://codeverta.com"
+        url={shareUrl}
         author={{
           name: postData.author || "Rabih Utomo",
           url: "https://codeverta.com/about",
@@ -326,7 +331,12 @@ function Post({ postData, slug }) {
         keywords={postData.tags}
       />
 
-      <BreadcrumbSchemaJsonLd slug={slug} postTitle={postData.title} />
+      <BreadcrumbSchemaJsonLd
+        slug={slug}
+        postTitle={postData.title}
+        category="cybersecurity"
+        url={shareUrl}
+      />
 
       <main className="relative min-h-screen bg-cover bg-center bg-no-repeat transition-colors duration-300 max-w-[1200px] mx-auto my-4">
         <div className="">
@@ -567,7 +577,7 @@ function Post({ postData, slug }) {
               {/* Comments Section */}
               <div className="mt-12">
                 <DisqusThread
-                  url={"https://www.codeverta.com/posts/" + slug}
+                  url={shareUrl}
                   identifier={slug}
                   title={postData.title}
                 />
@@ -578,7 +588,10 @@ function Post({ postData, slug }) {
           {/* Related Posts */}
           {postData.relatedPosts && postData.relatedPosts.length > 0 && (
             <div className="mt-8">
-              <RelatedPosts posts={postData.relatedPosts} />
+              <RelatedPosts
+                posts={postData.relatedPosts}
+                basePath="/cybersecurity"
+              />
             </div>
           )}
         </div>
@@ -598,7 +611,15 @@ export async function getStaticProps({ params, locale }) {
   const slug = params.id;
   const redirect = getLocaleRedirect(locale, `/cybersecurity/${slug}`);
   if (redirect) return { notFound: true };
-  const postData = await getPostData(slug, "cybersecurity");
+  let postData;
+  try {
+    postData = await getPostData(slug, "cybersecurity");
+  } catch {
+    const destination = getLegacyPostDestination(slug);
+    return destination && destination !== `/cybersecurity/${slug}`
+      ? { redirect: { destination, permanent: true } }
+      : { notFound: true };
+  }
   return {
     props: {
       postData,

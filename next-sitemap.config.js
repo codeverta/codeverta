@@ -37,10 +37,19 @@ function getAvailableLocales(routePath) {
   if (section === "products") {
     return segments[1]
       ? getAvailableProductLocales(segments[1])
-      : productLocales;
+      : getAvailableProductIndexLocales();
   }
   if (defaultOnlySections.has(section)) return [defaultLocale];
   return nextI18nConfig.i18n.locales;
+}
+
+function getAvailableProductIndexLocales() {
+  return productLocales.filter((locale) => {
+    if (locale === defaultLocale) return true;
+    return fs.existsSync(
+      path.join(process.cwd(), "public", "locales", locale, "projects.json")
+    );
+  });
 }
 
 let productIdsByLocale;
@@ -130,6 +139,7 @@ module.exports = {
   siteUrl: siteUrl,
   generateRobotsTxt: true,
   sitemapSize: 5000,
+  exclude: ["/posts", "/posts/*"],
 
   additionalPaths: async () => {
     const entries = [];

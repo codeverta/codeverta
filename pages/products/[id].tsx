@@ -36,7 +36,12 @@ import {
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { appendOfficeLocation, getLocalizedUrl } from "@/lib/seo";
+import {
+  appendOfficeLocation,
+  buildProductSeoTitle,
+  getSeoDescriptionExcerpt,
+  getLocalizedUrl,
+} from "@/lib/seo";
 import SeoHead from "@/components/SeoHead";
 
 import Link from "next/link";
@@ -49,6 +54,7 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import { withI18n } from "@/lib/withi18n";
+import { useTranslation } from "next-i18next";
 import { getLocalizedPostsData } from "@/lib/posts";
 import { ArticleSection } from "@/components/products/ArticleSection";
 import ImageCarousel from "@/components/ImageCarousel";
@@ -59,6 +65,7 @@ import {
   getProjectContentLocale,
   getProjects,
 } from "@/lib/projects";
+import { getLocalizedPath } from "@/lib/seo";
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
@@ -367,6 +374,19 @@ export const getStaticProps = withI18n(
     const project = getProjectById(params.id as string, locale);
     if (!project) return { notFound: true };
 
+    const projectContentLocale = getProjectContentLocale(params.id, locale);
+    if (projectContentLocale !== (locale || "id")) {
+      return {
+        redirect: {
+          destination: getLocalizedPath(
+            projectContentLocale,
+            `/products/${params.id}`
+          ),
+          permanent: true,
+        },
+      };
+    }
+
     const projects = getProjects(locale);
     const latestArticles = getLocalizedPostsData("blog", locale ?? "id")
       .slice(0, 3)
@@ -399,6 +419,7 @@ export const getStaticProps = withI18n(
     return {
       props: {
         project,
+        projectContentLocale,
         otherProducts,
         latestArticles,
         availableLocales: getAvailableProjectLocales(params.id),
@@ -410,6 +431,7 @@ export const getStaticProps = withI18n(
 // ─── Main Page ─────────────────────────────────────────────────────────────────
 export default function ProjectDetailPage({
   project,
+  projectContentLocale,
   otherProducts,
   latestArticles,
   availableLocales,
@@ -428,6 +450,7 @@ export default function ProjectDetailPage({
   } = project;
 
   const { locale = "id" } = useRouter();
+  const { t } = useTranslation("common");
   const siteUrl = "https://www.codeverta.com";
   const pageUrl = getLocalizedUrl(locale, `/products/${product.id}`);
 
@@ -465,15 +488,16 @@ export default function ProjectDetailPage({
     },
   };
 
-  const finalDesc = appendOfficeLocation(
-    product.fullDescription.substring(0, 160),
-    locale
-  );
+  const localizedDescription =
+    projectContentLocale === locale
+      ? getSeoDescriptionExcerpt(product.fullDescription)
+      : t("productsPage.seo.description");
+  const finalDesc = appendOfficeLocation(localizedDescription, locale);
 
   return (
     <>
       <SeoHead
-        title={`Jasa Pembuatan ${product.name} - ${product.category}`}
+        title={buildProductSeoTitle(product.name, locale)}
         description={finalDesc}
         url={pageUrl}
         image={`${siteUrl}${product.image}`}

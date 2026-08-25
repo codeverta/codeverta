@@ -18,16 +18,19 @@ interface BreadcrumbSchemaProps {
   slug: string;
   postTitle: string;
   category?: string;
+  url?: string;
 }
 
 const BreadcrumbSchemaJsonLd = ({
   slug,
   postTitle,
-  category,
+  category = "blog",
+  url,
 }: BreadcrumbSchemaProps) => {
-  const pathType =
-    slug.startsWith("0") || slug.match(/^[0-9]+-/) ? "tutorials" : "blog";
+  const pathType = category;
   const categoryLabel = BLOG_PATHS[pathType] || "Blog";
+  const baseUrl = "https://www.codeverta.com";
+  const articleUrl = url || `${baseUrl}/${pathType}/${slug}`;
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -37,19 +40,19 @@ const BreadcrumbSchemaJsonLd = ({
         "@type": "ListItem",
         position: 1,
         name: "Codeverta",
-        item: "https://codeverta.com/",
+        item: `${baseUrl}/`,
       },
       {
         "@type": "ListItem",
         position: 2,
         name: categoryLabel,
-        item: `https://codeverta.com/tutorials`,
+        item: `${baseUrl}/${pathType}`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name: postTitle,
-        item: `https://codeverta.com/tutorials/${slug}`,
+        item: articleUrl,
       },
     ],
   };

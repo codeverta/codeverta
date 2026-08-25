@@ -255,6 +255,44 @@ export function getLocalizedPostPaths(id, folder = "blog") {
   return pathsByLocale;
 }
 
+export function getLocalizedPostRedirect(
+  id: string,
+  requestedLocale = "id",
+  folder = "blog"
+) {
+  const localizedPaths = getLocalizedPostPaths(id, folder);
+  const locale = normalizeLocale(requestedLocale);
+  const targetLocale = localizedPaths[locale]
+    ? locale
+    : localizedPaths.id
+    ? "id"
+    : localizedPaths.en
+    ? "en"
+    : Object.keys(localizedPaths)[0];
+
+  if (!targetLocale) return null;
+  const targetPath = localizedPaths[targetLocale];
+  return targetLocale === "id" ? targetPath : `/${targetLocale}${targetPath}`;
+}
+
+const LEGACY_POST_SECTIONS = [
+  "news",
+  "cybersecurity",
+  "ai",
+  "gadget",
+  "startups",
+  "tutorials",
+  "blog",
+];
+
+export function getLegacyPostDestination(id: string) {
+  for (const section of LEGACY_POST_SECTIONS) {
+    const file = path.join(blogBaseDirectory, section, `${id}.md`);
+    if (fs.existsSync(file)) return `/${section}/${id}`;
+  }
+  return null;
+}
+
 export async function getPostData(id, folder = "blog", locale = "id") {
   let fileContents;
   let usedLanguage = normalizeLocale(locale);

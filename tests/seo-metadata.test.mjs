@@ -31,6 +31,7 @@ async function readMetadata(route) {
 
   return {
     html,
+    head: html.split(/<\/head>/i)[0],
     title: html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1] || "",
     canonical: links.filter((link) => link.rel === "canonical"),
     alternates: links.filter((link) => link.rel === "alternate"),
@@ -93,7 +94,7 @@ test("Japanese product recommendations use valid Japanese articles", async () =>
   assert.equal(response.ok, true);
 
   const html = await response.text();
-  assert.match(html, /関連記事/);
+  assert.match(html, /Codevertaとインドネシア医療のデジタル化/);
   assert.doesNotMatch(html, /Coba Baca Artikel/);
   assert.doesNotMatch(
     html,
@@ -122,3 +123,36 @@ test("legacy localized product URLs redirect permanently to /products", async ()
     "/ja/products/e-commerce-platform"
   );
 });
+
+for (const expected of [
+  {
+    locale: "zh",
+    title: /定制开发服务.*上海/,
+    description: /上海.*北京.*深圳/,
+  },
+  {
+    locale: "ja",
+    title: /開発サービス.*東京/,
+    description: /東京.*大阪.*名古屋/,
+  },
+  {
+    locale: "en",
+    title: /Development in New York/,
+    description: /New York.*San Francisco.*London/,
+  },
+]) {
+  test(`${expected.locale} product metadata uses its localized market`, async () => {
+    const metadata = await readMetadata(
+      `/${expected.locale}/products/gym-management-system`
+    );
+
+    assert.match(metadata.title, expected.title);
+    assert.doesNotMatch(metadata.title, /Jasa Pembuatan/);
+    assert.match(metadata.descriptions[0].content, expected.description);
+    assert.doesNotMatch(metadata.descriptions[0].content, /Jl\.? Kaliurang/i);
+    assert.doesNotMatch(metadata.descriptions[0].content, /Ngaglik/i);
+    assert.doesNotMatch(metadata.head, /Jl\.? Kaliurang/i);
+    assert.doesNotMatch(metadata.head, /Ngaglik/i);
+    assert.doesNotMatch(metadata.head, /Jasa Pembuatan/);
+  });
+}

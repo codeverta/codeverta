@@ -34,7 +34,7 @@ export type Tool = {
   title: string;
   description: string;
   isNew?: boolean;
-  url: string; 
+  url: string;
 };
 
 // Ekspor array dari semua tools
@@ -81,7 +81,7 @@ export const tools: Tool[] = [
   },
   {
     category: "Edit",
-    url: "/image/image-editor",
+    url: "/image",
     icon: ImageIcon,
     title: "Photo editor",
     description:
@@ -98,7 +98,7 @@ export const tools: Tool[] = [
   },
   {
     category: "Edit",
-    url: "/image/image-remove-background",
+    url: "/image/image-background-remover",
     icon: Eraser,
     title: "Remove background",
     description:
@@ -107,7 +107,7 @@ export const tools: Tool[] = [
   },
   {
     category: "Security",
-    url: "/image/image-watermark",
+    url: "/image",
     icon: ShieldCheck,
     title: "Watermark IMAGE",
     description:
@@ -158,14 +158,13 @@ export const categories = [
   "Security",
 ];
 
-
-
 export default function HomePage() {
   // State untuk menyimpan filter yang sedang aktif
   const [activeFilter, setActiveFilter] = useState("All");
 
   // Logika untuk memfilter tools berdasarkan kategori yang aktif
-  const filteredTools = activeFilter === "All"
+  const filteredTools =
+    activeFilter === "All"
       ? tools
       : tools.filter((tool) => tool.category === activeFilter);
 

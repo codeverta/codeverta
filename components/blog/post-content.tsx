@@ -160,6 +160,7 @@ export default function PostContent({ postData, slug, articleStats }) {
       <NewsSchemaJsonLd
         post={postData}
         baseUrl={SITE_URL}
+        url={shareUrl}
         author={{
           name: postData.author || "Rabih Utomo",
           url: `${SITE_URL}/about`,
@@ -172,7 +173,12 @@ export default function PostContent({ postData, slug, articleStats }) {
         category={articleStats.category}
         keywords={postData.tags}
       />
-      <BreadcrumbSchemaJsonLd slug={slug} postTitle={postData.title} />
+      <BreadcrumbSchemaJsonLd
+        slug={slug}
+        postTitle={postData.title}
+        category={section}
+        url={shareUrl}
+      />
 
       {/* Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 z-50">
@@ -564,7 +570,7 @@ export default function PostContent({ postData, slug, articleStats }) {
               {/* Comments Section */}
               <div className="mt-12">
                 <DisqusThread
-                  url={"https://www.codeverta.com/posts/" + slug}
+                  url={shareUrl}
                   identifier={slug}
                   title={postData.title}
                 />
@@ -575,7 +581,10 @@ export default function PostContent({ postData, slug, articleStats }) {
           {/* Related Posts */}
           {postData.relatedPosts && postData.relatedPosts.length > 0 && (
             <div className="mt-8">
-              <RelatedPosts posts={postData.relatedPosts} />
+              <RelatedPosts
+                posts={postData.relatedPosts}
+                basePath={`/${section}`}
+              />
             </div>
           )}
 

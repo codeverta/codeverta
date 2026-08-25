@@ -1,3 +1,5 @@
+import { ensureMarketDescription, getIndustryMarket } from "./industry-markets";
+
 export const SITE_URL = "https://www.codeverta.com";
 export const SITE_NAME = "Codeverta";
 export const DEFAULT_LOCALE = "id";
@@ -841,42 +843,59 @@ function getLabel(locale: SupportedLocale, key: string) {
   );
 }
 
-const OFFICE_LOCATION_TEXT: Record<SupportedLocale, string> = {
-  id: " Lokasi kantor kami di Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  en: " Our office is located at Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  zh: " 我们的办公室位于 Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia。",
-  ja: " 日本拠点：東京都渋谷区（東京・大阪をはじめ日本全国の企業課題に対応）。",
-  ko: " 사무실 위치: Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  ms: " Lokasi pejabat kami di Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  de: " Unser Büro befindet sich in der Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  fr: " Notre bureau est situé à Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  es: " Nuestra oficina está ubicada en Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  ar: " يقع مكتبنا في Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  hi: " हमारा कार्यालय Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia में स्थित है।",
-  th: " สำนักงานของเราตั้งอยู่ที่ Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia",
-  vi: " Văn phòng của chúng tôi tại Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  ru: " Наш офис находится по адресу: Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
-  nl: " Ons kantoor is gevestigd aan de Jl Kaliurang, Ngaglik, Sardonohardjo, Ngaglik, Sleman, Yogyakarta, Indonesia.",
+const PRODUCT_TITLE_TEMPLATES: Record<
+  SupportedLocale,
+  (name: string, city: string) => string
+> = {
+  id: (name, city) => `Jasa Pembuatan ${name} di ${city}`,
+  en: (name, city) => `Custom ${name} Development in ${city}`,
+  zh: (name, city) => `${name} 定制开发服务 - ${city}`,
+  ja: (name, city) => `${name} 開発サービス - ${city}`,
+  ko: (name, city) => `${name} 개발 서비스 - ${city}`,
+  ms: (name, city) => `Perkhidmatan Pembangunan ${name} di ${city}`,
+  de: (name, city) => `Entwicklung von ${name} in ${city}`,
+  fr: (name, city) => `Développement de ${name} à ${city}`,
+  es: (name, city) => `Desarrollo de ${name} en ${city}`,
+  ar: (name, city) => `خدمات تطوير ${name} في ${city}`,
+  hi: (name, city) => `${city} में ${name} विकास सेवाएँ`,
+  th: (name, city) => `บริการพัฒนา ${name} ใน${city}`,
+  vi: (name, city) => `Phát triển ${name} tại ${city}`,
+  ru: (name, city) => `Разработка ${name} в городе ${city}`,
+  nl: (name, city) => `Ontwikkeling van ${name} in ${city}`,
 };
+
+export function buildProductSeoTitle(productName: string, locale?: string) {
+  const safeLocale = normalizeLocale(locale);
+  const market = getIndustryMarket(safeLocale);
+  return PRODUCT_TITLE_TEMPLATES[safeLocale](productName, market.cities[0]);
+}
+
+export function getSeoDescriptionExcerpt(
+  description: string,
+  maximumLength = 160
+) {
+  const trimmed = description.trim();
+  if (trimmed.length <= maximumLength) return trimmed;
+
+  const sentence = trimmed.match(/^.*?[.!?。！？]/u)?.[0];
+  if (sentence) return sentence;
+
+  const excerpt = trimmed.slice(0, maximumLength + 1);
+  const lastSpace = excerpt.lastIndexOf(" ");
+  return `${excerpt
+    .slice(0, lastSpace > 80 ? lastSpace : maximumLength)
+    .trim()}…`;
+}
 
 export function appendOfficeLocation(
   description: string,
   locale?: string
 ): string {
   const safeLocale = normalizeLocale(locale);
-  const officeLocationSuffix = OFFICE_LOCATION_TEXT[safeLocale];
-  if (!description) return officeLocationSuffix.trim();
-  if (
-    description.includes("Jl Kaliurang") ||
-    description.includes("Jl. Kaliurang") ||
-    description.includes("東京都") ||
-    description.includes("東京")
-  ) {
-    return description;
-  }
-  return description.endsWith(".")
-    ? `${description}${officeLocationSuffix}`
-    : `${description}.${officeLocationSuffix}`;
+  const market = getIndustryMarket(safeLocale);
+  return description
+    ? ensureMarketDescription(description, market)
+    : market.metaDescription;
 }
 
 export function buildSeoMeta({

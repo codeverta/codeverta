@@ -25,7 +25,10 @@ import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
 import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
 import { useTranslation } from "next-i18next";
-import { getProjects } from "@/lib/projects";
+import {
+  getAvailableProjectIndexLocales,
+  getLocalizedProjects,
+} from "@/lib/projects";
 import {
   buildSeoMeta,
   getLocaleRedirect,
@@ -52,6 +55,7 @@ type ProductProject = {
 
 type ProductsPageProps = {
   projects: ProductProject[];
+  availableLocales: string[];
 };
 
 type CategoryFilter = {
@@ -63,10 +67,14 @@ type CategoryFilter = {
 export const getStaticProps = withI18n(
   ["common"],
   function ({ locale }: { locale?: string }) {
+    const availableLocales = getAvailableProjectIndexLocales();
+    if (!availableLocales.includes(locale || "id")) {
+      return { notFound: true };
+    }
     const redirect = getLocaleRedirect(locale, "/products");
-    if (redirect) return { notFound: true };
+    if (redirect) return { redirect };
     // Mapping hanya field yang diperlukan untuk index page
-    const projects = getProjects(locale).map(({ product }) => ({
+    const projects = getLocalizedProjects(locale).map(({ product }) => ({
       product: {
         id: product.id,
         name: product.name,
@@ -81,11 +89,14 @@ export const getStaticProps = withI18n(
       },
     }));
 
-    return { props: { projects } };
+    return { props: { projects, availableLocales } };
   }
 );
 
-export default function ITProductsShowcase({ projects }: ProductsPageProps) {
+export default function ITProductsShowcase({
+  projects,
+  availableLocales,
+}: ProductsPageProps) {
   const { t } = useTranslation("common");
   const router = useRouter();
   const [activeCategory, setActiveCategory] = useState("all");
@@ -243,6 +254,7 @@ export default function ITProductsShowcase({ projects }: ProductsPageProps) {
         keywords={seo.keywords}
         image={seo.image}
         url={seo.canonical}
+        availableLocales={availableLocales as any}
       />
       <Head>
         <script

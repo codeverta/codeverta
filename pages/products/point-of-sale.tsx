@@ -30,6 +30,13 @@ import SeoHead from "@/components/SeoHead";
 import Layout from "@/components/layout/Landing";
 import { getLocalizedPostsData } from "@/lib/posts";
 import { withI18n } from "@/lib/withi18n";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import {
+  appendOfficeLocation,
+  buildProductSeoTitle,
+  getLocalizedUrl,
+} from "@/lib/seo";
 
 // ── Data ──
 const FEATURES = [
@@ -128,13 +135,21 @@ const FAQS = [
 ];
 
 function PointOfSale({ latestArticles }: { latestArticles: ArticlePreview[] }) {
+  const { locale = "id" } = useRouter();
+  const { t } = useTranslation("common");
+  const productName = "Point of Sale (POS) Codeverta";
+  const description = appendOfficeLocation(
+    t("productsPage.seo.description"),
+    locale
+  );
+
   return (
     <>
       <SeoHead
-        title="Aplikasi Kasir & POS untuk UMKM Indonesia | Codeverta"
-        description="Aplikasi POS modern dengan manajemen stok real-time, laporan otomatis, dan multi-outlet. Mulai dari Rp 100rb/bulan. Cocok untuk retail, F&B, dan UMKM."
-        url="https://codeverta.com/products/point-of-sale"
-        keywords="aplikasi kasir, software kasir toko, aplikasi pos retail, pos kasir, kasir online, point of sale indonesia"
+        title={buildProductSeoTitle(productName, locale)}
+        description={description}
+        url={getLocalizedUrl(locale, "/products/point-of-sale")}
+        keywords={t("productsPage.seo.keywords")}
       />
 
       <Head>
@@ -142,9 +157,8 @@ function PointOfSale({ latestArticles }: { latestArticles: ArticlePreview[] }) {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            name: "POS Kasir Codeverta",
-            description:
-              "Aplikasi POS modern dengan inventory real-time, laporan otomatis, dan multi-outlet.",
+            name: productName,
+            description,
             brand: { "@type": "Brand", name: "Codeverta" },
             offers: {
               "@type": "AggregateOffer",
