@@ -15,6 +15,7 @@ import {
   SITE_URL,
   SupportedLocale,
 } from "@/lib/seo";
+import { getIndustryMarket } from "@/lib/industry-markets";
 
 interface SEOProps {
   title?: string;
@@ -68,6 +69,7 @@ export default function Landing({
     canonical: seo?.canonical,
   });
   const locale = pageSEO.locale;
+  const market = getIndustryMarket(locale);
   const canonicalUrl = pageSEO.canonical;
   const indexableLocale = isIndexableLocale(router.locale, router.asPath);
 
@@ -104,27 +106,24 @@ export default function Landing({
           "@type": "ContactPoint",
           telephone: "+6285601347820",
           contactType: "Customer Service",
-          areaServed: locale === "ja" ? "JP" : "ID",
-          availableLanguage: locale === "ja" ? "ja" : locale || "id",
+          areaServed: market.countryCode,
+          availableLanguage: locale,
+        },
+        areaServed: {
+          "@type": "Country",
+          name: market.country,
         },
         address:
-          locale === "ja"
+          locale === "id"
             ? {
-                "@type": "PostalAddress",
-                streetAddress: "Shibuya-ku",
-                addressLocality: "Tokyo",
-                addressRegion: "Tokyo",
-                postalCode: "150-0002",
-                addressCountry: "JP",
-              }
-            : {
                 "@type": "PostalAddress",
                 streetAddress: "Jl Kaliurang KM 9.3",
                 addressLocality: "Ngaglik",
                 addressRegion: "DIY",
                 postalCode: "55581",
                 addressCountry: "ID",
-              },
+              }
+            : undefined,
       },
       {
         "@type": "WebSite",
@@ -135,7 +134,7 @@ export default function Landing({
         publisher: {
           "@id": "https://www.codeverta.com/#organization",
         },
-        inLanguage: locale === "ja" ? "ja-JP" : "id-ID",
+        inLanguage: locale,
       },
       {
         "@type": "WebPage",
@@ -155,112 +154,7 @@ export default function Landing({
           url: pageSEO.image,
           width: 1200,
           height: 630,
-          caption: "Dashboard layanan Codeverta",
-        },
-      },
-      {
-        "@type": "Service",
-        "@id": "https://www.codeverta.com/#service-website-development",
-        name: "Jasa Pembuatan Website Profesional",
-        serviceType: "Web Development",
-        description:
-          "Kami merancang dan membangun website modern, responsif, dan SEO-friendly yang dioptimalkan untuk performa dan pengalaman pengguna di semua perangkat. Cocok untuk profil perusahaan, e-commerce, hingga sistem kustom.",
-        provider: {
-          "@id": "https://www.codeverta.com/#organization",
-        },
-        areaServed: {
-          "@type": "Place",
-          name: "Yogyakarta",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Yogyakarta",
-            addressCountry: "ID",
-          },
-        },
-        offers: {
-          "@type": "Offer",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            priceType: "Estimate",
-            priceCurrency: "IDR",
-            minPrice: 1500000,
-          },
-          description: "Mulai dari Rp 1,5 Juta untuk paket basic.",
-          url: "https://www.codeverta.com/#pricing",
-        },
-      },
-      {
-        "@type": "Service",
-        "@id": "https://www.codeverta.com/#service-seo-optimization",
-        name: "Optimasi SEO & Performa Website",
-        serviceType: "SEO & Performance Optimization",
-        description:
-          "Tingkatkan peringkat website Anda di mesin pencari seperti Google, dan pastikan website Anda cepat, aman, serta memberikan pengalaman pengguna terbaik dengan optimasi teknis dan konten.",
-        provider: {
-          "@id": "https://www.codeverta.com/#organization",
-        },
-        areaServed: {
-          "@type": "Place",
-          name: "Indonesia",
-        },
-        offers: {
-          "@type": "Offer",
-          priceCurrency: "IDR",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            priceType: "Estimate",
-          },
-        },
-      },
-      {
-        "@type": "Service",
-        "@id": "https://www.codeverta.com/#service-maintenance",
-        name: "Perbaikan & Maintenance Website",
-        serviceType: "Website Maintenance & Support",
-        description:
-          "Mengatasi bug, error, pembaruan rutin, backup data, dan monitoring keamanan untuk menjaga website Anda selalu berjalan optimal dan aman dari ancaman siber.",
-        provider: {
-          "@id": "https://www.codeverta.com/#organization",
-        },
-        areaServed: {
-          "@type": "Place",
-          name: "Indonesia",
-        },
-        offers: {
-          "@type": "Offer",
-          priceCurrency: "IDR",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            priceType: "Estimate",
-          },
-        },
-      },
-      {
-        "@type": "Service",
-        "@id": "https://www.codeverta.com/#service-it-support",
-        name: "Layanan IT Support",
-        serviceType: "IT Support & Solutions",
-        description:
-          "Menyediakan solusi komprehensif untuk semua masalah teknis IT Anda, mulai dari troubleshooting hardware, manajemen jaringan, hingga konsultasi infrastruktur IT.",
-        provider: {
-          "@id": "https://www.codeverta.com/#organization",
-        },
-        areaServed: {
-          "@type": "Place",
-          name: "Yogyakarta",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Yogyakarta",
-            addressCountry: "ID",
-          },
-        },
-        offers: {
-          "@type": "Offer",
-          priceCurrency: "IDR",
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            priceType: "Estimate",
-          },
+          caption: pageSEO.title,
         },
       },
       {
@@ -269,7 +163,7 @@ export default function Landing({
           {
             "@type": "ListItem",
             position: 1,
-            name: "Beranda",
+            name: SITE_NAME,
             item: "https://www.codeverta.com/",
           },
         ],

@@ -3,7 +3,11 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { getPostData, getAllPostIds } from "lib/posts";
+import {
+  getPostData,
+  getAllPostIds,
+  getLegacyPostDestination,
+} from "lib/posts";
 import {
   Calendar,
   User,
@@ -43,7 +47,7 @@ function Post({ postData, slug }) {
         openGraph={{
           title: postData.title,
           description: postData.desc,
-          url: `https://www.codeverta.com/posts/${slug}`,
+          url: `https://www.codeverta.com/startups/${slug}`,
           siteName: "Codeverta",
           images: [
             {
@@ -68,6 +72,7 @@ function Post({ postData, slug }) {
       <BlogSchemaJsonLd
         post={postData}
         baseUrl="https://codeverta.com"
+        url={`https://www.codeverta.com/startups/${slug}`}
         author={{
           name: postData.author || "Rabih Utomo",
           url: "https://codeverta.com/about",
@@ -75,7 +80,11 @@ function Post({ postData, slug }) {
       />
 
       {/* Add the BreadcrumbSchemaJsonLd component */}
-      <BreadcrumbSchemaJsonLd slug={slug} postTitle={postData.title} />
+      <BreadcrumbSchemaJsonLd
+        slug={slug}
+        postTitle={postData.title}
+        category="startups"
+      />
 
       <main className="relative min-h-screen bg-cover bg-center bg-no-repeat transition-colors duration-300 max-w-[1200px] mx-auto my-4">
         <div className="">
@@ -164,7 +173,7 @@ function Post({ postData, slug }) {
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
             <DisqusThread
-              url={"https://www.codeverta.com/posts/" + slug}
+              url={"https://www.codeverta.com/startups/" + slug}
               identifier={slug}
               title={postData.title}
             />
@@ -172,7 +181,7 @@ function Post({ postData, slug }) {
 
           {/* Related Posts - Using our new component */}
           {postData.relatedPosts && postData.relatedPosts.length > 0 && (
-            <RelatedPosts posts={postData.relatedPosts} />
+            <RelatedPosts posts={postData.relatedPosts} basePath="/startups" />
           )}
         </div>
 
@@ -195,7 +204,15 @@ export const getStaticProps = withI18n(
     const slug = params.id;
     const redirect = getLocaleRedirect(locale, `/startups/${slug}`);
     if (redirect) return { notFound: true };
-    const postData = await getPostData(slug, "startups", locale ?? "id");
+    let postData;
+    try {
+      postData = await getPostData(slug, "startups", locale ?? "id");
+    } catch {
+      const destination = getLegacyPostDestination(slug);
+      return destination && destination !== `/startups/${slug}`
+        ? { redirect: { destination, permanent: true } }
+        : { notFound: true };
+    }
     return {
       props: {
         postData,

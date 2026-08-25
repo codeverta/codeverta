@@ -3,7 +3,11 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { NextSeo } from "next-seo";
-import { getPostData, getAllPostIds } from "lib/posts";
+import {
+  getPostData,
+  getAllPostIds,
+  getLegacyPostDestination,
+} from "lib/posts";
 import {
   Calendar,
   User,
@@ -71,6 +75,7 @@ function Post({ postData, slug }) {
       <BlogSchemaJsonLd
         post={postData}
         baseUrl="https://codeverta.com"
+        url={`https://www.codeverta.com/tutorials/${slug}`}
         author={{
           name: postData.author || "Rabih Utomo",
           url: "https://codeverta.com/about",
@@ -78,7 +83,11 @@ function Post({ postData, slug }) {
       />
 
       {/* Add the BreadcrumbSchemaJsonLd component */}
-      <BreadcrumbSchemaJsonLd slug={slug} postTitle={postData.title} />
+      <BreadcrumbSchemaJsonLd
+        slug={slug}
+        postTitle={postData.title}
+        category="tutorials"
+      />
 
       <main className="relative min-h-screen bg-cover bg-center bg-no-repeat transition-colors duration-300 max-w-[1200px] mx-auto my-4">
         <div className="">
@@ -188,7 +197,7 @@ function Post({ postData, slug }) {
 
           {/* Related Posts - Using our new component */}
           {postData.relatedPosts && postData.relatedPosts.length > 0 && (
-            <RelatedPosts posts={postData.relatedPosts} />
+            <RelatedPosts posts={postData.relatedPosts} basePath="/tutorials" />
           )}
         </div>
 
@@ -211,7 +220,15 @@ export const getStaticProps = withI18n(
     const slug = params.id;
     const redirect = getLocaleRedirect(locale, `/tutorials/${slug}`);
     if (redirect) return { notFound: true };
-    const postData = await getPostData(slug, "tutorials");
+    let postData;
+    try {
+      postData = await getPostData(slug, "tutorials");
+    } catch {
+      const destination = getLegacyPostDestination(slug);
+      return destination && destination !== `/tutorials/${slug}`
+        ? { redirect: { destination, permanent: true } }
+        : { notFound: true };
+    }
     return {
       props: {
         postData,

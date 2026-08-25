@@ -30,6 +30,13 @@ import SeoHead from "@/components/SeoHead";
 import Layout from "@/components/layout/Landing";
 import { getLocalizedPostsData } from "@/lib/posts";
 import { withI18n } from "@/lib/withi18n";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import {
+  appendOfficeLocation,
+  buildProductSeoTitle,
+  getLocalizedUrl,
+} from "@/lib/seo";
 
 const FEATURES = [
   {
@@ -133,13 +140,21 @@ function WarehouseManagementSystem({
 }: {
   latestArticles: ArticlePreview[];
 }) {
+  const { locale = "id" } = useRouter();
+  const { t } = useTranslation("common");
+  const productName = "Warehouse Management System Codeverta";
+  const description = appendOfficeLocation(
+    t("productsPage.seo.description"),
+    locale
+  );
+
   return (
     <>
       <SeoHead
-        title="Warehouse Management System untuk UMKM Indonesia | Codeverta"
-        description="Sistem manajemen gudang dengan stok real-time, barcode scanning, dan laporan inventori otomatis. Mulai dari Rp 200rb/bulan."
-        url="https://codeverta.com/products/warehouse-management-system"
-        keywords="warehouse management system, software gudang, sistem inventory barang, manajemen gudang, wms indonesia"
+        title={buildProductSeoTitle(productName, locale)}
+        description={description}
+        url={getLocalizedUrl(locale, "/products/warehouse-management-system")}
+        keywords={t("productsPage.seo.keywords")}
       />
 
       <Head>
@@ -147,9 +162,8 @@ function WarehouseManagementSystem({
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            name: "WMS Codeverta",
-            description:
-              "Warehouse management system dengan stok real-time, barcode, dan laporan inventori.",
+            name: productName,
+            description,
             brand: { "@type": "Brand", name: "Codeverta" },
             offers: {
               "@type": "AggregateOffer",

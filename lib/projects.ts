@@ -101,6 +101,34 @@ export function getProjects(locale = "id") {
   return getProjectsData(locale).projects || [];
 }
 
+export function getLocalizedProjects(locale = "id") {
+  if (locale === "id") return getProjects("id");
+  const localizedFile = getLocalizedProjectsFile(locale);
+  return localizedFile ? readProjectsFile(localizedFile)?.projects || [] : [];
+}
+
+export function getAvailableProjectIndexLocales() {
+  return [
+    "id",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "ms",
+    "de",
+    "fr",
+    "es",
+    "ar",
+    "hi",
+    "th",
+    "vi",
+    "ru",
+    "nl",
+  ].filter(
+    (locale) => locale === "id" || Boolean(getLocalizedProjectsFile(locale))
+  );
+}
+
 export function getAllProjectIds() {
   return getProjects("id").map((project) => project.product.id);
 }
@@ -128,11 +156,23 @@ export function getAvailableProjectLocales(id: string) {
     "nl",
   ];
 
-  return locales.filter((locale) => Boolean(getProjectById(id, locale)));
+  return locales.filter(
+    (locale) =>
+      locale === "id" || getProjectContentLocale(id, locale) === locale
+  );
 }
 
 export function getProjectContentLocale(id: string, locale = "id") {
-  const project = getProjectById(id, locale);
-  if (project) return locale;
+  if (locale === "id") return "id";
+
+  const localizedFilePath = getLocalizedProjectsFile(locale);
+  const localizedData = localizedFilePath
+    ? readProjectsFile(localizedFilePath)
+    : null;
+  const hasLocalizedProject = localizedData?.projects?.some(
+    (project) => project?.product?.id === id
+  );
+
+  if (hasLocalizedProject) return locale;
   return "id";
 }

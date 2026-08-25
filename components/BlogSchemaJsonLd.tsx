@@ -5,6 +5,7 @@ import Head from "next/head";
 const BlogSchemaJsonLd = ({
   post,
   baseUrl,
+  url,
   author = {
     name: "Rabih Utomo",
     url: "https://codeverta.com/about",
@@ -38,7 +39,7 @@ const BlogSchemaJsonLd = ({
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${baseUrl}/news/${post.id}`,
+      "@id": url,
     },
   };
 
@@ -88,7 +89,7 @@ const BlogSchemaJsonLd = ({
         })),
         step: post.howTo.steps.map((step, index) => ({
           "@type": "HowToStep",
-          url: `${baseUrl}/news/${post.id}#step-${index + 1}`,
+          url: `${url}#step-${index + 1}`,
           name: step.name || `Step ${index + 1}`,
           itemListElement: {
             "@type": "HowToDirection",

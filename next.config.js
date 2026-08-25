@@ -11,15 +11,6 @@ const { i18n } = require("./next-i18next.config");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/produk/:path*",
-        destination: "/products/:path*",
-        permanent: true,
-      },
-    ];
-  },
   async headers() {
     return [
       {

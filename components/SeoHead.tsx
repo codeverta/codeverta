@@ -2,9 +2,11 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import {
   buildSeoMeta,
+  getAlternateLinks,
   isIndexableLocale,
   SITE_NAME,
   SITE_URL,
+  type SupportedLocale,
 } from "@/lib/seo";
 
 type SeoHeadProps = {
@@ -14,6 +16,7 @@ type SeoHeadProps = {
   image?: string;
   keywords?: string;
   includeOfficeLocation?: boolean;
+  availableLocales?: readonly SupportedLocale[];
 };
 
 export default function SeoHead({
@@ -23,6 +26,7 @@ export default function SeoHead({
   image = `${SITE_URL}/og-image.png`,
   keywords = "",
   includeOfficeLocation = true,
+  availableLocales,
 }: SeoHeadProps) {
   const router = useRouter();
   const seo = buildSeoMeta({
@@ -52,6 +56,14 @@ export default function SeoHead({
 
       {/* Canonical */}
       <link key="canonical" rel="canonical" href={seo.canonical} />
+      {getAlternateLinks(seo.path, availableLocales).map((alternate) => (
+        <link
+          key={`alternate-${alternate.hrefLang}`}
+          rel={alternate.rel}
+          hrefLang={alternate.hrefLang}
+          href={alternate.href}
+        />
+      ))}
       {/* Open Graph */}
       <meta key="og:title" property="og:title" content={seo.title} />
       <meta

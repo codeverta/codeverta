@@ -28,6 +28,13 @@ import SeoHead from "@/components/SeoHead";
 import Layout from "@/components/layout/Landing";
 import { getLocalizedPostsData } from "@/lib/posts";
 import { withI18n } from "@/lib/withi18n";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
+import {
+  appendOfficeLocation,
+  buildProductSeoTitle,
+  getLocalizedUrl,
+} from "@/lib/seo";
 
 // ── Fonts ──
 // Space Grotesk carries the "dashboard software" personality on display type.
@@ -315,6 +322,13 @@ type Props = {
 function GymManagementSystem({ latestArticles }: Props) {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [heroMounted, setHeroMounted] = useState(false);
+  const { locale = "id" } = useRouter();
+  const { t } = useTranslation("common");
+  const productName = "Gym Management System by Codeverta";
+  const description = appendOfficeLocation(
+    t("productsPage.seo.description"),
+    locale
+  );
 
   useEffect(() => {
     const t = setTimeout(() => setHeroMounted(true), 50);
@@ -324,10 +338,13 @@ function GymManagementSystem({ latestArticles }: Props) {
   return (
     <div className={`${display.variable} ${mono.variable}`}>
       <SeoHead
-        title="Sistem Manajemen Gym untuk UKM Indonesia | Codeverta"
-        description="Kelola member, kehadiran, jadwal trainer, dan keuangan gym dari satu dashboard. Cocok untuk gym kecil & menengah. Mulai dari Rp 150rb/bulan."
-        url="https://codeverta.com/products/gym-management-system"
-        keywords="sistem manajemen gym, software gym, gym management system, aplikasi gym, manajemen member gym, software fitness"
+        title={buildProductSeoTitle(productName, locale)}
+        description={description}
+        url={getLocalizedUrl(
+          locale,
+          "/products/gym-management-system-by-codeverta"
+        )}
+        keywords={t("productsPage.seo.keywords")}
       />
 
       <Head>
@@ -335,9 +352,8 @@ function GymManagementSystem({ latestArticles }: Props) {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            name: "Sistem Manajemen Gym Codeverta",
-            description:
-              "Software manajemen gym untuk UKM Indonesia. Kelola member, kehadiran, jadwal, dan keuangan.",
+            name: productName,
+            description,
             brand: { "@type": "Brand", name: "Codeverta" },
             offers: {
               "@type": "AggregateOffer",

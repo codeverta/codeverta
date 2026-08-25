@@ -8,6 +8,8 @@ import {
   getAllPostIds,
   getSortedPostsData,
   getLocalizedPostPaths,
+  getLocalizedPostRedirect,
+  getLegacyPostDestination,
 } from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
@@ -1410,7 +1412,13 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   try {
     const postData = await getPostData(id, "blog", locale ?? "id");
     const requestedLocale = locale ?? "id";
-    if (postData.lang !== requestedLocale) return { notFound: true };
+    if (postData.lang !== requestedLocale) {
+      const destination = getLocalizedPostRedirect(id, requestedLocale);
+      if (destination) {
+        return { redirect: { destination, permanent: true } };
+      }
+      return { notFound: true };
+    }
 
     const otherPosts = getSortedPostsData("blog", locale ?? "id")
       .filter((post) => post.lang === requestedLocale)
@@ -1447,7 +1455,12 @@ export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
     if (!(error instanceof Error && error.message.includes("not found in"))) {
       console.log({ error });
     }
-    return { notFound: true };
+    const destination =
+      getLocalizedPostRedirect(id, locale ?? "id") ||
+      getLegacyPostDestination(id);
+    return destination
+      ? { redirect: { destination, permanent: true } }
+      : { notFound: true };
   }
 };
 

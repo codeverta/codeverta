@@ -5,6 +5,7 @@ import Head from "next/head";
 const PostSchemaJsonLd = ({
   post,
   slug,
+  category = "blog",
   baseUrl = "https://codeverta.com",
   author = {
     name: "Rabih Utomo",
@@ -17,7 +18,7 @@ const PostSchemaJsonLd = ({
     "@type": "BlogPosting",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${baseUrl}/posts/${slug}`,
+      "@id": `${baseUrl}/${category}/${slug}`,
     },
     headline: post.title,
     description: post.desc,
@@ -63,7 +64,7 @@ const PostSchemaJsonLd = ({
         "@type": "ListItem",
         position: 3,
         name: post.title,
-        item: `${baseUrl}/posts/${slug}`,
+        item: `${baseUrl}/${category}/${slug}`,
       },
     ],
   };

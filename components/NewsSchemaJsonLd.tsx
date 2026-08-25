@@ -5,6 +5,7 @@ import Head from "next/head";
 const NewsSchemaJsonLd = ({
   post,
   baseUrl,
+  url,
   author,
   publisher,
   category = "Technology",
@@ -38,7 +39,7 @@ const NewsSchemaJsonLd = ({
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `${baseUrl}/posts/${post.slug || post.id}`,
+      "@id": url,
     },
     articleSection: category,
     keywords: keywords
@@ -50,7 +51,7 @@ const NewsSchemaJsonLd = ({
     wordCount: post.contentHtml
       ? post.contentHtml.replace(/<[^>]*>/g, "").split(" ").length
       : 0,
-    url: `${baseUrl}/posts/${post.slug || post.id}`,
+    url,
     isAccessibleForFree: true,
     genre: "Technology News",
     articleBody: post.contentHtml

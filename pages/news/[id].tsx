@@ -1,7 +1,11 @@
 // pages/posts/[id].jsx
 import React from "react";
 import Layout from "components/layout/Landing";
-import { getPostData, getAllPostIds } from "lib/posts";
+import {
+  getPostData,
+  getAllPostIds,
+  getLegacyPostDestination,
+} from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // Import komponen konten yang sudah kita buat
 import PostContent from "@/components/blog/post-content";
@@ -46,7 +50,15 @@ export async function getStaticProps({ params, locale }) {
   const slug = params.id;
   const redirect = getLocaleRedirect(locale, `/news/${slug}`);
   if (redirect) return { notFound: true };
-  const postData = await getPostData(slug, POST_CATEGORY); // Menggunakan kategori yang dipilih
+  let postData;
+  try {
+    postData = await getPostData(slug, POST_CATEGORY);
+  } catch {
+    const destination = getLegacyPostDestination(slug);
+    return destination && destination !== `/news/${slug}`
+      ? { redirect: { destination, permanent: true } }
+      : { notFound: true };
+  }
 
   // Menambahkan data kategori/stats dasar ke postData jika diperlukan untuk komponen PostContent
   postData.category = POST_CATEGORY;
