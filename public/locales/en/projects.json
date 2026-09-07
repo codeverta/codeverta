@@ -1287,9 +1287,15 @@
       "product": {
         "id": "digital-wedding-invitation-platform",
         "name": "Interactive Digital Wedding Invitation Website",
-        "description": "A sophisticated digital wedding invitation platform featuring comprehensive RSVP collections, interactive maps, image galleries, and digital gifting features.",
-        "fullDescription": "This platform is explicitly crafted for couples desiring to deliver a highly modern, environmentally friendly, and interactive invitation experience to their guests. Every generated invitation acts as a unique URL, seamlessly bundling real-time RSVP forms, integrated location navigation (Google Maps), rich media pre-wedding photo galleries, digital guestbooks, and secure digital financial gifting portals. It boasts premium responsive designs that adjust across diverse screen configurations.",
-        "image": "/assets/products/42.png",
+        "description": "Custom digital wedding invitation websites for couples, Wedding Organizers, and Event Organizers, with RSVP, maps, galleries, and digital gifting.",
+        "fullDescription": "Codeverta builds custom digital wedding invitation websites for couples, Wedding Organizers, and Event Organizers. Each invitation can be aligned with the event concept or organizer brand and includes a unique URL, RSVP, Google Maps, photo and video galleries, guestbook, music, countdown, and digital gifting. The mobile-first solution is available for partners in Yogyakarta, Malang, Semarang, Central Java, and across Indonesia, including optional white-label delivery.",
+        "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg",
+        "images": [
+          "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg",
+          "/assets/products/43.jpeg",
+          "/assets/products/44.png",
+          "/assets/products/45.png"
+        ],
         "technologies": [
           "Next.js",
           "Firebase/Supabase",
@@ -1299,8 +1305,8 @@
         "category": "Digital Invitation",
         "status": "Completed",
         "version": "1.0.0",
-        "lastUpdated": "December 2025",
-        "client": "Client Couples",
+        "lastUpdated": "September 2026",
+        "client": "Cempaka Usher Wedding Organizer",
         "duration": "2 weeks (Implementation & Customization)",
         "teamSize": "3 people (Frontend, UI/UX, Support)",
         "seo": {
@@ -1480,9 +1486,9 @@
       ],
       "screenshots": [
         {
-          "title": "Invitation Landing Screen",
-          "image": "/assets/products/42.png",
-          "description": "The elegant initial interface overlay featuring background cover images, titles, and a prominent 'Open Invitation' action button."
+          "title": "Cempaka Usher Wedding Organizer Landing Page",
+          "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg",
+          "description": "An elegant landing-page concept for a Malang-based Wedding Organizer, presenting its brand, service navigation, and consultation call to action."
         },
         {
           "title": "RSVP & Guestbook Layout",
