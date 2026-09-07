@@ -1288,9 +1288,15 @@
       "product": {
         "id": "digital-wedding-invitation-platform",
         "name": "Website Undangan Pernikahan Digital Interaktif",
-        "description": "Platform pembuatan undangan pernikahan digital lengkap dengan RSVP, peta, galeri, dan fitur Hadiah.",
-        "fullDescription": "Platform ini dirancang khusus untuk pasangan yang ingin memberikan pengalaman undangan pernikahan yang modern, ramah lingkungan, dan interaktif kepada tamu. Setiap undangan dilengkapi dengan URL unik, fitur konfirmasi kehadiran (RSVP), panduan lokasi terintegrasi (Google Maps), galeri foto/video, dan fitur buku tamu atau hadiah digital. Platform ini menawarkan berbagai pilihan desain premium yang responsif di berbagai perangkat.",
-        "image": "/assets/products/42.png",
+        "description": "Website undangan pernikahan digital untuk pasangan, Wedding Organizer, dan Event Organizer dengan desain khusus, RSVP, peta, galeri, serta fitur hadiah.",
+        "fullDescription": "Codeverta membuat website undangan pernikahan digital untuk pasangan, Wedding Organizer (WO), dan Event Organizer (EO). Setiap undangan dapat disesuaikan dengan identitas acara atau brand WO, dilengkapi URL unik, RSVP, Google Maps, galeri foto/video, buku tamu, musik, hitung mundur, dan hadiah digital. Solusi ini cocok untuk mitra di Jogja, Malang, Semarang, Jawa Tengah, maupun kota lain di Indonesia, dengan tampilan mobile-first dan pilihan dukungan white-label.",
+        "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg",
+        "images": [
+          "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg",
+          "/assets/products/43.jpeg",
+          "/assets/products/44.png",
+          "/assets/products/45.png"
+        ],
         "technologies": [
           "Next.js",
           "Firebase/Supabase",
@@ -1300,8 +1306,8 @@
         "category": "Digital Invitation",
         "status": "Completed",
         "version": "1.0.0",
-        "lastUpdated": "Desember 2025",
-        "client": "Pasangan Klien",
+        "lastUpdated": "September 2026",
+        "client": "Cempaka Usher Wedding Organizer",
         "duration": "2 minggu (Implementasi & Kustomisasi)",
         "teamSize": "3 orang (Frontend, UI/UX, Support)",
         "seo": {
@@ -1481,9 +1487,9 @@
       ],
       "screenshots": [
         {
-          "title": "Tampilan Beranda Undangan",
-          "image": "/assets/products/42.png",
-          "description": "Halaman awal dengan cover foto, nama pasangan, dan tombol 'Buka Undangan'."
+          "title": "Landing Page Cempaka Usher Wedding Organizer",
+          "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg",
+          "description": "Contoh landing page bernuansa elegan untuk Wedding Organizer di Malang, dengan identitas brand, navigasi layanan, dan ajakan konsultasi."
         },
         {
           "title": "Fitur RSVP & Buku Tamu",
