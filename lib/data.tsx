@@ -46,6 +46,12 @@ export const companyStats = [
 
 export const logos = [
   {
+    src: "/assets/images/cempaka-usher.png",
+    alt: "Cempaka Usher Wedding Organizer",
+    url: "/products/digital-wedding-invitation-platform",
+    classes: "max-w-[260px] md:max-w-[320px] object-contain",
+  },
+  {
     src: "/assets/images/bapperida.png",
     alt: "Bapperida Papua",
     url: "https://bapperida.papua.go.id/",

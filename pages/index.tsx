@@ -141,6 +141,7 @@ export default function LandingPage({ projects }: any) {
     (industry, index) => ({
       ...industry,
       icon: industries[index]?.icon,
+      slug: industries[index]?.slug,
     })
   );
 
@@ -179,9 +180,13 @@ export default function LandingPage({ projects }: any) {
                           >
                             <Link
                               href={logo.url}
-                              target={logo.url !== "#" ? "_blank" : undefined}
+                              target={
+                                logo.url.startsWith("http")
+                                  ? "_blank"
+                                  : undefined
+                              }
                               rel={
-                                logo.url !== "#"
+                                logo.url.startsWith("http")
                                   ? "noopener noreferrer"
                                   : undefined
                               }
@@ -218,9 +223,13 @@ export default function LandingPage({ projects }: any) {
                           >
                             <Link
                               href={logo.url}
-                              target={logo.url !== "#" ? "_blank" : undefined}
+                              target={
+                                logo.url.startsWith("http")
+                                  ? "_blank"
+                                  : undefined
+                              }
                               rel={
-                                logo.url !== "#"
+                                logo.url.startsWith("http")
                                   ? "noopener noreferrer"
                                   : undefined
                               }
@@ -733,51 +742,61 @@ export default function LandingPage({ projects }: any) {
 
 const industries = [
   {
+    slug: "manufacturing",
     title: "Manufacturing",
     desc: "Streamline production, manage inventory, and ensure on-time delivery.",
     icon: Factory,
   },
   {
+    slug: "trading-distribution",
     title: "Trading & Distribution",
     desc: "Manage procurement, orders, and supply chains efficiently.",
     icon: Truck,
   },
   {
+    slug: "retail",
     title: "Retail",
     desc: "Boost sales, manage inventory, and enhance customer experience.",
     icon: ShoppingBag,
   },
   {
+    slug: "engineering-construction",
     title: "Engineering & Construction",
     desc: "Manage large-scale projects, resources, and budgets with ease.",
     icon: HardHat,
   },
   {
+    slug: "ecommerce",
     title: "E-commerce",
     desc: "Manage orders, track customers, and grow online sales.",
     icon: Globe,
   },
   {
+    slug: "education",
     title: "Education",
     desc: "Simplify student admissions, courses, and fees with one platform.",
     icon: GraduationCap,
   },
   {
+    slug: "professional-services",
     title: "Professional Services",
     desc: "Streamline project management, billing, and client collaboration.",
     icon: Briefcase,
   },
   {
+    slug: "financial-services",
     title: "Financial Services",
     desc: "Track finances, manage portfolios, and ensure compliance effortlessly.",
     icon: Wallet,
   },
   {
+    slug: "healthcare",
     title: "Healthcare",
     desc: "Manage patient records, appointments, and hospital operations seamlessly.",
     icon: Stethoscope,
   },
   {
+    slug: "non-profit",
     title: "Non-profit",
     desc: "Streamline fundraising, donor management, and project execution.",
     icon: HeartHandshake,
@@ -809,16 +828,25 @@ function IndustrySection({ t, industries }) {
           className="flex gap-4 overflow-x-auto overscroll-x-contain snap-x snap-mandatory scroll-smooth -mx-4 px-4 pb-3 md:mx-0 md:grid md:grid-cols-4 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {industries.map((item, index) => (
-            <div
+            <Link
               key={index}
+              href={`/industry/${item.slug}`}
+              aria-label={`Explore ${item.title} solutions`}
               className="group min-w-[76vw] max-w-[76vw] snap-start p-5 rounded-xl border bg-card transition-all hover:shadow-md hover:border-primary/50 sm:min-w-[46vw] sm:max-w-[46vw] md:min-w-0 md:max-w-none md:p-6"
             >
-              <item.icon className="w-8 h-8 mb-4 text-muted-foreground group-hover:text-primary transition-colors" />
+              <item.icon
+                className="w-8 h-8 mb-4 text-muted-foreground group-hover:text-primary transition-colors"
+                aria-hidden="true"
+              />
               <h4 className="font-semibold text-base mb-2">{item.title}</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {item.desc}
               </p>
-            </div>
+              <span className="mt-4 inline-flex items-center text-xs font-semibold uppercase tracking-wide text-primary opacity-0 transition-opacity group-hover:opacity-100">
+                Explore solution{" "}
+                <ArrowRight className="ml-1 h-3.5 w-3.5" aria-hidden="true" />
+              </span>
+            </Link>
           ))}
         </div>
       </div>
