@@ -43,4 +43,3 @@ next-env.d.ts
 !/backend/storage/framework/cache/.gitignore
 
 /generated/prisma
-*.inspect.ndjson
