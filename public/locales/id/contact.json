@@ -13,7 +13,9 @@
     },
     "message": "Detail Proyek",
     "placeholder_message": "Ceritakan sedikit tentang kebutuhan bisnis Anda...",
-    "submit": "Kirim Penawaran"
+    "submit": "Kirim Penawaran",
+    "sending": "Mengirim...",
+    "response_note": "Kami balas dalam 1x24 jam"
   },
   "info": {
     "office_title": "Kantor Kami",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / Telp",
     "email_title": "Email Bisnis"
   },
-  "success": "Pesan terkirim! Tim kami akan menghubungi Anda dalam 1x24 jam."
+  "success": "Pesan terkirim! Tim kami akan menghubungi Anda dalam 1x24 jam.",
+  "error": "❌ Terjadi kesalahan. Silakan coba lagi atau hubungi kami langsung."
 }

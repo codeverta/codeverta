@@ -66,6 +66,7 @@ import {
   getProjects,
 } from "@/lib/projects";
 import { getLocalizedPath } from "@/lib/seo";
+import ContactForm from "@/components/contact-form";
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
@@ -369,7 +370,7 @@ export async function getStaticPaths() {
 
 // ─── getStaticProps ────────────────────────────────────────────────────────────
 export const getStaticProps = withI18n(
-  ["common", "blog"],
+  ["common", "blog", "contact"],
   function ({ params, locale }) {
     const project = getProjectById(params.id as string, locale);
     if (!project) return { notFound: true };
@@ -1074,6 +1075,12 @@ export default function ProjectDetailPage({
         />
 
         <ArticleSection articles={latestArticles} />
+        <ContactForm
+          className="container mx-auto px-4 py-20"
+          title={`Konsultasikan ${product.name}`}
+          description="Ceritakan kebutuhan Anda dan tim Codeverta akan menghubungi Anda."
+          defaultService="system"
+        />
       </div>
     </>
   );

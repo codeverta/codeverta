@@ -70,6 +70,7 @@ export default function ContactPage() {
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
   const [message, setMessage] = useState("");
+  const [website, setWebsite] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -82,7 +83,7 @@ export default function ContactPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, service, message }),
+        body: JSON.stringify({ name, email, service, message, website }),
       });
 
       if (res.ok) {
@@ -91,6 +92,7 @@ export default function ContactPage() {
         setEmail("");
         setService("");
         setMessage("");
+        setWebsite("");
       } else {
         setStatus("error");
       }
@@ -234,6 +236,20 @@ export default function ContactPage() {
                 />
               </div>
 
+              <div
+                aria-hidden="true"
+                className="absolute -left-[9999px] h-px w-px overflow-hidden"
+              >
+                <Label htmlFor="website">Website</Label>
+                <Input
+                  id="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={website}
+                  onChange={(e) => setWebsite(e.target.value)}
+                />
+              </div>
+
               <div className="space-y-2.5">
                 <Label
                   htmlFor="email"
@@ -305,8 +321,7 @@ export default function ContactPage() {
               )}
               {status === "error" && (
                 <div className="md:col-span-2 rounded-xl bg-red-50 border border-red-200 px-5 py-3.5 text-sm text-red-700 font-medium">
-                  ❌ Terjadi kesalahan. Silakan coba lagi atau hubungi kami
-                  langsung.
+                  {t("error")}
                 </div>
               )}
 
@@ -319,7 +334,7 @@ export default function ContactPage() {
                   disabled={loading}
                   className="group w-full md:w-auto px-7 h-12 text-[15px] font-medium gap-2 rounded-full bg-[#171A2B] hover:bg-[#C88A3D] text-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  {loading ? "Mengirim..." : t("form.submit")}
+                  {loading ? t("form.sending") : t("form.submit")}
                   {!loading && (
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   )}

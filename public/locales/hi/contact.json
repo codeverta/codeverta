@@ -13,7 +13,9 @@
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
-    "submit": "Send Inquiry"
+    "submit": "पूछताछ भेजें",
+    "sending": "भेजा जा रहा है...",
+    "response_note": "हम 24 घंटे के भीतर जवाब देंगे"
   },
   "info": {
     "office_title": "Our Office",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / Phone",
     "email_title": "Business Email"
   },
-  "success": "Message sent! Our team will contact you within 1x24 hours."
+  "success": "संदेश भेज दिया गया है! हमारी टीम 24 घंटे के भीतर आपसे संपर्क करेगी।",
+  "error": "❌ कुछ गलत हो गया। कृपया फिर कोशिश करें या सीधे हमसे संपर्क करें।"
 }

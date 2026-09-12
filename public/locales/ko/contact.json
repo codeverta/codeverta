@@ -13,7 +13,9 @@
     },
     "message": "프로젝트 상세",
     "placeholder_message": "비즈니스 요구사항을 간단히 알려주세요...",
-    "submit": "문의 보내기"
+    "submit": "문의 보내기",
+    "sending": "전송 중...",
+    "response_note": "24시간 이내에 답변드리겠습니다"
   },
   "info": {
     "office_title": "오피스",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / 전화",
     "email_title": "비즈니스 이메일"
   },
-  "success": "메시지가 전송되었습니다! 담당 팀이 1x24시간 이내에 연락드리겠습니다."
+  "success": "메시지가 전송되었습니다! 담당 팀이 1x24시간 이내에 연락드리겠습니다.",
+  "error": "❌ 오류가 발생했습니다. 다시 시도하거나 직접 문의해 주세요."
 }

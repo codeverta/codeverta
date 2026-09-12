@@ -50,6 +50,7 @@ import clsx from "clsx";
 import HeroSection from "@/components/HeroSection";
 import SeoHead from "@/components/SeoHead";
 import { getProjects } from "@/lib/projects";
+import ContactForm from "@/components/contact-form";
 
 export async function getStaticProps({ locale }) {
   const projects = getProjects(locale);
@@ -68,7 +69,7 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       projects: trimmed,
-      ...(await serverSideTranslations(locale, ["common"])),
+      ...(await serverSideTranslations(locale, ["common", "contact"])),
     },
   };
 }
@@ -735,6 +736,12 @@ export default function LandingPage({ projects }: any) {
             </motion.div>
           </div>
         </section>
+
+        <ContactForm
+          className="w-full bg-background px-4 py-20 md:py-28"
+          title={t("cta.title")}
+          description={t("cta.description")}
+        />
       </main>
     </div>
   );

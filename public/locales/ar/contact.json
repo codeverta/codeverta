@@ -13,7 +13,9 @@
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
-    "submit": "Send Inquiry"
+    "submit": "إرسال الاستفسار",
+    "sending": "جارٍ الإرسال...",
+    "response_note": "نرد خلال 24 ساعة"
   },
   "info": {
     "office_title": "Our Office",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / Phone",
     "email_title": "Business Email"
   },
-  "success": "Message sent! Our team will contact you within 1x24 hours."
+  "success": "تم إرسال الرسالة! سيتواصل معك فريقنا خلال 24 ساعة.",
+  "error": "❌ حدث خطأ. يُرجى المحاولة مرة أخرى أو التواصل معنا مباشرة."
 }

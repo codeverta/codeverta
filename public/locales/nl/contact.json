@@ -13,7 +13,9 @@
     },
     "message": "Projectdetails",
     "placeholder_message": "Vertel kort wat uw bedrijf nodig heeft...",
-    "submit": "Aanvraag versturen"
+    "submit": "Aanvraag versturen",
+    "sending": "Verzenden...",
+    "response_note": "Wij antwoorden binnen 24 uur"
   },
   "info": {
     "office_title": "Ons kantoor",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / telefoon",
     "email_title": "Zakelijk e-mailadres"
   },
-  "success": "Bericht verzonden! Ons team neemt binnen 1x24 uur contact met u op."
+  "success": "Bericht verzonden! Ons team neemt binnen 1x24 uur contact met u op.",
+  "error": "❌ Er is iets misgegaan. Probeer het opnieuw of neem rechtstreeks contact met ons op."
 }

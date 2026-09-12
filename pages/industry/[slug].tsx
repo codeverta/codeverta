@@ -5,6 +5,7 @@ import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
 import { Industry, IndustryPageCopy, interpolate } from "@/lib/industries";
 import { getLocalizedUrl, SITE_NAME, SITE_URL } from "@/lib/seo";
+import ContactForm from "@/components/contact-form";
 import {
   ensureMarketDescription,
   ensureMarketKeywords,
@@ -28,7 +29,7 @@ export const getStaticPaths: GetStaticPaths = async ({ locales = [] }) => {
 
 /* ── getStaticProps ── */
 export const getStaticProps: GetStaticProps = withI18n(
-  ["common"],
+  ["common", "contact"],
   async ({ params, locale }) => {
     const { getIndustries, getIndustryBySlug, getIndustryPageCopy } =
       await import("@/lib/industries.server");
@@ -563,6 +564,12 @@ export default function IndustryDetailPage({
         </section>
 
         {/* ── Enterprise Bottom CTA ── */}
+        <ContactForm
+          className="bg-white px-6 py-24"
+          title={`Bangun solusi untuk ${industry.name}`}
+          description="Diskusikan kebutuhan bisnis Anda dengan tim Codeverta."
+          defaultService="system"
+        />
         <section className="text-center px-6 py-32 bg-slate-50">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-6xl font-black tracking-tight text-slate-900 mb-6 leading-tight">

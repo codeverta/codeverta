@@ -13,7 +13,9 @@
     },
     "message": "项目详情",
     "placeholder_message": "请简单说明您的业务需求...",
-    "submit": "发送询价"
+    "submit": "发送询价",
+    "sending": "发送中...",
+    "response_note": "我们将在 24 小时内回复"
   },
   "info": {
     "office_title": "我们的办公室",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / 电话",
     "email_title": "商务邮箱"
   },
-  "success": "消息已发送！我们的团队将在 1x24 小时内联系您。"
+  "success": "消息已发送！我们的团队将在 1x24 小时内联系您。",
+  "error": "❌ 发生错误。请重试或直接联系我们。"
 }

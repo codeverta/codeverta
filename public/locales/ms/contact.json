@@ -13,7 +13,9 @@
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
-    "submit": "Send Inquiry"
+    "submit": "Hantar Pertanyaan",
+    "sending": "Menghantar...",
+    "response_note": "Kami membalas dalam masa 24 jam"
   },
   "info": {
     "office_title": "Our Office",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / Phone",
     "email_title": "Business Email"
   },
-  "success": "Message sent! Our team will contact you within 1x24 hours."
+  "success": "Mesej berjaya dihantar! Pasukan kami akan menghubungi anda dalam masa 24 jam.",
+  "error": "❌ Berlaku ralat. Sila cuba lagi atau hubungi kami secara terus."
 }

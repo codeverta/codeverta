@@ -13,7 +13,9 @@
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
-    "submit": "Send Inquiry"
+    "submit": "Gửi yêu cầu",
+    "sending": "Đang gửi...",
+    "response_note": "Chúng tôi sẽ phản hồi trong vòng 24 giờ"
   },
   "info": {
     "office_title": "Our Office",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / Phone",
     "email_title": "Business Email"
   },
-  "success": "Message sent! Our team will contact you within 1x24 hours."
+  "success": "Đã gửi tin nhắn! Đội ngũ của chúng tôi sẽ liên hệ với bạn trong vòng 24 giờ.",
+  "error": "❌ Đã xảy ra lỗi. Vui lòng thử lại hoặc liên hệ trực tiếp với chúng tôi."
 }

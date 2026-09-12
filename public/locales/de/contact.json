@@ -13,7 +13,9 @@
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
-    "submit": "Send Inquiry"
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet...",
+    "response_note": "Wir antworten innerhalb von 24 Stunden"
   },
   "info": {
     "office_title": "Our Office",
@@ -21,5 +23,6 @@
     "whatsapp_title": "WhatsApp / Phone",
     "email_title": "Business Email"
   },
-  "success": "Message sent! Our team will contact you within 1x24 hours."
+  "success": "Nachricht gesendet! Unser Team meldet sich innerhalb von 24 Stunden bei Ihnen.",
+  "error": "❌ Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
 }
