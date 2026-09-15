@@ -5,7 +5,7 @@
     "officeAddress": "사무실 주소",
     "whatsapp": {
       "help": "무엇을 도와드릴까요?",
-      "defaultMessage": "안녕하세요. Codeverta 서비스에 대해 문의하고 싶습니다.",
+      "defaultMessage": "안녕하세요, 귀사의 웹사이트 제품에 관심이 있습니다.",
       "ariaLabel": "WhatsApp으로 상담"
     }
   },

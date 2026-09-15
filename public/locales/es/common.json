@@ -5,7 +5,7 @@
     "officeAddress": "Dirección de la oficina",
     "whatsapp": {
       "help": "¿Cómo podemos ayudarte?",
-      "defaultMessage": "Hola, me gustaría consultar sobre los servicios de Codeverta.",
+      "defaultMessage": "Hola, estoy interesado/a en sus productos de sitios web.",
       "ariaLabel": "Chatear por WhatsApp"
     }
   },

@@ -166,7 +166,9 @@ export default function FAQPage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
-                onClick={handleRedirectToWhatsapp}
+                onClick={() =>
+                  handleRedirectToWhatsapp(t("ui.whatsapp.defaultMessage"))
+                }
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-slate-900 bg-white hover:bg-slate-100 transition-colors w-full sm:w-auto"
               >
                 <MessageCircle className="w-4 h-4 mr-2" />

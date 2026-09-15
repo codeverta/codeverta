@@ -5,7 +5,7 @@
     "officeAddress": "办公地址",
     "whatsapp": {
       "help": "有什么可以帮助您？",
-      "defaultMessage": "您好，我想咨询 Codeverta 的服务。",
+      "defaultMessage": "您好，我对您的网站产品感兴趣。",
       "ariaLabel": "通过 WhatsApp 咨询"
     }
   },

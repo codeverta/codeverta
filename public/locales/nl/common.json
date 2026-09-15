@@ -5,7 +5,7 @@
     "officeAddress": "Kantooradres",
     "whatsapp": {
       "help": "Hoe kunnen we u helpen?",
-      "defaultMessage": "Hallo, ik wil graag meer weten over de diensten van Codeverta.",
+      "defaultMessage": "Hallo, ik ben geïnteresseerd in uw websiteproducten.",
       "ariaLabel": "Chatten via WhatsApp"
     }
   },

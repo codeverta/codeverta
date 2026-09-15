@@ -5,7 +5,7 @@
     "officeAddress": "Alamat Kantor",
     "whatsapp": {
       "help": "Ada yang bisa kami bantu?",
-      "defaultMessage": "Halo, saya ingin bertanya tentang layanan Codeverta.",
+      "defaultMessage": "Halo, saya tertarik dengan produk website Anda.",
       "ariaLabel": "Chat melalui WhatsApp"
     }
   },

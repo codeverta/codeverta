@@ -1,6 +1,7 @@
 import { CircleXIcon } from "lucide-react";
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 
 // WhatsApp Icon Component (since we can't import from MUI)
 export const WhatsAppIcon = () => (
@@ -49,9 +50,11 @@ const FacebookIcon = ({ size = 28 }) => (
   </svg>
 );
 
-export const handleRedirectToWhatsapp = () => {
+export const handleRedirectToWhatsapp = (
+  message = "Hello, I would like to ask about Codeverta's services."
+) => {
   window.location.replace(
-    "https://wa.me/+62881011692615?text=Halo%20saya%20tertarik%20dengan%20produk%20website%20Anda"
+    `https://wa.me/+62881011692615?text=${encodeURIComponent(message)}`
   );
 };
 
@@ -64,8 +67,15 @@ export const WhatsappWrapper = ({
   title?: string;
   className?: string;
 }) => {
+  const router = useRouter();
+
+  const whatsappRedirectPath =
+    router.locale && router.locale !== "id"
+      ? `/${router.locale}/whatsappRedirect`
+      : "/whatsappRedirect";
+
   return (
-    <a className={className} href={"/whatsappRedirect"}>
+    <a className={className} href={whatsappRedirectPath}>
       {children}
     </a>
   );
