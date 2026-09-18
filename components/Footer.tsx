@@ -85,7 +85,7 @@ export default function Footer() {
                 <div className="space-y-1">
                   <WhatsappWrapper>
                     <p className="text-sm font-medium text-gray-300 select-all">
-                      +62881011692615 (Sales & Support)
+                      +6285601347820 (Sales & Support)
                     </p>
                   </WhatsappWrapper>
                 </div>

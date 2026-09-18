@@ -196,7 +196,7 @@ export function insertProductCta(content: string, tags?: string): string {
   // Only inject if no existing CTA block
   if (content.includes("<!--CTA:")) return content;
 
-  const ctaBlock = `\n\n---\n\n<!--CTA:${productUrl}-->\n\n### 🚀 Butuh Sistem Serupa?\n\nKami dari **Codeverta** bisa bantu bangunkan sistem [${productName}](${productUrl}) yang sesuai dengan kebutuhan bisnis Anda.\n\n👉 **[Konsultasi Gratis →](https://wa.me/62881011692615?text=Halo%20Codeverta%2C%20saya%20tertarik%20dengan%20${encodeURIComponent(
+  const ctaBlock = `\n\n---\n\n<!--CTA:${productUrl}-->\n\n### 🚀 Butuh Sistem Serupa?\n\nKami dari **Codeverta** bisa bantu bangunkan sistem [${productName}](${productUrl}) yang sesuai dengan kebutuhan bisnis Anda.\n\n👉 **[Konsultasi Gratis →](https://wa.me/6285601347820?text=Halo%20Codeverta%2C%20saya%20tertarik%20dengan%20${encodeURIComponent(
     productName
   )}%20setelah%20membaca%20artikel.)**\n\nTim teknis kami siap mendiskusikan kebutuhan Anda tanpa biaya.\n`;
 

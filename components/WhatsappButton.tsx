@@ -1,7 +1,8 @@
 import { CircleXIcon } from "lucide-react";
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
+import { trackEvent } from "@/components/GAScript";
+import { buildWhatsAppLink, WHATSAPP_NUMBER } from "@/lib/whatsapp";
 
 // WhatsApp Icon Component (since we can't import from MUI)
 export const WhatsAppIcon = () => (
@@ -53,9 +54,8 @@ const FacebookIcon = ({ size = 28 }) => (
 export const handleRedirectToWhatsapp = (
   message = "Hello, I would like to ask about Codeverta's services."
 ) => {
-  window.location.replace(
-    `https://wa.me/+6285601347820?text=${encodeURIComponent(message)}`
-  );
+  trackEvent("whatsapp_click", { method: "faq", transport_type: "beacon" });
+  window.location.replace(buildWhatsAppLink(message));
 };
 
 export const WhatsappWrapper = ({
@@ -67,22 +67,26 @@ export const WhatsappWrapper = ({
   title?: string;
   className?: string;
 }) => {
-  const router = useRouter();
-
-  const whatsappRedirectPath =
-    router.locale && router.locale !== "id"
-      ? `/${router.locale}/whatsappRedirect`
-      : "/whatsappRedirect";
+  const { t } = useTranslation("common");
 
   return (
-    <a className={className} href={whatsappRedirectPath}>
+    <a
+      className={className}
+      href={buildWhatsAppLink(t("ui.whatsapp.defaultMessage"))}
+      onClick={() =>
+        trackEvent("whatsapp_click", {
+          method: "cta",
+          transport_type: "beacon",
+        })
+      }
+    >
       {children}
     </a>
   );
 };
 
 const WhatsappButton = ({
-  phoneNumber = "+6285601347820",
+  phoneNumber = WHATSAPP_NUMBER,
   message,
 }: {
   phoneNumber?: string;
@@ -92,9 +96,14 @@ const WhatsappButton = ({
   const [isVisible, setIsVisible] = useState(true);
 
   const handleClick = () => {
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message || t("ui.whatsapp.defaultMessage")
-    )}`;
+    const url = buildWhatsAppLink(
+      message || t("ui.whatsapp.defaultMessage"),
+      phoneNumber
+    );
+    trackEvent("whatsapp_click", {
+      method: "floating_button",
+      transport_type: "beacon",
+    });
     window.open(url, "_blank");
   };
 

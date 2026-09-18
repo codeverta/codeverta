@@ -5,7 +5,7 @@ import { getSortedPostsData } from "@/lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useState, useEffect, useRef } from "react";
 
-const WA_NUMBER = "6288101169261";
+const WA_NUMBER = "6285601347820";
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=Halo%20Codeverta%2C%20saya%20tertarik%20dengan%20sistem%20ticketing%20Trail%20Running!`;
 
 export async function getStaticProps({ locale }) {

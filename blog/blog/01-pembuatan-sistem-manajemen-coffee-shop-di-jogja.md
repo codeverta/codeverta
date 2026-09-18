@@ -82,7 +82,7 @@ Yang membedakan pendekatan kami:
 
 **Penasaran?** Kami menawarkan konsultasi gratis 30 menit untuk coffee shop di Jogja dan sekitarnya. Tidak ada kewajiban, kami hanya butuh 30 menit untuk ngobrol tentang operasional Anda dan ngasih saran apa adanya.
 
-[Hubungi Tim Codeverta via WhatsApp →](https://wa.me/62881011692615?text=Halo%20Codeverta%2C%20saya%20tertarik%20konsultasi%20sistem%20management%20coffee%20shop.)
+[Hubungi Tim Codeverta via WhatsApp →](https://wa.me/6285601347820?text=Halo%20Codeverta%2C%20saya%20tertarik%20konsultasi%20sistem%20management%20coffee%20shop.)
 
 ## FAQ Tentang Sistem Manajemen Coffee Shop
 

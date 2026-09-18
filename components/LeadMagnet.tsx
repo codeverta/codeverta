@@ -98,7 +98,7 @@ export default function LeadMagnet({
             Respon lebih cepat via WhatsApp ⚡
           </p>
           <a
-            href="https://wa.me/62881011692615?text=Halo%20Codeverta%2C%20saya%20tertarik%20dengan%20solusi%20yang%20dibahas%20di%20artikel."
+            href="https://wa.me/6285601347820?text=Halo%20Codeverta%2C%20saya%20tertarik%20dengan%20solusi%20yang%20dibahas%20di%20artikel."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 transition-colors"
