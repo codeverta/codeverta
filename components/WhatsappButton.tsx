@@ -54,7 +54,7 @@ export const handleRedirectToWhatsapp = (
   message = "Hello, I would like to ask about Codeverta's services."
 ) => {
   window.location.replace(
-    `https://wa.me/+62881011692615?text=${encodeURIComponent(message)}`
+    `https://wa.me/+6285601347820?text=${encodeURIComponent(message)}`
   );
 };
 
@@ -82,7 +82,7 @@ export const WhatsappWrapper = ({
 };
 
 const WhatsappButton = ({
-  phoneNumber = "+62881011692615",
+  phoneNumber = "+6285601347820",
   message,
 }: {
   phoneNumber?: string;
