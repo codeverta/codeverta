@@ -230,6 +230,7 @@ export function middleware(request: NextRequest) {
   // Use the standard URL implementation so query mutations are reflected in
   // the redirect target consistently across standalone/proxied deployments.
   const url = new URL(request.url);
+  const originalPath = url.pathname;
   let normalizedPath = url.pathname;
   const forwardedHost = request.headers.get("x-forwarded-host");
   const hostHeader = forwardedHost || request.headers.get("host");
@@ -344,6 +345,25 @@ export function middleware(request: NextRequest) {
   if (url.searchParams.has("s")) {
     url.searchParams.delete("s");
     shouldRedirect = true;
+  }
+
+  if (process.env.TRAFFIC_DEBUG === "true") {
+    console.log(
+      "[traffic-debug]",
+      JSON.stringify({
+        method: request.method,
+        originalPath,
+        resolvedPath: url.pathname,
+        country: request.headers.get("cf-ipcountry"),
+        clientIp: request.headers.get("cf-connecting-ip"),
+        forwardedFor: request.headers.get("x-forwarded-for"),
+        acceptLanguage: request.headers.get("accept-language"),
+        host: request.headers.get("host"),
+        userAgent: request.headers.get("user-agent"),
+        willRedirect: shouldRedirect,
+        redirectStatus: shouldRedirect ? (localeRedirect ? 307 : 308) : 200,
+      })
+    );
   }
 
   if (shouldRedirect) {

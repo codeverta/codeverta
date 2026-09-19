@@ -8,6 +8,7 @@ services:
       NODE_ENV: production
       PORT: 3000
       HOSTNAME: 0.0.0.0
+      TRAFFIC_DEBUG: ${TRAFFIC_DEBUG:-false}
     networks:
       - lms_net
 
