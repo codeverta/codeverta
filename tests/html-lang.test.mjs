@@ -12,9 +12,13 @@ function getHtmlLanguage(html) {
   return html.match(/<html\b[^>]*\blang=["']([^"']+)["']/i)?.[1] || null;
 }
 
-async function getServerRenderedLanguage(route, acceptLanguage) {
+async function getServerRenderedLanguage(
+  route,
+  acceptLanguage,
+  extraHeaders = {}
+) {
   const response = await fetch(`${baseUrl}${route}`, {
-    headers: { "accept-language": acceptLanguage },
+    headers: { "accept-language": acceptLanguage, ...extraHeaders },
     redirect: "follow",
   });
 
@@ -22,8 +26,34 @@ async function getServerRenderedLanguage(route, acceptLanguage) {
   return getHtmlLanguage(await response.text());
 }
 
-test('an unprefixed content route uses lang="id"', async () => {
-  assert.equal(await getServerRenderedLanguage("/about", "en-US"), "id");
+test("an English browser visiting an unprefixed page is sent to English", async () => {
+  assert.equal(await getServerRenderedLanguage("/about", "en-US"), "en");
+});
+
+test("a Swedish browser falls back to English", async () => {
+  assert.equal(await getServerRenderedLanguage("/products", "sv-SE,sv"), "en");
+});
+
+test("a saved Indonesian choice overrides automatic detection", async () => {
+  assert.equal(
+    await getServerRenderedLanguage("/", "en-US", {
+      cookie: "NEXT_LOCALE=id",
+    }),
+    "id"
+  );
+});
+
+test("a Swedish visitor with an Indonesian browser sees English", async () => {
+  assert.equal(
+    await getServerRenderedLanguage("/", "id-ID", {
+      "cf-ipcountry": "SE",
+    }),
+    "en"
+  );
+});
+
+test("an Indonesian browser on the default route stays Indonesian", async () => {
+  assert.equal(await getServerRenderedLanguage("/", "id-ID"), "id");
 });
 
 for (const locale of i18n.locales) {

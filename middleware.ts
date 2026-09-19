@@ -30,6 +30,20 @@ const PRODUCT_INDEX_LOCALES = new Set([
   "es",
   "th",
 ]);
+const AUTO_LOCALE_PATHS = new Set([
+  "/",
+  "/products",
+  "/about",
+  "/contact",
+  "/faq",
+  "/blog",
+  "/industry",
+  "/terms",
+  "/privacy-policy",
+  "/careers",
+  "/pelatihan",
+  "/whatsappRedirect",
+]);
 
 const SUPPORTED_LOCALES = new Set([
   "id",
@@ -146,6 +160,7 @@ const LANGUAGE_LOCALES: Record<string, string> = {
   vi: "vi",
   ru: "ru",
   nl: "nl",
+  sv: "en",
 };
 
 function getCountry(request: NextRequest) {
@@ -301,6 +316,24 @@ export function middleware(request: NextRequest) {
   if (normalizedPath !== url.pathname) shouldRedirect = true;
   url.pathname = normalizedPath;
 
+  const firstSegment = normalizedPath.split("/")[1];
+  const canAutoSelectLocale =
+    !SUPPORTED_LOCALES.has(firstSegment) &&
+    AUTO_LOCALE_PATHS.has(normalizedPath) &&
+    (request.headers.has("accept-language") ||
+      request.cookies.has(LOCALE_COOKIE));
+  let localeRedirect = false;
+  if (canAutoSelectLocale) {
+    const locale = detectLocale(request);
+    if (locale !== DEFAULT_LOCALE) {
+      url.pathname = `/${locale}${
+        normalizedPath === "/" ? "" : normalizedPath
+      }`;
+      localeRedirect = true;
+      shouldRedirect = true;
+    }
+  }
+
   // This legacy parameter is ignored by the page and only creates duplicates.
   if (url.searchParams.has("tag")) {
     url.searchParams.delete("tag");
@@ -319,7 +352,18 @@ export function middleware(request: NextRequest) {
       : url.origin;
     const redirectUrl = new URL(url.pathname, redirectOrigin);
     redirectUrl.search = url.searchParams.toString();
-    return NextResponse.redirect(redirectUrl, 308);
+    const response = NextResponse.redirect(
+      redirectUrl,
+      localeRedirect ? 307 : 308
+    );
+    if (localeRedirect) {
+      response.headers.set("Cache-Control", "private, no-store");
+      response.headers.set(
+        "Vary",
+        "Accept-Language, Cookie, CF-IPCountry, X-Vercel-IP-Country, CloudFront-Viewer-Country, X-Country-Code"
+      );
+    }
+    return response;
   }
 
   return NextResponse.next();
