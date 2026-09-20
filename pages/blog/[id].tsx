@@ -10,12 +10,14 @@ import {
   getLocalizedPostPaths,
   getLocalizedPostRedirect,
   getLegacyPostDestination,
+  getArchivedBlogRedirect,
+  isUnverifiedBlogCaseStudy,
 } from "lib/posts";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { getProjects } from "@/lib/projects";
-import { appendOfficeLocation } from "@/lib/seo";
+import { appendOfficeLocation, SITE_URL } from "@/lib/seo";
 /* ─────────────────────────────────────────────
    Types
 ───────────────────────────────────────────── */
@@ -451,6 +453,7 @@ export default function BlogDetail({
   postData,
   otherPosts,
   otherProducts,
+  localizedPaths = {},
 }: Props) {
   const { t } = useTranslation("blog");
   const { locale = "id" } = useRouter();
@@ -466,6 +469,14 @@ export default function BlogDetail({
   } = postData;
 
   const finalDesc = appendOfficeLocation(desc || "", locale);
+  const canonicalPath = `${locale === "id" ? "" : `/${locale}`}/blog/${
+    postData.id
+  }`;
+  const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+  const alternates = Object.entries(localizedPaths).map(([lang, path]) => ({
+    lang,
+    href: `${SITE_URL}${lang === "id" ? "" : `/${lang}`}${path}`,
+  }));
 
   const tagList = getTagList(tags);
   const readTime = estimateReadTime(contentHtml, t("readTime"));
@@ -499,6 +510,24 @@ export default function BlogDetail({
         />
         {image && <meta property="og:image" content={image} />}
         <meta property="og:type" content="article" />
+        <meta key="og:url" property="og:url" content={canonicalUrl} />
+        <link key="canonical" rel="canonical" href={canonicalUrl} />
+        {alternates.map(({ lang, href }) => (
+          <link
+            key={`alternate-${lang}`}
+            rel="alternate"
+            hrefLang={lang}
+            href={href}
+          />
+        ))}
+        <link
+          key="alternate-x-default"
+          rel="alternate"
+          hrefLang="x-default"
+          href={
+            alternates.find(({ lang }) => lang === "id")?.href || canonicalUrl
+          }
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -636,11 +665,7 @@ export default function BlogDetail({
           {/* Tags */}
           <div className="article-tags">
             {tagList.map((t) => (
-              <Link
-                key={t}
-                href={`/news?tag=${encodeURIComponent(t)}`}
-                className="a-tag"
-              >
+              <Link key={t} href="/blog" className="a-tag">
                 #{t}
               </Link>
             ))}
@@ -1408,6 +1433,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 ───────────────────────────────────────────── */
 export const getStaticProps: GetStaticProps = async ({ params, locale }) => {
   const id = params?.id as string;
+  if (isUnverifiedBlogCaseStudy(id)) return { notFound: true };
+  const archivedDestination = getArchivedBlogRedirect(id, locale ?? "id");
+  if (archivedDestination) {
+    return { redirect: { destination: archivedDestination, permanent: true } };
+  }
 
   try {
     const postData = await getPostData(id, "blog", locale ?? "id");

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import {
   faqItems,
@@ -24,12 +25,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useTheme } from "next-themes";
 import { WhatsAppIcon, WhatsappWrapper } from "@/components/WhatsappButton";
-import { ProjectsSection } from "@/components/landing/ProjectsSection";
 import RotatingText from "@/components/RotatingText";
 import { logos } from "@/lib/data";
 import { companyStats } from "@/lib/data"; // Ubah ini sesuai lokasi data stats Anda
 import { AnimatedCounter } from "@/components/AnimatedCounter";
-import ModernStatsSection from "@/components/ModernStats";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
@@ -50,7 +49,19 @@ import clsx from "clsx";
 import HeroSection from "@/components/HeroSection";
 import SeoHead from "@/components/SeoHead";
 import { getProjects } from "@/lib/projects";
-import ContactForm from "@/components/contact-form";
+
+const ProjectsSection = dynamic(
+  () =>
+    import("@/components/landing/ProjectsSection").then(
+      (mod) => mod.ProjectsSection
+    ),
+  { loading: () => <div className="min-h-[28rem]" aria-hidden="true" /> }
+);
+
+const ContactForm = dynamic(() => import("@/components/contact-form"), {
+  ssr: false,
+  loading: () => <div className="min-h-[24rem]" aria-hidden="true" />,
+});
 
 export async function getStaticProps({ locale }) {
   const projects = getProjects(locale);
@@ -173,86 +184,78 @@ export default function LandingPage({ projects }: any) {
                   {/* Row 1 - Scroll Left */}
                   <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <div className="flex animate-scroll-left gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
-                      {[...row1, ...row1, ...row1, ...row1].map(
-                        (logo, index) => (
-                          <div
-                            key={index}
-                            className="group/item relative flex flex-col items-center flex-none"
+                      {[...row1, ...row1].map((logo, index) => (
+                        <div
+                          key={index}
+                          className="group/item relative flex flex-col items-center flex-none"
+                        >
+                          <Link
+                            href={logo.url}
+                            target={
+                              logo.url.startsWith("http") ? "_blank" : undefined
+                            }
+                            rel={
+                              logo.url.startsWith("http")
+                                ? "noopener noreferrer"
+                                : undefined
+                            }
+                            className="flex-none flex items-center justify-center"
                           >
-                            <Link
-                              href={logo.url}
-                              target={
-                                logo.url.startsWith("http")
-                                  ? "_blank"
-                                  : undefined
-                              }
-                              rel={
-                                logo.url.startsWith("http")
-                                  ? "noopener noreferrer"
-                                  : undefined
-                              }
-                              className="flex-none flex items-center justify-center"
-                            >
-                              <img
-                                src={logo.src}
-                                alt={logo.alt}
-                                title={logo.alt}
-                                className={clsx(
-                                  "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110 dark:invert",
-                                  logo.classes
-                                )}
-                              />
-                            </Link>
-                            {/* Company Name Tooltip / Label on Hover */}
-                            <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
-                              {logo.alt}
-                            </span>
-                          </div>
-                        )
-                      )}
+                            <img
+                              src={logo.src}
+                              alt={logo.alt}
+                              title={logo.alt}
+                              className={clsx(
+                                "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110 dark:invert",
+                                logo.classes
+                              )}
+                            />
+                          </Link>
+                          {/* Company Name Tooltip / Label on Hover */}
+                          <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
+                            {logo.alt}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
 
                   {/* Row 2 - Scroll Right */}
                   <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <div className="flex animate-scroll-right gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
-                      {[...row2, ...row2, ...row2, ...row2].map(
-                        (logo, index) => (
-                          <div
-                            key={index}
-                            className="group/item relative flex flex-col items-center flex-none"
+                      {[...row2, ...row2].map((logo, index) => (
+                        <div
+                          key={index}
+                          className="group/item relative flex flex-col items-center flex-none"
+                        >
+                          <Link
+                            href={logo.url}
+                            target={
+                              logo.url.startsWith("http") ? "_blank" : undefined
+                            }
+                            rel={
+                              logo.url.startsWith("http")
+                                ? "noopener noreferrer"
+                                : undefined
+                            }
+                            className="flex-none flex items-center justify-center"
                           >
-                            <Link
-                              href={logo.url}
-                              target={
-                                logo.url.startsWith("http")
-                                  ? "_blank"
-                                  : undefined
-                              }
-                              rel={
-                                logo.url.startsWith("http")
-                                  ? "noopener noreferrer"
-                                  : undefined
-                              }
-                              className="flex-none flex items-center justify-center"
-                            >
-                              <img
-                                src={logo.src}
-                                alt={logo.alt}
-                                title={logo.alt}
-                                className={clsx(
-                                  "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110 dark:invert",
-                                  logo.classes
-                                )}
-                              />
-                            </Link>
-                            {/* Company Name Tooltip / Label on Hover */}
-                            <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
-                              {logo.alt}
-                            </span>
-                          </div>
-                        )
-                      )}
+                            <img
+                              src={logo.src}
+                              alt={logo.alt}
+                              title={logo.alt}
+                              className={clsx(
+                                "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110 dark:invert",
+                                logo.classes
+                              )}
+                            />
+                          </Link>
+                          {/* Company Name Tooltip / Label on Hover */}
+                          <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
+                            {logo.alt}
+                          </span>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -282,22 +285,36 @@ export default function LandingPage({ projects }: any) {
             .animate-scroll-left {
               display: flex;
               width: max-content;
-              animation: scrollLeft 25s linear infinite;
+              animation: scrollLeft 45s linear infinite;
             }
 
             .animate-scroll-right {
               display: flex;
               width: max-content;
-              animation: scrollRight 25s linear infinite;
+              animation: scrollRight 45s linear infinite;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+              .animate-scroll-left,
+              .animate-scroll-right {
+                animation: none;
+              }
             }
           `}</style>
         </section>
-        <IndustrySection t={t} industries={industryItems} />
+        <div className="[content-visibility:auto] [contain-intrinsic-size:900px]">
+          <IndustrySection t={t} industries={industryItems} />
+        </div>
         {/* <ModernStatsSection /> */}
         {/* Tambahkan konten tersebut disini */}
-        <ProjectsSection projects={projects} />
+        <div className="[content-visibility:auto] [contain-intrinsic-size:1000px]">
+          <ProjectsSection projects={projects} />
+        </div>
         {/* Features Section */}
-        <section id="features" className="w-full py-12 md:py-32">
+        <section
+          id="features"
+          className="w-full py-12 md:py-32 [content-visibility:auto] [contain-intrinsic-size:900px]"
+        >
           <div className="container px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -358,7 +375,7 @@ export default function LandingPage({ projects }: any) {
         {/* How It Works Section */}
         <section
           id="development"
-          className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden"
+          className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden [content-visibility:auto] [contain-intrinsic-size:900px]"
         >
           <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
 
@@ -406,7 +423,10 @@ export default function LandingPage({ projects }: any) {
         </section>
 
         {/* Testimonials Section */}
-        <section id="testimonials" className="w-full py-12 md:py-32">
+        <section
+          id="testimonials"
+          className="w-full py-12 md:py-32 [content-visibility:auto] [contain-intrinsic-size:900px]"
+        >
           <div className="container px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -481,7 +501,7 @@ export default function LandingPage({ projects }: any) {
         {/* Pricing Section */}
         <section
           id="pricing"
-          className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden"
+          className="w-full py-20 md:py-32 bg-muted/30 relative overflow-hidden [content-visibility:auto] [contain-intrinsic-size:1100px]"
         >
           <div className="absolute inset-0 -z-10 h-full w-full bg-white dark:bg-black bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_40%,transparent_100%)]"></div>
 
@@ -645,7 +665,10 @@ export default function LandingPage({ projects }: any) {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="w-full py-20 md:py-32">
+        <section
+          id="faq"
+          className="w-full py-20 md:py-32 [content-visibility:auto] [contain-intrinsic-size:700px]"
+        >
           <div className="container px-4 md:px-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -697,7 +720,7 @@ export default function LandingPage({ projects }: any) {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-20 md:py-32 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground relative overflow-hidden">
+        <section className="w-full py-20 md:py-32 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground relative overflow-hidden [content-visibility:auto] [contain-intrinsic-size:700px]">
           <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
           <div className="absolute -top-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
@@ -737,11 +760,13 @@ export default function LandingPage({ projects }: any) {
           </div>
         </section>
 
-        <ContactForm
-          className="w-full bg-background px-4 py-20 md:py-28"
-          title={t("cta.title")}
-          description={t("cta.description")}
-        />
+        <div className="[content-visibility:auto] [contain-intrinsic-size:800px]">
+          <ContactForm
+            className="w-full bg-background px-4 py-20 md:py-28"
+            title={t("cta.title")}
+            description={t("cta.description")}
+          />
+        </div>
       </main>
     </div>
   );

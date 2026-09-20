@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import Image from "next/image";
 
 const FloatingCards = () => {
   const cards = [
@@ -42,10 +42,12 @@ const FloatingCards = () => {
             backdrop-blur-sm opacity-60 md:opacity-100
           `}
         >
-          <div className="w-full h-full overflow-hidden rounded-xl bg-gray-100 dark:bg-zinc-800">
-            <img
+          <div className="relative w-full h-full overflow-hidden rounded-xl bg-gray-100 dark:bg-zinc-800">
+            <Image
               src={card.src}
               alt="Preview"
+              fill
+              sizes="(max-width: 1023px) 0px, 240px"
               className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
             />
           </div>

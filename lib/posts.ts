@@ -19,9 +19,49 @@ import {
   addIdsToHeadings,
 } from "./toc";
 import { SUPPORTED_LOCALES } from "./seo";
+import contentCuration from "./content-curation.json";
 
 // Base blog directory
 const blogBaseDirectory = path.join(process.cwd(), "blog");
+const archivedBlogRedirects = contentCuration.archivedBlogRedirects;
+const unverifiedBlogCaseStudies = new Set(
+  contentCuration.unverifiedBlogCaseStudies
+);
+let archivedIdTargets: Map<string, string> | undefined;
+let unverifiedIds: Set<string> | undefined;
+
+export function isUnverifiedBlogCaseStudy(id: string) {
+  if (!unverifiedIds) {
+    unverifiedIds = new Set(
+      getAllPostRecords("blog")
+        .filter((record) =>
+          unverifiedBlogCaseStudies.has(record.translationKey)
+        )
+        .map((record) => record.id)
+    );
+  }
+  return unverifiedIds.has(id);
+}
+
+function archivedBlogTarget(id: string) {
+  if (!archivedIdTargets) {
+    archivedIdTargets = new Map();
+    for (const record of getAllPostRecords("blog")) {
+      if (record.translationKey in archivedBlogRedirects) {
+        archivedIdTargets.set(
+          record.id,
+          archivedBlogRedirects[record.translationKey]
+        );
+      }
+    }
+  }
+  return archivedIdTargets.get(id) || null;
+}
+
+export function getArchivedBlogRedirect(id: string, locale = "id") {
+  const targetId = archivedBlogTarget(id);
+  return targetId ? getLocalizedPostRedirect(targetId, locale) : null;
+}
 
 function normalizeLocale(locale = "id") {
   return locale === "kr" ? "ko" : locale;
@@ -100,7 +140,13 @@ export function getSortedPostsData(folder = "blog", locale = "id") {
         ...matterResult.data,
       };
     })
-    .filter((post) => post.lang !== "id" || !translatedSourceIds.has(post.id));
+    .filter((post) => post.lang !== "id" || !translatedSourceIds.has(post.id))
+    .filter(
+      (post) =>
+        folder !== "blog" ||
+        (!(String(post.translationOf || post.id) in archivedBlogRedirects) &&
+          !unverifiedBlogCaseStudies.has(String(post.translationOf || post.id)))
+    );
 
   allPostsData.forEach((post) => postsById.set(post.id, post));
 
@@ -275,15 +321,7 @@ export function getLocalizedPostRedirect(
   return targetLocale === "id" ? targetPath : `/${targetLocale}${targetPath}`;
 }
 
-const LEGACY_POST_SECTIONS = [
-  "news",
-  "cybersecurity",
-  "ai",
-  "gadget",
-  "startups",
-  "tutorials",
-  "blog",
-];
+const LEGACY_POST_SECTIONS = ["cybersecurity", "tutorials", "blog"];
 
 export function getLegacyPostDestination(id: string) {
   for (const section of LEGACY_POST_SECTIONS) {

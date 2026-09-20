@@ -103,8 +103,14 @@ export default function ITProductsShowcase({
   const seo = buildSeoMeta({
     locale: router.locale,
     path: "/products",
-    title: t("productsPage.seo.title"),
-    description: t("productsPage.seo.description"),
+    title:
+      router.locale === "id"
+        ? "Software ERP, Inventory, Gudang & POS untuk Bisnis | Codeverta"
+        : t("productsPage.seo.title"),
+    description:
+      router.locale === "id"
+        ? "Jelajahi solusi Codeverta untuk ERP, stok barang, gudang, POS, catering, gym, dan operasional bisnis. Lihat status setiap produk dan panduan memilihnya."
+        : t("productsPage.seo.description"),
     keywords: t("productsPage.seo.keywords"),
   });
   const statusConfig: Record<
@@ -226,14 +232,6 @@ export default function ITProductsShowcase({
               ? product.image
               : `${SITE_URL}${product.image}`,
             softwareVersion: product.version,
-            offers: {
-              "@type": "Offer",
-              price: "0",
-              priceCurrency: "IDR",
-              availability: "https://schema.org/InStock",
-              url: `${seo.canonical}/${product.id}`,
-              category: product.status,
-            },
             publisher: {
               "@type": "Organization",
               "@id": `${SITE_URL}/#organization`,
@@ -278,6 +276,90 @@ export default function ITProductsShowcase({
               {t("productsPage.hero.subtitle")}
             </p>
           </div>
+          {router.locale === "id" && (
+            <section
+              className="mb-8 rounded-xl border border-slate-200 bg-white p-6 md:p-8"
+              aria-labelledby="software-guides-title"
+            >
+              <h2
+                id="software-guides-title"
+                className="text-2xl font-bold text-slate-900"
+              >
+                Pilih software berdasarkan proses yang ingin diperbaiki
+              </h2>
+              <p className="mt-3 max-w-3xl text-slate-600">
+                Mulai dari transaksi yang paling sering bermasalah. Panduan
+                berikut menjelaskan apa yang perlu diuji saat demo, lalu
+                menghubungkannya dengan produk atau layanan yang relevan. Status
+                ketersediaan setiap produk tercantum pada kartu katalog.
+              </p>
+              <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                {[
+                  {
+                    title: "Software ERP Indonesia",
+                    description:
+                      "Satukan pembelian, penjualan, stok, dan keuangan sesuai kebutuhan perusahaan.",
+                    href: "/blog/software-erp-indonesia-panduan-memilih",
+                  },
+                  {
+                    title: "Software inventory dan stok barang",
+                    description:
+                      "Bedakan stok fisik, terpesan, rusak, dan tersedia di beberapa lokasi.",
+                    href: "/blog/software-inventory-aplikasi-stok-barang",
+                  },
+                  {
+                    title: "Software manajemen gudang",
+                    description:
+                      "Evaluasi receiving, lokasi rak, picking, retur, dan stock opname.",
+                    href: "/blog/panduan-lengkap-software-manajemen-gudang",
+                  },
+                  {
+                    title: "Software distributor",
+                    description:
+                      "Hubungkan pesanan grosir, gudang, pengiriman, dan piutang.",
+                    href: "/blog/software-distributor-indonesia",
+                  },
+                  {
+                    title: "Aplikasi kasir restoran dan cafe",
+                    description:
+                      "Uji pesanan, dapur, pembayaran, shift, dan stok bahan.",
+                    href: "/blog/aplikasi-kasir-restoran-dan-cafe",
+                  },
+                  {
+                    title: "Software catering",
+                    description:
+                      "Rencanakan pesanan, bahan, produksi, dan pengiriman central kitchen.",
+                    href: "/blog/software-catering-central-kitchen",
+                  },
+                  {
+                    title: "Software gym",
+                    description:
+                      "Kelola keanggotaan, jadwal kelas, pembayaran, dan kunjungan member.",
+                    href: "/blog/software-manajemen-keanggotaan-gym",
+                  },
+                  {
+                    title: "Software kontraktor",
+                    description:
+                      "Lihat pendekatan untuk proyek, material, dan biaya konstruksi.",
+                    href: "/industry/engineering-construction",
+                  },
+                ].map((guide) => (
+                  <Link
+                    key={guide.href}
+                    href={guide.href}
+                    className="rounded-lg border border-slate-200 p-4 transition hover:border-blue-300 hover:bg-blue-50"
+                  >
+                    <h3 className="font-semibold text-blue-700">
+                      {guide.title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                      {guide.description}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
           <section className="mb-8 rounded-xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
             <div className="mb-5 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
               <div>

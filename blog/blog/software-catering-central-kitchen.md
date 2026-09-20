@@ -13,6 +13,8 @@ Operasional catering harus mengubah janji penjualan menjadi makanan yang aman, p
 
 **Software catering dan central kitchen** menghubungkan demand, resep, inventori, produksi, kualitas, dan delivery menjadi satu rencana operasional.
 
+Saat membandingkan **aplikasi catering**, tanyakan apakah perubahan jumlah porsi akan memperbarui kebutuhan bahan dan rencana produksi, atau hanya mengubah catatan pesanan. Perbedaan ini menentukan apakah tim masih harus menghitung ulang secara manual.
+
 ## Tantangan Operasional
 
 Masalah yang sering terjadi meliputi:
@@ -27,6 +29,21 @@ Masalah yang sering terjadi meliputi:
 - Sulit menghitung profit aktual per event, menu, dan outlet
 
 Sistem harus memperlihatkan hubungan antarproses. Jika 300 porsi berubah menjadi 360, purchasing, prep sheet, packaging, label, dan kapasitas route harus ikut berubah.
+
+### Contoh hitung kebutuhan untuk 360 porsi
+
+Misalkan satu pesanan nasi box berubah dari 300 menjadi 360 porsi. Resep memakai 120 gram ayam siap masak dan 80 gram beras kering per porsi. Jika hasil bersih ayam setelah trimming adalah 90% dari berat pembelian, kebutuhan minimumnya menjadi:
+
+| Komponen                 | Rumus          | Kebutuhan |
+| ------------------------ | -------------- | --------: |
+| Ayam siap masak          | 360 × 120 gram |   43,2 kg |
+| Ayam yang dibeli         | 43,2 kg ÷ 90%  |     48 kg |
+| Beras kering             | 360 × 80 gram  |   28,8 kg |
+| Kotak dengan cadangan 5% | 360 × 105%     | 378 kotak |
+
+Angka ini adalah **contoh perencanaan**, bukan hasil pelanggan atau angka baku untuk semua menu. Tim dapur tetap perlu memperhitungkan stok yang layak pakai, pesanan lain pada hari yang sama, minimum pembelian pemasok, dan batas waktu persiapan. Perubahan order harus membuat versi rencana baru agar jumlah yang telah dibeli tidak terhitung dua kali.
+
+Saat mengevaluasi software catering, minta vendor mendemokan perubahan 300 ke 360 porsi ini. Periksa apakah sistem memperbarui daftar belanja, tugas produksi, label kemasan, jadwal kirim, dan estimasi biaya secara konsisten. Catat bagian yang masih memerlukan langkah manual.
 
 ## Fitur yang Penting
 
@@ -102,3 +119,5 @@ Tidak selalu. Mulailah dari proses dengan risiko terbesar—biasanya konsolidasi
 ## Kesimpulan
 
 Software catering dan central kitchen mengubah permintaan yang dinamis menjadi rencana produksi yang dapat dijalankan. Sistem membantu tim membeli dengan tepat, memasak konsisten, menjaga keamanan pangan, mengirim dengan benar, dan memahami profit sebenarnya.
+
+Jika bisnis juga menerima pesanan langsung di gerai, baca [panduan aplikasi kasir restoran dan cafe](/blog/aplikasi-kasir-restoran-dan-cafe) untuk memisahkan kebutuhan POS dari perencanaan produksi catering.

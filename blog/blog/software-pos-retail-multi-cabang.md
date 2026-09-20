@@ -91,3 +91,5 @@ POS dapat mengelola pergerakan di toko sementara ERP atau WMS menjadi system of 
 ## Kesimpulan
 
 Software POS multi-cabang memberi retailer satu bahasa operasional. Sistem menjaga checkout tetap cepat sekaligus menyediakan kontrol pusat, visibilitas inventori, dan data siap pakai untuk seluruh jaringan.
+
+Untuk proses meja, menu, dan dapur, baca [panduan aplikasi kasir restoran dan cafe](/blog/aplikasi-kasir-restoran-dan-cafe). Untuk membandingkan aplikasi kasir umum, lihat [panduan kasir gratis dan berbayar](/blog/23-aplikasi-kasir-gratis-vs-berbayar-mana-yang-cocok).

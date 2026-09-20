@@ -62,8 +62,6 @@ function Post({ postData, slug }) {
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
-  const [likeCount, setLikeCount] = useState(50);
-  const [viewCount, setViewCount] = useState(1000);
   const [showShareModal, setShowShareModal] = useState(false);
   const [showTableOfContents, setShowTableOfContents] = useState(false);
   const [activeSection, setActiveSection] = useState("");
@@ -92,17 +90,8 @@ function Post({ postData, slug }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Auto-increment view count on mount
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setViewCount((prev) => prev + 1);
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
   const handleLike = () => {
     setIsLiked(!isLiked);
-    setLikeCount((prev) => (isLiked ? prev - 1 : prev + 1));
   };
 
   const handleBookmark = () => {
@@ -143,14 +132,9 @@ function Post({ postData, slug }) {
     },
   ];
 
-  // Simulate article stats
   const articleStats = {
     difficulty: "Intermediate",
     category: "Cybersecurity",
-    lastUpdated: postData.date,
-    contributors: Math.floor(Math.random() * 5) + 1,
-    codeExamples: Math.floor(Math.random() * 10) + 3,
-    references: Math.floor(Math.random() * 15) + 5,
   };
 
   return (
@@ -158,6 +142,7 @@ function Post({ postData, slug }) {
       <NextSeo
         title={`${postData.title} | Codeverta`}
         description={postData.desc}
+        canonical={shareUrl}
         noindex={postData.noindex === true}
         openGraph={{
           title: postData.title,
@@ -172,7 +157,7 @@ function Post({ postData, slug }) {
               alt: postData.title,
             },
           ],
-          locale: "en_US",
+          locale: "id_ID",
           type: "article",
         }}
         twitter={{
@@ -363,28 +348,6 @@ function Post({ postData, slug }) {
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 
-                {/* Floating Article Stats */}
-                <div className="absolute top-4 right-4 space-y-2">
-                  <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">
-                    <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
-                      <Eye className="w-4 h-4" />
-                      <span className="font-medium">
-                        {viewCount.toLocaleString()}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-lg px-3 py-2 text-sm">
-                    <div className="flex items-center space-x-2 text-gray-700 dark:text-gray-300">
-                      <Heart
-                        className={`w-4 h-4 ${
-                          isLiked ? "text-red-500 fill-current" : ""
-                        }`}
-                      />
-                      <span className="font-medium">{likeCount}</span>
-                    </div>
-                  </div>
-                </div>
-
                 {/* Difficulty Badge */}
                 <div className="absolute top-4 left-4">
                   <div className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -471,7 +434,9 @@ function Post({ postData, slug }) {
                         <Heart
                           className={`w-4 h-4 ${isLiked ? "fill-current" : ""}`}
                         />
-                        <span className="text-sm font-medium">{likeCount}</span>
+                        <span className="text-sm font-medium">
+                          {isLiked ? "Disukai" : "Suka"}
+                        </span>
                       </button>
 
                       <button

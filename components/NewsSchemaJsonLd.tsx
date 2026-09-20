@@ -11,14 +11,12 @@ const NewsSchemaJsonLd = ({
   category = "Technology",
   keywords = "",
 }) => {
-  const newsSchema = {
+  const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "NewsArticle",
+    "@type": "Article",
     headline: post.title,
     description: post.desc || post.title,
-    image: post.image
-      ? [post.image]
-      : [`https://picsum.photos/seed/${post.slug || "default"}/1200/630`],
+    image: post.image ? [new URL(post.image, baseUrl).toString()] : undefined,
     datePublished: new Date(post.date).toISOString(),
     dateModified: new Date(post.date).toISOString(),
     author: {
@@ -53,22 +51,7 @@ const NewsSchemaJsonLd = ({
       : 0,
     url,
     isAccessibleForFree: true,
-    genre: "Technology News",
-    articleBody: post.contentHtml
-      ? post.contentHtml.replace(/<[^>]*>/g, "").substring(0, 500) + "..."
-      : "",
-    speakable: {
-      "@type": "SpeakableSpecification",
-      cssSelector: ["h1", ".prose"],
-    },
-    backstory:
-      post.desc || "Latest technology news and insights from Codeverta",
-    dateline: `${new Date(post.date).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    })} - Codeverta`,
-    inLanguage: "en",
+    inLanguage: post.lang || "id",
   };
 
   return (
@@ -76,7 +59,7 @@ const NewsSchemaJsonLd = ({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(newsSchema, null, 2),
+          __html: JSON.stringify(articleSchema),
         }}
       />
     </Head>

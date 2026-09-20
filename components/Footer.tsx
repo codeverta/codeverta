@@ -23,7 +23,6 @@ const COMPANY_LINKS = [
   { href: "/privacy-policy", labelKey: "footer.company.links.privacy" },
   { href: "/blog", labelKey: "footer.company.links.blog" },
   { href: "/faq", labelKey: "footer.company.links.faq" },
-  { href: "/gallery", labelKey: "footer.company.links.gallery" },
 ];
 
 const PROGRAM_LINKS = [

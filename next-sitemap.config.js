@@ -4,6 +4,11 @@ const nextI18nConfig = require("./next-i18next.config");
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
+const {
+  archivedBlogRedirects,
+  unverifiedBlogCaseStudies,
+} = require("./lib/content-curation.json");
+const unverifiedBlogKeys = new Set(unverifiedBlogCaseStudies);
 
 const siteUrl = process.env.SITE_URL || "https://www.codeverta.com";
 const defaultLocale = nextI18nConfig.i18n.defaultLocale;
@@ -126,6 +131,11 @@ function getBlogTranslationGroups() {
       const file = path.join(source.directory, `${slug}.md`);
       const frontMatter = matter(fs.readFileSync(file, "utf8")).data;
       const translationKey = frontMatter.translationOf || slug;
+      if (
+        translationKey in archivedBlogRedirects ||
+        unverifiedBlogKeys.has(translationKey)
+      )
+        continue;
       const group = groups.get(translationKey) || [];
       group.push({ locale: source.locale, slug, file });
       groups.set(translationKey, group);
@@ -139,18 +149,10 @@ module.exports = {
   siteUrl: siteUrl,
   generateRobotsTxt: true,
   sitemapSize: 5000,
-  exclude: ["/posts", "/posts/*"],
 
   additionalPaths: async () => {
     const entries = [];
-    const contentSections = [
-      "news",
-      "cybersecurity",
-      "ai",
-      "gadget",
-      "startups",
-      "tutorials",
-    ];
+    const contentSections = ["cybersecurity", "tutorials"];
 
     for (const section of contentSections) {
       const directory = path.join(process.cwd(), "blog", section);
@@ -160,9 +162,6 @@ module.exports = {
           loc: routePath,
           changefreq: section === "news" ? "daily" : "weekly",
           priority: 0.8,
-          lastmod: fs
-            .statSync(path.join(directory, `${slug}.md`))
-            .mtime.toISOString(),
           alternateRefs: getAlternateRefs(routePath),
         });
       }
@@ -199,7 +198,6 @@ module.exports = {
           }/blog/${record.slug}`,
           changefreq: "weekly",
           priority: 0.8,
-          lastmod: fs.statSync(record.file).mtime.toISOString(),
           alternateRefs,
         });
       }
@@ -235,7 +233,6 @@ module.exports = {
           loc: locale === defaultLocale ? routePath : `/${locale}${routePath}`,
           changefreq: "weekly",
           priority: 0.9,
-          lastmod: fs.statSync(file).mtime.toISOString(),
           alternateRefs: getAlternateRefs(routePath),
         });
       }
@@ -290,7 +287,6 @@ module.exports = {
       loc: cleanPath,
       changefreq,
       priority,
-      lastmod: new Date().toISOString(),
       alternateRefs,
     };
   },
@@ -298,12 +294,22 @@ module.exports = {
   // Exclude admin/internal pages from sitemap
   exclude: [
     "/blog-form",
+    "/posts",
+    "/posts/*",
+    "/ai",
+    "/ai/*",
+    "/gadget",
+    "/gadget/*",
+    "/news",
+    "/news/*",
+    "/startups",
+    "/startups/*",
+    "/gallery",
+    "/download",
     "/short",
     "/picker",
     "/qr",
     "/editor",
-    "/gallery",
-    "/download",
     "/image/*",
     "/pdf/*",
     "/games/*",

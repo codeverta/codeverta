@@ -1,5 +1,5 @@
 ---
-title: "Aplikasi Kasir Toko dan POS untuk Bisnis Bercabang: Belajar dari Retail dan Restoran Besar"
+title: "Aplikasi Kasir Toko dan POS untuk Bisnis Bercabang"
 date: "2026-05-26"
 image: "/assets/products/42.png"
 desc: "Bisnis Anda buka cabang baru? Jangan pake POS cabang lama yang laporannya terpisah. Pelajari cara POS multi-cabang menyatukan stok, penjualan, & laporan dalam 1 dashboard."

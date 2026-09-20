@@ -1,4 +1,6 @@
 import { ShieldCheck } from "lucide-react";
+import Image from "next/image";
+import { useState } from "react";
 import SeoHead from "@/components/SeoHead";
 import { withI18n } from "@/lib/withi18n";
 import { Heart, Activity } from "lucide-react";
@@ -26,9 +28,12 @@ export default function AboutPage() {
             <div className="w-full lg:w-1/2 relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 {/* Placeholder Image: Office / Team working */}
-                <img
+                <Image
                   src="/assets/images/meeting.jpeg"
                   alt={t("story.imageAlt")}
+                  width={1200}
+                  height={800}
+                  priority
                   className="object-cover w-full h-[25rem]"
                 />
               </div>
@@ -167,6 +172,7 @@ const TeamSection = () => {
 };
 
 const LocationMap = ({ t }: { t: AboutTranslate }) => {
+  const [mapLoaded, setMapLoaded] = useState(false);
   const mapUrl =
     "https://www.google.com/maps?q=-7.7248765,110.3979139&z=18&output=embed";
   const directionsUrl = "https://maps.app.goo.gl/iR4RFPnsUrSRNf8G9";
@@ -187,14 +193,27 @@ const LocationMap = ({ t }: { t: AboutTranslate }) => {
         </div>
 
         <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-          <iframe
-            src={mapUrl}
-            title={t("location.mapTitle")}
-            className="h-[24rem] w-full md:h-[30rem]"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
+          {mapLoaded ? (
+            <iframe
+              src={mapUrl}
+              title={t("location.mapTitle")}
+              className="h-[24rem] w-full md:h-[30rem]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+            />
+          ) : (
+            <button
+              type="button"
+              onClick={() => setMapLoaded(true)}
+              className="flex h-[24rem] w-full flex-col items-center justify-center gap-3 bg-slate-100 px-6 text-center text-slate-700 transition hover:bg-slate-200 md:h-[30rem] dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              <span className="text-lg font-semibold">
+                {t("location.mapTitle")}
+              </span>
+              <span className="text-sm">{t("location.cta")}</span>
+            </button>
+          )}
         </div>
 
         <a

@@ -12,9 +12,9 @@ tags: "coffeeshop, erp, software retail, manajemen coffee shop, UMKM"
 
 Pernah dengar keluhan itu? Atau malah setiap Sabtu-Minggu Anda mendengarnya berulang kali?
 
-Saya ngobrol dengan pemilik coffee shop di kawasan Seturan, Jogja, beberapa waktu lalu. Minggu pertama buka, ramai. Minggu ketiga, stok susi sisa setengah karton — dan itu baru ketahuan pas ada pesanan 15 gelas sekaligus. Barista harus lari ke supermarket, orderan numpuk, pelanggan komplain.
+Bayangkan coffee shop di kawasan Seturan, Jogja, yang ramai pada akhir pekan. Ketika ada pesanan 15 gelas sekaligus, stok susu ternyata tinggal setengah karton. Barista harus membeli bahan mendadak sementara antrean bertambah. Skenario ini adalah contoh untuk menguji pencatatan stok dan alur pesanan, bukan kisah pelanggan tertentu.
 
-"Tiap minggu kayak gini, Mas. Udah kayak _survival mode_ terus."
+Sistem yang akan dipakai perlu bisa memberi tanda sebelum stok bahan kritis, terutama saat pesanan sedang ramai.
 
 ## Masalah yang Sering Muncul di Coffee Shop yang Masih Manual
 
@@ -44,11 +44,11 @@ Hasilnya: pesanan salah, antrean makin panjang, pelanggan kabur.
 
 ### 4. Tidak Tahu Pelanggan Setia vs. Pelanggan _One-Timer_
 
-Siapa pelanggan yang datang tiap hari? Siapa yang baru pertama kali? Tanpa sistem, Anda tidak bisa bedakan. Padahal, biaya untuk mendapatkan pelanggan baru 5× lebih mahal dari mempertahankan yang sudah ada.
+Siapa pelanggan yang datang tiap hari? Siapa yang baru pertama kali? Tanpa pencatatan yang konsisten, pola kunjungan sulit terlihat dan program loyalitas sulit dievaluasi.
 
 ## Solusi: Sistem Manajemen Coffee Shop yang Tepat
 
-Untungnya, masalah-masalah di atas sudah punya solusi yang terbukti. Beberapa coffee shop di Jogja yang tadinya _chaos_ di akhir pekan, sekarang operasionalnya rapi — tanpa harus tambah 3-4 orang staf.
+Saat mengevaluasi software, jalankan contoh transaksi pada jam sibuk: input pesanan, kurangi stok susu dan kopi sesuai resep, batalkan satu item, lalu cocokkan kas dengan laporan penjualan dan stok akhir. Langkah ini menunjukkan bagian mana yang benar-benar terbantu oleh sistem.
 
 Berikut fitur-fitur kunci yang harus ada di sistem manajemen coffee shop:
 
@@ -68,14 +68,14 @@ Di akhir hari, Anda langsung tahu: berapa total penjualan, berapa HPP (Harga Pok
 
 Catat frekuensi kunjungan, preferensi menu, dan riwayat pembelian pelanggan. Kirim promo spesial ke pelanggan yang sudah seminggu tidak datang.
 
-## Kenapa Banyak Coffee Shop di Jogja Pilih Codeverta?
+## Kapan Perlu Sistem yang Disesuaikan?
 
-Kami di **Codeverta** sudah membantu beberapa coffee shop di Jogja mengimplementasikan sistem manajemen yang sesuai dengan skala dan kebutuhan mereka.
+**Codeverta** menawarkan pengembangan sistem manajemen coffee shop yang dapat disesuaikan dengan alur kerja usaha. Minta demo dan ruang lingkup tertulis untuk fitur yang Anda perlukan.
 
 Yang membedakan pendekatan kami:
 
 - **Tidak pake sistem template kaku.** Setiap coffee shop punya alur kerja berbeda — kami custom sesuai operasional Anda, bukan sebaliknya.
-- **Integrasi dengan Midtrans / GoPay / QRIS.** Pembayaran digital langsung nyambung, tanpa perlu rekonsiliasi manual.
+- **Kebutuhan integrasi pembayaran.** Periksa ketersediaan dan biaya integrasi Midtrans, GoPay, atau QRIS pada proyek Anda.
 - **Dashboard bisa diakses dari HP.** Pantau penjualan dari mana saja — bahkan sambil ngopi di coffee shop pesaing (atau mungkin di coffee shop Anda sendiri).
 
 ---
@@ -92,12 +92,12 @@ Sangat cocok. Justru coffee shop kecil yang paling diuntungkan karena dengan tim
 
 ### Berapa biaya implementasi sistem management coffee shop?
 
-Biaya tergantung kompleksitas: mulai dari Rp 5-15 juta untuk coffee shop kecil dengan fitur POS + stok dasar, hingga Rp 20-50 juta untuk yang butuh integrasi multi-cabang, CRM, dan laporan keuangan real-time. Konsultasi gratis dulu — baru kami hitung.
+Biaya bergantung pada modul, jumlah cabang, perangkat, migrasi data, dan integrasi. Minta estimasi tertulis berdasarkan daftar kebutuhan agar biaya implementasi dan pemeliharaan dapat dibandingkan.
 
 ### Apakah sistemnya bisa diintegrasikan dengan GoFood / GrabFood?
 
-Bisa. Kami bisa integrasikan sistem Anda dengan platform delivery populer sehingga pesanan dari GoFood langsung masuk ke dapur Anda — tidak perlu barista catat manual lagi.
+Integrasi perlu diperiksa berdasarkan akses API dan ketentuan masing-masing platform. Minta uji alur pesanan, pembatalan, serta rekonsiliasi sebelum menjadikannya syarat proyek.
 
 ### Berapa lama waktu implementasinya?
 
-Untuk coffee shop skala kecil-menengah, implementasi biasanya 2-4 minggu, tergantung kompleksitas customisasi yang dibutuhkan.
+Durasi bergantung pada cakupan modul, data awal, integrasi, perangkat kasir, dan pelatihan staf. Minta jadwal pilot dan kriteria penerimaan sebelum implementasi penuh.

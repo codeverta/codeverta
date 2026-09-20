@@ -5,6 +5,7 @@ import packageInfo from "../package.json";
 import { appWithTranslation } from "next-i18next";
 import Landing from "@/components/layout/Landing";
 import { GAScript, useGAPageView } from "@/components/GAScript";
+import DeferredAdSense from "@/components/DeferredAdSense";
 
 if (typeof window !== "undefined") {
   // @ts-ignore
@@ -31,6 +32,7 @@ function App({ Component, pageProps }: AppLayoutProps) {
   return (
     <>
       <GAScript />
+      <DeferredAdSense />
       {pageWithLayout}
     </>
   );

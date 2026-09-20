@@ -3,37 +3,50 @@
 // Usage: Set NEXT_PUBLIC_GA_ID in .env.local
 // Example: NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
-import Script from "next/script";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export function GAScript() {
-  if (!GA_ID) return null;
+  useEffect(() => {
+    if (!GA_ID || typeof window === "undefined") return;
 
-  return (
-    <>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-        }}
-      />
-    </>
-  );
+    const load = () => {
+      if (document.querySelector(`script[data-codeverta-ga="${GA_ID}"]`))
+        return;
+      const dataLayer = ((window as any).dataLayer =
+        (window as any).dataLayer || []);
+      (window as any).gtag =
+        (window as any).gtag ||
+        function gtag(...args: any[]) {
+          dataLayer.push(args);
+        };
+      (window as any).gtag("js", new Date());
+      (window as any).gtag("config", GA_ID, {
+        page_path: window.location.pathname,
+      });
+      const script = document.createElement("script");
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      script.dataset.codevertaGa = GA_ID;
+      document.head.appendChild(script);
+    };
+
+    const idle =
+      "requestIdleCallback" in window
+        ? (window as any).requestIdleCallback(load, { timeout: 4000 })
+        : window.setTimeout(load, 2500);
+    return () => {
+      if ("cancelIdleCallback" in window && typeof idle === "number") {
+        (window as any).cancelIdleCallback(idle);
+      } else {
+        window.clearTimeout(idle);
+      }
+    };
+  }, []);
+
+  return null;
 }
 
 // Hook untuk fire events

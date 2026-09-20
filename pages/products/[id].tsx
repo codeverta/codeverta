@@ -25,7 +25,6 @@ import {
   Github,
   Download,
   Sparkles,
-  Star,
   X,
   ChevronLeft,
   ChevronRight,
@@ -67,6 +66,52 @@ import {
 } from "@/lib/projects";
 import { getLocalizedPath } from "@/lib/seo";
 import ContactForm from "@/components/contact-form";
+
+const productSearchTopics: Record<
+  string,
+  { title: string; heading: string; guide: string }
+> = {
+  "enterprise-erp-system": {
+    title: "Software ERP Indonesia untuk Integrasi Operasional | Codeverta",
+    heading: "Software ERP Indonesia",
+    guide: "/blog/software-erp-indonesia-panduan-memilih",
+  },
+  "warehouse-inventory-control": {
+    title: "Software Inventory & Aplikasi Stok Barang | Codeverta",
+    heading: "Software Inventory dan Aplikasi Stok Barang",
+    guide: "/blog/software-inventory-aplikasi-stok-barang",
+  },
+  "warehouse-management-system": {
+    title: "Software Manajemen Gudang (WMS) | Codeverta",
+    heading: "Software Manajemen Gudang (WMS)",
+    guide: "/blog/panduan-lengkap-software-manajemen-gudang",
+  },
+  "smart-pos-system": {
+    title: "Aplikasi Kasir dan POS untuk Bisnis | Codeverta",
+    heading: "Aplikasi Kasir dan POS untuk Bisnis",
+    guide: "/blog/aplikasi-kasir-restoran-dan-cafe",
+  },
+  "coffee-shop-pos-management-system": {
+    title: "Aplikasi Kasir Cafe dan Coffee Shop | Codeverta",
+    heading: "Aplikasi Kasir Cafe dan Coffee Shop",
+    guide: "/blog/aplikasi-kasir-restoran-dan-cafe",
+  },
+  "gym-management-system": {
+    title: "Software Gym dan Aplikasi Membership | Codeverta",
+    heading: "Software Gym dan Aplikasi Membership",
+    guide: "/blog/software-manajemen-keanggotaan-gym",
+  },
+  "catering-kitchen-production-system": {
+    title: "Software Catering dan Central Kitchen | Codeverta",
+    heading: "Software Catering dan Central Kitchen",
+    guide: "/blog/software-catering-central-kitchen",
+  },
+  "contractor-project-management-erp": {
+    title: "Software Kontraktor dan Manajemen Proyek | Codeverta",
+    heading: "Software Kontraktor dan Manajemen Proyek",
+    guide: "/industry/engineering-construction",
+  },
+};
 
 export function ProjectBreadcrumb({ projectName }) {
   return (
@@ -454,39 +499,18 @@ export default function ProjectDetailPage({
   const { t } = useTranslation("common");
   const siteUrl = "https://www.codeverta.com";
   const pageUrl = getLocalizedUrl(locale, `/products/${product.id}`);
+  const searchTopic =
+    locale === "id" ? productSearchTopics[product.id] : undefined;
 
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "Service",
     name: product.name,
     image: `${siteUrl}${product.image}`,
     description: product.fullDescription,
-    brand: { "@type": "Brand", name: "Codeverta" },
-    sku: product.id,
-    category: product.category,
-    releaseDate: "2024-12-01",
-    aggregateRating: product.seo
-      ? {
-          "@type": "AggregateRating",
-          ratingValue: product.seo.ratingValue,
-          reviewCount: product.seo.reviewCount,
-        }
-      : undefined,
-    review: product.seo?.reviews.map((rev) => ({
-      "@type": "Review",
-      author: { "@type": "Person", name: rev.author },
-      datePublished: rev.date,
-      reviewBody: rev.body,
-      reviewRating: { "@type": "Rating", ratingValue: rev.rating },
-    })),
-    offers: {
-      "@type": "Offer",
-      url: pageUrl,
-      priceCurrency: "IDR",
-      price: "5000000",
-      availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: "Codeverta" },
-    },
+    serviceType: product.category,
+    url: pageUrl,
+    provider: { "@type": "Organization", name: "Codeverta", url: siteUrl },
   };
 
   const localizedDescription =
@@ -498,7 +522,7 @@ export default function ProjectDetailPage({
   return (
     <>
       <SeoHead
-        title={buildProductSeoTitle(product.name, locale)}
+        title={searchTopic?.title || buildProductSeoTitle(product.name, locale)}
         description={finalDesc}
         url={pageUrl}
         image={`${siteUrl}${product.image}`}
@@ -525,14 +549,36 @@ export default function ProjectDetailPage({
                     {product.category}
                   </Badge>
                   <Badge variant="secondary">v{product.version}</Badge>
+                  {locale === "id" && (
+                    <Badge variant="outline">
+                      {product.status === "In Development"
+                        ? "Dalam pengembangan"
+                        : product.status === "Completed"
+                        ? "Selesai"
+                        : "Siap digunakan"}
+                    </Badge>
+                  )}
                 </div>
 
                 <h1 className="text-4xl font-bold text-slate-900 mb-4">
-                  {product.name}
+                  {searchTopic?.heading || product.name}
                 </h1>
                 <p className="text-xl text-slate-600 mb-6">
                   {product.fullDescription}
                 </p>
+                {searchTopic && (
+                  <p className="mb-6 text-sm leading-relaxed text-slate-600">
+                    Ingin mengevaluasi kebutuhan dan alur kerja sebelum memilih
+                    sistem?{" "}
+                    <Link
+                      href={searchTopic.guide}
+                      className="font-semibold text-blue-700 underline underline-offset-2"
+                    >
+                      Baca panduan pemilihan software
+                    </Link>
+                    .
+                  </p>
+                )}
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {product.technologies.map((tech, index) => (
@@ -657,21 +703,19 @@ export default function ProjectDetailPage({
                   <CardHeader>
                     <CardTitle className="flex items-center gap-2">
                       <Clock className="w-5 h-5" />
-                      {overview.projectInfo.title}
+                      Info Solusi
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-3">
                     <div>
                       <p className="text-sm text-slate-600">
-                        {overview.projectInfo.clientLabel}
+                        Status pengembangan
                       </p>
-                      <p className="font-semibold">{product.client}</p>
+                      <p className="font-semibold">{product.status}</p>
                     </div>
                     <div>
-                      <p className="text-sm text-slate-600">
-                        {overview.projectInfo.durationLabel}
-                      </p>
-                      <p className="font-semibold">{product.duration}</p>
+                      <p className="text-sm text-slate-600">Versi</p>
+                      <p className="font-semibold">{product.version}</p>
                     </div>
                     <div>
                       <p className="text-sm text-slate-600">
@@ -878,24 +922,6 @@ export default function ProjectDetailPage({
                     </div>
                   </CardContent>
                 </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle>
-                      {specifications.performanceMetrics.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    {specifications.performanceMetrics.metrics.map(
-                      (metric, index) => (
-                        <div key={index} className="flex justify-between">
-                          <span className="text-slate-600">{metric.label}</span>
-                          <span className="font-semibold">{metric.value}</span>
-                        </div>
-                      )
-                    )}
-                  </CardContent>
-                </Card>
               </div>
 
               <Card>
@@ -917,68 +943,6 @@ export default function ProjectDetailPage({
               </Card>
             </TabsContent>
           </Tabs>
-
-          {/* Reviews */}
-          {product.seo?.reviews && (
-            <section className="mt-16 container mx-auto px-4">
-              <div className="flex items-center justify-between mb-8">
-                <div>
-                  <h2 className="text-2xl font-bold text-slate-900">
-                    Ulasan Klien
-                  </h2>
-                  <div className="flex items-center gap-2 mt-2">
-                    <div className="flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <Star
-                          key={i}
-                          className={`w-5 h-5 ${
-                            i < Math.floor(product.seo?.ratingValue)
-                              ? "fill-current"
-                              : ""
-                          }`}
-                        />
-                      ))}
-                    </div>
-                    <span className="font-bold">
-                      {product.seo?.ratingValue}
-                    </span>
-                    <span className="text-slate-500">
-                      ({product.seo?.reviewCount} ulasan)
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {product.seo.reviews.map((rev, idx) => (
-                  <Card key={idx} className="bg-white border-none shadow-sm">
-                    <CardContent className="p-6">
-                      <div className="flex text-yellow-400 mb-4">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className={`w-4 h-4 ${
-                              i < parseInt(rev.rating) ? "fill-current" : ""
-                            }`}
-                          />
-                        ))}
-                      </div>
-                      <p className="text-slate-700 italic mb-6">"{rev.body}"</p>
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">
-                          {rev.author[0]}
-                        </div>
-                        <div>
-                          <p className="font-semibold text-sm">{rev.author}</p>
-                          <p className="text-xs text-slate-500">{rev.role}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </section>
-          )}
 
           {/* Pricing */}
           {priceList && (

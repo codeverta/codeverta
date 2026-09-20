@@ -41,11 +41,6 @@ export default function AdSense({ adType = 1 }: { adType?: 1 | 2 | 3 }) {
   } else {
     return (
       <>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2242816010232507"
-          crossOrigin="anonymous"
-        ></script>
         <ins
           className="adsbygoogle"
           style={{ display: "block", textAlign: "center" }}

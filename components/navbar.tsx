@@ -5,7 +5,6 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
-import projects from "../projects.json";
 import { Languages, Check } from "lucide-react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
@@ -54,7 +53,7 @@ const Navbar = ({
     router;
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const lang = locale;
-  const [localizedProjects, setLocalizedProjects] = useState(projects);
+  const [localizedProjects, setLocalizedProjects] = useState({ projects: [] });
   const megaMenuData = getMegaMenuData(t, localizedProjects);
   const availableLanguages = languages.filter(
     (language) => !locales || locales.includes(language.code)
@@ -94,6 +93,7 @@ const Navbar = ({
     const localeCandidates = [locale, locale?.split("-")[0]].filter(Boolean);
 
     async function loadLocalizedProjects() {
+      const baseProjects = (await import("../projects.json")).default;
       for (const candidate of localeCandidates) {
         try {
           const response = await fetch(`/locales/${candidate}/projects.json`);
@@ -108,9 +108,9 @@ const Navbar = ({
               ])
             );
             setLocalizedProjects({
-              ...projects,
+              ...baseProjects,
               ...localizedData,
-              projects: projects.projects.map(
+              projects: baseProjects.projects.map(
                 (project) => localizedById.get(project?.product?.id) || project
               ),
             });
@@ -121,13 +121,23 @@ const Navbar = ({
         }
       }
 
-      if (!cancelled) setLocalizedProjects(projects);
+      if (!cancelled) setLocalizedProjects(baseProjects);
     }
 
-    loadLocalizedProjects();
+    const idle =
+      "requestIdleCallback" in window
+        ? (window as any).requestIdleCallback(loadLocalizedProjects, {
+            timeout: 1500,
+          })
+        : window.setTimeout(loadLocalizedProjects, 1000);
 
     return () => {
       cancelled = true;
+      if ("cancelIdleCallback" in window && typeof idle !== "number") {
+        (window as any).cancelIdleCallback(idle);
+      } else {
+        window.clearTimeout(idle);
+      }
     };
   }, [locale]);
 

@@ -18,10 +18,8 @@ const BlogSchemaJsonLd = ({
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
-    description: post.description || post.excerpt || "",
-    image: post.featuredImage
-      ? `${baseUrl}${post.featuredImage}`
-      : `${baseUrl}/Million-Candles/Lilin-Gelas-Biru/1.png`,
+    description: post.desc || post.description || post.excerpt || "",
+    image: post.image ? new URL(post.image, baseUrl).toString() : undefined,
     datePublished: post.date,
     dateModified: post.modified || post.date,
     author: {
@@ -31,11 +29,8 @@ const BlogSchemaJsonLd = ({
     },
     publisher: {
       "@type": "Organization",
-      name: "UD Codeverta",
-      logo: {
-        "@type": "ImageObject",
-        url: `${baseUrl}/Million-Candles/Lilin-Gelas-Biru/1.png`,
-      },
+      name: "Codeverta",
+      url: baseUrl,
     },
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -68,9 +63,7 @@ const BlogSchemaJsonLd = ({
         description: post.howTo.description || post.description || "",
         image:
           post.howTo.image ||
-          (post.featuredImage
-            ? `${baseUrl}${post.featuredImage}`
-            : `${baseUrl}/images/default-featured.jpg`),
+          (post.image ? new URL(post.image, baseUrl).toString() : undefined),
         estimatedCost: post.howTo.estimatedCost
           ? {
               "@type": "MonetaryAmount",

@@ -46,11 +46,12 @@ function Post({ postData, slug }) {
       <NextSeo
         title={`${postData.title} | Codeverta`}
         description={postData.desc}
+        canonical={`https://www.codeverta.com/tutorials/${slug}`}
         noindex={postData.noindex === true}
         openGraph={{
           title: postData.title,
           description: postData.desc,
-          url: `https://www.codeverta.com/news/${slug}`,
+          url: `https://www.codeverta.com/tutorials/${slug}`,
           siteName: "Codeverta",
           images: [
             {
@@ -60,7 +61,7 @@ function Post({ postData, slug }) {
               alt: postData.title,
             },
           ],
-          locale: "en_US",
+          locale: "id_ID",
           type: "article",
         }}
         twitter={{
@@ -96,7 +97,11 @@ function Post({ postData, slug }) {
             overflow-hidden p-6 sm:p-8 md:p-12 border border-gray-200 dark:border-gray-700"
           >
             {/* Breadcrumb */}
-            <Breadcrumb postTitle={postData.title} slug={slug} />
+            <Breadcrumb
+              postTitle={postData.title}
+              slug={slug}
+              type="tutorials"
+            />
             {/* Header Image */}
             <div className="w-full h-64 md:h-96 overflow-hidden rounded-lg mb-8">
               {postData.image ? (
@@ -189,7 +194,7 @@ function Post({ postData, slug }) {
             />
 
             <DisqusThread
-              url={"https://www.codeverta.com/news/" + slug}
+              url={"https://www.codeverta.com/tutorials/" + slug}
               identifier={slug}
               title={postData.title}
             />

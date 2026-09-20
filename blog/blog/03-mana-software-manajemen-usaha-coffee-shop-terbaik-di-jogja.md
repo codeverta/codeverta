@@ -2,7 +2,7 @@
 title: "Software Manajemen Coffee Shop di Jogja Menjadi Solusi Modern untuk Cafe yang Lebih Cepat, Rapi, dan Untung"
 date: "2026-05-14"
 image: "/assets/coffeeshop/coffeeshop-poster.png"
-desc: "Software ERP Coffee Shop Codeverta membantu mengelola POS, stok bahan baku, dan loyalitas pelanggan secara real-time. Tingkatkan efisiensi operasional hingga 30% untuk bisnis kopi Anda. Dapatkan demo gratis!"
+desc: "Panduan menilai software manajemen coffee shop di Jogja berdasarkan alur kasir, stok bahan, laporan, integrasi, dan kebutuhan cabang."
 tags: "erp, software retail, coffeeshop jogja"
 ---
 

@@ -2,8 +2,8 @@
 title: "Software Manajemen Laundry Menjadi Solusi Modern untuk Bisnis Laundry yang Lebih Cepat, Rapi, dan Menguntungkan"
 date: "2026-05-14"
 image: "/assets/laundry-management/laundry-system-software.png"
-desc: "Software ERP Coffee Shop Codeverta membantu mengelola POS, stok bahan baku, dan loyalitas pelanggan secara real-time. Tingkatkan efisiensi operasional hingga 30% untuk bisnis kopi Anda. Dapatkan demo gratis!"
-tags: "laundry jogja, money laundry, bisnis cuci"
+desc: "Panduan memilih software manajemen laundry untuk mencatat pesanan, status cucian, pembayaran, stok bahan, dan laporan cabang."
+tags: "software laundry, sistem manajemen laundry, aplikasi laundry, operasional laundry"
 ---
 
 # Software Manajemen Laundry: Solusi Modern untuk Bisnis Laundry yang Lebih Cepat, Rapi, dan Menguntungkan

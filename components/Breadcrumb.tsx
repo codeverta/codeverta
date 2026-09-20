@@ -2,35 +2,17 @@ import { ChevronRight, Home } from "lucide-react";
 import Link from "next/link";
 
 // Dynamic Breadcrumb Component
-const Breadcrumb = ({ postTitle, slug, type='ai' }) => {
+const Breadcrumb = ({ postTitle, slug, type = "cybersecurity" }) => {
   let back = (
     <Link
       className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-      href="/ai"
+      href="/cybersecurity"
     >
-      AI
+      Cybersecurity
     </Link>
   );
 
-  if(type === 'news') {
-    back = (
-      <Link
-        className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-        href="/news"
-      >
-        News
-      </Link>
-    );
-  } else if(type === 'startups') {
-    back = (
-      <Link
-        className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-        href="/startups"
-      >
-        Startups
-      </Link>
-    );
-  } else if(type === 'tutorials') {
+  if (type === "tutorials") {
     back = (
       <Link
         className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"

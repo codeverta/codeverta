@@ -129,7 +129,12 @@ export default function RedirectPage() {
 }
 
 export async function getServerSideProps({ params }) {
-  if (params?.shortCode === "[shortCode]") {
+  if (
+    params?.shortCode === "[shortCode]" ||
+    ["news", "ai", "gadget", "startups", "gallery", "download"].includes(
+      params?.shortCode
+    )
+  ) {
     return { notFound: true };
   }
   return {

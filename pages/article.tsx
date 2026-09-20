@@ -7,9 +7,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import {
   ArrowRight,
-  Newspaper,
-  BrainCircuit,
-  Rocket,
+  Package,
   Code,
   ShieldCheck,
   BotMessageSquare,
@@ -23,25 +21,12 @@ import Link from "next/link";
 // Menambahkan properti 'icon' dan 'iconBgColor' pada data kategori
 const categories = [
   {
-    title: "News",
-    description: "Berita terbaru seputar teknologi dan inovasi.",
-    href: "/news",
-    icon: <Newspaper className="h-8 w-8 text-blue-500" />,
+    title: "Artikel Bisnis dan ERP",
+    description:
+      "Panduan operasional, ERP, POS, dan solusi digital untuk bisnis.",
+    href: "/blog",
+    icon: <Package className="h-8 w-8 text-blue-500" />,
     iconBgColor: "bg-blue-100 dark:bg-blue-900/50",
-  },
-  {
-    title: "AI",
-    description: "Jelajahi perkembangan terbaru dalam Kecerdasan Buatan.",
-    href: "/ai",
-    icon: <BrainCircuit className="h-8 w-8 text-purple-500" />,
-    iconBgColor: "bg-purple-100 dark:bg-purple-900/50",
-  },
-  {
-    title: "Startups",
-    description: "Kisah inspiratif dan strategi dari dunia startup.",
-    href: "/startups",
-    icon: <Rocket className="h-8 w-8 text-orange-500" />,
-    iconBgColor: "bg-orange-100 dark:bg-orange-900/50",
   },
   {
     title: "Tutorials",

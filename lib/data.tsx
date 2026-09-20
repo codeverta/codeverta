@@ -502,9 +502,9 @@ export const getMegaMenuData = (t, projects = { projects: [] }) => {
           title: "Insights",
           items: [
             {
-              name: "Tech News",
-              href: "/news",
-              description: t("mega_menu.news.tech"),
+              name: "Panduan ERP",
+              href: "/blog/panduan-pengembangan-custom-erp",
+              description: "Panduan memilih dan mengembangkan sistem ERP.",
             },
             {
               name: "Articles & Blog",
