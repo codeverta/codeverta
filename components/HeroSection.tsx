@@ -1,12 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import FloatingCards from "./FloatingCards";
-import RotatingText from "./RotatingText";
 import { WhatsAppIcon, WhatsappWrapper } from "./WhatsappButton";
 
 export default function HeroSection({ t }) {
@@ -28,12 +26,7 @@ export default function HeroSection({ t }) {
       </div>
 
       <div className="container px-4 md:px-6 relative z-10 pointer-events-none">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center max-w-5xl mx-auto pointer-events-auto"
-        >
+        <div className="text-center max-w-5xl mx-auto pointer-events-auto">
           <Badge
             className="mb-5 md:mb-8 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md border border-gray-200 dark:border-zinc-800 shadow-sm rounded-full px-4 md:px-5 py-1.5 md:py-2 text-xs md:text-sm leading-relaxed font-semibold text-gray-700 dark:text-gray-300 transition-all hover:shadow-md cursor-default"
             variant="secondary"
@@ -43,18 +36,9 @@ export default function HeroSection({ t }) {
 
           <h1 className="text-[2.25rem] min-[390px]:text-[2.5rem] md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 md:mb-6 bg-clip-text text-transparent bg-gradient-to-br from-gray-900 via-gray-800 to-gray-500 dark:from-white dark:via-gray-200 dark:to-gray-500 pb-2 md:pb-4 leading-[1.08] md:leading-[1.1]">
             {t("home.hero.prefix")} <br />
-            <RotatingText
-              texts={safeRotatingTexts}
-              mainClassName="inline mt-2 px-2.5 sm:px-4 md:px-5 bg-cyan-400 dark:bg-cyan-500 text-gray-900 overflow-hidden py-1 md:py-2 justify-center rounded-lg md:rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] md:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,0.2)] md:dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] border-2 border-gray-900 dark:border-white transition-all"
-              staggerFrom={"last"}
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "-120%" }}
-              staggerDuration={0.025}
-              splitLevelClassName="overflow-hidden pb-1 sm:pb-2 md:pb-2"
-              transition={{ type: "spring", damping: 30, stiffness: 400 }}
-              rotationInterval={2500}
-            />{" "}
+            <span className="inline-block mt-2 px-2.5 sm:px-4 md:px-5 bg-cyan-400 dark:bg-cyan-500 text-gray-900 py-1 md:py-2 rounded-lg md:rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] md:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[3px_3px_0px_0px_rgba(255,255,255,0.2)] md:dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] border-2 border-gray-900 dark:border-white">
+              {safeRotatingTexts[0]}
+            </span>{" "}
             {t("home.hero.suffix")}
           </h1>
 
@@ -107,7 +91,7 @@ export default function HeroSection({ t }) {
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

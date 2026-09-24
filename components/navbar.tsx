@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "next-themes";
@@ -185,6 +186,7 @@ const Navbar = ({
       <button
         onClick={() => setLangDropdownOpen(!langDropdownOpen)}
         className="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        aria-expanded={langDropdownOpen}
       >
         <Languages className="w-5 h-5 text-muted-foreground" />
         <span className="text-xs font-bold uppercase">{locale}</span>
@@ -195,45 +197,46 @@ const Navbar = ({
         />
       </button>
 
-      <AnimatePresence>
-        {langDropdownOpen && (
-          <>
-            {/* Tampilan MOBILE: Dialog / Modal Pop-up */}
-            {isMobile ? (
-              <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-                {/* Backdrop / Latar Belakang Gelap */}
-                {/* <motion.div
+      {isMobile ? (
+        mounted &&
+        typeof document !== "undefined" &&
+        createPortal(
+          <AnimatePresence>
+            {langDropdownOpen && (
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
-                className="fixed inset-0 bg-black/50 backdrop-blur-sm"
+                className="fixed inset-0 z-[200] flex items-center justify-center bg-black/40 p-4 backdrop-blur-sm"
                 onClick={() => setLangDropdownOpen(false)}
-              /> */}
-
-                {/* Kotak Dialog */}
+              >
                 <motion.div
                   initial={{ scale: 0.95, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0.95, opacity: 0 }}
-                  className="relative w-full mt-20 max-w-md max-h-[80vh] overflow-y-auto bg-background border rounded-2xl shadow-2xl p-4 z-10"
+                  role="dialog"
+                  aria-modal="true"
+                  aria-label={t("ui.chooseLanguage")}
+                  className="flex max-h-[calc(100dvh-2rem)] w-full max-w-md flex-col overflow-hidden rounded-2xl border bg-background p-4 shadow-2xl"
+                  onClick={(event) => event.stopPropagation()}
                 >
-                  <div className="flex items-center justify-between pb-3 mb-3 border-b">
-                    <span className="font-bold text-base text-foreground">
+                  <div className="mb-3 flex flex-shrink-0 items-center justify-between border-b pb-3">
+                    <span className="text-base font-bold text-foreground">
                       {t("ui.chooseLanguage")}
                     </span>
                     <button
                       onClick={() => setLangDropdownOpen(false)}
-                      className="text-muted-foreground hover:text-foreground text-sm p-1"
+                      className="p-1 text-sm text-muted-foreground hover:text-foreground"
                     >
                       {t("ui.close")}
                     </button>
                   </div>
-                  <div className="grid grid-cols-2 gap-1">
+                  <div className="grid min-h-0 grid-cols-2 gap-1 overflow-y-auto overscroll-contain">
                     {availableLanguages.map((l) => (
                       <button
                         type="button"
                         key={l.code}
-                        className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-accent transition-colors text-sm text-left ${
+                        className={`flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm transition-colors hover:bg-accent ${
                           lang === l.code ? "bg-accent font-bold" : ""
                         }`}
                         onClick={() => {
@@ -244,49 +247,53 @@ const Navbar = ({
                         <span>{l.flag}</span>
                         <span className="truncate">{l.name}</span>
                         {lang === l.code && (
-                          <Check className="w-4 h-4 text-primary ml-auto flex-shrink-0" />
+                          <Check className="ml-auto h-4 w-4 flex-shrink-0 text-primary" />
                         )}
                       </button>
                     ))}
                   </div>
                 </motion.div>
-              </div>
-            ) : (
-              // Tampilan DESKTOP: Tetap Dropdown Biasa
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 10 }}
-                className="absolute top-full mt-2 right-0 w-72 max-h-[70vh] overflow-y-auto bg-background border rounded-xl shadow-xl z-[60]"
-              >
-                <div className="flex flex-col py-1">
-                  {availableLanguages.map((l) => (
-                    <button
-                      type="button"
-                      key={l.code}
-                      className="w-full flex items-center justify-between px-4 py-2.5 hover:bg-accent transition-colors text-sm text-left"
-                      onClick={() => {
-                        changeLanguage(l.code);
-                        setLangDropdownOpen(false);
-                      }}
-                    >
-                      <div className="flex items-center gap-3">
-                        <span>{l.flag}</span>
-                        <span className={lang === l.code ? "font-bold" : ""}>
-                          {l.name}
-                        </span>
-                      </div>
-                      {lang === l.code && (
-                        <Check className="w-4 h-4 text-primary" />
-                      )}
-                    </button>
-                  ))}
-                </div>
               </motion.div>
             )}
-          </>
-        )}
-      </AnimatePresence>
+          </AnimatePresence>,
+          document.body
+        )
+      ) : (
+        <AnimatePresence>
+          {langDropdownOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              className="absolute right-0 top-full z-[60] mt-2 max-h-[70vh] w-72 overflow-y-auto rounded-xl border bg-background shadow-xl"
+            >
+              <div className="flex flex-col py-1">
+                {availableLanguages.map((l) => (
+                  <button
+                    type="button"
+                    key={l.code}
+                    className="w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-accent flex items-center justify-between"
+                    onClick={() => {
+                      changeLanguage(l.code);
+                      setLangDropdownOpen(false);
+                    }}
+                  >
+                    <div className="flex items-center gap-3">
+                      <span>{l.flag}</span>
+                      <span className={lang === l.code ? "font-bold" : ""}>
+                        {l.name}
+                      </span>
+                    </div>
+                    {lang === l.code && (
+                      <Check className="h-4 w-4 text-primary" />
+                    )}
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      )}
     </div>
   );
 
