@@ -4,7 +4,7 @@ import { getRelationship, getRelationships } from "utils";
 import packageInfo from "../package.json";
 import { appWithTranslation } from "next-i18next";
 import Landing from "@/components/layout/Landing";
-import { GAScript, useGAPageView } from "@/components/GAScript";
+import { GAScript } from "@/components/GAScript";
 import DeferredAdSense from "@/components/DeferredAdSense";
 
 if (typeof window !== "undefined") {
@@ -25,9 +25,6 @@ function App({ Component, pageProps }: AppLayoutProps) {
       {page}
     </Landing>
   );
-
-  // GA page view tracking
-  useGAPageView();
 
   return (
     <>

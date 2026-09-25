@@ -29,6 +29,12 @@ const PRODUCT_INDEX_LOCALES = new Set([
   "fr",
   "es",
   "th",
+  "ms",
+  "ar",
+  "hi",
+  "vi",
+  "ru",
+  "nl",
 ]);
 const AUTO_LOCALE_PATHS = new Set([
   "/",
