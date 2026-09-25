@@ -5,6 +5,7 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY . .
+# NEXT_PUBLIC_* values are embedded into the browser bundle at build time.
 ARG NEXT_PUBLIC_GA_ID
 ENV NEXT_PUBLIC_GA_ID=${NEXT_PUBLIC_GA_ID}
 RUN pnpm build

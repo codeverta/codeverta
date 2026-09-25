@@ -3,7 +3,7 @@ services:
     build:
       context: .
       args:
-        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID}
+        NEXT_PUBLIC_GA_ID: "${NEXT_PUBLIC_GA_ID:?Set NEXT_PUBLIC_GA_ID in .env}"
     container_name: codeverta
     restart: unless-stopped
     env_file: .env
