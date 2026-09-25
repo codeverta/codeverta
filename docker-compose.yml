@@ -1,6 +1,9 @@
 services:
   codeverta:
-    build: .
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID}
     container_name: codeverta
     restart: unless-stopped
     env_file: .env
@@ -10,15 +13,16 @@ services:
       HOSTNAME: 0.0.0.0
       TRAFFIC_DEBUG: ${TRAFFIC_DEBUG:-false}
     networks:
-      - lms_net
+      - codeverta_net
 
   cloudflared:
     image: cloudflare/cloudflared:latest
     restart: always
     command: tunnel --no-autoupdate run --token ${CF_TUNNEL_TOKEN}
     networks:
-      - lms_net
+      - codeverta_net
 
 networks:
-  lms_net:
-    driver: bridge
+  codeverta_net:
+    external: true
+    name: codeverta_net

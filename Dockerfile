@@ -5,6 +5,8 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 COPY . .
+ARG NEXT_PUBLIC_GA_ID
+ENV NEXT_PUBLIC_GA_ID=${NEXT_PUBLIC_GA_ID}
 RUN pnpm build
 
 # Stage 2: Runner (Ringan)
