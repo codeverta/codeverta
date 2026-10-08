@@ -1,139 +1,31 @@
-import { useState } from "react";
 import Head from "next/head";
-import Link from "next/link";
+import { isValidElement } from "react";
+import { useRouter } from "next/router";
 import {
-  Package,
-  BarChart3,
-  Truck,
-  Scan,
-  ClipboardList,
-  Bell,
-  CheckCircle,
   ArrowRight,
-  Boxes,
-  TrendingUp,
-  Clock,
-  Star,
-  Wifi,
-  X,
+  BarChart3,
+  CheckCircle2,
+  PackageCheck,
+  Truck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import PricingCard from "@/components/products/PricingCard";
 import {
-  ArticleSection,
   ArticlePreview,
+  ArticleSection,
 } from "@/components/products/ArticleSection";
+import WmsEvidenceSection from "@/components/products/WmsEvidenceSection";
+import ContactForm from "@/components/contact-form";
 import { WhatsappWrapper } from "@/components/WhatsappButton";
 import SeoHead from "@/components/SeoHead";
 import Layout from "@/components/layout/Landing";
 import { getLocalizedPostsData } from "@/lib/posts";
 import { withI18n } from "@/lib/withi18n";
-import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
-import {
-  appendOfficeLocation,
-  buildProductSeoTitle,
-  getLocalizedUrl,
-} from "@/lib/seo";
+import { getLocalizedUrl } from "@/lib/seo";
+import { getWmsCopy } from "@/lib/wms-copy";
 
-const FEATURES = [
-  {
-    icon: Package,
-    title: "Manajemen Stok Real-Time",
-    desc: "Stok otomatis terupdate untuk setiap transaksi masuk & keluar. Tau persis jumlah barang kapan pun.",
-  },
-  {
-    icon: Scan,
-    title: "Barcode & QR Code",
-    desc: "Scan barcode untuk receiving, picking, packing, dan shipping. Cepat dan minim human error.",
-  },
-  {
-    icon: Truck,
-    title: "Manajemen Pengiriman",
-    desc: "Atur pengiriman, delivery note, packing slip, dan tracking status pengiriman.",
-  },
-  {
-    icon: ClipboardList,
-    title: "Purchase & Sales Order",
-    desc: "Kelola purchase order, sales order, dan blanket order. Auto-update stok saat barang datang.",
-  },
-  {
-    icon: BarChart3,
-    title: "Laporan Inventori",
-    desc: "Lihat stok minimum, barang slow-moving, valuation inventory, dan histori mutasi.",
-  },
-  {
-    icon: Bell,
-    title: "Notifikasi Stok Minimum",
-    desc: "Dapat peringatan otomatis saat stok barang di bawah minimum. Gak perlu cek manual.",
-  },
-];
-
-const PRICING_PLANS = [
-  {
-    tier: "Starter",
-    price: "Rp 200rb",
-    description: "Untuk gudang skala kecil (1-2 gudang)",
-    features: [
-      "Manajemen 1-2 gudang",
-      "Stok real-time",
-      "Barcode scanning",
-      "Laporan stok dasar",
-      "Support email",
-    ],
-  },
-  {
-    tier: "Pro",
-    price: "Rp 450rb",
-    description: "Untuk bisnis dengan 3-5 gudang & tim lebih besar",
-    features: [
-      "Hingga 5 gudang",
-      "Semua fitur Starter",
-      "Purchase & sales order",
-      "Manajemen pengiriman",
-      "Batch & serial number tracking",
-      "Laporan inventori lengkap",
-      "Integrasi dengan POS & akuntansi",
-      "Prioritas support",
-    ],
-    isRecommended: true,
-  },
-  {
-    tier: "Enterprise",
-    price: "Custom",
-    description: "Multi-gudang skala besar dengan automation",
-    features: [
-      "Multi-gudang unlimited",
-      "RFID integration",
-      "API integrasi ERP",
-      "Dedicated server",
-      "Training staf onsite",
-      "24/7 priority support",
-      "Dapat dikustomisasi",
-    ],
-  },
-];
-
-const FAQS = [
-  {
-    q: "Apakah WMS ini cocok untuk UMKM?",
-    a: "Sangat cocok. Paket Starter kami didesain untuk UMKM dengan skala gudang kecil. Fiturnya sederhana, mudah dipelajari, dan gak butuh IT training.",
-  },
-  {
-    q: "Bisa integrasi dengan sistem yang sudah ada?",
-    a: "Bisa. Kami punya API yang bisa diintegrasikan dengan POS, sistem akuntansi, atau e-commerce Anda. Tim teknis kami akan bantu setup.",
-  },
-  {
-    q: "Apakah data bisa di-export ke Excel?",
-    a: "Tentu. Semua data bisa di-export ke CSV/Excel. Jadi Anda tetap punya backup data dan bisa dianalisis lebih lanjut.",
-  },
-  {
-    q: "Berapa lama implementasinya?",
-    a: "Untuk paket Starter biasanya 3-7 hari. Paket Pro dan Enterprise butuh 1-3 minggu tergantung kompleksitas integrasi.",
-  },
-];
+const WORKFLOW_ICONS = [PackageCheck, Truck, BarChart3];
 
 function WarehouseManagementSystem({
   latestArticles,
@@ -141,20 +33,17 @@ function WarehouseManagementSystem({
   latestArticles: ArticlePreview[];
 }) {
   const { locale = "id" } = useRouter();
-  const { t } = useTranslation("common");
-  const productName = "Warehouse Management System Codeverta";
-  const description = appendOfficeLocation(
-    t("productsPage.seo.description"),
-    locale
-  );
+  const copy = getWmsCopy(locale);
 
   return (
     <>
       <SeoHead
-        title={buildProductSeoTitle(productName, locale)}
-        description={description}
+        title={copy.seo.title}
+        description={copy.seo.description}
         url={getLocalizedUrl(locale, "/products/warehouse-management-system")}
-        keywords={t("productsPage.seo.keywords")}
+        keywords={copy.seo.keywords}
+        includeOfficeLocation={false}
+        availableLocales={["id", "en"]}
       />
 
       <Head>
@@ -162,246 +51,280 @@ function WarehouseManagementSystem({
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            name: productName,
-            description,
+            name: copy.seo.productName,
+            description: copy.seo.description,
             brand: { "@type": "Brand", name: "Codeverta" },
-            offers: {
-              "@type": "AggregateOffer",
-              priceCurrency: "IDR",
-              lowPrice: "200000",
-              highPrice: "450000",
-              offerCount: 3,
-            },
           })}
         </script>
       </Head>
 
-      {/* ── Hero ── */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white">
+      <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-amber-950 text-white">
         <div className="container mx-auto px-4 py-20 md:py-28">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-amber-500/20 text-amber-300 border-amber-500/30 mb-6">
-              Warehouse Management System
+          <div className="mx-auto max-w-4xl text-center">
+            <Badge className="mb-6 border-amber-400/30 bg-amber-400/10 text-amber-200">
+              {copy.hero.eyebrow}
             </Badge>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-              Stok Berantakan, Barang Sering Hilang?{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">
-                Saatnya WMS.
+            <h1 className="mb-6 text-4xl font-extrabold leading-tight md:text-5xl lg:text-6xl">
+              {copy.hero.title}{" "}
+              <span className="bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent">
+                {copy.hero.accent}
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-              Kelola stok, barang masuk/keluar, dan laporan inventori secara
-              real-time. Barcode scan, batch tracking, dan notifikasi stok
-              minimum.
+            <p className="mx-auto mb-5 max-w-3xl text-lg leading-relaxed text-slate-300 md:text-xl">
+              {copy.hero.description}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <WhatsappWrapper>
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              <WhatsappWrapper
+                product="wms"
+                intent="demo"
+                cta="request_demo"
+                message={copy.demo.whatsappMessage}
+                className="inline-flex justify-center"
+              >
                 <Button
+                  asChild
                   size="lg"
-                  className="bg-green-500 hover:bg-green-600 text-white font-semibold text-base px-8 py-6"
+                  className="bg-green-500 px-7 py-6 text-base font-semibold text-white hover:bg-green-600"
                 >
-                  Konsultasi Gratis via WhatsApp
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <span>
+                    {copy.hero.primaryCta}
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </span>
                 </Button>
               </WhatsappWrapper>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-slate-500 text-white hover:bg-slate-700 font-semibold text-base px-8 py-6"
+                className="border-slate-500 bg-transparent px-7 py-6 text-base font-semibold text-white hover:bg-slate-800 hover:text-white"
                 onClick={() =>
                   document
-                    .getElementById("fitur")
+                    .getElementById("contoh-sistem")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                Lihat Fitur
+                {copy.hero.secondaryCta}
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── Masalah → Solusi ── */}
-      <section className="bg-slate-50 dark:bg-slate-800/50 py-20">
+      <section className="bg-slate-50 py-20 dark:bg-slate-800/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
-              Masalah vs Solusi
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-amber-600">
+              {copy.workflow.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">
-              Manual Gak Cukup Buat Skala Bisnis Anda
+            <h2 className="mb-4 text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
+              {copy.workflow.title}
             </h2>
-            <div className="space-y-6">
-              {[
-                {
-                  problem: "Tahu-tahu stok barang kosong pas ada order besar",
-                  solution:
-                    "Stok real-time + notifikasi minimum stok. Gak ada lagi kejadian kehabisan stok.",
-                },
-                {
-                  problem:
-                    "Barang hilang atau salah kirim karena catatan manual",
-                  solution:
-                    "Setiap barang tercatat dengan barcode. Tahu posisi dan riwayat mutasi barang.",
-                },
-                {
-                  problem: "Receiving barang lama karena harus cek satu-satu",
-                  solution:
-                    "Scan barcode pas barang datang. Otomatis update stok dan generate receiving report.",
-                },
-                {
-                  problem: "Laporan stok akhir bulan makan waktu berhari-hari",
-                  solution:
-                    "Laporan inventori satu klik. Stok valuation, slow-moving items, semuanya langsung jadi.",
-                },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="bg-white dark:bg-slate-800 rounded-xl p-6 shadow-sm border border-slate-200 dark:border-slate-700"
+            <p className="leading-relaxed text-slate-600 dark:text-slate-300">
+              {copy.workflow.intro}
+            </p>
+          </div>
+          <div className="mx-auto grid max-w-6xl gap-5 lg:grid-cols-3">
+            {copy.workflow.items.map((item, index) => {
+              const Icon = WORKFLOW_ICONS[index];
+              return (
+                <Card
+                  key={item.title}
+                  className="border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="bg-red-100 dark:bg-red-900/30 p-2 rounded-full shrink-0">
-                      <X className="w-4 h-4 text-red-500" />
+                  <CardContent className="p-6">
+                    <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
+                      <Icon className="h-6 w-6" aria-hidden="true" />
                     </div>
-                    <p className="text-slate-600 dark:text-slate-300 flex-1">
-                      {item.problem}
+                    <h3 className="mb-2 text-lg font-bold text-slate-900 dark:text-white">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                      {item.description}
                     </p>
-                    <div className="hidden md:block">
-                      <ArrowRight className="w-5 h-5 text-amber-500 mt-1" />
-                    </div>
-                    <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded-full shrink-0 hidden md:block">
-                      <CheckCircle className="w-4 h-4 text-green-500" />
-                    </div>
-                    <p className="text-slate-700 dark:text-slate-200 flex-1 hidden md:block">
-                      {item.solution}
-                    </p>
-                  </div>
-                  <div className="mt-3 md:hidden flex items-start gap-4">
-                    <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded-full shrink-0">
-                      <CheckCircle className="w-4 h-4 text-green-500" />
-                    </div>
-                    <p className="text-slate-700 dark:text-slate-200 flex-1">
-                      {item.solution}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* ── Fitur ── */}
-      <section id="fitur" className="bg-white dark:bg-slate-900 py-20">
+      <WmsEvidenceSection copy={copy.evidence} />
+
+      <section className="bg-slate-50 py-20 dark:bg-slate-800/50">
         <div className="container mx-auto px-4">
-          <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
-            Fitur Lengkap
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white text-center mb-12">
-            Kontrol Penuh Atas Gudang Anda
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {FEATURES.map((f) => (
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-amber-600">
+              {copy.demo.eyebrow}
+            </p>
+            <h2 className="mb-4 text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
+              {copy.demo.title}
+            </h2>
+            <p className="leading-relaxed text-slate-600 dark:text-slate-300">
+              {copy.demo.description}
+            </p>
+          </div>
+          <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-3">
+            {copy.demo.scenarios.map((scenario) => (
               <Card
-                key={f.title}
-                className="border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow"
+                key={scenario.title}
+                className="border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900"
               >
                 <CardContent className="p-6">
-                  <div className="bg-amber-100 dark:bg-amber-900/30 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <f.icon className="w-6 h-6 text-amber-600 dark:text-amber-400" />
-                  </div>
-                  <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                    {f.title}
+                  <CheckCircle2
+                    className="mb-4 h-6 w-6 text-green-600"
+                    aria-hidden="true"
+                  />
+                  <h3 className="mb-2 font-bold text-slate-900 dark:text-white">
+                    {scenario.title}
                   </h3>
-                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-                    {f.desc}
+                  <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                    {scenario.description}
                   </p>
                 </CardContent>
               </Card>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ── Harga ── */}
-      <section className="bg-slate-50 dark:bg-slate-800/50 py-20">
-        <div className="container mx-auto px-4">
-          <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
-            Harga
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white text-center mb-4">
-            Mulai dari Rp 200rb/Bulan
-          </h2>
-          <p className="text-slate-500 text-center max-w-xl mx-auto mb-12">
-            Investasi yang balik modal dengan mengurangi kehilangan stok dan
-            efisiensi operasional.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {PRICING_PLANS.map((plan, i) => (
-              <PricingCard key={plan.tier} index={i} {...plan} />
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <WhatsappWrapper>
+          <div className="mt-9 text-center">
+            <WhatsappWrapper
+              product="wms"
+              intent="demo"
+              cta="request_demo"
+              message={copy.demo.whatsappMessage}
+              className="inline-flex justify-center"
+            >
               <Button
+                asChild
                 size="lg"
-                className="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-6"
+                className="bg-green-500 px-7 py-6 font-semibold text-white hover:bg-green-600"
               >
-                Konsultasi Gratis — Tentukan Paket yang Tepat
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <span>
+                  {copy.demo.cta}
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </span>
               </Button>
             </WhatsappWrapper>
           </div>
         </div>
       </section>
 
-      {/* ── FAQ ── */}
-      <section className="bg-white dark:bg-slate-900 py-20">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <p className="text-amber-600 text-xs font-semibold uppercase tracking-widest mb-2 text-center">
-            FAQ
-          </p>
-          <h2 className="text-3xl font-bold text-slate-900 dark:text-white text-center mb-12">
-            Pertanyaan Umum
-          </h2>
-          <div className="space-y-4">
-            {FAQS.map((faq) => (
-              <details
-                key={faq.q}
-                className="bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 group"
+      <ContactForm
+        className="bg-white px-4 py-20 dark:bg-slate-900"
+        title={copy.leadForm.title}
+        description={copy.leadForm.description}
+        product="wms"
+        defaultService="wms"
+        defaultIntent="demo"
+      />
+
+      <section className="bg-white py-20 dark:bg-slate-900">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto grid max-w-6xl gap-10 rounded-3xl border border-slate-200 bg-white p-7 shadow-sm dark:border-slate-700 dark:bg-slate-800 md:grid-cols-[1.1fr_0.9fr] md:p-10">
+            <div>
+              <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-amber-600">
+                {copy.scope.eyebrow}
+              </p>
+              <h2 className="mb-4 text-3xl font-bold text-slate-900 dark:text-white">
+                {copy.scope.title}
+              </h2>
+              <p className="leading-relaxed text-slate-600 dark:text-slate-300">
+                {copy.scope.description}
+              </p>
+            </div>
+            <div>
+              <ul className="mb-7 space-y-4">
+                {copy.scope.details.map((detail) => (
+                  <li
+                    key={detail}
+                    className="flex items-start gap-3 text-sm leading-relaxed text-slate-700 dark:text-slate-200"
+                  >
+                    <CheckCircle2
+                      className="mt-0.5 h-5 w-5 shrink-0 text-amber-600"
+                      aria-hidden="true"
+                    />
+                    <span>{detail}</span>
+                  </li>
+                ))}
+              </ul>
+              <WhatsappWrapper
+                product="wms"
+                intent="general"
+                cta="pricing_scope"
+                message={copy.scope.whatsappMessage}
+                className="inline-flex"
               >
-                <summary className="p-5 cursor-pointer font-semibold text-slate-900 dark:text-white flex items-center justify-between list-none">
-                  {faq.q}
-                  <span className="text-slate-400 group-open:rotate-180 transition-transform">
+                <Button
+                  asChild
+                  className="bg-slate-900 text-white hover:bg-slate-700 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100"
+                >
+                  <span>
+                    {copy.scope.cta}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </span>
+                </Button>
+              </WhatsappWrapper>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-slate-50 py-20 dark:bg-slate-800/50">
+        <div className="container mx-auto max-w-4xl px-4">
+          <div className="mb-12 text-center">
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-amber-600">
+              {copy.faq.eyebrow}
+            </p>
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white md:text-4xl">
+              {copy.faq.title}
+            </h2>
+          </div>
+          <div className="space-y-4">
+            {copy.faq.items.map((item) => (
+              <details
+                key={item.question}
+                className="group rounded-xl border border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-900"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 p-5 font-semibold text-slate-900 dark:text-white">
+                  {item.question}
+                  <span
+                    className="text-slate-400 transition-transform group-open:rotate-180"
+                    aria-hidden="true"
+                  >
                     ▼
                   </span>
                 </summary>
-                <div className="px-5 pb-5 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
-                  {faq.a}
-                </div>
+                <p className="px-5 pb-5 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+                  {item.answer}
+                </p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── CTA Final ── */}
-      <section className="bg-gradient-to-br from-amber-600 to-orange-700 text-white py-20">
-        <div className="container mx-auto px-4 text-center max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Rapikan Gudang Anda Mulai Hari Ini
+      <section className="bg-gradient-to-br from-amber-600 to-orange-700 py-20 text-white">
+        <div className="container mx-auto max-w-3xl px-4 text-center">
+          <h2 className="mb-5 text-3xl font-bold md:text-4xl">
+            {copy.finalCta.title}
           </h2>
-          <p className="text-amber-100 text-lg mb-10">
-            Konsultasi gratis 30 menit. Tim kami siap bantu setup WMS sesuai
-            kebutuhan bisnis Anda.
+          <p className="mb-8 text-lg leading-relaxed text-amber-100">
+            {copy.finalCta.description}
           </p>
-          <WhatsappWrapper>
+          <WhatsappWrapper
+            product="wms"
+            intent="demo"
+            cta="request_demo"
+            message={copy.demo.whatsappMessage}
+            className="inline-flex justify-center"
+          >
             <Button
+              asChild
               size="lg"
-              className="bg-white text-amber-600 hover:bg-amber-50 font-bold text-lg px-10 py-7"
+              className="bg-white px-8 py-6 text-base font-bold text-amber-700 hover:bg-amber-50"
             >
-              Chat via WhatsApp Sekarang
-              <ArrowRight className="ml-2 w-5 h-5" />
+              <span>
+                {copy.finalCta.cta}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </span>
             </Button>
           </WhatsappWrapper>
         </div>
@@ -413,17 +336,35 @@ function WarehouseManagementSystem({
 }
 
 WarehouseManagementSystem.getLayout = function (page: React.ReactNode) {
-  return <Layout>{page}</Layout>;
+  const seo = isValidElement<{
+    seo: {
+      title: string;
+      description: string;
+      keywords: string;
+      includeOfficeLocation: boolean;
+    };
+  }>(page)
+    ? page.props.seo
+    : undefined;
+  return (
+    <Layout seo={seo} availableLocales={["id", "en"]}>
+      {page}
+    </Layout>
+  );
 };
 
 export default WarehouseManagementSystem;
 
 export const getStaticProps = withI18n(
-  ["common", "blog"],
+  ["common", "blog", "contact"],
   function ({ locale }) {
+    if (locale !== "id" && locale !== "en") {
+      return { notFound: true };
+    }
+
     const latestArticles = getLocalizedPostsData("blog", locale ?? "id")
-      .filter((p) => {
-        const tags = (p.tags || "").toLowerCase();
+      .filter((post) => {
+        const tags = (post.tags || "").toLowerCase();
         return (
           tags.includes("gudang") ||
           tags.includes("warehouse") ||
@@ -431,15 +372,26 @@ export const getStaticProps = withI18n(
         );
       })
       .slice(0, 3)
-      .map((p: any) => ({
-        id: p.id,
-        title: p.title,
-        desc: p.desc || "",
-        date: p.date,
-        image: p.image || null,
-        tags: p.tags || "",
+      .map((post: any) => ({
+        id: post.id,
+        title: post.title,
+        desc: post.desc || "",
+        date: post.date,
+        image: post.image || null,
+        tags: post.tags || "",
       }));
 
-    return { props: { latestArticles } };
+    const copy = getWmsCopy(locale);
+    return {
+      props: {
+        latestArticles,
+        seo: {
+          title: copy.seo.title,
+          description: copy.seo.description,
+          keywords: copy.seo.keywords,
+          includeOfficeLocation: false,
+        },
+      },
+    };
   }
 );

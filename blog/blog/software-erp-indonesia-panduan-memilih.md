@@ -38,6 +38,8 @@ Biaya yang perlu dibandingkan meliputi lisensi atau pengembangan, migrasi data, 
 
 Jika fokus Anda adalah stok fisik dan pergerakan barang, baca juga [panduan software manajemen gudang](/blog/panduan-lengkap-software-manajemen-gudang). Jika alur perusahaan sangat khas, [panduan pengembangan custom ERP](/blog/panduan-pengembangan-custom-erp) membahas tahapan proyek secara lebih rinci.
 
+Untuk menguji detail operasional, gunakan contoh [barcode dan stock opname](/blog/barcode-dan-stock-opname-gudang) atau [batch dan FEFO](/blog/batch-expiry-fefo-gudang). Jika penjualan Anda memakai release pesanan dan jadwal pengiriman, lihat checklist di [panduan software distributor](/blog/software-distributor-indonesia).
+
 ## Posisi Codeverta
 
 [ERP Codeverta](/products/enterprise-erp-system) tercatat **dalam pengembangan**. Diskusi awal sebaiknya berfokus pada kebutuhan, kesiapan modul, dan ruang lingkup demo yang dapat diperiksa. Codeverta juga memiliki [sistem manajemen gudang](/products/warehouse-management-system) dan [sistem POS](/products/smart-pos-system) sebagai solusi yang terpisah; kebutuhan integrasi antarproduk perlu dikonfirmasi dalam evaluasi proyek.

@@ -1,7 +1,9 @@
 import type React from "react";
 import { useState } from "react";
 import { useTranslation } from "next-i18next";
-import { trackEvent } from "@/components/GAScript";
+import { useRouter } from "next/router";
+import { getAnalyticsProductFromPath, trackEvent } from "@/components/GAScript";
+import type { AnalyticsIntent, AnalyticsProduct } from "@/components/GAScript";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -19,6 +21,8 @@ type ContactFormProps = {
   title?: string;
   description?: string;
   defaultService?: string;
+  product?: AnalyticsProduct;
+  defaultIntent?: AnalyticsIntent;
 };
 
 export default function ContactForm({
@@ -26,11 +30,15 @@ export default function ContactForm({
   title,
   description,
   defaultService = "",
+  product,
+  defaultIntent = "general",
 }: ContactFormProps) {
   const { t } = useTranslation("contact");
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [service, setService] = useState(defaultService);
+  const [intent, setIntent] = useState<AnalyticsIntent>(defaultIntent);
   const [message, setMessage] = useState("");
   const [website, setWebsite] = useState("");
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
@@ -40,26 +48,45 @@ export default function ContactForm({
     event.preventDefault();
     setIsSubmitting(true);
     setStatus("idle");
+    const selectedProduct =
+      (service === "erp" || service === "wms" ? service : undefined) ||
+      product ||
+      getAnalyticsProductFromPath(router.asPath);
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, service, message, website }),
+        body: JSON.stringify({
+          name,
+          email,
+          ...(service ? { service } : {}),
+          product: selectedProduct,
+          intent,
+          message,
+          website,
+        }),
       });
-      if (!response.ok) {
+      const result = await response.json().catch(() => null);
+      if (!response.ok || result?.ok !== true) {
         setStatus("error");
         return;
       }
       // Conversion events are sent only after the backend confirms success.
-      trackEvent("generate_lead", { method: "contact_form" });
-      trackEvent("contact_form_submit", {
-        method: "contact_form",
-        service: service || "unspecified",
-      });
+      if (result.recorded === true) {
+        const eventParams = {
+          method: "contact_form",
+          ...(selectedProduct ? { product: selectedProduct } : {}),
+          intent,
+          service: service || "unspecified",
+        };
+        trackEvent("generate_lead", eventParams, router.locale);
+        trackEvent("contact_form_submit", eventParams, router.locale);
+      }
       setStatus("success");
       setName("");
       setEmail("");
       setService(defaultService);
+      setIntent(defaultIntent);
       setMessage("");
       setWebsite("");
     } catch {
@@ -125,8 +152,40 @@ export default function ContactForm({
                 <SelectItem value="system">
                   {t("form.service_options.system")}
                 </SelectItem>
+                <SelectItem value="erp">
+                  {t("form.service_options.erp", "ERP")}
+                </SelectItem>
+                <SelectItem value="wms">
+                  {t(
+                    "form.service_options.wms",
+                    "Warehouse Management System (WMS)"
+                  )}
+                </SelectItem>
                 <SelectItem value="uiux">
                   {t("form.service_options.uiux")}
+                </SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+          <div className="space-y-2 md:col-span-2">
+            <Label htmlFor="contact-intent">
+              {t("form.intent", "Request type")}
+            </Label>
+            <Select
+              value={intent}
+              onValueChange={(value) => {
+                if (value === "demo" || value === "general") setIntent(value);
+              }}
+            >
+              <SelectTrigger id="contact-intent">
+                <SelectValue placeholder={t("form.intent", "Request type")} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="general">
+                  {t("form.intent_options.general", "General inquiry")}
+                </SelectItem>
+                <SelectItem value="demo">
+                  {t("form.intent_options.demo", "Request a demo")}
                 </SelectItem>
               </SelectContent>
             </Select>

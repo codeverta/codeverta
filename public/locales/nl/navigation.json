@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Sportschoolbeheersysteem van Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Sportschoolbeheersysteem van Codeverta",
+        "description": "Een geïntegreerd systeem voor operationeel beheer van fitnesscentra, van ledenbeheer en aanwezigheid tot een POS-verkooppunt systeem.",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "Ticketingsysteem voor trailrunning met hoge prestaties",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "Ticketingsysteem voor trailrunning met hoge prestaties",
+        "description": "Een high-performance trail running event registration systeem gebouwd om duizenden transacties per seconde te beheren tijdens high-demand ticket release's.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "E-commerceplatform voor het mkb",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-commerceplatform voor het mkb",
+        "description": "Een uitgebreide e-commerce platform uitgerust met catalogus, winkelwagen en online betalingsintegratie functies.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "Elektronisch patiëntendossier RME en ziekenhuisbeheersysteem van Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "Elektronisch patiëntendossier RME en ziekenhuisbeheersysteem van Codeverta",
+        "description": "Een elektronisch medisch register (EMR) systeem volledig geïntegreerd met de SatuSehat-normen van het ministerie van Gezondheid en de klinische operationele managementpublienen.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Wasserijbeheersysteem van Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Wasserijbeheersysteem van Codeverta",
+        "description": "Een uitgebreid systeem dat is ontworpen om de wassenbedrijven te digitaliseren, van het traceeren van bestellingen en het beheren van branches tot het verzenden van geautomatiseerde klantnootschappen.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Interactieve website voor digitale trouwuitnodigingen",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Interactieve website voor digitale trouwuitnodigingen",
+        "description": "Gepast digitale bruiloft uitnodiging websites voor koppels, bruiloft organisatoren en evenement organisatoren, met RSVP, kaarten, galerijen en digitale cadeautjes.",
+        "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg"
+      }
+    }
+  ]
+}

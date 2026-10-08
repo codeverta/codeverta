@@ -66,13 +66,14 @@ import {
 } from "@/lib/projects";
 import { getLocalizedPath } from "@/lib/seo";
 import ContactForm from "@/components/contact-form";
+import { getErpPageCopy } from "@/lib/erp-copy";
 
 const productSearchTopics: Record<
   string,
   { title: string; heading: string; guide: string }
 > = {
   "enterprise-erp-system": {
-    title: "Software ERP Indonesia untuk Integrasi Operasional | Codeverta",
+    title: "ERP Codeverta dalam Pengembangan | Evaluasi Kebutuhan ERP",
     heading: "Software ERP Indonesia",
     guide: "/blog/software-erp-indonesia-panduan-memilih",
   },
@@ -498,6 +499,34 @@ export default function ProjectDetailPage({
   const { locale = "id" } = useRouter();
   const { t } = useTranslation("common");
   const siteUrl = "https://www.codeverta.com";
+  const isErpProduct = product.id === "enterprise-erp-system";
+  const erpCopy = getErpPageCopy(locale);
+  const erpGuides = [
+    {
+      href: "/blog/software-erp-indonesia-panduan-memilih",
+      locale: "id",
+      label: `${erpCopy.guideSelection}${
+        locale === "id" ? "" : erpCopy.indonesianSuffix
+      }`,
+    },
+    {
+      href:
+        locale === "en"
+          ? "/blog/custom-erp-development-guide"
+          : "/blog/panduan-pengembangan-custom-erp",
+      locale: locale === "en" ? "en" : "id",
+      label: `${erpCopy.guideCustom}${
+        locale === "id" || locale === "en" ? "" : erpCopy.indonesianSuffix
+      }`,
+    },
+    {
+      href: "/blog/software-distributor-indonesia",
+      locale: "id",
+      label: `${erpCopy.guideDistributor}${
+        locale === "id" ? "" : erpCopy.indonesianSuffix
+      }`,
+    },
+  ];
   const pageUrl = getLocalizedUrl(locale, `/products/${product.id}`);
   const searchTopic =
     locale === "id" ? productSearchTopics[product.id] : undefined;
@@ -506,8 +535,10 @@ export default function ProjectDetailPage({
     "@context": "https://schema.org",
     "@type": "Service",
     name: product.name,
-    image: `${siteUrl}${product.image}`,
-    description: product.fullDescription,
+    image: isErpProduct
+      ? `${siteUrl}/og-image.png`
+      : `${siteUrl}${product.image}`,
+    description: isErpProduct ? erpCopy.hero : product.fullDescription,
     serviceType: product.category,
     url: pageUrl,
     provider: { "@type": "Organization", name: "Codeverta", url: siteUrl },
@@ -523,9 +554,15 @@ export default function ProjectDetailPage({
     <>
       <SeoHead
         title={searchTopic?.title || buildProductSeoTitle(product.name, locale)}
-        description={finalDesc}
+        description={
+          isErpProduct ? appendOfficeLocation(erpCopy.hero, locale) : finalDesc
+        }
         url={pageUrl}
-        image={`${siteUrl}${product.image}`}
+        image={
+          isErpProduct
+            ? `${siteUrl}/og-image.png`
+            : `${siteUrl}${product.image}`
+        }
         availableLocales={availableLocales}
       />
 
@@ -548,8 +585,12 @@ export default function ProjectDetailPage({
                   <Badge variant="outline" className="text-sm">
                     {product.category}
                   </Badge>
-                  <Badge variant="secondary">v{product.version}</Badge>
-                  {locale === "id" && (
+                  {!isErpProduct && (
+                    <Badge variant="secondary">v{product.version}</Badge>
+                  )}
+                  {isErpProduct ? (
+                    <Badge variant="outline">{erpCopy.status}</Badge>
+                  ) : locale === "id" ? (
                     <Badge variant="outline">
                       {product.status === "In Development"
                         ? "Dalam pengembangan"
@@ -557,14 +598,14 @@ export default function ProjectDetailPage({
                         ? "Selesai"
                         : "Siap digunakan"}
                     </Badge>
-                  )}
+                  ) : null}
                 </div>
 
                 <h1 className="text-4xl font-bold text-slate-900 mb-4">
                   {searchTopic?.heading || product.name}
                 </h1>
                 <p className="text-xl text-slate-600 mb-6">
-                  {product.fullDescription}
+                  {isErpProduct ? erpCopy.hero : product.fullDescription}
                 </p>
                 {searchTopic && (
                   <p className="mb-6 text-sm leading-relaxed text-slate-600">
@@ -580,75 +621,121 @@ export default function ProjectDetailPage({
                   </p>
                 )}
 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {product.technologies.map((tech, index) => (
-                    <Badge
-                      key={index}
-                      variant="secondary"
-                      className="bg-blue-50 text-blue-700"
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
+                {!isErpProduct && (
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {product.technologies.map((tech, index) => (
+                      <Badge
+                        key={index}
+                        variant="secondary"
+                        className="bg-blue-50 text-blue-700"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+                )}
 
-                <div className="flex gap-4 flex-wrap">
-                  {hero.buttons?.documentation && (
-                    <Button size="lg" variant="outline" asChild>
-                      <a
-                        href={hero.buttons.links?.documentation || "#"}
-                        target="_blank"
-                      >
-                        <Download className="w-5 h-5 mr-2" />
-                        {hero.buttons.documentation}
-                      </a>
-                    </Button>
-                  )}
-                  {hero.buttons.links?.liveDemo ? (
-                    <Button
-                      size="lg"
-                      className="bg-blue-600 hover:bg-blue-700"
-                      asChild
+                {isErpProduct ? (
+                  <div className="flex flex-wrap gap-3">
+                    <WhatsappWrapper
+                      product="erp"
+                      intent="demo"
+                      cta="request_demo"
+                      message={erpCopy.whatsappMessage}
                     >
-                      <a
-                        href={hero.buttons.links.liveDemo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="w-5 h-5 mr-2" />
-                        {hero.buttons.liveDemo || "Live Demo"}
-                      </a>
-                    </Button>
-                  ) : (
-                    <WhatsappWrapper>
                       <Button
                         size="lg"
                         className="bg-blue-600 hover:bg-blue-700"
                       >
                         <ExternalLink className="w-5 h-5 mr-2" />
-                        {hero?.buttons.liveDemo || "Hubungi Kami"}
+                        {erpCopy.primaryCta}
                       </Button>
                     </WhatsappWrapper>
-                  )}
-                  {hero.buttons?.sourceCode && (
                     <Button size="lg" variant="outline" asChild>
-                      <a
-                        href={
-                          hero.buttons.sourceCode ||
-                          "https://github.com/codeverta"
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="w-5 h-5 mr-2" />
-                        {hero?.buttons.sourceCodeLabel || "Source Code"}
-                      </a>
+                      <Link href="#erp-scenario-contact">
+                        {erpCopy.secondaryCta}
+                      </Link>
                     </Button>
-                  )}
-                </div>
+                  </div>
+                ) : (
+                  <div className="flex gap-4 flex-wrap">
+                    {hero.buttons?.documentation && (
+                      <Button size="lg" variant="outline" asChild>
+                        <a
+                          href={hero.buttons.links?.documentation || "#"}
+                          target="_blank"
+                        >
+                          <Download className="w-5 h-5 mr-2" />
+                          {hero.buttons.documentation}
+                        </a>
+                      </Button>
+                    )}
+                    {hero.buttons.links?.liveDemo ? (
+                      <Button
+                        size="lg"
+                        className="bg-blue-600 hover:bg-blue-700"
+                        asChild
+                      >
+                        <a
+                          href={hero.buttons.links.liveDemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="w-5 h-5 mr-2" />
+                          {hero.buttons.liveDemo || "Live Demo"}
+                        </a>
+                      </Button>
+                    ) : (
+                      <WhatsappWrapper>
+                        <Button
+                          size="lg"
+                          className="bg-blue-600 hover:bg-blue-700"
+                        >
+                          <ExternalLink className="w-5 h-5 mr-2" />
+                          {hero?.buttons.liveDemo || "Hubungi Kami"}
+                        </Button>
+                      </WhatsappWrapper>
+                    )}
+                    {hero.buttons?.sourceCode && (
+                      <Button size="lg" variant="outline" asChild>
+                        <a
+                          href={
+                            hero.buttons.sourceCode ||
+                            "https://github.com/codeverta"
+                          }
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Github className="w-5 h-5 mr-2" />
+                          {hero?.buttons.sourceCodeLabel || "Source Code"}
+                        </a>
+                      </Button>
+                    )}
+                  </div>
+                )}
               </div>
 
-              {product.images ? (
+              {isErpProduct ? (
+                <Card className="overflow-hidden border-slate-200 shadow-xl">
+                  <div className="relative aspect-video overflow-hidden bg-slate-100">
+                    <Image
+                      src="/assets/erp/homepage.png"
+                      alt={erpCopy.referenceTitle}
+                      width={1678}
+                      height={940}
+                      className="h-full w-full scale-150 object-cover"
+                    />
+                  </div>
+                  <CardContent className="p-4">
+                    <h2 className="font-semibold text-slate-900">
+                      {erpCopy.referenceTitle}
+                    </h2>
+                    <p className="mt-1 text-sm leading-relaxed text-slate-600">
+                      {erpCopy.referenceDescription}
+                    </p>
+                  </CardContent>
+                </Card>
+              ) : product.images ? (
                 <ImageCarousel
                   images={product.images}
                   productName={product.name}
@@ -677,275 +764,324 @@ export default function ProjectDetailPage({
         </div>
         {/* ── Main Content Tabs ── */}
         <div className="container mx-auto px-4 py-12">
-          <Tabs defaultValue="overview" className="w-full">
-            <TabsList className="grid w-full gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mb-24 md:mb-12">
-              <TabsTrigger value="overview">
-                {tabs.triggers.overview}
-              </TabsTrigger>
-              <TabsTrigger value="features">
-                {tabs.triggers.features}
-              </TabsTrigger>
-              <TabsTrigger value="workflow">
-                {tabs.triggers.workflow}
-              </TabsTrigger>
-              <TabsTrigger value="tech-stack">
-                {tabs.triggers.techStack}
-              </TabsTrigger>
-              <TabsTrigger value="screenshots">
-                {tabs.triggers.screenshots}
-              </TabsTrigger>
-              <TabsTrigger value="specs">{tabs.triggers.specs}</TabsTrigger>
-            </TabsList>
-            {/* Overview Tab */}
-            <TabsContent value="overview" className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Clock className="w-5 h-5" />
-                      Info Solusi
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div>
-                      <p className="text-sm text-slate-600">
-                        Status pengembangan
-                      </p>
-                      <p className="font-semibold">{product.status}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-slate-600">Versi</p>
-                      <p className="font-semibold">{product.version}</p>
-                    </div>
-                    <div>
-                      <p className="text-sm text-slate-600">
-                        {overview.projectInfo.lastUpdatedLabel}
-                      </p>
-                      <p className="font-semibold">{product.lastUpdated}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Monitor className="w-5 h-5" />
-                      {overview.platformSupport.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    {overview.platformSupport.items.map((item, index) => (
-                      <div key={index} className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500" />
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Server className="w-5 h-5" />
-                      {overview.architecture.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    {overview.architecture.items.map((item, index) => (
-                      <div key={index} className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-blue-500" />
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </CardContent>
-                </Card>
-              </div>
-
-              <Card>
+          {isErpProduct ? (
+            <section
+              aria-labelledby="erp-evaluation-title"
+              className="space-y-8"
+            >
+              <Card className="border-blue-100 bg-blue-50/70">
                 <CardHeader>
-                  <CardTitle>{overview.projectDescription.title}</CardTitle>
+                  <CardTitle id="erp-evaluation-title">
+                    {erpCopy.scopeTitle}
+                  </CardTitle>
                 </CardHeader>
-                <CardContent className="prose max-w-none">
-                  {overview.projectDescription.paragraphs.map((p, index) => (
-                    <p
-                      key={index}
-                      className="text-slate-700 leading-relaxed mb-4"
-                    >
-                      {p}
-                    </p>
-                  ))}
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            {/* Features Tab */}
-            <TabsContent value="features" className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {features.map((feature, index) => {
-                  const IconComponent = iconMap[feature.icon];
-                  return (
-                    <Card
-                      key={index}
-                      className="hover:shadow-lg transition-shadow"
-                    >
-                      <CardContent className="p-6">
-                        <div className="flex items-start gap-4">
-                          <div className="bg-blue-100 p-3 rounded-lg">
-                            {IconComponent && (
-                              <IconComponent className="w-6 h-6 text-blue-600" />
-                            )}
-                          </div>
-                          <div>
-                            <h3 className="text-lg font-semibold text-slate-900 mb-2">
-                              {feature.title}
-                            </h3>
-                            <p className="text-slate-600">
-                              {feature.description}
-                            </p>
-                          </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  );
-                })}
-              </div>
-            </TabsContent>
-
-            {/* Workflow Tab */}
-            <TabsContent value="workflow" className="space-y-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>{workflow.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-6">
-                    {workflow.steps.map((step, index) => {
-                      const IconComponent = iconMap[step.icon];
-                      return (
-                        <div key={index} className="flex items-start gap-4">
-                          <div className="flex flex-col items-center">
-                            <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
-                              {step.step}
-                            </div>
-                            {index < workflow.steps.length - 1 && (
-                              <div className="w-px h-12 bg-slate-300 mt-2"></div>
-                            )}
-                          </div>
-                          <div className="flex-1">
-                            <div className="flex items-center gap-3 mb-2">
-                              {IconComponent && (
-                                <IconComponent className="w-5 h-5 text-blue-600" />
-                              )}
-                              <h3 className="text-lg font-semibold text-slate-900">
-                                {step.title}
-                              </h3>
-                            </div>
-                            <p className="text-slate-600">{step.description}</p>
-                          </div>
-                        </div>
-                      );
-                    })}
+                <CardContent className="space-y-4 text-slate-700">
+                  <p>{erpCopy.scopeDescription}</p>
+                  <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-semibold">
+                    {erpGuides.map((guide) => (
+                      <Link
+                        key={guide.href}
+                        href={guide.href}
+                        locale={guide.locale}
+                        className="text-blue-700 underline underline-offset-2"
+                      >
+                        {guide.label}
+                      </Link>
+                    ))}
                   </div>
                 </CardContent>
               </Card>
-            </TabsContent>
 
-            {/* Tech Stack Tab */}
-            <TabsContent value="tech-stack" className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {techStack.map((category, index) => (
-                  <Card key={index}>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                {erpCopy.scenarios.map((scenario) => (
+                  <Card key={scenario.title}>
                     <CardHeader>
                       <CardTitle className="text-lg">
-                        {category.category}
+                        {scenario.title}
                       </CardTitle>
                     </CardHeader>
-                    <CardContent className="space-y-4">
-                      {category.technologies.map((tech, techIndex) => (
-                        <div
-                          key={techIndex}
-                          className="border-l-4 border-blue-200 pl-4"
-                        >
-                          <h4 className="font-semibold text-slate-900">
-                            {tech.name}
-                          </h4>
-                          <p className="text-sm text-slate-600">
-                            {tech.description}
-                          </p>
-                        </div>
-                      ))}
+                    <CardContent>
+                      <p className="text-slate-600">{scenario.description}</p>
                     </CardContent>
                   </Card>
                 ))}
               </div>
-            </TabsContent>
+            </section>
+          ) : (
+            <Tabs defaultValue="overview" className="w-full">
+              <TabsList className="grid w-full gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 mb-24 md:mb-12">
+                <TabsTrigger value="overview">
+                  {tabs.triggers.overview}
+                </TabsTrigger>
+                <TabsTrigger value="features">
+                  {tabs.triggers.features}
+                </TabsTrigger>
+                <TabsTrigger value="workflow">
+                  {tabs.triggers.workflow}
+                </TabsTrigger>
+                <TabsTrigger value="tech-stack">
+                  {tabs.triggers.techStack}
+                </TabsTrigger>
+                <TabsTrigger value="screenshots">
+                  {tabs.triggers.screenshots}
+                </TabsTrigger>
+                <TabsTrigger value="specs">{tabs.triggers.specs}</TabsTrigger>
+              </TabsList>
+              {/* Overview Tab */}
+              <TabsContent value="overview" className="space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Clock className="w-5 h-5" />
+                        Info Solusi
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3">
+                      <div>
+                        <p className="text-sm text-slate-600">
+                          Status pengembangan
+                        </p>
+                        <p className="font-semibold">{product.status}</p>
+                      </div>
+                      <div>
+                        <p className="text-sm text-slate-600">Versi</p>
+                        <p className="font-semibold">{product.version}</p>
+                      </div>
+                      <div>
+                        <p className="text-sm text-slate-600">
+                          {overview.projectInfo.lastUpdatedLabel}
+                        </p>
+                        <p className="font-semibold">{product.lastUpdated}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
 
-            {/* ── Screenshots Tab (gallery with lightbox) ── */}
-            <TabsContent value="screenshots" className="space-y-8">
-              <ScreenshotsGallery screenshots={screenshots} />
-            </TabsContent>
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Monitor className="w-5 h-5" />
+                        {overview.platformSupport.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3">
+                      {overview.platformSupport.items.map((item, index) => (
+                        <div key={index} className="flex items-center gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-500" />
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </CardContent>
+                  </Card>
 
-            {/* Specifications Tab */}
-            <TabsContent value="specs" className="space-y-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle className="flex items-center gap-2">
+                        <Server className="w-5 h-5" />
+                        {overview.architecture.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3">
+                      {overview.architecture.items.map((item, index) => (
+                        <div key={index} className="flex items-center gap-2">
+                          <CheckCircle className="w-4 h-4 text-blue-500" />
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </CardContent>
+                  </Card>
+                </div>
+
                 <Card>
                   <CardHeader>
-                    <CardTitle>
-                      {specifications.systemRequirements.title}
-                    </CardTitle>
+                    <CardTitle>{overview.projectDescription.title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div>
-                      <p className="font-semibold">
-                        {specifications.systemRequirements.server.title}
+                  <CardContent className="prose max-w-none">
+                    {overview.projectDescription.paragraphs.map((p, index) => (
+                      <p
+                        key={index}
+                        className="text-slate-700 leading-relaxed mb-4"
+                      >
+                        {p}
                       </p>
-                      <ul className="text-sm text-slate-600 mt-1 space-y-1">
-                        {specifications.systemRequirements.server.items.map(
-                          (item, index) => (
-                            <li key={index}>• {item}</li>
-                          )
-                        )}
-                      </ul>
-                    </div>
-                    <Separator />
-                    <div>
-                      <p className="font-semibold">
-                        {specifications.systemRequirements.client.title}
-                      </p>
-                      <ul className="text-sm text-slate-600 mt-1 space-y-1">
-                        {specifications.systemRequirements.client.items.map(
-                          (item, index) => (
-                            <li key={index}>• {item}</li>
-                          )
-                        )}
-                      </ul>
+                    ))}
+                  </CardContent>
+                </Card>
+              </TabsContent>
+
+              {/* Features Tab */}
+              <TabsContent value="features" className="space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {features.map((feature, index) => {
+                    const IconComponent = iconMap[feature.icon];
+                    return (
+                      <Card
+                        key={index}
+                        className="hover:shadow-lg transition-shadow"
+                      >
+                        <CardContent className="p-6">
+                          <div className="flex items-start gap-4">
+                            <div className="bg-blue-100 p-3 rounded-lg">
+                              {IconComponent && (
+                                <IconComponent className="w-6 h-6 text-blue-600" />
+                              )}
+                            </div>
+                            <div>
+                              <h3 className="text-lg font-semibold text-slate-900 mb-2">
+                                {feature.title}
+                              </h3>
+                              <p className="text-slate-600">
+                                {feature.description}
+                              </p>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    );
+                  })}
+                </div>
+              </TabsContent>
+
+              {/* Workflow Tab */}
+              <TabsContent value="workflow" className="space-y-8">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>{workflow.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-6">
+                      {workflow.steps.map((step, index) => {
+                        const IconComponent = iconMap[step.icon];
+                        return (
+                          <div key={index} className="flex items-start gap-4">
+                            <div className="flex flex-col items-center">
+                              <div className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                                {step.step}
+                              </div>
+                              {index < workflow.steps.length - 1 && (
+                                <div className="w-px h-12 bg-slate-300 mt-2"></div>
+                              )}
+                            </div>
+                            <div className="flex-1">
+                              <div className="flex items-center gap-3 mb-2">
+                                {IconComponent && (
+                                  <IconComponent className="w-5 h-5 text-blue-600" />
+                                )}
+                                <h3 className="text-lg font-semibold text-slate-900">
+                                  {step.title}
+                                </h3>
+                              </div>
+                              <p className="text-slate-600">
+                                {step.description}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
                   </CardContent>
                 </Card>
-              </div>
+              </TabsContent>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle>{specifications.securityFeatures.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {specifications.securityFeatures.items.map(
-                      (item, index) => (
-                        <div key={index} className="flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-green-500" />
-                          <span className="text-sm">{item}</span>
-                        </div>
-                      )
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
+              {/* Tech Stack Tab */}
+              <TabsContent value="tech-stack" className="space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {techStack.map((category, index) => (
+                    <Card key={index}>
+                      <CardHeader>
+                        <CardTitle className="text-lg">
+                          {category.category}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardContent className="space-y-4">
+                        {category.technologies.map((tech, techIndex) => (
+                          <div
+                            key={techIndex}
+                            className="border-l-4 border-blue-200 pl-4"
+                          >
+                            <h4 className="font-semibold text-slate-900">
+                              {tech.name}
+                            </h4>
+                            <p className="text-sm text-slate-600">
+                              {tech.description}
+                            </p>
+                          </div>
+                        ))}
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </TabsContent>
+
+              {/* ── Screenshots Tab (gallery with lightbox) ── */}
+              <TabsContent value="screenshots" className="space-y-8">
+                <ScreenshotsGallery screenshots={screenshots} />
+              </TabsContent>
+
+              {/* Specifications Tab */}
+              <TabsContent value="specs" className="space-y-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>
+                        {specifications.systemRequirements.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-3">
+                      <div>
+                        <p className="font-semibold">
+                          {specifications.systemRequirements.server.title}
+                        </p>
+                        <ul className="text-sm text-slate-600 mt-1 space-y-1">
+                          {specifications.systemRequirements.server.items.map(
+                            (item, index) => (
+                              <li key={index}>• {item}</li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                      <Separator />
+                      <div>
+                        <p className="font-semibold">
+                          {specifications.systemRequirements.client.title}
+                        </p>
+                        <ul className="text-sm text-slate-600 mt-1 space-y-1">
+                          {specifications.systemRequirements.client.items.map(
+                            (item, index) => (
+                              <li key={index}>• {item}</li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+
+                <Card>
+                  <CardHeader>
+                    <CardTitle>
+                      {specifications.securityFeatures.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {specifications.securityFeatures.items.map(
+                        (item, index) => (
+                          <div key={index} className="flex items-center gap-2">
+                            <CheckCircle className="w-4 h-4 text-green-500" />
+                            <span className="text-sm">{item}</span>
+                          </div>
+                        )
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              </TabsContent>
+            </Tabs>
+          )}
 
           {/* Pricing */}
-          {priceList && (
+          {priceList && !isErpProduct && (
             <div className="container mt-10 mx-auto max-w-7xl">
               <div className="text-center mb-16">
                 <p className="text-slate-600 text-sm">Pilihan Paket untuk</p>
@@ -1034,17 +1170,29 @@ export default function ProjectDetailPage({
         </div>
         {/* ── Video Section (dedicated, below hero) ── */}
         <VideoSection
-          videoUrls={product.videoUrls}
+          videoUrls={isErpProduct ? [] : product.videoUrls}
           productName={product.name}
         />
 
         <ArticleSection articles={latestArticles} />
-        <ContactForm
-          className="container mx-auto px-4 py-20"
-          title={`Konsultasikan ${product.name}`}
-          description="Ceritakan kebutuhan Anda dan tim Codeverta akan menghubungi Anda."
-          defaultService="system"
-        />
+        <div id={isErpProduct ? "erp-scenario-contact" : undefined}>
+          <ContactForm
+            className="container mx-auto px-4 py-20"
+            title={
+              isErpProduct
+                ? erpCopy.contactTitle
+                : `Konsultasikan ${product.name}`
+            }
+            description={
+              isErpProduct
+                ? erpCopy.contactDescription
+                : "Ceritakan kebutuhan Anda dan tim Codeverta akan menghubungi Anda."
+            }
+            defaultService="system"
+            product={isErpProduct ? "erp" : undefined}
+            defaultIntent={isErpProduct ? "demo" : "general"}
+          />
+        </div>
       </div>
     </>
   );

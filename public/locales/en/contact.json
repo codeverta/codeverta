@@ -8,8 +8,15 @@
     "service_options": {
       "web": "Website Development",
       "mobile": "Mobile App (Android/iOS)",
-      "system": "Information System / ERP",
+      "system": "Other Business System",
+      "erp": "ERP (Enterprise Resource Planning)",
+      "wms": "Warehouse Management System (WMS)",
       "uiux": "UI/UX Design"
+    },
+    "intent": "Request type",
+    "intent_options": {
+      "general": "General inquiry",
+      "demo": "Request a product demo"
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",

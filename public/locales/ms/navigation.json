@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Sistem Pengurusan Gimnasium oleh Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Sistem Pengurusan Gimnasium oleh Codeverta",
+        "description": "Sistem pengurusan gim yang komprehensif yang mengintegrasikan pentadbiran ahli, operasi kelas, sistem juruwang (POS) dan penjejakan prestasi latihan dalam satu papan pemuka bersepadu.",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "Sistem Tiket Larian Jejak Berprestasi Tinggi",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "Sistem Tiket Larian Jejak Berprestasi Tinggi",
+        "description": "Sistem pendaftaran acara merentas desa berprestasi tinggi untuk mengendalikan beribu-ribu transaksi sesaat semasa perang tiket.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "Platform E-dagang untuk PKS/PKS",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "Platform E-dagang untuk PKS/PKS",
+        "description": "Platform e-dagang lengkap dengan katalog, bakul dan ciri pembayaran dalam talian.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "RME & Sistem Pengurusan Hospital oleh Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "RME & Sistem Pengurusan Hospital oleh Codeverta",
+        "description": "Sistem Rekod Perubatan Elektronik disepadukan dengan piawaian SatuSehat Kementerian Kesihatan dan pengurusan operasi klinik.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Sistem Pengurusan Dobi oleh Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Sistem Pengurusan Dobi oleh Codeverta",
+        "description": "Sistem komprehensif untuk mendigitalkan operasi dobi bermula daripada penjejakan pesanan, pengurusan outlet, hingga pemberitahuan automatik.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Laman Web Jemputan Perkahwinan Digital Interaktif",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Laman Web Jemputan Perkahwinan Digital Interaktif",
+        "description": "Tapak web jemputan perkahwinan digital untuk pasangan, Penganjur Perkahwinan dan Penganjur Acara dengan reka bentuk khas, RSVP, peta, galeri dan ciri hadiah.",
+        "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg"
+      }
+    }
+  ]
+}

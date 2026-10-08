@@ -31,6 +31,8 @@ Jika bisnis menggunakan beberapa gudang, mintalah demo transfer 10 unit dari Gud
 
 Inventory software berfokus pada catatan jumlah dan nilai barang. Warehouse Management System (WMS) diperlukan ketika lokasi rak, barcode, strategi picking, packing, batch, atau pergerakan operator harus diatur secara rinci. [Panduan WMS Codeverta](/blog/panduan-lengkap-software-manajemen-gudang) menjelaskan perbedaannya lebih lanjut.
 
+Jika masalahnya adalah salah scan atau selisih hitung, ikuti [panduan barcode dan stock opname](/blog/barcode-dan-stock-opname-gudang). Untuk barang yang dipantau berdasarkan batch dan masa simpan, lihat [panduan batch dan FEFO](/blog/batch-expiry-fefo-gudang).
+
 Untuk distributor, stok juga harus tersambung dengan pesanan, harga, dan piutang. Baca [panduan software distributor](/blog/software-distributor-indonesia) jika proses Anda melibatkan banyak pelanggan dan gudang.
 
 ## Evaluasi solusi Codeverta

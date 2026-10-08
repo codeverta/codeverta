@@ -8,8 +8,15 @@
     "service_options": {
       "web": "Pengembangan Website",
       "mobile": "Aplikasi Mobile (Android/iOS)",
-      "system": "Sistem Informasi / ERP",
+      "system": "Sistem Bisnis Lainnya",
+      "erp": "ERP (Enterprise Resource Planning)",
+      "wms": "Sistem Manajemen Gudang (WMS)",
       "uiux": "UI/UX Design"
+    },
+    "intent": "Jenis permintaan",
+    "intent_options": {
+      "general": "Pertanyaan umum",
+      "demo": "Minta demo produk"
     },
     "message": "Detail Proyek",
     "placeholder_message": "Ceritakan sedikit tentang kebutuhan bisnis Anda...",

@@ -8,14 +8,21 @@
     "service_options": {
       "web": "Website Development",
       "mobile": "Mobile App (Android/iOS)",
-      "system": "Information System / ERP",
-      "uiux": "UI/UX Design"
+      "system": "Другая бизнес-система",
+      "uiux": "UI/UX Design",
+      "erp": "Планирование ресурсов предприятия (ERP)",
+      "wms": "Система управления складом (WMS)"
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
     "submit": "Отправить запрос",
     "sending": "Отправка...",
-    "response_note": "Мы ответим в течение 24 часов"
+    "response_note": "Мы ответим в течение 24 часов",
+    "intent": "Тип обращения",
+    "intent_options": {
+      "general": "Общий вопрос",
+      "demo": "Запросить демонстрацию продукта"
+    }
   },
   "info": {
     "office_title": "Our Office",

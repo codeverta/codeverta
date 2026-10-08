@@ -58,7 +58,7 @@ export default function SeoHead({
       <link key="canonical" rel="canonical" href={seo.canonical} />
       {getAlternateLinks(seo.path, availableLocales).map((alternate) => (
         <link
-          key={`alternate-${alternate.hrefLang}`}
+          key={`languageAlternate-${alternate.hrefLang}`}
           rel={alternate.rel}
           hrefLang={alternate.hrefLang}
           href={alternate.href}

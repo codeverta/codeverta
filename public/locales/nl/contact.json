@@ -8,14 +8,21 @@
     "service_options": {
       "web": "Websiteontwikkeling",
       "mobile": "Mobiele app (Android/iOS)",
-      "system": "Informatiesysteem / ERP",
-      "uiux": "UI/UX-design"
+      "system": "Ander bedrijfssysteem",
+      "uiux": "UI/UX-design",
+      "erp": "Enterprise Resource Planning (ERP)",
+      "wms": "Magazijnbeheersysteem (WMS)"
     },
     "message": "Projectdetails",
     "placeholder_message": "Vertel kort wat uw bedrijf nodig heeft...",
     "submit": "Aanvraag versturen",
     "sending": "Verzenden...",
-    "response_note": "Wij antwoorden binnen 24 uur"
+    "response_note": "Wij antwoorden binnen 24 uur",
+    "intent": "Type aanvraag",
+    "intent_options": {
+      "general": "Algemene vraag",
+      "demo": "Productdemo aanvragen"
+    }
   },
   "info": {
     "office_title": "Ons kantoor",

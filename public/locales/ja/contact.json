@@ -8,14 +8,21 @@
     "service_options": {
       "web": "Webサイト開発",
       "mobile": "モバイルアプリ（Android/iOS）",
-      "system": "情報システム / ERP",
-      "uiux": "UI/UXデザイン"
+      "system": "その他の業務システム",
+      "uiux": "UI/UXデザイン",
+      "erp": "企業資源計画（ERP）",
+      "wms": "倉庫管理システム（WMS）"
     },
     "message": "プロジェクト詳細",
     "placeholder_message": "ビジネス上のご要望を簡単にお聞かせください...",
     "submit": "見積もりを送信",
     "sending": "送信中...",
-    "response_note": "24時間以内に返信します"
+    "response_note": "24時間以内に返信します",
+    "intent": "お問い合わせの種類",
+    "intent_options": {
+      "general": "一般的なお問い合わせ",
+      "demo": "製品デモを依頼"
+    }
   },
   "info": {
     "office_title": "オフィス",

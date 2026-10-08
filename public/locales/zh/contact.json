@@ -8,14 +8,21 @@
     "service_options": {
       "web": "网站开发",
       "mobile": "移动应用（Android/iOS）",
-      "system": "信息系统 / ERP",
-      "uiux": "UI/UX 设计"
+      "system": "其他业务系统",
+      "uiux": "UI/UX 设计",
+      "erp": "企业资源规划（ERP）",
+      "wms": "仓库管理系统（WMS）"
     },
     "message": "项目详情",
     "placeholder_message": "请简单说明您的业务需求...",
     "submit": "发送询价",
     "sending": "发送中...",
-    "response_note": "我们将在 24 小时内回复"
+    "response_note": "我们将在 24 小时内回复",
+    "intent": "请求类型",
+    "intent_options": {
+      "general": "一般咨询",
+      "demo": "申请产品演示"
+    }
   },
   "info": {
     "office_title": "我们的办公室",

@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "نظام إدارة الصالة الرياضية من Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "نظام إدارة الصالة الرياضية من Codeverta",
+        "description": "نظام شامل لإدارة صالة الألعاب الرياضية يدمج إدارة الأعضاء وعمليات الفصل ونظام أمين الصندوق (POS) وتتبع أداء التدريب في لوحة تحكم واحدة متكاملة.",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "نظام تذاكر الجري عالي الأداء",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "نظام تذاكر الجري عالي الأداء",
+        "description": "نظام تسجيل أحداث عالي الأداء عبر البلاد للتعامل مع آلاف المعاملات في الثانية أثناء حروب التذاكر.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "منصة التجارة الإلكترونية للشركات الصغيرة والمتوسطة / الشركات الصغيرة والمتوسطة",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "منصة التجارة الإلكترونية للشركات الصغيرة والمتوسطة / الشركات الصغيرة والمتوسطة",
+        "description": "منصة كاملة للتجارة الإلكترونية مع كتالوج وسلة وميزات الدفع عبر الإنترنت.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "RME ونظام إدارة المستشفيات من Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "RME ونظام إدارة المستشفيات من Codeverta",
+        "description": "تم دمج نظام السجلات الطبية الإلكترونية مع معايير SatuSehat التابعة لوزارة الصحة وإدارة تشغيل العيادات.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "نظام إدارة الغسيل من Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "نظام إدارة الغسيل من Codeverta",
+        "description": "نظام شامل لرقمنة عمليات الغسيل بدءًا من تتبع الطلب وإدارة المنافذ وحتى الإشعارات التلقائية.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "موقع دعوة زفاف رقمي تفاعلي",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "موقع دعوة زفاف رقمي تفاعلي",
+        "description": "موقع إلكتروني لدعوات الزفاف الرقمية للأزواج ومنظمي حفلات الزفاف ومنظمي الأحداث مع تصميمات خاصة والرد على الدعوة والخرائط والمعارض وميزات الهدايا.",
+        "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg"
+      }
+    }
+  ]
+}

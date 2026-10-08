@@ -8,14 +8,21 @@
     "service_options": {
       "web": "Website Development",
       "mobile": "Mobile App (Android/iOS)",
-      "system": "Information System / ERP",
-      "uiux": "UI/UX Design"
+      "system": "अन्य व्यावसायिक प्रणाली",
+      "uiux": "UI/UX Design",
+      "erp": "उद्यम संसाधन नियोजन (ERP)",
+      "wms": "गोदाम प्रबंधन प्रणाली (WMS)"
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
     "submit": "पूछताछ भेजें",
     "sending": "भेजा जा रहा है...",
-    "response_note": "हम 24 घंटे के भीतर जवाब देंगे"
+    "response_note": "हम 24 घंटे के भीतर जवाब देंगे",
+    "intent": "अनुरोध का प्रकार",
+    "intent_options": {
+      "general": "सामान्य पूछताछ",
+      "demo": "उत्पाद डेमो का अनुरोध"
+    }
   },
   "info": {
     "office_title": "Our Office",

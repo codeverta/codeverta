@@ -8,14 +8,35 @@ type ContactPayload = {
   name?: string;
   email?: string;
   service?: string;
+  product?: string;
+  intent?: string;
   message?: string;
   website?: string;
 };
 
 type ApiResponse = {
   ok: boolean;
+  recorded?: boolean;
   error?: string;
 };
+
+const allowedServices = new Set([
+  "web",
+  "mobile",
+  "system",
+  "erp",
+  "wms",
+  "uiux",
+]);
+const allowedProducts = new Set([
+  "erp",
+  "wms",
+  "pos",
+  "gym_management",
+  "event_website",
+  "custom_software",
+]);
+const allowedIntents = new Set(["demo", "general"]);
 
 export default async function handler(
   req: NextApiRequest,
@@ -43,10 +64,11 @@ export default async function handler(
   requestLog.set(ip, recentRequests);
 
   const body = req.body && typeof req.body === "object" ? req.body : {};
-  const { name, email, service, message, website } = body as ContactPayload;
+  const { name, email, service, product, intent, message, website } =
+    body as ContactPayload;
 
   if (website) {
-    return res.status(200).json({ ok: true });
+    return res.status(200).json({ ok: true, recorded: false });
   }
 
   if (
@@ -57,8 +79,14 @@ export default async function handler(
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim()) ||
     name.length > 120 ||
     email.length > 254 ||
-    (service && (typeof service !== "string" || service.length > 80)) ||
-    (message && (typeof message !== "string" || message.length > 5000))
+    (service !== undefined &&
+      (typeof service !== "string" || !allowedServices.has(service))) ||
+    (product !== undefined &&
+      (typeof product !== "string" || !allowedProducts.has(product))) ||
+    (intent !== undefined &&
+      (typeof intent !== "string" || !allowedIntents.has(intent))) ||
+    (message !== undefined &&
+      (typeof message !== "string" || message.length > 5000))
   ) {
     return res
       .status(400)
@@ -84,6 +112,18 @@ export default async function handler(
       ...(service
         ? [{ name: "🛠️ Layanan", value: service.trim(), inline: false }]
         : []),
+      ...(product
+        ? [{ name: "📦 Produk", value: product, inline: false }]
+        : []),
+      ...(intent
+        ? [
+            {
+              name: "🎯 Jenis permintaan",
+              value: intent === "demo" ? "Minta demo" : "Pertanyaan umum",
+              inline: false,
+            },
+          ]
+        : []),
       ...(message
         ? [{ name: "💬 Pesan", value: message.trim(), inline: false }]
         : []),
@@ -98,6 +138,12 @@ export default async function handler(
       `👤 Nama: ${name.trim()}`,
       `📧 Email: ${email.trim()}`,
       service ? `🛠️ Layanan: ${service.trim()}` : "",
+      product ? `📦 Produk: ${product}` : "",
+      intent
+        ? `🎯 Jenis permintaan: ${
+            intent === "demo" ? "Minta demo" : "Pertanyaan umum"
+          }`
+        : "",
       message ? `💬 Pesan: ${message.trim()}` : "",
     ]
       .filter(Boolean)
@@ -126,7 +172,7 @@ export default async function handler(
         .json({ ok: false, error: "Failed to send contact notifications." });
     }
 
-    return res.status(200).json({ ok: true });
+    return res.status(200).json({ ok: true, recorded: true });
   } catch (err) {
     console.error("Error sending to Discord:", err);
     return res.status(500).json({ ok: false, error: "Internal server error." });

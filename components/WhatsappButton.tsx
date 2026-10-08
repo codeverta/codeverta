@@ -1,7 +1,17 @@
 import { CircleXIcon } from "lucide-react";
 import React, { useState } from "react";
 import { useTranslation } from "next-i18next";
-import { trackEvent } from "@/components/GAScript";
+import { useRouter } from "next/router";
+import {
+  getAnalyticsProductFromLabel,
+  getAnalyticsProductFromPath,
+  trackEvent,
+} from "@/components/GAScript";
+import type {
+  AnalyticsCta,
+  AnalyticsIntent,
+  AnalyticsProduct,
+} from "@/components/GAScript";
 import { buildWhatsAppLink, WHATSAPP_NUMBER } from "@/lib/whatsapp";
 
 // WhatsApp Icon Component (since we can't import from MUI)
@@ -54,30 +64,57 @@ const FacebookIcon = ({ size = 28 }) => (
 export const handleRedirectToWhatsapp = (
   message = "Hello, I would like to ask about Codeverta's services."
 ) => {
-  trackEvent("whatsapp_click", { method: "faq", transport_type: "beacon" });
+  trackEvent("whatsapp_click", {
+    method: "faq",
+    intent: "general",
+    transport_type: "beacon",
+  });
   window.location.replace(buildWhatsAppLink(message));
 };
 
 export const WhatsappWrapper = ({
   children,
   title = "",
+  message,
+  product,
+  intent,
+  cta,
   className = "",
 }: {
   children: React.ReactNode;
   title?: string;
+  /** Prefilled in WhatsApp only; never included in an analytics event. */
+  message?: string;
+  product?: AnalyticsProduct;
+  intent?: AnalyticsIntent;
+  cta?: AnalyticsCta;
   className?: string;
 }) => {
   const { t } = useTranslation("common");
+  const router = useRouter();
+  const href = buildWhatsAppLink(message || t("ui.whatsapp.defaultMessage"));
+  const analyticsProduct =
+    product ||
+    getAnalyticsProductFromPath() ||
+    getAnalyticsProductFromLabel(title);
 
   return (
     <a
       className={className}
-      href={buildWhatsAppLink(t("ui.whatsapp.defaultMessage"))}
+      href={href}
+      title={title || undefined}
       onClick={() =>
-        trackEvent("whatsapp_click", {
-          method: "cta",
-          transport_type: "beacon",
-        })
+        trackEvent(
+          "whatsapp_click",
+          {
+            method: "cta",
+            ...(analyticsProduct ? { product: analyticsProduct } : {}),
+            intent: intent || "general",
+            ...(cta ? { cta } : {}),
+            transport_type: "beacon",
+          },
+          router.locale
+        )
       }
     >
       {children}
@@ -93,17 +130,25 @@ const WhatsappButton = ({
   message?: string;
 }) => {
   const { t } = useTranslation("common");
+  const router = useRouter();
   const [isVisible, setIsVisible] = useState(true);
+  const analyticsProduct = getAnalyticsProductFromPath();
 
   const handleClick = () => {
     const url = buildWhatsAppLink(
       message || t("ui.whatsapp.defaultMessage"),
       phoneNumber
     );
-    trackEvent("whatsapp_click", {
-      method: "floating_button",
-      transport_type: "beacon",
-    });
+    trackEvent(
+      "whatsapp_click",
+      {
+        method: "floating_button",
+        ...(analyticsProduct ? { product: analyticsProduct } : {}),
+        intent: "general",
+        transport_type: "beacon",
+      },
+      router.locale
+    );
     window.open(url, "_blank");
   };
 

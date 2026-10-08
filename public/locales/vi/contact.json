@@ -8,14 +8,21 @@
     "service_options": {
       "web": "Website Development",
       "mobile": "Mobile App (Android/iOS)",
-      "system": "Information System / ERP",
-      "uiux": "UI/UX Design"
+      "system": "Hệ thống nghiệp vụ khác",
+      "uiux": "UI/UX Design",
+      "erp": "Hoạch định nguồn lực doanh nghiệp (ERP)",
+      "wms": "Hệ thống quản lý kho (WMS)"
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
     "submit": "Gửi yêu cầu",
     "sending": "Đang gửi...",
-    "response_note": "Chúng tôi sẽ phản hồi trong vòng 24 giờ"
+    "response_note": "Chúng tôi sẽ phản hồi trong vòng 24 giờ",
+    "intent": "Loại yêu cầu",
+    "intent_options": {
+      "general": "Câu hỏi chung",
+      "demo": "Yêu cầu demo sản phẩm"
+    }
   },
   "info": {
     "office_title": "Our Office",

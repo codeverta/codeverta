@@ -8,14 +8,21 @@
     "service_options": {
       "web": "웹사이트 개발",
       "mobile": "모바일 앱(Android/iOS)",
-      "system": "정보 시스템 / ERP",
-      "uiux": "UI/UX 디자인"
+      "system": "기타 업무 시스템",
+      "uiux": "UI/UX 디자인",
+      "erp": "전사적 자원 관리(ERP)",
+      "wms": "창고 관리 시스템(WMS)"
     },
     "message": "프로젝트 상세",
     "placeholder_message": "비즈니스 요구사항을 간단히 알려주세요...",
     "submit": "문의 보내기",
     "sending": "전송 중...",
-    "response_note": "24시간 이내에 답변드리겠습니다"
+    "response_note": "24시간 이내에 답변드리겠습니다",
+    "intent": "요청 유형",
+    "intent_options": {
+      "general": "일반 문의",
+      "demo": "제품 데모 요청"
+    }
   },
   "info": {
     "office_title": "오피스",

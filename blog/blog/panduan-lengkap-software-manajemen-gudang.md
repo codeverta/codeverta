@@ -113,3 +113,5 @@ Waktu bergantung pada kompleksitas gudang, kualitas data, integrasi, pelabelan, 
 Software manajemen gudang mengubah perpindahan fisik menjadi data operasional yang dapat dipercaya. Sistem yang tepat mengurangi pencarian dan kesalahan, meningkatkan kepercayaan terhadap stok, dan mendukung volume lebih tinggi tanpa menambah kekacauan.
 
 Jika kebutuhan utama Anda masih pencatatan jumlah dan mutasi barang, mulai dari [panduan software inventory dan aplikasi stok barang](/blog/software-inventory-aplikasi-stok-barang). Jika gudang melayani penjualan grosir dan piutang, lihat [panduan software distributor](/blog/software-distributor-indonesia).
+
+Untuk menyiapkan proses scan dan cycle count, baca juga [panduan barcode gudang dan stock opname](/blog/barcode-dan-stock-opname-gudang). Gudang yang mengelola tanggal kedaluwarsa dapat memakai [checklist batch dan FEFO](/blog/batch-expiry-fefo-gudang) untuk menyusun skenario demo.

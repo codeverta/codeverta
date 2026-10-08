@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Gym Management System by Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Gym Management System by Codeverta",
+        "description": "An integrated system for gym operational management, ranging from member management and attendance to a point-of-sale (POS) cashier system.",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "Sistema de Venta de Entradas y Registro para Eventos Ultra Trail",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "Sistema de Venta de Entradas y Registro para Eventos Ultra Trail",
+        "description": "Sistema de registro para eventos deportivos y carreras de alto tráfico capaz de procesar miles de transacciones por segundo durante ventas masivas de entradas.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "E-commerce Platform for SMEs/MSMEs",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-commerce Platform for SMEs/MSMEs",
+        "description": "A comprehensive E-commerce platform equipped with catalog, shopping cart, and online payment integration features.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "RME & Hospital Management System by Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "RME & Hospital Management System by Codeverta",
+        "description": "An Electronic Medical Record (EMR) system fully integrated with the Ministry of Health's SatuSehat standards and clinic operational management pipelines.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Laundry Management System by Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Laundry Management System by Codeverta",
+        "description": "A comprehensive system designed to digitalize laundry business operations, from tracking orders and managing branches to sending automated customer notifications.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Interactive Digital Wedding Invitation Website",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Interactive Digital Wedding Invitation Website",
+        "description": "A sophisticated digital wedding invitation platform featuring comprehensive RSVP collections, interactive maps, image galleries, and digital gifting features.",
+        "image": "/assets/products/42.png"
+      }
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Button } from "@/components/ui/button";
@@ -14,6 +16,18 @@ import {
 } from "@/components/ui/select";
 import { Mail, MapPin, Phone, ArrowUpRight } from "lucide-react";
 import { WhatsappWrapper } from "@/components/WhatsappButton";
+import {
+  trackEvent,
+  isAnalyticsIntent,
+  isAnalyticsProduct,
+} from "@/components/GAScript";
+import type { AnalyticsIntent, AnalyticsProduct } from "@/components/GAScript";
+
+const CONTACT_SERVICES = ["web", "mobile", "system", "erp", "wms", "uiux"];
+
+function queryValue(value: string | string[] | undefined) {
+  return typeof value === "string" ? value : undefined;
+}
 
 /**
  * Subtle "kawung" batik motif — four dots orbiting a centre point,
@@ -65,28 +79,78 @@ function KawungPattern({ className = "" }) {
 
 export default function ContactPage() {
   const { t } = useTranslation("contact");
+  const router = useRouter();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [service, setService] = useState("");
+  const [product, setProduct] = useState<AnalyticsProduct | undefined>();
+  const [intent, setIntent] = useState<AnalyticsIntent>("general");
   const [message, setMessage] = useState("");
   const [website, setWebsite] = useState("");
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
+  useEffect(() => {
+    if (!router.isReady) return;
+
+    const requestedService = queryValue(router.query.service);
+    const requestedProduct = queryValue(router.query.product);
+    const requestedIntent = queryValue(router.query.intent);
+    const safeProduct = isAnalyticsProduct(requestedProduct)
+      ? requestedProduct
+      : undefined;
+    const safeService =
+      requestedService && CONTACT_SERVICES.includes(requestedService)
+        ? requestedService
+        : safeProduct === "erp" || safeProduct === "wms"
+        ? safeProduct
+        : "";
+
+    setService(safeService);
+    setProduct(safeProduct);
+    setIntent(isAnalyticsIntent(requestedIntent) ? requestedIntent : "general");
+  }, [
+    router.isReady,
+    router.query.intent,
+    router.query.product,
+    router.query.service,
+  ]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setStatus("idle");
+    const selectedProduct =
+      (service === "erp" || service === "wms" ? service : undefined) || product;
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, service, message, website }),
+        body: JSON.stringify({
+          name,
+          email,
+          ...(service ? { service } : {}),
+          product: selectedProduct,
+          intent,
+          message,
+          website,
+        }),
       });
 
-      if (res.ok) {
+      const result = await res.json().catch(() => null);
+      if (res.ok && result?.ok === true) {
+        if (result.recorded === true) {
+          const eventParams = {
+            method: "contact_form",
+            ...(selectedProduct ? { product: selectedProduct } : {}),
+            intent,
+            service: service || "unspecified",
+          };
+          trackEvent("generate_lead", eventParams, router.locale);
+          trackEvent("contact_form_submit", eventParams, router.locale);
+        }
         setStatus("success");
         setName("");
         setEmail("");
@@ -175,7 +239,7 @@ export default function ContactPage() {
                     <h3 className="font-medium text-[15px] text-white">
                       {t("info.whatsapp_title")}
                     </h3>
-                    <WhatsappWrapper>
+                    <WhatsappWrapper cta="contact">
                       <p className="font-mono-label text-sm text-[#B9BDD1] mt-1 select-all hover:text-[#C88A3D] transition-colors">
                         +62 881-0116-92615
                       </p>
@@ -272,7 +336,13 @@ export default function ContactPage() {
                 <Label className="font-mono-label text-[11px] tracking-[0.14em] uppercase text-[#8790A3]">
                   {t("form.service")}
                 </Label>
-                <Select value={service} onValueChange={setService}>
+                <Select
+                  value={service}
+                  onValueChange={(value) => {
+                    setService(value);
+                    if (value === "erp" || value === "wms") setProduct(value);
+                  }}
+                >
                   <SelectTrigger className="border-0 border-b-2 rounded-none px-0 h-11 bg-transparent border-[#E8E3D6] focus:ring-0 data-[state=open]:border-[#C88A3D] transition-colors">
                     <SelectValue placeholder={t("form.service")} />
                   </SelectTrigger>
@@ -286,8 +356,50 @@ export default function ContactPage() {
                     <SelectItem value="system">
                       {t("form.service_options.system")}
                     </SelectItem>
+                    <SelectItem value="erp">
+                      {t("form.service_options.erp", "ERP")}
+                    </SelectItem>
+                    <SelectItem value="wms">
+                      {t(
+                        "form.service_options.wms",
+                        "Warehouse Management System (WMS)"
+                      )}
+                    </SelectItem>
                     <SelectItem value="uiux">
                       {t("form.service_options.uiux")}
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="md:col-span-2 space-y-2.5">
+                <Label
+                  htmlFor="intent"
+                  className="font-mono-label text-[11px] tracking-[0.14em] uppercase text-[#8790A3]"
+                >
+                  {t("form.intent", "Jenis permintaan")}
+                </Label>
+                <Select
+                  value={intent}
+                  onValueChange={(value) => {
+                    if (value === "demo" || value === "general")
+                      setIntent(value);
+                  }}
+                >
+                  <SelectTrigger
+                    id="intent"
+                    className="border-0 border-b-2 rounded-none px-0 h-11 bg-transparent border-[#E8E3D6] focus:ring-0 data-[state=open]:border-[#C88A3D] transition-colors"
+                  >
+                    <SelectValue
+                      placeholder={t("form.intent", "Jenis permintaan")}
+                    />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="general">
+                      {t("form.intent_options.general", "Pertanyaan umum")}
+                    </SelectItem>
+                    <SelectItem value="demo">
+                      {t("form.intent_options.demo", "Minta demo")}
                     </SelectItem>
                   </SelectContent>
                 </Select>
@@ -348,7 +460,7 @@ export default function ContactPage() {
   );
 }
 
-export async function getStaticProps({ locale }) {
+export async function getStaticProps({ locale }: { locale: string }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common", "contact"])),

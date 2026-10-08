@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "node scripts/generate-navigation-data.cjs && next build",
     "start": "next start",
     "test:html-lang": "node --test tests/html-lang.test.mjs",
     "test:seo-metadata": "node --test tests/seo-metadata.test.mjs",
@@ -19,7 +19,8 @@
     "generate-content": "cd scripts && ../venv/bin/python autocontent.py",
     "testo:client": "node scripts/rce/client.js",
     "testo:server": "node scripts/rce/server.js",
-    "testo:symmetric": "node scripts/rce/symmetric.js"
+    "testo:symmetric": "node scripts/rce/symmetric.js",
+    "generate:navigation": "node scripts/generate-navigation-data.cjs"
   },
   "dependencies": {
     "@codeverta/axios": "^1.13.2",

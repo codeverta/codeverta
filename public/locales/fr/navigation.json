@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Système de Gestion de Salle de Sport par Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Système de Gestion de Salle de Sport par Codeverta",
+        "description": "Système complet de gestion de salle de sport intégrant l'administration des membres, les opérations de cours, le système de caisse (POS) et le suivi des performances d'entraînement sur un tableau de bord unifié.",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "Système de Billetterie Haute Performance pour Trail Running",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "Système de Billetterie Haute Performance pour Trail Running",
+        "description": "Système d'inscription aux courses de trail running haute performance pour gérer des milliers de transactions par seconde.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "Plateforme E-commerce pour PME/TPE",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "Plateforme E-commerce pour PME/TPE",
+        "description": "Plateforme e-commerce complète avec catalogue, panier et paiement en ligne.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "Système de DME & Gestion Hospitalière par Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "Système de DME & Gestion Hospitalière par Codeverta",
+        "description": "Système de Dossier Médical Électronique intégré avec la norme SatuSehat du ministère de la Santé et gestion opérationnelle de clinique.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Système de Gestion de Blanchisserie par Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Système de Gestion de Blanchisserie par Codeverta",
+        "description": "Système complet pour la numérisation des opérations de blanchisserie, du suivi des commandes à la gestion des points de vente et aux notifications automatiques.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Site Web d'invitation de mariage numérique interactive",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Site Web d'invitation de mariage numérique interactive",
+        "description": "Plateforme de création d'invitations de mariage numériques complètes avec RSVP, carte, galerie et fonctionnalités de cadeaux.",
+        "image": "/assets/products/42.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Gym-Management-System von Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Gym-Management-System von Codeverta",
+        "description": "Ein umfassendes Fitnessstudio-Managementsystem, das Mitgliederverwaltung, Kursbetrieb, Point-of-Sale (POS)-System und die Verfolgung von Trainingsleistungen in einem einzigen Dashboard integriert.",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "High-Performance Trail-Running-Ticketing-System",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "High-Performance Trail-Running-Ticketing-System",
+        "description": "Registrierungssystem für Trail-Running-Events mit hoher Performance zur Bewältigung tausender Transaktionen pro Sekunde.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "E-Commerce-Plattform für KMU/Kleinstunternehmen",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-Commerce-Plattform für KMU/Kleinstunternehmen",
+        "description": "Komplette E-Commerce-Plattform mit Katalog, Warenkorb und Online-Zahlung.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "E-DME & Krankenhaus-Managementsystem von Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "E-DME & Krankenhaus-Managementsystem von Codeverta",
+        "description": "System für elektronische Patientenakten, integriert mit dem SatuSehat-Standard des Gesundheitsministeriums und klinischer Betriebsführung.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Wäscherei-Managementsystem von Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Wäscherei-Managementsystem von Codeverta",
+        "description": "Umfassendes System zur Digitalisierung von Wäschereibetrieben, von der Auftragsverfolgung bis zur Standortverwaltung und automatischen Benachrichtigungen.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Interaktive digitale Hochzeits-Einladungswebsite",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Interaktive digitale Hochzeits-Einladungswebsite",
+        "description": "Plattform zur Erstellung digitaler Hochzeitseinladungen inklusive RSVP, Karte, Galerie und Geschenkfunktionen.",
+        "image": "/assets/products/42.png"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Gym Management System by Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Gym Management System by Codeverta",
+        "description": "회원 관리 및 출석 관리부터 POS 결제 시스템에 이르기까지, 헬스장 운영 관리를 전반적으로 수행하는 통합 시스템.",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "High-Performance Trail Running Ticketing System",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "High-Performance Trail Running Ticketing System",
+        "description": "티켓 예매 수요가 집중되는 오픈 시점에 초당 수천 건의 거래를 처리할 수 있도록 구축된 고성능 트레일 러닝 이벤트 등록 시스템.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "E-commerce Platform for SMEs/MSMEs",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-commerce Platform for SMEs/MSMEs",
+        "description": "상품 카탈로그, 장바구니 및 온라인 결제 통합 기능을 갖춘 포괄적인 이커머스(EC) 플랫폼.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "RME & Hospital Management System by Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "RME & Hospital Management System by Codeverta",
+        "description": "보건부의 SatuSehat 규격 및 클리닉의 업무 관리 파이프라인과 완전히 통합된 전자 의무 기록(EMR) 시스템.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Laundry Management System by Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Laundry Management System by Codeverta",
+        "description": "주문 추적 및 매장 관리부터 고객 대상 자동 알림 발송에 이르기까지, 세탁 비즈니스의 운영을 디지털화하기 위해 설계된 포괄적인 시스템.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Interactive Digital Wedding Invitation Website",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Interactive Digital Wedding Invitation Website",
+        "description": "포괄적인 RSVP 수집, 인터랙티브 지도, 이미지 갤러리 및 디지털 축의금 전달 기능을 갖춘 세련된 디지털 청첩장 플랫폼.",
+        "image": "/assets/products/42.png"
+      }
+    }
+  ]
+}

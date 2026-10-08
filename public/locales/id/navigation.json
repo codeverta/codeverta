@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Gym Management System by Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Gym Management System by Codeverta",
+        "description": "Sistem manajemen gym komprehensif yang mengintegrasikan administrasi member, operasional kelas, sistem kasir (POS), hingga pelacakan performa latihan dalam satu dashboard terpadu.",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "High-Performance Trail Running Ticketing System",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "High-Performance Trail Running Ticketing System",
+        "description": "Sistem registrasi event lari lintas alam dengan performa tinggi untuk menangani ribuan transaksi per detik saat 'war' tiket.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "E-commerce Platform untuk UKM/UMKM",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-commerce Platform untuk UKM/UMKM",
+        "description": "E-commerce platform lengkap dengan fitur katalog, keranjang, dan pembayaran online.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "RME & Hospital Management System by Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "RME & Hospital Management System by Codeverta",
+        "description": "Sistem Rekam Medis Elektronik terintegrasi dengan standar SatuSehat Kemenkes dan manajemen operasional klinik.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Laundry Management System by Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Laundry Management System by Codeverta",
+        "description": "Sistem komprehensif untuk digitalisasi operasional laundry mulai dari tracking order, manajemen outlet, hingga notifikasi otomatis.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Website Undangan Pernikahan Digital Interaktif",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Website Undangan Pernikahan Digital Interaktif",
+        "description": "Website undangan pernikahan digital untuk pasangan, Wedding Organizer, dan Event Organizer dengan desain khusus, RSVP, peta, galeri, serta fitur hadiah.",
+        "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg"
+      }
+    }
+  ]
+}

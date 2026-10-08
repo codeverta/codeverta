@@ -18,6 +18,7 @@ import {
 import { getIndustryMarket } from "@/lib/industry-markets";
 
 interface SEOProps {
+  includeOfficeLocation?: boolean;
   title?: string;
   description?: string;
   ogTitle?: string;
@@ -67,6 +68,7 @@ export default function Landing({
     keywords: seo?.keywords,
     image: seo?.ogImage || seo?.twitterImage,
     canonical: seo?.canonical,
+    includeOfficeLocation: seo?.includeOfficeLocation,
   });
   const locale = pageSEO.locale;
   const market = getIndustryMarket(locale);

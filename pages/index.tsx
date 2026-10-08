@@ -63,11 +63,61 @@ const ContactForm = dynamic(() => import("@/components/contact-form"), {
   loading: () => <div className="min-h-[24rem]" aria-hidden="true" />,
 });
 
+function TrustedLogoItem({ logo }: { logo: (typeof logos)[number] }) {
+  const image = (
+    <img
+      src={logo.src}
+      alt={logo.alt}
+      title={logo.alt}
+      className={clsx(
+        "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110",
+        !logo.noDarkInvert && "dark:invert",
+        logo.classes
+      )}
+    />
+  );
+
+  return (
+    <div className="group/item relative flex flex-col items-center flex-none">
+      {logo.url ? (
+        <Link
+          href={logo.url}
+          target={logo.url.startsWith("http") ? "_blank" : undefined}
+          rel={logo.url.startsWith("http") ? "noopener noreferrer" : undefined}
+          className="flex-none flex items-center justify-center"
+        >
+          {image}
+        </Link>
+      ) : (
+        <div className="flex-none flex items-center justify-center">
+          {image}
+        </div>
+      )}
+      <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
+        {logo.alt}
+      </span>
+    </div>
+  );
+}
+
 export async function getStaticProps({ locale }) {
   const projects = getProjects(locale);
+  const featuredProductIds = [
+    "enterprise-erp-system",
+    "warehouse-management-system",
+    "warehouse-inventory-control",
+  ];
+  const featuredProjects = [
+    ...featuredProductIds.flatMap((id) =>
+      projects.filter((project) => project.product.id === id)
+    ),
+    ...projects.filter(
+      (project) => !featuredProductIds.includes(project.product.id)
+    ),
+  ];
 
   // Only pass fields the ProjectsSection actually needs — saves ~50 kB
-  const trimmed = projects.slice(0, 9).map((p) => ({
+  const trimmed = featuredProjects.slice(0, 9).map((p) => ({
     product: {
       id: p.product.id,
       image: p.product.image,
@@ -185,75 +235,28 @@ export default function LandingPage({ projects }: any) {
                   <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <div className="flex animate-scroll-left gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
                       {[...row1, ...row1].map((logo, index) => (
-                        <div
-                          key={index}
-                          className="group/item relative flex flex-col items-center flex-none"
-                        >
-                          <Link
-                            href={logo.url}
-                            target={
-                              logo.url.startsWith("http") ? "_blank" : undefined
-                            }
-                            rel={
-                              logo.url.startsWith("http")
-                                ? "noopener noreferrer"
-                                : undefined
-                            }
-                            className="flex-none flex items-center justify-center"
-                          >
-                            <img
-                              src={logo.src}
-                              alt={logo.alt}
-                              title={logo.alt}
-                              className={clsx(
-                                "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110 dark:invert",
-                                logo.classes
-                              )}
-                            />
-                          </Link>
-                          {/* Company Name Tooltip / Label on Hover */}
-                          <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
-                            {logo.alt}
-                          </span>
-                        </div>
+                        <TrustedLogoItem
+                          key={`${logo.alt}-${index}`}
+                          logo={logo}
+                        />
                       ))}
                     </div>
                   </div>
 
                   {/* Row 2 - Scroll Right */}
                   <div className="group relative flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-                    <div className="flex animate-scroll-right gap-10 md:gap-16 items-center min-w-full group-hover:[animation-play-state:paused]">
-                      {[...row2, ...row2].map((logo, index) => (
+                    <div className="flex animate-scroll-right items-center group-hover:[animation-play-state:paused]">
+                      {Array.from({ length: 4 }, (_, copyIndex) => (
                         <div
-                          key={index}
-                          className="group/item relative flex flex-col items-center flex-none"
+                          key={`row2-copy-${copyIndex}`}
+                          className="flex flex-none items-center gap-10 pr-10 md:gap-16 md:pr-16"
                         >
-                          <Link
-                            href={logo.url}
-                            target={
-                              logo.url.startsWith("http") ? "_blank" : undefined
-                            }
-                            rel={
-                              logo.url.startsWith("http")
-                                ? "noopener noreferrer"
-                                : undefined
-                            }
-                            className="flex-none flex items-center justify-center"
-                          >
-                            <img
-                              src={logo.src}
-                              alt={logo.alt}
-                              title={logo.alt}
-                              className={clsx(
-                                "h-12 md:h-16 w-auto opacity-50 grayscale transition-all duration-300 group-hover/item:opacity-100 group-hover/item:grayscale-0 group-hover/item:scale-110 dark:invert",
-                                logo.classes
-                              )}
+                          {row2.map((logo, index) => (
+                            <TrustedLogoItem
+                              key={`${logo.alt}-${copyIndex}-${index}`}
+                              logo={logo}
                             />
-                          </Link>
-                          {/* Company Name Tooltip / Label on Hover */}
-                          <span className="absolute -bottom-7 pointer-events-none opacity-0 group-hover/item:opacity-100 transition-all duration-200 text-[11px] font-medium tracking-wide bg-foreground text-background px-2.5 py-1 rounded-md shadow-md whitespace-nowrap z-20">
-                            {logo.alt}
-                          </span>
+                          ))}
                         </div>
                       ))}
                     </div>
@@ -275,10 +278,10 @@ export default function LandingPage({ projects }: any) {
 
             @keyframes scrollRight {
               from {
-                transform: translateX(-50%);
+                transform: translateX(calc(-25% + var(--scroll-right-phase)));
               }
               to {
-                transform: translateX(0);
+                transform: translateX(var(--scroll-right-phase));
               }
             }
 
@@ -289,6 +292,7 @@ export default function LandingPage({ projects }: any) {
             }
 
             .animate-scroll-right {
+              --scroll-right-phase: 12.5%;
               display: flex;
               width: max-content;
               animation: scrollRight 45s linear infinite;

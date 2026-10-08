@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "ระบบบริหารจัดการยิมโดย Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "ระบบบริหารจัดการยิมโดย Codeverta",
+        "description": "ระบบจัดการยิมที่ครบวงจร ซึ่งรวมการบริหารจัดการสมาชิก, การดำเนินงานของคลาส, ระบบขายหน้าร้าน (POS) ไปจนถึงการติดตามผลลัพธ์การออกกำลังกายไว้ในแดชบอร์ดเดียว",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "ระบบจองบัตรวิ่งเทรลประสิทธิภาพสูง",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "ระบบจองบัตรวิ่งเทรลประสิทธิภาพสูง",
+        "description": "ระบบลงทะเบียนงานวิ่งเทรลที่มีประสิทธิภาพสูงเพื่อรองรับการจองบัตรหลักพันรายการต่อวินาทีในช่วงแย่งชิงบัตร",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "แพลตฟอร์มอีคอมเมิร์ซสำหรับ SME/MSME",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "แพลตฟอร์มอีคอมเมิร์ซสำหรับ SME/MSME",
+        "description": "แพลตฟอร์มอีคอมเมิร์ซที่สมบูรณ์พร้อมฟีเจอร์แคตตาล็อก ตะกร้าสินค้า และการชำระเงินออนไลน์",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "ระบบ RME และระบบบริหารจัดการโรงพยาบาลโดย Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "ระบบ RME และระบบบริหารจัดการโรงพยาบาลโดย Codeverta",
+        "description": "ระบบระเบียนสุขภาพอิเล็กทรอนิกส์ที่เชื่อมต่อกับมาตรฐาน SatuSehat ของกระทรวงสาธารณสุขและการจัดการคลินิก",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "ระบบบริหารจัดการร้านซักรีดโดย Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "ระบบบริหารจัดการร้านซักรีดโดย Codeverta",
+        "description": "ระบบที่ครอบคลุมสำหรับการเปลี่ยนการดำเนินงานของร้านซักรีดให้เป็นดิจิทัล ตั้งแต่การติดตามคำสั่งซื้อ การจัดการสาขา ไปจนถึงการแจ้งเตือนอัตโนมัติ",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "เว็บไซต์การ์ดแต่งงานดิจิทัลแบบโต้ตอบ",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "เว็บไซต์การ์ดแต่งงานดิจิทัลแบบโต้ตอบ",
+        "description": "แพลตฟอร์มสร้างการ์ดแต่งงานดิจิทัลที่ครบครันพร้อม RSVP, แผนที่, แกลเลอรี, และฟีเจอร์ของขวัญ",
+        "image": "/assets/products/42.png"
+      }
+    }
+  ]
+}

@@ -8,14 +8,21 @@
     "service_options": {
       "web": "Website Development",
       "mobile": "Mobile App (Android/iOS)",
-      "system": "Information System / ERP",
-      "uiux": "UI/UX Design"
+      "system": "Autre système métier",
+      "uiux": "UI/UX Design",
+      "erp": "Progiciel de gestion intégré (ERP)",
+      "wms": "Système de gestion d’entrepôt (WMS)"
     },
     "message": "Project Details",
     "placeholder_message": "Tell us a little about your business needs...",
     "submit": "Envoyer la demande",
     "sending": "Envoi...",
-    "response_note": "Nous répondons sous 24 heures"
+    "response_note": "Nous répondons sous 24 heures",
+    "intent": "Type de demande",
+    "intent_options": {
+      "general": "Question générale",
+      "demo": "Demander une démonstration"
+    }
   },
   "info": {
     "office_title": "Our Office",

@@ -11,6 +11,17 @@ const { i18n } = require("./next-i18next.config");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source:
+          "/:locale(zh|ja|ko|ms|de|fr|es|ar|hi|th|vi|ru|nl)/products/warehouse-management-system",
+        destination: "/en/products/warehouse-management-system",
+        permanent: true,
+        locale: false,
+      },
+    ];
+  },
   async headers() {
     return [
       {

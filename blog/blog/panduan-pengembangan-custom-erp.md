@@ -88,6 +88,22 @@ Pendorong biaya terbesar adalah cakupan proses, jumlah role dan company, komplek
 
 Jangan memilih partner hanya berdasarkan jumlah fitur dalam quotation. Bandingkan asumsi, pengecualian, delivery team, quality practice, ownership, support model, dan governance perubahan scope.
 
+### Lembar kerja perbandingan biaya
+
+Minta setiap penyedia mengelompokkan estimasi pada komponen yang sama. Catat biaya sekali bayar dan berulang secara terpisah, tuliskan asumsi volumenya, lalu bandingkan untuk periode evaluasi yang sama.
+
+| Komponen                    | Asumsi yang perlu dicatat                                                |
+| --------------------------- | ------------------------------------------------------------------------ |
+| Discovery dan desain proses | Jumlah alur, workshop, unit, dan pemilik proses yang terlibat            |
+| Pengembangan atau lisensi   | Modul yang masuk scope, batas pengguna, perusahaan, dan lokasi           |
+| Data dan cutover            | Sumber data, volume histori, pembersihan, rehearsal, dan rekonsiliasi    |
+| Integrasi                   | Sistem, arah data, frekuensi, pemantauan, retry, dan pemilik operasional |
+| Infrastruktur dan keamanan  | Lingkungan, backup, monitoring, availability, dan pemeriksaan keamanan   |
+| Pelatihan dan rollout       | Peran, lokasi, materi, support saat peluncuran, dan waktu kerja internal |
+| Operasi setelah rilis       | Dukungan, pemeliharaan, hosting, upgrade, serta perubahan berikutnya     |
+
+Untuk menilai manfaat, gunakan baseline milik perusahaan—misalnya jam rekonsiliasi, waktu approval, kesalahan transaksi, atau biaya menjalankan sistem lama. Tandai mana yang terukur dan mana yang masih asumsi; jangan mengurangkan proyeksi optimistis dari quotation lalu menyebut hasilnya sebagai penghematan pasti.
+
 ## Delivery dan Rollout
 
 Gunakan demo singkat dengan user nyata, automated testing untuk rule kritis, dan acceptance criteria terdokumentasi. Pilot satu unit atau proses terbatas sebelum ekspansi. Siapkan support, training, cutover, rollback, reconciliation, dan hypercare.

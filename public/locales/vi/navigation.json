@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Hệ thống quản lý phòng gym của Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Hệ thống quản lý phòng gym của Codeverta",
+        "description": "Một hệ thống tích hợp cho quản lý hoạt động của trung tâm thể dục, từ quản lý thành viên và tham dự đến một hệ thống điểm bán hàng (POS).",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "Hệ thống bán vé giải chạy trail hiệu suất cao",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "Hệ thống bán vé giải chạy trail hiệu suất cao",
+        "description": "Một hệ thống đăng ký sự kiện chạy đường cao hiệu suất được xây dựng để xử lý hàng ngàn giao dịch mỗi giây trong các bản phát hành vé yêu cầu cao.",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "Nền tảng thương mại điện tử cho doanh nghiệp vừa và nhỏ",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "Nền tảng thương mại điện tử cho doanh nghiệp vừa và nhỏ",
+        "description": "Một nền tảng thương mại điện tử toàn diện được trang bị các tính năng danh mục, giỏ hàng và tích hợp thanh toán trực tuyến.",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "Hệ thống bệnh án điện tử RME và quản lý bệnh viện của Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "Hệ thống bệnh án điện tử RME và quản lý bệnh viện của Codeverta",
+        "description": "Hệ thống ghi âm y tế điện tử (EMR) được tích hợp đầy đủ với tiêu chuẩn SatuSehat của Bộ Y tế và các ống quản lý hoạt động lâm sàng.",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Hệ thống quản lý tiệm giặt ủi của Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Hệ thống quản lý tiệm giặt ủi của Codeverta",
+        "description": "Một hệ thống toàn diện được thiết kế để số hóa hoạt động kinh doanh giặt, từ theo dõi các đơn đặt hàng và quản lý các ngành đến gửi thông báo khách hàng tự động.",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Website thiệp cưới điện tử tương tác",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Website thiệp cưới điện tử tương tác",
+        "description": "Trang web mời đám cưới kỹ thuật số tùy chỉnh cho cặp vợ chồng, tổ chức đám cưới và tổ chức sự kiện, với RSVP, bản đồ, galeries và quà tặng kỹ thuật số.",
+        "image": "/assets/digital-wedding-invitation/cempaka-usher-landing-page.jpeg"
+      }
+    }
+  ]
+}

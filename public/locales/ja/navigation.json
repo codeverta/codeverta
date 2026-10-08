@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "Gym Management System by Codeverta",
+      "product": {
+        "id": "gym-management-system",
+        "name": "Gym Management System by Codeverta",
+        "description": "会員管理や出席管理から、POSレジシステムにいたるまで、ジムの運営管理をトータルに行う統合システム。",
+        "image": "/assets/products/gym-management.png"
+      }
+    },
+    {
+      "name": "High-Performance Trail Running Ticketing System",
+      "product": {
+        "id": "ultra-trail-ticketing-system",
+        "name": "High-Performance Trail Running Ticketing System",
+        "description": "チケットの需要が集中する発売時に、1秒あたり数千件の取引を処理できるように構築された、高性能トレイルランニングイベント登録システム。",
+        "image": "/assets/products/46.png"
+      }
+    },
+    {
+      "name": "E-commerce Platform for SMEs/MSMEs",
+      "product": {
+        "id": "e-commerce-platform",
+        "name": "E-commerce Platform for SMEs/MSMEs",
+        "description": "カタログ、ショッピングカート、およびオンライン決済統合機能を備えた包括的な電子商取引（EC）プラットフォーム。",
+        "image": "/assets/products/27.png"
+      }
+    },
+    {
+      "name": "RME & Hospital Management System by Codeverta",
+      "product": {
+        "id": "electronic-medical-record-system-rme",
+        "name": "RME & Hospital Management System by Codeverta",
+        "description": "保健省のSatuSehat規格およびクリニックの業務管理パイプラインと完全に統合された電子医療記録（EMR）システム。",
+        "image": "/assets/healthcare/preview.png"
+      }
+    },
+    {
+      "name": "Laundry Management System by Codeverta",
+      "product": {
+        "id": "laundry-management-system",
+        "name": "Laundry Management System by Codeverta",
+        "description": "注文の追跡や店舗の管理から、顧客への自動通知の送信にいたるまで、クリーニング業務の運営をデジタル化するために設計された包括的なシステム。",
+        "image": "/assets/laundry-management/preview.png"
+      }
+    },
+    {
+      "name": "Interactive Digital Wedding Invitation Website",
+      "product": {
+        "id": "digital-wedding-invitation-platform",
+        "name": "Interactive Digital Wedding Invitation Website",
+        "description": "包括的なRSVPコレクション、インタラクティブマップ、画像ギャラリー、およびデジタルご祝儀機能を備えた、洗練されたデジタル結婚式招待状プラットフォーム。",
+        "image": "/assets/products/42.png"
+      }
+    }
+  ]
+}

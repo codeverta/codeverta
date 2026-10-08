@@ -59,6 +59,7 @@ function getAvailableProductIndexLocales() {
 
 let productIdsByLocale;
 function getAvailableProductLocales(productId) {
+  if (productId === "warehouse-management-system") return ["id", "en"];
   if (!productIdsByLocale) {
     productIdsByLocale = new Map();
     for (const locale of productLocales) {
@@ -228,6 +229,7 @@ module.exports = {
       for (const project of projects) {
         const id = project?.product?.id;
         if (!id) continue;
+        if (!getAvailableProductLocales(id).includes(locale)) continue;
         const routePath = `/products/${id}`;
         entries.push({
           loc: locale === defaultLocale ? routePath : `/${locale}${routePath}`,

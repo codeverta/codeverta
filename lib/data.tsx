@@ -44,7 +44,13 @@ export const companyStats = [
   },
 ];
 
-export const logos = [
+export const logos: {
+  src: string;
+  alt: string;
+  url?: string;
+  classes?: string;
+  noDarkInvert?: boolean;
+}[] = [
   {
     src: "/assets/images/bapperida.png",
     alt: "Bapperida Papua",
@@ -56,7 +62,7 @@ export const logos = [
     url: "https://nscbantuperizinan.com/",
   },
   {
-    src: "https://malabartrailrun.id/logo.png",
+    src: "/assets/images/malabar-trail-run.jpeg",
     alt: "Malabar Trail Run",
     url: "https://malabartrailrun.id",
   },
@@ -79,7 +85,6 @@ export const logos = [
   {
     src: "/assets/images/roxgym.png",
     alt: "Roxgym",
-    url: "https://roxgym.id",
   },
   {
     src: "/assets/images/logo-kitafuture.png",
@@ -90,6 +95,16 @@ export const logos = [
     src: "/assets/images/logo-inspirasien.png",
     alt: "Inspirasien",
     url: "https://inspirasien.id",
+  },
+  {
+    src: "/assets/images/prorope-logo.jpg",
+    alt: "Prorope Services",
+    url: "https://prorope.id",
+    noDarkInvert: true,
+  },
+  {
+    src: "/assets/images/indonesia-candle-logo.webp",
+    alt: "Indonesia Candle",
   },
 ];
 
